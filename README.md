@@ -34,3 +34,4 @@ All the above should be in the core library of the software.
  * [January 1, 2020] Doesn't [appear](https://github.com/antivanov/js-crawler/issues/58) anyone is maintaining this JS package anymore.
  * [January 1, 2020] So, the new plan is to try out [crawler](https://www.npmjs.com/package/crawler). It has a lot more recent activity going on but I don't see a feature that I have been using in js-crawler and that feature is to specify what urls should be crawled.
  * [January 1, 2020] Disappointed in crawler. This isn't much different from what wget offers
+ * [January 1, 2020] Suspect that confirm box on page load stops js-crawler from completing crawl
