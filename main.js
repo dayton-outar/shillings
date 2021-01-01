@@ -1,6 +1,6 @@
-var Crawler = require("js-crawler");
+const Crawler = require("js-crawler");
  
-var crawler = new Crawler().configure(
+const crawler = new Crawler().configure(
   {
     ignoreRelative: false,
     depth: 2,
@@ -9,16 +9,27 @@ var crawler = new Crawler().configure(
     }
   });
  
+let pages = [];
+
 crawler.crawl({
   url: "https://www.jncb.com",
   success: function(page) {
     //(?<=href=")[^"]+\.css
     let css = page.content.match(/(?<=href=")[^"]+\.css/g);
-    console.log(css);
     let js = page.content.match(/(?<=src=")[^"]+\.js/g);
-    console.log(js);
 
-    console.log(page.url);
+    pages.push({
+      url: page.url,
+      //content: page.content,
+      css,
+      js
+    });
+
+    if (pages.length == 1) {
+      console.log(pages);
+    } else {
+      console.log(page.url);
+    }
   },
   failure: function(page) {
     console.log(page.url, page.status);
