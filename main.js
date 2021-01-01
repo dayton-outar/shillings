@@ -2,7 +2,7 @@ const fs = require('fs');
 // ---
 const moment = require('moment');
 const Crawler = require("js-crawler");
-const subject = 'https://jm.scotiabank.com/';
+const subject = 'https://www.firstglobal-bank.com/';
  
 const crawler = new Crawler().configure(
   {
@@ -33,8 +33,10 @@ crawler.crawl({
   failure: function(page) {
     console.log(page.url, page.status);
   },
-  finished: function(crawledUrls) {
-    console.log(crawledUrls);
+  finished: function(crawledUrls) {    
+    pages.pagesCrawled = crawledUrls.length;
+
+    console.log(`${pages.pagesCrawled} pages were crawled on ${subject}`);
 
     let tn = moment().unix();
     fs.writeFileSync(`pages-${tn}.json`, JSON.stringify(pages, null, 4));
