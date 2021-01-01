@@ -1,20 +1,23 @@
+const fs = require('fs');
+// ---
+const moment = require('moment');
 const Crawler = require("js-crawler");
+const subject = 'https://jm.scotiabank.com/';
  
 const crawler = new Crawler().configure(
   {
     ignoreRelative: false,
     depth: 2,
     shouldCrawl: function(url) {
-      return url.indexOf('https://www.jncb.com') >= 0;
+      return url.indexOf(subject) >= 0;
     }
   });
  
 let pages = [];
 
 crawler.crawl({
-  url: "https://www.jncb.com",
+  url: subject,
   success: function(page) {
-    //(?<=href=")[^"]+\.css
     let css = page.content.match(/(?<=href=")[^"]+\.css/g);
     let js = page.content.match(/(?<=src=")[^"]+\.js/g);
 
@@ -25,16 +28,15 @@ crawler.crawl({
       js
     });
 
-    if (pages.length == 1) {
-      console.log(pages);
-    } else {
-      console.log(page.url);
-    }
+    console.log('reading ...');
   },
   failure: function(page) {
     console.log(page.url, page.status);
   },
   finished: function(crawledUrls) {
     console.log(crawledUrls);
+
+    let tn = moment().unix();
+    fs.writeFileSync(`pages-${tn}.json`, JSON.stringify(pages, null, 4));
   }
 });
