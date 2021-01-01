@@ -6,9 +6,10 @@ Crawling through a web site to find all its pages and feel through each page wit
 
 So, the main idea for optimizing a page or, better yet, a web site is to,
 
-Remove unused (or irrelevant) styles from the stylesheets linked by each page in order to decrease file size
-Minify JavaScript (JS) files by removing as much white space as possible in order to decrease file size
-Bundle CSS and JS files into one file so as to decrease roundtrips to the server
+ * Remove unused (or irrelevant) styles from the stylesheets linked by each page in order to decrease file size
+ * Minify JavaScript (JS) files by removing as much white space as possible in order to decrease file size
+ * Bundle CSS and JS files into one file so as to decrease roundtrips to the server
+
 All the above should be in the core library of the software.
 
 ## Developer Notes
