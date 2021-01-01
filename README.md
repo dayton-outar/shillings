@@ -32,3 +32,4 @@ All the above should be in the core library of the software.
  * [January 1, 2020] Learnt of generic syntax in some referenced files through [this StackOverflow entry](https://stackoverflow.com/questions/550038/is-it-valid-to-replace-http-with-in-a-script-src-http).
  * [January 1, 2020] What if some of the files referenced by a web page were not used at all? I guess bundling relevant styles into one file would solve this problem
  * [January 1, 2020] Doesn't [appear](https://github.com/antivanov/js-crawler/issues/58) anyone is maintaining this JS package anymore.
+ * [January 1, 2020] So, the new plan is to try out [crawler](https://www.npmjs.com/package/crawler). It has a lot more recent activity going on but I don't see a feature that I have been using in js-crawler and that feature is to specify what urls should be crawled.
