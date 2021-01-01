@@ -13,8 +13,11 @@ crawler.crawl({
   url: "https://www.jncb.com",
   success: function(page) {
     //(?<=href=")[^"]+\.css
-    let results = page.content.match(/(?<=href=")[^"]+\.css/g);
-    console.log(results);
+    let css = page.content.match(/(?<=href=")[^"]+\.css/g);
+    console.log(css);
+    let js = page.content.match(/(?<=src=")[^"]+\.js/g);
+    console.log(js);
+
     console.log(page.url);
   },
   failure: function(page) {
