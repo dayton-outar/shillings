@@ -37,3 +37,4 @@ All the above should be in the core library of the software.
  * [January 1, 2020] Suspect that confirm box on page load stops js-crawler from completing crawl
  * [January 1, 2020 @ 5:05 PM] Back to PurifyCSS. Presuming that js-crawl works or that a manual entry is made to optimize a page against several CSS and JS, what will the process look like?
  * [January 1, 2020 @ 8:20 PM] Ideas coming together nicely. In [combine.js](./combine.js), all the CSS content are combined and the HTML are combined with the JS content to output a minified purified stylesheet. I'm seeing where a total file size of 1.2 MB is optimized into 422 KB. A massive 65% decrease. Next step is to test if the look and feel remains when adding just that one CSS to that file.
+ * [January 1, 2020] The [download-file-sync](https://github.com/vjeux/download-file-sync), seems to crash after trying to download a certain size, 1.4 MB
