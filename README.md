@@ -46,4 +46,10 @@ All the above should be in the core library of the software.
  * **[January 2, 2020 @ 9:06 AM]** It appears Lighthouse uses commands that are known to [Chrome Dev Tools](https://chromedevtools.github.io/devtools-protocol/tot/Page/). [How Google Lighthouse Audit Works](https://www.thehoth.com/blog/google-lighthouse-audit-works/)
  * **[January 2, 2020]** Ended up [here](https://pptr.dev/#?product=Puppeteer&version=v5.5.0&show=api-class-coverage) through [here](https://developers.google.com/web/updates/2017/04/headless-chrome#puppeteer)
  * **[January 2, 2020]** So, while the approach to removing unused style involves stripping out certain elements of a CSS file, this cannot be the approach to JS files since it is a programming script that is intricately linked together. Furthermore, what is relevant in a particular scenario may not be in another. What can be considered for removal are JS files that are totally not relevant to the page
- * **[January 2, 2020 @ 12:15 PM]** My conclusion is to bundle JS files. It is too tricky to remove JS content
+ * **[January 2, 2020 @ 12:15 PM]** My conclusion is to bundle relevant JS files. It is too tricky to remove JS content
+ * **[January 2, 2020 @ 2:38 PM]** [This article](https://www.freecodecamp.org/news/web-fonts-in-2018-f191a48367e8/) has good advice on preloading fonts
+    > "Preload CSS/JS, Local Fonts & Google Fonts files to instruct the browser to download the chosen assets as soon as possible"
+* **[January 2, 2020]** Some `<script>` tag attributes such as `defer` can be useful. As mentioned [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#Attributes).
+    > "Defer combined JavaScript files by applying “defer” attribute to the SCRIPT tags"
+* **[January 2, 2020]** Image compression from WP-Optimize looks interesting
+    > "WP-Optimize has an image-compression tool that uses cutting-edge lossy compression techniques to convert large images (which take a long time to load up) into compressed files saved in your image library, where they can be uploaded in an instant."
