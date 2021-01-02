@@ -18,6 +18,7 @@ let pages = [];
 crawler.crawl({
   url: subject,
   success: function(page) {
+    // TODO: Refactor into function that finds CSS and JS references and returns object containing arrays
     let css = page.content.match(/(?<=href=")[^"]+\.css/g);
     let js = page.content.match(/(?<=src=")[^"]+\.js/g);
 
