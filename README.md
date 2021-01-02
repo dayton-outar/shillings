@@ -15,7 +15,7 @@ All the above should be in the core library of the software.
 ## Developer Notes
 
  * [December 30, 2020] Spent some time doing research on UnCSS. Thanks to IZ, he found out that UnCSS ignores CSS style references in JS files
- * [December 30, 2020] Found out about PurifyCSS and PurgeCSS. PurgeCSS has a better presentation in the delivery of their documentation but is it better than PurifyCSS
+ * [December 30, 2020] Found out about [PurifyCSS](https://github.com/purifycss/purifycss) and PurgeCSS. PurgeCSS has a better presentation in the delivery of their documentation but is it better than PurifyCSS
  * [December 30, 2020] Thanks to IZ. PurifyCSS reads references in JS associated files as well as HTML. The only problem is that PurifyCSS requires the files to be referenced via file system and not URL
  * [December 31, 2020] Using [Gulp](https://gulpjs.com/) to test out PurgeCSS
  * [December 31, 2020] PurgeCSS was too frustrating to work in Gulp. It was disappointing
@@ -35,3 +35,5 @@ All the above should be in the core library of the software.
  * [January 1, 2020] So, the new plan is to try out [crawler](https://www.npmjs.com/package/crawler). It has a lot more recent activity going on but I don't see a feature that I have been using in js-crawler and that feature is to specify what urls should be crawled.
  * [January 1, 2020] Disappointed in crawler. This isn't much different from what wget offers
  * [January 1, 2020] Suspect that confirm box on page load stops js-crawler from completing crawl
+ * [January 1, 2020 @ 5:05 PM] Back to PurifyCSS. Presuming that js-crawl works or that a manual entry is made to optimize a page against several CSS and JS, what will the process look like?
+ * [January 1, 2020 @ 8:20 PM] Ideas coming together nicely. In [combine.js](./combine.js), all the CSS content are combined and the HTML are combined with the JS content to output a minified purified stylesheet. I'm seeing where a total file size of 1.2 MB is optimized into 422 KB. A massive 65% decrease. Next step is to test if the look and feel remains when adding just that one CSS to that file.

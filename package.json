@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node main.js",
     "crawl": "node crawl.js",
+    "combine": "node combine.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -17,12 +18,16 @@
   "author": "Dayton Outar",
   "license": "ISC",
   "devDependencies": {
+    "download-file-sync": "^1.0.4",
     "gulp": "^4.0.2",
     "gulp-download": "0.0.1",
     "gulp-purifycss": "^0.2.0",
     "gulp-rename": "^2.0.0",
     "js-crawler": "^0.3.21",
     "moment": "^2.29.1",
-    "wget": "0.0.1"
+    "prettier": "^2.2.1",
+    "pretty-bytes": "^5.5.0",
+    "purify-css": "^1.2.5",
+    "statman-stopwatch": "^2.11.1"
   }
 }
