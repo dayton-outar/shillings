@@ -15,7 +15,7 @@ All the above should be in the core library of the software.
 ## Developer Notes
 
  * **[December 30, 2020]** Spent some time doing research on UnCSS. Thanks to IZ, he found out that UnCSS ignores CSS style references in JS files
- * **[December 30, 2020]** Found out about [PurifyCSS](https://github.com/purifycss/purifycss) and PurgeCSS. PurgeCSS has a better presentation in the delivery of their documentation but is it better than PurifyCSS
+ * **[December 30, 2020]** Found out about [PurifyCSS](https://github.com/purifycss/purifycss) and PurgeCSS. PurgeCSS has a better presentation in the delivery of their documentation but is it better than PurifyCSS?
  * **[December 30, 2020]** Thanks to IZ. PurifyCSS reads references in JS associated files as well as HTML. The only problem is that PurifyCSS requires the files to be referenced via file system and not URL
  * **[December 31, 2020]** Using [Gulp](https://gulpjs.com/) to test out PurgeCSS
  * **[December 31, 2020]** PurgeCSS was too frustrating to work in Gulp. It was disappointing
@@ -40,4 +40,9 @@ All the above should be in the core library of the software.
  * **[January 1, 2020]** The [download-file-sync](https://github.com/vjeux/download-file-sync), seems to crash after trying to download a certain size, 1.4 MB
  * **[January 2, 2020]** Read through one of the optimized CSS and noticed that the media queries have been carried over. _Phew!_ That's good.
  * **[January 2, 2020]** For the most part, the process of removing unused CSS has been put in some sketchy working process here. So, here we have working software. Only thing is, in some instance the crawler is failing because of confirm alert box and the download is failing because of file size (at least, that's the hunch now). So, on to the next optimization goal JS files.
- * **[January 2, 2020]**
+ * **[January 2, 2020]** Taking a look at [Lighthouse](https://github.com/GoogleChrome/lighthouse)
+ * **[January 2, 2020]** Interesting ideas by Gabriel Livan in [Asset CleanUp](https://wordpress.org/plugins/wp-asset-clean-up/) and David Anderson and Ruhani Rabin in [WPOptimize](https://wordpress.org/plugins/wp-optimize/)
+ * **[January 2, 2020]** Can't easily find a JS plugin to remove unused JS files
+ * **[January 2, 2020 @ 9:06 AM]** It appears Lighthouse uses commands that are known to [Chrome Dev Tools](https://chromedevtools.github.io/devtools-protocol/tot/Page/). [How Google Lighthouse Audit Works](https://www.thehoth.com/blog/google-lighthouse-audit-works/)
+ * **[January 2, 2020]** Ended up [here](https://pptr.dev/#?product=Puppeteer&version=v5.5.0&show=api-class-coverage) through [here](https://developers.google.com/web/updates/2017/04/headless-chrome#puppeteer)
+ * **[January 2, 2020]** So, while the approach to removing unused style involves stripping out certain elements of a CSS file, this cannot be the approach to JS files since it is a programming script that is intricately linked together. Furthermore, what is relevant in a particular scenario may not be in another. What can be considered for removal are JS files that are totally not relevant to the page
