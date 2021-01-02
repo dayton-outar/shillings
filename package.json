@@ -7,6 +7,7 @@
     "start": "node main.js",
     "crawl": "node crawl.js",
     "combine": "node combine.js",
+    "puppeteer": "node puppeteer.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -27,6 +28,7 @@
     "moment": "^2.29.1",
     "prettier": "^2.2.1",
     "pretty-bytes": "^5.5.0",
+    "puppeteer": "^5.5.0",
     "purify-css": "^1.2.5",
     "statman-stopwatch": "^2.11.1"
   }
