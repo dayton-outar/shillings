@@ -28,7 +28,8 @@ function run ( url ) {
                             security:  item.querySelectorAll('td')[0].textContent.trim(),
                             volume: item.querySelectorAll('td')[1].textContent.trim(),
                             closing: item.querySelectorAll('td')[2].textContent.trim(),
-                            change: item.querySelectorAll('td')[3] ? item.querySelectorAll('td')[3].textContent.trim() : 0
+                            change: item.querySelectorAll('td')[3] ? item.querySelectorAll('td')[3].textContent.trim() : 0,
+                            percentage: item.querySelectorAll('td')[4] ? item.querySelectorAll('td')[4].textContent.trim() : 0
                         });
                     });
                     return results;
