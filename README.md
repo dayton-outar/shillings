@@ -2,7 +2,7 @@
 
 Crawling through a web site to find all its pages and feel through each page with the tentacles of an octopus to perform page optimization by decreasing file size where necessary and making use of minifying and bundling tools.
 
-## The Approach
+## Requirements
 
 So, the main idea for optimizing a page or, better yet, a web site is to,
 
@@ -12,44 +12,48 @@ So, the main idea for optimizing a page or, better yet, a web site is to,
 
 All the above should be in the core library of the software.
 
-## Developer Notes
+## Installation
 
- * **[December 30, 2020]** Spent some time doing research on UnCSS. Thanks to IZ, he found out that UnCSS ignores CSS style references in JS files
- * **[December 30, 2020]** Found out about [PurifyCSS](https://github.com/purifycss/purifycss) and PurgeCSS. PurgeCSS has a better presentation in the delivery of their documentation but is it better than PurifyCSS?
- * **[December 30, 2020]** Thanks to IZ. PurifyCSS reads references in JS associated files as well as HTML. The only problem is that PurifyCSS requires the files to be referenced via file system and not URL
- * **[December 31, 2020]** Using [Gulp](https://gulpjs.com/) to test out PurgeCSS
- * **[December 31, 2020]** PurgeCSS was too frustrating to work in Gulp. It was disappointing
- * **[December 31, 2020]** PurifyCSS was better in Gulp
- * **[December 31, 2020]** Had to use [gulp-download](https://www.npmjs.com/package/gulp-download) to download files from URL but there is an issue. It has to reference the filename in the URL. So, https://www.jncb.com causes it to through an error
- * **[December 31, 2020]** Trying to find an alternative to [gulp-download](https://www.npmjs.com/package/gulp-download) and found [wget](https://www.npmjs.com/package/wget) but it does not work well in Gulp. (I begin to get the feeling that I need to get out of the straitjacket of Gulp and go plain NodeJS scripting)
- * **[December 31, 2020]** After a getting the keywords wrong a few times, I pounce upon [js-crawler](https://www.npmjs.com/package/js-crawler). This allows me to crawl through a web site to find every reference starting from the home page. I can build out a site map with this.
- * **[January 1,  2021 @ 6:30 PM]** Equipped with the previous research and project goals provided by JD, I created Octopussimizer. A Node JS scratchpad for testing out ideas for the core solution of web site optimization
- * **[January 1,  2021]** While reading [this StackOverflow entry](https://stackoverflow.com/questions/1679507/getting-all-css-used-in-html-file/31460383), I realized that we may have to consider inline styles. Or do we?
- * **[January 1,  2021]** [Find CSS files with Regex](https://stackoverflow.com/questions/30866169/how-to-find-css-files-with-regex) may prove useful
- * **[January 1,  2021]** Crawling through sites and pulling CSS references for each page crawled but the crawler hangs after a some time running. Not sure the reason.
- * **[January 1,  2021]** Need to classify externally referenced CSS files different from relative referenced files
- * **[January 1,  2021 @ 8:30 PM]** Also pullying all JS files referenced by page through js-crawler. Just need to know the reason it stops
- * **[January 1,  2021]** Learnt of generic syntax in some referenced files through [this StackOverflow entry](https://stackoverflow.com/questions/550038/is-it-valid-to-replace-http-with-in-a-script-src-http).
- * **[January 1,  2021]** What if some of the files referenced by a web page were not used at all? I guess bundling relevant styles into one file would solve this problem
- * **[January 1,  2021]** Doesn't [appear](https://github.com/antivanov/js-crawler/issues/58) anyone is maintaining this JS package anymore.
- * **[January 1,  2021]** So, the new plan is to try out [crawler](https://www.npmjs.com/package/crawler). It has a lot more recent activity going on but I don't see a feature that I have been using in js-crawler and that feature is to specify what urls should be crawled.
- * **[January 1,  2021]** Disappointed in crawler. This isn't much different from what wget offers
- * **[January 1,  2021]** Suspect that confirm box on page load stops js-crawler from completing crawl
- * **[January 1,  2021 @ 5:05 PM]** Back to PurifyCSS. Presuming that js-crawl works or that a manual entry is made to optimize a page against several CSS and JS, what will the process look like?
- * **[January 1,  2021 @ 8:20 PM]** Ideas coming together nicely. In [combine.js](./combine.js), all the CSS content are combined and the HTML are combined with the JS content to output a minified purified stylesheet. I'm seeing where a total file size of 1.2 MB is optimized into 422 KB. A massive 65% decrease. Next step is to test if the look and feel remains when adding just that one CSS to that file.
- * **[January 1,  2021]** The [download-file-sync](https://github.com/vjeux/download-file-sync), seems to crash after trying to download a certain size, 1.4 MB
- * **[January 2,  2021]** Read through one of the optimized CSS and noticed that the media queries have been carried over. _Phew!_ That's good.
- * **[January 2,  2021]** For the most part, the process of removing unused CSS has been put in some sketchy working process here. So, here we have working software. Only thing is, in some instance the crawler is failing because of confirm alert box and the download is failing because of file size (at least, that's the hunch now). So, on to the next optimization goal JS files.
- * **[January 2,  2021]** Taking a look at [Lighthouse](https://github.com/GoogleChrome/lighthouse)
- * **[January 2,  2021]** Interesting ideas by Gabriel Livan in [Asset CleanUp](https://wordpress.org/plugins/wp-asset-clean-up/) and David Anderson and Ruhani Rabin in [WPOptimize](https://wordpress.org/plugins/wp-optimize/)
- * **[January 2,  2021]** Can't easily find a JS plugin to remove unused JS files
- * **[January 2,  2021 @ 9:06 AM]** It appears Lighthouse uses commands that are known to [Chrome Dev Tools](https://chromedevtools.github.io/devtools-protocol/tot/Page/). [How Google Lighthouse Audit Works](https://www.thehoth.com/blog/google-lighthouse-audit-works/)
- * **[January 2,  2021]** Ended up [here](https://pptr.dev/#?product=Puppeteer&version=v5.5.0&show=api-class-coverage) through [here](https://developers.google.com/web/updates/2017/04/headless-chrome#puppeteer)
- * **[January 2,  2021]** So, while the approach to removing unused style involves stripping out certain elements of a CSS file, this cannot be the approach to JS files since it is a programming script that is intricately linked together. Furthermore, what is relevant in a particular scenario may not be in another. What can be considered for removal are JS files that are totally not relevant to the page
- * **[January 2,  2021 @ 12:15 PM]** My conclusion is to bundle relevant JS files. It is too tricky to remove JS content
- * **[January 2,  2021 @ 2:38 PM]** [This article](https://www.freecodecamp.org/news/web-fonts-in-2018-f191a48367e8/) has good advice on preloading fonts
-    > "Preload CSS/JS, Local Fonts & Google Fonts files to instruct the browser to download the chosen assets as soon as possible"
-* **[January 2,  2021]** Some `<script>` tag attributes such as `defer` can be useful. As mentioned [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#Attributes).
-    > "Defer combined JavaScript files by applying “defer” attribute to the SCRIPT tags"
-* **[January 2,  2021]** Image compression from WP-Optimize looks interesting
-    > "WP-Optimize has an image-compression tool that uses cutting-edge lossy compression techniques to convert large images (which take a long time to load up) into compressed files saved in your image library, where they can be uploaded in an instant."
+...
+
+## Usage
+
+...
+
+## Contributions
+
+...
+
+# Developer Notes
+
+Credit to [How to Use .NET Core CLI to Create a Multi-Project Solution](https://www.skylinetechnologies.com/Blog/Skyline-Blog/February_2018/how-to-use-dot-net-core-cli-create-multi-project) by Ben Buhr
+
+The -o parameter lets you specify the output directory (which will get created in case it doesn’t exist). Once that command finishes, navigate into the folder and then execute the following commands:
+
+```bash
+dotnet new sln -o Harpoon
+```
+
+```bash
+dotnet new classlib -o api/O8Query
+```
+
+```bash
+dotnet new webapi -o api/Harpoon
+```
+
+```bash
+dotnet sln Harpoon.sln add api/Harpoon/Harpoon.csproj api/O8Query/O8Query.csproj
+```
+
+```bash
+dotnet build O8Query/O8Query.csproj
+```
+
+```bash
+dotnet run -p api/Harpoon.csproj
+```
+
+```bash
+dotnet publish api/Harpoon.csproj -o ../build -c Release
+```
