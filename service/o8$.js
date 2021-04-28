@@ -25,6 +25,7 @@ function run ( url ) {
                     let items = document.querySelectorAll('table > tbody > tr');
                     items.forEach((item) => {
                         results.push({
+                            code: item.querySelector('a').href.split('=')[1],
                             security:  item.querySelectorAll('td')[0].textContent.trim(),
                             volume: item.querySelectorAll('td')[1].textContent.trim(),
                             closing: item.querySelectorAll('td')[2].textContent.trim(),
@@ -53,4 +54,6 @@ function run ( url ) {
         }
     })
 }
-run( "https://www.jamstockex.com/market-data/summaries/" ).then( console.log ).catch( console.error );
+
+//run( "https://www.jamstockex.com/market-data/summaries/" ).then( console.log ).catch( console.error );
+run( "https://www.jamstockex.com/market-data/summaries/?market=main-market&date=2000-01-04" ).then( console.log ).catch( console.error );
