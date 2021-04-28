@@ -1,15 +1,13 @@
 const puppeteer = require('puppeteer');
 
 // Adapted from https://www.toptal.com/puppeteer/headless-browser-puppeteer-tutorial done by Nick Chikovani
-function run (pagesToScrape) {
-    return new Promise(async (resolve, reject) => {
+function run ( url ) {
+    return new Promise( async ( resolve, reject ) => {
         try {
-            if (!pagesToScrape) {
-                pagesToScrape = 1;
-            }
+
             const browser = await puppeteer.launch();
             const page = await browser.newPage();
-            await page.setRequestInterception(true);
+            await page.setRequestInterception( true );
             page.on('request', (request) => {
                 if (request.resourceType() === 'document') {
                     request.continue();
@@ -17,23 +15,26 @@ function run (pagesToScrape) {
                     request.abort();
                 }
             });
-            await page.goto("https://news.ycombinator.com/");
-            let currentPage = 1;
-            let urls = [];
-            while (currentPage <= pagesToScrape) {
-                await page.waitForSelector('a.storylink');
-                let newUrls = await page.evaluate(() => {
+            await page.goto( url );
+            //let currentPage = 1;
+            let stocks = [];
+            //while (currentPage <= pagesToScrape) {
+                await page.waitForSelector('h3 + table');
+                stocks = await page.evaluate(() => {
                     let results = [];
-                    let items = document.querySelectorAll('a.storylink');
+                    let items = document.querySelectorAll('table > tbody > tr');
                     items.forEach((item) => {
                         results.push({
-                            url:  item.getAttribute('href'),
-                            text: item.innerText,
+                            security:  item.querySelectorAll('td')[0].textContent.trim(),
+                            volume: item.querySelectorAll('td')[1].textContent.trim(),
+                            closing: item.querySelectorAll('td')[2].textContent.trim(),
+                            change: item.querySelectorAll('td')[3] ? item.querySelectorAll('td')[3].textContent.trim() : 0
                         });
                     });
                     return results;
                 });
-                urls = urls.concat(newUrls);
+                
+                /*
                 if (currentPage < pagesToScrape) {
                     await Promise.all([
                         await page.waitForSelector('a.morelink'),
@@ -41,13 +42,14 @@ function run (pagesToScrape) {
                         await page.waitForSelector('a.storylink')
                     ])
                 }
-                currentPage++;
-            }
+                */
+                //currentPage++;
+            //}
             browser.close();
-            return resolve(urls);
+            return resolve( stocks );
         } catch (e) {
             return reject(e);
         }
     })
 }
-run(3).then(console.log).catch(console.error);
+run( "https://www.jamstockex.com/market-data/summaries/" ).then( console.log ).catch( console.error );
