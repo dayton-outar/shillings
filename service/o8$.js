@@ -56,4 +56,5 @@ function run ( url ) {
 }
 
 //run( "https://www.jamstockex.com/market-data/summaries/" ).then( console.log ).catch( console.error );
+// Avoid weekends
 run( "https://www.jamstockex.com/market-data/summaries/?market=main-market&date=2000-01-04" ).then( console.log ).catch( console.error );

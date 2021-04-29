@@ -30,6 +30,8 @@ Credit to [How to Use .NET Core CLI to Create a Multi-Project Solution](https://
 
 The -o parameter lets you specify the output directory (which will get created in case it doesn’t exist). Once that command finishes, navigate into the folder and then execute the following commands:
 
+[dotnet sln](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-sln)
+
 ```bash
 dotnet new sln -o Harpoon
 ```
@@ -57,3 +59,32 @@ dotnet run -p api/Harpoon.csproj
 ```bash
 dotnet publish api/Harpoon.csproj -o ../build -c Release
 ```
+
+[dotnet add package](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-add-package)
+
+```bash
+dotnet add package Newtonsoft.Json
+```
+
+```bash
+dotnet add ToDo.csproj package Microsoft.Azure.DocumentDB.Core -v 1.0.0
+```
+
+```bash
+dotnet add package Microsoft.AspNetCore.StaticFiles -s https://dotnet.myget.org/F/dotnet-core/api/v3/index.json
+```
+
+[dotnet add reference](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-add-reference)
+
+```bash
+dotnet add app/app.csproj reference lib/lib.csproj
+```
+
+
+## Using EF Core CLI
+
+[Entity Framework Core tools reference - .NET Core CLI](https://docs.microsoft.com/en-us/ef/core/cli/dotnet)
+
+[Migrations Overview](https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli)
+
+[Create and Drop APIs](https://docs.microsoft.com/en-us/ef/core/managing-schemas/ensure-created)
