@@ -88,3 +88,13 @@ dotnet add app/app.csproj reference lib/lib.csproj
 [Migrations Overview](https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli)
 
 [Create and Drop APIs](https://docs.microsoft.com/en-us/ef/core/managing-schemas/ensure-created)
+
+Inside Data Library
+```bash
+dotnet ef migrations add InitialCreate
+```
+
+Apply migration to database
+```bash
+dotnet ef database update
+```

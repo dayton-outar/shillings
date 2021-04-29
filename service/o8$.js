@@ -1,7 +1,9 @@
 const puppeteer = require('puppeteer');
 
+const args = process.argv.slice(2);
+
 // Adapted from https://www.toptal.com/puppeteer/headless-browser-puppeteer-tutorial done by Nick Chikovani
-function run ( url ) {
+function run ( url = "https://www.jamstockex.com/market-data/summaries/" ) {
     return new Promise( async ( resolve, reject ) => {
         try {
 
@@ -55,6 +57,6 @@ function run ( url ) {
     })
 }
 
-//run( "https://www.jamstockex.com/market-data/summaries/" ).then( console.log ).catch( console.error );
+run().then( console.log ).catch( console.error );
 // Avoid weekends
-run( "https://www.jamstockex.com/market-data/summaries/?market=main-market&date=2000-01-04" ).then( console.log ).catch( console.error );
+//run( "https://www.jamstockex.com/market-data/summaries/?market=main-market&date=2000-01-04" ).then( console.log ).catch( console.error );

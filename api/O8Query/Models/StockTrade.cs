@@ -6,15 +6,22 @@ namespace O8Query.Models
 {
     public class StockTrading
     {
-        [Required(ErrorMessage = "Please enter stock code")]
-        public string Code { get; set; }
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public long No { get; set; }
+
+        public Company Security { get; set; }
         
+        [Required]
         public long Volume { get; set; }
 
+        [Required]
         public decimal ClosingPrice { get; set; }
 
+        [Required]
         public decimal PriceChange { get; set; }
 
+        [Required]
         public decimal Percentage { get; set; }
     }
 }

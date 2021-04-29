@@ -12,5 +12,7 @@ namespace O8Query.Data
         public DbSet<Company> Companies { get; set; }
 
         public DbSet<StockTrading> StockTradings { get; set; }
+
+        public DbSet<Log> Logs { get; set; }
     }
 }

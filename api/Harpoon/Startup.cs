@@ -39,7 +39,7 @@ namespace Harpoon
             string connectionString = Configuration.GetConnectionString("HarpoonDatabase");
 
             services.AddDbContext<StocksQuery>(options =>
-              options.UseSqlServer(connectionString));
+              options.UseSqlServer(connectionString, b => b.MigrationsAssembly("Harpoon")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
