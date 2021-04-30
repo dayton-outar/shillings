@@ -35,7 +35,7 @@ function run(url = "https://www.jamstockex.com/market-data/summaries/") {
                     results.push({
                         code: item.querySelector('a').href.split('=')[1],
                         security: item.querySelectorAll('td')[0].textContent.trim(),
-                        volume: item.querySelectorAll('td')[1].textContent.trim(),
+                        volume: parseInt( item.querySelectorAll('td')[1].textContent.trim().replace(/,/g, '') ),
                         closing: item.querySelectorAll('td')[2].textContent.trim(),
                         change: item.querySelectorAll('td')[3] ? item.querySelectorAll('td')[3].textContent.trim() : 0,
                         percentage: item.querySelectorAll('td')[4] ? item.querySelectorAll('td')[4].textContent.trim() : 0,
@@ -120,7 +120,7 @@ function runner( bringToCurrentDate, begin, end ) {
 }
 
 
-runner( false, '1999-11-01', '1999-11-15' );
+runner( false, '1999-09-27' );
 
 /*
 if (o8args.dates) {

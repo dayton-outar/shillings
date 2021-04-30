@@ -10,6 +10,10 @@ namespace O8Query.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long No { get; set; }
 
+        [Required]
+        public Log Log { get; set; }
+
+        [Required]
         public Company Security { get; set; }
         
         [Required]
