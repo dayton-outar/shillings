@@ -6,3 +6,4 @@ obj
 *.css
 *.dll
 *.pdb
+.env

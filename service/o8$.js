@@ -4,9 +4,9 @@ const moment = require('moment');
 const puppeteer = require('puppeteer');
 const xml2json = require('xml-js');
 const sleep = require('sleep');
-//const moment = require('moment');
 
-//const args = process.argv.slice(2);
+const dotenv = require('dotenv');
+dotenv.config();
 
 // Adapted from https://www.toptal.com/puppeteer/headless-browser-puppeteer-tutorial done by Nick Chikovani
 function run(url = "https://www.jamstockex.com/market-data/summaries/") {
@@ -53,20 +53,7 @@ function run(url = "https://www.jamstockex.com/market-data/summaries/") {
     })
 }
 
-// Stocks do not print on a Friday, Saturday nor Sunday
-/*
-run( "https://www.jamstockex.com/market-data/summaries/?market=main-market&date=1999-09-27" ).then((stocks) => {
-    let trades = {
-        stocks
-    }
-    console.log(xml2json.json2xml(trades, {
-        compact: true,
-        ignoreComment: true,
-        spaces: 4
-    }));
-}).catch(console.error);
-*/
-
+// Stocks do not print on a Friday, Saturday nor Sunday. JSE Stocks begin at 1999-09-27
 function runner( bringToCurrentDate, begin, end ) {
     beginning = (begin) ? moment( begin ) : moment();
     ending = (end) ? moment( end ) : ( (bringToCurrentDate) ? moment() : moment( begin ) );
@@ -119,13 +106,35 @@ function runner( bringToCurrentDate, begin, end ) {
     }
 }
 
+const args = process.argv.slice(3);
 
-runner( false, '1999-09-27' );
-
-/*
-if (o8args.dates) {
-    console.log(`Beginning at ${o8args.dates}`);
+if ( args.length > 2 ) {
+    console.log( 'Too many parameters provided' );
+    process.exit(1);
 }
 
-console.log( "Got everything, now let's begin" );
-*/
+if ( args[0] ) {
+    if ( !moment(args[0]).isValid() ) {
+        console.log( `Begin date, ${args[0]}, is invalid` );
+        process.exit(1);
+    }
+}
+
+if ( args[1] ) {
+    if ( args[1] !== '++' ) {
+        if ( !moment(args[1]).isValid() ) {
+            console.log( `End date, ${args[1]}, is invalid` );
+            process.exit(1);
+        }
+    }
+}
+
+if ( args.length == 1 ) {
+    runner( false, moment( args[0] ).format('YYYY-MM-DD') );  
+} else {
+    if ( args[1] === '++' ) {
+        runner( true, moment( args[0] ).format('YYYY-MM-DD') );
+    } else {
+        runner( false, moment( args[0] ).format('YYYY-MM-DD'), moment( args[1] ).format('YYYY-MM-DD') );
+    }
+}
