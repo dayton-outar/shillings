@@ -13,5 +13,8 @@ namespace O8Query.Models
         
         [Required]
         public string Security { get; set; }
+
+        [Required]
+        public DateTime Created { get; set; }
     }
 }

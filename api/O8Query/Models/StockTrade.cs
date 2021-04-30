@@ -23,5 +23,8 @@ namespace O8Query.Models
 
         [Required]
         public decimal Percentage { get; set; }
+
+        [Required]
+        public DateTime Date { get; set; }
     }
 }

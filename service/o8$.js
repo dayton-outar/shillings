@@ -1,4 +1,6 @@
 const puppeteer = require('puppeteer');
+const xml2json = require('xml-js');
+const moment = require('moment');
 
 const args = process.argv.slice(2);
 
@@ -32,7 +34,8 @@ function run ( url = "https://www.jamstockex.com/market-data/summaries/" ) {
                             volume: item.querySelectorAll('td')[1].textContent.trim(),
                             closing: item.querySelectorAll('td')[2].textContent.trim(),
                             change: item.querySelectorAll('td')[3] ? item.querySelectorAll('td')[3].textContent.trim() : 0,
-                            percentage: item.querySelectorAll('td')[4] ? item.querySelectorAll('td')[4].textContent.trim() : 0
+                            percentage: item.querySelectorAll('td')[4] ? item.querySelectorAll('td')[4].textContent.trim() : 0//,
+                            //date: logged
                         });
                     });
                     return results;
@@ -57,6 +60,12 @@ function run ( url = "https://www.jamstockex.com/market-data/summaries/" ) {
     })
 }
 
-run().then( console.log ).catch( console.error );
+run( ).then( ( stocks ) => {
+    let trades = {
+        stocks
+    }
+    console.log( xml2json.json2xml( trades, { compact: true, ignoreComment: true, spaces: 4 }) );
+} ).catch( console.error );
+
 // Avoid weekends
 //run( "https://www.jamstockex.com/market-data/summaries/?market=main-market&date=2000-01-04" ).then( console.log ).catch( console.error );
