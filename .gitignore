@@ -3,7 +3,6 @@ assets
 bin
 obj
 
-*.json
 *.css
 *.dll
 *.pdb
