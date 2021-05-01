@@ -66,11 +66,11 @@ async function runner( bringToCurrentDate, begin, end, rest = 2 ) {
                     
                     if ( stocks.length > 0 ) {
                         console.log( `${stocks.length} trades pulled ${stocks[0].date}` );
-                    }
 
-                    //O8Q.updateStocks( tradings )
-                    //    .then( r => console.log(r.message) )
-                    //    .catch( e => console.error(e.message) );
+                        O8Q.updateStocks( tradings )
+                            .then( r => console.log(r.message) )
+                            .catch( e => console.error(e.message) );
+                    }
                 }
             )
             .catch( console.error );
@@ -91,11 +91,11 @@ async function runner( bringToCurrentDate, begin, end, rest = 2 ) {
 
                             if ( stocks.length > 0 ) {
                                 console.log( `${stocks.length} trades pulled on ${stocks[0].date}` );
-                            }
 
-                            //O8Q.updateStocks( tradings )
-                            //    .then( r => console.log(r.message) )
-                            //    .catch( e => console.error(e.message) );
+                                O8Q.updateStocks( tradings )
+                                    .then( r => console.log(r.message) )
+                                    .catch( e => console.error(e.message) );
+                            }
                         }
                     )
                     .catch( console.error );

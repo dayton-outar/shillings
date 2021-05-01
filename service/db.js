@@ -25,6 +25,11 @@ const O8Q = {
 
         try {
 
+            if ( tradings.stocks.length === 0) {
+                result.message = 'No data to update database';
+                return result;
+            }
+
             let pool = await sql.connect(config);
 
             let stocks = xml2json.json2xml(tradings, {
@@ -39,7 +44,7 @@ const O8Q = {
 
             result = {
                 success: dbr.returnValue === 0,
-                message: 'Successfully updated stocks',
+                message: `Successfully updated ${tradings.stocks.length} stocks for ${tradings.stocks[0].date}`,
                 data: {}
             };
 
