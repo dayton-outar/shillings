@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 const moment = require('moment'),
     puppeteer = require('puppeteer'),
     sleep = require('sleep');
@@ -52,7 +50,7 @@ function run(url = "https://www.jamstockex.com/market-data/summaries/") {
 }
 
 // Stocks do not print on a Friday, Saturday nor Sunday. JSE Stocks begin at 1999-09-27
-function runner( bringToCurrentDate, begin, end, rest = 2 ) {
+async function runner( bringToCurrentDate, begin, end, rest = 2 ) {
     beginning = (begin) ? moment( begin ) : moment();
     ending = (end) ? moment( end ) : ( (bringToCurrentDate) ? moment() : moment( begin ) );
 
@@ -60,17 +58,19 @@ function runner( bringToCurrentDate, begin, end, rest = 2 ) {
         
         console.log( `Running scraper for ${beginning.format('YYYY-MM-DD')}` );
 
-        run( `https://www.jamstockex.com/market-data/summaries/?market=main-market&date=${beginning.format('YYYY-MM-DD')}` )
+        await run( `https://www.jamstockex.com/market-data/summaries/?market=main-market&date=${beginning.format('YYYY-MM-DD')}` )
             .then( stocks => {
                     let tradings = {
                         stocks
                     };
                     
-                    console.log( `${stocks.length} trades pulled ${beginning.format('YYYY-MM-DD')}` );
+                    if ( stocks.length > 0 ) {
+                        console.log( `${stocks.length} trades pulled ${stocks[0].date}` );
+                    }
 
-                    O8Q.updateStocks( tradings )
-                        .then( r => console.log(r.message) )
-                        .catch( e => console.error(e.message) );
+                    //O8Q.updateStocks( tradings )
+                    //    .then( r => console.log(r.message) )
+                    //    .catch( e => console.error(e.message) );
                 }
             )
             .catch( console.error );
@@ -83,17 +83,19 @@ function runner( bringToCurrentDate, begin, end, rest = 2 ) {
 
                 console.log( `Reading stocks for ${beginning.format('YYYY-MM-DD')}` );
 
-                run( `https://www.jamstockex.com/market-data/summaries/?market=main-market&date=${beginning.format('YYYY-MM-DD')}` )
+                await run( `https://www.jamstockex.com/market-data/summaries/?market=main-market&date=${beginning.format('YYYY-MM-DD')}` )
                     .then( stocks => {
                             let tradings = {
                                 stocks
                             };
 
-                            console.log( `${stocks.length} trades pulled on ${beginning.format('YYYY-MM-DD')}` );
+                            if ( stocks.length > 0 ) {
+                                console.log( `${stocks.length} trades pulled on ${stocks[0].date}` );
+                            }
 
-                            O8Q.updateStocks( tradings )
-                                .then( r => console.log(r.message) )
-                                .catch( e => console.error(e.message) );
+                            //O8Q.updateStocks( tradings )
+                            //    .then( r => console.log(r.message) )
+                            //    .catch( e => console.error(e.message) );
                         }
                     )
                     .catch( console.error );
@@ -106,8 +108,6 @@ function runner( bringToCurrentDate, begin, end, rest = 2 ) {
             let message = moment().isBefore( moment( beginning.format('YYYY-MM-DD') ) ) ? 
                             'Date has not yet arrived for scraping. Too far in the future' : `Invalid date range`;
             console.log( message );
-
-            return;
         }
     }
 }
