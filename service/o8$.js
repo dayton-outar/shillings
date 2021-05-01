@@ -1,12 +1,10 @@
 #!/usr/bin/env node
 
-const moment = require('moment');
-const puppeteer = require('puppeteer');
-const xml2json = require('xml-js');
-const sleep = require('sleep');
+const moment = require('moment'),
+    puppeteer = require('puppeteer'),
+    sleep = require('sleep');
 
-const dotenv = require('dotenv');
-dotenv.config();
+const O8Q = require('./db.js');
 
 // Adapted from https://www.toptal.com/puppeteer/headless-browser-puppeteer-tutorial done by Nick Chikovani
 function run(url = "https://www.jamstockex.com/market-data/summaries/") {
@@ -54,46 +52,54 @@ function run(url = "https://www.jamstockex.com/market-data/summaries/") {
 }
 
 // Stocks do not print on a Friday, Saturday nor Sunday. JSE Stocks begin at 1999-09-27
-function runner( bringToCurrentDate, begin, end ) {
+function runner( bringToCurrentDate, begin, end, rest = 2 ) {
     beginning = (begin) ? moment( begin ) : moment();
     ending = (end) ? moment( end ) : ( (bringToCurrentDate) ? moment() : moment( begin ) );
 
     if ( moment( beginning.format('YYYY-MM-DD') ).isSame( moment( ending.format('YYYY-MM-DD') ) ) ) {
-        console.log( `Running scraper for ${beginning.format('YYYY-MM-DD')} ...` );
+        
+        console.log( `Running scraper for ${beginning.format('YYYY-MM-DD')}` );
+
         run( `https://www.jamstockex.com/market-data/summaries/?market=main-market&date=${beginning.format('YYYY-MM-DD')}` )
-            .then( (stocks) => {
-                    let trades = {
+            .then( stocks => {
+                    let tradings = {
                         stocks
                     };
-                    console.log(xml2json.json2xml(trades, {
-                        compact: true,
-                        ignoreComment: true,
-                        spaces: 4
-                    }));
+                    
+                    console.log( `${stocks.length} trades pulled ${beginning.format('YYYY-MM-DD')}` );
+
+                    O8Q.updateStocks( tradings )
+                        .then( r => console.log(r.message) )
+                        .catch( e => console.error(e.message) );
                 }
             )
             .catch( console.error );
     } else {
         if ( moment( beginning.format('YYYY-MM-DD') ).isBefore( moment( ending.format('YYYY-MM-DD') ) ) ) {
+            
             console.log( `Run scraper from ${beginning.format('YYYY-MM-DD')} to ${ending.format('YYYY-MM-DD')} ...` );
 
             while ( moment( beginning.format('YYYY-MM-DD') ).isBefore( moment( ending.format('YYYY-MM-DD') ) ) ) {
+
+                console.log( `Reading stocks for ${beginning.format('YYYY-MM-DD')}` );
+
                 run( `https://www.jamstockex.com/market-data/summaries/?market=main-market&date=${beginning.format('YYYY-MM-DD')}` )
-                    .then( (stocks) => {
-                            let trades = {
+                    .then( stocks => {
+                            let tradings = {
                                 stocks
                             };
-                            console.log(xml2json.json2xml(trades, {
-                                compact: true,
-                                ignoreComment: true,
-                                spaces: 4
-                            }));
+
+                            console.log( `${stocks.length} trades pulled on ${beginning.format('YYYY-MM-DD')}` );
+
+                            O8Q.updateStocks( tradings )
+                                .then( r => console.log(r.message) )
+                                .catch( e => console.error(e.message) );
                         }
                     )
                     .catch( console.error );
                 
-                console.log('Sleeping for 5 seconds');
-                sleep.sleep(5);
+                console.log( `Sleeping for ${rest} seconds`);
+                sleep.sleep( rest );
                 beginning.add(1, 'd');
             }
         } else {
