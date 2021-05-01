@@ -36,7 +36,7 @@ const O8Q = {
                 compact: true,
                 ignoreComment: true,
                 spaces: 4
-            })
+            });
 
             let dbr = await pool.request()
                 .input('stocks', sql.Xml, stocks)

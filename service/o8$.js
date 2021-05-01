@@ -31,10 +31,10 @@ function run(url = "https://www.jamstockex.com/market-data/summaries/") {
                     results.push({
                         code: item.querySelector('a').href.split('=')[1],
                         security: item.querySelectorAll('td')[0].textContent.trim(),
-                        volume: parseInt( item.querySelectorAll('td')[1].textContent.trim().replace(/,/g, '') ),
-                        closing: item.querySelectorAll('td')[2].textContent.trim(),
-                        change: item.querySelectorAll('td')[3] ? item.querySelectorAll('td')[3].textContent.trim() : 0,
-                        percentage: item.querySelectorAll('td')[4] ? item.querySelectorAll('td')[4].textContent.trim() : 0,
+                        volume: parseInt( item.querySelectorAll('td')[1].textContent.trim().replace(/,/g, ''), 10 ),
+                        closing: parseFloat( item.querySelectorAll('td')[2].textContent.trim().replace(/,/g, '') ),
+                        change: item.querySelectorAll('td')[3] ? parseFloat( item.querySelectorAll('td')[3].textContent.trim().replace(/,/g, '') ) : 0,
+                        percentage: item.querySelectorAll('td')[4] ? parseFloat( item.querySelectorAll('td')[4].textContent.trim().replace(/,/g, '') ) : 0,
                         date: document.querySelector('#dateInput').value
                     });
                 });
