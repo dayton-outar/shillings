@@ -40,6 +40,8 @@ namespace Harpoon
 
             services.AddDbContext<StocksQuery>(options =>
               options.UseSqlServer(connectionString, b => b.MigrationsAssembly("Harpoon")));
+
+            services.AddGraphQLServer().AddQueryType<StocksQuery>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -58,10 +60,16 @@ namespace Harpoon
 
             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
+            //app.UseEndpoints(endpoints =>
+            //{
+            //    endpoints.MapControllers();
+            //});
+
+            app.UseRouting()
+                .UseEndpoints( endpoints => 
+                {
+                    endpoints.MapGraphQL();
+                });
         }
     }
 }

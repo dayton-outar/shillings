@@ -116,3 +116,9 @@ Grant _scraper.sh_ executable permissions
 ```bash
 chmod +x [host directory]/scripts/scraper.sh
 ```
+
+## GraphQL
+
+Navigate to https://localhost:5001/graphql/ to get GraphQL endpoint
+
+[Getting started with Hot Chocolate](https://chillicream.com/docs/hotchocolate/get-started)
