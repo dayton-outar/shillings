@@ -122,3 +122,5 @@ chmod +x [host directory]/scripts/scraper.sh
 Navigate to https://localhost:5001/graphql/ to get GraphQL endpoint
 
 [Getting started with Hot Chocolate](https://chillicream.com/docs/hotchocolate/get-started)
+
+[Get started with Hot Chocolate and Entity Framework](https://chillicream.com/blog/2020/03/18/entity-framework)
