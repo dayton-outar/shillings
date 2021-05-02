@@ -26,8 +26,16 @@ namespace O8Query.Models
     public enum EventType
     {
         /// <summary>
-        /// Logs for successfully scraping Jamaica Stock Exchange Daily Summary
+        /// An information event. This indicates a significant, successful operation.
         /// </summary>
-        JSE
+        Information,
+        /// <summary>
+        /// An error event. This indicates a significant problem the user should know about; usually a loss of functionality or data.
+        /// </summary>
+        Warning,
+        /// <summary>
+        /// A warning event. This indicates a problem that is not immediately significant, but that may signify conditions that could cause future problems.
+        /// </summary>
+        Error
     }
 }
