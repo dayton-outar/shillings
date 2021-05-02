@@ -111,3 +111,8 @@ dotnet ef database update
 | Monthly | `0 0 1 * *` |
 | Annually | `0 0 1 1 *` |
 | Everyday at 12 PM for the first 6 months of the year | `0 11 * 1-6 *` |
+
+Grant _scraper.sh_ executable permissions
+```bash
+chmod +x [host directory]/scripts/scraper.sh
+```
