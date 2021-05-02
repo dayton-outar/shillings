@@ -136,6 +136,9 @@ if ( args[1] ) {
 }
 
 if ( args.length == 1 ) {
+    runner( false, moment().format('YYYY-MM-DD') );
+}
+else if ( args.length == 1 ) {
     runner( false, moment( args[0] ).format('YYYY-MM-DD') );  
 } else {
     if ( args[1] === '++' ) {
