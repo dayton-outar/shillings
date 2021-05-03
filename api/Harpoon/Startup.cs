@@ -19,9 +19,12 @@ namespace Harpoon
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        private readonly IWebHostEnvironment _env;
+
+        public Startup(IConfiguration configuration, IWebHostEnvironment env)
         {
             Configuration = configuration;
+            _env = env;
         }
 
         public IConfiguration Configuration { get; }
@@ -38,10 +41,15 @@ namespace Harpoon
 
             string connectionString = Configuration.GetConnectionString("HarpoonDatabase");
 
-            services.AddDbContext<StocksQuery>(options =>
-              options.UseSqlServer(connectionString, b => b.MigrationsAssembly("Harpoon")));
-
-            services.AddGraphQLServer().AddQueryType<StocksQuery>();
+            services.AddPooledDbContextFactory<StocksQuery>(
+                options =>
+                    options.UseSqlServer(connectionString, b => b.MigrationsAssembly("Harpoon")) )
+                .AddGraphQLServer()
+                // For debugging purposes. Credit https://stackoverflow.com/questions/65764361/how-can-i-get-more-error-details-or-logging-when-an-exception-is-thrown-in-a-ho
+                .ModifyRequestOptions(opt => opt.IncludeExceptionDetails = _env.IsDevelopment())
+                .AddQueryType<Query>()
+                .AddFiltering()
+                .AddSorting();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,24 +58,19 @@ namespace Harpoon
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Harpoon v1"));
+                //app.UseSwagger();
+                //app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Harpoon v1"));
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
 
-            app.UseAuthorization();
+            //app.UseAuthorization();
 
-            //app.UseEndpoints(endpoints =>
-            //{
-            //    endpoints.MapControllers();
-            //});
-
-            app.UseRouting()
-                .UseEndpoints( endpoints => 
+            app.UseEndpoints( endpoints => 
                 {
+                    //endpoints.MapControllers();
                     endpoints.MapGraphQL();
                 });
         }
