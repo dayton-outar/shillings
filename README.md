@@ -186,5 +186,3 @@ query {
   }
 }
 ```
-
-TODO: How do I remove the 10 record limit default for queries?
