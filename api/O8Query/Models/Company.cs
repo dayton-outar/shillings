@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -16,5 +17,8 @@ namespace O8Query.Models
 
         [Required]
         public DateTime Created { get; set; }
+
+        //[ForeignKey("SecurityCode")]
+        //public virtual ICollection<StockTrading> StockTradings { get; set; }
     }
 }

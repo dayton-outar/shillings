@@ -10,10 +10,10 @@ namespace O8Query.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long No { get; set; }
 
-        [Required]
-        public Log Log { get; set; }
+        [ForeignKey("LogNo")]
+        public virtual Log Log { get; set; }
 
-        [Required]
+        [ForeignKey("SecurityCode")]
         public Company Security { get; set; }
         
         [Required]

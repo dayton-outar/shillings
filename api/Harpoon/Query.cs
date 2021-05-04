@@ -1,10 +1,11 @@
 using System.Linq;
 using HotChocolate;
+using HotChocolate.Data;
+using HotChocolate.Types;
+using Microsoft.EntityFrameworkCore;
 
 using O8Query.Models;
 using O8Query.Data;
-using HotChocolate.Data;
-using HotChocolate.Types;
 
 namespace Harpoon
 {
@@ -14,7 +15,7 @@ namespace Harpoon
         [UsePaging]
         [UseFiltering]
         [UseSorting]
-        public IQueryable<StockTrading> GetStockTradings([ScopedService]StocksQuery sq) => sq.StockTradings;
+        public IQueryable<StockTrading> GetStockTradings([ScopedService]StocksQuery sq) => sq.StockTradings.Include(t => t.Security);
 
         [UseDbContext(typeof(StocksQuery))]
         [UsePaging]

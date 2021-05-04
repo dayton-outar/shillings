@@ -42,8 +42,10 @@ namespace Harpoon
             string connectionString = Configuration.GetConnectionString("HarpoonDatabase");
 
             services.AddPooledDbContextFactory<StocksQuery>(
-                options =>
-                    options.UseSqlServer(connectionString, b => b.MigrationsAssembly("Harpoon")) )
+                options => 
+                    options
+                        .UseSqlServer(connectionString, b => b.MigrationsAssembly("Harpoon"))
+                )
                 .AddGraphQLServer()
                 // For debugging purposes. Credit https://stackoverflow.com/questions/65764361/how-can-i-get-more-error-details-or-logging-when-an-exception-is-thrown-in-a-ho
                 .ModifyRequestOptions(opt => opt.IncludeExceptionDetails = _env.IsDevelopment())

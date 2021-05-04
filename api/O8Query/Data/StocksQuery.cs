@@ -14,5 +14,10 @@ namespace O8Query.Data
         public DbSet<StockTrading> StockTradings { get; set; }
 
         public DbSet<Log> Logs { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            
+        }
     }
 }
