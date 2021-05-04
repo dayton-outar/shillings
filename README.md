@@ -169,3 +169,22 @@ query {
   }
 }
 ```
+
+```graphql
+query {
+  companies (
+    order: { security: ASC}
+    
+  ) {
+    edges {
+      node {
+        code,
+        security,
+        created
+      }
+    }
+  }
+}
+```
+
+TODO: How do I remove the 10 record limit default for queries?
