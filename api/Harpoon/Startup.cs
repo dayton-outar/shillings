@@ -32,13 +32,6 @@ namespace Harpoon
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
-            //services.AddControllers();
-            //services.AddSwaggerGen(c =>
-            //{
-            //    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Harpoon", Version = "v1" });
-            //});
-
             string connectionString = Configuration.GetConnectionString("HarpoonDatabase");
 
             services.AddPooledDbContextFactory<StocksQuery>(
@@ -61,8 +54,6 @@ namespace Harpoon
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                //app.UseSwagger();
-                //app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Harpoon v1"));
             }
 
             //app.UseHttpsRedirection();
@@ -73,7 +64,6 @@ namespace Harpoon
 
             app.UseEndpoints( endpoints => 
                 {
-                    //endpoints.MapControllers();
                     endpoints.MapGraphQL();
                 });
         }
