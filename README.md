@@ -124,3 +124,48 @@ Navigate to https://localhost:5001/graphql/ to get GraphQL endpoint
 [Getting started with Hot Chocolate](https://chillicream.com/docs/hotchocolate/get-started)
 
 [Get started with Hot Chocolate and Entity Framework](https://www.softwareis.cool/hotchocolate-and-efcore/)
+
+
+Below query get first 10 from descending order of complete list in database
+
+```graphql
+{
+  stockTradings(order: {date: DESC}) {
+    nodes {
+      security {
+        code,
+        security
+      },
+      volume,
+      priceChange,
+      percentage,
+      date
+    }
+  }
+}
+```
+
+Get the latest 50 stocks with code `bil` and `mil` that were traded recently
+
+```graphql
+query {
+  stockTradings(
+    first: 50
+    where: { or: [{ security: { code: { eq: "bil" } } }, { security: { code: { eq: "mil" } } }] }
+    order: {date: DESC}
+  ) {
+    edges {
+      node {
+        security {
+          code,
+          security
+        },
+        volume,
+        priceChange,
+        percentage,
+        date
+      }
+    }
+  }
+}
+```

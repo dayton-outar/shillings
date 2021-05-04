@@ -11,7 +11,7 @@ namespace O8Query.Models
         public long No { get; set; }
 
         [ForeignKey("LogNo")]
-        public virtual Log Log { get; set; }
+        public Log Log { get; set; }
 
         [ForeignKey("SecurityCode")]
         public Company Security { get; set; }
