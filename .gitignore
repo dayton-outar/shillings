@@ -7,4 +7,4 @@ obj
 *.dll
 *.pdb
 .env
-scraper-logs.txt
+*.log

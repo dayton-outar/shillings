@@ -1,2 +1,2 @@
-echo "Executing scraper at $(date)" > scraper-logs.txt
-node /home/dayton/Documents/Projects/octopussimizer/service/o8$.js
+echo "Executing scraper at $(date)" >> scraper-logs.log
+node /home/dayton/Documents/Projects/octopussimizer/service/o8$.js >> scraper-logs.log
