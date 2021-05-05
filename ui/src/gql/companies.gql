@@ -1,0 +1,14 @@
+query {
+  companies (
+    order: { security: ASC}
+    
+  ) {
+    edges {
+      node {
+        code,
+        security,
+        created
+      }
+    }
+  }
+}
