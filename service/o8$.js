@@ -135,7 +135,7 @@ if ( args[1] ) {
     }
 }
 
-if ( args.length == 1 ) {
+if ( args.length == 0 ) {
     runner( false, moment().format('YYYY-MM-DD') );
 }
 else if ( args.length == 1 ) {

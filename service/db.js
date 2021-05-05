@@ -41,6 +41,8 @@ const O8Q = {
             let dbr = await pool.request()
                 .input('stocks', sql.Xml, stocks)
                 .execute('UpdateStockTradings');
+            
+            console.log(dbr);
 
             result = {
                 success: dbr.returnValue === 0,
