@@ -24,7 +24,7 @@ export default {
   setup() {
     const companiesQuery = gql`query {
       companies (
-        first: 50
+        first: 100
         order: { security: ASC}
         
       ) {
