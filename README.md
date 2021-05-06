@@ -222,6 +222,40 @@ query {
 }
 ```
 
+Moving to next page
+
+```gql
+query {
+  stockTradings(
+    first: 10
+    after: "MTk="
+    where: { or: [{ security: { code: { eq: "bil" } } }, { security: { code: { eq: "mil" } } }] }
+    order: {date: DESC}
+  ) {
+    edges {
+      cursor
+      node {
+        security {
+          code,
+          security
+        },
+        volume,
+        priceChange,
+        percentage,
+        date
+      }
+    }
+    totalCount
+    pageInfo {
+      startCursor
+      endCursor
+      hasPreviousPage
+      hasNextPage
+    }
+  }
+}
+```
+
 Had to add [UseProjections] to get totalCount. Documentation on ChilliCream not very friendly
 
 Had some issue installing a package to integrate vue with graphql and [this reference](https://www.gitmemory.com/issue/vuejs/vue-apollo/1156/821996642) really helped by giving me the following command,
