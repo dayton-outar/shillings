@@ -32,7 +32,13 @@ namespace Harpoon
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddCors();
+            services.AddCors( o => {
+                o.AddDefaultPolicy(b => {
+                    b.WithOrigins(new string[] { "http://localhost:8080" })
+                    .AllowAnyHeader()
+                    .AllowAnyMethod();
+                });
+            });
 
             string connectionString = Configuration.GetConnectionString("HarpoonDatabase");
 
@@ -58,9 +64,7 @@ namespace Harpoon
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseCors(
-                options => options.WithOrigins("http://localhost:8080").AllowAnyMethod()
-            );
+            app.UseCors();
 
             //app.UseHttpsRedirection();
 
