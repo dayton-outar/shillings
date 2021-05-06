@@ -12,7 +12,7 @@ namespace Harpoon
     public class Query
     {
         [UseDbContext(typeof(StocksQuery))]
-        [UsePaging]
+        [UsePaging(DefaultPageSize = 50)]
         [UseFiltering]
         [UseSorting]
         public IQueryable<StockTrading> GetStockTradings([ScopedService]StocksQuery sq) => sq.StockTradings.Include(t => t.Security);

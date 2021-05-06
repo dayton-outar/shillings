@@ -49,6 +49,7 @@ namespace Harpoon
                         .UseLoggerFactory(s.GetRequiredService<ILoggerFactory>())
                 )
                 .AddGraphQLServer()
+                .SetPagingOptions(new HotChocolate.Types.Pagination.PagingOptions{ DefaultPageSize = 20, MaxPageSize = 100, IncludeTotalCount = true })
                 // For debugging purposes. Credit https://stackoverflow.com/questions/65764361/how-can-i-get-more-error-details-or-logging-when-an-exception-is-thrown-in-a-ho
                 .ModifyRequestOptions(opt => opt.IncludeExceptionDetails = _env.IsDevelopment())
                 .AddQueryType<Query>()
