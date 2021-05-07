@@ -8,3 +8,5 @@ obj
 *.pdb
 .env
 *.log
+
+scripts/scraper.sh
