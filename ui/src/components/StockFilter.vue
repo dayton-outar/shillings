@@ -2,13 +2,14 @@
   <div>
     <p>{{ msg }}</p>
     <section>
-      <b-button @click="clickMe">Click Me</b-button>
-
-      <b-dropdown>
+      <b-dropdown
+        :expanded="true"
+        aria-role="list">
         <template #trigger="{ active }">
           <b-button
                   label="Companies"
                   type="is-primary"
+                  expanded
                   :icon-right="active ? 'menu-up' : 'menu-down'" />
         </template>
         
