@@ -1,14 +1,19 @@
 # Octopussimizer
 
-Crawling through a web site to find all its pages and feel through each page with the tentacles of an octopus to perform page optimization by decreasing file size where necessary and making use of minifying and bundling tools.
+Initially this application was built to crawl through a web site to identify all CSS styles and to optimize the CSS files to remove irrelevant styles for each page. It was a file optimization tool specifically for decreasing the payload of the CSS files. This application is now used to scrape data from pages that contain data with daily summary of stock trades. It uses a cluster of applications to achieve this objective.
 
 ## Requirements
 
 So, the main idea for optimizing a page or, better yet, a web site is to,
 
- * Remove unused (or irrelevant) styles from the stylesheets linked by each page in order to decrease file size
- * Minify JavaScript (JS) files by removing as much white space as possible in order to decrease file size
- * Bundle CSS and JS files into one file each respectively so as to decrease roundtrips to the server
+ * [Node](https://nodejs.org/en/) 14.15 or greater
+ * [Vue](https://vuejs.org/)
+ * [Vue-Apollo](https://apollo.vuejs.org/)
+ * [Buefy](https://buefy.org/)
+ * [HighCharts](https://www.highcharts.com/)
+ * [.NET 5](https://dotnet.microsoft.com/download/dotnet/5.0)
+ * [Entity Framework](https://docs.microsoft.com/en-us/ef/)
+ * [Hot Chocolate](https://chillicream.com/docs/)
 
 All the above should be in the core library of the software.
 
@@ -263,3 +268,8 @@ Had some issue installing a package to integrate vue with graphql and [this refe
 ```bash
 npm install @vue/apollo-composable --save --legacy-peer-deps
 ```
+
+# Further Reading
+
+1. [GraphQL Pagination and Sorting](https://blog.reactioncommerce.com/how-to-implement-graphql-pagination-and-sorting/)
+2. [Vue Apollo v4: the first look](https://dev.to/n_tepluhina/vue-apollo-v4-the-first-look-c32)
