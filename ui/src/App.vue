@@ -1,46 +1,23 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <StockFilter msg="Welcome to Stock Watcher" />
-    <ul>
-    <li v-for="company in companies.nodes" :key="company.id">
-      <p>{{company.security}}</p>
-    </li>
-  </ul>
+  <div>
+    <div id="header">
+      <div class="container">
+        <img alt="Vue logo" src="./assets/logo.png">
+      </div>
+    </div>
+    <div class="container">
+      <StockFilter msg="Welcome to Stock Watcher" />
+    </div>
   </div>
 </template>
 
 <script>
 import StockFilter from './components/StockFilter.vue'
-import gql from 'graphql-tag'
 
 export default {
   name: 'App',
   components: {
     StockFilter
-  },
-  apollo: {
-    companies: {
-      query() {
-        return gql`query {
-          companies (
-            first: 100
-            order: { security: ASC}
-            
-          ) {
-            nodes {
-              code,
-              security,
-              created
-            }
-          }
-        }`
-      }
-    },
-    update: data => {
-      console.log(data)
-      return data.companies.nodes
-    }
   },
   created() {
     console.log('App created')
@@ -55,12 +32,21 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+#header {
+    padding-top: 36px;
+    padding-bottom: 32px;
+    width: 100%;
+    background: #013769;
+    background: -moz-linear-gradient(left, #013769 0%, #0082c0 54%, #013769 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#013769), color-stop(54%,#0082c0), color-stop(100%,#013769));
+    background: -webkit-linear-gradient(left, #013769 0%,#0082c0 54%,#013769 100%);
+    background: -o-linear-gradient(left, #013769 0%,#0082c0 54%,#013769 100%);
+    background: -ms-linear-gradient(left, #013769 0%,#0082c0 54%,#013769 100%);
+    background: linear-gradient(to right, #013769 0%,#0082c0 54%,#013769 100%);
+    -webkit-box-shadow: 0 20px 58px #013b6b inset;
+    -ms-box-shadow: 0 20px 58px #013b6b inset;
+    box-shadow: 0 20px 58px #013b6b inset;
 }
+
 </style>
