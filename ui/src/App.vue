@@ -1,46 +1,55 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-  <ul>
-    <li v-for="company in companies" :key="company.id">
+  <div id="app">
+    <img alt="Vue logo" src="./assets/logo.png">
+    <StockFilter msg="Welcome to Stock Watcher" />
+    <ul>
+    <li v-for="company in companies.nodes" :key="company.id">
       <p>{{company.security}}</p>
     </li>
   </ul>
+  </div>
 </template>
 
 <script>
-
-import HelloWorld from './components/HelloWorld.vue'
-import { gql } from '@apollo/client'
-import { ref } from 'vue'
-import { useQuery, useResult } from '@vue/apollo-composable'
-//import companiesQuery from './gql/companies.gql'
+import StockFilter from './components/StockFilter.vue'
+import gql from 'graphql-tag'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    StockFilter
   },
-  setup() {
-    const companiesQuery = gql`query {
-      companies (
-        first: 100
-        order: { security: ASC}
-        
-      ) {
-        nodes {
-          code,
-          security,
-          created
-        }
+  apollo: {
+    companies: {
+      query() {
+        return gql`query {
+          companies (
+            first: 100
+            order: { security: ASC}
+            
+          ) {
+            nodes {
+              code,
+              security,
+              created
+            }
+          }
+        }`
       }
-    }`
-    const { result } = useQuery(companiesQuery)
-    const companies = useResult(result, null, data => data.companies.nodes)
-
-    console.log(companies)
-
-    return { companies }
+    },
+    update: data => {
+      console.log(data)
+      return data.companies.nodes
+    }
+  },
+  created() {
+    console.log('App created')
+  },
+  mounted() {
+    console.log('App mounted')
+  },
+  destroyed() {
+    console.log('App destroyed')
   }
 }
 </script>

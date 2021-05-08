@@ -1,4 +1,4 @@
-# stock-watcher
+# stock-watch
 
 ## Project setup
 ```
