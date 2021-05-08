@@ -3,18 +3,23 @@
     <section>
       <b-dropdown
         :expanded="true"
+        v-model="currentCompany"
         aria-role="list">
-        <template #trigger="{ active }">
+        <template #trigger>
           <b-button
-                  label="Companies"
+                  :label="currentCompany.security"
                   type="is-primary"
                   expanded
-                  :icon-right="active ? 'menu-up' : 'menu-down'" />
+                  icon-right="menu-down" />
         </template>
         
-        <b-dropdown-item aria-role="listitem" v-for="company in companies" :key="company.id">
+        <b-dropdown-item aria-role="listitem" 
+            v-for="company in companies" 
+            :key="company.code"
+            :value="company">
           {{company.security}}
         </b-dropdown-item>
+
       </b-dropdown>
     </section>
   </div>
@@ -32,6 +37,11 @@ export default {
   },
   data() {
     return {
+      currentCompany: {
+        code: 'all',
+        security: 'Companies',
+        created: new Date()
+      },
       companies: []
     }
   },
