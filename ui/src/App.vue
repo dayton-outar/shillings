@@ -7,17 +7,23 @@
     </div>
     <div class="container">
       <StockFilter />
+      <VolumesPie />
+      <StocksLine />
     </div>
   </div>
 </template>
 
 <script>
 import StockFilter from './components/StockFilter.vue'
+import VolumesPie from './components/VolumesPie.vue'
+import StocksLine from './components/StocksLine.vue'
 
 export default {
   name: 'App',
   components: {
-    StockFilter
+    StockFilter,
+    VolumesPie,
+    StocksLine
   },
   created() {
     console.log('App created')
