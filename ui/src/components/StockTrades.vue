@@ -40,6 +40,7 @@ export default {
           stockTradings(
             first: 50
             order: {date: DESC}
+            where: { date: { eq: "2021-05-07T00:00:00.0000000Z" } }
           ) {
             edges {
               cursor
