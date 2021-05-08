@@ -53,9 +53,9 @@ namespace Harpoon
                 // For debugging purposes. Credit https://stackoverflow.com/questions/65764361/how-can-i-get-more-error-details-or-logging-when-an-exception-is-thrown-in-a-ho
                 .ModifyRequestOptions(opt => opt.IncludeExceptionDetails = _env.IsDevelopment())
                 .AddQueryType<Query>()
-                .AddProjections()
                 .AddFiltering()
-                .AddSorting();
+                .AddSorting()
+                .AddProjections();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

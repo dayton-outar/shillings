@@ -17,6 +17,7 @@
     "graphql": "^15.5.0",
     "graphql-tag": "^2.12.4",
     "highcharts": "^9.1.0",
+    "moment": "^2.29.1",
     "vue": "^2.6.11",
     "vue-apollo": "^3.0.7"
   },

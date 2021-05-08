@@ -18,6 +18,12 @@ namespace Harpoon
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
+                .ConfigureLogging((h, l) => {
+                    l.AddConfiguration(h.Configuration.GetSection("Logging"))
+                     .AddConsole()
+                     .AddDebug()
+                     .AddEventSourceLogger();
+                })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
