@@ -29,7 +29,7 @@ All the above should be in the core library of the software.
 
 ...
 
-# Developer Notes
+## Developer Notes
 
 Credit to [How to Use .NET Core CLI to Create a Multi-Project Solution](https://www.skylinetechnologies.com/Blog/Skyline-Blog/February_2018/how-to-use-dot-net-core-cli-create-multi-project) by Ben Buhr
 
@@ -269,7 +269,7 @@ Had some issue installing a package to integrate vue with graphql and [this refe
 npm install @vue/apollo-composable --save --legacy-peer-deps
 ```
 
-# Further Reading
+## Further Reading
 
 1. [GraphQL Pagination and Sorting](https://blog.reactioncommerce.com/how-to-implement-graphql-pagination-and-sorting/)
 2. [Vue Apollo v4: the first look](https://dev.to/n_tepluhina/vue-apollo-v4-the-first-look-c32)
