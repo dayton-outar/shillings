@@ -7,8 +7,16 @@
     </div>
     <div class="container">
       <StockFilter />
-      <VolumesPie />
+      <div class="columns">
+        <div class="column">
+          <VolumesPie />
+        </div>
+        <div class="column">
+          <PriceBar />
+        </div>
+      </div>
       <StocksLine />
+      <StockTrades />
     </div>
   </div>
 </template>
@@ -17,13 +25,17 @@
 import StockFilter from './components/StockFilter.vue'
 import VolumesPie from './components/VolumesPie.vue'
 import StocksLine from './components/StocksLine.vue'
+import StockTrades from './components/StockTrades.vue'
+import PriceBar from './components/PriceBar.vue'
 
 export default {
   name: 'App',
   components: {
     StockFilter,
     VolumesPie,
-    StocksLine
+    StocksLine,
+    StockTrades,
+    PriceBar
   },
   created() {
     console.log('App created')

@@ -1,26 +1,37 @@
 <template>
   <div>
     <section>
-      <b-dropdown
-        :expanded="true"
-        v-model="currentCompany"
-        aria-role="list">
-        <template #trigger>
-          <b-button
-                  :label="currentCompany.security"
-                  type="is-primary"
-                  expanded
-                  icon-right="menu-down" />
-        </template>
-        
-        <b-dropdown-item aria-role="listitem" 
-            v-for="company in companies" 
-            :key="company.code"
-            :value="company">
-          {{company.security}}
-        </b-dropdown-item>
+      <div class="columns">
+        <div class="column">
+          <b-datepicker
+            placeholder="Click to select..."
+            v-model="dates"
+            range>
+          </b-datepicker>
+        </div>
+        <div class="column is-two-thirds">
+          <b-dropdown
+            :expanded="true"
+            v-model="currentCompany"
+            aria-role="list">
+            <template #trigger>
+              <b-button
+                      :label="currentCompany.security"
+                      type="is-primary"
+                      expanded
+                      icon-right="menu-down" />
+            </template>
+            
+            <b-dropdown-item aria-role="listitem" 
+                v-for="company in companies" 
+                :key="company.code"
+                :value="company">
+              {{company.security}}
+            </b-dropdown-item>
 
-      </b-dropdown>
+          </b-dropdown>
+        </div>
+      </div>
     </section>
   </div>
 </template>
@@ -37,8 +48,9 @@ export default {
   },
   data() {
     return {
+      dates: [],
       currentCompany: {
-        code: 'all',
+        code: '--',
         security: 'Companies',
         created: new Date()
       },
