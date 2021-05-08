@@ -12,7 +12,7 @@
                   :icon-right="active ? 'menu-up' : 'menu-down'" />
         </template>
         
-        <b-dropdown-item aria-role="listitem" v-for="company in companies.nodes" :key="company.id">
+        <b-dropdown-item aria-role="listitem" v-for="company in companies" :key="company.id">
           {{company.security}}
         </b-dropdown-item>
       </b-dropdown>
@@ -30,10 +30,15 @@ export default {
       this.$buefy.notification.open('Clicked!')
     }
   },
+  data() {
+    return {
+      companies: []
+    }
+  },
   apollo: {
     companies: {
       query() {
-        return gql`query {
+        let r = gql`query {
           companies (
             first: 100
             order: { security: ASC}
@@ -46,11 +51,12 @@ export default {
             }
           }
         }`
+
+        return r
+      },
+      update (data) {
+        return data.companies.nodes
       }
-    },
-    update: data => {
-      console.log(data)
-      return data.companies.nodes
     }
   }
 }
