@@ -23,6 +23,10 @@ export default {
               label: 'Volume'
           },
           {
+              field: 'node.closingPrice',
+              label: 'Closing Price'
+          },
+          {
               field: 'node.priceChange',
               label: 'Price Change'
           },
@@ -50,6 +54,7 @@ export default {
                   security
                 },
                 volume,
+                closingPrice,
                 priceChange,
                 percentage,
                 date
