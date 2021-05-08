@@ -1,6 +1,5 @@
 <template>
   <div>
-    <p>{{ msg }}</p>
     <section>
       <b-dropdown
         :expanded="true"
@@ -26,9 +25,6 @@ import gql from 'graphql-tag'
 
 export default {
   name: 'StockFilter',
-  props: {
-    msg: String
-  },
   methods: {
     clickMe() {
       this.$buefy.notification.open('Clicked!')

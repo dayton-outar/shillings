@@ -6,7 +6,7 @@
       </div>
     </div>
     <div class="container">
-      <StockFilter msg="Welcome to Stock Watcher" />
+      <StockFilter />
     </div>
   </div>
 </template>
