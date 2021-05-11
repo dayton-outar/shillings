@@ -273,3 +273,7 @@ npm install @vue/apollo-composable --save --legacy-peer-deps
 
 1. [GraphQL Pagination and Sorting](https://blog.reactioncommerce.com/how-to-implement-graphql-pagination-and-sorting/)
 2. [Vue Apollo v4: the first look](https://dev.to/n_tepluhina/vue-apollo-v4-the-first-look-c32)
+3. [Vue Apollo: Smart Query](https://apollo.vuejs.org/api/smart-query.html#options)
+4. [Entity Framework Core: Show Parameter Values in Logging](https://elanderson.net/2019/03/entity-framework-core-show-parameter-values-in-logging/)
+5. [How do you show underlying SQL query in EF Core?](https://stackoverflow.com/questions/45893732/how-do-you-show-underlying-sql-query-in-ef-core)
+6. [GraphQL Workshop](https://github.com/ChilliCream/graphql-workshop)
