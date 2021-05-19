@@ -1,83 +1,43 @@
 <template>
   <section>
-    <p>{{ tradings.edges.length }} stocks traded</p>
-    <b-table :data="tradings.edges" :columns="columns"></b-table>
+    <p>{{ tradings.length }} stocks traded</p>
+    <b-table :data="tradings" :columns="columns"></b-table>
   </section>
 </template>
 
 <script>
-import gql from 'graphql-tag'
 
 export default {
   name: 'StockTrades',
+  props: ['tradings'],
   data() {
     return {
-      tradings: [],
       columns: [
           {
-              field: 'node.security.security',
+              field: 'security',
               label: 'Security'
           },
           {
-              field: 'node.volume',
+              field: 'volume',
               label: 'Volume'
           },
           {
-              field: 'node.closingPrice',
+              field: 'closingPrice',
               label: 'Closing Price'
           },
           {
-              field: 'node.priceChange',
+              field: 'priceChange',
               label: 'Price Change'
           },
           {
-              field: 'node.percentage',
+              field: 'percentage',
               label: 'Percentage'
           }
       ]
     }
-  },
-  apollo: {
-    tradings: {
-      query() {
-        let r = gql`query {
-          stockTradings(
-            first: 50
-            order: {date: DESC}
-            where: { date: { eq: "2021-05-07T00:00:00.0000000Z" } }
-          ) {
-            edges {
-              cursor
-              node {
-                security {
-                  code,
-                  security
-                },
-                volume,
-                closingPrice,
-                priceChange,
-                percentage,
-                date
-              }
-            }
-            totalCount
-            pageInfo {
-              startCursor
-              endCursor
-              hasPreviousPage
-              hasNextPage
-            }
-          }
-        }`
-
-        return r
-      },
-      update (data) {
-        return data.stockTradings
-      }
-    }
   }
 }
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

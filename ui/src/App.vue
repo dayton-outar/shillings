@@ -9,19 +9,20 @@
       <StockFilter />
       <div class="columns">
         <div class="column">
-          <VolumesPie />
+          <VolumesPie v-bind:volumeShares="tradings.volumeShares" />
         </div>
         <div class="column">
           <PriceBar />
         </div>
       </div>
       <StocksLine />
-      <StockTrades />
+      <StockTrades v-bind:tradings="tradings.stocksTraded" />
     </div>
   </div>
 </template>
 
 <script>
+import gql from 'graphql-tag'
 import StockFilter from './components/StockFilter.vue'
 import VolumesPie from './components/VolumesPie.vue'
 import StocksLine from './components/StocksLine.vue'
@@ -38,13 +39,85 @@ export default {
     PriceBar
   },
   created() {
-    console.log('App created')
+    //
   },
   mounted() {
-    console.log('App mounted')
+    //
   },
   destroyed() {
-    console.log('App destroyed')
+    //
+  },
+  data() {
+    return {
+      tradings: {
+        stocksTraded: []
+      }
+    }
+  },
+  apollo: {
+    tradings: {
+      query() {
+        let r = gql`query {
+          stockTradings(
+            first: 100
+            order: {date: DESC}
+            where: { and: [{date: { gte: "2021-05-17T00:00:00.0000000Z" }}, {date: { lte: "2021-05-18T00:00:00.0000000Z" }}] }
+          ) {
+            edges {
+              cursor
+              node {
+                security {
+                  code,
+                  security
+                },
+                volume,
+                closingPrice,
+                priceChange,
+                percentage,
+                date
+              }
+            }
+            totalCount
+            pageInfo {
+              startCursor
+              endCursor
+              hasPreviousPage
+              hasNextPage
+            }
+          }
+        }`
+
+        return r
+      },
+      update (data) {
+
+        const stocksTraded = data.stockTradings.edges.map(e => {
+          return {
+            security: e.node.security.security,
+            volume: e.node.volume,
+            closingPrice: e.node.closingPrice,
+            priceChange: e.node.priceChange,
+            percentage: e.node.percentage
+          }
+        })
+
+        const volumeShares = stocksTraded.map(t => {
+          return {
+            name: t.security,
+            y: t.volume,
+            sliced: false,
+            selected: false
+          }
+        })
+
+        console.log(stocksTraded.length)
+
+        return {
+          stocksTraded,
+          volumeShares
+        }
+      }
+    }
   }
 }
 </script>
