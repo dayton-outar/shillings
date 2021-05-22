@@ -23,6 +23,7 @@
 
 <script>
 import gql from 'graphql-tag'
+
 import StockFilter from './components/StockFilter.vue'
 import VolumesPie from './components/VolumesPie.vue'
 import StocksLine from './components/StocksLine.vue'
@@ -109,6 +110,15 @@ export default {
             selected: false
           }
         })
+
+        const priceChanges = stocksTraded.reduce((a, c) => {
+          a['name'] = c.security
+          a['data'] = a['data'] || []
+          a['data'].push(c.priceChange)
+          return a
+        })
+
+        console.log( priceChanges );
 
         console.log(stocksTraded.length)
 

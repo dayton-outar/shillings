@@ -277,3 +277,9 @@ npm install @vue/apollo-composable --save --legacy-peer-deps
 4. [Entity Framework Core: Show Parameter Values in Logging](https://elanderson.net/2019/03/entity-framework-core-show-parameter-values-in-logging/)
 5. [How do you show underlying SQL query in EF Core?](https://stackoverflow.com/questions/45893732/how-do-you-show-underlying-sql-query-in-ef-core)
 6. [GraphQL Workshop](https://github.com/ChilliCream/graphql-workshop)
+
+## Video Tutorial References
+
+1. [Vuex Crash Course](https://youtu.be/5lVQgZzLMHc)
+2. [Vuex Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9i371QO_Rtkl26MwtiJ30P2)
+3. [Vue JS 2](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gQcYgjhBoeQH7wiAyZNrYa)
