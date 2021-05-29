@@ -112,11 +112,19 @@ export default {
         })
 
         const priceChanges = stocksTraded.reduce((a, c) => {
-          a['name'] = c.security
-          a['data'] = a['data'] || []
-          a['data'].push(c.priceChange)
+          let pos = a.map(e => e.name).indexOf(c.security)
+          
+          if (pos < 0) {
+            a.push({
+              name: c.security,
+              data: [ c.priceChange ]
+            });
+          } else {
+            a[pos]['data'].push(c.priceChange)
+          }
+          
           return a
-        })
+        }, [])
 
         console.log( priceChanges );
 

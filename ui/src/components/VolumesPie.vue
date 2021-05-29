@@ -40,7 +40,7 @@ export default {
             }
         },
         series: [{
-            name: 'Brands',
+            name: 'Stocks',
             colorByPoint: true,
             data: this.volumeShares
         }]
