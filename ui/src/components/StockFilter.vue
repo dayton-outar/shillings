@@ -39,7 +39,6 @@
 
 <script>
 import gql from 'graphql-tag'
-import moment from 'moment'
 
 export default {
   name: 'StockFilter',
@@ -48,7 +47,7 @@ export default {
       this.$buefy.notification.open('Clicked!')
     },
     dateChanged(v) {
-      console.log(moment(v[0]).format('MMM-DD-yyyy'), moment(v[1]).format('MMM-DD-yyyy'))
+      this.$emit('changedDate', v)
     }
   },
   data() {

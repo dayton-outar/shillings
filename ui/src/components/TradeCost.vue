@@ -9,7 +9,6 @@
         name: 'TradeCost',
         props: ['tradeCosts'],
         mounted() {
-            console.log(this.tradeCosts)
             window.Highcharts.chart('trade-cost', {
                 chart: {
                     type: 'bubble',

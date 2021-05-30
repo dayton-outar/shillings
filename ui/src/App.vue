@@ -6,7 +6,7 @@
       </div>
     </div>
     <div class="container">
-      <StockFilter />
+      <StockFilter @changedDate="dateChanged" />
       <VolumesPie :volumeShares="tradings.volumeShares" />
       <PriceBar :priceChanges="tradings.priceChanges" />
       <TradeCost :tradeCosts="tradings.tradeCosts" />
@@ -18,6 +18,7 @@
 
 <script>
 import gql from 'graphql-tag'
+import moment from 'moment'
 
 import StockFilter from './components/StockFilter.vue'
 import VolumesPie from './components/VolumesPie.vue'
@@ -45,18 +46,25 @@ export default {
   destroyed() {
     //
   },
+  methods: {
+    dateChanged(v) {
+      console.log(moment(v[0]).toISOString(), moment(v[1]).toISOString())
+      //this.$apollo.queries.tradings.refresh()
+    }
+  },
   data() {
     return {
-      tradings: null
+      tradings: null,
+      begin: moment().toISOString(),
+      end: moment().toISOString()
     }
   },
   apollo: {
     tradings: {
-      query() {
-        let r = gql`query {
+      query: gql`query {
           stockTradings(
             first: 100
-            order: {date: DESC}
+            order: { date: DESC }
             where: { and: [{date: { gte: "2021-05-28T00:00:00.0000000Z" }}, {date: { lte: "2021-05-28T00:00:00.0000000Z" }}] }
           ) {
             edges {
@@ -81,9 +89,11 @@ export default {
               hasNextPage
             }
           }
-        }`
-
-        return r
+        }`,
+      variables () {
+        return {
+          begin: moment('2021-05-28').toISOString()
+        }
       },
       update (data) {
 
@@ -136,6 +146,13 @@ export default {
           priceChanges,
           tradeCosts
         }
+      },
+      // Optional results hook
+      result ( { data, loading, networkStatus } ) {
+        console.log(`We've got some results!`, data, loading, networkStatus)
+      },
+      error (error) {
+        console.error(`We've got an error`, error)
       }
     }
   }
