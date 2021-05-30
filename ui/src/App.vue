@@ -50,15 +50,17 @@ export default {
   },
   methods: {
     dateChanged(v) {
-      console.log(moment(v[0]).toISOString(), moment(v[1]).toISOString())
-      //this.$apollo.queries.tradings.refresh()
+      console.log(moment.utc(v[0]).toISOString(), moment.utc(v[1]).toISOString())
+      this.begin = moment.utc(v[0]).toISOString()
+      this.end = moment.utc(v[1]).toISOString()
+      this.$apollo.queries.tradings.refresh()
     }
   },
   data() {
     return {
       tradings: null,
-      begin: moment().toISOString(),
-      end: moment().toISOString()
+      begin: moment.utc().toISOString(),
+      end: moment.utc().toISOString()
     }
   },
   apollo: {
@@ -95,8 +97,8 @@ export default {
       variables () {
         return {
           page: 50,
-          begin: "2021-05-28T00:00:00.0000000Z",
-          end: "2021-05-28T00:00:00.0000000Z"
+          begin: this.begin,
+          end: this.end
         }
       },
       update (data) {
