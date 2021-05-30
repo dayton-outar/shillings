@@ -4,14 +4,12 @@
 </template>
 
 <script>
-import Highcharts from 'highcharts'
 
 export default {
   name: 'VolumesPie',
   props: ['volumeShares'],
-  mounted() {    
-
-    Highcharts.chart('volumes-pie', {
+  mounted() {
+    window.Highcharts.chart('volumes-pie', {
         chart: {
             plotBackgroundColor: null,
             plotBorderWidth: null,

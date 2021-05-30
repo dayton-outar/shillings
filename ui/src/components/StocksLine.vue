@@ -4,15 +4,14 @@
 </template>
 
 <script>
-import Highcharts from 'highcharts'
 
 export default {
   name: 'StocksLine',
   mounted() {
     
-    Highcharts.chart('stocks-line', {
+    window.Highcharts.chart('stocks-line', {
         title: {
-            text: 'Stock Price Changes'
+            text: 'Stock Closing Price'
         },
         subtitle: {
             text: 'Source: www.jamstockex.com'

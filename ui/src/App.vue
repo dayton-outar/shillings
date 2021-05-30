@@ -7,14 +7,9 @@
     </div>
     <div class="container">
       <StockFilter />
-      <div class="columns">
-        <div class="column">
-          <VolumesPie v-bind:volumeShares="tradings.volumeShares" />
-        </div>
-        <div class="column">
-          <PriceBar />
-        </div>
-      </div>
+      <VolumesPie :volumeShares="tradings.volumeShares" />
+      <PriceBar :priceChanges="tradings.priceChanges" />
+      <TradeCost :tradeCosts="tradings.tradeCosts" />
       <StocksLine />
       <StockTrades v-bind:tradings="tradings.stocksTraded" />
     </div>
@@ -29,6 +24,7 @@ import VolumesPie from './components/VolumesPie.vue'
 import StocksLine from './components/StocksLine.vue'
 import StockTrades from './components/StockTrades.vue'
 import PriceBar from './components/PriceBar.vue'
+import TradeCost from './components/TradeCost.vue'
 
 export default {
   name: 'App',
@@ -37,7 +33,8 @@ export default {
     VolumesPie,
     StocksLine,
     StockTrades,
-    PriceBar
+    PriceBar,
+    TradeCost
   },
   created() {
     //
@@ -50,9 +47,7 @@ export default {
   },
   data() {
     return {
-      tradings: {
-        stocksTraded: []
-      }
+      tradings: null
     }
   },
   apollo: {
@@ -62,7 +57,7 @@ export default {
           stockTradings(
             first: 100
             order: {date: DESC}
-            where: { and: [{date: { gte: "2021-05-17T00:00:00.0000000Z" }}, {date: { lte: "2021-05-18T00:00:00.0000000Z" }}] }
+            where: { and: [{date: { gte: "2021-05-28T00:00:00.0000000Z" }}, {date: { lte: "2021-05-28T00:00:00.0000000Z" }}] }
           ) {
             edges {
               cursor
@@ -111,6 +106,15 @@ export default {
           }
         })
 
+        const tradeCosts = stocksTraded.map(t => {
+          return {
+            name: t.security,
+            x: t.volume,
+            y: t.priceChange,
+            z: t.volume * t.priceChange
+          }
+        })
+
         const priceChanges = stocksTraded.reduce((a, c) => {
           let pos = a.map(e => e.name).indexOf(c.security)
           
@@ -126,13 +130,11 @@ export default {
           return a
         }, [])
 
-        console.log( priceChanges );
-
-        console.log(stocksTraded.length)
-
         return {
           stocksTraded,
-          volumeShares
+          volumeShares,
+          priceChanges,
+          tradeCosts
         }
       }
     }
