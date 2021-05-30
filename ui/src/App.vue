@@ -38,6 +38,8 @@ export default {
     TradeCost
   },
   created() {
+    console.log(this.begin, this.end)
+
     //
   },
   mounted() {
@@ -61,11 +63,11 @@ export default {
   },
   apollo: {
     tradings: {
-      query: gql`query {
+      query: gql`query Get($page: Int!, $begin: DateTime, $end: DateTime) {
           stockTradings(
-            first: 100
+            first: $page
             order: { date: DESC }
-            where: { and: [{date: { gte: "2021-05-28T00:00:00.0000000Z" }}, {date: { lte: "2021-05-28T00:00:00.0000000Z" }}] }
+            where: { and: [{date: { gte: $begin }}, {date: { lte: $end }}] }
           ) {
             edges {
               cursor
@@ -92,7 +94,9 @@ export default {
         }`,
       variables () {
         return {
-          begin: moment('2021-05-28').toISOString()
+          page: 50,
+          begin: "2021-05-28T00:00:00.0000000Z",
+          end: "2021-05-28T00:00:00.0000000Z"
         }
       },
       update (data) {
