@@ -7,11 +7,11 @@
     </div>
     <div class="container">
       <StockFilter @changedDate="dateChanged" />
-      <VolumesPie :volumeShares="tradings.volumeShares" />
-      <PriceBar :priceChanges="tradings.priceChanges" />
-      <TradeCost :tradeCosts="tradings.tradeCosts" />
+      <VolumesPie v-if="tradings" :volumes="tradings.volumeShares" />
+      <PriceBar v-if="tradings" :changes="tradings.priceChanges" />
+      <TradeCost v-if="tradings" :costs="tradings.tradeCosts" />
       <StocksLine />
-      <StockTrades v-bind:tradings="tradings.stocksTraded" />
+      <StockTrades v-if="tradings" :tradings="tradings.stocksTraded" />
     </div>
   </div>
 </template>
@@ -38,21 +38,21 @@ export default {
     TradeCost
   },
   created() {
-    console.log(this.begin, this.end)
-
     //
   },
   mounted() {
     //
   },
+  updated() {
+    console.log('something was updated')
+  },
   destroyed() {
     //
   },
   methods: {
-    dateChanged(v) {
-      console.log(moment.utc(v[0]).toISOString(), moment.utc(v[1]).toISOString())
-      this.begin = moment.utc(v[0]).toISOString()
-      this.end = moment.utc(v[1]).toISOString()
+    dateChanged(v) {      
+      this.begin = `${ moment( v[0] ).format('YYYY-MM-DDT00:00:00.000') }Z` // Clumsy but it's a pain to remove the offset...
+      this.end = `${ moment( v[1] ).format('YYYY-MM-DDT00:00:00.000') }Z`
       this.$apollo.queries.tradings.refresh()
     }
   },
@@ -152,10 +152,6 @@ export default {
           priceChanges,
           tradeCosts
         }
-      },
-      // Optional results hook
-      result ( { data, loading, networkStatus } ) {
-        console.log(`We've got some results!`, data, loading, networkStatus)
       },
       error (error) {
         console.error(`We've got an error`, error)
