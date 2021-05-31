@@ -53,7 +53,7 @@ export default {
             zIndex: 3
             }],
             accessibility: {
-            rangeDescription: 'Range: a to b.'
+              rangeDescription: 'Range: a to b.'
             }
         },
         yAxis: {
@@ -118,10 +118,10 @@ export default {
     }
   },
   mounted() {
-    console.log('mount costs')
+    //
   },
   updated() {
-    console.log('update costs')
+    //
   }
 }
 

@@ -6,6 +6,7 @@
           <b-datepicker
             placeholder="Click to select..."
             v-model="dates"
+            :date-formatter="dateFormatter"
             range
             @input="dateChanged">
           </b-datepicker>
@@ -39,6 +40,7 @@
 
 <script>
 import gql from 'graphql-tag'
+import moment from 'moment'
 
 export default {
   name: 'StockFilter',
@@ -48,11 +50,14 @@ export default {
     },
     dateChanged(v) {
       this.$emit('changedDate', v)
+    },
+    dateFormatter(dates) {
+      return `${ moment(dates[0]).format('MMM-D-YYYY') } ⟶ ${ moment(dates[1]).format('MMM-D-YYYY') }`
     }
   },
   data() {
     return {
-      dates: [],
+      dates: [new Date(), new Date()],
       currentCompany: {
         code: '--',
         security: 'Companies',

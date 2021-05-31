@@ -19,19 +19,23 @@ export default {
           },
           {
               field: 'volume',
-              label: 'Volume'
+              label: 'Volume',
+              numeric: true
           },
           {
               field: 'closingPrice',
-              label: 'Closing Price'
+              label: 'Closing Price',
+              numeric: true
           },
           {
               field: 'priceChange',
-              label: 'Price Change'
+              label: 'Price Change',
+              numeric: true
           },
           {
               field: 'percentage',
-              label: 'Percentage'
+              label: 'Percentage',
+              numeric: true
           }
       ]
     }

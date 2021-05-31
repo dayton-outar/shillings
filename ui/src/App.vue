@@ -44,7 +44,7 @@ export default {
     //
   },
   updated() {
-    console.log('something was updated')
+    //
   },
   destroyed() {
     //
