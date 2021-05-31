@@ -46,12 +46,15 @@ export default {
           name: 'Stocks',
           colorByPoint: true,
           data: this.volumes
-        }]
+        }],
+        credits: {
+            enabled: false
+        }   
     })
     }
   },
   mounted() {
-      
+
   }
 }
 
