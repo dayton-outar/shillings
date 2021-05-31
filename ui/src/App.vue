@@ -126,8 +126,8 @@ export default {
           return {
             name: t.security,
             x: t.volume,
-            y: t.priceChange,
-            z: t.volume * t.priceChange
+            y: t.closingPrice,
+            z: t.volume * t.closingPrice
           }
         })
 
