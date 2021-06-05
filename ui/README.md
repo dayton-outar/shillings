@@ -1,4 +1,4 @@
-# stock-watch
+# User Interface
 
 ## Project setup
 ```

@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
 using O8Query.Models;
 
@@ -17,7 +16,7 @@ namespace O8Query.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            
+            //new StocksQuerySeeder(modelBuilder).Seed();
         }
     }
 }

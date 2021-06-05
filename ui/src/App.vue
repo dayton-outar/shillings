@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import { mapState, mapGetters } from 'vuex'
+import { mapState, mapGetters, mapActions } from 'vuex'
 import moment from 'moment'
 
 import StockFilter from './components/StockFilter.vue'
@@ -53,11 +53,12 @@ export default {
   },
   methods: {
     dateChanged(v) {
-      this.$store.dispatch('fetchStockTrades', {
+      this.fetchStockTrades({
         begin: `${ moment( v[0] ).format('YYYY-MM-DDT00:00:00.000') }Z`, // Clumsy but it's a pain to remove the offset...
         end: `${ moment( v[1] ).format('YYYY-MM-DDT00:00:00.000') }Z`
       })
-    }
+    },
+    ...mapActions(['fetchStockTrades'])
   }
 }
 </script>

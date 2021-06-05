@@ -9,6 +9,7 @@ So, the main idea for optimizing a page or, better yet, a web site is to,
  * [Node](https://nodejs.org/en/) 14.15 or greater
  * [Vue](https://vuejs.org/)
  * [Vuex](https://vuex.vuejs.org/)
+ * [Apollo](https://www.apollographql.com/docs/react/)
  * [Buefy](https://buefy.org/)
  * [HighCharts](https://www.highcharts.com/)
  * [.NET 5](https://dotnet.microsoft.com/download/dotnet/5.0)
