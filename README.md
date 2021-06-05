@@ -8,7 +8,7 @@ So, the main idea for optimizing a page or, better yet, a web site is to,
 
  * [Node](https://nodejs.org/en/) 14.15 or greater
  * [Vue](https://vuejs.org/)
- * [Vue-Apollo](https://apollo.vuejs.org/)
+ * [Vuex](https://vuex.vuejs.org/)
  * [Buefy](https://buefy.org/)
  * [HighCharts](https://www.highcharts.com/)
  * [.NET 5](https://dotnet.microsoft.com/download/dotnet/5.0)
@@ -279,9 +279,9 @@ npm install @vue/apollo-composable --save --legacy-peer-deps
 6. [GraphQL Workshop](https://github.com/ChilliCream/graphql-workshop)
 7. [Stored Procedure in Entity Framework Core Migrations](https://dotnetthoughts.net/creating-stored-procs-in-efcore-migrations/)
 8. [Working with Stored Procedure in Entity Framework Core](https://www.entityframeworktutorial.net/efcore/working-with-stored-procedure-in-ef-core.aspx)
+9. [Combining GraphQL and Vuex](https://markus.oberlehner.net/blog/combining-graphql-and-vuex/) by Markus Oberlehner
 
 ## Video Tutorial References
 
-1. [Vuex Crash Course](https://youtu.be/5lVQgZzLMHc)
-2. [Vuex Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9i371QO_Rtkl26MwtiJ30P2)
-3. [Vue JS 2](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gQcYgjhBoeQH7wiAyZNrYa)
+1. [Vuex Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9i371QO_Rtkl26MwtiJ30P2) by Net Ninja
+2. [Vue JS 2](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gQcYgjhBoeQH7wiAyZNrYa) by Net Ninja
