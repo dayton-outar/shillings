@@ -6,18 +6,18 @@
       </div>
     </div>
     <div class="container">
-      <StockFilter @changedDate="dateChanged" />
-      <VolumesPie v-if="tradings" :volumes="tradings.volumeShares" />
-      <PriceBar v-if="tradings" :changes="tradings.priceChanges" />
-      <TradeCost v-if="tradings" :costs="tradings.tradeCosts" />
+      <stocks-filter @changedDate="dateChanged" />
+      <VolumesPie v-if="tradings" :volumes="volumeShares" />
+      <PriceBar v-if="tradings" :changes="priceChanges" />
+      <TradeCost v-if="tradings" :costs="tradeCosts" />
       <StocksLine />
-      <StockTrades v-if="tradings" :tradings="tradings.stocksTraded" />
+      <StockTrades v-if="tradings" :tradings="tradings" />
     </div>
   </div>
 </template>
 
 <script>
-import gql from 'graphql-tag'
+import { mapState, mapGetters } from 'vuex'
 import moment from 'moment'
 
 import StockFilter from './components/StockFilter.vue'
@@ -30,132 +30,33 @@ import TradeCost from './components/TradeCost.vue'
 export default {
   name: 'App',
   components: {
-    StockFilter,
+    'stocks-filter': StockFilter,
     VolumesPie,
     StocksLine,
     StockTrades,
     PriceBar,
     TradeCost
   },
-  created() {
-    //
+  computed: {
+    ...mapState(['tradings']),
+    ...mapGetters([
+      'volumeShares',
+      'tradeCosts',
+      'priceChanges',
+      ])
   },
-  mounted() {
-    //
-  },
-  updated() {
-    //
-  },
-  destroyed() {
-    //
+  beforeCreate() {
+    this.$store.dispatch('fetchStockTrades', {
+        begin: moment.utc().toISOString(),
+        end: moment.utc().toISOString()
+      })
   },
   methods: {
-    dateChanged(v) {      
-      this.begin = `${ moment( v[0] ).format('YYYY-MM-DDT00:00:00.000') }Z` // Clumsy but it's a pain to remove the offset...
-      this.end = `${ moment( v[1] ).format('YYYY-MM-DDT00:00:00.000') }Z`
-      this.$apollo.queries.tradings.refresh()
-    }
-  },
-  data() {
-    return {
-      tradings: null,
-      begin: moment.utc().toISOString(),
-      end: moment.utc().toISOString()
-    }
-  },
-  apollo: {
-    tradings: {
-      query: gql`query Get($page: Int!, $begin: DateTime, $end: DateTime) {
-          stockTradings(
-            first: $page
-            order: { date: DESC }
-            where: { and: [{date: { gte: $begin }}, {date: { lte: $end }}] }
-          ) {
-            edges {
-              cursor
-              node {
-                security {
-                  code,
-                  security
-                },
-                volume,
-                closingPrice,
-                priceChange,
-                percentage,
-                date
-              }
-            }
-            totalCount
-            pageInfo {
-              startCursor
-              endCursor
-              hasPreviousPage
-              hasNextPage
-            }
-          }
-        }`,
-      variables () {
-        return {
-          page: 50,
-          begin: this.begin,
-          end: this.end
-        }
-      },
-      update (data) {
-
-        const stocksTraded = data.stockTradings.edges.map(e => {
-          return {
-            security: e.node.security.security,
-            volume: e.node.volume,
-            closingPrice: e.node.closingPrice,
-            priceChange: e.node.priceChange,
-            percentage: e.node.percentage
-          }
-        })
-
-        const volumeShares = stocksTraded.map(t => {
-          return {
-            name: t.security,
-            y: t.volume,
-            sliced: false,
-            selected: false
-          }
-        })
-
-        const tradeCosts = stocksTraded.map(t => {
-          return {
-            name: t.security,
-            x: t.volume,
-            y: t.closingPrice,
-            z: t.volume * t.closingPrice
-          }
-        })
-
-        const priceChanges = stocksTraded.reduce((a, c) => {
-          let pos = a.map(e => e.name).indexOf(c.security)
-          
-          if (pos < 0) {
-            a.push({
-              name: c.security,
-              data: [ c.priceChange ]
-            });
-          } else {
-            a[pos]['data'].push(c.priceChange)
-          }
-          
-          return a
-        }, [])
-
-        return {
-          stocksTraded,
-          volumeShares,
-          priceChanges,
-          tradeCosts
-        }
-      },
-      error (error) {
-        console.error(`We've got an error`, error)
-      }
+    dateChanged(v) {
+      this.$store.dispatch('fetchStockTrades', {
+        begin: `${ moment( v[0] ).format('YYYY-MM-DDT00:00:00.000') }Z`, // Clumsy but it's a pain to remove the offset...
+        end: `${ moment( v[1] ).format('YYYY-MM-DDT00:00:00.000') }Z`
+      })
     }
   }
 }
