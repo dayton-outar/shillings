@@ -9,8 +9,9 @@ Vue.use(Vuex)
 export const store = new Vuex.Store({
     strict: true,
     state: {
-        tradings: null,
-        totalTradings: null
+      companies: [],
+      tradings: null,
+      totalTradings: null
     },
     getters: {
         volumeShares(state) {
@@ -49,14 +50,36 @@ export const store = new Vuex.Store({
         }
     },
     mutations: {
+        setCompanies(state, payload) {
+          state.companies = payload
+        },
         setStockTrades(state, payload) {
-            state.tradings = payload
+          state.tradings = payload
         },
         setTotalStockTrades(state, payload) {
           state.totalTradings = payload
         }
     },
     actions: {
+        async fetchCompanies({ commit }) {
+          const response = await graphQlClient.query({
+            query: gql`query {
+              companies (
+                first: 100
+                order: { security: ASC}
+                
+              ) {
+                nodes {
+                  code,
+                  security,
+                  created
+                }
+              }
+            }`
+          })
+          
+          commit('setCompanies', response.data.companies.nodes)
+        },
         async fetchStockTrades({ commit }, request) {
             const response = await graphQlClient.query({
                 query: gql`query Get($page: Int!, $begin: DateTime, $end: DateTime) {

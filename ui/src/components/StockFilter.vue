@@ -39,11 +39,14 @@
 </template>
 
 <script>
-import gql from 'graphql-tag'
+import { mapState } from 'vuex'
 import moment from 'moment'
 
 export default {
   name: 'StockFilter',
+  beforeCreate() {
+    this.$store.dispatch('fetchCompanies')
+  },
   methods: {
     clickMe() {
       this.$buefy.notification.open('Clicked!')
@@ -55,39 +58,17 @@ export default {
       return `${ moment(dates[0]).format('MMM-D-YYYY') } ⟶ ${ moment(dates[1]).format('MMM-D-YYYY') }`
     }
   },
+  computed: {
+    ...mapState(['companies'])
+  },
   data() {
     return {
       dates: [new Date(), new Date()],
       currentCompany: {
-        code: '--',
+        code: '',
         security: 'Companies',
         created: new Date()
       },
-      companies: []
-    }
-  },
-  apollo: {
-    companies: {
-      query() {
-        let r = gql`query {
-          companies (
-            first: 100
-            order: { security: ASC}
-            
-          ) {
-            nodes {
-              code,
-              security,
-              created
-            }
-          }
-        }`
-
-        return r
-      },
-      update (data) {
-        return data.companies.nodes
-      }
     }
   }
 }
