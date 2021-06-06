@@ -26,31 +26,34 @@ export default {
         },
         accessibility: {
             point: {
-            valueDescriptionFormat: '{index}. {point.name}, volume: {point.x}, change: ${point.y}, cost: ${point.z}.'
+              valueDescriptionFormat: '{index}. {point.name}, volume: {point.x}, change: ${point.y}, cost: ${point.z}.'
             }
         },
         xAxis: {
             gridLineWidth: 1,
             title: {
-            text: 'Volume'
+              text: 'Volume'
             },
             labels: {
-            format: '{value}'
+              formatter() {
+                const nfi = new Intl.NumberFormat('en-US')
+                return `${ nfi.format(this.value) }`
+              }
             },
             plotLines: [{
-            color: 'black',
-            dashStyle: 'dot',
-            width: 2,
-            value: 65,
-            label: {
-                rotation: 0,
-                y: 15,
-                style: {
-                fontStyle: 'italic'
-                },
-                text: '...'
-            },
-            zIndex: 3
+              color: 'black',
+              dashStyle: 'dot',
+              width: 2,
+              value: 65,
+              label: {
+                  rotation: 0,
+                  y: 15,
+                  style: {
+                    fontStyle: 'italic'
+                  },
+                  text: '...'
+              },
+              zIndex: 3
             }],
             accessibility: {
               rangeDescription: 'Range: a to b.'
@@ -63,23 +66,26 @@ export default {
             text: 'Closing Price'
             },
             labels: {
-            format: '${value}'
+              formatter() {
+                const cfi = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' })
+                return `${ cfi.format(this.value) }`
+              }
             },
             maxPadding: 0.2,
             plotLines: [{
-            color: 'black',
-            dashStyle: 'dot',
-            width: 2,
-            value: 0,
-            label: {
-                align: 'right',
-                style: {
-                fontStyle: 'italic'
-                },
-                text: 'Stocks traded firm',
-                x: -10
-            },
-                zIndex: 3
+              color: 'black',
+              dashStyle: 'dot',
+              width: 2,
+              value: 0,
+              label: {
+                  align: 'right',
+                  style: {
+                    fontStyle: 'italic'
+                  },
+                  text: 'Stocks traded firm',
+                  x: -50
+              },
+              zIndex: 3
             }],
             accessibility: {
             rangeDescription: 'Range: $- to $-.'
@@ -87,15 +93,15 @@ export default {
         },
         tooltip: {
             useHTML: true,
-            formatter: function () {
+            formatter() {
               const nfi = new Intl.NumberFormat('en-US')
               const cfi = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' })
 
               return `<table>
                         <tr><th colspan="2"><h3>${this.point.name}</h3></th></tr>
-                        <tr><th style="text-align: right;">Volume:</th><td>${ nfi.format(this.point.x) }</td></tr>
-                        <tr><th style="text-align: right;">Closing Price:</th><td>${ cfi.format(this.point.y) }</td></tr>
-                        <tr><th style="text-align: right;">Cost:</th><td>${ cfi.format(this.point.z) }</td></tr>
+                        <tr><th style="text-align: right;">Volume:</th><td>&nbsp;${ nfi.format(this.point.x) }</td></tr>
+                        <tr><th style="text-align: right;">Closing Price:</th><td>&nbsp;${ cfi.format(this.point.y) }</td></tr>
+                        <tr><th style="text-align: right;">Cost:</th><td>&nbsp;${ cfi.format(this.point.z) }</td></tr>
                       </table>`
             },
             followPointer: true

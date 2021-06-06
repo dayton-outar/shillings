@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace O8Query.Models
@@ -9,9 +10,14 @@ namespace O8Query.Models
     [NotMapped]
     public class TotalStockTrades
     {
+        private string _pricesXml = string.Empty;
+
+        /// <summary>
+        /// Company code for stock
+        /// </summary>
         public string Code { get; set; }
         /// <summary>
-        /// Company information
+        /// Company name associated with stock
         /// </summary>
         public string Security { get; set; }
         
@@ -49,5 +55,11 @@ namespace O8Query.Models
         /// </summary>
         [Column(TypeName = "date")]
         public DateTime ClosingDate { get; set; }
+        
+        /// <summary>
+        /// XML containing list of closing prices and dates between the opening and closing dates
+        /// </summary>
+        [Column(TypeName = "xml")]
+        public string Prices { get; set; }
     }
 }

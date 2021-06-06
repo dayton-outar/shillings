@@ -10,7 +10,7 @@
       <VolumesPie v-if="totalTradings" :volumes="volumeShares" />
       <PriceBar v-if="tradings" :changes="pricePercentages" />
       <TradeCost v-if="totalTradings" :costs="tradeCosts" />
-      <StocksLine />
+      <StocksLine v-if="totalTradings" :prices="closingPrices" />
       <StockTrades v-if="totalTradings" :tradings="totalTradings" />
     </div>
   </div>
@@ -43,6 +43,7 @@ export default {
       'volumeShares',
       'tradeCosts',
       'pricePercentages',
+      'closingPrices'
       ])
   },
   beforeCreate() {

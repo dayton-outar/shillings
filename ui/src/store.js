@@ -47,6 +47,16 @@ export const store = new Vuex.Store({
             })
             
             return changes
+        },
+        closingPrices(state) {
+          const prices = state.totalTradings.map(t => {
+            return {
+              name: t.security,
+              data: t.prices.map(p => p.ClosingPrice)
+            }
+          })
+
+          return prices
         }
     },
     mutations: {
@@ -150,7 +160,8 @@ export const store = new Vuex.Store({
                     openingPrice,
                     closingDate,
                     closingPrice,
-                    percentage
+                    percentage,
+                    prices
                   }
                 }`,
               variables: {
@@ -160,7 +171,12 @@ export const store = new Vuex.Store({
               }
           })
 
-          commit('setTotalStockTrades', response.data.totalTrades)
+          const totalTrades = response.data.totalTrades.map(t => {
+            t.prices = JSON.parse(t.prices)
+            return t
+          })
+
+          commit('setTotalStockTrades', totalTrades)
         }
     }
 })

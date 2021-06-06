@@ -24,7 +24,16 @@ RETURN
         O.[OpeningPrice],
         V.[ClosingDate],
         F.[ClosingPrice],
-        ROUND(((F.[ClosingPrice] - O.[OpeningPrice]) / O.[OpeningPrice]) * 100, 2) [Percentage]
+        ROUND(((F.[ClosingPrice] - O.[OpeningPrice]) / O.[OpeningPrice]) * 100, 2) [Percentage],
+        (SELECT
+            T.[SecurityCode] [Code],
+            T.[ClosingPrice],
+            T.[Date]
+        FROM [dbo].[StockTradings] T
+            INNER JOIN [dbo].[Companies] C ON C.[Code] = T.[SecurityCode]
+        WHERE T.[SecurityCode] = V.[Code] AND CAST(T.[Date] AS DATE) BETWEEN V.[OpeningDate] AND V.[ClosingDate]
+        FOR JSON AUTO) AS [Prices]
+        --FOR XML RAW ('Price'), ROOT ('Prices'), ELEMENTS
     FROM (SELECT
             C.[Code],
             C.[Security],
