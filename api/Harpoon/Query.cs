@@ -25,15 +25,7 @@ namespace Harpoon
         [UseSorting]
         public IQueryable<TotalStockTrades> GetTotalTrades(string companyCode, System.DateTime begin, System.DateTime end, [ScopedService]StocksQuery sq) 
         {
-            List<SqlParameter> parmeters = new List<SqlParameter> 
-            {
-                // Create parameter(s)    
-                new SqlParameter { ParameterName = "@companyCode", SqlDbType = System.Data.SqlDbType.NVarChar, Size = 10, Value = companyCode },
-                new SqlParameter { ParameterName = "@begin", SqlDbType = System.Data.SqlDbType.Date, Value = begin.Date },
-                new SqlParameter { ParameterName = "@end", SqlDbType = System.Data.SqlDbType.Date, Value = begin.Date }
-            };
-
-            return sq.TotalTrades.FromSqlRaw("exec [dbo].[GetTotalStocksTraded] @companyCode @begin @end", parmeters).Include(t => t.Security);
+            return sq.TotalTrades.FromSqlInterpolated($"SELECT * FROM [dbo].[TotalStocksTraded]({companyCode}, {begin.Date}, {end.Date})").AsQueryable();
         }
 
         [UseDbContext(typeof(StocksQuery))]

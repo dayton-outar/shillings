@@ -20,7 +20,7 @@ namespace O8Query.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //new StocksQuerySeeder(modelBuilder).Seed();
-            //modelBuilder.Entity<TotalStockTrades>().HasNoKey().ToQuery();
+            modelBuilder.Entity<TotalStockTrades>().HasNoKey();
         }
 
         // public IQueryable<TotalStockTrades> GetTotalStockTrades()

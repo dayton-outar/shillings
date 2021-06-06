@@ -9,10 +9,11 @@ namespace O8Query.Models
     [NotMapped]
     public class TotalStockTrades
     {
+        public string Code { get; set; }
         /// <summary>
         /// Company information
         /// </summary>
-        public Company Security { get; set; }
+        public string Security { get; set; }
         
         /// <summary>
         /// Total volume of stocks traded
