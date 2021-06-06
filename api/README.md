@@ -2,6 +2,27 @@
 
 ## Notes
 
+Querying GetTotalTrades is queried as shown below
+
+```gql
+query {
+  totalTrades
+  (
+    companyCode: ""
+    begin: "2021-05-03T00:00:00.0000000Z"
+    end: "2021-06-03T00:00:00.0000000Z") {
+    code,
+    security,
+    volume,
+    openingDate,
+    openingPrice,
+    closingDate,
+    closingPrice,
+    percentage
+  }
+}
+```
+
 ## Further Reading
 
 1. [ASP.NET Core Fundamentals](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/?view=aspnetcore-5.0&tabs=linux)
