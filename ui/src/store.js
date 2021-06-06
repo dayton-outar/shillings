@@ -137,26 +137,7 @@ export const store = new Vuex.Store({
               }
           })
 
-          const totalTrades = response.data.totalTrades.map(t => {
-            const nfi = new Intl.NumberFormat('en-US')
-            const cfi = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' })
-
-            return {
-              code: t.code,
-              security: t.security,
-              volume: t.volume,
-              formattedVolume: nfi.format(t.volume),
-              openingDate: t.openingDate,
-              openingPrice: t.openingPrice,
-              formattedOpeningPrice: cfi.format(t.openingPrice),
-              closingDate: t.closingDate,
-              closingPrice: t.closingPrice,
-              formattedClosingPrice: cfi.format(t.closingPrice),
-              percentage: t.percentage
-            }
-          })
-
-          commit('setTotalStockTrades', totalTrades)
+          commit('setTotalStockTrades', response.data.totalTrades)
         }
     }
 })
