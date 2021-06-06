@@ -9,11 +9,12 @@ Vue.use(Vuex)
 export const store = new Vuex.Store({
     strict: true,
     state: {
-        tradings: null
+        tradings: null,
+        totalTradings: null
     },
     getters: {
         volumeShares(state) {
-            const volumes = state.tradings.map(t => {
+            const volumes = state.totalTradings.map(t => {
                 return {
                   name: t.security,
                   y: t.volume,
@@ -25,7 +26,7 @@ export const store = new Vuex.Store({
             return volumes
         },
         tradeCosts(state) {
-            const costs = state.tradings.map(t => {
+            const costs = state.totalTradings.map(t => {
                 return {
                   name: t.security,
                   x: t.volume,
@@ -58,6 +59,9 @@ export const store = new Vuex.Store({
     mutations: {
         setStockTrades(state, payload) {
             state.tradings = payload
+        },
+        setTotalStockTrades(state, payload) {
+          state.totalTradings = payload
         }
     },
     actions: {
@@ -113,6 +117,54 @@ export const store = new Vuex.Store({
               })
 
             commit('setStockTrades', tradings)
+        },
+        async fetchTotalStockTrades({ commit }, request) {
+          const response = await graphQlClient.query({
+            query: gql`query Get($companyCode: String, $begin: DateTime!, $end: DateTime!) {
+                  totalTrades
+                  (
+                    companyCode: $companyCode
+                    begin: $begin
+                    end: $end
+                    order: { volume: DESC }
+                  ) {
+                    code,
+                    security,
+                    volume,
+                    openingDate,
+                    openingPrice,
+                    closingDate,
+                    closingPrice,
+                    percentage
+                  }
+                }`,
+              variables: {
+                  companyCode: request.companyCode,
+                  begin: request.begin,
+                  end: request.end
+              }
+          })
+
+          const totalTrades = response.data.totalTrades.map(t => {
+            const nfi = new Intl.NumberFormat('en-US')
+            const cfi = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' })
+
+            return {
+              code: t.code,
+              security: t.security,
+              volume: t.volume,
+              formattedVolume: nfi.format(t.volume),
+              openingDate: t.openingDate,
+              openingPrice: t.openingPrice,
+              formattedOpeningPrice: cfi.format(t.openingPrice),
+              closingDate: t.closingDate,
+              closingPrice: t.closingPrice,
+              formattedClosingPrice: cfi.format(t.closingPrice),
+              percentage: t.percentage
+            }
+          })
+
+          commit('setTotalStockTrades', totalTrades)
         }
     }
 })

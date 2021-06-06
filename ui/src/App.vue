@@ -7,11 +7,11 @@
     </div>
     <div class="container">
       <stocks-filter @changedDate="dateChanged" />
-      <VolumesPie v-if="tradings" :volumes="volumeShares" />
+      <VolumesPie v-if="totalTradings" :volumes="volumeShares" />
       <PriceBar v-if="tradings" :changes="priceChanges" />
-      <TradeCost v-if="tradings" :costs="tradeCosts" />
+      <TradeCost v-if="totalTradings" :costs="tradeCosts" />
       <StocksLine />
-      <StockTrades v-if="tradings" :tradings="tradings" />
+      <StockTrades v-if="totalTradings" :tradings="totalTradings" />
     </div>
   </div>
 </template>
@@ -38,7 +38,7 @@ export default {
     TradeCost
   },
   computed: {
-    ...mapState(['tradings']),
+    ...mapState(['tradings', 'totalTradings']),
     ...mapGetters([
       'volumeShares',
       'tradeCosts',
@@ -46,9 +46,10 @@ export default {
       ])
   },
   beforeCreate() {
-    this.$store.dispatch('fetchStockTrades', {
-        begin: moment.utc().toISOString(),
-        end: moment.utc().toISOString()
+    this.$store.dispatch('fetchTotalStockTrades', {
+        companyCode: '',
+        begin: `${ moment.utc().format('YYYY-MM-DDT00:00:00.000') }Z`,
+        end: `${ moment.utc().format('YYYY-MM-DDT00:00:00.000') }Z`
       })
   },
   methods: {
@@ -57,8 +58,14 @@ export default {
         begin: `${ moment( v[0] ).format('YYYY-MM-DDT00:00:00.000') }Z`, // Clumsy but it's a pain to remove the offset...
         end: `${ moment( v[1] ).format('YYYY-MM-DDT00:00:00.000') }Z`
       })
+
+      this.fetchTotalStockTrades({
+        companyCode: '',
+        begin: `${ moment( v[0] ).format('YYYY-MM-DDT00:00:00.000') }Z`, // Clumsy but it's a pain to remove the offset...
+        end: `${ moment( v[1] ).format('YYYY-MM-DDT00:00:00.000') }Z`
+      })
     },
-    ...mapActions(['fetchStockTrades'])
+    ...mapActions(['fetchStockTrades', 'fetchTotalStockTrades'])
   }
 }
 </script>

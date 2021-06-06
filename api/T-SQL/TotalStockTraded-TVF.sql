@@ -24,12 +24,11 @@ RETURN
         O.[OpeningPrice],
         V.[ClosingDate],
         F.[ClosingPrice],
-        V.[Percentage]
+        ROUND(((F.[ClosingPrice] - O.[OpeningPrice]) / O.[OpeningPrice]) * 100, 2) [Percentage]
     FROM (SELECT
             C.[Code],
             C.[Security],
             SUM(T.[Volume]) [Volume],
-            SUM(T.[Percentage]) [Percentage],
             MIN(CAST(T.[Date] AS DATE)) [OpeningDate],
             MAX(CAST(T.[Date] AS DATE)) [ClosingDate]
         FROM [dbo].[Companies] C

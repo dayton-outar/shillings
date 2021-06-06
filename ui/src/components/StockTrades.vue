@@ -18,18 +18,18 @@ export default {
               label: 'Security'
           },
           {
-              field: 'volume',
+              field: 'formattedVolume',
               label: 'Volume',
               numeric: true
           },
           {
-              field: 'closingPrice',
-              label: 'Closing Price',
+              field: 'formattedOpeningPrice',
+              label: 'Opening Price',
               numeric: true
           },
           {
-              field: 'priceChange',
-              label: 'Price Change',
+              field: 'formattedClosingPrice',
+              label: 'Closing Price',
               numeric: true
           },
           {
