@@ -33,12 +33,14 @@ namespace O8Query.Models
         /// Total volume of stocks traded
         /// </summary>
         [Required]
+        [Column(TypeName = "bigint")]
         public long Volume { get; set; }
 
         /// <summary>
         /// Opening price at the beginning of period
         /// </summary>
         [Required]
+        [Column(TypeName = "decimal(18,2)")]
         public decimal ClosingPrice { get; set; }
 
         /// <summary>
@@ -46,12 +48,14 @@ namespace O8Query.Models
         /// </summary>
         /// <value></value>
         [Required]
+        [Column(TypeName = "decimal(18,2)")]
         public decimal PriceChange { get; set; }
 
         /// <summary>
         /// Change between opening price and closing price during period represented in percentage
         /// </summary>
         [Required]
+        [Column(TypeName = "decimal(18,2)")]
         public decimal Percentage { get; set; }
 
         /// <summary>

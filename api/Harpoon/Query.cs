@@ -21,6 +21,8 @@ namespace Harpoon
         public IQueryable<StockTrading> GetStockTradings([ScopedService]StocksQuery sq) => sq.StockTradings.Include(t => t.Security);
 
         [UseDbContext(typeof(StocksQuery))]
+        [UseProjection]
+        [UseSorting]
         public IQueryable<TotalStockTrades> GetTotalTrades(string companyCode, System.DateTime begin, System.DateTime end, [ScopedService]StocksQuery sq) 
         {
             List<SqlParameter> parmeters = new List<SqlParameter> 

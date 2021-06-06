@@ -7,16 +7,15 @@ GO
 -- Create date: June 6, 2021
 -- Description:	Gets total volume moved over a period including opening and closing date
 -- =============================================
-CREATE PROCEDURE [dbo].[GetTotalStocksTraded] 
+CREATE FUNCTION [dbo].[TotalStocksTraded] 
+(
 	@companyCode NVARCHAR(10) = '',
     @begin DATE,
     @end DATE
+)
+RETURNS TABLE
 AS
-BEGIN
-	-- SET NOCOUNT ON added to prevent extra result sets from
-	-- interfering with SELECT statements.
-	SET NOCOUNT ON;
-
+RETURN
     SELECT
         V.[Code],
         V.[Security],
@@ -51,6 +50,3 @@ BEGIN
             CAST(T.[Date] AS DATE) [Date]
         FROM [dbo].[StockTradings] T) F ON F.[SecurityCode] = V.[Code] AND F.[Date] = V.[ClosingDate]
     WHERE (@companyCode = '' OR V.[Code] = @companyCode);
-
-END
-GO
