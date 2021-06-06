@@ -38,16 +38,6 @@ namespace O8Query.Models
         /// <summary>
         /// Opening price at the beginning of period
         /// </summary>
-        [NotMapped]
-        public decimal OpeningPrice {
-            get {
-                return (this.ClosingPrice - this.OpeningPrice);
-            }
-        }
-
-        /// <summary>
-        /// Opening price at the beginning of period
-        /// </summary>
         [Required]
         public decimal ClosingPrice { get; set; }
 

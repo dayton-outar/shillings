@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 using O8Query.Models;
 
@@ -14,9 +15,16 @@ namespace O8Query.Data
 
         public DbSet<Log> Logs { get; set; }
 
+        public DbSet<TotalStockTrades> TotalTrades { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //new StocksQuerySeeder(modelBuilder).Seed();
         }
+
+        // public IQueryable<TotalStockTrades> GetTotalStockTrades()
+        // {
+            
+        // }
     }
 }
