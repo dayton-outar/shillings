@@ -1,54 +1,67 @@
 <template>
-  <div id="price-bar">
-  </div>
+  <div v-if="changes" id="price-bar"></div>
 </template>
 
 <script>
 
 export default {
   name: 'PriceBar',
-  props: ['priceChanges'],
-  mounted() {
-    window.Highcharts.chart('price-bar', {
+  props: ['changes'],
+  watch: {
+    changes() {
+      window.Highcharts.chart('price-bar', {
         chart: {
             type: 'column'
         },
+        legend: {
+            enabled: false
+        },
         title: {
-            text: 'Daily Price Changes'
+            text: 'Price Changes by Percentage'
         },
         subtitle: {
             text: 'Source: jamstockex.com'
         },
         xAxis: {
-            categories: [
-                'Tue',
-                'Wed',
-            ],
-            crosshair: true
+          title: {
+            text: 'Stocks'
+          }
         },
         yAxis: {
-            min: 0,
-            title: {
-                text: 'Price (J$)'
-            }
+          title: {
+            text: 'Percentage (%)'
+          }
         },
         tooltip: {
-            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-                '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
-            footerFormat: '</table>',
-            shared: true,
-            useHTML: true
+            useHTML: true,
+            formatter: function () {              
+              return `<table>
+                        <tr>
+                          <td style="color:${this.series.color};padding:0">${this.series.name}: </td>
+                          <td style="padding:0">&nbsp;<b>${ this.point.y }%</b></td>
+                        </tr>
+                      </table>`
+            },
+            followPointer: true
         },
         plotOptions: {
             column: {
-                pointPadding: 0.2,
-                borderWidth: 0
+        pointPadding: 0.2,
+        borderWidth: 0
             }
         },
-        series: this.priceChanges
-    })
-    
+        series: this.changes,
+        credits: {
+            enabled: false
+        }
+      })
+    }
+  },
+  mounted() {
+    //
+  },
+  updated() {
+    //
   }
 }
 

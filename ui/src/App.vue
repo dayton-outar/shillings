@@ -8,7 +8,7 @@
     <div class="container">
       <stocks-filter @changedDate="dateChanged" />
       <VolumesPie v-if="totalTradings" :volumes="volumeShares" />
-      <PriceBar v-if="tradings" :changes="priceChanges" />
+      <PriceBar v-if="tradings" :changes="pricePercentages" />
       <TradeCost v-if="totalTradings" :costs="tradeCosts" />
       <StocksLine />
       <StockTrades v-if="totalTradings" :tradings="totalTradings" />
@@ -42,7 +42,7 @@ export default {
     ...mapGetters([
       'volumeShares',
       'tradeCosts',
-      'priceChanges',
+      'pricePercentages',
       ])
   },
   beforeCreate() {

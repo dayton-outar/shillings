@@ -8,7 +8,7 @@ export default {
   name: 'TradeCost',
   props: ['costs'],
   watch: {
-    costs: function () {
+    costs() {
       window.Highcharts.chart('trade-cost', {
         chart: {
             type: 'bubble',
@@ -88,15 +88,15 @@ export default {
         tooltip: {
             useHTML: true,
             formatter: function () {
-            const nfi = new Intl.NumberFormat('en-US')
-            const cfi = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' })
+              const nfi = new Intl.NumberFormat('en-US')
+              const cfi = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' })
 
-            return `<table>
-                <tr><th colspan="2"><h3>${this.point.name}</h3></th></tr>
-                <tr><th style="text-align: right;">Volume:</th><td>${ nfi.format(this.point.x) }</td></tr>
-                <tr><th style="text-align: right;">Closing Price:</th><td>${ cfi.format(this.point.y) }</td></tr>
-                <tr><th style="text-align: right;">Cost:</th><td>${ cfi.format(this.point.z) }</td></tr>
-            </table>`
+              return `<table>
+                        <tr><th colspan="2"><h3>${this.point.name}</h3></th></tr>
+                        <tr><th style="text-align: right;">Volume:</th><td>${ nfi.format(this.point.x) }</td></tr>
+                        <tr><th style="text-align: right;">Closing Price:</th><td>${ cfi.format(this.point.y) }</td></tr>
+                        <tr><th style="text-align: right;">Cost:</th><td>${ cfi.format(this.point.z) }</td></tr>
+                      </table>`
             },
             followPointer: true
         },

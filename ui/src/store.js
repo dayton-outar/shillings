@@ -37,21 +37,13 @@ export const store = new Vuex.Store({
             
             return costs
         },
-        priceChanges(state) {
-            const changes = state.tradings.reduce((a, c) => {
-                let pos = a.map(e => e.name).indexOf(c.security)
-                
-                if (pos < 0) {
-                  a.push({
-                    name: c.security,
-                    data: [ c.priceChange ]
-                  });
-                } else {
-                  a[pos]['data'].push(c.priceChange)
-                }
-                
-                return a
-              }, [])
+        pricePercentages(state) {
+            const changes = state.totalTradings.map(t => {
+              return {
+                name: t.security,
+                data: [ t.percentage ]
+              }
+            })
             
             return changes
         }
