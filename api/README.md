@@ -1,5 +1,11 @@
 # API
 
+## Requirements
+
+ * [.NET 5](https://dotnet.microsoft.com/download/dotnet/5.0)
+ * [Entity Framework](https://docs.microsoft.com/en-us/ef/)
+ * [Hot Chocolate](https://chillicream.com/docs/)
+
 ## Notes
 Credit to [How to Use .NET Core CLI to Create a Multi-Project Solution](https://www.skylinetechnologies.com/Blog/Skyline-Blog/February_2018/how-to-use-dot-net-core-cli-create-multi-project) by Ben Buhr
 
@@ -243,3 +249,10 @@ query {
 4. [Calling Stored Procedures with the Entity Framework in .NET 5](https://www.codemag.com/Article/2101031/Calling-Stored-Procedures-with-the-Entity-Framework-in-.NET-5)
 5. [Fixing Entity Framework Validation 30000 No Type Specified for the Decimal Column](https://mattferderer.com/entity-framework-no-type-was-specified-for-the-decimal-column) by Matt Ferderer
 6. [SQL Server Table-valued Functions](https://www.sqlservertutorial.net/sql-server-user-defined-functions/sql-server-table-valued-functions/)
+7. [.NET 5 - GraphQL Example](https://github.com/binarythistle/S04E01---.NET-5-GraphQL-API)
+8. [Entity Framework Core: Show Parameter Values in Logging](https://elanderson.net/2019/03/entity-framework-core-show-parameter-values-in-logging/)
+9. [How do you show underlying SQL query in EF Core?](https://stackoverflow.com/questions/45893732/how-do-you-show-underlying-sql-query-in-ef-core)
+10. [GraphQL Workshop](https://github.com/ChilliCream/graphql-workshop)
+11. [Stored Procedure in Entity Framework Core Migrations](https://dotnetthoughts.net/creating-stored-procs-in-efcore-migrations/)
+12. [Code-First Stored Procedure Entity Framework 6.0](https://www.c-sharpcorner.com/UploadFile/ff2f08/code-first-stored-procedure-entity-framework-6-0/?) by Jignesh Trivedi
+13. [Working with Stored Procedure in Entity Framework Core](https://www.entityframeworktutorial.net/efcore/working-with-stored-procedure-in-ef-core.aspx)
