@@ -7,6 +7,10 @@
     </div>
     <div class="container">
       <stocks-filter @changedDate="dateChanged" />
+      <div class="column">
+        <b-button @click.prevent="addAPortfolio" type="is-link">Add</b-button>
+      </div>
+      <portfolio />
       <VolumesPie v-if="totalTradings" :volumes="volumeShares" />
       <PriceBar v-if="tradings" :changes="pricePercentages" />
       <TradeCost v-if="totalTradings" :costs="tradeCosts" />
@@ -26,11 +30,13 @@ import StocksLine from './components/StocksLine.vue'
 import StockTrades from './components/StockTrades.vue'
 import PriceBar from './components/PriceBar.vue'
 import TradeCost from './components/TradeCost.vue'
+import Portfolio from './components/Portfolio.vue'
 
 export default {
   name: 'App',
   components: {
     'stocks-filter': StockFilter,
+    'portfolio': Portfolio,
     VolumesPie,
     StocksLine,
     StockTrades,
@@ -66,7 +72,58 @@ export default {
         end: `${ moment( v[1] ).format('YYYY-MM-DDT00:00:00.000') }Z`
       })
     },
-    ...mapActions(['fetchStockTrades', 'fetchTotalStockTrades'])
+    addAPortfolio(){
+      this.flushPortfolio()
+      this.addPortfolio({
+        security: {
+          code: 'eply8.25',
+          name: 'EPPLEY LIMITED 8.25 PREFERENCE'
+        },
+        volume: 7142,
+        unitPrice: 7.00
+      })
+      this.addPortfolio({
+        security: {
+          code: 'ncbfg',
+          name: 'NCB FINANCIAL GROUP LTD.'
+        },
+        volume: 698,
+        unitPrice: 138.20
+      })
+      this.addPortfolio({
+        security: {
+          code: 'pal',
+          name: 'PALACE AMUSEMENT CO LTD'
+        },
+        volume: 102,
+        unitPrice: 940.00
+      })
+      this.addPortfolio({
+        security: {
+          code: 'provenja',
+          name: 'PROVEN INVESTMENTS LTD'
+        },
+        volume: 963,
+        unitPrice: 35.77
+      })
+      this.addPortfolio({
+        security: {
+          code: 'sj',
+          name: 'SAGICOR GROUP JAMAICA LTD'
+        },
+        volume: 1926,
+        unitPrice: 50.62
+      })
+      this.addPortfolio({
+        security: {
+          code: 'wig',
+          name: 'WIGTON WINDFARM LIMITED ORDINARY SHARES'
+        },
+        volume: 10000,
+        unitPrice: 0.50
+      })
+    },
+    ...mapActions(['fetchStockTrades', 'fetchTotalStockTrades', 'addPortfolio', 'flushPortfolio'])
   }
 }
 </script>

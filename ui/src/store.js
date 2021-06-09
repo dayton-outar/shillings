@@ -11,7 +11,8 @@ export const store = new Vuex.Store({
     state: {
       companies: [],
       tradings: null,
-      totalTradings: null
+      totalTradings: null,
+      portfolioHoldings: []
     },
     getters: {
         volumeShares(state) {
@@ -57,6 +58,26 @@ export const store = new Vuex.Store({
           })
 
           return prices
+        },
+        holdings(state) {
+          const ph = state.portfolioHoldings.map(h => {
+            const itrade = state.totalTradings.find(t => t.code === h.security.code)
+            let newPrice = itrade ? itrade.closingPrice : 0
+            let oldCost = h.volume * h.unitPrice
+            let newCost = itrade ? h.volume * itrade.closingPrice : 0
+
+            return {
+              security: h.security,
+              volume: h.volume,
+              unitPrice: h.unitPrice,
+              purchaseCost: oldCost,
+              currentPrice: newPrice,
+              currentCost: newCost,
+              variance: (newCost - oldCost)
+            }
+          })
+
+          return ph
         }
     },
     mutations: {
@@ -68,6 +89,28 @@ export const store = new Vuex.Store({
         },
         setTotalStockTrades(state, payload) {
           state.totalTradings = payload
+        },
+        addPortfolio(state, payload) {
+          state.portfolioHoldings.push(payload)
+          //localStorage.setItem('my-portfolio', JSON.stringify(state.portfolioHoldings) )
+        },
+        updatePortfolio(state, payload) {
+          const ix = state.portfolioHoldings.findIndex((p => p.security.code == payload.security.code));
+          if (ix > -1) {
+            state.portfolioHoldings[ix] = payload;
+          }
+          //localStorage.setItem('my-portfolio', JSON.stringify(state.portfolioHoldings) )
+        },
+        removePortfolio(state, code) {
+          const ix = state.portfolioHoldings.findIndex((p => p.security.code == code));
+          if (ix > -1) {
+            state.portfolioHoldings.splice(ix, 1);
+          }
+          //ocalStorage.setItem('my-portfolio', JSON.stringify(state.portfolioHoldings) )
+        },
+        flushPortfolio(state) {
+          state.portfolioHoldings = []
+          //localStorage.removeItem('my-portfolio')
         }
     },
     actions: {
@@ -177,6 +220,18 @@ export const store = new Vuex.Store({
           })
 
           commit('setTotalStockTrades', totalTrades)
+        },
+        addPortfolio({ commit }, payload) {
+          commit('addPortfolio', payload)
+        },
+        updatePortfolio({ commit }, payload) {
+          commit('updatePortfolio', payload)
+        },
+        removePortfolio({ commit }, code) {
+          commit('removePortfolio', code)
+        },
+        flushPortfolio({ commit }) {
+          commit('flushPortfolio')
         }
     }
 })

@@ -18,8 +18,25 @@ Vue.config.productionTip = false
 
 Vue.use(Buefy)
 
+// const utilMixin = {
+//   methods: {
+//     formatVolume(volume) {
+//       const nfi = new Intl.NumberFormat('en-US')
+//       return nfi.format(volume)
+//     },
+//     formatMoney(amount) {
+//       const cfi = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' })
+//       return cfi.format(amount)
+//     },
+//     formatPercentage(percentage) {
+//       return `${ percentage }%`
+//     }
+//   }
+// }
+
 new Vue({
   el: '#app',
+  //mixins: [utilMixin],
   store,
   render:h => h(App),
 })
