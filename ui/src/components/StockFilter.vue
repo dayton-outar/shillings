@@ -2,7 +2,7 @@
   <div>
     <section>
       <div class="columns">
-        <div class="column">
+        <div class="column is-one-fifth">
           <b-datepicker
             placeholder="Click to select..."
             v-model="dates"
@@ -11,17 +11,19 @@
             @input="dateChanged">
           </b-datepicker>
         </div>
-        <div class="column is-two-thirds">
+        <div class="column is-four-fifths">
           <b-dropdown
             :expanded="true"
-            v-model="currentCompany"
+            v-model="selectedCompanies"
+            multiple
             aria-role="list">
             <template #trigger>
               <b-button
-                      :label="currentCompany.security"
-                      type="is-primary"
-                      expanded
-                      icon-right="menu-down" />
+                type="is-light"
+                expanded
+                icon-right="menu-down">
+                Selected ({{ selectedCompanies.length }})
+              </b-button>
             </template>
             
             <b-dropdown-item aria-role="listitem" 
@@ -64,11 +66,7 @@ export default {
   data() {
     return {
       dates: [new Date(), new Date()],
-      currentCompany: {
-        code: '',
-        security: 'Companies',
-        created: new Date()
-      },
+      selectedCompanies: []
     }
   }
 }

@@ -215,7 +215,14 @@ export const store = new Vuex.Store({
           })
 
           const totalTrades = response.data.totalTrades.map(t => {
-            t.prices = JSON.parse(t.prices)
+            try {
+              t.prices = JSON.parse(t.prices)
+            }
+            catch (err) {
+              console.log(t.security, err.message, t.prices)
+              t.prices = []
+            }
+
             return t
           })
 

@@ -6,16 +6,17 @@
       </div>
     </div>
     <div class="container">
-      <stocks-filter @changedDate="dateChanged" />
-      <div class="column">
-        <b-button @click.prevent="addAPortfolio" type="is-link">Add</b-button>
-      </div>
-      <portfolio />
-      <VolumesPie v-if="totalTradings" :volumes="volumeShares" />
-      <PriceBar v-if="tradings" :changes="pricePercentages" />
-      <TradeCost v-if="totalTradings" :costs="tradeCosts" />
-      <StocksLine v-if="totalTradings" :prices="closingPrices" />
-      <StockTrades v-if="totalTradings" :tradings="totalTradings" />
+      <div class="main">
+        <stocks-filter @changedDate="dateChanged" />
+        <b-button @click.prevent="getMyPortfolio" type="is-link">Get Portfolio</b-button>
+        <portfolio-form />
+        <portfolio />
+        <VolumesPie v-if="totalTradings" :volumes="volumeShares" />
+        <PriceBar v-if="tradings" :changes="pricePercentages" />
+        <TradeCost v-if="totalTradings" :costs="tradeCosts" />
+        <StocksLine v-if="totalTradings" :prices="closingPrices" />
+        <StockTrades v-if="totalTradings" :tradings="totalTradings" />
+      </div>      
     </div>
   </div>
 </template>
@@ -30,6 +31,7 @@ import StocksLine from './components/StocksLine.vue'
 import StockTrades from './components/StockTrades.vue'
 import PriceBar from './components/PriceBar.vue'
 import TradeCost from './components/TradeCost.vue'
+import PortfolioForm from './components/PortfolioForm.vue'
 import Portfolio from './components/Portfolio.vue'
 
 export default {
@@ -37,6 +39,7 @@ export default {
   components: {
     'stocks-filter': StockFilter,
     'portfolio': Portfolio,
+    'portfolio-form': PortfolioForm,
     VolumesPie,
     StocksLine,
     StockTrades,
@@ -53,6 +56,7 @@ export default {
       ])
   },
   beforeCreate() {
+    this.$store.dispatch('fetchCompanies')
     this.$store.dispatch('fetchTotalStockTrades', {
         companyCode: '',
         begin: `${ moment.utc().format('YYYY-MM-DDT00:00:00.000') }Z`,
@@ -72,7 +76,7 @@ export default {
         end: `${ moment( v[1] ).format('YYYY-MM-DDT00:00:00.000') }Z`
       })
     },
-    addAPortfolio(){
+    getMyPortfolio(){
       this.flushPortfolio()
       this.addPortfolio({
         security: {
@@ -130,6 +134,16 @@ export default {
 
 <style>
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  margin-top: 1em;
+}
+
 #header {
     padding-top: 36px;
     padding-bottom: 32px;
@@ -144,6 +158,10 @@ export default {
     -webkit-box-shadow: 0 20px 58px #013b6b inset;
     -ms-box-shadow: 0 20px 58px #013b6b inset;
     box-shadow: 0 20px 58px #013b6b inset;
+}
+
+.right-aligned {
+    text-align: right !important;
 }
 
 </style>

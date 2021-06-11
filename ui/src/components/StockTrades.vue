@@ -15,10 +15,10 @@
       <b-table-column field="volume" label="Volume" numeric sortable v-slot="props">
         {{ formatVolume(props.row.volume) }}
       </b-table-column>
-      <b-table-column field="openingPrice" label="Opening Price" numeric sortable v-slot="props">
+      <b-table-column field="openingPrice" label="Opening" numeric sortable v-slot="props">
         {{ formatMoney(props.row.openingPrice) }}
       </b-table-column>
-      <b-table-column field="closingPrice" label="Closing Price" numeric sortable v-slot="props">
+      <b-table-column field="closingPrice" label="Closing" numeric sortable v-slot="props">
         {{ formatMoney(props.row.closingPrice) }}
       </b-table-column>
       <b-table-column field="percentage" label="Percentage" numeric sortable v-slot="props">
