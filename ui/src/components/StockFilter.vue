@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <section>
+  <div class="box">
       <div class="columns">
         <div class="column is-one-fifth">
           <b-datepicker
@@ -16,6 +15,7 @@
             :expanded="true"
             v-model="selectedCompanies"
             multiple
+            scrollable
             aria-role="list">
             <template #trigger>
               <b-button
@@ -36,7 +36,6 @@
           </b-dropdown>
         </div>
       </div>
-    </section>
   </div>
 </template>
 

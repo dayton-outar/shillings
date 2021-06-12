@@ -5,18 +5,20 @@
         <img alt="Vue logo" src="./assets/logo.png">
       </div>
     </div>
-    <div class="container">
-      <div class="main">
-        <stocks-filter @changedDate="dateChanged" />
-        <b-button @click.prevent="getMyPortfolio" type="is-link">Get Portfolio</b-button>
-        <portfolio-form />
-        <portfolio />
-        <VolumesPie v-if="totalTradings" :volumes="volumeShares" />
-        <PriceBar v-if="tradings" :changes="pricePercentages" />
-        <TradeCost v-if="totalTradings" :costs="tradeCosts" />
-        <StocksLine v-if="totalTradings" :prices="closingPrices" />
-        <StockTrades v-if="totalTradings" :tradings="totalTradings" />
-      </div>      
+    <div class="bg-light-gray">
+      <div class="container">
+        <div class="bg-white py-5 px-4">
+          <stocks-filter @changedDate="dateChanged" />
+          <portfolio-form />
+          <div class="box"><b-button @click.prevent="getMyPortfolio" type="is-link">Get Portfolio</b-button></div>
+          <portfolio />
+          <VolumesPie v-if="totalTradings" :volumes="volumeShares" />
+          <PriceBar v-if="tradings" :changes="pricePercentages" />
+          <TradeCost v-if="totalTradings" :costs="tradeCosts" />
+          <StocksLine v-if="totalTradings" :prices="closingPrices" />
+          <stock-trades v-if="totalTradings" :tradings="totalTradings" />
+        </div>      
+      </div>
     </div>
   </div>
 </template>
@@ -42,7 +44,7 @@ export default {
     'portfolio-form': PortfolioForm,
     VolumesPie,
     StocksLine,
-    StockTrades,
+    'stock-trades':StockTrades,
     PriceBar,
     TradeCost
   },
@@ -140,8 +142,16 @@ export default {
   box-sizing: border-box;
 }
 
-.main {
-  margin-top: 1em;
+body {
+  background: #f5f5f5;
+}
+
+.bg-white {
+  background: #fff;
+}
+
+.bg-light-gray {
+  background: #f5f5f5;
 }
 
 #header {

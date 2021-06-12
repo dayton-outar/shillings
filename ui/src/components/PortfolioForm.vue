@@ -1,29 +1,21 @@
 <template>
+  <div class="box">
+    <h4 class="title is-4">Add Portfolio</h4>
     <div class="columns">
         <div class="column">
             <b-field
                 label="Security"
                 label-position="inside">
-                <b-dropdown
-                expanded
-                v-model="chosenCompany"
-                aria-role="list">
-                <template #trigger>
-                    <b-button
-                    :label="chosenCompany.security"
-                    type="is-light"
-                    expanded
-                    icon-right="menu-down">
-                    </b-button>
-                </template>
-                
-                <b-dropdown-item aria-role="listitem" 
+                <b-select 
+                  v-model="chosenCompany"
+                  placeholder="Choose Security">
+                  <option
                     v-for="company in companies" 
                     :key="company.code"
                     :value="company">
                     {{company.security}}
-                </b-dropdown-item>
-                </b-dropdown>
+                  </option>
+                </b-select>
             </b-field>
         </div>
         <div class="column is-one-fifth">
@@ -47,9 +39,10 @@
             </b-field>
         </div>
         <div class="column">
-            <b-button @click.prevent="addMyPortfolio" type="is-link">Add</b-button>
+            <b-button @click.prevent="addMyPortfolio" expanded type="is-link" size="is-medium">Add</b-button>
         </div>        
     </div>
+  </div>
 </template>
 
 <script>
@@ -72,10 +65,7 @@ export default ({
     directives: { cleave },
     data() {
       return {
-        chosenCompany: {
-          code: '',
-          security: '-- NONE --'
-        },
+        chosenCompany: null,
         volume: 0,
         unitPrice: 0,
         masks: {
