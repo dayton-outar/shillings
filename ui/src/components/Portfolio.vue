@@ -29,6 +29,16 @@
           <b-table-column field="variance" label="Gain or Loss" numeric sortable v-slot="props">
             {{ formatMoney(props.row.variance) }}
           </b-table-column>
+
+          <template #footer>
+            <th>Total</th>
+            <th></th>
+            <th></th>
+            <th class="right-aligned">{{ formatTotalPurchaseCost() }}</th>
+            <th></th>
+            <th class="right-aligned">{{ formatTotalCurrentCost() }}</th>
+            <th class="right-aligned">{{ formatTotalGainOrLoss() }}</th>
+          </template>
         </b-table>
     </section>
 </template>
@@ -58,6 +68,27 @@ export default ({
       },
       formatPercentage(percentage) {
        return `${ percentage }%`
+      },
+      formatTotalPurchaseCost() {
+        const totalPurchaseCost = this.holdings.reduce((t, v) => {
+          return t + v.purchaseCost
+        }, 0)
+
+        return this.formatMoney(totalPurchaseCost)
+      },
+      formatTotalCurrentCost() {
+        const totalCurrentCost = this.holdings.reduce((t, v) => {
+          return t + v.currentCost
+        }, 0)
+
+        return this.formatMoney(totalCurrentCost)
+      },
+      formatTotalGainOrLoss() {
+        const totalVariance = this.holdings.reduce((t, v) => {
+          return t + v.variance
+        }, 0)
+
+        return this.formatMoney(totalVariance)
       }
     }
 })
