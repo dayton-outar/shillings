@@ -1,8 +1,10 @@
 <template>
   <div>
-    <div id="header">
+    <div class="bg-dark-blue-gradient">
       <div class="container">
-        <img alt="Vue logo" src="./assets/logo.png">
+        <div class="py-5 px-4">
+          <img alt="Jamaica Stock Exchange" src="./assets/logo.png">
+        </div>
       </div>
     </div>
     <div class="bg-light-gray">
@@ -20,6 +22,11 @@
         </div>      
       </div>
     </div>
+    <footer class="footer has-background-dark has-text-primary-light">
+      <div class="content has-text-centered">
+        <p>&copy; Dayton Outar 2021</p>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -143,7 +150,7 @@ export default {
 }
 
 body {
-  background: #f5f5f5;
+  background: #fafafa;
 }
 
 .bg-white {
@@ -151,13 +158,10 @@ body {
 }
 
 .bg-light-gray {
-  background: #f5f5f5;
+  background: #fafafa;
 }
 
-#header {
-    padding-top: 36px;
-    padding-bottom: 32px;
-    width: 100%;
+.bg-dark-blue-gradient {
     background: #013769;
     background: -moz-linear-gradient(left, #013769 0%, #0082c0 54%, #013769 100%);
     background: -webkit-gradient(linear, left top, right top, color-stop(0%,#013769), color-stop(54%,#0082c0), color-stop(100%,#013769));

@@ -1,7 +1,7 @@
 <template>
   <div class="panel is-light">
     <h4 class="panel-heading">
-        Market Summary: ...
+        Market Summary: ... [Date]
     </h4>
     <div class="panel-block">
       <div class="column">

@@ -1,7 +1,7 @@
 <template>
     <div class="panel is-info">
       <h4 class="panel-heading">
-        My Portfolio
+        My Portfolio: ... [Date]
       </h4>
       <div class="panel-block">
         <div class="column">
