@@ -41,7 +41,7 @@
               </template>
               <div class="card-content">
                 <div class="content">
-                  <b-message title="Volume Shares" type="is-info" aria-close-label="Close message">
+                  <b-message title="Price Changes" type="is-info" aria-close-label="Close message">
                     <p>This bar chart visualizes percentage change of the closing price from the opening price for the period.</p>
                     <p>Price changes can exceed over 100%, in which case will account for a dramatic gain or loss of your stock.</p>
                   </b-message>
@@ -63,7 +63,7 @@
               </template>
               <div class="card-content">
                 <div class="content">
-                  <b-message title="Volume Shares" type="is-info" aria-close-label="Close message">
+                  <b-message title="Trade Cost" type="is-info" aria-close-label="Close message">
                     <p>This bubble chart visualizes an approximation of the total money spent trading certain stocks for the period.</p>
                     <p>The biggest bubble means that most of the money was spent on that stock for the period.</p>
                   </b-message>
@@ -85,7 +85,7 @@
               </template>
               <div class="card-content">
                 <div class="content">
-                  <b-message title="Volume Shares" type="is-info" aria-close-label="Close message">
+                  <b-message title="Closing Prices" type="is-info" aria-close-label="Close message">
                     <p>This line chart visualizes closing price each day for the period.</p>
                     <p>From a glance, you can see the stock with the highest closing price.</p>
                   </b-message>
