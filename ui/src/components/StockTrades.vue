@@ -34,7 +34,7 @@
             <template #detail="props">
               <article>
                 <h5 class="title is-5">{{ props.row.security }}</h5>
-                <stocks-line :data="props.row.prices" :isDetail="true" />
+                <stocks-line :name="props.row.security" :data="props.row.prices" :isDetail="true" />
                 <b-table
                   :data="props.row.prices"
                   striped

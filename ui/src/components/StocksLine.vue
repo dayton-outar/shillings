@@ -3,24 +3,43 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 import { v4 as uuidv4 } from 'uuid'
+import moment from 'moment'
 
 export default {
   name: 'StocksLine',
-  props: ['data', 'isDetail'],
+  props: ['data', 'name', 'isDetail'],
   computed: {
+    ...mapState(['companies']),
+    preparedDates() {
+        if (this.isDetail) {
+            const closingDates = this.data.map(p => p.Date)
+            return [{
+              name: this.name,
+              data: closingDates
+            }]
+        } else {
+          return this.data.map(d => {
+            return {
+              name: d.security,
+              data: d.prices.map(p => p.Date)
+            }
+          })
+        }
+    },
     preparedPrices() {
         if (this.isDetail) {
-            const prices = this.data.map(p => p.ClosingPrice)
+            const prices = this.data.map(p => [p.Date, p.ClosingPrice])
             return [{
-              name: 'Yo',
+              name: this.name,
               data: prices
             }]
         } else {
           return this.data.map(d => {
             return {
               name: d.security,
-              data: d.prices.map(p => p.ClosingPrice)
+              data: d.prices.map(p => [moment(p.Date).toDate(), p.ClosingPrice])
             }
           })
         }
@@ -55,9 +74,14 @@ export default {
                 }
             },
             xAxis: {
-                //accessibility: {
-                //    rangeDescription: 'Range: 2010 to 2017'
-                //}
+                type: 'datetime',
+                dateTimeLabelFormats: {
+                    month: '%e. %b',
+                    year: '%b'
+                },
+                title: {
+                    text: 'Date'
+                }
             },
             legend: {
                 enabled: false,
