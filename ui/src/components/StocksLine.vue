@@ -56,7 +56,13 @@ export default {
             yAxis: {
                 title: {
                     text: 'Closing Price'
-                }
+                },
+                labels: {
+                  formatter() {
+                    const cfi = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' })
+                    return `${ cfi.format(this.value) }`
+                  }
+                },
             },
             xAxis: {
                 type: 'datetime',
@@ -68,6 +74,18 @@ export default {
                     return window.Highcharts.dateFormat('%b %e, %Y', this.value);
                   }
                 }
+            },
+            tooltip: {
+                useHTML: true,
+                formatter() {
+                  const cfi = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' })
+
+                  return `<div style="color: ${this.point.color }">
+                            <h6 class="title is-6">${ this.series.name }</h6>
+                            <p class"is-size-5">${ moment.utc(this.point.x).format('MMM D, YYYY') }: <strong>${ cfi.format(this.point.y) }</strong></p>
+                          </div>`
+                },
+                followPointer: true
             },
             legend: {
                 enabled: false,
