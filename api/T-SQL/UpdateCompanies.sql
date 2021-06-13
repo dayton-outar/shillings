@@ -7,7 +7,7 @@ GO
 -- Create date: April 29, 2021
 -- Description:	Updates companies list
 -- =============================================
-CREATE PROCEDURE [dbo].[UpdateCompanies] 
+CREATE OR ALTER PROCEDURE [dbo].[UpdateCompanies] 
 	@stocks XML
 AS
 BEGIN

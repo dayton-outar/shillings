@@ -7,7 +7,7 @@ GO
 -- Create date: April 30, 2021
 -- Description:	Updates stock tradings
 -- =============================================
-CREATE PROCEDURE [dbo].[UpdateStockTradings] 
+CREATE OR ALTER PROCEDURE [dbo].[UpdateStockTradings] 
 	@stocks XML
 AS
 BEGIN

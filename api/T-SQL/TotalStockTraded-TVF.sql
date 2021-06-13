@@ -7,7 +7,7 @@ GO
 -- Create date: June 6, 2021
 -- Description:	Gets total volume moved over a period including opening and closing date
 -- =============================================
-CREATE FUNCTION [dbo].[TotalStocksTraded] 
+CREATE OR ALTER FUNCTION [dbo].[TotalStocksTraded] 
 (
 	@companyCode NVARCHAR(MAX) = '',
     @begin DATE,

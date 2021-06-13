@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations.Schema;
 
 using O8Query.Models;
 
@@ -15,6 +16,7 @@ namespace O8Query.Data
 
         public DbSet<Log> Logs { get; set; }
 
+        [NotMapped]
         public DbSet<TotalStockTrades> TotalTrades { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
