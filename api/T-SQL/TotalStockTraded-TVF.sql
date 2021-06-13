@@ -70,4 +70,4 @@ RETURN
             MIN(T.[ClosingPrice]) [LowestPrice]
         FROM [dbo].[StockTradings] T
         GROUP BY T.[SecurityCode]) L ON L.[SecurityCode] = V.[Code]
-    WHERE (@companyCode = '' OR V.[Code] = @companyCode);
+    WHERE (@companyCode = '' OR EXISTS( SELECT '' FROM STRING_SPLIT(@companyCode, ',') WHERE SUBSTRING(value, 2, LEN(value) - 2) = V.Code) );
