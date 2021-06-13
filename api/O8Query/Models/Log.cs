@@ -4,18 +4,33 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace O8Query.Models
 {
+    /// <summary>
+    /// Stores log details
+    /// </summary>
     public class Log
     {
+        /// <summary>
+        /// Uniuely identifies log
+        /// </summary>
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long No { get; set; }
         
+        /// <summary>
+        /// Type of event logged
+        /// </summary>
         [Required]
         public EventType Event { get; set; }
 
+        /// <summary>
+        /// Contains summary details of information logged
+        /// </summary>
         [Required]
         public string Details { get; set; }
 
+        /// <summary>
+        /// Date and time event was logged
+        /// </summary>
         [Required]
         public DateTime Logged { get; set; }
     }
