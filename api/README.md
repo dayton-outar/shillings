@@ -100,7 +100,7 @@ dotnet add app/app.csproj reference lib/lib.csproj
 ```
 
 
-## Using EF Core CLI
+#### Using EF Core CLI
 
 [Entity Framework Core tools reference - .NET Core CLI](https://docs.microsoft.com/en-us/ef/core/cli/dotnet)
 
@@ -117,9 +117,9 @@ Apply migration to database
 ```bash
 dotnet ef database update
 ```
-## GraphQL
+#### Using GraphQL
 
-Navigate to https://localhost:5001/graphql/ to get GraphQL endpoint
+Navigate to https://localhost:5001/graphql/ to get to GraphQL endpoint, which hosts [Banana Cake Pop](https://chillicream.com/docs/bananacakepop)
 
 [Getting started with Hot Chocolate](https://chillicream.com/docs/hotchocolate/get-started)
 
@@ -189,7 +189,7 @@ query {
 
 Learnt about paging for Hot Chocolate [here](https://github.com/ChilliCream/hotchocolate/issues/2181)
 
-Trying to create query good for UI table paging through content
+Good query for UI table paging through content
 
 ```gql
 query {
@@ -255,6 +255,7 @@ query {
   }
 }
 ```
+#### Notes
 
 Had to add [UseProjections] to get totalCount. Documentation on ChilliCream not very friendly
 
