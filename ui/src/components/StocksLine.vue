@@ -35,7 +35,7 @@ export default {
     this.renderLineChart()
   },
   watch: {
-    prices() {
+    data() {
       this.renderLineChart()
     }
   },
