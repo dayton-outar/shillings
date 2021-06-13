@@ -1,40 +1,68 @@
 # User Interface
 
+This interface provides visualization and an aggregate summary of daily closing prices of stocks traded on the Jamaica Stock Exchange (JSE).
+
+The interface provides a filter, which is a combination of a date range picker and a multiple-selection dropdown box, to expand or narrow results of the JSE daily summary into the visualization and aggregate tools for the user.
+
+Another useful mention, is that users can add a portfolio of stocks purchased to see a statement of how well it performs over various periods.
+
 ## Requirements
 
  * [Node](https://nodejs.org/en/) 14.15 or greater
+
+### Highlighted Packages
+
  * [Vue](https://vuejs.org/)
  * [Vuex](https://vuex.vuejs.org/)
+ * [Vue Router](https://router.vuejs.org/)
  * [Apollo](https://www.apollographql.com/docs/react/)
  * [Buefy](https://buefy.org/)
  * [HighCharts](https://www.highcharts.com/)
  
-## Project setup
+## Installation
+
+In order to set up the development environment. Given that the version of node mentioned in requirements is installed on the host machine, perform the following command within this folder on the command line,
+
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+## Usage
+
+Perform the following command to compile and run the application,
+
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+Perform the following command to compile and distribute files (from `dist` folder) that can be transferred to a web server for hosting,
+
 ```
 npm run build
 ```
 
-### Lints and fixes files
+This application depends on [Babel](https://babeljs.io/) for linting. So, perform the following to lint the source code,
 ```
 npm run lint
 ```
+
+## Contributions
+
+Since this is a **Vue 2** project, contributors should conform to the style guide outlined in [Vue 2 Style Guide](https://vuejs.org/v2/style-guide/).
+
+Contributors new to **Vue 2** can get up to speed by following the documentation in [Vue 2 Guide](https://vuejs.org/v2/guide/).
+
+[Vue 2 Examples](https://vuejs.org/v2/examples/) and [Vue 2 Recipes](https://vuejs.org/v2/cookbook/) are also available for learning at the [Vue](https://vuejs.org/) site.
+
+### Notes
 
 Had some issue installing a package to integrate vue with graphql and [this reference](https://www.gitmemory.com/issue/vuejs/vue-apollo/1156/821996642) really helped by giving me the following command,
 
 ```bash
 npm install @vue/apollo-composable --save --legacy-peer-deps
 ```
-### Customize configuration
+## Customize Configuration
+
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## Further Reading

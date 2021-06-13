@@ -1,4 +1,6 @@
-# API
+# GraphQL API Server
+
+The web api offers the service of communicating information from the stock tracker's database.
 
 ## Requirements
 
@@ -6,8 +8,38 @@
  * [Entity Framework](https://docs.microsoft.com/en-us/ef/)
  * [Hot Chocolate](https://chillicream.com/docs/)
 
-## Notes
+## Installation
+
+Third party packages have been added from [Nuget](https://www.nuget.org/) to the projects that compose this GraphQL service. In order to install these package, perform the following command,
+
+```bash
+dotnet restore
+```
+
+The above command will have to be performed within the [O8Query](./O8Query) and [Harpoon](./Harpoon) folders before building the main project (which is [Harpoon](./Harpoon)).
+
+## Usage
+
+For any _dotnet_ project, once your terminal is set within the directory containing the _.csproj_ file you can,
+
+- Build the application by performing
+  > `dotnet build`
+- Run the application (service is currently set to be exposed at port 5000 at _http://localhost:5000/_)
+  > `dotnet run`
+- Publish files for release onto a HTTP server via CGI
+  > `dotnet publish -o ../build -c Release`
+
+## Contributions
+
+[Harpoon](./Harpoon) is main application that uses the [O8Query](./O8Query) class library, which contains the data models and the database context.
+
+Types that exposed by this service are registered in [Harpoon](./Harpoon).
+
+### Notes
+
 Credit to [How to Use .NET Core CLI to Create a Multi-Project Solution](https://www.skylinetechnologies.com/Blog/Skyline-Blog/February_2018/how-to-use-dot-net-core-cli-create-multi-project) by Ben Buhr
+
+#### Organizing Projects
 
 The -o parameter lets you specify the output directory (which will get created in case it doesn’t exist). Once that command finishes, navigate into the folder and then execute the following commands:
 
@@ -29,6 +61,8 @@ dotnet new webapi -o api/Harpoon
 dotnet sln Harpoon.sln add api/Harpoon/Harpoon.csproj api/O8Query/O8Query.csproj
 ```
 
+#### Building, Running and Publishing
+
 ```bash
 dotnet build O8Query/O8Query.csproj
 ```
@@ -37,9 +71,13 @@ dotnet build O8Query/O8Query.csproj
 dotnet run -p api/Harpoon.csproj
 ```
 
+Perform `dotnet publish` command when you are ready to setup the web service on a CGI on an HTTP server.
+
 ```bash
 dotnet publish api/Harpoon.csproj -o ../build -c Release
 ```
+
+#### Adding Packages
 
 [dotnet add package](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-add-package)
 
