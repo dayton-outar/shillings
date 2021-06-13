@@ -1,7 +1,7 @@
 <template>
   <div class="panel is-light">
     <h4 class="panel-heading">
-        Market Summary: ... [Date]
+        Market Summary: {{ formattedDateRange }}
     </h4>
     <div class="panel-block">
       <div class="column">
@@ -11,8 +11,9 @@
             :sort-icon="sortIcon"
             :sort-icon-size="sortIconSize"
             :default-sort-direction="defaultSortDirection"
-            :striped="true"
-            :hoverable="true"
+            striped
+            hoverable
+            detailed
             default-sort="percentage">
             <b-table-column field="security" label="Security" sortable v-slot="props">
               {{ props.row.security }}
@@ -29,6 +30,32 @@
             <b-table-column field="percentage" label="Percentage" numeric sortable v-slot="props">
               {{ formatPercentage(props.row.percentage) }}
             </b-table-column>
+
+            <template #detail="props">
+              <article>
+                <h5 class="title is-5">{{ props.row.security }}</h5>
+                <stocks-line :data="props.row.prices" :isDetail="true" />
+                <b-table
+                  :data="props.row.prices"
+                  striped
+                  hoverable>
+                  <b-table-column field="Date" label="Date" v-slot="details">
+                    {{ formatDate(details.row.Date) }}
+                  </b-table-column>
+                  <b-table-column field="ClosingPrices" label="ClosingPrice" numeric v-slot="details">
+                    {{ formatMoney(details.row.ClosingPrice) }}
+                  </b-table-column>
+                </b-table>
+              </article>
+            </template>
+
+            <template #footer>
+              <th>Total</th>
+              <th class="right-aligned">{{ formatTotalVolume() }}</th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </template>
           </b-table>
         </div>
       </div>
@@ -36,10 +63,15 @@
 </template>
 
 <script>
+import StocksLine from './StocksLine.vue'
+import moment from 'moment'
 
 export default {
   name: 'StockTrades',
-  props: ['tradings'],
+  props: ['tradings', 'formattedDateRange'],
+  components: {
+    'stocks-line':StocksLine,
+  },
   data() {
     return {
       defaultSortDirection: 'desc',
@@ -58,6 +90,16 @@ export default {
     },
     formatPercentage(percentage) {
       return `${ percentage }%`
+    },
+    formatDate(date) {
+      return  `${ moment(date).format('ddd. MMM, D, YYYY') }`
+    },
+    formatTotalVolume() {
+      const totalVolumesTraded = this.tradings.reduce((t, v) => {
+        return t + v.volume
+      }, 0)
+
+      return this.formatVolume(totalVolumesTraded)
     }
   }
 }

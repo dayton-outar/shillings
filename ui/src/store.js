@@ -1,6 +1,7 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
+import Vue from 'vue'
+import Vuex from 'vuex'
 import gql from 'graphql-tag'
+import { v4 as uuidv4 } from 'uuid'
 
 import graphQlClient from './apollo'
 
@@ -49,16 +50,6 @@ export const store = new Vuex.Store({
             
             return changes
         },
-        closingPrices(state) {
-          const prices = state.totalTradings.map(t => {
-            return {
-              name: t.security,
-              data: t.prices.map(p => p.ClosingPrice)
-            }
-          })
-
-          return prices
-        },
         holdings(state) {
           const ph = state.portfolioHoldings.map(h => {
             const itrade = state.totalTradings.find(t => t.code === h.security.code)
@@ -67,6 +58,7 @@ export const store = new Vuex.Store({
             let newCost = itrade ? h.volume * itrade.closingPrice : 0
 
             return {
+              id: h.id,
               security: h.security,
               volume: h.volume,
               unitPrice: h.unitPrice,
@@ -84,33 +76,44 @@ export const store = new Vuex.Store({
         setCompanies(state, payload) {
           state.companies = payload
         },
-        setStockTrades(state, payload) {
-          state.tradings = payload
-        },
         setTotalStockTrades(state, payload) {
           state.totalTradings = payload
         },
+        setPortfolio(state, payload) {
+          state.portfolioHoldings = payload
+        },
         addPortfolio(state, payload) {
+          const itrade = state.totalTradings.find(t => t.code === payload.security.code)
+          let newPrice = itrade ? itrade.closingPrice : 0
+          let oldCost = payload.volume * payload.unitPrice
+          let newCost = itrade ? payload.volume * itrade.closingPrice : 0
+
+          payload.id = uuidv4()
+          payload.purchaseCost = oldCost
+          payload.currentPrice = newPrice
+          payload.currentCost = newCost
+          payload.variance = (newCost - oldCost)
+
           state.portfolioHoldings.push(payload)
-          //localStorage.setItem('my-portfolio', JSON.stringify(state.portfolioHoldings) )
+          localStorage.setItem('my-portfolio', JSON.stringify(state.portfolioHoldings) )
         },
         updatePortfolio(state, payload) {
-          const ix = state.portfolioHoldings.findIndex((p => p.security.code == payload.security.code));
+          const ix = state.portfolioHoldings.findIndex(p => p.id === payload.id);
           if (ix > -1) {
             state.portfolioHoldings[ix] = payload;
           }
-          //localStorage.setItem('my-portfolio', JSON.stringify(state.portfolioHoldings) )
+          localStorage.setItem('my-portfolio', JSON.stringify(state.portfolioHoldings) )
         },
-        removePortfolio(state, code) {
-          const ix = state.portfolioHoldings.findIndex((p => p.security.code == code));
+        removePortfolio(state, id) {
+          const ix = state.portfolioHoldings.findIndex(p => p.id === id);
           if (ix > -1) {
             state.portfolioHoldings.splice(ix, 1);
           }
-          //ocalStorage.setItem('my-portfolio', JSON.stringify(state.portfolioHoldings) )
+          localStorage.setItem('my-portfolio', JSON.stringify(state.portfolioHoldings) )
         },
         flushPortfolio(state) {
           state.portfolioHoldings = []
-          //localStorage.removeItem('my-portfolio')
+          localStorage.removeItem('my-portfolio')
         }
     },
     actions: {
@@ -132,59 +135,6 @@ export const store = new Vuex.Store({
           })
           
           commit('setCompanies', response.data.companies.nodes)
-        },
-        async fetchStockTrades({ commit }, request) {
-            const response = await graphQlClient.query({
-                query: gql`query Get($page: Int!, $begin: DateTime, $end: DateTime) {
-                    stockTradings(
-                      first: $page
-                      order: { date: DESC }
-                      where: { and: [{date: { gte: $begin }}, {date: { lte: $end }}] }
-                    ) {
-                      edges {
-                        cursor
-                        node {
-                          security {
-                            code,
-                            security
-                          },
-                          volume,
-                          closingPrice,
-                          priceChange,
-                          percentage,
-                          date
-                        }
-                      }
-                      totalCount
-                      pageInfo {
-                        startCursor
-                        endCursor
-                        hasPreviousPage
-                        hasNextPage
-                      }
-                    }
-                  }`,
-                variables: {
-                    page: 50,
-                    begin: request.begin,
-                    end: request.end
-                },
-                error (error) {
-                    console.error(`We've got an error`, error)
-                }
-            })
-
-            const tradings = response.data.stockTradings.edges.map(e => {
-                return {
-                  security: e.node.security.security,
-                  volume: e.node.volume,
-                  closingPrice: e.node.closingPrice,
-                  priceChange: e.node.priceChange,
-                  percentage: e.node.percentage
-                }
-              })
-
-            commit('setStockTrades', tradings)
         },
         async fetchTotalStockTrades({ commit }, request) {
           const response = await graphQlClient.query({
@@ -227,6 +177,9 @@ export const store = new Vuex.Store({
           })
 
           commit('setTotalStockTrades', totalTrades)
+        },
+        getPortfolio({ commit }) {
+          commit('setPortfolio', JSON.parse(localStorage.getItem('my-portfolio')) )
         },
         addPortfolio({ commit }, payload) {
           commit('addPortfolio', payload)

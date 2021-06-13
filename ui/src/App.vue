@@ -1,5 +1,6 @@
 <template>
   <div>
+    <div v-if="isLoading" class="preloader"></div>
     <div class="bg-dark-blue-gradient">
       <div class="container">
         <div class="py-5 px-4">
@@ -8,17 +9,16 @@
       </div>
     </div>
     <div class="bg-light-gray">
-      <div class="container">
+      <div class="container">        
         <div class="bg-white py-5 px-4">
           <stocks-filter @changedDate="dateChanged" />
           <portfolio-form />
-          <div class="box"><b-button @click.prevent="getMyPortfolio" type="is-link">Get Portfolio</b-button></div>
-          <portfolio />
-          <VolumesPie v-if="totalTradings" :volumes="volumeShares" />
-          <PriceBar v-if="tradings" :changes="pricePercentages" />
-          <TradeCost v-if="totalTradings" :costs="tradeCosts" />
-          <StocksLine v-if="totalTradings" :prices="closingPrices" />
-          <stock-trades v-if="totalTradings" :tradings="totalTradings" />
+          <portfolio :formattedDateRange="formattedDateRange" />
+          <volumes-pie v-if="totalTradings" :volumes="volumeShares" />
+          <price-bar v-if="tradings" :changes="pricePercentages" />
+          <trade-cost v-if="totalTradings" :costs="tradeCosts" />
+          <stocks-line v-if="totalTradings" :data="totalTradings" :isDetail="false" />
+          <stock-trades v-if="totalTradings" :formattedDateRange="formattedDateRange" :tradings="totalTradings" />
         </div>      
       </div>
     </div>
@@ -49,94 +49,58 @@ export default {
     'stocks-filter': StockFilter,
     'portfolio': Portfolio,
     'portfolio-form': PortfolioForm,
-    VolumesPie,
-    StocksLine,
+    'volumes-pie': VolumesPie,
+    'stocks-line':StocksLine,
     'stock-trades':StockTrades,
-    PriceBar,
-    TradeCost
+    'price-bar': PriceBar,
+    'trade-cost': TradeCost
+  },
+  data() {
+    return {
+      formattedDateRange: '',
+      isLoading: false
+    }
   },
   computed: {
     ...mapState(['tradings', 'totalTradings']),
     ...mapGetters([
       'volumeShares',
       'tradeCosts',
-      'pricePercentages',
-      'closingPrices'
+      'pricePercentages'
       ])
   },
-  beforeCreate() {
+  beforeMount() {
+    this.isLoading = true
+    this.formatDates([new Date(), new Date()])
+
     this.$store.dispatch('fetchCompanies')
     this.$store.dispatch('fetchTotalStockTrades', {
         companyCode: '',
         begin: `${ moment.utc().format('YYYY-MM-DDT00:00:00.000') }Z`,
         end: `${ moment.utc().format('YYYY-MM-DDT00:00:00.000') }Z`
+      }).then(() => {
+        this.$store.dispatch('getPortfolio')
+        this.isLoading = false
       })
   },
   methods: {
     dateChanged(v) {
-      this.fetchStockTrades({
-        begin: `${ moment( v[0] ).format('YYYY-MM-DDT00:00:00.000') }Z`, // Clumsy but it's a pain to remove the offset...
-        end: `${ moment( v[1] ).format('YYYY-MM-DDT00:00:00.000') }Z`
-      })
+      this.isLoading = true
+      this.formatDates(v)
 
       this.fetchTotalStockTrades({
         companyCode: '',
         begin: `${ moment( v[0] ).format('YYYY-MM-DDT00:00:00.000') }Z`, // Clumsy but it's a pain to remove the offset...
         end: `${ moment( v[1] ).format('YYYY-MM-DDT00:00:00.000') }Z`
+      }).then(() => {
+        this.$store.dispatch('getPortfolio')
+        this.isLoading = false
       })
     },
-    getMyPortfolio(){
-      this.flushPortfolio()
-      this.addPortfolio({
-        security: {
-          code: 'eply8.25',
-          name: 'EPPLEY LIMITED 8.25 PREFERENCE'
-        },
-        volume: 7142,
-        unitPrice: 7.00
-      })
-      this.addPortfolio({
-        security: {
-          code: 'ncbfg',
-          name: 'NCB FINANCIAL GROUP LTD.'
-        },
-        volume: 698,
-        unitPrice: 138.20
-      })
-      this.addPortfolio({
-        security: {
-          code: 'pal',
-          name: 'PALACE AMUSEMENT CO LTD'
-        },
-        volume: 102,
-        unitPrice: 940.00
-      })
-      this.addPortfolio({
-        security: {
-          code: 'provenja',
-          name: 'PROVEN INVESTMENTS LTD'
-        },
-        volume: 963,
-        unitPrice: 35.77
-      })
-      this.addPortfolio({
-        security: {
-          code: 'sj',
-          name: 'SAGICOR GROUP JAMAICA LTD'
-        },
-        volume: 1926,
-        unitPrice: 50.62
-      })
-      this.addPortfolio({
-        security: {
-          code: 'wig',
-          name: 'WIGTON WINDFARM LIMITED ORDINARY SHARES'
-        },
-        volume: 10000,
-        unitPrice: 0.50
-      })
+    formatDates(dates) {
+      this.formattedDateRange = moment( dates[0] ).isSame(moment( dates[1] )) ? `${ moment( dates[0] ).format('dddd, MMM D, YYYY')}` : `${ moment( dates[0] ).format('dddd, MMM D, YYYY')} to ${ moment( dates[1] ).format('dddd, MMM D, YYYY') }`
     },
-    ...mapActions(['fetchStockTrades', 'fetchTotalStockTrades', 'addPortfolio', 'flushPortfolio'])
+    ...mapActions(['fetchTotalStockTrades', 'addPortfolio', 'flushPortfolio'])
   }
 }
 </script>
@@ -151,6 +115,27 @@ export default {
 
 body {
   background: #fafafa;
+}
+
+.preloader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  background-color: #ffffff;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url(./assets/stocks-chart.png);
+  animation: 1s beat 0.15s infinite alternate;
+}
+
+@keyframes beat {
+  0% { transform: scale(1); }
+	70% { transform: scale(1); }
+  85% { transform: scale(1.3); }
+  100% { transform: scale(1); }
 }
 
 .bg-white {

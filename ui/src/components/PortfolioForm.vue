@@ -42,6 +42,21 @@
             <b-button @click.prevent="addMyPortfolio" expanded type="is-link" size="is-medium">Add</b-button>
         </div>        
     </div>
+    <!--
+    <divclass="columns">
+      <div class="column">
+        
+      </div>
+    </div>
+    -->
+    <b-notification
+        auto-close
+        has-icon
+        :type="notificationType"
+        v-model="isNotificationActive"
+        aria-close-label="Close notification">
+        {{ notificationMessage }}
+    </b-notification>
   </div>
 </template>
 
@@ -79,7 +94,10 @@ export default ({
             numeralDecimalScale: 0,
             numeralThousandsGroupStyle: 'thousand'
           }
-        }
+        },
+        isNotificationActive: false,
+        notificationMessage: '',
+        notificationType: 'is-success'
       }
     },
     computed: {
@@ -100,6 +118,17 @@ export default ({
           },
           volume: parseInt(strippedVolume === '' ? 0 : strippedVolume, 10),
           unitPrice: parseFloat(strippedPrice === '' ? 0 : strippedPrice)
+        }).then( () => {
+          this.chosenCompany = null
+          this.volume = 0
+          this.unitPrice = 0
+          this.notificationType = 'is-success'
+          this.notificationMessage = 'Successfully added new stock holding'
+          this.isNotificationActive = true          
+        }).catch( () => {
+          this.notificationType = 'is-warning'
+          this.notificationMessage = 'Something went wrong'
+          this.isNotificationActive = true
         })
       }      
     }

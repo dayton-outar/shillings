@@ -1,7 +1,7 @@
 <template>
     <div class="panel is-info">
       <h4 class="panel-heading">
-        My Portfolio: ... [Date]
+        My Portfolio: {{ formattedDateRange }}
       </h4>
       <div class="panel-block">
         <div class="column">
@@ -13,26 +13,43 @@
             :striped="true"
             :hoverable="true"
             default-sort="variance">
+            
             <b-table-column field="security.name" label="Security" sortable v-slot="props">
               {{ props.row.security.name }}
             </b-table-column>
+            
             <b-table-column field="volume" label="Volume" numeric sortable v-slot="props">
               {{ formatVolume(props.row.volume) }}
             </b-table-column>
+            
             <b-table-column field="unitPrice" label="Unit Price" numeric sortable v-slot="props">
               {{ formatMoney(props.row.unitPrice) }}
             </b-table-column>
+            
             <b-table-column field="purchaseCost" label="Purchase Cost" numeric sortable v-slot="props">
               {{ formatMoney(props.row.purchaseCost) }}
             </b-table-column>
+            
             <b-table-column field="currentPrice" label="Current Price" numeric sortable v-slot="props">
               {{ formatMoney(props.row.currentPrice) }}
             </b-table-column>
+            
             <b-table-column field="currentCost" label="Current Cost" numeric sortable v-slot="props">
               {{ formatMoney(props.row.currentCost) }}
             </b-table-column>
+            
             <b-table-column field="variance" label="Gain or Loss" numeric sortable v-slot="props">
               {{ formatMoney(props.row.variance) }}
+            </b-table-column>
+
+            <b-table-column v-slot="props">
+              <template>
+                <b-button
+                  @click="removeMyPortfolio(props.row.id)"
+                  size="is-small"
+                  type="is-danger"
+                  icon-right="delete" />
+              </template>
             </b-table-column>
 
             <template #footer>
@@ -43,6 +60,7 @@
               <th></th>
               <th class="right-aligned">{{ formatTotalCurrentCost() }}</th>
               <th class="right-aligned">{{ formatTotalGainOrLoss() }}</th>
+              <th></th>
             </template>
           </b-table>
         </div>
@@ -52,53 +70,70 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 
 export default ({
-    data() {
-      return {
-        defaultSortDirection: 'desc',
-        sortIcon: 'arrow-up',
-        sortIconSize: 'is-small'
-      }
-    },
-    computed: {
-        ...mapGetters(['holdings'])
-    },
-    methods: {
-      formatVolume(volume) {
-        const nfi = new Intl.NumberFormat('en-US')
-        return nfi.format(volume)
-      },
-      formatMoney(amount) {
-        const cfi = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' })
-        return cfi.format(amount)
-      },
-      formatPercentage(percentage) {
-       return `${ percentage }%`
-      },
-      formatTotalPurchaseCost() {
-        const totalPurchaseCost = this.holdings.reduce((t, v) => {
-          return t + v.purchaseCost
-        }, 0)
-
-        return this.formatMoney(totalPurchaseCost)
-      },
-      formatTotalCurrentCost() {
-        const totalCurrentCost = this.holdings.reduce((t, v) => {
-          return t + v.currentCost
-        }, 0)
-
-        return this.formatMoney(totalCurrentCost)
-      },
-      formatTotalGainOrLoss() {
-        const totalVariance = this.holdings.reduce((t, v) => {
-          return t + v.variance
-        }, 0)
-
-        return this.formatMoney(totalVariance)
-      }
+  props: ['formattedDateRange'],
+  data() {
+    return {
+      defaultSortDirection: 'desc',
+      sortIcon: 'arrow-up',
+      sortIconSize: 'is-small'
     }
+  },
+  computed: {
+    ...mapGetters(['holdings'])
+  },
+  methods: {
+    ...mapActions(['removePortfolio']),
+    removeMyPortfolio(id) {
+      this.removePortfolio(id).then(() => {
+        this.$buefy.toast.open({
+          duration: 3000,
+          message: `Successfully removed a stock holding`,
+          type: 'is-success'
+        })
+      }).catch(() => {
+        this.$buefy.toast.open({
+          duration: 3000,
+          message: `Something went wrong`,
+          type: 'is-danger'
+        })
+      })
+    },
+    formatVolume(volume) {
+      const nfi = new Intl.NumberFormat('en-US')
+      return nfi.format(volume)
+    },
+    formatMoney(amount) {
+      const cfi = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' })
+      return cfi.format(amount)
+    },
+    formatPercentage(percentage) {
+      return `${ percentage }%`
+    },
+    formatTotalPurchaseCost() {
+      const totalPurchaseCost = this.holdings.reduce((t, v) => {
+        return t + v.purchaseCost
+      }, 0)
+
+      return this.formatMoney(totalPurchaseCost)
+    },
+    formatTotalCurrentCost() {
+      const totalCurrentCost = this.holdings.reduce((t, v) => {
+        return t + v.currentCost
+      }, 0)
+
+      return this.formatMoney(totalCurrentCost)
+    },
+    formatTotalGainOrLoss() {
+      const totalVariance = this.holdings.reduce((t, v) => {
+        return t + v.variance
+      }, 0)
+
+      return this.formatMoney(totalVariance)
+    }
+  }
 })
 
 </script>
