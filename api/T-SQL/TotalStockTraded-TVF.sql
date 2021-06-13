@@ -9,7 +9,7 @@ GO
 -- =============================================
 CREATE FUNCTION [dbo].[TotalStocksTraded] 
 (
-	@companyCode NVARCHAR(10) = '',
+	@companyCode NVARCHAR(MAX) = '',
     @begin DATE,
     @end DATE
 )
@@ -24,9 +24,10 @@ RETURN
         O.[OpeningPrice],
         V.[ClosingDate],
         F.[ClosingPrice],
+        H.[HighestPrice],
+        L.[LowestPrice],
         ROUND(((F.[ClosingPrice] - O.[OpeningPrice]) / O.[OpeningPrice]) * 100, 2) [Percentage],
         (SELECT
-            T.[SecurityCode] [Code],
             T.[ClosingPrice],
             T.[Date]
         FROM [dbo].[StockTradings] T
@@ -57,4 +58,16 @@ RETURN
             T.[ClosingPrice],
             CAST(T.[Date] AS DATE) [Date]
         FROM [dbo].[StockTradings] T) F ON F.[SecurityCode] = V.[Code] AND F.[Date] = V.[ClosingDate]
+        INNER JOIN
+        (SELECT
+            T.[SecurityCode],
+            MAX(T.[ClosingPrice]) [HighestPrice]
+        FROM [dbo].[StockTradings] T
+        GROUP BY T.[SecurityCode]) H ON H.[SecurityCode] = V.[Code]
+        INNER JOIN
+        (SELECT
+            T.[SecurityCode],
+            MIN(T.[ClosingPrice]) [LowestPrice]
+        FROM [dbo].[StockTradings] T
+        GROUP BY T.[SecurityCode]) L ON L.[SecurityCode] = V.[Code]
     WHERE (@companyCode = '' OR V.[Code] = @companyCode);

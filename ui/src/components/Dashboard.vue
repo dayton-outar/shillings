@@ -1,6 +1,6 @@
 <template>
     <div>
-        <stocks-filter @changedDate="dateChanged" />
+        <stocks-filter @filterChanged="filterChanged" />
         <portfolio-form />
         <portfolio :formattedDateRange="formattedDateRange" />
         <section v-if="totalTradings">
@@ -152,14 +152,15 @@ export default {
       })
   },
   methods: {
-    dateChanged(v) {
+    filterChanged(v) {
+      let lc = v.companies.reduce((a, v) => a === '' ? `"${v.code}"` : a.concat(`,`, `"${v.code}"`), '')
       this.$emit('changeLoading', true)
-      this.formatDates(v)
+      this.formatDates(v.dates)
 
       this.fetchTotalStockTrades({
-        companyCode: '',
-        begin: `${ moment( v[0] ).format('YYYY-MM-DDT00:00:00.000') }Z`, // Clumsy but it's a pain to remove the offset...
-        end: `${ moment( v[1] ).format('YYYY-MM-DDT00:00:00.000') }Z`
+        companyCode: lc,
+        begin: `${ moment( v.dates[0] ).format('YYYY-MM-DDT00:00:00.000') }Z`, // Clumsy but it's a pain to remove the offset...
+        end: `${ moment( v.dates[1] ).format('YYYY-MM-DDT00:00:00.000') }Z`
       }).then(() => {
         this.$store.dispatch('getPortfolio')
         this.$emit('changeLoading', false)

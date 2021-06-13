@@ -16,7 +16,8 @@
             v-model="selectedCompanies"
             multiple
             scrollable
-            aria-role="list">
+            aria-role="list"
+            @change="selectCompanies">
             <template #trigger>
               <b-button
                 type="is-light"
@@ -49,11 +50,12 @@ export default {
     this.$store.dispatch('fetchCompanies')
   },
   methods: {
-    clickMe() {
-      this.$buefy.notification.open('Clicked!')
+    dateChanged() {
+      this.$emit('filterChanged', { dates: this.dates, companies: this.selectedCompanies })
     },
-    dateChanged(v) {
-      this.$emit('changedDate', v)
+    selectCompanies(v) {
+      this.selectedCompanies = v
+      this.$emit('filterChanged', { dates: this.dates, companies: this.selectedCompanies })
     },
     dateFormatter(dates) {
       return `${ moment(dates[0]).format('MMM-D-YYYY') } ⟶ ${ moment(dates[1]).format('MMM-D-YYYY') }`

@@ -55,6 +55,18 @@ namespace O8Query.Models
         /// </summary>
         [Column(TypeName = "date")]
         public DateTime ClosingDate { get; set; }
+
+        /// <summary>
+        /// Highest closing price ever achieved
+        /// </summary>
+        [Column(TypeName = "decimal(18,2)")]
+        public decimal HighestPrice { get; set; }
+
+        /// <summary>
+        /// Lowest closing price ever achieved
+        /// </summary>
+        [Column(TypeName = "decimal(18,2)")]
+        public decimal LowestPrice { get; set; }
         
         /// <summary>
         /// XML containing list of closing prices and dates between the opening and closing dates

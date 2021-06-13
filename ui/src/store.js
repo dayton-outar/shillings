@@ -152,6 +152,8 @@ export const store = new Vuex.Store({
                     openingPrice,
                     closingDate,
                     closingPrice,
+                    lowestPrice,
+                    highestPrice,
                     percentage,
                     prices
                   }
