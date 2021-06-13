@@ -11,7 +11,6 @@ export const store = new Vuex.Store({
     strict: true,
     state: {
       companies: [],
-      tradings: null,
       totalTradings: null,
       portfolioHoldings: []
     },
@@ -169,8 +168,8 @@ export const store = new Vuex.Store({
               t.prices = JSON.parse(t.prices)
             }
             catch (err) {
-              console.log(t.security, err.message, t.prices)
-              t.prices = []
+              console.log(err.message)
+              console.log('Already parsed')
             }
 
             return t

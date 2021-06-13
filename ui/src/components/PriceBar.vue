@@ -34,7 +34,7 @@ export default {
         },
         tooltip: {
             useHTML: true,
-            formatter: function () {              
+            formatter: function () {
               return `<table>
                         <tr>
                           <td style="color:${this.series.color};padding:0">${this.series.name}: </td>

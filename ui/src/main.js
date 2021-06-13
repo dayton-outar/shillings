@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 
 import { store } from './store'
+import router from './router'
 
 // Install Buefy and reference it's stylesheet
 import Buefy from 'buefy'
@@ -38,5 +39,6 @@ new Vue({
   el: '#app',
   //mixins: [utilMixin],
   store,
+  router,
   render:h => h(App),
 })

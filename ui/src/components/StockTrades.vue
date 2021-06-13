@@ -34,7 +34,7 @@
             <template #detail="props">
               <article>
                 <h5 class="title is-5">{{ props.row.security }}</h5>
-                <stocks-line :name="props.row.security" :data="props.row.prices" :isDetail="true" />
+                <stocks-line :name="props.row.security" :stocks="props.row.prices" :isDetail="true" />
                 <b-table
                   :data="props.row.prices"
                   striped
@@ -50,12 +50,18 @@
             </template>
 
             <template #footer>
+              <th></th>
               <th>Total</th>
               <th class="right-aligned">{{ formatTotalVolume() }}</th>
               <th></th>
               <th></th>
               <th></th>
             </template>
+
+            <template #empty>
+                <div class="has-text-centered">No records</div>
+            </template>
+            
           </b-table>
         </div>
       </div>

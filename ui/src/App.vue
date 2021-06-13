@@ -11,14 +11,7 @@
     <div class="bg-light-gray">
       <div class="container">        
         <div class="bg-white py-5 px-4">
-          <stocks-filter @changedDate="dateChanged" />
-          <portfolio-form />
-          <portfolio :formattedDateRange="formattedDateRange" />
-          <volumes-pie v-if="totalTradings" :volumes="volumeShares" />
-          <price-bar v-if="tradings" :changes="pricePercentages" />
-          <trade-cost v-if="totalTradings" :costs="tradeCosts" />
-          <stocks-line v-if="totalTradings" :data="totalTradings" :isDetail="false" />
-          <stock-trades v-if="totalTradings" :formattedDateRange="formattedDateRange" :tradings="totalTradings" />
+          <dashboard @changeLoading="setLoading" />
         </div>      
       </div>
     </div>
@@ -31,78 +24,36 @@
 </template>
 
 <script>
-import { mapState, mapGetters, mapActions } from 'vuex'
-import moment from 'moment'
-
-import StockFilter from './components/StockFilter.vue'
-import VolumesPie from './components/VolumesPie.vue'
-import StocksLine from './components/StocksLine.vue'
-import StockTrades from './components/StockTrades.vue'
-import PriceBar from './components/PriceBar.vue'
-import TradeCost from './components/TradeCost.vue'
-import PortfolioForm from './components/PortfolioForm.vue'
-import Portfolio from './components/Portfolio.vue'
+import Dashboard from './components/Dashboard.vue'
 
 export default {
   name: 'App',
   components: {
-    'stocks-filter': StockFilter,
-    'portfolio': Portfolio,
-    'portfolio-form': PortfolioForm,
-    'volumes-pie': VolumesPie,
-    'stocks-line':StocksLine,
-    'stock-trades':StockTrades,
-    'price-bar': PriceBar,
-    'trade-cost': TradeCost
+    'dashboard': Dashboard
   },
   data() {
     return {
-      formattedDateRange: '',
       isLoading: false
     }
   },
-  computed: {
-    ...mapState(['tradings', 'totalTradings']),
-    ...mapGetters([
-      'volumeShares',
-      'tradeCosts',
-      'pricePercentages'
-      ])
+  watch: {
+    $route: {
+      immediate: true,
+      handler(to) {
+        document.title = to.meta.title || `JSE Stock Tracker`
+      }
+    }
   },
   beforeMount() {
     this.isLoading = true
-    this.formatDates([new Date(), new Date()])
-
-    this.$store.dispatch('fetchCompanies')
-    this.$store.dispatch('fetchTotalStockTrades', {
-        companyCode: '',
-        begin: `${ moment.utc().format('YYYY-MM-DDT00:00:00.000') }Z`,
-        end: `${ moment.utc().format('YYYY-MM-DDT00:00:00.000') }Z`
-      }).then(() => {
-        this.$store.dispatch('getPortfolio')
-        this.isLoading = false
-      })
   },
   methods: {
-    dateChanged(v) {
-      this.isLoading = true
-      this.formatDates(v)
-
-      this.fetchTotalStockTrades({
-        companyCode: '',
-        begin: `${ moment( v[0] ).format('YYYY-MM-DDT00:00:00.000') }Z`, // Clumsy but it's a pain to remove the offset...
-        end: `${ moment( v[1] ).format('YYYY-MM-DDT00:00:00.000') }Z`
-      }).then(() => {
-        this.$store.dispatch('getPortfolio')
-        this.isLoading = false
-      })
-    },
-    formatDates(dates) {
-      this.formattedDateRange = moment( dates[0] ).isSame(moment( dates[1] )) ? `${ moment( dates[0] ).format('dddd, MMM D, YYYY')}` : `${ moment( dates[0] ).format('dddd, MMM D, YYYY')} to ${ moment( dates[1] ).format('dddd, MMM D, YYYY') }`
-    },
-    ...mapActions(['fetchTotalStockTrades', 'addPortfolio', 'flushPortfolio'])
+    setLoading(isItLoading) {
+      this.isLoading = isItLoading
+    }
   }
 }
+
 </script>
 
 <style>

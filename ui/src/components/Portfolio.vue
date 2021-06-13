@@ -62,6 +62,11 @@
               <th class="right-aligned">{{ formatTotalGainOrLoss() }}</th>
               <th></th>
             </template>
+
+            <template #empty>
+                <div class="has-text-centered">No records</div>
+            </template>
+            
           </b-table>
         </div>
         

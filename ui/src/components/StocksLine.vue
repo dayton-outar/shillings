@@ -1,5 +1,5 @@
 <template>
-  <div :id="lineChartId"></div>
+  <div v-if="stocks" :id="lineChartId"></div>
 </template>
 
 <script>
@@ -9,37 +9,21 @@ import moment from 'moment'
 
 export default {
   name: 'StocksLine',
-  props: ['data', 'name', 'isDetail'],
+  props: ['stocks', 'name', 'isDetail'],
   computed: {
     ...mapState(['companies']),
-    preparedDates() {
-        if (this.isDetail) {
-            const closingDates = this.data.map(p => p.Date)
-            return [{
-              name: this.name,
-              data: closingDates
-            }]
-        } else {
-          return this.data.map(d => {
-            return {
-              name: d.security,
-              data: d.prices.map(p => p.Date)
-            }
-          })
-        }
-    },
     preparedPrices() {
         if (this.isDetail) {
-            const prices = this.data.map(p => [p.Date, p.ClosingPrice])
+            const prices = this.stocks.map(p => [Date.UTC(moment(p.Date).toDate().getFullYear(), moment(p.Date).toDate().getMonth(), moment(p.Date).toDate().getDate()), p.ClosingPrice])
             return [{
               name: this.name,
               data: prices
             }]
         } else {
-          return this.data.map(d => {
+          return this.stocks.map(d => {
             return {
               name: d.security,
-              data: d.prices.map(p => [moment(p.Date).toDate(), p.ClosingPrice])
+              data: d.prices.map(p => [Date.UTC(moment(p.Date).toDate().getFullYear(), moment(p.Date).toDate().getMonth(), moment(p.Date).toDate().getDate()), p.ClosingPrice])
             }
           })
         }
@@ -51,16 +35,17 @@ export default {
       }
   },
   mounted() {
-    this.renderLineChart()
+    if (this.isDetail) {
+      this.renderLineChart()
+    }
   },
   watch: {
-    data() {
+    stocks() {
       this.renderLineChart()
     }
   },
   methods: {
       renderLineChart() {
-          console.log(this.lineChartId, this.preparedPrices)
           window.Highcharts.chart(`${ this.lineChartId }`, {
             title: {
                 text: 'Stock Closing Price'
@@ -75,12 +60,13 @@ export default {
             },
             xAxis: {
                 type: 'datetime',
-                dateTimeLabelFormats: {
-                    month: '%e. %b',
-                    year: '%b'
-                },
                 title: {
                     text: 'Date'
+                },
+                labels: {
+                  formatter: function () {
+                    return window.Highcharts.dateFormat('%b %e, %Y', this.value);
+                  }
                 }
             },
             legend: {
