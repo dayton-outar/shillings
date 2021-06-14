@@ -71,6 +71,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 2. [Vue Apollo: Smart Query](https://apollo.vuejs.org/api/smart-query.html#options)
 3. [Combining GraphQL and Vuex](https://markus.oberlehner.net/blog/combining-graphql-and-vuex/) by Markus Oberlehner
 4. [How to change page titles when using vue-router?](https://stackoverflow.com/questions/51639850/how-to-change-page-titles-when-using-vue-router) - StackOverflow
+5. [My Vue Experience after 3 projects in 18 months](https://dev.to/crisarji/my-vue-experience-after-3-projects-in-18-months-456c)
 
 ## Video Tutorial References
 
