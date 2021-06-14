@@ -1,6 +1,23 @@
-# Scheduled Service
+# Web Scraper
 
-## Cron
+...
+
+## Requirements
+
+ * [Node](https://nodejs.org/en/) 14.15 or greater
+
+### Highlighted Packages
+
+ * [Puppeteer](https://www.npmjs.com/package/puppeteer)
+ * [MS SQL](https://www.npmjs.com/package/mssql)
+
+## Installation
+
+## Usage
+
+## Contributions
+
+### Cron Job
 
 [How to Set Up a Cron Job in Linux](https://phoenixnap.com/kb/set-up-cron-job-linux)
 
