@@ -13,13 +13,16 @@
 
 ## Installation
 
+```bash
+npm install
+```
+
 ## Usage
 
-## Contributions
-
+```bash
+node o8$ 2021-02-01 ++
+```
 ### Cron Job
-
-[How to Set Up a Cron Job in Linux](https://phoenixnap.com/kb/set-up-cron-job-linux)
 
 | Description | Crontab Syntax |
 | :--- | :--- |
@@ -34,3 +37,11 @@ Grant _scraper.sh_ executable permissions
 ```bash
 chmod +x [host directory]/scripts/scraper.sh
 ```
+
+## Contributions
+
+
+
+## Further Reading
+
+1. [How to Set Up a Cron Job in Linux](https://phoenixnap.com/kb/set-up-cron-job-linux)
