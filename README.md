@@ -6,6 +6,8 @@ Initially this application was built to crawl through a web site to identify all
 
  - Kubernetes
  - NGINX
+ - Node
+ - .NET
  - Microsoft SQL Server 2019 (Community Edition)
 
 ## Installation
