@@ -34,3 +34,5 @@ Going to need 4 types of containers:
 2. NGINX running the dotnet GraphQL API
 3. MSSQL container hosting the database
 4. Cron service running node
+
+Do I need [Fluentd](https://docs.fluentd.org/)?
