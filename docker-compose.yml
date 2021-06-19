@@ -1,0 +1,32 @@
+version: "3.7"
+services:
+  ui:
+    build: ui
+    ports:
+      - 8080:8080
+    depends_on: 
+      - api
+  api:
+    build: api
+    depends_on: 
+      - db
+    environment:
+      - ASPNETCORE_URLS=http://+:5000
+  db:
+    image: mcr.microsoft.com/mssql/server:2019-CU3-ubuntu-18.04
+    restart: always
+    ports:
+      - 1411:1433
+    volumes:
+      - msdata:/var/opt/mssql
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=Password44
+  proxy:
+    build: proxy
+    ports:
+      - 8000:80
+    depends_on: 
+      - api
+volumes:
+  msdata:
