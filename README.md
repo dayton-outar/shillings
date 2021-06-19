@@ -35,4 +35,18 @@ Going to need 4 types of containers:
 3. MSSQL container hosting the database
 4. Cron service running node
 
+Build docker image from Dockerfile for Harpoon. (Given that the `dotnet publish` command is ran on Harpoon to create the _build_ folder)
+
+```bash
+cd api
+docker build -t krysis/harpoon .
+```
+
+Run docker container for Harpoon
+
+```bash
+docker run -d --name harpoon -p 5000:5000 krysis/harpoon
+```
+
+
 Do I need [Fluentd](https://docs.fluentd.org/)?
