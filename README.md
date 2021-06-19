@@ -61,6 +61,18 @@ Run docker container for UI
 docker run -d --name ui -p 8080:80 krysis/jse-stock-tracker
 ```
 
+Using docker-compose in root folder
+
+```bash
+docker-compose up -d
+```
+
+Shutting down containers
+
+```bash
+docker-compose down
+```
+
 Do I need [Fluentd](https://docs.fluentd.org/)?
 
 ## Further Reading
