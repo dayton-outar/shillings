@@ -79,6 +79,13 @@ namespace Harpoon
                 {
                     endpoints.MapGraphQL();
                 });
+            
+            // var serviceScopeFactory = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>();
+            // using (var serviceScope = serviceScopeFactory.CreateScope())
+            // {
+            //     var dbContext = serviceScope.ServiceProvider.GetService<StocksQuery>();
+            //     dbContext.Database.EnsureCreated();
+            // }
         }
     }
 }

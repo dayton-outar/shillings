@@ -2,12 +2,14 @@ version: "3.7"
 services:
   ui:
     build: ui
+    restart: always
     ports:
       - 8080:80
     depends_on: 
       - api
   api:
     build: api
+    restart: always
     ports:
       - 5000:5000
     depends_on: 
@@ -15,14 +17,17 @@ services:
     environment:
       - ASPNETCORE_URLS=http://+:5000
   db:
-    image: mcr.microsoft.com/mssql/server:2019-CU3-ubuntu-18.04
+    build: db
     restart: always
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P Password44 -Q 'SELECT 1' || exit 1"]
+      interval: 10s
+      retries: 10
+      start_period: 10s
+      timeout: 3s
     ports:
       - 1411:1433
     volumes:
       - msdata:/var/opt/mssql
-    environment:
-      - ACCEPT_EULA=Y
-      - MSSQL_SA_PASSWORD=Password44
 volumes:
   msdata:
