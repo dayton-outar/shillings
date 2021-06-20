@@ -9,7 +9,9 @@ function run(url = "https://www.jamstockex.com/market-data/summaries/") {
     return new Promise(async (resolve, reject) => {
         try {
 
-            const browser = await puppeteer.launch();
+            const browser = await puppeteer.launch({
+                args: ['--no-sandbox', '--disable-setuid-sandbox']
+            });
             const page = await browser.newPage();
             await page.setRequestInterception(true);
             page.on('request', (request) => {
@@ -112,7 +114,7 @@ async function runner( bringToCurrentDate, begin, end, rest = 2 ) {
     }
 }
 
-const args = process.argv.slice(3);
+const args = process.argv.slice(2);
 
 if ( args.length > 2 ) {
     console.log( 'Too many parameters provided' );

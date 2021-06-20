@@ -1,3 +1,5 @@
+export O8DBHOST=localhost
+export MSSQLPORT=1401
 export MSSQLUSER=SA
 export MSSQLPWD=Password44
 

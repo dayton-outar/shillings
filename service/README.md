@@ -78,6 +78,8 @@ The variables expected by this program are `MSSQLUSER` and `MSSQLPWD`
 Here's an idea of what a Bash script should look like when being called by a cronjob.
 
 ```bash
+export O8DBHOST=localhost
+export MSSQLPORT=1401
 export MSSQLUSER=susy
 export MSSQLPWD=1c3Cr3amC0ne$
 

@@ -7,8 +7,8 @@ dotenv.config();
 const config = {
     user: process.env.MSSQLUSER,
     password: process.env.MSSQLPWD,
-    server: 'localhost',
-    port: 1401,
+    server: process.env.O8DBHOST,
+    port: parseInt(process.env.MSSQLPORT, 10),
     database: 'stocks',
     options: {
         enableArithAbort: true

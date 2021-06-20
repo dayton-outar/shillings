@@ -18,6 +18,18 @@ services:
       - db
     environment:
       - ASPNETCORE_URLS=http://+:5000
+  svc:
+    build: service
+    restart: always
+    links:
+      - db:db
+    depends_on:
+      - db
+    environment: 
+      - O8DBHOST=db
+      - MSSQLPORT=1433
+      - MSSQLUSER=SA
+      - MSSQLPWD=Password44
   db:
     build: db
     restart: always
