@@ -10,6 +10,8 @@ services:
   api:
     build: api
     restart: always
+    links:
+      - db:db
     ports:
       - 5000:5000
     depends_on: 

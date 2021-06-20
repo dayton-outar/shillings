@@ -74,7 +74,7 @@ dotnet run -p api/Harpoon.csproj
 Perform `dotnet publish` command when you are ready to setup the web service on a CGI on an HTTP server.
 
 ```bash
-dotnet publish api/Harpoon.csproj -o ../build -c Release
+dotnet publish Harpoon/Harpoon.csproj -o ./build -c Release
 ```
 
 #### Adding Packages
