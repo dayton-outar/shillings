@@ -85,3 +85,6 @@ Do I need [Fluentd](https://docs.fluentd.org/)?
 ## Tutorial Video
 
 1. [25 VS Code Productivity Tips and Speed Hacks](https://youtu.be/ifTF3ags0XI)
+2. [Learn Docker - DevOps with Node.js & Express](https://youtu.be/9zUHg7xjIqQ)
+3. [Kubernetes 101](https://www.youtube.com/playlist?list=PL2_OBreMn7FoYmfx27iSwocotjiikS5BD)
+4. [Kubernetes Tutorial for Beginners [FULL COURSE in 4 Hours]](https://youtu.be/X48VuDVv0do)
