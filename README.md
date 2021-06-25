@@ -81,6 +81,7 @@ Do I need [Fluentd](https://docs.fluentd.org/)?
 2. [Host ASP.NET Core on Linux with Nginx](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?view=aspnetcore-5.0)
 3. [How to Configure Nginx as Reverse Proxy for Nodejs App](https://www.tecmint.com/nginx-as-reverse-proxy-for-nodejs-app/)
 4. [How to run Node cron jobs inside a Docker container](https://www.tddapps.com/2016/05/05/how-to-run-node-cron-jobs-in-a-docker-container/)
+5. [The Twelve-Factor App](https://12factor.net/)
 
 ## Tutorial Video
 
