@@ -301,6 +301,7 @@ query {
 
 ## Tutorial Videos
 
-1. [Getting started with GraphQL and HotChocolate](https://youtu.be/Hh8L6I2BV7k)
-2. [GraphQL Schema Stitching](https://youtu.be/ODBR7kZHp-s)
-3. [Real-time Data fetching with GraphQL and Blazor](https://youtu.be/iDAYdrFHqGU)
+1. [.NET 5 REST API Tutorial](https://www.youtube.com/playlist?list=PLeD0-5Hw0ZJ_GlY21kfzfQD-N17i8pdTS)
+2. [Getting started with GraphQL and HotChocolate](https://youtu.be/Hh8L6I2BV7k)
+3. [GraphQL Schema Stitching](https://youtu.be/ODBR7kZHp-s)
+4. [Real-time Data fetching with GraphQL and Blazor](https://youtu.be/iDAYdrFHqGU)
