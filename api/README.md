@@ -305,3 +305,5 @@ query {
 2. [Getting started with GraphQL and HotChocolate](https://youtu.be/Hh8L6I2BV7k)
 3. [GraphQL Schema Stitching](https://youtu.be/ODBR7kZHp-s)
 4. [Real-time Data fetching with GraphQL and Blazor](https://youtu.be/iDAYdrFHqGU)
+5. [Elegant API Versioning in ASP.NET Core (Web API)](https://youtu.be/iVHtKG0eU_s) - [Nick Chapas](https://www.youtube.com/c/Elfocrash/)
+6. [Setting up JWT support (Authentication) | ASP.NET Core 5 REST API Tutorial 9](https://youtu.be/M6AkbBaDGJE) - [Nick Chapas](https://www.youtube.com/c/Elfocrash/)
