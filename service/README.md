@@ -99,3 +99,7 @@ There is a simple design pattern that achieves the motives of the overall plan (
 ## Further Reading
 
 1. [How to Set Up a Cron Job in Linux](https://phoenixnap.com/kb/set-up-cron-job-linux)
+
+## Tutorial Videos
+
+1. [The power of Headless Chrome and browser automation](https://youtu.be/lhZOFUY1weo)
