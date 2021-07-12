@@ -308,3 +308,4 @@ query {
 5. [Elegant API Versioning in ASP.NET Core (Web API)](https://youtu.be/iVHtKG0eU_s) - [Nick Chapas](https://www.youtube.com/c/Elfocrash/)
 6. [Setting up JWT support (Authentication) | ASP.NET Core 5 REST API Tutorial 9](https://youtu.be/M6AkbBaDGJE) - [Nick Chapas](https://www.youtube.com/c/Elfocrash/)
 7. [10 C# Libraries To Save You Time And Energy](https://youtu.be/uS0hRJqamfU)
+8. [Creating NuGet Packages the easy way with .NET Standard in C#](https://youtu.be/AF1y9gLcxjQ)
