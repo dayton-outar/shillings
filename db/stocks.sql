@@ -351,6 +351,7 @@ RETURN
         FROM [dbo].[StockTradings] T
             INNER JOIN [dbo].[Companies] C ON C.[Code] = T.[SecurityCode]
         WHERE T.[SecurityCode] = V.[Code] AND CAST(T.[Date] AS DATE) BETWEEN V.[OpeningDate] AND V.[ClosingDate]
+        ORDER BY T.[Date]
         FOR JSON AUTO) AS [Prices]
         --FOR XML RAW ('Price'), ROOT ('Prices'), ELEMENTS
     FROM (SELECT
@@ -389,3 +390,4 @@ RETURN
         FROM [dbo].[StockTradings] T
         GROUP BY T.[SecurityCode]) L ON L.[SecurityCode] = V.[Code]
     WHERE (@companyCode = '' OR EXISTS( SELECT '' FROM STRING_SPLIT(@companyCode, ',') WHERE SUBSTRING(value, 2, LEN(value) - 2) = V.Code) );
+GO
