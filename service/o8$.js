@@ -36,7 +36,7 @@ function readCompanies() {
                 type: cols[4].textContent.trim(),
                 listed: cols[0].querySelector('a') ? true : false
             });
-        }        
+        }
     });
 
     return results;
@@ -47,7 +47,7 @@ function readMarketCapitalization() {
 }
 
 function readOutstandingShares() {
-    parseInt(document.querySelectorAll('table')[1].querySelectorAll('tbody > tr')[1].querySelectorAll('td')[0].textContent.split(' ')[0].trim().replace(/[,]/g, ''));
+    return parseInt(document.querySelectorAll('table')[1].querySelectorAll('tbody > tr')[1].querySelectorAll('td')[0].textContent.split(' ')[0].trim().replace(/[,]/g, ''));
 }
 
 // Adapted from https://www.toptal.com/puppeteer/headless-browser-puppeteer-tutorial done by Nick Chikovani
@@ -60,17 +60,22 @@ function run(url, cb) {
             });
             const page = await browser.newPage();
             await page.setRequestInterception(true);
-            page.on('request', (request) => {
+
+            const rqcb = (request) => {
                 if (request.resourceType() === 'document') {
                     request.continue();
                 } else {
                     request.abort();
                 }
-            });
+            }
+            page.on('request', rqcb);
             await page.goto(url);
 
             await page.waitForSelector('h1');
+
             let response = await page.evaluate(cb);
+
+            page.removeListener('request', rqcb);
 
             browser.close();
             return resolve(response);
@@ -148,9 +153,10 @@ if (args.length > 2) {
     process.exit(1);
 }
 
-switch(args[0]) {
+switch (args[0]) {
     case 'read-companies':
-        getCompanies();
+        //getCompanies();
+        getOutstandingShares();
         break;
     default:
         getStocks();
@@ -169,7 +175,7 @@ function getStocks() {
             process.exit(1);
         }
     }
-    
+
     if (args[1]) {
         if (args[1] !== '++') {
             if (!moment(args[1]).isValid()) {
@@ -178,7 +184,7 @@ function getStocks() {
             }
         }
     }
-    
+
     if (args.length == 0) {
         runner(false, moment().format('YYYY-MM-DD'));
     } else if (args.length == 1) {
@@ -192,29 +198,44 @@ function getStocks() {
     }
 }
 
-async function getCompanies() {
+function getCompanies(rest = 2) {
     run(`https://www.jamstockex.com/market-data/listed-companies/`, readCompanies)
-            .then(companies => {
+        .then(companies => {
 
-                for (const company of companies) {
+            for (const company of companies) {
+                if (company.listed) {
+                    console.log(`Getting outstanding shares for ${company.security} ...`);
+                    // Spawning too many threads of puppeteer process
+                    /*
                     run(`https://www.jamstockex.com/market-data/instruments/?symbol=${company.code}`, readOutstandingShares)
-                        .then(outStandingShares => {
-                            company.outStandingShares = outStandingShares;
+                        .then(outstandingShares => {
+                            company.outStandingShares = outstandingShares;
+                            console.log(outstandingShares);
                         })
                         .catch(console.error);
+                    
+                    sleep.sleep(rest);
+                    */
                 }
+            }
 
-                console.log(companies);
+            /*
+            if (stocks.length > 0) {
+                console.log(`${stocks.length} trades pulled ${stocks[0].date}`);
 
-                /*
-                if (stocks.length > 0) {
-                    console.log(`${stocks.length} trades pulled ${stocks[0].date}`);
+                O8Q.updateStocks(tradings)
+                    .then(r => console.log(r.message))
+                    .catch(e => console.error(e.message));
+            }
+            */
+        })
+        .catch(console.error);
+}
 
-                    O8Q.updateStocks(tradings)
-                        .then(r => console.log(r.message))
-                        .catch(e => console.error(e.message));
-                }
-                */
-            })
-            .catch(console.error);
+function getOutstandingShares() {
+    run(`https://www.jamstockex.com/market-data/instruments/?symbol=sj`, readOutstandingShares)
+        .then(outstandingShares => {
+            console.log(outstandingShares);
+        })
+        .catch(console.error);
 }
