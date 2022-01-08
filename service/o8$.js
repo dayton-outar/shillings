@@ -42,12 +42,12 @@ function readCompanies() {
     return results;
 }
 
-function readMarketCapitalization() {
-    return parseFloat(document.querySelectorAll('table')[1].querySelectorAll('tbody > tr')[0].querySelectorAll('td')[0].trim().replace(/[$,]/g, ''));
-}
-
-function readOutstandingShares() {
-    return parseInt(document.querySelectorAll('table')[1].querySelectorAll('tbody > tr')[1].querySelectorAll('td')[0].textContent.split(' ')[0].trim().replace(/[,]/g, ''));
+function readOutstandingSharesMarketCapitalization() {
+    let rows = document.querySelectorAll('table')[1].querySelectorAll('tbody > tr');
+    return {
+        outstandingShares: parseInt(rows[1].querySelectorAll('td')[0].textContent.split(' ')[0].trim().replace(/[,]/g, '')),
+        marketCapitalization: parseFloat(rows[0].querySelectorAll('td')[0].textContent.trim().replace(/[$,]/g, ''))
+    }
 }
 
 // Adapted from https://www.toptal.com/puppeteer/headless-browser-puppeteer-tutorial done by Nick Chikovani
@@ -155,8 +155,21 @@ if (args.length > 2) {
 
 switch (args[0]) {
     case 'read-companies':
-        //getCompanies();
-        getOutstandingShares();
+        let companies = getCompanies();
+
+        companies.then(l => {
+            for (const company of l) {
+                if (company.listed) {
+                    console.log(`Getting outstanding shares for ${company.security} ...`);
+                    // Spawning too many threads of puppeteer process
+                    await getOutstandingSharesAndMarketCapitalization(company.code)
+                        .then(console.log)
+                        .catch(console.error);
+                    sleep.sleep(1);
+                }
+            }
+        });
+
         break;
     default:
         getStocks();
@@ -199,43 +212,21 @@ function getStocks() {
 }
 
 function getCompanies(rest = 2) {
-    run(`https://www.jamstockex.com/market-data/listed-companies/`, readCompanies)
+    return new Promise((resolve, reject) => {
+        run(`https://www.jamstockex.com/market-data/listed-companies/`, readCompanies)
         .then(companies => {
-
-            for (const company of companies) {
-                if (company.listed) {
-                    console.log(`Getting outstanding shares for ${company.security} ...`);
-                    // Spawning too many threads of puppeteer process
-                    /*
-                    run(`https://www.jamstockex.com/market-data/instruments/?symbol=${company.code}`, readOutstandingShares)
-                        .then(outstandingShares => {
-                            company.outStandingShares = outstandingShares;
-                            console.log(outstandingShares);
-                        })
-                        .catch(console.error);
-                    
-                    sleep.sleep(rest);
-                    */
-                }
-            }
-
-            /*
-            if (stocks.length > 0) {
-                console.log(`${stocks.length} trades pulled ${stocks[0].date}`);
-
-                O8Q.updateStocks(tradings)
-                    .then(r => console.log(r.message))
-                    .catch(e => console.error(e.message));
-            }
-            */
+            resolve(companies);
         })
-        .catch(console.error);
+        .catch(reject)
+    });
 }
 
-function getOutstandingShares() {
-    run(`https://www.jamstockex.com/market-data/instruments/?symbol=sj`, readOutstandingShares)
-        .then(outstandingShares => {
-            console.log(outstandingShares);
-        })
-        .catch(console.error);
+function getOutstandingSharesAndMarketCapitalization(code) {
+    return new Promise((resolve, reject) => {
+        run(`https://www.jamstockex.com/market-data/instruments/?symbol=${code}`, readOutstandingSharesMarketCapitalization)
+            .then(osmc => {
+                resolve(osmc)
+            })
+            .catch(reject);
+        });
 }
