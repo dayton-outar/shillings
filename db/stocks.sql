@@ -456,28 +456,15 @@ BEGIN
 			d.x.query('./listed').value('.', 'bit') [isListed]
     FROM @companies.nodes('companies') d(x);
 
-	INSERT INTO [dbo].[Companies]
-	(
-		[Code] ,
-		[Security],
-		[Currency],
-		[Industry],
-		[OutstandingShares],
-		[StockType],
-		[isListed]
-	)
-	SELECT  [Code] ,
-			[Security] ,
-			[Currency],
-			[Industry],
-			[OutstandingShares],
-			[StockType],
-			[isListed]
-	FROM    #tblCompanies
-	WHERE   NOT EXISTS (
-		SELECT  [Code]
-		FROM    [dbo].[Companies] X
-		WHERE   X.[Code] = #tblCompanies.[Code]);
+	UPDATE c SET
+		[Security] = t.[Security],
+		[Currency] = t.[Currency],
+		[Industry] = t.[Industry],
+		[OutstandingShares] = t.[OutstandingShares],
+		[StockType] = t.[StockType],
+		[isListed] = t.[isListed]
+	FROM [dbo].[Companies] c
+		INNER JOIN #tblCompanies t ON c.[Code] = t.[Code];
 
 	DROP TABLE #tblCompanies;
 
