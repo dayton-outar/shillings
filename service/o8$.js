@@ -51,34 +51,32 @@ function readOutstandingSharesMarketCapitalization() {
 }
 
 // Adapted from https://www.toptal.com/puppeteer/headless-browser-puppeteer-tutorial done by Nick Chikovani
-function run(url, cb) {
-    return new Promise(async (resolve, reject) => {
+async function run(urls, cb) {
+    return await new Promise(async (resolve, reject) => {
         try {
 
             const browser = await puppeteer.launch({
                 args: ['--no-sandbox', '--disable-setuid-sandbox']
             });
             const page = await browser.newPage();
-            await page.setRequestInterception(true);
 
-            const rqcb = (request) => {
-                if (request.resourceType() === 'document') {
-                    request.continue();
-                } else {
-                    request.abort();
-                }
+            let response = [];
+
+            // Credit: https://github.com/puppeteer/puppeteer/issues/594
+            for (const url of urls) {
+                await page.goto(url, {
+                    waitUntil: 'networkidle2'
+                });
+
+                await page.waitForSelector('h1');
+
+                let result = await page.evaluate(cb);
+                response.push(result);
             }
-            page.on('request', rqcb);
-            await page.goto(url);
-
-            await page.waitForSelector('h1');
-
-            let response = await page.evaluate(cb);
-
-            page.removeListener('request', rqcb);
 
             browser.close();
-            return resolve(response);
+
+            return resolve( response.flat() );
         } catch (e) {
             return reject(e);
         }
@@ -94,14 +92,14 @@ async function runner(bringToCurrentDate, begin, end, rest = 2) {
 
         console.log(`Running scraper for ${beginning.format('YYYY-MM-DD')}`);
 
-        await run(`https://www.jamstockex.com/market-data/summaries/?market=main-market&date=${beginning.format('YYYY-MM-DD')}`, readStocks)
+        await run([`https://www.jamstockex.com/market-data/summaries/?market=main-market&date=${beginning.format('YYYY-MM-DD')}`], readStocks)
             .then(stocks => {
                 let tradings = {
                     stocks
                 };
 
-                if (stocks.length > 0) {
-                    console.log(`${stocks.length} trades pulled ${stocks[0].date}`);
+                if (tradings.stocks.length > 0) {
+                    console.log(`${tradings.stocks.length} trades pulled ${tradings.stocks[0].date}`);
 
                     O8Q.updateStocks(tradings)
                         .then(r => console.log(r.message))
@@ -118,14 +116,14 @@ async function runner(bringToCurrentDate, begin, end, rest = 2) {
 
                 console.log(`Reading stocks for ${beginning.format('YYYY-MM-DD')}`);
 
-                await run(`https://www.jamstockex.com/market-data/summaries/?market=main-market&date=${beginning.format('YYYY-MM-DD')}`, readStocks)
+                await run([`https://www.jamstockex.com/market-data/summaries/?market=main-market&date=${beginning.format('YYYY-MM-DD')}`], readStocks)
                     .then(stocks => {
                         let tradings = {
                             stocks
                         };
 
-                        if (stocks.length > 0) {
-                            console.log(`${stocks.length} trades pulled on ${stocks[0].date}`);
+                        if (tradings.stocks.length > 0) {
+                            console.log(`${tradings.stocks.length} trades pulled on ${tradings.stocks[0].date}`);
 
                             O8Q.updateStocks(tradings)
                                 .then(r => console.log(r.message))
@@ -155,20 +153,7 @@ if (args.length > 2) {
 
 switch (args[0]) {
     case 'read-companies':
-        let companies = getCompanies();
-
-        companies.then(l => {
-            for (const company of l) {
-                if (company.listed) {
-                    console.log(`Getting outstanding shares for ${company.security} ...`);
-                    // Spawning too many threads of puppeteer process
-                    await getOutstandingSharesAndMarketCapitalization(company.code)
-                        .then(console.log)
-                        .catch(console.error);
-                    sleep.sleep(1);
-                }
-            }
-        });
+        getCompanies();
 
         break;
     default:
@@ -211,22 +196,30 @@ function getStocks() {
     }
 }
 
-function getCompanies(rest = 2) {
+function getCompanies() {
     return new Promise((resolve, reject) => {
-        run(`https://www.jamstockex.com/market-data/listed-companies/`, readCompanies)
-        .then(companies => {
-            resolve(companies);
-        })
-        .catch(reject)
+        run([`https://www.jamstockex.com/market-data/listed-companies/`], readCompanies)
+            .then(companies => {
+
+                getOutstandingSharesAndMarketCapitalization(companies); // FIX: Sloppy. Trying to get this to work
+
+                resolve(companies);
+            })
+            .catch(reject)
     });
 }
 
-function getOutstandingSharesAndMarketCapitalization(code) {
-    return new Promise((resolve, reject) => {
-        run(`https://www.jamstockex.com/market-data/instruments/?symbol=${code}`, readOutstandingSharesMarketCapitalization)
-            .then(osmc => {
-                resolve(osmc)
-            })
-            .catch(reject);
-        });
+function getOutstandingSharesAndMarketCapitalization(companies) {
+    let urls = [];
+    for (const company of companies) {
+        if (company.listed) {
+            console.log(`Getting outstanding shares for ${company.security} ...`);
+            // Spawning too many threads of puppeteer process
+            urls.push(`https://www.jamstockex.com/market-data/instruments/?symbol=${company.code}`);
+        }
+    }
+
+    run(urls, readOutstandingSharesMarketCapitalization)
+        .then(console.log)
+        .catch(console.error);
 }
