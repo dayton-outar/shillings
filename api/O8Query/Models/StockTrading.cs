@@ -59,6 +59,13 @@ namespace O8Query.Models
         public decimal Percentage { get; set; }
 
         /// <summary>
+        /// Keeps the market capitalization as calcuated by the Stock Exchange.
+        /// </summary>
+        [Required]
+        [Column(TypeName = "decimal(18,2)")]
+        public decimal MarketCapitalization { get; set; }
+
+        /// <summary>
         /// Date of daily summary of stock trades
         /// </summary>
         [Required]

@@ -43,6 +43,12 @@ function readCompanies() {
 }
 
 function readOutstandingSharesMarketCapitalization() {
+    // Credit: https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
+    const urlSearchParams = new URLSearchParams(window.location.search);
+    const params = Object.fromEntries(urlSearchParams.entries());
+    
+    console.log(params);
+
     let rows = document.querySelectorAll('table')[1].querySelectorAll('tbody > tr');
     return {
         outstandingShares: parseInt(rows[1].querySelectorAll('td')[0].textContent.split(' ')[0].trim().replace(/[,]/g, '')),
@@ -211,11 +217,17 @@ function getCompanies() {
 
 function getOutstandingSharesAndMarketCapitalization(companies) {
     let urls = [];
+    let x = 0;
+    console.log(companies);
     for (const company of companies) {
         if (company.listed) {
             console.log(`Getting outstanding shares for ${company.security} ...`);
             // Spawning too many threads of puppeteer process
             urls.push(`https://www.jamstockex.com/market-data/instruments/?symbol=${company.code}`);
+            x++;
+            console.log(x);
+            if (x === 4)
+                break;
         }
     }
 
