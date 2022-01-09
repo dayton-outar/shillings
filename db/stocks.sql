@@ -86,7 +86,12 @@ GO
 CREATE TABLE [dbo].[Companies](
 	[Code] [nvarchar](20) NOT NULL,
 	[Security] [nvarchar](max) NOT NULL,
-	[Created] [datetime2](7) NOT NULL
+	[Created] [datetime2](7) NOT NULL,
+	[Currency] [nvarchar](3) NOT NULL,
+	[Industry] [nvarchar](50) NOT NULL,
+	[OutstandingShares] [int] NOT NULL,
+	[StockType] [nvarchar](50) NULL,
+	[isListed] [bit] NOT NULL
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
 SET ANSI_PADDING ON
@@ -98,6 +103,16 @@ ALTER TABLE [dbo].[Companies] ADD  CONSTRAINT [PK_Companies] PRIMARY KEY CLUSTER
 GO
 ALTER TABLE [dbo].[Companies] ADD  DEFAULT ('0001-01-01T00:00:00.0000000') FOR [Created]
 GO
+ALTER TABLE [dbo].[Companies] ADD  DEFAULT (N'') FOR [Currency]
+GO
+ALTER TABLE [dbo].[Companies] ADD  DEFAULT (N'') FOR [Industry]
+GO
+ALTER TABLE [dbo].[Companies] ADD  DEFAULT ((0)) FOR [OutstandingShares]
+GO
+ALTER TABLE [dbo].[Companies] ADD  DEFAULT (CONVERT([bit],(0))) FOR [isListed]
+GO
+-- CompaniesHistory
+--...
 -- Logs
 SET ANSI_NULLS ON
 GO
@@ -128,7 +143,8 @@ CREATE TABLE [dbo].[StockTradings](
 	[PriceChange] [decimal](18, 2) NOT NULL,
 	[Percentage] [decimal](18, 2) NOT NULL,
 	[Date] [datetime2](7) NOT NULL,
-	[LogNo] [bigint] NULL
+	[LogNo] [bigint] NULL,
+	[MarketCapitalization] [decimal](18, 2) NOT NULL
 ) ON [PRIMARY]
 GO
 ALTER TABLE [dbo].[StockTradings] ADD  CONSTRAINT [PK_StockTradings] PRIMARY KEY CLUSTERED 
@@ -149,6 +165,8 @@ CREATE NONCLUSTERED INDEX [IX_StockTradings_SecurityCode] ON [dbo].[StockTrading
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 GO
 ALTER TABLE [dbo].[StockTradings] ADD  DEFAULT ('0001-01-01T00:00:00.0000000') FOR [Date]
+GO
+ALTER TABLE [dbo].[StockTradings] ADD  DEFAULT ((0.0)) FOR [MarketCapitalization]
 GO
 ALTER TABLE [dbo].[StockTradings]  WITH CHECK ADD  CONSTRAINT [FK_StockTradings_Companies_SecurityCode] FOREIGN KEY([SecurityCode])
 REFERENCES [dbo].[Companies] ([Code])
