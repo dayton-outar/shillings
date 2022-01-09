@@ -391,3 +391,77 @@ RETURN
         GROUP BY T.[SecurityCode]) L ON L.[SecurityCode] = V.[Code]
     WHERE (@companyCode = '' OR EXISTS( SELECT '' FROM STRING_SPLIT(@companyCode, ',') WHERE SUBSTRING(value, 2, LEN(value) - 2) = V.Code) );
 GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		Dayton Outar
+-- Create date: Jan 9, 2022
+-- Description:	Updates companies' details
+-- =============================================
+CREATE PROCEDURE [dbo].[UpdateCompaniesDetails] 
+	@companies XML
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+	CREATE TABLE #tblCompanies (
+		[Code] NVARCHAR(20) NOT NULL,
+		[Security] NVARCHAR(MAX) NOT NULL,
+		[Currency] NVARCHAR(3) NOT NULL,
+		[Industry] NVARCHAR(50) NOT NULL,
+		[OutstandingShares] INT NOT NULL,
+		[StockType] NVARCHAR(50) NULL,
+		[isListed] BIT NOT NULL
+	);
+
+	INSERT INTO #tblCompanies
+	(
+		[Code],
+		[Security],
+		[Currency],
+		[Industry],
+		[OutstandingShares],
+		[StockType],
+		[isListed]
+	)
+    SELECT	d.x.query('./code').value('.', 'nvarchar(20)') [Code],
+			d.x.query('./security').value('.', 'nvarchar(max)') [Security],
+			d.x.query('./currency').value('.', 'nvarchar(3)') [Currency],
+			d.x.query('./industry').value('.', 'nvarchar(50)') [Industry],
+			d.x.query('./outstandingShares').value('.', 'int') [Industry],
+			d.x.query('./type').value('.', 'nvarchar(50)') [StockType],
+			d.x.query('./listed').value('.', 'bit') [isListed]
+    FROM @companies.nodes('companies') d(x);
+
+	INSERT INTO [dbo].[Companies]
+	(
+		[Code] ,
+		[Security],
+		[Currency],
+		[Industry],
+		[OutstandingShares],
+		[StockType],
+		[isListed]
+	)
+	SELECT  [Code] ,
+			[Security] ,
+			[Currency],
+			[Industry],
+			[OutstandingShares],
+			[StockType],
+			[isListed]
+	FROM    #tblCompanies
+	WHERE   NOT EXISTS (
+		SELECT  [Code]
+		FROM    [dbo].[Companies] X
+		WHERE   X.[Code] = #tblCompanies.[Code]);
+
+	DROP TABLE #tblCompanies;
+
+END
+GO
