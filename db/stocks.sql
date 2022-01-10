@@ -111,8 +111,34 @@ ALTER TABLE [dbo].[Companies] ADD  DEFAULT ((0)) FOR [OutstandingShares]
 GO
 ALTER TABLE [dbo].[Companies] ADD  DEFAULT (CONVERT([bit],(0))) FOR [isListed]
 GO
--- CompaniesHistory
---...
+-- OutstandingSharesLog
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[OutstandingSharesLog](
+	[Code] [nvarchar](20) NOT NULL,
+	[OutstandingShares] [bigint] NOT NULL,
+	[LogNo] [bigint] NULL,
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING ON
+GO
+ALTER TABLE [dbo].[OutstandingSharesLog] ADD  CONSTRAINT [PK_OutstandingSharesLog] PRIMARY KEY CLUSTERED 
+(
+	[Code] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+GO
+CREATE NONCLUSTERED INDEX [IX_OutstandingShares_LogNo] ON [dbo].[OutstandingSharesLog]
+(
+	[LogNo] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[OutstandingSharesLog]  WITH CHECK ADD  CONSTRAINT [FK_OutstandingSharesLog_Logs_LogNo] FOREIGN KEY([LogNo])
+REFERENCES [dbo].[Logs] ([No])
+GO
+ALTER TABLE [dbo].[OutstandingSharesLog] CHECK CONSTRAINT [FK_OutstandingSharesLog_Logs_LogNo]
+GO
 -- Logs
 SET ANSI_NULLS ON
 GO
@@ -434,7 +460,7 @@ BEGIN
 		[Industry] NVARCHAR(50) NOT NULL,		
 		[StockType] NVARCHAR(50) NULL,		
 		[isListed] BIT NOT NULL,
-		[OutstandingShares] INT NOT NULL,
+		[OutstandingShares] BIGINT NOT NULL,
 		[MarketCapitalization] DECIMAL(18, 2) NOT NULL,
 		[Date] DATETIME2(7) NOT NULL
 	);
@@ -457,27 +483,54 @@ BEGIN
 			d.x.query('./industry').value('.', 'nvarchar(50)') [Industry],
 			d.x.query('./type').value('.', 'nvarchar(50)') [StockType],
 			d.x.query('./listed').value('.', 'bit') [isListed],
-			d.x.query('./outstandingShares').value('.', 'int') [OutstandingShares],
+			d.x.query('./outstandingShares').value('.', 'bigint') [OutstandingShares],
 			d.x.query('./marketCapitalization').value('.', 'decimal(18,2)') [MarketCapitalization],
 			d.x.query('./date').value('.', 'datetime') [Date]
     FROM @companies.nodes('companies') d(x);
 
-	UPDATE c SET
-		[Security] = t.[Security],
-		[Currency] = t.[Currency],
-		[Industry] = t.[Industry],
-		[OutstandingShares] = t.[OutstandingShares],
-		[StockType] = t.[StockType],
-		[isListed] = t.[isListed]
-	FROM [dbo].[Companies] c
-		INNER JOIN #tblCompanies t ON c.[Code] = t.[Code];
+	BEGIN TRY
+        BEGIN TRANSACTION;
 
-	UPDATE s SET
-		[MarketCapitalization] = t.[MarketCapitalization]
-	FROM [dbo].[StockTradings] s
-		INNER JOIN [dbo].[Logs] l ON s.[LogNo] = l.[No]
-		INNER JOIN #tblCompanies t ON s.[SecurityCode] = t.[Code]
-	WHERE l.[Logged] = t.[Date];
+		INSERT INTO [dbo].[OutstandingSharesLog]
+        (
+            [Code] ,
+			[OutstandingShares],
+            [LogNo]
+        )
+		SELECT 	t.[Code],
+				t.[OutstandingShares],
+				l.[No]
+		FROM [dbo].[StockTradings] s
+			INNER JOIN [dbo].[Logs] l ON s.[LogNo] = l.[No]
+			INNER JOIN #tblCompanies t ON s.[SecurityCode] = t.[Code]
+			INNER JOIN [dbo].[Companies] c ON c.[Code] = t.[Code]
+		WHERE l.[Logged] = t.[Date]
+			AND t.[OutstandingShares] <> c.[OutstandingShares];
+
+		UPDATE c SET
+			[Security] = t.[Security],
+			[Currency] = t.[Currency],
+			[Industry] = t.[Industry],
+			[OutstandingShares] = t.[OutstandingShares],
+			[StockType] = t.[StockType],
+			[isListed] = t.[isListed]
+		FROM [dbo].[Companies] c
+			INNER JOIN #tblCompanies t ON c.[Code] = t.[Code];
+
+		UPDATE s SET
+			[MarketCapitalization] = t.[MarketCapitalization]
+		FROM [dbo].[StockTradings] s
+			INNER JOIN [dbo].[Logs] l ON s.[LogNo] = l.[No]
+			INNER JOIN #tblCompanies t ON s.[SecurityCode] = t.[Code]
+		WHERE l.[Logged] = t.[Date];
+
+	    COMMIT TRANSACTION;
+    END TRY
+    BEGIN CATCH
+        
+        ROLLBACK TRANSACTION;
+
+    END CATCH;
 
 	DROP TABLE #tblCompanies;
 

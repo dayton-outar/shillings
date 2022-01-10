@@ -75,7 +75,8 @@ async function run(urls, cb) {
             // Credit: https://github.com/puppeteer/puppeteer/issues/594
             for (const url of urls) {
                 await page.goto(url, {
-                    waitUntil: 'networkidle2'
+                    waitUntil: 'networkidle2',
+                    timeout: 0
                 });
 
                 await page.waitForSelector('h1');
@@ -231,7 +232,7 @@ function getOutstandingSharesAndMarketCapitalization(companies) {
         }
     }
 
-    run(urls, readOutstandingSharesMarketCapitalization)
+    run(urls, readOutstandingSharesMarketCapitalization) // This can take about 20 minutes
         .then(o => {
             // Map and merge arrays
             const mergedO = o.map(el => {
