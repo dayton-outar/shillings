@@ -45,7 +45,7 @@ namespace O8Query.Models
         /// Outstanding shares
         /// </summary>
         [Required]
-        public int OutstandingShares { get; set; }
+        public long OutstandingShares { get; set; }
 
         /// <summary>
         /// Captures whether or not this stock is still listed on the Stock Exchange

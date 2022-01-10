@@ -431,10 +431,12 @@ BEGIN
 		[Code] NVARCHAR(20) NOT NULL,
 		[Security] NVARCHAR(MAX) NOT NULL,
 		[Currency] NVARCHAR(3) NOT NULL,
-		[Industry] NVARCHAR(50) NOT NULL,
+		[Industry] NVARCHAR(50) NOT NULL,		
+		[StockType] NVARCHAR(50) NULL,		
+		[isListed] BIT NOT NULL,
 		[OutstandingShares] INT NOT NULL,
-		[StockType] NVARCHAR(50) NULL,
-		[isListed] BIT NOT NULL
+		[MarketCapitalization] DECIMAL(18, 2) NOT NULL,
+		[Date] DATETIME2(7) NOT NULL
 	);
 
 	INSERT INTO #tblCompanies
@@ -443,17 +445,21 @@ BEGIN
 		[Security],
 		[Currency],
 		[Industry],
-		[OutstandingShares],
 		[StockType],
-		[isListed]
+		[isListed],
+		[OutstandingShares],
+		[MarketCapitalization],
+		[Date]
 	)
     SELECT	d.x.query('./code').value('.', 'nvarchar(20)') [Code],
 			d.x.query('./security').value('.', 'nvarchar(max)') [Security],
 			d.x.query('./currency').value('.', 'nvarchar(3)') [Currency],
 			d.x.query('./industry').value('.', 'nvarchar(50)') [Industry],
-			d.x.query('./outstandingShares').value('.', 'int') [Industry],
 			d.x.query('./type').value('.', 'nvarchar(50)') [StockType],
-			d.x.query('./listed').value('.', 'bit') [isListed]
+			d.x.query('./listed').value('.', 'bit') [isListed],
+			d.x.query('./outstandingShares').value('.', 'int') [OutstandingShares],
+			d.x.query('./marketCapitalization').value('.', 'decimal(18,2)') [MarketCapitalization],
+			d.x.query('./date').value('.', 'datetime') [Date]
     FROM @companies.nodes('companies') d(x);
 
 	UPDATE c SET
@@ -465,6 +471,13 @@ BEGIN
 		[isListed] = t.[isListed]
 	FROM [dbo].[Companies] c
 		INNER JOIN #tblCompanies t ON c.[Code] = t.[Code];
+
+	UPDATE s SET
+		[MarketCapitalization] = t.[MarketCapitalization]
+	FROM [dbo].[StockTradings] s
+		INNER JOIN [dbo].[Logs] l ON s.[LogNo] = l.[No]
+		INNER JOIN #tblCompanies t ON s.[SecurityCode] = t.[Code]
+	WHERE l.[Logged] = t.[Date];
 
 	DROP TABLE #tblCompanies;
 

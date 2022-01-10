@@ -83,7 +83,7 @@ const O8Q = {
                 .input('companies', sql.Xml, companies)
                 .execute('UpdateCompaniesDetails');
             
-            console.log(dbr);
+            //console.log(dbr);
 
             result = {
                 success: dbr.returnValue === 0,

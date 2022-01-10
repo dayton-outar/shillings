@@ -47,12 +47,16 @@ function readOutstandingSharesMarketCapitalization() {
     const urlSearchParams = new URLSearchParams(window.location.search);
     const params = Object.fromEntries(urlSearchParams.entries());
     
-    console.log(params);
+    const elSx = document.evaluate("//script[contains(., 'thru-date')]", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+    let tradeDate = elSx.textContent.match(/"thru-date":"([0-9]{4}-[0-9]{2}-[0-9]{2})"/)[1];
+    const elSo = document.evaluate("//span[text()='Shares Outstanding:']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+    const elMvSo = document.evaluate("//span[text()='Market Value of Shares Outstanding:']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
 
-    let rows = document.querySelectorAll('table')[1].querySelectorAll('tbody > tr');
     return {
-        outstandingShares: parseInt(rows[1].querySelectorAll('td')[0].textContent.split(' ')[0].trim().replace(/[,]/g, '')),
-        marketCapitalization: parseFloat(rows[0].querySelectorAll('td')[0].textContent.trim().replace(/[$,]/g, ''))
+        code: params.instrument.split('-')[0],
+        date: tradeDate,
+        outstandingShares: parseInt( elSo.nextElementSibling.textContent.split(' ')[0].trim().replace(/[,]/g, '') ),
+        marketCapitalization: parseFloat( elMvSo.nextElementSibling.textContent.trim().replace(/[$,]/g, '') )
     }
 }
 
@@ -98,7 +102,7 @@ async function runner(bringToCurrentDate, begin, end, rest = 2) {
 
         console.log(`Running scraper for ${beginning.format('YYYY-MM-DD')}`);
 
-        await run([`https://www.jamstockex.com/market-data/summaries/?market=main-market&date=${beginning.format('YYYY-MM-DD')}`], readStocks)
+        await run([`https://www.jamstockex.com/trading/trade-quotes/?market=main-market&date=${beginning.format('YYYY-MM-DD')}`], readStocks)
             .then(stocks => {
                 let tradings = {
                     stocks
@@ -122,7 +126,7 @@ async function runner(bringToCurrentDate, begin, end, rest = 2) {
 
                 console.log(`Reading stocks for ${beginning.format('YYYY-MM-DD')}`);
 
-                await run([`https://www.jamstockex.com/market-data/summaries/?market=main-market&date=${beginning.format('YYYY-MM-DD')}`], readStocks)
+                await run([`https://www.jamstockex.com/trading/trade-quotes/?market=main-market&date=${beginning.format('YYYY-MM-DD')}`], readStocks)
                     .then(stocks => {
                         let tradings = {
                             stocks
@@ -204,7 +208,7 @@ function getStocks() {
 
 function getCompanies() {
     return new Promise((resolve, reject) => {
-        run([`https://www.jamstockex.com/market-data/listed-companies/`], readCompanies)
+        run([`https://www.jamstockex.com/listings/listed-companies/`], readCompanies)
             .then(companies => {
 
                 getOutstandingSharesAndMarketCapitalization(companies); // FIX: Sloppy. Trying to get this to work
@@ -218,20 +222,33 @@ function getCompanies() {
 function getOutstandingSharesAndMarketCapitalization(companies) {
     let urls = [];
     let x = 0;
-    console.log(companies);
+
     for (const company of companies) {
         if (company.listed) {
             console.log(`Getting outstanding shares for ${company.security} ...`);
             // Spawning too many threads of puppeteer process
-            urls.push(`https://www.jamstockex.com/market-data/instruments/?symbol=${company.code}`);
-            x++;
-            console.log(x);
-            if (x === 4)
-                break;
+            urls.push(`https://www.jamstockex.com/trading/instruments/?instrument=${company.code}-${company.currency}`);
         }
     }
 
     run(urls, readOutstandingSharesMarketCapitalization)
-        .then(console.log)
+        .then(o => {
+            // Map and merge arrays
+            const mergedO = o.map(el => {
+                company = companies.find(cd => cd.code == el.code);
+
+                return {
+                    ...company,
+                    ...el
+                }
+            });
+
+            if ( mergedO.length > 0 ) {
+
+                O8Q.updateCompany( { companies: mergedO } )
+                    .then(console.log)
+                    .catch(console.error);
+            }
+        })
         .catch(console.error);
 }
