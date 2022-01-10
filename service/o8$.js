@@ -6,19 +6,44 @@ const O8Q = require('./db.js');
 
 function readStocks() {
     let results = [];
-    let items = document.querySelectorAll('table > tbody > tr');
-    items.forEach((item) => {
+
+    const urlSearchParams = new URLSearchParams(window.location.search);
+    const params = Object.fromEntries(urlSearchParams.entries());
+    //--
+    const tradeDate = params.date;
+
+    let ordinary = document.querySelectorAll('table')[1];
+    ordinary.querySelectorAll('tbody > tr').forEach((item) => {
         let cols = item.querySelectorAll('td');
+        let closingPrice = parseFloat(cols[3].textContent.trim().replace(/,/g, ''));
+        let priceChange = cols[4] ? parseFloat(cols[4].textContent.trim().replace(/,/g, '')) : 0
         results.push({
-            code: item.querySelector('a').href.split('=')[1],
-            security: cols[0].textContent.trim(),
-            volume: parseInt(cols[1].textContent.trim().replace(/,/g, ''), 10),
-            closing: parseFloat(cols[2].textContent.trim().replace(/,/g, '')),
-            change: cols[3] ? parseFloat(cols[3].textContent.trim().replace(/,/g, '')) : 0,
-            percentage: cols[4] ? parseFloat(cols[4].textContent.trim().replace(/,/g, '')) : 0,
-            date: document.querySelector('#dateInput').value
+            code: cols[1].textContent.trim().replace(/\n/g, ''),
+            security: cols[1].querySelector('a').title.trim(),
+            volume: parseInt(cols[7].textContent.trim().replace(/,/g, ''), 10),
+            closing: closingPrice,
+            change: priceChange,
+            percentage: (priceChange / ( closingPrice - priceChange )).toFixed(2),
+            date: tradeDate
         });
     });
+
+    let preferred = document.querySelectorAll('table')[2];
+    preferred.querySelectorAll('tbody > tr').forEach((item) => {
+        let cols = item.querySelectorAll('td');
+        let closingPrice = parseFloat(cols[3].textContent.trim().replace(/,/g, ''));
+        let priceChange = cols[4] ? parseFloat(cols[4].textContent.trim().replace(/,/g, '')) : 0;
+        results.push({
+            code: cols[1].textContent.trim().replace(/\n/g, ''),
+            security: cols[1].querySelector('a').title.trim(),
+            volume: parseInt(cols[7].textContent.trim().replace(/,/g, ''), 10),
+            closing: closingPrice,
+            change: priceChange,
+            percentage: (priceChange / ( closingPrice - priceChange )).toFixed(2),
+            date: tradeDate
+        });
+    });
+
     return results;
 }
 
@@ -169,16 +194,18 @@ switch (args[0]) {
         break;
     default:
         getStocks();
+        getCompanies();
 }
 
 function getStocks() {
-    // Validate date pattern as YYYY-MM-DD
-    if (!/^\d{4}[-](0?[1-9]|1[012])[-](0?[1-9]|[12][0-9]|3[01])$/.test(args[0])) {
-        console.log('This date format is not acceptable');
-        process.exit(1);
-    }
 
     if (args[0]) {
+        // Validate date pattern as YYYY-MM-DD
+        if (!/^\d{4}[-](0?[1-9]|1[012])[-](0?[1-9]|[12][0-9]|3[01])$/.test(args[0])) {
+            console.log('This date format is not acceptable');
+            process.exit(1);
+        }
+
         if (!moment(args[0]).isValid()) {
             console.log(`Begin date, ${args[0]}, is invalid`);
             process.exit(1);
