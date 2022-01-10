@@ -214,7 +214,7 @@ GO
 -- Create date: April 29, 2021
 -- Description:	Updates companies list
 -- =============================================
-CREATE OR ALTER PROCEDURE [dbo].[UpdateCompanies] 
+CREATE PROCEDURE [dbo].[UpdateCompanies] 
 	@stocks XML
 AS
 BEGIN
@@ -225,6 +225,7 @@ BEGIN
 	CREATE TABLE #tblCompanies (
 		[Code] NVARCHAR(20) NOT NULL,
 		[Security] NVARCHAR(MAX) NOT NULL,
+		[OutstandingShares] BIGINT NOT NULL,
 		[Created] DATETIME2 NOT NULL
 	);
 
@@ -232,10 +233,12 @@ BEGIN
 	(
 		[Code],
 		[Security],
+		[OutstandingShares],
 		[Created]
 	)
     SELECT	d.x.query('./code').value('.', 'nvarchar(20)') [Code],
 			d.x.query('./security').value('.', 'nvarchar(max)') [Security],
+			0 [OutstandingShares],
 			d.x.query('./date').value('.', 'datetime2') [Date]
     FROM @stocks.nodes('stocks') d(x);
 
@@ -243,10 +246,12 @@ BEGIN
 	(
 		[Code] ,
 		[Security],
+		[OutstandingShares],
 		[Created]
 	)
 	SELECT  [Code] ,
 			[Security] ,
+			[OutstandingShares],
 			[Created]
 	FROM    #tblCompanies
 	WHERE   NOT EXISTS (
@@ -445,7 +450,7 @@ GO
 -- Create date: Jan 9, 2022
 -- Description:	Updates companies' details
 -- =============================================
-CREATE PROCEDURE [dbo].[UpdateCompaniesDetails] 
+ALTER PROCEDURE [dbo].[UpdateCompaniesDetails] 
 	@companies XML
 AS
 BEGIN
@@ -516,6 +521,11 @@ BEGIN
 			[isListed] = t.[isListed]
 		FROM [dbo].[Companies] c
 			INNER JOIN #tblCompanies t ON c.[Code] = t.[Code];
+		
+		UPDATE c SET
+			[isListed] = 0
+		FROM [dbo].[Companies] c
+		WHERE NOT EXISTS(SELECT '' FROM #tblCompanies t WHERE t.[Code] = c.[Code]);
 
 		UPDATE s SET
 			[MarketCapitalization] = t.[MarketCapitalization]
