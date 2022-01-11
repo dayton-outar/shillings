@@ -204,6 +204,36 @@ REFERENCES [dbo].[Logs] ([No])
 GO
 ALTER TABLE [dbo].[StockTradings] CHECK CONSTRAINT [FK_StockTradings_Logs_LogNo]
 GO
+-- Stock Index
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[StockIndices](
+	[No] [bigint] IDENTITY(1,1) NOT NULL,
+	[Index] [nvarchar](20) NOT NULL,
+	[Value] [decimal](18, 2) NOT NULL,
+	[ValueChange] [decimal](18, 2) NOT NULL,
+	[LogNo] [bigint] NULL
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[StockIndices] ADD  CONSTRAINT [PK_StockIndices] PRIMARY KEY CLUSTERED 
+(
+	[No] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+GO
+CREATE NONCLUSTERED INDEX [IX_StockIndices_LogNo] ON [dbo].[StockIndices]
+(
+	[LogNo] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[StockIndices]  WITH CHECK ADD  CONSTRAINT [FK_StockIndices_Logs_LogNo] FOREIGN KEY([LogNo])
+REFERENCES [dbo].[Logs] ([No])
+GO
+ALTER TABLE [dbo].[StockIndices] CHECK CONSTRAINT [FK_StockIndices_Logs_LogNo]
+GO
+
 -- Procedures
 SET ANSI_NULLS ON
 GO

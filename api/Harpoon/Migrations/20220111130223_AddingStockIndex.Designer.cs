@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using O8Query.Data;
 
 namespace Harpoon.Migrations
 {
     [DbContext(typeof(StocksQuery))]
-    partial class StocksQueryModelSnapshot : ModelSnapshot
+    [Migration("20220111130223_AddingStockIndex")]
+    partial class AddingStockIndex
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -77,34 +79,6 @@ namespace Harpoon.Migrations
                     b.HasKey("No");
 
                     b.ToTable("Logs");
-                });
-
-            modelBuilder.Entity("O8Query.Models.StockIndex", b =>
-                {
-                    b.Property<long>("No")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Index")
-                        .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
-
-                    b.Property<long?>("LogNo")
-                        .HasColumnType("bigint");
-
-                    b.Property<decimal>("Value")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<decimal>("ValueChange")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.HasKey("No");
-
-                    b.HasIndex("LogNo");
-
-                    b.ToTable("StockIndices");
                 });
 
             modelBuilder.Entity("O8Query.Models.StockTrading", b =>
@@ -183,15 +157,6 @@ namespace Harpoon.Migrations
                         .HasColumnType("bigint");
 
                     b.ToTable("TotalTrades");
-                });
-
-            modelBuilder.Entity("O8Query.Models.StockIndex", b =>
-                {
-                    b.HasOne("O8Query.Models.Log", "Log")
-                        .WithMany()
-                        .HasForeignKey("LogNo");
-
-                    b.Navigation("Log");
                 });
 
             modelBuilder.Entity("O8Query.Models.StockTrading", b =>
