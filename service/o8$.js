@@ -310,7 +310,7 @@ function getIndices() {
     beginning = moment();
     ending = moment();
 
-    if (args[0] != 'read-indices') {
+    if (args[0] == 'read-indices') {
         if (args[1]) {
             // Validate date pattern as YYYY-MM-DD
             if (!/^\d{4}[-](0?[1-9]|1[012])[-](0?[1-9]|[12][0-9]|3[01])$/.test(args[1])) {
