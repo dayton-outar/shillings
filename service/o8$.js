@@ -337,7 +337,7 @@ function getIndices() {
         ending = moment(args[2]);
     }
 
-    if (beginning.isBefore(ending)) {
+    if (beginning.isSameOrBefore(ending)) {
 
         console.log(`Get indices from ${beginning.format('YYYY-MM-DD')} to ${ending.format('YYYY-MM-DD')} ...`);
 
