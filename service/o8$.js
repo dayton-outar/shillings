@@ -344,7 +344,7 @@ function getIndices() {
         run([`https://www.jamstockex.com/trading/indices/index-history/?indexCode=jse-index&fromDate=${beginning.format('YYYY-MM-DD')}&thruDate=${ending.format('YYYY-MM-DD')}`], readIndices)
             .then(indices => {
                 for (const index of indices) {
-                    index.date = moment(index.date).format('YYYY-MM-DD');
+                    index.date = moment(new Date(index.date)).format('YYYY-MM-DD');
                 }
 
                 if (indices.length > 0) {
