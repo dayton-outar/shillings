@@ -97,6 +97,47 @@ const O8Q = {
         }
 
         return result;
+    },
+    updateIndices: async function ( logs ) {
+        let result = {
+            success: false,
+            message: 'Failed to update stock indices',
+            data: {}
+        };
+
+        try {
+
+            if ( logs.indices.length === 0) {
+                result.message = 'No data to update database';
+                return result;
+            }
+
+            let pool = await sql.connect(config);
+
+            let indices = xml2json.json2xml(logs, {
+                compact: true,
+                ignoreComment: true,
+                spaces: 4
+            });
+
+            let dbr = await pool.request()
+                .input('indices', sql.Xml, indices)
+                .execute('UpdateStockIndices');
+            
+            //console.log(dbr);
+
+            result = {
+                success: dbr.returnValue === 0,
+                message: `Successfully updated ${logs.indices.length} indices`,
+                data: {}
+            };
+
+        } catch(ex) {
+            console.error( ex.message );
+            result.message = ex.message;
+        }
+
+        return result;
     }
 }
 

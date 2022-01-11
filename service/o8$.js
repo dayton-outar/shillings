@@ -23,7 +23,7 @@ function readStocks() {
             volume: parseInt(cols[7].textContent.trim().replace(/,/g, ''), 10),
             closing: closingPrice,
             change: priceChange,
-            percentage: (priceChange / ( closingPrice - priceChange )).toFixed(2),
+            percentage: (priceChange / (closingPrice - priceChange)).toFixed(2),
             date: tradeDate
         });
     });
@@ -39,7 +39,7 @@ function readStocks() {
             volume: parseInt(cols[7].textContent.trim().replace(/,/g, ''), 10),
             closing: closingPrice,
             change: priceChange,
-            percentage: (priceChange / ( closingPrice - priceChange )).toFixed(2),
+            percentage: (priceChange / (closingPrice - priceChange)).toFixed(2),
             date: tradeDate
         });
     });
@@ -71,7 +71,7 @@ function readOutstandingSharesMarketCapitalization() {
     // Credit: https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
     const urlSearchParams = new URLSearchParams(window.location.search);
     const params = Object.fromEntries(urlSearchParams.entries());
-    
+
     const elSx = document.evaluate("//script[contains(., 'thru-date')]", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
     let tradeDate = elSx.textContent.match(/"thru-date":"([0-9]{4}-[0-9]{2}-[0-9]{2})"/)[1];
     const elSo = document.evaluate("//span[text()='Shares Outstanding:']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
@@ -80,9 +80,25 @@ function readOutstandingSharesMarketCapitalization() {
     return {
         code: params.instrument.split('-')[0],
         date: tradeDate,
-        outstandingShares: parseInt( elSo.nextElementSibling.textContent.split(' ')[0].trim().replace(/[,]/g, '') ),
-        marketCapitalization: parseFloat( elMvSo.nextElementSibling.textContent.trim().replace(/[$,]/g, '') )
+        outstandingShares: parseInt(elSo.nextElementSibling.textContent.split(' ')[0].trim().replace(/[,]/g, '')),
+        marketCapitalization: parseFloat(elMvSo.nextElementSibling.textContent.trim().replace(/[$,]/g, ''))
     }
+}
+
+function readIndices() {
+    let results = [];
+    let items = document.querySelectorAll('table > tbody > tr');
+    items.forEach((item) => {
+        let cols = item.querySelectorAll('td');
+        results.push({
+            index: 'JSE',
+            date: cols[0].textContent.trim(),
+            value: parseFloat(cols[1].textContent.trim().replace(/,/g, '')),
+            change: parseFloat(cols[2].textContent.trim().replace(/,/g, ''))
+        });
+    });
+
+    return results;
 }
 
 // Adapted from https://www.toptal.com/puppeteer/headless-browser-puppeteer-tutorial done by Nick Chikovani
@@ -112,7 +128,7 @@ async function run(urls, cb) {
 
             browser.close();
 
-            return resolve( response.flat() );
+            return resolve(response.flat());
         } catch (e) {
             return reject(e);
         }
@@ -182,7 +198,7 @@ async function runner(bringToCurrentDate, begin, end, rest = 2) {
 
 const args = process.argv.slice(2);
 
-if (args.length > 2) {
+if (args.length > 3) {
     console.log('Too many parameters provided');
     process.exit(1);
 }
@@ -192,9 +208,16 @@ switch (args[0]) {
         getCompanies();
 
         break;
+    case 'read-indices':
+        getIndices();
+
+        break;
     default:
         getStocks();
         getCompanies();
+        getIndices();
+
+        break;
 }
 
 function getStocks() {
@@ -271,12 +294,73 @@ function getOutstandingSharesAndMarketCapitalization(companies) {
                 }
             });
 
-            if ( mergedO.length > 0 ) {
+            if (mergedO.length > 0) {
 
-                O8Q.updateCompany( { companies: mergedO } )
+                O8Q.updateCompany({
+                        companies: mergedO
+                    })
                     .then(console.log)
                     .catch(console.error);
             }
         })
         .catch(console.error);
+}
+
+function getIndices() {
+    beginning = moment();
+    ending = moment();
+
+    if (args[0] != 'read-indices') {
+        if (args[1]) {
+            // Validate date pattern as YYYY-MM-DD
+            if (!/^\d{4}[-](0?[1-9]|1[012])[-](0?[1-9]|[12][0-9]|3[01])$/.test(args[1])) {
+                console.log('This date format is not acceptable');
+                process.exit(1);
+            }
+
+            if (!moment(args[1]).isValid()) {
+                console.log(`Begin date, ${args[1]}, is invalid`);
+                process.exit(1);
+            }
+        }
+
+        if (args[2]) {
+            if (args[2] !== '++') {
+                if (!moment(args[2]).isValid()) {
+                    console.log(`End date, ${args[2]}, is invalid`);
+                    process.exit(1);
+                }
+            }
+        }
+
+        beginning = moment(args[1]);
+        ending = moment(args[2]);
+    }
+
+    if (beginning.isBefore(ending)) {
+
+        console.log(`Get indices from ${beginning.format('YYYY-MM-DD')} to ${ending.format('YYYY-MM-DD')} ...`);
+
+        run([`https://www.jamstockex.com/trading/indices/index-history/?indexCode=jse-index&fromDate=${beginning.format('YYYY-MM-DD')}&thruDate=${ending.format('YYYY-MM-DD')}`], readIndices)
+            .then(indices => {
+                for (const index of indices) {
+                    index.date = moment(index.date).format('YYYY-MM-DD');
+                }
+
+                if (indices.length > 0) {
+
+                    O8Q.updateIndices({
+                            indices
+                        })
+                        .then(console.log)
+                        .catch(console.error);
+                }
+
+            })
+            .catch(console.error);
+    } else {
+        let message = moment().isBefore(moment(beginning.format('YYYY-MM-DD'))) ?
+            'Date has not yet arrived for scraping. Too far in the future' : `Invalid date range`;
+        console.log(message);
+    }
 }

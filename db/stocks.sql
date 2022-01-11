@@ -576,3 +576,65 @@ BEGIN
 
 END
 GO
+--
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		Dayton Outar
+-- Create date: January 11, 2022
+-- Description:	Updates stock indices
+-- =============================================
+CREATE PROCEDURE [dbo].[UpdateStockIndices] 
+	@indices XML
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+
+	CREATE TABLE #tblIndices (
+		[Index] NVARCHAR(20) NOT NULL,
+		[Value] DECIMAL(18, 2) NOT NULL,
+		[ValueChange] DECIMAL(18, 2) NOT NULL,
+        [Date] DATETIME2(7) NOT NULL
+	);
+
+	INSERT INTO #tblIndices
+	(
+		[Index],
+		[Value] ,
+		[ValueChange],
+        [Date]
+	)
+    SELECT	d.x.query('./index').value('.', 'nvarchar(20)') [Index],
+			d.x.query('./value').value('.', 'decimal(18,2)') [Value],
+            d.x.query('./change').value('.', 'decimal(18,2)') [ValueChange],
+            d.x.query('./date').value('.', 'datetime2') [ValueChange]
+    FROM @indices.nodes('indices') d(x);
+
+
+    INSERT INTO [dbo].[StockIndices]
+    (
+        [Index] ,
+        [Value] ,
+        [ValueChange] ,
+        [LogNo] 
+    )
+    SELECT  i.[Index] ,
+            i.[Value] ,
+            i.[ValueChange] ,
+            l.[No]
+    FROM [#tblIndices] i,
+        [dbo].[Logs] l
+    WHERE i.[Date] = l.[Logged] 
+        AND l.[Event] = 0
+        AND NOT EXISTS(SELECT '' FROM [dbo].[StockIndices] e WHERE e.[LogNo] = l.[No]);
+
+	DROP TABLE #tblIndices;
+
+END
+GO
