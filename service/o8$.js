@@ -194,6 +194,8 @@ async function runner(bringToCurrentDate, begin, end, rest = 2) {
             console.log(message);
         }
     }
+
+    getIndices();
 }
 
 const args = process.argv.slice(2);
@@ -215,7 +217,6 @@ switch (args[0]) {
     default:
         getStocks();
         getCompanies();
-        getIndices();
 
         break;
 }
