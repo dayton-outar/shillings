@@ -6,3 +6,8 @@ Networks used to facilitate payment of goods and services on this platform.
 
 1. [Mastering Bitcoin](https://github.com/bitcoinbook/bitcoinbook)
 2. [Mastering Ethereum](https://github.com/ethereumbook/ethereumbook)
+
+## Tutorial Videos
+
+1. [Introduction to Bitcoin: What is Bitcoin and Why does it matter?](https://youtu.be/l1si5ZWLgy0) - [Andreas Antonopoulos](https://www.youtube.com/c/aantonop)
+2. [Bitcoin Q&A: How Do Payment Channels Work?](https://youtu.be/DAuNlOfws0o)
