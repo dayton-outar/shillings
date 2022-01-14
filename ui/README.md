@@ -17,7 +17,7 @@ Another useful mention, is that users can add a portfolio of stocks purchased to
  * [Vue Router](https://router.vuejs.org/)
  * [Apollo](https://www.apollographql.com/docs/react/)
  * [Buefy](https://buefy.org/)
- * [HighCharts](https://www.highcharts.com/)
+ * [ChartJS](https://www.chartjs.org/)
  
 ## Installation
 
@@ -72,6 +72,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 3. [Combining GraphQL and Vuex](https://markus.oberlehner.net/blog/combining-graphql-and-vuex/) by Markus Oberlehner
 4. [How to change page titles when using vue-router?](https://stackoverflow.com/questions/51639850/how-to-change-page-titles-when-using-vue-router) - StackOverflow
 5. [My Vue Experience after 3 projects in 18 months](https://dev.to/crisarji/my-vue-experience-after-3-projects-in-18-months-456c)
+6. [Financial Chart: Candlestick Sample](https://www.chartjs.org/chartjs-chart-financial/)
 
 ## Tutorial Videos
 
