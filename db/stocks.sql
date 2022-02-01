@@ -120,13 +120,12 @@ CREATE TABLE [dbo].[OutstandingSharesLog](
 	[Code] [nvarchar](20) NOT NULL,
 	[OutstandingShares] [bigint] NOT NULL,
 	[LogNo] [bigint] NULL,
+	[No] [bigint] IDENTITY(1,1) NOT NULL
 ) ON [PRIMARY]
-GO
-SET ANSI_PADDING ON
 GO
 ALTER TABLE [dbo].[OutstandingSharesLog] ADD  CONSTRAINT [PK_OutstandingSharesLog] PRIMARY KEY CLUSTERED 
 (
-	[Code] ASC
+	[No] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 GO
 CREATE NONCLUSTERED INDEX [IX_OutstandingShares_LogNo] ON [dbo].[OutstandingSharesLog]
@@ -134,27 +133,15 @@ CREATE NONCLUSTERED INDEX [IX_OutstandingShares_LogNo] ON [dbo].[OutstandingShar
 	[LogNo] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 GO
+ALTER TABLE [dbo].[OutstandingSharesLog]  WITH CHECK ADD  CONSTRAINT [FK_OutstandingSharesLog_Companies_Code] FOREIGN KEY([Code])
+REFERENCES [dbo].[Companies] ([Code])
+GO
+ALTER TABLE [dbo].[OutstandingSharesLog] CHECK CONSTRAINT [FK_OutstandingSharesLog_Companies_Code]
+GO
 ALTER TABLE [dbo].[OutstandingSharesLog]  WITH CHECK ADD  CONSTRAINT [FK_OutstandingSharesLog_Logs_LogNo] FOREIGN KEY([LogNo])
 REFERENCES [dbo].[Logs] ([No])
 GO
 ALTER TABLE [dbo].[OutstandingSharesLog] CHECK CONSTRAINT [FK_OutstandingSharesLog_Logs_LogNo]
-GO
--- Logs
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
-CREATE TABLE [dbo].[Logs](
-	[No] [bigint] IDENTITY(1,1) NOT NULL,
-	[Event] [int] NOT NULL,
-	[Details] [nvarchar](max) NOT NULL,
-	[Logged] [datetime2](7) NOT NULL
-) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
-GO
-ALTER TABLE [dbo].[Logs] ADD  CONSTRAINT [PK_Logs] PRIMARY KEY CLUSTERED 
-(
-	[No] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 GO
 -- StockTradings
 SET ANSI_NULLS ON

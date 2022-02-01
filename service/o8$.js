@@ -277,7 +277,6 @@ function getOutstandingSharesAndMarketCapitalization(companies) {
 
     for (const company of companies) {
         if (company.listed) {
-            console.log(`Getting outstanding shares for ${company.security} ...`);
             // Spawning too many threads of puppeteer process
             urls.push(`https://www.jamstockex.com/trading/instruments/?instrument=${company.code}-${company.currency}`);
         }
