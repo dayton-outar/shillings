@@ -1,5 +1,9 @@
 # Valuation Models Used
 
+ - Valuing Stocks
+ - Valuing Real Estate
+ - ...
+
 ## Further Reading
 
 1. [How Investors Can Use Adjusted Funds From Operations (AFFO) to Measure REIT Performance](https://www.millionacres.com/real-estate-investing/reits/how-to-use-affo-to-meaure-reit-performance/)
