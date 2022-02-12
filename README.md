@@ -75,6 +75,12 @@ docker-compose down
 
 Do I need [Fluentd](https://docs.fluentd.org/)?
 
+## Role Models
+1. [Simply Wall St](https://simplywall.st/)
+2. [Google Finance](https://www.google.com/finance/)
+3. [Yahoo Finance](https://finance.yahoo.com/)
+4. [MyMoneyJA](https://mymoneyja.com/)
+
 ## Further Reading
 
 1. [How To Use the Official NGINX Docker Image](https://www.docker.com/blog/how-to-use-the-official-nginx-docker-image/)
