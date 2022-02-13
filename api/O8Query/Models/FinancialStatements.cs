@@ -45,6 +45,7 @@ namespace O8Query.Models
         /// Reference to company core information
         /// </summary>
         [Required]
+        [MaxLength(20)]
         public string CompanyCode { get; set; }
 
         /// <summary>
@@ -72,7 +73,6 @@ namespace O8Query.Models
         [Required]
         public bool IsAudited { get; set; }
 
-        //[ForeignKey("No")]
         public virtual ICollection<StatementAnalyte> Analytes { get; set; }
     }
 }

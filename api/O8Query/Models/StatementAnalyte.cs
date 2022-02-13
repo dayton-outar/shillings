@@ -79,6 +79,7 @@ namespace O8Query.Models
         /// Description stated within report
         /// </summary>
         [Required]
+        [MaxLength(100)]
         public string Description { get; set; }
 
         /// <summary>
