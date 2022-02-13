@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using O8Query.Data;
 
 namespace Harpoon.Migrations
 {
     [DbContext(typeof(StocksQuery))]
-    partial class StocksQueryModelSnapshot : ModelSnapshot
+    [Migration("20220213170529_ModifyFinancialReports")]
+    partial class ModifyFinancialReports
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -83,6 +85,18 @@ namespace Harpoon.Migrations
                     b.ToTable("FinancialReports");
                 });
 
+            modelBuilder.Entity("O8Query.Models.FinancialStatement", b =>
+                {
+                    b.Property<long>("No")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.HasKey("No");
+
+                    b.ToTable("FinancialStatement");
+                });
+
             modelBuilder.Entity("O8Query.Models.Log", b =>
                 {
                     b.Property<long>("No")
@@ -109,8 +123,7 @@ namespace Harpoon.Migrations
                 {
                     b.Property<long>("No")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("bigint");
 
                     b.Property<decimal>("Amount")
                         .HasColumnType("decimal(18,2)");
@@ -123,7 +136,7 @@ namespace Harpoon.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<long?>("ReportNo")
+                    b.Property<long?>("FinancialReportNo")
                         .HasColumnType("bigint");
 
                     b.Property<int>("Section")
@@ -137,7 +150,7 @@ namespace Harpoon.Migrations
 
                     b.HasKey("No");
 
-                    b.HasIndex("ReportNo");
+                    b.HasIndex("FinancialReportNo");
 
                     b.ToTable("StatementAnalytes");
                 });
@@ -250,11 +263,17 @@ namespace Harpoon.Migrations
 
             modelBuilder.Entity("O8Query.Models.StatementAnalyte", b =>
                 {
-                    b.HasOne("O8Query.Models.FinancialReport", "Report")
+                    b.HasOne("O8Query.Models.FinancialReport", null)
                         .WithMany("Analytes")
-                        .HasForeignKey("ReportNo");
+                        .HasForeignKey("FinancialReportNo");
 
-                    b.Navigation("Report");
+                    b.HasOne("O8Query.Models.FinancialStatement", "Statement")
+                        .WithMany("Analytes")
+                        .HasForeignKey("No")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Statement");
                 });
 
             modelBuilder.Entity("O8Query.Models.StockIndex", b =>
@@ -282,6 +301,11 @@ namespace Harpoon.Migrations
                 });
 
             modelBuilder.Entity("O8Query.Models.FinancialReport", b =>
+                {
+                    b.Navigation("Analytes");
+                });
+
+            modelBuilder.Entity("O8Query.Models.FinancialStatement", b =>
                 {
                     b.Navigation("Analytes");
                 });

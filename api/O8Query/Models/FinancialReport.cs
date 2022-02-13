@@ -8,20 +8,12 @@ namespace O8Query.Models
     /// <summary>
     /// Summary details of Financial Statement
     /// </summary>
-    public class FinancialStatement
+    public class FinancialReport
     {
         public enum Periodical
         {
             Quarterly,
             Annual
-        }
-
-        public enum StatementType
-        {
-            IncomeExpense,
-            FinancialPosition,
-            OwnersEquity,
-            CashFlow
         }
 
         /// <summary>
@@ -53,12 +45,6 @@ namespace O8Query.Models
         /// </summary>
         [Required]
         public Periodical Period { get; set; }
-
-        /// <summary>
-        /// Type of statement: Income-Expense, Financial Position, Cash Flow, Statement of Equity
-        /// </summary>
-        [Required]
-        public StatementType Type { get; set; }
 
         /// <summary>
         /// Date on which financial information is relevant

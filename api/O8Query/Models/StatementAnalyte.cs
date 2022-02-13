@@ -6,6 +6,25 @@ namespace O8Query.Models
 {
     public class StatementAnalyte
     {
+        public enum StatementType
+        {
+            IncomeExpense,
+            FinancialPosition,
+            OwnersEquity,
+            CashFlow
+        }
+
+        public enum Sectional
+        {
+            Income,
+            ProfitAttributable,
+            EarningsPerStock,
+            Assets,
+            Liabilities,
+            Equity,
+            EquityAttributable
+        }
+
         [Flags]
         public enum Assay
         {
@@ -16,9 +35,9 @@ namespace O8Query.Models
             OperatingExpense = 8,
             Depreciation = 16,
             ProfitBeforeOtherIncome = 32,
-            OtherExpense = 64,
+            Expense = 64,
             InterestExpense,
-            OtherIncome = 128,
+            Income = 128,
             InterestIncome = 264,
             ProfitBeforeInterestAndTaxes = 512,
             ProfitBeforeTaxes = 1024,
@@ -45,17 +64,6 @@ namespace O8Query.Models
             // Cash Flow
         }
 
-        public enum Sectional
-        {
-            Income,
-            ProfitAttributable,
-            EarningsPerStock,
-            Assets,
-            Liabilities,
-            Equity,
-            EquityAttributable
-        }
-
         /// <summary>
         /// Uniquely identifies this analyte
         /// </summary>
@@ -66,8 +74,7 @@ namespace O8Query.Models
         /// <summary>
         /// Reference to summary of associated financial statement
         /// </summary>
-        [ForeignKey("No")]
-        public FinancialStatement Statement { get; set; }
+        public FinancialReport Report { get; set; }
 
         /// <summary>
         /// Value that sets the order of this analyte in the financial statement
@@ -81,6 +88,12 @@ namespace O8Query.Models
         [Required]
         [MaxLength(100)]
         public string Description { get; set; }
+
+        /// <summary>
+        /// Type of statement: Income-Expense, Financial Position, Cash Flow, Statement of Equity
+        /// </summary>
+        [Required]
+        public StatementType Type { get; set; }
 
         /// <summary>
         /// Section that this financial analyte is found: Income-Expense, Earnings per Stock, Assets, Liabilities, Equity

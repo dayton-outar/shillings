@@ -18,7 +18,7 @@ namespace O8Query.Data
 
         public DbSet<Log> Logs { get; set; }
 
-        public DbSet<FinancialStatement> FinancialStatements { get; set; }
+        public DbSet<FinancialReport> FinancialReports { get; set; }
 
         public DbSet<StatementAnalyte> StatementAnalytes { get; set; }
 

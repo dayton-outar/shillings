@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using O8Query.Data;
 
 namespace Harpoon.Migrations
 {
     [DbContext(typeof(StocksQuery))]
-    partial class StocksQueryModelSnapshot : ModelSnapshot
+    [Migration("20220213172722_ModifyFinancialReportsReport")]
+    partial class ModifyFinancialReportsReport
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -109,8 +111,7 @@ namespace Harpoon.Migrations
                 {
                     b.Property<long>("No")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("bigint");
 
                     b.Property<decimal>("Amount")
                         .HasColumnType("decimal(18,2)");
@@ -123,9 +124,6 @@ namespace Harpoon.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<long?>("ReportNo")
-                        .HasColumnType("bigint");
-
                     b.Property<int>("Section")
                         .HasColumnType("int");
 
@@ -136,8 +134,6 @@ namespace Harpoon.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("No");
-
-                    b.HasIndex("ReportNo");
 
                     b.ToTable("StatementAnalytes");
                 });
@@ -252,7 +248,9 @@ namespace Harpoon.Migrations
                 {
                     b.HasOne("O8Query.Models.FinancialReport", "Report")
                         .WithMany("Analytes")
-                        .HasForeignKey("ReportNo");
+                        .HasForeignKey("No")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Report");
                 });
