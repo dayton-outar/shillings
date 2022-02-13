@@ -45,6 +45,17 @@ namespace O8Query.Models
             // Cash Flow
         }
 
+        public enum Sectional
+        {
+            Income,
+            ProfitAttributable,
+            EarningsPerStock,
+            Assets,
+            Liabilities,
+            Equity,
+            EquityAttributable
+        }
+
         /// <summary>
         /// Uniquely identifies this analyte
         /// </summary>
@@ -53,18 +64,33 @@ namespace O8Query.Models
         public long No { get; set; }
 
         /// <summary>
+        /// Reference to summary of associated financial statement
+        /// </summary>
+        [ForeignKey("No")]
+        public FinancialStatement Statement { get; set; }
+
+        /// <summary>
+        /// Value that sets the order of this analyte in the financial statement
+        /// </summary>
+        [Required]
+        public int Sequence { get; set; }
+
+        /// <summary>
         /// Description stated within report
         /// </summary>
+        [Required]
         public string Description { get; set; }
 
         /// <summary>
         /// Section that this financial analyte is found: Income-Expense, Earnings per Stock, Assets, Liabilities, Equity
         /// </summary>
-        public string Section { get; set; }
+        [Required]
+        public Sectional Section { get; set; }
 
         /// <summary>
         /// Another differentiator used to group items for calculations
         /// </summary>
+        [Required]
         public Assay Analyte { get; set; }
 
         /// <summary>

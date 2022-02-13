@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -9,6 +10,20 @@ namespace O8Query.Models
     /// </summary>
     public class FinancialStatement
     {
+        public enum Periodical
+        {
+            Quarterly,
+            Annual
+        }
+
+        public enum StatementType
+        {
+            IncomeExpense,
+            FinancialPosition,
+            OwnersEquity,
+            CashFlow
+        }
+
         /// <summary>
         /// Uniquely identifies this Financial Statement
         /// </summary>
@@ -36,13 +51,13 @@ namespace O8Query.Models
         /// Period reported. e.g. Quarterly, Annual
         /// </summary>
         [Required]
-        public string Period { get; set; }
+        public Periodical Period { get; set; }
 
         /// <summary>
         /// Type of statement: Income-Expense, Financial Position, Cash Flow, Statement of Equity
         /// </summary>
         [Required]
-        public string Type { get; set; }
+        public StatementType Type { get; set; }
 
         /// <summary>
         /// Date on which financial information is relevant
@@ -56,5 +71,8 @@ namespace O8Query.Models
         /// </summary>
         [Required]
         public bool IsAudited { get; set; }
+
+        //[ForeignKey("No")]
+        public virtual ICollection<StatementAnalyte> Analytes { get; set; }
     }
 }

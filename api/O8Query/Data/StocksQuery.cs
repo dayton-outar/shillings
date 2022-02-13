@@ -18,6 +18,10 @@ namespace O8Query.Data
 
         public DbSet<Log> Logs { get; set; }
 
+        public DbSet<FinancialStatement> FinancialStatements { get; set; }
+
+        public DbSet<StatementAnalyte> StatementAnalytes { get; set; }
+
         [NotMapped]
         public DbSet<TotalStockTrades> TotalTrades { get; set; }
 
