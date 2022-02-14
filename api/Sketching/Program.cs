@@ -203,7 +203,7 @@ namespace Sketching
 
             reportAnalytes.Add(new StatementAnalyte{
                 Sequence = 5,
-                Description = "Invetories",
+                Description = "Inventories",
                 Type = StatementAnalyte.StatementType.FinancialPosition,
                 Section = StatementAnalyte.Sectional.Assets,
                 Analyte = StatementAnalyte.Assay.Assets | StatementAnalyte.Assay.Inventories,
@@ -499,26 +499,59 @@ namespace Sketching
             Console.WriteLine("Financial Ratios");
             Console.WriteLine(string.Empty.PadLeft(padding, '='));
 
-            // Profit Ratios
+            // -- Profit Ratios
 
-            // -- Gross Profit Margin
+            // Gross Profit Margin
             var grossProfit = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.GrossProfit)).Sum(a => a.Amount);
-            var totalRevenueFlags = StatementAnalyte.Assay.Total | StatementAnalyte.Assay.Revenue;
-            var revenue = qr2021.Analytes.Where(a => a.Analyte.HasFlag(totalRevenueFlags)).First().Amount;
+            var revenue = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.Total | StatementAnalyte.Assay.Revenue)).First().Amount;
             var grossMargin = grossProfit / revenue;
 
             Console.WriteLine("{0,-20} {1,3:p}", "Gross Profit Margin:", grossMargin);
             Console.WriteLine();
 
-            // -- Net Profit Margin
+            // Net Profit Margin
             var netProfit = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.NetProfit)).Sum(a => a.Amount);
             var netMargin = netProfit / revenue;
 
             Console.WriteLine("{0,-20} {1,3:p}", "Net Profit Margin:", netMargin);
             Console.WriteLine();
 
-            // -- Return on Equity: ROE
+            // Return on Equity: ROE
+            var totalEquity = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.Total | StatementAnalyte.Assay.Equity)).Sum(a => a.Amount);
+            var roe = netProfit / totalEquity;
+            Console.WriteLine("{0,-20} {1,3:p}", "Return on Equity:", roe);
+            Console.WriteLine();
 
+            // Return on Assets: ROA
+            /// <summary>
+            /// Since all assets are either funded by equity
+            /// or debt, some investors try to disregard the
+            /// costs of acquiring the assets in the return
+            /// calculation by adding back interest ex-
+            /// pense in the formula.
+            /// </summary>
+            /// <remarks>
+            /// Credit: Financial Ratio Cheatsheet - MyAccountingCourse.com
+            /// </remarks>
+            var totalAssets = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.Total | StatementAnalyte.Assay.Assets)).Sum(a => a.Amount);
+            var roa = grossProfit / totalAssets;
+            Console.WriteLine("{0,-20} {1,3:p}", "Return on Assets:", roa);
+            Console.WriteLine();
+
+            // Return on Capital Employed:ROCE
+            // Capital employed = Total assets − Current liabilities = Equity + Fixed Liabilities = Fixed Assets
+            // First, find the net value of all fixed assets on the company's balance sheet. 
+            // You'll see this value listed as property, plant, and equipment (PP&E). 
+            // To this number, add the value of all capital investments and current assets. 
+            // From this number, subtract all current liabilities. These include all financial obligations due in a year or less. 
+            // Examples of current liabilities listed on a company's balance sheet include accounts payable, short-term debt, and dividends payable.
+            var totalFixedAssets = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.Total | StatementAnalyte.Assay.FixedAssets)).Sum(a => a.Amount);
+            var roce = grossProfit / totalFixedAssets;
+
+            // Total Asset Turnover
+            var tat = revenue / totalAssets;
+            Console.WriteLine("{0,-20} {1,3:p}", "Total Asset Turnover:", tat);
+            Console.WriteLine();
         }
     }
 }
