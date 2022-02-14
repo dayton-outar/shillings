@@ -570,10 +570,10 @@ namespace Sketching
             Console.WriteLine("{0,-30} {1,3:p}", "Current Ratio:", cr);
             Console.WriteLine();
 
-            // Times Interest Earned Ratio
+            // Interest Coverage Ratio
             var totalInterestExpense = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.CurrentAssets)).Sum(a => a.Amount);
             var tier = grossProfit / totalInterestExpense;
-            Console.WriteLine("{0,-30} {1,3:p}", "Times Interest Earned Ratio:", tier);
+            Console.WriteLine("{0,-30} {1,3:p}", "Interest Coverage Ratio:", tier);
             Console.WriteLine();
 
             // -- Solvency Ratios
@@ -589,7 +589,7 @@ namespace Sketching
             Console.WriteLine("{0,-30} {1,3:p}", "Equity Ratio:", eqr);
             Console.WriteLine();
 
-            // Debt Ratio
+            // Debt Ratio = 1 - Equity Ratio
             var dr = totalLiabilities / totalAssets;
             Console.WriteLine("{0,-30} {1,3:p}", "Debt Ratio:", dr);
             Console.WriteLine();
