@@ -50,18 +50,19 @@ namespace O8Query.Models
 
             // Asset-Liability
             Assets = 65536,
-            Inventories = 131072,
-            CurrentAssets = 262144,
-            FixedAssets = 524288,
-            Intagible = 1048576,
+            Cash = 131072,
+            Inventories = 262144,
+            CurrentAssets = 524288,
+            FixedAssets = 1048576,
+            Intagible = 2097152,
             
-            Liabilities = 2097152,
-            CurrentLiabilities = 4194304,
-            FixedLiabilities = 8388608,
+            Liabilities = 4194304,
+            CurrentLiabilities = 8388608,
+            FixedLiabilities = 16777216,
 
-            Equity = 16777216,
+            Equity = 33554432,
 
-            NonControllingEquity = 33554432, // 25th
+            NonControllingEquity = 67108864, // 26th
 
             // Cash Flow
         }

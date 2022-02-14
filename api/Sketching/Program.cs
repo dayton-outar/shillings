@@ -170,7 +170,7 @@ namespace Sketching
                 Description = "Cash and deposits",
                 Type = StatementAnalyte.StatementType.FinancialPosition,
                 Section = StatementAnalyte.Sectional.Assets,
-                Analyte = StatementAnalyte.Assay.Assets | StatementAnalyte.Assay.CurrentAssets,
+                Analyte = StatementAnalyte.Assay.Assets | StatementAnalyte.Assay.CurrentAssets | StatementAnalyte.Assay.Cash,
                 Amount = 24331106000.00m
             });
 
@@ -179,7 +179,7 @@ namespace Sketching
                 Description = "Investment securities",
                 Type = StatementAnalyte.StatementType.FinancialPosition,
                 Section = StatementAnalyte.Sectional.Assets,
-                Analyte = StatementAnalyte.Assay.Assets | StatementAnalyte.Assay.CurrentAssets,
+                Analyte = StatementAnalyte.Assay.Assets | StatementAnalyte.Assay.CurrentAssets | StatementAnalyte.Assay.Cash,
                 Amount = 33513948000.00m
             });
 
@@ -188,13 +188,13 @@ namespace Sketching
                 Description = "Pledged assets",
                 Type = StatementAnalyte.StatementType.FinancialPosition,
                 Section = StatementAnalyte.Sectional.Assets,
-                Analyte = StatementAnalyte.Assay.Assets | StatementAnalyte.Assay.CurrentAssets,
+                Analyte = StatementAnalyte.Assay.Assets | StatementAnalyte.Assay.CurrentAssets | StatementAnalyte.Assay.Cash,
                 Amount = 7610387000.00m
             });
 
             reportAnalytes.Add(new StatementAnalyte{
                 Sequence = 4,
-                Description = "Receivales",
+                Description = "Receivables",
                 Type = StatementAnalyte.StatementType.FinancialPosition,
                 Section = StatementAnalyte.Sectional.Assets,
                 Analyte = StatementAnalyte.Assay.Assets | StatementAnalyte.Assay.CurrentAssets,
@@ -233,7 +233,7 @@ namespace Sketching
                 Description = "Investments in associates and joint ventures",
                 Type = StatementAnalyte.StatementType.FinancialPosition,
                 Section = StatementAnalyte.Sectional.Assets,
-                Analyte = StatementAnalyte.Assay.Assets | StatementAnalyte.Assay.FixedAssets,
+                Analyte = StatementAnalyte.Assay.Assets | StatementAnalyte.Assay.CurrentAssets,
                 Amount = 4118824000.00m
             });
 
@@ -275,7 +275,7 @@ namespace Sketching
 
             reportAnalytes.Add(new StatementAnalyte{
                 Sequence = 13,
-                Description = "Penstion plan assets",
+                Description = "Pension plan assets",
                 Type = StatementAnalyte.StatementType.FinancialPosition,
                 Section = StatementAnalyte.Sectional.Assets,
                 Analyte = StatementAnalyte.Assay.Assets | StatementAnalyte.Assay.FixedAssets,
@@ -506,20 +506,20 @@ namespace Sketching
             var revenue = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.Total | StatementAnalyte.Assay.Revenue)).First().Amount;
             var grossMargin = grossProfit / revenue;
 
-            Console.WriteLine("{0,-20} {1,3:p}", "Gross Profit Margin:", grossMargin);
+            Console.WriteLine("{0,-30} {1,3:p}", "Gross Profit Margin:", grossMargin);
             Console.WriteLine();
 
             // Net Profit Margin
             var netProfit = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.NetProfit)).Sum(a => a.Amount);
             var netMargin = netProfit / revenue;
 
-            Console.WriteLine("{0,-20} {1,3:p}", "Net Profit Margin:", netMargin);
+            Console.WriteLine("{0,-30} {1,3:p}", "Net Profit Margin:", netMargin);
             Console.WriteLine();
 
             // Return on Equity: ROE
             var totalEquity = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.Total | StatementAnalyte.Assay.Equity)).Sum(a => a.Amount);
             var roe = netProfit / totalEquity;
-            Console.WriteLine("{0,-20} {1,3:p}", "Return on Equity:", roe);
+            Console.WriteLine("{0,-30} {1,3:p}", "Return on Equity:", roe);
             Console.WriteLine();
 
             // Return on Assets: ROA
@@ -535,7 +535,7 @@ namespace Sketching
             /// </remarks>
             var totalAssets = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.Total | StatementAnalyte.Assay.Assets)).Sum(a => a.Amount);
             var roa = grossProfit / totalAssets;
-            Console.WriteLine("{0,-20} {1,3:p}", "Return on Assets:", roa);
+            Console.WriteLine("{0,-30} {1,3:p}", "Return on Assets:", roa);
             Console.WriteLine();
 
             // Return on Capital Employed:ROCE
@@ -545,13 +545,61 @@ namespace Sketching
             // To this number, add the value of all capital investments and current assets. 
             // From this number, subtract all current liabilities. These include all financial obligations due in a year or less. 
             // Examples of current liabilities listed on a company's balance sheet include accounts payable, short-term debt, and dividends payable.
-            var totalFixedAssets = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.Total | StatementAnalyte.Assay.FixedAssets)).Sum(a => a.Amount);
+            var totalFixedAssets = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.FixedAssets)).Sum(a => a.Amount);
             var roce = grossProfit / totalFixedAssets;
+            Console.WriteLine("{0,-30} {1,3:p}", "ROCE:", roce);
+            Console.WriteLine();
 
             // Total Asset Turnover
             var tat = revenue / totalAssets;
-            Console.WriteLine("{0,-20} {1,3:p}", "Total Asset Turnover:", tat);
+            Console.WriteLine("{0,-30} {1,3:p}", "Total Asset Turnover:", tat);
             Console.WriteLine();
+
+            // -- Liquidity Ratios
+
+            // Quick Ratio
+            var totalCash = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.Cash)).Sum(a => a.Amount);
+            var totalCurrentLiabilities = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.CurrentLiabilities)).Sum(a => a.Amount);
+            var qr = totalCash / totalCurrentLiabilities;
+            Console.WriteLine("{0,-30} {1,3:p}", "Quick Ratio:", qr);
+            Console.WriteLine();
+
+            // Current Ratio / Working Capital Ratio
+            var totalCurrentAssets = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.CurrentAssets)).Sum(a => a.Amount);
+            var cr = totalCurrentAssets / totalCurrentLiabilities;
+            Console.WriteLine("{0,-30} {1,3:p}", "Current Ratio:", cr);
+            Console.WriteLine();
+
+            // Times Interest Earned Ratio
+            var totalInterestExpense = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.CurrentAssets)).Sum(a => a.Amount);
+            var tier = grossProfit / totalInterestExpense;
+            Console.WriteLine("{0,-30} {1,3:p}", "Times Interest Earned Ratio:", tier);
+            Console.WriteLine();
+
+            // -- Solvency Ratios
+
+            // Debt to Equity
+            var totalLiabilities = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.Total | StatementAnalyte.Assay.Liabilities)).Sum(a => a.Amount);
+            var dte = totalLiabilities / totalEquity;
+            Console.WriteLine("{0,-30} {1,3:p}", "Debt-to-Equity Ratio:", dte);
+            Console.WriteLine();
+
+            // Equity Ratio
+            var eqr = totalEquity / totalAssets;
+            Console.WriteLine("{0,-30} {1,3:p}", "Equity Ratio:", eqr);
+            Console.WriteLine();
+
+            // Debt Ratio
+            var dr = totalLiabilities / totalAssets;
+            Console.WriteLine("{0,-30} {1,3:p}", "Debt Ratio:", dr);
+            Console.WriteLine();
+
+            // -- Efficiency Ratios
+            //var totalReceivables = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.)).Sum(a => a.Amount);
+            //var totalCurrentLiabilities = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.CurrentLiabilities)).Sum(a => a.Amount);
+            //var rtr = totalCash / totalCurrentLiabilities;
+            //Console.WriteLine("{0,-30} {1,3:p}", "Receivable Turnover Ratio:", rtr);
+            //Console.WriteLine();
         }
     }
 }
