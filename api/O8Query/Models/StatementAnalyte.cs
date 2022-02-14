@@ -34,12 +34,11 @@ namespace O8Query.Models
             GrossProfit = 4,
             OperatingExpense = 8,
             Depreciation = 16,
-            ProfitBeforeOtherIncome = 32,
+            Total = 32,
             Expense = 64,
-            InterestExpense,
             Income = 128,
-            InterestIncome = 264,
-            ProfitBeforeInterestAndTaxes = 512,
+            Interest = 264,
+            ProfitBeforeInterest = 512,
             ProfitBeforeTaxes = 1024,
             Tax = 2048,
             NetProfit = 4096,
@@ -50,16 +49,19 @@ namespace O8Query.Models
             BasicEarningsPerStock = 32768,
 
             // Asset-Liability
-            CurrentAssets = 65536,
+            Assets = 65536,
             Inventories = 131072,
-            FixedAssets = 262144,
-            TotalAssets = 524288,
+            CurrentAssets = 262144,
+            FixedAssets = 524288,
+            Intagible = 1048576,
             
-            CurrentLiabilities = 1048576,
-            FixedLiabilities = 2097152,
-            TotalLiabilities = 4194304,
+            Liabilities = 2097152,
+            CurrentLiabilities = 4194304,
+            FixedLiabilities = 8388608,
 
-            TotalEquity = 8388608
+            Equity = 16777216,
+
+            NonControllingEquity = 33554432, // 25th
 
             // Cash Flow
         }
