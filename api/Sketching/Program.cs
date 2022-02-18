@@ -555,6 +555,13 @@ namespace Sketching
             Console.WriteLine("{0,-30} {1,3:p}", "Total Asset Turnover:", tat);
             Console.WriteLine();
 
+            // Inventory Turnover
+            var totalInventories = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.Inventories)).Sum(a => a.Amount);
+            var totalDirectExpense = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.DirectExpense)).Sum(a => a.Amount);
+            var ivt = totalDirectExpense / totalInventories; // Skewed because operating expense is bundled in this
+            Console.WriteLine("{0,-30} {1,3:p}", "Inventory Turnover:", ivt);
+            Console.WriteLine();
+
             // -- Liquidity Ratios
 
             // Quick Ratio
