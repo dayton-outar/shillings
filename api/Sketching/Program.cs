@@ -15,71 +15,53 @@ namespace Sketching
                 Sequence = 1,
                 Description = "Revenue from products and services",
                 Type = StatementAnalyte.StatementType.IncomeExpense,
-                Section = StatementAnalyte.Sectional.Income,
-                Analyte = StatementAnalyte.Assay.Revenue,
-                Amount = 111064222.00m
+                Section = StatementAnalyte.Sectional.Revenue,
+                Analyte = StatementAnalyte.Assay.Operating,
+                Amount = 111064222000.00m
             });
             
             reportAnalytes.Add(new StatementAnalyte{
                 Sequence = 2,
                 Description = "Interest revenue",
                 Type = StatementAnalyte.StatementType.IncomeExpense,
-                Section = StatementAnalyte.Sectional.Income,
-                Analyte = StatementAnalyte.Assay.Interest | StatementAnalyte.Assay.Revenue,
-                Amount = 4373119.00m
-            });
-
-            reportAnalytes.Add(new StatementAnalyte{
-                Sequence = 3,
-                Description = "Total Revenue",
-                Type = StatementAnalyte.StatementType.IncomeExpense,
-                Section = StatementAnalyte.Sectional.Income,
-                Analyte = StatementAnalyte.Assay.Total | StatementAnalyte.Assay.Revenue,
-                Amount = 115437341000.00m
+                Section = StatementAnalyte.Sectional.Revenue,
+                Analyte = StatementAnalyte.Assay.Interest,
+                Amount = 4373119000.00m
             });
 
             reportAnalytes.Add(new StatementAnalyte{
                 Sequence = 4,
-                Description = "Direct and operating expenses",
+                Description = "Direct expenses",
                 Type = StatementAnalyte.StatementType.IncomeExpense,
-                Section = StatementAnalyte.Sectional.Income,
-                Analyte = StatementAnalyte.Assay.DirectExpense | StatementAnalyte.Assay.OperatingExpense,
-                Amount = 108109929000.00m
+                Section = StatementAnalyte.Sectional.Expenses,
+                Analyte = StatementAnalyte.Assay.Direct,
+                Amount = 90918736000.00m
+            });
+
+            reportAnalytes.Add(new StatementAnalyte{
+                Sequence = 4,
+                Description = "Direct expenses",
+                Type = StatementAnalyte.StatementType.IncomeExpense,
+                Section = StatementAnalyte.Sectional.Expenses,
+                Analyte = StatementAnalyte.Assay.Operating,
+                Amount = 17714679000.00m
             });
 
             reportAnalytes.Add(new StatementAnalyte{
                 Sequence = 5,
                 Description = "Net impairment losses on financial assets",
                 Type = StatementAnalyte.StatementType.IncomeExpense,
-                Section = StatementAnalyte.Sectional.Income,
-                Analyte = StatementAnalyte.Assay.Expense,
+                Section = StatementAnalyte.Sectional.Losses,
+                Analyte = StatementAnalyte.Assay.Impairment,
                 Amount = 523486000.00m
-            });
-
-            reportAnalytes.Add(new StatementAnalyte{
-                Sequence = 6,
-                Description = "Expenses",
-                Type = StatementAnalyte.StatementType.IncomeExpense,
-                Section = StatementAnalyte.Sectional.Income,
-                Analyte = StatementAnalyte.Assay.Expense,
-                Amount = 108633415000.00m
-            });
-
-            reportAnalytes.Add(new StatementAnalyte{
-                Sequence = 7,
-                Description = "Profit before Other income",
-                Type = StatementAnalyte.StatementType.IncomeExpense,
-                Section = StatementAnalyte.Sectional.Income,
-                Analyte = StatementAnalyte.Assay.GrossProfit,
-                Amount = 6803926000.00m
             });
 
             reportAnalytes.Add(new StatementAnalyte{
                 Sequence = 8,
                 Description = "Other income",
                 Type = StatementAnalyte.StatementType.IncomeExpense,
-                Section = StatementAnalyte.Sectional.Income,
-                Analyte = StatementAnalyte.Assay.Income,
+                Section = StatementAnalyte.Sectional.Gains,
+                Analyte = StatementAnalyte.Assay.Other,
                 Amount = 3024608000.00m
             });
 
@@ -87,8 +69,8 @@ namespace Sketching
                 Sequence = 9,
                 Description = "Interest income - non-financial services",
                 Type = StatementAnalyte.StatementType.IncomeExpense,
-                Section = StatementAnalyte.Sectional.Income,
-                Analyte = StatementAnalyte.Assay.Income,
+                Section = StatementAnalyte.Sectional.Gains,
+                Analyte = StatementAnalyte.Assay.Interest,
                 Amount = 467866000.00m
             });
 
@@ -96,26 +78,17 @@ namespace Sketching
                 Sequence = 10,
                 Description = "Interest expense - non-financial services",
                 Type = StatementAnalyte.StatementType.IncomeExpense,
-                Section = StatementAnalyte.Sectional.Income,
-                Analyte = StatementAnalyte.Assay.Expense,
-                Amount = 467866000.00m
+                Section = StatementAnalyte.Sectional.Losses,
+                Analyte = StatementAnalyte.Assay.Interest,
+                Amount = 1130957000.00m
             });
 
             reportAnalytes.Add(new StatementAnalyte{
                 Sequence = 11,
                 Description = "Share of results of associates and joint ventures",
                 Type = StatementAnalyte.StatementType.IncomeExpense,
-                Section = StatementAnalyte.Sectional.Income,
-                Analyte = StatementAnalyte.Assay.Income,
-                Amount = 543532000.00m
-            });
-
-            reportAnalytes.Add(new StatementAnalyte{
-                Sequence = 12,
-                Description = "Profit before Tax",
-                Type = StatementAnalyte.StatementType.IncomeExpense,
-                Section = StatementAnalyte.Sectional.Income,
-                Analyte = StatementAnalyte.Assay.ProfitBeforeTaxes,
+                Section = StatementAnalyte.Sectional.Gains,
+                Analyte = StatementAnalyte.Assay.Investment,
                 Amount = 543532000.00m
             });
 
@@ -123,26 +96,17 @@ namespace Sketching
                 Sequence = 13,
                 Description = "Tax",
                 Type = StatementAnalyte.StatementType.IncomeExpense,
-                Section = StatementAnalyte.Sectional.Income,
-                Analyte = StatementAnalyte.Assay.Expense | StatementAnalyte.Assay.Tax,
+                Section = StatementAnalyte.Sectional.Expenses,
+                Analyte = StatementAnalyte.Assay.Tax,
                 Amount = 2852049000.00m
-            });
-
-            reportAnalytes.Add(new StatementAnalyte{
-                Sequence = 14,
-                Description = "Net Profit",
-                Type = StatementAnalyte.StatementType.IncomeExpense,
-                Section = StatementAnalyte.Sectional.Income,
-                Analyte = StatementAnalyte.Assay.NetProfit,
-                Amount = 6856926000.00m
             });
 
             reportAnalytes.Add(new StatementAnalyte{
                 Sequence = 15,
                 Description = "Owners of GraceKennedy Limited",
                 Type = StatementAnalyte.StatementType.IncomeExpense,
-                Section = StatementAnalyte.Sectional.ProfitAttributable,
-                Analyte = StatementAnalyte.Assay.ShareholdersProfit,
+                Section = StatementAnalyte.Sectional.ProfitShare,
+                Analyte = StatementAnalyte.Assay.Shareholders,
                 Amount = 6218055000.00m
             });
 
@@ -150,8 +114,8 @@ namespace Sketching
                 Sequence = 16,
                 Description = "Non-controlling interests",
                 Type = StatementAnalyte.StatementType.IncomeExpense,
-                Section = StatementAnalyte.Sectional.ProfitAttributable,
-                Analyte = StatementAnalyte.Assay.NonControllingInterestProfit,
+                Section = StatementAnalyte.Sectional.ProfitShare,
+                Analyte = StatementAnalyte.Assay.NonControlling,
                 Amount = 638871000.00m
             });
 
@@ -160,7 +124,7 @@ namespace Sketching
                 Description = "Basic Earnings per Stock Unit",
                 Type = StatementAnalyte.StatementType.IncomeExpense,
                 Section = StatementAnalyte.Sectional.EarningsPerStock,
-                Analyte = StatementAnalyte.Assay.BasicEarningsPerStock,
+                Analyte = StatementAnalyte.Assay.Basic,
                 Amount = 6.28m
             });
             //--
@@ -170,7 +134,7 @@ namespace Sketching
                 Description = "Cash and deposits",
                 Type = StatementAnalyte.StatementType.FinancialPosition,
                 Section = StatementAnalyte.Sectional.Assets,
-                Analyte = StatementAnalyte.Assay.Assets | StatementAnalyte.Assay.CurrentAssets | StatementAnalyte.Assay.Cash,
+                Analyte = StatementAnalyte.Assay.Current | StatementAnalyte.Assay.Cash,
                 Amount = 24331106000.00m
             });
 
@@ -179,7 +143,7 @@ namespace Sketching
                 Description = "Investment securities",
                 Type = StatementAnalyte.StatementType.FinancialPosition,
                 Section = StatementAnalyte.Sectional.Assets,
-                Analyte = StatementAnalyte.Assay.Assets | StatementAnalyte.Assay.CurrentAssets | StatementAnalyte.Assay.Cash,
+                Analyte = StatementAnalyte.Assay.Current | StatementAnalyte.Assay.Cash,
                 Amount = 33513948000.00m
             });
 
@@ -188,7 +152,7 @@ namespace Sketching
                 Description = "Pledged assets",
                 Type = StatementAnalyte.StatementType.FinancialPosition,
                 Section = StatementAnalyte.Sectional.Assets,
-                Analyte = StatementAnalyte.Assay.Assets | StatementAnalyte.Assay.CurrentAssets | StatementAnalyte.Assay.Cash,
+                Analyte = StatementAnalyte.Assay.Current | StatementAnalyte.Assay.Cash,
                 Amount = 7610387000.00m
             });
 
@@ -197,7 +161,7 @@ namespace Sketching
                 Description = "Receivables",
                 Type = StatementAnalyte.StatementType.FinancialPosition,
                 Section = StatementAnalyte.Sectional.Assets,
-                Analyte = StatementAnalyte.Assay.Assets | StatementAnalyte.Assay.CurrentAssets,
+                Analyte = StatementAnalyte.Assay.Current | StatementAnalyte.Assay.Receivables,
                 Amount = 16871439000.00m
             });
 
@@ -206,7 +170,7 @@ namespace Sketching
                 Description = "Inventories",
                 Type = StatementAnalyte.StatementType.FinancialPosition,
                 Section = StatementAnalyte.Sectional.Assets,
-                Analyte = StatementAnalyte.Assay.Assets | StatementAnalyte.Assay.Inventories,
+                Analyte = StatementAnalyte.Assay.Inventories,
                 Amount = 14433135000.00m
             });
 
@@ -215,7 +179,7 @@ namespace Sketching
                 Description = "Loans receivables",
                 Type = StatementAnalyte.StatementType.FinancialPosition,
                 Section = StatementAnalyte.Sectional.Assets,
-                Analyte = StatementAnalyte.Assay.Assets | StatementAnalyte.Assay.FixedAssets,
+                Analyte = StatementAnalyte.Assay.Fixed,
                 Amount = 31250331000.00m
             });
 
@@ -224,7 +188,7 @@ namespace Sketching
                 Description = "Tax recoverables",
                 Type = StatementAnalyte.StatementType.FinancialPosition,
                 Section = StatementAnalyte.Sectional.Assets,
-                Analyte = StatementAnalyte.Assay.Assets | StatementAnalyte.Assay.FixedAssets,
+                Analyte = StatementAnalyte.Assay.Fixed,
                 Amount = 767669000.00m
             });
 
@@ -233,7 +197,7 @@ namespace Sketching
                 Description = "Investments in associates and joint ventures",
                 Type = StatementAnalyte.StatementType.FinancialPosition,
                 Section = StatementAnalyte.Sectional.Assets,
-                Analyte = StatementAnalyte.Assay.Assets | StatementAnalyte.Assay.CurrentAssets,
+                Analyte = StatementAnalyte.Assay.Current,
                 Amount = 4118824000.00m
             });
 
@@ -242,7 +206,7 @@ namespace Sketching
                 Description = "Investments properties",
                 Type = StatementAnalyte.StatementType.FinancialPosition,
                 Section = StatementAnalyte.Sectional.Assets,
-                Analyte = StatementAnalyte.Assay.Assets | StatementAnalyte.Assay.FixedAssets,
+                Analyte = StatementAnalyte.Assay.Fixed,
                 Amount = 925734000.00m
             });
 
@@ -251,7 +215,7 @@ namespace Sketching
                 Description = "Intangible assets",
                 Type = StatementAnalyte.StatementType.FinancialPosition,
                 Section = StatementAnalyte.Sectional.Assets,
-                Analyte = StatementAnalyte.Assay.Assets | StatementAnalyte.Assay.Intagible,
+                Analyte = StatementAnalyte.Assay.Intagible,
                 Amount = 4411466000.00m
             });
 
@@ -260,7 +224,7 @@ namespace Sketching
                 Description = "Fixed assets",
                 Type = StatementAnalyte.StatementType.FinancialPosition,
                 Section = StatementAnalyte.Sectional.Assets,
-                Analyte = StatementAnalyte.Assay.Assets | StatementAnalyte.Assay.FixedAssets,
+                Analyte = StatementAnalyte.Assay.Fixed,
                 Amount = 25560044000.00m
             });
 
@@ -269,7 +233,7 @@ namespace Sketching
                 Description = "Deferred tax assets",
                 Type = StatementAnalyte.StatementType.FinancialPosition,
                 Section = StatementAnalyte.Sectional.Assets,
-                Analyte = StatementAnalyte.Assay.Assets | StatementAnalyte.Assay.FixedAssets,
+                Analyte = StatementAnalyte.Assay.Fixed,
                 Amount = 1060528000.00m
             });
 
@@ -278,7 +242,7 @@ namespace Sketching
                 Description = "Pension plan assets",
                 Type = StatementAnalyte.StatementType.FinancialPosition,
                 Section = StatementAnalyte.Sectional.Assets,
-                Analyte = StatementAnalyte.Assay.Assets | StatementAnalyte.Assay.FixedAssets,
+                Analyte = StatementAnalyte.Assay.Fixed,
                 Amount = 6841372000.00m
             });
 
@@ -287,17 +251,8 @@ namespace Sketching
                 Description = "Assets classified as held for sale",
                 Type = StatementAnalyte.StatementType.FinancialPosition,
                 Section = StatementAnalyte.Sectional.Assets,
-                Analyte = StatementAnalyte.Assay.Assets | StatementAnalyte.Assay.FixedAssets,
+                Analyte = StatementAnalyte.Assay.Fixed,
                 Amount = 0.00m
-            });
-
-            reportAnalytes.Add(new StatementAnalyte{
-                Sequence = 15,
-                Description = "Total Assets",
-                Type = StatementAnalyte.StatementType.FinancialPosition,
-                Section = StatementAnalyte.Sectional.Assets,
-                Analyte = StatementAnalyte.Assay.Total | StatementAnalyte.Assay.Assets,
-                Amount = 171695983000.00m
             });
 
             reportAnalytes.Add(new StatementAnalyte{
@@ -305,7 +260,7 @@ namespace Sketching
                 Description = "Deposits",
                 Type = StatementAnalyte.StatementType.FinancialPosition,
                 Section = StatementAnalyte.Sectional.Liabilities,
-                Analyte = StatementAnalyte.Assay.Liabilities | StatementAnalyte.Assay.CurrentLiabilities,
+                Analyte = StatementAnalyte.Assay.Current,
                 Amount = 41611220000.00m
             });
 
@@ -314,7 +269,7 @@ namespace Sketching
                 Description = "Securities sold under agreements to repurchase",
                 Type = StatementAnalyte.StatementType.FinancialPosition,
                 Section = StatementAnalyte.Sectional.Liabilities,
-                Analyte = StatementAnalyte.Assay.Liabilities | StatementAnalyte.Assay.CurrentLiabilities,
+                Analyte = StatementAnalyte.Assay.Current,
                 Amount = 4968483000.00m
             });
 
@@ -323,7 +278,7 @@ namespace Sketching
                 Description = "Bank and other loans",
                 Type = StatementAnalyte.StatementType.FinancialPosition,
                 Section = StatementAnalyte.Sectional.Liabilities,
-                Analyte = StatementAnalyte.Assay.Liabilities | StatementAnalyte.Assay.FixedLiabilities,
+                Analyte = StatementAnalyte.Assay.Fixed,
                 Amount = 25233708000.00m
             });
 
@@ -332,7 +287,7 @@ namespace Sketching
                 Description = "Payables",
                 Type = StatementAnalyte.StatementType.FinancialPosition,
                 Section = StatementAnalyte.Sectional.Liabilities,
-                Analyte = StatementAnalyte.Assay.Liabilities | StatementAnalyte.Assay.CurrentLiabilities,
+                Analyte = StatementAnalyte.Assay.Current | StatementAnalyte.Assay.Payables,
                 Amount = 28211841000.00m
             });
 
@@ -341,7 +296,7 @@ namespace Sketching
                 Description = "Tax",
                 Type = StatementAnalyte.StatementType.FinancialPosition,
                 Section = StatementAnalyte.Sectional.Liabilities,
-                Analyte = StatementAnalyte.Assay.Liabilities | StatementAnalyte.Assay.CurrentLiabilities,
+                Analyte = StatementAnalyte.Assay.Current,
                 Amount = 1077285000.00m
             });
 
@@ -350,7 +305,7 @@ namespace Sketching
                 Description = "Provisions",
                 Type = StatementAnalyte.StatementType.FinancialPosition,
                 Section = StatementAnalyte.Sectional.Liabilities,
-                Analyte = StatementAnalyte.Assay.Liabilities | StatementAnalyte.Assay.CurrentLiabilities,
+                Analyte = StatementAnalyte.Assay.Current,
                 Amount = 42602000.00m
             });
 
@@ -359,7 +314,7 @@ namespace Sketching
                 Description = "Deferred tax liabilities",
                 Type = StatementAnalyte.StatementType.FinancialPosition,
                 Section = StatementAnalyte.Sectional.Liabilities,
-                Analyte = StatementAnalyte.Assay.Liabilities | StatementAnalyte.Assay.CurrentLiabilities,
+                Analyte = StatementAnalyte.Assay.Current,
                 Amount = 1822238000.00m
             });
 
@@ -368,17 +323,8 @@ namespace Sketching
                 Description = "Other post-employment obligations",
                 Type = StatementAnalyte.StatementType.FinancialPosition,
                 Section = StatementAnalyte.Sectional.Liabilities,
-                Analyte = StatementAnalyte.Assay.Liabilities | StatementAnalyte.Assay.CurrentLiabilities,
+                Analyte = StatementAnalyte.Assay.Current,
                 Amount = 5949279000.00m
-            });
-
-            reportAnalytes.Add(new StatementAnalyte{
-                Sequence = 24,
-                Description = "Total Liabilities",
-                Type = StatementAnalyte.StatementType.FinancialPosition,
-                Section = StatementAnalyte.Sectional.Liabilities,
-                Analyte = StatementAnalyte.Assay.Total | StatementAnalyte.Assay.Liabilities,
-                Amount = 108916656000.00m
             });
 
             reportAnalytes.Add(new StatementAnalyte{
@@ -386,7 +332,7 @@ namespace Sketching
                 Description = "Share capital",
                 Type = StatementAnalyte.StatementType.FinancialPosition,
                 Section = StatementAnalyte.Sectional.Equity,
-                Analyte = StatementAnalyte.Assay.Equity,
+                Analyte = StatementAnalyte.Assay.Capital,
                 Amount = 305493000.00m
             });
 
@@ -395,7 +341,7 @@ namespace Sketching
                 Description = "Capital and fair value reserves",
                 Type = StatementAnalyte.StatementType.FinancialPosition,
                 Section = StatementAnalyte.Sectional.Equity,
-                Analyte = StatementAnalyte.Assay.Equity,
+                Analyte = StatementAnalyte.Assay.Capital | StatementAnalyte.Assay.Reserves,
                 Amount = 7789066000.00m
             });
 
@@ -404,7 +350,7 @@ namespace Sketching
                 Description = "Retained earnings",
                 Type = StatementAnalyte.StatementType.FinancialPosition,
                 Section = StatementAnalyte.Sectional.Equity,
-                Analyte = StatementAnalyte.Assay.Equity,
+                Analyte = StatementAnalyte.Assay.Retained,
                 Amount = 44096867000.00m
             });
 
@@ -413,7 +359,7 @@ namespace Sketching
                 Description = "Banking reserves",
                 Type = StatementAnalyte.StatementType.FinancialPosition,
                 Section = StatementAnalyte.Sectional.Equity,
-                Analyte = StatementAnalyte.Assay.Equity,
+                Analyte = StatementAnalyte.Assay.Reserves,
                 Amount = 3620711000.00m
             });
 
@@ -422,7 +368,7 @@ namespace Sketching
                 Description = "Other reserves",
                 Type = StatementAnalyte.StatementType.FinancialPosition,
                 Section = StatementAnalyte.Sectional.Equity,
-                Analyte = StatementAnalyte.Assay.Equity,
+                Analyte = StatementAnalyte.Assay.Reserves,
                 Amount = 4098122000.00m
             });
 
@@ -431,17 +377,8 @@ namespace Sketching
                 Description = "Non-Controlling interests",
                 Type = StatementAnalyte.StatementType.FinancialPosition,
                 Section = StatementAnalyte.Sectional.Equity,
-                Analyte = StatementAnalyte.Assay.Equity | StatementAnalyte.Assay.NonControllingEquity,
+                Analyte = StatementAnalyte.Assay.NonControlling,
                 Amount = 2869068000.00m
-            });
-
-            reportAnalytes.Add(new StatementAnalyte{
-                Sequence = 31,
-                Description = "Total Equity",
-                Type = StatementAnalyte.StatementType.FinancialPosition,
-                Section = StatementAnalyte.Sectional.Equity,
-                Analyte = StatementAnalyte.Assay.Total | StatementAnalyte.Assay.Equity,
-                Amount = 62779327000.00m
             });
 
             //--
@@ -455,43 +392,52 @@ namespace Sketching
             };
 
 
-            Console.WriteLine("{0} {1} {2:dd MMMM, yyyy}{3}", qr2021.CompanyCode, qr2021.Period, qr2021.StatementDate, qr2021.IsAudited ? "" : " (Unaudited)");
+            // Console.WriteLine("{0} {1} {2:dd MMMM, yyyy}{3}", qr2021.CompanyCode, qr2021.Period, qr2021.StatementDate, qr2021.IsAudited ? "" : " (Unaudited)");
             int padding = 80;
-            Console.WriteLine(string.Empty.PadLeft(padding, '='));
+            // Console.WriteLine(string.Empty.PadLeft(padding, '='));
 
-            foreach(var item in qr2021.Analytes) 
-            {
-                if (item.Sequence == 1) {
-                    Console.WriteLine();
+            // foreach(var item in qr2021.Analytes) 
+            // {
+            //     if (item.Sequence == 1) {
+            //         Console.WriteLine();
 
-                    switch (item.Type) 
-                    {
-                        case StatementAnalyte.StatementType.IncomeExpense:
-                            Console.WriteLine("Statement of Income");
-                            break;
-                        case StatementAnalyte.StatementType.FinancialPosition:
-                            Console.WriteLine("Statement of Financial Position");
-                            break;
-                    }
+            //         switch (item.Type) 
+            //         {
+            //             case StatementAnalyte.StatementType.IncomeExpense:
+            //                 Console.WriteLine("Statement of Income");
+            //                 break;
+            //             case StatementAnalyte.StatementType.FinancialPosition:
+            //                 Console.WriteLine("Statement of Financial Position");
+            //                 break;
+            //         }
 
-                    Console.WriteLine(string.Empty.PadLeft(padding, '-'));
-                }
+            //         Console.WriteLine(string.Empty.PadLeft(padding, '-'));
+            //     }
                 
-                Console.WriteLine("{0,2}. {1,-50} {2,20:c}", item.Sequence, item.Description, item.Amount);
-            }
+            //     Console.WriteLine("{0,2}. {1,-50} {2,20:c}", item.Sequence, item.Description, item.Amount);
+            // }
 
             Console.WriteLine(string.Empty.PadLeft(padding, '='));
 
-            // Console.WriteLine();
+            Console.WriteLine();
 
-            // var totalAssets = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.Assets)).Sum(a => a.Amount);
-            // Console.WriteLine("{0}: {1:c}", "Total Assets", totalAssets);
+            var revenue = qr2021.Analytes.Where(a => a.Section == StatementAnalyte.Sectional.Revenue).Sum(a => a.Amount);
+            Console.WriteLine("{0,-50} {1,20:c}", "Revenues", revenue);
+            Console.WriteLine();
 
-            // var totalLiabilities = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.Liabilities)).Sum(a => a.Amount);
-            // Console.WriteLine("{0}: {1:c}", "Total Liabilities", totalLiabilities);
+            var directExpenses = qr2021.Analytes.Where(a => a.Section == StatementAnalyte.Sectional.Expenses && a.Analyte.HasFlag(StatementAnalyte.Assay.Direct)).Sum(a => a.Amount);
+            var netImpairment = qr2021.Analytes.Where(a => a.Section == StatementAnalyte.Sectional.Losses && a.Analyte.HasFlag(StatementAnalyte.Assay.Impairment)).Sum(a => a.Amount);
+            directExpenses = directExpenses - netImpairment;
+            Console.WriteLine("{0,-50} {1,20:c}", "Direct Expenses", directExpenses);
+            Console.WriteLine();
 
-            // var totalEquity = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.Equity)).Sum(a => a.Amount);
-            // Console.WriteLine("{0}: {1:c}", "Total Equity", totalEquity);
+            var operatingExpenses = qr2021.Analytes.Where(a => a.Section == StatementAnalyte.Sectional.Expenses && a.Analyte.HasFlag(StatementAnalyte.Assay.Operating)).Sum(a => a.Amount);
+            Console.WriteLine("{0,-50} {1,20:c}", "Operating Expenses", operatingExpenses);
+            Console.WriteLine();
+
+            var tax = qr2021.Analytes.Where(a => a.Section == StatementAnalyte.Sectional.Expenses && a.Analyte.HasFlag(StatementAnalyte.Assay.Tax)).Sum(a => a.Amount);
+            Console.WriteLine("{0,-50} {1,20:c}", "Tax", tax);
+            Console.WriteLine();
 
             Console.ForegroundColor = ConsoleColor.Green;
 
@@ -501,23 +447,25 @@ namespace Sketching
 
             // -- Profit Ratios
 
-            // Gross Profit Margin
-            var grossProfit = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.GrossProfit)).Sum(a => a.Amount);
-            var revenue = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.Total | StatementAnalyte.Assay.Revenue)).First().Amount;
+            // Gross Profit Margin            
+            var grossProfit = (revenue - (directExpenses + operatingExpenses));
             var grossMargin = grossProfit / revenue;
 
             Console.WriteLine("{0,-30} {1,3:p}", "Gross Profit Margin:", grossMargin);
             Console.WriteLine();
 
             // Net Profit Margin
-            var netProfit = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.NetProfit)).Sum(a => a.Amount);
+            var totalGains = qr2021.Analytes.Where(a => a.Section == StatementAnalyte.Sectional.Gains).Sum(a => a.Amount);
+            var totalLosses = qr2021.Analytes.Where(a => a.Section == StatementAnalyte.Sectional.Losses).Sum(a => a.Amount);
+
+            var netProfit = (revenue + totalGains) - (directExpenses + operatingExpenses + totalLosses + tax);
             var netMargin = netProfit / revenue;
 
             Console.WriteLine("{0,-30} {1,3:p}", "Net Profit Margin:", netMargin);
             Console.WriteLine();
 
             // Return on Equity: ROE
-            var totalEquity = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.Total | StatementAnalyte.Assay.Equity)).Sum(a => a.Amount);
+            var totalEquity = qr2021.Analytes.Where(a => a.Section == StatementAnalyte.Sectional.Equity).Sum(a => a.Amount);
             var roe = netProfit / totalEquity;
             Console.WriteLine("{0,-30} {1,3:p}", "Return on Equity:", roe);
             Console.WriteLine();
@@ -533,7 +481,7 @@ namespace Sketching
             /// <remarks>
             /// Credit: Financial Ratio Cheatsheet - MyAccountingCourse.com
             /// </remarks>
-            var totalAssets = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.Total | StatementAnalyte.Assay.Assets)).Sum(a => a.Amount);
+            var totalAssets = qr2021.Analytes.Where(a => a.Section == StatementAnalyte.Sectional.Assets).Sum(a => a.Amount);
             var roa = grossProfit / totalAssets;
             Console.WriteLine("{0,-30} {1,3:p}", "Return on Assets:", roa);
             Console.WriteLine();
@@ -545,7 +493,7 @@ namespace Sketching
             // To this number, add the value of all capital investments and current assets. 
             // From this number, subtract all current liabilities. These include all financial obligations due in a year or less. 
             // Examples of current liabilities listed on a company's balance sheet include accounts payable, short-term debt, and dividends payable.
-            var totalFixedAssets = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.FixedAssets)).Sum(a => a.Amount);
+            var totalFixedAssets = qr2021.Analytes.Where(a => a.Section == StatementAnalyte.Sectional.Assets && a.Analyte.HasFlag(StatementAnalyte.Assay.Fixed)).Sum(a => a.Amount);
             var roce = grossProfit / totalFixedAssets;
             Console.WriteLine("{0,-30} {1,3:p}", "ROCE:", roce);
             Console.WriteLine();
@@ -557,36 +505,31 @@ namespace Sketching
 
             // Inventory Turnover
             var totalInventories = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.Inventories)).Sum(a => a.Amount);
-            var totalDirectExpense = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.DirectExpense)).Sum(a => a.Amount);
+            var totalDirectExpense = qr2021.Analytes.Where(a => a.Section == StatementAnalyte.Sectional.Expenses && a.Analyte.HasFlag(StatementAnalyte.Assay.Direct)).Sum(a => a.Amount);
             var ivt = totalDirectExpense / totalInventories; // Skewed because operating expense is bundled in this
-            Console.WriteLine("{0,-30} {1,3:p}", "Inventory Turnover:", ivt);
+            Console.WriteLine("{0,-30} {1,3}", "Inventory Turnover:", Math.Round(ivt, 2));
             Console.WriteLine();
 
             // -- Liquidity Ratios
 
             // Quick Ratio
             var totalCash = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.Cash)).Sum(a => a.Amount);
-            var totalCurrentLiabilities = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.CurrentLiabilities)).Sum(a => a.Amount);
+            var totalCurrentLiabilities = qr2021.Analytes.Where(a => a.Section == StatementAnalyte.Sectional.Liabilities && a.Analyte.HasFlag(StatementAnalyte.Assay.Current)).Sum(a => a.Amount);
             var qr = totalCash / totalCurrentLiabilities;
             Console.WriteLine("{0,-30} {1,3:p}", "Quick Ratio:", qr);
             Console.WriteLine();
 
             // Current Ratio / Working Capital Ratio
-            var totalCurrentAssets = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.CurrentAssets)).Sum(a => a.Amount);
+            var totalCurrentAssets = qr2021.Analytes.Where(a => a.Section == StatementAnalyte.Sectional.Assets && a.Analyte.HasFlag(StatementAnalyte.Assay.Current)).Sum(a => a.Amount);
             var cr = totalCurrentAssets / totalCurrentLiabilities;
             Console.WriteLine("{0,-30} {1,3:p}", "Current Ratio:", cr);
-            Console.WriteLine();
-
-            // Interest Coverage Ratio
-            var totalInterestExpense = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.CurrentAssets)).Sum(a => a.Amount);
-            var tier = grossProfit / totalInterestExpense;
-            Console.WriteLine("{0,-30} {1,3:p}", "Interest Coverage Ratio:", tier);
             Console.WriteLine();
 
             // -- Solvency Ratios
 
             // Debt to Equity
-            var totalLiabilities = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.Total | StatementAnalyte.Assay.Liabilities)).Sum(a => a.Amount);
+            var totalLiabilities = qr2021.Analytes.Where(a => a.Section == StatementAnalyte.Sectional.Liabilities).Sum(a => a.Amount);
+            // Some companies use a specific line item for debt not the total list of liabilities
             var dte = totalLiabilities / totalEquity;
             Console.WriteLine("{0,-30} {1,3:p}", "Debt-to-Equity Ratio:", dte);
             Console.WriteLine();
@@ -602,11 +545,98 @@ namespace Sketching
             Console.WriteLine();
 
             // -- Efficiency Ratios
-            //var totalReceivables = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.)).Sum(a => a.Amount);
-            //var totalCurrentLiabilities = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.CurrentLiabilities)).Sum(a => a.Amount);
-            //var rtr = totalCash / totalCurrentLiabilities;
-            //Console.WriteLine("{0,-30} {1,3:p}", "Receivable Turnover Ratio:", rtr);
-            //Console.WriteLine();
+            var totalReceivables = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.Receivables)).Sum(a => a.Amount);
+            var rtr = totalCash / totalReceivables;
+            Console.WriteLine("{0,-30} {1,3}", "Receivable Turnover:", Math.Round(rtr, 2));
+            Console.WriteLine();
+
+            var avgCollectionPeriod = 365 / rtr;
+            Console.WriteLine("{0,-30} {1} days", "Average Collection Period:", Math.Ceiling(avgCollectionPeriod));
+            Console.WriteLine();
+
+            // -- Market Prospects Ratios
+            var marketCap = 989655000m; // Weighed average number of stock units outstanding
+            var eps = qr2021.Analytes.Where(a => a.Section == StatementAnalyte.Sectional.EarningsPerStock && a.Analyte.HasFlag(StatementAnalyte.Assay.Basic)).First().Amount;
+            Console.WriteLine("{0,-30} {1,3:c}", "EPS:", eps);
+            Console.WriteLine();
+
+            // P/E Ratio = Stock Price / Earnings per Stock
+            var stockPrice = 62.68m;
+            var p2e = stockPrice / eps;
+            Console.WriteLine("{0,-30} {1,3}", "P/E:", Math.Round(p2e, 2));
+            Console.WriteLine();
+
+            // P/B Ratio = Shareholder's Equity / Market Capitalization
+            var nonControlling = qr2021.Analytes.Where(a => a.Section == StatementAnalyte.Sectional.Equity && a.Analyte.HasFlag(StatementAnalyte.Assay.NonControlling)).First().Amount;
+            var shareholdersEquity = totalEquity - nonControlling;
+            var bookValuePerStock = shareholdersEquity / marketCap;
+
+            var p2b = stockPrice / bookValuePerStock;
+            Console.WriteLine("{0,-30} {1,3}", "P/B:", Math.Round(p2b, 2));
+            Console.WriteLine();
+
+            // Dividends Payout Ratio = Total Dividends Paid / Shareholder's Net Income; Total Dividends per Stock / Earnings per Stock
+            var dividends = new List<Dividend>();
+
+            dividends.Add(new Dividend{
+                SecurityCode = "GK",
+                Amount = 0.45m,
+                PaymentDate = new DateTime(2021, 4, 6),
+                Log = new Log{
+                    Event = Log.EventType.Information,
+                    Logged = new DateTime(2021, 3, 15)
+                }
+            });
+
+            dividends.Add(new Dividend{
+                SecurityCode = "GK",
+                Amount = 0.45m,
+                PaymentDate = new DateTime(2021, 6, 15),
+                Log = new Log{
+                    Event = Log.EventType.Information,
+                    Logged = new DateTime(2021, 5, 28)
+                }
+            });
+
+            dividends.Add(new Dividend{
+                SecurityCode = "GK",
+                Amount = 0.48m,
+                PaymentDate = new DateTime(2021, 9, 24),
+                Log = new Log{
+                    Event = Log.EventType.Information,
+                    Logged = new DateTime(2021, 9, 3)
+                }
+            });
+
+            dividends.Add(new Dividend{
+                SecurityCode = "GK",
+                Amount = 0.55m,
+                PaymentDate = new DateTime(2021, 12, 16),
+                Log = new Log{
+                    Event = Log.EventType.Information,
+                    Logged = new DateTime(2021, 11, 26)
+                }
+            });
+
+            var totalAnnualDividendsPerStock = dividends.Where(d => d.SecurityCode == "GK").Sum(a => a.Amount);
+            var dpr = totalAnnualDividendsPerStock / eps; // Since we're using an Annual Report. The Earnings per Stock is the Annual Earnings per Stock
+            Console.WriteLine("{0,-30} {1,3:p}", "Dividend Payout:", dpr);
+            Console.WriteLine();
+
+            // Dividend Yield = Annual Dividends per Stock / Stock Price
+            var dy = totalAnnualDividendsPerStock / stockPrice;
+            Console.WriteLine("{0,-30} {1,3:p}", "Dividend Yield:", dy);
+            Console.WriteLine();
+
+            // -- Coverage Ratios
+            
+            // Interest/Fixed Charge Coverage Ratio
+            // var totalInterestExpense = qr2021.Analytes.Where(a => a.Section == StatementAnalyte.Sectional.Expenses &&  a.Analyte.HasFlag(StatementAnalyte.Assay.Interest)).Sum(a => a.Amount);
+            // var tier = grossProfit / totalInterestExpense;
+            // Console.WriteLine("{0,-30} {1,3:p}", "Interest Coverage:", tier);
+            // Console.WriteLine();
+
+            // Debt Service Coverage Ratio
         }
     }
 }

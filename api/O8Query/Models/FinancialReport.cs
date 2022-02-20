@@ -54,6 +54,12 @@ namespace O8Query.Models
         public DateTime StatementDate { get; set; }
 
         /// <summary>
+        /// Reference to logs
+        /// </summary>
+        [ForeignKey("LogNo")]
+        public Log Log { get; set; }
+
+        /// <summary>
         /// Whether or not report has been audited
         /// </summary>
         [Required]

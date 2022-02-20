@@ -10,6 +10,25 @@ namespace O8Query.Models
     public class Log
     {
         /// <summary>
+        /// Log types
+        /// </summary>
+        public enum EventType
+        {
+            /// <summary>
+            /// An information event. This indicates a significant, successful operation.
+            /// </summary>
+            Information,
+            /// <summary>
+            /// An error event. This indicates a significant problem the user should know about; usually a loss of functionality or data.
+            /// </summary>
+            Warning,
+            /// <summary>
+            /// A warning event. This indicates a problem that is not immediately significant, but that may signify conditions that could cause future problems.
+            /// </summary>
+            Error
+        }
+
+        /// <summary>
         /// Uniuely identifies log
         /// </summary>
         [Key]
@@ -33,24 +52,5 @@ namespace O8Query.Models
         /// </summary>
         [Required]
         public DateTime Logged { get; set; }
-    }
-
-    /// <summary>
-    /// Log types
-    /// </summary>
-    public enum EventType
-    {
-        /// <summary>
-        /// An information event. This indicates a significant, successful operation.
-        /// </summary>
-        Information,
-        /// <summary>
-        /// An error event. This indicates a significant problem the user should know about; usually a loss of functionality or data.
-        /// </summary>
-        Warning,
-        /// <summary>
-        /// A warning event. This indicates a problem that is not immediately significant, but that may signify conditions that could cause future problems.
-        /// </summary>
-        Error
     }
 }

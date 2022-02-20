@@ -16,53 +16,76 @@ namespace O8Query.Models
 
         public enum Sectional
         {
-            Income,
-            ProfitAttributable,
+            // Income
+            // Credit: https://www.investopedia.com/terms/i/incomestatement.asp#toc-understanding-the-income-statement
+            Revenue,
+            Expenses,
+            Gains,
+            Losses,
+
+            // Income - Profits Attributable
+            ProfitShare,
+
+            // Income - Company's Earnings per Stock Calculation
             EarningsPerStock,
+
+            // Financial Position
             Assets,
             Liabilities,
             Equity,
-            EquityAttributable
+
+            // Financial Position - Equity Attributable
+            EquityShare
         }
 
         [Flags]
         public enum Assay
         {
             // Income-Expense
-            Revenue = 1,
-            DirectExpense = 2,
-            GrossProfit = 4,
-            OperatingExpense = 8,
-            Depreciation = 16,
-            Total = 32,
-            Expense = 64,
-            Income = 128,
-            Interest = 264,
-            ProfitBeforeInterest = 512,
-            ProfitBeforeTaxes = 1024,
-            Tax = 2048,
-            NetProfit = 4096,
+            Operating = 1,
+            Direct = 2,
+            Depreciation = 4,
+            Impairment = 8,
+            Interest = 16,
+            Other = 32,
+            /// <summary>
+            /// Permanent reduction in the value of a company asset. It may be a fixed asset or an intangible asset.
+            /// </summary>
+            /// <remarks>
+            /// Credit: https://www.investopedia.com/terms/i/impairment.asp
+            /// </remarks>
+            Investment = 64,
+            Tax = 128,
 
-            ShareholdersProfit = 8192,
-            NonControllingInterestProfit = 16384,
+            Shareholders = 256,
+            NonControlling = 512,
 
-            BasicEarningsPerStock = 32768,
+            Basic = 1024,
+            Diluted = 2048,
 
             // Asset-Liability
-            Assets = 65536,
-            Cash = 131072,
-            Inventories = 262144,
-            CurrentAssets = 524288,
-            FixedAssets = 1048576,
-            Intagible = 2097152,
+            Cash = 4096,
+            Inventories =  8192,
+            Receivables = 16384,
+            Payables = 32768,
+            Current =  65536,
+            Fixed = 131072,
+            Intagible = 262144,
             
-            Liabilities = 4194304,
-            CurrentLiabilities = 8388608,
-            FixedLiabilities = 16777216,
-
-            Equity = 33554432,
-
-            NonControllingEquity = 67108864, // 26th
+            /// <summary>
+            /// Money available for immediate use
+            /// </summary>
+            Capital = 524288,
+            Retained = 1048576,
+            Reserves = 2097152,
+            // 4194304, 
+            // 8388608,
+            // 2097152,
+            // 4194304,
+            // 8388608,
+            // 16777216,
+            // 33554432,
+            // 67108864
 
             // Cash Flow
         }
