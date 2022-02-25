@@ -70,15 +70,15 @@ namespace O8Query.Models
             Payables = 32768,
             Current =  65536,
             Fixed = 131072,
-            Intagible = 262144,
+            Debt = 262144,
+            Intagible = 524288,
             
             /// <summary>
             /// Money available for immediate use
             /// </summary>
-            Capital = 524288,
-            Retained = 1048576,
-            Reserves = 2097152,
-            // 4194304, 
+            Capital = 1048576,
+            Retained = 2097152,
+            Reserves = 4194304,
             // 8388608,
             // 2097152,
             // 4194304,
