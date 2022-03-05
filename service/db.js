@@ -138,6 +138,49 @@ const O8Q = {
         }
 
         return result;
+    },
+    updateDividends: async function ( all ) {
+        let result = {
+            success: false,
+            message: 'Failed to update stock dividends',
+            data: {}
+        };
+
+        try {
+
+            if ( all.dividends.length === 0) {
+                result.message = 'No data to update database';
+                return result;
+            }
+
+            // let pool = await sql.connect(config);
+
+            let stockDividends = xml2json.json2xml(all, {
+                compact: true,
+                ignoreComment: true,
+                spaces: 4
+            });
+
+            console.log(all);
+
+            // let dbr = await pool.request()
+            //     .input('dividends', sql.Xml, stockDividends)
+            //     .execute('UpdateStockDividends');
+            
+            // //console.log(dbr);
+
+            // result = {
+            //     success: dbr.returnValue === 0,
+            //     message: `Successfully updated ${dividends.dividends.length} dividends`,
+            //     data: {}
+            // };
+
+        } catch(ex) {
+            console.error( ex.message );
+            result.message = ex.message;
+        }
+
+        return result;
     }
 }
 

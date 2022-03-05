@@ -101,6 +101,24 @@ function readIndices() {
     return results;
 }
 
+function readDividends() {
+    let results = [];
+    let items = document.querySelectorAll('table > tbody > tr');
+    items.forEach((item) => {
+        let cols = item.querySelectorAll('td');
+        let camt = cols[5].textContent.trim().split('\n');
+        results.push({
+            code: cols[1].textContent.trim(),
+            recordDate: cols[0].textContent.trim(),
+            paymentDate: cols[4].textContent.trim(),
+            currency: camt[0].trim(),
+            amount: parseFloat(camt[1].trim().replace(/,/g, ''))
+        });
+    });
+
+    return results;
+}
+
 // Adapted from https://www.toptal.com/puppeteer/headless-browser-puppeteer-tutorial done by Nick Chikovani
 async function run(urls, cb) {
     return await new Promise(async (resolve, reject) => {
@@ -210,10 +228,40 @@ switch (args[0]) {
         getCompanies();
 
         break;
+    
     case 'read-indices':
         getIndices();
 
         break;
+
+    case 'read-dividends':
+        getDividends(
+            [
+                {
+                    code: 'gk',
+                    currency: 'JMD',
+                    listed: true
+                },
+                {
+                    code: 'ncb',
+                    currency: 'JMD',
+                    listed: true
+                },
+                {
+                    code: 'sj',
+                    currency: 'JMD',
+                    listed: true
+                },
+                {
+                    code: 'pal',
+                    currency: 'JMD',
+                    listed: true
+                }
+            ], 
+            moment('2021-03-06'), moment('2022-03-06'));
+
+        break;
+
     default:
         getStocks();
         getCompanies();
@@ -301,6 +349,37 @@ function getOutstandingSharesAndMarketCapitalization(companies) {
                     })
                     .then(console.log)
                     .catch(console.error);
+            }
+        })
+        .catch(console.error);
+}
+
+function getDividends(companies, beginning, ending) {
+    let urls = [];
+
+    for (const company of companies) {
+        if (company.listed) {
+            // Spawning too many threads of puppeteer process
+            urls.push(`https://www.jamstockex.com/trading/corporate-actions/?instrumentCode=${company.code}-${company.currency}&fromDate=${beginning.format('YYYY-MM-DD')}&thruDate=${ending.format('YYYY-MM-DD')}`);
+        }
+    }
+
+    run(urls, readDividends) // This can take about 20 minutes
+        .then(dividends => {
+            for (const dividend of dividends) {
+                dividend.declarationDate = moment(new Date(dividend.recordDate)).format('YYYY-MM-DD');
+                dividend.recordDate = moment(new Date(dividend.recordDate)).format('YYYY-MM-DD');
+                dividend.paymentDate = moment(new Date(dividend.paymentDate)).format('YYYY-MM-DD');
+            }
+
+            if (dividends.length > 0) {
+
+                O8Q.updateDividends({
+                        dividends
+                    })
+                    .then(console.log)
+                    .catch(console.error);
+                    
             }
         })
         .catch(console.error);

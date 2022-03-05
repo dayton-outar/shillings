@@ -23,10 +23,17 @@ namespace O8Query.Models
         public string SecurityCode { get; set; }
 
         /// <summary>
-        /// 
+        /// Currency in which dividend amount is quoted
         /// </summary>
         [Required]
-        [Column(TypeName = "decimal(18,2)")]
+        [MaxLength(3)]
+        public string Currency { get; set; }
+
+        /// <summary>
+        /// Dividend amount per stock unit
+        /// </summary>
+        [Required]
+        [Column(TypeName = "decimal(18,4)")]
         public decimal Amount { get; set; }
 
         [Required]

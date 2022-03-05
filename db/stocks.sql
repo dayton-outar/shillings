@@ -231,7 +231,7 @@ GO
 -- Create date: April 29, 2021
 -- Description:	Updates companies list
 -- =============================================
-CREATE PROCEDURE [dbo].[UpdateCompanies] 
+CREATE OR ALTER PROCEDURE [dbo].[UpdateCompanies] 
 	@stocks XML
 AS
 BEGIN
@@ -333,7 +333,7 @@ BEGIN
     SELECT @logged = MIN([Date]) FROM #tblTradings;
     SELECT @totalStocks = COUNT([SecurityCode]) FROM #tblTradings;
 
-    IF NOT EXISTS ( SELECT '' FROM [dbo].[Logs] L WHERE L.[Logged] = @logged ) AND @totalStocks > 0
+    IF NOT EXISTS ( SELECT '' FROM [dbo].[Logs] L WHERE L.[Logged] = @logged AND L.[Type] = 4 ) AND @totalStocks > 0
     BEGIN
         --
         BEGIN TRY
@@ -342,10 +342,11 @@ BEGIN
             INSERT INTO [dbo].[Logs]
             (
                 [Event] ,
+                [Type] ,
                 [Details] ,
                 [Logged]
             )
-            VALUES ( 0, CONVERT( VARCHAR(10), @totalStocks ) + ' stocks traded', @logged);
+            VALUES ( 0, 4, CONVERT( VARCHAR(10), @totalStocks ) + ' stocks traded', @logged);
             SELECT @logNo = SCOPE_IDENTITY();
 
             INSERT INTO [dbo].[StockTradings]
@@ -467,7 +468,7 @@ GO
 -- Create date: Jan 9, 2022
 -- Description:	Updates companies' details
 -- =============================================
-ALTER PROCEDURE [dbo].[UpdateCompaniesDetails] 
+CREATE OR ALTER PROCEDURE [dbo].[UpdateCompaniesDetails] 
 	@companies XML
 AS
 BEGIN
@@ -574,7 +575,7 @@ GO
 -- Create date: January 11, 2022
 -- Description:	Updates stock indices
 -- =============================================
-CREATE PROCEDURE [dbo].[UpdateStockIndices] 
+CREATE OR ALTER PROCEDURE [dbo].[UpdateStockIndices] 
 	@indices XML
 AS
 BEGIN
