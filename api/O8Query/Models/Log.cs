@@ -10,6 +10,21 @@ namespace O8Query.Models
     public class Log
     {
         /// <summary>
+        /// 
+        /// </summary>
+        [Flags]
+        public enum LogType
+        {
+            Application = 1,
+            Announcement = 2,
+            Stock = 4,
+            /// <summary>
+            /// User activity
+            /// </summary>
+            User = 8
+        }
+
+        /// <summary>
         /// Log types
         /// </summary>
         public enum EventType
@@ -34,9 +49,15 @@ namespace O8Query.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long No { get; set; }
-        
+
         /// <summary>
         /// Type of event logged
+        /// </summary>
+        [Required]
+        public LogType Type { get; set; }
+        
+        /// <summary>
+        /// Critical level of event logged
         /// </summary>
         [Required]
         public EventType Event { get; set; }
