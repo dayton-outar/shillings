@@ -278,7 +278,7 @@ namespace Sketching
                 Description = "Bank and other loans",
                 Type = StatementAnalyte.StatementType.FinancialPosition,
                 Section = StatementAnalyte.Sectional.Liabilities,
-                Analyte = StatementAnalyte.Assay.Fixed,
+                Analyte = StatementAnalyte.Assay.Fixed | StatementAnalyte.Assay.Debt,
                 Amount = 25233708000.00m
             });
 
@@ -534,6 +534,12 @@ namespace Sketching
             Console.WriteLine("{0,-30} {1,3:p}", "Debt-to-Equity Ratio:", dte);
             Console.WriteLine();
 
+            // Debt to Equity ... Specific item except total liabilities
+            var totalDebt = qr2021.Analytes.Where(a => a.Section == StatementAnalyte.Sectional.Liabilities && a.Analyte.HasFlag(StatementAnalyte.Assay.Debt)).Sum(a => a.Amount);
+            var sdr = totalDebt / totalEquity;
+            Console.WriteLine("{0,-30} {1,3:p}", "Debt Ratio (Bank Loan):", sdr);
+            Console.WriteLine();
+
             // Equity Ratio
             var eqr = totalEquity / totalAssets;
             Console.WriteLine("{0,-30} {1,3:p}", "Equity Ratio:", eqr);
@@ -637,6 +643,8 @@ namespace Sketching
             // Console.WriteLine();
 
             // Debt Service Coverage Ratio
+
+            // Calculate Volatility from years of stock price movemements of a stock
         }
     }
 }

@@ -31,12 +31,16 @@ namespace O8Query.Models
 
         [Required]
         [Column(TypeName = "date")]
+        public DateTime RecordDate { get; set; }
+
+        [Required]
+        [Column(TypeName = "date")]
         public DateTime PaymentDate { get; set; }
 
         /// <summary>
         /// Reference to logs
         /// </summary>
-        [ForeignKey("LogNo")]
-        public Log Log { get; set; }
+        [Required]
+        public Log Log { get; set; } // TODO: The Declaration Date should be stored in the logs
     }
 }

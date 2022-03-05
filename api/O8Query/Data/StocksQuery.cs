@@ -10,7 +10,11 @@ namespace O8Query.Data
     {
         public StocksQuery(DbContextOptions<StocksQuery> baseContext) : base(baseContext) { }
 
+        public DbSet<Market> Markets { get; set; }
+
         public DbSet<Company> Companies { get; set; }
+
+        public DbSet<Stock> Stocks { get; set; }
 
         public DbSet<StockTrading> StockTradings { get; set; }
 
@@ -21,6 +25,8 @@ namespace O8Query.Data
         public DbSet<FinancialReport> FinancialReports { get; set; }
 
         public DbSet<StatementAnalyte> StatementAnalytes { get; set; }
+
+        public DbSet<Dividend> Dividends { get; set; }        
 
         [NotMapped]
         public DbSet<TotalStockTrades> TotalTrades { get; set; }

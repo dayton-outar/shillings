@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using O8Query.Data;
 
 namespace Harpoon.Migrations
 {
     [DbContext(typeof(StocksQuery))]
-    partial class StocksQueryModelSnapshot : ModelSnapshot
+    [Migration("20220305145713_AddDividendsAndMore")]
+    partial class AddDividendsAndMore
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -269,6 +271,7 @@ namespace Harpoon.Migrations
 
                     b.Property<string>("Index")
                         .IsRequired()
+                        .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
                     b.Property<long?>("LogNo")
@@ -281,8 +284,6 @@ namespace Harpoon.Migrations
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("No");
-
-                    b.HasIndex("Index");
 
                     b.HasIndex("LogNo");
 
@@ -414,19 +415,11 @@ namespace Harpoon.Migrations
 
             modelBuilder.Entity("O8Query.Models.StockIndex", b =>
                 {
-                    b.HasOne("O8Query.Models.Market", "Market")
-                        .WithMany()
-                        .HasForeignKey("Index")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("O8Query.Models.Log", "Log")
                         .WithMany()
                         .HasForeignKey("LogNo");
 
                     b.Navigation("Log");
-
-                    b.Navigation("Market");
                 });
 
             modelBuilder.Entity("O8Query.Models.StockTrading", b =>

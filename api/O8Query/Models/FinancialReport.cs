@@ -56,8 +56,8 @@ namespace O8Query.Models
         /// <summary>
         /// Reference to logs
         /// </summary>
-        [ForeignKey("LogNo")]
-        public Log Log { get; set; }
+        [Required]
+        public Log Log { get; set; } // TODO: Date when report was released
 
         /// <summary>
         /// Whether or not report has been audited
