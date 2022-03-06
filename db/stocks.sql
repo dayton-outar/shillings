@@ -229,6 +229,7 @@ GO
 -- =============================================
 -- Author:		Dayton Outar
 -- Create date: April 29, 2021
+-- Modified:	March 6, 2022
 -- Description:	Updates companies list
 -- =============================================
 CREATE OR ALTER PROCEDURE [dbo].[UpdateCompanies] 
@@ -259,10 +260,27 @@ BEGIN
 			d.x.query('./date').value('.', 'datetime2') [Date]
     FROM @stocks.nodes('stocks') d(x);
 
-	INSERT INTO [dbo].[Companies]
+	-- INSERT INTO [dbo].[Companies]
+	-- (
+	-- 	[Code] ,
+	-- 	[Security],
+	-- 	[OutstandingShares],
+	-- 	[Created]
+	-- )
+	-- SELECT  [Code] ,
+	-- 		[Security] ,
+	-- 		[OutstandingShares],
+	-- 		[Created]
+	-- FROM    #tblCompanies
+	-- WHERE   NOT EXISTS (
+	-- 	SELECT  [Code]
+	-- 	FROM    [dbo].[Companies] X
+	-- 	WHERE   X.[Code] = #tblCompanies.[Code]);
+
+	INSERT INTO [dbo].[Stocks]
 	(
-		[Code] ,
-		[Security],
+		[Code],
+		[Name],
 		[OutstandingShares],
 		[Created]
 	)
@@ -526,23 +544,23 @@ BEGIN
 		FROM [dbo].[StockTradings] s
 			INNER JOIN [dbo].[Logs] l ON s.[LogNo] = l.[No]
 			INNER JOIN #tblCompanies t ON s.[SecurityCode] = t.[Code]
-			INNER JOIN [dbo].[Companies] c ON c.[Code] = t.[Code]
+			INNER JOIN [dbo].[Stocks] c ON c.[Code] = t.[Code]
 		WHERE l.[Logged] = t.[Date]
 			AND t.[OutstandingShares] <> c.[OutstandingShares];
 
 		UPDATE c SET
-			[Security] = t.[Security],
+			[Name] = t.[Security],
 			[Currency] = t.[Currency],
-			[Industry] = t.[Industry],
+			--[Industry] = t.[Industry],
 			[OutstandingShares] = t.[OutstandingShares],
 			[StockType] = t.[StockType],
 			[isListed] = t.[isListed]
-		FROM [dbo].[Companies] c
+		FROM [dbo].[Stocks] c
 			INNER JOIN #tblCompanies t ON c.[Code] = t.[Code];
 		
 		UPDATE c SET
 			[isListed] = 0
-		FROM [dbo].[Companies] c
+		FROM [dbo].[Stocks] c
 		WHERE NOT EXISTS(SELECT '' FROM #tblCompanies t WHERE t.[Code] = c.[Code]);
 
 		UPDATE s SET
@@ -565,7 +583,6 @@ BEGIN
 END
 GO
 --
-
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -573,6 +590,7 @@ GO
 -- =============================================
 -- Author:		Dayton Outar
 -- Create date: January 11, 2022
+-- Modified:    March 6, 2022
 -- Description:	Updates stock indices
 -- =============================================
 CREATE OR ALTER PROCEDURE [dbo].[UpdateStockIndices] 
@@ -604,22 +622,23 @@ BEGIN
             d.x.query('./date').value('.', 'datetime2') [ValueChange]
     FROM @indices.nodes('indices') d(x);
 
-
     INSERT INTO [dbo].[StockIndices]
     (
-        [Index] ,
         [Value] ,
         [ValueChange] ,
-        [LogNo] 
+        [LogNo] ,
+        [MarketIndexNo]
     )
-    SELECT  i.[Index] ,
-            i.[Value] ,
+    SELECT  i.[Value] ,
             i.[ValueChange] ,
-            l.[No]
-    FROM [#tblIndices] i,
+            l.[No] ,
+            m.[No]
+    FROM [#tblIndices] i
+        INNER JOIN [dbo].[MarketIndices] m ON i.[Index] = m.[MarketCode],
         [dbo].[Logs] l
     WHERE i.[Date] = l.[Logged] 
         AND l.[Event] = 0
+        AND l.[Type] = 4
         AND NOT EXISTS(SELECT '' FROM [dbo].[StockIndices] e WHERE e.[LogNo] = l.[No]);
 
 	DROP TABLE #tblIndices;

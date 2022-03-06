@@ -16,6 +16,8 @@ namespace O8Query.Data
 
         public DbSet<Stock> Stocks { get; set; }
 
+        public DbSet<MarketIndex> MarketIndices { get; set; }
+
         public DbSet<StockTrading> StockTradings { get; set; }
 
         public DbSet<StockIndex> StockIndices { get; set; }
@@ -26,7 +28,9 @@ namespace O8Query.Data
 
         public DbSet<StatementAnalyte> StatementAnalytes { get; set; }
 
-        public DbSet<Dividend> Dividends { get; set; }        
+        public DbSet<Dividend> Dividends { get; set; }
+
+        public DbSet<Announcement> Announcements { get; set; }
 
         [NotMapped]
         public DbSet<TotalStockTrades> TotalTrades { get; set; }

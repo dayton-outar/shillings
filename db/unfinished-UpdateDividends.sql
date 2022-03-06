@@ -18,16 +18,26 @@ BEGIN
 
 	CREATE TABLE #tblDividends (
 		[Code] NVARCHAR(20) NOT NULL,
+        [Title] NVARCHAR(MAX) NOT NULL,
 		[RecordDate] DATE NOT NULL,
         [PaymentDate] DATE NOT NULL,
         [Date] DATETIME2(7) NOT NULL,
         [Currency] NVARCHAR(3) NOT NULL,
-        [Amount] DECIMAL(18, 4) NOT NULL,
+        [Amount] DECIMAL(18, 4) NOT NULL
+	);
+
+    CREATE TABLE #tblLogs (
+		[No] BIGINT NOT NULL,
+        [Event] INT NOT NULL,
+        [Type] INT NOT NULL,
+        [Details] NVARCHAR(max) NOT NULL,
+        [Logged] DATETIME2(7) NOT NULL        
 	);
 
 	INSERT INTO #tblDividends
 	(
 		[Code] ,
+        [Title] ,
 		[RecordDate] ,
 		[PaymentDate] ,
         [Date] ,
@@ -35,6 +45,7 @@ BEGIN
         [Amount]
 	)
     SELECT	d.x.query('./code').value('.', 'nvarchar(20)') [SecurityCode],
+            d.x.query('./title').value('.', 'nvarchar(max)') [Title],
             d.x.query('./recordDate').value('.', 'date') [RecordDate],
             d.x.query('./paymentDate').value('.', 'date') [PaymentDate],
             d.x.query('./declarationDate').value('.', 'date') [Date],
@@ -42,6 +53,7 @@ BEGIN
             d.x.query('./amount').value('.', 'decimal(18,4)') [Amount]            
     FROM @dividends.nodes('dividends') d(x);
 
+    SELECT @totalDividends = COUNT([SecurityCode]) FROM #tblTradings;
 
         BEGIN TRY
             BEGIN TRANSACTION;
@@ -53,25 +65,45 @@ BEGIN
                 [Details] ,
                 [Logged]
             )
-            VALUES ( 0, 4, CONVERT( VARCHAR(10), @totalStocks ) + ' stocks traded', @logged);
+            VALUES ( 0, 1, CONVERT( VARCHAR(10), @totalDividends ) + ' dividends updated', @logged);
             SELECT @logNo = SCOPE_IDENTITY();
 
-    INSERT INTO [dbo].[Dividends]
-    (
-        [Index] ,
-        [Value] ,
-        [ValueChange] ,
-        [LogNo] 
-    )
-    SELECT  i.[Index] ,
-            i.[Value] ,
-            i.[ValueChange] ,
-            l.[No]
-    FROM [#tblIndices] i,
-        [dbo].[Logs] l
-    WHERE i.[Date] = l.[Logged] 
-        AND l.[Event] = 0
-        AND NOT EXISTS(SELECT '' FROM [dbo].[StockIndices] e WHERE e.[LogNo] = l.[No]);
+            INSERT INTO [dbo].[Logs]
+            (
+                [Event] ,
+                [Type] ,
+                [Details] ,
+                [Logged]
+            )
+            OUTPUT  inserted.[No] ,
+                    inserted.[Event] ,
+                    inserted.[Type] ,
+                    inserted.[Details] ,
+                    inserted.[Logged]
+                INTO #tblLogs
+            SELECT  0 [Event] ,
+                    2 [Type] ,
+                    d.[Title],
+                    d.[Date]
+            FROM [#tblDividends] d;
+
+            INSERT INTO [dbo].[Dividends]
+            (
+                [Index] ,
+                [Value] ,
+                [ValueChange] ,
+                [LogNo] 
+            )
+            SELECT  i.[Index] ,
+                    i.[Value] ,
+                    i.[ValueChange] ,
+                    l.[No]
+            FROM [#tblDividends] d,
+                [dbo].[Logs] l
+            WHERE i.[Date] = l.[Logged] 
+                AND l.[Event] = 0
+                AND l.[Type] = 2
+                AND NOT EXISTS(SELECT '' FROM [dbo].[StockIndices] e WHERE e.[LogNo] = l.[No]);
 
             COMMIT TRANSACTION;
         END TRY

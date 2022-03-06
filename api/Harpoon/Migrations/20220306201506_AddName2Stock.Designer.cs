@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using O8Query.Data;
 
 namespace Harpoon.Migrations
 {
     [DbContext(typeof(StocksQuery))]
-    partial class StocksQueryModelSnapshot : ModelSnapshot
+    [Migration("20220306201506_AddName2Stock")]
+    partial class AddName2Stock
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -131,14 +133,9 @@ namespace Harpoon.Migrations
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
-                    b.Property<string>("StockCode")
-                        .HasColumnType("nvarchar(20)");
-
                     b.HasKey("No");
 
                     b.HasIndex("LogNo");
-
-                    b.HasIndex("StockCode");
 
                     b.ToTable("Dividends");
                 });
@@ -439,13 +436,7 @@ namespace Harpoon.Migrations
                         .WithMany()
                         .HasForeignKey("LogNo");
 
-                    b.HasOne("O8Query.Models.Stock", "Stock")
-                        .WithMany()
-                        .HasForeignKey("StockCode");
-
                     b.Navigation("Log");
-
-                    b.Navigation("Stock");
                 });
 
             modelBuilder.Entity("O8Query.Models.FinancialReport", b =>

@@ -18,9 +18,7 @@ namespace O8Query.Models
         public long No { get; set; }
 
         [Required]
-        [MaxLength(20)]
-        [ForeignKey("Index")]
-        public Market Market { get; set; }
+        public MarketIndex MarketIndex { get; set; }
 
         /// <summary>
         /// Value of index

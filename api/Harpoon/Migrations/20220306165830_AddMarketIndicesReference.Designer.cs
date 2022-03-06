@@ -3,41 +3,23 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using O8Query.Data;
 
 namespace Harpoon.Migrations
 {
     [DbContext(typeof(StocksQuery))]
-    partial class StocksQueryModelSnapshot : ModelSnapshot
+    [Migration("20220306165830_AddMarketIndicesReference")]
+    partial class AddMarketIndicesReference
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("ProductVersion", "5.0.6")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-            modelBuilder.Entity("O8Query.Models.Announcement", b =>
-                {
-                    b.Property<long>("No")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Content")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<long?>("LogNo")
-                        .HasColumnType("bigint");
-
-                    b.HasKey("No");
-
-                    b.HasIndex("LogNo");
-
-                    b.ToTable("Announcements");
-                });
 
             modelBuilder.Entity("O8Query.Models.Company", b =>
                 {
@@ -131,14 +113,9 @@ namespace Harpoon.Migrations
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
-                    b.Property<string>("StockCode")
-                        .HasColumnType("nvarchar(20)");
-
                     b.HasKey("No");
 
                     b.HasIndex("LogNo");
-
-                    b.HasIndex("StockCode");
 
                     b.ToTable("Dividends");
                 });
@@ -297,10 +274,6 @@ namespace Harpoon.Migrations
                     b.Property<long>("IssuedShares")
                         .HasColumnType("bigint");
 
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<long>("OutstandingShares")
                         .HasColumnType("bigint");
 
@@ -325,6 +298,10 @@ namespace Harpoon.Migrations
                         .HasColumnType("bigint")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("Index")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(20)");
+
                     b.Property<long?>("LogNo")
                         .HasColumnType("bigint");
 
@@ -338,6 +315,8 @@ namespace Harpoon.Migrations
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("No");
+
+                    b.HasIndex("Index");
 
                     b.HasIndex("LogNo");
 
@@ -424,28 +403,13 @@ namespace Harpoon.Migrations
                     b.ToTable("TotalTrades");
                 });
 
-            modelBuilder.Entity("O8Query.Models.Announcement", b =>
-                {
-                    b.HasOne("O8Query.Models.Log", "Log")
-                        .WithMany()
-                        .HasForeignKey("LogNo");
-
-                    b.Navigation("Log");
-                });
-
             modelBuilder.Entity("O8Query.Models.Dividend", b =>
                 {
                     b.HasOne("O8Query.Models.Log", "Log")
                         .WithMany()
                         .HasForeignKey("LogNo");
 
-                    b.HasOne("O8Query.Models.Stock", "Stock")
-                        .WithMany()
-                        .HasForeignKey("StockCode");
-
                     b.Navigation("Log");
-
-                    b.Navigation("Stock");
                 });
 
             modelBuilder.Entity("O8Query.Models.FinancialReport", b =>
@@ -495,6 +459,12 @@ namespace Harpoon.Migrations
 
             modelBuilder.Entity("O8Query.Models.StockIndex", b =>
                 {
+                    b.HasOne("O8Query.Models.Market", "Market")
+                        .WithMany()
+                        .HasForeignKey("Index")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("O8Query.Models.Log", "Log")
                         .WithMany()
                         .HasForeignKey("LogNo");
@@ -504,6 +474,8 @@ namespace Harpoon.Migrations
                         .HasForeignKey("MarketIndexNo");
 
                     b.Navigation("Log");
+
+                    b.Navigation("Market");
 
                     b.Navigation("MarketIndex");
                 });

@@ -44,6 +44,9 @@ namespace O8Query.Models
         [Column(TypeName = "date")]
         public DateTime PaymentDate { get; set; }
 
+        [Required]
+        public Stock Stock { get; set; }
+
         /// <summary>
         /// Reference to logs
         /// </summary>

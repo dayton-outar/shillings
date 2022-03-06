@@ -15,6 +15,9 @@ namespace O8Query.Models
         [MaxLength(20)]
         public string Code { get; set; }
 
+        [Required]
+        public string Name { get; set; }
+
         /// <summary>
         /// Currency in which stock is valued
         /// </summary>
