@@ -16,13 +16,6 @@ namespace O8Query.Models
         public long No { get; set; }
 
         /// <summary>
-        /// Reference to company core information
-        /// </summary>
-        [Required]
-        [MaxLength(20)]
-        public string SecurityCode { get; set; }
-
-        /// <summary>
         /// Currency in which dividend amount is quoted
         /// </summary>
         [Required]

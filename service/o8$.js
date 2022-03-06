@@ -1,8 +1,12 @@
 const moment = require('moment'),
     puppeteer = require('puppeteer'),
-    sleep = require('sleep');
+    sleep = require('sleep'),
+    Globalize = require('globalize');
 
 const O8Q = require('./db.js');
+
+Globalize.load( require( 'cldr-data' ).entireSupplemental() );
+Globalize.load( require( 'cldr-data' ).entireMainFor( 'en' ) );
 
 function readStocks() {
     let results = [];
@@ -367,6 +371,7 @@ function getDividends(companies, beginning, ending) {
     run(urls, readDividends) // This can take about 20 minutes
         .then(dividends => {
             for (const dividend of dividends) {
+                dividend.title = `Dividends payout declared at ${ Globalize( 'en' ).currencyFormatter( 'USD' )( dividend.amount ) } per stock unit`;
                 dividend.declarationDate = moment(new Date(dividend.recordDate)).format('YYYY-MM-DD');
                 dividend.recordDate = moment(new Date(dividend.recordDate)).format('YYYY-MM-DD');
                 dividend.paymentDate = moment(new Date(dividend.paymentDate)).format('YYYY-MM-DD');

@@ -153,7 +153,7 @@ const O8Q = {
                 return result;
             }
 
-            // let pool = await sql.connect(config);
+            let pool = await sql.connect(config);
 
             let stockDividends = xml2json.json2xml(all, {
                 compact: true,
@@ -161,19 +161,17 @@ const O8Q = {
                 spaces: 4
             });
 
-            console.log(all);
-
-            // let dbr = await pool.request()
-            //     .input('dividends', sql.Xml, stockDividends)
-            //     .execute('UpdateStockDividends');
+            let dbr = await pool.request()
+                .input('dividends', sql.Xml, stockDividends)
+                .execute('UpdateStockDividends');
             
-            // //console.log(dbr);
+            console.log(dbr);
 
-            // result = {
-            //     success: dbr.returnValue === 0,
-            //     message: `Successfully updated ${dividends.dividends.length} dividends`,
-            //     data: {}
-            // };
+            result = {
+                success: dbr.returnValue === 0, // https://www.npmjs.com/package/mssql#execute-procedure-callback
+                message: `Successfully updated ${dividends.dividends.length} dividends`,
+                data: {}
+            };
 
         } catch(ex) {
             console.error( ex.message );
