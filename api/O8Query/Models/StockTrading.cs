@@ -27,7 +27,7 @@ namespace O8Query.Models
         /// Company information
         /// </summary>
         [ForeignKey("SecurityCode")]
-        public Company Security { get; set; }
+        public Stock Security { get; set; }
         
         /// <summary>
         /// Total volume of stocks traded
