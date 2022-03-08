@@ -19,14 +19,7 @@ namespace O8Query.Models
         /// Name of company that this security references
         /// </summary>
         [Required]
-        public string Security { get; set; }
-
-        /// <summary>
-        /// Currency in which stock is valued
-        /// </summary>
-        [Required]
-        [MaxLength(3)]
-        public string Currency { get; set; }
+        public string Name { get; set; }
 
         /// <summary>
         /// Industry in which company plies its trade
@@ -34,24 +27,6 @@ namespace O8Query.Models
         [Required]
         [MaxLength(50)]
         public string Industry { get; set; }
-
-        /// <summary>
-        /// Stock type: ORDINARY, PREFERRED, etc.
-        /// </summary>
-        [MaxLength(50)]
-        public string StockType { get; set; }
-
-        /// <summary>
-        /// Outstanding shares
-        /// </summary>
-        [Required]
-        public long OutstandingShares { get; set; }
-
-        /// <summary>
-        /// Captures whether or not this stock is still listed on the Stock Exchange
-        /// </summary>
-        [Required]
-        public bool isListed { get; set; }
 
         /// <summary>
         /// Summary about the company

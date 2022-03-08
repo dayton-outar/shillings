@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -22,6 +23,8 @@ namespace O8Query.Models
 
         [Required]
         public Market Market { get; set; }
+
+        public ICollection<Stock> Stocks { get; set; }
 
     }
 }

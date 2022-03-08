@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using O8Query.Data;
 
 namespace Harpoon.Migrations
 {
     [DbContext(typeof(StocksQuery))]
-    partial class StocksQueryModelSnapshot : ModelSnapshot
+    [Migration("20220308190756_AddIndexComposition")]
+    partial class AddIndexComposition
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -19,19 +21,19 @@ namespace Harpoon.Migrations
                 .HasAnnotation("ProductVersion", "5.0.6")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("MarketIndexStock", b =>
+            modelBuilder.Entity("CompanyMarketIndex", b =>
                 {
+                    b.Property<string>("CompaniesCode")
+                        .HasColumnType("nvarchar(20)");
+
                     b.Property<long>("IndicesNo")
                         .HasColumnType("bigint");
 
-                    b.Property<string>("StocksCode")
-                        .HasColumnType("nvarchar(20)");
+                    b.HasKey("CompaniesCode", "IndicesNo");
 
-                    b.HasKey("IndicesNo", "StocksCode");
+                    b.HasIndex("IndicesNo");
 
-                    b.HasIndex("StocksCode");
-
-                    b.ToTable("MarketIndexStock");
+                    b.ToTable("CompanyMarketIndex");
                 });
 
             modelBuilder.Entity("O8Query.Models.Announcement", b =>
@@ -419,17 +421,17 @@ namespace Harpoon.Migrations
                     b.ToTable("TotalTrades");
                 });
 
-            modelBuilder.Entity("MarketIndexStock", b =>
+            modelBuilder.Entity("CompanyMarketIndex", b =>
                 {
-                    b.HasOne("O8Query.Models.MarketIndex", null)
+                    b.HasOne("O8Query.Models.Company", null)
                         .WithMany()
-                        .HasForeignKey("IndicesNo")
+                        .HasForeignKey("CompaniesCode")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("O8Query.Models.Stock", null)
+                    b.HasOne("O8Query.Models.MarketIndex", null)
                         .WithMany()
-                        .HasForeignKey("StocksCode")
+                        .HasForeignKey("IndicesNo")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
