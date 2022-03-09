@@ -121,12 +121,12 @@ export const store = new Vuex.Store({
             query: gql`query {
               companies (
                 first: 100
-                order: { security: ASC}
+                order: { name: ASC}
                 
               ) {
                 nodes {
                   code,
-                  security,
+                  name,
                   created
                 }
               }

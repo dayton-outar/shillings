@@ -408,6 +408,7 @@ GO
 -- =============================================
 -- Author:		Dayton Outar
 -- Create date: June 6, 2021
+-- Modified:    March 8, 2022
 -- Description:	Gets total volume moved over a period including opening and closing date
 -- =============================================
 CREATE OR ALTER FUNCTION [dbo].[TotalStocksTraded] 
@@ -421,7 +422,7 @@ AS
 RETURN
     SELECT
         V.[Code],
-        V.[Security],
+        V.[Name] [Security],
         V.[Volume],
         V.[OpeningDate],
         O.[OpeningPrice],
@@ -434,22 +435,22 @@ RETURN
             T.[ClosingPrice],
             T.[Date]
         FROM [dbo].[StockTradings] T
-            INNER JOIN [dbo].[Companies] C ON C.[Code] = T.[SecurityCode]
+            INNER JOIN [dbo].[Stocks] S ON S.[Code] = T.[SecurityCode]
         WHERE T.[SecurityCode] = V.[Code] AND CAST(T.[Date] AS DATE) BETWEEN V.[OpeningDate] AND V.[ClosingDate]
         ORDER BY T.[Date]
         FOR JSON AUTO) AS [Prices]
         --FOR XML RAW ('Price'), ROOT ('Prices'), ELEMENTS
     FROM (SELECT
-            C.[Code],
-            C.[Security],
+            S.[Code],
+            S.[Name],
             SUM(T.[Volume]) [Volume],
             MIN(CAST(T.[Date] AS DATE)) [OpeningDate],
             MAX(CAST(T.[Date] AS DATE)) [ClosingDate]
-        FROM [dbo].[Companies] C
-            INNER JOIN [dbo].[StockTradings] T ON T.[SecurityCode] = C.[Code]
+        FROM [dbo].[Stocks] S
+            INNER JOIN [stocks].[dbo].[StockTradings] T ON T.[SecurityCode] = S.[Code]
         WHERE CAST(T.[Date] AS DATE) BETWEEN @begin AND @end
-        GROUP BY C.[Code],
-                C.[Security]) V
+        GROUP BY S.[Code],
+                S.[Name]) V
         INNER JOIN
         (SELECT
             T.[SecurityCode],

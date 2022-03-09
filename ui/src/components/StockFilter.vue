@@ -31,7 +31,7 @@
                 v-for="company in companies" 
                 :key="company.code"
                 :value="company">
-              {{company.security}}
+              {{company.name}}
             </b-dropdown-item>
 
           </b-dropdown>

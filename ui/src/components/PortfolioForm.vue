@@ -13,7 +13,7 @@
                     v-for="company in companies" 
                     :key="company.code"
                     :value="company">
-                    {{company.security}}
+                    {{company.name}}
                   </option>
                 </b-select>
             </b-field>
@@ -114,7 +114,7 @@ export default ({
         this.addPortfolio({
           security: {
             code: this.chosenCompany.code,
-            name: this.chosenCompany.security
+            name: this.chosenCompany.name
           },
           volume: parseInt(strippedVolume === '' ? 0 : strippedVolume, 10),
           unitPrice: parseFloat(strippedPrice === '' ? 0 : strippedPrice)
