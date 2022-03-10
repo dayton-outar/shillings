@@ -8,8 +8,12 @@ namespace O8Query.Models
     public class Announcement
     {
         // Credit: https://www.getsmarteraboutmoney.ca/invest/investment-products/stocks/factors-that-can-affect-stock-prices/
-        public enum Type
+        public enum AnnouncementType
         {
+            /// <summary>
+            /// Unclassified announcements
+            /// </summary>
+            General,
             /// <summary>
             /// General meeting
             /// </summary>
@@ -19,9 +23,13 @@ namespace O8Query.Models
             /// </summary>
             Dividend,
             /// <summary>
+            /// Fund raising. Whether it be leverage or equit financing
+            /// </summary>
+            Financing,
+            /// <summary>
             /// Quarterly (10-Q) or Annual (10-K) Report
             /// </summary>
-            FinancialReport,
+            Report,
             /// <summary>
             /// Merger and acquisition
             /// </summary>
@@ -39,9 +47,17 @@ namespace O8Query.Models
             /// </summary>
             Product,
             /// <summary>
+            /// Changes in government policy
+            /// </summary>
+            Policy,
+            /// <summary>
             /// Scandal
             /// </summary>
-            Scandal
+            Scandal,
+            /// <summary>
+            /// Issues specific to an industry or the economy
+            /// </summary>
+            Economy
         }
 
         /// <summary>
@@ -54,6 +70,10 @@ namespace O8Query.Models
 
         public string Content { get; set; }
 
+        public AnnouncementType Type { get; set; }
+
         public Log Log { get; set; }
+
+        public ICollection<Company> Companies { get; set; }
     }
 }
