@@ -21,7 +21,7 @@ namespace O8Query.Models
         /// <summary>
         /// Currency in which stock is valued
         /// </summary>
-        [Required]
+        //[Required]
         [MaxLength(3)]
         public string Currency { get; set; }
 
@@ -34,25 +34,25 @@ namespace O8Query.Models
         /// <summary>
         /// Authorized Issued shares
         /// </summary>
-        [Required]
+        //[Required]
         public long IssuedShares { get; set; }
 
         /// <summary>
         /// Outstanding shares
         /// </summary>
-        [Required]
+        //[Required]
         public long OutstandingShares { get; set; }
 
         /// <summary>
         /// Company information that is associated with this stock
         /// </summary>
-        [Required]
+        //[Required]
         public Company Company { get; set; }
 
         /// <summary>
         /// Captures whether or not this stock is still listed on the Stock Exchange
         /// </summary>
-        [Required]
+        //[Required]
         public bool isListed { get; set; }
 
         [Required]

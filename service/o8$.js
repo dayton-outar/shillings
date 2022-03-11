@@ -71,7 +71,7 @@ function readCompanies() {
     return results;
 }
 
-function readOutstandingSharesMarketCapitalization() {
+function readCompanyDetails() {
     // Credit: https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
     const urlSearchParams = new URLSearchParams(window.location.search);
     const params = Object.fromEntries(urlSearchParams.entries());
@@ -80,12 +80,36 @@ function readOutstandingSharesMarketCapitalization() {
     let tradeDate = elSx.textContent.match(/"thru-date":"([0-9]{4}-[0-9]{2}-[0-9]{2})"/)[1];
     const elSo = document.evaluate("//span[text()='Shares Outstanding:']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
     const elMvSo = document.evaluate("//span[text()='Market Value of Shares Outstanding:']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+    let stockCode = params.instrument.split('-')[0];
+
+    let dividends = [];
+    let tld = document.querySelectorAll('table')[2];
+
+    if (tld) {
+        let items = tld.querySelectorAll('tbody > tr');
+        if (items) {
+            items.forEach((item) => {
+                let cols = item.querySelectorAll('td');
+                if (cols[1] && cols[1].textContent.trim() === 'Dividend') {
+                    let camt = cols[4].textContent.trim().split(' ');
+                    dividends.push({
+                        code: stockCode,
+                        recordDate: cols[0] ? cols[0].textContent.trim() : '',
+                        paymentDate: cols[3] ? cols[3].textContent.trim() : '',
+                        currency: camt[0].trim(),
+                        amount: parseFloat(camt[camt.length - 1].trim().replace(/,/g, ''))
+                    });
+                }
+            });
+        }
+    }
 
     return {
-        code: params.instrument.split('-')[0],
+        code: stockCode,
         date: tradeDate,
         outstandingShares: parseInt(elSo.nextElementSibling.textContent.split(' ')[0].trim().replace(/[,]/g, '')),
-        marketCapitalization: parseFloat(elMvSo.nextElementSibling.textContent.trim().replace(/[$,]/g, ''))
+        marketCapitalization: parseFloat(elMvSo.nextElementSibling.textContent.trim().replace(/[$,]/g, '')),
+        dividends
     }
 }
 
@@ -110,13 +134,13 @@ function readDividends() {
     let items = document.querySelectorAll('table > tbody > tr');
     items.forEach((item) => {
         let cols = item.querySelectorAll('td');
-        let camt = cols[5].textContent.trim().split('\n');
+        let camt = cols[5].textContent.trim().split(' ');
         results.push({
             code: cols[1].textContent.trim(),
             recordDate: cols[0].textContent.trim(),
             paymentDate: cols[4].textContent.trim(),
             currency: camt[0].trim(),
-            amount: parseFloat(camt[1].trim().replace(/,/g, ''))
+            amount: parseFloat(camt[camt.length - 1].trim().replace(/,/g, ''))
         });
     });
 
@@ -137,6 +161,7 @@ async function run(urls, cb) {
 
             // Credit: https://github.com/puppeteer/puppeteer/issues/594
             for (const url of urls) {
+
                 await page.goto(url, {
                     waitUntil: 'networkidle2',
                     timeout: 0
@@ -238,34 +263,6 @@ switch (args[0]) {
 
         break;
 
-    case 'read-dividends':
-        getDividends(
-            [
-                {
-                    code: 'gk',
-                    currency: 'JMD',
-                    listed: true
-                },
-                {
-                    code: 'ncb',
-                    currency: 'JMD',
-                    listed: true
-                },
-                {
-                    code: 'sj',
-                    currency: 'JMD',
-                    listed: true
-                },
-                {
-                    code: 'pal',
-                    currency: 'JMD',
-                    listed: true
-                }
-            ], 
-            moment('2021-03-06'), moment('2022-03-06'));
-
-        break;
-
     default:
         getStocks();
         getCompanies();
@@ -315,7 +312,7 @@ function getCompanies() {
         run([`https://www.jamstockex.com/listings/listed-companies/`], readCompanies)
             .then(companies => {
 
-                getOutstandingSharesAndMarketCapitalization(companies); // FIX: Sloppy. Trying to get this to work
+                getCompanyDetails(companies); // FIX: Sloppy. Trying to get this to work
 
                 resolve(companies);
             })
@@ -323,7 +320,7 @@ function getCompanies() {
     });
 }
 
-function getOutstandingSharesAndMarketCapitalization(companies) {
+function getCompanyDetails(companies) {
     let urls = [];
     let x = 0;
 
@@ -334,7 +331,7 @@ function getOutstandingSharesAndMarketCapitalization(companies) {
         }
     }
 
-    run(urls, readOutstandingSharesMarketCapitalization) // This can take about 20 minutes
+    run(urls, readCompanyDetails) // This can take about 20 minutes
         .then(o => {
             // Map and merge arrays
             const mergedO = o.map(el => {

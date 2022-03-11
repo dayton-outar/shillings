@@ -507,6 +507,14 @@ BEGIN
 		[Date] DATETIME2(7) NOT NULL
 	);
 
+	CREATE TABLE #tblDividends (
+		[Code] NVARCHAR(20) NOT NULL,
+		[RecordDate] DATE NOT NULL,
+        [PaymentDate] DATE NOT NULL,
+        [Currency] NVARCHAR(3) NOT NULL,
+        [Amount] DECIMAL(18, 4) NOT NULL
+	);
+
 	INSERT INTO #tblCompanies
 	(
 		[Code],
@@ -530,8 +538,39 @@ BEGIN
 			d.x.query('./date').value('.', 'datetime') [Date]
     FROM @companies.nodes('companies') d(x);
 
+	INSERT INTO #tblDividends
+	(
+		[Code] ,
+		[RecordDate] ,
+		[PaymentDate] ,
+        [Currency] ,
+        [Amount]
+	)
+	SELECT	q.x.query('./code').value('.', 'nvarchar(20)') [SecurityCode],
+            q.x.query('./recordDate').value('.', 'date') [RecordDate],
+            q.x.query('./paymentDate').value('.', 'date') [PaymentDate],
+			q.x.query('./currency').value('.', 'nvarchar(3)') [Currency],
+            q.x.query('./amount').value('.', 'decimal(18,4)') [Amount]            
+    FROM @companies.nodes('companies/dividends') q(x);
+
 	BEGIN TRY
         BEGIN TRANSACTION;
+
+		INSERT INTO [dbo].[Dividends]
+        (
+            [StockCode] ,
+            [Currency] ,
+            [Amount] ,
+            [RecordDate] ,
+            [PaymentDate]
+        )
+        SELECT  td.[Code] ,
+                td.[Currency] ,
+                td.[Amount] ,
+                td.[RecordDate] ,
+                td.[PaymentDate]
+        FROM [#tblDividends] td
+        WHERE NOT EXISTS( SELECT '' FROM [dbo].[Dividends] d WHERE d.[StockCode] = td.[Code] AND d.[RecordDate] = td.[RecordDate] );
 
 		INSERT INTO [dbo].[OutstandingSharesLog]
         (
@@ -579,10 +618,12 @@ BEGIN
 
     END CATCH;
 
-	DROP TABLE #tblCompanies;
+	DROP TABLE [#tblDividends];
+	DROP TABLE [#tblCompanies];
 
 END
 GO
+
 --
 SET ANSI_NULLS ON
 GO
@@ -675,14 +716,14 @@ BEGIN
         [Amount] DECIMAL(18, 4) NOT NULL
 	);
 
-    CREATE TABLE #tblLogs (
-		[No] BIGINT NOT NULL,
-        [Event] INT NOT NULL,
-        [Type] INT NOT NULL,
-        [Details] NVARCHAR(max) NOT NULL,
-        [Logged] DATETIME2(7) NOT NULL,
-        [Code] NVARCHAR(20) NOT NULL     
-	);
+    -- CREATE TABLE #tblLogs (
+	-- 	[No] BIGINT NOT NULL,
+    --     [Event] INT NOT NULL,
+    --     [Type] INT NOT NULL,
+    --     [Details] NVARCHAR(max) NOT NULL,
+    --     [Logged] DATETIME2(7) NOT NULL,
+    --     [Code] NVARCHAR(20) NOT NULL     
+	-- );
 
 	INSERT INTO #tblDividends
 	(
@@ -705,8 +746,8 @@ BEGIN
 
     --SELECT @totalDividends = COUNT([SecurityCode]) FROM #tblTradings;
 
-    BEGIN TRY
-        BEGIN TRANSACTION;
+    -- BEGIN TRY
+    --     BEGIN TRANSACTION;
 
         -- INSERT INTO [dbo].[Logs]
         -- (
@@ -718,30 +759,30 @@ BEGIN
         -- VALUES ( 0, 1, CONVERT( VARCHAR(10), @totalDividends ) + ' dividends updated', @logged);
         -- SELECT @logNo = SCOPE_IDENTITY();
 
-        INSERT INTO [dbo].[Logs]
-        (
-            [Event] ,
-            [Type] ,
-            [Details] ,
-            [Logged]
-        )
-        OUTPUT  inserted.[No] ,
-                inserted.[Event] ,
-                inserted.[Type] ,
-                inserted.[Details] ,
-                inserted.[Logged] ,
-                td.[Code]
-            INTO [#tblLogs]
-        SELECT  0 [Event] ,
-                2 [Type] ,
-                td.[Title],
-                td.[Date]
-        FROM [#tblDividends] td
-        WHERE NOT EXISTS(SELECT '' 
-                        FROM [dbo].[Dividends] d
-                            INNER JOIN [dbo].[Logs] l ON d.[LogNo] = l.[No]
-                        WHERE l.[Logged] = d.[Date]
-                            AND d.[Code] = td.[Code]);
+        -- INSERT INTO [dbo].[Logs]
+        -- (
+        --     [Event] ,
+        --     [Type] ,
+        --     [Details] ,
+        --     [Logged]
+        -- )
+        -- OUTPUT  inserted.[No] ,
+        --         inserted.[Event] ,
+        --         inserted.[Type] ,
+        --         inserted.[Details] ,
+        --         inserted.[Logged] ,
+        --         td.[Code]
+        --     INTO [#tblLogs] ([No], [Event], [Type], [Details], [Logged], [Code])
+        -- SELECT  0 [Event] ,
+        --         2 [Type] ,
+        --         td.[Title],
+        --         td.[Date]
+        -- FROM [#tblDividends] td
+        -- WHERE NOT EXISTS(SELECT '' 
+        --                 FROM [dbo].[Dividends] d
+        --                     INNER JOIN [dbo].[Logs] l ON d.[LogNo] = l.[No]
+        --                 WHERE l.[Logged] = td.[Date]
+        --                     AND d.[StockCode] = td.[Code]);
 
         INSERT INTO [dbo].[Dividends]
         (
@@ -749,28 +790,29 @@ BEGIN
             [Currency] ,
             [Amount] ,
             [RecordDate] ,
-            [PaymentDate] ,
-            [LogNo]
+            [PaymentDate] --,
+            --[LogNo]
         )
         SELECT  td.[Code] ,
                 td.[Currency] ,
                 td.[Amount] ,
                 td.[RecordDate] ,
-                td.[PaymentDate] ,
-                tl.[No]
+                td.[PaymentDate] --,
+                --tl.[No]
         FROM [#tblDividends] td
-            INNER JOIN [#tblLogs] tl ON td.[Code] = tl.[Code]
-        WHERE NOT EXISTS(SELECT '' FROM [dbo].[Logs] l WHERE l.[No] = tl.[No]);
+        WHERE NOT EXISTS( SELECT '' FROM [dbo].[Dividends] d WHERE d.[StockCode] = td.[Code] AND d.[RecordDate] = td.[RecordDate] );
+        --     INNER JOIN [#tblLogs] tl ON td.[Code] = tl.[Code]
+        -- WHERE NOT EXISTS(SELECT '' FROM [dbo].[Logs] l WHERE l.[No] = tl.[No]);
 
-        COMMIT TRANSACTION;
-    END TRY
-    BEGIN CATCH
+    --     COMMIT TRANSACTION;
+    -- END TRY
+    -- BEGIN CATCH
         
-        ROLLBACK TRANSACTION;
+    --     ROLLBACK TRANSACTION;
 
-    END CATCH;
+    -- END CATCH;
 
-    DROP TABLE [#tblLogs];
+    -- DROP TABLE [#tblLogs];
 	DROP TABLE [#tblDividends];
 
 END

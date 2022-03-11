@@ -82,8 +82,6 @@ const O8Q = {
             let dbr = await pool.request()
                 .input('companies', sql.Xml, companies)
                 .execute('UpdateCompaniesDetails');
-            
-            //console.log(dbr);
 
             result = {
                 success: dbr.returnValue === 0,
@@ -164,12 +162,10 @@ const O8Q = {
             let dbr = await pool.request()
                 .input('dividends', sql.Xml, stockDividends)
                 .execute('UpdateStockDividends');
-            
-            console.log(dbr);
 
             result = {
                 success: dbr.returnValue === 0, // https://www.npmjs.com/package/mssql#execute-procedure-callback
-                message: `Successfully updated ${dividends.dividends.length} dividends`,
+                message: `Successfully updated ${all.dividends.length} dividends`,
                 data: {}
             };
 
