@@ -69,6 +69,8 @@ namespace O8Query.Models
         [Required]
         public DateTime Created { get; set; }
 
+        public ICollection<Industry> Industries { get; set; }
+
         public ICollection<Announcement> Announcements { get; set; }
     }
 }

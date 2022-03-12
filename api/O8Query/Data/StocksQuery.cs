@@ -32,6 +32,8 @@ namespace O8Query.Data
 
         public DbSet<Announcement> Announcements { get; set; }
 
+        public DbSet<Industry> Industries { get; set; }
+
         [NotMapped]
         public DbSet<TotalStockTrades> TotalTrades { get; set; }
 

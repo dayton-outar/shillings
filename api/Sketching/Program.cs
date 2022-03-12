@@ -586,6 +586,13 @@ namespace Sketching
             Console.WriteLine("{0,-30} {1} days", "Day Payable Outstanding:", Math.Ceiling(dpo));
             Console.WriteLine();
 
+            // Cash Cycle
+            // Measures how fast a company can convert cash on hand into even more cash on hand
+            // Credit: https://www.investopedia.com/terms/c/cashconversioncycle.asp#:~:text=Cash%20Conversion%20Cycle%20%3D%20days%20inventory,sales%20outstanding%20%2D%20days%20payables%20outstanding.
+            var ccc = dio + dso - dpo;
+            Console.WriteLine("{0,-30} {1} days", "Cash Cycle:", Math.Ceiling(ccc));
+            Console.WriteLine();
+
             // -- Market Prospects Ratios
             var marketCap = 989655000m; // Weighed average number of stock units outstanding
             var eps = qr2021.Analytes.Where(a => a.Section == StatementAnalyte.Sectional.EarningsPerStock && a.Analyte.HasFlag(StatementAnalyte.Assay.Basic)).First().Amount;
