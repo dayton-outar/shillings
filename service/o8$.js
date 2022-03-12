@@ -77,7 +77,7 @@ function readCompanyDetails() {
     const params = Object.fromEntries(urlSearchParams.entries());
 
     const elSx = document.evaluate("//script[contains(., 'thru-date')]", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
-    let tradeDate = elSx.textContent.match(/"thru-date":"([0-9]{4}-[0-9]{2}-[0-9]{2})"/)[1];
+    let tradeDate = elSx.textContent ? elSx.textContent.match(/"thru-date":"([0-9]{4}-[0-9]{2}-[0-9]{2})"/)[1] : params.date;
     const elSo = document.evaluate("//span[text()='Shares Outstanding:']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
     const elMvSo = document.evaluate("//span[text()='Market Value of Shares Outstanding:']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
     let stockCode = params.instrument.split('-')[0];
@@ -327,7 +327,7 @@ function getCompanyDetails(companies) {
     for (const company of companies) {
         if (company.listed) {
             // Spawning too many threads of puppeteer process
-            urls.push(`https://www.jamstockex.com/trading/instruments/?instrument=${company.code}-${company.currency}`);
+            urls.push(`https://www.jamstockex.com/trading/instruments/?instrument=${company.code}-${company.currency}&date=${ moment().format('YYYY-MM-DD') }`);
         }
     }
 
