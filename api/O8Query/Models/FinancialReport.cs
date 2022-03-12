@@ -37,8 +37,7 @@ namespace O8Query.Models
         /// Reference to company core information
         /// </summary>
         [Required]
-        [MaxLength(20)]
-        public string CompanyCode { get; set; }
+        public Company Company { get; set; }
 
         /// <summary>
         /// Period reported. e.g. Quarterly, Annual

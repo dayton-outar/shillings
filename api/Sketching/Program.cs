@@ -35,12 +35,21 @@ namespace Sketching
                 Type = StatementAnalyte.StatementType.IncomeExpense,
                 Section = StatementAnalyte.Sectional.Expenses,
                 Analyte = StatementAnalyte.Assay.Direct,
-                Amount = 90918736000.00m
+                Amount = 83903002000.00m
             });
 
             reportAnalytes.Add(new StatementAnalyte{
                 Sequence = 4,
-                Description = "Direct expenses",
+                Description = "Interest expenses",
+                Type = StatementAnalyte.StatementType.IncomeExpense,
+                Section = StatementAnalyte.Sectional.Expenses,
+                Analyte = StatementAnalyte.Assay.Interest | StatementAnalyte.Assay.Direct,
+                Amount = 7015734000.00m
+            });
+
+            reportAnalytes.Add(new StatementAnalyte{
+                Sequence = 4,
+                Description = "Operating expenses",
                 Type = StatementAnalyte.StatementType.IncomeExpense,
                 Section = StatementAnalyte.Sectional.Expenses,
                 Analyte = StatementAnalyte.Assay.Operating,
@@ -384,7 +393,9 @@ namespace Sketching
             //--
             var qr2021 = new FinancialReport
             {
-                CompanyCode = "GK",
+                Company = new Company {
+                    Code = "GK"
+                },
                 Period = FinancialReport.Periodical.Annual,
                 StatementDate = new DateTime(2020, 12, 30),
                 IsAudited = false,
@@ -498,18 +509,6 @@ namespace Sketching
             Console.WriteLine("{0,-30} {1,3:p}", "ROCE:", roce);
             Console.WriteLine();
 
-            // Total Asset Turnover
-            var tat = revenue / totalAssets;
-            Console.WriteLine("{0,-30} {1,3:p}", "Total Asset Turnover:", tat);
-            Console.WriteLine();
-
-            // Inventory Turnover
-            var totalInventories = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.Inventories)).Sum(a => a.Amount);
-            var totalDirectExpense = qr2021.Analytes.Where(a => a.Section == StatementAnalyte.Sectional.Expenses && a.Analyte.HasFlag(StatementAnalyte.Assay.Direct)).Sum(a => a.Amount);
-            var ivt = totalDirectExpense / totalInventories; // Skewed because operating expense is bundled in this
-            Console.WriteLine("{0,-30} {1,3}", "Inventory Turnover:", Math.Round(ivt, 2));
-            Console.WriteLine();
-
             // -- Liquidity Ratios
 
             // Quick Ratio
@@ -523,6 +522,8 @@ namespace Sketching
             var totalCurrentAssets = qr2021.Analytes.Where(a => a.Section == StatementAnalyte.Sectional.Assets && a.Analyte.HasFlag(StatementAnalyte.Assay.Current)).Sum(a => a.Amount);
             var cr = totalCurrentAssets / totalCurrentLiabilities;
             Console.WriteLine("{0,-30} {1,3:p}", "Current Ratio:", cr);
+            var wc = totalCurrentAssets - totalCurrentLiabilities;
+            Console.WriteLine("{0,-30} {1,3:c}", "Working Capital:", wc);
             Console.WriteLine();
 
             // -- Solvency Ratios
@@ -550,14 +551,39 @@ namespace Sketching
             Console.WriteLine("{0,-30} {1,3:p}", "Debt Ratio:", dr);
             Console.WriteLine();
 
-            // -- Efficiency Ratios
+            // -- Activity Ratios
+
+            // Total Asset Turnover
+            var tat = revenue / totalAssets;
+            Console.WriteLine("{0,-30} {1,3:p}", "Total Asset Turnover:", tat);
+            Console.WriteLine();
+
+            // Inventory Turnover
+            var totalInventories = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.Inventories)).Sum(a => a.Amount);
+            var totalDirectExpense = qr2021.Analytes.Where(a => a.Section == StatementAnalyte.Sectional.Expenses && a.Analyte.HasFlag(StatementAnalyte.Assay.Direct)).Sum(a => a.Amount);
+            var ivt = totalDirectExpense / totalInventories; // Skewed because operating expense is bundled in this
+            Console.WriteLine("{0,-30} {1,3}", "Inventory Turnover:", Math.Round(ivt, 2));
+            // Credit: https://www.wallstreetprep.com/knowledge/inventory-turnover-days-inventory-outstanding/
+            var dio = 365 / ivt;
+            Console.WriteLine("{0,-30} {1} days", "Days Inventory Outstanding:", Math.Ceiling(dio));
+            Console.WriteLine();
+
+            // Accounts Receivables Turnover
             var totalReceivables = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.Receivables)).Sum(a => a.Amount);
-            var rtr = totalCash / totalReceivables;
+            var rtr = totalCash / totalReceivables; // Could use revenue instead of cash? Average receivables (across periodicals)?
             Console.WriteLine("{0,-30} {1,3}", "Receivable Turnover:", Math.Round(rtr, 2));
             Console.WriteLine();
 
-            var avgCollectionPeriod = 365 / rtr;
-            Console.WriteLine("{0,-30} {1} days", "Average Collection Period:", Math.Ceiling(avgCollectionPeriod));
+            // Day Sales Outstanding
+            var dso = 365 / rtr;
+            Console.WriteLine("{0,-30} {1} days", "Day Sales Outstanding:", Math.Ceiling(dso));
+            Console.WriteLine();
+
+            // Day Payable Outstanding
+            // Credit: https://www.wallstreetprep.com/knowledge/days-payable-outstanding-dpo/
+            var totalPayables = qr2021.Analytes.Where(a => a.Analyte.HasFlag(StatementAnalyte.Assay.Payables)).Sum(a => a.Amount);
+            var dpo = (totalPayables / totalDirectExpense) * 365;
+            Console.WriteLine("{0,-30} {1} days", "Day Payable Outstanding:", Math.Ceiling(dpo));
             Console.WriteLine();
 
             // -- Market Prospects Ratios
@@ -585,7 +611,9 @@ namespace Sketching
             var dividends = new List<Dividend>();
 
             dividends.Add(new Dividend{
-                SecurityCode = "GK",
+                Stock = new Stock {
+                    Code = "GK"
+                },
                 Amount = 0.45m,
                 PaymentDate = new DateTime(2021, 4, 6),
                 Log = new Log{
@@ -595,7 +623,9 @@ namespace Sketching
             });
 
             dividends.Add(new Dividend{
-                SecurityCode = "GK",
+                Stock = new Stock {
+                    Code = "GK"
+                },
                 Amount = 0.45m,
                 PaymentDate = new DateTime(2021, 6, 15),
                 Log = new Log{
@@ -605,7 +635,9 @@ namespace Sketching
             });
 
             dividends.Add(new Dividend{
-                SecurityCode = "GK",
+                Stock = new Stock {
+                    Code = "GK"
+                },
                 Amount = 0.48m,
                 PaymentDate = new DateTime(2021, 9, 24),
                 Log = new Log{
@@ -615,7 +647,9 @@ namespace Sketching
             });
 
             dividends.Add(new Dividend{
-                SecurityCode = "GK",
+                Stock = new Stock {
+                    Code = "GK"
+                },
                 Amount = 0.55m,
                 PaymentDate = new DateTime(2021, 12, 16),
                 Log = new Log{
@@ -624,7 +658,7 @@ namespace Sketching
                 }
             });
 
-            var totalAnnualDividendsPerStock = dividends.Where(d => d.SecurityCode == "GK").Sum(a => a.Amount);
+            var totalAnnualDividendsPerStock = dividends.Where(d => d.Stock.Code == "GK").Sum(a => a.Amount);
             var dpr = totalAnnualDividendsPerStock / eps; // Since we're using an Annual Report. The Earnings per Stock is the Annual Earnings per Stock
             Console.WriteLine("{0,-30} {1,3:p}", "Dividend Payout:", dpr);
             Console.WriteLine();
@@ -636,15 +670,19 @@ namespace Sketching
 
             // -- Coverage Ratios
             
-            // Interest/Fixed Charge Coverage Ratio
-            // var totalInterestExpense = qr2021.Analytes.Where(a => a.Section == StatementAnalyte.Sectional.Expenses &&  a.Analyte.HasFlag(StatementAnalyte.Assay.Interest)).Sum(a => a.Amount);
-            // var tier = grossProfit / totalInterestExpense;
-            // Console.WriteLine("{0,-30} {1,3:p}", "Interest Coverage:", tier);
-            // Console.WriteLine();
+            // Times Interest Coverage Ratio
+            // Credit: https://www.investopedia.com/terms/t/tie.asp#:~:text=What%20Is%20the%20Times%20Interest,on%20bonds%20and%20other%20debt.
+            var totalInterestExpense = qr2021.Analytes.Where(a => a.Section == StatementAnalyte.Sectional.Expenses &&  a.Analyte.HasFlag(StatementAnalyte.Assay.Interest)).Sum(a => a.Amount);
+            var tier = grossProfit / totalInterestExpense;
+            Console.WriteLine("{0,-30} {1,3:p}", "Interest Coverage:", tier);
+            Console.WriteLine();
 
-            // Debt Service Coverage Ratio
+            // Beta | Calculate Volatility from years of stock price movemements of a stock
 
-            // Calculate Volatility from years of stock price movemements of a stock
+            // --- More Ratios
+            // Economic Value Added
+            // Credit: https://www.investopedia.com/terms/e/eva.asp#:~:text=EVA%20is%20the%20incremental%20difference,funds%20invested%20into%20the%20business.
+            // EVA = Net Income - (Capital * WACC) | Capital = Debt + Leases + Shareholder's Equity
         }
     }
 }
