@@ -43,6 +43,7 @@
                   <span class="tag is-dark is-medium">{{ formatMoney(props.row.lowestPrice) }}</span> <span class="tag is-info is-medium">{{ formatMoney(props.row.highestPrice) }}</span>
                 </div>
                 <stocks-line :name="props.row.security" :stocks="props.row.prices" :isDetail="true" />
+                <!--
                 <b-table
                   :data="props.row.prices"
                   striped
@@ -54,6 +55,7 @@
                     {{ formatMoney(details.row.ClosingPrice) }}
                   </b-table-column>
                 </b-table>
+                -->
               </article>
             </template>
 
