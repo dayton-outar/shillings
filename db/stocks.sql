@@ -291,7 +291,7 @@ BEGIN
 	FROM    #tblCompanies
 	WHERE   NOT EXISTS (
 		SELECT  [Code]
-		FROM    [dbo].[Companies] X
+		FROM    [dbo].[Stocks] X
 		WHERE   X.[Code] = #tblCompanies.[Code]);
 
 	DROP TABLE #tblCompanies;
