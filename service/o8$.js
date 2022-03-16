@@ -264,8 +264,7 @@ switch (args[0]) {
         break;
 
     default:
-        getStocks();
-        getCompanies();
+        getStocks();        
 
         break;
 }
