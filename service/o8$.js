@@ -243,6 +243,7 @@ async function runner(bringToCurrentDate, begin, end, rest = 2) {
     }
 
     getIndices();
+    getCompanies();
 }
 
 const args = process.argv.slice(2);
