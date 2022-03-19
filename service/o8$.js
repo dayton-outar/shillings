@@ -243,7 +243,6 @@ async function runner(bringToCurrentDate, begin, end, rest = 2) {
     }
 
     getIndices();
-    getCompanies();
 }
 
 const args = process.argv.slice(2);
@@ -255,7 +254,9 @@ if (args.length > 3) {
 
 switch (args[0]) {
     case 'read-companies':
-        getCompanies();
+        getCompanies()
+            .then(console.log)
+            .catch(console.error);
 
         break;
     

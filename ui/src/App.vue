@@ -6,12 +6,16 @@
         <div class="py-5 px-4">
           <img alt="Jamaica Stock Exchange" src="./assets/logo.png">
         </div>
+        <div>
+          <router-link to="/">Home</router-link> |
+          <router-link to="/finance-report">Finance Report</router-link>
+        </div>
       </div>
     </div>
     <div class="bg-light-gray">
       <div class="container">        
         <div class="bg-white py-5 px-4">
-          <dashboard @changeLoading="setLoading" />
+          <router-view />
         </div>      
       </div>
     </div>
@@ -24,12 +28,12 @@
 </template>
 
 <script>
-import Dashboard from './components/Dashboard.vue'
+//import Dashboard from './components/Dashboard.vue'
 
 export default {
   name: 'App',
   components: {
-    'dashboard': Dashboard
+    //'dashboard': Dashboard
   },
   data() {
     return {
@@ -45,7 +49,7 @@ export default {
     }
   },
   beforeMount() {
-    this.isLoading = true
+    this.isLoading = false // true
   },
   methods: {
     setLoading(isItLoading) {

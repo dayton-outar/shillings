@@ -11,7 +11,7 @@ namespace O8Query.Models
         /// Company code used by Stock Exchange
         /// </summary>
         [Key]
-        [Required(ErrorMessage = "Please enter stock code")]
+        [Required(ErrorMessage = "Please enter company code")]
         [MaxLength(20)]
         public string Code { get; set; }
         
