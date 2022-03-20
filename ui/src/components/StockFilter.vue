@@ -13,25 +13,25 @@
         <div class="column is-four-fifths">
           <b-dropdown
             :expanded="true"
-            v-model="selectedCompanies"
+            v-model="selectedStocks"
             multiple
             scrollable
             aria-role="list"
-            @change="selectCompanies">
+            @change="selectStocks">
             <template #trigger>
               <b-button
                 type="is-light"
                 expanded
                 icon-right="menu-down">
-                Selected ({{ selectedCompanies.length }})
+                Selected ({{ selectedStocks.length }})
               </b-button>
             </template>
             
             <b-dropdown-item aria-role="listitem" 
-                v-for="company in companies" 
-                :key="company.code"
-                :value="company">
-              {{company.name}}
+                v-for="stock in stocks" 
+                :key="stock.code"
+                :value="stock">
+              {{stock.name}}
             </b-dropdown-item>
 
           </b-dropdown>
@@ -47,27 +47,27 @@ import moment from 'moment'
 export default {
   name: 'StockFilter',
   beforeCreate() {
-    this.$store.dispatch('fetchCompanies')
+    this.$store.dispatch('fetchStocks')
   },
   methods: {
     dateChanged() {
-      this.$emit('filterChanged', { dates: this.dates, companies: this.selectedCompanies })
+      this.$emit('filterChanged', { dates: this.dates, stocks: this.selectedStocks })
     },
-    selectCompanies(v) {
-      this.selectedCompanies = v
-      this.$emit('filterChanged', { dates: this.dates, companies: this.selectedCompanies })
+    selectStocks(v) {
+      this.selectedStocks = v
+      this.$emit('filterChanged', { dates: this.dates, stocks: this.selectedStocks })
     },
     dateFormatter(dates) {
       return `${ moment(dates[0]).format('MMM-D-YYYY') } ⟶ ${ moment(dates[1]).format('MMM-D-YYYY') }`
     }
   },
   computed: {
-    ...mapState(['companies'])
+    ...mapState(['stocks'])
   },
   data() {
     return {
       dates: [new Date(), new Date()],
-      selectedCompanies: []
+      selectedStocks: []
     }
   }
 }

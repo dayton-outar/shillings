@@ -9,6 +9,7 @@
         <div>
           <router-link to="/">Home</router-link> |
           <router-link to="/finance-report">Finance Report</router-link>
+          <router-link to="/companies">Companies</router-link>
         </div>
       </div>
     </div>

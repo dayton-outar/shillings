@@ -7,13 +7,13 @@
                 label="Security"
                 label-position="inside">
                 <b-select 
-                  v-model="chosenCompany"
+                  v-model="chosenStock"
                   placeholder="Choose Security">
                   <option
-                    v-for="company in companies" 
-                    :key="company.code"
-                    :value="company">
-                    {{company.name}}
+                    v-for="stock in stocks" 
+                    :key="stock.code"
+                    :value="stock">
+                    {{stock.name}}
                   </option>
                 </b-select>
             </b-field>
@@ -80,7 +80,7 @@ export default ({
     directives: { cleave },
     data() {
       return {
-        chosenCompany: null,
+        chosenStock: null,
         volume: 0,
         unitPrice: 0,
         masks: {
@@ -100,8 +100,11 @@ export default ({
         notificationType: 'is-success'
       }
     },
+    beforeCreate() {
+      this.$store.dispatch('fetchStocks')
+    },
     computed: {
-        ...mapState(['companies'])
+        ...mapState(['stocks'])
     },
     methods: {
       ...mapActions(['addPortfolio', 'flushPortfolio']),
@@ -113,13 +116,13 @@ export default ({
 
         this.addPortfolio({
           security: {
-            code: this.chosenCompany.code,
-            name: this.chosenCompany.name
+            code: this.chosenStock.code,
+            name: this.chosenStock.name
           },
           volume: parseInt(strippedVolume === '' ? 0 : strippedVolume, 10),
           unitPrice: parseFloat(strippedPrice === '' ? 0 : strippedPrice)
         }).then( () => {
-          this.chosenCompany = null
+          this.chosenStock = null
           this.volume = 0
           this.unitPrice = 0
           this.notificationType = 'is-success'

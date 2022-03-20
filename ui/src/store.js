@@ -11,6 +11,7 @@ export const store = new Vuex.Store({
     strict: true,
     state: {
       companies: [],
+      stocks: [],
       totalTradings: null,
       portfolioHoldings: []
     },
@@ -75,6 +76,9 @@ export const store = new Vuex.Store({
         setCompanies(state, payload) {
           state.companies = payload
         },
+        setStocks(state, payload) {
+          state.stocks = payload
+        },
         setTotalStockTrades(state, payload) {
           state.totalTradings = payload
         },
@@ -134,6 +138,25 @@ export const store = new Vuex.Store({
           })
           
           commit('setCompanies', response.data.companies.nodes)
+        },
+        async fetchStocks({ commit }) {
+          const response = await graphQlClient.query({
+            query: gql`query {
+              stocks (
+                first: 100
+                order: { name: ASC}
+                
+              ) {
+                nodes {
+                  code,
+                  name,
+                  created
+                }
+              }
+            }`
+          })
+          
+          commit('setStocks', response.data.stocks.nodes)
         },
         async fetchTotalStockTrades({ commit }, request) {
           const response = await graphQlClient.query({

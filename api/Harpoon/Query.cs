@@ -21,6 +21,13 @@ namespace Harpoon
         public IQueryable<StockTrading> GetStockTradings([ScopedService]StocksQuery sq) => sq.StockTradings.Include(t => t.Security);
 
         [UseDbContext(typeof(StocksQuery))]
+        [UsePaging]
+        [UseProjection]
+        [UseFiltering]
+        [UseSorting]
+        public IQueryable<Dividend> GetDividends([ScopedService]StocksQuery sq) => sq.Dividends;
+
+        [UseDbContext(typeof(StocksQuery))]
         [UseProjection]
         [UseSorting]
         public IQueryable<TotalStockTrades> GetTotalTrades(string companyCode, System.DateTime begin, System.DateTime end, [ScopedService]StocksQuery sq) 
@@ -33,6 +40,34 @@ namespace Harpoon
         [UseProjection]
         [UseFiltering]
         [UseSorting]
+        public IQueryable<Market> GetMarkets([ScopedService]StocksQuery sq) => sq.Markets;
+
+        [UseDbContext(typeof(StocksQuery))]
+        [UsePaging]
+        [UseProjection]
+        [UseFiltering]
+        [UseSorting]
+        public IQueryable<MarketIndex> GetMarketIndices([ScopedService]StocksQuery sq) => sq.MarketIndices;
+
+        [UseDbContext(typeof(StocksQuery))]
+        [UsePaging]
+        [UseProjection]
+        [UseFiltering]
+        [UseSorting]
+        public IQueryable<StockIndex> GetStockIndices([ScopedService]StocksQuery sq) => sq.StockIndices;
+
+        [UseDbContext(typeof(StocksQuery))]
+        [UsePaging]
+        [UseProjection]
+        [UseFiltering]
+        [UseSorting]
         public IQueryable<Company> GetCompanies([ScopedService]StocksQuery sq) => sq.Companies;
+
+        [UseDbContext(typeof(StocksQuery))]
+        [UsePaging]
+        [UseProjection]
+        [UseFiltering]
+        [UseSorting]
+        public IQueryable<Stock> GetStocks([ScopedService]StocksQuery sq) => sq.Stocks;
     }
 }

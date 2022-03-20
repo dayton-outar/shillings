@@ -141,7 +141,6 @@ export default {
     this.$emit('changeLoading', true)
     this.formatDates([new Date(), new Date()])
 
-    this.$store.dispatch('fetchCompanies')
     this.$store.dispatch('fetchTotalStockTrades', {
         companyCode: '',
         begin: `${ moment.utc().format('YYYY-MM-DDT00:00:00.000') }Z`,

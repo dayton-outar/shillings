@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Dashboard from './components/Dashboard.vue'
 import FinancialReport from './components/FinancialReport.vue'
+import Companies from './components/Companies.vue'
 
 Vue.use(Router)
 
@@ -11,13 +12,19 @@ export default new Router({
             path: '/',
             name: 'dashboard',
             component: Dashboard,
-            meta: { title: 'JSE Stocks Tracker: Dashboard' }
+            meta: { title: 'Shillings: Dashboard' }
         },
         {
             path: '/finance-report',
             name: 'finance-report',
             component: FinancialReport,
-            meta: { title: 'JSE Stocks Tracker: Financial Report' }
+            meta: { title: 'Shillings: Financial Report' }
+        },
+        {
+            path: '/companies',
+            name: 'companies',
+            component: Companies,
+            meta: { title: 'Shillings: Companies' }
         }
     ]
 })
