@@ -1,6 +1,6 @@
 <template>
     <div class="box">
-        <h2>Financial Position</h2>
+        <h5 class="title is-5">{{ title }}</h5>
         <div class="columns">
         </div>
     </div>
@@ -10,6 +10,7 @@
 //import { mapState } from 'vuex'
 
 export default {
+    props: ['title'],
     data() {
         return {
             chosenCompany: null,

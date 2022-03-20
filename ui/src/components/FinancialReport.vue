@@ -50,9 +50,11 @@
             </b-field>
         </div>        
     </div>
-    <div class="columns">
-        <financial-statement />
+    
+    <div v-for="(stmt, ix) in statements" :key="ix" class="columns">
+        <financial-statement :title="stmt.Type" />
     </div>
+    
     <div class="columns">
         <div class="column">
             <b-dropdown 
@@ -66,10 +68,18 @@
                 </template>
 
 
-                <b-dropdown-item aria-role="listitem">Income</b-dropdown-item>
-                <b-dropdown-item aria-role="listitem">Financial Position</b-dropdown-item>
-                <b-dropdown-item aria-role="listitem">Cashflow</b-dropdown-item>
+                <b-dropdown-item aria-role="listitem" @click="addStatement('Income')">Income</b-dropdown-item>
+                <b-dropdown-item aria-role="listitem" @click="addStatement('Financial Position')">Financial Position</b-dropdown-item>
+                <b-dropdown-item aria-role="listitem" @click="addStatement('Cashflow')">Cashflow</b-dropdown-item>
             </b-dropdown>
+        </div>
+    </div>
+    <div class="columns">
+        <div class="column">
+            <b-button 
+                label="Save"
+                type="is-info"
+                expanded />
         </div>
     </div>
   </div>
@@ -87,6 +97,7 @@ export default {
     data() {
         return {
             chosenCompany: null,
+            statements: []
         }
     },
     beforeCreate() {
@@ -96,7 +107,11 @@ export default {
         ...mapState(['companies'])
     },
     methods: {
-      //...mapActions(['addPortfolio', 'flushPortfolio'])
+      addStatement(type) {
+          this.statements.push({
+              Type: type
+          })
+      }
     }
 }
 
