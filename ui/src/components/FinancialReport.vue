@@ -50,13 +50,40 @@
             </b-field>
         </div>        
     </div>
+    <div class="columns">
+        <financial-statement />
+    </div>
+    <div class="columns">
+        <div class="column">
+            <b-dropdown 
+                aria-role="list"
+                position="is-top-right">
+                <template #trigger>
+                    <b-button
+                        type="is-info"
+                        size="is-medium"
+                        icon-right="plus" />
+                </template>
+
+
+                <b-dropdown-item aria-role="listitem">Income</b-dropdown-item>
+                <b-dropdown-item aria-role="listitem">Financial Position</b-dropdown-item>
+                <b-dropdown-item aria-role="listitem">Cashflow</b-dropdown-item>
+            </b-dropdown>
+        </div>
+    </div>
   </div>
 </template>
 
 <script>
 import { mapState } from 'vuex'
 
+import FinancialStatement from './FinancialStatement.vue'
+
 export default {
+    components: {
+        'financial-statement': FinancialStatement
+    },
     data() {
         return {
             chosenCompany: null,

@@ -10,7 +10,6 @@ namespace O8Query.Models
         {
             IncomeExpense,
             FinancialPosition,
-            OwnersEquity,
             CashFlow
         }
 
