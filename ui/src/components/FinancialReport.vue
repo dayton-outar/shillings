@@ -55,10 +55,10 @@
     </div>
     
     <div class="columns">
-        <div class="column">
+        <div class="column is-flex is-justify-content-flex-end">
             <b-dropdown 
                 aria-role="list"
-                position="is-top-right">
+                position="is-top-left">
                 <template #trigger>
                     <b-button
                         type="is-info"

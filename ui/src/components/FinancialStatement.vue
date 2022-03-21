@@ -5,7 +5,7 @@
                 <div class="column is-four-fifths">
                     <h5 class="title is-5">{{ title }}</h5>
                 </div>
-                <div class="column">
+                <div class="column is-flex is-justify-content-flex-end">
                     <b-button 
                         type="is-danger"
                         icon-right="delete"
