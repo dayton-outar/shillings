@@ -15,23 +15,31 @@
             hoverable
             detailed
             default-sort="percentage">
+            
             <b-table-column field="security" label="Security" sortable v-slot="props">
               {{ props.row.security }}
             </b-table-column>
+
+            <!--
             <b-table-column field="highestPrice" numeric sortable v-slot="props">
               <span>
                 <span class="tag is-dark">{{ formatMoney(props.row.lowestPrice) }}</span> <span class="tag is-info">{{ formatMoney(props.row.highestPrice) }}</span>
               </span>
             </b-table-column>
+            -->
+
+            <b-table-column field="marketCapitalization" label="Market Cap" numeric sortable v-slot="props">
+              {{ formatMoney(props.row.marketCapitalization) }}
+            </b-table-column>
+
             <b-table-column field="volume" label="Volume" numeric sortable v-slot="props">
               {{ formatVolume(props.row.volume) }}
             </b-table-column>
-            <b-table-column field="openingPrice" label="Opening" numeric sortable v-slot="props">
-              {{ formatMoney(props.row.openingPrice) }}
-            </b-table-column>
+            
             <b-table-column field="closingPrice" label="Closing" numeric sortable v-slot="props">
               {{ formatMoney(props.row.closingPrice) }}
             </b-table-column>
+            
             <b-table-column field="percentage" label="Percentage" numeric sortable v-slot="props">
               {{ formatPercentage(props.row.percentage) }}
             </b-table-column>

@@ -152,7 +152,7 @@ export default {
   },
   methods: {
     filterChanged(v) {
-      let lc = v.companies.reduce((a, v) => a === '' ? `"${v.code}"` : a.concat(`,`, `"${v.code}"`), '')
+      let lc = v.stocks.reduce((a, v) => a === '' ? `"${v.code}"` : a.concat(`,`, `"${v.code}"`), '')
       this.$emit('changeLoading', true)
       this.formatDates(v.dates)
 

@@ -66,6 +66,12 @@ namespace O8Query.Models
         /// </summary>
         [Column(TypeName = "decimal(18,2)")]
         public decimal LowestPrice { get; set; }
+
+        /// <summary>
+        /// Market capitalization of stock
+        /// </summary>
+        [Column(TypeName = "decimal(18,2)")]
+        public decimal MarketCapitalization { get; set; }
         
         /// <summary>
         /// XML containing list of closing prices and dates between the opening and closing dates

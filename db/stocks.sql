@@ -430,6 +430,7 @@ RETURN
         F.[ClosingPrice],
         H.[HighestPrice],
         L.[LowestPrice],
+        F.[MarketCapitalization],
         ROUND(((F.[ClosingPrice] - O.[OpeningPrice]) / O.[OpeningPrice]) * 100, 2) [Percentage],
         (SELECT
             T.[ClosingPrice],
@@ -461,7 +462,8 @@ RETURN
         (SELECT
             T.[SecurityCode],
             T.[ClosingPrice],
-            CAST(T.[Date] AS DATE) [Date]
+            CAST(T.[Date] AS DATE) [Date],
+            T.[MarketCapitalization]
         FROM [dbo].[StockTradings] T) F ON F.[SecurityCode] = V.[Code] AND F.[Date] = V.[ClosingDate]
         INNER JOIN
         (SELECT

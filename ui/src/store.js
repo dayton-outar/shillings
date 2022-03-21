@@ -177,6 +177,7 @@ export const store = new Vuex.Store({
                     closingPrice,
                     lowestPrice,
                     highestPrice,
+                    marketCapitalization,
                     percentage,
                     prices
                   }
