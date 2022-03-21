@@ -38,10 +38,6 @@
                     label-position=""
                     placeholder="Set Statement Date">
                 </b-datepicker>
-                <!--<b-button
-                    @click="$refs.datepicker.toggle()"
-                    icon-left="calendar-today"
-                    type="is-primary" />-->
             </b-field>
         </div>
         <div class="column">
@@ -52,7 +48,10 @@
     </div>
     
     <div v-for="(stmt, ix) in statements" :key="ix" class="columns">
-        <financial-statement :title="stmt.Type" />
+        <financial-statement 
+            :title="stmt.Type" 
+            :no="ix" 
+            @removed="removeStatement" />
     </div>
     
     <div class="columns">
@@ -110,7 +109,10 @@ export default {
       addStatement(type) {
           this.statements.push({
               Type: type
-          })
+          }) // TODO: Put in vuex
+      },
+      removeStatement(ix) {
+          this.statements.splice(ix, 1) // TODO: Put in vuex
       }
     }
 }
