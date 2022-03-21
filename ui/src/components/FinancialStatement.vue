@@ -3,7 +3,7 @@
         <div class="box my-4 mx-1">        
             <div class="columns">
                 <div class="column is-four-fifths">
-                    <h5 class="title is-5">{{ no }} - {{ title }}</h5>
+                    <h5 class="title is-5">{{ title }}</h5>
                 </div>
                 <div class="column">
                     <b-button 
