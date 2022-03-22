@@ -70,11 +70,11 @@
             <template #footer>
               <th></th>
               <th>Total</th>
-              <th></th>
+              <th class="right-aligned">{{ formatTotalMarketCapitalization() }}</th>
               <th class="right-aligned">{{ formatTotalVolume() }}</th>
               <th></th>
               <th></th>
-              <th></th>
+              <!--<th></th>-->
             </template>
 
             <template #empty>
@@ -118,6 +118,13 @@ export default {
     },
     formatDate(date) {
       return  `${ moment(date).format('ddd. MMM, D, YYYY') }`
+    },
+    formatTotalMarketCapitalization() {
+      const totalMarketCapitalization = this.tradings.reduce((t, v) => {
+        return t + v.marketCapitalization
+      }, 0)
+
+      return this.formatMoney(totalMarketCapitalization)
     },
     formatTotalVolume() {
       const totalVolumesTraded = this.tradings.reduce((t, v) => {

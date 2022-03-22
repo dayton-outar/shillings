@@ -254,9 +254,7 @@ if (args.length > 3) {
 
 switch (args[0]) {
     case 'read-companies':
-        getCompanies()
-            .then(console.log)
-            .catch(console.error);
+        getCompanies();
 
         break;
     
