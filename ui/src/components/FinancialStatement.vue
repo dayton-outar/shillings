@@ -110,7 +110,7 @@
                                     </b-field>
                                 </td>
                                 <td class="is-flex is-justify-content-flex-end">
-                                    <b-button type="is-primary" icon-right="playlist-plus">Add</b-button>
+                                    <b-button type="is-primary" icon-right="playlist-plus" @click.prevent="addItem">Add</b-button>
                                 </td>
                             </tr>
                             <tr>
@@ -194,13 +194,15 @@ export default {
             this.$emit('removed', this.no)
         },
         addItem() {
+          const amt = this.iAmount
+          const strippedAmt = amt.toString().replace(/[^0-9.-]+/g,'')
 
           this.statementItems.push({
               no: (this.iNo + 1),
               description: this.iDescription,
               section: this.iSection,
               analyte: this.iAnalyte,
-              amount: this.iAmount
+              amount: strippedAmt
           })
           //localStorage.setItem('my-portfolio', JSON.stringify(this.statementItems) )
         },
