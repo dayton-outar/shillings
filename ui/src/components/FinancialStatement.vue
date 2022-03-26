@@ -46,20 +46,7 @@
                                     </b-field>
                                 </td>
                                 <td>
-                                    <b-field>
-                                        <b-select 
-                                            placeholder="Choose Section" 
-                                            v-model="iSection"
-                                            expanded>
-                                            <option value="0">Revenue</option>
-                                            <option value="1">Expenses</option>
-                                            <option value="2">Gains</option>
-                                            <option value="3">Losses</option>
-                                            <option value="6">Assets</option>
-                                            <option value="7">Liabilities</option>
-                                            <option value="8">Equity</option>
-                                        </b-select>
-                                    </b-field>
+                                    <statement-sections v-model="iSection" />
                                 </td>
                                 <td>
                                     <statement-analytes :selected="selectedAnalytes" />
@@ -105,6 +92,7 @@
 import Cleave from 'cleave.js'
 
 import StatementAnalytes from './StatementAnalytes.vue'
+import StatementSections from './StatementSections.vue'
 
 const cleave = {
     name: 'cleave',
@@ -121,7 +109,8 @@ const cleave = {
 export default {
     directives: { cleave },
     components: {
-        'statement-analytes': StatementAnalytes
+        'statement-analytes': StatementAnalytes,
+        'statement-sections': StatementSections
     },
     props: ['title', 'no'],
     data() {
