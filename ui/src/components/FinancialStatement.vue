@@ -66,7 +66,7 @@
                                                 type="is-light"
                                                 expanded
                                                 icon-right="menu-down">
-                                                Selected ({{ selectedAnalytes.length }})
+                                                ({{ selectedAnalytes.length }})
                                             </b-button>
                                         </template>
                                             
@@ -161,6 +161,9 @@ export default {
     props: ['title', 'no'],
     data() {
         return {
+            defaultSortDirection: 'desc',
+            sortIcon: 'arrow-up',
+            sortIconSize: 'is-small',
             chosenCompany: null,
             selectedAnalytes: [],
             statementItems: [],
@@ -180,7 +183,7 @@ export default {
             iDescription: '',
             iSection: 0,
             iAnalyte: [],
-            iAmount: 0
+            iAmount: 'J$'
         }
     },
     computed: {
