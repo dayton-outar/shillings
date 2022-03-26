@@ -73,5 +73,13 @@ namespace Harpoon
         [UseFiltering]
         [UseSorting]
         public IQueryable<FinancialReport> GetFinancialReports([ScopedService]StocksQuery sq) => sq.FinancialReports;
+
+        public List<StatementAnalyte.Assay> GetAssays() {
+            return new List<StatementAnalyte.Assay> {
+                StatementAnalyte.Assay.Basic,
+                StatementAnalyte.Assay.Depreciation,
+                StatementAnalyte.Assay.Impairment
+            };
+        }
     }
 }
