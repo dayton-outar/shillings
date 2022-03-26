@@ -43,7 +43,10 @@
                                 </td>
                                 <td>
                                     <b-field>
-                                        <b-select placeholder="Choose Section" expanded>
+                                        <b-select 
+                                            placeholder="Choose Section" 
+                                            v-model="iSection"
+                                            expanded>
                                             <option value="0">Revenue</option>
                                             <option value="1">Expenses</option>
                                             <option value="2">Gains</option>
@@ -102,7 +105,7 @@
                                             Tax
                                         </b-dropdown-item>
 
-                                        </b-dropdown>
+                                    </b-dropdown>
                                 </td>
                                 <td>
                                     <b-field>
@@ -179,7 +182,7 @@ export default {
                     numeralThousandsGroupStyle: 'thousand'
                 }
             },
-            iNo: 1,
+            iNo: 0,
             iDescription: '',
             iSection: 0,
             iAnalyte: [],
@@ -196,14 +199,17 @@ export default {
         addItem() {
           const amt = this.iAmount
           const strippedAmt = amt.toString().replace(/[^0-9.-]+/g,'')
+          this.iNo = (this.iNo + 1)
 
           this.statementItems.push({
-              no: (this.iNo + 1),
+              no: this.iNo,
               description: this.iDescription,
               section: this.iSection,
               analyte: this.iAnalyte,
               amount: strippedAmt
           })
+
+          console.log(this.statementItems)
           //localStorage.setItem('my-portfolio', JSON.stringify(this.statementItems) )
         },
         updateItem(payload) {
