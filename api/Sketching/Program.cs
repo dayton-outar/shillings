@@ -15,7 +15,7 @@ namespace Sketching
                 Sequence = 1,
                 Description = "Revenue from products and services",
                 Type = StatementAnalyte.StatementType.IncomeExpense,
-                Section = StatementAnalyte.Sectional.Revenue,
+                Section = StatementAnalyte.Sectional.Revenues,
                 Analyte = StatementAnalyte.Assay.Operating,
                 Amount = 111064222000.00m
             });
@@ -24,7 +24,7 @@ namespace Sketching
                 Sequence = 2,
                 Description = "Interest revenue",
                 Type = StatementAnalyte.StatementType.IncomeExpense,
-                Section = StatementAnalyte.Sectional.Revenue,
+                Section = StatementAnalyte.Sectional.Revenues,
                 Analyte = StatementAnalyte.Assay.Interest,
                 Amount = 4373119000.00m
             });
@@ -432,7 +432,7 @@ namespace Sketching
 
             Console.WriteLine();
 
-            var revenue = qr2021.Analytes.Where(a => a.Section == StatementAnalyte.Sectional.Revenue).Sum(a => a.Amount);
+            var revenue = qr2021.Analytes.Where(a => a.Section == StatementAnalyte.Sectional.Revenues).Sum(a => a.Amount);
             Console.WriteLine("{0,-50} {1,20:c}", "Revenues", revenue);
             Console.WriteLine();
 

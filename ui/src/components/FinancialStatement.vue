@@ -23,11 +23,15 @@
                     </b-table-column>
 
                     <b-table-column field="description" label="Description" sortable v-slot="props">
-                        {{ props.row.description }}
+                        <b-field>
+                            <b-input :value="props.row.description" />
+                        </b-field>
                     </b-table-column>
 
                     <b-table-column field="amount" label="$" numeric sortable v-slot="props">
-                        {{ formatMoney(props.row.amount) }}
+                        <b-field>
+                            <b-input v-cleave="masks.price" custom-class="input-text-right" :value="formatMoney(props.row.amount)" />
+                        </b-field>
                     </b-table-column>
 
                     <template #footer>
@@ -53,7 +57,7 @@
                                             <option value="3">Losses</option>
                                             <option value="6">Assets</option>
                                             <option value="7">Liabilities</option>
-                                            <option value="8">Liabilities</option>
+                                            <option value="8">Equity</option>
                                         </b-select>
                                     </b-field>
                                 </td>
@@ -109,7 +113,7 @@
                                 </td>
                                 <td>
                                     <b-field>
-                                        <b-input v-cleave="masks.price" v-model="iAmount" />
+                                        <b-input v-cleave="masks.price" custom-class="input-text-right" v-model="iAmount" />
                                     </b-field>
                                 </td>
                                 <td class="is-flex is-justify-content-flex-end">
@@ -185,7 +189,6 @@ export default {
             iNo: 0,
             iDescription: '',
             iSection: 0,
-            iAnalyte: [],
             iAmount: 'J$'
         }
     },
@@ -205,7 +208,7 @@ export default {
               no: this.iNo,
               description: this.iDescription,
               section: this.iSection,
-              analyte: this.iAnalyte,
+              analytes: this.selectedAnalytes,
               amount: strippedAmt
           })
 
@@ -238,3 +241,11 @@ export default {
 }
 
 </script>
+
+<style>
+
+.input-text-right {
+    text-align: right;
+}
+
+</style>

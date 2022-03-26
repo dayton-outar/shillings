@@ -17,7 +17,7 @@ namespace O8Query.Models
         {
             // Income
             // Credit: https://www.investopedia.com/terms/i/incomestatement.asp#toc-understanding-the-income-statement
-            Revenue,
+            Revenues,
             Expenses,
             Gains,
             Losses,
