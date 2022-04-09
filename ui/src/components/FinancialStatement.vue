@@ -100,8 +100,19 @@
                         </b-field>
                     </b-table-column>
 
+                    <b-table-column v-slot="props">
+                        <template>
+                            <b-button
+                            @click="removeItem(props.row.no)"
+                            size="is-small"
+                            type="is-danger"
+                            icon-right="delete" />
+                        </template>
+                    </b-table-column>
+
                     <template #footer>
                         <th>Total</th>
+                        <th></th>
                         <th></th>
                         <th></th>
                         <th></th>
