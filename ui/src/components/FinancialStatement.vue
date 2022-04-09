@@ -36,7 +36,7 @@
                     </b-table-column>
 
                     <b-table-column field="section" label="" sortable v-slot="props">
-                        <b-field>
+                        <b-field v-if="getState(props.row.state)">
                             <b-select placeholder="Choose Section" :value="props.row.section" @input="updateItem(props.row.no, 'section', $event)" expanded>
                                 <option value="0">Revenue</option>
                                 <option value="1">Expenses</option>
@@ -50,7 +50,7 @@
                     </b-table-column>
 
                     <b-table-column field="analytes" label="" sortable v-slot="props">
-                        <b-field>
+                        <b-field v-if="getState(props.row.state)">
                             <b-dropdown :expanded="true" v-model="props.row.analytes" multiple aria-role="list" @change="updateItem(props.row.no, 'analytes', $event)">
 
                                 <template #trigger>
@@ -95,10 +95,11 @@
                         </b-field>
                     </b-table-column>
 
-                    <b-table-column field="amount" label="$" numeric sortable v-slot="props">
-                        <b-field>
+                    <b-table-column field="amount" label="$'000" numeric sortable v-slot="props">
+                        <b-field v-if="getState(props.row.state)">
                             <b-input v-cleave="masks.price" custom-class="input-text-right" :value="props.row.amount" @input="updateItem(props.row.no, 'amount', $event)" />
                         </b-field>
+                        <p v-else>{{ props.row.amount }}</p>
                     </b-table-column>
 
                     <b-table-column v-slot="props">
@@ -129,11 +130,11 @@
                     </b-table-column>
 
                     <template #footer>
+                        <th></th>
                         <th>Total</th>
                         <th></th>
                         <th></th>
-                        <th></th>
-                        <th></th>
+                        <th class="right-aligned">{{ formatNet() }}</th>
                         <th></th>
                         <th></th>
                     </template>
@@ -259,6 +260,15 @@ export default {
             if (ix > -1) {
                 this.statementItems[ix].state = 'Closed';
             }
+        },
+        formatNet() {
+            const netValue = this.statementItems.reduce((t, v) => {
+                const amt = parseFloat(v.amount.toString().replace(/[^0-9.-]+/g,'')) || 0;
+
+                return t + amt; // TODO: Add or subtract depending on the section chosen. e.g. Revenue +, Expense -, Gains +, Losses -
+                }, 0);
+            
+            return this.formatMoney(netValue)
         }
     }
 }
