@@ -29,9 +29,10 @@
                     </b-table-column>
 
                     <b-table-column field="description" label="Description" sortable v-slot="props">
-                        <b-field>
+                        <b-field v-if="getState(props.row.state)">
                             <b-input :value="props.row.description" @input="updateItem(props.row.no, 'description', $event)" />
                         </b-field>
+                        <p v-else>{{ props.row.description }}</p>
                     </b-table-column>
 
                     <b-table-column field="section" label="" sortable v-slot="props">
@@ -103,15 +104,33 @@
                     <b-table-column v-slot="props">
                         <template>
                             <b-button
-                            @click="removeItem(props.row.no)"
-                            size="is-small"
-                            type="is-danger"
-                            icon-right="delete" />
+                                v-if="getState(props.row.state)"
+                                @click="closeItem(props.row.no)"
+                                size="is-small"
+                                type="is-info"
+                                icon-right="close" />
+                            <b-button
+                                v-else
+                                @click="openItem(props.row.no)"
+                                size="is-small"
+                                type="is-info"
+                                icon-right="circle-edit-outline" />
+                        </template>
+                    </b-table-column>
+
+                    <b-table-column v-slot="props">
+                        <template>
+                            <b-button                            
+                                @click="removeItem(props.row.no)"
+                                size="is-small"
+                                type="is-danger"
+                                icon-right="delete" />
                         </template>
                     </b-table-column>
 
                     <template #footer>
                         <th>Total</th>
+                        <th></th>
                         <th></th>
                         <th></th>
                         <th></th>
@@ -168,8 +187,7 @@ export default {
                     numeralThousandsGroupStyle: 'thousand'
                 }
             },
-            iNo: 0,
-            iAmount: 'J$'
+            iNo: 0
         }
     },
     computed: {
@@ -180,8 +198,6 @@ export default {
             this.$emit('removed', this.no)
         },
         addItem() {
-          const amt = this.iAmount
-          const strippedAmt = amt.toString().replace(/[^0-9.-]+/g,'')
           this.iNo = (this.iNo + 1)
 
           this.statementItems.push({
@@ -189,7 +205,8 @@ export default {
               description: '',
               section: 0,
               analytes: this.selectedAnalytes,
-              amount: strippedAmt
+              state: 'Opened',
+              amount: 'J$'
           })
 
           //localStorage.setItem('my-portfolio', JSON.stringify(this.statementItems) )
@@ -228,6 +245,21 @@ export default {
             const cfi = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' })
             return cfi.format(amount)
         },
+        getState(state) {
+            return state === 'Opened';
+        },
+        openItem(no) {
+            const ix = this.statementItems.findIndex(p => p.no === no);
+            if (ix > -1) {
+                this.statementItems[ix].state = 'Opened';
+            }
+        },
+        closeItem(no) {
+            const ix = this.statementItems.findIndex(p => p.no === no);
+            if (ix > -1) {
+                this.statementItems[ix].state = 'Closed';
+            }
+        }
     }
 }
 
