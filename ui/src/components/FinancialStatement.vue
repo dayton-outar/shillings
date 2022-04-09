@@ -10,7 +10,13 @@
                 </div>
             </div>
             <div class="columns">
-                <b-table 
+                <div class="column is-full is-flex is-justify-content-flex-end">
+                    <b-button type="is-primary" icon-right="playlist-plus" @click.prevent="addItem">Add</b-button>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column is-full">                    
+                    <b-table 
                     :data="statementItems"
                     :sort-icon="sortIcon" 
                     :sort-icon-size="sortIconSize"
@@ -28,6 +34,66 @@
                         </b-field>
                     </b-table-column>
 
+                    <b-table-column field="section" label="" sortable v-slot="props">
+                        <b-field>
+                            <b-select placeholder="Choose Section" :value="props.row.section" expanded>
+                                <option value="0">Revenue</option>
+                                <option value="1">Expenses</option>
+                                <option value="2">Gains</option>
+                                <option value="3">Losses</option>
+                                <option value="6">Assets</option>
+                                <option value="7">Liabilities</option>
+                                <option value="8">Equity</option>
+                            </b-select>
+                        </b-field>
+                    </b-table-column>
+
+                    <b-table-column field="analytes" label="" sortable v-slot="props">
+                        <b-field>
+                                <b-dropdown :expanded="true" v-model="props.row.analytes" multiple aria-role="list">
+
+                                    <template #trigger>
+                                        <b-button type="is-light" expanded icon-right="menu-down">
+                                            ({{ props.row.analytes.length }})
+                                        </b-button>
+                                    </template>
+
+                                    <b-dropdown-item value="0" aria-role="listitem">
+                                        Operating
+                                    </b-dropdown-item>
+
+                                    <b-dropdown-item value="1" aria-role="listitem">
+                                        Direct
+                                    </b-dropdown-item>
+
+                                    <b-dropdown-item value="2" aria-role="listitem">
+                                        Depreciation
+                                    </b-dropdown-item>
+
+                                    <b-dropdown-item value="3" aria-role="listitem">
+                                        Impairment
+                                    </b-dropdown-item>
+
+                                    <b-dropdown-item value="4" aria-role="listitem">
+                                        Interest
+                                    </b-dropdown-item>
+
+                                    <b-dropdown-item value="5" aria-role="listitem">
+                                        Other
+                                    </b-dropdown-item>
+
+                                    <b-dropdown-item value="6" aria-role="listitem">
+                                        Investment
+                                    </b-dropdown-item>
+
+                                    <b-dropdown-item value="7" aria-role="listitem">
+                                        Tax
+                                    </b-dropdown-item>
+
+                                </b-dropdown>
+                        </b-field>
+                    </b-table-column>
+
                     <b-table-column field="amount" label="$" numeric sortable v-slot="props">
                         <b-field>
                             <b-input v-cleave="masks.price" custom-class="input-text-right" :value="formatMoney(props.row.amount)" />
@@ -35,53 +101,18 @@
                     </b-table-column>
 
                     <template #footer>
-                        <td colspan="3">
-                            <tr>
-                                <td>
-                                    #
-                                </td>
-                                <td>
-                                    <b-field>
-                                        <b-input placeholder="Description" v-model="iDescription" />
-                                    </b-field>
-                                </td>
-                                <td>
-                                    <statement-sections v-model="iSection" />
-                                </td>
-                                <td>
-                                    <statement-analytes :selected="selectedAnalytes" />
-                                </td>
-                                <td>
-                                    <b-field>
-                                        <b-input v-cleave="masks.price" custom-class="input-text-right" v-model="iAmount" />
-                                    </b-field>
-                                </td>
-                                <td class="is-flex is-justify-content-flex-end">
-                                    <b-button type="is-primary" icon-right="playlist-plus" @click.prevent="addItem">Add</b-button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    Total
-                                </th>
-                                <th>
-                                </th>
-                                <th>
-                                </th>
-                                <th>
-                                </th>
-                                <th>
-                                </th>
-                                <th>
-                                </th>
-                            </tr>
-                        </td>
+                        <th>Total</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
                     </template>
 
                     <template #empty>
                         <div class="has-text-centered">No records</div>
                     </template>
                 </b-table>
+                </div>                
             </div>
         </div>
     </div>
@@ -90,9 +121,6 @@
 <script>
 //import { mapState } from 'vuex'
 import Cleave from 'cleave.js'
-
-import StatementAnalytes from './StatementAnalytes.vue'
-import StatementSections from './StatementSections.vue'
 
 const cleave = {
     name: 'cleave',
@@ -108,10 +136,6 @@ const cleave = {
 
 export default {
     directives: { cleave },
-    components: {
-        'statement-analytes': StatementAnalytes,
-        'statement-sections': StatementSections
-    },
     props: ['title', 'no'],
     data() {
         return {
