@@ -96,7 +96,7 @@
 
                     <b-table-column field="amount" label="$" numeric sortable v-slot="props">
                         <b-field>
-                            <b-input v-cleave="masks.price" custom-class="input-text-right" :value="formatMoney(props.row.amount)" />
+                            <b-input v-cleave="masks.price" custom-class="input-text-right" :value="props.row.amount" @input="updateItem(props.row.no, 'amount', $event)" />
                         </b-field>
                     </b-table-column>
 
@@ -169,8 +169,6 @@ export default {
                 }
             },
             iNo: 0,
-            iDescription: '',
-            iSection: 0,
             iAmount: 'J$'
         }
     },
@@ -188,8 +186,8 @@ export default {
 
           this.statementItems.push({
               no: this.iNo,
-              description: this.iDescription,
-              section: this.iSection,
+              description: '',
+              section: 0,
               analytes: this.selectedAnalytes,
               amount: strippedAmt
           })
@@ -199,18 +197,27 @@ export default {
         updateItem(n, p, v) {
             const ix = this.statementItems.findIndex(p => p.no === n);
             if (p === 'amount') {
-                v = v.toString().replace(/[^0-9.-]+/g,'');
+                //v = v.toString().replace(/[^0-9.-]+/g,'');
             }
             this.statementItems[ix][p] = v;
 
-            console.log( this.statementItems[ix] );
+            console.log(this.statementItems)
             //localStorage.setItem('my-portfolio', JSON.stringify(this.statementItems) )
         },
         removeItem(id) {
           const ix = this.statementItems.findIndex(p => p.no === id);
           if (ix > -1) {
             this.statementItems.splice(ix, 1);
+
+            for (let i = ix; i < this.statementItems.length; i++) {
+                this.statementItems[i].no = (this.statementItems[i].no - 1);
+            }
           }
+          
+          if (this.statementItems.length === 0) {
+              this.iNo = 0;
+          }
+          
           //localStorage.setItem('my-portfolio', JSON.stringify(this.statementItems) )
         },
         flushPortfolio() {
