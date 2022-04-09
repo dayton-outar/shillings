@@ -30,13 +30,13 @@
 
                     <b-table-column field="description" label="Description" sortable v-slot="props">
                         <b-field>
-                            <b-input :value="props.row.description" />
+                            <b-input :value="props.row.description" @input="updateItem(props.row.no, 'description', $event)" />
                         </b-field>
                     </b-table-column>
 
                     <b-table-column field="section" label="" sortable v-slot="props">
                         <b-field>
-                            <b-select placeholder="Choose Section" :value="props.row.section" expanded>
+                            <b-select placeholder="Choose Section" :value="props.row.section" @input="updateItem(props.row.no, 'section', $event)" expanded>
                                 <option value="0">Revenue</option>
                                 <option value="1">Expenses</option>
                                 <option value="2">Gains</option>
@@ -50,53 +50,53 @@
 
                     <b-table-column field="analytes" label="" sortable v-slot="props">
                         <b-field>
-                                <b-dropdown :expanded="true" v-model="props.row.analytes" multiple aria-role="list">
+                            <b-dropdown :expanded="true" v-model="props.row.analytes" multiple aria-role="list" @change="updateItem(props.row.no, 'analytes', $event)">
 
-                                    <template #trigger>
-                                        <b-button type="is-light" expanded icon-right="menu-down">
-                                            ({{ props.row.analytes.length }})
-                                        </b-button>
-                                    </template>
+                                <template #trigger>
+                                    <b-button type="is-light" expanded icon-right="menu-down">
+                                        ({{ props.row.analytes.length }})
+                                    </b-button>
+                                </template>
 
-                                    <b-dropdown-item value="0" aria-role="listitem">
-                                        Operating
-                                    </b-dropdown-item>
+                                <b-dropdown-item value="0" aria-role="listitem">
+                                    Operating
+                                </b-dropdown-item>
 
-                                    <b-dropdown-item value="1" aria-role="listitem">
-                                        Direct
-                                    </b-dropdown-item>
+                                <b-dropdown-item value="1" aria-role="listitem">
+                                    Direct
+                                </b-dropdown-item>
 
-                                    <b-dropdown-item value="2" aria-role="listitem">
-                                        Depreciation
-                                    </b-dropdown-item>
+                                <b-dropdown-item value="2" aria-role="listitem">
+                                    Depreciation
+                                </b-dropdown-item>
 
-                                    <b-dropdown-item value="3" aria-role="listitem">
-                                        Impairment
-                                    </b-dropdown-item>
+                                <b-dropdown-item value="3" aria-role="listitem">
+                                    Impairment
+                                </b-dropdown-item>
 
-                                    <b-dropdown-item value="4" aria-role="listitem">
-                                        Interest
-                                    </b-dropdown-item>
+                                <b-dropdown-item value="4" aria-role="listitem">
+                                    Interest
+                                </b-dropdown-item>
 
-                                    <b-dropdown-item value="5" aria-role="listitem">
-                                        Other
-                                    </b-dropdown-item>
+                                <b-dropdown-item value="5" aria-role="listitem">
+                                    Other
+                                </b-dropdown-item>
 
-                                    <b-dropdown-item value="6" aria-role="listitem">
-                                        Investment
-                                    </b-dropdown-item>
+                                <b-dropdown-item value="6" aria-role="listitem">
+                                    Investment
+                                </b-dropdown-item>
 
-                                    <b-dropdown-item value="7" aria-role="listitem">
-                                        Tax
-                                    </b-dropdown-item>
+                                <b-dropdown-item value="7" aria-role="listitem">
+                                    Tax
+                                </b-dropdown-item>
 
-                                </b-dropdown>
+                            </b-dropdown>
                         </b-field>
                     </b-table-column>
 
                     <b-table-column field="amount" label="$" numeric sortable v-slot="props">
                         <b-field>
-                            <b-input v-cleave="masks.price" custom-class="input-text-right" :value="formatMoney(props.row.amount)" />
+                            <b-input v-cleave="masks.price" custom-class="input-text-right" :value="formatMoney(props.row.amount)" @input="updateItem(props.row.no, 'amount', $event)" />
                         </b-field>
                     </b-table-column>
 
@@ -183,18 +183,20 @@ export default {
               amount: strippedAmt
           })
 
-          console.log(this.statementItems)
           //localStorage.setItem('my-portfolio', JSON.stringify(this.statementItems) )
         },
-        updateItem(payload) {
-          const ix = this.statementItems.findIndex(p => p.id === payload.id);
-          if (ix > -1) {
-            this.statementItems[ix] = payload;
-          }
-          //localStorage.setItem('my-portfolio', JSON.stringify(this.statementItems) )
+        updateItem(n, p, v) {
+            const ix = this.statementItems.findIndex(p => p.no === n);
+            if (p === 'amount') {
+                v = v.toString().replace(/[^0-9.-]+/g,'');
+            }
+            this.statementItems[ix][p] = v;
+
+            console.log( this.statementItems[ix] );
+            //localStorage.setItem('my-portfolio', JSON.stringify(this.statementItems) )
         },
         removeItem(id) {
-          const ix = this.statementItems.findIndex(p => p.id === id);
+          const ix = this.statementItems.findIndex(p => p.no === id);
           if (ix > -1) {
             this.statementItems.splice(ix, 1);
           }
