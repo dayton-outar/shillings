@@ -96,7 +96,7 @@
 
                     <b-table-column field="amount" label="$" numeric sortable v-slot="props">
                         <b-field>
-                            <b-input v-cleave="masks.price" custom-class="input-text-right" :value="formatMoney(props.row.amount)" @input="updateItem(props.row.no, 'amount', $event)" />
+                            <b-input v-cleave="masks.price" custom-class="input-text-right" :value="formatMoney(props.row.amount)" />
                         </b-field>
                     </b-table-column>
 
