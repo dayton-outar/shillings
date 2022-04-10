@@ -124,19 +124,67 @@ namespace Harpoon
                     Assay = new List<StatementAnalyte.Assay> { 
                             StatementAnalyte.Assay.Direct,
                             StatementAnalyte.Assay.Operating,
-                            StatementAnalyte.Assay.Interest
+                            StatementAnalyte.Assay.Interest,
+                            StatementAnalyte.Assay.Tax
                         }
                 },
                 new SectionalAnalytes {
                     Sectional = StatementAnalyte.Sectional.Gains,
                     Assay = new List<StatementAnalyte.Assay> { 
-                            StatementAnalyte.Assay.Interest
+                            StatementAnalyte.Assay.Interest,
+                            StatementAnalyte.Assay.Investment,
+                            StatementAnalyte.Assay.Other
                         }
                 },
                 new SectionalAnalytes {
                     Sectional = StatementAnalyte.Sectional.Losses,
-                    Assay = new List<StatementAnalyte.Assay> { 
+                    Assay = new List<StatementAnalyte.Assay> {
+                            StatementAnalyte.Assay.Interest,
                             StatementAnalyte.Assay.Impairment
+                        }
+                },
+                new SectionalAnalytes {
+                    Sectional = StatementAnalyte.Sectional.ProfitShare,
+                    Assay = new List<StatementAnalyte.Assay> {
+                            StatementAnalyte.Assay.Shareholders,
+                            StatementAnalyte.Assay.NonControlling
+                        }
+                },
+                new SectionalAnalytes {
+                    Sectional = StatementAnalyte.Sectional.EarningsPerStock,
+                    Assay = new List<StatementAnalyte.Assay> {
+                            StatementAnalyte.Assay.Basic,
+                            StatementAnalyte.Assay.Diluted
+                        }
+                },
+                new SectionalAnalytes {
+                    Sectional = StatementAnalyte.Sectional.Assets,
+                    Assay = new List<StatementAnalyte.Assay> {
+                            StatementAnalyte.Assay.Current,
+                            StatementAnalyte.Assay.Cash,
+                            StatementAnalyte.Assay.Inventories,
+                            StatementAnalyte.Assay.Fixed,
+                            StatementAnalyte.Assay.Receivables,
+                            StatementAnalyte.Assay.Intagible
+                        }
+                },
+                new SectionalAnalytes {
+                    Sectional = StatementAnalyte.Sectional.Liabilities,
+                    Assay = new List<StatementAnalyte.Assay> {
+                            StatementAnalyte.Assay.Current,
+                            StatementAnalyte.Assay.Debt,
+                            StatementAnalyte.Assay.Inventories,
+                            StatementAnalyte.Assay.Fixed,
+                            StatementAnalyte.Assay.Payables
+                        }
+                },
+                new SectionalAnalytes {
+                    Sectional = StatementAnalyte.Sectional.Equity,
+                    Assay = new List<StatementAnalyte.Assay> {
+                            StatementAnalyte.Assay.Capital,
+                            StatementAnalyte.Assay.Reserves,
+                            StatementAnalyte.Assay.Retained,
+                            StatementAnalyte.Assay.NonControlling
                         }
                 }
             };
