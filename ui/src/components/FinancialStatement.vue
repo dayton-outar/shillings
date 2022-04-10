@@ -196,7 +196,7 @@ export default {
     computed: {
         ...mapState(['sections', 'assays']),
         statementSections() {
-            const iss = this.sections.findIndex(ss => ss.type.toLowerCase() === this.title.toLowerCase());
+            const iss = this.sections.findIndex(ss => ss.type.toLowerCase() === this.title.replace(' ', '_').toLowerCase());
 
             return this.sections[iss].sections;
         }
@@ -217,7 +217,6 @@ export default {
               amount: 'J$'
           })
 
-            console.log(this.sections, this.assays);
           //localStorage.setItem('my-portfolio', JSON.stringify(this.statementItems) )
         },
         updateItem(n, p, v) {

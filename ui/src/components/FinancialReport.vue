@@ -69,7 +69,7 @@
 
                 <b-dropdown-item aria-role="listitem" @click="addStatement('Income')">Income</b-dropdown-item>
                 <b-dropdown-item aria-role="listitem" @click="addStatement('Financial Position')">Financial Position</b-dropdown-item>
-                <b-dropdown-item aria-role="listitem" @click="addStatement('Cashflow')">Cashflow</b-dropdown-item>
+                <b-dropdown-item aria-role="listitem" @click="addStatement('Cash Flow')">Cash Flow</b-dropdown-item>
             </b-dropdown>
         </div>
     </div>
