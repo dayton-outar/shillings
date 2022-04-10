@@ -173,7 +173,6 @@ namespace Harpoon
                     Assay = new List<StatementAnalyte.Assay> {
                             StatementAnalyte.Assay.Current,
                             StatementAnalyte.Assay.Debt,
-                            StatementAnalyte.Assay.Inventories,
                             StatementAnalyte.Assay.Fixed,
                             StatementAnalyte.Assay.Payables
                         }
