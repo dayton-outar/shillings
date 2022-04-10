@@ -150,7 +150,7 @@
 </template>
 
 <script>
-//import { mapState } from 'vuex'
+import { mapState } from 'vuex'
 import Cleave from 'cleave.js'
 
 const cleave = {
@@ -191,8 +191,12 @@ export default {
             iNo: 0
         }
     },
+    beforeCreate() {
+      this.$store.dispatch('fetchSections')
+      this.$store.dispatch('fetchAssays')
+    },
     computed: {
-
+        ...mapState(['sections', 'assays'])
     },
     methods: {
         removeStatement() {
@@ -210,6 +214,7 @@ export default {
               amount: 'J$'
           })
 
+            console.log(this.sections, this.assays);
           //localStorage.setItem('my-portfolio', JSON.stringify(this.statementItems) )
         },
         updateItem(n, p, v) {

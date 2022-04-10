@@ -13,7 +13,9 @@ export const store = new Vuex.Store({
       companies: [],
       stocks: [],
       totalTradings: null,
-      portfolioHoldings: []
+      portfolioHoldings: [],
+      sections: [],
+      assays: []
     },
     getters: {
         volumeShares(state) {
@@ -78,6 +80,12 @@ export const store = new Vuex.Store({
         },
         setStocks(state, payload) {
           state.stocks = payload
+        },
+        setSections(state, payload) {
+          state.sections = payload
+        },
+        setAssays(state, payload) {
+          state.assays = payload
         },
         setTotalStockTrades(state, payload) {
           state.totalTradings = payload
@@ -202,6 +210,31 @@ export const store = new Vuex.Store({
           })
 
           commit('setTotalStockTrades', totalTrades)
+        },
+        async fetchSections({ commit }) {
+          const response = await graphQlClient.query({
+            query: gql`query {
+                  sectionals {
+                    summaryTitle,
+                    type,
+                    sections
+                  }
+                }`
+              })
+          
+          commit('setSections', response.data.sectionals)
+        },
+        async fetchAssays({ commit }) {
+          const response = await graphQlClient.query({
+            query: gql`query {
+                  assays {
+                    sectional,
+                    assay
+                  }
+                }`
+              })
+          
+          commit('setAssays', response.data.assays)
         },
         getPortfolio({ commit }) {
           commit('setPortfolio', JSON.parse(localStorage.getItem('my-portfolio')) )
