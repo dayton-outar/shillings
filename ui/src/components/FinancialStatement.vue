@@ -38,13 +38,10 @@
                     <b-table-column field="section" label="" sortable v-slot="props">
                         <b-field v-if="getState(props.row.state)">
                             <b-select placeholder="Choose Section" :value="props.row.section" @input="updateItem(props.row.no, 'section', $event)" expanded>
-                                <option value="0">Revenue</option>
-                                <option value="1">Expenses</option>
-                                <option value="2">Gains</option>
-                                <option value="3">Losses</option>
-                                <option value="6">Assets</option>
-                                <option value="7">Liabilities</option>
-                                <option value="8">Equity</option>
+                                <option 
+                                    v-for="section in statementSections" 
+                                    :key="section"
+                                    :value="section">{{ formatTitleCase(section) }}</option>
                             </b-select>
                         </b-field>
                     </b-table-column>
@@ -152,6 +149,7 @@
 <script>
 import { mapState } from 'vuex'
 import Cleave from 'cleave.js'
+import _ from 'lodash'
 
 const cleave = {
     name: 'cleave',
@@ -196,7 +194,12 @@ export default {
       this.$store.dispatch('fetchAssays')
     },
     computed: {
-        ...mapState(['sections', 'assays'])
+        ...mapState(['sections', 'assays']),
+        statementSections() {
+            const iss = this.sections.findIndex(ss => ss.type.toLowerCase() === this.title.toLowerCase());
+
+            return this.sections[iss].sections;
+        }
     },
     methods: {
         removeStatement() {
@@ -224,7 +227,6 @@ export default {
             }
             this.statementItems[ix][p] = v;
 
-            console.log(this.statementItems)
             //localStorage.setItem('my-portfolio', JSON.stringify(this.statementItems) )
         },
         removeItem(id) {
@@ -251,6 +253,9 @@ export default {
             const cfi = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' })
             return cfi.format(amount)
         },
+        formatTitleCase(plain) {
+            return _.startCase(plain.toLowerCase().replace('_', ' '));
+        },
         getState(state) {
             return state === 'Opened';
         },
@@ -270,7 +275,7 @@ export default {
             const netValue = this.statementItems.reduce((t, v) => {
                 const amt = parseFloat(v.amount.toString().replace(/[^0-9.-]+/g,'')) || 0;
 
-                return t + amt; // TODO: Add or subtract depending on the section chosen. e.g. Revenue +, Expense -, Gains +, Losses -
+                return t + amt;
                 }, 0);
             
             return this.formatMoney(netValue)
