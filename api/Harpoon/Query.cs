@@ -74,11 +74,71 @@ namespace Harpoon
         [UseSorting]
         public IQueryable<FinancialReport> GetFinancialReports([ScopedService]StocksQuery sq) => sq.FinancialReports;
 
-        public List<StatementAnalyte.Assay> GetAssays() {
-            return new List<StatementAnalyte.Assay> {
-                StatementAnalyte.Assay.Basic,
-                StatementAnalyte.Assay.Depreciation,
-                StatementAnalyte.Assay.Impairment
+        public List<StatementSectional> GetSectionals() {
+            return new List<StatementSectional> {
+                new StatementSectional {
+                    SummaryTitle = "Net Income",
+                    Type = StatementAnalyte.StatementType.Income,
+                    Sections = new List<StatementAnalyte.Sectional> { 
+                            StatementAnalyte.Sectional.Revenues,
+                            StatementAnalyte.Sectional.Expenses,
+                            StatementAnalyte.Sectional.Gains,
+                            StatementAnalyte.Sectional.Losses,
+                            StatementAnalyte.Sectional.ProfitShare,
+                            StatementAnalyte.Sectional.EarningsPerStock
+                        }
+                },
+                new StatementSectional {
+                    SummaryTitle = "Total Equity and Liabilities",
+                    Type = StatementAnalyte.StatementType.FinancialPosition,
+                    Sections = new List<StatementAnalyte.Sectional> { 
+                            StatementAnalyte.Sectional.Assets,
+                            StatementAnalyte.Sectional.Liabilities,
+                            StatementAnalyte.Sectional.Equity,
+                            StatementAnalyte.Sectional.EquityShare
+                        }
+                },
+                new StatementSectional {
+                    SummaryTitle = "Cash and Cash Equivalents at End of Period",
+                    Type = StatementAnalyte.StatementType.CashFlow,
+                    Sections = new List<StatementAnalyte.Sectional> { 
+                            StatementAnalyte.Sectional.OperatingActivities,
+                            StatementAnalyte.Sectional.FinancingActivities,
+                            StatementAnalyte.Sectional.InvestingActivities,
+                        }
+                }
+            };
+        }
+
+        public List<SectionalAnalytes> GetAssays() {
+            return new List<SectionalAnalytes> {
+                new SectionalAnalytes {
+                    Sectional = StatementAnalyte.Sectional.Revenues,
+                    Assay = new List<StatementAnalyte.Assay> { 
+                            StatementAnalyte.Assay.Operating,
+                            StatementAnalyte.Assay.Interest
+                        }
+                },
+                new SectionalAnalytes {
+                    Sectional = StatementAnalyte.Sectional.Expenses,
+                    Assay = new List<StatementAnalyte.Assay> { 
+                            StatementAnalyte.Assay.Direct,
+                            StatementAnalyte.Assay.Operating,
+                            StatementAnalyte.Assay.Interest
+                        }
+                },
+                new SectionalAnalytes {
+                    Sectional = StatementAnalyte.Sectional.Gains,
+                    Assay = new List<StatementAnalyte.Assay> { 
+                            StatementAnalyte.Assay.Interest
+                        }
+                },
+                new SectionalAnalytes {
+                    Sectional = StatementAnalyte.Sectional.Losses,
+                    Assay = new List<StatementAnalyte.Assay> { 
+                            StatementAnalyte.Assay.Impairment
+                        }
+                }
             };
         }
     }

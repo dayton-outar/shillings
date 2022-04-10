@@ -8,7 +8,7 @@ namespace O8Query.Models
     {
         public enum StatementType
         {
-            IncomeExpense,
+            Income,
             FinancialPosition,
             CashFlow
         }
@@ -34,7 +34,14 @@ namespace O8Query.Models
             Equity,
 
             // Financial Position - Equity Attributable
-            EquityShare
+            EquityShare,
+
+            // Cash Flows
+            OperatingActivities,
+
+            FinancingActivities,
+
+            InvestingActivities
         }
 
         [Flags]

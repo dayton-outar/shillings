@@ -14,7 +14,7 @@ namespace Sketching
             reportAnalytes.Add(new StatementAnalyte{
                 Sequence = 1,
                 Description = "Revenue from products and services",
-                Type = StatementAnalyte.StatementType.IncomeExpense,
+                Type = StatementAnalyte.StatementType.Income,
                 Section = StatementAnalyte.Sectional.Revenues,
                 Analyte = StatementAnalyte.Assay.Operating,
                 Amount = 111064222000.00m
@@ -23,7 +23,7 @@ namespace Sketching
             reportAnalytes.Add(new StatementAnalyte{
                 Sequence = 2,
                 Description = "Interest revenue",
-                Type = StatementAnalyte.StatementType.IncomeExpense,
+                Type = StatementAnalyte.StatementType.Income,
                 Section = StatementAnalyte.Sectional.Revenues,
                 Analyte = StatementAnalyte.Assay.Interest,
                 Amount = 4373119000.00m
@@ -32,7 +32,7 @@ namespace Sketching
             reportAnalytes.Add(new StatementAnalyte{
                 Sequence = 4,
                 Description = "Direct expenses",
-                Type = StatementAnalyte.StatementType.IncomeExpense,
+                Type = StatementAnalyte.StatementType.Income,
                 Section = StatementAnalyte.Sectional.Expenses,
                 Analyte = StatementAnalyte.Assay.Direct,
                 Amount = 83903002000.00m
@@ -41,7 +41,7 @@ namespace Sketching
             reportAnalytes.Add(new StatementAnalyte{
                 Sequence = 4,
                 Description = "Interest expenses",
-                Type = StatementAnalyte.StatementType.IncomeExpense,
+                Type = StatementAnalyte.StatementType.Income,
                 Section = StatementAnalyte.Sectional.Expenses,
                 Analyte = StatementAnalyte.Assay.Interest | StatementAnalyte.Assay.Direct,
                 Amount = 7015734000.00m
@@ -50,7 +50,7 @@ namespace Sketching
             reportAnalytes.Add(new StatementAnalyte{
                 Sequence = 4,
                 Description = "Operating expenses",
-                Type = StatementAnalyte.StatementType.IncomeExpense,
+                Type = StatementAnalyte.StatementType.Income,
                 Section = StatementAnalyte.Sectional.Expenses,
                 Analyte = StatementAnalyte.Assay.Operating,
                 Amount = 17714679000.00m
@@ -59,7 +59,7 @@ namespace Sketching
             reportAnalytes.Add(new StatementAnalyte{
                 Sequence = 5,
                 Description = "Net impairment losses on financial assets",
-                Type = StatementAnalyte.StatementType.IncomeExpense,
+                Type = StatementAnalyte.StatementType.Income,
                 Section = StatementAnalyte.Sectional.Losses,
                 Analyte = StatementAnalyte.Assay.Impairment,
                 Amount = 523486000.00m
@@ -68,7 +68,7 @@ namespace Sketching
             reportAnalytes.Add(new StatementAnalyte{
                 Sequence = 8,
                 Description = "Other income",
-                Type = StatementAnalyte.StatementType.IncomeExpense,
+                Type = StatementAnalyte.StatementType.Income,
                 Section = StatementAnalyte.Sectional.Gains,
                 Analyte = StatementAnalyte.Assay.Other,
                 Amount = 3024608000.00m
@@ -77,7 +77,7 @@ namespace Sketching
             reportAnalytes.Add(new StatementAnalyte{
                 Sequence = 9,
                 Description = "Interest income - non-financial services",
-                Type = StatementAnalyte.StatementType.IncomeExpense,
+                Type = StatementAnalyte.StatementType.Income,
                 Section = StatementAnalyte.Sectional.Gains,
                 Analyte = StatementAnalyte.Assay.Interest,
                 Amount = 467866000.00m
@@ -86,7 +86,7 @@ namespace Sketching
             reportAnalytes.Add(new StatementAnalyte{
                 Sequence = 10,
                 Description = "Interest expense - non-financial services",
-                Type = StatementAnalyte.StatementType.IncomeExpense,
+                Type = StatementAnalyte.StatementType.Income,
                 Section = StatementAnalyte.Sectional.Losses,
                 Analyte = StatementAnalyte.Assay.Interest,
                 Amount = 1130957000.00m
@@ -95,7 +95,7 @@ namespace Sketching
             reportAnalytes.Add(new StatementAnalyte{
                 Sequence = 11,
                 Description = "Share of results of associates and joint ventures",
-                Type = StatementAnalyte.StatementType.IncomeExpense,
+                Type = StatementAnalyte.StatementType.Income,
                 Section = StatementAnalyte.Sectional.Gains,
                 Analyte = StatementAnalyte.Assay.Investment,
                 Amount = 543532000.00m
@@ -104,7 +104,7 @@ namespace Sketching
             reportAnalytes.Add(new StatementAnalyte{
                 Sequence = 13,
                 Description = "Tax",
-                Type = StatementAnalyte.StatementType.IncomeExpense,
+                Type = StatementAnalyte.StatementType.Income,
                 Section = StatementAnalyte.Sectional.Expenses,
                 Analyte = StatementAnalyte.Assay.Tax,
                 Amount = 2852049000.00m
@@ -113,7 +113,7 @@ namespace Sketching
             reportAnalytes.Add(new StatementAnalyte{
                 Sequence = 15,
                 Description = "Owners of GraceKennedy Limited",
-                Type = StatementAnalyte.StatementType.IncomeExpense,
+                Type = StatementAnalyte.StatementType.Income,
                 Section = StatementAnalyte.Sectional.ProfitShare,
                 Analyte = StatementAnalyte.Assay.Shareholders,
                 Amount = 6218055000.00m
@@ -122,7 +122,7 @@ namespace Sketching
             reportAnalytes.Add(new StatementAnalyte{
                 Sequence = 16,
                 Description = "Non-controlling interests",
-                Type = StatementAnalyte.StatementType.IncomeExpense,
+                Type = StatementAnalyte.StatementType.Income,
                 Section = StatementAnalyte.Sectional.ProfitShare,
                 Analyte = StatementAnalyte.Assay.NonControlling,
                 Amount = 638871000.00m
@@ -131,7 +131,7 @@ namespace Sketching
             reportAnalytes.Add(new StatementAnalyte{
                 Sequence = 17,
                 Description = "Basic Earnings per Stock Unit",
-                Type = StatementAnalyte.StatementType.IncomeExpense,
+                Type = StatementAnalyte.StatementType.Income,
                 Section = StatementAnalyte.Sectional.EarningsPerStock,
                 Analyte = StatementAnalyte.Assay.Basic,
                 Amount = 6.28m
