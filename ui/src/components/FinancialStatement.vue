@@ -104,7 +104,7 @@
 
                     <template #footer>
                         <th></th>
-                        <th>Total</th>
+                        <th>{{ summaryTitle }}</th>
                         <th></th>
                         <th></th>
                         <th class="right-aligned">{{ formatNet() }}</th>
@@ -175,6 +175,11 @@ export default {
             const iss = this.sections.findIndex(ss => ss.type.toLowerCase() === this.title.replace(' ', '_').toLowerCase());
 
             return this.sections[iss].sections;
+        },
+        summaryTitle() {
+            const iss = this.sections.findIndex(ss => ss.type.toLowerCase() === this.title.replace(' ', '_').toLowerCase());
+
+            return this.sections[iss].summaryTitle;
         }
     },
     methods: {

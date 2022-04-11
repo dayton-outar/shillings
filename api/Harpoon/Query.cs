@@ -89,7 +89,7 @@ namespace Harpoon
                         }
                 },
                 new StatementSectional {
-                    SummaryTitle = "Total Equity and Liabilities",
+                    SummaryTitle = "",
                     Type = StatementAnalyte.StatementType.FinancialPosition,
                     Sections = new List<StatementAnalyte.Sectional> { 
                             StatementAnalyte.Sectional.Assets,
