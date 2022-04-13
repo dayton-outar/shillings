@@ -44,6 +44,7 @@
                                     :value="section">{{ formatTitleCase(section) }}</option>
                             </b-select>
                         </b-field>
+                        <p v-else>{{ formatTitleCase(props.row.section) }}</p>
                     </b-table-column>
 
                     <b-table-column field="analytes" label="" sortable v-slot="props">
@@ -65,7 +66,7 @@
                                 </b-dropdown-item>
 
                             </b-dropdown>
-                        </b-field>
+                        </b-field>                        
                     </b-table-column>
 
                     <b-table-column field="amount" label="$'000" numeric sortable v-slot="props">
