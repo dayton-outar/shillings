@@ -108,8 +108,8 @@ export const store = new Vuex.Store({
 
           //localStorage.setItem('my-statement-items', JSON.stringify(this.statementItems) )
         },
-        removeStatementItem(state, id) {
-          const ix = state.statementItems.findIndex(p => p.no === id);
+        removeStatementItem(state, payload) {
+          const ix = state.statementItems.findIndex(p => p.type === payload.type && p.no === payload.no);
           if (ix > -1) {
             state.statementItems.splice(ix, 1);
 

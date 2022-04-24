@@ -212,7 +212,10 @@ export default {
             })
         },
         removeItem(id) {
-          this.removeStatement(id);
+          this.removeStatementItem({
+              no: id,
+              type: this.type
+          });
 
           if (this.statementTypeItems.length === 0) {
               this.iNo = 0;
