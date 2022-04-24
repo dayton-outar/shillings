@@ -182,7 +182,7 @@ export default {
         summaryTitle() { // Throws error if fetchSection not completed
             const iss = this.sections.findIndex(ss => ss.type.toLowerCase() === this.type.replace(' ', '_').toLowerCase());
 
-            return this.sections[iss].summaryTitle;
+            return this.sections[iss] ? this.sections[iss].summaryTitle : '';
         }
     },
     methods: {
