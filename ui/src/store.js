@@ -112,9 +112,11 @@ export const store = new Vuex.Store({
           const ix = state.statementItems.findIndex(p => p.type === payload.type && p.no === payload.no);
           if (ix > -1) {
             state.statementItems.splice(ix, 1);
-
+            
             for (let i = ix; i < state.statementItems.length; i++) {
-              state.statementItems[i].no = (state.statementItems[i].no - 1);
+              if (state.statementItems[i].type === payload.type) {
+                state.statementItems[i].no = (state.statementItems[i].no - 1);
+              }              
             }
           }
 
