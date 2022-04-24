@@ -15,7 +15,8 @@ export const store = new Vuex.Store({
       totalTradings: null,
       portfolioHoldings: [],
       sections: [],
-      assays: []
+      assays: [],
+      statementItems: []
     },
     getters: {
         volumeShares(state) {
@@ -92,6 +93,32 @@ export const store = new Vuex.Store({
         },
         setPortfolio(state, payload) {
           state.portfolioHoldings = payload
+        },
+        addStatementItem(state, payload) {
+          state.statementItems.push(payload)
+
+          //localStorage.setItem('my-statement-items', JSON.stringify(this.statementItems) )
+        },
+        updateStatementItem(state, payload) {
+          const ix = state.statementItems.findIndex(p => p.type === payload.type && p.no === payload.no);
+          //if (payload.key === 'amount') {
+              //payload.value = payload.value.toString().replace(/[^0-9.-]+/g,'');
+          //}
+          state.statementItems[ix][payload.key] = payload.value;
+
+          //localStorage.setItem('my-statement-items', JSON.stringify(this.statementItems) )
+        },
+        removeStatementItem(state, id) {
+          const ix = state.statementItems.findIndex(p => p.no === id);
+          if (ix > -1) {
+            state.statementItems.splice(ix, 1);
+
+            for (let i = ix; i < state.statementItems.length; i++) {
+              state.statementItems[i].no = (state.statementItems[i].no - 1);
+            }
+          }
+
+          //localStorage.setItem('my-statement-items', JSON.stringify(this.statementItems) )
         },
         addPortfolio(state, payload) {
           const itrade = state.totalTradings.find(t => t.code === payload.security.code)
@@ -250,6 +277,15 @@ export const store = new Vuex.Store({
         },
         flushPortfolio({ commit }) {
           commit('flushPortfolio')
+        },
+        addStatementItem({ commit }, payload) {
+          commit('addStatementItem', payload)
+        },
+        updateStatementItem({ commit }, payload) {
+          commit('updateStatementItem', payload)
+        },
+        removeStatementItem({ commit }, payload) {
+          commit('removeStatementItem', payload)
         }
     }
 })

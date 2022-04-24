@@ -49,7 +49,7 @@
     
     <div v-for="(stmt, ix) in statements" :key="ix" class="columns">
         <financial-statement 
-            :title="stmt.Type" 
+            :type="stmt.Type" 
             :no="ix" 
             @removed="removeStatement" />
     </div>

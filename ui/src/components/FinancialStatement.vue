@@ -3,7 +3,7 @@
         <div class="box my-4 mx-1">
             <div class="columns">
                 <div class="column is-four-fifths">
-                    <h5 class="title is-5">{{ title }}</h5>
+                    <h5 class="title is-5">{{ type }}</h5>
                 </div>
                 <div class="column is-flex is-justify-content-flex-end">
                     <b-button type="is-danger" icon-right="delete" @click="removeStatement" />
@@ -17,7 +17,7 @@
             <div class="columns">
                 <div class="column is-full">                    
                     <b-table 
-                    :data="statementItems"
+                    :data="statementTypeItems"
                     :sort-icon="sortIcon" 
                     :sort-icon-size="sortIconSize"
                     :default-sort-direction="defaultSortDirection" 
@@ -124,7 +124,7 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState, mapActions } from 'vuex'
 import Cleave from 'cleave.js'
 import _ from 'lodash'
 
@@ -142,7 +142,7 @@ const cleave = {
 
 export default {
     directives: { cleave },
-    props: ['title', 'no'],
+    props: ['type', 'no'],
     data() {
         return {
             defaultSortDirection: 'desc',
@@ -150,7 +150,6 @@ export default {
             sortIconSize: 'is-small',
             chosenCompany: null,
             selectedAnalytes: [],
-            statementItems: [],
             masks: {
                 price: {
                     numeral: true,
@@ -171,64 +170,59 @@ export default {
       this.$store.dispatch('fetchAssays')
     },
     computed: {
-        ...mapState(['sections', 'assays']),
+        ...mapState(['sections', 'assays', 'statementItems']),
+        statementTypeItems() {
+            return this.statementItems.filter(s => s.type === this.type);
+        },
         statementSections() {
-            const iss = this.sections.findIndex(ss => ss.type.toLowerCase() === this.title.replace(' ', '_').toLowerCase());
+            const iss = this.sections.findIndex(ss => ss.type.toLowerCase() === this.type.replace(' ', '_').toLowerCase());
 
             return this.sections[iss].sections;
         },
-        summaryTitle() {
-            const iss = this.sections.findIndex(ss => ss.type.toLowerCase() === this.title.replace(' ', '_').toLowerCase());
+        summaryTitle() { // Throws error if fetchSection not completed
+            const iss = this.sections.findIndex(ss => ss.type.toLowerCase() === this.type.replace(' ', '_').toLowerCase());
 
             return this.sections[iss].summaryTitle;
         }
     },
     methods: {
+        ...mapActions(['addStatementItem', 'updateStatementItem', 'removeStatementItem']),
         removeStatement() {
             this.$emit('removed', this.no)
         },
         addItem() {
           this.iNo = (this.iNo + 1)
 
-          this.statementItems.push({
+          this.addStatementItem({
               no: this.iNo,
               description: '',
+              type: this.type,
               section: 0,
               analytes: this.selectedAnalytes,
               state: 'Opened',
               amount: 'J$'
           })
-
-          //localStorage.setItem('my-portfolio', JSON.stringify(this.statementItems) )
         },
         updateItem(n, p, v) {
-            const ix = this.statementItems.findIndex(p => p.no === n);
-            if (p === 'amount') {
-                //v = v.toString().replace(/[^0-9.-]+/g,'');
-            }
-            this.statementItems[ix][p] = v;
-
-            //localStorage.setItem('my-portfolio', JSON.stringify(this.statementItems) )
+            this.updateStatementItem({
+                no: n,
+                type: this.type,
+                key: p,
+                value: v
+            })
         },
         removeItem(id) {
-          const ix = this.statementItems.findIndex(p => p.no === id);
-          if (ix > -1) {
-            this.statementItems.splice(ix, 1);
+          this.removeStatement(id);
 
-            for (let i = ix; i < this.statementItems.length; i++) {
-                this.statementItems[i].no = (this.statementItems[i].no - 1);
-            }
-          }
-          
-          if (this.statementItems.length === 0) {
+          if (this.statementTypeItems.length === 0) {
               this.iNo = 0;
           }
           
-          //localStorage.setItem('my-portfolio', JSON.stringify(this.statementItems) )
+          //localStorage.setItem('my-statement-items', JSON.stringify(this.statementItems) )
         },
-        flushPortfolio() {
-          this.statementItems = []
-          //localStorage.removeItem('my-portfolio')
+        flushItems() {
+          //this.flushStatementItems()
+          //localStorage.removeItem('my-statement-items')
         },
         formatMoney(amount) { // TODO: Make global
             const cfi = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' })
@@ -249,19 +243,19 @@ export default {
             return ias > -1 ? this.assays[ias].assay : [];
         },
         openItem(no) {
-            const ix = this.statementItems.findIndex(p => p.no === no);
+            const ix = this.statementTypeItems.findIndex(p => p.no === no);
             if (ix > -1) {
-                this.statementItems[ix].state = 'Opened';
+                this.statementTypeItems[ix].state = 'Opened';
             }
         },
         closeItem(no) {
-            const ix = this.statementItems.findIndex(p => p.no === no);
+            const ix = this.statementTypeItems.findIndex(p => p.no === no);
             if (ix > -1) {
-                this.statementItems[ix].state = 'Closed';
+                this.statementTypeItems[ix].state = 'Closed';
             }
         },
         formatNet() {
-            const netValue = this.statementItems.reduce((t, v) => {
+            const netValue = this.statementTypeItems.reduce((t, v) => {
                 const amt = parseFloat(v.amount.toString().replace(/[^0-9.-]+/g,'')) || 0;
 
                 return t + amt;
