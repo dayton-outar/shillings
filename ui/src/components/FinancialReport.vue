@@ -22,7 +22,10 @@
             <b-field 
                 label="Period"
                 label-position="inside">
-                <b-select placeholder="Choose Period" expanded>
+                <b-select 
+                    v-model="chosenPeriod"
+                    placeholder="Choose Period" 
+                    expanded>
                     <option value="0">Quarterly</option>
                     <option value="1">Annual</option>
                 </b-select>
@@ -33,16 +36,17 @@
                 label="Date"
                 label-position="inside">
                 <b-datepicker
-                    ref="datepicker"
-                    expanded
+                    ref="datepicker"                    
+                    v-model="chosenStatementDate"
                     label-position=""
-                    placeholder="Set Statement Date">
+                    placeholder="Set Statement Date"
+                    expanded>
                 </b-datepicker>
             </b-field>
         </div>
         <div class="column">
             <b-field>
-                <b-checkbox>Is Audited?</b-checkbox>
+                <b-checkbox v-model="isAudited">Is Audited?</b-checkbox>
             </b-field>
         </div>        
     </div>
@@ -78,14 +82,15 @@
             <b-button 
                 label="Save"
                 type="is-info"
-                expanded />
+                expanded
+                @click.prevent="saveReport" />
         </div>
     </div>
   </div>
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState, mapActions } from 'vuex'
 
 import FinancialStatement from './FinancialStatement.vue'
 
@@ -96,6 +101,9 @@ export default {
     data() {
         return {
             chosenCompany: null,
+            chosenPeriod: null,
+            chosenStatementDate: null,
+            isAudited: null,
             statements: []
         }
     },
@@ -106,6 +114,7 @@ export default {
         ...mapState(['companies'])
     },
     methods: {
+      ...mapActions(['saveFinancialReport']),
       addStatement(type) {
           this.statements.push({
               Type: type
@@ -113,6 +122,14 @@ export default {
       },
       removeStatement(ix) {
           this.statements.splice(ix, 1) // TODO: Put in vuex
+      },
+      saveReport() {
+        this.saveFinancialReport({
+            Company: this.chosenCompany,
+            Period: this.chosenPeriod,
+            StatementDate: this.chosenStatementDate,
+            IsAudited: this.isAudited,
+        });
       }
     }
 }

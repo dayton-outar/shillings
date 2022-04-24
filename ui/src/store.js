@@ -122,6 +122,15 @@ export const store = new Vuex.Store({
 
           //localStorage.setItem('my-statement-items', JSON.stringify(this.statementItems) )
         },
+        saveFinancialReport(state, payload) {
+          console.log({
+            Company: payload.Company,
+            Period: payload.Period,
+            StatementDate: payload.StatementDate,
+            IsAudited: payload.IsAudited,
+            Analytes: state.statementItems
+          });
+        },
         addPortfolio(state, payload) {
           const itrade = state.totalTradings.find(t => t.code === payload.security.code)
           let newPrice = itrade ? itrade.closingPrice : 0
@@ -288,6 +297,9 @@ export const store = new Vuex.Store({
         },
         removeStatementItem({ commit }, payload) {
           commit('removeStatementItem', payload)
+        },
+        saveFinancialReport({ commit }, payload) {
+          commit('saveFinancialReport', payload)
         }
     }
 })
