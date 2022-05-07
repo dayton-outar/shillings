@@ -303,3 +303,59 @@ export const store = new Vuex.Store({
         }
     }
 })
+
+// mutation {
+//   createFinancialReport(financialReport: {
+//     no: 1,
+//     company: {
+//       code: "NCBFG",
+//       name: "National Commercial Bank Financial Group",
+//       about: "",
+//       announcements: [],
+//       countryCode: "",
+//       created: "1779-01-01",
+//       founded: "1779-01-01",
+//       industries: [],
+//       industry: "",
+//       totalEmployed: 0,
+//       webSite: "",
+//       wiki: ""
+//     },
+//     period: QUARTERLY,
+//     statementDate: "2020-08-02",
+//     analytes: [
+//     {
+//       no: 1,
+//       sequence: 1,
+//       amount: 700,
+//       analyte: CAPITAL,
+//       section: EQUITY,
+//       type: FINANCIAL_POSITION,
+//       description: ""
+//     },
+//     {
+//       no: 1,
+//       sequence: 1,
+//       amount: 700,
+//       analyte: CAPITAL,
+//       section: EQUITY,
+//       type: FINANCIAL_POSITION,
+//       description: ""
+//     }],
+//     isAudited: true,
+//     log: {
+//       no: 0,
+//       type: APPLICATION,
+//       event: INFORMATION,
+//       details: "",
+//       logged: "2022-05-08"
+//     }
+//   }) {
+//     company {
+//       code,
+//       name
+//     },
+//     period,
+//     statementDate
+//   }
+// }
