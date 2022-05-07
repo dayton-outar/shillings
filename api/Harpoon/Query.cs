@@ -4,7 +4,6 @@ using HotChocolate;
 using HotChocolate.Data;
 using HotChocolate.Types;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Data.SqlClient;
 
 using O8Query.Models;
 using O8Query.Data;

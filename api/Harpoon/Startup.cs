@@ -54,6 +54,7 @@ namespace Harpoon
                 // TODO: For debugging purposes. Credit https://stackoverflow.com/questions/65764361/how-can-i-get-more-error-details-or-logging-when-an-exception-is-thrown-in-a-ho
                 .ModifyRequestOptions(opt => opt.IncludeExceptionDetails = _env.IsDevelopment())
                 .AddQueryType<Query>()
+                .AddMutationType<Mutation>()
                 .AddFiltering()
                 .AddSorting()
                 .AddProjections();
