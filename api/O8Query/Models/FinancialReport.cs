@@ -27,11 +27,11 @@ namespace O8Query.Models
         /// <summary>
         /// Describes this Financial Statement by using all the data points
         /// </summary>
-        [NotMapped]
-        public string Description 
-        { 
-            get{ return string.Empty; } 
-        }
+        // [NotMapped]
+        // public string Description 
+        // { 
+        //     get{ return string.Empty; } 
+        // }
 
         /// <summary>
         /// Reference to company core information
