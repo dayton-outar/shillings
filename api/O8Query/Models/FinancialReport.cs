@@ -64,6 +64,6 @@ namespace O8Query.Models
         [Required]
         public bool IsAudited { get; set; }
 
-        public virtual ICollection<StatementAnalyte> Analytes { get; set; }
+        public virtual List<StatementAnalyte> Analytes { get; set; }
     }
 }

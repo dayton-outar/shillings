@@ -28,6 +28,6 @@ namespace O8Query.Models
         [MaxLength(2100)]
         public string Wiki { get; set; }
 
-        public ICollection<Company> Companies { get; set; }
+        public List<Company> Companies { get; set; }
     }
 }

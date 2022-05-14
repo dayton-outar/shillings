@@ -74,6 +74,6 @@ namespace O8Query.Models
 
         public Log Log { get; set; }
 
-        public ICollection<Company> Companies { get; set; }
+        public List<Company> Companies { get; set; }
     }
 }
