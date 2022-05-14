@@ -47,7 +47,7 @@ namespace Harpoon
             
             rowsAffected = sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
 
-            return new FinancialReport();
+            return financialReport;
         }
     }
 }
