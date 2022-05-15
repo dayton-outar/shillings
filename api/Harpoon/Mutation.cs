@@ -16,17 +16,17 @@ namespace Harpoon
         public FinancialReport CreateFinancialReport([ScopedService]StocksQuery sq, FinancialReport financialReport)
         {
             // Adapted from https://www.codemag.com/Article/2101031/Calling-Stored-Procedures-with-the-Entity-Framework-in-.NET-5
-            // int rowsAffected;
-            // string sql = "EXEC [dbo].[CreateFinancialReport] @report";
+            int rowsAffected;
+            string sql = "EXEC [dbo].[CreateFinancialReport] @report";
             
             string financialReportXml = SerializationHelper.Serialize<FinancialReport>(financialReport);
-            // List<SqlParameter> parms = new List<SqlParameter>
-            // { 
-            //     // Create parameters
-            //     new SqlParameter { ParameterName = "@report", Value = financialReportXml }  
-            // };
+            List<SqlParameter> parms = new List<SqlParameter>
+            { 
+                // Create parameters
+                new SqlParameter { ParameterName = "@report", Value = financialReportXml }  
+            };
             
-            // rowsAffected = sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
+            rowsAffected = sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
 
             return financialReport;
         }
@@ -35,17 +35,17 @@ namespace Harpoon
         public FinancialReport UpdateFinancialReport([ScopedService]StocksQuery sq, FinancialReport financialReport)
         {
             // Adapted from https://www.codemag.com/Article/2101031/Calling-Stored-Procedures-with-the-Entity-Framework-in-.NET-5
-            // int rowsAffected;
-            // string sql = "EXEC [dbo].[UpdateFinancialReport] @report";
+            int rowsAffected;
+            string sql = "EXEC [dbo].[UpdateFinancialReport] @report";
             
             string financialReportXml = SerializationHelper.Serialize<FinancialReport>(financialReport);
-            // List<SqlParameter> parms = new List<SqlParameter>
-            // { 
-            //     // Create parameters
-            //     new SqlParameter { ParameterName = "@report", Value = financialReportXml }  
-            // };
+            List<SqlParameter> parms = new List<SqlParameter>
+            { 
+                // Create parameters
+                new SqlParameter { ParameterName = "@report", Value = financialReportXml }  
+            };
             
-            // rowsAffected = sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
+            rowsAffected = sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
 
             return financialReport;
         }
