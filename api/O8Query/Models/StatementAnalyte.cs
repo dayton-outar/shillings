@@ -1,6 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Xml.Serialization;
 
 namespace O8Query.Models
 {
@@ -8,40 +9,56 @@ namespace O8Query.Models
     {
         public enum StatementType
         {
-            Income,
-            FinancialPosition,
-            CashFlow
+            [XmlEnum("1")]
+            Income = 1,
+            [XmlEnum("2")]
+            FinancialPosition = 2,
+            [XmlEnum("3")]
+            CashFlow = 3
         }
 
         public enum Sectional
         {
             // Income
             // Credit: https://www.investopedia.com/terms/i/incomestatement.asp#toc-understanding-the-income-statement
-            Revenues,
-            Expenses,
-            Gains,
-            Losses,
+            [XmlEnum("1")]
+            Revenues = 1,
+            [XmlEnum("2")]
+            Expenses = 2,
+            [XmlEnum("3")]
+            Gains = 3,
+            [XmlEnum("4")]
+            Losses = 4,
 
             // Income - Profits Attributable
-            ProfitShare,
+            [XmlEnum("5")]
+            ProfitShare = 5,
 
             // Income - Company's Earnings per Stock Calculation
-            EarningsPerStock,
+            [XmlEnum("6")]
+            EarningsPerStock = 6,
 
             // Financial Position
-            Assets,
-            Liabilities,
-            Equity,
+            [XmlEnum("7")]
+            Assets = 7,
+            [XmlEnum("8")]
+            Liabilities = 8,
+            [XmlEnum("9")]
+            Equity = 9,
 
             // Financial Position - Equity Attributable
-            EquityShare,
+            [XmlEnum("10")]
+            EquityShare = 10,
 
             // Cash Flows
-            OperatingActivities,
+            [XmlEnum("11")]
+            OperatingActivities = 11,
 
-            FinancingActivities,
+            [XmlEnum("12")]
+            FinancingActivities = 12,
 
-            InvestingActivities
+            [XmlEnum("13")]
+            InvestingActivities = 13
         }
 
         [Flags]

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Xml.Serialization;
 
 namespace O8Query.Models
 {
@@ -12,8 +13,10 @@ namespace O8Query.Models
     {
         public enum Periodical
         {
-            Quarterly,
-            Annual
+            [XmlEnum("1")]
+            Quarterly = 1,
+            [XmlEnum("2")]
+            Annual = 2
         }
 
         /// <summary>

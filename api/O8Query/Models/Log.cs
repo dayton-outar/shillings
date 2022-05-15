@@ -15,8 +15,17 @@ namespace O8Query.Models
         [Flags]
         public enum LogType
         {
+            /// <summary>
+            /// Applications announcement or issue
+            /// </summary>
             Application = 1,
+            /// <summary>
+            /// Announcement
+            /// </summary>
             Announcement = 2,
+            /// <summary>
+            /// Stock update
+            /// </summary>
             Stock = 4,
             /// <summary>
             /// User activity
@@ -32,15 +41,15 @@ namespace O8Query.Models
             /// <summary>
             /// An information event. This indicates a significant, successful operation.
             /// </summary>
-            Information,
+            Information = 0,
             /// <summary>
             /// An error event. This indicates a significant problem the user should know about; usually a loss of functionality or data.
             /// </summary>
-            Warning,
+            Warning = 1,
             /// <summary>
             /// A warning event. This indicates a problem that is not immediately significant, but that may signify conditions that could cause future problems.
             /// </summary>
-            Error
+            Error = 2
         }
 
         /// <summary>
