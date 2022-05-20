@@ -7,4 +7,4 @@ cp /var/lib/docker/volumes/sql1data/_data/bkup/$bkfile /media/dayton/SAMSUNG/_po
 chmod 777 /media/dayton/SAMSUNG/_portfolio/bak/$bkfile
 
 # Remove file from container
-#docker exec zeus-sql rm /var/opt/mssql/bkup/$bkfile
+docker exec zeus-sql rm /var/opt/mssql/bkup/$bkfile
