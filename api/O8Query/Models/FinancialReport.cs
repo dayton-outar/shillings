@@ -68,5 +68,10 @@ namespace O8Query.Models
         public bool IsAudited { get; set; }
 
         public virtual List<StatementAnalyte> Analytes { get; set; }
+
+        public string Description()
+        {
+            return $"{Company.Name} {Period.ToString()} {StatementDate.Year.ToString()}";
+        }
     }
 }

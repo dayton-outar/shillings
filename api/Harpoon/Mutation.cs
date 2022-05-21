@@ -44,7 +44,7 @@ namespace Harpoon
                 // Create parameters
                 new SqlParameter { ParameterName = "@report", Value = financialReportXml }  
             };
-            
+            //financialReport.Analytes[0].Analyte.FromFlags();
             rowsAffected = sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
 
             return financialReport;

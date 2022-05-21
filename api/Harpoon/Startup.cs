@@ -55,6 +55,8 @@ namespace Harpoon
                 .ModifyRequestOptions(opt => opt.IncludeExceptionDetails = _env.IsDevelopment())
                 .AddQueryType<Query>()
                 .AddMutationType<Mutation>()
+                //.AddType<StatementAnalyteType>()
+                //.AddType<AssayEnumType>()
                 .AddFiltering()
                 .AddSorting()
                 .AddProjections();
