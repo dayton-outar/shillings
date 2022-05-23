@@ -11,12 +11,8 @@ namespace Harpoon
         protected override void Configure(IObjectTypeDescriptor<StatementAnalyte> descriptor)
         {
             descriptor
-                .Field("analyteFlags")
-                .Resolve(context => 
-                {
-                    //var q = context.
-                    return "boom";
-                });
+                .Field(f => f.Analyte)
+                .Resolve(context => context.Parent<StatementAnalyte>().AnalyteFlags());
         }
     }
 }

@@ -164,5 +164,10 @@ namespace O8Query.Models
         [Required]
         [Column(TypeName = "decimal(18,2)")]
         public decimal Amount { get; set; }
+
+        public List<Assay> AnalyteFlags()
+        {
+            return Enum.GetValues(typeof(Assay)).Cast<Assay>().Distinct().Where(t => this.Analyte.HasFlag(t)).ToList();
+        }
     }
 }

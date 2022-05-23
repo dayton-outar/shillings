@@ -12,25 +12,6 @@ namespace Harpoon
     // Adapted from: https://github.com/graphql-dotnet/graphql-dotnet/issues/1666
     public static class EnumExtensions
     {
-        public static IEnumerable<T> FromFlags<T>(this T value) where T : struct, Enum
-        {
-            return Enum.GetValues(typeof(T))
-                .Cast<T>()
-                .Distinct()
-                .Where(x => value.HasFlag(x));
-        }
-
-        public static IEnumerable<T> FromFlags<T>(this T? value) where T : struct, Enum
-        {
-            if (!value.HasValue)
-                return null;
-
-            return Enum.GetValues(typeof(T))
-                .Cast<T>()
-                .Distinct()
-                .Where(x => value.Value.HasFlag(x));
-        }
-
         // Adapted from: https://stackoverflow.com/questions/53636974/c-sharp-method-to-combine-a-generic-list-of-enum-values-to-a-single-value/53637933#53637933
         public static T ToCombined<T>(this IEnumerable<T> list) where T : struct, Enum
         {
