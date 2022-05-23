@@ -56,6 +56,7 @@ namespace Harpoon
                 .AddQueryType<Query>()
                 .AddMutationType<Mutation>()
                 .AddType<StatementAnalyteType>()
+                .AddType<StatementAnalyteInputType>()
                 .AddFiltering()
                 .AddSorting()
                 .AddProjections();

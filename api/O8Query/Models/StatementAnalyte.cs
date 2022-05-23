@@ -4,6 +4,7 @@ using System.Linq;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Xml.Serialization;
+using HotChocolate;
 
 namespace O8Query.Models
 {
@@ -165,6 +166,7 @@ namespace O8Query.Models
         [Column(TypeName = "decimal(18,2)")]
         public decimal Amount { get; set; }
 
+        [GraphQLIgnore]
         public List<Assay> AnalyteFlags()
         {
             return Enum.GetValues(typeof(Assay)).Cast<Assay>().Distinct().Where(t => this.Analyte.HasFlag(t)).ToList();
