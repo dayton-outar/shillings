@@ -19,14 +19,9 @@ namespace Harpoon
     public class StatementAnalyteInputType : InputObjectType<StatementAnalyte>
     {
         protected override void Configure(IInputObjectTypeDescriptor<StatementAnalyte> descriptor)
-        {
-            // descriptor
-            //     .Field(f => f.Analyte) //.Type<ListType<NonNullType<AssayEnumType>>>()
-            //     .Resolve(context => {
-            //         var q = context.Field;
-
-            //         return StatementAnalyte.Assay.Operating;
-            //     });
+        {            
+            descriptor
+                .Field(f => f.Analyte).Type<ListType<NonNullType<AssayEnumType>>>();
         }
     }
 }

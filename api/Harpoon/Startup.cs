@@ -12,7 +12,9 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Microsoft.EntityFrameworkCore;
+using HotChocolate.Types;
 
+using O8Query.Models;
 using O8Query.Data;
 
 namespace Harpoon
@@ -57,6 +59,7 @@ namespace Harpoon
                 .AddMutationType<Mutation>()
                 .AddType<StatementAnalyteType>()
                 .AddType<StatementAnalyteInputType>()
+                .AddTypeConverter<List<StatementAnalyte.Assay>, StatementAnalyte.Assay>(from => EnumExtension.ToCombined<StatementAnalyte.Assay>(from))
                 .AddFiltering()
                 .AddSorting()
                 .AddProjections();

@@ -441,6 +441,13 @@ namespace Sketching
 
             Console.WriteLine();
 
+            var asl = new List<StatementAnalyte.Assay>();
+            asl.Add(StatementAnalyte.Assay.Direct);
+            asl.Add(StatementAnalyte.Assay.Operating);
+            var ast = EnumExtension.ToCombined<StatementAnalyte.Assay>(asl);
+
+            Console.WriteLine("{0}", ast);
+
             // var revenue = qr2021.Analytes.Where(a => a.Section == StatementAnalyte.Sectional.Revenues).Sum(a => a.Amount);
             // Console.WriteLine("{0,-50} {1,20:c}", "Revenues", revenue);
             // Console.WriteLine();
