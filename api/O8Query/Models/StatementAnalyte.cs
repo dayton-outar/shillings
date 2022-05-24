@@ -12,11 +12,8 @@ namespace O8Query.Models
     {
         public enum StatementType
         {
-            [XmlEnum("1")]
             Income = 1,
-            [XmlEnum("2")]
             FinancialPosition = 2,
-            [XmlEnum("3")]
             CashFlow = 3
         }
 
@@ -24,43 +21,30 @@ namespace O8Query.Models
         {
             // Income
             // Credit: https://www.investopedia.com/terms/i/incomestatement.asp#toc-understanding-the-income-statement
-            [XmlEnum("1")]
             Revenues = 1,
-            [XmlEnum("2")]
             Expenses = 2,
-            [XmlEnum("3")]
             Gains = 3,
-            [XmlEnum("4")]
             Losses = 4,
 
             // Income - Profits Attributable
-            [XmlEnum("5")]
             ProfitShare = 5,
 
             // Income - Company's Earnings per Stock Calculation
-            [XmlEnum("6")]
             EarningsPerStock = 6,
 
             // Financial Position
-            [XmlEnum("7")]
             Assets = 7,
-            [XmlEnum("8")]
             Liabilities = 8,
-            [XmlEnum("9")]
             Equity = 9,
 
             // Financial Position - Equity Attributable
-            [XmlEnum("10")]
             EquityShare = 10,
 
             // Cash Flows
-            [XmlEnum("11")]
             OperatingActivities = 11,
 
-            [XmlEnum("12")]
             FinancingActivities = 12,
 
-            [XmlEnum("13")]
             InvestingActivities = 13
         }
 
@@ -145,19 +129,46 @@ namespace O8Query.Models
         /// Type of statement: Income-Expense, Financial Position, Cash Flow, Statement of Equity
         /// </summary>
         [Required]
+        [XmlIgnore]
         public StatementType Type { get; set; }
+
+        [GraphQLIgnore]
+        [XmlElement("Type")]
+        public int TypeInt
+        {
+            get { return (int)this.Analyte; }
+            set { this.Analyte = (Assay)value; }
+        }
 
         /// <summary>
         /// Section that this financial analyte is found: Income-Expense, Earnings per Stock, Assets, Liabilities, Equity
         /// </summary>
         [Required]
+        [XmlIgnore]
         public Sectional Section { get; set; }
+
+        [GraphQLIgnore]
+        [XmlElement("Section")]
+        public int SectionInt
+        {
+            get { return (int)this.Analyte; }
+            set { this.Analyte = (Assay)value; }
+        }
 
         /// <summary>
         /// Another differentiator used to group items for calculations
         /// </summary>
         [Required]
+        [XmlIgnore]
         public Assay Analyte { get; set; }
+
+        [GraphQLIgnore]
+        [XmlElement("Analyte")]
+        public int AnalyteInt
+        {
+            get { return (int)this.Analyte; }
+            set { this.Analyte = (Assay)value; }
+        }
 
         /// <summary>
         /// Amount stated within report
