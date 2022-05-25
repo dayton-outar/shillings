@@ -18,15 +18,24 @@ namespace Harpoon
             // Adapted from https://www.codemag.com/Article/2101031/Calling-Stored-Procedures-with-the-Entity-Framework-in-.NET-5
             int rowsAffected;
             string sql = "EXEC [dbo].[CreateFinancialReport] @report";
+
+            // var outputBitParameter = new SqlParameter
+            // {
+            //     ParameterName = "outputBit",
+            //     SqlDbType = SqlDbType.Bit,
+            //     Direction = ParameterDirection.Output
+            // };
             
             string financialReportXml = SerializationHelper.Serialize<FinancialReport>(financialReport);
             List<SqlParameter> parms = new List<SqlParameter>
             { 
                 // Create parameters
-                new SqlParameter { ParameterName = "@report", Value = financialReportXml }  
+                new SqlParameter { ParameterName = "@report", Value = financialReportXml }
             };
             
             rowsAffected = sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
+
+            // outputBit = outputBitParameter.Value as bool? ?? default(bool);
 
             return financialReport;
         }
