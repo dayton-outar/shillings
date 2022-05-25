@@ -136,8 +136,8 @@ namespace O8Query.Models
         [XmlElement("Type")]
         public int TypeInt
         {
-            get { return (int)this.Analyte; }
-            set { this.Analyte = (Assay)value; }
+            get { return (int)this.Type; }
+            set { this.Type = (StatementType)value; }
         }
 
         /// <summary>
@@ -151,8 +151,8 @@ namespace O8Query.Models
         [XmlElement("Section")]
         public int SectionInt
         {
-            get { return (int)this.Analyte; }
-            set { this.Analyte = (Assay)value; }
+            get { return (int)this.Section; }
+            set { this.Section = (Sectional)value; }
         }
 
         /// <summary>
