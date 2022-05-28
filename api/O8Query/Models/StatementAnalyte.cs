@@ -133,6 +133,7 @@ namespace O8Query.Models
         public StatementType Type { get; set; }
 
         [GraphQLIgnore]
+        [NotMapped]
         [XmlElement("Type")]
         public int TypeInt
         {
@@ -148,6 +149,7 @@ namespace O8Query.Models
         public Sectional Section { get; set; }
 
         [GraphQLIgnore]
+        [NotMapped]
         [XmlElement("Section")]
         public int SectionInt
         {
@@ -163,6 +165,7 @@ namespace O8Query.Models
         public Assay Analyte { get; set; }
 
         [GraphQLIgnore]
+        [NotMapped]
         [XmlElement("Analyte")]
         public int AnalyteInt
         {

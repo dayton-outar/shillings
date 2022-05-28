@@ -903,16 +903,16 @@ GO
 -- Create date: May 15, 2022
 -- Description:	Stores financial report including statement items
 -- =============================================
-CREATE PROCEDURE [dbo].[CreateFinancialReport]
-    @report XML
+ALTER PROCEDURE [dbo].[CreateFinancialReport]
+    @report XML,
+    @no BIGINT OUTPUT
 AS
     BEGIN
 	-- SET NOCOUNT ON added to prevent extra result sets from
 	-- interfering with SELECT statements.
-	SET NOCOUNT ON;
+	SET NOCOUNT OFF;
     --
-    DECLARE @no BIGINT = 0,
-            @logNo BIGINT = 0,
+    DECLARE @logNo BIGINT = 0,
             @companyCode NVARCHAR(20) = '',
             @period INT = 0,
             @statementDate DATE = NULL,

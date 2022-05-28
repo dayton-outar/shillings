@@ -1,7 +1,10 @@
+using System;
+using System.Linq;
+using System.Data;
+using System.Collections.Generic;
 using HotChocolate;
 using HotChocolate.Data;
 using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
 using Microsoft.Data.SqlClient;
 
 using O8Query.Models;
@@ -16,26 +19,24 @@ namespace Harpoon
         public FinancialReport CreateFinancialReport([ScopedService]StocksQuery sq, FinancialReport financialReport)
         {
             // Adapted from https://www.codemag.com/Article/2101031/Calling-Stored-Procedures-with-the-Entity-Framework-in-.NET-5
-            int rowsAffected;
-            string sql = "EXEC [dbo].[CreateFinancialReport] @report";
-
-            // var outputBitParameter = new SqlParameter
-            // {
-            //     ParameterName = "outputBit",
-            //     SqlDbType = SqlDbType.Bit,
-            //     Direction = ParameterDirection.Output
-            // };
+            string sql = "EXEC [dbo].[CreateFinancialReport] @report, @no OUTPUT";
             
             string financialReportXml = SerializationHelper.Serialize<FinancialReport>(financialReport);
             List<SqlParameter> parms = new List<SqlParameter>
             { 
                 // Create parameters
-                new SqlParameter { ParameterName = "@report", Value = financialReportXml }
+                new SqlParameter { ParameterName = "@report", Value = financialReportXml },
+                new SqlParameter { ParameterName = "@no", SqlDbType = SqlDbType.BigInt, Direction = ParameterDirection.Output }
             };
             
-            rowsAffected = sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
+            sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
 
-            // outputBit = outputBitParameter.Value as bool? ?? default(bool);
+            var param = parms.Where(p => p.ParameterName == "@no").First();
+            if (param.Value != null)
+            {
+                financialReport.No =  Convert.ToInt32(param.Value);
+            }            
+            financialReport.Analytes = sq.StatementAnalytes.Where(a => a.Report.No == financialReport.No).ToList();
 
             return financialReport;
         }
@@ -44,7 +45,6 @@ namespace Harpoon
         public FinancialReport UpdateFinancialReport([ScopedService]StocksQuery sq, FinancialReport financialReport)
         {
             // Adapted from https://www.codemag.com/Article/2101031/Calling-Stored-Procedures-with-the-Entity-Framework-in-.NET-5
-            int rowsAffected;
             string sql = "EXEC [dbo].[UpdateFinancialReport] @report";
             
             string financialReportXml = SerializationHelper.Serialize<FinancialReport>(financialReport);
@@ -53,8 +53,9 @@ namespace Harpoon
                 // Create parameters
                 new SqlParameter { ParameterName = "@report", Value = financialReportXml }  
             };
-            //financialReport.Analytes[0].Analyte.FromFlags();
-            rowsAffected = sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
+
+            sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
+            financialReport.Analytes = sq.StatementAnalytes.Where(a => a.Report.No == financialReport.No).ToList();
 
             return financialReport;
         }
