@@ -91,6 +91,7 @@
 
 <script>
 import { mapState, mapActions } from 'vuex'
+import _ from 'lodash'
 
 import FinancialStatement from './FinancialStatement.vue'
 
@@ -108,20 +109,34 @@ export default {
         }
     },
     beforeCreate() {
-        this.$store.dispatch('fetchCompanies')
+        this.$store.dispatch('fetchCompanies');
+        if (this.$route.query.no) {
+            this.$store.dispatch('fetchFinancialReport', parseInt(this.$route.query.no, 10))
+                .then(() => {
+                    if (this.statementItems) {
+                        this.statementItems.forEach(el => {
+                            if (!this.statements.find(sl => sl.Type == this.formatTitleCase( el.type ))) {
+                                this.statements.push({
+                                    Type: this.formatTitleCase( el.type )
+                                });
+                            }
+                        });
+                    }
+                });
+        }
     },
     computed: {
-        ...mapState(['companies'])
+        ...mapState(['companies', 'statementItems'])
     },
     methods: {
       ...mapActions(['saveFinancialReport']),
       addStatement(type) {
           this.statements.push({
               Type: type
-          }) // TODO: Put in vuex
+          }); // TODO: Put in vuex
       },
       removeStatement(ix) {
-          this.statements.splice(ix, 1) // TODO: Put in vuex
+          this.statements.splice(ix, 1); // TODO: Put in vuex
       },
       saveReport() {
         this.saveFinancialReport({
@@ -130,7 +145,10 @@ export default {
             StatementDate: this.chosenStatementDate,
             IsAudited: this.isAudited,
         });
-      }
+      },
+      formatTitleCase(plain) {
+        return _.startCase(plain.toLowerCase().replace('_', ' '));
+      },
     }
 }
 

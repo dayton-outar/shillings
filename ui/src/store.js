@@ -94,6 +94,9 @@ export const store = new Vuex.Store({
         setPortfolio(state, payload) {
           state.portfolioHoldings = payload
         },
+        setStatementItems(state, payload) {
+          state.statementItems = payload;
+        },
         addStatementItem(state, payload) {
           state.statementItems.push(payload)
 
@@ -166,6 +169,40 @@ export const store = new Vuex.Store({
         }
     },
     actions: {
+        async fetchFinancialReport({ commit }, no) {
+          const response = await graphQlClient.query({
+            query: gql`query Get($no: Long!) {
+              financialReports (
+                where: { no: { eq: $no } }                
+              ) {
+                nodes {
+                  company {
+                    code,
+                    name
+                  },
+                  description,
+                  period,
+                  statementDate,
+                  isAudited,
+                  analytes {
+                    no,
+                    sequence,
+                    description,
+                    section,
+                    type,
+                    analyte,
+                    amount
+                  }
+                }
+              }
+            }`,
+            variables: {
+              no: no
+            }
+          })
+          
+          commit('setStatementItems', response.data.financialReports.nodes[0].analytes)
+        },
         async fetchCompanies({ commit }) {
           const response = await graphQlClient.query({
             query: gql`query {

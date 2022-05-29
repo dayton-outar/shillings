@@ -166,8 +166,11 @@ export default {
         }
     },
     beforeCreate() {
-      this.$store.dispatch('fetchSections')
-      this.$store.dispatch('fetchAssays')
+      this.$store.dispatch('fetchSections');
+      this.$store.dispatch('fetchAssays');      
+    },
+    mounted () {
+        console.log( this.statementItems );
     },
     computed: {
         ...mapState(['sections', 'assays', 'statementItems']),
