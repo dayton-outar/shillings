@@ -169,13 +169,10 @@ export default {
       this.$store.dispatch('fetchSections');
       this.$store.dispatch('fetchAssays');      
     },
-    mounted () {
-        console.log( this.statementItems );
-    },
     computed: {
         ...mapState(['sections', 'assays', 'statementItems']),
         statementTypeItems() {
-            return this.statementItems.filter(s => s.type === this.type);
+            return this.statementItems.filter(s => s.type === this.type.replace(' ', '_').toUpperCase());
         },
         statementSections() {
             const iss = this.sections.findIndex(ss => ss.type.toLowerCase() === this.type.replace(' ', '_').toLowerCase());
