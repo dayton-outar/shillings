@@ -201,6 +201,10 @@ export const store = new Vuex.Store({
             }
           })
           
+          response.data.financialReports.nodes[0].analytes.forEach(el => {
+            el.state = 'Closed';
+          });
+
           commit('setStatementItems', response.data.financialReports.nodes[0].analytes)
         },
         async fetchCompanies({ commit }) {

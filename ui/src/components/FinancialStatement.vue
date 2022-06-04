@@ -25,7 +25,7 @@
                     :hoverable="true">
 
                     <b-table-column field="no" label="#" sortable v-slot="props">
-                        {{ props.row.no }}
+                        {{ props.row.sequence }}
                     </b-table-column>
 
                     <b-table-column field="description" label="Description" sortable v-slot="props">
@@ -80,13 +80,13 @@
                         <template>
                             <b-button
                                 v-if="getState(props.row.state)"
-                                @click="closeItem(props.row.no)"
+                                @click="closeItem(props.row.sequence)"
                                 size="is-small"
                                 type="is-info"
                                 icon-right="close" />
                             <b-button
                                 v-else
-                                @click="openItem(props.row.no)"
+                                @click="openItem(props.row.sequence)"
                                 size="is-small"
                                 type="is-info"
                                 icon-right="circle-edit-outline" />
@@ -96,7 +96,7 @@
                     <b-table-column v-slot="props">
                         <template>
                             <b-button                            
-                                @click="removeItem(props.row.no)"
+                                @click="removeItem(props.row.sequence)"
                                 size="is-small"
                                 type="is-danger"
                                 icon-right="delete" />
@@ -194,7 +194,7 @@ export default {
           this.iNo = (this.iNo + 1)
 
           this.addStatementItem({
-              no: this.iNo,
+              sequence: this.iNo,
               description: '',
               type: this.type,
               section: 0,
@@ -205,7 +205,7 @@ export default {
         },
         updateItem(n, p, v) {
             this.updateStatementItem({
-                no: n,
+                sequence: n,
                 type: this.type,
                 key: p,
                 value: v
@@ -213,7 +213,7 @@ export default {
         },
         removeItem(id) {
           this.removeStatementItem({
-              no: id,
+              sequence: id,
               type: this.type
           });
 
@@ -245,14 +245,15 @@ export default {
 
             return ias > -1 ? this.assays[ias].assay : [];
         },
-        openItem(no) {
-            const ix = this.statementTypeItems.findIndex(p => p.no === no);
+        openItem(sequence) {
+            console.log( sequence );
+            const ix = this.statementTypeItems.findIndex(p => p.sequence === sequence);
             if (ix > -1) {
-                this.statementTypeItems[ix].state = 'Opened';
+                this.statementTypeItems[ix].state = 'Opened'; // TODO: Need to have mutation for this
             }
         },
-        closeItem(no) {
-            const ix = this.statementTypeItems.findIndex(p => p.no === no);
+        closeItem(sequence) {
+            const ix = this.statementTypeItems.findIndex(p => p.sequence === sequence);
             if (ix > -1) {
                 this.statementTypeItems[ix].state = 'Closed';
             }
