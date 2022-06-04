@@ -97,6 +97,18 @@ export const store = new Vuex.Store({
         setStatementItems(state, payload) {
           state.statementItems = payload;
         },
+        openStatementItem(state, payload) {
+          const item = state.statementItems.find(p => p.type == payload.type && p.sequence === payload.sequence);
+          if (item) {
+            item.state = 'Opened';
+          }
+        },
+        closeStatementItem(state, payload) {
+          const item = state.statementItems.find(p => p.type == payload.type && p.sequence === payload.sequence);
+          if (item) {
+            item.state = 'Closed';
+          }
+        },
         addStatementItem(state, payload) {
           state.statementItems.push(payload)
 

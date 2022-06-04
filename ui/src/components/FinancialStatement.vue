@@ -246,17 +246,10 @@ export default {
             return ias > -1 ? this.assays[ias].assay : [];
         },
         openItem(sequence) {
-            console.log( sequence );
-            const ix = this.statementTypeItems.findIndex(p => p.sequence === sequence);
-            if (ix > -1) {
-                this.statementTypeItems[ix].state = 'Opened'; // TODO: Need to have mutation for this
-            }
+            this.$store.commit('openStatementItem', { type: this.type.replace(' ', '_').toUpperCase(), sequence: sequence });            
         },
         closeItem(sequence) {
-            const ix = this.statementTypeItems.findIndex(p => p.sequence === sequence);
-            if (ix > -1) {
-                this.statementTypeItems[ix].state = 'Closed';
-            }
+            this.$store.commit('closeStatementItem', { type: this.type.replace(' ', '_').toUpperCase(), sequence: sequence });
         },
         formatNet() {
             const netValue = this.statementTypeItems.reduce((t, v) => {
