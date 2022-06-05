@@ -47,13 +47,13 @@
                         <p v-else>{{ formatTitleCase(props.row.section) }}</p>
                     </b-table-column>
 
-                    <b-table-column field="analytes" label="" sortable v-slot="props">
+                    <b-table-column field="analyte" label="" sortable v-slot="props">
                         <b-field v-if="getState(props.row.state)">
-                            <b-dropdown :expanded="true" v-model="props.row.analytes" multiple aria-role="list" @change="updateItem(props.row.no, 'analytes', $event)">
+                            <b-dropdown :expanded="true" v-model="props.row.analyte" multiple aria-role="list" @change="updateItem(props.row.no, 'analytes', $event)">
 
                                 <template #trigger>
                                     <b-button type="is-light" expanded icon-right="menu-down">
-                                        ({{ props.row.analytes.length }})
+                                        ({{ props.row.analyte ? props.row.analyte.length : 0 }})
                                     </b-button>
                                 </template>
 
@@ -172,6 +172,7 @@ export default {
     computed: {
         ...mapState(['sections', 'assays', 'statementItems']),
         statementTypeItems() {
+            console.log( this.statementItems );
             return this.statementItems.filter(s => s.type === this.type.replace(' ', '_').toUpperCase());
         },
         statementSections() {
