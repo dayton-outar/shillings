@@ -181,6 +181,19 @@ export const store = new Vuex.Store({
         }
     },
     actions: {
+        async createFinancialReport({ commit }) {
+          const response = await graphQlClient.mutate({
+            mutation: gql`mutation CreateFinancialReport(report: FinancialReportInput) {
+              createFinancialReport(financialReport: {})
+            }`
+          })
+
+          response.data.financialReports.nodes[0].analytes.forEach(el => {
+            el.state = 'Closed';
+          });
+
+          commit('setStatementItems', response.data.financialReports.nodes[0].analytes)
+        },
         async fetchFinancialReport({ commit }, no) {
           const response = await graphQlClient.query({
             query: gql`query Get($no: Long!) {

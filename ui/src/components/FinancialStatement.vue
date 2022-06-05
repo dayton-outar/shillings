@@ -172,7 +172,6 @@ export default {
     computed: {
         ...mapState(['sections', 'assays', 'statementItems']),
         statementTypeItems() {
-            console.log( this.statementItems );
             return this.statementItems.filter(s => s.type === this.type.replace(' ', '_').toUpperCase());
         },
         statementSections() {
