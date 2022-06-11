@@ -98,13 +98,13 @@ export const store = new Vuex.Store({
           state.statementItems = payload;
         },
         openStatementItem(state, payload) {
-          const item = state.statementItems.find(p => p.type == payload.type && p.sequence === payload.sequence);
+          const item = state.statementItems.find(p => p.type.toLowerCase() === payload.type.replace(' ', '_').toLowerCase() && p.sequence === payload.sequence);
           if (item) {
             item.state = 'Opened';
           }
         },
         closeStatementItem(state, payload) {
-          const item = state.statementItems.find(p => p.type == payload.type && p.sequence === payload.sequence);
+          const item = state.statementItems.find(p => p.type.toLowerCase() === payload.type.replace(' ', '_').toLowerCase() && p.sequence === payload.sequence);
           if (item) {
             item.state = 'Closed';
           }
@@ -115,16 +115,16 @@ export const store = new Vuex.Store({
           //localStorage.setItem('my-statement-items', JSON.stringify(this.statementItems) )
         },
         updateStatementItem(state, payload) {
-          const ix = state.statementItems.findIndex(p => p.type === payload.type && p.no === payload.no);
-          //if (payload.key === 'amount') {
-              //payload.value = payload.value.toString().replace(/[^0-9.-]+/g,'');
-          //}
+          const ix = state.statementItems.findIndex(p => p.type.toLowerCase() === payload.type.replace(' ', '_').toLowerCase() && p.sequence === payload.sequence);
+          // if (payload.key === 'amount') {
+          //     payload.value = payload.value.toString().replace(/[^0-9.-]+/g,'');
+          // }
           state.statementItems[ix][payload.key] = payload.value;
 
           //localStorage.setItem('my-statement-items', JSON.stringify(this.statementItems) )
         },
         removeStatementItem(state, payload) {
-          const ix = state.statementItems.findIndex(p => p.type === payload.type && p.no === payload.no);
+          const ix = state.statementItems.findIndex(p => p.type.toLowerCase() === payload.type.replace(' ', '_').toLowerCase() && p.no === payload.no);
           if (ix > -1) {
             state.statementItems.splice(ix, 1);
             
@@ -181,14 +181,15 @@ export const store = new Vuex.Store({
         }
     },
     actions: {
-        async createFinancialReport({ commit }) {
+        async createFinancialReport({ commit }, request) {
+          console.log( request.Analytes );
           const response = await graphQlClient.mutate({
-            mutation: gql`mutation CreateFinancialReport($company, $period, $statementDate, $analytes, $logDescription, $logged) {
+            mutation: gql`mutation CreateFinancialReport($companyCode: String!, $companyName: String!, $period: Periodical!, $statementDate: DateTime!, $analytes: [StatementAnalyte], $logDescription: String!, $logged: DateTime!) {
               createFinancialReport(financialReport: {
                 no: 0,
                 company: {
-                  code: $company.Code,
-                  name: $company.Name,
+                  code: $companyCode,
+                  name: $companyName,
                   about: "",
                   announcements: [],
                   countryCode: "",
@@ -202,7 +203,7 @@ export const store = new Vuex.Store({
                 },
                 period: $period,
                 statementDate: $statementDate,
-                analytes: $analytes,
+                analytes: [],
                 isAudited: true,
                 log: {
                   no: 0,
@@ -231,7 +232,15 @@ export const store = new Vuex.Store({
                   amount
                 }
               }
-            }`
+            }`,
+            variables: {
+              companyCode: request.Company.code,
+              period: request.Period,
+              StatementDate: request.StatementDate,
+              logDescription: request.Description,
+              logged: request.Logged,
+              analytes: request.Analytes
+            }
           })
 
           response.data.financialReports.nodes[0].analytes.forEach(el => {

@@ -129,7 +129,7 @@ export default {
         ...mapState(['companies', 'statementItems'])
     },
     methods: {
-      ...mapActions(['saveFinancialReport']),
+      ...mapActions(['saveFinancialReport', 'createFinancialReport']),
       addStatement(type) {
           this.statements.push({
               Type: type
@@ -139,11 +139,14 @@ export default {
           this.statements.splice(ix, 1); // TODO: Put in vuex
       },
       saveReport() {
-        this.saveFinancialReport({
+        this.createFinancialReport({
             Company: this.chosenCompany,
             Period: this.chosenPeriod,
             StatementDate: this.chosenStatementDate,
+            Dscription: 'GK Annual Report',
             IsAudited: this.isAudited,
+            Logged: new Date(),
+            Analytes: JSON.parse( JSON.stringify(this.statementItems) ),
         });
       },
       formatTitleCase(plain) {

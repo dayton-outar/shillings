@@ -30,14 +30,14 @@
 
                     <b-table-column field="description" label="Description" sortable v-slot="props">
                         <b-field v-if="getState(props.row.state)">
-                            <b-input :value="props.row.description" @input="updateItem(props.row.no, 'description', $event)" />
+                            <b-input :value="props.row.description" @input="updateItem(props.row.sequence, 'description', $event)" />
                         </b-field>
                         <p v-else>{{ props.row.description }}</p>
                     </b-table-column>
 
                     <b-table-column field="section" label="" sortable v-slot="props">
                         <b-field v-if="getState(props.row.state)">
-                            <b-select placeholder="Choose Section" :value="props.row.section" @input="updateItem(props.row.no, 'section', $event)" expanded>
+                            <b-select placeholder="Choose Section" :value="props.row.section" @input="updateItem(props.row.sequence, 'section', $event)" expanded>
                                 <option 
                                     v-for="section in statementSections" 
                                     :key="section"
@@ -49,7 +49,7 @@
 
                     <b-table-column field="analyte" label="" sortable v-slot="props">
                         <b-field v-if="getState(props.row.state)">
-                            <b-dropdown :expanded="true" v-model="props.row.analyte" multiple aria-role="list" @change="updateItem(props.row.no, 'analytes', $event)">
+                            <b-dropdown :expanded="true" v-model="props.row.analyte" multiple aria-role="list" @change="updateItem(props.row.sequence, 'analytes', $event)">
 
                                 <template #trigger>
                                     <b-button type="is-light" expanded icon-right="menu-down">
@@ -71,7 +71,7 @@
 
                     <b-table-column field="amount" label="$'000" numeric sortable v-slot="props">
                         <b-field v-if="getState(props.row.state)">
-                            <b-input v-cleave="masks.price" custom-class="input-text-right" :value="props.row.amount" @input="updateItem(props.row.no, 'amount', $event)" />
+                            <b-input v-cleave="masks.price" custom-class="input-text-right" :value="props.row.amount" @input="updateItem(props.row.sequence, 'amount', $event)" />
                         </b-field>
                         <p v-else>{{ props.row.amount }}</p>
                     </b-table-column>
@@ -196,9 +196,9 @@ export default {
           this.addStatementItem({
               sequence: this.iNo,
               description: '',
-              type: this.type,
+              type: this.type.replace(' ', '_').toUpperCase(),
               section: 0,
-              analytes: this.selectedAnalytes,
+              analyte: this.selectedAnalytes,
               state: 'Opened',
               amount: 'J$'
           })
