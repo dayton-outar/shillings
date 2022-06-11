@@ -141,12 +141,12 @@ export default {
       saveReport() {
           // TODO: parse amounts to decimal by removing J$ prefix.
         this.prepStatementItems();
-        
+
         this.createFinancialReport({
             Company: this.chosenCompany,
             Period: this.chosenPeriod,
             StatementDate: this.chosenStatementDate,
-            Dscription: 'GK Annual Report',
+            Description: `${this.chosenCompany.name} ${_.startCase(this.chosenPeriod)} Report`,
             IsAudited: this.isAudited,
             Logged: new Date(),
             Analytes: JSON.parse( JSON.stringify(this.statementItems) ),

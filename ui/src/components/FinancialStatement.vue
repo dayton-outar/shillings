@@ -49,7 +49,7 @@
 
                     <b-table-column field="analyte" label="" sortable v-slot="props">
                         <b-field v-if="getState(props.row.state)">
-                            <b-dropdown :expanded="true" v-model="props.row.analyte" multiple aria-role="list" @change="updateItem(props.row.sequence, 'analytes', $event)">
+                            <b-dropdown :expanded="true" v-model="props.row.analyte" multiple aria-role="list" @change="updateItem(props.row.sequence, 'analyte', $event)">
 
                                 <template #trigger>
                                     <b-button type="is-light" expanded icon-right="menu-down">

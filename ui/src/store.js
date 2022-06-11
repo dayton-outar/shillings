@@ -252,11 +252,11 @@ export const store = new Vuex.Store({
             }
           })
 
-          response.data.financialReports.nodes[0].analytes.forEach(el => {
+          response.data.createFinancialReport.analytes.forEach(el => {
             el.state = 'Closed';
           });
 
-          commit('setStatementItems', response.data.financialReports.nodes[0].analytes)
+          commit('setStatementItems', response.data.createFinancialReport.analytes)
         },
         async fetchFinancialReport({ commit }, no) {
           const response = await graphQlClient.query({
