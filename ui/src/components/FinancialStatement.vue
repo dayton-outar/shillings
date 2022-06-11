@@ -194,6 +194,7 @@ export default {
           this.iNo = (this.iNo + 1)
 
           this.addStatementItem({
+              no: 0,
               sequence: this.iNo,
               description: '',
               type: this.type.replace(' ', '_').toUpperCase(),

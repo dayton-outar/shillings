@@ -137,6 +137,13 @@ export const store = new Vuex.Store({
 
           //localStorage.setItem('my-statement-items', JSON.stringify(this.statementItems) )
         },
+        preppedStatementItems(state) {
+          state.statementItems.map(i => {
+              i.amount = parseFloat(i.amount.toString().replace(/[^0-9.-]+/g,'')) || 0;
+              
+              return i;
+          })
+        },
         saveFinancialReport(state, payload) {
           console.log({
             Company: payload.Company,
@@ -182,9 +189,10 @@ export const store = new Vuex.Store({
     },
     actions: {
         async createFinancialReport({ commit }, request) {
-          console.log( request.Analytes );
+          console.log( request );
+
           const response = await graphQlClient.mutate({
-            mutation: gql`mutation CreateFinancialReport($companyCode: String!, $companyName: String!, $period: Periodical!, $statementDate: DateTime!, $analytes: [StatementAnalyte], $logDescription: String!, $logged: DateTime!) {
+            mutation: gql`mutation CreateFinancialReport($companyCode: String!, $companyName: String!, $period: Periodical!, $statementDate: DateTime!, $analytes: [StatementAnalyteInput], $logDescription: String!, $logged: DateTime!) {
               createFinancialReport(financialReport: {
                 no: 0,
                 company: {
@@ -203,7 +211,7 @@ export const store = new Vuex.Store({
                 },
                 period: $period,
                 statementDate: $statementDate,
-                analytes: [],
+                analytes: $analytes,
                 isAudited: true,
                 log: {
                   no: 0,
@@ -235,8 +243,9 @@ export const store = new Vuex.Store({
             }`,
             variables: {
               companyCode: request.Company.code,
+              companyName: request.Company.name,
               period: request.Period,
-              StatementDate: request.StatementDate,
+              statementDate: request.StatementDate,
               logDescription: request.Description,
               logged: request.Logged,
               analytes: request.Analytes
@@ -418,6 +427,9 @@ export const store = new Vuex.Store({
         },
         removeStatementItem({ commit }, payload) {
           commit('removeStatementItem', payload)
+        },
+        prepStatementItems( { commit } ) {
+          commit('preppedStatementItems')
         },
         saveFinancialReport({ commit }, payload) {
           commit('saveFinancialReport', payload)

@@ -26,8 +26,8 @@
                     v-model="chosenPeriod"
                     placeholder="Choose Period" 
                     expanded>
-                    <option value="0">Quarterly</option>
-                    <option value="1">Annual</option>
+                    <option value="QUARTERLY">Quarterly</option>
+                    <option value="ANNUAL">Annual</option>
                 </b-select>
             </b-field>
         </div>
@@ -126,10 +126,10 @@ export default {
         }
     },
     computed: {
-        ...mapState(['companies', 'statementItems'])
+        ...mapState(['companies', 'statementItems'])        
     },
     methods: {
-      ...mapActions(['saveFinancialReport', 'createFinancialReport']),
+      ...mapActions(['saveFinancialReport', 'createFinancialReport', 'prepStatementItems']),
       addStatement(type) {
           this.statements.push({
               Type: type
@@ -139,6 +139,9 @@ export default {
           this.statements.splice(ix, 1); // TODO: Put in vuex
       },
       saveReport() {
+          // TODO: parse amounts to decimal by removing J$ prefix.
+        this.prepStatementItems();
+        
         this.createFinancialReport({
             Company: this.chosenCompany,
             Period: this.chosenPeriod,
