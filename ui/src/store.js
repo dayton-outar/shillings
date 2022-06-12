@@ -190,7 +190,7 @@ export const store = new Vuex.Store({
     actions: {
         async createFinancialReport({ commit }, request) {
           const response = await graphQlClient.mutate({
-            mutation: gql`mutation CreateFinancialReport($companyCode: String!, $companyName: String!, $period: Periodical!, $statementDate: DateTime!, $isAudited: Bool!, $analytes: [StatementAnalyteInput], $logDescription: String!, $logged: DateTime!) {
+            mutation: gql`mutation CreateFinancialReport($companyCode: String!, $companyName: String!, $period: Periodical!, $statementDate: DateTime!, $isAudited: Boolean!, $analytes: [StatementAnalyteInput], $logDescription: String!, $logged: DateTime!) {
               createFinancialReport(financialReport: {
                 no: 0,
                 company: {
@@ -259,7 +259,7 @@ export const store = new Vuex.Store({
         },
         async updateFinancialReport({ commit }, request) {
           const response = await graphQlClient.mutate({
-            mutation: gql`mutation UpdateFinancialReport($no: Long!, $companyCode: String!, $companyName: String!, $period: Periodical!, $statementDate: DateTime!, $isAudited: Bool!, $analytes: [StatementAnalyteInput], $logDescription: String!, $logged: DateTime!) {
+            mutation: gql`mutation UpdateFinancialReport($no: Long!, $companyCode: String!, $companyName: String!, $period: Periodical!, $statementDate: DateTime!, $isAudited: Boolean!, $analytes: [StatementAnalyteInput], $logDescription: String!, $logged: DateTime!) {
               updateFinancialReport(financialReport: {
                 no: $no,
                 company: {
@@ -309,6 +309,7 @@ export const store = new Vuex.Store({
               }
             }`,
             variables: {
+              no: request.No,
               companyCode: request.Company.code,
               companyName: request.Company.name,
               period: request.Period,

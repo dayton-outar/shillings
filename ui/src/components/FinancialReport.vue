@@ -101,6 +101,7 @@ export default {
     },
     data() {
         return {
+            reportNo: null,
             chosenCompany: null,
             chosenPeriod: null,
             chosenStatementDate: null,
@@ -111,6 +112,7 @@ export default {
     beforeCreate() {
         this.$store.dispatch('fetchCompanies');
         if (this.$route.query.no) {
+            this.reportNo = this.$route.query.no;
             this.$store.dispatch('fetchFinancialReport', parseInt(this.$route.query.no, 10))
                 .then(() => {
                     if (this.statementItems) {
@@ -129,7 +131,7 @@ export default {
         ...mapState(['companies', 'statementItems'])        
     },
     methods: {
-      ...mapActions(['saveFinancialReport', 'createFinancialReport', 'prepStatementItems']),
+      ...mapActions(['saveFinancialReport', 'createFinancialReport', 'prepStatementItems', 'updateFinancialReport']),
       addStatement(type) {
           this.statements.push({
               Type: type
@@ -142,15 +144,29 @@ export default {
           // TODO: parse amounts to decimal by removing J$ prefix.
         this.prepStatementItems();
 
-        this.createFinancialReport({
-            Company: this.chosenCompany,
-            Period: this.chosenPeriod,
-            StatementDate: this.chosenStatementDate,
-            Description: `${this.chosenCompany.name} ${_.startCase(this.chosenPeriod)} Report`,
-            IsAudited: this.isAudited,
-            Logged: new Date(),
-            Analytes: JSON.parse( JSON.stringify(this.statementItems) ),
-        });
+        // if (this.reportNo) {
+            this.updateFinancialReport({
+                No: parseInt(this.$route.query.no, 10),
+                Company: this.chosenCompany,
+                Period: this.chosenPeriod,
+                StatementDate: this.chosenStatementDate,
+                Description: `${this.chosenCompany.name} ${_.startCase(this.chosenPeriod)} Report`,
+                IsAudited: this.isAudited,
+                Logged: new Date(),
+                Analytes: JSON.parse( JSON.stringify(this.statementItems) ),
+            });
+        // } else {
+            // this.createFinancialReport({
+            //     Company: this.chosenCompany,
+            //     Period: this.chosenPeriod,
+            //     StatementDate: this.chosenStatementDate,
+            //     Description: `${this.chosenCompany.name} ${_.startCase(this.chosenPeriod)} Report`,
+            //     IsAudited: this.isAudited,
+            //     Logged: new Date(),
+            //     Analytes: JSON.parse( JSON.stringify(this.statementItems) ),
+            // });
+        // }
+        
       },
       formatTitleCase(plain) {
         return _.startCase(plain.toLowerCase().replace('_', ' '));
