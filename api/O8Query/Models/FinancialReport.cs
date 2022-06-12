@@ -71,7 +71,7 @@ namespace O8Query.Models
 
         public string Description()
         {
-            return $"{Company.Name} {Period.ToString()} {StatementDate.Year.ToString()}";
+            return $"{Company.Name} {Period.ToString()} Report ({StatementDate.Year.ToString()})";
         }
     }
 }
