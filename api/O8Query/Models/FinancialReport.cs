@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Xml.Serialization;
@@ -71,7 +72,11 @@ namespace O8Query.Models
 
         public string Description()
         {
-            return $"{Company.Name} {Period.ToString()} Report ({StatementDate.Year.ToString()})";
+            // Adapted from: https://docs.microsoft.com/en-us/dotnet/api/system.globalization.textinfo.totitlecase?view=net-6.0
+            var ti = new CultureInfo("en-US", false).TextInfo;
+            string companyName = ti.ToTitleCase( Company.Name.ToLower() );
+
+            return $"{companyName} {Period.ToString()} Report ({StatementDate.Year.ToString()})";
         }
     }
 }
