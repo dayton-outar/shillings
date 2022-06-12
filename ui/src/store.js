@@ -189,8 +189,6 @@ export const store = new Vuex.Store({
     },
     actions: {
         async createFinancialReport({ commit }, request) {
-          console.log( request );
-
           const response = await graphQlClient.mutate({
             mutation: gql`mutation CreateFinancialReport($companyCode: String!, $companyName: String!, $period: Periodical!, $statementDate: DateTime!, $analytes: [StatementAnalyteInput], $logDescription: String!, $logged: DateTime!) {
               createFinancialReport(financialReport: {
