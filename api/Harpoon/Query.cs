@@ -184,6 +184,24 @@ namespace Harpoon
                             StatementAnalyte.Assay.Retained,
                             StatementAnalyte.Assay.NonControlling
                         }
+                },
+                new SectionalAnalytes {
+                    Sectional = StatementAnalyte.Sectional.OperatingActivities,
+                    Assay = new List<StatementAnalyte.Assay> {
+                            StatementAnalyte.Assay.Operating
+                        }
+                },
+                new SectionalAnalytes {
+                    Sectional = StatementAnalyte.Sectional.FinancingActivities,
+                    Assay = new List<StatementAnalyte.Assay> {
+                            StatementAnalyte.Assay.Capital
+                        }
+                },
+                new SectionalAnalytes {
+                    Sectional = StatementAnalyte.Sectional.InvestingActivities,
+                    Assay = new List<StatementAnalyte.Assay> {
+                            StatementAnalyte.Assay.Investment
+                        }
                 }
             };
         }

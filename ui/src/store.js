@@ -124,7 +124,7 @@ export const store = new Vuex.Store({
           //localStorage.setItem('my-statement-items', JSON.stringify(this.statementItems) )
         },
         removeStatementItem(state, payload) {
-          const ix = state.statementItems.findIndex(p => p.type.toLowerCase() === payload.type.replace(' ', '_').toLowerCase() && p.no === payload.no);
+          const ix = state.statementItems.findIndex(p => p.type.toLowerCase() === payload.type.replace(' ', '_').toLowerCase() && p.sequence === payload.sequence);
           if (ix > -1) {
             state.statementItems.splice(ix, 1);
             
@@ -234,6 +234,7 @@ export const store = new Vuex.Store({
                   no,
                   sequence,
                   description,
+                  section,
                   type,
                   sequence,
                   analyte,
