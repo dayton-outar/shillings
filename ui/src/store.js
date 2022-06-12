@@ -261,7 +261,7 @@ export const store = new Vuex.Store({
           const response = await graphQlClient.mutate({
             mutation: gql`mutation UpdateFinancialReport($no: Long!, $companyCode: String!, $companyName: String!, $period: Periodical!, $statementDate: DateTime!, $isAudited: Bool!, $analytes: [StatementAnalyteInput], $logDescription: String!, $logged: DateTime!) {
               updateFinancialReport(financialReport: {
-                no: 0,
+                no: $no,
                 company: {
                   code: $companyCode,
                   name: $companyName,
