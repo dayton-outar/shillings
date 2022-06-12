@@ -190,7 +190,7 @@ export const store = new Vuex.Store({
     actions: {
         async createFinancialReport({ commit }, request) {
           const response = await graphQlClient.mutate({
-            mutation: gql`mutation CreateFinancialReport($companyCode: String!, $companyName: String!, $period: Periodical!, $statementDate: DateTime!, $analytes: [StatementAnalyteInput], $logDescription: String!, $logged: DateTime!) {
+            mutation: gql`mutation CreateFinancialReport($companyCode: String!, $companyName: String!, $period: Periodical!, $statementDate: DateTime!, $isAudited: Bool!, $analytes: [StatementAnalyteInput], $logDescription: String!, $logged: DateTime!) {
               createFinancialReport(financialReport: {
                 no: 0,
                 company: {
@@ -210,7 +210,7 @@ export const store = new Vuex.Store({
                 period: $period,
                 statementDate: $statementDate,
                 analytes: $analytes,
-                isAudited: true,
+                isAudited: $isAudited,
                 log: {
                   no: 0,
                   type: ANNOUNCEMENT,
@@ -234,7 +234,6 @@ export const store = new Vuex.Store({
                   description,
                   section,
                   type,
-                  sequence,
                   analyte,
                   amount
                 }
@@ -245,6 +244,7 @@ export const store = new Vuex.Store({
               companyName: request.Company.name,
               period: request.Period,
               statementDate: request.StatementDate,
+              isAudited: request.IsAudited,
               logDescription: request.Description,
               logged: request.Logged,
               analytes: request.Analytes
@@ -256,6 +256,75 @@ export const store = new Vuex.Store({
           });
 
           commit('setStatementItems', response.data.createFinancialReport.analytes)
+        },
+        async updateFinancialReport({ commit }, request) {
+          const response = await graphQlClient.mutate({
+            mutation: gql`mutation UpdateFinancialReport($no: Long!, $companyCode: String!, $companyName: String!, $period: Periodical!, $statementDate: DateTime!, $isAudited: Bool!, $analytes: [StatementAnalyteInput], $logDescription: String!, $logged: DateTime!) {
+              updateFinancialReport(financialReport: {
+                no: 0,
+                company: {
+                  code: $companyCode,
+                  name: $companyName,
+                  about: "",
+                  announcements: [],
+                  countryCode: "",
+                  created: "1999-10-04",
+                  founded: "1779-01-01",
+                  industries: [],
+                  industry: "",
+                  totalEmployed: 0,
+                  webSite: "",
+                  wiki: ""
+                },
+                period: $period,
+                statementDate: $statementDate,
+                analytes: $analytes,
+                isAudited: $isAudited,
+                log: {
+                  no: 0,
+                  type: ANNOUNCEMENT,
+                  event: INFORMATION,
+                  details: $logDescription,
+                  logged: $logged
+                }
+              }) {
+                no
+                company {
+                  code,
+                  name
+                },
+                description,
+                period,
+                statementDate,
+                isAudited,
+                analytes {
+                  no,
+                  sequence,
+                  description,
+                  section,
+                  type,
+                  analyte,
+                  amount
+                }
+              }
+            }`,
+            variables: {
+              companyCode: request.Company.code,
+              companyName: request.Company.name,
+              period: request.Period,
+              statementDate: request.StatementDate,
+              isAudited: request.IsAudited,
+              logDescription: request.Description,
+              logged: request.Logged,
+              analytes: request.Analytes
+            }
+          })
+
+          response.data.updateFinancialReport.analytes.forEach(el => {
+            el.state = 'Closed';
+          });
+
+          commit('setStatementItems', response.data.updateFinancialReport.analytes)
         },
         async fetchFinancialReport({ commit }, no) {
           const response = await graphQlClient.query({
