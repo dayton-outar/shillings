@@ -144,15 +144,6 @@ export const store = new Vuex.Store({
               return i;
           })
         },
-        saveFinancialReport(state, payload) {
-          console.log({
-            Company: payload.Company,
-            Period: payload.Period,
-            StatementDate: payload.StatementDate,
-            IsAudited: payload.IsAudited,
-            Analytes: state.statementItems
-          });
-        },
         addPortfolio(state, payload) {
           const itrade = state.totalTradings.find(t => t.code === payload.security.code)
           let newPrice = itrade ? itrade.closingPrice : 0

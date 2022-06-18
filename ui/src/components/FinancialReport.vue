@@ -111,21 +111,6 @@ export default {
     },
     beforeCreate() {
         this.$store.dispatch('fetchCompanies');
-        if (this.$route.query.no) {
-            this.reportNo = this.$route.query.no;
-            this.$store.dispatch('fetchFinancialReport', parseInt(this.$route.query.no, 10))
-                .then(() => {
-                    if (this.statementItems) {
-                        this.statementItems.forEach(el => {
-                            if (!this.statements.find(sl => sl.Type == this.formatTitleCase( el.type ))) {
-                                this.statements.push({
-                                    Type: this.formatTitleCase( el.type )
-                                });
-                            }
-                        });
-                    }
-                });
-        }
     },
     computed: {
         ...mapState(['companies', 'statementItems'])        
@@ -171,6 +156,26 @@ export default {
       formatTitleCase(plain) {
         return _.startCase(plain.toLowerCase().replace('_', ' '));
       },
+    },
+    watch: {
+        $route(to) {
+            if (to.query.no) {
+                console.log( to.query.no );
+                this.reportNo = parseInt(to.query.no, 10);
+                this.$store.dispatch('fetchFinancialReport', this.reportNo)
+                    .then(() => {
+                        if (this.statementItems) {
+                            this.statementItems.forEach(el => {
+                                if (!this.statements.find(sl => sl.Type == this.formatTitleCase( el.type ))) {
+                                    this.statements.push({
+                                        Type: this.formatTitleCase( el.type )
+                                    });
+                                }
+                            });
+                        }
+                    });
+            }
+        }
     }
 }
 
