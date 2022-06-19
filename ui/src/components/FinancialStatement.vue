@@ -24,11 +24,11 @@
                     :striped="true" 
                     :hoverable="true">
 
-                    <b-table-column field="no" label="#" sortable v-slot="props">
+                    <b-table-column field="no" label="#" sortable v-slot="props" width="5%">
                         {{ props.row.sequence }}
                     </b-table-column>
 
-                    <b-table-column field="description" label="Description" sortable v-slot="props">
+                    <b-table-column field="description" label="Description" sortable v-slot="props" width="35%">
                         <b-field v-if="getState(props.row.state)">
                             <b-input :value="props.row.description" @input="updateItem(props.row.sequence, 'description', $event)" />
                         </b-field>
@@ -76,7 +76,7 @@
                         <p v-else>{{ props.row.amount }}</p>
                     </b-table-column>
 
-                    <b-table-column v-slot="props">
+                    <b-table-column v-slot="props" width="5%">
                         <template>
                             <b-button
                                 v-if="getState(props.row.state)"
@@ -93,7 +93,7 @@
                         </template>
                     </b-table-column>
 
-                    <b-table-column v-slot="props">
+                    <b-table-column v-slot="props" width="5%">
                         <template>
                             <b-button                            
                                 @click="removeItem(props.row.sequence)"
@@ -148,7 +148,6 @@ export default {
             defaultSortDirection: 'desc',
             sortIcon: 'arrow-up',
             sortIconSize: 'is-small',
-            chosenCompany: null,
             selectedAnalytes: [],
             masks: {
                 price: {
@@ -170,9 +169,9 @@ export default {
       this.$store.dispatch('fetchAssays');      
     },
     computed: {
-        ...mapState(['sections', 'assays', 'statementItems']),
+        ...mapState(['sections', 'assays', 'financialReport']),
         statementTypeItems() {
-            return this.statementItems.filter(s => s.type === this.type.replace(' ', '_').toUpperCase());
+            return this.financialReport.analytes.filter(s => s.type === this.type.replace(' ', '_').toUpperCase());
         },
         statementSections() {
             const iss = this.sections.findIndex(ss => ss.type.toLowerCase() === this.type.replace(' ', '_').toLowerCase());
@@ -222,7 +221,7 @@ export default {
               this.iNo = 0;
           }
           
-          //localStorage.setItem('my-statement-items', JSON.stringify(this.statementItems) )
+          //localStorage.setItem('my-statement-items', JSON.stringify(this.financialReport.analytes) )
         },
         flushItems() {
           //this.flushStatementItems()

@@ -16,6 +16,15 @@ export const store = new Vuex.Store({
       portfolioHoldings: [],
       sections: [],
       assays: [],
+      financialReport: {
+        no: null,
+        company: null,
+        description: null,
+        period: null,
+        statementDate: null,
+        isAudited: null,
+        analytes: []
+      },
       statementItems: []
     },
     getters: {
@@ -94,51 +103,51 @@ export const store = new Vuex.Store({
         setPortfolio(state, payload) {
           state.portfolioHoldings = payload
         },
-        setStatementItems(state, payload) {
-          state.statementItems = payload;
+        setFinancialReport(state, payload) {
+          state.financialReport = payload;
         },
         openStatementItem(state, payload) {
-          const item = state.statementItems.find(p => p.type.toLowerCase() === payload.type.replace(' ', '_').toLowerCase() && p.sequence === payload.sequence);
+          const item = state.financialReport.analytes.find(p => p.type.toLowerCase() === payload.type.replace(' ', '_').toLowerCase() && p.sequence === payload.sequence);
           if (item) {
             item.state = 'Opened';
           }
         },
         closeStatementItem(state, payload) {
-          const item = state.statementItems.find(p => p.type.toLowerCase() === payload.type.replace(' ', '_').toLowerCase() && p.sequence === payload.sequence);
+          const item = state.financialReport.analytes.find(p => p.type.toLowerCase() === payload.type.replace(' ', '_').toLowerCase() && p.sequence === payload.sequence);
           if (item) {
             item.state = 'Closed';
           }
         },
         addStatementItem(state, payload) {
-          state.statementItems.push(payload)
+          state.financialReport.analytes.push(payload)
 
-          //localStorage.setItem('my-statement-items', JSON.stringify(this.statementItems) )
+          //localStorage.setItem('my-statement-items', JSON.stringify(this.financialReport.analytes) )
         },
         updateStatementItem(state, payload) {
-          const ix = state.statementItems.findIndex(p => p.type.toLowerCase() === payload.type.replace(' ', '_').toLowerCase() && p.sequence === payload.sequence);
+          const ix = state.financialReport.analytes.findIndex(p => p.type.toLowerCase() === payload.type.replace(' ', '_').toLowerCase() && p.sequence === payload.sequence);
           // if (payload.key === 'amount') {
           //     payload.value = payload.value.toString().replace(/[^0-9.-]+/g,'');
           // }
-          state.statementItems[ix][payload.key] = payload.value;
+          state.financialReport.analytes[ix][payload.key] = payload.value;
 
-          //localStorage.setItem('my-statement-items', JSON.stringify(this.statementItems) )
+          //localStorage.setItem('my-statement-items', JSON.stringify(this.financialReport.analytes) )
         },
         removeStatementItem(state, payload) {
-          const ix = state.statementItems.findIndex(p => p.type.toLowerCase() === payload.type.replace(' ', '_').toLowerCase() && p.sequence === payload.sequence);
+          const ix = state.financialReport.analytes.findIndex(p => p.type.toLowerCase() === payload.type.replace(' ', '_').toLowerCase() && p.sequence === payload.sequence);
           if (ix > -1) {
-            state.statementItems.splice(ix, 1);
+            state.financialReport.analytes.splice(ix, 1);
             
-            for (let i = ix; i < state.statementItems.length; i++) {
-              if (state.statementItems[i].type === payload.type) {
-                state.statementItems[i].no = (state.statementItems[i].no - 1);
+            for (let i = ix; i < state.financialReport.analytes.length; i++) {
+              if (state.financialReport.analytes[i].type === payload.type) {
+                state.financialReport.analytes[i].no = (state.financialReport.analytes[i].no - 1);
               }              
             }
           }
 
-          //localStorage.setItem('my-statement-items', JSON.stringify(this.statementItems) )
+          //localStorage.setItem('my-statement-items', JSON.stringify(this.financialReport.analytes) )
         },
         preppedStatementItems(state) {
-          state.statementItems.map(i => {
+          state.financialReport.analytes.map(i => {
               i.amount = parseFloat(i.amount.toString().replace(/[^0-9.-]+/g,'')) || 0;
               
               return i;
@@ -176,6 +185,15 @@ export const store = new Vuex.Store({
         flushPortfolio(state) {
           state.portfolioHoldings = []
           localStorage.removeItem('my-portfolio')
+        },
+        updateReportCompany(state, payload) {
+          state.financialReport.company = payload
+        },
+        updateReportDate(state, payload) {
+          state.financialReport.statementDate = payload.toJSON()
+        },
+        updateReportIsAudit(state, payload) {
+          state.financialReport.isAudited = payload
         }
     },
     actions: {
@@ -246,7 +264,7 @@ export const store = new Vuex.Store({
             el.state = 'Closed';
           });
 
-          commit('setStatementItems', response.data.createFinancialReport.analytes)
+          commit('setFinancialReport', response.data.createFinancialReport)
         },
         async updateFinancialReport({ commit }, request) {
           const response = await graphQlClient.mutate({
@@ -316,7 +334,7 @@ export const store = new Vuex.Store({
             el.state = 'Closed';
           });
 
-          commit('setStatementItems', response.data.updateFinancialReport.analytes)
+          commit('setFinancialReport', response.data.updateFinancialReport)
         },
         async fetchFinancialReport({ commit }, no) {
           const response = await graphQlClient.query({
@@ -325,6 +343,7 @@ export const store = new Vuex.Store({
                 where: { no: { eq: $no } }                
               ) {
                 nodes {
+                  no,
                   company {
                     code,
                     name
@@ -354,7 +373,7 @@ export const store = new Vuex.Store({
             el.state = 'Closed';
           });
 
-          commit('setStatementItems', response.data.financialReports.nodes[0].analytes)
+          commit('setFinancialReport', response.data.financialReports.nodes[0])
         },
         async fetchCompanies({ commit }) {
           const response = await graphQlClient.query({
@@ -490,6 +509,9 @@ export const store = new Vuex.Store({
         },
         prepStatementItems( { commit } ) {
           commit('preppedStatementItems')
+        },
+        updateFinancialReportCompany( { commit }, value) {
+          commit('updateReportCompany', value)
         },
         saveFinancialReport({ commit }, payload) {
           commit('saveFinancialReport', payload)

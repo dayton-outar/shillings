@@ -23,7 +23,7 @@
                 label="Period"
                 label-position="inside">
                 <b-select 
-                    v-model="chosenPeriod"
+                    v-model="this.financialReport.period"
                     placeholder="Choose Period" 
                     expanded>
                     <option value="QUARTERLY">Quarterly</option>
@@ -37,7 +37,7 @@
                 label-position="inside">
                 <b-datepicker
                     ref="datepicker"                    
-                    v-model="chosenStatementDate"
+                    v-model="statementDate"
                     label-position=""
                     placeholder="Set Statement Date"
                     expanded>
@@ -101,11 +101,6 @@ export default {
     },
     data() {
         return {
-            reportNo: null,
-            chosenCompany: null,
-            chosenPeriod: null,
-            chosenStatementDate: null,
-            isAudited: null,
             statements: []
         }
     },
@@ -113,7 +108,31 @@ export default {
         this.$store.dispatch('fetchCompanies');
     },
     computed: {
-        ...mapState(['companies', 'statementItems'])        
+        ...mapState(['companies', 'financialReport']),
+        chosenCompany: {
+            get() {
+                return this.financialReport.company
+            },
+            set(value) {
+                this.$store.commit('updateReportCompany', value)
+            }
+        },
+        statementDate: {
+            get() {
+                return new Date(this.financialReport.statementDate)
+            },
+            set(value){
+                this.$store.commit('updateReportDate', value)
+            }
+        },
+        isAudited: {
+            get() {
+                return this.financialReport.isAudited
+            },
+            set(value) {
+                this.$store.commit('updateReportIsAudit', value)
+            }
+        }
     },
     methods: {
       ...mapActions(['saveFinancialReport', 'createFinancialReport', 'prepStatementItems', 'updateFinancialReport']),
@@ -129,18 +148,20 @@ export default {
           // TODO: parse amounts to decimal by removing J$ prefix.
         this.prepStatementItems();
 
-        // if (this.reportNo) {
-            this.updateFinancialReport({
-                No: parseInt(this.$route.query.no, 10),
-                Company: this.chosenCompany,
-                Period: this.chosenPeriod,
-                StatementDate: this.chosenStatementDate,
-                Description: `${this.chosenCompany.name} ${_.startCase(this.chosenPeriod)} Report`,
-                IsAudited: this.isAudited,
-                Logged: new Date(),
-                Analytes: JSON.parse( JSON.stringify(this.statementItems) ),
-            });
-        // } else {
+        if (this.reportNo) {
+            console.log( 'Update' );
+            // this.updateFinancialReport({
+            //     No: parseInt(this.$route.query.no, 10),
+            //     Company: this.chosenCompany,
+            //     Period: this.chosenPeriod,
+            //     StatementDate: this.chosenStatementDate,
+            //     Description: `${this.chosenCompany.name} ${_.startCase(this.chosenPeriod)} Report`,
+            //     IsAudited: this.isAudited,
+            //     Logged: new Date(),
+            //     Analytes: JSON.parse( JSON.stringify(this.financialReport.analytes) ),
+            // });
+        } else {
+            console.log( 'Create' );
             // this.createFinancialReport({
             //     Company: this.chosenCompany,
             //     Period: this.chosenPeriod,
@@ -148,9 +169,9 @@ export default {
             //     Description: `${this.chosenCompany.name} ${_.startCase(this.chosenPeriod)} Report`,
             //     IsAudited: this.isAudited,
             //     Logged: new Date(),
-            //     Analytes: JSON.parse( JSON.stringify(this.statementItems) ),
+            //     Analytes: JSON.parse( JSON.stringify(this.financialReport.analytes) ),
             // });
-        // }
+        }
         
       },
       formatTitleCase(plain) {
@@ -160,12 +181,11 @@ export default {
     watch: {
         $route(to) {
             if (to.query.no) {
-                console.log( to.query.no );
-                this.reportNo = parseInt(to.query.no, 10);
-                this.$store.dispatch('fetchFinancialReport', this.reportNo)
+                //this.report.no = parseInt(to.query.no, 10);
+                this.$store.dispatch('fetchFinancialReport', parseInt(to.query.no, 10))
                     .then(() => {
-                        if (this.statementItems) {
-                            this.statementItems.forEach(el => {
+                        if (this.financialReport.analytes) {
+                            this.financialReport.analytes.forEach(el => {
                                 if (!this.statements.find(sl => sl.Type == this.formatTitleCase( el.type ))) {
                                     this.statements.push({
                                         Type: this.formatTitleCase( el.type )
@@ -174,6 +194,8 @@ export default {
                             });
                         }
                     });
+            } else {
+                //this.report.no = null;
             }
         }
     }
