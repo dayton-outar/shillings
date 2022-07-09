@@ -107,9 +107,6 @@ export const store = new Vuex.Store({
         setFinancialReport(state, payload) {
           state.financialReport = payload
         },
-        setFinancialReportCompany(state, payload) {
-          state.financialReportCompany = payload
-        },
         openStatementItem(state, payload) {
           const item = state.financialReport.analytes.find(p => p.type.toLowerCase() === payload.type.replace(' ', '_').toLowerCase() && p.sequence === payload.sequence);
           if (item) {
