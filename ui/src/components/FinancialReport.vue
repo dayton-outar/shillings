@@ -108,7 +108,7 @@ export default {
         this.$store.dispatch('fetchCompanies');
     },
     computed: {
-        ...mapState(['companies', 'financialReport']),
+        ...mapState(['companies', 'financialReport', 'financialReportCompany']),
         chosenCompany: {
             get() {
                 return this.financialReport.company

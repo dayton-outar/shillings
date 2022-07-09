@@ -18,13 +18,14 @@ export const store = new Vuex.Store({
       assays: [],
       financialReport: {
         no: null,
-        company: null,
+        company: {},
         description: null,
         period: null,
         statementDate: null,
         isAudited: null,
         analytes: []
       },
+      financialReportCompany: null,
       statementItems: []
     },
     getters: {
@@ -104,7 +105,10 @@ export const store = new Vuex.Store({
           state.portfolioHoldings = payload
         },
         setFinancialReport(state, payload) {
-          state.financialReport = payload;
+          state.financialReport = payload
+        },
+        setFinancialReportCompany(state, payload) {
+          state.financialReportCompany = payload
         },
         openStatementItem(state, payload) {
           const item = state.financialReport.analytes.find(p => p.type.toLowerCase() === payload.type.replace(' ', '_').toLowerCase() && p.sequence === payload.sequence);
@@ -373,7 +377,7 @@ export const store = new Vuex.Store({
             el.state = 'Closed';
           });
 
-          commit('setFinancialReport', response.data.financialReports.nodes[0])
+          commit('setFinancialReport', response.data.financialReports.nodes[0])          
         },
         async fetchCompanies({ commit }) {
           const response = await graphQlClient.query({
@@ -385,8 +389,7 @@ export const store = new Vuex.Store({
               ) {
                 nodes {
                   code,
-                  name,
-                  created
+                  name
                 }
               }
             }`
