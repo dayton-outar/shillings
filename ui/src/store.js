@@ -18,14 +18,13 @@ export const store = new Vuex.Store({
       assays: [],
       financialReport: {
         no: null,
-        company: {},
+        company: null,
         description: null,
         period: null,
         statementDate: null,
         isAudited: null,
         analytes: []
       },
-      financialReportCompany: null,
       statementItems: []
     },
     getters: {
@@ -198,7 +197,7 @@ export const store = new Vuex.Store({
         }
     },
     actions: {
-        async createFinancialReport({ commit }, request) {
+        async createFinancialReport({ commit }) {
           const response = await graphQlClient.mutate({
             mutation: gql`mutation CreateFinancialReport($companyCode: String!, $companyName: String!, $period: Periodical!, $statementDate: DateTime!, $isAudited: Boolean!, $analytes: [StatementAnalyteInput], $logDescription: String!, $logged: DateTime!) {
               createFinancialReport(financialReport: {
@@ -250,14 +249,14 @@ export const store = new Vuex.Store({
               }
             }`,
             variables: {
-              companyCode: request.Company.code,
-              companyName: request.Company.name,
-              period: request.Period,
-              statementDate: request.StatementDate,
-              isAudited: request.IsAudited,
-              logDescription: request.Description,
-              logged: request.Logged,
-              analytes: request.Analytes
+              companyCode: this.financialReport.company.code,
+              companyName: this.financialReport.company.name,
+              period: this.financialReport.period,
+              statementDate: this.financialReport.statementDate,
+              isAudited: this.financialReport.isAudited,
+              logDescription: this.financialReport.description,
+              logged: this.financialReport.logged,
+              analytes: this.financialReport.analytes
             }
           })
 
@@ -267,7 +266,7 @@ export const store = new Vuex.Store({
 
           commit('setFinancialReport', response.data.createFinancialReport)
         },
-        async updateFinancialReport({ commit }, request) {
+        async updateFinancialReport({ commit }) {
           const response = await graphQlClient.mutate({
             mutation: gql`mutation UpdateFinancialReport($no: Long!, $companyCode: String!, $companyName: String!, $period: Periodical!, $statementDate: DateTime!, $isAudited: Boolean!, $analytes: [StatementAnalyteInput], $logDescription: String!, $logged: DateTime!) {
               updateFinancialReport(financialReport: {
@@ -319,15 +318,14 @@ export const store = new Vuex.Store({
               }
             }`,
             variables: {
-              no: request.No,
-              companyCode: request.Company.code,
-              companyName: request.Company.name,
-              period: request.Period,
-              statementDate: request.StatementDate,
-              isAudited: request.IsAudited,
-              logDescription: request.Description,
-              logged: request.Logged,
-              analytes: request.Analytes
+              companyCode: this.financialReport.company.code,
+              companyName: this.financialReport.company.name,
+              period: this.financialReport.period,
+              statementDate: this.financialReport.statementDate,
+              isAudited: this.financialReport.isAudited,
+              logDescription: this.financialReport.description,
+              logged: this.financialReport.logged,
+              analytes: this.financialReport.analytes
             }
           })
 
@@ -482,6 +480,17 @@ export const store = new Vuex.Store({
               })
           
           commit('setAssays', response.data.assays)
+        },
+        flushFinancialReport() {
+          this.commit('setFinancialReport', {
+            no: null,
+            company: {},
+            description: null,
+            period: null,
+            statementDate: null,
+            isAudited: null,
+            analytes: []
+          })
         },
         getPortfolio({ commit }) {
           commit('setPortfolio', JSON.parse(localStorage.getItem('my-portfolio')) )

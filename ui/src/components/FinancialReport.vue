@@ -119,7 +119,7 @@ export default {
         },
         statementDate: {
             get() {
-                return new Date(this.financialReport.statementDate)
+                return this.financialReport.statementDate ? new Date(this.financialReport.statementDate) : null
             },
             set(value){
                 this.$store.commit('updateReportDate', value)
@@ -135,42 +135,25 @@ export default {
         }
     },
     methods: {
-      ...mapActions(['saveFinancialReport', 'createFinancialReport', 'prepStatementItems', 'updateFinancialReport']),
+      ...mapActions(['saveFinancialReport', 'createFinancialReport', 'prepStatementItems', 'updateFinancialReport', 'flushFinancialReport']),
       addStatement(type) {
           this.statements.push({
               Type: type
-          }); // TODO: Put in vuex
+          });
       },
       removeStatement(ix) {
-          this.statements.splice(ix, 1); // TODO: Put in vuex
+          this.statements.splice(ix, 1);
       },
       saveReport() {
-          // TODO: parse amounts to decimal by removing J$ prefix.
+        // TODO: Validate
         this.prepStatementItems();
 
-        if (this.reportNo) {
-            console.log( 'Update' );
-            // this.updateFinancialReport({
-            //     No: parseInt(this.$route.query.no, 10),
-            //     Company: this.chosenCompany,
-            //     Period: this.chosenPeriod,
-            //     StatementDate: this.chosenStatementDate,
-            //     Description: `${this.chosenCompany.name} ${_.startCase(this.chosenPeriod)} Report`,
-            //     IsAudited: this.isAudited,
-            //     Logged: new Date(),
-            //     Analytes: JSON.parse( JSON.stringify(this.financialReport.analytes) ),
-            // });
+        if (this.financialReport.no) {
+            console.log( 'Update', this.financialReport.no );
+            // this.updateFinancialReport();
         } else {
             console.log( 'Create' );
-            // this.createFinancialReport({
-            //     Company: this.chosenCompany,
-            //     Period: this.chosenPeriod,
-            //     StatementDate: this.chosenStatementDate,
-            //     Description: `${this.chosenCompany.name} ${_.startCase(this.chosenPeriod)} Report`,
-            //     IsAudited: this.isAudited,
-            //     Logged: new Date(),
-            //     Analytes: JSON.parse( JSON.stringify(this.financialReport.analytes) ),
-            // });
+            // this.createFinancialReport();
         }
         
       },
@@ -180,10 +163,11 @@ export default {
     },
     watch: {
         $route(to) {
+            this.statements = []; // flush statements
+
             if (to.query.no) {
-                //this.report.no = parseInt(to.query.no, 10);
                 this.$store.dispatch('fetchFinancialReport', parseInt(to.query.no, 10))
-                    .then(() => {
+                    .then(() => {                        
                         if (this.financialReport.analytes) {
                             this.financialReport.analytes.forEach(el => {
                                 if (!this.statements.find(sl => sl.Type == this.formatTitleCase( el.type ))) {
@@ -195,7 +179,7 @@ export default {
                         }
                     });
             } else {
-                //this.report.no = null;
+                this.flushFinancialReport();
             }
         }
     }
