@@ -189,6 +189,9 @@ export const store = new Vuex.Store({
         updateReportCompany(state, payload) {
           state.financialReport.company = payload
         },
+        updateReportPeriod(state, payload) {
+          state.financialReport.period = payload
+        },
         updateReportDate(state, payload) {
           state.financialReport.statementDate = payload.toJSON()
         },

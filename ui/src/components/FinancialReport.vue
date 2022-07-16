@@ -5,7 +5,9 @@
         <div class="column">
             <b-field
                 label="Company"
-                label-position="inside">
+                label-position="inside"
+                :type="vCompany.type"
+                :message="vCompany.message">
                 <b-select 
                   v-model="chosenCompany"
                   placeholder="Choose Company">
@@ -21,9 +23,11 @@
         <div class="column is-one-fifth">
             <b-field 
                 label="Period"
-                label-position="inside">
+                label-position="inside"
+                :type="vPeriod.type"
+                :message="vPeriod.message">
                 <b-select 
-                    v-model="this.financialReport.period"
+                    v-model="period"
                     placeholder="Choose Period" 
                     expanded>
                     <option value="QUARTERLY">Quarterly</option>
@@ -34,7 +38,9 @@
         <div class="column is-one-fifth">
             <b-field
                 label="Date"
-                label-position="inside">
+                label-position="inside"
+                :type="vStatementDate.type"
+                :message="vStatementDate.message">
                 <b-datepicker
                     ref="datepicker"                    
                     v-model="statementDate"
@@ -101,7 +107,19 @@ export default {
     },
     data() {
         return {
-            statements: []
+            statements: [],
+            vCompany: {
+                type: '',
+                message: ''
+            },
+            vPeriod: {
+                type: '',
+                message: ''
+            },
+            vStatementDate: {
+                type: '',
+                message: ''
+            }
         }
     },
     beforeCreate() {
@@ -115,6 +133,14 @@ export default {
             },
             set(value) {
                 this.$store.commit('updateReportCompany', value)
+            }
+        },
+        period: {
+            get() {
+                return this.financialReport.period
+            },
+            set(value) {
+                this.$store.commit('updateReportPeriod', value)
             }
         },
         statementDate: {
@@ -145,17 +171,49 @@ export default {
           this.statements.splice(ix, 1);
       },
       saveReport() {
-        // TODO: Validate
-        this.prepStatementItems();
+        if (this.validateReport()) {
+            this.prepStatementItems();
 
-        if (this.financialReport.no) {
-            console.log( 'Update', this.financialReport.no );
-            // this.updateFinancialReport();
+            if (this.financialReport.no) {
+                console.log( 'Update', this.financialReport.no );
+                // this.updateFinancialReport();
+            } else {
+                console.log( 'Create' );
+                // this.createFinancialReport();
+            }
+        }        
+      },
+      validateReport() {
+        let valid = true
+
+        if (!this.financialReport.company) {
+            this.vCompany.type = 'is-danger'
+            this.vCompany.message = 'Please choose company'
+            valid = false
         } else {
-            console.log( 'Create' );
-            // this.createFinancialReport();
+            this.vCompany.type = ''
+            this.vCompany.message = ''
         }
-        
+
+        if (!this.financialReport.period) {
+            this.vPeriod.type = 'is-danger'
+            this.vPeriod.message = 'Please choose period'
+            valid = false
+        } else {
+            this.vPeriod.type = ''
+            this.vPeriod.message = ''
+        }
+
+        if (!this.financialReport.statementDate) {
+            this.vStatementDate.type = 'is-danger'
+            this.vStatementDate.message = 'Please set statement date'
+            valid = false
+        } else {
+            this.vStatementDate.type = ''
+            this.vStatementDate.message = ''
+        }
+
+        return valid
       },
       formatTitleCase(plain) {
         return _.startCase(plain.toLowerCase().replace('_', ' '));
