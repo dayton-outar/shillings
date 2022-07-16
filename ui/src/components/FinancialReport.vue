@@ -10,7 +10,8 @@
                 :message="vCompany.message">
                 <b-select 
                   v-model="chosenCompany"
-                  placeholder="Choose Company">
+                  placeholder="Choose Company"
+                  @input="clearVCompany">
                   <option
                     v-for="company in companies" 
                     :key="company.code"
@@ -29,7 +30,8 @@
                 <b-select 
                     v-model="period"
                     placeholder="Choose Period" 
-                    expanded>
+                    expanded
+                    @input="clearVPeriod">
                     <option value="QUARTERLY">Quarterly</option>
                     <option value="ANNUAL">Annual</option>
                 </b-select>
@@ -46,7 +48,8 @@
                     v-model="statementDate"
                     label-position=""
                     placeholder="Set Statement Date"
-                    expanded>
+                    expanded
+                    @input="clearVStatementDate">
                 </b-datepicker>
             </b-field>
         </div>
@@ -218,6 +221,18 @@ export default {
       formatTitleCase(plain) {
         return _.startCase(plain.toLowerCase().replace('_', ' '));
       },
+      clearVCompany() {
+        this.vCompany.type = ''
+        this.vCompany.message = ''
+      },
+      clearVPeriod() {
+        this.vPeriod.type = ''
+        this.vPeriod.message = ''
+      },
+      clearVStatementDate() {
+        this.vStatementDate.type = ''
+        this.vStatementDate.message = ''
+      }
     },
     watch: {
         $route(to) {
