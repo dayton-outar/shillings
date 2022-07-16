@@ -200,7 +200,7 @@ export const store = new Vuex.Store({
         }
     },
     actions: {
-        async createFinancialReport({ commit }) {
+        async createFinancialReport({ commit }, report) {
           const response = await graphQlClient.mutate({
             mutation: gql`mutation CreateFinancialReport($companyCode: String!, $companyName: String!, $period: Periodical!, $statementDate: DateTime!, $isAudited: Boolean!, $analytes: [StatementAnalyteInput], $logDescription: String!, $logged: DateTime!) {
               createFinancialReport(financialReport: {
@@ -252,14 +252,14 @@ export const store = new Vuex.Store({
               }
             }`,
             variables: {
-              companyCode: this.financialReport.company.code,
-              companyName: this.financialReport.company.name,
-              period: this.financialReport.period,
-              statementDate: this.financialReport.statementDate,
-              isAudited: this.financialReport.isAudited,
-              logDescription: this.financialReport.description,
-              logged: this.financialReport.logged,
-              analytes: this.financialReport.analytes
+              companyCode: report.company.code,
+              companyName: report.company.name,
+              period: report.period,
+              statementDate: report.statementDate,
+              isAudited: report.isAudited,
+              logDescription: report.description,
+              logged: report.logged,
+              analytes: report.analytes
             }
           })
 
@@ -269,7 +269,7 @@ export const store = new Vuex.Store({
 
           commit('setFinancialReport', response.data.createFinancialReport)
         },
-        async updateFinancialReport({ commit }) {
+        async updateFinancialReport({ commit }, report) {
           const response = await graphQlClient.mutate({
             mutation: gql`mutation UpdateFinancialReport($no: Long!, $companyCode: String!, $companyName: String!, $period: Periodical!, $statementDate: DateTime!, $isAudited: Boolean!, $analytes: [StatementAnalyteInput], $logDescription: String!, $logged: DateTime!) {
               updateFinancialReport(financialReport: {
@@ -321,14 +321,14 @@ export const store = new Vuex.Store({
               }
             }`,
             variables: {
-              companyCode: this.financialReport.company.code,
-              companyName: this.financialReport.company.name,
-              period: this.financialReport.period,
-              statementDate: this.financialReport.statementDate,
-              isAudited: this.financialReport.isAudited,
-              logDescription: this.financialReport.description,
-              logged: this.financialReport.logged,
-              analytes: this.financialReport.analytes
+              companyCode: report.company.code,
+              companyName: report.company.name,
+              period: report.period,
+              statementDate: report.statementDate,
+              isAudited: report.isAudited,
+              logDescription: report.description,
+              logged: report.logged,
+              analytes: report.analytes
             }
           })
 

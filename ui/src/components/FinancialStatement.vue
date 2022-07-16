@@ -190,7 +190,11 @@ export default {
             this.$emit('removed', this.no)
         },
         addItem() {
-          this.iNo = (this.iNo + 1)
+          const sqs = this.statementTypeItems.map(a => a.sequence);
+          const maxNo = Math.max(...sqs)
+          console.log(maxNo)
+          this.iNo = maxNo > this.iNo ? (maxNo + 1) : (this.iNo + 1)
+          console.log(this.iNo)
 
           this.addStatementItem({
               no: 0,

@@ -178,11 +178,9 @@ export default {
             this.prepStatementItems();
 
             if (this.financialReport.no) {
-                console.log( 'Update', this.financialReport.no );
-                // this.updateFinancialReport();
+                this.updateFinancialReport(this.financialReport);
             } else {
-                console.log( 'Create' );
-                // this.createFinancialReport();
+                this.createFinancialReport(this.financialReport);
             }
         }        
       },
@@ -237,10 +235,13 @@ export default {
     watch: {
         $route(to) {
             this.statements = []; // flush statements
+            this.clearVCompany();
+            this.clearVPeriod();
+            this.clearVStatementDate();
 
             if (to.query.no) {
                 this.$store.dispatch('fetchFinancialReport', parseInt(to.query.no, 10))
-                    .then(() => {                        
+                    .then(() => {                    
                         if (this.financialReport.analytes) {
                             this.financialReport.analytes.forEach(el => {
                                 if (!this.statements.find(sl => sl.Type == this.formatTitleCase( el.type ))) {
@@ -251,7 +252,7 @@ export default {
                             });
                         }
                     });
-            } else {
+            } else {                
                 this.flushFinancialReport();
             }
         }
