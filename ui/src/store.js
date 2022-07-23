@@ -249,6 +249,13 @@ export const store = new Vuex.Store({
                   type,
                   analyte,
                   amount
+                },
+                log {
+                  no,
+                  type,
+                  event,
+                  details,
+                  logged
                 }
               }
             }`,
@@ -318,6 +325,13 @@ export const store = new Vuex.Store({
                   type,
                   analyte,
                   amount
+                },
+                log {
+                  no,
+                  type,
+                  event,
+                  details,
+                  logged
                 }
               }
             }`,

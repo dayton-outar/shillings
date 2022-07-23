@@ -178,7 +178,6 @@ export default {
             this.prepStatementItems();
 
             if (this.financialReport.no) {
-                console.log(this.financialReport)
                 this.updateFinancialReport(this.financialReport);
             } else {
                 this.createFinancialReport(this.financialReport);

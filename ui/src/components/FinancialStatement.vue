@@ -73,7 +73,7 @@
                         <b-field v-if="getState(props.row.state)">
                             <b-input v-cleave="masks.price" custom-class="input-text-right" :value="props.row.amount" @input="updateItem(props.row.sequence, 'amount', $event)" />
                         </b-field>
-                        <p v-else>{{ props.row.amount }}</p>
+                        <p v-else>{{ formatMoney(props.row.amount) }}</p>
                     </b-table-column>
 
                     <b-table-column v-slot="props" width="5%">
@@ -192,9 +192,7 @@ export default {
         addItem() {
           const sqs = this.statementTypeItems.map(a => a.sequence);
           const maxNo = Math.max(...sqs)
-          console.log(maxNo)
           this.iNo = maxNo > this.iNo ? (maxNo + 1) : (this.iNo + 1)
-          console.log(this.iNo)
 
           this.addStatementItem({
               no: 0,
