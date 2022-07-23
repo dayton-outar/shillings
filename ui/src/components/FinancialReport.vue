@@ -58,34 +58,45 @@
                 <b-checkbox v-model="isAudited">Is Audited?</b-checkbox>
             </b-field>
         </div>        
-    </div>
-    
-    <div v-for="(stmt, ix) in statements" :key="ix" class="columns">
-        <financial-statement 
-            :type="stmt.Type" 
-            :no="ix" 
-            @removed="removeStatement" />
-    </div>
+    </div>    
     
     <div class="columns">
-        <div class="column is-flex is-justify-content-flex-end">
-            <b-dropdown 
-                aria-role="list"
-                position="is-top-left">
-                <template #trigger>
-                    <b-button
-                        type="is-info"
-                        size="is-medium"
-                        icon-right="plus" />
-                </template>
+        <div class="column is-three-quarters">
+            <div class="columns">
+                <div class="column">
+                    <div v-for="(stmt, ix) in statements" :key="ix" class="columns">
+                        <financial-statement 
+                            :type="stmt.Type" 
+                            :no="ix" 
+                            @removed="removeStatement" />
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column is-flex is-justify-content-flex-end">
+                    <b-dropdown 
+                        aria-role="list"
+                        position="is-top-left">
+                        <template #trigger>
+                            <b-button
+                                type="is-info"
+                                size="is-medium"
+                                icon-right="plus" />
+                        </template>
 
 
-                <b-dropdown-item aria-role="listitem" @click="addStatement('Income')">Income</b-dropdown-item>
-                <b-dropdown-item aria-role="listitem" @click="addStatement('Financial Position')">Financial Position</b-dropdown-item>
-                <b-dropdown-item aria-role="listitem" @click="addStatement('Cash Flow')">Cash Flow</b-dropdown-item>
-            </b-dropdown>
+                        <b-dropdown-item aria-role="listitem" @click="addStatement('Income')">Income</b-dropdown-item>
+                        <b-dropdown-item aria-role="listitem" @click="addStatement('Financial Position')">Financial Position</b-dropdown-item>
+                        <b-dropdown-item aria-role="listitem" @click="addStatement('Cash Flow')">Cash Flow</b-dropdown-item>
+                    </b-dropdown>
+                </div>
+            </div>
         </div>
+        <div class="column"></div>
     </div>
+    
+
+
     <div class="columns">
         <div class="column">
             <b-button 

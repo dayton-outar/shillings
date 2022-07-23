@@ -134,8 +134,53 @@ export const store = new Vuex.Store({
         },
         closeStatementItem(state, payload) {
           const item = state.financialReport.analytes.find(p => p.type.toLowerCase() === payload.type.replace(' ', '_').toLowerCase() && p.sequence === payload.sequence);
+          let isValid = true;
+
           if (item) {
-            item.state = 'Closed';
+            if (!item.description) {
+              item.vDesc.type = 'is-danger'
+              item.vDesc.message = 'Please enter description'
+
+              isValid = false
+            } else {
+              item.vDesc.type = ''
+              item.vDesc.message = ''
+            }
+
+            if (!item.section) {
+              item.vSec.type = 'is-danger'
+              item.vSec.message = 'Please choose section'
+
+              isValid = false
+            } else {
+              item.vSec.type = ''
+              item.vSec.message = ''
+            }
+
+            if (!item.analyte.length) {
+              item.vAnl.type = 'is-danger'
+              item.vAnl.message = 'Please choose categories'
+
+              isValid = false
+            } else {
+              item.vAnl.type = ''
+              item.vAnl.message = ''
+            }
+
+            let amt = parseFloat(item.amount.toString().replace(/[^0-9.-]+/g,'')) || 0;
+            if (!amt) {
+              item.vAmt.type = 'is-danger'
+              item.vAmt.message = 'Please enter amount'
+
+              isValid = false
+            } else {
+              item.vAmt.type = ''
+              item.vAmt.message = ''
+            }
+
+            if (isValid) {
+              item.state = 'Closed';
+            }
           }
         },
         addStatementItem(state, payload) {
