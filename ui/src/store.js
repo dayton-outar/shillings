@@ -199,7 +199,7 @@ export const store = new Vuex.Store({
 
             if (!i.analyte.length) {
               i.vAnl.type = 'is-danger'
-              i.vAnl.message = 'Please ...'
+              i.vAnl.message = 'Please choose categories'
 
               state.isItemsValid = false
             } else {

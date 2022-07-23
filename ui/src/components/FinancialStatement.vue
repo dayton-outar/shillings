@@ -55,26 +55,30 @@
 
                     <b-table-column field="analyte" label="" sortable v-slot="props">
                         <b-field 
-                            v-if="getState(props.row.state)"
-                            :type="props.row.vAnl.type" 
-                            :message="props.row.vAnl.message">
-                            <b-dropdown :expanded="true" v-model="props.row.analyte" multiple aria-role="list" @change="updateItem(props.row.sequence, 'analyte', $event)">
+                            v-if="getState(props.row.state)">
+                            <b-tooltip 
+                                :label="props.row.vAnl.message" 
+                                :always="(props.row.vAnl.message !== '')"
+                                :active="(props.row.vAnl.message !== '')"
+                                :type="props.row.vAnl.type">
+                                <b-dropdown :expanded="true" v-model="props.row.analyte" multiple aria-role="list" @change="updateItem(props.row.sequence, 'analyte', $event)">
 
-                                <template #trigger>
-                                    <b-button type="is-light" expanded icon-right="menu-down">
-                                        ({{ props.row.analyte ? props.row.analyte.length : 0 }})
-                                    </b-button>
-                                </template>
+                                    <template #trigger>
+                                        <b-button type="is-light" expanded icon-right="menu-down">
+                                            ({{ props.row.analyte ? props.row.analyte.length : 0 }})
+                                        </b-button>
+                                    </template>
 
-                                <b-dropdown-item 
-                                    aria-role="listitem"
-                                    v-for="ass in getSectionAssays(props.row.section)"
-                                    :key="ass"
-                                    :value="ass">
-                                    {{ formatTitleCase(ass) }}
-                                </b-dropdown-item>
+                                    <b-dropdown-item 
+                                        aria-role="listitem"
+                                        v-for="ass in getSectionAssays(props.row.section)"
+                                        :key="ass"
+                                        :value="ass">
+                                        {{ formatTitleCase(ass) }}
+                                    </b-dropdown-item>
 
-                            </b-dropdown>
+                                </b-dropdown>
+                            </b-tooltip>
                         </b-field>                        
                     </b-table-column>
 
@@ -181,7 +185,7 @@ export default {
       this.$store.dispatch('fetchAssays');      
     },
     computed: {
-        ...mapState(['sections', 'assays', 'financialReport']),
+        ...mapState(['sections', 'assays', 'financialReport', 'isItemsValid']),
         statementTypeItems() {
             return this.financialReport.analytes.filter(s => s.type === this.type.replace(' ', '_').toUpperCase());
         },
@@ -197,7 +201,7 @@ export default {
         }
     },
     methods: {
-        ...mapActions(['addStatementItem', 'updateStatementItem', 'removeStatementItem']),
+        ...mapActions(['addStatementItem', 'updateStatementItem', 'removeStatementItem', 'validateStatementItems']),
         removeStatement() {
             this.$emit('removed', this.no)
         },
@@ -279,7 +283,11 @@ export default {
             this.$store.commit('openStatementItem', { type: this.type.replace(' ', '_').toUpperCase(), sequence: sequence });            
         },
         closeItem(sequence) {
-            this.$store.commit('closeStatementItem', { type: this.type.replace(' ', '_').toUpperCase(), sequence: sequence });
+            //this.validateStatementItems()
+                //.then(() => {
+
+                    this.$store.commit('closeStatementItem', { type: this.type.replace(' ', '_').toUpperCase(), sequence: sequence });
+                //})            
         },
         formatNet() {
             const netValue = this.statementTypeItems.reduce((t, v) => {
