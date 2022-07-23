@@ -283,11 +283,7 @@ export default {
             this.$store.commit('openStatementItem', { type: this.type.replace(' ', '_').toUpperCase(), sequence: sequence });            
         },
         closeItem(sequence) {
-            //this.validateStatementItems()
-                //.then(() => {
-
-                    this.$store.commit('closeStatementItem', { type: this.type.replace(' ', '_').toUpperCase(), sequence: sequence });
-                //})            
+            this.$store.commit('closeStatementItem', { type: this.type.replace(' ', '_').toUpperCase(), sequence: sequence });
         },
         formatNet() {
             const netValue = this.statementTypeItems.reduce((t, v) => {

@@ -91,6 +91,7 @@
             <b-button 
                 label="Save"
                 type="is-info"
+                size="is-large"
                 expanded
                 @click.prevent="saveReport" />
         </div>
