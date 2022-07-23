@@ -29,14 +29,20 @@
                     </b-table-column>
 
                     <b-table-column field="description" label="Description" sortable v-slot="props" width="35%">
-                        <b-field v-if="getState(props.row.state)">
+                        <b-field 
+                            v-if="getState(props.row.state)" 
+                            :type="props.row.vDesc.type" 
+                            :message="props.row.vDesc.message">
                             <b-input :value="props.row.description" @input="updateItem(props.row.sequence, 'description', $event)" />
                         </b-field>
                         <p v-else>{{ props.row.description }}</p>
                     </b-table-column>
 
                     <b-table-column field="section" label="" sortable v-slot="props">
-                        <b-field v-if="getState(props.row.state)">
+                        <b-field 
+                            v-if="getState(props.row.state)"
+                            :type="props.row.vSec.type" 
+                            :message="props.row.vSec.message">
                             <b-select placeholder="Choose Section" :value="props.row.section" @input="updateItem(props.row.sequence, 'section', $event)" expanded>
                                 <option 
                                     v-for="section in statementSections" 
@@ -48,7 +54,10 @@
                     </b-table-column>
 
                     <b-table-column field="analyte" label="" sortable v-slot="props">
-                        <b-field v-if="getState(props.row.state)">
+                        <b-field 
+                            v-if="getState(props.row.state)"
+                            :type="props.row.vAnl.type" 
+                            :message="props.row.vAnl.message">
                             <b-dropdown :expanded="true" v-model="props.row.analyte" multiple aria-role="list" @change="updateItem(props.row.sequence, 'analyte', $event)">
 
                                 <template #trigger>
@@ -70,7 +79,10 @@
                     </b-table-column>
 
                     <b-table-column field="amount" label="$'000" numeric sortable v-slot="props">
-                        <b-field v-if="getState(props.row.state)">
+                        <b-field 
+                            v-if="getState(props.row.state)"
+                            :type="props.row.vAmt.type" 
+                            :message="props.row.vAmt.message">
                             <b-input v-cleave="masks.price" custom-class="input-text-right" :value="props.row.amount" @input="updateItem(props.row.sequence, 'amount', $event)" />
                         </b-field>
                         <p v-else>{{ formatMoney(props.row.amount) }}</p>
@@ -198,6 +210,22 @@ export default {
               no: 0,
               sequence: this.iNo,
               description: '',
+              vDesc: {
+                type: '',
+                message: ''
+              },
+              vSec: {
+                type: '',
+                message: ''
+              },
+              vAnl: {
+                type: '',
+                message: ''
+              },
+              vAmt: {
+                type: '',
+                message: ''
+              },
               type: this.type.replace(' ', '_').toUpperCase(),
               section: 0,
               analyte: this.selectedAnalytes,

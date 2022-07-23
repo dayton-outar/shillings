@@ -129,7 +129,7 @@ export default {
         this.$store.dispatch('fetchCompanies');
     },
     computed: {
-        ...mapState(['companies', 'financialReport', 'financialReportCompany']),
+        ...mapState(['companies', 'financialReport', 'isItemsValid']),
         chosenCompany: {
             get() {
                 return this.financialReport.company
@@ -164,7 +164,7 @@ export default {
         }
     },
     methods: {
-      ...mapActions(['saveFinancialReport', 'createFinancialReport', 'prepStatementItems', 'updateFinancialReport', 'flushFinancialReport']),
+      ...mapActions(['saveFinancialReport', 'createFinancialReport', 'prepStatementItems', 'updateFinancialReport', 'validateStatementItems', 'flushFinancialReport']),
       addStatement(type) {
           this.statements.push({
               Type: type
@@ -173,15 +173,20 @@ export default {
       removeStatement(ix) {
           this.statements.splice(ix, 1);
       },
-      saveReport() {
+      saveReport() {        
         if (this.validateReport()) {
-            this.prepStatementItems();
+            this.validateStatementItems()
+            .then(() => {
+                if (this.isItemsValid) {
+                    this.prepStatementItems();
 
-            if (this.financialReport.no) {
-                this.updateFinancialReport(this.financialReport);
-            } else {
-                this.createFinancialReport(this.financialReport);
-            }
+                    if (this.financialReport.no) {
+                        this.updateFinancialReport(this.financialReport);
+                    } else {
+                        this.createFinancialReport(this.financialReport);
+                    }
+                }                
+            })
         }        
       },
       validateReport() {

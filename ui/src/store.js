@@ -28,7 +28,8 @@ export const store = new Vuex.Store({
           logged: new Date()
         }
       },
-      statementItems: []
+      statementItems: [],
+      isItemsValid: true
     },
     getters: {
         volumeShares(state) {
@@ -113,6 +114,22 @@ export const store = new Vuex.Store({
           const item = state.financialReport.analytes.find(p => p.type.toLowerCase() === payload.type.replace(' ', '_').toLowerCase() && p.sequence === payload.sequence);
           if (item) {
             item.state = 'Opened';
+            item.vDesc = {
+              type: '',
+              message: ''
+            };
+            item.vSec = {
+              type: '',
+              message: ''
+            };
+            item.vAnl = {
+              type: '',
+              message: ''
+            };
+            item.vAmt = {
+              type: '',
+              message: ''
+            };
           }
         },
         closeStatementItem(state, payload) {
@@ -154,6 +171,52 @@ export const store = new Vuex.Store({
               i.amount = parseFloat(i.amount.toString().replace(/[^0-9.-]+/g,'')) || 0;
               
               return i;
+          })
+        },
+        validateStatementItems(state) {
+          state.isItemsValid = true
+
+          state.financialReport.analytes.forEach(i => {
+            if (!i.description) {
+              i.vDesc.type = 'is-danger'
+              i.vDesc.message = 'Please enter description'
+
+              state.isItemsValid = false
+            } else {
+              i.vDesc.type = ''
+              i.vDesc.message = ''
+            }
+
+            if (!i.section) {
+              i.vSec.type = 'is-danger'
+              i.vSec.message = 'Please choose section'
+
+              state.isItemsValid = false
+            } else {
+              i.vSec.type = ''
+              i.vSec.message = ''
+            }
+
+            if (!i.analyte.length) {
+              i.vAnl.type = 'is-danger'
+              i.vAnl.message = 'Please ...'
+
+              state.isItemsValid = false
+            } else {
+              i.vAnl.type = ''
+              i.vAnl.message = ''
+            }
+
+            let amt = parseFloat(i.amount.toString().replace(/[^0-9.-]+/g,'')) || 0;
+            if (!amt) {
+              i.vAmt.type = 'is-danger'
+              i.vAmt.message = 'Please enter amount'
+
+              state.isItemsValid = false
+            } else {
+              i.vAmt.type = ''
+              i.vAmt.message = ''
+            }
           })
         },
         addPortfolio(state, payload) {
@@ -547,6 +610,9 @@ export const store = new Vuex.Store({
         prepStatementItems( { commit } ) {
           commit('preppedStatementItems')
         },
+        validateStatementItems( { commit } ) {
+          commit('validateStatementItems')
+        },
         updateFinancialReportCompany( { commit }, value) {
           commit('updateReportCompany', value)
         },
@@ -555,59 +621,3 @@ export const store = new Vuex.Store({
         }
     }
 })
-
-// mutation {
-//   createFinancialReport(financialReport: {
-//     no: 1,
-//     company: {
-//       code: "NCBFG",
-//       name: "National Commercial Bank Financial Group",
-//       about: "",
-//       announcements: [],
-//       countryCode: "",
-//       created: "1779-01-01",
-//       founded: "1779-01-01",
-//       industries: [],
-//       industry: "",
-//       totalEmployed: 0,
-//       webSite: "",
-//       wiki: ""
-//     },
-//     period: QUARTERLY,
-//     statementDate: "2020-08-02",
-//     analytes: [
-//     {
-//       no: 1,
-//       sequence: 1,
-//       amount: 700,
-//       analyte: CAPITAL,
-//       section: EQUITY,
-//       type: FINANCIAL_POSITION,
-//       description: ""
-//     },
-//     {
-//       no: 1,
-//       sequence: 1,
-//       amount: 700,
-//       analyte: CAPITAL,
-//       section: EQUITY,
-//       type: FINANCIAL_POSITION,
-//       description: ""
-//     }],
-//     isAudited: true,
-//     log: {
-//       no: 0,
-//       type: APPLICATION,
-//       event: INFORMATION,
-//       details: "",
-//       logged: "2022-05-08"
-//     }
-//   }) {
-//     company {
-//       code,
-//       name
-//     },
-//     period,
-//     statementDate
-//   }
-// }
