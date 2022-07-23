@@ -19,12 +19,14 @@ export const store = new Vuex.Store({
       financialReport: {
         no: null,
         company: null,
-        description: null,
+        description: '',
         period: null,
         statementDate: null,
         isAudited: null,
         analytes: [],
-        log: {}
+        log: {
+          logged: new Date()
+        }
       },
       statementItems: []
     },
@@ -266,7 +268,7 @@ export const store = new Vuex.Store({
               statementDate: report.statementDate,
               isAudited: report.isAudited,
               logDescription: report.description,
-              logged: report.logged,
+              logged: report.log.logged,
               analytes: report.analytes
             }
           })
