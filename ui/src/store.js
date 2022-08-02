@@ -134,51 +134,10 @@ export const store = new Vuex.Store({
         },
         closeStatementItem(state, payload) {
           const item = state.financialReport.analytes.find(p => p.type.toLowerCase() === payload.type.replace(' ', '_').toLowerCase() && p.sequence === payload.sequence);
-          let isValid = true;
 
-          if (item) {
-            if (!item.description) {
-              item.vDesc.type = 'is-danger'
-              item.vDesc.message = 'Please enter description'
-
-              isValid = false
-            } else {
-              item.vDesc.type = ''
-              item.vDesc.message = ''
-            }
-
-            if (!item.section) {
-              item.vSec.type = 'is-danger'
-              item.vSec.message = 'Please choose section'
-
-              isValid = false
-            } else {
-              item.vSec.type = ''
-              item.vSec.message = ''
-            }
-
-            if (!item.analyte.length) {
-              item.vAnl.type = 'is-danger'
-              item.vAnl.message = 'Please choose categories'
-
-              isValid = false
-            } else {
-              item.vAnl.type = ''
-              item.vAnl.message = ''
-            }
-
-            let amt = parseFloat(item.amount.toString().replace(/[^0-9.-]+/g,'')) || 0;
-            if (!amt) {
-              item.vAmt.type = 'is-danger'
-              item.vAmt.message = 'Please enter amount'
-
-              isValid = false
-            } else {
-              item.vAmt.type = ''
-              item.vAmt.message = ''
-            }
-
-            if (isValid) {
+          if (item) { // TODO: Need refactoring
+            
+            if (state.isItemsValid) {
               item.state = 'Closed';
             }
           }
@@ -213,54 +172,106 @@ export const store = new Vuex.Store({
         },
         preppedStatementItems(state) {
           state.financialReport.analytes.map(i => {
+              delete i.vDesc;
+              delete i.vSec;
+              delete i.vAnl;
+              delete i.vAmt;
+
               i.amount = parseFloat(i.amount.toString().replace(/[^0-9.-]+/g,'')) || 0;
               
               return i;
           })
         },
+        validateStatementItem(state, payload) {
+          const item = state.financialReport.analytes.find(p => p.type.toLowerCase() === payload.type.replace(' ', '_').toLowerCase() && p.sequence === payload.sequence);
+
+          if (!item.description) {
+            item.vDesc.type = 'is-danger'
+            item.vDesc.message = 'Please enter description'
+
+            state.isItemsValid = false
+          } else {
+            item.vDesc.type = ''
+            item.vDesc.message = ''
+          }
+
+          if (!item.section) {
+            item.vSec.type = 'is-danger'
+            item.vSec.message = 'Please choose section'
+
+            state.isItemsValid = false
+          } else {
+            item.vSec.type = ''
+            item.vSec.message = ''
+          }
+
+          if (!item.analyte.length) {
+            item.vAnl.type = 'is-danger'
+            item.vAnl.message = 'Please choose categories'
+
+            state.isItemsValid = false
+          } else {
+            item.vAnl.type = ''
+            item.vAnl.message = ''
+          }
+
+          let amt = parseFloat(item.amount.toString().replace(/[^0-9.-]+/g,'')) || 0;
+          if (!amt) {
+            item.vAmt.type = 'is-danger'
+            item.vAmt.message = 'Please enter amount'
+
+            state.isItemsValid = false
+          } else {
+            item.vAmt.type = ''
+            item.vAmt.message = ''
+          }
+        },
         validateStatementItems(state) {
           state.isItemsValid = true
 
           state.financialReport.analytes.forEach(i => {
-            if (!i.description) {
-              i.vDesc.type = 'is-danger'
-              i.vDesc.message = 'Please enter description'
+            if (i.state == 'Opened') {
+              if (!i.description) { // TODO: Need refactoring
+                // HACK: These fields do not exist on the graphql model
+                i.vDesc.type = 'is-danger'
+                i.vDesc.message = 'Please enter description'
 
-              state.isItemsValid = false
-            } else {
-              i.vDesc.type = ''
-              i.vDesc.message = ''
-            }
+                state.isItemsValid = false
+              } else {
+                i.vDesc.type = ''
+                i.vDesc.message = ''
+              }
 
-            if (!i.section) {
-              i.vSec.type = 'is-danger'
-              i.vSec.message = 'Please choose section'
+              if (!i.section) {
+                i.vSec.type = 'is-danger'
+                i.vSec.message = 'Please choose section'
 
-              state.isItemsValid = false
-            } else {
-              i.vSec.type = ''
-              i.vSec.message = ''
-            }
+                state.isItemsValid = false
+              } else {
+                i.vSec.type = ''
+                i.vSec.message = ''
+              }
 
-            if (!i.analyte.length) {
-              i.vAnl.type = 'is-danger'
-              i.vAnl.message = 'Please choose categories'
+              if (!i.analyte.length) {
+                i.vAnl.type = 'is-danger'
+                i.vAnl.message = 'Please choose categories'
 
-              state.isItemsValid = false
-            } else {
-              i.vAnl.type = ''
-              i.vAnl.message = ''
-            }
+                state.isItemsValid = false
+              } else {
+                i.vAnl.type = ''
+                i.vAnl.message = ''
+              }
 
-            let amt = parseFloat(i.amount.toString().replace(/[^0-9.-]+/g,'')) || 0;
-            if (!amt) {
-              i.vAmt.type = 'is-danger'
-              i.vAmt.message = 'Please enter amount'
+              let amt = parseFloat(i.amount.toString().replace(/[^0-9.-]+/g,'')) || 0;
+              if (!amt) {
+                i.vAmt.type = 'is-danger'
+                i.vAmt.message = 'Please enter amount'
 
-              state.isItemsValid = false
-            } else {
-              i.vAmt.type = ''
-              i.vAmt.message = ''
+                state.isItemsValid = false
+              } else {
+                i.vAmt.type = ''
+                i.vAmt.message = ''
+              }
             }
           })
         },
@@ -652,11 +663,20 @@ export const store = new Vuex.Store({
         removeStatementItem({ commit }, payload) {
           commit('removeStatementItem', payload)
         },
+        closeStatementItem({ commit }, payload) {
+          commit('closeStatementItem', payload)
+        },
+        openStatementItem({ commit }, payload) {
+          commit('openStatementItem', payload)
+        },
         prepStatementItems( { commit } ) {
           commit('preppedStatementItems')
         },
         validateStatementItems( { commit } ) {
           commit('validateStatementItems')
+        },
+        validateStatementItem( { commit }, payload ) {
+          commit('validateStatementItem', payload)
         },
         updateFinancialReportCompany( { commit }, value) {
           commit('updateReportCompany', value)

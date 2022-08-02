@@ -201,7 +201,7 @@ export default {
         }
     },
     methods: {
-        ...mapActions(['addStatementItem', 'updateStatementItem', 'removeStatementItem', 'validateStatementItems']),
+        ...mapActions(['addStatementItem', 'updateStatementItem', 'removeStatementItem', 'validateStatementItem', 'closeStatementItem', 'openStatementItem']),
         removeStatement() {
             this.$emit('removed', this.no)
         },
@@ -280,10 +280,14 @@ export default {
             return ias > -1 ? this.assays[ias].assay : [];
         },
         openItem(sequence) {
-            this.$store.commit('openStatementItem', { type: this.type.replace(' ', '_').toUpperCase(), sequence: sequence });            
+            this.openStatementItem({ type: this.type.replace(' ', '_').toUpperCase(), sequence: sequence });            
         },
         closeItem(sequence) {
-            this.$store.commit('closeStatementItem', { type: this.type.replace(' ', '_').toUpperCase(), sequence: sequence });
+            this.validateStatementItem({ type: this.type.replace(' ', '_').toUpperCase(), sequence: sequence })
+                .then(() => {
+                    this.closeStatementItem({ type: this.type.replace(' ', '_').toUpperCase(), sequence: sequence });
+                })
+            
         },
         formatNet() {
             const netValue = this.statementTypeItems.reduce((t, v) => {

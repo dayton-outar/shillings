@@ -92,7 +92,9 @@
                 </div>
             </div>
         </div>
-        <div class="column"></div>
+        <div class="column">
+            <div class="box my-4 mx-1"></div>
+        </div>
     </div>
     
 
