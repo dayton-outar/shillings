@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Dashboard from './components/Dashboard.vue'
 import FinancialReport from './components/FinancialReport.vue'
 import Companies from './components/Companies.vue'
+import Company from './components/Company.vue'
 
 Vue.use(Router)
 
@@ -24,6 +25,12 @@ export default new Router({
             path: '/companies',
             name: 'companies',
             component: Companies,
+            meta: { title: 'Shillings: Companies' }
+        },
+        {
+            path: '/company',
+            name: 'company',
+            component: Company,
             meta: { title: 'Shillings: Companies' }
         }
     ]
