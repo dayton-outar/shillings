@@ -84,31 +84,34 @@
             </div>
             <div class="columns">
                 <div class="column">
-                    <b-dropdown
-                        multiple
-                        scrollable
-                        aria-role="list"
-                        expanded>
-                        <template #trigger>
-                        <b-button
-                            type="is-light"
-                            expanded
-                            icon-right="menu-down">
-                            Selected 
-                        </b-button>
-                        </template>
-                        
-                        <b-dropdown-item aria-role="listitem" 
-                            value="Foods">
-                            Foods
-                        </b-dropdown-item>
+                    <b-field 
+                        label="Industries">
+                        <b-dropdown
+                            multiple
+                            scrollable
+                            aria-role="list"
+                            expanded>
+                            <template #trigger>
+                                <b-button
+                                    type="is-light"
+                                    expanded
+                                    icon-right="menu-down">
+                                    Selected 
+                                </b-button>
+                            </template>
+                            
+                            <b-dropdown-item aria-role="listitem" 
+                                value="Foods">
+                                Foods
+                            </b-dropdown-item>
 
-                        <b-dropdown-item aria-role="listitem" 
-                            value="Finance">
-                            Finance
-                        </b-dropdown-item>
+                            <b-dropdown-item aria-role="listitem" 
+                                value="Finance">
+                                Finance
+                            </b-dropdown-item>
 
-                    </b-dropdown>
+                        </b-dropdown>
+                    </b-field>
                 </div>
             </div>
             <div class="columns">

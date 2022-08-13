@@ -59,5 +59,20 @@ namespace Harpoon
 
             return financialReport;
         }
+
+        [UseDbContext(typeof(StocksQuery))]
+        public Company CreateCompany([ScopedService]StocksQuery sq, Company company)
+        {
+            sq.Companies.Add(company); // This does not allow for associating company with industries in INSERT statement
+            sq.SaveChanges();
+
+            return company;
+        }
+
+        [UseDbContext(typeof(StocksQuery))]
+        public Company UpdateCompany([ScopedService]StocksQuery sq, Company company)
+        {
+            return company;
+        }
     }
 }
