@@ -31,7 +31,7 @@ export default new Router({
             path: '/company',
             name: 'company',
             component: Company,
-            meta: { title: 'Shillings: Companies' }
+            meta: { title: 'Shillings: Company' }
         }
     ]
 })
