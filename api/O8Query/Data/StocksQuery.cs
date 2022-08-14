@@ -34,6 +34,8 @@ namespace O8Query.Data
 
         public DbSet<Industry> Industries { get; set; }
 
+        public DbSet<FileContent> Files { get; set; }
+
         [NotMapped]
         public DbSet<TotalStockTrades> TotalTrades { get; set; }
 

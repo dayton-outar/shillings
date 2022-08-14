@@ -70,6 +70,7 @@ namespace O8Query.Models
         /// <summary>
         /// Market capitalization of stock
         /// </summary>
+        [NotMapped]
         [Column(TypeName = "decimal(18,2)")]
         public decimal MarketCapitalization { get; set; }
         

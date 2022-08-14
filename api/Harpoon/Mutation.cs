@@ -72,6 +72,9 @@ namespace Harpoon
         [UseDbContext(typeof(StocksQuery))]
         public Company UpdateCompany([ScopedService]StocksQuery sq, Company company)
         {
+            sq.Companies.Update(company);
+            sq.SaveChanges();
+            
             return company;
         }
     }

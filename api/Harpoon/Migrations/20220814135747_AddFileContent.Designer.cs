@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using O8Query.Data;
 
 namespace Harpoon.Migrations
 {
     [DbContext(typeof(StocksQuery))]
-    partial class StocksQueryModelSnapshot : ModelSnapshot
+    [Migration("20220814135747_AddFileContent")]
+    partial class AddFileContent
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -32,21 +34,6 @@ namespace Harpoon.Migrations
                     b.HasIndex("CompaniesCode");
 
                     b.ToTable("AnnouncementCompany");
-                });
-
-            modelBuilder.Entity("CompanyFileContent", b =>
-                {
-                    b.Property<string>("CompaniesCode")
-                        .HasColumnType("nvarchar(20)");
-
-                    b.Property<long>("FilesNo")
-                        .HasColumnType("bigint");
-
-                    b.HasKey("CompaniesCode", "FilesNo");
-
-                    b.HasIndex("FilesNo");
-
-                    b.ToTable("CompanyFileContent");
                 });
 
             modelBuilder.Entity("CompanyIndustry", b =>
@@ -528,21 +515,6 @@ namespace Harpoon.Migrations
                     b.HasOne("O8Query.Models.Company", null)
                         .WithMany()
                         .HasForeignKey("CompaniesCode")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("CompanyFileContent", b =>
-                {
-                    b.HasOne("O8Query.Models.Company", null)
-                        .WithMany()
-                        .HasForeignKey("CompaniesCode")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("O8Query.Models.FileContent", null)
-                        .WithMany()
-                        .HasForeignKey("FilesNo")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

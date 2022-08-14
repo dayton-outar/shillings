@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using HotChocolate;
 
 namespace O8Query.Models
 {
@@ -20,13 +21,6 @@ namespace O8Query.Models
         /// </summary>
         [Required]
         public string Name { get; set; }
-
-        /// <summary>
-        /// Industry in which company plies its trade
-        /// </summary>
-        [Required]
-        [MaxLength(50)]
-        public string Industry { get; set; }
 
         /// <summary>
         /// Summary about the company
@@ -72,5 +66,8 @@ namespace O8Query.Models
         public List<Industry> Industries { get; set; }
 
         public List<Announcement> Announcements { get; set; }
+
+        [GraphQLIgnore]
+        public List<FileContent> Files { get; set; }
     }
 }
