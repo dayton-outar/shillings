@@ -59,6 +59,7 @@ namespace Harpoon
                 .AddMutationType<Mutation>()
                 .AddType<StatementAnalyteType>()
                 .AddType<StatementAnalyteInputType>()
+                .AddType<UploadType>()
                 .AddTypeConverter<List<StatementAnalyte.Assay>, StatementAnalyte.Assay>(from => EnumExtension.ToCombined<StatementAnalyte.Assay>(from))
                 .AddFiltering()
                 .AddSorting()

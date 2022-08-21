@@ -61,7 +61,7 @@ namespace Harpoon
         }
 
         [UseDbContext(typeof(StocksQuery))]
-        public Company CreateCompany([ScopedService]StocksQuery sq, Company company)
+        public Company CreateCompany([ScopedService]StocksQuery sq, Company company, HotChocolate.Types.IFile file)
         {
             sq.Companies.Add(company); // This does not allow for associating company with industries in INSERT statement
             sq.SaveChanges();
@@ -70,8 +70,22 @@ namespace Harpoon
         }
 
         [UseDbContext(typeof(StocksQuery))]
-        public Company UpdateCompany([ScopedService]StocksQuery sq, Company company)
+        public Company UpdateCompany([ScopedService]StocksQuery sq, Company company, HotChocolate.Types.IFile file)
         {
+            using (var ms = new System.IO.MemoryStream()) 
+            {
+                file.CopyToAsync(ms);
+                var bytes = ms.ToArray();
+
+                company.Files.Add(new FileContent{
+                    Type = FileContent.FileType.Logo,
+                    FileName = file.Name,
+                    Created = DateTime.Now,
+                    Content = bytes,
+                    ContentSize = bytes.Length
+                });
+            }
+
             sq.Companies.Update(company);
             sq.SaveChanges();
             
