@@ -116,6 +116,41 @@
             </div>
             <div class="columns">
                 <div class="column">
+                    <b-field>
+                        <b-upload
+                            v-model="dropFiles"
+                            multiple
+                            drag-drop
+                            expanded>
+                            <section class="section">
+                                <div class="content has-text-centered">
+                                    <p>
+                                        <b-icon
+                                            icon="upload"
+                                            size="is-large">
+                                        </b-icon>
+                                    </p>
+                                    <p>Drop your files here or click to upload</p>
+                                </div>
+                            </section>
+                        </b-upload>
+                    </b-field>
+                    <div class="tags">
+                        <span v-for="(file, index) in dropFiles"
+                            :key="index"
+                            class="tag is-primary" >
+                            {{file.name}}
+                            <button class="delete is-small"
+                                type="button"
+                                @click="deleteDropFile(index)">
+                            </button>
+                        </span>
+                    </div>
+                    <img :src="imgSrc" alt="Company Logo" />
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
                     <b-button label="Save" type="is-info" size="is-large" expanded />
                 </div>
             </div>
@@ -126,11 +161,30 @@
 <script>
 
 export default {
-    data() {},
+    data() {
+        return {
+            dropFiles: [],
+            imgSrc: '#'
+        }
+    },
     computed: {},
-    methods: {},
+    methods: {
+        deleteDropFile(index) {
+            this.dropFiles.splice(index, 1)
+        }
+    },
     watch: {
-        $route() {}
+        $route() {},
+        dropFiles: function(o) {
+          var reader = new FileReader();
+          reader.onload = e => { //this.$emit("load", e.target.result);
+            this.imgSrc = e.target.result;
+          }
+
+          if (o[0]) {
+            reader.readAsDataURL(o[0]);
+          }
+        }
     }
 }
 
