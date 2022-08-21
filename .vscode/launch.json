@@ -10,7 +10,7 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/api/Harpoon/bin/Debug/net5.0/Harpoon.dll",
+            "program": "${workspaceFolder}/api/Harpoon/bin/Debug/net6.0/Harpoon.dll",
             "args": [],
             "cwd": "${workspaceFolder}/api/Harpoon",
             "stopAtEntry": false,
