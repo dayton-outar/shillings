@@ -63,7 +63,8 @@ namespace Harpoon
                 .AddTypeConverter<List<StatementAnalyte.Assay>, StatementAnalyte.Assay>(from => EnumExtension.ToCombined<StatementAnalyte.Assay>(from))
                 .AddFiltering()
                 .AddSorting()
-                .AddProjections();
+                .AddProjections()
+                .AddMutationConventions();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
