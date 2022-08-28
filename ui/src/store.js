@@ -617,10 +617,7 @@ export const store = new Vuex.Store({
                   announcements: null,
                   industries: company.industries
                 },
-                file: company.logo,
-                context: {
-                  hasUpload: true
-                }
+                file: company.logo
               }
             }
           })

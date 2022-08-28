@@ -86,19 +86,20 @@ namespace Harpoon
         [UseDbContext(typeof(StocksQuery))]
         public Company UpdateCompany([ScopedService]StocksQuery sq, Company company, HotChocolate.Types.IFile file)
         {
-            // using (var ms = new System.IO.MemoryStream()) 
-            // {
-            //     file.CopyToAsync(ms);
-            //     var bytes = ms.ToArray();
+            using (var ms = new System.IO.MemoryStream()) 
+            {
+                file.CopyToAsync(ms);
+                var bytes = ms.ToArray();
 
-            //     company.Files.Add(new FileContent{
-            //         Type = FileContent.FileType.Logo,
-            //         FileName = file.Name,
-            //         Created = DateTime.Now,
-            //         Content = bytes,
-            //         ContentSize = bytes.Length
-            //     });
-            // }
+                company.Files = new List<FileContent>();
+                company.Files.Add(new FileContent{
+                    Type = FileContent.FileType.Logo,
+                    FileName = file.Name,
+                    Created = DateTime.Now,
+                    Content = bytes,
+                    ContentSize = bytes.Length
+                });
+            }
 
             //sq.Companies.Update(company);
             //sq.SaveChanges();
