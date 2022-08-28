@@ -7,7 +7,7 @@
                     <b-field 
                         label="Code"
                         label-position="inside">
-                        <b-input></b-input>
+                        <b-input v-model="company.code"></b-input>
                     </b-field>
                 </div>
             </div>
@@ -16,7 +16,7 @@
                     <b-field 
                         label="Name"
                         label-position="inside">
-                        <b-input></b-input>
+                        <b-input v-model="company.name"></b-input>
                     </b-field>
                 </div>
             </div>
@@ -25,7 +25,7 @@
                     <b-field 
                         label="About"
                         label-position="inside">
-                        <b-input></b-input>
+                        <b-input v-model="company.about"></b-input>
                     </b-field>
                 </div>
             </div>
@@ -34,7 +34,7 @@
                     <b-field 
                         label="Total Employed"
                         label-position="">
-                        <b-numberinput></b-numberinput>
+                        <b-numberinput v-model="company.totalEmployed"></b-numberinput>
                     </b-field>
                 </div>
             </div>
@@ -43,7 +43,7 @@
                     <b-field 
                         label="Wiki"
                         label-position="inside">
-                        <b-input></b-input>
+                        <b-input v-model="company.wiki"></b-input>
                     </b-field>
                 </div>
             </div>
@@ -52,7 +52,7 @@
                     <b-field 
                         label="Website"
                         label-position="inside">
-                        <b-input></b-input>
+                        <b-input v-model="company.webSite"></b-input>
                     </b-field>
                 </div>
             </div>
@@ -61,6 +61,7 @@
                     <b-field 
                         label="Founded">
                         <b-datepicker
+                            v-model="company.founded"
                             ref="datepicker"
                             label-position=""
                             placeholder=""
@@ -74,6 +75,7 @@
                     <b-field 
                         label="Country">
                         <b-select 
+                            v-model="company.countryCode"
                             placeholder="Choose Country"
                             expanded>
                             <option value="JM">Jamaica</option>
@@ -151,7 +153,7 @@
             </div>
             <div class="columns">
                 <div class="column">
-                    <b-button label="Save" type="is-info" size="is-large" expanded />
+                    <b-button label="Save" type="is-info" size="is-large" expanded @click="submit" />
                 </div>
             </div>
         </div>
@@ -159,18 +161,31 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex' //mapState,
 
 export default {
     data() {
         return {
+            company: {},
             dropFiles: [],
             imgSrc: '#'
         }
     },
-    computed: {},
+    computed: {
+        //...mapState(['company'])
+    },
     methods: {
+        ...mapActions(['updateCompany']),
         deleteDropFile(index) {
             this.dropFiles.splice(index, 1)
+        },
+        submit() {
+            this.company.logo = this.dropFiles[0];
+            this.company.industries = [];
+            this.company.announcements = null;
+            this.company.created = new Date(1999, 10, 4);
+
+            this.updateCompany( this.company );
         }
     },
     watch: {

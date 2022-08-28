@@ -10,6 +10,7 @@ Vue.use(Vuex)
 export const store = new Vuex.Store({
     strict: true,
     state: {
+      company: {},
       companies: [],
       fullCompanies: {},
       stocks: [],
@@ -90,6 +91,9 @@ export const store = new Vuex.Store({
         }
     },
     mutations: {
+        setCompany(state, payload) {
+          state.company = payload
+        },
         setCompanies(state, payload) {
           state.companies = payload
         },
@@ -574,6 +578,56 @@ export const store = new Vuex.Store({
           })
           
           commit('setFullCompanies', response.data.companies)
+        },
+        async updateCompany({ commit }, company) {
+          console.log( company );
+          const response = await graphQlClient.mutate({
+            mutation: gql`mutation UpdateCompany($input: UpdateCompanyInput!) {
+              updateCompany ( input: $input) {
+                company {
+                  code,
+                  name,
+                  about,
+                  totalEmployed,
+                  wiki,
+                  webSite,
+                  founded,
+                  countryCode,
+                  created,
+                  industries {
+                    no,
+                    name,
+                    wiki
+                  }
+                }
+              }
+            }`,
+            variables: {
+              input: {
+                company: {
+                  code: company.code,
+                  name: company.name,
+                  about: company.about,
+                  totalEmployed: company.totalEmployed,
+                  wiki: company.wiki,
+                  webSite: company.webSite,
+                  founded: company.founded,
+                  countryCode: company.countryCode,
+                  created: company.created,
+                  announcements: null,
+                  industries: company.industries
+                },
+                file: company.logo,
+                context: {
+                  hasUpload: true
+                }
+              }
+            }
+          })
+
+          console.log( response.data )
+
+          commit('setCompany', response.data.updateCompany.company)
         },
         async fetchStocks({ commit }) {
           const response = await graphQlClient.query({
