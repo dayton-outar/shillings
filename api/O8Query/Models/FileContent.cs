@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Xml.Serialization;
 using HotChocolate;
 
 namespace O8Query.Models
@@ -15,8 +16,19 @@ namespace O8Query.Models
 
         [Key]
         public long No { get; set; }
+        
         [Required]
+        [XmlIgnore]
         public FileType Type { get; set; }
+
+        [GraphQLIgnore]
+        [NotMapped]
+        public int TypeInt
+        {
+            get { return (int)this.Type; }
+            set { this.Type = (FileType)value; }
+        }
+
         [Required]
         [MaxLength(256)]
         public string FileName { get; set; }
