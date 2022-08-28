@@ -50,7 +50,7 @@ namespace Harpoon
             string financialReportXml = SerializationHelper.Serialize<FinancialReport>(financialReport);
             List<SqlParameter> parms = new List<SqlParameter>
             { 
-                // Create parameters
+                // Update parameters
                 new SqlParameter { ParameterName = "@report", Value = financialReportXml }  
             };
 
@@ -77,8 +77,16 @@ namespace Harpoon
                 });
             }
 
-            //sq.Companies.Add(company); // This does not allow for associating company with industries in INSERT statement
-            //sq.SaveChanges();
+            string sql = "EXEC [dbo].[CreateCompany] @company";
+            
+            string companyXml = SerializationHelper.Serialize<Company>(company);
+            List<SqlParameter> parms = new List<SqlParameter>
+            { 
+                // Update parameters
+                new SqlParameter { ParameterName = "@company", Value = companyXml }  
+            };
+
+            sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
 
             return company;
         }
@@ -101,8 +109,16 @@ namespace Harpoon
                 });
             }
 
-            //sq.Companies.Update(company);
-            //sq.SaveChanges();
+            //string sql = "EXEC [dbo].[UpdateCompany] @company";
+            
+            string companyXml = SerializationHelper.Serialize<Company>(company);
+            // List<SqlParameter> parms = new List<SqlParameter>
+            // { 
+            //     // Update parameters
+            //     new SqlParameter { ParameterName = "@company", Value = companyXml }  
+            // };
+
+            // sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
             
             return company;
         }
