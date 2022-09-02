@@ -105,7 +105,8 @@ namespace Harpoon
                     FileName = file.Name,
                     Created = DateTime.Now,
                     Content = bytes,
-                    ContentSize = bytes.Length
+                    ContentSize = bytes.Length,
+                    ContentType = GetContentType(file.Name)
                 });
             }
 
@@ -121,6 +122,15 @@ namespace Harpoon
             // sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
             
             return company;
+        }
+
+        // Credit: https://stackoverflow.com/questions/34131326/using-mimemapping-in-asp-net-core
+        // See also https://www.garykessler.net/library/file_sigs.html
+        private string GetContentType(string fileName)
+        {
+            string contentType;
+            new Microsoft.AspNetCore.StaticFiles.FileExtensionContentTypeProvider().TryGetContentType(fileName, out contentType);
+            return contentType ?? "application/octet-stream";
         }
     }
 }

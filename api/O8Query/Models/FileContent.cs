@@ -16,9 +16,8 @@ namespace O8Query.Models
 
         [Key]
         public long No { get; set; }
-        
+
         [Required]
-        [XmlIgnore]
         public FileType Type { get; set; }
 
         [GraphQLIgnore]
