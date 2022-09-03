@@ -44,6 +44,7 @@ namespace Harpoon
 
             string connectionString = Configuration.GetConnectionString("HarpoonDatabase");
 
+            services.AddControllers();
             services.AddPooledDbContextFactory<StocksQuery>(
                 (s, o) => 
                     o
@@ -85,6 +86,7 @@ namespace Harpoon
 
             app.UseEndpoints( endpoints => 
                 {
+                    endpoints.MapControllers();
                     endpoints.MapGraphQL();
                 });
         }
