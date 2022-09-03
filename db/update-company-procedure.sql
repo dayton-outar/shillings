@@ -10,9 +10,34 @@ SELECT	c.x.query('Code').value('.', 'nvarchar(20)'),
         c.x.query('CountryCode').value('.', 'nvarchar(2)')
 FROM    @company.nodes('Company') c ( x );
 
+DECLARE @created DATETIME2 = GETDATE();
 
-SELECT	f.x.query('FileContent/FileName').value('.', 'nvarchar(256)'),
-        f.x.query('FileContent/Content').value('.', 'varbinary(max)'),
-        f.x.query('FileContent/ContentSize').value('.', 'int'),
-        f.x.query('FileContent/ContentType').value('.', 'nvarchar(50)')
-FROM    @company.nodes('Company/Files') f ( x );
+DECLARE @tblFiles TABLE
+(
+        [No] BIGINT,
+        [Type] INT NOT NULL,
+        [FileName] NVARCHAR(256) NOT NULL,
+        [Content] VARBINARY(MAX) NOT NULL,
+        [ContentSize] INT NOT NULL,
+        [ContentType] NVARCHAR(50) NOT NULL,
+        [Created] DATETIME2 NOT NULL
+    );
+
+    INSERT INTO @tblFiles
+    (
+        [Type] ,
+        [FileName] ,
+        [Content] ,
+        [ContentSize] ,
+        [ContentType] ,
+        [Created]
+    )
+    SELECT	f.x.query('FileContent/TypeInt').value('.', 'int'),
+            f.x.query('FileContent/FileName').value('.', 'nvarchar(256)'),
+            f.x.query('FileContent/Content').value('.', 'varbinary(max)'),
+            f.x.query('FileContent/ContentSize').value('.', 'int'),
+            f.x.query('FileContent/ContentType').value('.', 'nvarchar(50)'),
+            @created
+    FROM    @company.nodes('Company/Files') f ( x );
+
+select * from @tblFiles;

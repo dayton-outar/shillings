@@ -110,16 +110,16 @@ namespace Harpoon
                 });
             }
 
-            //string sql = "EXEC [dbo].[UpdateCompany] @company";
+            string sql = "EXEC [dbo].[UpdateCompany] @company";
             
             string companyXml = SerializationHelper.Serialize<Company>(company);
-            // List<SqlParameter> parms = new List<SqlParameter>
-            // { 
-            //     // Update parameters
-            //     new SqlParameter { ParameterName = "@company", Value = companyXml }  
-            // };
+            List<SqlParameter> parms = new List<SqlParameter>
+            { 
+                // Update parameters
+                new SqlParameter { ParameterName = "@company", Value = companyXml }  
+            };
 
-            // sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
+            sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
             
             return company;
         }
