@@ -4,10 +4,10 @@ SET QUOTED_IDENTIFIER ON
 GO
 -- =============================================
 -- Author:		Dayton Outar
--- Create date: Sep 3, 2022
--- Description:	Modifies company details
+-- Create date: Sep 4, 2022
+-- Description:	Creates company details
 -- =============================================
-CREATE PROCEDURE [dbo].[UpdateCompany]
+CREATE PROCEDURE [dbo].[CreateCompany]
     @company XML
 AS
     BEGIN
@@ -73,32 +73,30 @@ AS
     BEGIN TRY
         BEGIN TRANSACTION;
     
-        UPDATE c SET
-            c.[Name] = @companyName ,
-            c.[About] = @about ,
-            c.[Wiki] = @wiki ,
-            c.[WebSite] = @webSite ,
-            c.[TotalEmployed] = @totalEmployed ,
-            c.[Founded] = @founded ,
-            c.[CountryCode] = @countryCode
-        FROM [dbo].[Companies] c
-        WHERE c.[Code] = @companyCode;
-
-        -- Do Updates 
-        UPDATE  f SET     
-            f.[FileName] = t.[FileName]
-        FROM    [dbo].[Files] f
-                INNER JOIN [dbo].[CompanyFileContent] x ON x.[FilesNo] = f.[No]
-                INNER JOIN @tblFiles t ON t.[No] = f.[No]
-        WHERE   x.[CompaniesCode] = @companyCode;
-
-        -- Do Deletions
-        DELETE f FROM [dbo].[Files] f
-                INNER JOIN [dbo].[CompanyFileContent] x ON x.[FilesNo] = f.[No]
-        WHERE   NOT EXISTS ( SELECT ''
-                            FROM @tblFiles t
-                            WHERE  t.[No] = f.[No] )
-            AND x.[CompaniesCode] = @companyCode;
+        INSERT INTO [dbo].[Companies]
+            (
+                [Code] ,
+                [Name] ,
+                [About] ,
+                [Wiki] ,
+                [WebSite] ,
+                [TotalEmployed] ,
+                [Founded] ,
+                [CountryCode],
+                [Created]
+            )
+        VALUES 
+            (
+                @companyCode ,
+                @companyName ,
+                @about ,
+                @wiki ,
+                @webSite ,
+                @totalEmployed ,
+                @founded ,
+                @countryCode ,
+                @created
+            );
 
         -- Do Insertions
         INSERT INTO [dbo].[Files]
