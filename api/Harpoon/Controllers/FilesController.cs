@@ -1,8 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using System.Linq;
 
-using O8Query.Models;
 using O8Query.Data;
 
 namespace Harpoon.Controllers
@@ -10,11 +8,11 @@ namespace Harpoon.Controllers
     [Route("api/[controller]")]
     public class FilesController : ControllerBase
     {
-        private readonly StocksQuery _sq;
+        private readonly BlobQuery _bq;
 
-        public FilesController(StocksQuery sq)
+        public FilesController(BlobQuery bq)
         {
-            _sq = sq;
+            _bq = bq;
         }
 
         // 
@@ -22,7 +20,7 @@ namespace Harpoon.Controllers
         [HttpGet]
         public IActionResult Get([FromQuery]long no)
         {
-            var file = _sq.Files.Where(f => f.No == no).FirstOrDefault();
+            var file = _bq.Files.Where(f => f.No == no).FirstOrDefault();
 
             return file == null ? NotFound() : File(file.Content, file.ContentType);
         }

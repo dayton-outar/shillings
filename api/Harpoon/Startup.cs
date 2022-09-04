@@ -44,12 +44,11 @@ namespace Harpoon
 
             string connectionString = Configuration.GetConnectionString("HarpoonDatabase");
 
-            // services.AddControllers();
-            // services.AddDbContext<StocksQuery>(
-            //     options => options.UseSqlServer(connectionString, b => b.MigrationsAssembly("Harpoon")));
+            services.AddControllers();
+            services.AddDbContext<BlobQuery>(
+                options => options.UseSqlServer(connectionString, b => b.MigrationsAssembly("Harpoon")));
                 
-            services
-                .AddPooledDbContextFactory<StocksQuery>(
+            services.AddPooledDbContextFactory<StocksQuery>(
                 (s, o) => 
                     o
                         .UseSqlServer(connectionString, b => b.MigrationsAssembly("Harpoon"))
@@ -90,7 +89,7 @@ namespace Harpoon
 
             app.UseEndpoints( endpoints => 
                 {
-                    //endpoints.MapControllers();
+                    endpoints.MapControllers();
                     endpoints.MapGraphQL();
                 });
         }
