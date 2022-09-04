@@ -99,15 +99,42 @@ namespace Harpoon
                 file.CopyToAsync(ms);
                 var bytes = ms.ToArray();
 
-                company.Files = new List<FileContent>();
-                company.Files.Add(new FileContent{
-                    Type = FileContent.FileType.Logo,
-                    FileName = file.Name,
-                    Created = DateTime.Now,
-                    Content = bytes,
-                    ContentSize = bytes.Length,
-                    ContentType = GetContentType(file.Name)
-                });
+                if (company.Files != null) 
+                {
+                    var logo = company.Files.Where(f => f.Type == FileContent.FileType.Logo).OrderByDescending(f => f.Created).First();
+
+                    if (logo != null) 
+                    {
+                        logo.FileName = file.Name;
+                        logo.Content = bytes;
+                        logo.ContentSize= bytes.Length;
+                        logo.ContentType = GetContentType(file.Name);
+                        logo.Created = DateTime.Now;
+                    }
+                    else
+                    {
+                        logo = new FileContent {
+                            Type = FileContent.FileType.Logo,
+                            FileName = file.Name,
+                            Created = DateTime.Now,
+                            Content = bytes,
+                            ContentSize = bytes.Length,
+                            ContentType = GetContentType(file.Name)
+                        };
+                    }
+                } 
+                else 
+                {
+                    company.Files = new List<FileContent>();
+                    company.Files.Add(new FileContent {
+                            Type = FileContent.FileType.Logo,
+                            FileName = file.Name,
+                            Created = DateTime.Now,
+                            Content = bytes,
+                            ContentSize = bytes.Length,
+                            ContentType = GetContentType(file.Name)
+                        });
+                }
             }
 
             string sql = "EXEC [dbo].[UpdateCompany] @company";

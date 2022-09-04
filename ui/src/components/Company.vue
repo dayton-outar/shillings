@@ -183,6 +183,14 @@ export default {
             this.company.logo = this.dropFiles[0];
             this.company.industries = [];
             this.company.announcements = null;
+            this.company.files = [{
+                no: 5, // TODO: Make this dynamic
+                type: "LOGO",
+                fileName: "",
+                contentSize: 0,
+                contentType: "",
+                created: new Date()
+            }];
             this.company.created = new Date(1999, 10, 4);
 
             this.updateCompany( this.company );

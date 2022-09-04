@@ -31,13 +31,18 @@ namespace O8Query.Models
         [Required]
         [MaxLength(256)]
         public string FileName { get; set; }
+
+        [GraphQLIgnore]
         [Required]
         public byte[] Content { get; set; }
+
         [Required]
         public int ContentSize { get; set; }
+
         [Required]
         [MaxLength(50)]
         public string ContentType { get; set; }
+        
         [Required]
         public DateTime Created { get; set; }
 

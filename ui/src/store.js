@@ -598,6 +598,22 @@ export const store = new Vuex.Store({
                     no,
                     name,
                     wiki
+                  },
+                  logo {
+                    no,
+                    type,
+                    fileName,
+                    contentType,
+                    contentSize,
+                    created
+                  },
+                  files {
+                    no,
+                    type,
+                    fileName,
+                    contentType,
+                    contentSize,
+                    created
                   }
                 }
               }
@@ -615,7 +631,8 @@ export const store = new Vuex.Store({
                   countryCode: company.countryCode,
                   created: company.created,
                   announcements: null,
-                  industries: company.industries
+                  industries: company.industries,
+                  files: company.files
                 },
                 file: company.logo
               }

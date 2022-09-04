@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -67,7 +68,11 @@ namespace O8Query.Models
 
         public List<Announcement> Announcements { get; set; }
 
-        [GraphQLIgnore]
         public List<FileContent> Files { get; set; }
+
+        public FileContent Logo()
+        {
+            return this.Files.Count() == 0 ? null : this.Files.Where(f => f.Type == FileContent.FileType.Logo).OrderByDescending(f => f.Created).First();
+        }
     }
 }
