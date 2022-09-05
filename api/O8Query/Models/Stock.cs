@@ -35,13 +35,13 @@ namespace O8Query.Models
         /// Authorized Issued shares
         /// </summary>
         //[Required]
-        public long IssuedShares { get; set; }
+        public long? IssuedShares { get; set; }
 
         /// <summary>
         /// Outstanding shares
         /// </summary>
         //[Required]
-        public long OutstandingShares { get; set; }
+        public long? OutstandingShares { get; set; }
 
         /// <summary>
         /// Company information that is associated with this stock
