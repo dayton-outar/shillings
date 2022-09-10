@@ -64,6 +64,13 @@ namespace Harpoon
         [UseProjection]
         [UseFiltering]
         [UseSorting]
+        public IQueryable<Industry> GetIndustries([ScopedService]StocksQuery sq) => sq.Industries;
+
+        [UseDbContext(typeof(StocksQuery))]
+        [UsePaging]
+        [UseProjection]
+        [UseFiltering]
+        [UseSorting]
         public IQueryable<Stock> GetStocks([ScopedService]StocksQuery sq) => sq.Stocks;
 
         [UseDbContext(typeof(StocksQuery))]

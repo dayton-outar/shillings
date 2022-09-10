@@ -89,6 +89,7 @@
                     <b-field 
                         label="Industries">
                         <b-dropdown
+                            v-model="selectedIndustries"
                             multiple
                             scrollable
                             aria-role="list"
@@ -98,18 +99,15 @@
                                     type="is-light"
                                     expanded
                                     icon-right="menu-down">
-                                    Selected 
+                                    Selected ({{ selectedIndustries.length }})
                                 </b-button>
                             </template>
-                            
-                            <b-dropdown-item aria-role="listitem" 
-                                value="Foods">
-                                Foods
-                            </b-dropdown-item>
 
                             <b-dropdown-item aria-role="listitem" 
-                                value="Finance">
-                                Finance
+                                v-for="industry in industries" 
+                                :key="industry.no"
+                                :value="industry">
+                                {{industry.name}}
                             </b-dropdown-item>
 
                         </b-dropdown>
@@ -161,18 +159,22 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex' //mapState,
+import { mapState, mapActions } from 'vuex'
 
 export default {
     data() {
         return {
             company: {},
+            selectedIndustries: [],
             dropFiles: [],
             imgSrc: '#'
         }
     },
+    beforeCreate() {
+        this.$store.dispatch('fetchIndustries')
+    },
     computed: {
-        //...mapState(['company'])
+        ...mapState(['industries'])
     },
     methods: {
         ...mapActions(['updateCompany']),
@@ -180,8 +182,8 @@ export default {
             this.dropFiles.splice(index, 1)
         },
         submit() {
-            this.company.logo = this.dropFiles[0];
-            this.company.industries = [];
+            this.company.industries = this.selectedIndustries;
+            this.company.logo = this.dropFiles[0];            
             this.company.announcements = null;
             this.company.files = [{
                 no: 5, // TODO: Make this dynamic

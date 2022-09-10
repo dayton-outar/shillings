@@ -94,59 +94,59 @@ namespace Harpoon
         [UseDbContext(typeof(StocksQuery))]
         public Company UpdateCompany([ScopedService]StocksQuery sq, Company company, HotChocolate.Types.IFile file)
         {
-            using (var ms = new System.IO.MemoryStream()) 
-            {
-                file.CopyToAsync(ms);
-                var bytes = ms.ToArray();
+            // using (var ms = new System.IO.MemoryStream()) 
+            // {
+            //     file.CopyToAsync(ms);
+            //     var bytes = ms.ToArray();
 
-                if (company.Files != null) 
-                {
-                    var logo = company.Files.Where(f => f.Type == FileContent.FileType.Logo).OrderByDescending(f => f.Created).First();
+            //     if (company.Files != null) 
+            //     {
+            //         var logo = company.Files.Where(f => f.Type == FileContent.FileType.Logo).OrderByDescending(f => f.Created).First();
 
-                    if (logo != null) 
-                    {
-                        logo.FileName = file.Name;
-                        logo.Content = bytes;
-                        logo.ContentSize= bytes.Length;
-                        logo.ContentType = GetContentType(file.Name);
-                        logo.Created = DateTime.Now;
-                    }
-                    else
-                    {
-                        logo = new FileContent {
-                            Type = FileContent.FileType.Logo,
-                            FileName = file.Name,
-                            Created = DateTime.Now,
-                            Content = bytes,
-                            ContentSize = bytes.Length,
-                            ContentType = GetContentType(file.Name)
-                        };
-                    }
-                } 
-                else 
-                {
-                    company.Files = new List<FileContent>();
-                    company.Files.Add(new FileContent {
-                            Type = FileContent.FileType.Logo,
-                            FileName = file.Name,
-                            Created = DateTime.Now,
-                            Content = bytes,
-                            ContentSize = bytes.Length,
-                            ContentType = GetContentType(file.Name)
-                        });
-                }
-            }
+            //         if (logo != null) 
+            //         {
+            //             logo.FileName = file.Name;
+            //             logo.Content = bytes;
+            //             logo.ContentSize= bytes.Length;
+            //             logo.ContentType = GetContentType(file.Name);
+            //             logo.Created = DateTime.Now;
+            //         }
+            //         else
+            //         {
+            //             logo = new FileContent {
+            //                 Type = FileContent.FileType.Logo,
+            //                 FileName = file.Name,
+            //                 Created = DateTime.Now,
+            //                 Content = bytes,
+            //                 ContentSize = bytes.Length,
+            //                 ContentType = GetContentType(file.Name)
+            //             };
+            //         }
+            //     } 
+            //     else 
+            //     {
+            //         company.Files = new List<FileContent>();
+            //         company.Files.Add(new FileContent {
+            //                 Type = FileContent.FileType.Logo,
+            //                 FileName = file.Name,
+            //                 Created = DateTime.Now,
+            //                 Content = bytes,
+            //                 ContentSize = bytes.Length,
+            //                 ContentType = GetContentType(file.Name)
+            //             });
+            //     }
+            // }
 
-            string sql = "EXEC [dbo].[UpdateCompany] @company";
+            // string sql = "EXEC [dbo].[UpdateCompany] @company";
             
             string companyXml = SerializationHelper.Serialize<Company>(company);
-            List<SqlParameter> parms = new List<SqlParameter>
-            { 
-                // Update parameters
-                new SqlParameter { ParameterName = "@company", Value = companyXml }  
-            };
+            // List<SqlParameter> parms = new List<SqlParameter>
+            // { 
+            //     // Update parameters
+            //     new SqlParameter { ParameterName = "@company", Value = companyXml }  
+            // };
 
-            sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
+            // sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
             
             return company;
         }

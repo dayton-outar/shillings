@@ -56,19 +56,37 @@ AS
         [ContentType] ,
         [Created]
     )
-    SELECT	f.x.query('FileContent/No').value('.', 'bigint') [No],
-            f.x.query('FileContent/TypeInt').value('.', 'int') [Type],
-            f.x.query('FileContent/FileName').value('.', 'nvarchar(256)') [FileName],
-            f.x.query('FileContent/Content').value('.', 'varbinary(max)') [Content],
-            f.x.query('FileContent/ContentSize').value('.', 'int') [ContentSize],
-            f.x.query('FileContent/ContentType').value('.', 'nvarchar(50)') [ContentType],
+    SELECT	f.x.query('No').value('.', 'bigint') [No],
+            f.x.query('TypeInt').value('.', 'int') [Type],
+            f.x.query('FileName').value('.', 'nvarchar(256)') [FileName],
+            f.x.query('Content').value('.', 'varbinary(max)') [Content],
+            f.x.query('ContentSize').value('.', 'int') [ContentSize],
+            f.x.query('ContentType').value('.', 'nvarchar(50)') [ContentType],
             @created [Created]
-    FROM    @company.nodes('Company/Files') f ( x );
+    FROM    @company.nodes('Company/Files/FileContent') f ( x );
 
     DECLARE @tblIFiles TABLE
     (
         [No] BIGINT
     );
+
+    DECLARE @tblIndustries TABLE
+    (
+        [No] BIGINT NOT NULL,
+        [Name] NVARCHAR(MAX) NOT NULL,
+        [Wiki] NVARCHAR(2100) NOT NULL
+    );
+
+    INSERT INTO @tblIndustries
+    (
+        [No],
+        [Name],
+        [Wiki]
+    )
+    SELECT	i.x.query('No').value('.', 'bigint') [No],
+            i.x.query('Name').value('.', 'nvarchar(max)') [Name],
+            i.x.query('Wiki').value('.', 'nvarchar(2100)') [Wiki]
+    FROM    @company.nodes('Company/Industries/Industry') i ( x );
 
     BEGIN TRY
         BEGIN TRANSACTION;
@@ -84,6 +102,22 @@ AS
         FROM [dbo].[Companies] c
         WHERE c.[Code] = @companyCode;
 
+        -- Updating industries
+        -- Do Deletions
+        DELETE i FROM [dbo].[CompanyIndustry] i
+        WHERE i.[CompaniesCode] = @companyCode;
+
+        -- Do Insertions
+        INSERT INTO [dbo].[CompanyIndustry]
+            (
+                [CompaniesCode],
+                [IndustriesNo]
+            )
+        SELECT  @companyCode,
+                i.[No]
+        FROM @tblIndustries i;
+
+        -- Updating files
         -- Do Updates 
         UPDATE  f SET     
             f.[FileName] = t.[FileName]
