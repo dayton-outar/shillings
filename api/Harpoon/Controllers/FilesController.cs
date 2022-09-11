@@ -5,7 +5,7 @@ using O8Query.Data;
 
 namespace Harpoon.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     public class FilesController : ControllerBase
     {
         private readonly BlobQuery _bq;

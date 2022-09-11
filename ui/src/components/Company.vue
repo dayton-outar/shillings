@@ -1,13 +1,12 @@
 <template>
     <div>
-        <h4 class="title is-4">{{  }}</h4>
         <div class="box my-4 mx-1">
             <div class="columns">
                 <div class="column">
                     <b-field 
                         label="Code"
                         label-position="inside">
-                        <b-input v-model="company.code"></b-input>
+                        <b-input v-model="companyData.code" :disabled="editMode"></b-input>
                     </b-field>
                 </div>
             </div>
@@ -16,7 +15,7 @@
                     <b-field 
                         label="Name"
                         label-position="inside">
-                        <b-input v-model="company.name"></b-input>
+                        <b-input v-model="companyData.name"></b-input>
                     </b-field>
                 </div>
             </div>
@@ -25,7 +24,7 @@
                     <b-field 
                         label="About"
                         label-position="inside">
-                        <b-input v-model="company.about"></b-input>
+                        <b-input v-model="companyData.about"></b-input>
                     </b-field>
                 </div>
             </div>
@@ -34,7 +33,7 @@
                     <b-field 
                         label="Total Employed"
                         label-position="">
-                        <b-numberinput v-model="company.totalEmployed"></b-numberinput>
+                        <b-numberinput v-model="companyData.totalEmployed"></b-numberinput>
                     </b-field>
                 </div>
             </div>
@@ -43,7 +42,7 @@
                     <b-field 
                         label="Wiki"
                         label-position="inside">
-                        <b-input v-model="company.wiki"></b-input>
+                        <b-input v-model="companyData.wiki"></b-input>
                     </b-field>
                 </div>
             </div>
@@ -52,7 +51,7 @@
                     <b-field 
                         label="Website"
                         label-position="inside">
-                        <b-input v-model="company.webSite"></b-input>
+                        <b-input v-model="companyData.webSite"></b-input>
                     </b-field>
                 </div>
             </div>
@@ -61,7 +60,7 @@
                     <b-field 
                         label="Founded">
                         <b-datepicker
-                            v-model="company.founded"
+                            v-model="foundedDate"
                             ref="datepicker"
                             label-position=""
                             placeholder=""
@@ -75,7 +74,7 @@
                     <b-field 
                         label="Country">
                         <b-select 
-                            v-model="company.countryCode"
+                            v-model="companyData.countryCode"
                             placeholder="Choose Country"
                             expanded>
                             <option value="JM">Jamaica</option>
@@ -89,7 +88,7 @@
                     <b-field 
                         label="Industries">
                         <b-dropdown
-                            v-model="selectedIndustries"
+                            v-model="companyData.industries"
                             multiple
                             scrollable
                             aria-role="list"
@@ -99,7 +98,7 @@
                                     type="is-light"
                                     expanded
                                     icon-right="menu-down">
-                                    Selected ({{ selectedIndustries.length }})
+                                    Selected ({{ companyData.industries.length }})
                                 </b-button>
                             </template>
 
@@ -151,7 +150,7 @@
             </div>
             <div class="columns">
                 <div class="column">
-                    <b-button label="Save" type="is-info" size="is-large" expanded @click="submit" />
+                    <b-button label="Save" type="is-info" size="is-medium" expanded @click="submit" />
                 </div>
             </div>
         </div>
@@ -160,21 +159,29 @@
 
 <script>
 import { mapState, mapActions } from 'vuex'
+import moment from 'moment'
 
 export default {
+    props: ['companyData', 'editMode'],
     data() {
         return {
-            company: {},
-            selectedIndustries: [],
             dropFiles: [],
-            imgSrc: '#'
+            imgSrc: this.companyData.logo ? `http://localhost:5000/files?no=${this.companyData.logo.no}` : '#'
         }
     },
     beforeCreate() {
         this.$store.dispatch('fetchIndustries')
     },
     computed: {
-        ...mapState(['industries'])
+        ...mapState(['industries']),
+        foundedDate: {
+            get() {
+                return moment(this.companyData.founded).toDate()
+            },
+            set(value) {
+                this.companyData.founded = value // HACK: Need for $store mutation method
+            }
+        }
     },
     methods: {
         ...mapActions(['updateCompany']),
@@ -182,24 +189,18 @@ export default {
             this.dropFiles.splice(index, 1)
         },
         submit() {
-            this.company.industries = this.selectedIndustries;
             this.company.logo = this.dropFiles[0];            
             this.company.announcements = null;
-            this.company.files = [{
-                no: 5, // TODO: Make this dynamic
-                type: "LOGO",
-                fileName: "",
-                contentSize: 0,
-                contentType: "",
-                created: new Date()
-            }];
             this.company.created = new Date(1999, 10, 4);
 
-            this.updateCompany( this.company );
+            if (this.editMode) {
+                this.updateCompany( this.company );
+            } else {
+                this.createCompany( this.company );
+            }
         }
     },
     watch: {
-        $route() {},
         dropFiles: function(o) {
           var reader = new FileReader();
           reader.onload = e => { //this.$emit("load", e.target.result);

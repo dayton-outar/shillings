@@ -15,6 +15,7 @@ export const store = new Vuex.Store({
       fullCompanies: {},
       industries: [],
       stocks: [],
+      fullStocks: [],
       totalTradings: null,
       portfolioHoldings: [],
       sections: [],
@@ -106,6 +107,9 @@ export const store = new Vuex.Store({
         },
         setStocks(state, payload) {
           state.stocks = payload
+        },
+        setFullStocks(state, payload) {
+          state.fullStocks = payload
         },
         setSections(state, payload) {
           state.sections = payload
@@ -573,7 +577,8 @@ export const store = new Vuex.Store({
           const response = await graphQlClient.query({
             query: gql`query {
               companies (
-                first: 20
+                first: 20,
+                after: "MTk=",
                 order: { name: ASC}
                 
               ) {
@@ -588,12 +593,33 @@ export const store = new Vuex.Store({
                   code,
                   name,
                   about,
-                  countryCode,
-                  founded,
                   totalEmployed,
-                  webSite,
                   wiki,
-                  created
+                  webSite,
+                  founded,
+                  countryCode,
+                  created,
+                  industries {
+                    no,
+                    name,
+                    wiki
+                  },
+                  logo {
+                    no,
+                    type,
+                    fileName,
+                    contentType,
+                    contentSize,
+                    created
+                  },
+                  files {
+                    no,
+                    type,
+                    fileName,
+                    contentType,
+                    contentSize,
+                    created
+                  }
                 }
               }
             }`
@@ -602,7 +628,6 @@ export const store = new Vuex.Store({
           commit('setFullCompanies', response.data.companies)
         },
         async updateCompany({ commit }, company) {
-          console.log( company );
           const response = await graphQlClient.mutate({
             mutation: gql`mutation UpdateCompany($input: UpdateCompanyInput!) {
               updateCompany ( input: $input) {
@@ -661,7 +686,66 @@ export const store = new Vuex.Store({
             }
           })
 
-          console.log( response.data )
+          commit('setCompany', response.data.updateCompany.company)
+        },
+        async createCompany({ commit }, company) {
+          const response = await graphQlClient.mutate({
+            mutation: gql`mutation CreateCompany($input: CreateCompanyInput!) {
+              createCompany ( input: $input) {
+                company {
+                  code,
+                  name,
+                  about,
+                  totalEmployed,
+                  wiki,
+                  webSite,
+                  founded,
+                  countryCode,
+                  created,
+                  industries {
+                    no,
+                    name,
+                    wiki
+                  },
+                  logo {
+                    no,
+                    type,
+                    fileName,
+                    contentType,
+                    contentSize,
+                    created
+                  },
+                  files {
+                    no,
+                    type,
+                    fileName,
+                    contentType,
+                    contentSize,
+                    created
+                  }
+                }
+              }
+            }`,
+            variables: {
+              input: {
+                company: {
+                  code: company.code,
+                  name: company.name,
+                  about: company.about,
+                  totalEmployed: company.totalEmployed,
+                  wiki: company.wiki,
+                  webSite: company.webSite,
+                  founded: company.founded,
+                  countryCode: company.countryCode,
+                  created: company.created,
+                  announcements: null,
+                  industries: company.industries,
+                  files: company.files
+                },
+                file: company.logo
+              }
+            }
+          })
 
           commit('setCompany', response.data.updateCompany.company)
         },
@@ -728,6 +812,42 @@ export const store = new Vuex.Store({
           })
 
           commit('setTotalStockTrades', totalTrades)
+        },
+        async fetchFullStocks({ commit }) {
+          const response = await graphQlClient.query({
+            query: gql`query {
+              stocks (
+                first: 20,
+                order: { name: ASC }
+              ) {
+                pageInfo {
+                  startCursor,
+                  hasNextPage,
+                  hasPreviousPage,
+                  endCursor
+                }
+                nodes {
+                  code,
+                  name,
+                  currency,
+                  stockType,
+                  issuedShares,
+                  outstandingShares,
+                  isListed,
+                  created,
+                  company {
+                    files {
+                      no,
+                      type,
+                      fileName
+                    }
+                  }
+                }
+              }
+            }`
+          })
+          
+          commit('setFullStocks', response.data.stocks)
         },
         async fetchSections({ commit }) {
           const response = await graphQlClient.query({

@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import Dashboard from './components/Dashboard.vue'
 import FinancialReport from './components/FinancialReport.vue'
 import Companies from './components/Companies.vue'
-import Company from './components/Company.vue'
+import Stocks from './components/Stocks.vue'
 
 Vue.use(Router)
 
@@ -28,10 +28,10 @@ export default new Router({
             meta: { title: 'Shillings: Companies' }
         },
         {
-            path: '/company',
-            name: 'company',
-            component: Company,
-            meta: { title: 'Shillings: Company' }
+            path: '/stocks',
+            name: 'stocks',
+            component: Stocks,
+            meta: { title: 'Shillings: Stocks' }
         }
     ]
 })
