@@ -836,6 +836,8 @@ export const store = new Vuex.Store({
                   isListed,
                   created,
                   company {
+                    code,
+                    name,
                     files {
                       no,
                       type,
