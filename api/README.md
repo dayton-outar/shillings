@@ -298,6 +298,7 @@ query {
 14. [Using the FOR XML Clause to Return Query Results as XML](https://www.red-gate.com/simple-talk/sql/learn-sql-server/using-the-for-xml-clause-to-return-query-results-as-xml/) by Robert Sheldon
 15. [XML columns in a Code-First application](https://stackoverflow.com/questions/12631290/xml-columns-in-a-code-first-application) - StackOverflow
 16. [NUnit vs. XUnit vs. MSTest: Comparing Unit Testing Frameworks In C#](https://www.lambdatest.com/blog/nunit-vs-xunit-vs-mstest/) by Himanshu Sheth
+17. [How to do Canary Deployments on Kubernetes](https://phoenixnap.com/kb/kubernetes-canary-deployments)
 
 ## Tutorial Videos
 
