@@ -6,7 +6,7 @@
                     <b-field 
                         label="Code"
                         label-position="inside">
-                        <b-input v-model="stockData.code" :disabled="editMode"></b-input>
+                        <b-input v-model="stock.code" :disabled="editMode"></b-input>
                     </b-field>
                 </div>
             </div>
@@ -15,7 +15,7 @@
                     <b-field 
                         label="Name"
                         label-position="inside">
-                        <b-input v-model="stockData.name"></b-input>
+                        <b-input v-model="stock.name"></b-input>
                     </b-field>
                 </div>
             </div>
@@ -24,7 +24,7 @@
                     <b-field 
                         label="Total Employed"
                         label-position="">
-                        <b-numberinput v-model="stockData.issuedShares"></b-numberinput>
+                        <b-numberinput v-model="stock.issuedShares"></b-numberinput>
                     </b-field>
                 </div>
             </div>
@@ -33,7 +33,7 @@
                     <b-field 
                         label="Total Employed"
                         label-position="">
-                        <b-numberinput v-model="stockData.outstandingShares"></b-numberinput>
+                        <b-numberinput v-model="stock.outstandingShares"></b-numberinput>
                     </b-field>
                 </div>
             </div>
@@ -42,7 +42,7 @@
                     <b-field 
                         label="Currency">
                         <b-select 
-                            v-model="stockData.currency"
+                            v-model="stock.currency"
                             placeholder="Choose Currency"
                             expanded>
                             <option value="JMD">Jamaican Dollar</option>
@@ -56,7 +56,7 @@
                     <b-field 
                         label="Type">
                         <b-select 
-                            v-model="stockData.stockType"
+                            v-model="stock.stockType"
                             placeholder="Choose Type"
                             expanded>
                             <option value="ORDINARY">Ordinary</option>
@@ -70,7 +70,7 @@
                     <b-field
                         label="Company">
                         <b-select 
-                            v-model="stockData.company.code"
+                            v-model="stock.company.code"
                             placeholder="Choose Company"
                             expanded>
                             <option
@@ -99,7 +99,9 @@ import { mapState } from 'vuex' //, mapActions
 export default {
     props: ['stockData', 'editMode'],
     data() {
-        return {}
+        return {
+            stock: JSON.parse(JSON.stringify(this.stockData)),
+        }
     },
     beforeCreate() {
         this.$store.dispatch('fetchCompanies')
