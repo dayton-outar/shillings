@@ -13,6 +13,7 @@ export const store = new Vuex.Store({
       company: {},
       companies: [],
       fullCompanies: {},
+      marketIndices: [],
       industries: [],
       stocks: [],
       fullStocks: [],
@@ -101,6 +102,9 @@ export const store = new Vuex.Store({
         },
         setFullCompanies(state, payload) {
           state.fullCompanies = payload
+        },
+        setMarketIndices(state, payload) {
+          state.marketIndices = payload
         },
         setIndustries(state, payload) {
           state.industries = payload
@@ -561,6 +565,20 @@ export const store = new Vuex.Store({
           
           commit('setCompanies', response.data.companies.nodes)
         },
+        async fetchMarketIndices({ commit }) {
+          const response = await graphQlClient.query({
+            query: gql`query {
+              marketIndices {
+                nodes {
+                  no,
+                  name
+                }
+              }
+            }`
+          })
+          
+          commit('setMarketIndices', response.data.marketIndices.nodes)
+        },
         async fetchIndustries({ commit }) {
           const response = await graphQlClient.query({
             query: gql`query {
@@ -850,6 +868,10 @@ export const store = new Vuex.Store({
                     files {
                       no
                     }
+                  },
+                  indices {
+                    no,
+                    name
                   }
                 }
               }

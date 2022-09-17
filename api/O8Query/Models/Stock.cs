@@ -58,6 +58,6 @@ namespace O8Query.Models
         [Required]
         public DateTime Created { get; set; }
 
-        public ICollection<MarketIndex> Indices { get; set; }
+        public List<MarketIndex> Indices { get; set; }
     }
 }

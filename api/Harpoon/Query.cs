@@ -71,7 +71,7 @@ namespace Harpoon
         [UseProjection]
         [UseFiltering]
         [UseSorting]
-        public IQueryable<Stock> GetStocks([ScopedService]StocksQuery sq) => sq.Stocks;
+        public IQueryable<Stock> GetStocks([ScopedService]StocksQuery sq) => sq.Stocks.Include(s => s.Indices);
 
         [UseDbContext(typeof(StocksQuery))]
         [UsePaging]

@@ -85,6 +85,36 @@
             </div>
             <div class="columns">
                 <div class="column">
+                    <b-field 
+                        label="Market Indices">
+                        <b-dropdown
+                            v-model="stock.indices"
+                            multiple
+                            scrollable
+                            aria-role="list"
+                            expanded>
+                            <template #trigger>
+                                <b-button
+                                    type="is-light"
+                                    expanded
+                                    icon-right="menu-down">
+                                    Selected ({{ stock.indices.length }})
+                                </b-button>
+                            </template>
+
+                            <b-dropdown-item aria-role="listitem" 
+                                v-for="index in marketIndices" 
+                                :key="index.no"
+                                :value="index">
+                                {{index.name}}
+                            </b-dropdown-item>
+
+                        </b-dropdown>
+                    </b-field>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
                     <b-button label="Save" type="is-info" size="is-medium" expanded @click.prevent="submit" />
                 </div>
             </div>
@@ -105,9 +135,10 @@ export default {
     },
     beforeCreate() {
         this.$store.dispatch('fetchCompanies')
+        this.$store.dispatch('fetchMarketIndices')
     },
     computed: {
-        ...mapState(['companies'])
+        ...mapState(['companies', 'marketIndices'])
     },
     methods: {
         // ...mapActions(['updateCompany']),

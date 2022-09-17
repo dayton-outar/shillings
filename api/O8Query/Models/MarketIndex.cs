@@ -24,7 +24,7 @@ namespace O8Query.Models
         [Required]
         public Market Market { get; set; }
 
-        public ICollection<Stock> Stocks { get; set; }
+        public List<Stock> Stocks { get; set; }
 
     }
 }
