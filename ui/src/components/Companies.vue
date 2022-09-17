@@ -13,6 +13,12 @@
                 :hoverable="true"
                 :paginated="true">
             
+                <b-table-column v-slot="props" width="5%">
+                    <figure class="image is-32x32">
+                        <img class="is-rounded" :src="(props.row.logo ? `http://localhost:5000/files?no=${props.row.logo.no}` :`https://bulma.io/images/placeholders/128x128.png`)">
+                    </figure>
+                </b-table-column>
+
                 <b-table-column field="code" label="Code" sortable v-slot="props" width="5%">
                     {{ props.row.code }}
                 </b-table-column>
