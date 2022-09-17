@@ -22,7 +22,7 @@
             <div class="columns">
                 <div class="column">
                     <b-field 
-                        label="Total Employed"
+                        label="Issued Shares"
                         label-position="">
                         <b-numberinput v-model="stock.issuedShares"></b-numberinput>
                     </b-field>
@@ -31,7 +31,7 @@
             <div class="columns">
                 <div class="column">
                     <b-field 
-                        label="Total Employed"
+                        label="Outstanding Shares"
                         label-position="">
                         <b-numberinput v-model="stock.outstandingShares"></b-numberinput>
                     </b-field>
@@ -70,7 +70,7 @@
                     <b-field
                         label="Company">
                         <b-select 
-                            v-model="stock.company.code"
+                            v-model="stock.company"
                             placeholder="Choose Company"
                             expanded>
                             <option
@@ -85,7 +85,7 @@
             </div>
             <div class="columns">
                 <div class="column">
-                    <b-button label="Save" type="is-info" size="is-medium" />
+                    <b-button label="Save" type="is-info" size="is-medium" expanded @click.prevent="submit" />
                 </div>
             </div>
         </div>
@@ -111,17 +111,15 @@ export default {
     },
     methods: {
         // ...mapActions(['updateCompany']),
-        // submit() {
-        //     this.company.logo = this.dropFiles[0];            
-        //     this.company.announcements = null;
-        //     this.company.created = new Date(1999, 10, 4);
+        submit() {
+            console.log( this.stock );
 
-        //     if (this.editMode) {
-        //         this.updateCompany( this.company );
-        //     } else {
-        //         this.createCompany( this.company );
-        //     }
-        // }
+            // if (this.editMode) {
+                
+            // } else {
+                
+            // }
+        }
     }
 }
 

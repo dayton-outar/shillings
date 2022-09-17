@@ -547,7 +547,13 @@ export const store = new Vuex.Store({
               ) {
                 nodes {
                   code,
-                  name
+                  name,
+                  logo {
+                    no
+                  },
+                  files {
+                    no
+                  }
                 }
               }
             }`
@@ -838,10 +844,11 @@ export const store = new Vuex.Store({
                   company {
                     code,
                     name,
+                    logo {
+                      no
+                    },
                     files {
-                      no,
-                      type,
-                      fileName
+                      no
                     }
                   }
                 }

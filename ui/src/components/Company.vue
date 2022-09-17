@@ -151,7 +151,7 @@
             </div>
             <div class="columns">
                 <div class="column">
-                    <b-button label="Save" type="is-info" size="is-medium" expanded @click="submit" />
+                    <b-button label="Save" type="is-info" size="is-medium" expanded @click.prevent="submit" />
                 </div>
             </div>
         </div>
