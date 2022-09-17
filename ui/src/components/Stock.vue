@@ -105,7 +105,7 @@
                             <b-dropdown-item aria-role="listitem" 
                                 v-for="index in marketIndices" 
                                 :key="index.no"
-                                :value="index">
+                                :value="index" :class="(stock.indices.some(i => i.no === index.no) ? 'is-active': '')">
                                 {{index.name}}
                             </b-dropdown-item>
 
