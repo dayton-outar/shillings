@@ -99,7 +99,7 @@ namespace Harpoon
                 file.CopyToAsync(ms);
                 var bytes = ms.ToArray();
 
-                if (company.Files != null) 
+                if (company.Files != null && company.Files.Count() > 0) 
                 {
                     var logo = company.Files.Where(f => f.Type == FileContent.FileType.Logo).OrderByDescending(f => f.Created).First();
 

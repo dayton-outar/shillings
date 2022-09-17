@@ -6,7 +6,7 @@
                     <b-field 
                         label="Code"
                         label-position="inside">
-                        <b-input v-model="companyData.code" :disabled="editMode"></b-input>
+                        <b-input v-model="company.code" :disabled="editMode"></b-input>
                     </b-field>
                 </div>
             </div>
@@ -15,7 +15,7 @@
                     <b-field 
                         label="Name"
                         label-position="inside">
-                        <b-input v-model="companyData.name"></b-input>
+                        <b-input v-model="company.name"></b-input>
                     </b-field>
                 </div>
             </div>
@@ -24,7 +24,7 @@
                     <b-field 
                         label="About"
                         label-position="inside">
-                        <b-input v-model="companyData.about"></b-input>
+                        <b-input v-model="company.about"></b-input>
                     </b-field>
                 </div>
             </div>
@@ -33,7 +33,7 @@
                     <b-field 
                         label="Total Employed"
                         label-position="">
-                        <b-numberinput v-model="companyData.totalEmployed"></b-numberinput>
+                        <b-numberinput v-model="company.totalEmployed"></b-numberinput>
                     </b-field>
                 </div>
             </div>
@@ -42,7 +42,7 @@
                     <b-field 
                         label="Wiki"
                         label-position="inside">
-                        <b-input v-model="companyData.wiki"></b-input>
+                        <b-input v-model="company.wiki"></b-input>
                     </b-field>
                 </div>
             </div>
@@ -51,7 +51,7 @@
                     <b-field 
                         label="Website"
                         label-position="inside">
-                        <b-input v-model="companyData.webSite"></b-input>
+                        <b-input v-model="company.webSite"></b-input>
                     </b-field>
                 </div>
             </div>
@@ -64,6 +64,7 @@
                             ref="datepicker"
                             label-position=""
                             placeholder=""
+                            editable
                             expanded>
                         </b-datepicker>
                     </b-field>
@@ -74,7 +75,7 @@
                     <b-field 
                         label="Country">
                         <b-select 
-                            v-model="companyData.countryCode"
+                            v-model="company.countryCode"
                             placeholder="Choose Country"
                             expanded>
                             <option value="JM">Jamaica</option>
@@ -88,7 +89,7 @@
                     <b-field 
                         label="Industries">
                         <b-dropdown
-                            v-model="companyData.industries"
+                            v-model="company.industries"
                             multiple
                             scrollable
                             aria-role="list"
@@ -98,7 +99,7 @@
                                     type="is-light"
                                     expanded
                                     icon-right="menu-down">
-                                    Selected ({{ companyData.industries.length }})
+                                    Selected ({{ company.industries.length }})
                                 </b-button>
                             </template>
 
@@ -165,6 +166,7 @@ export default {
     props: ['companyData', 'editMode'],
     data() {
         return {
+            company: JSON.parse(JSON.stringify(this.companyData)),
             dropFiles: [],
             imgSrc: this.companyData.logo ? `http://localhost:5000/files?no=${this.companyData.logo.no}` : '#'
         }
@@ -176,10 +178,10 @@ export default {
         ...mapState(['industries']),
         foundedDate: {
             get() {
-                return moment(this.companyData.founded).toDate()
+                return moment(this.company.founded).toDate()
             },
             set(value) {
-                this.companyData.founded = value // HACK: Need for $store mutation method
+                this.company.founded = value // HACK: Need for $store mutation method
             }
         }
     },
@@ -189,6 +191,8 @@ export default {
             this.dropFiles.splice(index, 1)
         },
         submit() {
+            console.log(this.company);
+            
             this.company.logo = this.dropFiles[0];            
             this.company.announcements = null;
             this.company.created = new Date(1999, 10, 4);
