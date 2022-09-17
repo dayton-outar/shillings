@@ -106,7 +106,7 @@
                             <b-dropdown-item aria-role="listitem" 
                                 v-for="industry in industries" 
                                 :key="industry.no"
-                                :value="industry">
+                                :value="industry" :class="(company.industries.some(i => i.no === industry.no) ? 'is-active': '')">
                                 {{industry.name}}
                             </b-dropdown-item>
 
