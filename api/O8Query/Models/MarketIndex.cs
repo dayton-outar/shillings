@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using HotChocolate;
 
 namespace O8Query.Models
 {
@@ -24,6 +25,7 @@ namespace O8Query.Models
         [Required]
         public Market Market { get; set; }
 
+        [GraphQLIgnore]
         public List<Stock> Stocks { get; set; }
 
     }
