@@ -575,7 +575,22 @@ export const store = new Vuex.Store({
               marketIndices {
                 nodes {
                   no,
-                  name
+                  name,
+                  market {
+                    code,
+                    name,
+                    company {
+                      code,
+                      name,
+                      about,
+                      totalEmployed,
+                      wiki,
+                      webSite,
+                      founded,
+                      countryCode,
+                      created
+                    }
+                  }
                 }
               }
             }`
@@ -874,7 +889,22 @@ export const store = new Vuex.Store({
                   },
                   indices {
                     no,
-                    name
+                    name,
+                    market {
+                      code,
+                      name,
+                      company {
+                        code,
+                        name,
+                        about,
+                        totalEmployed,
+                        wiki,
+                        webSite,
+                        founded,
+                        countryCode,
+                        created
+                      }
+                    }
                   }
                 }
               }
