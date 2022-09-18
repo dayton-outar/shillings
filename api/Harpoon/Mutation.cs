@@ -154,18 +154,18 @@ namespace Harpoon
         }
 
         [UseDbContext(typeof(StocksQuery))]
-        public bool DeleteCompany([ScopedService]StocksQuery sq, long no)
+        public bool DeleteCompany([ScopedService]StocksQuery sq, string companyCode)
         {
             bool result = false;
 
             try
             {
-                string sql = "EXEC [dbo].[DeleteCompany] @company";
+                string sql = "EXEC [dbo].[DeleteCompany] @companyCode";
                 
                 List<SqlParameter> parms = new List<SqlParameter>
                 { 
                     // Update parameters
-                    new SqlParameter { ParameterName = "@companyNo", Value = no }  
+                    new SqlParameter { ParameterName = "@companyCode", Value = companyCode }  
                 };
 
                 sq.Database.ExecuteSqlRaw(sql, parms.ToArray());

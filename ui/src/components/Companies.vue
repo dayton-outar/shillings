@@ -37,12 +37,13 @@
                     </template>
                 </b-table-column>
 
-                <b-table-column width="5%">
+                <b-table-column width="5%" v-slot="props">
                     <template>
                         <b-button
                             size="is-small"
                             type="is-danger"
-                            icon-right="delete" />
+                            icon-right="delete"
+                            @click.prevent="deleteItem(props.row.code)" />
                     </template>
                 </b-table-column>
 
@@ -59,7 +60,7 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState, mapActions } from 'vuex'
 import Company from './Company.vue'
 
 export default {
@@ -76,7 +77,14 @@ export default {
     beforeCreate() {
         this.$store.dispatch('fetchFullCompanies');
     },
-    methods: {},
+    methods: {
+        ...mapActions(['deleteCompany']),
+        deleteItem(code) {
+            this.deleteCompany(code)
+                .then(console.log)
+                .catch(console.error);
+        }
+    },
     computed: {
         ...mapState(['fullCompanies'])
     }

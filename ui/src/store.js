@@ -12,7 +12,7 @@ export const store = new Vuex.Store({
     state: {
       company: {},
       companies: [],
-      fullCompanies: {},
+      fullCompanies: [],
       marketIndices: [],
       industries: [],
       stocks: [],
@@ -102,6 +102,12 @@ export const store = new Vuex.Store({
         },
         setFullCompanies(state, payload) {
           state.fullCompanies = payload
+        },
+        removeFullCompany(state, code) {
+          var ix = state.fullCompanies.nodes.findIndex(c => c.Code === code);
+          if (ix > -1) {
+            state.fullCompanies.nodes.splice(ix, 1);
+          }
         },
         setMarketIndices(state, payload) {
           state.marketIndices = payload
@@ -791,6 +797,24 @@ export const store = new Vuex.Store({
 
           commit('setCompany', response.data.updateCompany.company)
         },
+        async deleteCompany({ commit }, companyCode) {
+          const response = await graphQlClient.mutate({
+            mutation: gql`mutation DeleteCompany($input: DeleteCompanyInput!) {
+              deleteCompany ( input: $input) {
+                boolean
+              }
+            }`,
+            variables: {
+              input: {
+                companyCode: companyCode
+              }
+            }
+          })
+
+          if (response.data.deleteCompany.boolean) {
+            commit('removeFullCompany', companyCode)
+          }
+        },
         async fetchStocks({ commit }) {
           const response = await graphQlClient.query({
             query: gql`query {
@@ -859,7 +883,7 @@ export const store = new Vuex.Store({
           const response = await graphQlClient.query({
             query: gql`query {
               stocks (
-                first: 20,
+                first: 30,
                 order: { name: ASC }
               ) {
                 pageInfo {
