@@ -123,7 +123,7 @@
 </template>
 
 <script>
-import { mapState } from 'vuex' //, mapActions
+import { mapState, mapActions } from 'vuex' 
 // import moment from 'moment'
 
 export default {
@@ -141,15 +141,13 @@ export default {
         ...mapState(['companies', 'marketIndices'])
     },
     methods: {
-        // ...mapActions(['updateCompany']),
+        ...mapActions(['updateStock', 'createStock']),
         submit() {
-            console.log( this.stock );
-
-            // if (this.editMode) {
-                
-            // } else {
-                
-            // }
+            if (this.editMode) {
+                this.updateStock( this.stock );
+            } else {
+                this.createStock( this.stock );
+            }
         }
     }
 }

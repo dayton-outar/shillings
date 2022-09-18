@@ -109,6 +109,10 @@ export const store = new Vuex.Store({
         setIndustries(state, payload) {
           state.industries = payload
         },
+        setStock(state, payload) {
+          var ix = state.stocks.findIndex(s => s.Code === payload.Code);
+          state.stocks[ix] = payload;
+        },
         setStocks(state, payload) {
           state.stocks = payload
         },
@@ -602,7 +606,6 @@ export const store = new Vuex.Store({
             query: gql`query {
               companies (
                 first: 20,
-                after: "MTk=",
                 order: { name: ASC}
                 
               ) {
@@ -879,6 +882,116 @@ export const store = new Vuex.Store({
           })
           
           commit('setFullStocks', response.data.stocks)
+        },
+        async updateStock({ commit }, stock) {
+          const response = await graphQlClient.mutate({
+            mutation: gql`mutation UpdateStock($input: UpdateStockInput!) {
+              updateStock ( input: $input) {
+                stock {
+                  code,
+                  name,
+                  currency,
+                  stockType,
+                  issuedShares,
+                  outstandingShares,
+                  isListed,
+                  created,
+                  company {
+                    code,
+                    name,
+                    logo {
+                      no
+                    },
+                    files {
+                      no
+                    }
+                  },
+                  indices {
+                    no,
+                    name
+                  }
+                }
+              }
+            }`,
+            variables: {
+              input: {
+                stock: {
+                  code: stock.code,
+                  name: stock.name,
+                  currency: stock.currency,
+                  stockType: stock.stockType,
+                  issuedShares: stock.issuedShares,
+                  outstandingShares: stock.outstandingShares,
+                  company: {
+                    code: stock.company.code,
+                    name: stock.company.name,
+                    about: '',
+                    totalEmployed: 0,
+                    wiki: '',
+                    webSite: '',
+                    founded: new Date(),
+                    countryCode: '',
+                    created: new Date()
+                  },
+                  isListed: stock.isListed,
+                  created: stock.created,
+                  indices: stock.indices
+                }
+              }
+            }
+          })
+
+          commit('setStock', response.data.updateStock.stock)
+        },
+        async createStock({ commit }, stock) {
+          const response = await graphQlClient.mutate({
+            mutation: gql`mutation CreateStock($input: CreateStockInput!) {
+              createStock ( input: $input) {
+                stock {
+                  code,
+                  name,
+                  currency,
+                  stockType,
+                  issuedShares,
+                  outstandingShares,
+                  isListed,
+                  created,
+                  company {
+                    code,
+                    name,
+                    logo {
+                      no
+                    },
+                    files {
+                      no
+                    }
+                  },
+                  indices {
+                    no,
+                    name
+                  }
+                }
+              }
+            }`,
+            variables: {
+              input: {
+                stock: {
+                  code: stock.code,
+                  name: stock.name,
+                  currency: stock.currency,
+                  stockType: stock.stockType,
+                  issuedShares: stock.issuedShares,
+                  outstandingShares: stock.outstandingShares,
+                  company: stock.company,
+                  isListed: stock.isListed,
+                  created: stock.created,
+                  indices: stock.indices
+                }
+              }
+            }
+          })
+
+          commit('setStock', response.data.createStock.stock)
         },
         async fetchSections({ commit }) {
           const response = await graphQlClient.query({

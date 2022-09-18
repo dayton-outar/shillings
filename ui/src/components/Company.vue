@@ -186,7 +186,7 @@ export default {
         }
     },
     methods: {
-        ...mapActions(['updateCompany']),
+        ...mapActions(['updateCompany', 'createCompany']),
         deleteDropFile(index) {
             this.dropFiles.splice(index, 1)
         },
