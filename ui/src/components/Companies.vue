@@ -58,6 +58,7 @@
                 :total="total"
                 :current="currentPage"
                 :simple="true"
+                :per-page="page"
                 order="is-right"
                 @change="pageChange">
             </b-pagination>
@@ -78,14 +79,14 @@ export default {
             defaultSortDirection: 'desc',
             sortIcon: 'arrow-up',
             sortIconSize: 'is-small',
-            page: 20,
+            page: 70,
             currentPage: 1,
             total: 0
         }
     },
     beforeCreate() {
         this.$store.dispatch('fetchFullCompanies', {
-            first: 20,
+            first: 70,
             last: null,
             next: null,
             previous: null

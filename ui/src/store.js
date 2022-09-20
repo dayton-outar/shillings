@@ -608,6 +608,7 @@ export const store = new Vuex.Store({
           const response = await graphQlClient.query({
             query: gql`query {
               industries (
+                first: 100,
                 order: { name: ASC }
               )
               {
