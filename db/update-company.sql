@@ -120,7 +120,10 @@ AS
         -- Updating files
         -- Do Updates 
         UPDATE  f SET     
-            f.[FileName] = t.[FileName]
+            f.[FileName] = t.[FileName],
+            f.[Content] = t.[Content] ,
+            f.[ContentSize] = t.[ContentSize] ,
+            f.[ContentType] = t.[ContentType]
         FROM    [dbo].[Files] f
                 INNER JOIN [dbo].[CompanyFileContent] x ON x.[FilesNo] = f.[No]
                 INNER JOIN @tblFiles t ON t.[No] = f.[No]

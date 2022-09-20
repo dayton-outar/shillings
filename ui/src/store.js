@@ -879,11 +879,14 @@ export const store = new Vuex.Store({
 
           commit('setTotalStockTrades', totalTrades)
         },
-        async fetchFullStocks({ commit }) {
+        async fetchFullStocks({ commit }, request) {
           const response = await graphQlClient.query({
-            query: gql`query {
+            query: gql`query Get($first: Int, $last: Int, $next: String, $previous: String) {
               stocks (
-                first: 30,
+                first: $first,
+                last: $last,
+                after: $next,
+                before: $previous,
                 order: { name: ASC }
               ) {
                 pageInfo {
@@ -930,9 +933,16 @@ export const store = new Vuex.Store({
                       }
                     }
                   }
-                }
+                },
+                totalCount
               }
-            }`
+            }`,
+            variables: {
+              first: request.first,
+              last: request.last,
+              next: request.next,
+              previous: request.previous
+            }
           })
           
           commit('setFullStocks', response.data.stocks)
