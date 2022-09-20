@@ -73,8 +73,7 @@ export default {
             sortIconSize: 'is-small',
             page: 20,
             currentPage: 1,
-            total: 0,
-            previous: null
+            total: 0
         }
     },
     beforeCreate() {
@@ -85,7 +84,7 @@ export default {
             previous: null
         }).then(() => {
             this.total = this.fullStocks.totalCount;
-        });        
+        });
     },
     computed: {
         ...mapState(['fullStocks'])

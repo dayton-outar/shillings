@@ -622,11 +622,14 @@ export const store = new Vuex.Store({
           
           commit('setIndustries', response.data.industries.nodes)
         },
-        async fetchFullCompanies({ commit }) {
+        async fetchFullCompanies({ commit }, request) {
           const response = await graphQlClient.query({
-            query: gql`query {
+            query: gql`query Get($first: Int, $last: Int, $next: String, $previous: String) {
               companies (
-                first: 20,
+                first: $first,
+                last: $last,
+                after: $next,
+                before: $previous,
                 order: { name: ASC}
                 
               ) {
@@ -670,7 +673,13 @@ export const store = new Vuex.Store({
                   }
                 }
               }
-            }`
+            }`,
+            variables: {
+              first: request.first,
+              last: request.last,
+              next: request.next,
+              previous: request.previous
+            }
           })
           
           commit('setFullCompanies', response.data.companies)
@@ -895,6 +904,7 @@ export const store = new Vuex.Store({
                   hasPreviousPage,
                   endCursor
                 }
+                totalCount,
                 nodes {
                   code,
                   name,
@@ -933,8 +943,7 @@ export const store = new Vuex.Store({
                       }
                     }
                   }
-                },
-                totalCount
+                }
               }
             }`,
             variables: {

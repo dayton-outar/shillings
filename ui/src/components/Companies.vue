@@ -10,8 +10,7 @@
                 :sort-icon-size="sortIconSize"
                 :default-sort-direction="defaultSortDirection" 
                 :striped="true" 
-                :hoverable="true"
-                :paginated="true">
+                :hoverable="true">
             
                 <b-table-column v-slot="props" width="5%">
                     <figure class="image is-32x32">
@@ -55,6 +54,13 @@
                 </template>
 
             </b-table>
+            <b-pagination
+                :total="total"
+                :current="currentPage"
+                :simple="true"
+                order="is-right"
+                @change="pageChange">
+            </b-pagination>
         </div>
     </div>
 </template>
@@ -71,18 +77,37 @@ export default {
         return {
             defaultSortDirection: 'desc',
             sortIcon: 'arrow-up',
-            sortIconSize: 'is-small'
+            sortIconSize: 'is-small',
+            page: 20,
+            currentPage: 1,
+            total: 0
         }
     },
     beforeCreate() {
-        this.$store.dispatch('fetchFullCompanies');
+        this.$store.dispatch('fetchFullCompanies', {
+            first: 20,
+            last: null,
+            next: null,
+            previous: null
+        }).then(() => {
+            this.total = this.fullCompanies.totalCount;
+        });
     },
     methods: {
-        ...mapActions(['deleteCompany']),
+        ...mapActions(['deleteCompany', 'fetchFullCompanies']),
         deleteItem(code) {
             this.deleteCompany(code)
                 .then(console.log)
                 .catch(console.error);
+        },
+        pageChange(page) { // Credit: https://github.com/buefy/buefy/issues/50
+            this.fetchFullCompanies({
+                first: (page > this.currentPage) ? this.page : null,
+                last: (page < this.currentPage) ? this.page : null,
+                next: (page > this.currentPage) ? this.fullCompanies.pageInfo.endCursor : null,
+                previous: (page < this.currentPage) ? this.fullCompanies.pageInfo.startCursor : null
+            })
+            this.currentPage = page
         }
     },
     computed: {
