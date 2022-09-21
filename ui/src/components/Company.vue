@@ -89,7 +89,7 @@
                     <b-field 
                         label="Industries">
                         <b-dropdown
-                            v-model="company.industries"
+                            v-model="companyIndustries"
                             multiple
                             scrollable
                             aria-role="list"
@@ -99,14 +99,14 @@
                                     type="is-light"
                                     expanded
                                     icon-right="menu-down">
-                                    Selected ({{ company.industries.length }})
+                                    Selected ({{ companyIndustries.length }})
                                 </b-button>
                             </template>
 
                             <b-dropdown-item aria-role="listitem" 
                                 v-for="industry in industries" 
                                 :key="industry.no"
-                                :value="industry" :class="(company.industries.some(i => i.no === industry.no) ? 'is-active': '')">
+                                :value="industry.no">
                                 {{industry.name}}
                             </b-dropdown-item>
 
@@ -167,20 +167,16 @@ export default {
     data() {
         return {
             company: JSON.parse(JSON.stringify(this.companyData)),
+            companyIndustries: this.companyData.industries.map(i => i.no),
             dropFiles: [],
             imgSrc: this.companyData.logo ? `http://localhost:5000/files?no=${this.companyData.logo.no}` : '#'
         }
     },
     beforeCreate() {
-        console.log('before create')
-        this.$store.dispatch('fetchIndustries')        
+        this.$store.dispatch('fetchIndustries')
     },
-    setup() {
-        console.log('setup')
-    },
-    mounted() {
-        console.log(JSON.stringify(this.company))
-    },
+    setup() {},
+    mounted() {},
     computed: {
         ...mapState(['industries']),
         foundedDate: {
@@ -188,7 +184,7 @@ export default {
                 return moment(this.company.founded).toDate()
             },
             set(value) {
-                this.company.founded = value // HACK: Need for $store mutation method
+                this.company.founded = value
             }
         }
     },
@@ -198,14 +194,15 @@ export default {
             this.dropFiles.splice(index, 1)
         },
         submit() {            
-            this.company.logo = this.dropFiles[0];            
-            this.company.announcements = null;
-            this.company.created = new Date(1999, 10, 4);
+            this.company.logo = this.dropFiles[0]
+            this.company.announcements = null
+            this.company.industries = this.industries.filter(i => this.companyIndustries.includes(i.no))
+            this.company.created = new Date(1999, 10, 4)
 
             if (this.editMode) {
-                this.updateCompany( this.company );
+                this.updateCompany( this.company )
             } else {
-                this.createCompany( this.company );
+                this.createCompany( this.company )
             }
         }
     },

@@ -65,18 +65,21 @@ namespace Harpoon
         [UseDbContext(typeof(StocksQuery))]
         public Company CreateCompany([ScopedService]StocksQuery sq, Company company, HotChocolate.Types.IFile file)
         {
-            using (var ms = new System.IO.MemoryStream()) 
+            if (file != null) 
             {
-                file.CopyToAsync(ms);
-                var bytes = ms.ToArray();
+                using (var ms = new System.IO.MemoryStream()) 
+                {
+                    file.CopyToAsync(ms);
+                    var bytes = ms.ToArray();
 
-                company.Files.Add(new FileContent{
-                    Type = FileContent.FileType.Logo,
-                    FileName = file.Name,
-                    Created = DateTime.Now,
-                    Content = bytes,
-                    ContentSize = bytes.Length
-                });
+                    company.Files.Add(new FileContent{
+                        Type = FileContent.FileType.Logo,
+                        FileName = file.Name,
+                        Created = DateTime.Now,
+                        Content = bytes,
+                        ContentSize = bytes.Length
+                    });
+                }
             }
 
             string sql = "EXEC [dbo].[CreateCompany] @company";
@@ -96,46 +99,49 @@ namespace Harpoon
         [UseDbContext(typeof(StocksQuery))]
         public Company UpdateCompany([ScopedService]StocksQuery sq, Company company, HotChocolate.Types.IFile file)
         {
-            using (var ms = new System.IO.MemoryStream()) 
+            if (file != null) 
             {
-                file.CopyToAsync(ms);
-                var bytes = ms.ToArray();
-
-                if (company.Files != null && company.Files.Count() > 0) 
+                using (var ms = new System.IO.MemoryStream()) 
                 {
-                    var logo = company.Files.Where(f => f.Type == FileContent.FileType.Logo).OrderByDescending(f => f.Created).First();
+                    file.CopyToAsync(ms);
+                    var bytes = ms.ToArray();
 
-                    if (logo != null) 
+                    if (company.Files != null && company.Files.Count() > 0) 
                     {
-                        logo.FileName = file.Name;
-                        logo.Content = bytes;
-                        logo.ContentSize= bytes.Length;
-                        logo.ContentType = GetContentType(file.Name);
-                        logo.Created = DateTime.Now;
-                    }
-                    else
+                        var logo = company.Files.Where(f => f.Type == FileContent.FileType.Logo).OrderByDescending(f => f.Created).First();
+
+                        if (logo != null) 
+                        {
+                            logo.FileName = file.Name;
+                            logo.Content = bytes;
+                            logo.ContentSize= bytes.Length;
+                            logo.ContentType = GetContentType(file.Name);
+                            logo.Created = DateTime.Now;
+                        }
+                        else
+                        {
+                            logo = new FileContent {
+                                Type = FileContent.FileType.Logo,
+                                FileName = file.Name,
+                                Created = DateTime.Now,
+                                Content = bytes,
+                                ContentSize = bytes.Length,
+                                ContentType = GetContentType(file.Name)
+                            };
+                        }
+                    } 
+                    else 
                     {
-                        logo = new FileContent {
-                            Type = FileContent.FileType.Logo,
-                            FileName = file.Name,
-                            Created = DateTime.Now,
-                            Content = bytes,
-                            ContentSize = bytes.Length,
-                            ContentType = GetContentType(file.Name)
-                        };
+                        company.Files = new List<FileContent>();
+                        company.Files.Add(new FileContent {
+                                Type = FileContent.FileType.Logo,
+                                FileName = file.Name,
+                                Created = DateTime.Now,
+                                Content = bytes,
+                                ContentSize = bytes.Length,
+                                ContentType = GetContentType(file.Name)
+                            });
                     }
-                } 
-                else 
-                {
-                    company.Files = new List<FileContent>();
-                    company.Files.Add(new FileContent {
-                            Type = FileContent.FileType.Logo,
-                            FileName = file.Name,
-                            Created = DateTime.Now,
-                            Content = bytes,
-                            ContentSize = bytes.Length,
-                            ContentType = GetContentType(file.Name)
-                        });
                 }
             }
 

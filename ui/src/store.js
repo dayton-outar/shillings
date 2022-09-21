@@ -10,7 +10,6 @@ Vue.use(Vuex)
 export const store = new Vuex.Store({
     strict: true,
     state: {
-      company: {},
       companies: [],
       fullCompanies: [],
       marketIndices: [],
@@ -94,8 +93,9 @@ export const store = new Vuex.Store({
         }
     },
     mutations: {
-        setCompany(state, payload) {
-          state.company = payload
+        setCompany(state, payload) {         
+          let ix = state.fullCompanies.nodes.findIndex(s => s.code === payload.code)
+          state.fullCompanies.nodes[ix] = payload
         },
         setCompanies(state, payload) {
           state.companies = payload
@@ -104,7 +104,7 @@ export const store = new Vuex.Store({
           state.fullCompanies = payload
         },
         removeFullCompany(state, code) {
-          var ix = state.fullCompanies.nodes.findIndex(c => c.Code === code);
+          var ix = state.fullCompanies.nodes.findIndex(c => c.code === code);
           if (ix > -1) {
             state.fullCompanies.nodes.splice(ix, 1);
           }
@@ -116,7 +116,7 @@ export const store = new Vuex.Store({
           state.industries = payload
         },
         setStock(state, payload) {
-          var ix = state.stocks.findIndex(s => s.Code === payload.Code);
+          var ix = state.stocks.findIndex(s => s.code === payload.code);
           state.stocks[ix] = payload;
         },
         setStocks(state, payload) {
@@ -1005,7 +1005,9 @@ export const store = new Vuex.Store({
                     webSite: '',
                     founded: new Date(),
                     countryCode: '',
-                    created: new Date()
+                    created: new Date(),
+                    logo: stock.company.logo,
+                    files: stock.company.files
                   },
                   isListed: stock.isListed,
                   created: stock.created,
