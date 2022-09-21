@@ -57,7 +57,7 @@ namespace Harpoon
         [UseProjection]
         [UseFiltering]
         [UseSorting]
-        public IQueryable<Company> GetCompanies([ScopedService]StocksQuery sq) => sq.Companies.Include(c => c.Files);
+        public IQueryable<Company> GetCompanies([ScopedService]StocksQuery sq) => sq.Companies.Include(c => c.Files).Include(c => c.Stocks);
 
         [UseDbContext(typeof(StocksQuery))]
         [UsePaging]
