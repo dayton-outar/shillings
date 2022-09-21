@@ -2,6 +2,40 @@
     <div class="column is-full">
         <h2 class="title">Companies</h2>
         <div class="box my-4 mx-1">
+            <div class="columns">
+                <div class="column is-full">
+                    <b-button 
+                        label="Create New Company"
+                        type="is-primary"
+                        size="is-medium"
+                        @click.prevent="isModalActive = true" />
+                    
+                    <b-modal
+                        v-model="isModalActive"
+                        has-modal-card
+                        trap-focus
+                        :destroy-on-hide="false"
+                        aria-role="dialog"
+                        aria-label="Example Modal"
+                        close-button-aria-label="Close"
+                        aria-modal>
+                        <template>
+                            <div class="modal-card" style="width: auto">
+                                <header class="modal-card-head">
+                                    <p class="modal-card-title">Create New Company</p>
+                                    <!--<button
+                                        type="button"
+                                        class="delete"
+                                        @click="$emit('close')"/>-->
+                                </header>
+                                <section class="modal-card-body">
+                                    <company-detail :companyData="newCompany" :editMode="false" />
+                                </section>
+                            </div>
+                        </template>
+                    </b-modal>
+                </div>
+            </div>
             <b-table
                 detailed
                 :show-detail-icon="false"
@@ -81,7 +115,22 @@ export default {
             sortIconSize: 'is-small',
             page: 70,
             currentPage: 1,
-            total: 0
+            total: 0,
+            isModalActive: false,
+            newCompany: {
+                code: '',
+                name: '',
+                about: '',
+                totalEmployed: 0,
+                wiki: '',
+                webSite: '',
+                founded: new Date(),
+                countryCode: '',
+                created: new Date(),
+                industries: [],
+                logo: {},
+                files: []
+            }
         }
     },
     beforeCreate() {
@@ -96,6 +145,9 @@ export default {
     },
     methods: {
         ...mapActions(['deleteCompany', 'fetchFullCompanies']),
+        createCompany() {
+            
+        },
         deleteItem(code) {
             this.deleteCompany(code)
                 .then(console.log)

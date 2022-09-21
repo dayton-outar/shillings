@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <div class="box my-4 mx-1">
+    <form>
+        <div class="box my-4 mx-1">            
             <div class="columns">
                 <div class="column">
                     <b-field 
@@ -155,7 +155,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </form>
 </template>
 
 <script>
@@ -172,7 +172,14 @@ export default {
         }
     },
     beforeCreate() {
-        this.$store.dispatch('fetchIndustries')
+        console.log('before create')
+        this.$store.dispatch('fetchIndustries')        
+    },
+    setup() {
+        console.log('setup')
+    },
+    mounted() {
+        console.log(JSON.stringify(this.company))
     },
     computed: {
         ...mapState(['industries']),
@@ -190,9 +197,7 @@ export default {
         deleteDropFile(index) {
             this.dropFiles.splice(index, 1)
         },
-        submit() {
-            console.log(this.company);
-            
+        submit() {            
             this.company.logo = this.dropFiles[0];            
             this.company.announcements = null;
             this.company.created = new Date(1999, 10, 4);
