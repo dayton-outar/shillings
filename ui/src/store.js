@@ -14,6 +14,7 @@ export const store = new Vuex.Store({
       fullCompanies: [],
       marketIndices: [],
       industries: [],
+      markets: [],
       stocks: [],
       fullStocks: [],
       totalTradings: null,
@@ -111,6 +112,9 @@ export const store = new Vuex.Store({
           if (ix > -1) {
             state.fullCompanies.nodes.splice(ix, 1);
           }
+        },
+        setMarkets(state, payload) {
+          state.markets = payload
         },
         setMarketIndices(state, payload) {
           state.marketIndices = payload
@@ -577,6 +581,28 @@ export const store = new Vuex.Store({
           })
           
           commit('setCompanies', response.data.companies.nodes)
+        },
+        async fetchMarkets({ commit }) {
+          const response = await graphQlClient.query({
+            query: gql`query {
+              markets (
+                first: 100
+                order: { name: ASC}
+                
+              ) {
+                nodes {
+                  code,
+                  name,
+                  company {
+                    code,
+                    name
+                  }
+                }
+              }
+            }`
+          })
+          
+          commit('setMarkets', response.data.markets.nodes)
         },
         async fetchMarketIndices({ commit }) {
           const response = await graphQlClient.query({

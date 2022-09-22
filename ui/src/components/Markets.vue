@@ -1,14 +1,14 @@
 <template>
     <div class="column is-full">
-        <h2 class="title">Companies</h2>
+        <h2 class="title">Markets</h2>
         <div class="box my-4 mx-1">
             <div class="columns">
                 <div class="column is-full">
                     <b-button 
-                        label="Create New Company"
+                        label="Create New Market"
                         type="is-info"
                         size="is-medium"
-                        @click.prevent="createCompany" />
+                        @click.prevent="createMarket" />
                     
                     <b-modal
                         v-model="isModalActive"
@@ -16,17 +16,17 @@
                         trap-focus
                         :destroy-on-hide="false"
                         aria-role="dialog"
-                        aria-label="Example Modal"
+                        aria-label="Create New Market"
                         close-button-aria-label="Close"
                         full-screen
                         aria-modal>
                         <template #default="props">
                             <div class="modal-card" style="width: auto">
                                 <header class="modal-card-head">
-                                    <p class="modal-card-title">Create New Company</p>
+                                    <p class="modal-card-title">Create New Market</p>
                                 </header>
                                 <section class="modal-card-body">
-                                    <company-detail ref="frmCompany" :companyData="newCompany" :editMode="false" @close="props.close" />
+                                    <company-detail ref="frmCompany" :marketData="newMarket" :editMode="false" @close="props.close" />
                                 </section>
                                 <footer class="modal-card-foot">
                                     <b-button
@@ -47,18 +47,12 @@
             <b-table
                 detailed
                 :show-detail-icon="false"
-                :data="fullCompanies.nodes"
+                :data="markets"
                 :sort-icon="sortIcon" 
                 :sort-icon-size="sortIconSize"
                 :default-sort-direction="defaultSortDirection" 
                 :striped="true" 
                 :hoverable="true">
-            
-                <b-table-column v-slot="props" width="5%">
-                    <figure class="image is-32x32">
-                        <img class="is-rounded" :src="(props.row.logo ? `http://localhost:5000/files?no=${props.row.logo.no}` :`https://bulma.io/images/placeholders/128x128.png`)">
-                    </figure>
-                </b-table-column>
 
                 <b-table-column field="code" label="Code" sortable v-slot="props" width="5%">
                     {{ props.row.code }}
@@ -91,7 +85,7 @@
                 <template #detail="props">
                     <article>
                         <h5 class="title is-5">{{ props.row.name }}</h5>
-                        <company-detail :companyData="props.row" :editMode="true" />
+                        <market-detail :marketData="props.row" :editMode="true" />
                     </article>
                 </template>
 
@@ -110,11 +104,11 @@
 
 <script>
 import { mapState, mapActions } from 'vuex'
-import Company from './Company.vue'
+import Market from './Market.vue'
 
 export default {
     components: {
-        'company-detail': Company,
+        'market-detail': Market,
     },
     data() {
         return {
@@ -125,59 +119,50 @@ export default {
             currentPage: 1,
             total: 0,
             isModalActive: false,
-            newCompany: {}
+            newMarket: {}
         }
     },
     beforeCreate() {
-        this.$store.dispatch('fetchFullCompanies', {
+        this.$store.dispatch('fetchMarkets', {
             first: 70,
             last: null,
             next: null,
             previous: null
         }).then(() => {
-            this.total = this.fullCompanies.totalCount;
+            //this.total = this.fullCompanies.totalCount;
         });
     },
     methods: {
-        ...mapActions(['deleteCompany', 'fetchFullCompanies']),
-        createCompany() {
+        ...mapActions(['fetchMarkets']),
+        createMarket() {
             this.newCompany = {
                 code: '',
                 name: '',
-                about: '',
-                totalEmployed: 0,
-                wiki: '',
-                webSite: '',
-                founded: new Date(),
-                countryCode: '',
-                created: new Date(),
-                industries: [],
-                logo: {},
-                files: []
+                company: {}
             } // HACK: This is not refreshing the state. State is kept between events
 
             this.isModalActive = true
         },
-        deleteItem(code) {
-            this.deleteCompany(code)
-                .then(console.log)
-                .catch(console.error);
+        deleteItem() { //code
+            // this.deleteCompany(code)
+            //     .then(console.log)
+            //     .catch(console.error);
         },
-        pageChange(page) { // Credit: https://github.com/buefy/buefy/issues/50
-            this.fetchFullCompanies({
-                first: (page > this.currentPage) ? this.page : null,
-                last: (page < this.currentPage) ? this.page : null,
-                next: (page > this.currentPage) ? this.fullCompanies.pageInfo.endCursor : null,
-                previous: (page < this.currentPage) ? this.fullCompanies.pageInfo.startCursor : null
-            })
-            this.currentPage = page
+        pageChange() { //page // Credit: https://github.com/buefy/buefy/issues/50
+            // this.fetchFullCompanies({
+            //     first: (page > this.currentPage) ? this.page : null,
+            //     last: (page < this.currentPage) ? this.page : null,
+            //     next: (page > this.currentPage) ? this.fullCompanies.pageInfo.endCursor : null,
+            //     previous: (page < this.currentPage) ? this.fullCompanies.pageInfo.startCursor : null
+            // })
+            // this.currentPage = page
         },
         submit() {
-            this.$refs.frmCompany.submit()
+            this.$refs.frmMarket.submit()
         }
     },
     computed: {
-        ...mapState(['fullCompanies'])
+        ...mapState(['markets'])
     }
 }
 

@@ -4,6 +4,7 @@ import Dashboard from './components/Dashboard.vue'
 import FinancialReport from './components/FinancialReport.vue'
 import Companies from './components/Companies.vue'
 import Stocks from './components/Stocks.vue'
+import Markets from './components/Markets.vue'
 
 Vue.use(Router)
 
@@ -32,6 +33,12 @@ export default new Router({
             name: 'stocks',
             component: Stocks,
             meta: { title: 'Shillings: Stocks' }
+        },
+        {
+            path: '/markets',
+            name: 'markets',
+            component: Markets,
+            meta: { title: 'Shillings: Markets' }
         }
     ]
 })
