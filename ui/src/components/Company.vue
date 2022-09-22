@@ -149,7 +149,12 @@
                     <img :src="imgSrc" alt="Company Logo" />
                 </div>
             </div>
-            <div class="columns">
+            <div class="columns" v-if="editMode">
+                <!--
+                <div class="column">
+                    <b-button label="Close" size="is-medium" expanded @click.prevent="$emit('close')" />
+                </div>
+                -->
                 <div class="column">
                     <b-button label="Save" type="is-info" size="is-medium" expanded @click.prevent="submit" />
                 </div>
@@ -201,8 +206,14 @@ export default {
 
             if (this.editMode) {
                 this.updateCompany( this.company )
+                    .then(() => {
+                        this.$emit('close')
+                    })
             } else {
                 this.createCompany( this.company )
+                    .then(() => {
+                        this.$emit('close')
+                    })
             }
         }
     },

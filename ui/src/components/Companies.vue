@@ -6,7 +6,7 @@
                 <div class="column is-full">
                     <b-button 
                         label="Create New Company"
-                        type="is-primary"
+                        type="is-info"
                         size="is-medium"
                         @click.prevent="isModalActive = true" />
                     
@@ -18,19 +18,27 @@
                         aria-role="dialog"
                         aria-label="Example Modal"
                         close-button-aria-label="Close"
+                        full-screen
                         aria-modal>
-                        <template>
+                        <template #default="props">
                             <div class="modal-card" style="width: auto">
                                 <header class="modal-card-head">
                                     <p class="modal-card-title">Create New Company</p>
-                                    <!--<button
-                                        type="button"
-                                        class="delete"
-                                        @click="$emit('close')"/>-->
                                 </header>
                                 <section class="modal-card-body">
-                                    <company-detail :companyData="newCompany" :editMode="false" />
+                                    <company-detail ref="frmCompany" :companyData="newCompany" :editMode="false" @close="props.close" />
                                 </section>
+                                <footer class="modal-card-foot">
+                                    <b-button
+                                        label="Close"
+                                        expanded
+                                        @click.prevent="props.close" />
+                                    <b-button
+                                        label="Save"
+                                        expanded
+                                        type="is-info"
+                                        @click.prevent="submit" />
+                                </footer>
                             </div>
                         </template>
                     </b-modal>
@@ -161,6 +169,9 @@ export default {
                 previous: (page < this.currentPage) ? this.fullCompanies.pageInfo.startCursor : null
             })
             this.currentPage = page
+        },
+        submit() {
+            this.$refs.frmCompany.submit()
         }
     },
     computed: {

@@ -97,6 +97,9 @@ export const store = new Vuex.Store({
           let ix = state.fullCompanies.nodes.findIndex(s => s.code === payload.code)
           state.fullCompanies.nodes[ix] = payload
         },
+        addCompany(state, payload) {         
+          state.fullCompanies.nodes.push(payload)
+        },
         setCompanies(state, payload) {
           state.companies = payload
         },
@@ -805,7 +808,7 @@ export const store = new Vuex.Store({
             }
           })
 
-          commit('setCompany', response.data.updateCompany.company)
+          commit('addCompany', response.data.createCompany.company)
         },
         async deleteCompany({ commit }, companyCode) {
           const response = await graphQlClient.mutate({
