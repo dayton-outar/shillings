@@ -13,7 +13,7 @@
             <div class="columns">
                 <div class="column">
                     <b-field
-                        label="Company">
+                        label="Market">
                         <b-select 
                             v-model="marketIndex.market"
                             placeholder="Choose Market"
@@ -38,7 +38,7 @@
 </template>
 
 <script>
-//import { mapState, mapActions } from 'vuex' 
+import { mapState, mapActions } from 'vuex' 
 // import moment from 'moment'
 
 export default {
@@ -55,7 +55,7 @@ export default {
         ...mapState(['markets'])
     },
     methods: {
-        //...mapActions(['updateStock', 'createStock']),
+        ...mapActions(['updateStock', 'createStock']),
         submit() {
             if (this.editMode) {
                 //this.updateStock( this.stock );

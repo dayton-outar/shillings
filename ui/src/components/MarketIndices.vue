@@ -1,11 +1,11 @@
 <template>
     <div class="column is-full">
-        <h2 class="title">Industries</h2>
+        <h2 class="title">Market Indices</h2>
         <div class="box my-4 mx-1">
             <div class="columns">
                 <div class="column is-full">
                     <b-button 
-                        label="Create New Industry"
+                        label="Create New Market Index"
                         type="is-info"
                         size="is-medium"
                         @click.prevent="createIndex" />
@@ -16,17 +16,17 @@
                         trap-focus
                         :destroy-on-hide="false"
                         aria-role="dialog"
-                        aria-label="Create New Industry"
+                        aria-label="Create New Market Index"
                         close-button-aria-label="Close"
                         full-screen
                         aria-modal>
                         <template #default="props">
                             <div class="modal-card" style="width: auto">
                                 <header class="modal-card-head">
-                                    <p class="modal-card-title">Create New Industry</p>
+                                    <p class="modal-card-title">Create New Market Index</p>
                                 </header>
                                 <section class="modal-card-body">
-                                    <industry-detail ref="frmIndustry" :industryData="newIndustry" :editMode="false" @close="props.close" />
+                                    <market-index-detail ref="frmIndex" :marketIndexData="newMarket" :editMode="false" @close="props.close" />
                                 </section>
                                 <footer class="modal-card-foot">
                                     <b-button
@@ -47,7 +47,7 @@
             <b-table
                 detailed
                 :show-detail-icon="false"
-                :data="industries"
+                :data="marketIndices"
                 :sort-icon="sortIcon" 
                 :sort-icon-size="sortIconSize"
                 :default-sort-direction="defaultSortDirection" 
@@ -85,7 +85,7 @@
                 <template #detail="props">
                     <article>
                         <h5 class="title is-5">{{ props.row.name }}</h5>
-                        <industry-detail :industryData="props.row" :editMode="true" />
+                        <market-index-detail :marketIndexData="props.row" :editMode="true" />
                     </article>
                 </template>
 
@@ -104,11 +104,11 @@
 
 <script>
 import { mapState, mapActions } from 'vuex'
-import Industry from './Industry.vue'
+import MarketIndex from './MarketIndex.vue'
 
 export default {
     components: {
-        'industry-detail': Industry,
+        'market-index-detail': MarketIndex,
     },
     data() {
         return {
@@ -119,11 +119,11 @@ export default {
             currentPage: 1,
             total: 0,
             isModalActive: false,
-            newIndustry: {}
+            newIndex: {}
         }
     },
     beforeCreate() {
-        this.$store.dispatch('fetchIndustries', {
+        this.$store.dispatch('fetchMarketIndices', {
             first: 70,
             last: null,
             next: null,
@@ -133,12 +133,12 @@ export default {
         });
     },
     methods: {
-        ...mapActions(['fetchIndustries']),
-        createIndex() {
-            this.newIndustry = {
+        ...mapActions(['fetchMarketIndices']),
+        createMarket() {
+            this.newIndex = {
                 no: 0,
                 name: '',
-                wiki: ''
+                market: {}
             } // HACK: This is not refreshing the state. State is kept between events
 
             this.isModalActive = true
@@ -158,11 +158,11 @@ export default {
             // this.currentPage = page
         },
         submit() {
-            this.$refs.frmIndustry.submit()
+            this.$refs.frmIndex.submit()
         }
     },
     computed: {
-        ...mapState(['industries'])
+        ...mapState(['marketIndices'])
     }
 }
 

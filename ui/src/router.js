@@ -5,6 +5,8 @@ import FinancialReport from './components/FinancialReport.vue'
 import Companies from './components/Companies.vue'
 import Stocks from './components/Stocks.vue'
 import Markets from './components/Markets.vue'
+import MarketIndices from './components/MarketIndices.vue'
+import Industries from './components/Industries.vue'
 
 Vue.use(Router)
 
@@ -39,6 +41,18 @@ export default new Router({
             name: 'markets',
             component: Markets,
             meta: { title: 'Shillings: Markets' }
+        },
+        {
+            path: '/indices',
+            name: 'indices',
+            component: MarketIndices,
+            meta: { title: 'Shillings: Market Indices' }
+        },
+        {
+            path: '/industries',
+            name: 'industries',
+            component: Industries,
+            meta: { title: 'Shillings: Industries' }
         }
     ]
 })

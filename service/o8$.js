@@ -192,7 +192,10 @@ async function runner(bringToCurrentDate, begin, end, rest = 2) {
 
         console.log(`Running scraper for ${beginning.format('YYYY-MM-DD')}`);
 
-        await run([`https://www.jamstockex.com/trading/trade-quotes/?market=main-market&date=${beginning.format('YYYY-MM-DD')}`], readStocks)
+        await run([
+                    `https://www.jamstockex.com/trading/trade-quotes/?market=main-market&date=${beginning.format('YYYY-MM-DD')}`//,
+                    //`https://www.jamstockex.com/trading/trade-quotes/?market=junior-market&date=${beginning.format('YYYY-MM-DD')}`
+                ], readStocks)
             .then(stocks => {
                 let tradings = {
                     stocks
@@ -216,7 +219,10 @@ async function runner(bringToCurrentDate, begin, end, rest = 2) {
 
                 console.log(`Reading stocks for ${beginning.format('YYYY-MM-DD')}`);
 
-                await run([`https://www.jamstockex.com/trading/trade-quotes/?market=main-market&date=${beginning.format('YYYY-MM-DD')}`], readStocks)
+                await run([
+                        `https://www.jamstockex.com/trading/trade-quotes/?market=main-market&date=${beginning.format('YYYY-MM-DD')}`//,
+                        //`https://www.jamstockex.com/trading/trade-quotes/?market=junior-market&date=${beginning.format('YYYY-MM-DD')}`
+                    ], readStocks)
                     .then(stocks => {
                         let tradings = {
                             stocks
