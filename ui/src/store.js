@@ -21,18 +21,7 @@ export const store = new Vuex.Store({
       portfolioHoldings: [],
       sections: [],
       assays: [],
-      financialReport: {
-        no: null,
-        company: null,
-        description: '',
-        period: null,
-        statementDate: null,
-        isAudited: null,
-        analytes: [],
-        log: {
-          logged: new Date()
-        }
-      },
+      financialReports: [],
       statementItems: [],
       isItemsValid: true
     },
@@ -144,11 +133,15 @@ export const store = new Vuex.Store({
         setPortfolio(state, payload) {
           state.portfolioHoldings = payload
         },
+        setFinancialReports(state, payload) {
+          state.financialReports = payload.nodes
+        },
         setFinancialReport(state, payload) {
-          state.financialReport = payload
+          var ix = state.financialReports.findIndex(f => f.no === payload.no);
+          state.financialReports[ix] = payload
         },
         openStatementItem(state, payload) {
-          const item = state.financialReport.analytes.find(p => p.type.toLowerCase() === payload.type.replace(' ', '_').toLowerCase() && p.sequence === payload.sequence);
+          const item = state.financialReports.analytes.find(p => p.type.toLowerCase() === payload.type.replace(' ', '_').toLowerCase() && p.sequence === payload.sequence);
           if (item) {
             item.state = 'Opened';
             item.vDesc = {
@@ -170,7 +163,7 @@ export const store = new Vuex.Store({
           }
         },
         closeStatementItem(state, payload) {
-          const item = state.financialReport.analytes.find(p => p.type.toLowerCase() === payload.type.replace(' ', '_').toLowerCase() && p.sequence === payload.sequence);
+          const item = state.financialReports.analytes.find(p => p.type.toLowerCase() === payload.type.replace(' ', '_').toLowerCase() && p.sequence === payload.sequence);
 
           if (item) { // TODO: Need refactoring
             
@@ -180,35 +173,35 @@ export const store = new Vuex.Store({
           }
         },
         addStatementItem(state, payload) {
-          state.financialReport.analytes.push(payload)
+          state.financialReports.analytes.push(payload)
 
-          //localStorage.setItem('my-statement-items', JSON.stringify(this.financialReport.analytes) )
+          //localStorage.setItem('my-statement-items', JSON.stringify(this.financialReports.analytes) )
         },
         updateStatementItem(state, payload) {
-          const ix = state.financialReport.analytes.findIndex(p => p.type.toLowerCase() === payload.type.replace(' ', '_').toLowerCase() && p.sequence === payload.sequence);
+          const ix = state.financialReports.analytes.findIndex(p => p.type.toLowerCase() === payload.type.replace(' ', '_').toLowerCase() && p.sequence === payload.sequence);
           // if (payload.key === 'amount') {
           //     payload.value = payload.value.toString().replace(/[^0-9.-]+/g,'');
           // }
-          state.financialReport.analytes[ix][payload.key] = payload.value;
+          state.financialReports.analytes[ix][payload.key] = payload.value;
 
-          //localStorage.setItem('my-statement-items', JSON.stringify(this.financialReport.analytes) )
+          //localStorage.setItem('my-statement-items', JSON.stringify(this.financialReports.analytes) )
         },
         removeStatementItem(state, payload) {
-          const ix = state.financialReport.analytes.findIndex(p => p.type.toLowerCase() === payload.type.replace(' ', '_').toLowerCase() && p.sequence === payload.sequence);
+          const ix = state.financialReports.analytes.findIndex(p => p.type.toLowerCase() === payload.type.replace(' ', '_').toLowerCase() && p.sequence === payload.sequence);
           if (ix > -1) {
-            state.financialReport.analytes.splice(ix, 1);
+            state.financialReports.analytes.splice(ix, 1);
             
-            for (let i = ix; i < state.financialReport.analytes.length; i++) {
-              if (state.financialReport.analytes[i].type === payload.type) {
-                state.financialReport.analytes[i].no = (state.financialReport.analytes[i].no - 1);
+            for (let i = ix; i < state.financialReports.analytes.length; i++) {
+              if (state.financialReports.analytes[i].type === payload.type) {
+                state.financialReports.analytes[i].no = (state.financialReports.analytes[i].no - 1);
               }              
             }
           }
 
-          //localStorage.setItem('my-statement-items', JSON.stringify(this.financialReport.analytes) )
+          //localStorage.setItem('my-statement-items', JSON.stringify(this.financialReports.analytes) )
         },
         preppedStatementItems(state) {
-          state.financialReport.analytes.map(i => {
+          state.financialReports.analytes.map(i => {
               delete i.vDesc;
               delete i.vSec;
               delete i.vAnl;
@@ -220,7 +213,7 @@ export const store = new Vuex.Store({
           })
         },
         validateStatementItem(state, payload) {
-          const item = state.financialReport.analytes.find(p => p.type.toLowerCase() === payload.type.replace(' ', '_').toLowerCase() && p.sequence === payload.sequence);
+          const item = state.financialReports.analytes.find(p => p.type.toLowerCase() === payload.type.replace(' ', '_').toLowerCase() && p.sequence === payload.sequence);
 
           if (!item.description) {
             item.vDesc.type = 'is-danger'
@@ -266,7 +259,7 @@ export const store = new Vuex.Store({
         validateStatementItems(state) {
           state.isItemsValid = true
 
-          state.financialReport.analytes.forEach(i => {
+          state.financialReports.analytes.forEach(i => {
             if (i.state == 'Opened') {
               if (!i.description) { // TODO: Need refactoring
                 // HACK: These fields do not exist on the graphql model
@@ -346,16 +339,16 @@ export const store = new Vuex.Store({
           localStorage.removeItem('my-portfolio')
         },
         updateReportCompany(state, payload) {
-          state.financialReport.company = payload
+          state.financialReports.company = payload
         },
         updateReportPeriod(state, payload) {
-          state.financialReport.period = payload
+          state.financialReports.period = payload
         },
         updateReportDate(state, payload) {
-          state.financialReport.statementDate = payload.toJSON()
+          state.financialReports.statementDate = payload.toJSON()
         },
         updateReportIsAudit(state, payload) {
-          state.financialReport.isAudited = payload
+          state.financialReports.isAudited = payload
         }
     },
     actions: {
@@ -512,11 +505,15 @@ export const store = new Vuex.Store({
 
           commit('setFinancialReport', response.data.updateFinancialReport)
         },
-        async fetchFinancialReport({ commit }, no) {
+        async fetchFinancialReports({ commit }, request) {
           const response = await graphQlClient.query({
-            query: gql`query Get($no: Long!) {
+            query: gql`query Get($first: Int, $last: Int, $next: String, $previous: String) {
               financialReports (
-                where: { no: { eq: $no } }                
+                first: $first,
+                last: $last,
+                after: $next,
+                before: $previous,
+                order: { statementDate: DESC }
               ) {
                 nodes {
                   no,
@@ -548,15 +545,18 @@ export const store = new Vuex.Store({
               }
             }`,
             variables: {
-              no: no
+              first: request.first,
+              last: request.last,
+              next: request.next,
+              previous: request.previous
             }
           })
           
-          response.data.financialReports.nodes[0].analytes.forEach(el => {
-            el.state = 'Closed';
-          });
+          //response.data.financialReports.nodes[0].analytes.forEach(el => {
+          //  el.state = 'Closed';
+          //});
 
-          commit('setFinancialReport', response.data.financialReports.nodes[0])          
+          commit('setFinancialReports', response.data.financialReports)          
         },
         async fetchCompanies({ commit }) {
           const response = await graphQlClient.query({

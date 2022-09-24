@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Dashboard from './components/Dashboard.vue'
-import FinancialReport from './components/FinancialReport.vue'
+import FinancialReports from './components/FinancialReports.vue'
 import Companies from './components/Companies.vue'
 import Stocks from './components/Stocks.vue'
 import Markets from './components/Markets.vue'
@@ -19,10 +19,10 @@ export default new Router({
             meta: { title: 'Shillings: Dashboard' }
         },
         {
-            path: '/finance-report',
-            name: 'finance-report',
-            component: FinancialReport,
-            meta: { title: 'Shillings: Financial Report' }
+            path: '/finance-reports',
+            name: 'finance-reports',
+            component: FinancialReports,
+            meta: { title: 'Shillings: Financial Reports' }
         },
         {
             path: '/companies',

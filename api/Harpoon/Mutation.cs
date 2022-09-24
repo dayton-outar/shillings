@@ -14,6 +14,7 @@ namespace Harpoon
 {
     public class Mutation
     {
+        #region Manage Financial Reports
 
         [UseDbContext(typeof(StocksQuery))]
         public FinancialReport CreateFinancialReport([ScopedService]StocksQuery sq, FinancialReport financialReport)
@@ -59,6 +60,35 @@ namespace Harpoon
 
             return financialReport;
         }
+
+        #endregion
+
+        #region Manage Dividends
+
+        [UseDbContext(typeof(StocksQuery))]
+        public bool DeleteDividends([ScopedService]StocksQuery sq, long no)
+        {
+            bool result = false;
+
+            try
+            {
+                string sql = "EXEC [dbo].[DeleteDividends] @no";
+                
+                List<SqlParameter> parms = new List<SqlParameter>
+                { 
+                    // Update parameters
+                    new SqlParameter { ParameterName = "@no", Value = no }  
+                };
+
+                sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
+
+                result = true;
+            } catch {}
+
+            return result;
+        }
+
+        #endregion
 
         #region Manage Companies
 
@@ -218,6 +248,144 @@ namespace Harpoon
             sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
 
             return stock;
+        }
+
+        [UseDbContext(typeof(StocksQuery))]
+        public bool DeleteStock([ScopedService]StocksQuery sq, string stockCode)
+        {
+            bool result = false;
+
+            try
+            {
+                string sql = "EXEC [dbo].[DeleteStock] @stockCode";
+                
+                List<SqlParameter> parms = new List<SqlParameter>
+                { 
+                    // Update parameters
+                    new SqlParameter { ParameterName = "@stockCode", Value = stockCode }  
+                };
+
+                sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
+
+                result = true;
+            } catch {}
+
+            return result;
+        }
+
+        #endregion
+
+        #region Manage Markets
+
+        [UseDbContext(typeof(StocksQuery))]
+        public Market CreateMarket([ScopedService]StocksQuery sq, Market market)
+        {
+            string sql = "EXEC [dbo].[CreateMarket] @market";
+            
+            string stockXml = SerializationHelper.Serialize<Market>(market);
+            List<SqlParameter> parms = new List<SqlParameter>
+            { 
+                // Update parameters
+                new SqlParameter { ParameterName = "@market", Value = stockXml }  
+            };
+
+            sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
+
+            return market;
+        }
+
+        [UseDbContext(typeof(StocksQuery))]
+        public Market UpdateMarket([ScopedService]StocksQuery sq, Market market)
+        {
+            string sql = "EXEC [dbo].[UpdateMarket] @market";
+            
+            string stockXml = SerializationHelper.Serialize<Market>(market);
+            List<SqlParameter> parms = new List<SqlParameter>
+            { 
+                // Update parameters
+                new SqlParameter { ParameterName = "@market", Value = stockXml }  
+            };
+
+            sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
+
+            return market;
+        }
+
+        [UseDbContext(typeof(StocksQuery))]
+        public bool DeleteMarket([ScopedService]StocksQuery sq, string marketCode)
+        {
+            bool result = false;
+
+            try
+            {
+                string sql = "EXEC [dbo].[DeleteMarket] @marketCode";
+                
+                List<SqlParameter> parms = new List<SqlParameter>
+                { 
+                    // Update parameters
+                    new SqlParameter { ParameterName = "@marketCode", Value = marketCode }  
+                };
+
+                sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
+
+                result = true;
+            } catch {}
+
+            return result;
+        }
+
+        #endregion
+
+        #region Market Index
+
+        [UseDbContext(typeof(StocksQuery))]
+        public bool DeleteMarketIndex([ScopedService]StocksQuery sq, long no)
+        {
+            bool result = false;
+
+            try
+            {
+                string sql = "EXEC [dbo].[DeleteMarketIndex] @no";
+                
+                List<SqlParameter> parms = new List<SqlParameter>
+                { 
+                    // Update parameters
+                    new SqlParameter { ParameterName = "@no", Value = no }  
+                };
+
+                sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
+
+                result = true;
+            } catch {}
+
+            return result;
+        }
+
+        #endregion
+
+        #region Industries
+
+        [UseDbContext(typeof(StocksQuery))]
+        public bool DeleteIndustries([ScopedService]StocksQuery sq, long no)
+        {
+            bool result = false;
+
+            try
+            {
+                string sql = "EXEC [dbo].[DeleteIndustry] @no";
+                
+                List<SqlParameter> parms = new List<SqlParameter>
+                { 
+                    // Update parameters
+                    new SqlParameter { ParameterName = "@no", Value = no }  
+                };
+
+                sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
+
+                result = true;
+            } catch {}
+
+            return result;
         }
 
         #endregion

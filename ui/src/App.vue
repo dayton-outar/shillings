@@ -8,7 +8,7 @@
         </div>
         <div>
           <router-link to="/">Home</router-link> |
-          <router-link to="/finance-report">Finance Report</router-link> |
+          <router-link to="/finance-reports">Finance Reports</router-link> |
           <router-link to="/companies">Companies</router-link> |
           <router-link to="/stocks">Stocks</router-link> |
           <router-link to="/markets">Markets</router-link> |
