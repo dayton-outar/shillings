@@ -61,9 +61,66 @@ namespace Harpoon
             return financialReport;
         }
 
+        [UseDbContext(typeof(StocksQuery))]
+        public bool DeleteFinancialReport([ScopedService]StocksQuery sq, long no)
+        {
+            bool result = false;
+
+            try
+            {
+                string sql = "EXEC [dbo].[DeleteFinancialReport] @no";
+                
+                List<SqlParameter> parms = new List<SqlParameter>
+                { 
+                    // Update parameters
+                    new SqlParameter { ParameterName = "@no", Value = no }  
+                };
+
+                sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
+
+                result = true;
+            } catch {}
+
+            return result;
+        }
+
         #endregion
 
         #region Manage Dividends
+
+        [UseDbContext(typeof(StocksQuery))]
+        public Dividend CreateDividends([ScopedService]StocksQuery sq, Dividend dividend)
+        {
+            string sql = "EXEC [dbo].[CreateDividends] @dividends";
+            
+            string dividendsXml = SerializationHelper.Serialize<Dividend>(dividend);
+            List<SqlParameter> parms = new List<SqlParameter>
+            { 
+                // Update parameters
+                new SqlParameter { ParameterName = "@dividend", Value = dividendsXml }  
+            };
+
+            sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
+
+            return dividend;
+        }
+
+        [UseDbContext(typeof(StocksQuery))]
+        public Dividend UpdateDividends([ScopedService]StocksQuery sq, Dividend dividend)
+        {
+            string sql = "EXEC [dbo].[UpdateDividends] @dividends";
+            
+            string dividendsXml = SerializationHelper.Serialize<Dividend>(dividend);
+            List<SqlParameter> parms = new List<SqlParameter>
+            { 
+                // Update parameters
+                new SqlParameter { ParameterName = "@dividends", Value = dividendsXml }  
+            };
+
+            sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
+
+            return dividend;
+        }
 
         [UseDbContext(typeof(StocksQuery))]
         public bool DeleteDividends([ScopedService]StocksQuery sq, long no)
@@ -117,7 +174,7 @@ namespace Harpoon
             string companyXml = SerializationHelper.Serialize<Company>(company);
             List<SqlParameter> parms = new List<SqlParameter>
             { 
-                // Update parameters
+                // Create parameters
                 new SqlParameter { ParameterName = "@company", Value = companyXml }  
             };
 
@@ -224,7 +281,7 @@ namespace Harpoon
             string stockXml = SerializationHelper.Serialize<Stock>(stock);
             List<SqlParameter> parms = new List<SqlParameter>
             { 
-                // Update parameters
+                // Create parameters
                 new SqlParameter { ParameterName = "@stock", Value = stockXml }  
             };
 
@@ -282,11 +339,11 @@ namespace Harpoon
         {
             string sql = "EXEC [dbo].[CreateMarket] @market";
             
-            string stockXml = SerializationHelper.Serialize<Market>(market);
+            string marketXml = SerializationHelper.Serialize<Market>(market);
             List<SqlParameter> parms = new List<SqlParameter>
             { 
-                // Update parameters
-                new SqlParameter { ParameterName = "@market", Value = stockXml }  
+                // Create parameters
+                new SqlParameter { ParameterName = "@market", Value = marketXml }  
             };
 
             sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
@@ -299,11 +356,11 @@ namespace Harpoon
         {
             string sql = "EXEC [dbo].[UpdateMarket] @market";
             
-            string stockXml = SerializationHelper.Serialize<Market>(market);
+            string marketXml = SerializationHelper.Serialize<Market>(market);
             List<SqlParameter> parms = new List<SqlParameter>
             { 
                 // Update parameters
-                new SqlParameter { ParameterName = "@market", Value = stockXml }  
+                new SqlParameter { ParameterName = "@market", Value = marketXml }  
             };
 
             sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
@@ -336,7 +393,41 @@ namespace Harpoon
 
         #endregion
 
-        #region Market Index
+        #region Manage Market Index
+
+        [UseDbContext(typeof(StocksQuery))]
+        public MarketIndex CreateMarketIndex([ScopedService]StocksQuery sq, MarketIndex marketIndex)
+        {
+            string sql = "EXEC [dbo].[CreateMarketIndex] @marketIndex";
+            
+            string marketIndexXml = SerializationHelper.Serialize<MarketIndex>(marketIndex);
+            List<SqlParameter> parms = new List<SqlParameter>
+            { 
+                // Create parameters
+                new SqlParameter { ParameterName = "@marketIndex", Value = marketIndexXml }  
+            };
+
+            sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
+
+            return marketIndex;
+        }
+
+        [UseDbContext(typeof(StocksQuery))]
+        public MarketIndex UpdateMarketIndex([ScopedService]StocksQuery sq, MarketIndex marketIndex)
+        {
+            string sql = "EXEC [dbo].[UpdateMarketIndex] @marketIndex";
+            
+            string marketIndexXml = SerializationHelper.Serialize<MarketIndex>(marketIndex);
+            List<SqlParameter> parms = new List<SqlParameter>
+            { 
+                // Update parameters
+                new SqlParameter { ParameterName = "@marketIndex", Value = marketIndexXml }  
+            };
+
+            sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
+
+            return marketIndex;
+        }
 
         [UseDbContext(typeof(StocksQuery))]
         public bool DeleteMarketIndex([ScopedService]StocksQuery sq, long no)
@@ -363,7 +454,41 @@ namespace Harpoon
 
         #endregion
 
-        #region Industries
+        #region Manage Industries
+
+        [UseDbContext(typeof(StocksQuery))]
+        public Industry CreateIndustry([ScopedService]StocksQuery sq, Industry industry)
+        {
+            string sql = "EXEC [dbo].[CreateIndustry] @industry";
+            
+            string industryXml = SerializationHelper.Serialize<Industry>(industry);
+            List<SqlParameter> parms = new List<SqlParameter>
+            { 
+                // Update parameters
+                new SqlParameter { ParameterName = "@industry", Value = industryXml }  
+            };
+
+            sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
+
+            return industry;
+        }
+
+        [UseDbContext(typeof(StocksQuery))]
+        public Industry UpdateIndustry([ScopedService]StocksQuery sq, Industry industry)
+        {
+            string sql = "EXEC [dbo].[UpdateIndustry] @industry";
+            
+            string industryXml = SerializationHelper.Serialize<Industry>(industry);
+            List<SqlParameter> parms = new List<SqlParameter>
+            { 
+                // Update parameters
+                new SqlParameter { ParameterName = "@industry", Value = industryXml }  
+            };
+
+            sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
+
+            return industry;
+        }
 
         [UseDbContext(typeof(StocksQuery))]
         public bool DeleteIndustries([ScopedService]StocksQuery sq, long no)
@@ -390,6 +515,8 @@ namespace Harpoon
 
         #endregion
 
+        #region Helpers
+
         // Credit: https://stackoverflow.com/questions/34131326/using-mimemapping-in-asp-net-core
         // See also https://www.garykessler.net/library/file_sigs.html
         private string GetContentType(string fileName)
@@ -398,5 +525,7 @@ namespace Harpoon
             new Microsoft.AspNetCore.StaticFiles.FileExtensionContentTypeProvider().TryGetContentType(fileName, out contentType);
             return contentType ?? "application/octet-stream";
         }
+
+        #endregion
     }
 }
