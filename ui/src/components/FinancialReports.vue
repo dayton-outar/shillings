@@ -128,8 +128,8 @@ export default {
             last: null,
             next: null,
             previous: null
-        }).then(() => {
-            //this.total = this.fullCompanies.totalCount;
+        }).then((response) => {
+            this.total = response.totalCount;
         });
     },
     methods: {

@@ -515,6 +515,13 @@ export const store = new Vuex.Store({
                 before: $previous,
                 order: { statementDate: DESC }
               ) {
+                pageInfo {
+                  startCursor,
+                  hasNextPage,
+                  hasPreviousPage,
+                  endCursor
+                }
+                totalCount,
                 nodes {
                   no,
                   company {
@@ -556,7 +563,9 @@ export const store = new Vuex.Store({
           //  el.state = 'Closed';
           //});
 
-          commit('setFinancialReports', response.data.financialReports)          
+          commit('setFinancialReports', response.data.financialReports)
+          
+          return Promise.resolve(response.data.financialReports)
         },
         async fetchCompanies({ commit }) {
           const response = await graphQlClient.query({
