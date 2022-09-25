@@ -491,7 +491,7 @@ namespace Harpoon
         }
 
         [UseDbContext(typeof(StocksQuery))]
-        public bool DeleteIndustries([ScopedService]StocksQuery sq, long no)
+        public bool DeleteIndustry([ScopedService]StocksQuery sq, long no)
         {
             bool result = false;
 
