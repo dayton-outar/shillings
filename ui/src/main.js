@@ -7,7 +7,7 @@ import router from './router'
 // Install Buefy and reference it's stylesheet
 import Buefy from 'buefy'
 import '/node_modules/buefy/dist/buefy.css'
-import '/node_modules/@mdi/font/css/materialdesignicons.min.css'
+import '/node_modules/@fortawesome/fontawesome-free/css/all.css'
 
 // Install Highcharts and extended modules
 import Highcharts from 'highcharts'

@@ -1,5 +1,5 @@
 import gql from 'graphql-tag'
-import graphQlClient from './apollo'
+import graphQlClient from '../apollo'
 
 export default {
     async createFinancialReport({ commit }, report) {

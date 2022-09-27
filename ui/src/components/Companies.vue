@@ -73,7 +73,8 @@
                         <b-button
                             size="is-small"
                             type="is-info"
-                            icon-right="pencil"
+                            icon-pack="fas"
+                            icon-right="pen-to-square"
                             @click.prevent="props.toggleDetails(props.row)" />
                     </template>
                 </b-table-column>
@@ -83,7 +84,8 @@
                         <b-button
                             size="is-small"
                             type="is-danger"
-                            icon-right="delete"
+                            icon-pack="fas"
+                            icon-right="trash"
                             @click.prevent="deleteItem(props.row.code)" />
                     </template>
                 </b-table-column>
