@@ -2,7 +2,6 @@ export default {
     companies: [],
     fullCompanies: [],
     marketIndices: [],
-    industries: [],
     markets: [],
     stocks: [],
     fullStocks: [],

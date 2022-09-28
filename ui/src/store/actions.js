@@ -292,25 +292,6 @@ export default {
       
       commit('setMarketIndices', response.data.marketIndices.nodes)
     },
-    async fetchIndustries({ commit }) {
-      const response = await graphQlClient.query({
-        query: gql`query {
-          industries (
-            first: 100,
-            order: { name: ASC }
-          )
-          {
-            nodes {
-              no,
-              name,
-              wiki
-            }
-          }
-        }`
-      })
-      
-      commit('setIndustries', response.data.industries.nodes)
-    },
     async fetchFullCompanies({ commit }, request) {
       const response = await graphQlClient.query({
         query: gql`query Get($first: Int, $last: Int, $next: String, $previous: String) {

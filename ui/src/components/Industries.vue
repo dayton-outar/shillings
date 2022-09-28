@@ -47,7 +47,7 @@
             <b-table
                 detailed
                 :show-detail-icon="false"
-                :data="industries"
+                :data="industries.nodes"
                 :sort-icon="sortIcon" 
                 :sort-icon-size="sortIconSize"
                 :default-sort-direction="defaultSortDirection" 
@@ -67,7 +67,8 @@
                         <b-button
                             size="is-small"
                             type="is-info"
-                            icon-right="pencil"
+                            icon-pack="fas"
+                            icon-right="pen-to-square"
                             @click.prevent="props.toggleDetails(props.row)" />
                     </template>
                 </b-table-column>
@@ -77,7 +78,8 @@
                         <b-button
                             size="is-small"
                             type="is-danger"
-                            icon-right="delete"
+                            icon-pack="fas"
+                            icon-right="trash"
                             @click.prevent="deleteItem(props.row.code)" />
                     </template>
                 </b-table-column>
@@ -123,17 +125,19 @@ export default {
         }
     },
     beforeCreate() {
-        this.$store.dispatch('fetchIndustries', {
-            first: 70,
+        this.$store.dispatch('industries/fetch', {
+            first: 100,
             last: null,
             next: null,
             previous: null
         }).then(() => {
-            //this.total = this.fullCompanies.totalCount;
+            this.total = this.industries.totalCount;
+        }).catch(err => {
+            console.log(err)
         });
     },
     methods: {
-        ...mapActions(['fetchIndustries']),
+        ...mapActions('industries', ['fetch']),
         createIndex() {
             this.newIndustry = {
                 no: 0,
@@ -162,7 +166,7 @@ export default {
         }
     },
     computed: {
-        ...mapState(['industries'])
+        ...mapState('industries', ['industries'])
     }
 }
 
