@@ -20,10 +20,13 @@ export default {
         state.industries = payload
     },
     modify(state, payload) {
-      var ix = state.industries.nodes.findIndex(i => i.no === payload.no)
+      const ol = JSON.parse( JSON.stringify( state.industries) )
+      var ix = ol.nodes.findIndex(i => i.no === payload.no)
       if (ix > -1) {
-        state.industries.nodes[ix] = payload
+        ol.nodes[ix] = payload
       }
+
+      state.industries = ol
     },
     remove(state, no) {
       var ix = state.industries.nodes.findIndex(i => i.no === no)
