@@ -49,10 +49,18 @@ export default {
         ...mapMutations('industries', ['add', 'modify']),
         submit() {
             if (this.editMode) {
-                this.modify( this.industry )
+                this.modify( {
+                    type: 'industries',
+                    pk: 'no',
+                    payload: this.industry
+                } )
                 this.$emit('close')
             } else {
-                this.add( this.industry )
+                this.add( {
+                    type: 'industries',
+                    pk: 'no',
+                    payload: this.industry
+                } )
                 this.$emit('close')
             }
         }

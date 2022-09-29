@@ -1,5 +1,6 @@
 import gql from 'graphql-tag'
 import graphQlClient from '../../apollo'
+import mutations from '../mutations'
 
 export default {
   namespaced: true,
@@ -10,31 +11,7 @@ export default {
       nodes: []      
     }
   },
-  getters: {},
-  mutations: {
-    add(state, payload) {
-      state.industries.nodes.push(payload)
-      state.industries.totalCount += 1
-    },
-    set(state, payload) {
-        state.industries = payload
-    },
-    modify(state, payload) {
-      const ol = JSON.parse( JSON.stringify( state.industries) )
-      var ix = ol.nodes.findIndex(i => i.no === payload.no)
-      if (ix > -1) {
-        ol.nodes[ix] = payload
-      }
-
-      state.industries = ol
-    },
-    remove(state, no) {
-      var ix = state.industries.nodes.findIndex(i => i.no === no)
-      if (ix > -1) {
-        state.industries.nodes.splice(ix, 1)
-      }
-    }
-  },
+  mutations,
   actions: {
     async create({ commit }, industry) {
       const response = await graphQlClient.mutate({
@@ -58,7 +35,11 @@ export default {
         }
       })
 
-      commit('add', response.data.createIndustry.industry)
+      commit('add', {
+        type: 'industries',
+        pk: 'no',
+        payload: response.data.createIndustry.industry
+      })
     },
     async fetch({ commit }, request) {
       const response = await graphQlClient.query({
@@ -93,7 +74,11 @@ export default {
         }
       })
         
-      commit('set', response.data.industries)
+      commit('set', {
+        type: 'industries',
+        pk: 'no',
+        payload: response.data.industries
+      })
 
       return Promise.resolve(response.data.industries)
     },
@@ -119,7 +104,11 @@ export default {
         }
       })
 
-      commit('modify', response.data.updateIndustry.industry)
+      commit('modify', {
+        type: 'industries',
+        pk: 'no',
+        payload: response.data.updateIndustry.industry
+      })
     },
     async delete() { // 
     }

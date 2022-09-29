@@ -8,10 +8,9 @@
                         label="Create New Industry"
                         type="is-info"
                         size="is-medium"
-                        v-if="!isCreatePanelActive"
+                        v-show="!isCreatePanelActive"
                         @click.prevent="createIndustry" />
-
-                    <industry-detail ref="frm" :industryData="newIndustry" :editMode="false" v-if="isCreatePanelActive" @close="closeCreatePanel" />
+                    <industry-detail ref="frm" :industryData="newIndustry" :editMode="false" v-show="isCreatePanelActive" @close="closeCreatePanel" />
                 </div>
             </div>
             <b-table
@@ -52,7 +51,7 @@
                             type="is-danger"
                             icon-pack="fas"
                             icon-right="trash"
-                            @click.prevent="deleteItem(props.row.no)" />
+                            @click.prevent="deleteItem(props.row)" />
                     </template>
                 </b-table-column>
 
@@ -61,6 +60,10 @@
                         <h5 class="title is-5">{{ props.row.name }}</h5>
                         <industry-detail :industryData="props.row" :editMode="true" @close="$refs.tbl.toggleDetails(props.row)" />
                     </article>
+                </template>
+
+                <template #empty>
+                    <div class="has-text-centered">No records</div>
                 </template>
 
             </b-table>
@@ -97,8 +100,8 @@ export default {
             counter: 0
         }
     },
-    beforeCreate() {
-        // this.$store.dispatch('industries/fetch', {
+    created() {
+        // this.fetch({
         //     first: 100,
         //     last: null,
         //     next: null,
@@ -107,11 +110,11 @@ export default {
         //     this.total = this.industries.totalCount;
         // }).catch(err => {
         //     console.log(err)
-        // });
+        // })
     },
     methods: {
         ...mapActions('industries', ['fetch']),
-        ...mapMutations('industries', ['add', 'remove']),
+        ...mapMutations('industries', ['remove']),
         createIndustry() {
             this.counter += 1
             this.newIndustry = {
@@ -121,28 +124,32 @@ export default {
             }
 
             this.isCreatePanelActive = true
-
-            // this.total += 1
         },
-        deleteItem(no) {
-            this.remove(no)
-
-            this.total -= 1
+        deleteItem(row) {
+            this.remove({
+                type: 'industries',
+                pk: 'no',
+                payload: row
+            })
+            this.total = this.industries.totalCount
         },
-        pageChange() { //page // Credit: https://github.com/buefy/buefy/issues/50
-            // this.fetch({
-            //     first: (page > this.currentPage) ? this.page : null,
-            //     last: (page < this.currentPage) ? this.page : null,
-            //     next: (page > this.currentPage) ? this.fullCompanies.pageInfo.endCursor : null,
-            //     previous: (page < this.currentPage) ? this.fullCompanies.pageInfo.startCursor : null
-            // })
-            // this.currentPage = page
+        pageChange(page) { // Credit: https://github.com/buefy/buefy/issues/50
+            this.fetch({
+                first: (page > this.currentPage) ? this.page : null,
+                last: (page < this.currentPage) ? this.page : null,
+                next: (page > this.currentPage) ? this.industries.pageInfo.endCursor : null,
+                previous: (page < this.currentPage) ? this.industries.pageInfo.startCursor : null
+            }).then(() => {
+                this.total = this.industries.totalCount;
+            }).catch(err => {
+                console.log(err)
+            })
+
+            this.currentPage = page
         },
         closeCreatePanel() {
             this.isCreatePanelActive = false
-        },
-        submit() {
-            this.$refs.frm.submit()
+            this.total = this.industries.totalCount
         }
     },
     computed: {
