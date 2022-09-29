@@ -4,7 +4,7 @@
             <div class="columns">
                 <div class="column">
                     <b-field 
-                        label="Code"
+                        label="Name"
                         label-position="inside">
                         <b-input v-model="industry.name"></b-input>
                     </b-field>
@@ -13,13 +13,16 @@
             <div class="columns">
                 <div class="column">
                     <b-field 
-                        label="Name"
+                        label="Wiki"
                         label-position="inside">
                         <b-input v-model="industry.wiki"></b-input>
                     </b-field>
                 </div>
             </div>
-            <div class="columns" v-if="editMode">
+            <div class="columns">
+                <div class="column">
+                    <b-button label="Close" size="is-medium" expanded @click.prevent="$emit('close')" />
+                </div>
                 <div class="column">
                     <b-button label="Save" type="is-info" size="is-medium" expanded @click.prevent="submit" />
                 </div>
@@ -30,6 +33,7 @@
 
 <script>
 //import { mapState, mapActions } from 'vuex' 
+import { mapMutations } from 'vuex' 
 // import moment from 'moment'
 
 export default {
@@ -42,11 +46,14 @@ export default {
     computed: {},
     methods: {
         //...mapActions(['updateStock', 'createStock']),
+        ...mapMutations('industries', ['add', 'modify']),
         submit() {
             if (this.editMode) {
-                //this.updateStock( this.stock );
+                this.modify( this.industry )
+                this.$emit('close')
             } else {
-                //this.createStock( this.stock );
+                this.add( this.industry )
+                this.$emit('close')
             }
         }
     }

@@ -4,19 +4,33 @@ import graphQlClient from '../../apollo'
 export default {
   namespaced: true,
   state: {
-    industries: []
+    industries: {
+      pageInfo: {},
+      totalCount: 0,
+      nodes: []      
+    }
   },
   getters: {},
   mutations: {
-    add(state, industry) {
-      state.industries.push(industry)
+    add(state, payload) {
+      state.industries.nodes.push(payload)
+      state.industries.totalCount += 1
     },
     set(state, payload) {
         state.industries = payload
     },
-    // modify(state, industry) {
-    //   state.industries.push(industry)
-    // },
+    modify(state, payload) {
+      var ix = state.industries.nodes.findIndex(i => i.no === payload.no)
+      if (ix > -1) {
+        state.industries.nodes[ix] = payload
+      }
+    },
+    remove(state, no) {
+      var ix = state.industries.nodes.findIndex(i => i.no === no)
+      if (ix > -1) {
+        state.industries.nodes.splice(ix, 1)
+      }
+    }
   },
   actions: {
     async create({ commit }, industry) {

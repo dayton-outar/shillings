@@ -8,43 +8,14 @@
                         label="Create New Industry"
                         type="is-info"
                         size="is-medium"
-                        @click.prevent="createIndex" />
-                    
-                    <b-modal
-                        v-model="isModalActive"
-                        has-modal-card
-                        trap-focus
-                        :destroy-on-hide="false"
-                        aria-role="dialog"
-                        aria-label="Create New Industry"
-                        close-button-aria-label="Close"
-                        full-screen
-                        aria-modal>
-                        <template #default="props">
-                            <div class="modal-card" style="width: auto">
-                                <header class="modal-card-head">
-                                    <p class="modal-card-title">Create New Industry</p>
-                                </header>
-                                <section class="modal-card-body">
-                                    <industry-detail ref="frmIndustry" :industryData="newIndustry" :editMode="false" @close="props.close" />
-                                </section>
-                                <footer class="modal-card-foot">
-                                    <b-button
-                                        label="Close"
-                                        expanded
-                                        @click.prevent="props.close" />
-                                    <b-button
-                                        label="Save"
-                                        expanded
-                                        type="is-info"
-                                        @click.prevent="submit" />
-                                </footer>
-                            </div>
-                        </template>
-                    </b-modal>
+                        v-if="!isCreatePanelActive"
+                        @click.prevent="createIndustry" />
+
+                    <industry-detail ref="frm" :industryData="newIndustry" :editMode="false" v-if="isCreatePanelActive" @close="closeCreatePanel" />
                 </div>
             </div>
             <b-table
+                ref="tbl"
                 detailed
                 :show-detail-icon="false"
                 :data="industries.nodes"
@@ -69,7 +40,8 @@
                             type="is-info"
                             icon-pack="fas"
                             icon-right="pen-to-square"
-                            @click.prevent="props.toggleDetails(props.row)" />
+                            @click.prevent="props.toggleDetails(props.row)"
+                            @close="console.log('Ooh!')" />
                     </template>
                 </b-table-column>
 
@@ -80,14 +52,14 @@
                             type="is-danger"
                             icon-pack="fas"
                             icon-right="trash"
-                            @click.prevent="deleteItem(props.row.code)" />
+                            @click.prevent="deleteItem(props.row.no)" />
                     </template>
                 </b-table-column>
 
-                <template #detail="props">
+                <template slot="detail" slot-scope="props">
                     <article>
                         <h5 class="title is-5">{{ props.row.name }}</h5>
-                        <industry-detail :industryData="props.row" :editMode="true" />
+                        <industry-detail :industryData="props.row" :editMode="true" @close="$refs.tbl.toggleDetails(props.row)" />
                     </article>
                 </template>
 
@@ -105,7 +77,7 @@
 </template>
 
 <script>
-import { mapState, mapActions } from 'vuex'
+import { mapState, mapActions, mapMutations } from 'vuex'
 import Industry from './Industry.vue'
 
 export default {
@@ -117,43 +89,48 @@ export default {
             defaultSortDirection: 'desc',
             sortIcon: 'arrow-up',
             sortIconSize: 'is-small',
-            page: 70,
+            page: 20,
             currentPage: 1,
             total: 0,
-            isModalActive: false,
-            newIndustry: {}
+            isCreatePanelActive: false,
+            newIndustry: {},
+            counter: 0
         }
     },
     beforeCreate() {
-        this.$store.dispatch('industries/fetch', {
-            first: 100,
-            last: null,
-            next: null,
-            previous: null
-        }).then(() => {
-            this.total = this.industries.totalCount;
-        }).catch(err => {
-            console.log(err)
-        });
+        // this.$store.dispatch('industries/fetch', {
+        //     first: 100,
+        //     last: null,
+        //     next: null,
+        //     previous: null
+        // }).then(() => {
+        //     this.total = this.industries.totalCount;
+        // }).catch(err => {
+        //     console.log(err)
+        // });
     },
     methods: {
         ...mapActions('industries', ['fetch']),
-        createIndex() {
+        ...mapMutations('industries', ['add', 'remove']),
+        createIndustry() {
+            this.counter += 1
             this.newIndustry = {
-                no: 0,
+                no: this.counter,
                 name: '',
                 wiki: ''
-            } // HACK: This is not refreshing the state. State is kept between events
+            }
 
-            this.isModalActive = true
+            this.isCreatePanelActive = true
+
+            // this.total += 1
         },
-        deleteItem() { //code
-            // this.deleteCompany(code)
-            //     .then(console.log)
-            //     .catch(console.error);
+        deleteItem(no) {
+            this.remove(no)
+
+            this.total -= 1
         },
         pageChange() { //page // Credit: https://github.com/buefy/buefy/issues/50
-            // this.fetchFullCompanies({
+            // this.fetch({
             //     first: (page > this.currentPage) ? this.page : null,
             //     last: (page < this.currentPage) ? this.page : null,
             //     next: (page > this.currentPage) ? this.fullCompanies.pageInfo.endCursor : null,
@@ -161,8 +138,11 @@ export default {
             // })
             // this.currentPage = page
         },
+        closeCreatePanel() {
+            this.isCreatePanelActive = false
+        },
         submit() {
-            this.$refs.frmIndustry.submit()
+            this.$refs.frm.submit()
         }
     },
     computed: {
