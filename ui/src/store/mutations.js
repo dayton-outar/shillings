@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from 'uuid'
 
 export default {
-  add(state, payload) {    
+  add(state, payload) {
     state[payload.type].nodes.push(payload.payload)
     state[payload.type].totalCount += 1
   },

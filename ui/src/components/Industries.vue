@@ -8,9 +8,9 @@
                         label="Create New Industry"
                         type="is-info"
                         size="is-medium"
-                        v-show="!isCreatePanelActive"
+                        v-if="!isCreatePanelActive"
                         @click.prevent="createIndustry" />
-                    <industry-detail ref="frm" :industryData="newIndustry" :editMode="false" v-show="isCreatePanelActive" @close="closeCreatePanel" />
+                    <industry-detail ref="frm" :industryData="newIndustry" :editMode="false" v-if="isCreatePanelActive" @close="closeCreatePanel" />
                 </div>
             </div>
             <b-table
@@ -68,11 +68,12 @@
 
             </b-table>
             <b-pagination
-                :total="total"
+                :total="industries.totalCount"
                 :current="currentPage"
                 :simple="true"
                 :per-page="page"
                 order="is-right"
+                icon-pack="fas"
                 @change="pageChange">
             </b-pagination>
         </div>
@@ -94,25 +95,23 @@ export default {
             sortIconSize: 'is-small',
             page: 20,
             currentPage: 1,
-            total: 0,
             isCreatePanelActive: false,
             newIndustry: {},
             counter: 0
         }
     },
     created() {
-        this.fetch({
-            first: 100,
-            last: null,
-            next: null,
-            previous: null,
-            ordering: [{ name: "ASC" }]
-        }).then(response => {
-            this.total = response.totalCount
-            console.log(this.industries)
-        }).catch(err => {
-            console.log(err)
-        })
+        // this.fetch({
+        //     first: 100,
+        //     last: null,
+        //     next: null,
+        //     previous: null,
+        //     ordering: [{ name: "ASC" }]
+        // }).then(() => {
+
+        // }).catch(err => {
+        //     console.log(err)
+        // })
     },
     methods: {
         ...mapActions('industries', ['fetch']),
@@ -133,7 +132,6 @@ export default {
                 pk: 'no',
                 payload: row
             })
-            this.total = this.industries.totalCount
         },
         pageChange(page) { // Credit: https://github.com/buefy/buefy/issues/50
             this.fetch({
@@ -142,7 +140,7 @@ export default {
                 next: (page > this.currentPage) ? this.industries.pageInfo.endCursor : null,
                 previous: (page < this.currentPage) ? this.industries.pageInfo.startCursor : null
             }).then(() => {
-                this.total = this.industries.totalCount;
+
             }).catch(err => {
                 console.log(err)
             })
@@ -151,7 +149,6 @@ export default {
         },
         closeCreatePanel() {
             this.isCreatePanelActive = false
-            this.total = this.industries.totalCount
         }
     },
     computed: {
