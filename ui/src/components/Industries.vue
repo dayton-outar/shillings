@@ -101,16 +101,18 @@ export default {
         }
     },
     created() {
-        // this.fetch({
-        //     first: 100,
-        //     last: null,
-        //     next: null,
-        //     previous: null
-        // }).then(() => {
-        //     this.total = this.industries.totalCount;
-        // }).catch(err => {
-        //     console.log(err)
-        // })
+        this.fetch({
+            first: 100,
+            last: null,
+            next: null,
+            previous: null,
+            ordering: [{ name: "ASC" }]
+        }).then(response => {
+            this.total = response.totalCount
+            console.log(this.industries)
+        }).catch(err => {
+            console.log(err)
+        })
     },
     methods: {
         ...mapActions('industries', ['fetch']),

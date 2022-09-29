@@ -6,7 +6,7 @@ export default {
     state[payload.type].totalCount += 1
   },
   set(state, payload) {
-      state[payload.type] = payload,payload
+      state[payload.type] = payload.payload
   },
   modify(state, payload) {
     const ol = JSON.parse( JSON.stringify( state[payload.type] ) )

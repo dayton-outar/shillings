@@ -43,13 +43,13 @@ export default {
     },
     async fetch({ commit }, request) {
       const response = await graphQlClient.query({
-        query: gql`query Get($first: Int, $last: Int, $next: String, $previous: String) {
+        query: gql`query Get($first: Int, $last: Int, $next: String, $previous: String, $ordering: [IndustrySortInput!]) {
           industries (
             first: $first,
             last: $last,
             after: $next,
             before: $previous,
-            order: { name: ASC }
+            order: $ordering
           )
           {
             pageInfo {
@@ -70,7 +70,8 @@ export default {
           first: request.first,
           last: request.last,
           next: request.next,
-          previous: request.previous
+          previous: request.previous,
+          ordering: request.ordering
         }
       })
         
