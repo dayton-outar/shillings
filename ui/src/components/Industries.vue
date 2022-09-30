@@ -43,6 +43,7 @@
                                     <div class="column">
                                         <b-field :label-position="labelPosition">
                                             <b-input 
+                                                v-model="searchWord"
                                                 placeholder="Search ..." 
                                                 type="Search" 
                                                 size="is-medium"
@@ -145,6 +146,7 @@ export default {
             sort: ['name', 'asc'],
             sortIcon: 'arrow-up',
             sortIconSize: 'is-small',
+            searchWord: '',
             page: 20,
             currentPage: 1,
             forward: true,
@@ -163,6 +165,7 @@ export default {
             last: null,
             next: null,
             previous: null,
+            filter: { name: { startsWith: this.searchWord } },
             ordering: [{ [this.sort[0]]: this.sort[1].toUpperCase() }]
         }).then(() => {
 
@@ -196,6 +199,7 @@ export default {
                 last: null,
                 next: null,
                 previous: null,
+                filter: { name: { startsWith: this.searchWord } },
                 ordering: [{ [this.sort[0]]: this.sort[1].toUpperCase() }]
             }).then(() => {
                 this.currentPage = 1
@@ -211,6 +215,7 @@ export default {
                 last: !this.forward ? this.page : null,
                 next: this.forward ? this.industries.pageInfo.endCursor : null,
                 previous: !this.forward ? this.industries.pageInfo.startCursor : null,
+                filter: { name: { startsWith: this.searchWord } },
                 ordering: [{ [this.sort[0]]: this.sort[1].toUpperCase() }]
             }).then(() => {
                 this.currentPage = page
@@ -219,7 +224,18 @@ export default {
             })
         },
         search() {
-            console.log('search ...')
+            this.fetch({
+                first: this.page,
+                last: null,
+                next: null,
+                previous: null,
+                filter: { name: { startsWith: this.searchWord } },
+                ordering: [{ [this.sort[0]]: this.sort[1].toUpperCase() }]
+            }).then(() => {
+                this.currentPage = 1
+            }).catch(err => {
+                console.log(err)
+            })
         }
     },
     computed: {
