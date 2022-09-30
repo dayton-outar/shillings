@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <form @submit.prevent="submit">
         <div class="box my-4 mx-1">
             <div class="columns">
                 <div class="column">
@@ -24,11 +24,11 @@
                     <b-button label="Close" size="is-medium" expanded @click.prevent="$emit('close')" />
                 </div>
                 <div class="column">
-                    <b-button label="Save" type="is-info" size="is-medium" expanded @click.prevent="submit" />
+                    <b-button label="Save" type="is-info" size="is-medium" expanded native-type="submit" />
                 </div>
             </div>
         </div>
-    </div>
+    </form>
 </template>
 
 <script>
@@ -48,21 +48,22 @@ export default {
         //...mapActions(['updateStock', 'createStock']),
         ...mapMutations('industries', ['add', 'modify']),
         submit() {
-            if (this.editMode) {
-                this.modify( {
-                    type: 'industries',
-                    pk: 'no',
-                    payload: this.industry
-                } )
-                this.$emit('close')
-            } else {
-                this.add( {
-                    type: 'industries',
-                    pk: 'no',
-                    payload: this.industry
-                } )
-                this.$emit('close')
-            }
+            console.log('submitted')
+            // if (this.editMode) {
+            //     this.modify( {
+            //         type: 'industries',
+            //         pk: 'no',
+            //         payload: this.industry
+            //     } )
+            //     this.$emit('close')
+            // } else {
+            //     this.add( {
+            //         type: 'industries',
+            //         pk: 'no',
+            //         payload: this.industry
+            //     } )
+            //     this.$emit('close')
+            // }
         }
     }
 }
