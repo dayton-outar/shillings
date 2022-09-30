@@ -16,11 +16,14 @@
             <b-table
                 ref="tbl"
                 detailed
+                icon-pack="fas"
                 :show-detail-icon="false"
                 :data="industries.nodes"
                 :sort-icon="sortIcon" 
                 :sort-icon-size="sortIconSize"
-                :default-sort-direction="defaultSortDirection" 
+                :default-sort="sort"
+                :backend-sorting="true"
+                :backend-pagination="true"
                 :striped="true" 
                 :hoverable="true"
                 @sort="sortTable">
@@ -91,14 +94,18 @@ export default {
     },
     data() {
         return {
-            defaultSortDirection: 'desc',
+            sort: ['name', 'asc'],
             sortIcon: 'arrow-up',
             sortIconSize: 'is-small',
             page: 20,
             currentPage: 1,
+            forward: true,
             isCreatePanelActive: false,
-            newIndustry: {},
-            counter: 0
+            newIndustry: {
+                no: 0,
+                name: '',
+                wiki: ''
+            }
         }
     },
     created() {
@@ -107,7 +114,7 @@ export default {
             last: null,
             next: null,
             previous: null,
-            ordering: [{ name: "ASC" }]
+            ordering: [{ [this.sort[0]]: this.sort[1].toUpperCase() }]
         }).then(() => {
 
         }).catch(err => {
@@ -118,12 +125,7 @@ export default {
         ...mapActions('industries', ['fetch']),
         ...mapMutations('industries', ['remove']),
         createIndustry() {
-            this.counter += 1
-            this.newIndustry = {
-                no: this.counter,
-                name: '',
-                wiki: ''
-            }
+            this.newIndustry.no += 1
 
             this.isCreatePanelActive = true
         },
@@ -135,15 +137,29 @@ export default {
             })
         },
         sortTable(field, order) {
-            console.log( field, order )
+            this.sort = [field, order]            
+
+            this.fetch({
+                first: this.page,
+                last: null,
+                next: null,
+                previous: null,
+                ordering: [{ [this.sort[0]]: this.sort[1].toUpperCase() }]
+            }).then(() => {
+                this.currentPage = 1
+            }).catch(err => {
+                console.log(err)
+            })
         },
         pageChange(page) { // Credit: https://github.com/buefy/buefy/issues/50
+            this.forward = (page > this.currentPage)
+
             this.fetch({
-                first: (page > this.currentPage) ? this.page : null,
-                last: (page < this.currentPage) ? this.page : null,
-                next: (page > this.currentPage) ? this.industries.pageInfo.endCursor : null,
-                previous: (page < this.currentPage) ? this.industries.pageInfo.startCursor : null,
-                ordering: [{ name: "ASC" }]
+                first: this.forward ? this.page : null,
+                last: !this.forward ? this.page : null,
+                next: this.forward ? this.industries.pageInfo.endCursor : null,
+                previous: !this.forward ? this.industries.pageInfo.startCursor : null,
+                ordering: [{ [this.sort[0]]: this.sort[1].toUpperCase() }]
             }).then(() => {
                 this.currentPage = page
             }).catch(err => {
