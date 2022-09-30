@@ -22,7 +22,8 @@
                 :sort-icon-size="sortIconSize"
                 :default-sort-direction="defaultSortDirection" 
                 :striped="true" 
-                :hoverable="true">
+                :hoverable="true"
+                @sort="sortTable">
 
                 <b-table-column field="no" label="#" sortable v-slot="props" width="5%">
                     {{ props.row.no }}
@@ -101,17 +102,17 @@ export default {
         }
     },
     created() {
-        // this.fetch({
-        //     first: 100,
-        //     last: null,
-        //     next: null,
-        //     previous: null,
-        //     ordering: [{ name: "ASC" }]
-        // }).then(() => {
+        this.fetch({
+            first: this.page,
+            last: null,
+            next: null,
+            previous: null,
+            ordering: [{ name: "ASC" }]
+        }).then(() => {
 
-        // }).catch(err => {
-        //     console.log(err)
-        // })
+        }).catch(err => {
+            console.log(err)
+        })
     },
     methods: {
         ...mapActions('industries', ['fetch']),
@@ -133,19 +134,21 @@ export default {
                 payload: row
             })
         },
+        sortTable(field, order) {
+            console.log( field, order )
+        },
         pageChange(page) { // Credit: https://github.com/buefy/buefy/issues/50
             this.fetch({
                 first: (page > this.currentPage) ? this.page : null,
                 last: (page < this.currentPage) ? this.page : null,
                 next: (page > this.currentPage) ? this.industries.pageInfo.endCursor : null,
-                previous: (page < this.currentPage) ? this.industries.pageInfo.startCursor : null
+                previous: (page < this.currentPage) ? this.industries.pageInfo.startCursor : null,
+                ordering: [{ name: "ASC" }]
             }).then(() => {
-
+                this.currentPage = page
             }).catch(err => {
                 console.log(err)
             })
-
-            this.currentPage = page
         },
         closeCreatePanel() {
             this.isCreatePanelActive = false
