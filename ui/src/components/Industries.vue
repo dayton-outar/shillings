@@ -109,10 +109,7 @@
                 </b-table-column>
 
                 <template slot="detail" slot-scope="props">
-                    <article>
-                        <h5 class="title is-5">{{ props.row.name }}</h5>
-                        <industry-detail :industryData="props.row" :editMode="true" @close="$refs.tbl.toggleDetails(props.row)" />
-                    </article>
+                    <industry-detail :industryData="props.row" :editMode="true" @close="$refs.tbl.toggleDetails(props.row)" />
                 </template>
 
                 <template #empty>
