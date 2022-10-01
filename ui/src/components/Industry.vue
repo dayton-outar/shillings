@@ -1,5 +1,5 @@
 <template>
-    <form @submit.prevent="validate">
+    <form @submit.prevent="validate" novalidate>
         <div class="box my-4 mx-1">
             <h5 class="title is-5">{{ title }}</h5>
             <hr class="has-background-grey-light" />
