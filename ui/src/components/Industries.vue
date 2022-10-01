@@ -110,8 +110,7 @@
                             type="is-info"
                             icon-pack="fas"
                             icon-right="pen-to-square"
-                            @click.prevent="props.toggleDetails(props.row)"
-                            @close="console.log('Ooh!')" />
+                            @click.prevent="props.toggleDetails(props.row)" />
                     </template>
                 </b-table-column>
 
@@ -122,7 +121,7 @@
                             type="is-danger"
                             icon-pack="fas"
                             icon-right="trash"
-                            @click.prevent="delete(props.row)" />
+                            @click.prevent="deleteRow(props.row)" />
                     </template>
                 </b-table-column>
 
@@ -220,13 +219,10 @@ export default {
         close() {
             this.isCreatePanelActive = false
         },
-        delete(row) {
+        deleteRow(row) {
+            // TODO: Need dialogs
             console.log(row)
-            // this.remove({
-            //     type: 'industries',
-            //     pk: 'no',
-            //     payload: row
-            // })
+            //this.delete(row)
         },
         sortTable(field, order) {
             this.sort = [field, order]

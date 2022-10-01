@@ -117,7 +117,30 @@ export default {
 
       return Promise.resolve(response.data.updateIndustry.industry)
     },
-    async delete() { // 
+    async delete({ commit }, industry) {
+      const response = await graphQlClient.mutate({
+        mutation: gql`mutation DeleteIndustry($input: DeleteIndustryInput!) {
+          deleteIndustry ( input: $input) {
+            boolean
+          }
+        }`,
+        variables: {
+          input: {
+            no: industry.no
+          }
+        }
+      })
+
+      if (response.data.deleteIndustry)
+      {
+        commit('remove', {
+          type: 'industries',
+          pk: 'no',
+          payload: industry
+        })
+      }
+      
+      return Promise.resolve(response.data.deleteIndustry)
     }
   }
 }
