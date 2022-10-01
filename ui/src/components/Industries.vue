@@ -1,6 +1,5 @@
 <template>
     <div class="column is-full">
-        <h2 class="title">Industries</h2>
         <div class="box my-4 mx-1">
             <div class="columns">
                 <div class="column is-full">
@@ -9,8 +8,8 @@
                         type="is-info"
                         size="is-medium"
                         v-if="!isCreatePanelActive"
-                        @click.prevent="createIndustry" />
-                    <industry-detail ref="frm" :industryData="newIndustry" :editMode="false" v-if="isCreatePanelActive" @close="closeCreatePanel" />
+                        @click.prevent="create" />
+                    <industry-detail ref="frm" :industryData="newIndustry" :editMode="false" v-if="isCreatePanelActive" @close="close" />
                 </div>
             </div>
             <div class="columns">
@@ -62,6 +61,25 @@
                     </b-collapse>
                 </div>
             </div>
+
+            <b-dropdown
+                v-model="page"
+                aria-role="list"
+                @change="search">
+                <template #trigger>
+                    <b-button
+                        :label="page.toString()"
+                        type="is-primary" />
+                </template>
+
+                <b-dropdown-item
+                    v-for="(len, index) in pageLengths"
+                    :key="index"
+                    :value="len" aria-role="listitem">
+                    {{ len }}
+                </b-dropdown-item>
+            </b-dropdown>
+
             <b-table
                 ref="tbl"
                 detailed
@@ -104,7 +122,7 @@
                             type="is-danger"
                             icon-pack="fas"
                             icon-right="trash"
-                            @click.prevent="deleteItem(props.row)" />
+                            @click.prevent="delete(props.row)" />
                     </template>
                 </b-table-column>
 
@@ -126,12 +144,13 @@
                 icon-pack="fas"
                 @change="pageChange">
             </b-pagination>
+            <b-loading :is-full-page="false" v-model="isLoading"></b-loading>
         </div>
     </div>
 </template>
 
 <script>
-import { mapState, mapActions, mapMutations } from 'vuex'
+import { mapState, mapActions } from 'vuex'
 import Industry from './Industry.vue'
 
 export default {
@@ -145,9 +164,11 @@ export default {
             sortIconSize: 'is-small',
             searchWord: '',
             page: 20,
+            pageLengths: [20, 50, 100],
             currentPage: 1,
             forward: true,
             isCreatePanelActive: false,
+            isLoading: false,
             newIndustry: {
                 no: 0,
                 name: '',
@@ -157,81 +178,88 @@ export default {
         }
     },
     created() {
-        this.fetch({
+        this.isLoading = true
+
+        this.get({
             first: this.page,
             last: null,
             next: null,
             previous: null,
             filter: { name: { startsWith: this.searchWord } },
             ordering: [{ [this.sort[0]]: this.sort[1].toUpperCase() }]
-        }).then(() => {
-
-        }).catch(err => {
-            console.log(err)
         })
     },
     methods: {
-        ...mapActions('industries', ['fetch']),
-        ...mapMutations('industries', ['remove']),
-        createIndustry() {
+        ...mapActions('industries', ['fetch', 'delete']),
+        get(request) {
+
+            this.fetch(request).then(() => {
+                this.isLoading = false
+            }).catch(err => {
+                this.isLoading = false
+                
+                this.$buefy.dialog.alert({
+                    title: `Industries`,
+                    message: `${err.message}`,
+                    confirmText: 'OK',
+                    type: 'is-danger',
+                    hasIcon: true,
+                    iconPack: 'fas',
+                    icon: 'triangle-exclamation',
+                    onConfirm: () => {
+                        this.isLoading = false
+                        }
+                })
+            })
+        },
+        create() {
             this.newIndustry.no += 1
 
             this.isCreatePanelActive = true
         },
-        closeCreatePanel() {
+        close() {
             this.isCreatePanelActive = false
         },
-        deleteItem(row) {
-            this.remove({
-                type: 'industries',
-                pk: 'no',
-                payload: row
-            })
+        delete(row) {
+            console.log(row)
+            // this.remove({
+            //     type: 'industries',
+            //     pk: 'no',
+            //     payload: row
+            // })
         },
         sortTable(field, order) {
-            this.sort = [field, order]            
+            this.sort = [field, order]
 
-            this.fetch({
+            this.get({
                 first: this.page,
                 last: null,
                 next: null,
                 previous: null,
                 filter: { name: { startsWith: this.searchWord } },
                 ordering: [{ [this.sort[0]]: this.sort[1].toUpperCase() }]
-            }).then(() => {
-                this.currentPage = 1
-            }).catch(err => {
-                console.log(err)
             })
         },
         pageChange(page) { // Credit: https://github.com/buefy/buefy/issues/50
             this.forward = (page > this.currentPage)
 
-            this.fetch({
+            this.get({
                 first: this.forward ? this.page : null,
                 last: !this.forward ? this.page : null,
                 next: this.forward ? this.industries.pageInfo.endCursor : null,
                 previous: !this.forward ? this.industries.pageInfo.startCursor : null,
                 filter: { name: { startsWith: this.searchWord } },
                 ordering: [{ [this.sort[0]]: this.sort[1].toUpperCase() }]
-            }).then(() => {
-                this.currentPage = page
-            }).catch(err => {
-                console.log(err)
             })
         },
         search() {
-            this.fetch({
+            this.get({
                 first: this.page,
                 last: null,
                 next: null,
                 previous: null,
                 filter: { name: { startsWith: this.searchWord } },
                 ordering: [{ [this.sort[0]]: this.sort[1].toUpperCase() }]
-            }).then(() => {
-                this.currentPage = 1
-            }).catch(err => {
-                console.log(err)
             })
         }
     },

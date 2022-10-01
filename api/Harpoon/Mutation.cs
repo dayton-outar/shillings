@@ -35,8 +35,8 @@ namespace Harpoon
             var param = parms.Where(p => p.ParameterName == "@no").First();
             if (param.Value != null)
             {
-                financialReport.No =  Convert.ToInt32(param.Value);
-            }            
+                financialReport.No =  Convert.ToInt64(param.Value);
+            }
             financialReport.Analytes = sq.StatementAnalytes.Where(a => a.Report.No == financialReport.No).ToList();
 
             return financialReport;
@@ -97,10 +97,17 @@ namespace Harpoon
             List<SqlParameter> parms = new List<SqlParameter>
             { 
                 // Update parameters
-                new SqlParameter { ParameterName = "@dividend", Value = dividendsXml }  
+                new SqlParameter { ParameterName = "@dividend", Value = dividendsXml },
+                new SqlParameter { ParameterName = "@no", SqlDbType = SqlDbType.BigInt, Direction = ParameterDirection.Output }
             };
 
             sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
+
+            var param = parms.Where(p => p.ParameterName == "@no").First();
+            if (param.Value != null)
+            {
+                dividend.No =  Convert.ToInt64(param.Value);
+            }
 
             return dividend;
         }
@@ -398,16 +405,23 @@ namespace Harpoon
         [UseDbContext(typeof(StocksQuery))]
         public MarketIndex CreateMarketIndex([ScopedService]StocksQuery sq, MarketIndex marketIndex)
         {
-            string sql = "EXEC [dbo].[CreateMarketIndex] @marketIndex";
+            string sql = "EXEC [dbo].[CreateMarketIndex] @marketIndex, @no OUTPUT";
             
             string marketIndexXml = SerializationHelper.Serialize<MarketIndex>(marketIndex);
             List<SqlParameter> parms = new List<SqlParameter>
             { 
                 // Create parameters
-                new SqlParameter { ParameterName = "@marketIndex", Value = marketIndexXml }  
+                new SqlParameter { ParameterName = "@marketIndex", Value = marketIndexXml },
+                new SqlParameter { ParameterName = "@no", SqlDbType = SqlDbType.BigInt, Direction = ParameterDirection.Output }
             };
 
             sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
+
+            var param = parms.Where(p => p.ParameterName == "@no").First();
+            if (param.Value != null)
+            {
+                marketIndex.No =  Convert.ToInt64(param.Value);
+            }
 
             return marketIndex;
         }
@@ -459,16 +473,23 @@ namespace Harpoon
         [UseDbContext(typeof(StocksQuery))]
         public Industry CreateIndustry([ScopedService]StocksQuery sq, Industry industry)
         {
-            string sql = "EXEC [dbo].[CreateIndustry] @industry";
+            string sql = "EXEC [dbo].[CreateIndustry] @industry, @no OUTPUT";
             
             string industryXml = SerializationHelper.Serialize<Industry>(industry);
             List<SqlParameter> parms = new List<SqlParameter>
             { 
-                // Update parameters
-                new SqlParameter { ParameterName = "@industry", Value = industryXml }  
+                // Create parameters
+                new SqlParameter { ParameterName = "@industry", Value = industryXml },
+                new SqlParameter { ParameterName = "@no", SqlDbType = SqlDbType.BigInt, Direction = ParameterDirection.Output }
             };
 
             sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
+
+            var param = parms.Where(p => p.ParameterName == "@no").First();
+            if (param.Value != null)
+            {
+                industry.No =  Convert.ToInt64(param.Value);
+            }
 
             return industry;
         }

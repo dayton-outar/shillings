@@ -40,6 +40,8 @@ export default {
         pk: 'no',
         payload: response.data.createIndustry.industry
       })
+
+      return Promise.resolve(response.data.createIndustry.industry)
     },
     async fetch({ commit }, request) {
       const response = await graphQlClient.query({
@@ -112,6 +114,8 @@ export default {
         pk: 'no',
         payload: response.data.updateIndustry.industry
       })
+
+      return Promise.resolve(response.data.updateIndustry.industry)
     },
     async delete() { // 
     }
