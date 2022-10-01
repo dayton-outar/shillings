@@ -95,12 +95,8 @@
                 :hoverable="true"
                 @sort="sortTable">
 
-                <b-table-column field="no" label="#" sortable v-slot="props" width="5%">
-                    {{ props.row.no }}
-                </b-table-column>
-
                 <b-table-column field="name" label="Name" sortable v-slot="props">
-                    {{ props.row.name }}
+                    <a :href="props.row.wiki" target="_blank">{{ props.row.name }}</a>
                 </b-table-column>
 
                 <b-table-column width="5%" v-slot="props">
