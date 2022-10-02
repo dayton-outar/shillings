@@ -37,7 +37,7 @@
                         </template>
 
                         <div class="card-content">
-                            <form @submit.prevent="search">
+                            <form @submit.prevent="get">
                                 <div class="columns">
                                     <div class="column">
                                         <b-field :label-position="labelPosition">
@@ -186,10 +186,18 @@ export default {
     },
     methods: {
         ...mapActions('industries', ['fetch', 'delete']),
-        get(request) {
+        get() {
 
-            this.fetch(request).then(() => {
+            this.fetch({
+                first: this.page,
+                last: null,
+                next: null,
+                previous: null,
+                filter: { name: { startsWith: this.searchWord } },
+                ordering: [{ [this.sort[0]]: this.sort[1].toUpperCase() }]
+            }).then(() => {
                 this.isLoading = false
+                this.currentPage = 1
             }).catch(err => {
                 this.isLoading = false
                 
@@ -223,49 +231,43 @@ export default {
         sortTable(field, order) {
             this.sort = [field, order]
 
-            this.get({
-                first: this.page,
-                last: null,
-                next: null,
-                previous: null,
-                filter: { name: { startsWith: this.searchWord } },
-                ordering: [{ [this.sort[0]]: this.sort[1].toUpperCase() }]
-            })
+            this.get()
         },
         // HACK: There's a bug here
         pageChange(page) { // Credit: https://github.com/buefy/buefy/issues/50
             this.forward = (page > this.currentPage)
 
-            this.get({
+            this.fetch({
                 first: this.forward ? this.page : null,
                 last: !this.forward ? this.page : null,
                 next: this.forward ? this.industries.pageInfo.endCursor : null,
                 previous: !this.forward ? this.industries.pageInfo.startCursor : null,
                 filter: { name: { startsWith: this.searchWord } },
                 ordering: [{ [this.sort[0]]: this.sort[1].toUpperCase() }]
-            })
-        },
-        search() {
-            this.get({
-                first: this.page,
-                last: null,
-                next: null,
-                previous: null,
-                filter: { name: { startsWith: this.searchWord } },
-                ordering: [{ [this.sort[0]]: this.sort[1].toUpperCase() }]
+            }).then(() => {
+                this.isLoading = false
+                this.currentPage = page
+            }).catch(err => {
+                this.isLoading = false
+                
+                this.$buefy.dialog.alert({
+                    title: `Industries`,
+                    message: `${err.message}`,
+                    confirmText: 'OK',
+                    type: 'is-danger',
+                    hasIcon: true,
+                    iconPack: 'fas',
+                    icon: 'triangle-exclamation',
+                    onConfirm: () => {
+                        this.isLoading = false
+                        }
+                })
             })
         },
         changeLen(l) {
             this.page = l
 
-            this.get({
-                first: this.page,
-                last: null,
-                next: null,
-                previous: null,
-                filter: { name: { startsWith: this.searchWord } },
-                ordering: [{ [this.sort[0]]: this.sort[1].toUpperCase() }]
-            })
+            this.get()
         }
     },
     computed: {
