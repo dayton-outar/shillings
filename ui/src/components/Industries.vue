@@ -65,7 +65,7 @@
             <b-dropdown
                 v-model="page"
                 aria-role="list"
-                @change="search">
+                @change="changeLen">
                 <template #trigger>
                     <b-button
                         :label="page.toString()"
@@ -158,8 +158,8 @@ export default {
             sortIcon: 'arrow-up',
             sortIconSize: 'is-small',
             searchWord: '',
-            page: 20,
-            pageLengths: [20, 50, 100],
+            page: 10,
+            pageLengths: [10, 20, 50, 100],
             currentPage: 1,
             forward: true,
             isCreatePanelActive: false,
@@ -232,6 +232,7 @@ export default {
                 ordering: [{ [this.sort[0]]: this.sort[1].toUpperCase() }]
             })
         },
+        // HACK: There's a bug here
         pageChange(page) { // Credit: https://github.com/buefy/buefy/issues/50
             this.forward = (page > this.currentPage)
 
@@ -245,6 +246,18 @@ export default {
             })
         },
         search() {
+            this.get({
+                first: this.page,
+                last: null,
+                next: null,
+                previous: null,
+                filter: { name: { startsWith: this.searchWord } },
+                ordering: [{ [this.sort[0]]: this.sort[1].toUpperCase() }]
+            })
+        },
+        changeLen(l) {
+            this.page = l
+
             this.get({
                 first: this.page,
                 last: null,
