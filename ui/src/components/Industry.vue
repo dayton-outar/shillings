@@ -116,7 +116,7 @@ export default {
                         this.isLoading = false
 
                         this.$buefy.dialog.alert({
-                            title: this.title(),
+                            title: `Update Industry: ${this.industry.name}`,
                             message: `Successfully updated ${response.name}`,
                             confirmText: 'OK',
                             type: 'is-success',
@@ -132,13 +132,13 @@ export default {
                         this.isLoading = false
 
                         this.$buefy.dialog.alert({
-                            title: this.title(),
+                            title: `Update Industry: ${this.industry.name}`,
                             message: `${err.message}`,
                             confirmText: 'OK',
                             type: 'is-danger',
                             hasIcon: true,
                             iconPack: 'fas',
-                            icon: 'triangle-exclamation'
+                            icon: 'bug'
                         })
                     })
             } else {
@@ -147,7 +147,7 @@ export default {
                         this.isLoading = false
 
                         this.$buefy.dialog.alert({
-                            title: this.title(),
+                            title: `Create Industry`,
                             message: `Successfully created ${response.name}`,
                             confirmText: 'OK',
                             type: 'is-success',
@@ -163,13 +163,13 @@ export default {
                         this.isLoading = false
 
                         this.$buefy.dialog.alert({
-                            title: this.title(),
+                            title: `Create Industry`,
                             message: `${err.message}`,
                             confirmText: 'OK',
                             type: 'is-danger',
                             hasIcon: true,
                             iconPack: 'fas',
-                            icon: 'triangle-exclamation'
+                            icon: 'bug'
                         })
                     })
             }

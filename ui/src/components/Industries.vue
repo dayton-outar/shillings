@@ -208,10 +208,10 @@ export default {
                     type: 'is-danger',
                     hasIcon: true,
                     iconPack: 'fas',
-                    icon: 'triangle-exclamation',
+                    icon: 'bug',
                     onConfirm: () => {
                         this.isLoading = false
-                        }
+                    }
                 })
             })
         },
@@ -225,8 +225,62 @@ export default {
         },
         deleteRow(row) {
             // TODO: Need dialogs
-            console.log(row)
-            //this.delete(row)
+            this.$buefy.dialog.confirm({
+                title: `Delete Industry`,
+                message: `<p>Are you sure you want to <b>delete</b> ${row.name}?</p><p>This action cannot be undone.</p>`,
+                confirmText: 'OK',
+                type: 'is-warning',
+                hasIcon: true,
+                iconPack: 'fas',
+                icon: 'circle-exclamation',
+                onConfirm: () => {
+                    this.isLoading = true
+                    
+                    this.delete(row)
+                        .then(success => {
+                            this.isLoading = false
+
+                            if (success) {
+                                this.$buefy.dialog.alert({
+                                    title: `Delete Industry`,
+                                    message: `Successfully deleted ${row.name}`,
+                                    confirmText: 'OK',
+                                    type: 'is-success',
+                                    hasIcon: true,
+                                    iconPack: 'fas',
+                                    icon: 'circle-check',
+                                    onConfirm: () => {                                
+                                        this.$emit('close')
+                                    }
+                                })
+                            } else {
+                                this.$buefy.dialog.alert({
+                                    title: `Delete Industry`,
+                                    message: `Failed to delete ${row.name}`,
+                                    confirmText: 'OK',
+                                    type: 'is-danger',
+                                    hasIcon: true,
+                                    iconPack: 'fas',
+                                    icon: 'bomb'
+                                })
+                            }
+                        })
+                        .catch(err => {    
+                            this.isLoading = false
+
+                            this.$buefy.dialog.alert({
+                                title: `Delete Industry`,
+                                message: `${err.message}`,
+                                confirmText: 'OK',
+                                type: 'is-danger',
+                                hasIcon: true,
+                                iconPack: 'fas',
+                                icon: 'bug'
+                            })
+                        })
+                }
+            })
+            
         },
         sortTable(field, order) {
             this.sort = [field, order]
@@ -260,7 +314,7 @@ export default {
                     icon: 'triangle-exclamation',
                     onConfirm: () => {
                         this.isLoading = false
-                        }
+                    }
                 })
             })
         },
