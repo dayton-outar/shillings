@@ -5,67 +5,139 @@
             <div class="columns">
                 <div class="column is-full">
                     <b-button 
-                        label="Create New Company"
                         type="is-info"
                         size="is-medium"
-                        @click.prevent="createCompany" />
-                    
-                    <b-modal
-                        v-model="isModalActive"
-                        has-modal-card
-                        trap-focus
-                        :destroy-on-hide="false"
-                        aria-role="dialog"
-                        aria-label="Example Modal"
-                        close-button-aria-label="Close"
-                        full-screen
-                        aria-modal>
-                        <template #default="props">
-                            <div class="modal-card" style="width: auto">
-                                <header class="modal-card-head">
-                                    <p class="modal-card-title">Create New Company</p>
-                                </header>
-                                <section class="modal-card-body">
-                                    <company-detail ref="frmCompany" :companyData="newCompany" :editMode="false" @close="props.close" />
-                                </section>
-                                <footer class="modal-card-foot">
-                                    <b-button
-                                        label="Close"
-                                        expanded
-                                        @click.prevent="props.close" />
-                                    <b-button
-                                        label="Save"
-                                        expanded
-                                        type="is-info"
-                                        @click.prevent="submit" />
-                                </footer>
-                            </div>
-                        </template>
-                    </b-modal>
+                        icon-pack="fas"
+                        icon-left="plus"
+                        v-if="!isCreatePanelActive"
+                        @click.prevent="create" />                    
+                    <company-detail ref="frm" :companyData="newCompany" :editMode="false" v-if="isCreatePanelActive" @close="props.close" />
                 </div>
             </div>
+
+            <div class="columns">
+                <div class="column is-full">
+                    <b-collapse 
+                        class="card" 
+                        animation="slide" 
+                        aria-id="contentIdForIndSearch">
+                        <template #trigger="props">
+                            <div
+                                class="card-header"
+                                role="button"
+                                aria-controls="contentIdForIndSearch"
+                                :aria-expanded="props.open">
+                                <p class="card-header-title">
+                                    Search
+                                </p>
+                                <a class="card-header-icon">
+                                    <b-icon
+                                        pack="fas"
+                                        :icon="props.open ? 'caret-down' : 'caret-up'">
+                                    </b-icon>
+                                </a>
+                            </div>
+                        </template>
+
+                        <div class="card-content">
+                            <form @submit.prevent="get">
+                                <div class="columns">
+                                    <div class="column">
+                                        <b-field>
+                                            <b-input 
+                                                v-model="searchWord"
+                                                placeholder="Search ..." 
+                                                type="Search" 
+                                                size="is-medium"
+                                                expanded></b-input>
+                                            <div class="control">
+                                                <b-button 
+                                                    class="button is-primary"
+                                                    size="is-medium"
+                                                    native-type="submit">Search</b-button>
+                                            </div>
+                                        </b-field>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </b-collapse>
+                </div>
+            </div>
+
+            <nav class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <b-dropdown
+                            v-model="page"
+                            aria-role="list"
+                            @change="changeLen">
+                            <template #trigger>
+                                <b-button
+                                    :label="page.toString()"
+                                    type="is-info" />
+                            </template>
+
+                            <b-dropdown-item
+                                v-for="(len, index) in pageLengths"
+                                :key="index"
+                                :value="len" aria-role="listitem">
+                                {{ len }}
+                            </b-dropdown-item>
+                        </b-dropdown>
+                    </div>
+                </div>
+
+                <div class="level-right">
+                    <div class="level-item">
+                        <b-button
+                            type="is-info"
+                            icon-pack="fas"
+                            icon-left="refresh"
+                            @click.prevent="get" />
+                    </div>
+                </div>
+            </nav>
+
             <b-table
+                ref="tbl"
                 detailed
                 :show-detail-icon="false"
                 :data="fullCompanies.nodes"
+                icon-pack="fas"
+                :total="fullCompanies.totalCount"
+                :paginated="true"
+                :pagination-simple="true"
+                :per-page="page"
+                :current-page.sync="currentPage"
                 :sort-icon="sortIcon" 
                 :sort-icon-size="sortIconSize"
-                :default-sort-direction="defaultSortDirection" 
+                :default-sort="sort"
+                :backend-sorting="true"
+                :backend-pagination="true"
                 :striped="true" 
-                :hoverable="true">
+                :hoverable="true"
+                @sort="sortTable"
+                @page-change="pageChange">
             
-                <b-table-column v-slot="props" width="5%">
-                    <figure class="image is-32x32">
-                        <img class="is-rounded" :src="(props.row.logo ? `http://localhost:5000/files?no=${props.row.logo.no}` :`https://bulma.io/images/placeholders/128x128.png`)">
-                    </figure>
+                <b-table-column field="name" label="Company" sortable v-slot="props">
+                    <article class="media">
+                        <figure class="media-left">
+                            <div class="image is-48x48">
+                                <img class="is-rounded" :src="(props.row.logo ? `http://localhost:5000/files?no=${props.row.logo.no}` :`https://bulma.io/images/placeholders/128x128.png`)">
+                            </div>
+                        </figure>
+                        <div class="media-content">
+                            <p v-if="props.row.webSite"><a :href="props.row.webSite" target="_blank">{{props.row.name}}</a></p>
+                            <p v-else>{{ props.row.name }}</p>
+                            <p class="has-text-weight-light">{{ props.row.code }}</p>
+                        </div>
+                    </article>
+                    
                 </b-table-column>
 
-                <b-table-column field="code" label="Code" sortable v-slot="props" width="5%">
-                    {{ props.row.code }}
-                </b-table-column>
-
-                <b-table-column field="name" label="Name" sortable v-slot="props">
-                    {{ props.row.name }}
+                <b-table-column field="founded" label="Founded" sortable v-slot="props" width="5%">
+                    {{ foundedYear(props.row.founded) }}
                 </b-table-column>
 
                 <b-table-column width="5%" v-slot="props">
@@ -98,20 +170,16 @@
                 </template>
 
             </b-table>
-            <b-pagination
-                :total="total"
-                :current="currentPage"
-                :simple="true"
-                :per-page="page"
-                order="is-right"
-                @change="pageChange">
-            </b-pagination>
+
+            <b-loading :is-full-page="false" v-model="isLoading"></b-loading>
         </div>
     </div>
 </template>
 
 <script>
 import { mapState, mapActions } from 'vuex'
+import moment from 'moment'
+
 import Company from './Company.vue'
 
 export default {
@@ -120,30 +188,17 @@ export default {
     },
     data() {
         return {
-            defaultSortDirection: 'desc',
+            sort: ['name', 'asc'],
             sortIcon: 'arrow-up',
             sortIconSize: 'is-small',
-            page: 70,
+            searchWord: '',
+            page: 10,
+            pageLengths: [10, 20, 50, 100],
             currentPage: 1,
-            total: 0,
-            isModalActive: false,
-            newCompany: {}
-        }
-    },
-    beforeCreate() {
-        this.$store.dispatch('fetchFullCompanies', {
-            first: 70,
-            last: null,
-            next: null,
-            previous: null
-        }).then(() => {
-            this.total = this.fullCompanies.totalCount;
-        });
-    },
-    methods: {
-        ...mapActions(['deleteCompany', 'fetchFullCompanies']),
-        createCompany() {
-            this.newCompany = {
+            forward: true,
+            isCreatePanelActive: false,
+            isLoading: false,
+            newCompany: {
                 code: '',
                 name: '',
                 about: '',
@@ -156,30 +211,158 @@ export default {
                 industries: [],
                 logo: {},
                 files: []
-            } // HACK: This is not refreshing the state. State is kept between events
+            }
+        }
+    },
+    created() {
+        this.get()
+    },
+    methods: {
+        ...mapActions('companies', ['fetch', 'delete']),
+        get() {
+            this.isLoading = true
 
+            this.fetch({
+                first: this.page,
+                last: null,
+                next: null,
+                previous: null,
+                filter: { name: { startsWith: this.searchWord } },
+                ordering: [{ [this.sort[0]]: this.sort[1].toUpperCase() }]
+            }).then(() => {
+                this.isLoading = false
+                this.currentPage = 1
+            }).catch(err => {
+                this.isLoading = false
+                
+                this.$buefy.dialog.alert({
+                    title: `Companies`,
+                    message: `${err.message}`,
+                    confirmText: 'OK',
+                    type: 'is-danger',
+                    hasIcon: true,
+                    iconPack: 'fas',
+                    icon: 'bug',
+                    onConfirm: () => {
+                        this.isLoading = false
+                    }
+                })
+            })
+        },
+        create() {
             this.isModalActive = true
         },
-        deleteItem(code) {
-            this.deleteCompany(code)
-                .then(console.log)
-                .catch(console.error);
+        close() {
+            this.isCreatePanelActive = false
         },
-        pageChange(page) { // Credit: https://github.com/buefy/buefy/issues/50
-            this.fetchFullCompanies({
-                first: (page > this.currentPage) ? this.page : null,
-                last: (page < this.currentPage) ? this.page : null,
-                next: (page > this.currentPage) ? this.fullCompanies.pageInfo.endCursor : null,
-                previous: (page < this.currentPage) ? this.fullCompanies.pageInfo.startCursor : null
+        deleteRow(row) {
+            // TODO: Need dialogs
+            this.$buefy.dialog.confirm({
+                title: `Delete Industry`,
+                message: `<p>Are you sure you want to <b>delete</b> ${row.name}?</p><p>This action cannot be undone.</p>`,
+                confirmText: 'OK',
+                type: 'is-warning',
+                hasIcon: true,
+                iconPack: 'fas',
+                icon: 'circle-exclamation',
+                onConfirm: () => {
+                    this.isLoading = true
+                    
+                    this.delete(row)
+                        .then(success => {
+                            this.isLoading = false
+                            
+                            if (success) {
+                                this.$buefy.dialog.alert({
+                                    title: `Delete Company`,
+                                    message: `Successfully deleted ${row.name}`,
+                                    confirmText: 'OK',
+                                    type: 'is-success',
+                                    hasIcon: true,
+                                    iconPack: 'fas',
+                                    icon: 'circle-check',
+                                    onConfirm: () => {                                
+                                        this.$emit('close')
+                                    }
+                                })
+                            } else {
+                                this.$buefy.dialog.alert({
+                                    title: `Delete Company`,
+                                    message: `Failed to delete ${row.name}`,
+                                    confirmText: 'OK',
+                                    type: 'is-danger',
+                                    hasIcon: true,
+                                    iconPack: 'fas',
+                                    icon: 'bomb'
+                                })
+                            }
+                        })
+                        .catch(err => {    
+                            this.isLoading = false
+
+                            this.$buefy.dialog.alert({
+                                title: `Delete Company`,
+                                message: `${err.message}`,
+                                confirmText: 'OK',
+                                type: 'is-danger',
+                                hasIcon: true,
+                                iconPack: 'fas',
+                                icon: 'bug'
+                            })
+                        })
+                }
             })
-            this.currentPage = page
+            
         },
-        submit() {
-            this.$refs.frmCompany.submit()
+        sortTable(field, order) {
+            this.sort = [field, order]
+
+            this.get()
+        },
+        // HACK: There's a bug here
+        pageChange(page) { // Credit: https://github.com/buefy/buefy/issues/50
+            this.isLoading = true
+            
+            this.forward = (page > this.currentPage)
+
+            this.fetch({
+                first: this.forward ? this.page : null,
+                last: !this.forward ? this.page : null,
+                next: this.forward ? this.fullCompanies.pageInfo.endCursor : null,
+                previous: !this.forward ? this.fullCompanies.pageInfo.startCursor : null,
+                filter: { name: { startsWith: this.searchWord } },
+                ordering: [{ [this.sort[0]]: this.sort[1].toUpperCase() }]
+            }).then(() => {
+                this.isLoading = false
+                this.currentPage = page
+            }).catch(err => {
+                this.isLoading = false
+                
+                this.$buefy.dialog.alert({
+                    title: `Industries`,
+                    message: `${err.message}`,
+                    confirmText: 'OK',
+                    type: 'is-danger',
+                    hasIcon: true,
+                    iconPack: 'fas',
+                    icon: 'triangle-exclamation',
+                    onConfirm: () => {
+                        this.isLoading = false
+                    }
+                })
+            })
+        },
+        changeLen(l) {
+            this.page = l
+
+            this.get()
+        },
+        foundedYear(founded) {
+            return moment(founded).toDate().getFullYear()
         }
     },
     computed: {
-        ...mapState(['fullCompanies'])
+        ...mapState('companies', ['fullCompanies'])
     }
 }
 

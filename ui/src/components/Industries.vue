@@ -13,6 +13,7 @@
                     <industry-detail ref="frm" :industryData="newIndustry" :editMode="false" v-if="isCreatePanelActive" @close="close" />
                 </div>
             </div>
+            
             <div class="columns">
                 <div class="column is-full">
                     <b-collapse 
@@ -41,7 +42,7 @@
                             <form @submit.prevent="get">
                                 <div class="columns">
                                     <div class="column">
-                                        <b-field :label-position="labelPosition">
+                                        <b-field>
                                             <b-input 
                                                 v-model="searchWord"
                                                 placeholder="Search ..." 
@@ -183,8 +184,7 @@ export default {
                 no: 0,
                 name: '',
                 wiki: ''
-            },
-            labelPosition: 'on-border'
+            }
         }
     },
     created() {
