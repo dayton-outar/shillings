@@ -100,9 +100,14 @@
             <b-table
                 ref="tbl"
                 detailed
-                icon-pack="fas"
                 :show-detail-icon="false"
                 :data="industries.nodes"
+                icon-pack="fas"
+                :total="industries.totalCount"
+                :paginated="true"
+                :pagination-simple="true"
+                :per-page="page"
+                :current-page.sync="currentPage"
                 :sort-icon="sortIcon" 
                 :sort-icon-size="sortIconSize"
                 :default-sort="sort"
@@ -110,7 +115,8 @@
                 :backend-pagination="true"
                 :striped="true" 
                 :hoverable="true"
-                @sort="sortTable">
+                @sort="sortTable"
+                @page-change="pageChange">
 
                 <b-table-column field="name" label="Name" sortable v-slot="props">
                     <a :href="props.row.wiki" target="_blank">{{ props.row.name }}</a>
@@ -147,15 +153,7 @@
                 </template>
 
             </b-table>
-            <b-pagination
-                :total="industries.totalCount"
-                :current="currentPage"
-                :simple="true"
-                :per-page="page"
-                order="is-right"
-                icon-pack="fas"
-                @change="pageChange">
-            </b-pagination>
+
             <b-loading :is-full-page="false" v-model="isLoading"></b-loading>
         </div>
     </div>
@@ -190,16 +188,7 @@ export default {
         }
     },
     created() {
-        this.isLoading = true
-
-        this.get({
-            first: this.page,
-            last: null,
-            next: null,
-            previous: null,
-            filter: { name: { startsWith: this.searchWord } },
-            ordering: [{ [this.sort[0]]: this.sort[1].toUpperCase() }]
-        })
+        this.get()
     },
     methods: {
         ...mapActions('industries', ['fetch', 'delete']),
@@ -307,6 +296,8 @@ export default {
         },
         // HACK: There's a bug here
         pageChange(page) { // Credit: https://github.com/buefy/buefy/issues/50
+            this.isLoading = true
+            
             this.forward = (page > this.currentPage)
 
             this.fetch({
