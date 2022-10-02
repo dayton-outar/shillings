@@ -11,7 +11,7 @@
                         icon-left="plus"
                         v-if="!isCreatePanelActive"
                         @click.prevent="create" />                    
-                    <company-detail ref="frm" :companyData="newCompany" :editMode="false" v-if="isCreatePanelActive" @close="props.close" />
+                    <company-detail :companyData="newCompany" :editMode="false" v-if="isCreatePanelActive" @close="close" />
                 </div>
             </div>
 
@@ -250,7 +250,7 @@ export default {
             })
         },
         create() {
-            this.isModalActive = true
+            this.isCreatePanelActive = true
         },
         close() {
             this.isCreatePanelActive = false

@@ -1,5 +1,5 @@
 <template>
-    <form>
+    <form @submit.prevent="validate" novalidate>
         <div class="box my-4 mx-1">            
             <div class="columns">
                 <div class="column">
@@ -33,7 +33,9 @@
                     <b-field 
                         label="Total Employed"
                         label-position="">
-                        <b-numberinput v-model="company.totalEmployed"></b-numberinput>
+                        <b-numberinput 
+                            v-model="company.totalEmployed"
+                            icon-pack="fas"></b-numberinput>
                     </b-field>
                 </div>
             </div>
@@ -64,6 +66,7 @@
                             ref="datepicker"
                             label-position=""
                             placeholder=""
+                            icon-pack="fas"
                             editable
                             expanded>
                         </b-datepicker>
@@ -149,12 +152,11 @@
                     <img :src="imgSrc" alt="Company Logo" />
                 </div>
             </div>
-            <div class="columns" v-if="editMode">
-                <!--
+            <hr class="has-background-grey-lighter thinner" />
+            <div class="columns">
                 <div class="column">
                     <b-button label="Close" size="is-medium" expanded @click.prevent="$emit('close')" />
                 </div>
-                -->
                 <div class="column">
                     <b-button label="Save" type="is-info" size="is-medium" expanded @click.prevent="submit" />
                 </div>
@@ -174,16 +176,28 @@ export default {
             company: JSON.parse(JSON.stringify(this.companyData)),
             companyIndustries: this.companyData.industries.map(i => i.no),
             dropFiles: [],
-            imgSrc: this.companyData.logo ? `http://localhost:5000/files?no=${this.companyData.logo.no}` : '#'
+            imgSrc: this.companyData.logo ? `http://localhost:5000/files?no=${this.companyData.logo.no}` : '#',
+            isValid: false,
+            isLoading: false,
+            validation: {
+                name: {
+                    type: '',
+                    message: ''
+                },
+                wiki: {
+                    type: '',
+                    message: ''
+                }
+            }
         }
     },
     beforeCreate() {
-        this.$store.dispatch('fetchIndustries')
+        //this.$store.dispatch('fetchIndustries')
     },
     setup() {},
     mounted() {},
     computed: {
-        ...mapState(['industries']),
+        ...mapState('industries', ['industries']),
         foundedDate: {
             get() {
                 return moment(this.company.founded).toDate()
@@ -194,27 +208,97 @@ export default {
         }
     },
     methods: {
-        ...mapActions(['updateCompany', 'createCompany']),
-        deleteDropFile(index) {
-            this.dropFiles.splice(index, 1)
-        },
-        submit() {            
-            this.company.logo = this.dropFiles[0]
-            this.company.announcements = null
-            this.company.industries = this.industries.filter(i => this.companyIndustries.includes(i.no))
-            this.company.created = new Date(1999, 10, 4)
+        ...mapActions('companies', ['create', 'update']),
+        save() {
+            this.isLoading = true
 
             if (this.editMode) {
-                this.updateCompany( this.company )
-                    .then(() => {
-                        this.$emit('close')
+                this.update( this.company )
+                    .then(response => {
+                        this.isLoading = false
+
+                        this.$buefy.dialog.alert({
+                            title: `Update Company: ${this.company.name}`,
+                            message: `Successfully updated ${response.name}`,
+                            confirmText: 'OK',
+                            type: 'is-success',
+                            hasIcon: true,
+                            iconPack: 'fas',
+                            icon: 'circle-check',
+                            onConfirm: () => {                                
+                                this.$emit('close')
+                            }
+                        })
+                    })
+                    .catch(err => {    
+                        this.isLoading = false
+
+                        this.$buefy.dialog.alert({
+                            title: `Update Company: ${this.company.name}`,
+                            message: `${err.message}`,
+                            confirmText: 'OK',
+                            type: 'is-danger',
+                            hasIcon: true,
+                            iconPack: 'fas',
+                            icon: 'bug'
+                        })
                     })
             } else {
-                this.createCompany( this.company )
-                    .then(() => {
-                        this.$emit('close')
+                this.create( this.company )
+                    .then(response => {
+                        this.isLoading = false
+
+                        this.$buefy.dialog.alert({
+                            title: `Create Company`,
+                            message: `Successfully created ${response.name}`,
+                            confirmText: 'OK',
+                            type: 'is-success',
+                            hasIcon: true,
+                            iconPack: 'fas',
+                            icon: 'circle-check',
+                            onConfirm: () => {
+                                this.$emit('close')
+                            }
+                        })
+                    })
+                    .catch(err => {
+                        this.isLoading = false
+
+                        this.$buefy.dialog.alert({
+                            title: `Create Company`,
+                            message: `${err.message}`,
+                            confirmText: 'OK',
+                            type: 'is-danger',
+                            hasIcon: true,
+                            iconPack: 'fas',
+                            icon: 'bug'
+                        })
                     })
             }
+
+        },
+        validate(){
+            let valid = true
+
+            if (!this.company.name) {
+                this.validation.name.type = 'is-danger'
+                this.validation.name.message = 'Please enter name'
+                valid = false
+            } else {
+                this.validation.name.type = ''
+                this.validation.name.message = ''
+            }
+
+            if (!this.company.wiki) {
+                this.validation.wiki.type = 'is-danger'
+                this.validation.wiki.message = 'Please enter Wikipedia URL'
+                valid = false
+            } else {
+                this.validation.wiki.type = ''
+                this.validation.wiki.message = ''
+            }
+
+            this.isValid = valid
         }
     },
     watch: {

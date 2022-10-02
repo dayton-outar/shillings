@@ -10,7 +10,7 @@
                         icon-left="plus"
                         v-if="!isCreatePanelActive"
                         @click.prevent="create" />
-                    <industry-detail ref="frm" :industryData="newIndustry" :editMode="false" v-if="isCreatePanelActive" @close="close" />
+                    <industry-detail :industryData="newIndustry" :editMode="false" v-if="isCreatePanelActive" @close="close" />
                 </div>
             </div>
             
