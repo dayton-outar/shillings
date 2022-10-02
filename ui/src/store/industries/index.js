@@ -131,7 +131,7 @@ export default {
         }
       })
 
-      if (response.data.deleteIndustry)
+      if (response.data.deleteIndustry.boolean)
       {
         commit('remove', {
           type: 'industries',
@@ -140,7 +140,7 @@ export default {
         })
       }
       
-      return Promise.resolve(response.data.deleteIndustry)
+      return Promise.resolve(response.data.deleteIndustry.boolean)
     }
   }
 }

@@ -2,7 +2,7 @@
     <div class="column is-full">
         <div class="box my-4 mx-1">
             <div class="columns">
-                <div class="column is-full">
+                <div class="column">
                     <b-button 
                         type="is-info"
                         size="is-medium"
@@ -63,23 +63,39 @@
                 </div>
             </div>
 
-            <b-dropdown
-                v-model="page"
-                aria-role="list"
-                @change="changeLen">
-                <template #trigger>
-                    <b-button
-                        :label="page.toString()"
-                        type="is-primary" />
-                </template>
+            <nav class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <b-dropdown
+                            v-model="page"
+                            aria-role="list"
+                            @change="changeLen">
+                            <template #trigger>
+                                <b-button
+                                    :label="page.toString()"
+                                    type="is-info" />
+                            </template>
 
-                <b-dropdown-item
-                    v-for="(len, index) in pageLengths"
-                    :key="index"
-                    :value="len" aria-role="listitem">
-                    {{ len }}
-                </b-dropdown-item>
-            </b-dropdown>
+                            <b-dropdown-item
+                                v-for="(len, index) in pageLengths"
+                                :key="index"
+                                :value="len" aria-role="listitem">
+                                {{ len }}
+                            </b-dropdown-item>
+                        </b-dropdown>
+                    </div>
+                </div>
+
+                <div class="level-right">
+                    <div class="level-item">
+                        <b-button
+                            type="is-info"
+                            icon-pack="fas"
+                            icon-left="refresh"
+                            @click.prevent="get" />
+                    </div>
+                </div>
+            </nav>
 
             <b-table
                 ref="tbl"
@@ -188,6 +204,7 @@ export default {
     methods: {
         ...mapActions('industries', ['fetch', 'delete']),
         get() {
+            this.isLoading = true
 
             this.fetch({
                 first: this.page,
@@ -240,7 +257,7 @@ export default {
                     this.delete(row)
                         .then(success => {
                             this.isLoading = false
-
+                            
                             if (success) {
                                 this.$buefy.dialog.alert({
                                     title: `Delete Industry`,
