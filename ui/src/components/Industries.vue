@@ -4,9 +4,10 @@
             <div class="columns">
                 <div class="column is-full">
                     <b-button 
-                        label="Create New Industry"
                         type="is-info"
                         size="is-medium"
+                        icon-pack="fas"
+                        icon-left="plus"
                         v-if="!isCreatePanelActive"
                         @click.prevent="create" />
                     <industry-detail ref="frm" :industryData="newIndustry" :editMode="false" v-if="isCreatePanelActive" @close="close" />
