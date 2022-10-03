@@ -116,7 +116,7 @@ export default {
                         this.isLoading = false
 
                         this.$buefy.dialog.alert({
-                            title: `Update Industry: ${this.industry.name}`,
+                            title: this.title,
                             message: `Successfully updated ${response.name}`,
                             confirmText: 'OK',
                             type: 'is-success',
@@ -132,7 +132,7 @@ export default {
                         this.isLoading = false
 
                         this.$buefy.dialog.alert({
-                            title: `Update Industry: ${this.industry.name}`,
+                            title: this.title,
                             message: `${err.message}`,
                             confirmText: 'OK',
                             type: 'is-danger',
@@ -147,7 +147,7 @@ export default {
                         this.isLoading = false
 
                         this.$buefy.dialog.alert({
-                            title: `Create Industry`,
+                            title: this.title,
                             message: `Successfully created ${response.name}`,
                             confirmText: 'OK',
                             type: 'is-success',
@@ -163,7 +163,7 @@ export default {
                         this.isLoading = false
 
                         this.$buefy.dialog.alert({
-                            title: `Create Industry`,
+                            title: this.title,
                             message: `${err.message}`,
                             confirmText: 'OK',
                             type: 'is-danger',

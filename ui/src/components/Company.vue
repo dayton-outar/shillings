@@ -176,7 +176,7 @@ export default {
             company: JSON.parse(JSON.stringify(this.companyData)),
             companyIndustries: this.companyData.industries.map(i => i.no),
             dropFiles: [],
-            imgSrc: this.companyData.logo ? `http://localhost:5000/files?no=${this.companyData.logo.no}` : '#',
+            imgSrc: this.companyData.logo ? `http://localhost:5000/files?no=${this.companyData.logo.no}` : '#', // TODO: Put File API URL in main config file
             isValid: false,
             isLoading: false,
             validation: {
@@ -191,11 +191,6 @@ export default {
             }
         }
     },
-    beforeCreate() {
-        //this.$store.dispatch('fetchIndustries')
-    },
-    setup() {},
-    mounted() {},
     computed: {
         ...mapState('industries', ['industries']),
         foundedDate: {
@@ -205,6 +200,9 @@ export default {
             set(value) {
                 this.company.founded = value
             }
+        },
+        title() {
+            return this.editMode ? `Update Industry: ${this.industry.name}` : `Create Industry`
         }
     },
     methods: {
