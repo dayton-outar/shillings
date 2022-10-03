@@ -227,11 +227,15 @@ export default {
 
             this.isCreatePanelActive = true
         },
-        close() {
+        close(e) {            
             this.isCreatePanelActive = false
+
+            if (e === 'created') {
+                //this.get()
+            }
         },
         deleteRow(row) {
-            // TODO: Need dialogs
+
             this.$buefy.dialog.confirm({
                 title: `Delete Industry`,
                 message: `<p>Are you sure you want to <b>delete</b> ${row.name}?</p><p>This action cannot be undone.</p>`,
@@ -258,6 +262,7 @@ export default {
                                     icon: 'circle-check',
                                     onConfirm: () => {                                
                                         this.$emit('close')
+                                        //this.get()
                                     }
                                 })
                             } else {

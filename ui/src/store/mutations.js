@@ -24,26 +24,7 @@ export default {
       state[payload.type].totalCount -= 1
     }
   },
-  // --  
-    setCompany(state, payload) {         
-      let ix = state.fullCompanies.nodes.findIndex(s => s.code === payload.code)
-      state.fullCompanies.nodes[ix] = payload
-    },
-    addCompany(state, payload) {         
-      state.fullCompanies.nodes.push(payload)
-    },
-    setCompanies(state, payload) {
-      state.companies = payload
-    },
-    setFullCompanies(state, payload) {
-      state.fullCompanies = payload
-    },
-    removeFullCompany(state, code) {
-      var ix = state.fullCompanies.nodes.findIndex(c => c.code === code);
-      if (ix > -1) {
-        state.fullCompanies.nodes.splice(ix, 1);
-      }
-    },
+  // -- 
     setMarkets(state, payload) {
       state.markets = payload
     },

@@ -1,177 +1,160 @@
 <template>
     <div class="column is-full">
         <h2 class="title">Companies</h2>
-        <div class="box my-4 mx-1">
-            <div class="columns">
-                <div class="column is-full">
-                    <b-button 
-                        type="is-info"
-                        size="is-medium"
-                        icon-pack="fas"
-                        icon-left="plus"
-                        v-if="!isCreatePanelActive"
-                        @click.prevent="create" />                    
-                    <company-detail :companyData="newCompany" :editMode="false" v-if="isCreatePanelActive" @close="close" />
-                </div>
-            </div>
 
-            <div class="columns">
-                <div class="column is-full">
-                    <b-collapse 
-                        class="card" 
-                        animation="slide" 
-                        aria-id="contentIdForIndSearch">
-                        <template #trigger="props">
-                            <div
-                                class="card-header"
-                                role="button"
-                                aria-controls="contentIdForIndSearch"
-                                :aria-expanded="props.open">
-                                <p class="card-header-title">
-                                    Search
-                                </p>
-                                <a class="card-header-icon">
-                                    <b-icon
-                                        pack="fas"
-                                        :icon="props.open ? 'caret-down' : 'caret-up'">
-                                    </b-icon>
-                                </a>
+        <div class="columns">
+            <div class="column is-full">
+                <b-button 
+                    type="is-info" 
+                    size="is-medium" 
+                    icon-pack="fas" 
+                    icon-left="plus" 
+                    v-if="!isCreatePanelActive"
+                    @click.prevent="create" />
+                <company-detail :companyData="newCompany" :editMode="false" v-if="isCreatePanelActive" @close="close" />
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="column is-full">
+                <b-collapse class="card" animation="slide" aria-id="contentIdForIndSearch">
+                    <template #trigger="props">
+                        <div class="card-header" 
+                            role="button" 
+                            aria-controls="contentIdForIndSearch"
+                            :aria-expanded="props.open">
+                            <p class="card-header-title">
+                                Search
+                            </p>
+                            <a class="card-header-icon">
+                                <b-icon pack="fas" :icon="props.open ? 'caret-down' : 'caret-up'"></b-icon>
+                            </a>
+                        </div>
+                    </template>
+
+                    <div class="card-content">
+                        <form @submit.prevent="get">
+                            <div class="columns">
+                                <div class="column">
+                                    <b-field>
+                                        <b-input 
+                                            v-model="searchWord" 
+                                            placeholder="Search ..." 
+                                            type="Search"
+                                            size="is-medium" 
+                                            expanded></b-input>
+                                        <div class="control">
+                                            <b-button class="button is-primary" size="is-medium" native-type="submit">
+                                                Search</b-button>
+                                        </div>
+                                    </b-field>
+                                </div>
                             </div>
+                        </form>
+                    </div>
+                </b-collapse>
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="column is-full">
+                <div class="box my-4 mx-1">
+                    <nav class="level">
+                        <div class="level-left">
+                            <div class="level-item">
+                                <b-dropdown 
+                                    v-model="page" 
+                                    aria-role="list" 
+                                    @change="changeLen">
+                                    <template #trigger>
+                                        <b-button :label="page.toString()" type="is-info" />
+                                    </template>
+
+                                    <b-dropdown-item v-for="(len, index) in pageLengths" :key="index" :value="len"
+                                        aria-role="listitem">
+                                        {{ len }}
+                                    </b-dropdown-item>
+                                </b-dropdown>
+                            </div>
+                        </div>
+
+                        <div class="level-right">
+                            <div class="level-item">
+                                <b-button type="is-info" icon-pack="fas" icon-left="refresh" @click.prevent="get" />
+                            </div>
+                        </div>
+                    </nav>
+
+                    <b-table 
+                        ref="tbl" 
+                        detailed 
+                        :show-detail-icon="false" 
+                        :data="fullCompanies.nodes" 
+                        icon-pack="fas"
+                        :total="fullCompanies.totalCount" 
+                        :paginated="true" 
+                        :pagination-simple="true" 
+                        :per-page="page"
+                        :current-page.sync="currentPage" 
+                        :sort-icon="sortIcon" 
+                        :sort-icon-size="sortIconSize"
+                        :default-sort="sort" 
+                        :backend-sorting="true" 
+                        :backend-pagination="true" 
+                        :striped="true"
+                        :hoverable="true" 
+                        @sort="sortTable" 
+                        @page-change="pageChange">
+
+                        <b-table-column field="name" label="Company" sortable v-slot="props">
+                            <article class="media">
+                                <figure class="media-left">
+                                    <div class="image is-48x48">
+                                        <img class="is-rounded"
+                                            :src="(props.row.logo ? `http://localhost:5000/files?no=${props.row.logo.no}` :`https://bulma.io/images/placeholders/128x128.png`)">
+                                    </div>
+                                </figure>
+                                <div class="media-content">
+                                    <p v-if="props.row.webSite"><a :href="props.row.webSite"
+                                            target="_blank">{{props.row.name}}</a></p>
+                                    <p v-else>{{ props.row.name }}</p>
+                                    <p class="has-text-weight-light">{{ props.row.code }}</p>
+                                </div>
+                            </article>
+
+                        </b-table-column>
+
+                        <b-table-column field="founded" label="Founded" sortable v-slot="props" width="5%">
+                            {{ foundedYear(props.row.founded) }}
+                        </b-table-column>
+
+                        <b-table-column width="5%" v-slot="props">
+                            <template>
+                                <b-button size="is-small" type="is-info" icon-pack="fas" icon-right="pen-to-square"
+                                    @click.prevent="props.toggleDetails(props.row)" />
+                            </template>
+                        </b-table-column>
+
+                        <b-table-column width="5%" v-slot="props">
+                            <template>
+                                <b-button size="is-small" type="is-danger" icon-pack="fas" icon-right="trash"
+                                    @click.prevent="deleteItem(props.row.code)" />
+                            </template>
+                        </b-table-column>
+
+                        <template #detail="props">
+                            <article>
+                                <h5 class="title is-5">{{ props.row.name }}</h5>
+                                <company-detail :companyData="props.row" :editMode="true"
+                                    @close="$refs.tbl.toggleDetails(props.row)" />
+                            </article>
                         </template>
 
-                        <div class="card-content">
-                            <form @submit.prevent="get">
-                                <div class="columns">
-                                    <div class="column">
-                                        <b-field>
-                                            <b-input 
-                                                v-model="searchWord"
-                                                placeholder="Search ..." 
-                                                type="Search" 
-                                                size="is-medium"
-                                                expanded></b-input>
-                                            <div class="control">
-                                                <b-button 
-                                                    class="button is-primary"
-                                                    size="is-medium"
-                                                    native-type="submit">Search</b-button>
-                                            </div>
-                                        </b-field>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </b-collapse>
+                    </b-table>
+
+                    <b-loading :is-full-page="false" v-model="isLoading"></b-loading>
                 </div>
             </div>
-
-            <nav class="level">
-                <div class="level-left">
-                    <div class="level-item">
-                        <b-dropdown
-                            v-model="page"
-                            aria-role="list"
-                            @change="changeLen">
-                            <template #trigger>
-                                <b-button
-                                    :label="page.toString()"
-                                    type="is-info" />
-                            </template>
-
-                            <b-dropdown-item
-                                v-for="(len, index) in pageLengths"
-                                :key="index"
-                                :value="len" aria-role="listitem">
-                                {{ len }}
-                            </b-dropdown-item>
-                        </b-dropdown>
-                    </div>
-                </div>
-
-                <div class="level-right">
-                    <div class="level-item">
-                        <b-button
-                            type="is-info"
-                            icon-pack="fas"
-                            icon-left="refresh"
-                            @click.prevent="get" />
-                    </div>
-                </div>
-            </nav>
-
-            <b-table
-                ref="tbl"
-                detailed
-                :show-detail-icon="false"
-                :data="fullCompanies.nodes"
-                icon-pack="fas"
-                :total="fullCompanies.totalCount"
-                :paginated="true"
-                :pagination-simple="true"
-                :per-page="page"
-                :current-page.sync="currentPage"
-                :sort-icon="sortIcon" 
-                :sort-icon-size="sortIconSize"
-                :default-sort="sort"
-                :backend-sorting="true"
-                :backend-pagination="true"
-                :striped="true" 
-                :hoverable="true"
-                @sort="sortTable"
-                @page-change="pageChange">
-            
-                <b-table-column field="name" label="Company" sortable v-slot="props">
-                    <article class="media">
-                        <figure class="media-left">
-                            <div class="image is-48x48">
-                                <img class="is-rounded" :src="(props.row.logo ? `http://localhost:5000/files?no=${props.row.logo.no}` :`https://bulma.io/images/placeholders/128x128.png`)">
-                            </div>
-                        </figure>
-                        <div class="media-content">
-                            <p v-if="props.row.webSite"><a :href="props.row.webSite" target="_blank">{{props.row.name}}</a></p>
-                            <p v-else>{{ props.row.name }}</p>
-                            <p class="has-text-weight-light">{{ props.row.code }}</p>
-                        </div>
-                    </article>
-                    
-                </b-table-column>
-
-                <b-table-column field="founded" label="Founded" sortable v-slot="props" width="5%">
-                    {{ foundedYear(props.row.founded) }}
-                </b-table-column>
-
-                <b-table-column width="5%" v-slot="props">
-                    <template>
-                        <b-button
-                            size="is-small"
-                            type="is-info"
-                            icon-pack="fas"
-                            icon-right="pen-to-square"
-                            @click.prevent="props.toggleDetails(props.row)" />
-                    </template>
-                </b-table-column>
-
-                <b-table-column width="5%" v-slot="props">
-                    <template>
-                        <b-button
-                            size="is-small"
-                            type="is-danger"
-                            icon-pack="fas"
-                            icon-right="trash"
-                            @click.prevent="deleteItem(props.row.code)" />
-                    </template>
-                </b-table-column>
-
-                <template #detail="props">
-                    <article>
-                        <h5 class="title is-5">{{ props.row.name }}</h5>
-                        <company-detail :companyData="props.row" :editMode="true" />
-                    </article>
-                </template>
-
-            </b-table>
-
-            <b-loading :is-full-page="false" v-model="isLoading"></b-loading>
         </div>
     </div>
 </template>
@@ -252,11 +235,16 @@ export default {
         create() {
             this.isCreatePanelActive = true
         },
-        close() {
+        close(e) {
+            console.log(e)
             this.isCreatePanelActive = false
+
+            if (e === 'created') {
+                //this.get()
+            }
         },
         deleteRow(row) {
-            // TODO: Need dialogs
+
             this.$buefy.dialog.confirm({
                 title: `Delete Industry`,
                 message: `<p>Are you sure you want to <b>delete</b> ${row.name}?</p><p>This action cannot be undone.</p>`,
@@ -283,6 +271,7 @@ export default {
                                     icon: 'circle-check',
                                     onConfirm: () => {                                
                                         this.$emit('close')
+                                        //this.get()
                                     }
                                 })
                             } else {

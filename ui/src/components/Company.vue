@@ -226,7 +226,7 @@ export default {
                             iconPack: 'fas',
                             icon: 'circle-check',
                             onConfirm: () => {                                
-                                this.$emit('close')
+                                this.$emit('close', 'updated')
                             }
                         })
                     })
@@ -257,7 +257,7 @@ export default {
                             iconPack: 'fas',
                             icon: 'circle-check',
                             onConfirm: () => {
-                                this.$emit('close')
+                                this.$emit('close', 'created')
                             }
                         })
                     })

@@ -1,5 +1,5 @@
 <template>
-    <form @submit.prevent="validate" novalidate>
+    <form @submit.prevent="validate">
         <div class="box my-4 mx-1">
             <h5 class="title is-5">{{ title }}</h5>
             <hr class="has-background-grey-light" />
@@ -124,7 +124,7 @@ export default {
                             iconPack: 'fas',
                             icon: 'circle-check',
                             onConfirm: () => {                                
-                                this.$emit('close')
+                                this.$emit('close', 'updated')
                             }
                         })
                     })
@@ -155,7 +155,7 @@ export default {
                             iconPack: 'fas',
                             icon: 'circle-check',
                             onConfirm: () => {
-                                this.$emit('close')
+                                this.$emit('close', 'created')
                             }
                         })
                     })
