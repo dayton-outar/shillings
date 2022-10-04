@@ -29,7 +29,7 @@
                             :message="validation.wiki.message">
                             <b-input 
                                 v-model.trim="industry.wiki" 
-                                placeholder="Wikipedia URL" 
+                                placeholder="Wikipedia Address" 
                                 icon-pack="fas"
                                 icon="globe" 
                                 type="url"

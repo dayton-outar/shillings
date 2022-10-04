@@ -9,8 +9,16 @@
                     <div class="column">
                         <b-field 
                             label="Code"
-                            label-position="inside">
-                            <b-input v-model="company.code" :disabled="editMode"></b-input>
+                            label-position="inside"
+                            :type="validation.code.type"
+                            :message="validation.code.message">
+                            <b-input 
+                                v-model="company.code" 
+                                :disabled="editMode"
+                                icon-pack="fas"
+                                icon="file-code" 
+                                type="text"
+                                maxlength="20"></b-input>
                         </b-field>
                     </div>
                 </div>
@@ -25,7 +33,7 @@
                                 v-model="company.name"
                                 icon-pack="fas"
                                 icon="building" 
-                                type="url"></b-input>
+                                type="text"></b-input>
                         </b-field>
                     </div>
                 </div>
@@ -33,8 +41,14 @@
                     <div class="column">
                         <b-field 
                             label="About"
-                            label-position="inside">
-                            <b-input v-model="company.about"></b-input>
+                            label-position="inside"
+                            :type="validation.about.type"
+                            :message="validation.about.message">
+                            <b-input 
+                                v-model="company.about"
+                                icon-pack="fas"
+                                icon="file-lines" 
+                                type="text"></b-input>
                         </b-field>
                     </div>
                 </div>
@@ -45,7 +59,8 @@
                             label-position="">
                             <b-numberinput 
                                 v-model="company.totalEmployed"
-                                icon-pack="fas"></b-numberinput>
+                                icon-pack="fas"
+                                type="is-info"></b-numberinput>
                         </b-field>
                     </div>
                 </div>
@@ -58,7 +73,7 @@
                             :message="validation.wiki.message">
                             <b-input 
                                 v-model="company.wiki"
-                                placeholder="Wikipedia URL" 
+                                placeholder="Wikipedia Address" 
                                 icon-pack="fas"
                                 icon="globe" 
                                 type="url"
@@ -70,8 +85,16 @@
                     <div class="column">
                         <b-field 
                             label="Website"
-                            label-position="inside">
-                            <b-input v-model="company.webSite"></b-input>
+                            label-position="inside"
+                            :type="validation.webSite.type"
+                            :message="validation.webSite.message">
+                            <b-input 
+                                v-model="company.webSite"
+                                placeholder="Web Address" 
+                                icon-pack="fas"
+                                icon="globe" 
+                                type="url"
+                                validation-message="Please enter valid URL"></b-input>
                         </b-field>
                     </div>
                 </div>
@@ -85,6 +108,7 @@
                                 label-position=""
                                 placeholder=""
                                 icon-pack="fas"
+                                icon="calendar"
                                 editable
                                 expanded>
                             </b-datepicker>
@@ -140,7 +164,6 @@
                         <b-field>
                             <b-upload
                                 v-model="dropFiles"
-                                multiple
                                 drag-drop
                                 expanded>
                                 <section class="section">
@@ -229,11 +252,35 @@ export default {
             isValid: false,
             isLoading: false,
             validation: {
+                code: {
+                    type: '',
+                    message: ''
+                },
                 name: {
                     type: '',
                     message: ''
                 },
+                about: {
+                    type: '',
+                    message: ''
+                },
                 wiki: {
+                    type: '',
+                    message: ''
+                },
+                webSite: {
+                    type: '',
+                    message: ''
+                },
+                founded: {
+                    type: '',
+                    message: ''
+                },
+                country: {
+                    type: '',
+                    message: ''
+                },
+                industries: {
                     type: '',
                     message: ''
                 }
@@ -251,7 +298,7 @@ export default {
             }
         },
         title() {
-            return this.editMode ? `Update Industry: ${this.companyData.name}` : `Create Industry`
+            return this.editMode ? `Update Company: ${this.companyData.name}` : `Create Company`
         }
     },
     methods: {
@@ -327,6 +374,15 @@ export default {
         validate(){
             let valid = true
 
+            if (!this.company.code) {
+                this.validation.code.type = 'is-danger'
+                this.validation.code.message = 'Please enter unique code'
+                valid = false
+            } else {
+                this.validation.code.type = ''
+                this.validation.code.message = ''
+            }
+
             if (!this.company.name) {
                 this.validation.name.type = 'is-danger'
                 this.validation.name.message = 'Please enter name'
@@ -336,14 +392,40 @@ export default {
                 this.validation.name.message = ''
             }
 
+            if (!this.company.about) {
+                this.validation.about.type = 'is-danger'
+                this.validation.about.message = 'Please enter summary about the company'
+                valid = false
+            } else {
+                this.validation.about.type = ''
+                this.validation.about.message = ''
+            }
+
+            console.log( this.company.totalEmployed ) // null
+
             if (!this.company.wiki) {
                 this.validation.wiki.type = 'is-danger'
-                this.validation.wiki.message = 'Please enter Wikipedia URL'
+                this.validation.wiki.message = 'Please enter Wikipedia address'
                 valid = false
             } else {
                 this.validation.wiki.type = ''
                 this.validation.wiki.message = ''
             }
+
+            if (!this.company.webSite) {
+                this.validation.webSite.type = 'is-danger'
+                this.validation.webSite.message = 'Please enter website address'
+                valid = false
+            } else {
+                this.validation.webSite.type = ''
+                this.validation.webSite.message = ''
+            }
+
+            console.log( this.company.founded ) // null
+
+            console.log( this.company.countryCode ) // ''
+
+            console.log( this.companyIndustries.length ) // 0
 
             this.isValid = valid
         }
