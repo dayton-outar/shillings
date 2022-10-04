@@ -111,7 +111,7 @@
                                 <figure class="media-left">
                                     <div class="image is-48x48">
                                         <img class="is-rounded"
-                                            :src="(props.row.logo ? `http://localhost:5000/files?no=${props.row.logo.no}` :`https://bulma.io/images/placeholders/128x128.png`)">
+                                            :src="(props.row.logo ? `http://localhost:5000/files?no=${props.row.logo.no}` : require(`../assets/no-image.png`))" />
                                     </div>
                                 </figure>
                                 <div class="media-content">
@@ -192,7 +192,6 @@ export default {
                 countryCode: '',
                 created: new Date(),
                 industries: [],
-                logo: {},
                 files: []
             }
         }

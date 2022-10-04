@@ -1,165 +1,214 @@
 <template>
     <form @submit.prevent="validate" novalidate>
-        <div class="box my-4 mx-1">            
-            <div class="columns">
-                <div class="column">
-                    <b-field 
-                        label="Code"
-                        label-position="inside">
-                        <b-input v-model="company.code" :disabled="editMode"></b-input>
-                    </b-field>
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column">
-                    <b-field 
-                        label="Name"
-                        label-position="inside">
-                        <b-input v-model="company.name"></b-input>
-                    </b-field>
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column">
-                    <b-field 
-                        label="About"
-                        label-position="inside">
-                        <b-input v-model="company.about"></b-input>
-                    </b-field>
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column">
-                    <b-field 
-                        label="Total Employed"
-                        label-position="">
-                        <b-numberinput 
-                            v-model="company.totalEmployed"
-                            icon-pack="fas"></b-numberinput>
-                    </b-field>
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column">
-                    <b-field 
-                        label="Wiki"
-                        label-position="inside">
-                        <b-input v-model="company.wiki"></b-input>
-                    </b-field>
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column">
-                    <b-field 
-                        label="Website"
-                        label-position="inside">
-                        <b-input v-model="company.webSite"></b-input>
-                    </b-field>
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column">
-                    <b-field 
-                        label="Founded">
-                        <b-datepicker
-                            v-model="foundedDate"
-                            ref="datepicker"
-                            label-position=""
-                            placeholder=""
-                            icon-pack="fas"
-                            editable
-                            expanded>
-                        </b-datepicker>
-                    </b-field>
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column">
-                    <b-field 
-                        label="Country">
-                        <b-select 
-                            v-model="company.countryCode"
-                            placeholder="Choose Country"
-                            expanded>
-                            <option value="JM">Jamaica</option>
-                            <option value="TT">Trinidad</option>
-                        </b-select>
-                    </b-field>
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column">
-                    <b-field 
-                        label="Industries">
-                        <b-dropdown
-                            v-model="companyIndustries"
-                            multiple
-                            scrollable
-                            aria-role="list"
-                            expanded>
-                            <template #trigger>
-                                <b-button
-                                    type="is-light"
-                                    expanded
-                                    icon-right="menu-down">
-                                    Selected ({{ companyIndustries.length }})
-                                </b-button>
-                            </template>
-
-                            <b-dropdown-item aria-role="listitem" 
-                                v-for="industry in industries" 
-                                :key="industry.no"
-                                :value="industry.no">
-                                {{industry.name}}
-                            </b-dropdown-item>
-
-                        </b-dropdown>
-                    </b-field>
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column">
-                    <b-field>
-                        <b-upload
-                            v-model="dropFiles"
-                            multiple
-                            drag-drop
-                            expanded>
-                            <section class="section">
-                                <div class="content has-text-centered">
-                                    <p>
-                                        <b-icon
-                                            icon="upload"
-                                            size="is-large">
-                                        </b-icon>
-                                    </p>
-                                    <p>Drop your files here or click to upload</p>
-                                </div>
-                            </section>
-                        </b-upload>
-                    </b-field>
-                    <div class="tags">
-                        <span v-for="(file, index) in dropFiles"
-                            :key="index"
-                            class="tag is-primary" >
-                            {{file.name}}
-                            <button class="delete is-small"
-                                type="button"
-                                @click="deleteDropFile(index)">
-                            </button>
-                        </span>
+        <div class="box my-4 mx-1">
+            <h5 class="title is-5">{{ title }}</h5>
+            <hr class="has-background-grey-light" />
+            <div v-if="!isValid">
+                <!-- slot -->
+                <div class="columns">
+                    <div class="column">
+                        <b-field 
+                            label="Code"
+                            label-position="inside">
+                            <b-input v-model="company.code" :disabled="editMode"></b-input>
+                        </b-field>
                     </div>
-                    <img :src="imgSrc" alt="Company Logo" />
                 </div>
+                <div class="columns">
+                    <div class="column">
+                        <b-field 
+                            label="Name"
+                            label-position="inside"
+                            :type="validation.name.type"
+                            :message="validation.name.message">
+                            <b-input 
+                                v-model="company.name"
+                                icon-pack="fas"
+                                icon="building" 
+                                type="url"></b-input>
+                        </b-field>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <b-field 
+                            label="About"
+                            label-position="inside">
+                            <b-input v-model="company.about"></b-input>
+                        </b-field>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <b-field 
+                            label="Total Employed"
+                            label-position="">
+                            <b-numberinput 
+                                v-model="company.totalEmployed"
+                                icon-pack="fas"></b-numberinput>
+                        </b-field>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <b-field 
+                            label="Wiki"
+                            label-position="inside"
+                            :type="validation.wiki.type"
+                            :message="validation.wiki.message">
+                            <b-input 
+                                v-model="company.wiki"
+                                placeholder="Wikipedia URL" 
+                                icon-pack="fas"
+                                icon="globe" 
+                                type="url"
+                                validation-message="Please enter valid URL"></b-input>
+                        </b-field>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <b-field 
+                            label="Website"
+                            label-position="inside">
+                            <b-input v-model="company.webSite"></b-input>
+                        </b-field>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <b-field 
+                            label="Founded">
+                            <b-datepicker
+                                v-model="foundedDate"
+                                ref="datepicker"
+                                label-position=""
+                                placeholder=""
+                                icon-pack="fas"
+                                editable
+                                expanded>
+                            </b-datepicker>
+                        </b-field>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <b-field 
+                            label="Country">
+                            <b-select 
+                                v-model="company.countryCode"
+                                placeholder="Choose Country"
+                                expanded>
+                                <option value="JM">Jamaica</option>
+                                <option value="TT">Trinidad</option>
+                            </b-select>
+                        </b-field>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <b-field 
+                            label="Industries">
+                            <b-dropdown
+                                v-model="companyIndustries"
+                                multiple
+                                scrollable
+                                aria-role="list"
+                                expanded>
+                                <template #trigger>
+                                    <b-button
+                                        type="is-light"
+                                        expanded
+                                        icon-right="menu-down">
+                                        Selected ({{ companyIndustries.length }})
+                                    </b-button>
+                                </template>
+
+                                <b-dropdown-item aria-role="listitem" 
+                                    v-for="industry in industries" 
+                                    :key="industry.no"
+                                    :value="industry.no">
+                                    {{industry.name}}
+                                </b-dropdown-item>
+
+                            </b-dropdown>
+                        </b-field>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <b-field>
+                            <b-upload
+                                v-model="dropFiles"
+                                multiple
+                                drag-drop
+                                expanded>
+                                <section class="section">
+                                    <div class="content has-text-centered">
+                                        <p>
+                                            <b-icon
+                                                icon="upload"
+                                                size="is-large">
+                                            </b-icon>
+                                        </p>
+                                        <p>Drop your files here or click to upload</p>
+                                    </div>
+                                </section>
+                            </b-upload>
+                        </b-field>
+                        <div class="tags">
+                            <span v-for="(file, index) in dropFiles"
+                                :key="index"
+                                class="tag is-primary" >
+                                {{file.name}}
+                                <button class="delete is-small"
+                                    type="button"
+                                    @click="deleteDropFile(index)">
+                                </button>
+                            </span>
+                        </div>
+                        <img :src="imgSrc" alt="Company Logo" />
+                    </div>
+                </div>
+                <hr class="has-background-grey-lighter thinner" />
+                <div class="columns">
+                    <div class="column">
+                        <b-button label="Close" size="is-medium" expanded @click.prevent="$emit('close')" />
+                    </div>
+                    <div class="column">
+                        <b-button label="Save" type="is-info" size="is-medium" expanded native-type="submit" />
+                    </div>
+                </div>
+                <!-- slot -->
             </div>
-            <hr class="has-background-grey-lighter thinner" />
-            <div class="columns">
-                <div class="column">
-                    <b-button label="Close" size="is-medium" expanded @click.prevent="$emit('close')" />
+            <div v-else>
+                <!-- slot -->
+                <div class="columns">
+                    <div class="column">
+                        <b-field 
+                            label="Name">
+                            {{ company.name }}
+                        </b-field>
+                    </div>
                 </div>
-                <div class="column">
-                    <b-button label="Save" type="is-info" size="is-medium" expanded @click.prevent="submit" />
+                <div class="columns">
+                    <div class="column">
+                        <b-field 
+                            label="Wiki">
+                            <a :href="company.wiki" target="_blank">{{ company.wiki }}</a>
+                        </b-field>
+                    </div>
                 </div>
+                <hr class="has-background-grey-lighter thinner" />
+                <div class="columns">
+                    <div class="column">
+                        <b-button label="Cancel" size="is-medium" expanded @click.prevent="(isValid = false)" />
+                    </div>
+                    <div class="column">
+                        <b-button label="OK" type="is-info" size="is-medium" expanded @click.prevent="save" :disabled="isLoading" />
+                    </div>
+                </div>
+                <!-- slot -->
             </div>
         </div>
     </form>
@@ -176,7 +225,7 @@ export default {
             company: JSON.parse(JSON.stringify(this.companyData)),
             companyIndustries: this.companyData.industries.map(i => i.no),
             dropFiles: [],
-            imgSrc: this.companyData.logo ? `http://localhost:5000/files?no=${this.companyData.logo.no}` : '#', // TODO: Put File API URL in main config file
+            imgSrc: this.companyData.logo ? `http://localhost:5000/files?no=${this.companyData.logo.no}` : require(`../assets/no-image.png`), // TODO: Put File API URL in main config file
             isValid: false,
             isLoading: false,
             validation: {
@@ -202,7 +251,7 @@ export default {
             }
         },
         title() {
-            return this.editMode ? `Update Industry: ${this.industry.name}` : `Create Industry`
+            return this.editMode ? `Update Industry: ${this.companyData.name}` : `Create Industry`
         }
     },
     methods: {
@@ -216,7 +265,7 @@ export default {
                         this.isLoading = false
 
                         this.$buefy.dialog.alert({
-                            title: `Update Company: ${this.company.name}`,
+                            title: this.title,
                             message: `Successfully updated ${response.name}`,
                             confirmText: 'OK',
                             type: 'is-success',
@@ -232,7 +281,7 @@ export default {
                         this.isLoading = false
 
                         this.$buefy.dialog.alert({
-                            title: `Update Company: ${this.company.name}`,
+                            title: this.title,
                             message: `${err.message}`,
                             confirmText: 'OK',
                             type: 'is-danger',
@@ -247,7 +296,7 @@ export default {
                         this.isLoading = false
 
                         this.$buefy.dialog.alert({
-                            title: `Create Company`,
+                            title: this.title,
                             message: `Successfully created ${response.name}`,
                             confirmText: 'OK',
                             type: 'is-success',
@@ -263,7 +312,7 @@ export default {
                         this.isLoading = false
 
                         this.$buefy.dialog.alert({
-                            title: `Create Company`,
+                            title: this.title,
                             message: `${err.message}`,
                             confirmText: 'OK',
                             type: 'is-danger',
@@ -302,7 +351,7 @@ export default {
     watch: {
         dropFiles: function(o) {
           var reader = new FileReader();
-          reader.onload = e => { //this.$emit("load", e.target.result);
+          reader.onload = e => {
             this.imgSrc = e.target.result;
           }
 
