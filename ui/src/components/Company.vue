@@ -411,7 +411,6 @@ export default {
                 this.validation.about.message = ''
             }
 
-            console.log(this.company.totalEmployed)
             if (!this.company.totalEmployed) {
                 this.validation.totalEmployed.type = 'is-danger'
                 this.validation.totalEmployed.message = 'Please enter total employed'
