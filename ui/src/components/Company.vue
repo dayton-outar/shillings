@@ -13,7 +13,8 @@
                             :type="validation.code.type"
                             :message="validation.code.message">
                             <b-input 
-                                v-model="company.code" 
+                                v-model="company.code"
+                                placeholder="Unique code" 
                                 :disabled="editMode"
                                 icon-pack="fas"
                                 icon="file-code" 
@@ -31,6 +32,7 @@
                             :message="validation.name.message">
                             <b-input 
                                 v-model="company.name"
+                                placeholder="Company name"
                                 icon-pack="fas"
                                 icon="building" 
                                 type="text"></b-input>
@@ -56,11 +58,15 @@
                     <div class="column">
                         <b-field 
                             label="Total Employed"
-                            label-position="">
+                            label-position="inside"
+                            :type="validation.totalEmployed.type"
+                            :message="validation.totalEmployed.message">
                             <b-numberinput 
                                 v-model="company.totalEmployed"
                                 icon-pack="fas"
-                                type="is-info"></b-numberinput>
+                                type="is-info"
+                                controls-position="compact"
+                                expanded></b-numberinput>
                         </b-field>
                     </div>
                 </div>
@@ -73,7 +79,7 @@
                             :message="validation.wiki.message">
                             <b-input 
                                 v-model="company.wiki"
-                                placeholder="Wikipedia Address" 
+                                placeholder="Wikipedia address" 
                                 icon-pack="fas"
                                 icon="globe" 
                                 type="url"
@@ -90,7 +96,7 @@
                             :message="validation.webSite.message">
                             <b-input 
                                 v-model="company.webSite"
-                                placeholder="Web Address" 
+                                placeholder="Web address" 
                                 icon-pack="fas"
                                 icon="globe" 
                                 type="url"
@@ -106,7 +112,7 @@
                                 v-model="foundedDate"
                                 ref="datepicker"
                                 label-position=""
-                                placeholder=""
+                                placeholder="mm/dd/yyyy"
                                 icon-pack="fas"
                                 icon="calendar"
                                 editable
@@ -264,6 +270,10 @@ export default {
                     type: '',
                     message: ''
                 },
+                totalEmployed: {
+                    type: '',
+                    message: ''
+                },
                 wiki: {
                     type: '',
                     message: ''
@@ -401,7 +411,15 @@ export default {
                 this.validation.about.message = ''
             }
 
-            console.log( this.company.totalEmployed ) // null
+            console.log(this.company.totalEmployed)
+            if (!this.company.totalEmployed) {
+                this.validation.totalEmployed.type = 'is-danger'
+                this.validation.totalEmployed.message = 'Please enter total employed'
+                valid = false
+            } else {
+                this.validation.totalEmployed.type = ''
+                this.validation.totalEmployed.message = ''
+            }
 
             if (!this.company.wiki) {
                 this.validation.wiki.type = 'is-danger'
