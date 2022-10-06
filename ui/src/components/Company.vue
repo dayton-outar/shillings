@@ -445,12 +445,10 @@ export default {
 
           reader.onload = e => {    
             this.imgSrc = e.target.result
-            //this.company.logo = this.dropFiles[0]
-            console.log(e.target.result)
-            console.log( this.dropFiles )
           }
 
           if (o) {
+            this.company.logo = o
             reader.readAsDataURL(o)
           }
         }
