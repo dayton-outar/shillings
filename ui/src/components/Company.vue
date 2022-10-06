@@ -171,12 +171,13 @@
                             <b-upload
                                 v-model="dropFile"
                                 class="file-label"
+                                drag-drop
                                 expanded>
                                 <span class="file-cta">
                                     <b-icon
                                         class="file-icon"
-                                        icon="upload"
-                                        size="is-large"></b-icon>
+                                        pack="fas"
+                                        icon="upload"></b-icon>
                                     <span class="file-label">Click to upload</span>
                                 </span>
                                 <span class="file-name" v-if="dropFile">
