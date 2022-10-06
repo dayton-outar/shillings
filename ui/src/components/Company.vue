@@ -167,36 +167,24 @@
                 </div>
                 <div class="columns">
                     <div class="column">
-                        <b-field>
+                        <b-field class="file is-info" :class="{'has-name': !!dropFile}">
                             <b-upload
-                                v-model="dropFiles"
-                                drag-drop
+                                v-model="dropFile"
+                                class="file-label"
                                 expanded>
-                                <section class="section">
-                                    <div class="content has-text-centered">
-                                        <p>
-                                            <b-icon
-                                                icon="upload"
-                                                size="is-large">
-                                            </b-icon>
-                                        </p>
-                                        <p>Drop your files here or click to upload</p>
-                                    </div>
-                                </section>
+                                <span class="file-cta">
+                                    <b-icon
+                                        class="file-icon"
+                                        icon="upload"
+                                        size="is-large"></b-icon>
+                                    <span class="file-label">Click to upload</span>
+                                </span>
+                                <span class="file-name" v-if="dropFile">
+                                    {{ dropFile.name }}
+                                </span>
                             </b-upload>
                         </b-field>
-                        <div class="tags">
-                            <span v-for="(file, index) in dropFiles"
-                                :key="index"
-                                class="tag is-primary" >
-                                {{file.name}}
-                                <button class="delete is-small"
-                                    type="button"
-                                    @click="deleteDropFile(index)">
-                                </button>
-                            </span>
-                        </div>
-                        <img :src="imgSrc" alt="Company Logo" />
+                        <img :src="imgSrc" alt="Company Logo" v-if="dropFile" />                        
                     </div>
                 </div>
                 <hr class="has-background-grey-lighter thinner" />
@@ -246,6 +234,7 @@
 <script>
 import { mapState, mapActions } from 'vuex'
 import moment from 'moment'
+import config from '../config'
 
 export default {
     props: ['companyData', 'editMode'],
@@ -253,8 +242,9 @@ export default {
         return {
             company: JSON.parse(JSON.stringify(this.companyData)),
             companyIndustries: this.companyData.industries.map(i => i.no),
-            dropFiles: [],
-            imgSrc: this.companyData.logo ? `http://localhost:5000/files?no=${this.companyData.logo.no}` : require(`../assets/no-image.png`), // TODO: Put File API URL in main config file
+            dropFile: null,
+            hasImg: this.companyData.logo,
+            imgSrc: this.companyData.logo ? `${config.fileApiHost}?no=${this.companyData.logo.no}` : '#',
             isValid: false,
             isLoading: false,
             validation: {
@@ -448,14 +438,19 @@ export default {
         }
     },
     watch: {
-        dropFiles: function(o) {
-          var reader = new FileReader();
-          reader.onload = e => {
-            this.imgSrc = e.target.result;
+        dropFile: function(o) {
+          var reader = new FileReader()
+          //this.hasImg = true
+
+          reader.onload = e => {    
+            this.imgSrc = e.target.result
+            //this.company.logo = this.dropFiles[0]
+            console.log(e.target.result)
+            console.log( this.dropFiles )
           }
 
-          if (o[0]) {
-            reader.readAsDataURL(o[0]);
+          if (o) {
+            reader.readAsDataURL(o)
           }
         }
     }
