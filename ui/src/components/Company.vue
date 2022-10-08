@@ -50,7 +50,8 @@
                                 v-model="company.about"
                                 icon-pack="fas"
                                 icon="file-lines" 
-                                type="text"></b-input>
+                                type="text"
+                                placeholder="Summary about company"></b-input>
                         </b-field>
                     </div>
                 </div>
@@ -107,7 +108,9 @@
                 <div class="columns">
                     <div class="column">
                         <b-field 
-                            label="Founded">
+                            label="Founded"
+                            :type="validation.founded.type"
+                            :message="validation.founded.message">
                             <b-datepicker
                                 v-model="foundedDate"
                                 ref="datepicker"
@@ -124,21 +127,57 @@
                 <div class="columns">
                     <div class="column">
                         <b-field 
-                            label="Country">
-                            <b-select 
+                            label="Country"
+                            :type="validation.country.type"
+                            :message="validation.country.message">
+                            <b-dropdown 
                                 v-model="company.countryCode"
-                                placeholder="Choose Country"
                                 expanded>
-                                <option value="JM">Jamaica</option>
-                                <option value="TT">Trinidad</option>
-                            </b-select>
+                                <template #trigger>
+                                    <b-button
+                                        type="is-light"
+                                        expanded
+                                        icon-right="menu-down">
+                                        {{ company.countryCode == '' ? 'Choose Country' : company.countryCode }}
+                                    </b-button>
+                                </template>
+
+                                <b-dropdown-item value="JM" aria-role="listitem">
+                                    <div class="media">
+                                        <figure class="media-left">
+                                            <div class="image is-32x32">
+                                                <img src="https://www.worldometers.info/img/flags/jm-flag.gif" alt="Jamaica Flag" />
+                                            </div>
+                                        </figure>
+                                        <div class="media-content">
+                                            <p>Jamaica</p>
+                                        </div>
+                                    </div>
+                                </b-dropdown-item>
+
+                                <b-dropdown-item value="TT" aria-role="listitem">
+                                    <div class="media">
+                                        <figure class="media-left">
+                                            <div class="image is-32x32">
+                                                <img src="https://www.worldometers.info/img/flags/td-flag.gif" alt="Trinidad Flag" />
+                                            </div>
+                                        </figure>
+                                        <div class="media-content">
+                                            <p>Trinidad</p>
+                                        </div>
+                                    </div>
+                                </b-dropdown-item>
+
+                            </b-dropdown>
                         </b-field>
                     </div>
                 </div>
                 <div class="columns">
                     <div class="column">
                         <b-field 
-                            label="Industries">
+                            label="Industries"
+                            :type="validation.industries.type"
+                            :message="validation.industries.message">                            
                             <b-dropdown
                                 v-model="companyIndustries"
                                 multiple
@@ -155,43 +194,48 @@
                                 </template>
 
                                 <b-dropdown-item aria-role="listitem" 
-                                    v-for="industry in industries" 
+                                    v-for="industry in industries.nodes" 
                                     :key="industry.no"
                                     :value="industry.no">
                                     {{industry.name}}
                                 </b-dropdown-item>
 
-                            </b-dropdown>
+                            </b-dropdown>                            
                         </b-field>
                     </div>
                 </div>
                 <div class="columns">
-                    <div class="column">                        
-                        <b-field class="file is-info" :class="{'has-name': !!dropFile}">
-                            <b-upload
-                                v-model="dropFile"
-                                class="file-label"
-                                drag-drop
-                                expanded
-                                v-if="!hasImg">
-                                <div class="has-text-centered">
-                                    <p>
-                                        <b-icon
-                                            pack="fas"
-                                            icon="upload"
-                                            size="is-large">
-                                        </b-icon>
-                                    </p>
-                                    <p>Drop your files here or click to upload</p>
-                                </div>
-                            </b-upload>
-                            <b-message 
-                                :title="(dropFile ? `File: ${dropFile.name} (${formatBytes(dropFile.size)})` : 'File')" 
-                                v-if="hasImg" 
-                                aria-close-label="Close message"
-                                @close="removeDropFile">
-                                <img :src="imgSrc" alt="Company Logo" />
-                            </b-message>          
+                    <div class="column">
+                        <b-field
+                            label="Logo"
+                            :type="validation.logo.type"
+                            :message="validation.logo.message">
+                            <b-field class="file is-info" :class="{'has-name': !!dropFile}">
+                                <b-upload
+                                    v-model="dropFile"
+                                    class="file-label"
+                                    drag-drop
+                                    expanded
+                                    v-if="!hasImg">
+                                    <div class="has-text-centered">
+                                        <p>
+                                            <b-icon
+                                                pack="fas"
+                                                icon="cloud-arrow-up"
+                                                size="is-large">
+                                            </b-icon>
+                                        </p>
+                                        <p>Drop your files here or click to upload</p>
+                                    </div>
+                                </b-upload>
+                                <b-message 
+                                    :title="(dropFile ? `File: ${dropFile.name} (${formatBytes(dropFile.size)})` : `File: ${this.company.logo.fileName} (${formatBytes(this.company.logo.contentSize)})`)" 
+                                    v-if="hasImg" 
+                                    aria-close-label="Close message"
+                                    @close="(hasImg = false)">
+                                    <img :src="imgSrc" alt="Company Logo" />
+                                </b-message>          
+                            </b-field>
                         </b-field>                        
                     </div>
                 </div>
@@ -211,6 +255,14 @@
                 <div class="columns">
                     <div class="column">
                         <b-field 
+                            label="Code">
+                            {{ company.code }}
+                        </b-field>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <b-field 
                             label="Name">
                             {{ company.name }}
                         </b-field>
@@ -219,8 +271,66 @@
                 <div class="columns">
                     <div class="column">
                         <b-field 
+                            label="About">
+                            {{ company.about }}
+                        </b-field>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <b-field 
+                            label="Total Employed">
+                            {{ company.totalEmployed }}
+                        </b-field>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <b-field 
                             label="Wiki">
                             <a :href="company.wiki" target="_blank">{{ company.wiki }}</a>
+                        </b-field>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <b-field 
+                            label="Website">
+                            <a :href="company.webSite" target="_blank">{{ company.webSite }}</a>
+                        </b-field>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <b-field 
+                            label="Founded">
+                            {{ formatDate(this.company.founded) }}
+                        </b-field>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <b-field 
+                            label="Country">
+                            {{ this.company.countryCode }}
+                        </b-field>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <b-field 
+                            label="Industries">
+                            <ul class="list">
+                                <li class="list-item" v-for="industry in industries.nodes.filter(i => companyIndustries.includes(i.no))" :key="industry.no">{{industry.name}}</li>
+                            </ul>
+                        </b-field>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <b-field
+                            label="Logo">
+                            <img :src="imgSrc" alt="Company Logo" />
                         </b-field>
                     </div>
                 </div>
@@ -292,9 +402,23 @@ export default {
                 industries: {
                     type: '',
                     message: ''
+                },
+                logo: {
+                    type: '',
+                    message: ''
                 }
             }
         }
+    },
+    created() {
+        this.$store.dispatch('industries/fetch', {
+                first: 100,
+                last: null,
+                next: null,
+                previous: null,
+                filter: { name: { startsWith: '' } },
+                ordering: [{ name: 'ASC' }]
+            });
     },
     computed: {
         ...mapState('industries', ['industries']),
@@ -437,33 +561,65 @@ export default {
                 this.validation.webSite.message = ''
             }
 
-            console.log( this.company.founded ) // null
+            if (!this.company.founded) {
+                this.validation.founded.type = 'is-danger'
+                this.validation.founded.message = 'Please enter date company was founded'
+                valid = false
+            } else {
+                this.validation.founded.type = ''
+                this.validation.founded.message = ''
+            }
 
-            console.log( this.company.countryCode ) // ''
+            if (!this.company.countryCode) {
+                this.validation.country.type = 'is-danger'
+                this.validation.country.message = 'Please choose country'
+                valid = false
+            } else {
+                this.validation.country.type = ''
+                this.validation.country.message = ''
+            }
 
-            console.log( this.companyIndustries.length ) // 0
+            console.log( this.industries.nodes.filter(i => this.companyIndustries.includes(i.no)) )
+            // if (this.companyIndustries.length == 0) {
+            //     this.validation.industries.type = 'is-danger'
+            //     this.validation.industries.message = 'Please choose at least one (1) industry'
+            //     valid = false
+            // } else {
+            //     this.validation.industries.type = ''
+            //     this.validation.industries.message = ''
+            // }
+
+            if (!this.hasImg) {
+                this.validation.logo.type = 'is-danger'
+                this.validation.logo.message = 'Please upload a logo'
+                valid = false
+            } else {
+                this.validation.logo.type = ''
+                this.validation.logo.message = ''
+            }
 
             this.isValid = valid
         },
         formatBytes(bytes) {
             return prettyBytes(bytes, { locale: 'en' })
         },
-        removeDropFile() {
-            this.dropFile = null
-            this.hasImg = false
+        formatDate(date) {
+            return moment(date).format('MMMM, YYYY')
         }
     },
     watch: {
         dropFile: function(o) {
           var reader = new FileReader()
           this.hasImg = true
+          this.validation.logo.type = ''
+          this.validation.logo.message = ''
 
           reader.onload = e => {    
             this.imgSrc = e.target.result
           }
 
           if (o) {
-            //this.company.logo = o
+            this.company.logo = o
             reader.readAsDataURL(o)
           }
         }

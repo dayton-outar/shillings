@@ -81,25 +81,24 @@ export default {
       return Promise.resolve(response.data.createCompany.company)
     },
     async fetch({ commit }, request) {
-        const response = await graphQlClient.query({
-            query: gql`query Get($first: Int, $last: Int, $next: String, $previous: String, $filter: CompanyFilterInput, $ordering: [CompanySortInput!]) {
-              companies (
-                first: $first,
-                last: $last,
-                after: $next,
-                before: $previous,
-                where: $filter,
-                order: $ordering
-                
-              ) {
-                pageInfo {
-                  startCursor,
-                  hasNextPage,
-                  hasPreviousPage,
-                  endCursor
-                },
-                totalCount,
-                nodes {
+      const response = await graphQlClient.query({
+        query: gql`query Get($first: Int, $last: Int, $next: String, $previous: String, $filter: CompanyFilterInput, $ordering: [CompanySortInput!]) {
+          companies (
+            first: $first,
+            last: $last,
+            after: $next,
+            before: $previous,
+            where: $filter,
+            order: $ordering
+          ) {
+            pageInfo {
+              startCursor,
+              hasNextPage,
+              hasPreviousPage,
+              endCursor
+            },
+            totalCount,
+            nodes {
                   code,
                   name,
                   about,
@@ -132,16 +131,16 @@ export default {
                   }
                 }
               }
-            }`,
-            variables: {
-                first: request.first,
-                last: request.last,
-                next: request.next,
-                previous: request.previous,
-                filter: request.filter,
-                ordering: request.ordering
-            }
-          })
+        }`,
+        variables: {
+          first: request.first,
+          last: request.last,
+          next: request.next,
+          previous: request.previous,
+          filter: request.filter,
+          ordering: request.ordering
+        }
+      })
         
       commit('set', {
         type: 'fullCompanies',
