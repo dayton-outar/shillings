@@ -166,7 +166,7 @@
                     </div>
                 </div>
                 <div class="columns">
-                    <div class="column">
+                    <div class="column">                        
                         <b-field class="file is-info" :class="{'has-name': !!dropFile}">
                             <b-upload
                                 v-model="dropFile"
@@ -186,13 +186,13 @@
                                 </div>
                             </b-upload>
                             <b-message 
-                                :title="(`File: ${dropFile.name} (${formatBytes(dropFile.size)})`)" 
+                                :title="(dropFile ? `File: ${dropFile.name} (${formatBytes(dropFile.size)})` : 'File')" 
                                 v-if="hasImg" 
                                 aria-close-label="Close message"
                                 @close="removeDropFile">
                                 <img :src="imgSrc" alt="Company Logo" />
-                            </b-message>                         
-                        </b-field>
+                            </b-message>          
+                        </b-field>                        
                     </div>
                 </div>
                 <hr class="has-background-grey-lighter thinner" />
@@ -463,7 +463,7 @@ export default {
           }
 
           if (o) {
-            this.company.logo = o
+            //this.company.logo = o
             reader.readAsDataURL(o)
           }
         }
