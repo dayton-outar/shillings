@@ -4,8 +4,8 @@
   "description": "Collection of tools used to optimize a web site",
   "main": "main.js",
   "scripts": {
-    "start": "node o8$.js",
-    "o8$": "node o8$.js --trace-warnings",
+    "start": "node main.js",
+    "o8$": "node main.js --trace-warnings",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
