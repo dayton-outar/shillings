@@ -149,6 +149,7 @@ function readDividends() {
 }
 
 // Adapted from https://www.toptal.com/puppeteer/headless-browser-puppeteer-tutorial done by Nick Chikovani
+// TODO: Update Puppeteer, Moment, Pretty-Bytes and other packages to latest version
 async function run(urls, cb) {
     return await new Promise(async (resolve, reject) => {
         try {
