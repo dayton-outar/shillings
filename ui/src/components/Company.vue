@@ -250,7 +250,7 @@
                 </div>
                 <!-- slot -->
             </div>
-            <div v-else>
+            <div class="content" v-else>
                 <!-- slot -->
                 <div class="columns">
                     <div class="column">
