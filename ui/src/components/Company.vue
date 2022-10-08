@@ -172,20 +172,27 @@
                                 v-model="dropFile"
                                 class="file-label"
                                 drag-drop
-                                expanded>
-                                <span class="file-cta">
-                                    <b-icon
-                                        class="file-icon"
-                                        pack="fas"
-                                        icon="upload"></b-icon>
-                                    <span class="file-label">Click to upload</span>
-                                </span>
-                                <span class="file-name" v-if="dropFile">
-                                    {{ dropFile.name }}
-                                </span>
+                                expanded
+                                v-if="!hasImg">
+                                <div class="has-text-centered">
+                                    <p>
+                                        <b-icon
+                                            pack="fas"
+                                            icon="upload"
+                                            size="is-large">
+                                        </b-icon>
+                                    </p>
+                                    <p>Drop your files here or click to upload</p>
+                                </div>
                             </b-upload>
+                            <b-message 
+                                :title="(`File: ${dropFile.name} (${formatBytes(dropFile.size)})`)" 
+                                v-if="hasImg" 
+                                aria-close-label="Close message"
+                                @close="removeDropFile">
+                                <img :src="imgSrc" alt="Company Logo" />
+                            </b-message>                         
                         </b-field>
-                        <img :src="imgSrc" alt="Company Logo" v-if="dropFile" />                        
                     </div>
                 </div>
                 <hr class="has-background-grey-lighter thinner" />
@@ -235,6 +242,7 @@
 <script>
 import { mapState, mapActions } from 'vuex'
 import moment from 'moment'
+import prettyBytes from 'pretty-bytes';
 import config from '../config'
 
 export default {
@@ -244,7 +252,7 @@ export default {
             company: JSON.parse(JSON.stringify(this.companyData)),
             companyIndustries: this.companyData.industries.map(i => i.no),
             dropFile: null,
-            hasImg: this.companyData.logo,
+            hasImg: (this.editMode && !!this.companyData.logo),
             imgSrc: this.companyData.logo ? `${config.fileApiHost}?no=${this.companyData.logo.no}` : '#',
             isValid: false,
             isLoading: false,
@@ -436,12 +444,19 @@ export default {
             console.log( this.companyIndustries.length ) // 0
 
             this.isValid = valid
+        },
+        formatBytes(bytes) {
+            return prettyBytes(bytes, { locale: 'en' })
+        },
+        removeDropFile() {
+            this.dropFile = null
+            this.hasImg = false
         }
     },
     watch: {
         dropFile: function(o) {
           var reader = new FileReader()
-          //this.hasImg = true
+          this.hasImg = true
 
           reader.onload = e => {    
             this.imgSrc = e.target.result

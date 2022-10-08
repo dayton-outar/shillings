@@ -24,6 +24,7 @@
     "highcharts": "^9.1.0",
     "lodash": "^4.17.21",
     "moment": "^2.29.1",
+    "pretty-bytes": "^6.0.0",
     "uuid": "^3.4.0",
     "vue": "^2.6.11",
     "vue-router": "^3.5.1",
