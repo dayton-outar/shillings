@@ -439,6 +439,8 @@ export default {
         save() {
             this.isLoading = true
 
+            this.company.industries = this.industries.nodes.filter(i => this.companyIndustries.includes(i.no))
+
             if (this.editMode) {
                 this.update( this.company )
                     .then(response => {
@@ -543,23 +545,23 @@ export default {
                 this.validation.totalEmployed.message = ''
             }
 
-            if (!this.company.wiki) {
-                this.validation.wiki.type = 'is-danger'
-                this.validation.wiki.message = 'Please enter Wikipedia address'
-                valid = false
-            } else {
-                this.validation.wiki.type = ''
-                this.validation.wiki.message = ''
-            }
+            // if (!this.company.wiki) {
+            //     this.validation.wiki.type = 'is-danger'
+            //     this.validation.wiki.message = 'Please enter Wikipedia address'
+            //     valid = false
+            // } else {
+            //     this.validation.wiki.type = ''
+            //     this.validation.wiki.message = ''
+            // }
 
-            if (!this.company.webSite) {
-                this.validation.webSite.type = 'is-danger'
-                this.validation.webSite.message = 'Please enter website address'
-                valid = false
-            } else {
-                this.validation.webSite.type = ''
-                this.validation.webSite.message = ''
-            }
+            // if (!this.company.webSite) {
+            //     this.validation.webSite.type = 'is-danger'
+            //     this.validation.webSite.message = 'Please enter website address'
+            //     valid = false
+            // } else {
+            //     this.validation.webSite.type = ''
+            //     this.validation.webSite.message = ''
+            // }
 
             if (!this.company.founded) {
                 this.validation.founded.type = 'is-danger'
@@ -579,15 +581,14 @@ export default {
                 this.validation.country.message = ''
             }
 
-            console.log( this.industries.nodes.filter(i => this.companyIndustries.includes(i.no)) )
-            // if (this.companyIndustries.length == 0) {
-            //     this.validation.industries.type = 'is-danger'
-            //     this.validation.industries.message = 'Please choose at least one (1) industry'
-            //     valid = false
-            // } else {
-            //     this.validation.industries.type = ''
-            //     this.validation.industries.message = ''
-            // }
+            if (this.companyIndustries.length == 0) {
+                this.validation.industries.type = 'is-danger'
+                this.validation.industries.message = 'Please choose at least one (1) industry'
+                valid = false
+            } else {
+                this.validation.industries.type = ''
+                this.validation.industries.message = ''
+            }
 
             if (!this.hasImg) {
                 this.validation.logo.type = 'is-danger'
