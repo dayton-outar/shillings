@@ -89,9 +89,9 @@
                         ref="tbl" 
                         detailed 
                         :show-detail-icon="false" 
-                        :data="fullCompanies.nodes" 
+                        :data="companies.nodes" 
                         icon-pack="fas"
-                        :total="fullCompanies.totalCount" 
+                        :total="companies.totalCount" 
                         :paginated="true" 
                         :pagination-simple="true" 
                         :per-page="page"
@@ -138,7 +138,7 @@
                         <b-table-column width="5%" v-slot="props">
                             <template>
                                 <b-button size="is-small" type="is-danger" icon-pack="fas" icon-right="trash"
-                                    @click.prevent="deleteItem(props.row.code)" />
+                                    @click.prevent="deleteRow(props.row)" />
                             </template>
                         </b-table-column>
 
@@ -245,7 +245,7 @@ export default {
         deleteRow(row) {
 
             this.$buefy.dialog.confirm({
-                title: `Delete Industry`,
+                title: `Delete Company`,
                 message: `<p>Are you sure you want to <b>delete</b> ${row.name}?</p><p>This action cannot be undone.</p>`,
                 confirmText: 'OK',
                 type: 'is-warning',
@@ -307,7 +307,6 @@ export default {
 
             this.get()
         },
-        // HACK: There's a bug here
         pageChange(page) { // Credit: https://github.com/buefy/buefy/issues/50
             this.isLoading = true
             
@@ -316,8 +315,8 @@ export default {
             this.fetch({
                 first: this.forward ? this.page : null,
                 last: !this.forward ? this.page : null,
-                next: this.forward ? this.fullCompanies.pageInfo.endCursor : null,
-                previous: !this.forward ? this.fullCompanies.pageInfo.startCursor : null,
+                next: this.forward ? this.companies.pageInfo.endCursor : null,
+                previous: !this.forward ? this.companies.pageInfo.startCursor : null,
                 filter: { name: { startsWith: this.searchWord } },
                 ordering: [{ [this.sort[0]]: this.sort[1].toUpperCase() }]
             }).then(() => {
@@ -327,7 +326,7 @@ export default {
                 this.isLoading = false
                 
                 this.$buefy.dialog.alert({
-                    title: `Industries`,
+                    title: `Companies`,
                     message: `${err.message}`,
                     confirmText: 'OK',
                     type: 'is-danger',
@@ -350,7 +349,7 @@ export default {
         }
     },
     computed: {
-        ...mapState('companies', ['fullCompanies'])
+        ...mapState('companies', ['companies'])
     }
 }
 

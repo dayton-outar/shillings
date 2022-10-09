@@ -6,12 +6,20 @@
                     <h5 class="title is-5">{{ type }}</h5>
                 </div>
                 <div class="column is-flex is-justify-content-flex-end">
-                    <b-button type="is-danger" icon-right="delete" @click="removeStatement" />
+                    <b-button 
+                        type="is-danger" 
+                        icon-pack="fas"
+                        icon-right="trash" 
+                        @click="removeStatement" />
                 </div>
             </div>
             <div class="columns">
                 <div class="column is-full is-flex is-justify-content-flex-end">
-                    <b-button type="is-primary" icon-right="playlist-plus" @click.prevent="addItem">Add</b-button>
+                    <b-button 
+                        type="is-primary" 
+                        icon-pack="fas"
+                        icon-right="square-plus" 
+                        @click.prevent="addItem">Add</b-button>
                 </div>
             </div>
             <div class="columns">
@@ -99,13 +107,15 @@
                                 @click="closeItem(props.row.sequence)"
                                 size="is-small"
                                 type="is-info"
+                                icon-pack="fas"
                                 icon-right="close" />
                             <b-button
                                 v-else
                                 @click="openItem(props.row.sequence)"
                                 size="is-small"
                                 type="is-info"
-                                icon-right="circle-edit-outline" />
+                                icon-pack="fas"
+                                icon-right="pen-to-square" />
                         </template>
                     </b-table-column>
 
@@ -115,7 +125,8 @@
                                 @click="removeItem(props.row.sequence)"
                                 size="is-small"
                                 type="is-danger"
-                                icon-right="delete" />
+                                icon-pack="fas"
+                                icon-right="trash" />
                         </template>
                     </b-table-column>
 
@@ -158,7 +169,7 @@ const cleave = {
 
 export default {
     directives: { cleave },
-    props: ['type', 'no'],
+    props: ['data', 'type', 'no'],
     data() {
         return {
             defaultSortDirection: 'desc',
@@ -187,7 +198,7 @@ export default {
     computed: {
         ...mapState(['sections', 'assays', 'financialReport', 'isItemsValid']),
         statementTypeItems() {
-            return this.financialReport.analytes.filter(s => s.type === this.type.replace(' ', '_').toUpperCase());
+            return this.data.filter(s => s.type === this.type.replace(' ', '_').toUpperCase());
         },
         statementSections() {
             const iss = this.sections.findIndex(ss => ss.type.toLowerCase() === this.type.replace(' ', '_').toLowerCase());

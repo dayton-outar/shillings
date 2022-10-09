@@ -411,14 +411,14 @@ export default {
         }
     },
     created() {
-        this.$store.dispatch('industries/fetch', {
+        this.$store.dispatch('industries/fetch', { // TODO: Remove after implementing Global cache
                 first: 100,
                 last: null,
                 next: null,
                 previous: null,
                 filter: { name: { startsWith: '' } },
                 ordering: [{ name: 'ASC' }]
-            });
+            })
     },
     computed: {
         ...mapState('industries', ['industries']),

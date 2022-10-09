@@ -1,164 +1,254 @@
 <template>
     <div class="column is-full">
         <h2 class="title">Financial Reports</h2>
-        <div class="box my-4 mx-1">
-            <div class="columns">
-                <div class="column is-full">
-                    <b-button 
-                        label="Create New Report"
-                        type="is-info"
-                        size="is-medium"
-                        @click.prevent="createReport" />
-                    
-                    <b-modal
-                        v-model="isModalActive"
-                        has-modal-card
-                        trap-focus
-                        :destroy-on-hide="false"
-                        aria-role="dialog"
-                        aria-label="Create New Report"
-                        close-button-aria-label="Close"
-                        full-screen
-                        aria-modal>
-                        <template #default="props">
-                            <div class="modal-card" style="width: auto">
-                                <header class="modal-card-head">
-                                    <p class="modal-card-title">Create New Report</p>
-                                </header>
-                                <section class="modal-card-body">
-                                    <!--  -->
-                                </section>
-                                <footer class="modal-card-foot">
-                                    <b-button
-                                        label="Close"
-                                        expanded
-                                        @click.prevent="props.close" />
-                                    <b-button
-                                        label="Save"
-                                        expanded
-                                        type="is-info"
-                                        @click.prevent="submit" />
-                                </footer>
+
+        <div class="columns">
+            <div class="column is-full">
+                <b-button 
+                    type="is-info" 
+                    size="is-medium" 
+                    icon-pack="fas" 
+                    icon-left="plus" 
+                    v-if="!isCreatePanelActive"
+                    @click.prevent="create" />
+                <financial-report :data="newReport" :editMode="false" v-if="isCreatePanelActive" @close="close" />
+            </div>
+        </div>
+
+        <div class="columns"><!-- TODO: This can be refactored into a reusable component-->
+            <div class="column is-full">
+                <b-collapse class="card" animation="slide" aria-id="contentIdForIndSearch">
+                    <template #trigger="props">
+                        <div class="card-header" 
+                            role="button" 
+                            aria-controls="contentIdForIndSearch"
+                            :aria-expanded="props.open">
+                            <p class="card-header-title">
+                                Search
+                            </p>
+                            <a class="card-header-icon">
+                                <b-icon pack="fas" :icon="props.open ? 'caret-down' : 'caret-up'"></b-icon>
+                            </a>
+                        </div>
+                    </template>
+
+                    <div class="card-content">
+                        <form @submit.prevent="get">
+                            <div class="columns">
+                                <div class="column">
+                                    <b-field>
+                                        <b-input 
+                                            v-model="searchWord" 
+                                            placeholder="Search ..." 
+                                            type="Search"
+                                            size="is-medium" 
+                                            expanded></b-input>
+                                        <div class="control">
+                                            <b-button class="button is-primary" size="is-medium" native-type="submit">
+                                                Search</b-button>
+                                        </div>
+                                    </b-field>
+                                </div>
                             </div>
+                        </form>
+                    </div>
+                </b-collapse>
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="column is-full">
+                <div class="box my-4 mx-1">
+                    <b-table
+                        ref="tbl"
+                        detailed 
+                        :show-detail-icon="false"
+                        :data="financialReports.nodes"
+                        icon-pack="fas"
+                        :total="financialReports.totalCount"
+                        :paginated="true"
+                        :pagination-simple="true"
+                        :per-page="page"
+                        :current-page.sync="currentPage"
+                        :sort-icon="sortIcon"
+                        :sort-icon-size="sortIconSize"
+                        :default-sort="sort"
+                        :backend-sorting="true"
+                        :backend-pagination="true"
+                        :striped="true"
+                        :hoverable="true"
+                        @sort="sortTable"
+                        @page-change="pageChange">
+
+                        <b-table-column field="no" label="#" sortable v-slot="props" width="5%">
+                            {{ props.row.no }}
+                        </b-table-column>
+
+                        <b-table-column field="description" label="Description" v-slot="props">
+                            {{ props.row.description }}
+                        </b-table-column>
+
+                        <b-table-column field="statementDate" label="Date" sortable v-slot="props">
+                            {{ formatDate(props.row.statementDate) }}
+                        </b-table-column>
+
+                        <b-table-column width="5%" v-slot="props">
+                            <template>
+                                <b-button
+                                    size="is-small"
+                                    type="is-info"
+                                    icon-pack="fas"
+                                    icon-right="pen-to-square"
+                                    @click.prevent="props.toggleDetails(props.row)" />
+                            </template>
+                        </b-table-column>
+
+                        <b-table-column width="5%" v-slot="props">
+                            <template>
+                                <b-button
+                                    size="is-small"
+                                    type="is-danger"
+                                    icon-pack="fas"
+                                    icon-right="trash"
+                                    @click.prevent="deleteRow(props.row)" />
+                            </template>
+                        </b-table-column>
+
+                        <template #detail="props">
+                            <article>
+                                <h5 class="title is-5">{{ props.row.description }}</h5>
+                                <financial-report :data="props.row" :editMode="true"
+                                    @close="$refs.tbl.toggleDetails(props.row)" />
+                            </article>
                         </template>
-                    </b-modal>
+
+                    </b-table>
+
+                    <b-loading :is-full-page="false" v-model="isLoading"></b-loading>
                 </div>
             </div>
-            <b-table
-                detailed
-                :show-detail-icon="false"
-                :data="financialReports"
-                :sort-icon="sortIcon" 
-                :sort-icon-size="sortIconSize"
-                :default-sort-direction="defaultSortDirection" 
-                :striped="true" 
-                :hoverable="true">
-
-                <b-table-column field="no" label="#" sortable v-slot="props" width="5%">
-                    {{ props.row.no }}
-                </b-table-column>
-
-                <b-table-column field="description" label="Description" sortable v-slot="props">
-                    {{ props.row.description }}
-                </b-table-column>
-
-                <b-table-column width="5%" v-slot="props">
-                    <template>
-                        <b-button
-                            size="is-small"
-                            type="is-info"
-                            icon-right="pencil"
-                            @click.prevent="props.toggleDetails(props.row)" />
-                    </template>
-                </b-table-column>
-
-                <b-table-column width="5%" v-slot="props">
-                    <template>
-                        <b-button
-                            size="is-small"
-                            type="is-danger"
-                            icon-right="delete"
-                            @click.prevent="deleteItem(props.row.no)" />
-                    </template>
-                </b-table-column>
-
-                <template #detail="props">
-                    <article>
-                        <h5 class="title is-5">{{ props.row.description }}</h5>
-                        
-                    </article>
-                </template>
-
-            </b-table>
-            <b-pagination
-                :total="total"
-                :current="currentPage"
-                :simple="true"
-                :per-page="page"
-                order="is-right"
-                @change="pageChange">
-            </b-pagination>
         </div>
     </div>
 </template>
 
 <script>
 import { mapState, mapActions } from 'vuex'
-//import Market from './Market.vue'
+import moment from 'moment'
+
+import FinancialReport from './FinancialReport.vue'
 
 export default {
     components: {
-        //'market-detail': Market,
+        'financial-report': FinancialReport,
     },
     data() {
         return {
-            defaultSortDirection: 'desc',
+            sort: ['statementDate', 'asc'],
             sortIcon: 'arrow-up',
             sortIconSize: 'is-small',
-            page: 20,
+            searchWord: '',
+            page: 10,
+            pageLengths: [10, 20, 50, 100],
             currentPage: 1,
-            total: 0,
-            isModalActive: false,
-            //newReport: {}
+            forward: true,
+            isCreatePanelActive: false,
+            isLoading: false,
+            newReport: {}
         }
     },
-    beforeCreate() {
-        this.$store.dispatch('fetchFinancialReports', {
-            first: 20,
-            last: null,
-            next: null,
-            previous: null
-        }).then((response) => {
-            this.total = response.totalCount;
-        });
+    created() {
+        this.get()
     },
     methods: {
-        ...mapActions(['fetchFinancialReports']),
-        createMarket() {
-            //this.newReport = {} // HACK: This is not refreshing the state. State is kept between events
+        ...mapActions('finances', ['fetch', 'delete']),
+        get() {
+            this.isLoading = true
 
-            this.isModalActive = true
+            this.fetch({
+                first: this.page,
+                last: null,
+                next: null,
+                previous: null,
+                filter: { company: { name: { startsWith: this.searchWord } } },
+                ordering: [{ [this.sort[0]]: this.sort[1].toUpperCase() }]
+            }).then(() => {
+                this.isLoading = false
+                this.currentPage = 1
+            }).catch(err => {
+                this.isLoading = false
+                
+                this.$buefy.dialog.alert({
+                    title: `Financial Reports`,
+                    message: `${err.message}`,
+                    confirmText: 'OK',
+                    type: 'is-danger',
+                    hasIcon: true,
+                    iconPack: 'fas',
+                    icon: 'bug',
+                    onConfirm: () => {
+                        this.isLoading = false
+                    }
+                })
+            })
         },
-        deleteItem() { //code
-            // this.deleteCompany(code)
-            //     .then(console.log)
-            //     .catch(console.error);
+        create() {
+            this.isCreatePanelActive = true
         },
-        pageChange() { //page // Credit: https://github.com/buefy/buefy/issues/50
-            // this.fetchFullCompanies({
-            //     first: (page > this.currentPage) ? this.page : null,
-            //     last: (page < this.currentPage) ? this.page : null,
-            //     next: (page > this.currentPage) ? this.fullCompanies.pageInfo.endCursor : null,
-            //     previous: (page < this.currentPage) ? this.fullCompanies.pageInfo.startCursor : null
-            // })
-            // this.currentPage = page
+        close(e) {
+            this.isCreatePanelActive = false
+
+            if (e === 'created') {
+                //this.get()
+            }
         },
-        submit() {
-            //this.$refs.frmMarket.submit()
+        sortTable(field, order) {
+            this.sort = [field, order]
+
+            this.get()
+        },
+        pageChange(page) {
+            this.isLoading = true
+            
+            this.forward = (page > this.currentPage)
+
+            this.fetch({
+                first: this.forward ? this.page : null,
+                last: !this.forward ? this.page : null,
+                next: this.forward ? this.financialReports.pageInfo.endCursor : null,
+                previous: !this.forward ? this.financialReports.pageInfo.startCursor : null,
+                filter: { name: { startsWith: this.searchWord } },
+                ordering: [{ [this.sort[0]]: this.sort[1].toUpperCase() }]
+            }).then(() => {
+                this.isLoading = false
+                this.currentPage = page
+            }).catch(err => {
+                this.isLoading = false
+                
+                this.$buefy.dialog.alert({
+                    title: `Financial Reports`,
+                    message: `${err.message}`,
+                    confirmText: 'OK',
+                    type: 'is-danger',
+                    hasIcon: true,
+                    iconPack: 'fas',
+                    icon: 'triangle-exclamation',
+                    onConfirm: () => {
+                        this.isLoading = false
+                    }
+                })
+            })
+        },
+        changeLen(l) {
+            this.page = l
+
+            this.get()
+        },
+        formatDate(stmtDate) {
+            return moment(stmtDate).format('MMM DD, YYYY')
         }
     },
     computed: {
-        ...mapState(['financialReports'])
+        ...mapState('finances', ['financialReports'])
     }
 }
 

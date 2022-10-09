@@ -5,7 +5,7 @@ import mutations from '../mutations'
 export default {
   namespaced: true,
   state: {
-    fullCompanies: {
+    companies: {
       pageInfo: {},
       totalCount: 0,
       nodes: []      
@@ -73,7 +73,7 @@ export default {
           })
 
       commit('add', {
-        type: 'fullCompanies',
+        type: 'companies',
         pk: 'code',
         payload: response.data.createCompany.company
       })
@@ -143,7 +143,7 @@ export default {
       })
         
       commit('set', {
-        type: 'fullCompanies',
+        type: 'companies',
         pk: 'code',
         payload: response.data.companies
       })
@@ -210,7 +210,7 @@ export default {
           })
 
       commit('modify', {
-        type: 'fullCompanies',
+        type: 'companies',
         pk: 'code',
         payload: response.data.updateCompany.company
       })
@@ -234,7 +234,7 @@ export default {
       if (response.data.deleteCompany.boolean)
       {
         commit('remove', {
-          type: 'fullCompanies',
+          type: 'companies',
           pk: 'code',
           payload: company
         })

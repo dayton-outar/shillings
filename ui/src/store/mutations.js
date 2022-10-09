@@ -257,17 +257,5 @@ export default {
     flushPortfolio(state) {
       state.portfolioHoldings = []
       localStorage.removeItem('my-portfolio')
-    },
-    updateReportCompany(state, payload) {
-      state.financialReports.company = payload
-    },
-    updateReportPeriod(state, payload) {
-      state.financialReports.period = payload
-    },
-    updateReportDate(state, payload) {
-      state.financialReports.statementDate = payload.toJSON()
-    },
-    updateReportIsAudit(state, payload) {
-      state.financialReports.isAudited = payload
     }
 }
