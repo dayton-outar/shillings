@@ -167,7 +167,7 @@ export default {
         ...mapState('companies', ['companies']),
         ...mapState(['isItemsValid']),
         title() {
-            return this.editMode ? `Update Financial Report: ${this.report.description}` : `Create Financial Report`
+            return this.editMode ? `Update: ${this.report.description}` : `Create Financial Report`
         }
     },
     methods: {

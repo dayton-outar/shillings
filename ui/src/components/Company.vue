@@ -431,7 +431,7 @@ export default {
             }
         },
         title() {
-            return this.editMode ? `Update Company: ${this.companyData.name}` : `Create Company`
+            return this.editMode ? `Update: ${this.companyData.name}` : `Create Company`
         }
     },
     methods: {

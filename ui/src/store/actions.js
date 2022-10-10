@@ -348,30 +348,6 @@ export default {
     flushPortfolio({ commit }) {
       commit('flushPortfolio')
     },
-    addStatementItem({ commit }, payload) {
-      commit('addStatementItem', payload)
-    },
-    updateStatementItem({ commit }, payload) {
-      commit('updateStatementItem', payload)
-    },
-    removeStatementItem({ commit }, payload) {
-      commit('removeStatementItem', payload)
-    },
-    closeStatementItem({ commit }, payload) {
-      commit('closeStatementItem', payload)
-    },
-    openStatementItem({ commit }, payload) {
-      commit('openStatementItem', payload)
-    },
-    prepStatementItems( { commit } ) {
-      commit('preppedStatementItems')
-    },
-    validateStatementItems( { commit } ) {
-      commit('validateStatementItems')
-    },
-    validateStatementItem( { commit }, payload ) {
-      commit('validateStatementItem', payload)
-    },
     saveFinancialReport({ commit }, payload) {
       commit('saveFinancialReport', payload)
     }

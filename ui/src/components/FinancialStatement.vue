@@ -283,15 +283,34 @@ export default {
             return state === 'Opened';
         },
         getSectionAssays(sectionName) {
-            let ias = -1;
+            let ias = -1
             if (sectionName) {
-                ias = this.assays.findIndex(as => as.sectional.toLowerCase() === sectionName.replace(' ', '_').toLowerCase());
+                ias = this.assays.findIndex(as => as.sectional.toLowerCase() === sectionName.replace(' ', '_').toLowerCase())
             }
 
-            return ias > -1 ? this.assays[ias].assay : [];
+            return ias > -1 ? this.assays[ias].assay : []
         },
         openItem(sequence) {
-            this.openStatementItem({ type: this.type.replace(' ', '_').toUpperCase(), sequence: sequence });            
+            const item = this.data.find(p => p.type.toLowerCase() === this.type.replace(' ', '_').toLowerCase() && p.sequence === sequence)
+            if (item) {
+                item.state = 'Opened';
+                item.vDesc = {
+                type: '',
+                message: ''
+                };
+                item.vSec = {
+                type: '',
+                message: ''
+                };
+                item.vAnl = {
+                type: '',
+                message: ''
+                };
+                item.vAmt = {
+                type: '',
+                message: ''
+                };
+            }
         },
         closeItem(sequence) {
             this.validateStatementItem({ type: this.type.replace(' ', '_').toUpperCase(), sequence: sequence })

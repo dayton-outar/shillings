@@ -115,11 +115,10 @@
                         </b-table-column>
 
                         <template #detail="props">
-                            <article>
-                                <h5 class="title is-5">{{ props.row.description }}</h5>
-                                <financial-report :data="props.row" :editMode="true"
-                                    @close="$refs.tbl.toggleDetails(props.row)" />
-                            </article>
+                            <financial-report 
+                                :data="props.row" 
+                                :editMode="true"
+                                @close="$refs.tbl.toggleDetails(props.row)" />
                         </template>
 
                     </b-table>

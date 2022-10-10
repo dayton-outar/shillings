@@ -109,7 +109,7 @@ export default {
     },
     computed: {
         title() {
-            return this.editMode ? `Update Industry: ${this.industryData.name}` : `Create Industry`
+            return this.editMode ? `Update: ${this.industryData.name}` : `Create Industry`
         }
     },
     methods: {

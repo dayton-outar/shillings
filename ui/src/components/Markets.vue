@@ -47,7 +47,7 @@
             <b-table
                 detailed
                 :show-detail-icon="false"
-                :data="markets"
+                :data="markets.node"
                 :sort-icon="sortIcon" 
                 :sort-icon-size="sortIconSize"
                 :default-sort-direction="defaultSortDirection" 
@@ -83,21 +83,10 @@
                 </b-table-column>
 
                 <template #detail="props">
-                    <article>
-                        <h5 class="title is-5">{{ props.row.name }}</h5>
-                        <market-detail :marketData="props.row" :editMode="true" />
-                    </article>
+                    <market-detail :marketData="props.row" :editMode="true" />
                 </template>
 
             </b-table>
-            <b-pagination
-                :total="total"
-                :current="currentPage"
-                :simple="true"
-                :per-page="page"
-                order="is-right"
-                @change="pageChange">
-            </b-pagination>
         </div>
     </div>
 </template>
@@ -133,7 +122,7 @@ export default {
         });
     },
     methods: {
-        ...mapActions(['fetchMarkets']),
+        ...mapActions('markets', ['fetch', 'delete']),
         createMarket() {
             this.newCompany = {
                 code: '',
@@ -162,7 +151,7 @@ export default {
         }
     },
     computed: {
-        ...mapState(['markets'])
+        ...mapState('markets', ['markets'])
     }
 }
 
