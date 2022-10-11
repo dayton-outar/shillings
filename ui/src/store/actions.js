@@ -2,28 +2,6 @@ import gql from 'graphql-tag'
 import graphQlClient from '../apollo'
 
 export default {
-    async fetchMarkets({ commit }) {
-      const response = await graphQlClient.query({
-        query: gql`query {
-          markets (
-            first: 100
-            order: { name: ASC}
-            
-          ) {
-            nodes {
-              code,
-              name,
-              company {
-                code,
-                name
-              }
-            }
-          }
-        }`
-      })
-      
-      commit('setMarkets', response.data.markets.nodes)
-    },
     async fetchMarketIndices({ commit }) {
       const response = await graphQlClient.query({
         query: gql`query {

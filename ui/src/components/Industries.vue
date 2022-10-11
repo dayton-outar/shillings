@@ -16,55 +16,11 @@
             
             <div class="columns">
                 <div class="column is-full">
-                    <b-collapse 
-                        class="card" 
-                        animation="slide" 
-                        aria-id="contentIdForIndSearch">
-                        <template #trigger="props">
-                            <div
-                                class="card-header"
-                                role="button"
-                                aria-controls="contentIdForIndSearch"
-                                :aria-expanded="props.open">
-                                <p class="card-header-title">
-                                    Search
-                                </p>
-                                <a class="card-header-icon">
-                                    <b-icon
-                                        pack="fas"
-                                        :icon="props.open ? 'caret-down' : 'caret-up'">
-                                    </b-icon>
-                                </a>
-                            </div>
-                        </template>
-
-                        <div class="card-content">
-                            <form @submit.prevent="get">
-                                <div class="columns">
-                                    <div class="column">
-                                        <b-field>
-                                            <b-input 
-                                                v-model="searchWord"
-                                                placeholder="Search ..." 
-                                                type="Search" 
-                                                size="is-medium"
-                                                expanded></b-input>
-                                            <div class="control">
-                                                <b-button 
-                                                    class="button is-primary"
-                                                    size="is-medium"
-                                                    native-type="submit">Search</b-button>
-                                            </div>
-                                        </b-field>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </b-collapse>
+                    <search-bar @submit="find" />
                 </div>
             </div>
 
-            <nav class="level">
+            <nav class="level"><!-- TODO: Create Component to Reuse-->
                 <div class="level-left">
                     <div class="level-item">
                         <b-dropdown
@@ -162,11 +118,13 @@
 
 <script>
 import { mapState, mapActions } from 'vuex'
+import SearchBar from './SearchBar.vue'
 import Industry from './Industry.vue'
 
 export default {
     components: {
         'industry-detail': Industry,
+        'search-bar': SearchBar
     },
     data() {
         return {
@@ -221,6 +179,10 @@ export default {
                     }
                 })
             })
+        },
+        find(q) {
+            this.searchWord = q.searchWord
+            this.get()
         },
         create() {
             this.newIndustry.no += 1
