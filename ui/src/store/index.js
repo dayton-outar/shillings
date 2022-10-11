@@ -8,6 +8,9 @@ import mutations from './mutations'
 
 import companies from './companies'
 import industries from './industries'
+import markets from './markets'
+import indices from './indices'
+import stocks from './stocks'
 import finances from './finances'
 
 Vue.use(Vuex)
@@ -18,9 +21,12 @@ export const store = new Vuex.Store({
     getters,
     mutations,
     actions,
-    modules: {
-        finances,
+    modules: {        
         companies,
-        industries
+        industries,
+        markets,
+        indices,
+        stocks,
+        finances
     }
 })
