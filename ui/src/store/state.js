@@ -1,6 +1,5 @@
 export default {
     marketIndices: [],
-    stocks: [],
     fullStocks: [],
     totalTradings: null,
     portfolioHoldings: [],

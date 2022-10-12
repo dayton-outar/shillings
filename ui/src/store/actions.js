@@ -31,25 +31,6 @@ export default {
       
       commit('setMarketIndices', response.data.marketIndices.nodes)
     },
-    async fetchStocks({ commit }) {
-      const response = await graphQlClient.query({
-        query: gql`query {
-          stocks (
-            first: 100
-            order: { name: ASC}
-            
-          ) {
-            nodes {
-              code,
-              name,
-              created
-            }
-          }
-        }`
-      })
-      
-      commit('setStocks', response.data.stocks.nodes)
-    },
     async fetchTotalStockTrades({ commit }, request) {
       const response = await graphQlClient.query({
         query: gql`query Get($companyCode: String, $begin: DateTime!, $end: DateTime!) {
