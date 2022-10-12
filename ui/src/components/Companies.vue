@@ -24,31 +24,7 @@
         <div class="columns">
             <div class="column is-full">
                 <div class="box my-4 mx-1">
-                    <nav class="level">
-                        <div class="level-left">
-                            <div class="level-item">
-                                <b-dropdown 
-                                    v-model="page" 
-                                    aria-role="list" 
-                                    @change="changeLen">
-                                    <template #trigger>
-                                        <b-button :label="page.toString()" type="is-info" />
-                                    </template>
-
-                                    <b-dropdown-item v-for="(len, index) in pageLengths" :key="index" :value="len"
-                                        aria-role="listitem">
-                                        {{ len }}
-                                    </b-dropdown-item>
-                                </b-dropdown>
-                            </div>
-                        </div>
-
-                        <div class="level-right">
-                            <div class="level-item">
-                                <b-button type="is-info" icon-pack="fas" icon-left="refresh" @click.prevent="get" />
-                            </div>
-                        </div>
-                    </nav>
+                    <table-tool-bar :page="page" :pageLengths="pageLengths" @refresh="get" @change="changeLen" />
 
                     <b-table 
                         ref="tbl" 
@@ -129,12 +105,14 @@ import { mapState, mapActions } from 'vuex'
 import moment from 'moment'
 
 import SearchBar from './SearchBar.vue'
+import TableToolBar from './TableToolBar'
 import Company from './Company.vue'
 
 export default {
     components: {
         'company-detail': Company,
-        'search-bar': SearchBar
+        'search-bar': SearchBar,
+        'table-tool-bar': TableToolBar
     },
     data() {
         return {
@@ -311,6 +289,7 @@ export default {
             })
         },
         changeLen(l) {
+            console.log( l )
             this.page = l
 
             this.get()
