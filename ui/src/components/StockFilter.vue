@@ -28,7 +28,7 @@
             </template>
             
             <b-dropdown-item aria-role="listitem" 
-                v-for="stock in stocks" 
+                v-for="stock in stocks.nodes" 
                 :key="stock.code"
                 :value="stock">
               {{stock.name}}
@@ -47,7 +47,14 @@ import moment from 'moment'
 export default {
   name: 'StockFilter',
   beforeCreate() {
-    this.$store.dispatch('fetchStocks')
+    this.$store.dispatch('stocks/fetch', {
+                first: 100,
+                last: null,
+                next: null,
+                previous: null,
+                filter: { name: { startsWith: '' } },
+                ordering: [{ name: 'ASC' }]
+            })
   },
   methods: {
     dateChanged() {
@@ -62,7 +69,7 @@ export default {
     }
   },
   computed: {
-    ...mapState(['stocks'])
+    ...mapState('stocks', ['stocks'])
   },
   data() {
     return {

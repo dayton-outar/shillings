@@ -30,16 +30,6 @@ export default {
     },
     setMarketIndices(state, payload) {
       state.marketIndices = payload
-    },    
-    setStock(state, payload) {
-      var ix = state.stocks.findIndex(s => s.code === payload.code);
-      state.stocks[ix] = payload;
-    },
-    setStocks(state, payload) {
-      state.stocks = payload
-    },
-    setFullStocks(state, payload) {
-      state.fullStocks = payload
     },
     setSections(state, payload) {
       state.sections = payload
