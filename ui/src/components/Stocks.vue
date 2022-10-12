@@ -1,105 +1,279 @@
 <template>
     <div class="column is-full">
         <h2 class="title">Stocks</h2>
-        <div class="box my-4 mx-1">
-            <b-table
-                detailed
-                :show-detail-icon="false"
-                :data="fullStocks.nodes"
-                :sort-icon="sortIcon" 
-                :sort-icon-size="sortIconSize"
-                :default-sort-direction="defaultSortDirection" 
-                :striped="true" 
-                :hoverable="true">
-            
-                <b-table-column field="code" label="Code" sortable v-slot="props" width="5%">
-                    {{ props.row.code }}
-                </b-table-column>
 
-                <b-table-column field="name" label="Name" sortable v-slot="props">
-                    {{ props.row.name }}
-                </b-table-column>
+        <div class="columns">
+            <div class="column is-full">
+                <b-button 
+                    type="is-info"
+                    size="is-medium"
+                    icon-pack="fas"
+                    icon-left="plus"
+                    v-if="!isCreatePanelActive"
+                    @click.prevent="create" />
+                <stock-detail :stockData="newStock" :editMode="false" v-if="isCreatePanelActive" @close="close" />
+            </div>
+        </div>
 
-                <b-table-column width="5%" v-slot="props">
-                    <template>
-                        <b-button
-                            size="is-small"
-                            type="is-info"
-                            icon-right="pencil"
-                            @click.prevent="props.toggleDetails(props.row)" />
-                    </template>
-                </b-table-column>
+        <div class="columns">
+            <div class="column is-full">
+                <search-bar @submit="find" />
+            </div>
+        </div>
 
-                <b-table-column width="5%">
-                    <template>
-                        <b-button
-                            size="is-small"
-                            type="is-danger"
-                            icon-right="delete" />
-                    </template>
-                </b-table-column>
+        <div class="columns">
+            <div class="column is-full">
+                <div class="box my-4 mx-1">
+                    <table-tool-bar :page="page" :pageLengths="pageLengths" @refresh="get" @change="changeLen" />
 
-                <template #detail="props">
-                    <article>
-                        <h5 class="title is-5">{{ props.row.name }}</h5>
-                        <stock-detail :stockData="props.row" :editMode="true" />
-                    </article>
-                </template>
+                    <b-table
+                        ref="tbl"
+                        detailed
+                        :show-detail-icon="false"
+                        :data="stocks.nodes"
+                        icon-pack="fas"
+                        :total="stocks.totalCount"
+                        :paginated="true"
+                        :pagination-simple="true"
+                        :per-page="page"
+                        :current-page.sync="currentPage"
+                        :sort-icon="sortIcon"
+                        :sort-icon-size="sortIconSize"
+                        :default-sort="sort"
+                        :backend-sorting="true"
+                        :backend-pagination="true"
+                        :striped="true"
+                        :hoverable="true"
+                        @sort="sortTable"
+                        @page-change="pageChange">
+                    
+                        <b-table-column field="code" label="Code" sortable v-slot="props" width="5%">
+                            {{ props.row.code }}
+                        </b-table-column>
 
-            </b-table>
-            <b-pagination
-                :total="total"
-                :current="currentPage"
-                :simple="true"
-                order="is-right"
-                @change="pageChange">
-            </b-pagination>
+                        <b-table-column field="name" label="Name" sortable v-slot="props">
+                            {{ props.row.name }}
+                        </b-table-column>
+
+                        <b-table-column width="5%" v-slot="props">
+                            <template>
+                                <b-button
+                                    size="is-small"
+                                    type="is-info"
+                                    icon-right="pencil"
+                                    @click.prevent="props.toggleDetails(props.row)" />
+                            </template>
+                        </b-table-column>
+
+                        <b-table-column width="5%">
+                            <template>
+                                <b-button
+                                    size="is-small"
+                                    type="is-danger"
+                                    icon-right="delete" />
+                            </template>
+                        </b-table-column>
+
+                        <template #detail="props">
+                            <article>
+                                <h5 class="title is-5">{{ props.row.name }}</h5>
+                                <stock-detail :stockData="props.row" :editMode="true" />
+                            </article>
+                        </template>
+
+                    </b-table>
+                </div>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
 import { mapState, mapActions } from 'vuex'
+
+import TableToolBar from './TableToolBar'
+import SearchBar from './SearchBar.vue'
 import Stock from './Stock.vue'
 
 export default {
     components: {
         'stock-detail': Stock,
+        'search-bar': SearchBar,
+        'table-tool-bar': TableToolBar
     },
     data() {
         return {
-            defaultSortDirection: 'desc',
+            sort: ['name', 'asc'],
             sortIcon: 'arrow-up',
             sortIconSize: 'is-small',
-            page: 20,
+            searchWord: '',
+            page: 10,
+            pageLengths: [10, 20, 50, 100],
             currentPage: 1,
-            total: 0
+            forward: true,
+            isCreatePanelActive: false,
+            isLoading: false,
+            newStock: {
+                code: '',
+                name: '',
+                company: {}
+            }
         }
     },
-    beforeCreate() {
-        this.$store.dispatch('fetchFullStocks', {
-            first: 20,
-            last: null,
-            next: null,
-            previous: null
-        }).then(() => {
-            this.total = this.fullStocks.totalCount;
-        });
-    },
-    computed: {
-        ...mapState(['fullStocks'])
+    created() {
+        this.get()
     },
     methods: {
-        ...mapActions(['fetchFullStocks']),
-        pageChange(page) { // Credit: https://github.com/buefy/buefy/issues/50
-            this.fetchFullStocks({
-                first: (page > this.currentPage) ? this.page : null,
-                last: (page < this.currentPage) ? this.page : null,
-                next: (page > this.currentPage) ? this.fullStocks.pageInfo.endCursor : null,
-                previous: (page < this.currentPage) ? this.fullStocks.pageInfo.startCursor : null
+        ...mapActions('stocks', ['fetch', 'delete']),
+        get() {
+            this.isLoading = true
+
+            this.fetch({
+                first: this.page,
+                last: null,
+                next: null,
+                previous: null,
+                filter: { name: { startsWith: this.searchWord } },
+                ordering: [{ [this.sort[0]]: this.sort[1].toUpperCase() }]
+            }).then(() => {
+                this.isLoading = false
+                this.currentPage = 1
+            }).catch(err => {
+                this.isLoading = false
+                
+                this.$buefy.dialog.alert({
+                    title: `Stocks`,
+                    message: `${err.message}`,
+                    confirmText: 'OK',
+                    type: 'is-danger',
+                    hasIcon: true,
+                    iconPack: 'fas',
+                    icon: 'bug',
+                    onConfirm: () => {
+                        this.isLoading = false
+                    }
+                })
             })
-            this.currentPage = page
+        },
+        find(q) {
+            this.searchWord = q.searchWord
+            this.get()
+        },
+        create() {
+            this.isCreatePanelActive = true
+        },
+        close(e) {            
+            this.isCreatePanelActive = false
+
+            if (e === 'created') {
+                //this.get()
+            }
+        },
+        deleteRow(row) {
+
+            this.$buefy.dialog.confirm({
+                title: `Delete Stock`,
+                message: `<p>Are you sure you want to <b>delete</b> ${row.name}?</p><p>This action cannot be undone.</p>`,
+                confirmText: 'OK',
+                type: 'is-warning',
+                hasIcon: true,
+                iconPack: 'fas',
+                icon: 'circle-exclamation',
+                onConfirm: () => {
+                    this.isLoading = true
+                    
+                    this.delete(row)
+                        .then(success => {
+                            this.isLoading = false
+                            
+                            if (success) {
+                                this.$buefy.dialog.alert({
+                                    title: `Delete Stock`,
+                                    message: `Successfully deleted ${row.name}`,
+                                    confirmText: 'OK',
+                                    type: 'is-success',
+                                    hasIcon: true,
+                                    iconPack: 'fas',
+                                    icon: 'circle-check',
+                                    onConfirm: () => {                                
+                                        this.$emit('close')
+                                        //this.get()
+                                    }
+                                })
+                            } else {
+                                this.$buefy.dialog.alert({
+                                    title: `Delete Stock`,
+                                    message: `Failed to delete ${row.name}`,
+                                    confirmText: 'OK',
+                                    type: 'is-danger',
+                                    hasIcon: true,
+                                    iconPack: 'fas',
+                                    icon: 'bomb'
+                                })
+                            }
+                        })
+                        .catch(err => {    
+                            this.isLoading = false
+
+                            this.$buefy.dialog.alert({
+                                title: `Delete Stock`,
+                                message: `${err.message}`,
+                                confirmText: 'OK',
+                                type: 'is-danger',
+                                hasIcon: true,
+                                iconPack: 'fas',
+                                icon: 'bug'
+                            })
+                        })
+                }
+            })
+            
+        },
+        sortTable(field, order) {
+            this.sort = [field, order]
+
+            this.get()
+        },
+        pageChange(page) {
+            this.isLoading = true
+            
+            this.forward = (page > this.currentPage)
+
+            this.fetch({
+                first: this.forward ? this.page : null,
+                last: !this.forward ? this.page : null,
+                next: this.forward ? this.stocks.pageInfo.endCursor : null,
+                previous: !this.forward ? this.stocks.pageInfo.startCursor : null,
+                filter: { name: { startsWith: this.searchWord } },
+                ordering: [{ [this.sort[0]]: this.sort[1].toUpperCase() }]
+            }).then(() => {
+                this.isLoading = false
+                this.currentPage = page
+            }).catch(err => {
+                this.isLoading = false
+                
+                this.$buefy.dialog.alert({
+                    title: `Markets`,
+                    message: `${err.message}`,
+                    confirmText: 'OK',
+                    type: 'is-danger',
+                    hasIcon: true,
+                    iconPack: 'fas',
+                    icon: 'triangle-exclamation',
+                    onConfirm: () => {
+                        this.isLoading = false
+                    }
+                })
+            })
+        },
+        changeLen(l) {
+            this.page = l
+
+            this.get()
         }
+    },
+    computed: {
+        ...mapState('stocks', ['stocks'])
     }
 }
 

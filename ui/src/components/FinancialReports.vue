@@ -24,6 +24,8 @@
         <div class="columns">
             <div class="column is-full">
                 <div class="box my-4 mx-1">
+                    <table-tool-bar :page="page" :pageLengths="pageLengths" @refresh="get" @change="changeLen" />
+                    
                     <b-table
                         ref="tbl"
                         detailed 
@@ -99,13 +101,15 @@
 import { mapState, mapActions } from 'vuex'
 import moment from 'moment'
 
+import TableToolBar from './TableToolBar'
 import SearchBar from './SearchBar.vue'
 import FinancialReport from './FinancialReport.vue'
 
 export default {
     components: {
         'financial-report': FinancialReport,
-        'search-bar': SearchBar
+        'search-bar': SearchBar,
+        'table-tool-bar': TableToolBar
     },
     data() {
         return {

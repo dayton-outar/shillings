@@ -20,111 +20,88 @@
                 </div>
             </div>
 
-            <nav class="level"><!-- TODO: Create Component to Reuse-->
-                <div class="level-left">
-                    <div class="level-item">
-                        <b-dropdown
-                            v-model="page"
-                            aria-role="list"
-                            @change="changeLen">
-                            <template #trigger>
-                                <b-button
-                                    :label="page.toString()"
-                                    type="is-info" />
+            <div class="columns">
+                <div class="column is-full">
+                    <div class="box my-4 mx-1">
+                        <table-tool-bar :page="page" :pageLengths="pageLengths" @refresh="get" @change="changeLen" />
+
+                        <b-table
+                            ref="tbl"
+                            detailed
+                            :show-detail-icon="false"
+                            :data="industries.nodes"
+                            icon-pack="fas"
+                            :total="industries.totalCount"
+                            :paginated="true"
+                            :pagination-simple="true"
+                            :per-page="page"
+                            :current-page.sync="currentPage"
+                            :sort-icon="sortIcon" 
+                            :sort-icon-size="sortIconSize"
+                            :default-sort="sort"
+                            :backend-sorting="true"
+                            :backend-pagination="true"
+                            :striped="true" 
+                            :hoverable="true"
+                            @sort="sortTable"
+                            @page-change="pageChange">
+
+                            <b-table-column field="name" label="Name" sortable v-slot="props">
+                                <a :href="props.row.wiki" target="_blank">{{ props.row.name }}</a>
+                            </b-table-column>
+
+                            <b-table-column width="5%" v-slot="props">
+                                <template>
+                                    <b-button
+                                        size="is-small"
+                                        type="is-info"
+                                        icon-pack="fas"
+                                        icon-right="pen-to-square"
+                                        @click.prevent="props.toggleDetails(props.row)" />
+                                </template>
+                            </b-table-column>
+
+                            <b-table-column width="5%" v-slot="props">
+                                <template>
+                                    <b-button
+                                        size="is-small"
+                                        type="is-danger"
+                                        icon-pack="fas"
+                                        icon-right="trash"
+                                        @click.prevent="deleteRow(props.row)" />
+                                </template>
+                            </b-table-column>
+
+                            <template slot="detail" slot-scope="props">
+                                <industry-detail :industryData="props.row" :editMode="true" @close="$refs.tbl.toggleDetails(props.row)" />
                             </template>
 
-                            <b-dropdown-item
-                                v-for="(len, index) in pageLengths"
-                                :key="index"
-                                :value="len" aria-role="listitem">
-                                {{ len }}
-                            </b-dropdown-item>
-                        </b-dropdown>
+                            <template #empty>
+                                <div class="has-text-centered">No records</div>
+                            </template>
+
+                        </b-table>
+
+                        <b-loading :is-full-page="false" v-model="isLoading"></b-loading>
                     </div>
                 </div>
-
-                <div class="level-right">
-                    <div class="level-item">
-                        <b-button
-                            type="is-info"
-                            icon-pack="fas"
-                            icon-left="refresh"
-                            @click.prevent="get" />
-                    </div>
-                </div>
-            </nav>
-
-            <b-table
-                ref="tbl"
-                detailed
-                :show-detail-icon="false"
-                :data="industries.nodes"
-                icon-pack="fas"
-                :total="industries.totalCount"
-                :paginated="true"
-                :pagination-simple="true"
-                :per-page="page"
-                :current-page.sync="currentPage"
-                :sort-icon="sortIcon" 
-                :sort-icon-size="sortIconSize"
-                :default-sort="sort"
-                :backend-sorting="true"
-                :backend-pagination="true"
-                :striped="true" 
-                :hoverable="true"
-                @sort="sortTable"
-                @page-change="pageChange">
-
-                <b-table-column field="name" label="Name" sortable v-slot="props">
-                    <a :href="props.row.wiki" target="_blank">{{ props.row.name }}</a>
-                </b-table-column>
-
-                <b-table-column width="5%" v-slot="props">
-                    <template>
-                        <b-button
-                            size="is-small"
-                            type="is-info"
-                            icon-pack="fas"
-                            icon-right="pen-to-square"
-                            @click.prevent="props.toggleDetails(props.row)" />
-                    </template>
-                </b-table-column>
-
-                <b-table-column width="5%" v-slot="props">
-                    <template>
-                        <b-button
-                            size="is-small"
-                            type="is-danger"
-                            icon-pack="fas"
-                            icon-right="trash"
-                            @click.prevent="deleteRow(props.row)" />
-                    </template>
-                </b-table-column>
-
-                <template slot="detail" slot-scope="props">
-                    <industry-detail :industryData="props.row" :editMode="true" @close="$refs.tbl.toggleDetails(props.row)" />
-                </template>
-
-                <template #empty>
-                    <div class="has-text-centered">No records</div>
-                </template>
-
-            </b-table>
-
-            <b-loading :is-full-page="false" v-model="isLoading"></b-loading>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
 import { mapState, mapActions } from 'vuex'
+
+import TableToolBar from './TableToolBar'
 import SearchBar from './SearchBar.vue'
 import Industry from './Industry.vue'
 
 export default {
     components: {
         'industry-detail': Industry,
-        'search-bar': SearchBar
+        'search-bar': SearchBar,
+        'table-tool-bar': TableToolBar
     },
     data() {
         return {
