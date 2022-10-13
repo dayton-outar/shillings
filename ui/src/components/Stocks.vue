@@ -60,7 +60,8 @@
                                 <b-button
                                     size="is-small"
                                     type="is-info"
-                                    icon-right="pencil"
+                                    icon-pack="fas"
+                                    icon-right="pen-to-square"
                                     @click.prevent="props.toggleDetails(props.row)" />
                             </template>
                         </b-table-column>
@@ -70,18 +71,21 @@
                                 <b-button
                                     size="is-small"
                                     type="is-danger"
-                                    icon-right="delete" />
+                                    icon-pack="fas"
+                                    icon-right="trash" />
                             </template>
                         </b-table-column>
 
                         <template #detail="props">
                             <article>
                                 <h5 class="title is-5">{{ props.row.name }}</h5>
-                                <stock-detail :stockData="props.row" :editMode="true" />
+                                <stock-detail :stockData="props.row" :editMode="true" @close="$refs.tbl.toggleDetails(props.row)" />
                             </article>
                         </template>
 
                     </b-table>
+
+                    <b-loading :is-full-page="false" v-model="isLoading"></b-loading>
                 </div>
             </div>
         </div>

@@ -13,21 +13,49 @@ export default {
   },
   mutations,
   actions: {
-    async create({ commit }, market) {
+    async create({ commit }, stock) {
       const response = await graphQlClient.mutate({
-        mutation: gql`mutation CreateMarket($input: CreateMarketInput!) {
-          createMarket ( input: $input) {
-            market {
+        mutation: gql`mutation CreateStock($input: CreateStockInput!) {
+          createStock ( input: $input) {
+            stock {
+              code,
+              name,
+              currency,
+              stockType,
+              issuedShares,
+              outstandingShares,
+              isListed,
+              created,
+              company {
                 code,
+                name,
+                logo {
+                  no
+                },
+                files {
+                  no
+                }
+              },
+              indices {
+                no,
                 name
+              }
             }
           }
         }`,
         variables: {
           input: {
-            market: {
-                code: market.code,
-                name: market.name
+            stock: {
+              code: stock.code,
+              name: stock.name,
+              currency: stock.currency,
+              stockType: stock.stockType,
+              issuedShares: stock.issuedShares,
+              outstandingShares: stock.outstandingShares,
+              company: stock.company,
+              isListed: stock.isListed,
+              created: stock.created,
+              indices: stock.indices
             }
           }
         }
@@ -36,10 +64,10 @@ export default {
       commit('add', {
         type: 'stocks',
         pk: 'code',
-        payload: response.data.createMarket.market
+        payload: response.data.createStock.stock
       })
 
-      return Promise.resolve(response.data.createIndustry.industry)
+      return Promise.resolve(response.data.createStock.stock)
     },
     async fetch({ commit }, request) {
       const response = await graphQlClient.query({
@@ -119,21 +147,61 @@ export default {
 
       return Promise.resolve(response.data.stocks)
     },
-    async update({ commit }, market) {
+    async update({ commit }, stock) {
       const response = await graphQlClient.mutate({
-        mutation: gql`mutation UpdateMarket($input: UpdateMarketInput!) {
-          updateMarket ( input: $input) {
-            market {
+        mutation: gql`mutation UpdateStock($input: UpdateStockInput!) {
+          updateStock ( input: $input) {
+            stock {
+              code,
+              name,
+              currency,
+              stockType,
+              issuedShares,
+              outstandingShares,
+              isListed,
+              created,
+              company {
                 code,
+                name,
+                logo {
+                  no
+                },
+                files {
+                  no
+                }
+              },
+              indices {
+                no,
                 name
+              }
             }
           }
         }`,
         variables: {
           input: {
-            market: {
-                code: market.code,
-                name: market.name
+            stock: {
+              code: stock.code,
+              name: stock.name,
+              currency: stock.currency,
+              stockType: stock.stockType,
+              issuedShares: stock.issuedShares,
+              outstandingShares: stock.outstandingShares,
+              company: {
+                code: stock.company.code,
+                name: stock.company.name,
+                about: '',
+                totalEmployed: 0,
+                wiki: '',
+                webSite: '',
+                founded: new Date(),
+                countryCode: '',
+                created: new Date(),
+                logo: stock.company.logo,
+                files: stock.company.files
+              },
+              isListed: stock.isListed,
+              created: stock.created,
+              indices: stock.indices
             }
           }
         }
@@ -142,35 +210,35 @@ export default {
       commit('modify', {
         type: 'stocks',
         pk: 'code',
-        payload: response.data.updateMarket.market
+        payload: response.data.updateStock.stock
       })
 
-      return Promise.resolve(response.data.updateIndustry.industry)
+      return Promise.resolve(response.data.updateStock.stock)
     },
-    async delete({ commit }, market) {
+    async delete({ commit }, stock) {
       const response = await graphQlClient.mutate({
-        mutation: gql`mutation DeleteMarket($input: DeleteMarketInput!) {
-          deleteMarket ( input: $input) {
+        mutation: gql`mutation DeleteStock($input: DeleteStockInput!) {
+          deleteStock ( input: $input) {
             boolean
           }
         }`,
         variables: {
           input: {
-            no: market.code
+            code: stock.code
           }
         }
       })
 
-      if (response.data.deleteMarket.boolean)
+      if (response.data.deleteStock.boolean)
       {
         commit('remove', {
           type: 'stocks',
           pk: 'code',
-          payload: market
+          payload: stock
         })
       }
       
-      return Promise.resolve(response.data.deleteMarket.boolean)
+      return Promise.resolve(response.data.deleteStock.boolean)
     }
   }
 }

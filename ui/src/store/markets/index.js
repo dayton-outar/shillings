@@ -39,7 +39,7 @@ export default {
         payload: response.data.createMarket.market
       })
 
-      return Promise.resolve(response.data.createIndustry.industry)
+      return Promise.resolve(response.data.createMarket.market)
     },
     async fetch({ commit }, request) {
       const response = await graphQlClient.query({
@@ -114,7 +114,7 @@ export default {
         payload: response.data.updateMarket.market
       })
 
-      return Promise.resolve(response.data.updateIndustry.industry)
+      return Promise.resolve(response.data.updateMarket.market)
     },
     async delete({ commit }, market) {
       const response = await graphQlClient.mutate({
@@ -125,7 +125,7 @@ export default {
         }`,
         variables: {
           input: {
-            no: market.code
+            code: market.code
           }
         }
       })
