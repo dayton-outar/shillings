@@ -30,9 +30,9 @@
                         ref="tbl"
                         detailed
                         :show-detail-icon="false"
-                        :data="stocks.nodes"
+                        :data="data.nodes"
                         icon-pack="fas"
-                        :total="stocks.totalCount"
+                        :total="data.totalCount"
                         :paginated="true"
                         :pagination-simple="true"
                         :per-page="page"
@@ -95,6 +95,8 @@
 <script>
 import { mapState, mapActions } from 'vuex'
 
+import tableMixin from '../mixins/tableMixin'
+
 import TableToolBar from './TableToolBar'
 import SearchBar from './SearchBar.vue'
 import Stock from './Stock.vue'
@@ -105,18 +107,11 @@ export default {
         'search-bar': SearchBar,
         'table-tool-bar': TableToolBar
     },
+    mixins: [tableMixin],
     data() {
         return {
-            sort: ['name', 'asc'],
-            sortIcon: 'arrow-up',
-            sortIconSize: 'is-small',
-            searchWord: '',
-            page: 10,
-            pageLengths: [10, 20, 50, 100],
-            currentPage: 1,
-            forward: true,
-            isCreatePanelActive: false,
-            isLoading: false,
+            fetchTitle: 'Stocks',
+            deleteTitle: 'Delete Stock',
             newStock: {
                 code: '',
                 name: '',
@@ -128,156 +123,10 @@ export default {
         this.get()
     },
     methods: {
-        ...mapActions('stocks', ['fetch', 'delete']),
-        get() {
-            this.isLoading = true
-
-            this.fetch({
-                first: this.page,
-                last: null,
-                next: null,
-                previous: null,
-                filter: { name: { startsWith: this.searchWord } },
-                ordering: [{ [this.sort[0]]: this.sort[1].toUpperCase() }]
-            }).then(() => {
-                this.isLoading = false
-                this.currentPage = 1
-            }).catch(err => {
-                this.isLoading = false
-                
-                this.$buefy.dialog.alert({
-                    title: `Stocks`,
-                    message: `${err.message}`,
-                    confirmText: 'OK',
-                    type: 'is-danger',
-                    hasIcon: true,
-                    iconPack: 'fas',
-                    icon: 'bug',
-                    onConfirm: () => {
-                        this.isLoading = false
-                    }
-                })
-            })
-        },
-        find(q) {
-            this.searchWord = q.searchWord
-            this.get()
-        },
-        create() {
-            this.isCreatePanelActive = true
-        },
-        close(e) {            
-            this.isCreatePanelActive = false
-
-            if (e === 'created') {
-                //this.get()
-            }
-        },
-        deleteRow(row) {
-
-            this.$buefy.dialog.confirm({
-                title: `Delete Stock`,
-                message: `<p>Are you sure you want to <b>delete</b> ${row.name}?</p><p>This action cannot be undone.</p>`,
-                confirmText: 'OK',
-                type: 'is-warning',
-                hasIcon: true,
-                iconPack: 'fas',
-                icon: 'circle-exclamation',
-                onConfirm: () => {
-                    this.isLoading = true
-                    
-                    this.delete(row)
-                        .then(success => {
-                            this.isLoading = false
-                            
-                            if (success) {
-                                this.$buefy.dialog.alert({
-                                    title: `Delete Stock`,
-                                    message: `Successfully deleted ${row.name}`,
-                                    confirmText: 'OK',
-                                    type: 'is-success',
-                                    hasIcon: true,
-                                    iconPack: 'fas',
-                                    icon: 'circle-check',
-                                    onConfirm: () => {                                
-                                        this.$emit('close')
-                                        //this.get()
-                                    }
-                                })
-                            } else {
-                                this.$buefy.dialog.alert({
-                                    title: `Delete Stock`,
-                                    message: `Failed to delete ${row.name}`,
-                                    confirmText: 'OK',
-                                    type: 'is-danger',
-                                    hasIcon: true,
-                                    iconPack: 'fas',
-                                    icon: 'bomb'
-                                })
-                            }
-                        })
-                        .catch(err => {    
-                            this.isLoading = false
-
-                            this.$buefy.dialog.alert({
-                                title: `Delete Stock`,
-                                message: `${err.message}`,
-                                confirmText: 'OK',
-                                type: 'is-danger',
-                                hasIcon: true,
-                                iconPack: 'fas',
-                                icon: 'bug'
-                            })
-                        })
-                }
-            })
-            
-        },
-        sortTable(field, order) {
-            this.sort = [field, order]
-
-            this.get()
-        },
-        pageChange(page) {
-            this.isLoading = true
-            
-            this.forward = (page > this.currentPage)
-
-            this.fetch({
-                first: this.forward ? this.page : null,
-                last: !this.forward ? this.page : null,
-                next: this.forward ? this.stocks.pageInfo.endCursor : null,
-                previous: !this.forward ? this.stocks.pageInfo.startCursor : null,
-                filter: { name: { startsWith: this.searchWord } },
-                ordering: [{ [this.sort[0]]: this.sort[1].toUpperCase() }]
-            }).then(() => {
-                this.isLoading = false
-                this.currentPage = page
-            }).catch(err => {
-                this.isLoading = false
-                
-                this.$buefy.dialog.alert({
-                    title: `Markets`,
-                    message: `${err.message}`,
-                    confirmText: 'OK',
-                    type: 'is-danger',
-                    hasIcon: true,
-                    iconPack: 'fas',
-                    icon: 'triangle-exclamation',
-                    onConfirm: () => {
-                        this.isLoading = false
-                    }
-                })
-            })
-        },
-        changeLen(l) {
-            this.page = l
-
-            this.get()
-        }
+        ...mapActions('stocks', ['fetch', 'delete'])
     },
     computed: {
-        ...mapState('stocks', ['stocks'])
+        ...mapState({ data: state => state.stocks.stocks })
     }
 }
 

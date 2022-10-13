@@ -30,9 +30,9 @@
                         ref="tbl"
                         detailed 
                         :show-detail-icon="false"
-                        :data="financialReports.nodes"
+                        :data="data.nodes"
                         icon-pack="fas"
-                        :total="financialReports.totalCount"
+                        :total="data.totalCount"
                         :paginated="true"
                         :pagination-simple="true"
                         :per-page="page"
@@ -101,6 +101,8 @@
 import { mapState, mapActions } from 'vuex'
 import moment from 'moment'
 
+import tableMixin from '../mixins/tableMixin'
+
 import TableToolBar from './TableToolBar'
 import SearchBar from './SearchBar.vue'
 import FinancialReport from './FinancialReport.vue'
@@ -111,118 +113,28 @@ export default {
         'search-bar': SearchBar,
         'table-tool-bar': TableToolBar
     },
+    mixins: [tableMixin],
     data() {
         return {
             sort: ['statementDate', 'asc'],
-            sortIcon: 'arrow-up',
-            sortIconSize: 'is-small',
-            searchWord: '',
-            page: 10,
-            pageLengths: [10, 20, 50, 100],
-            currentPage: 1,
-            forward: true,
-            isCreatePanelActive: false,
-            isLoading: false,
+            fetchTitle: 'Financial Reports',
+            deleteTitle: 'Delete Financial Report',
             newReport: {}
         }
     },
-    created() {
-        this.get()
-    },
     methods: {
         ...mapActions('finances', ['fetch', 'delete']),
-        get() {
-            this.isLoading = true
-
-            this.fetch({
-                first: this.page,
-                last: null,
-                next: null,
-                previous: null,
-                filter: { company: { name: { startsWith: this.searchWord } } },
-                ordering: [{ [this.sort[0]]: this.sort[1].toUpperCase() }]
-            }).then(() => {
-                this.isLoading = false
-                this.currentPage = 1
-            }).catch(err => {
-                this.isLoading = false
-                
-                this.$buefy.dialog.alert({
-                    title: `Financial Reports`,
-                    message: `${err.message}`,
-                    confirmText: 'OK',
-                    type: 'is-danger',
-                    hasIcon: true,
-                    iconPack: 'fas',
-                    icon: 'bug',
-                    onConfirm: () => {
-                        this.isLoading = false
-                    }
-                })
-            })
-        },
         find(q) {
             this.searchWord = q.searchWord
+            this.filterQuery = { company: { name: { startsWith: this.searchWord } } }
             this.get()
         },
-        create() {
-            this.isCreatePanelActive = true
-        },
-        close(e) {
-            this.isCreatePanelActive = false
-
-            if (e === 'created') {
-                //this.get()
-            }
-        },
-        sortTable(field, order) {
-            this.sort = [field, order]
-
-            this.get()
-        },
-        pageChange(page) {
-            this.isLoading = true
-            
-            this.forward = (page > this.currentPage)
-
-            this.fetch({
-                first: this.forward ? this.page : null,
-                last: !this.forward ? this.page : null,
-                next: this.forward ? this.financialReports.pageInfo.endCursor : null,
-                previous: !this.forward ? this.financialReports.pageInfo.startCursor : null,
-                filter: { name: { startsWith: this.searchWord } },
-                ordering: [{ [this.sort[0]]: this.sort[1].toUpperCase() }]
-            }).then(() => {
-                this.isLoading = false
-                this.currentPage = page
-            }).catch(err => {
-                this.isLoading = false
-                
-                this.$buefy.dialog.alert({
-                    title: `Financial Reports`,
-                    message: `${err.message}`,
-                    confirmText: 'OK',
-                    type: 'is-danger',
-                    hasIcon: true,
-                    iconPack: 'fas',
-                    icon: 'triangle-exclamation',
-                    onConfirm: () => {
-                        this.isLoading = false
-                    }
-                })
-            })
-        },
-        changeLen(l) {
-            this.page = l
-
-            this.get()
-        },
-        formatDate(stmtDate) {
+        formatDate(stmtDate) { // TODO: Put in a mixin
             return moment(stmtDate).format('MMM DD, YYYY')
         }
     },
     computed: {
-        ...mapState('finances', ['financialReports'])
+        ...mapState({ data: state => state.finances.financialReports })
     }
 }
 

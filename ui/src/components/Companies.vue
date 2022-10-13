@@ -30,9 +30,9 @@
                         ref="tbl" 
                         detailed 
                         :show-detail-icon="false" 
-                        :data="companies.nodes" 
+                        :data="data.nodes" 
                         icon-pack="fas"
-                        :total="companies.totalCount" 
+                        :total="data.totalCount" 
                         :paginated="true" 
                         :pagination-simple="true" 
                         :per-page="page"
@@ -104,6 +104,8 @@
 import { mapState, mapActions } from 'vuex'
 import moment from 'moment'
 
+import tableMixin from '../mixins/tableMixin'
+
 import SearchBar from './SearchBar.vue'
 import TableToolBar from './TableToolBar'
 import Company from './Company.vue'
@@ -114,18 +116,11 @@ export default {
         'search-bar': SearchBar,
         'table-tool-bar': TableToolBar
     },
+    mixins: [tableMixin],
     data() {
         return {
-            sort: ['name', 'asc'],
-            sortIcon: 'arrow-up',
-            sortIconSize: 'is-small',
-            searchWord: '',
-            page: 10,
-            pageLengths: [10, 20, 50, 100],
-            currentPage: 1,
-            forward: true,
-            isCreatePanelActive: false,
-            isLoading: false,
+            fetchTitle: 'Companies',
+            deleteTitle: 'Delete Company',
             newCompany: {
                 code: '',
                 name: '',
@@ -141,165 +136,14 @@ export default {
             }
         }
     },
-    created() {
-        this.get()
-    },
     methods: {
         ...mapActions('companies', ['fetch', 'delete']),
-        get() {
-            this.isLoading = true
-
-            this.fetch({
-                first: this.page,
-                last: null,
-                next: null,
-                previous: null,
-                filter: { name: { startsWith: this.searchWord } },
-                ordering: [{ [this.sort[0]]: this.sort[1].toUpperCase() }]
-            }).then(() => {
-                this.isLoading = false
-                this.currentPage = 1
-            }).catch(err => {
-                this.isLoading = false
-                
-                this.$buefy.dialog.alert({
-                    title: `Companies`,
-                    message: `${err.message}`,
-                    confirmText: 'OK',
-                    type: 'is-danger',
-                    hasIcon: true,
-                    iconPack: 'fas',
-                    icon: 'bug',
-                    onConfirm: () => {
-                        this.isLoading = false
-                    }
-                })
-            })
-        },
-        find(q) {
-            this.searchWord = q.searchWord
-            this.get()
-        },
-        create() {
-            this.isCreatePanelActive = true
-        },
-        close(e) {
-            console.log(e)
-            this.isCreatePanelActive = false
-
-            if (e === 'created') {
-                //this.get()
-            }
-        },
-        deleteRow(row) {
-
-            this.$buefy.dialog.confirm({
-                title: `Delete Company`,
-                message: `<p>Are you sure you want to <b>delete</b> ${row.name}?</p><p>This action cannot be undone.</p>`,
-                confirmText: 'OK',
-                type: 'is-warning',
-                hasIcon: true,
-                iconPack: 'fas',
-                icon: 'circle-exclamation',
-                onConfirm: () => {
-                    this.isLoading = true
-                    
-                    this.delete(row)
-                        .then(success => {
-                            this.isLoading = false
-                            
-                            if (success) {
-                                this.$buefy.dialog.alert({
-                                    title: `Delete Company`,
-                                    message: `Successfully deleted ${row.name}`,
-                                    confirmText: 'OK',
-                                    type: 'is-success',
-                                    hasIcon: true,
-                                    iconPack: 'fas',
-                                    icon: 'circle-check',
-                                    onConfirm: () => {                                
-                                        this.$emit('close')
-                                        //this.get()
-                                    }
-                                })
-                            } else {
-                                this.$buefy.dialog.alert({
-                                    title: `Delete Company`,
-                                    message: `Failed to delete ${row.name}`,
-                                    confirmText: 'OK',
-                                    type: 'is-danger',
-                                    hasIcon: true,
-                                    iconPack: 'fas',
-                                    icon: 'bomb'
-                                })
-                            }
-                        })
-                        .catch(err => {    
-                            this.isLoading = false
-
-                            this.$buefy.dialog.alert({
-                                title: `Delete Company`,
-                                message: `${err.message}`,
-                                confirmText: 'OK',
-                                type: 'is-danger',
-                                hasIcon: true,
-                                iconPack: 'fas',
-                                icon: 'bug'
-                            })
-                        })
-                }
-            })
-            
-        },
-        sortTable(field, order) {
-            this.sort = [field, order]
-
-            this.get()
-        },
-        pageChange(page) { // Credit: https://github.com/buefy/buefy/issues/50
-            this.isLoading = true
-            
-            this.forward = (page > this.currentPage)
-
-            this.fetch({
-                first: this.forward ? this.page : null,
-                last: !this.forward ? this.page : null,
-                next: this.forward ? this.companies.pageInfo.endCursor : null,
-                previous: !this.forward ? this.companies.pageInfo.startCursor : null,
-                filter: { name: { startsWith: this.searchWord } },
-                ordering: [{ [this.sort[0]]: this.sort[1].toUpperCase() }]
-            }).then(() => {
-                this.isLoading = false
-                this.currentPage = page
-            }).catch(err => {
-                this.isLoading = false
-                
-                this.$buefy.dialog.alert({
-                    title: `Companies`,
-                    message: `${err.message}`,
-                    confirmText: 'OK',
-                    type: 'is-danger',
-                    hasIcon: true,
-                    iconPack: 'fas',
-                    icon: 'triangle-exclamation',
-                    onConfirm: () => {
-                        this.isLoading = false
-                    }
-                })
-            })
-        },
-        changeLen(l) {
-            console.log( l )
-            this.page = l
-
-            this.get()
-        },
         foundedYear(founded) {
             return moment(founded).toDate().getFullYear()
         }
     },
     computed: {
-        ...mapState('companies', ['companies'])
+        ...mapState({ data: state => state.companies.companies })
     }
 }
 
