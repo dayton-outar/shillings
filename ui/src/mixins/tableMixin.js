@@ -1,4 +1,4 @@
-export default {
+export default { // Credit: https://youtu.be/LyG_l5UoeHI
     data() {
         return {
             sort: ['name', 'asc'],
