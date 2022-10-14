@@ -10,7 +10,7 @@
                         icon-left="plus"
                         v-if="!isCreatePanelActive"
                         @click.prevent="create" />
-                    <industry-detail :industryData="newIndustry" :editMode="false" v-if="isCreatePanelActive" @close="close" />
+                    <industry-detail :data="newIndustry" :editMode="false" v-if="isCreatePanelActive" @close="close" />
                 </div>
             </div>
             
@@ -73,7 +73,7 @@
                             </b-table-column>
 
                             <template slot="detail" slot-scope="props">
-                                <industry-detail :industryData="props.row" :editMode="true" @close="$refs.tbl.toggleDetails(props.row)" />
+                                <industry-detail :data="props.row" :editMode="true" @close="$refs.tbl.toggleDetails(props.row)" />
                             </template>
 
                             <template #empty>

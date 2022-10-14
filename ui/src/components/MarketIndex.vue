@@ -42,10 +42,10 @@ import { mapState, mapActions } from 'vuex'
 // import moment from 'moment'
 
 export default {
-    props: ['marketIndexData', 'editMode'],
+    props: ['data', 'editMode'],
     data() {
         return {
-            marketIndex: JSON.parse(JSON.stringify(this.marketIndexData)),
+            marketIndex: JSON.parse(JSON.stringify(this.data)),
         }
     },
     beforeCreate() {

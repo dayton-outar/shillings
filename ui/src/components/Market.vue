@@ -6,7 +6,7 @@
                     <b-field 
                         label="Code"
                         label-position="inside">
-                        <b-input v-model="market.code" :disabled="editMode"></b-input>
+                        <b-input v-model="formData.code" :disabled="editMode"></b-input>
                     </b-field>
                 </div>
             </div>
@@ -15,7 +15,7 @@
                     <b-field 
                         label="Name"
                         label-position="inside">
-                        <b-input v-model="market.name"></b-input>
+                        <b-input v-model="formData.name"></b-input>
                     </b-field>
                 </div>
             </div>
@@ -24,7 +24,7 @@
                     <b-field
                         label="Company">
                         <b-select 
-                            v-model="market.company"
+                            v-model="formData.company"
                             placeholder="Choose Company"
                             expanded>
                             <option
@@ -51,10 +51,10 @@ import { mapState, mapActions } from 'vuex'
 // import moment from 'moment'
 
 export default {
-    props: ['marketData', 'editMode'],
+    props: ['data', 'editMode'],
     data() {
         return {
-            market: JSON.parse(JSON.stringify(this.marketData)),
+            formData: JSON.parse(JSON.stringify(this.data)),
         }
     },
     beforeCreate() {

@@ -11,7 +11,7 @@
                     icon-left="plus" 
                     v-if="!isCreatePanelActive"
                     @click.prevent="create" />
-                <company-detail :companyData="newCompany" :editMode="false" v-if="isCreatePanelActive" @close="close" />
+                <company-detail :data="newCompany" :editMode="false" v-if="isCreatePanelActive" @close="close" />
             </div>
         </div>
 
@@ -86,7 +86,7 @@
                         <template #detail="props">
                             <article>
                                 <h5 class="title is-5">{{ props.row.name }}</h5>
-                                <company-detail :companyData="props.row" :editMode="true"
+                                <company-detail :data="props.row" :editMode="true"
                                     @close="$refs.tbl.toggleDetails(props.row)" />
                             </article>
                         </template>

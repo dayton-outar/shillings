@@ -12,7 +12,7 @@
                         :type="vCompany.type"
                         :message="vCompany.message">
                         <b-select 
-                        v-model="report.company"
+                        v-model="formData.company"
                         placeholder="Choose Company"
                         @input="clearVCompany">
                         <option
@@ -31,7 +31,7 @@
                         :type="vPeriod.type"
                         :message="vPeriod.message">
                         <b-select 
-                            v-model="report.period"
+                            v-model="formData.period"
                             placeholder="Choose Period" 
                             expanded
                             @input="clearVPeriod">
@@ -49,7 +49,7 @@
                         :message="vStatementDate.message">
                         <b-datepicker
                             ref="datepicker"                    
-                            v-model="report.statementDate"
+                            v-model="formData.statementDate"
                             label-position=""
                             placeholder="Set Statement Date"
                             expanded
@@ -60,7 +60,7 @@
                 </div>
                 <div class="column">
                     <b-field>
-                        <b-checkbox v-model="report.isAudited">Is Audited?</b-checkbox>
+                        <b-checkbox v-model="formData.isAudited">Is Audited?</b-checkbox>
                     </b-field>
                 </div>        
             </div>    
@@ -71,7 +71,7 @@
                         <div class="column">
                             <div v-for="(stmt, ix) in statements" :key="ix" class="columns">
                                 <financial-statement 
-                                    :data="report.analytes"
+                                    :data="formData.analytes"
                                     :type="stmt.Type" 
                                     :no="ix" 
                                     @removed="removeStatement" />
@@ -127,7 +127,7 @@ export default {
     },
     data() {
         return {
-            report: JSON.parse(JSON.stringify(this.data)),
+            formData: JSON.parse(JSON.stringify(this.data)),
             statements: [],
             vCompany: {
                 type: '',
@@ -153,8 +153,8 @@ export default {
                 ordering: [{ name: 'ASC' }]
             })
         
-        if (this.report.analytes) {
-            this.report.analytes.forEach(el => {
+        if (this.formData.analytes) {
+            this.formData.analytes.forEach(el => {
                 if (!this.statements.find(sl => sl.Type == this.formatTitleCase( el.type ))) {
                     this.statements.push({
                         Type: this.formatTitleCase( el.type )
@@ -167,7 +167,7 @@ export default {
         ...mapState('companies', ['companies']),
         ...mapState(['isItemsValid']),
         title() {
-            return this.editMode ? `Update: ${this.report.description}` : `Create Financial Report`
+            return this.editMode ? `Update: ${this.formData.description}` : `Create Financial Report`
         }
     },
     methods: {
@@ -200,7 +200,7 @@ export default {
       validateReport() {
         let valid = true
 
-        if (!this.report.company) {
+        if (!this.formData.company) {
             this.vCompany.type = 'is-danger'
             this.vCompany.message = 'Please choose company'
             valid = false
@@ -209,7 +209,7 @@ export default {
             this.vCompany.message = ''
         }
 
-        if (!this.report.period) {
+        if (!this.formData.period) {
             this.vPeriod.type = 'is-danger'
             this.vPeriod.message = 'Please choose period'
             valid = false
@@ -218,7 +218,7 @@ export default {
             this.vPeriod.message = ''
         }
 
-        if (!this.report.statementDate) {
+        if (!this.formData.statementDate) {
             this.vStatementDate.type = 'is-danger'
             this.vStatementDate.message = 'Please set statement date'
             valid = false

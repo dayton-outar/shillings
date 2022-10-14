@@ -11,7 +11,7 @@
                     icon-left="plus"
                     v-if="!isCreatePanelActive"
                     @click.prevent="create" />
-                <stock-detail :stockData="newStock" :editMode="false" v-if="isCreatePanelActive" @close="close" />
+                <stock-detail :data="newStock" :editMode="false" v-if="isCreatePanelActive" @close="close" />
             </div>
         </div>
 
@@ -79,7 +79,7 @@
                         <template #detail="props">
                             <article>
                                 <h5 class="title is-5">{{ props.row.name }}</h5>
-                                <stock-detail :stockData="props.row" :editMode="true" @close="$refs.tbl.toggleDetails(props.row)" />
+                                <stock-detail :data="props.row" :editMode="true" @close="$refs.tbl.toggleDetails(props.row)" />
                             </article>
                         </template>
 

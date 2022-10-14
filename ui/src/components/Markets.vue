@@ -11,7 +11,7 @@
                     icon-left="plus"
                     v-if="!isCreatePanelActive"
                     @click.prevent="create" />
-                <market-detail :marketData="newMarket" :editMode="false" v-if="isCreatePanelActive" @close="close" />
+                <market-detail :data="newMarket" :editMode="false" v-if="isCreatePanelActive" @close="close" />
             </div>
         </div>
 

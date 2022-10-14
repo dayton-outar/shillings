@@ -13,7 +13,7 @@
                             :type="validation.code.type"
                             :message="validation.code.message">
                             <b-input 
-                                v-model="company.code"
+                                v-model="formData.code"
                                 placeholder="Unique code" 
                                 :disabled="editMode"
                                 icon-pack="fas"
@@ -31,7 +31,7 @@
                             :type="validation.name.type"
                             :message="validation.name.message">
                             <b-input 
-                                v-model="company.name"
+                                v-model="formData.name"
                                 placeholder="Company name"
                                 icon-pack="fas"
                                 icon="building" 
@@ -47,7 +47,7 @@
                             :type="validation.about.type"
                             :message="validation.about.message">
                             <b-input 
-                                v-model="company.about"
+                                v-model="formData.about"
                                 icon-pack="fas"
                                 icon="file-lines" 
                                 type="text"
@@ -63,7 +63,7 @@
                             :type="validation.totalEmployed.type"
                             :message="validation.totalEmployed.message">
                             <b-numberinput 
-                                v-model="company.totalEmployed"
+                                v-model="formData.totalEmployed"
                                 icon-pack="fas"
                                 type="is-info"
                                 controls-position="compact"
@@ -79,7 +79,7 @@
                             :type="validation.wiki.type"
                             :message="validation.wiki.message">
                             <b-input 
-                                v-model="company.wiki"
+                                v-model="formData.wiki"
                                 placeholder="Wikipedia address" 
                                 icon-pack="fas"
                                 icon="globe" 
@@ -96,7 +96,7 @@
                             :type="validation.webSite.type"
                             :message="validation.webSite.message">
                             <b-input 
-                                v-model="company.webSite"
+                                v-model="formData.webSite"
                                 placeholder="Web address" 
                                 icon-pack="fas"
                                 icon="globe" 
@@ -131,14 +131,14 @@
                             :type="validation.country.type"
                             :message="validation.country.message">
                             <b-dropdown 
-                                v-model="company.countryCode"
+                                v-model="formData.countryCode"
                                 expanded>
                                 <template #trigger>
                                     <b-button
                                         type="is-light"
                                         expanded
                                         icon-right="menu-down">
-                                        {{ company.countryCode == '' ? 'Choose Country' : company.countryCode }}
+                                        {{ formData.countryCode == '' ? 'Choose Country' : formData.countryCode }}
                                     </b-button>
                                 </template>
 
@@ -229,7 +229,7 @@
                                     </div>
                                 </b-upload>
                                 <b-message 
-                                    :title="(dropFile ? `File: ${dropFile.name} (${formatBytes(dropFile.size)})` : `File: ${this.company.logo.fileName} (${formatBytes(this.company.logo.contentSize)})`)" 
+                                    :title="(dropFile ? `File: ${dropFile.name} (${formatBytes(dropFile.size)})` : `File: ${this.formData.logo.fileName} (${formatBytes(this.formData.logo.contentSize)})`)" 
                                     v-if="hasImg" 
                                     aria-close-label="Close message"
                                     @close="(hasImg = false)">
@@ -256,7 +256,7 @@
                     <div class="column">
                         <b-field 
                             label="Code">
-                            {{ company.code }}
+                            {{ formData.code }}
                         </b-field>
                     </div>
                 </div>
@@ -264,7 +264,7 @@
                     <div class="column">
                         <b-field 
                             label="Name">
-                            {{ company.name }}
+                            {{ formData.name }}
                         </b-field>
                     </div>
                 </div>
@@ -272,7 +272,7 @@
                     <div class="column">
                         <b-field 
                             label="About">
-                            {{ company.about }}
+                            {{ formData.about }}
                         </b-field>
                     </div>
                 </div>
@@ -280,7 +280,7 @@
                     <div class="column">
                         <b-field 
                             label="Total Employed">
-                            {{ company.totalEmployed }}
+                            {{ formData.totalEmployed }}
                         </b-field>
                     </div>
                 </div>
@@ -288,7 +288,7 @@
                     <div class="column">
                         <b-field 
                             label="Wiki">
-                            <a :href="company.wiki" target="_blank">{{ company.wiki }}</a>
+                            <a :href="formData.wiki" target="_blank">{{ formData.wiki }}</a>
                         </b-field>
                     </div>
                 </div>
@@ -296,7 +296,7 @@
                     <div class="column">
                         <b-field 
                             label="Website">
-                            <a :href="company.webSite" target="_blank">{{ company.webSite }}</a>
+                            <a :href="formData.webSite" target="_blank">{{ formData.webSite }}</a>
                         </b-field>
                     </div>
                 </div>
@@ -304,7 +304,7 @@
                     <div class="column">
                         <b-field 
                             label="Founded">
-                            {{ formatDate(this.company.founded) }}
+                            {{ formatDate(this.formData.founded) }}
                         </b-field>
                     </div>
                 </div>
@@ -312,7 +312,7 @@
                     <div class="column">
                         <b-field 
                             label="Country">
-                            {{ this.company.countryCode }}
+                            {{ this.formData.countryCode }}
                         </b-field>
                     </div>
                 </div>
@@ -356,14 +356,14 @@ import prettyBytes from 'pretty-bytes';
 import config from '../config'
 
 export default {
-    props: ['companyData', 'editMode'],
+    props: ['data', 'editMode'],
     data() {
         return {
-            company: JSON.parse(JSON.stringify(this.companyData)),
-            companyIndustries: this.companyData.industries.map(i => i.no),
+            formData: JSON.parse(JSON.stringify(this.data)),
+            companyIndustries: this.data.industries.map(i => i.no),
             dropFile: null,
-            hasImg: (this.editMode && !!this.companyData.logo),
-            imgSrc: this.companyData.logo ? `${config.fileApiHost}?no=${this.companyData.logo.no}` : '#',
+            hasImg: (this.editMode && !!this.data.logo),
+            imgSrc: this.data.logo ? `${config.fileApiHost}?no=${this.data.logo.no}` : '#',
             isValid: false,
             isLoading: false,
             validation: {
@@ -424,14 +424,14 @@ export default {
         ...mapState('industries', ['industries']),
         foundedDate: {
             get() {
-                return moment(this.company.founded).toDate()
+                return moment(this.formData.founded).toDate()
             },
             set(value) {
-                this.company.founded = value
+                this.formData.founded = value
             }
         },
         title() {
-            return this.editMode ? `Update: ${this.companyData.name}` : `Create Company`
+            return this.editMode ? `Update: ${this.data.name}` : `Create Company`
         }
     },
     methods: {
@@ -439,10 +439,10 @@ export default {
         save() {
             this.isLoading = true
 
-            this.company.industries = this.industries.nodes.filter(i => this.companyIndustries.includes(i.no))
+            this.formData.industries = this.data.industries.nodes.filter(i => this.companyIndustries.includes(i.no)) // TODO: Put in other function or a callback ... assign()
 
             if (this.editMode) {
-                this.update( this.company )
+                this.update( this.formData )
                     .then(response => {
                         this.isLoading = false
 
@@ -473,7 +473,7 @@ export default {
                         })
                     })
             } else {
-                this.create( this.company )
+                this.create( this.formData )
                     .then(response => {
                         this.isLoading = false
 
@@ -509,7 +509,7 @@ export default {
         validate(){
             let valid = true
 
-            if (!this.company.code) {
+            if (!this.formData.code) {
                 this.validation.code.type = 'is-danger'
                 this.validation.code.message = 'Please enter unique code'
                 valid = false
@@ -518,7 +518,7 @@ export default {
                 this.validation.code.message = ''
             }
 
-            if (!this.company.name) {
+            if (!this.formData.name) {
                 this.validation.name.type = 'is-danger'
                 this.validation.name.message = 'Please enter name'
                 valid = false
@@ -527,16 +527,16 @@ export default {
                 this.validation.name.message = ''
             }
 
-            if (!this.company.about) {
+            if (!this.formData.about) {
                 this.validation.about.type = 'is-danger'
-                this.validation.about.message = 'Please enter summary about the company'
+                this.validation.about.message = 'Please enter summary about the formData'
                 valid = false
             } else {
                 this.validation.about.type = ''
                 this.validation.about.message = ''
             }
 
-            if (!this.company.totalEmployed) {
+            if (!this.formData.totalEmployed) {
                 this.validation.totalEmployed.type = 'is-danger'
                 this.validation.totalEmployed.message = 'Please enter total employed'
                 valid = false
@@ -545,7 +545,7 @@ export default {
                 this.validation.totalEmployed.message = ''
             }
 
-            // if (!this.company.wiki) {
+            // if (!this.formData.wiki) {
             //     this.validation.wiki.type = 'is-danger'
             //     this.validation.wiki.message = 'Please enter Wikipedia address'
             //     valid = false
@@ -554,7 +554,7 @@ export default {
             //     this.validation.wiki.message = ''
             // }
 
-            // if (!this.company.webSite) {
+            // if (!this.formData.webSite) {
             //     this.validation.webSite.type = 'is-danger'
             //     this.validation.webSite.message = 'Please enter website address'
             //     valid = false
@@ -563,7 +563,7 @@ export default {
             //     this.validation.webSite.message = ''
             // }
 
-            if (!this.company.founded) {
+            if (!this.formData.founded) {
                 this.validation.founded.type = 'is-danger'
                 this.validation.founded.message = 'Please enter date company was founded'
                 valid = false
@@ -572,7 +572,7 @@ export default {
                 this.validation.founded.message = ''
             }
 
-            if (!this.company.countryCode) {
+            if (!this.formData.countryCode) {
                 this.validation.country.type = 'is-danger'
                 this.validation.country.message = 'Please choose country'
                 valid = false
@@ -620,7 +620,7 @@ export default {
           }
 
           if (o) {
-            this.company.logo = o
+            this.formData.logo = o
             reader.readAsDataURL(o)
           }
         }

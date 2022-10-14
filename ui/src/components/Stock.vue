@@ -127,10 +127,10 @@ import { mapState, mapActions } from 'vuex'
 // import moment from 'moment'
 
 export default {
-    props: ['stockData', 'editMode'],
+    props: ['data', 'editMode'],
     data() {
         return {
-            stock: JSON.parse(JSON.stringify(this.stockData)),
+            stock: JSON.parse(JSON.stringify(this.data)),
         }
     },
     beforeCreate() {

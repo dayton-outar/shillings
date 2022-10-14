@@ -13,7 +13,7 @@
                             :type="validation.name.type"
                             :message="validation.name.message">
                             <b-input 
-                                v-model.trim="industry.name" 
+                                v-model.trim="formData.name" 
                                 placeholder="Name of industry" 
                                 icon-pack="fas"
                                 icon="industry"></b-input>
@@ -28,7 +28,7 @@
                             :type="validation.wiki.type"
                             :message="validation.wiki.message">
                             <b-input 
-                                v-model.trim="industry.wiki" 
+                                v-model.trim="formData.wiki" 
                                 placeholder="Wikipedia Address" 
                                 icon-pack="fas"
                                 icon="globe" 
@@ -56,7 +56,7 @@
                         <div class="column">
                             <b-field 
                                 label="Name">
-                                {{ industry.name }}
+                                {{ formData.name }}
                             </b-field>
                         </div>
                     </div>
@@ -64,7 +64,7 @@
                         <div class="column">
                             <b-field 
                                 label="Wiki">
-                                <a :href="industry.wiki" target="_blank">{{ industry.wiki }}</a>
+                                <a :href="formData.wiki" target="_blank">{{ formData.wiki }}</a>
                             </b-field>
                         </div>
                     </div>
@@ -89,10 +89,10 @@
 import { mapActions } from 'vuex' 
 
 export default {
-    props: ['industryData', 'editMode'],
+    props: ['data', 'editMode'],
     data() {
         return {
-            industry: JSON.parse(JSON.stringify(this.industryData)),
+            formData: JSON.parse(JSON.stringify(this.data)),
             isValid: false,
             isLoading: false,
             validation: {
@@ -109,7 +109,7 @@ export default {
     },
     computed: {
         title() {
-            return this.editMode ? `Update: ${this.industryData.name}` : `Create Industry`
+            return this.editMode ? `Update: ${this.data.name}` : `Create Industry`
         }
     },
     methods: {
@@ -118,7 +118,7 @@ export default {
             this.isLoading = true
 
             if (this.editMode) {
-                this.update( this.industry )
+                this.update( this.formData )
                     .then(response => {
                         this.isLoading = false
 
@@ -149,7 +149,7 @@ export default {
                         })
                     })
             } else {
-                this.create( this.industry )
+                this.create( this.formData )
                     .then(response => {
                         this.isLoading = false
 
@@ -185,7 +185,7 @@ export default {
         validate(){
             let valid = true
 
-            if (!this.industry.name) {
+            if (!this.formData.name) {
                 this.validation.name.type = 'is-danger'
                 this.validation.name.message = 'Please enter name'
                 valid = false
@@ -194,7 +194,7 @@ export default {
                 this.validation.name.message = ''
             }
 
-            if (!this.industry.wiki) {
+            if (!this.formData.wiki) {
                 this.validation.wiki.type = 'is-danger'
                 this.validation.wiki.message = 'Please enter Wikipedia URL'
                 valid = false
