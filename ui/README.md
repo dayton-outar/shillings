@@ -73,6 +73,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 4. [How to change page titles when using vue-router?](https://stackoverflow.com/questions/51639850/how-to-change-page-titles-when-using-vue-router) - StackOverflow
 5. [My Vue Experience after 3 projects in 18 months](https://dev.to/crisarji/my-vue-experience-after-3-projects-in-18-months-456c)
 6. [Financial Chart: Candlestick Sample](https://www.chartjs.org/chartjs-chart-financial/)
+7. Front-End Development Projects with Vue.js by Raymond Camden, Hugo Di Francesco, Clifford Gurney, Philip Kirkbride, Maya Shavin (Packt Publishing)
+8. Building Vue.js Applications with GraphQL by Heitor Ramon Ribeiro (Packt Publishing)
 
 ## Tutorial Videos
 
