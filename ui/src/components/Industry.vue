@@ -1,95 +1,70 @@
 <template>
-    <form @submit.prevent="validate">
-        <div class="box my-4 mx-1">
-            <h5 class="title is-5">{{ title }}</h5>
-            <hr class="has-background-grey-light" />
-            <div v-if="!isValid">
-                <!-- slot -->
-                <div class="columns">
-                    <div class="column">
-                        <b-field 
-                            label="Name"
-                            label-position="inside"
-                            :type="validation.name.type"
-                            :message="validation.name.message">
-                            <b-input 
-                                v-model.trim="formData.name" 
-                                placeholder="Name of industry" 
-                                icon-pack="fas"
-                                icon="industry"></b-input>
-                        </b-field>
-                    </div>
+    <s-form :isValid="isValid" :isLoading="isLoading" :title="title" @validate="validate" @save="save" @close="$emit('close')">
+        <template #input>
+            <div class="columns">
+                <div class="column">
+                    <b-field 
+                        label="Name"
+                        label-position="inside"
+                        :type="validation.name.type"
+                        :message="validation.name.message">
+                        <b-input 
+                            v-model.trim="formData.name" 
+                            placeholder="Name of industry" 
+                            icon-pack="fas"
+                            icon="industry"></b-input>
+                    </b-field>
                 </div>
-                <div class="columns">
-                    <div class="column">
-                        <b-field 
-                            label="Wiki"
-                            label-position="inside"
-                            :type="validation.wiki.type"
-                            :message="validation.wiki.message">
-                            <b-input 
-                                v-model.trim="formData.wiki" 
-                                placeholder="Wikipedia Address" 
-                                icon-pack="fas"
-                                icon="globe" 
-                                type="url"
-                                validation-message="Please enter valid URL"></b-input>
-                        </b-field>
-                    </div>
-                </div>
-                <hr class="has-background-grey-lighter thinner" />
-                <div class="columns">
-                    <div class="column">
-                        <b-button label="Close" size="is-medium" expanded @click.prevent="$emit('close')" />
-                    </div>
-                    <div class="column">
-                        <b-button label="Save" type="is-info" size="is-medium" expanded native-type="submit" />
-                    </div>
-                </div>
-                <!-- slot -->
             </div>
-            <transition 
-                enter-active-class="bounceIn">
-                <div v-if="isValid">
-                    <!-- slot -->
-                    <div class="columns">
-                        <div class="column">
-                            <b-field 
-                                label="Name">
-                                {{ formData.name }}
-                            </b-field>
-                        </div>
-                    </div>
-                    <div class="columns">
-                        <div class="column">
-                            <b-field 
-                                label="Wiki">
-                                <a :href="formData.wiki" target="_blank">{{ formData.wiki }}</a>
-                            </b-field>
-                        </div>
-                    </div>
-                    <hr class="has-background-grey-lighter thinner" />
-                    <div class="columns">
-                        <div class="column">
-                            <b-button label="Cancel" size="is-medium" expanded @click.prevent="(isValid = false)" />
-                        </div>
-                        <div class="column">
-                            <b-button label="OK" type="is-info" size="is-medium" expanded @click.prevent="save" :disabled="isLoading" />
-                        </div>
-                    </div>
-                    <!-- slot -->
+            <div class="columns">
+                <div class="column">
+                    <b-field 
+                        label="Wiki"
+                        label-position="inside"
+                        :type="validation.wiki.type"
+                        :message="validation.wiki.message">
+                        <b-input 
+                            v-model.trim="formData.wiki" 
+                            placeholder="Wikipedia Address" 
+                            icon-pack="fas"
+                            icon="globe" 
+                            type="url"
+                            validation-message="Please enter valid URL"></b-input>
+                    </b-field>
                 </div>
-            </transition>
-            <b-loading :is-full-page="false" v-model="isLoading"></b-loading>
-        </div>
-    </form>
+            </div>
+        </template>
+        <template #confirm>
+            <div class="columns">
+                <div class="column">
+                    <b-field
+                        label="Name">
+                        {{ formData.name }}
+                    </b-field>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <b-field 
+                        label="Wiki">
+                        <a :href="formData.wiki" target="_blank">{{ formData.wiki }}</a>
+                    </b-field>
+                </div>
+            </div>
+        </template>
+    </s-form>
 </template>
 
 <script> 
-import { mapActions } from 'vuex' 
+import { mapActions } from 'vuex'
+
+import Form from './Form.vue'
 
 export default {
     props: ['data', 'editMode'],
+    components: {
+        's-form': Form,
+    },
     data() {
         return {
             formData: JSON.parse(JSON.stringify(this.data)),
