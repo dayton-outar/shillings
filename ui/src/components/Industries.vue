@@ -10,7 +10,7 @@
                         icon-left="plus"
                         v-if="!isCreatePanelActive"
                         @click.prevent="create" />
-                    <industry-detail :data="newIndustry" :editMode="false" v-if="isCreatePanelActive" @close="close" />
+                    <component :is="detailComponent" :data="newIndustry" :editMode="false" v-if="isCreatePanelActive" @close="close" />
                 </div>
             </div>
             
@@ -73,7 +73,7 @@
                             </b-table-column>
 
                             <template slot="detail" slot-scope="props">
-                                <industry-detail :data="props.row" :editMode="true" @close="$refs.tbl.toggleDetails(props.row)" />
+                                <component :is="detailComponent" :data="props.row" :editMode="true" @close="$refs.tbl.toggleDetails(props.row)" />
                             </template>
 
                             <template #empty>
@@ -110,6 +110,7 @@ export default {
         return {
             fetchTitle: 'Industries',
             deleteTitle: 'Delete Industry',
+            detailComponent: 'industry-detail',
             newIndustry: {
                 no: 0,
                 name: '',

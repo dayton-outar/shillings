@@ -11,7 +11,7 @@
                     icon-left="plus"
                     v-if="!isCreatePanelActive"
                     @click.prevent="create" />
-                <market-detail :data="newMarket" :editMode="false" v-if="isCreatePanelActive" @close="close" />
+                <component :is="detailComponent" :data="newMarket" :editMode="false" v-if="isCreatePanelActive" @close="close" />
             </div>
         </div>
 
@@ -78,7 +78,7 @@
                         </b-table-column>
 
                         <template #detail="props">
-                            <market-detail :marketData="props.row" :editMode="true" @close="$refs.tbl.toggleDetails(props.row)" />
+                            <component :is="detailComponent" :marketData="props.row" :editMode="true" @close="$refs.tbl.toggleDetails(props.row)" />
                         </template>
 
                     </b-table>
@@ -110,6 +110,7 @@ export default {
         return {
             fetchTitle: 'Markets',
             deleteTitle: 'Delete Market',
+            detailComponent: 'market-detail',
             newMarket: {
                 code: '',
                 name: '',

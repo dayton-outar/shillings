@@ -11,7 +11,7 @@
                     icon-left="plus" 
                     v-if="!isCreatePanelActive"
                     @click.prevent="create" />
-                <company-detail :data="newCompany" :editMode="false" v-if="isCreatePanelActive" @close="close" />
+                <component :is="detailComponent" :data="newCompany" :editMode="false" v-if="isCreatePanelActive" @close="close" />
             </div>
         </div>
 
@@ -86,7 +86,7 @@
                         <template #detail="props">
                             <article>
                                 <h5 class="title is-5">{{ props.row.name }}</h5>
-                                <company-detail :data="props.row" :editMode="true"
+                                <component :is="detailComponent" :data="props.row" :editMode="true"
                                     @close="$refs.tbl.toggleDetails(props.row)" />
                             </article>
                         </template>
@@ -121,6 +121,7 @@ export default {
         return {
             fetchTitle: 'Companies',
             deleteTitle: 'Delete Company',
+            detailComponent: 'company-detail',
             newCompany: {
                 code: '',
                 name: '',

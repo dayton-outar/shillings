@@ -11,7 +11,7 @@
                     icon-left="plus" 
                     v-if="!isCreatePanelActive"
                     @click.prevent="create" />
-                <financial-report :data="newReport" :editMode="false" v-if="isCreatePanelActive" @close="close" />
+                <component :is="detailComponent" :data="newReport" :editMode="false" v-if="isCreatePanelActive" @close="close" />
             </div>
         </div>
 
@@ -82,7 +82,7 @@
                         </b-table-column>
 
                         <template #detail="props">
-                            <financial-report 
+                            <component :is="detailComponent"
                                 :data="props.row" 
                                 :editMode="true"
                                 @close="$refs.tbl.toggleDetails(props.row)" />
@@ -119,6 +119,7 @@ export default {
             sort: ['statementDate', 'asc'],
             fetchTitle: 'Financial Reports',
             deleteTitle: 'Delete Financial Report',
+            detailComponent: 'financial-report',
             newReport: {}
         }
     },

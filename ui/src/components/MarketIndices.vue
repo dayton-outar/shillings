@@ -11,7 +11,7 @@
                     icon-left="plus"
                     v-if="!isCreatePanelActive"
                     @click.prevent="create" />
-                <market-index-detail :data="newStock" :editMode="false" v-if="isCreatePanelActive" @close="close" />
+                <component :is="detailComponent" :data="newStock" :editMode="false" v-if="isCreatePanelActive" @close="close" />
             </div>
         </div>
             
@@ -80,7 +80,7 @@
                         <template #detail="props">
                             <article>
                                 <h5 class="title is-5">{{ props.row.name }}</h5>
-                                <market-index-detail :data="props.row" :editMode="true" @close="$refs.tbl.toggleDetails(props.row)" />
+                                <component :is="detailComponent" :data="props.row" :editMode="true" @close="$refs.tbl.toggleDetails(props.row)" />
                             </article>
                         </template>
 
@@ -113,6 +113,7 @@ export default {
         return {
             fetchTitle: 'Market Indices',
             deleteTitle: 'Delete Market Index',
+            detailComponent: 'market-index-detail',
             newIndex: {
                 no: '',
                 name: ''
