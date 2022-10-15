@@ -101,7 +101,7 @@
 import { mapState, mapActions } from 'vuex'
 import moment from 'moment'
 
-import tableMixin from '../mixins/tableMixin'
+import tableMixin from '../utils/tableMixin'
 
 import TableToolBar from './TableToolBar'
 import SearchBar from './SearchBar.vue'

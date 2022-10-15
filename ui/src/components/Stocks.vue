@@ -95,7 +95,7 @@
 <script>
 import { mapState, mapActions } from 'vuex'
 
-import tableMixin from '../mixins/tableMixin'
+import tableMixin from '../utils/tableMixin'
 
 import TableToolBar from './TableToolBar'
 import SearchBar from './SearchBar.vue'

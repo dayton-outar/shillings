@@ -22,7 +22,7 @@
                     <hr class="has-background-grey-lighter thinner" />
                     <div class="columns">
                         <div class="column">
-                            <b-button label="Cancel" size="is-medium" expanded @click.prevent="(isValid = false)" />
+                            <b-button label="Cancel" size="is-medium" expanded @click.prevent="$emit('cancel')" />
                         </div>
                         <div class="column">
                             <b-button label="OK" type="is-info" size="is-medium" expanded @click.prevent="$emit('save')" :disabled="isLoading" />

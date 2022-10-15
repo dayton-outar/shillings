@@ -1,5 +1,5 @@
 <template>
-    <s-form :isValid="isValid" :isLoading="isLoading" :title="title" @validate="validate" @save="save" @close="$emit('close')">
+    <s-form :isValid="isValid" :isLoading="isLoading" :title="title" @validate="validate" @save="save" @cancel="cancel" @close="$emit('close')">
         <template #input>
             <div class="columns">
                 <div class="column">
@@ -58,18 +58,17 @@
 <script> 
 import { mapActions } from 'vuex'
 
+import formMixin from '../utils/formMixin'
+
 import Form from './Form.vue'
 
 export default {
-    props: ['data', 'editMode'],
     components: {
         's-form': Form,
     },
+    mixins: [formMixin],
     data() {
         return {
-            formData: JSON.parse(JSON.stringify(this.data)),
-            isValid: false,
-            isLoading: false,
             validation: {
                 name: {
                     type: '',
@@ -82,81 +81,8 @@ export default {
             }
         }
     },
-    computed: {
-        title() {
-            return this.editMode ? `Update: ${this.data.name}` : `Create Industry`
-        }
-    },
     methods: {
         ...mapActions('industries', ['create', 'update']),
-        save() {
-            this.isLoading = true
-
-            if (this.editMode) {
-                this.update( this.formData )
-                    .then(response => {
-                        this.isLoading = false
-
-                        this.$buefy.dialog.alert({
-                            title: this.title,
-                            message: `Successfully updated ${response.name}`,
-                            confirmText: 'OK',
-                            type: 'is-success',
-                            hasIcon: true,
-                            iconPack: 'fas',
-                            icon: 'circle-check',
-                            onConfirm: () => {                                
-                                this.$emit('close', 'updated')
-                            }
-                        })
-                    })
-                    .catch(err => {    
-                        this.isLoading = false
-
-                        this.$buefy.dialog.alert({
-                            title: this.title,
-                            message: `${err.message}`,
-                            confirmText: 'OK',
-                            type: 'is-danger',
-                            hasIcon: true,
-                            iconPack: 'fas',
-                            icon: 'bug'
-                        })
-                    })
-            } else {
-                this.create( this.formData )
-                    .then(response => {
-                        this.isLoading = false
-
-                        this.$buefy.dialog.alert({
-                            title: this.title,
-                            message: `Successfully created ${response.name}`,
-                            confirmText: 'OK',
-                            type: 'is-success',
-                            hasIcon: true,
-                            iconPack: 'fas',
-                            icon: 'circle-check',
-                            onConfirm: () => {
-                                this.$emit('close', 'created')
-                            }
-                        })
-                    })
-                    .catch(err => {
-                        this.isLoading = false
-
-                        this.$buefy.dialog.alert({
-                            title: this.title,
-                            message: `${err.message}`,
-                            confirmText: 'OK',
-                            type: 'is-danger',
-                            hasIcon: true,
-                            iconPack: 'fas',
-                            icon: 'bug'
-                        })
-                    })
-            }
-
-        },
         validate(){
             let valid = true
 
