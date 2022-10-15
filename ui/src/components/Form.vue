@@ -17,7 +17,7 @@
             </div>
             <transition 
                 enter-active-class="bounceIn">
-                <div v-if="isValid">
+                <div v-if="isValid" class="content">
                     <slot name="confirm"></slot>
                     <hr class="has-background-grey-lighter thinner" />
                     <div class="columns">

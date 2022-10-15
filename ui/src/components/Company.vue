@@ -1,352 +1,326 @@
 <template>
-    <form @submit.prevent="validate" novalidate>
-        <div class="box my-4 mx-1">
-            <h5 class="title is-5">{{ title }}</h5>
-            <hr class="has-background-grey-light" />
-            <div v-if="!isValid">
-                <!-- slot -->
-                <div class="columns">
-                    <div class="column">
-                        <b-field 
-                            label="Code"
-                            label-position="inside"
-                            :type="validation.code.type"
-                            :message="validation.code.message">
-                            <b-input 
-                                v-model="formData.code"
-                                placeholder="Unique code" 
-                                :disabled="editMode"
-                                icon-pack="fas"
-                                icon="file-code" 
-                                type="text"
-                                maxlength="20"></b-input>
-                        </b-field>
-                    </div>
+    <s-form :isValid="isValid" :isLoading="isLoading" :title="title" @validate="validate" @save="save" @cancel="cancel" @close="$emit('close')">
+        <template #input>
+            <div class="columns">
+                <div class="column">
+                    <b-field 
+                        label="Code"
+                        label-position="inside"
+                        :type="validation.code.type"
+                        :message="validation.code.message">
+                        <b-input 
+                            v-model="formData.code"
+                            placeholder="Unique code" 
+                            :disabled="editMode"
+                            icon-pack="fas"
+                            icon="file-code" 
+                            type="text"
+                            maxlength="20"></b-input>
+                    </b-field>
                 </div>
-                <div class="columns">
-                    <div class="column">
-                        <b-field 
-                            label="Name"
-                            label-position="inside"
-                            :type="validation.name.type"
-                            :message="validation.name.message">
-                            <b-input 
-                                v-model="formData.name"
-                                placeholder="Company name"
-                                icon-pack="fas"
-                                icon="building" 
-                                type="text"></b-input>
-                        </b-field>
-                    </div>
-                </div>
-                <div class="columns">
-                    <div class="column">
-                        <b-field 
-                            label="About"
-                            label-position="inside"
-                            :type="validation.about.type"
-                            :message="validation.about.message">
-                            <b-input 
-                                v-model="formData.about"
-                                icon-pack="fas"
-                                icon="file-lines" 
-                                type="text"
-                                placeholder="Summary about company"></b-input>
-                        </b-field>
-                    </div>
-                </div>
-                <div class="columns">
-                    <div class="column">
-                        <b-field 
-                            label="Total Employed"
-                            label-position="inside"
-                            :type="validation.totalEmployed.type"
-                            :message="validation.totalEmployed.message">
-                            <b-numberinput 
-                                v-model="formData.totalEmployed"
-                                icon-pack="fas"
-                                type="is-info"
-                                controls-position="compact"
-                                expanded></b-numberinput>
-                        </b-field>
-                    </div>
-                </div>
-                <div class="columns">
-                    <div class="column">
-                        <b-field 
-                            label="Wiki"
-                            label-position="inside"
-                            :type="validation.wiki.type"
-                            :message="validation.wiki.message">
-                            <b-input 
-                                v-model="formData.wiki"
-                                placeholder="Wikipedia address" 
-                                icon-pack="fas"
-                                icon="globe" 
-                                type="url"
-                                validation-message="Please enter valid URL"></b-input>
-                        </b-field>
-                    </div>
-                </div>
-                <div class="columns">
-                    <div class="column">
-                        <b-field 
-                            label="Website"
-                            label-position="inside"
-                            :type="validation.webSite.type"
-                            :message="validation.webSite.message">
-                            <b-input 
-                                v-model="formData.webSite"
-                                placeholder="Web address" 
-                                icon-pack="fas"
-                                icon="globe" 
-                                type="url"
-                                validation-message="Please enter valid URL"></b-input>
-                        </b-field>
-                    </div>
-                </div>
-                <div class="columns">
-                    <div class="column">
-                        <b-field 
-                            label="Founded"
-                            :type="validation.founded.type"
-                            :message="validation.founded.message">
-                            <b-datepicker
-                                v-model="foundedDate"
-                                ref="datepicker"
-                                label-position=""
-                                placeholder="mm/dd/yyyy"
-                                icon-pack="fas"
-                                icon="calendar"
-                                editable
-                                expanded>
-                            </b-datepicker>
-                        </b-field>
-                    </div>
-                </div>
-                <div class="columns">
-                    <div class="column">
-                        <b-field 
-                            label="Country"
-                            :type="validation.country.type"
-                            :message="validation.country.message">
-                            <b-dropdown 
-                                v-model="formData.countryCode"
-                                expanded>
-                                <template #trigger>
-                                    <b-button
-                                        type="is-light"
-                                        expanded
-                                        icon-right="menu-down">
-                                        {{ formData.countryCode == '' ? 'Choose Country' : formData.countryCode }}
-                                    </b-button>
-                                </template>
-
-                                <b-dropdown-item value="JM" aria-role="listitem">
-                                    <div class="media">
-                                        <figure class="media-left">
-                                            <div class="image is-32x32">
-                                                <img src="https://www.worldometers.info/img/flags/jm-flag.gif" alt="Jamaica Flag" />
-                                            </div>
-                                        </figure>
-                                        <div class="media-content">
-                                            <p>Jamaica</p>
-                                        </div>
-                                    </div>
-                                </b-dropdown-item>
-
-                                <b-dropdown-item value="TT" aria-role="listitem">
-                                    <div class="media">
-                                        <figure class="media-left">
-                                            <div class="image is-32x32">
-                                                <img src="https://www.worldometers.info/img/flags/td-flag.gif" alt="Trinidad Flag" />
-                                            </div>
-                                        </figure>
-                                        <div class="media-content">
-                                            <p>Trinidad</p>
-                                        </div>
-                                    </div>
-                                </b-dropdown-item>
-
-                            </b-dropdown>
-                        </b-field>
-                    </div>
-                </div>
-                <div class="columns">
-                    <div class="column">
-                        <b-field 
-                            label="Industries"
-                            :type="validation.industries.type"
-                            :message="validation.industries.message">                            
-                            <b-dropdown
-                                v-model="companyIndustries"
-                                multiple
-                                scrollable
-                                aria-role="list"
-                                expanded>
-                                <template #trigger>
-                                    <b-button
-                                        type="is-light"
-                                        expanded
-                                        icon-right="menu-down">
-                                        Selected ({{ companyIndustries.length }})
-                                    </b-button>
-                                </template>
-
-                                <b-dropdown-item aria-role="listitem" 
-                                    v-for="industry in industries.nodes" 
-                                    :key="industry.no"
-                                    :value="industry.no">
-                                    {{industry.name}}
-                                </b-dropdown-item>
-
-                            </b-dropdown>                            
-                        </b-field>
-                    </div>
-                </div>
-                <div class="columns">
-                    <div class="column">
-                        <b-field
-                            label="Logo"
-                            :type="validation.logo.type"
-                            :message="validation.logo.message">
-                            <b-field class="file is-info" :class="{'has-name': !!dropFile}">
-                                <b-upload
-                                    v-model="dropFile"
-                                    class="file-label"
-                                    drag-drop
-                                    expanded
-                                    v-if="!hasImg">
-                                    <div class="has-text-centered">
-                                        <p>
-                                            <b-icon
-                                                pack="fas"
-                                                icon="cloud-arrow-up"
-                                                size="is-large">
-                                            </b-icon>
-                                        </p>
-                                        <p>Drop your files here or click to upload</p>
-                                    </div>
-                                </b-upload>
-                                <b-message 
-                                    :title="(dropFile ? `File: ${dropFile.name} (${formatBytes(dropFile.size)})` : `File: ${this.formData.logo.fileName} (${formatBytes(this.formData.logo.contentSize)})`)" 
-                                    v-if="hasImg" 
-                                    aria-close-label="Close message"
-                                    @close="(hasImg = false)">
-                                    <img :src="imgSrc" alt="Company Logo" />
-                                </b-message>          
-                            </b-field>
-                        </b-field>                        
-                    </div>
-                </div>
-                <hr class="has-background-grey-lighter thinner" />
-                <div class="columns">
-                    <div class="column">
-                        <b-button label="Close" size="is-medium" expanded @click.prevent="$emit('close')" />
-                    </div>
-                    <div class="column">
-                        <b-button label="Save" type="is-info" size="is-medium" expanded native-type="submit" />
-                    </div>
-                </div>
-                <!-- slot -->
             </div>
-            <div class="content" v-else>
-                <!-- slot -->
-                <div class="columns">
-                    <div class="column">
-                        <b-field 
-                            label="Code">
-                            {{ formData.code }}
-                        </b-field>
-                    </div>
+            <div class="columns">
+                <div class="column">
+                <b-field 
+                    label="Name"
+                    label-position="inside"
+                    :type="validation.name.type"
+                    :message="validation.name.message">
+                    <b-input 
+                        v-model="formData.name"
+                        placeholder="Company name"
+                        icon-pack="fas"
+                        icon="building" 
+                        type="text"></b-input>
+                </b-field>
                 </div>
-                <div class="columns">
-                    <div class="column">
-                        <b-field 
-                            label="Name">
-                            {{ formData.name }}
-                        </b-field>
-                    </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                <b-field 
+                    label="About"
+                    label-position="inside"
+                    :type="validation.about.type"
+                    :message="validation.about.message">
+                    <b-input 
+                        v-model="formData.about"
+                        icon-pack="fas"
+                        icon="file-lines" 
+                        type="text"
+                        placeholder="Summary about company"></b-input>
+                </b-field>
                 </div>
-                <div class="columns">
-                    <div class="column">
-                        <b-field 
-                            label="About">
-                            {{ formData.about }}
-                        </b-field>
-                    </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                <b-field 
+                    label="Total Employed"
+                    label-position="inside"
+                    :type="validation.totalEmployed.type"
+                    :message="validation.totalEmployed.message">
+                    <b-numberinput 
+                        v-model="formData.totalEmployed"
+                        icon-pack="fas"
+                        type="is-info"
+                        controls-position="compact"
+                        expanded></b-numberinput>
+                </b-field>
                 </div>
-                <div class="columns">
-                    <div class="column">
-                        <b-field 
-                            label="Total Employed">
-                            {{ formData.totalEmployed }}
-                        </b-field>
-                    </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                <b-field 
+                    label="Wiki"
+                    label-position="inside"
+                    :type="validation.wiki.type"
+                    :message="validation.wiki.message">
+                    <b-input 
+                        v-model="formData.wiki"
+                        placeholder="Wikipedia address" 
+                        icon-pack="fas"
+                        icon="globe" 
+                        type="url"
+                        validation-message="Please enter valid URL"></b-input>
+                </b-field>
                 </div>
-                <div class="columns">
-                    <div class="column">
-                        <b-field 
-                            label="Wiki">
-                            <a :href="formData.wiki" target="_blank">{{ formData.wiki }}</a>
-                        </b-field>
-                    </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                <b-field 
+                    label="Website"
+                    label-position="inside"
+                    :type="validation.webSite.type"
+                    :message="validation.webSite.message">
+                    <b-input 
+                        v-model="formData.webSite"
+                        placeholder="Web address" 
+                        icon-pack="fas"
+                        icon="globe" 
+                        type="url"
+                        validation-message="Please enter valid URL"></b-input>
+                </b-field>
                 </div>
-                <div class="columns">
-                    <div class="column">
-                        <b-field 
-                            label="Website">
-                            <a :href="formData.webSite" target="_blank">{{ formData.webSite }}</a>
-                        </b-field>
-                    </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                <b-field 
+                    label="Founded"
+                    :type="validation.founded.type"
+                    :message="validation.founded.message">
+                    <b-datepicker
+                        v-model="foundedDate"
+                        ref="datepicker"
+                        label-position=""
+                        placeholder="mm/dd/yyyy"
+                        icon-pack="fas"
+                        icon="calendar"
+                        editable
+                        expanded>
+                    </b-datepicker>
+                </b-field>
                 </div>
-                <div class="columns">
-                    <div class="column">
-                        <b-field 
-                            label="Founded">
-                            {{ formatDate(this.formData.founded) }}
-                        </b-field>
-                    </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                <b-field 
+                    label="Country"
+                    :type="validation.country.type"
+                    :message="validation.country.message">
+                    <b-dropdown 
+                        v-model="formData.countryCode"
+                        expanded>
+                        <template #trigger>
+                        <b-button
+                            type="is-light"
+                            expanded
+                            icon-right="menu-down">
+                            {{ formData.countryCode == '' ? 'Choose Country' : formData.countryCode }}
+                        </b-button>
+                        </template>
+
+                        <b-dropdown-item value="JM" aria-role="listitem">
+                        <div class="media">
+                            <figure class="media-left">
+                                <div class="image is-32x32">
+                                <img src="https://www.worldometers.info/img/flags/jm-flag.gif" alt="Jamaica Flag" />
+                                </div>
+                            </figure>
+                            <div class="media-content">
+                                <p>Jamaica</p>
+                            </div>
+                        </div>
+                        </b-dropdown-item>
+
+                        <b-dropdown-item value="TT" aria-role="listitem">
+                        <div class="media">
+                            <figure class="media-left">
+                                <div class="image is-32x32">
+                                <img src="https://www.worldometers.info/img/flags/td-flag.gif" alt="Trinidad Flag" />
+                                </div>
+                            </figure>
+                            <div class="media-content">
+                                <p>Trinidad</p>
+                            </div>
+                        </div>
+                        </b-dropdown-item>
+
+                    </b-dropdown>
+                </b-field>
                 </div>
-                <div class="columns">
-                    <div class="column">
-                        <b-field 
-                            label="Country">
-                            {{ this.formData.countryCode }}
-                        </b-field>
-                    </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                <b-field 
+                    label="Industries"
+                    :type="validation.industries.type"
+                    :message="validation.industries.message">                    
+                    <b-dropdown
+                        v-model="companyIndustries"
+                        multiple
+                        scrollable
+                        aria-role="list"
+                        expanded>
+                        <template #trigger>
+                        <b-button
+                            type="is-light"
+                            expanded
+                            icon-right="menu-down">
+                            Selected ({{ companyIndustries.length }})
+                        </b-button>
+                        </template>
+
+                        <b-dropdown-item aria-role="listitem" 
+                        v-for="industry in industries.nodes" 
+                        :key="industry.no"
+                        :value="industry.no">
+                        {{industry.name}}
+                        </b-dropdown-item>
+
+                    </b-dropdown>                    
+                </b-field>
                 </div>
-                <div class="columns">
-                    <div class="column">
-                        <b-field 
-                            label="Industries">
-                            <ul class="list">
-                                <li class="list-item" v-for="industry in industries.nodes.filter(i => companyIndustries.includes(i.no))" :key="industry.no">{{industry.name}}</li>
-                            </ul>
-                        </b-field>
-                    </div>
-                </div>
-                <div class="columns">
-                    <div class="column">
-                        <b-field
-                            label="Logo">
+            </div>
+            <div class="columns">
+                <div class="column">
+                <b-field
+                    label="Logo"
+                    :type="validation.logo.type"
+                    :message="validation.logo.message">
+                    <b-field class="file is-info" :class="{'has-name': !hasImg}">
+                        <b-upload
+                            v-model="dropFile"
+                            class="file-label"
+                            drag-drop
+                            expanded
+                            v-if="!hasImg">
+                            <div class="has-text-centered">
+                                <p>
+                                    <b-icon
+                                    pack="fas"
+                                    icon="cloud-arrow-up"
+                                    size="is-large">
+                                    </b-icon>
+                                </p>
+                                <p>Drop your files here or click to upload</p>
+                            </div>
+                        </b-upload>
+                        <b-message 
+                            :title="(`File: ${this.formData.logo.fileName} (${formatBytes(this.formData.logo.contentSize)})`)" 
+                            v-if="hasImg" 
+                            aria-close-label="Close message"
+                            @close="(hasImg = false)">
                             <img :src="imgSrc" alt="Company Logo" />
-                        </b-field>
-                    </div>
+                        </b-message>          
+                    </b-field>
+                </b-field>                
                 </div>
-                <hr class="has-background-grey-lighter thinner" />
-                <div class="columns">
-                    <div class="column">
-                        <b-button label="Cancel" size="is-medium" expanded @click.prevent="(isValid = false)" />
-                    </div>
-                    <div class="column">
-                        <b-button label="OK" type="is-info" size="is-medium" expanded @click.prevent="save" :disabled="isLoading" />
-                    </div>
-                </div>
-                <!-- slot -->
             </div>
-        </div>
-    </form>
+        </template>
+        <template #confirm>
+            <div class="columns">
+                <div class="column">
+                <b-field 
+                    label="Code">
+                    {{ formData.code }}
+                </b-field>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                <b-field 
+                    label="Name">
+                    {{ formData.name }}
+                </b-field>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                <b-field 
+                    label="About">
+                    {{ formData.about }}
+                </b-field>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                <b-field 
+                    label="Total Employed">
+                    {{ formData.totalEmployed }}
+                </b-field>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                <b-field 
+                    label="Wiki">
+                    <a :href="formData.wiki" target="_blank">{{ formData.wiki }}</a>
+                </b-field>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                <b-field 
+                    label="Website">
+                    <a :href="formData.webSite" target="_blank">{{ formData.webSite }}</a>
+                </b-field>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                <b-field 
+                    label="Founded">
+                    {{ formatDate(this.formData.founded) }}
+                </b-field>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                <b-field 
+                    label="Country">
+                    {{ this.formData.countryCode }}
+                </b-field>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                <b-field 
+                    label="Industries">
+                    <ul class="list">
+                        <li class="list-item" v-for="industry in industries.nodes.filter(i => companyIndustries.includes(i.no))" :key="industry.no">{{industry.name}}</li>
+                    </ul>
+                </b-field>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                <b-field
+                    label="Logo">
+                    <img :src="imgSrc" alt="Company Logo" />
+                </b-field>
+                </div>
+            </div>
+        </template>
+    </s-form>
 </template>
 
 <script>
@@ -355,17 +329,22 @@ import moment from 'moment'
 import prettyBytes from 'pretty-bytes';
 import config from '../config'
 
+import formMixin from '../utils/formMixin'
+
+import Form from './Form.vue'
+
 export default {
-    props: ['data', 'editMode'],
+    components: {
+        's-form': Form,
+    },
+    mixins: [formMixin],
     data() {
         return {
-            formData: JSON.parse(JSON.stringify(this.data)),
+            createTitle: 'Create Company',
             companyIndustries: this.data.industries.map(i => i.no),
             dropFile: null,
             hasImg: (this.editMode && !!this.data.logo),
             imgSrc: this.data.logo ? `${config.fileApiHost}?no=${this.data.logo.no}` : '#',
-            isValid: false,
-            isLoading: false,
             validation: {
                 code: {
                     type: '',
@@ -429,83 +408,10 @@ export default {
             set(value) {
                 this.formData.founded = value
             }
-        },
-        title() {
-            return this.editMode ? `Update: ${this.data.name}` : `Create Company`
         }
     },
     methods: {
         ...mapActions('companies', ['create', 'update']),
-        save() {
-            this.isLoading = true
-
-            this.formData.industries = this.data.industries.nodes.filter(i => this.companyIndustries.includes(i.no)) // TODO: Put in other function or a callback ... assign()
-
-            if (this.editMode) {
-                this.update( this.formData )
-                    .then(response => {
-                        this.isLoading = false
-
-                        this.$buefy.dialog.alert({
-                            title: this.title,
-                            message: `Successfully updated ${response.name}`,
-                            confirmText: 'OK',
-                            type: 'is-success',
-                            hasIcon: true,
-                            iconPack: 'fas',
-                            icon: 'circle-check',
-                            onConfirm: () => {                                
-                                this.$emit('close', 'updated')
-                            }
-                        })
-                    })
-                    .catch(err => {    
-                        this.isLoading = false
-
-                        this.$buefy.dialog.alert({
-                            title: this.title,
-                            message: `${err.message}`,
-                            confirmText: 'OK',
-                            type: 'is-danger',
-                            hasIcon: true,
-                            iconPack: 'fas',
-                            icon: 'bug'
-                        })
-                    })
-            } else {
-                this.create( this.formData )
-                    .then(response => {
-                        this.isLoading = false
-
-                        this.$buefy.dialog.alert({
-                            title: this.title,
-                            message: `Successfully created ${response.name}`,
-                            confirmText: 'OK',
-                            type: 'is-success',
-                            hasIcon: true,
-                            iconPack: 'fas',
-                            icon: 'circle-check',
-                            onConfirm: () => {
-                                this.$emit('close', 'created')
-                            }
-                        })
-                    })
-                    .catch(err => {
-                        this.isLoading = false
-
-                        this.$buefy.dialog.alert({
-                            title: this.title,
-                            message: `${err.message}`,
-                            confirmText: 'OK',
-                            type: 'is-danger',
-                            hasIcon: true,
-                            iconPack: 'fas',
-                            icon: 'bug'
-                        })
-                    })
-            }
-
-        },
         validate(){
             let valid = true
 
@@ -620,7 +526,8 @@ export default {
           }
 
           if (o) {
-            this.formData.logo = o
+            this.formData.logo.fileName = o.name
+            this.formData.logo.contentSize = o.size
             reader.readAsDataURL(o)
           }
         }

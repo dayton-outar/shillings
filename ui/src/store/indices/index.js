@@ -22,7 +22,39 @@ export default {
               name,
               market {
                 code,
-                name
+                name,
+                company {
+                  code,
+                  name,
+                  about,
+                  totalEmployed,
+                  wiki,
+                  webSite,
+                  founded,
+                  countryCode,
+                  created,
+                  industries {
+                    no,
+                    name,
+                    wiki
+                  },
+                  logo {
+                    no,
+                    type,
+                    fileName,
+                    contentType,
+                    contentSize,
+                    created
+                  },
+                  files {
+                    no,
+                    type,
+                    fileName,
+                    contentType,
+                    contentSize,
+                    created
+                  }
+                }
               }
             }
           }
@@ -82,7 +114,28 @@ export default {
                   webSite,
                   founded,
                   countryCode,
-                  created
+                  created,
+                  industries {
+                    no,
+                    name,
+                    wiki
+                  },
+                  logo {
+                    no,
+                    type,
+                    fileName,
+                    contentType,
+                    contentSize,
+                    created
+                  },
+                  files {
+                    no,
+                    type,
+                    fileName,
+                    contentType,
+                    contentSize,
+                    created
+                  }
                 }
               }
             }
@@ -115,7 +168,39 @@ export default {
               name,
               market {
                 code,
-                name
+                name,
+                company {
+                  code,
+                  name,
+                  about,
+                  totalEmployed,
+                  wiki,
+                  webSite,
+                  founded,
+                  countryCode,
+                  created,
+                  industries {
+                    no,
+                    name,
+                    wiki
+                  },
+                  logo {
+                    no,
+                    type,
+                    fileName,
+                    contentType,
+                    contentSize,
+                    created
+                  },
+                  files {
+                    no,
+                    type,
+                    fileName,
+                    contentType,
+                    contentSize,
+                    created
+                  }
+                }
               }
             }
           }

@@ -1,12 +1,12 @@
 <template>
-    <div>
-        <div class="box my-4 mx-1">
+    <s-form :isValid="isValid" :isLoading="isLoading" :title="title" @validate="validate" @save="save" @cancel="cancel" @close="$emit('close')">
+        <template #input>
             <div class="columns">
                 <div class="column">
                     <b-field 
                         label="Code"
                         label-position="inside">
-                        <b-input v-model="stock.code" :disabled="editMode"></b-input>
+                        <b-input v-model="formData.code" :disabled="editMode"></b-input>
                     </b-field>
                 </div>
             </div>
@@ -15,7 +15,7 @@
                     <b-field 
                         label="Name"
                         label-position="inside">
-                        <b-input v-model="stock.name"></b-input>
+                        <b-input v-model="formData.name"></b-input>
                     </b-field>
                 </div>
             </div>
@@ -24,7 +24,13 @@
                     <b-field 
                         label="Issued Shares"
                         label-position="">
-                        <b-numberinput v-model="stock.issuedShares"></b-numberinput>
+                        <b-numberinput 
+                            v-model="formData.issuedShares"
+                            icon-pack="fas"
+                            type="is-info"
+                            controls-position="compact"
+                            expanded>
+                        </b-numberinput>
                     </b-field>
                 </div>
             </div>
@@ -33,7 +39,13 @@
                     <b-field 
                         label="Outstanding Shares"
                         label-position="">
-                        <b-numberinput v-model="stock.outstandingShares"></b-numberinput>
+                        <b-numberinput 
+                            v-model="formData.outstandingShares"
+                            icon-pack="fas"
+                            type="is-info"
+                            controls-position="compact"
+                            expanded>
+                        </b-numberinput>
                     </b-field>
                 </div>
             </div>
@@ -42,7 +54,7 @@
                     <b-field 
                         label="Currency">
                         <b-select 
-                            v-model="stock.currency"
+                            v-model="formData.currency"
                             placeholder="Choose Currency"
                             expanded>
                             <option value="JMD">Jamaican Dollar</option>
@@ -56,7 +68,7 @@
                     <b-field 
                         label="Type">
                         <b-select 
-                            v-model="stock.stockType"
+                            v-model="formData.stockType"
                             placeholder="Choose Type"
                             expanded>
                             <option value="ORDINARY">Ordinary</option>
@@ -70,11 +82,11 @@
                     <b-field
                         label="Company">
                         <b-select 
-                            v-model="stock.company"
+                            v-model="formData.company"
                             placeholder="Choose Company"
                             expanded>
                             <option
-                                v-for="company in companies" 
+                                v-for="company in companies.nodes" 
                                 :key="company.code"
                                 :value="company">
                                 {{company.name}}
@@ -88,7 +100,7 @@
                     <b-field 
                         label="Market Indices">
                         <b-dropdown
-                            v-model="stock.indices"
+                            v-model="formData.indices"
                             multiple
                             scrollable
                             aria-role="list"
@@ -98,14 +110,14 @@
                                     type="is-light"
                                     expanded
                                     icon-right="menu-down">
-                                    Selected ({{ stock.indices.length }})
+                                    Selected ({{ formData.indices ? formData.indices.length : 0 }})
                                 </b-button>
                             </template>
 
                             <b-dropdown-item aria-role="listitem" 
-                                v-for="index in marketIndices" 
+                                v-for="index in marketIndices.nodes" 
                                 :key="index.no"
-                                :value="index" :class="(stock.indices.some(i => i.no === index.no) ? 'is-active': '')">
+                                :value="index" :class="(formData.indices && formData.indices.some(i => i.no === index.no) ? 'is-active': '')">
                                 {{index.name}}
                             </b-dropdown-item>
 
@@ -113,42 +125,157 @@
                     </b-field>
                 </div>
             </div>
+        </template>
+        <template #confirm>
             <div class="columns">
                 <div class="column">
-                    <b-button label="Save" type="is-info" size="is-medium" expanded @click.prevent="submit" />
+                <b-field 
+                    label="Code">
+                    {{ formData.code }}
+                </b-field>
                 </div>
             </div>
-        </div>
-    </div>
+            <div class="columns">
+                <div class="column">
+                <b-field 
+                    label="Name">
+                    {{ formData.name }}
+                </b-field>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                <b-field 
+                    label="Issued Shares">
+                    {{ formData.issuedShares }}
+                </b-field>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                <b-field 
+                    label="Outstanding Shares">
+                    {{ formData.outstandingShares }}
+                </b-field>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                <b-field 
+                    label="Currency">
+                    {{ formData.currency }}
+                </b-field>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                <b-field 
+                    label="Type">
+                    {{ formData.stockType }}
+                </b-field>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                <b-field 
+                    label="Company">
+                    {{ formData.company.name }}
+                </b-field>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                <b-field 
+                    label="Market Indices">
+                    <ul class="list">
+                        <li class="list-item" v-for="index in marketIndices.nodes.filter(i => formData.indices.map(i => i.no).includes(i.no))" :key="index.no">{{index.name}}</li>
+                    </ul>
+                </b-field>
+                </div>
+            </div>
+        </template>
+    </s-form>
 </template>
 
 <script>
 import { mapState, mapActions } from 'vuex' 
 // import moment from 'moment'
 
+import formMixin from '../utils/formMixin'
+
+import Form from './Form.vue'
+
 export default {
-    props: ['data', 'editMode'],
+    components: {
+        's-form': Form,
+    },
+    mixins: [formMixin],
     data() {
         return {
-            stock: JSON.parse(JSON.stringify(this.data)),
+            createTitle: 'Create Stock',
+            validation: {
+                code: {
+                    type: '',
+                    message: ''
+                },
+                name: {
+                    type: '',
+                    message: ''
+                },
+                wiki: {
+                    type: '',
+                    message: ''
+                },
+                webSite: {
+                    type: '',
+                    message: ''
+                },
+                founded: {
+                    type: '',
+                    message: ''
+                },
+                country: {
+                    type: '',
+                    message: ''
+                },
+                industries: {
+                    type: '',
+                    message: ''
+                },
+                logo: {
+                    type: '',
+                    message: ''
+                }
+            }
         }
     },
     beforeCreate() {
-        this.$store.dispatch('fetchCompanies')
-        this.$store.dispatch('fetchMarketIndices')
+        this.$store.dispatch('companies/fetch',{ // TODO: Remove after implementing Global cache
+                first: 100,
+                last: null,
+                next: null,
+                previous: null,
+                filter: { name: { startsWith: '' } },
+                ordering: [{ name: 'ASC' }]
+            })
+        this.$store.dispatch('indices/fetch', { // TODO: Remove after implementing Global cache
+                first: 100,
+                last: null,
+                next: null,
+                previous: null,
+                filter: { name: { startsWith: '' } },
+                ordering: [{ name: 'ASC' }]
+            })
     },
     computed: {
-        ...mapState(['companies', 'marketIndices'])
+        ...mapState(
+            { 
+                companies: state => state.companies.companies, 
+                marketIndices: state => state.indices.indices
+            })
     },
     methods: {
-        ...mapActions(['updateStock', 'createStock']),
-        submit() {
-            if (this.editMode) {
-                this.updateStock( this.stock );
-            } else {
-                this.createStock( this.stock );
-            }
-        }
+        ...mapActions('stocks', ['create', 'update'])
     }
 }
 

@@ -69,6 +69,7 @@ export default {
     mixins: [formMixin],
     data() {
         return {
+            createTitle: 'Create Industry',
             validation: {
                 name: {
                     type: '',

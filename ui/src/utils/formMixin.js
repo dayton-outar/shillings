@@ -23,10 +23,11 @@ export default {
         cancel() {
             this.isValid = false
         },
-        save(assign) {
+        assign() {},
+        save() {
             this.isLoading = true
 
-            if (assign) assign()
+            this.assign()
 
             if (this.editMode) {
                 this.update( this.formData )

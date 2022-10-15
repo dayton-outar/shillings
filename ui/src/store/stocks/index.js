@@ -29,11 +29,33 @@ export default {
               company {
                 code,
                 name,
+                about,
+                totalEmployed,
+                wiki,
+                webSite,
+                founded,
+                countryCode,
+                created,
+                industries {
+                  no,
+                  name,
+                  wiki
+                },
                 logo {
-                  no
+                  no,
+                  type,
+                  fileName,
+                  contentType,
+                  contentSize,
+                  created
                 },
                 files {
-                  no
+                  no,
+                  type,
+                  fileName,
+                  contentType,
+                  contentSize,
+                  created
                 }
               },
               indices {
@@ -100,11 +122,33 @@ export default {
               company {
                 code,
                 name,
+                about,
+                totalEmployed,
+                wiki,
+                webSite,
+                founded,
+                countryCode,
+                created,
+                industries {
+                  no,
+                  name,
+                  wiki
+                },
                 logo {
-                  no
+                  no,
+                  type,
+                  fileName,
+                  contentType,
+                  contentSize,
+                  created
                 },
                 files {
-                  no
+                  no,
+                  type,
+                  fileName,
+                  contentType,
+                  contentSize,
+                  created
                 }
               },
               indices {
@@ -163,11 +207,33 @@ export default {
               company {
                 code,
                 name,
+                about,
+                totalEmployed,
+                wiki,
+                webSite,
+                founded,
+                countryCode,
+                created,
+                industries {
+                  no,
+                  name,
+                  wiki
+                },
                 logo {
-                  no
+                  no,
+                  type,
+                  fileName,
+                  contentType,
+                  contentSize,
+                  created
                 },
                 files {
-                  no
+                  no,
+                  type,
+                  fileName,
+                  contentType,
+                  contentSize,
+                  created
                 }
               },
               indices {
@@ -196,7 +262,6 @@ export default {
                 founded: new Date(),
                 countryCode: '',
                 created: new Date(),
-                logo: stock.company.logo,
                 files: stock.company.files
               },
               isListed: stock.isListed,

@@ -1,9 +1,6 @@
 <template>
-    <form @submit.prevent="validate" novalidate>
-        <div class="box my-4 mx-1">
-            <h5 class="title is-5">{{ title }}</h5>
-            <hr class="has-background-grey-light" />
-
+    <s-form :isValid="isValid" :isLoading="isLoading" :title="title" @validate="validate" @save="save" @cancel="cancel" @close="$emit('close')">
+        <template #input>
             <div class="columns">
                 <div class="column">
                     <b-field
@@ -100,34 +97,29 @@
                     </div>
                 </div>
             </div>
+        </template>
+        <template #confirm>
 
-            <hr class="has-background-grey-lighter thinner" />
-            <div class="columns">
-                <div class="column">
-                    <b-button label="Close" size="is-medium" expanded @click.prevent="$emit('close')" />
-                </div>
-                <div class="column">
-                    <b-button label="Save" type="is-info" size="is-medium" expanded native-type="submit" />
-                </div>
-            </div>
-        </div>
-  </form>
+        </template>
+  </s-form>
 </template>
 
 <script>
 import { mapState, mapActions } from 'vuex'
 import _ from 'lodash'
 
-import FinancialStatement from './FinancialStatement.vue'
+import formMixin from '../utils/formMixin'
+
+import Form from './Form.vue'
 
 export default {
-    props: ['data', 'editMode'],
     components: {
-        'financial-statement': FinancialStatement
+        's-form': Form,
     },
+    mixins: [formMixin],
     data() {
         return {
-            formData: JSON.parse(JSON.stringify(this.data)),
+            createTitle: `Create Financial Report`,
             statements: [],
             vCompany: {
                 type: '',
@@ -165,10 +157,7 @@ export default {
     },
     computed: {
         ...mapState('companies', ['companies']),
-        ...mapState(['isItemsValid']),
-        title() {
-            return this.editMode ? `Update: ${this.formData.description}` : `Create Financial Report`
-        }
+        ...mapState(['isItemsValid'])
     },
     methods: {
         ...mapActions('finances', ['create', 'update']),

@@ -77,10 +77,7 @@
                         </b-table-column>
 
                         <template #detail="props">
-                            <article>
-                                <h5 class="title is-5">{{ props.row.name }}</h5>
-                                <component :is="detailComponent" :data="props.row" :editMode="true" @close="$refs.tbl.toggleDetails(props.row)" />
-                            </article>
+                            <component :is="detailComponent" :data="props.row" :editMode="true" @close="$refs.tbl.toggleDetails(props.row)" />
                         </template>
 
                     </b-table>

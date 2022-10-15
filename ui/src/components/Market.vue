@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <div class="box my-4 mx-1">
+    <s-form :isValid="isValid" :isLoading="isLoading" :title="title" @validate="validate" @save="save" @cancel="cancel" @close="$emit('close')">
+        <template #input>
             <div class="columns">
                 <div class="column">
                     <b-field 
@@ -28,7 +28,7 @@
                             placeholder="Choose Company"
                             expanded>
                             <option
-                                v-for="company in companies" 
+                                v-for="company in companies.nodes" 
                                 :key="company.code"
                                 :value="company">
                                 {{company.name}}
@@ -37,41 +37,69 @@
                     </b-field>
                 </div>
             </div>
+        </template>
+        <template #confirm>
             <div class="columns">
                 <div class="column">
-                    <b-button label="Save" type="is-info" size="is-medium" expanded @click.prevent="submit" />
+                    <b-field
+                        label="Code">
+                        {{ formData.code }}
+                    </b-field>
                 </div>
             </div>
-        </div>
-    </div>
+            <div class="columns">
+                <div class="column">
+                    <b-field
+                        label="Name">
+                        {{ formData.name }}
+                    </b-field>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <b-field 
+                        label="Market">
+                        {{ formData.company.name }}
+                    </b-field>
+                </div>
+            </div>
+        </template>
+    </s-form>
 </template>
 
 <script>
 import { mapState, mapActions } from 'vuex' 
 // import moment from 'moment'
 
+import formMixin from '../utils/formMixin'
+
+import Form from './Form.vue'
+
 export default {
-    props: ['data', 'editMode'],
+    components: {
+        's-form': Form,
+    },
+    mixins: [formMixin],
     data() {
         return {
-            formData: JSON.parse(JSON.stringify(this.data)),
+            createTitle: `Create Market`,
         }
     },
     beforeCreate() {
-        this.$store.dispatch('fetchCompanies')
+        this.$store.dispatch('companies/fetch',{ // TODO: Remove after implementing Global cache
+                first: 100,
+                last: null,
+                next: null,
+                previous: null,
+                filter: { name: { startsWith: '' } },
+                ordering: [{ name: 'ASC' }]
+            })
     },
     computed: {
-        ...mapState(['companies'])
+        ...mapState('companies', ['companies'])
     },
     methods: {
-        ...mapActions(['updateStock', 'createStock']),
-        submit() {
-            if (this.editMode) {
-                //this.updateStock( this.stock );
-            } else {
-                //this.createStock( this.stock );
-            }
-        }
+        ...mapActions('markets', ['create', 'update'])
     }
 }
 
