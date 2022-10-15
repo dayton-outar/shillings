@@ -14,6 +14,9 @@ export default {
   mutations,
   actions: {
     async create({ commit }, marketIndex) {
+      delete marketIndex.market.company.logo
+      marketIndex.no = parseInt(marketIndex.no, 10)
+
       const response = await graphQlClient.mutate({
         mutation: gql`mutation CreateMarketIndex($input: CreateMarketIndexInput!) {
           createMarketIndex ( input: $input) {
@@ -64,9 +67,7 @@ export default {
             marketIndex: {
               no: marketIndex.no,
               name: marketIndex.name,
-              market: {
-                code: marketIndex.code
-              }
+              market: marketIndex.market
             }
           }
         }
@@ -160,6 +161,8 @@ export default {
       return Promise.resolve(response.data.marketIndices)
     },
     async update({ commit }, marketIndex) {
+      delete marketIndex.market.company.logo
+
       const response = await graphQlClient.mutate({
         mutation: gql`mutation UpdateMarketIndex($input: UpdateMarketIndexInput!) {
           updateMarketIndex ( input: $input) {
@@ -210,9 +213,7 @@ export default {
             marketIndex: {
                 no: marketIndex.no,
                 name: marketIndex.name,
-                market: {
-                  code: marketIndex.code
-                }
+                market: marketIndex.market
             }
           }
         }

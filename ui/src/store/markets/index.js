@@ -14,6 +14,8 @@ export default {
   mutations,
   actions: {
     async create({ commit }, market) {
+      delete market.company.logo
+
       const response = await graphQlClient.mutate({
         mutation: gql`mutation CreateMarket($input: CreateMarketInput!) {
           createMarket ( input: $input) {
@@ -59,7 +61,8 @@ export default {
           input: {
             market: {
                 code: market.code,
-                name: market.name
+                name: market.name,
+                company: market.company
             }
           }
         }
@@ -149,6 +152,8 @@ export default {
       return Promise.resolve(response.data.markets)
     },
     async update({ commit }, market) {
+      delete market.company.logo
+
       const response = await graphQlClient.mutate({
         mutation: gql`mutation UpdateMarket($input: UpdateMarketInput!) {
           updateMarket ( input: $input) {
@@ -194,7 +199,8 @@ export default {
           input: {
             market: {
                 code: market.code,
-                name: market.name
+                name: market.name,
+                company: market.company
             }
           }
         }

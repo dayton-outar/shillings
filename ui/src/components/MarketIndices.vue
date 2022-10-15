@@ -11,7 +11,7 @@
                     icon-left="plus"
                     v-if="!isCreatePanelActive"
                     @click.prevent="create" />
-                <component :is="detailComponent" :data="newStock" :editMode="false" v-if="isCreatePanelActive" @close="close" />
+                <component :is="detailComponent" :data="newIndex" :editMode="false" v-if="isCreatePanelActive" @close="close" />
             </div>
         </div>
             
@@ -121,7 +121,12 @@ export default {
         }
     },
     methods: {
-        ...mapActions('indices', ['fetch', 'delete'])
+        ...mapActions('indices', ['fetch', 'delete']),
+        create() {
+            this.newIndex.no += 1
+
+            this.isCreatePanelActive = true
+        }
     },
     computed: {
         ...mapState({ data: state => state.indices.indices })
