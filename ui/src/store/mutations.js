@@ -25,12 +25,6 @@ export default {
     }
   },
   // -- 
-    setMarkets(state, payload) {
-      state.markets = payload
-    },
-    setMarketIndices(state, payload) {
-      state.marketIndices = payload
-    },
     setSections(state, payload) {
       state.sections = payload
     },
@@ -43,13 +37,7 @@ export default {
     setPortfolio(state, payload) {
       state.portfolioHoldings = payload
     },
-    setFinancialReports(state, payload) {
-      state.financialReports = payload.nodes
-    },
-    setFinancialReport(state, payload) {
-      var ix = state.financialReports.findIndex(f => f.no === payload.no);
-      state.financialReports[ix] = payload
-    },
+    // ---
     openStatementItem(state, payload) {
       const item = state.financialReports.analytes.find(p => p.type.toLowerCase() === payload.type.replace(' ', '_').toLowerCase() && p.sequence === payload.sequence);
       if (item) {
@@ -215,6 +203,7 @@ export default {
         }
       })
     },
+    // ---
     addPortfolio(state, payload) {
       const itrade = state.totalTradings.find(t => t.code === payload.security.code)
       let newPrice = itrade ? itrade.closingPrice : 0

@@ -97,8 +97,5 @@ export default {
     },
     flushPortfolio({ commit }) {
       commit('flushPortfolio')
-    },
-    saveFinancialReport({ commit }, payload) {
-      commit('saveFinancialReport', payload)
     }
 }
