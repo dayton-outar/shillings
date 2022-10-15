@@ -78,7 +78,7 @@
                         </b-table-column>
 
                         <template #detail="props">
-                            <component :is="detailComponent" :marketData="props.row" :editMode="true" @close="$refs.tbl.toggleDetails(props.row)" />
+                            <component :is="detailComponent" :data="props.row" :editMode="true" @close="$refs.tbl.toggleDetails(props.row)" />
                         </template>
 
                     </b-table>
