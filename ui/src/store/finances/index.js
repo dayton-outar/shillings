@@ -47,7 +47,35 @@ export default {
                 no
                 company {
                   code,
-                  name
+                  name,
+                  about,
+                  totalEmployed,
+                  wiki,
+                  webSite,
+                  founded,
+                  countryCode,
+                  created,
+                  industries {
+                    no,
+                    name,
+                    wiki
+                  },
+                  logo {
+                    no,
+                    type,
+                    fileName,
+                    contentType,
+                    contentSize,
+                    created
+                  },
+                  files {
+                    no,
+                    type,
+                    fileName,
+                    contentType,
+                    contentSize,
+                    created
+                  }
                 },
                 description,
                 period,
@@ -117,7 +145,35 @@ export default {
                   no,
                   company {
                     code,
-                    name
+                    name,
+                    about,
+                    totalEmployed,
+                    wiki,
+                    webSite,
+                    founded,
+                    countryCode,
+                    created,
+                    industries {
+                      no,
+                      name,
+                      wiki
+                    },
+                    logo {
+                      no,
+                      type,
+                      fileName,
+                      contentType,
+                      contentSize,
+                      created
+                    },
+                    files {
+                      no,
+                      type,
+                      fileName,
+                      contentType,
+                      contentSize,
+                      created
+                    }
                   },
                   description,
                   period,
@@ -194,7 +250,35 @@ export default {
                 no
                 company {
                   code,
-                  name
+                  name,
+                  about,
+                  totalEmployed,
+                  wiki,
+                  webSite,
+                  founded,
+                  countryCode,
+                  created,
+                  industries {
+                    no,
+                    name,
+                    wiki
+                  },
+                  logo {
+                    no,
+                    type,
+                    fileName,
+                    contentType,
+                    contentSize,
+                    created
+                  },
+                  files {
+                    no,
+                    type,
+                    fileName,
+                    contentType,
+                    contentSize,
+                    created
+                  }
                 },
                 description,
                 period,

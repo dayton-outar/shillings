@@ -22,19 +22,32 @@
         </div>
         <div class="columns has-border-top">
             <div class="column">
-                Founded {{ foundedYear(data.founded) }}
+                <b-icon
+                    pack="fas"
+                    icon="calendar"
+                    size="is-small">
+                </b-icon> <strong>Founded</strong> {{ foundedYear(data.founded) }}
             </div>
         </div>
         <div class="columns has-border-top" v-if="data.webSite">
             <div class="column">
-                Website <a :href="data.webSite" target="_blank">{{data.webSite}}</a>
+                <b-icon
+                    pack="fas"
+                    icon="globe"
+                    size="is-small">
+                </b-icon> <strong>Website</strong> <a :href="data.webSite" target="_blank">{{ data.webSite }}</a>
             </div>
         </div>
         <div class="columns has-border-top">
             <div class="column">
-                Employees {{ data.totalEmployed }}
+                <b-icon
+                    pack="fas"
+                    icon="people-group"
+                    size="is-small">
+                </b-icon> <strong>Employees</strong> {{ data.totalEmployed }}
             </div>
         </div>
+        <!-- TODO: Industries, CEO (Owners & Staff list)? -->
     </div>
 </template>
 

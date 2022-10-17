@@ -168,6 +168,7 @@ const cleave = {
 } // TODO: Remove duplication. I think this should be globally accessible
 
 export default {
+    name: 'financial-statement',
     directives: { cleave },
     props: ['data', 'type', 'no'],
     data() {

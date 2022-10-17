@@ -2,12 +2,12 @@
     <s-form :isValid="isValid" :isLoading="isLoading" :title="title" @validate="validate" @save="save" @cancel="cancel" @close="$emit('close')">
         <template #input>
             <div class="columns">
-                <div class="column">
+                <div class="column is-two-fifths">
                     <b-field
                         label="Company"
                         label-position="inside"
-                        :type="vCompany.type"
-                        :message="vCompany.message">
+                        :type="validation.company.type"
+                        :message="validation.company.message">
                         <b-select 
                         v-model="formData.company"
                         placeholder="Choose Company"
@@ -25,8 +25,8 @@
                     <b-field 
                         label="Period"
                         label-position="inside"
-                        :type="vPeriod.type"
-                        :message="vPeriod.message">
+                        :type="validation.period.type"
+                        :message="validation.period.message">
                         <b-select 
                             v-model="formData.period"
                             placeholder="Choose Period" 
@@ -38,12 +38,12 @@
                     </b-field>
                 </div>
                 <div class="column is-one-fifth">
-                    <!--
+                    <!--                     
                     <b-field
                         label="Date"
                         label-position="inside"
-                        :type="vStatementDate.type"
-                        :message="vStatementDate.message">
+                        :type="validation.statementDate.type"
+                        :message="validation.statementDate.message">
                         <b-datepicker
                             ref="datepicker"                    
                             v-model="formData.statementDate"
@@ -55,7 +55,7 @@
                     </b-field>
                     -->
                 </div>
-                <div class="column">
+                <div class="column is-one-fifth">
                     <b-field>
                         <b-checkbox v-model="formData.isAudited">Is Audited?</b-checkbox>
                     </b-field>
@@ -111,27 +111,39 @@ import _ from 'lodash'
 import formMixin from '../utils/formMixin'
 
 import Form from './Form.vue'
+import FinancialStatement from './FinancialStatement.vue'
 
 export default {
     components: {
         's-form': Form,
+        'financial-statement': FinancialStatement
     },
     mixins: [formMixin],
     data() {
         return {
             createTitle: `Create Financial Report`,
             statements: [],
-            vCompany: {
-                type: '',
-                message: ''
-            },
-            vPeriod: {
-                type: '',
-                message: ''
-            },
-            vStatementDate: {
-                type: '',
-                message: ''
+            validation: {
+                company: {
+                    type: '',
+                    message: ''
+                },
+                period: {
+                    type: '',
+                    message: ''
+                },
+                statementDate: {
+                    type: '',
+                    message: ''
+                },
+                isAudited: {
+                    type: '',
+                    message: ''
+                },
+                analytes: {
+                    type: '',
+                    message: ''
+                }
             }
         }
     },
@@ -157,7 +169,10 @@ export default {
     },
     computed: {
         ...mapState('companies', ['companies']),
-        ...mapState(['isItemsValid'])
+        ...mapState(['isItemsValid']),
+        title() {
+            return this.editMode ? `Update: ${this.data.description}` : this.createTitle
+        }
     },
     methods: {
         ...mapActions('finances', ['create', 'update']),
@@ -190,30 +205,30 @@ export default {
         let valid = true
 
         if (!this.formData.company) {
-            this.vCompany.type = 'is-danger'
-            this.vCompany.message = 'Please choose company'
+            this.validation.company.type = 'is-danger'
+            this.validation.company.message = 'Please choose company'
             valid = false
         } else {
-            this.vCompany.type = ''
-            this.vCompany.message = ''
+            this.validation.company.type = ''
+            this.validation.company.message = ''
         }
 
         if (!this.formData.period) {
-            this.vPeriod.type = 'is-danger'
-            this.vPeriod.message = 'Please choose period'
+            this.validation.period.type = 'is-danger'
+            this.validation.period.message = 'Please choose period'
             valid = false
         } else {
-            this.vPeriod.type = ''
-            this.vPeriod.message = ''
+            this.validation.period.type = ''
+            this.validation.period.message = ''
         }
 
         if (!this.formData.statementDate) {
-            this.vStatementDate.type = 'is-danger'
-            this.vStatementDate.message = 'Please set statement date'
+            this.validation.statementDate.type = 'is-danger'
+            this.validation.statementDate.message = 'Please set statement date'
             valid = false
         } else {
-            this.vStatementDate.type = ''
-            this.vStatementDate.message = ''
+            this.validation.statementDate.type = ''
+            this.validation.statementDate.message = ''
         }
 
         return valid
@@ -222,24 +237,21 @@ export default {
         return _.startCase(plain.toLowerCase().replace('_', ' '));
       },
       clearVCompany() {
-        this.vCompany.type = ''
-        this.vCompany.message = ''
+        this.validation.company.type = ''
+        this.validation.company.message = ''
       },
       clearVPeriod() {
-        this.vPeriod.type = ''
-        this.vPeriod.message = ''
+        this.validation.period.type = ''
+        this.validation.period.message = ''
       },
       clearVStatementDate() {
-        this.vStatementDate.type = ''
-        this.vStatementDate.message = ''
+        this.validation.statementDate.type = ''
+        this.validation.statementDate.message = ''
       }
     },
     watch: {
         $route(to) {
             this.statements = []; // flush statements
-            this.clearVCompany();
-            this.clearVPeriod();
-            this.clearVStatementDate();
 
             if (to.query.no) {
                 this.$store.dispatch('fetchFinancialReport', parseInt(to.query.no, 10))
