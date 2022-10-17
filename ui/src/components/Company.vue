@@ -225,7 +225,7 @@
                             </div>
                         </b-upload>
                         <b-message 
-                            :title="(`File: ${this.formData.logo.fileName} (${formatBytes(this.formData.logo.contentSize)})`)" 
+                            :title="(dropFile ? `File: ${dropFile.name} (${formatBytes(dropFile.size)})` : `File: ${formData.logo.fileName} (${formatBytes(formData.logo.contentSize)})`)" 
                             v-if="hasImg" 
                             aria-close-label="Close message"
                             @close="(hasImg = false)">
@@ -289,7 +289,7 @@
                 <div class="column">
                 <b-field 
                     label="Founded">
-                    {{ formatDate(this.formData.founded) }}
+                    {{ formatDate(formData.founded) }}
                 </b-field>
                 </div>
             </div>
@@ -297,7 +297,7 @@
                 <div class="column">
                 <b-field 
                     label="Country">
-                    {{ this.formData.countryCode }}
+                    {{ formData.countryCode }}
                 </b-field>
                 </div>
             </div>
@@ -412,6 +412,10 @@ export default {
     },
     methods: {
         ...mapActions('companies', ['create', 'update']),
+        assign() {
+            this.formData.logo = this.dropFile
+            this.formData.industries = this.industries.nodes.filter(i => this.companyIndustries.includes(i.no))
+        },
         validate(){
             let valid = true
 
@@ -469,7 +473,7 @@ export default {
             //     this.validation.webSite.message = ''
             // }
 
-            if (!this.formData.founded) {
+            if (!this.foundedDate) {
                 this.validation.founded.type = 'is-danger'
                 this.validation.founded.message = 'Please enter date company was founded'
                 valid = false
@@ -526,8 +530,6 @@ export default {
           }
 
           if (o) {
-            this.formData.logo.fileName = o.name
-            this.formData.logo.contentSize = o.size
             reader.readAsDataURL(o)
           }
         }
