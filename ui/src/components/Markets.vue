@@ -47,12 +47,24 @@
                         @sort="sortTable"
                         @page-change="pageChange">
 
-                        <b-table-column field="code" label="Code" sortable v-slot="props" width="5%">
-                            {{ props.row.code }}
-                        </b-table-column>
-
                         <b-table-column field="name" label="Name" sortable v-slot="props">
                             {{ props.row.name }}
+                        </b-table-column>
+
+                        <b-table-column field="company" label="Company" v-slot="props" width="40%">
+                            <article class="media">
+                                <figure class="media-left">
+                                    <div class="image is-48x48">
+                                        <img class="is-rounded"
+                                            :src="(props.row.company.logo ? `${fileApiHost}?no=${props.row.company.logo.no}` : require(`../assets/no-image.png`))" />
+                                    </div>
+                                </figure>
+                                <div class="media-content">
+                                    <p v-if="props.row.company.webSite"><a :href="props.row.company.webSite"
+                                            target="_blank">{{props.row.company.name}}</a></p>
+                                    <p v-else>{{ props.row.company.name }}</p>
+                                </div>
+                            </article>
                         </b-table-column>
 
                         <b-table-column width="5%" v-slot="props">
@@ -93,6 +105,7 @@
 <script>
 import { mapState, mapActions } from 'vuex'
 
+import config from '../config'
 import tableMixin from '../utils/tableMixin'
 
 import TableToolBar from './TableToolBar'
@@ -111,6 +124,7 @@ export default {
             fetchTitle: 'Markets',
             deleteTitle: 'Delete Market',
             detailComponent: 'market-detail',
+            fileApiHost: config.fileApiHost,
             newMarket: {
                 code: '',
                 name: '',
@@ -118,11 +132,11 @@ export default {
             }
         }
     },
-    methods: {
-        ...mapActions('markets', ['fetch', 'delete'])
-    },
     computed: {
         ...mapState({ data: state => state.markets.markets })
+    },
+    methods: {
+        ...mapActions('markets', ['fetch', 'delete'])
     }
 }
 

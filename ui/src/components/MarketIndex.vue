@@ -82,7 +82,11 @@ export default {
         ...mapState('markets', ['markets'])
     },
     methods: {
-        ...mapActions('indices', ['create', 'update'])
+        ...mapActions('indices', ['create', 'update']),
+        assign() {
+            delete this.formData.market.company.logo
+            this.formData.no = parseInt(this.formData.no, 10)
+        }
     }
 }
 

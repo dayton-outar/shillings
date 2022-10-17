@@ -120,11 +120,11 @@ export default {
     created() {
         this.get()
     },
-    methods: {
-        ...mapActions('stocks', ['fetch', 'delete'])
-    },
     computed: {
         ...mapState({ data: state => state.stocks.stocks })
+    },
+    methods: {
+        ...mapActions('stocks', ['fetch', 'delete'])
     }
 }
 

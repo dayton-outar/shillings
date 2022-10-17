@@ -5,8 +5,17 @@
                 <div class="column">
                     <b-field 
                         label="Code"
-                        label-position="inside">
-                        <b-input v-model="formData.code" :disabled="editMode"></b-input>
+                        label-position="inside"
+                        :type="validation.code.type"
+                        :message="validation.code.message">
+                        <b-input 
+                            v-model="formData.code" 
+                            placeholder="Unique code" 
+                            :disabled="editMode" 
+                            icon-pack="fas"
+                            icon="file-code" 
+                            type="text"
+                            maxlength="20"></b-input>
                     </b-field>
                 </div>
             </div>
@@ -14,8 +23,15 @@
                 <div class="column">
                     <b-field 
                         label="Name"
-                        label-position="inside">
-                        <b-input v-model="formData.name"></b-input>
+                        label-position="inside"
+                        :type="validation.name.type"
+                        :message="validation.name.message">
+                        <b-input 
+                            v-model="formData.name" 
+                            placeholder="Stock name"
+                            icon-pack="fas"
+                            icon="money-bill-trend-up" 
+                            type="text"></b-input>
                     </b-field>
                 </div>
             </div>
@@ -23,7 +39,9 @@
                 <div class="column">
                     <b-field 
                         label="Issued Shares"
-                        label-position="">
+                        label-position=""
+                        :type="validation.issuedShares.type"
+                        :message="validation.issuedShares.message">
                         <b-numberinput 
                             v-model="formData.issuedShares"
                             icon-pack="fas"
@@ -38,7 +56,9 @@
                 <div class="column">
                     <b-field 
                         label="Outstanding Shares"
-                        label-position="">
+                        label-position=""
+                        :type="validation.outstandingShares.type"
+                        :message="validation.outstandingShares.message">
                         <b-numberinput 
                             v-model="formData.outstandingShares"
                             icon-pack="fas"
@@ -52,7 +72,9 @@
             <div class="columns">
                 <div class="column">
                     <b-field 
-                        label="Currency">
+                        label="Currency"
+                        :type="validation.currency.type"
+                        :message="validation.currency.message">
                         <b-select 
                             v-model="formData.currency"
                             placeholder="Choose Currency"
@@ -66,10 +88,12 @@
             <div class="columns">
                 <div class="column">
                     <b-field 
-                        label="Type">
+                        label="Stock Type"
+                        :type="validation.stockType.type"
+                        :message="validation.stockType.message">
                         <b-select 
                             v-model="formData.stockType"
-                            placeholder="Choose Type"
+                            placeholder="Choose Stock Type"
                             expanded>
                             <option value="ORDINARY">Ordinary</option>
                             <option value="PREFFERRED">Preferred</option>
@@ -80,7 +104,9 @@
             <div class="columns">
                 <div class="column">
                     <b-field
-                        label="Company">
+                        label="Company"
+                        :type="validation.company.type"
+                        :message="validation.company.message">
                         <b-select 
                             v-model="formData.company"
                             placeholder="Choose Company"
@@ -98,7 +124,9 @@
             <div class="columns">
                 <div class="column">
                     <b-field 
-                        label="Market Indices">
+                        label="Market Indices"
+                        :type="validation.indices.type"
+                        :message="validation.indices.message">
                         <b-dropdown
                             v-model="formData.indices"
                             multiple
@@ -222,27 +250,27 @@ export default {
                     type: '',
                     message: ''
                 },
-                wiki: {
+                issuedShares: {
                     type: '',
                     message: ''
                 },
-                webSite: {
+                outstandingShares: {
                     type: '',
                     message: ''
                 },
-                founded: {
+                currency: {
                     type: '',
                     message: ''
                 },
-                country: {
+                stockType: {
                     type: '',
                     message: ''
                 },
-                industries: {
+                company: {
                     type: '',
                     message: ''
                 },
-                logo: {
+                indices: {
                     type: '',
                     message: ''
                 }
@@ -275,7 +303,101 @@ export default {
             })
     },
     methods: {
-        ...mapActions('stocks', ['create', 'update'])
+        ...mapActions('stocks', ['create', 'update']),
+        assign() {
+            delete this.formData.company.logo
+            this.formData.indices = this.formData.indices.map(i => {
+                delete i.market.company.logo
+                return i
+            })
+        },
+        validate() {
+            let valid = true
+
+            if (!this.formData.code) {
+                this.validation.code.type = 'is-danger'
+                this.validation.code.message = 'Please enter unique code'
+                valid = false
+            } else {
+                this.validation.code.type = ''
+                this.validation.code.message = ''
+            }
+
+            if (!this.formData.name) {
+                this.validation.name.type = 'is-danger'
+                this.validation.name.message = 'Please enter name'
+                valid = false
+            } else {
+                this.validation.name.type = ''
+                this.validation.name.message = ''
+            }
+
+            if (!this.formData.issuedShares) {
+                this.validation.issuedShares.type = 'is-danger'
+                this.validation.issuedShares.message = 'Please enter issued shares'
+                valid = false
+            } else {
+                this.validation.issuedShares.type = ''
+                this.validation.issuedShares.message = ''
+            }
+
+            if (!this.formData.outstandingShares) {
+                this.validation.outstandingShares.type = 'is-danger'
+                this.validation.outstandingShares.message = 'Please enter outstanding shares'
+                valid = false
+            } else {
+                this.validation.outstandingShares.type = ''
+                this.validation.outstandingShares.message = ''
+            }
+
+            if (!this.formData.outstandingShares) {
+                this.validation.outstandingShares.type = 'is-danger'
+                this.validation.outstandingShares.message = 'Please enter outstanding shares'
+                valid = false
+            } else {
+                this.validation.outstandingShares.type = ''
+                this.validation.outstandingShares.message = ''
+            }
+
+            if (!this.formData.currency) {
+                this.validation.currency.type = 'is-danger'
+                this.validation.currency.message = 'Please choose currency'
+                valid = false
+            } else {
+                this.validation.currency.type = ''
+                this.validation.currency.message = ''
+            }
+
+            if (!this.formData.stockType) {
+                this.validation.stockType.type = 'is-danger'
+                this.validation.stockType.message = 'Please choose stock type'
+                valid = false
+            } else {
+                this.validation.stockType.type = ''
+                this.validation.stockType.message = ''
+            }
+
+            if (!this.formData.company) {
+                this.validation.company.type = 'is-danger'
+                this.validation.company.message = 'Please choose company'
+                valid = false
+            } else {
+                this.validation.company.type = ''
+                this.validation.company.message = ''
+            }
+
+            if (this.formData.indices.length == 0) {
+                this.validation.indices.type = 'is-danger'
+                this.validation.indices.message = 'Please choose at least one (1) market index'
+                valid = false
+            } else {
+                this.validation.indices.type = ''
+                this.validation.indices.message = ''
+            }
+
+            this.isValid = valid
+        }
+
     }
 }
 

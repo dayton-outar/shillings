@@ -119,6 +119,9 @@ export default {
     created() {
         this.get()
     },
+    computed: {
+        ...mapState({ data: state => state.industries.industries })
+    },
     methods: {
         ...mapActions('industries', ['fetch', 'delete']),
         create() {
@@ -126,9 +129,6 @@ export default {
 
             this.isCreatePanelActive = true
         }
-    },
-    computed: {
-        ...mapState({ data: state => state.industries.industries })
     }
 }
 

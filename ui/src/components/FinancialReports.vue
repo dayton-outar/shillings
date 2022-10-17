@@ -123,6 +123,9 @@ export default {
             newReport: {}
         }
     },
+    computed: {
+        ...mapState({ data: state => state.finances.financialReports })
+    },
     methods: {
         ...mapActions('finances', ['fetch', 'delete']),
         find(q) {
@@ -133,9 +136,6 @@ export default {
         formatDate(stmtDate) { // TODO: Put in a mixin
             return moment(stmtDate).format('MMM DD, YYYY')
         }
-    },
-    computed: {
-        ...mapState({ data: state => state.finances.financialReports })
     }
 }
 

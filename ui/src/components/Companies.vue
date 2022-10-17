@@ -52,7 +52,7 @@
                                 <figure class="media-left">
                                     <div class="image is-48x48">
                                         <img class="is-rounded"
-                                            :src="(props.row.logo ? `http://localhost:5000/files?no=${props.row.logo.no}` : require(`../assets/no-image.png`))" />
+                                            :src="(props.row.logo ? `${fileApiHost}?no=${props.row.logo.no}` : require(`../assets/no-image.png`))" />
                                     </div>
                                 </figure>
                                 <div class="media-content">
@@ -62,7 +62,6 @@
                                     <p class="has-text-weight-light">{{ props.row.code }}</p>
                                 </div>
                             </article>
-
                         </b-table-column>
 
                         <b-table-column field="founded" label="Founded" sortable v-slot="props" width="5%">
@@ -100,6 +99,7 @@
 import { mapState, mapActions } from 'vuex'
 import moment from 'moment'
 
+import config from '../config'
 import tableMixin from '../utils/tableMixin'
 
 import SearchBar from './SearchBar.vue'
@@ -118,6 +118,7 @@ export default {
             fetchTitle: 'Companies',
             deleteTitle: 'Delete Company',
             detailComponent: 'company-detail',
+            fileApiHost: config.fileApiHost,
             newCompany: {
                 code: '',
                 name: '',
@@ -133,14 +134,14 @@ export default {
             }
         }
     },
+    computed: {
+        ...mapState({ data: state => state.companies.companies })
+    },
     methods: {
         ...mapActions('companies', ['fetch', 'delete']),
         foundedYear(founded) {
             return moment(founded).toDate().getFullYear()
         }
-    },
-    computed: {
-        ...mapState({ data: state => state.companies.companies })
     }
 }
 

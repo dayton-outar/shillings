@@ -120,6 +120,9 @@ export default {
             }
         }
     },
+    computed: {
+        ...mapState({ data: state => state.indices.indices })
+    },
     methods: {
         ...mapActions('indices', ['fetch', 'delete']),
         create() {
@@ -127,9 +130,6 @@ export default {
 
             this.isCreatePanelActive = true
         }
-    },
-    computed: {
-        ...mapState({ data: state => state.indices.indices })
     }
 }
 

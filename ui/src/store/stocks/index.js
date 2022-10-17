@@ -60,7 +60,22 @@ export default {
               },
               indices {
                 no,
-                name
+                name,
+                market {
+                  code,
+                  name,
+                  company {
+                    code,
+                    name,
+                    about,
+                    totalEmployed,
+                    wiki,
+                    webSite,
+                    founded,
+                    countryCode,
+                    created
+                  }
+                }
               }
             }
           }
@@ -238,7 +253,22 @@ export default {
               },
               indices {
                 no,
-                name
+                name,
+                market {
+                  code,
+                  name,
+                  company {
+                    code,
+                    name,
+                    about,
+                    totalEmployed,
+                    wiki,
+                    webSite,
+                    founded,
+                    countryCode,
+                    created
+                  }
+                }
               }
             }
           }
