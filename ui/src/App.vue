@@ -13,8 +13,7 @@
           <router-link to="/stocks">Stocks</router-link> |
           <router-link to="/markets">Markets</router-link> |
           <router-link to="/indices">Indices</router-link> |
-          <router-link to="/industries">Industries</router-link> |
-          <router-link to="/about-company">About Company</router-link>
+          <router-link to="/industries">Industries</router-link>
         </div>
       </div>
     </div>

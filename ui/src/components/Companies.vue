@@ -52,7 +52,7 @@
                                 <figure class="media-left">
                                     <div class="image is-48x48">
                                         <img class="is-rounded"
-                                            :src="(props.row.logo ? `${fileApiHost}?no=${props.row.logo.no}` : require(`../assets/no-image.png`))" />
+                                            :src="(props.row.logo ? `${fileApiHost}?no=${props.row.logo.no}` : require(`../assets/no-image.png`))" alt="Company Logo" />
                                     </div>
                                 </figure>
                                 <div class="media-content">
@@ -70,8 +70,15 @@
 
                         <b-table-column width="5%" v-slot="props">
                             <template>
+                                <b-button size="is-small" type="is-light" icon-pack="fas" icon-right="circle-info" rounded
+                                    @click.prevent="view(props)" />
+                            </template>
+                        </b-table-column>
+
+                        <b-table-column width="5%" v-slot="props">
+                            <template>
                                 <b-button size="is-small" type="is-info" icon-pack="fas" icon-right="pen-to-square"
-                                    @click.prevent="props.toggleDetails(props.row)" />
+                                    @click.prevent="edit(props)" />
                             </template>
                         </b-table-column>
 
@@ -105,10 +112,12 @@ import tableMixin from '../utils/tableMixin'
 import SearchBar from './SearchBar.vue'
 import TableToolBar from './TableToolBar'
 import Company from './Company.vue'
+import ViewCompany from './ViewCompany.vue'
 
 export default {
     components: {
         'company-detail': Company,
+        'company-info': ViewCompany,
         'search-bar': SearchBar,
         'table-tool-bar': TableToolBar
     },
@@ -139,6 +148,14 @@ export default {
     },
     methods: {
         ...mapActions('companies', ['fetch', 'delete']),
+        view(props) {
+            this.detailComponent = 'company-info'
+            props.toggleDetails(props.row)
+        },
+        edit(props) {
+            this.detailComponent = 'company-detail'
+            props.toggleDetails(props.row)
+        },
         foundedYear(founded) {
             return moment(founded).toDate().getFullYear()
         }

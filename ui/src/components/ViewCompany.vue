@@ -1,37 +1,69 @@
 <template>
     <div>
-        <div class="card">
-            <header class="card-header">
-                <p class="card-header-title">
-                    Card header
-                </p>
-                <button class="card-header-icon" aria-label="more options">
-                    <span class="icon">
-                        <i class="fas fa-angle-down" aria-hidden="true"></i>
-                    </span>
-                </button>
-            </header>
-            <div class="card-content">
+        <div class="columns">
+            <div class="column">
                 <div class="media">
                     <div class="media-left">
-                        <figure class="image is-48x48">
-                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                        <figure class="image is-64x64">
+                            <img :src="(data.logo ? `${fileApiHost}?no=${data.logo.no}` : require(`../assets/no-image.png`))" alt="Company Logo" />
                         </figure>
                     </div>
                     <div class="media-content">
-                        <p class="title is-4">John Smith</p>
-                        <p class="subtitle is-6">@johnsmith</p>
+                        <p class="title is-4">{{ data.name }}</p>
+                        <p class="subtitle is-6">{{ data.code }}</p>
                     </div>
                 </div>
-
-                <div class="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                    <a href="#">#css</a> <a href="#">#responsive</a>
-                    <br>
-                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                </div>
+            </div>
+        </div>
+        <div class="columns has-border-top">
+            <div class="column">
+                <p>{{ data.about }}</p>
+            </div>
+        </div>
+        <div class="columns has-border-top">
+            <div class="column">
+                Founded {{ foundedYear(data.founded) }}
+            </div>
+        </div>
+        <div class="columns has-border-top" v-if="data.webSite">
+            <div class="column">
+                Website <a :href="data.webSite" target="_blank">{{data.webSite}}</a>
+            </div>
+        </div>
+        <div class="columns has-border-top">
+            <div class="column">
+                Employees {{ data.totalEmployed }}
             </div>
         </div>
     </div>
 </template>
+
+<script>
+import moment from 'moment'
+
+import config from '../config'
+
+export default {
+    name: 'view-company',
+    props: ['data'],
+    data() {
+        return {
+            fileApiHost: config.fileApiHost
+        }
+    },
+    methods: {
+        foundedYear(founded) {
+            return moment(founded).toDate().getFullYear()
+        }
+    }
+}
+
+</script>
+
+<style scoped>
+
+.has-border-top {
+    border-top: 1px solid #dadce0;
+}
+
+</style>
