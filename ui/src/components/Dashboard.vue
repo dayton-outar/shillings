@@ -13,7 +13,7 @@
                   aria-controls="volumeShares">
                   <p class="card-header-title">Volume Shares: Pie Chart</p>
                   <a class="card-header-icon">
-                    <b-icon :icon="props.open ? 'menu-down' : 'menu-up'" />
+                    <b-icon pack="fas" :icon="props.open ? 'caret-down' : 'caret-up'" />
                   </a>
                 </div>
               </template>
@@ -35,7 +35,7 @@
                   aria-controls="priceBar">
                   <p class="card-header-title">Price Changes: Bar Chart</p>
                   <a class="card-header-icon">
-                    <b-icon :icon="props.open ? 'menu-down' : 'menu-up'" />
+                    <b-icon pack="fas" :icon="props.open ? 'caret-down' : 'caret-up'" />
                   </a>
                 </div>
               </template>
@@ -57,7 +57,7 @@
                   aria-controls="tradeCost">
                   <p class="card-header-title">Trade Cost: Bubble Chart</p>
                   <a class="card-header-icon">
-                    <b-icon :icon="props.open ? 'menu-down' : 'menu-up'" />
+                    <b-icon pack="fas" :icon="props.open ? 'caret-down' : 'caret-up'" />
                   </a>
                 </div>
               </template>
@@ -79,7 +79,7 @@
                   aria-controls="stocksClosingPrices">
                   <p class="card-header-title">Closing Prices: Line Chart</p>
                   <a class="card-header-icon">
-                    <b-icon :icon="props.open ? 'menu-down' : 'menu-up'" />
+                    <b-icon pack="fas" :icon="props.open ? 'caret-down' : 'caret-up'" />
                   </a>
                 </div>
               </template>

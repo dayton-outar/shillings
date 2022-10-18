@@ -10,7 +10,7 @@
                   v-model="chosenStock"
                   placeholder="Choose Security">
                   <option
-                    v-for="stock in stocks" 
+                    v-for="stock in stocks.nodes" 
                     :key="stock.code"
                     :value="stock">
                     {{stock.name}}
@@ -101,10 +101,17 @@ export default ({
       }
     },
     beforeCreate() {
-      this.$store.dispatch('fetchStocks')
+      this.$store.dispatch('stocks/fetch', {
+        first: 100,
+        last: null,
+        next: null,
+        previous: null,
+        filter: { name: { startsWith: '' } },
+        ordering: [{ name: 'ASC' }]
+      })
     },
     computed: {
-        ...mapState(['stocks'])
+        ...mapState('stocks', ['stocks'])
     },
     methods: {
       ...mapActions(['addPortfolio', 'flushPortfolio']),

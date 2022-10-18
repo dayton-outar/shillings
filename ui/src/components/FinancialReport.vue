@@ -185,7 +185,7 @@ export default {
       removeStatement(ix) {
           this.statements.splice(ix, 1);
       },
-      saveReport() {        
+      saveReport() {
         if (this.validateReport()) {
             this.validateStatementItems()
             .then(() => {

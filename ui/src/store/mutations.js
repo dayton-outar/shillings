@@ -60,30 +60,6 @@ export default {
         };
       }
     },
-    closeStatementItem(state, payload) {
-      const item = state.financialReports.analytes.find(p => p.type.toLowerCase() === payload.type.replace(' ', '_').toLowerCase() && p.sequence === payload.sequence);
-
-      if (item) { // TODO: Need refactoring
-        
-        if (state.isItemsValid) {
-          item.state = 'Closed';
-        }
-      }
-    },
-    addStatementItem(state, payload) {
-      state.financialReports.analytes.push(payload)
-
-      //localStorage.setItem('my-statement-items', JSON.stringify(this.financialReports.analytes) )
-    },
-    updateStatementItem(state, payload) {
-      const ix = state.financialReports.analytes.findIndex(p => p.type.toLowerCase() === payload.type.replace(' ', '_').toLowerCase() && p.sequence === payload.sequence);
-      // if (payload.key === 'amount') {
-      //     payload.value = payload.value.toString().replace(/[^0-9.-]+/g,'');
-      // }
-      state.financialReports.analytes[ix][payload.key] = payload.value;
-
-      //localStorage.setItem('my-statement-items', JSON.stringify(this.financialReports.analytes) )
-    },
     removeStatementItem(state, payload) {
       const ix = state.financialReports.analytes.findIndex(p => p.type.toLowerCase() === payload.type.replace(' ', '_').toLowerCase() && p.sequence === payload.sequence);
       if (ix > -1) {

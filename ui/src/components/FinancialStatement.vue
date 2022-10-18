@@ -25,12 +25,12 @@
             <div class="columns">
                 <div class="column is-full">                    
                     <b-table 
-                    :data="statementTypeItems"
-                    :sort-icon="sortIcon" 
-                    :sort-icon-size="sortIconSize"
-                    :default-sort-direction="defaultSortDirection" 
-                    :striped="true" 
-                    :hoverable="true">
+                        :data="analytes"
+                        :sort-icon="sortIcon" 
+                        :sort-icon-size="sortIconSize"
+                        :default-sort-direction="defaultSortDirection" 
+                        :striped="true" 
+                        :hoverable="true">
 
                     <b-table-column field="no" label="#" sortable v-slot="props" width="5%">
                         {{ props.row.sequence }}
@@ -168,7 +168,6 @@ const cleave = {
 } // TODO: Remove duplication. I think this should be globally accessible
 
 export default {
-    name: 'financial-statement',
     directives: { cleave },
     props: ['data', 'type', 'no'],
     data() {
@@ -177,6 +176,7 @@ export default {
             sortIcon: 'arrow-up',
             sortIconSize: 'is-small',
             selectedAnalytes: [],
+            analytes: JSON.parse(JSON.stringify(this.data.filter(s => s.type === this.type.replace(' ', '_').toUpperCase()))).map(a => { a.state = 'Closed'; return a; }),
             masks: {
                 price: {
                     numeral: true,
@@ -198,9 +198,6 @@ export default {
     },
     computed: {
         ...mapState(['sections', 'assays', 'financialReport', 'isItemsValid']),
-        statementTypeItems() {
-            return this.data.filter(s => s.type === this.type.replace(' ', '_').toUpperCase());
-        },
         statementSections() {
             const iss = this.sections.findIndex(ss => ss.type.toLowerCase() === this.type.replace(' ', '_').toLowerCase());
 
@@ -213,16 +210,16 @@ export default {
         }
     },
     methods: {
-        ...mapActions(['addStatementItem', 'updateStatementItem', 'removeStatementItem', 'validateStatementItem', 'closeStatementItem', 'openStatementItem']),
+        ...mapActions(['addStatementItem', 'updateStatementItem', 'removeStatementItem', 'validateStatementItem']),
         removeStatement() {
             this.$emit('removed', this.no)
         },
         addItem() {
-          const sqs = this.statementTypeItems.map(a => a.sequence);
+          const sqs = this.analytes.map(a => a.sequence);
           const maxNo = Math.max(...sqs)
           this.iNo = maxNo > this.iNo ? (maxNo + 1) : (this.iNo + 1)
 
-          this.addStatementItem({
+          this.analytes.push({
               no: 0,
               sequence: this.iNo,
               description: '',
@@ -250,24 +247,18 @@ export default {
           })
         },
         updateItem(n, p, v) {
-            this.updateStatementItem({
-                sequence: n,
-                type: this.type,
-                key: p,
-                value: v
-            })
+            const ix = this.analytes.findIndex(p => p.sequence === n)
+            this.analytes[ix][p] = v
         },
         removeItem(id) {
-          this.removeStatementItem({
-              sequence: id,
-              type: this.type
-          });
+            const ix =this.analytes.findIndex(p => p.sequence === id)
+            this.analytes.splice(ix, 1)
 
-          if (this.statementTypeItems.length === 0) {
-              this.iNo = 0;
-          }
+            if (this.analytes.length === 0) {
+                this.iNo = 0;
+            }
           
-          //localStorage.setItem('my-statement-items', JSON.stringify(this.financialReport.analytes) )
+            //localStorage.setItem('my-statement-items', JSON.stringify(this.financialReport.analytes) )
         },
         flushItems() {
           //this.flushStatementItems()
@@ -281,7 +272,7 @@ export default {
             return _.startCase(plain.toLowerCase().replace('_', ' '));
         },
         getState(state) {
-            return state === 'Opened';
+            return state === 'Opened'
         },
         getSectionAssays(sectionName) {
             let ias = -1
@@ -292,36 +283,44 @@ export default {
             return ias > -1 ? this.assays[ias].assay : []
         },
         openItem(sequence) {
-            const item = this.data.find(p => p.type.toLowerCase() === this.type.replace(' ', '_').toLowerCase() && p.sequence === sequence)
+            const item = this.analytes.find(p => p.sequence === sequence)
             if (item) {
-                item.state = 'Opened';
+                item.state = 'Opened'
                 item.vDesc = {
-                type: '',
-                message: ''
-                };
+                    type: '',
+                    message: ''
+                }
                 item.vSec = {
-                type: '',
-                message: ''
-                };
+                    type: '',
+                    message: ''
+                }
                 item.vAnl = {
-                type: '',
-                message: ''
-                };
+                    type: '',
+                    message: ''
+                }
                 item.vAmt = {
-                type: '',
-                message: ''
-                };
+                    type: '',
+                    message: ''
+                }
             }
         },
         closeItem(sequence) {
-            this.validateStatementItem({ type: this.type.replace(' ', '_').toUpperCase(), sequence: sequence })
-                .then(() => {
-                    this.closeStatementItem({ type: this.type.replace(' ', '_').toUpperCase(), sequence: sequence });
-                })
+            const item = this.analytes.find(p => p.sequence === sequence);
+
+            if (item) { // TODO: Need refactoring
+                
+                //if (state.isItemsValid) {
+                item.state = 'Closed';
+                //}
+            }
+            // this.validateStatementItem({ type: this.type.replace(' ', '_').toUpperCase(), sequence: sequence })
+            //     .then(() => {
+            //         this.closeStatementItem({ type: this.type.replace(' ', '_').toUpperCase(), sequence: sequence });
+            //     })
             
         },
         formatNet() {
-            const netValue = this.statementTypeItems.reduce((t, v) => {
+            const netValue = this.analytes.reduce((t, v) => {
                 const amt = parseFloat(v.amount.toString().replace(/[^0-9.-]+/g,'')) || 0;
 
                 return t + amt;

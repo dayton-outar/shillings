@@ -48,7 +48,8 @@
                   @click="removeMyPortfolio(props.row.id)"
                   size="is-small"
                   type="is-danger"
-                  icon-right="delete" />
+                  icon-pack="fas"
+                  icon-right="trash" />
               </template>
             </b-table-column>
 

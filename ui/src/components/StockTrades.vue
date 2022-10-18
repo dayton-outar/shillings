@@ -8,6 +8,7 @@
         <p>{{ tradings.length }} stocks traded</p>
           <b-table 
             :data="tradings"
+            icon-pack="fas"
             :sort-icon="sortIcon"
             :sort-icon-size="sortIconSize"
             :default-sort-direction="defaultSortDirection"
@@ -28,7 +29,7 @@
             </b-table-column>
             -->
 
-            <b-table-column field="marketCapitalization" label="Market Cap" numeric sortable v-slot="props">
+            <b-table-column field="marketCapitalization" label="Market Cap" numeric sortable v-slot="props" width="12%">
               {{ formatMoney(props.row.marketCapitalization) }}
             </b-table-column>
 
