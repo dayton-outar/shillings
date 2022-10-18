@@ -83,3 +83,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 3. [Vue.js Todo App](https://www.youtube.com/playlist?list=PLEhEHUEU3x5q-xB1On4CsLPts0-rZ9oos) - [Andre Madarang](https://www.youtube.com/c/drehimself)
 4. [GraphQL Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9iK6Qhn-QLcXCXPQUov1U7f) - [The Net Ninja](https://www.youtube.com/c/TheNetNinja)
 5. [Electron Tutorial](https://www.youtube.com/playlist?list=PLbu98QxRH81ILK1p1BnSRMPr2x-6Zd1oX) - [Red Stapler](https://www.youtube.com/c/RedStapler_channel)
+6. [Vue 3 Animations & Transitions](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ghm7-iTfS9n468Kp7l9Ipu) - [The Net Ninja](https://www.youtube.com/c/TheNetNinja)

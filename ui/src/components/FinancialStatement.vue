@@ -211,7 +211,7 @@ export default {
         }
     },
     methods: {
-        ...mapActions(['addStatementItem', 'updateStatementItem', 'removeStatementItem', 'validateStatementItem']),
+        ...mapActions(['addStatementItem']),
         removeStatement() {
             this.$emit('removed', this.no)
         },
@@ -266,7 +266,6 @@ export default {
             this.analytes.forEach(i => {
                 if (i.state == 'Opened') {
                     if (!i.description) { // TODO: Need refactoring
-                        // HACK: These fields do not exist on the graphql model
                         i.vDesc.type = 'is-danger'
                         i.vDesc.message = 'Please enter description'
 
