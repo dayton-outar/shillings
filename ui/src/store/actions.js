@@ -72,17 +72,6 @@ export default {
       
       commit('setAssays', response.data.assays)
     },
-    flushFinancialReport() {
-      this.commit('setFinancialReport', {
-        no: null,
-        company: {},
-        description: null,
-        period: null,
-        statementDate: null,
-        isAudited: null,
-        analytes: []
-      })
-    },
     getPortfolio({ commit }) {
       commit('setPortfolio', JSON.parse(localStorage.getItem('my-portfolio')) )
     },

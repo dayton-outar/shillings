@@ -176,6 +176,7 @@ export default {
             sortIcon: 'arrow-up',
             sortIconSize: 'is-small',
             selectedAnalytes: [],
+            isItemsValid: true,
             analytes: JSON.parse(JSON.stringify(this.data.filter(s => s.type === this.type.replace(' ', '_').toUpperCase()))).map(a => { a.state = 'Closed'; return a; }),
             masks: {
                 price: {
@@ -197,7 +198,7 @@ export default {
       this.$store.dispatch('fetchAssays');      
     },
     computed: {
-        ...mapState(['sections', 'assays', 'financialReport', 'isItemsValid']),
+        ...mapState(['sections', 'assays']),
         statementSections() {
             const iss = this.sections.findIndex(ss => ss.type.toLowerCase() === this.type.replace(' ', '_').toLowerCase());
 
@@ -213,6 +214,100 @@ export default {
         ...mapActions(['addStatementItem', 'updateStatementItem', 'removeStatementItem', 'validateStatementItem']),
         removeStatement() {
             this.$emit('removed', this.no)
+        },
+        validateItem(sequence) {
+            const item = this.analytes.find(p => p.sequence === sequence)
+            this.isItemsValid = true
+
+            if (!item.description) {
+                item.vDesc.type = 'is-danger'
+                item.vDesc.message = 'Please enter description'
+
+                this.isItemsValid = false
+            } else {
+                item.vDesc.type = ''
+                item.vDesc.message = ''
+            }
+
+            if (!item.section) {
+                item.vSec.type = 'is-danger'
+                item.vSec.message = 'Please choose section'
+
+                this.isItemsValid = false
+            } else {
+                item.vSec.type = ''
+                item.vSec.message = ''
+            }
+
+            if (!item.analyte.length) {
+                item.vAnl.type = 'is-danger'
+                item.vAnl.message = 'Please choose categories'
+
+                this.isItemsValid = false
+            } else {
+                item.vAnl.type = ''
+                item.vAnl.message = ''
+            }
+
+            let amt = parseFloat(item.amount.toString().replace(/[^0-9.-]+/g,'')) || 0;
+            if (!amt) {
+                item.vAmt.type = 'is-danger'
+                item.vAmt.message = 'Please enter amount'
+
+                this.isItemsValid = false
+            } else {
+                item.vAmt.type = ''
+                item.vAmt.message = ''
+            }
+        },
+        validateStatementItems() {
+            this.isItemsValid = true
+
+            this.analytes.forEach(i => {
+                if (i.state == 'Opened') {
+                    if (!i.description) { // TODO: Need refactoring
+                        // HACK: These fields do not exist on the graphql model
+                        i.vDesc.type = 'is-danger'
+                        i.vDesc.message = 'Please enter description'
+
+                        this.isItemsValid = false
+                    } else {
+                        i.vDesc.type = ''
+                        i.vDesc.message = ''
+                    }
+
+                    if (!i.section) {
+                        i.vSec.type = 'is-danger'
+                        i.vSec.message = 'Please choose section'
+
+                        this.isItemsValid = false
+                    } else {
+                        i.vSec.type = ''
+                        i.vSec.message = ''
+                    }
+
+                    if (!i.analyte.length) {
+                        i.vAnl.type = 'is-danger'
+                        i.vAnl.message = 'Please choose categories'
+
+                        this.isItemsValid = false
+                    } else {
+                        i.vAnl.type = ''
+                        i.vAnl.message = ''
+                    }
+
+                    let amt = parseFloat(i.amount.toString().replace(/[^0-9.-]+/g,'')) || 0;
+                    if (!amt) {
+                        i.vAmt.type = 'is-danger'
+                        i.vAmt.message = 'Please enter amount'
+
+                        this.isItemsValid = false
+                    } else {
+                        i.vAmt.type = ''
+                        i.vAmt.message = ''
+                    }
+                }
+            })
         },
         addItem() {
           const sqs = this.analytes.map(a => a.sequence);
@@ -252,16 +347,23 @@ export default {
         },
         removeItem(id) {
             const ix =this.analytes.findIndex(p => p.sequence === id)
-            this.analytes.splice(ix, 1)
+            if (ix > -1) {
+                this.analytes.splice(ix, 1)
+            }            
 
             if (this.analytes.length === 0) {
                 this.iNo = 0;
             }
           
+            // for (let i = ix; i < state.financialReports.analytes.length; i++) {
+            //     if (state.financialReports.analytes[i].type === payload.type) {
+            //         state.financialReports.analytes[i].no = (state.financialReports.analytes[i].no - 1);
+            //     }              
+            // }
             //localStorage.setItem('my-statement-items', JSON.stringify(this.financialReport.analytes) )
         },
         flushItems() {
-          //this.flushStatementItems()
+          //this.analytes = []
           //localStorage.removeItem('my-statement-items')
         },
         formatMoney(amount) { // TODO: Make global
@@ -305,19 +407,20 @@ export default {
             }
         },
         closeItem(sequence) {
-            const item = this.analytes.find(p => p.sequence === sequence);
+            const item = this.analytes.find(p => p.sequence === sequence)
 
             if (item) { // TODO: Need refactoring
                 
-                //if (state.isItemsValid) {
-                item.state = 'Closed';
-                //}
-            }
-            // this.validateStatementItem({ type: this.type.replace(' ', '_').toUpperCase(), sequence: sequence })
-            //     .then(() => {
-            //         this.closeStatementItem({ type: this.type.replace(' ', '_').toUpperCase(), sequence: sequence });
-            //     })
-            
+                this.validateItem(sequence)
+
+                if (this.isItemsValid) {
+                    item.state = 'Closed'
+                }
+
+            }            
+        },
+        getItems() {
+            return this.analytes
         },
         formatNet() {
             const netValue = this.analytes.reduce((t, v) => {

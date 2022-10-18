@@ -60,14 +60,15 @@
                         <b-checkbox v-model="formData.isAudited">Is Audited?</b-checkbox>
                     </b-field>
                 </div>        
-            </div>    
-            
+            </div>
+
             <div class="columns">
                 <div class="column is-full">
                     <div class="columns">
                         <div class="column">
                             <div v-for="(stmt, ix) in statements" :key="ix" class="columns">
                                 <financial-statement 
+                                    ref="stmt"
                                     :data="formData.analytes"
                                     :type="stmt.Type" 
                                     :no="ix" 
@@ -169,14 +170,12 @@ export default {
     },
     computed: {
         ...mapState('companies', ['companies']),
-        ...mapState(['isItemsValid']),
         title() {
             return this.editMode ? `Update: ${this.data.description}` : this.createTitle
         }
     },
     methods: {
         ...mapActions('finances', ['create', 'update']),
-      //...mapActions(['saveFinancialReport', 'createFinancialReport', 'prepStatementItems', 'updateFinancialReport', 'validateStatementItems', 'flushFinancialReport']),
       addStatement(type) {
           this.statements.push({
               Type: type
@@ -185,23 +184,20 @@ export default {
       removeStatement(ix) {
           this.statements.splice(ix, 1);
       },
-      saveReport() {
-        if (this.validateReport()) {
-            this.validateStatementItems()
-            .then(() => {
-                if (this.isItemsValid) {
-                    this.prepStatementItems();
+      assign() {
+        this.formData.analytes = this.$refs.stmt.flatMap(s => s.getItems()).map(i => {
+            delete i.vDesc
+            delete i.vSec
+            delete i.vAnl
+            delete i.vAmt
+            delete i.state
 
-                    if (this.financialReport.no) {
-                        this.updateFinancialReport(this.financialReport);
-                    } else {
-                        this.createFinancialReport(this.financialReport);
-                    }
-                }                
-            })
-        }        
+            i.amount = parseFloat(i.amount.toString().replace(/[^0-9.-]+/g,'')) || 0
+
+            return i
+        })
       },
-      validateReport() {
+      validate() {
         let valid = true
 
         if (!this.formData.company) {
@@ -231,7 +227,9 @@ export default {
             this.validation.statementDate.message = ''
         }
 
-        return valid
+        //this.$refs.stmt[x].validateStatementItems()
+
+        this.isValid = valid
       },
       formatTitleCase(plain) {
         return _.startCase(plain.toLowerCase().replace('_', ' '));
@@ -248,20 +246,6 @@ export default {
         this.validation.statementDate.type = ''
         this.validation.statementDate.message = ''
       }
-    },
-    watch: {
-        $route(to) {
-            this.statements = []; // flush statements
-
-            if (to.query.no) {
-                this.$store.dispatch('fetchFinancialReport', parseInt(to.query.no, 10))
-                    .then(() => {                    
-                        
-                    });
-            } else {                
-                this.flushFinancialReport();
-            }
-        }
     }
 }
 
