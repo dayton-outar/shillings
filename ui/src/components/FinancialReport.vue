@@ -227,9 +227,13 @@ export default {
             this.validation.statementDate.message = ''
         }
 
-        //this.$refs.stmt[x].validateStatementItems()
+        for (const s of this.$refs.stmt) {
+            s.validateItems()
+        }
 
-        this.isValid = valid
+        let iiv = this.$refs.stmt.reduce((p, c) => p.isItemsValid && c.isItemsValid, { isItemsValid: true })
+
+        this.isValid = valid && iiv
       },
       formatTitleCase(plain) {
         return _.startCase(plain.toLowerCase().replace('_', ' '));

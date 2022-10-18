@@ -151,7 +151,7 @@
 </template>
 
 <script>
-import { mapState, mapActions } from 'vuex'
+import { mapState } from 'vuex'
 import Cleave from 'cleave.js'
 import _ from 'lodash'
 
@@ -211,14 +211,10 @@ export default {
         }
     },
     methods: {
-        ...mapActions(['addStatementItem']),
         removeStatement() {
             this.$emit('removed', this.no)
         },
-        validateItem(sequence) {
-            const item = this.analytes.find(p => p.sequence === sequence)
-            this.isItemsValid = true
-
+        validateItem(item) {
             if (!item.description) {
                 item.vDesc.type = 'is-danger'
                 item.vDesc.message = 'Please enter description'
@@ -260,51 +256,12 @@ export default {
                 item.vAmt.message = ''
             }
         },
-        validateStatementItems() {
+        validateItems() {
             this.isItemsValid = true
 
             this.analytes.forEach(i => {
                 if (i.state == 'Opened') {
-                    if (!i.description) { // TODO: Need refactoring
-                        i.vDesc.type = 'is-danger'
-                        i.vDesc.message = 'Please enter description'
-
-                        this.isItemsValid = false
-                    } else {
-                        i.vDesc.type = ''
-                        i.vDesc.message = ''
-                    }
-
-                    if (!i.section) {
-                        i.vSec.type = 'is-danger'
-                        i.vSec.message = 'Please choose section'
-
-                        this.isItemsValid = false
-                    } else {
-                        i.vSec.type = ''
-                        i.vSec.message = ''
-                    }
-
-                    if (!i.analyte.length) {
-                        i.vAnl.type = 'is-danger'
-                        i.vAnl.message = 'Please choose categories'
-
-                        this.isItemsValid = false
-                    } else {
-                        i.vAnl.type = ''
-                        i.vAnl.message = ''
-                    }
-
-                    let amt = parseFloat(i.amount.toString().replace(/[^0-9.-]+/g,'')) || 0;
-                    if (!amt) {
-                        i.vAmt.type = 'is-danger'
-                        i.vAmt.message = 'Please enter amount'
-
-                        this.isItemsValid = false
-                    } else {
-                        i.vAmt.type = ''
-                        i.vAmt.message = ''
-                    }
+                    this.validateItem(i)
                 }
             })
         },
@@ -362,7 +319,7 @@ export default {
             //localStorage.setItem('my-statement-items', JSON.stringify(this.financialReport.analytes) )
         },
         flushItems() {
-          //this.analytes = []
+          this.analytes = []
           //localStorage.removeItem('my-statement-items')
         },
         formatMoney(amount) { // TODO: Make global
@@ -410,7 +367,8 @@ export default {
 
             if (item) { // TODO: Need refactoring
                 
-                this.validateItem(sequence)
+                this.isItemsValid = true
+                this.validateItem(item)
 
                 if (this.isItemsValid) {
                     item.state = 'Closed'
