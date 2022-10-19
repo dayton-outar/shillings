@@ -99,26 +99,28 @@
             </div>
         </template>
         <template #confirm>
-
+            <view-financial-report :data="formData" />
         </template>
   </s-form>
 </template>
 
 <script>
 import { mapState, mapActions } from 'vuex'
-import _ from 'lodash'
 
 import formMixin from '../utils/formMixin'
+import utilMixin from '../utils/utilMixin'
 
 import Form from './Form.vue'
 import FinancialStatement from './FinancialStatement.vue'
+import ViewFinancialReport from './ViewFinancialReport.vue'
 
 export default {
     components: {
         's-form': Form,
-        'financial-statement': FinancialStatement
+        'financial-statement': FinancialStatement,
+        'view-financial-report': ViewFinancialReport
     },
-    mixins: [formMixin],
+    mixins: [formMixin, utilMixin],
     data() {
         return {
             createTitle: `Create Financial Report`,
@@ -234,12 +236,9 @@ export default {
             s.validateItems()
         }
 
-        let iiv = this.$refs.stmt.reduce((p, c) => p.isItemsValid && c.isItemsValid, { isItemsValid: true })
+        let iiv = this.$refs.stmt.reduce((p, c) => { return { isItemsValid: p.isItemsValid && c.isItemsValid } }, { isItemsValid: true }).isItemsValid
 
         this.isValid = valid && iiv
-      },
-      formatTitleCase(plain) {
-        return _.startCase(plain.toLowerCase().replace('_', ' '));
       },
       clearVCompany() {
         this.validation.company.type = ''

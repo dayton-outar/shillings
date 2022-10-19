@@ -56,7 +56,7 @@
                         </b-table-column>
 
                         <b-table-column field="statementDate" label="Date" sortable v-slot="props">
-                            {{ formatDate(props.row.statementDate) }}
+                            {{ formatDate(props.row.statementDate, 'MMM DD, YYYY') }}
                         </b-table-column>
 
                         <b-table-column width="5%" v-slot="props">
@@ -99,9 +99,9 @@
 
 <script>
 import { mapState, mapActions } from 'vuex'
-import moment from 'moment'
 
 import tableMixin from '../utils/tableMixin'
+import utilMixin from '../utils/utilMixin'
 
 import TableToolBar from './TableToolBar'
 import SearchBar from './SearchBar.vue'
@@ -113,7 +113,7 @@ export default {
         'search-bar': SearchBar,
         'table-tool-bar': TableToolBar
     },
-    mixins: [tableMixin],
+    mixins: [tableMixin, utilMixin],
     data() {
         return {
             sort: ['statementDate', 'asc'],
@@ -132,10 +132,7 @@ export default {
             this.searchWord = q.searchWord
             this.filterQuery = { company: { name: { startsWith: this.searchWord } } }
             this.get()
-        },
-        formatDate(stmtDate) { // TODO: Put in a mixin
-            return moment(stmtDate).format('MMM DD, YYYY')
-        }
+        }        
     }
 }
 

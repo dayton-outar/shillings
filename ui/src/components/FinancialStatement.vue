@@ -95,7 +95,7 @@
                             v-if="getState(props.row.state)"
                             :type="props.row.vAmt.type" 
                             :message="props.row.vAmt.message">
-                            <b-input v-cleave="masks.price" custom-class="input-text-right" :value="props.row.amount" @input="updateItem(props.row.sequence, 'amount', $event)" />
+                            <b-input v-cleave="masks.price" custom-class="text-right" :value="props.row.amount" @input="updateItem(props.row.sequence, 'amount', $event)" />
                         </b-field>
                         <p v-else>{{ formatMoney(props.row.amount) }}</p>
                     </b-table-column>
@@ -153,7 +153,8 @@
 <script>
 import { mapState } from 'vuex'
 import Cleave from 'cleave.js'
-import _ from 'lodash'
+
+import utilMixin from '../utils/utilMixin'
 
 const cleave = {
     name: 'cleave',
@@ -170,6 +171,7 @@ const cleave = {
 export default {
     directives: { cleave },
     props: ['data', 'type', 'no'],
+    mixins: [utilMixin],
     data() {
         return {
             defaultSortDirection: 'desc',
@@ -311,23 +313,10 @@ export default {
                 this.iNo = 0;
             }
           
-            // for (let i = ix; i < state.financialReports.analytes.length; i++) {
-            //     if (state.financialReports.analytes[i].type === payload.type) {
-            //         state.financialReports.analytes[i].no = (state.financialReports.analytes[i].no - 1);
-            //     }              
-            // }
-            //localStorage.setItem('my-statement-items', JSON.stringify(this.financialReport.analytes) )
+            //this.analytes.forEach(a => a.no = (a.no - 1))
         },
         flushItems() {
           this.analytes = []
-          //localStorage.removeItem('my-statement-items')
-        },
-        formatMoney(amount) { // TODO: Make global
-            const cfi = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' })
-            return cfi.format(amount)
-        },
-        formatTitleCase(plain) {
-            return _.startCase(plain.toLowerCase().replace('_', ' '));
         },
         getState(state) {
             return state === 'Opened'
@@ -365,7 +354,7 @@ export default {
         closeItem(sequence) {
             const item = this.analytes.find(p => p.sequence === sequence)
 
-            if (item) { // TODO: Need refactoring
+            if (item) {
                 
                 this.isItemsValid = true
                 this.validateItem(item)
@@ -395,7 +384,7 @@ export default {
 
 <style>
 
-.input-text-right {
+.text-right {
     text-align: right;
 }
 
