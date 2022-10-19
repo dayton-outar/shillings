@@ -10,7 +10,6 @@
                     </div>
                     <div class="media-content">
                         <h3 class="title is-3">{{ data.company.name }}</h3>
-                        <p class="subtitle is-6">{{ data.company.code }}</p>
                     </div>
                 </div>
             </div>
@@ -19,7 +18,7 @@
             <div class="column is-full">
                 <div class="has-border-bottom-thin">
                     <h4 class="title is-4">Statement of {{ formatTitleCase(statementType) }}</h4>
-                    <h5 class="subtitle is-5 has-text-grey">{{ formatDate(data.statementDate, 'd MMMM YYYY') }}</h5>
+                    <h5 class="subtitle is-5 has-text-grey">{{ formatDate(data.statementDate, 'D MMMM YYYY') }}</h5>
                 </div>
                 <div>
                     <table>
