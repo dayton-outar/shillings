@@ -90,6 +90,44 @@
                                     <th>Other income</th>
                                     <th></th>
                                 </tr>
+                                <tr v-for="(i, ix) in getItemsBySection(statementType, 'LOSSES')" :key="ix">
+                                    <td><p class="ml-4">{{ i.description }}</p></td>
+                                    <td class="text-right">{{ formatMoney(i.amount) }}</td>
+                                </tr>
+                                <tr>
+                                    <th>Other expenses</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">Profit Attributable to:</th>
+                                </tr>
+                                <tr v-for="(i, ix) in getItemsBySection(statementType, 'PROFIT_SHARE')" :key="ix">
+                                    <td><p class="ml-4">{{ i.description }}</p></td>
+                                    <td class="text-right">{{ formatMoney(i.amount) }}</td>
+                                </tr>
+                            </template>
+                            <template v-if="statementType === 'CASH_FLOW'">
+                                <tr>
+                                    <th colspan="2">Operating Activities</th>
+                                </tr>
+                                <tr v-for="(i, ix) in getItemsBySection(statementType, 'OPERATING_ACTIVITIES')" :key="ix">
+                                    <td><p class="ml-6">{{ i.description }}</p></td>
+                                    <td class="text-right">{{ formatMoney(i.amount) }}</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">Financing Activities</th>
+                                </tr>
+                                <tr v-for="(i, ix) in getItemsBySection(statementType, 'FINANCING_ACTIVITIES')" :key="ix">
+                                    <td><p class="ml-6">{{ i.description }}</p></td>
+                                    <td class="text-right">{{ formatMoney(i.amount) }}</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">Investing Activities</th>
+                                </tr>
+                                <tr v-for="(i, ix) in getItemsBySection(statementType, 'INVESTING_ACTIVITIES')" :key="ix">
+                                    <td><p class="ml-6">{{ i.description }}</p></td>
+                                    <td class="text-right">{{ formatMoney(i.amount) }}</td>
+                                </tr>
                             </template>
                         </tbody>
                     </table>
