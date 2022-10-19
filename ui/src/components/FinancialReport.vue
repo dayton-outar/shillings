@@ -86,13 +86,12 @@
                                         type="is-info"
                                         size="is-medium"
                                         icon-pack="fas"
-                                        icon-right="plus" />
+                                        icon-right="plus"
+                                        :disabled="(outstandingStatements.length === 0)" />
                                 </template>
 
 
-                                <b-dropdown-item aria-role="listitem" @click="addStatement('Income')">Income</b-dropdown-item>
-                                <b-dropdown-item aria-role="listitem" @click="addStatement('Financial Position')">Financial Position</b-dropdown-item>
-                                <b-dropdown-item aria-role="listitem" @click="addStatement('Cash Flow')">Cash Flow</b-dropdown-item>
+                                <b-dropdown-item v-for="(t, ix) in outstandingStatements" :key="ix" aria-role="listitem" @click="addStatement(t)">{{ t }}</b-dropdown-item>
                             </b-dropdown>
                         </div>
                     </div>
@@ -145,7 +144,8 @@ export default {
                     type: '',
                     message: ''
                 }
-            }
+            },
+            types: ['Income', 'Financial Position', 'Cash Flow']
         }
     },
     created() {
@@ -172,6 +172,9 @@ export default {
         ...mapState('companies', ['companies']),
         title() {
             return this.editMode ? `Update: ${this.data.description}` : this.createTitle
+        },
+        outstandingStatements() {
+            return this.types.filter(t => !this.statements.map(s => s.Type).includes(t))
         }
     },
     methods: {
