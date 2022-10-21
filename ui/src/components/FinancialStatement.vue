@@ -95,7 +95,11 @@
                             v-if="getState(props.row.state)"
                             :type="props.row.vAmt.type" 
                             :message="props.row.vAmt.message">
-                            <b-input v-cleave="masks.price" custom-class="text-right" :value="props.row.amount" @input="updateItem(props.row.sequence, 'amount', $event)" />
+                            <b-input 
+                                v-cleave="masks.price" 
+                                custom-class="text-right" 
+                                :value="props.row.amount" 
+                                @input="updateItem(props.row.sequence, 'amount', $event)" />
                         </b-field>
                         <p v-else>{{ formatMoney(props.row.amount) }}</p>
                     </b-table-column>

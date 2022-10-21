@@ -190,17 +190,7 @@ export default {
           this.statements.splice(ix, 1);
       },
       assign() {
-        this.formData.analytes = this.$refs.stmt.flatMap(s => s.getItems()).map(i => {
-            delete i.vDesc
-            delete i.vSec
-            delete i.vAnl
-            delete i.vAmt
-            delete i.state
-
-            i.amount = parseFloat(i.amount.toString().replace(/[^0-9.-]+/g,'')) || 0
-
-            return i
-        })
+        delete this.formData.company.logo
       },
       validate() {
         let valid = true
@@ -238,7 +228,23 @@ export default {
 
         let iiv = this.$refs.stmt.reduce((p, c) => { return { isItemsValid: p.isItemsValid && c.isItemsValid } }, { isItemsValid: true }).isItemsValid
 
-        this.isValid = valid && iiv
+        const outcome = valid && iiv
+
+        if (outcome) {
+            this.formData.analytes = this.$refs.stmt.flatMap(s => s.getItems()).map(i => {
+                delete i.vDesc
+                delete i.vSec
+                delete i.vAnl
+                delete i.vAmt
+                delete i.state
+
+                i.amount = parseFloat(i.amount.toString().replace(/[^0-9.-]+/g,'')) || 0
+
+                return i
+            })
+        }
+
+        this.isValid = outcome
       },
       clearVCompany() {
         this.validation.company.type = ''

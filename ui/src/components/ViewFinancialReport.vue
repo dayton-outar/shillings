@@ -30,103 +30,151 @@
                         </thead>
                         <tbody>
                             <template v-if="statementType === 'FINANCIAL_POSITION'">
-                                <tr>
-                                    <th colspan="2">Assets</th>
-                                </tr>
-                                <tr v-for="(i, ix) in getItemsBySection(statementType, 'ASSETS')" :key="ix">
-                                    <td><p class="ml-4">{{ i.description }}</p></td>
-                                    <td class="text-right">{{ formatMoney(i.amount) }}</td>
-                                </tr>
-                                <tr>
-                                    <th>Total Assets</th>
-                                    <th></th>
-                                </tr>
-                                <tr>
-                                    <th colspan="2">Liabilities</th>
-                                </tr>
-                                <tr v-for="(i, ix) in getItemsBySection(statementType, 'LIABILITIES')" :key="ix">
-                                    <td><p class="ml-4">{{ i.description }}</p></td>
-                                    <td class="text-right">{{ formatMoney(i.amount) }}</td>
-                                </tr>
-                                <tr>
-                                    <th>Total Liabiliities</th>
-                                    <th></th>
-                                </tr>
-                                <tr>
-                                    <th colspan="2">Equity</th>
-                                </tr>
-                                <tr v-for="(i, ix) in getItemsBySection(statementType, 'EQUITY')" :key="ix">
-                                    <td><p class="ml-4">{{ i.description }}</p></td>
-                                    <td class="text-right">{{ formatMoney(i.amount) }}</td>
-                                </tr>
-                                <tr>
-                                    <th>Total Equity</th>
-                                    <th></th>
-                                </tr>
+                                <template v-if="assets.length">
+                                    <tr>
+                                        <th colspan="2">Assets</th>
+                                    </tr>
+                                    <tr v-for="i in assets" :key="i.no">
+                                        <td><p class="ml-4">{{ i.description }}</p></td>
+                                        <td class="text-right">{{ formatMoney(i.amount) }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th><p class="ml-4">Total Assets</p></th>
+                                        <th class="text-right">{{ formatMoney(assets.reduce((p, c) => c.amount + p, 0)) }}</th>
+                                    </tr>
+                                </template>
+                                <template v-if="liabilities.length">
+                                    <tr>
+                                        <th colspan="2">Liabilities</th>
+                                    </tr>
+                                    <tr v-for="i in liabilities" :key="i.no">
+                                        <td><p class="ml-4">{{ i.description }}</p></td>
+                                        <td class="text-right">{{ formatMoney(i.amount) }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th><p class="ml-4">Total Liabilities</p></th>
+                                        <th class="text-right">{{ formatMoney(liabilities.reduce((p, c) => c.amount + p, 0)) }}</th>
+                                    </tr>
+                                </template>
+                                <template v-if="equities.length">
+                                    <tr>
+                                        <th colspan="2">Equity</th>
+                                    </tr>
+                                    <tr v-for="i in equities" :key="i.no">
+                                        <td><p class="ml-4">{{ i.description }}</p></td>
+                                        <td class="text-right">{{ formatMoney(i.amount) }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th><p class="ml-4">Total Equity</p></th>
+                                        <th class="text-right">{{ formatMoney(equities.reduce((p, c) => c.amount + p, 0)) }}</th>
+                                    </tr>
+                                </template>
                             </template>
                             <template v-if="statementType === 'INCOME'">
-                                <tr v-for="(i, ix) in getItemsBySection(statementType, 'REVENUES')" :key="ix">
-                                    <td><p class="ml-4">{{ i.description }}</p></td>
-                                    <td class="text-right">{{ formatMoney(i.amount) }}</td>
-                                </tr>
-                                <tr>
-                                    <th>Revenues</th>
-                                    <th></th>
-                                </tr>
-                                <tr v-for="(i, ix) in getItemsBySection(statementType, 'EXPENSES')" :key="ix">
-                                    <td><p class="ml-4">{{ i.description }}</p></td>
-                                    <td class="text-right">{{ formatMoney(i.amount) }}</td>
-                                </tr>
-                                <tr>
-                                    <th>Expenses</th>
-                                    <th></th>
-                                </tr>
-                                <tr v-for="(i, ix) in getItemsBySection(statementType, 'GAINS')" :key="ix">
-                                    <td><p class="ml-4">{{ i.description }}</p></td>
-                                    <td class="text-right">{{ formatMoney(i.amount) }}</td>
-                                </tr>
-                                <tr>
-                                    <th>Other income</th>
-                                    <th></th>
-                                </tr>
-                                <tr v-for="(i, ix) in getItemsBySection(statementType, 'LOSSES')" :key="ix">
-                                    <td><p class="ml-4">{{ i.description }}</p></td>
-                                    <td class="text-right">{{ formatMoney(i.amount) }}</td>
-                                </tr>
-                                <tr>
-                                    <th>Other expenses</th>
-                                    <th></th>
-                                </tr>
-                                <tr>
-                                    <th colspan="2">Profit Attributable to:</th>
-                                </tr>
-                                <tr v-for="(i, ix) in getItemsBySection(statementType, 'PROFIT_SHARE')" :key="ix">
-                                    <td><p class="ml-4">{{ i.description }}</p></td>
-                                    <td class="text-right">{{ formatMoney(i.amount) }}</td>
-                                </tr>
+                                <template v-if="revenues.length">
+                                    <tr>
+                                        <th colspan="2">Revenues</th>
+                                    </tr>
+                                    <tr v-for="i in revenues" :key="i.no">
+                                        <td><p class="ml-4">{{ i.description }}</p></td>
+                                        <td class="text-right">{{ formatMoney(i.amount) }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th><p class="ml-4">Total Revenues</p></th>
+                                        <th class="text-right">{{ formatMoney(revenues.reduce((p, c) => c.amount + p, 0)) }}</th>
+                                    </tr>
+                                </template>
+                                <template v-if="expenses.length">
+                                    <tr>
+                                        <th colspan="2">Expenses</th>
+                                    </tr>
+                                    <tr v-for="i in expenses" :key="i.no">
+                                        <td><p class="ml-4">{{ i.description }}</p></td>
+                                        <td class="text-right">{{ formatMoney(i.amount) }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th><p class="ml-4">Total Expenses</p></th>
+                                        <th class="text-right">{{ formatMoney(expenses.reduce((p, c) => c.amount + p, 0)) }}</th>
+                                    </tr>
+                                </template>
+                                <template v-if="gains.length">
+                                    <tr>
+                                        <th colspan="2">Gains</th>
+                                    </tr>
+                                    <tr v-for="i in gains" :key="i.no">
+                                        <td><p class="ml-4">{{ i.description }}</p></td>
+                                        <td class="text-right">{{ formatMoney(i.amount) }}</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <th><p class="ml-4">Total Gains</p></th>
+                                        <th class="text-right">{{ formatMoney(gains.reduce((p, c) => c.amount + p, 0)) }}</th>
+                                    </tr>
+                                </template>
+                                <template v-if="losses.length">
+                                    <tr>
+                                        <th colspan="2">Losses</th>
+                                    </tr>
+                                    <tr v-for="i in losses" :key="i.no">
+                                        <td><p class="ml-4">{{ i.description }}</p></td>
+                                        <td class="text-right">{{ formatMoney(i.amount) }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th><p class="ml-4">Total Losses</p></th>
+                                        <th class="text-right">{{ formatMoney(losses.reduce((p, c) => c.amount + p, 0)) }}</th>
+                                    </tr>
+                                </template>
+                                <template v-if="profitShares.length">
+                                    <tr>
+                                        <th colspan="2">Profit Attributable to:</th>
+                                    </tr>
+                                    <tr v-for="i in profitShares" :key="i.no">
+                                        <td><p class="ml-4">{{ i.description }}</p></td>
+                                        <td class="text-right">{{ formatMoney(i.amount) }}</td>
+                                    </tr>
+                                </template>
+                                <template v-if="eps.length">
+                                    <tr>
+                                        <th colspan="2">Earnings per Stock Unit</th>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <th class="text-right">$</th>
+                                    </tr>
+                                    <tr v-for="i in eps" :key="i.no">
+                                        <td><p class="ml-4">{{ i.description }}</p></td>
+                                        <td class="text-right">{{ formatMoney(i.amount) }}</td>
+                                    </tr>
+                                </template>
                             </template>
                             <template v-if="statementType === 'CASH_FLOW'">
-                                <tr>
-                                    <th colspan="2">Operating Activities</th>
-                                </tr>
-                                <tr v-for="(i, ix) in getItemsBySection(statementType, 'OPERATING_ACTIVITIES')" :key="ix">
-                                    <td><p class="ml-6">{{ i.description }}</p></td>
-                                    <td class="text-right">{{ formatMoney(i.amount) }}</td>
-                                </tr>
-                                <tr>
-                                    <th colspan="2">Financing Activities</th>
-                                </tr>
-                                <tr v-for="(i, ix) in getItemsBySection(statementType, 'FINANCING_ACTIVITIES')" :key="ix">
-                                    <td><p class="ml-6">{{ i.description }}</p></td>
-                                    <td class="text-right">{{ formatMoney(i.amount) }}</td>
-                                </tr>
-                                <tr>
-                                    <th colspan="2">Investing Activities</th>
-                                </tr>
-                                <tr v-for="(i, ix) in getItemsBySection(statementType, 'INVESTING_ACTIVITIES')" :key="ix">
-                                    <td><p class="ml-6">{{ i.description }}</p></td>
-                                    <td class="text-right">{{ formatMoney(i.amount) }}</td>
-                                </tr>
+                                <template v-if="operations.length">
+                                    <tr>
+                                        <th colspan="2">Operating Activities</th>
+                                    </tr>
+                                    <tr v-for="i in operations" :key="i.no">
+                                        <td><p class="ml-6">{{ i.description }}</p></td>
+                                        <td class="text-right">{{ formatMoney(i.amount) }}</td>
+                                    </tr>
+                                </template>
+                                <template v-if="finances.length">
+                                    <tr>
+                                        <th colspan="2">Financing Activities</th>
+                                    </tr>
+                                    <tr v-for="i in finances" :key="i.no">
+                                        <td><p class="ml-6">{{ i.description }}</p></td>
+                                        <td class="text-right">{{ formatMoney(i.amount) }}</td>
+                                    </tr>
+                                </template>
+                                <template v-if="investments.length">
+                                    <tr>
+                                        <th colspan="2">Investing Activities</th>
+                                    </tr>
+                                    <tr v-for="i in investments" :key="i.no">
+                                        <td><p class="ml-6">{{ i.description }}</p></td>
+                                        <td class="text-right">{{ formatMoney(i.amount) }}</td>
+                                    </tr>
+                                </template>
                             </template>
                         </tbody>
                     </table>
@@ -152,10 +200,49 @@ export default {
     computed: {
         statementTypes() {
             return this.data.analytes.map(a => a.type).filter((value, index, array) => array.indexOf(value) === index)
+        },
+        assets() {
+            return this.get('FINANCIAL_POSITION', 'ASSETS')
+        },
+        liabilities() {
+            return this.get('FINANCIAL_POSITION', 'LIABILITIES')
+        },
+        equities() {
+            return this.get('FINANCIAL_POSITION', 'EQUITY')
+        },
+        equityShares() {
+            return this.get('FINANCIAL_POSITION', 'EQUITY_SHARE')
+        },
+        revenues() {
+            return this.get('INCOME', 'REVENUES')
+        },
+        expenses() {
+            return this.get('INCOME', 'EXPENSES')
+        },
+        gains() {
+            return this.get('INCOME', 'GAINS')
+        },
+        losses() {
+            return this.get('INCOME', 'LOSSES')
+        },
+        profitShares() {
+            return this.get('INCOME', 'PROFIT_SHARE')
+        },
+        eps() { // Earnings per Stock
+            return this.get('INCOME', 'EARNINGS_PER_STOCK')
+        },
+        operations() {
+            return this.get('CASH_FLOW', 'OPERATING_ACTIVITIES')
+        },
+        finances() {
+            return this.get('CASH_FLOW', 'FINANCING_ACTIVITIES')
+        },
+        investments() {
+            return this.get('CASH_FLOW', 'INVESTING_ACTIVITIES')
         }
     },
     methods: {
-        getItemsBySection(type, section) {
+        get(type, section) {
             return this.data.analytes.filter(a => a.type === type && a.section === section)
         }
     }
@@ -178,7 +265,7 @@ export default {
 }
 
 .text-right {
-    text-align: right;
+    text-align: right !important;
 }
 
 </style>

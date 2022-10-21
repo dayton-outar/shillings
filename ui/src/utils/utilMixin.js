@@ -10,8 +10,9 @@ export default {
             return moment(stmtDate).format(format)
         },
         formatMoney(amount) {
+            let amt = parseFloat(amount.toString().replace(/[^0-9.-]+/g,'')) || 0;
             const cfi = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' })
-            return cfi.format(amount)
+            return cfi.format(amt)
         }
     }
 }

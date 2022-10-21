@@ -15,99 +15,94 @@ export default {
   actions: {
     async create({ commit }, report) {
         const response = await graphQlClient.mutate({
-            mutation: gql`mutation CreateFinancialReport($companyCode: String!, $companyName: String!, $period: Periodical!, $statementDate: DateTime!, $isAudited: Boolean!, $analytes: [StatementAnalyteInput], $logDescription: String!, $logged: DateTime!) {
-              createFinancialReport(financialReport: {
-                no: 0,
-                company: {
-                  code: $companyCode,
-                  name: $companyName,
-                  about: "",
-                  announcements: [],
-                  countryCode: "",
-                  created: "1999-10-04",
-                  founded: "1779-01-01",
-                  industries: [],
-                  industry: "",
-                  totalEmployed: 0,
-                  webSite: "",
-                  wiki: ""
-                },
-                period: $period,
-                statementDate: $statementDate,
-                analytes: $analytes,
-                isAudited: $isAudited,
-                log: {
-                  no: 0,
-                  type: ANNOUNCEMENT,
-                  event: INFORMATION,
-                  details: $logDescription,
-                  logged: $logged
-                }
-              }) {
-                no
-                company {
-                  code,
-                  name,
-                  about,
-                  totalEmployed,
-                  wiki,
-                  webSite,
-                  founded,
-                  countryCode,
-                  created,
-                  industries {
-                    no,
+            mutation: gql`mutation CreateFinancialReport($input: CreateFinancialReportInput!) {
+              createFinancialReport(input: $input) {
+                financialReport{
+                  no,
+                  company {
+                    code,
                     name,
-                    wiki
+                    about,
+                    totalEmployed,
+                    wiki,
+                    webSite,
+                    founded,
+                    countryCode,
+                    created,
+                    industries {
+                      no,
+                      name,
+                      wiki
+                    },
+                    logo {
+                      no,
+                      type,
+                      fileName,
+                      contentType,
+                      contentSize,
+                      created
+                    },
+                    files {
+                      no,
+                      type,
+                      fileName,
+                      contentType,
+                      contentSize,
+                      created
+                    }
                   },
-                  logo {
-                    no,
-                    type,
-                    fileName,
-                    contentType,
-                    contentSize,
-                    created
-                  },
-                  files {
-                    no,
-                    type,
-                    fileName,
-                    contentType,
-                    contentSize,
-                    created
-                  }
-                },
-                description,
-                period,
-                statementDate,
-                isAudited,
-                analytes {
-                  no,
-                  sequence,
                   description,
-                  section,
-                  type,
-                  analyte,
-                  amount
-                },
-                log {
-                  no,
-                  type,
-                  event,
-                  details,
-                  logged
+                  period,
+                  statementDate,
+                  isAudited,
+                  analytes {
+                    no,
+                    sequence,
+                    description,
+                    section,
+                    type,
+                    analyte,
+                    amount
+                  },
+                  log {
+                    no,
+                    type,
+                    event,
+                    details,
+                    logged
+                  }
                 }
               }
             }`,
             variables: {
-              companyCode: report.company.code,
-              companyName: report.company.name,
-              period: report.period,
-              statementDate: report.statementDate,
-              isAudited: report.isAudited,
-              logDescription: report.description,
-              logged: report.log.logged,
-              analytes: report.analytes
+              input: {
+                financialReport: {
+                  company: {
+                    code: report.company.code,
+                    name: report.company.name,
+                    about: "",
+                    announcements: [],
+                    countryCode: "",
+                    created: "1999-10-04",
+                    founded: "1779-01-01",
+                    industries: [],
+                    totalEmployed: 0,
+                    webSite: "",
+                    wiki: ""
+                  },
+                  period: report.period,
+                  statementDate: report.statementDate,
+                  isAudited: report.isAudited,
+                  analytes: report.analytes,
+                  log: {
+                    no: 0,
+                    type: 'ANNOUNCEMENT',
+                    event: 'INFORMATION',
+                    details: report.description,
+                    logged: report.log.logged
+                  }
+                }
+              }
             }
           })
     
@@ -217,101 +212,96 @@ export default {
         return Promise.resolve(response.data.financialReports)
     },
     async update({ commit }, report) {
-        const response = await graphQlClient.mutate({
-            mutation: gql`mutation UpdateFinancialReport($no: Long!, $companyCode: String!, $companyName: String!, $period: Periodical!, $statementDate: DateTime!, $isAudited: Boolean!, $analytes: [StatementAnalyteInput], $logDescription: String!, $logged: DateTime!) {
-              updateFinancialReport(financialReport: {
-                no: $no,
-                company: {
-                  code: $companyCode,
-                  name: $companyName,
-                  about: "",
-                  announcements: [],
-                  countryCode: "",
-                  created: "1999-10-04",
-                  founded: "1779-01-01",
-                  industries: [],
-                  industry: "",
-                  totalEmployed: 0,
-                  webSite: "",
-                  wiki: ""
-                },
-                period: $period,
-                statementDate: $statementDate,
-                analytes: $analytes,
-                isAudited: $isAudited,
-                log: {
-                  no: 0,
-                  type: ANNOUNCEMENT,
-                  event: INFORMATION,
-                  details: $logDescription,
-                  logged: $logged
-                }
-              }) {
-                no
-                company {
-                  code,
-                  name,
-                  about,
-                  totalEmployed,
-                  wiki,
-                  webSite,
-                  founded,
-                  countryCode,
-                  created,
-                  industries {
-                    no,
+      const response = await graphQlClient.mutate({
+        mutation: gql`mutation UpdateFinancialReport($input: UpdateFinancialReportInput!) {
+              updateFinancialReport(input: $input) {
+                financialReport{
+                  no,
+                  company {
+                    code,
                     name,
-                    wiki
+                    about,
+                    totalEmployed,
+                    wiki,
+                    webSite,
+                    founded,
+                    countryCode,
+                    created,
+                    industries {
+                      no,
+                      name,
+                      wiki
+                    },
+                    logo {
+                      no,
+                      type,
+                      fileName,
+                      contentType,
+                      contentSize,
+                      created
+                    },
+                    files {
+                      no,
+                      type,
+                      fileName,
+                      contentType,
+                      contentSize,
+                      created
+                    }
                   },
-                  logo {
-                    no,
-                    type,
-                    fileName,
-                    contentType,
-                    contentSize,
-                    created
-                  },
-                  files {
-                    no,
-                    type,
-                    fileName,
-                    contentType,
-                    contentSize,
-                    created
-                  }
-                },
-                description,
-                period,
-                statementDate,
-                isAudited,
-                analytes {
-                  no,
-                  sequence,
                   description,
-                  section,
-                  type,
-                  analyte,
-                  amount
-                },
-                log {
-                  no,
-                  type,
-                  event,
-                  details,
-                  logged
+                  period,
+                  statementDate,
+                  isAudited,
+                  analytes {
+                    no,
+                    sequence,
+                    description,
+                    section,
+                    type,
+                    analyte,
+                    amount
+                  },
+                  log {
+                    no,
+                    type,
+                    event,
+                    details,
+                    logged
+                  }
                 }
               }
             }`,
             variables: {
-              no: report.no,
-              companyCode: report.company.code,
-              companyName: report.company.name,
-              period: report.period,
-              statementDate: report.statementDate,
-              isAudited: report.isAudited,
-              logDescription: report.description,
-              logged: report.log.logged,
-              analytes: report.analytes
+              input: {
+                financialReport: {
+                  no: report.no,
+                  company: {
+                    code: report.company.code,
+                    name: report.company.name,
+                    about: "",
+                    announcements: [],
+                    countryCode: "",
+                    created: "1999-10-04",
+                    founded: "1779-01-01",
+                    industries: [],
+                    totalEmployed: 0,
+                    webSite: "",
+                    wiki: ""
+                  },
+                  period: report.period,
+                  statementDate: report.statementDate,
+                  isAudited: report.isAudited,
+                  analytes: report.analytes,
+                  log: {
+                    no: 0,
+                    type: 'ANNOUNCEMENT',
+                    event: 'INFORMATION',
+                    details: report.description,
+                    logged: report.log.logged
+                  }
+                }
+              }
             }
           })
     
