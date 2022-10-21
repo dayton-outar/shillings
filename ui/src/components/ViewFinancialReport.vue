@@ -69,6 +69,12 @@
                                         <th class="text-right">{{ formatMoney(equities.reduce((p, c) => c.amount + p, 0)) }}</th>
                                     </tr>
                                 </template>
+                                <template v-if="liabilities.length && equities.length">
+                                    <tr>
+                                        <th>Total Equity and Liabilities</th>
+                                        <th class="text-right">{{ formatMoney( totalEquityAndLiabilities ) }}</th>
+                                    </tr>
+                                </template>
                             </template>
                             <template v-if="statementType === 'INCOME'">
                                 <template v-if="revenues.length">
@@ -84,6 +90,19 @@
                                         <th class="text-right">{{ formatMoney(revenues.reduce((p, c) => c.amount + p, 0)) }}</th>
                                     </tr>
                                 </template>
+                                <template v-if="gains.length">
+                                    <tr>
+                                        <th colspan="2">Gains</th>
+                                    </tr>
+                                    <tr v-for="i in gains" :key="i.no">
+                                        <td><p class="ml-4">{{ i.description }}</p></td>
+                                        <td class="text-right">{{ formatMoney(i.amount) }}</td>
+                                    </tr>                                    
+                                    <tr>
+                                        <th><p class="ml-4">Total Gains</p></th>
+                                        <th class="text-right">{{ formatMoney(gains.reduce((p, c) => c.amount + p, 0)) }}</th>
+                                    </tr>
+                                </template>
                                 <template v-if="expenses.length">
                                     <tr>
                                         <th colspan="2">Expenses</th>
@@ -97,20 +116,6 @@
                                         <th class="text-right">{{ formatMoney(expenses.reduce((p, c) => c.amount + p, 0)) }}</th>
                                     </tr>
                                 </template>
-                                <template v-if="gains.length">
-                                    <tr>
-                                        <th colspan="2">Gains</th>
-                                    </tr>
-                                    <tr v-for="i in gains" :key="i.no">
-                                        <td><p class="ml-4">{{ i.description }}</p></td>
-                                        <td class="text-right">{{ formatMoney(i.amount) }}</td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <th><p class="ml-4">Total Gains</p></th>
-                                        <th class="text-right">{{ formatMoney(gains.reduce((p, c) => c.amount + p, 0)) }}</th>
-                                    </tr>
-                                </template>
                                 <template v-if="losses.length">
                                     <tr>
                                         <th colspan="2">Losses</th>
@@ -122,6 +127,12 @@
                                     <tr>
                                         <th><p class="ml-4">Total Losses</p></th>
                                         <th class="text-right">{{ formatMoney(losses.reduce((p, c) => c.amount + p, 0)) }}</th>
+                                    </tr>
+                                </template>
+                                <template v-if="revenues.length || gains.length || expenses.length || losses.length">
+                                    <tr>
+                                        <th>Net Profit</th>
+                                        <th class="text-right">{{ formatMoney( netProfit ) }}</th>
                                     </tr>
                                 </template>
                                 <template v-if="profitShares.length">
@@ -156,6 +167,10 @@
                                         <td><p class="ml-6">{{ i.description }}</p></td>
                                         <td class="text-right">{{ formatMoney(i.amount) }}</td>
                                     </tr>
+                                    <tr>
+                                        <th></th>
+                                        <th class="text-right">{{ formatMoney(operations.reduce((p, c) => c.amount + p, 0)) }}</th>
+                                    </tr>
                                 </template>
                                 <template v-if="finances.length">
                                     <tr>
@@ -165,6 +180,10 @@
                                         <td><p class="ml-6">{{ i.description }}</p></td>
                                         <td class="text-right">{{ formatMoney(i.amount) }}</td>
                                     </tr>
+                                    <tr>
+                                        <th></th>
+                                        <th class="text-right">{{ formatMoney(finances.reduce((p, c) => c.amount + p, 0)) }}</th>
+                                    </tr>
                                 </template>
                                 <template v-if="investments.length">
                                     <tr>
@@ -173,6 +192,16 @@
                                     <tr v-for="i in investments" :key="i.no">
                                         <td><p class="ml-6">{{ i.description }}</p></td>
                                         <td class="text-right">{{ formatMoney(i.amount) }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <th class="text-right">{{ formatMoney(investments.reduce((p, c) => c.amount + p, 0)) }}</th>
+                                    </tr>
+                                </template>
+                                <template v-if="operations.length || finances.length || investments.length">
+                                    <tr>
+                                        <td>Net Cash and Cash Equivalents</td>
+                                        <td class="text-right">{{ formatMoney( netCash ) }}</td>
                                     </tr>
                                 </template>
                             </template>
@@ -210,8 +239,8 @@ export default {
         equities() {
             return this.get('FINANCIAL_POSITION', 'EQUITY')
         },
-        equityShares() {
-            return this.get('FINANCIAL_POSITION', 'EQUITY_SHARE')
+        totalEquityAndLiabilities() {
+            return (this.liabilities.reduce((p, c) => c.amount + p, 0) + this.equities.reduce((p, c) => c.amount + p, 0))
         },
         revenues() {
             return this.get('INCOME', 'REVENUES')
@@ -228,6 +257,9 @@ export default {
         profitShares() {
             return this.get('INCOME', 'PROFIT_SHARE')
         },
+        netProfit() {
+            return ( this.revenues.reduce((p, c) => c.amount + p, 0) + this.gains.reduce((p, c) => c.amount + p, 0) ) - ( this.expenses.reduce((p, c) => c.amount + p, 0) + this.losses.reduce((p, c) => c.amount + p, 0) )
+        },
         eps() { // Earnings per Stock
             return this.get('INCOME', 'EARNINGS_PER_STOCK')
         },
@@ -239,6 +271,9 @@ export default {
         },
         investments() {
             return this.get('CASH_FLOW', 'INVESTING_ACTIVITIES')
+        },
+        netCash() {
+            return ( this.operations.reduce((p, c) => c.amount + p, 0) + this.finances.reduce((p, c) => c.amount + p, 0) + this.investments.reduce((p, c) => c.amount + p, 0) )
         }
     },
     methods: {

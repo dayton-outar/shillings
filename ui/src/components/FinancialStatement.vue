@@ -150,6 +150,15 @@
                 </b-table>
                 </div>                
             </div>
+            <div class="columns">
+                <div class="column is-full is-flex is-justify-content-flex-end">
+                    <b-button 
+                        type="is-primary" 
+                        icon-pack="fas"
+                        icon-right="square-plus" 
+                        @click.prevent="addItem">Add</b-button>
+                </div>
+            </div>
         </div>
     </div>
 </template>

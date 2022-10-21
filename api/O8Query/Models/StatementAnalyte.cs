@@ -38,7 +38,7 @@ namespace O8Query.Models
             Equity = 9,
 
             // Financial Position - Equity Attributable
-            EquityShare = 10,
+            EquityShare = 10, // TODO: May not be needed
 
             // Cash Flows
             OperatingActivities = 11,
