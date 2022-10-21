@@ -200,7 +200,7 @@
                                 </template>
                                 <template v-if="operations.length || finances.length || investments.length">
                                     <tr>
-                                        <td>Net Cash and Cash Equivalents</td>
+                                        <td>Net Change in Cash</td>
                                         <td class="text-right">{{ formatMoney( netCash ) }}</td>
                                     </tr>
                                 </template>

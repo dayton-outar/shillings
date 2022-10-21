@@ -63,10 +63,21 @@
                             <template>
                                 <b-button
                                     size="is-small"
+                                    type="light"
+                                    icon-pack="fas"
+                                    icon-right="percent"
+                                    @click.prevent="ratios(props)" />
+                            </template>
+                        </b-table-column>
+
+                        <b-table-column width="5%" v-slot="props">
+                            <template>
+                                <b-button
+                                    size="is-small"
                                     type="is-info"
                                     icon-pack="fas"
                                     icon-right="pen-to-square"
-                                    @click.prevent="props.toggleDetails(props.row)" />
+                                    @click.prevent="edit(props)" />
                             </template>
                         </b-table-column>
 
@@ -106,10 +117,12 @@ import utilMixin from '../utils/utilMixin'
 import TableToolBar from './TableToolBar'
 import SearchBar from './SearchBar.vue'
 import FinancialReport from './FinancialReport.vue'
+import ViewFinancialReport from './ViewFinancialReport.vue'
 
 export default {
     components: {
         'financial-report': FinancialReport,
+        'report-ratios': ViewFinancialReport,
         'search-bar': SearchBar,
         'table-tool-bar': TableToolBar
     },
@@ -132,7 +145,15 @@ export default {
             this.searchWord = q.searchWord
             this.filterQuery = { company: { name: { startsWith: this.searchWord } } }
             this.get()
-        }        
+        },
+        ratios(props) {
+            this.detailComponent = 'report-ratios'
+            props.toggleDetails(props.row)
+        },
+        edit(props) {
+            this.detailComponent = 'financial-report'
+            props.toggleDetails(props.row)
+        }
     }
 }
 
