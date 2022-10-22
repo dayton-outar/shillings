@@ -1,9 +1,7 @@
 <template>
     <div class="column is-full">
-        <h2 class="title">Stocks</h2>
-
-        <div class="columns">
-            <div class="column is-full">
+        <div class="columns" v-if="readOnly">
+            <div class="column">
                 <b-button 
                     type="is-info"
                     size="is-medium"
@@ -11,13 +9,7 @@
                     icon-left="plus"
                     v-if="!isCreatePanelActive"
                     @click.prevent="create" />
-                <component :is="detailComponent" :data="newStock" :editMode="false" v-if="isCreatePanelActive" @close="close" />
-            </div>
-        </div>
-
-        <div class="columns">
-            <div class="column is-full">
-                <search-bar @submit="find" />
+                <component :is="detailComponent" :data="newDividend" :editMode="false" v-if="isCreatePanelActive" @close="close" />
             </div>
         </div>
 
@@ -37,58 +29,60 @@
                         :pagination-simple="true"
                         :per-page="page"
                         :current-page.sync="currentPage"
-                        :sort-icon="sortIcon"
+                        :sort-icon="sortIcon" 
                         :sort-icon-size="sortIconSize"
                         :default-sort="sort"
                         :backend-sorting="true"
                         :backend-pagination="true"
-                        :striped="true"
+                        :striped="true" 
                         :hoverable="true"
                         @sort="sortTable"
                         @page-change="pageChange">
-                    
-                        <b-table-column field="code" label="Code" sortable v-slot="props" width="5%">
-                            {{ props.row.code }}
+
+                        <b-table-column label="Stock" sortable v-slot="props">
+                            {{ props.row.stock.name }}
                         </b-table-column>
 
-                        <b-table-column field="name" label="Name" sortable v-slot="props">
-                            {{ props.row.name }}
+                        <b-table-column label="Record Date" sortable v-slot="props">
+                            {{ formatDate(props.row.recordDate, 'MMM-DD-YYYY') }}
                         </b-table-column>
 
-                        <b-table-column width="5%" v-slot="props">
-                            <template>
-                                <b-button
-                                    size="is-small"
-                                    type="is-success"
-                                    icon-pack="fas"
-                                    icon-right="money-check-dollar"
-                                    @click.prevent="showDividends(props)" />
-                            </template>
+                        <b-table-column label="Payment Date" sortable v-slot="props">
+                            {{ formatDate(props.row.paymentDate, 'MMM-DD-YYYY') }}
                         </b-table-column>
 
-                        <b-table-column width="5%" v-slot="props">
+                        <b-table-column field="amount" label="Amount" sortable v-slot="props">
+                            {{ formatMoney(props.row.amount) }}
+                        </b-table-column>
+
+                        <b-table-column width="5%" v-slot="props" v-if="readOnly">
                             <template>
                                 <b-button
                                     size="is-small"
                                     type="is-info"
                                     icon-pack="fas"
                                     icon-right="pen-to-square"
-                                    @click.prevent="edit(props)" />
+                                    @click.prevent="props.toggleDetails(props.row)" />
                             </template>
                         </b-table-column>
 
-                        <b-table-column width="5%">
+                        <b-table-column width="5%" v-slot="props" v-if="readOnly">
                             <template>
                                 <b-button
                                     size="is-small"
                                     type="is-danger"
                                     icon-pack="fas"
-                                    icon-right="trash" />
+                                    icon-right="trash"
+                                    @click.prevent="deleteRow(props.row)" />
                             </template>
                         </b-table-column>
 
-                        <template #detail="props">
-                            <component :is="detailComponent" :data="props.row" :editMode="true" @close="$refs.tbl.toggleDetails(props.row)" :stockCode="props.row.code" :readOnly="false" />
+                        <template slot="detail" slot-scope="props">
+                            <component :is="detailComponent" :data="props.row" :editMode="true" @close="$refs.tbl.toggleDetails(props.row)" />
+                        </template>
+
+                        <template #empty>
+                            <div class="has-text-centered">No records</div>
                         </template>
 
                     </b-table>
@@ -104,29 +98,30 @@
 import { mapState, mapActions } from 'vuex'
 
 import tableMixin from '../utils/tableMixin'
+import utilMixin from '../utils/utilMixin'
 
 import TableToolBar from './TableToolBar'
 import SearchBar from './SearchBar.vue'
-import Stock from './Stock.vue'
-import Dividends from './Dividends.vue'
 
 export default {
+    props: ['stockCode', 'readOnly'],
     components: {
-        'stock-detail': Stock,
-        'stock-dividends': Dividends,
         'search-bar': SearchBar,
         'table-tool-bar': TableToolBar
     },
-    mixins: [tableMixin],
+    mixins: [tableMixin, utilMixin],
     data() {
         return {
-            fetchTitle: 'Stocks',
-            deleteTitle: 'Delete Stock',
-            detailComponent: 'stock-detail',
-            newStock: {
-                code: '',
-                name: '',
-                company: {}
+            sort: ['paymentDate', 'desc'],
+            fetchTitle: 'Dividends',
+            deleteTitle: 'Delete Dividend',
+            detailComponent: 'dividend-detail',
+            filterQuery: { stock: { code: { eq: this.stockCode } } },
+            newDividend: {
+                no: 0,
+                stock: {},
+                currency: '',
+                amount: 0
             }
         }
     },
@@ -134,17 +129,14 @@ export default {
         this.get()
     },
     computed: {
-        ...mapState({ data: state => state.stocks.stocks })
+        ...mapState({ data: state => state.dividends.dividends })
     },
     methods: {
-        ...mapActions('stocks', ['fetch', 'delete']),
-        showDividends(props) {
-            this.detailComponent = 'stock-dividends'
-            props.toggleDetails(props.row)
-        },
-        edit(props) {
-            this.detailComponent = 'stock-detail'
-            props.toggleDetails(props.row)
+        ...mapActions('dividends', ['fetch', 'delete']),
+        create() {
+            this.newDividend.no += 1
+
+            this.isCreatePanelActive = true
         }
     }
 }

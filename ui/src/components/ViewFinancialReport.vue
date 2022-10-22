@@ -21,7 +21,7 @@
                     <h5 class="subtitle is-5 has-text-grey">{{ formatDate(data.statementDate, 'D MMMM YYYY') }}</h5>
                 </div>
                 <div>
-                    <table>
+                    <table class="table">
                         <thead>
                             <tr>
                                 <th class="wide-70"></th>

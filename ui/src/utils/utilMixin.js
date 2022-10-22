@@ -11,8 +11,7 @@ export default {
         },
         formatMoney(amount) {
             let amt = parseFloat(amount.toString().replace(/[^0-9.-]+/g,'')) || 0;
-            const cfi = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' })
-            return cfi.format(amt)
+            return new Intl.NumberFormat('en-JM', { style: 'currency', currency: 'JMD', currencyDisplay: 'symbol', currencySign: 'accounting' }).format(amt)
         }
     }
 }

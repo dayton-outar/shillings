@@ -55,6 +55,10 @@
                             {{ props.row.description }}
                         </b-table-column>
 
+                        <b-table-column field="period" label="Period" v-slot="props">
+                            {{ formatTitleCase(props.row.period) }}
+                        </b-table-column>
+
                         <b-table-column field="statementDate" label="Date" sortable v-slot="props">
                             {{ formatDate(props.row.statementDate, 'MMM DD, YYYY') }}
                         </b-table-column>
@@ -65,7 +69,7 @@
                                     size="is-small"
                                     type="light"
                                     icon-pack="fas"
-                                    icon-right="percent"
+                                    icon-right="file-lines"
                                     @click.prevent="ratios(props)" />
                             </template>
                         </b-table-column>
