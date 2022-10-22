@@ -1,7 +1,7 @@
 <template>
     <div>
         <stocks-filter @filterChanged="filterChanged" />
-        <stock-indices :readOnly="true" :showToolbar="false" :begin="beginDate" :end="endDate" />
+        <stock-indices :readOnly="true" :showTools="false" :begin="beginDate" :end="endDate" />
         <portfolio-form />
         <portfolio :formattedDateRange="formattedDateRange" />
         <section v-if="totalTradings">
@@ -159,7 +159,7 @@ export default {
     filterChanged(v) {
       this.beginDate = `${ moment( v.dates[0] ).format('YYYY-MM-DDT00:00:00.000') }Z`
       this.endDate = `${ moment( v.dates[1] ).format('YYYY-MM-DDT00:00:00.000') }Z`
-      
+
       let lc = v.stocks.reduce((a, v) => a === '' ? `"${v.code}"` : a.concat(`,`, `"${v.code}"`), '')
       this.$emit('changeLoading', true)
       this.formatDates(v.dates)

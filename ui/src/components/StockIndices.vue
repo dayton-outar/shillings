@@ -16,7 +16,7 @@
         <div class="columns">
             <div class="column is-full">
                 <div class="box my-4 mx-1">
-                    <table-tool-bar :page="page" :pageLengths="pageLengths" @refresh="get" @change="changeLen" v-if="showToolbar" />
+                    <table-tool-bar :page="page" :pageLengths="pageLengths" @refresh="get" @change="changeLen" v-if="showTools" />
 
                     <b-table
                         ref="tbl"
@@ -25,7 +25,7 @@
                         :data="data.nodes"
                         icon-pack="fas"
                         :total="data.totalCount"
-                        :paginated="true"
+                        :paginated="showTools"
                         :pagination-simple="true"
                         :per-page="page"
                         :current-page.sync="currentPage"
@@ -100,7 +100,7 @@ import TableToolBar from './TableToolBar'
 import SearchBar from './SearchBar.vue'
 
 export default {
-    props: ['index', 'readOnly', 'showToolbar', 'begin', 'end'],
+    props: ['index', 'readOnly', 'showTools', 'begin', 'end'],
     components: {
         'search-bar': SearchBar,
         'table-tool-bar': TableToolBar
