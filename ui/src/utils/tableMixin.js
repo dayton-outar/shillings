@@ -12,14 +12,22 @@ export default { // Credit: https://youtu.be/LyG_l5UoeHI
             isCreatePanelActive: false,
             isLoading: false,
             filterQuery: null,
+            sortingQuery: null,
             fetchTitle: '[Fetching Data]',
             deleteTitle: '[Delete Data]'
         }
     },
     created() {
+        this.order()
         this.get()
     },
     methods: {
+        filter() {
+            this.filterQuery = { name: { startsWith: this.searchWord } }
+        },
+        order() {
+            this.sortingQuery = [{ [this.sort[0]]: this.sort[1].toUpperCase() }]
+        },
         get() {
             this.isLoading = true
 
@@ -29,7 +37,7 @@ export default { // Credit: https://youtu.be/LyG_l5UoeHI
                 next: null,
                 previous: null,
                 filter: this.filterQuery,
-                ordering: [{ [this.sort[0]]: this.sort[1].toUpperCase() }]
+                ordering: this.sortingQuery
             }).then(() => {
                 this.isLoading = false
                 this.currentPage = 1
@@ -52,7 +60,7 @@ export default { // Credit: https://youtu.be/LyG_l5UoeHI
         },
         find(q) {
             this.searchWord = q.searchWord
-            this.filterQuery = { name: { startsWith: this.searchWord } }
+            this.filter()
             this.get()
         },
         create() {
@@ -141,7 +149,7 @@ export default { // Credit: https://youtu.be/LyG_l5UoeHI
                 next: this.forward ? this.data.pageInfo.endCursor : null,
                 previous: !this.forward ? this.data.pageInfo.startCursor : null,
                 filter: this.filterQuery,
-                ordering: [{ [this.sort[0]]: this.sort[1].toUpperCase() }]
+                ordering: this.sortingQuery
             }).then(() => {
                 this.isLoading = false
                 this.currentPage = page

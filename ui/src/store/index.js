@@ -10,6 +10,7 @@ import companies from './companies'
 import industries from './industries'
 import markets from './markets'
 import indices from './indices'
+import stockIndices from './stockIndices'
 import stocks from './stocks'
 import finances from './finances'
 import dividends from './dividends'
@@ -27,6 +28,7 @@ export const store = new Vuex.Store({
         industries,
         markets,
         indices,
+        stockIndices,
         stocks,
         dividends,
         finances
