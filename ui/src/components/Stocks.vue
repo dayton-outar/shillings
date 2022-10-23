@@ -88,7 +88,7 @@
                         </b-table-column>
 
                         <template #detail="props">
-                            <component :is="detailComponent" :data="props.row" :editMode="true" @close="$refs.tbl.toggleDetails(props.row)" :stockCode="props.row.code" :readOnly="false" />
+                            <component :is="detailComponent" :data="props.row" :editMode="true" @close="$refs.tbl.toggleDetails(props.row)" :stockCode="props.row.code" :readOnly="true" />
                         </template>
 
                     </b-table>

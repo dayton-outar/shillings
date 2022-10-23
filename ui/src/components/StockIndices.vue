@@ -1,5 +1,5 @@
 <template>
-    <div class="column is-full">
+    <div>
         <div class="columns" v-if="!readOnly">
             <div class="column">
                 <b-button 
@@ -32,23 +32,27 @@
                         :sort-icon="sortIcon" 
                         :sort-icon-size="sortIconSize"
                         :default-sort="sort"
-                        :backend-sorting="true"
-                        :backend-pagination="true"
+                        :backend-sorting="showTools"
+                        :backend-pagination="showTools"
                         :striped="true" 
                         :hoverable="true"
                         @sort="sortTable"
                         @page-change="pageChange">
 
-                        <b-table-column label="Index" sortable v-slot="props">
+                        <b-table-column field="marketIndex.name" label="Index" sortable v-slot="props">
                             {{ props.row.marketIndex.name }}
                         </b-table-column>
 
-                        <b-table-column field="logged" label="Date" sortable v-slot="props">
+                        <b-table-column field="log.logged" label="Date" sortable v-slot="props">
                             {{ formatDate(props.row.log.logged, 'MMM-DD-YYYY') }}
                         </b-table-column>
 
-                        <b-table-column field="value" label="Value" sortable v-slot="props">
+                        <b-table-column field="value" label="Value" sortable v-slot="props" numeric>
                             {{ formatMoney(props.row.value) }}
+                        </b-table-column>
+
+                        <b-table-column field="valueChange" label="Change" sortable v-slot="props" numeric>
+                            {{ formatMoney(props.row.valueChange) }}
                         </b-table-column>
 
                         <b-table-column width="5%" v-slot="props" v-if="!readOnly">
@@ -108,7 +112,7 @@ export default {
     mixins: [tableMixin, utilMixin],
     data() {
         return {
-            sort: ['logged', 'desc'],
+            sort: ['log.logged', 'desc'],
             fetchTitle: 'Indices',
             deleteTitle: 'Delete Index Value',
             detailComponent: '',
@@ -128,10 +132,10 @@ export default {
         ...mapActions('stockIndices', ['fetch', 'delete']),
         order() {
             switch (this.sort[0]) {
-                case 'name':
+                case 'marketIndex.name':
                     this.sortingQuery = [{ marketIndex: { [this.sort[0]]: this.sort[1].toUpperCase() } }]
                     break
-                case 'logged':
+                case 'log.logged':
                     this.sortingQuery = [{ log: { logged: this.sort[1].toUpperCase() } }]
                     break
                 default:
@@ -144,15 +148,21 @@ export default {
             this.isCreatePanelActive = true
         },
         query() {
-            return (this.index && this.begin && this.end) ? 
-                { and: [ { marketIndex: { no: { eq: this.index } } }, { log: { logged: { gte: this.begin } } }, { log: { logged: { lte: this.end } } } ] } : 
-                (this.begin && this.end) ? { and: [ { log: { logged: { gte: this.begin } } }, { log: { logged: { lte: this.end } } } ] } : null
+            let q = null
+            
+            if (this.index && this.begin && this.end) {
+                q = { and: [ { marketIndex: { no: { eq: this.index } } }, { log: { logged: { gte: this.begin } } }, { log: { logged: { lte: this.end } } } ] }
+            } else if (this.begin && this.end) {
+                q = { and: [ { log: { logged: { gte: this.begin } } }, { log: { logged: { lte: this.end } } } ] }
+            } else if (this.index) {
+                q = { marketIndex: { no: { eq: this.index } } }
+            }
+
+            return q
         }
     },
     watch: {
         filterProps: function() {
-            console.log(`${this.begin} ${this.end}`)
-            console.log(`${this.filterQuery}`)
             this.filterQuery = this.query()
             this.get()
         }
@@ -160,3 +170,11 @@ export default {
 }
 
 </script>
+
+<style scoped>
+
+.text-right {
+    text-align: right;
+}
+
+</style>

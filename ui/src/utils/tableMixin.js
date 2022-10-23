@@ -135,7 +135,7 @@ export default { // Credit: https://youtu.be/LyG_l5UoeHI
         },
         sortTable(field, order) {
             this.sort = [field, order]
-
+            this.order()
             this.get()
         },
         pageChange(page) { // Credit: https://github.com/buefy/buefy/issues/50

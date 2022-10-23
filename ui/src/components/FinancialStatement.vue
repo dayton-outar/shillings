@@ -395,7 +395,7 @@ export default {
 
 </script>
 
-<style>
+<style scoped>
 
 .text-right {
     text-align: right;

@@ -61,8 +61,19 @@
                                     size="is-small"
                                     type="is-info"
                                     icon-pack="fas"
+                                    icon-right="table-list"
+                                    @click.prevent="view(props)" />
+                            </template>
+                        </b-table-column>
+
+                        <b-table-column width="5%" v-slot="props">
+                            <template>
+                                <b-button
+                                    size="is-small"
+                                    type="is-info"
+                                    icon-pack="fas"
                                     icon-right="pen-to-square"
-                                    @click.prevent="props.toggleDetails(props.row)" />
+                                    @click.prevent="edit(props)" />
                             </template>
                         </b-table-column>
 
@@ -80,7 +91,7 @@
                         <template #detail="props">
                             <article>
                                 <h5 class="title is-5">{{ props.row.name }}</h5>
-                                <component :is="detailComponent" :data="props.row" :editMode="true" @close="$refs.tbl.toggleDetails(props.row)" />
+                                <component :is="detailComponent" :data="props.row" :editMode="true" @close="$refs.tbl.toggleDetails(props.row)" :index="props.row.no" :readOnly="false" :showTools="true" />
                             </article>
                         </template>
 
@@ -101,10 +112,12 @@ import tableMixin from '../utils/tableMixin'
 import TableToolBar from './TableToolBar'
 import SearchBar from './SearchBar.vue'
 import MarketIndex from './MarketIndex.vue'
+import StockIndices from './StockIndices.vue'
 
 export default {
     components: {
         'market-index-detail': MarketIndex,
+        'stock-indices': StockIndices,
         'search-bar': SearchBar,
         'table-tool-bar': TableToolBar
     },
@@ -129,6 +142,14 @@ export default {
             this.newIndex.no += 1
 
             this.isCreatePanelActive = true
+        },
+        view(props) {
+            this.detailComponent = 'stock-indices'
+            props.toggleDetails(props.row)
+        },
+        edit(props) {
+            this.detailComponent = 'market-index-detail'
+            props.toggleDetails(props.row)
         }
     }
 }
