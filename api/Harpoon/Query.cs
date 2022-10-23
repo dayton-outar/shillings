@@ -167,7 +167,7 @@ namespace Harpoon
                             StatementAnalyte.Assay.Inventories,
                             StatementAnalyte.Assay.Fixed,
                             StatementAnalyte.Assay.Receivables,
-                            StatementAnalyte.Assay.Intagible
+                            StatementAnalyte.Assay.Intangible
                         }
                 },
                 new SectionalAnalytes {
@@ -199,6 +199,7 @@ namespace Harpoon
                             StatementAnalyte.Assay.Impairment,
                             StatementAnalyte.Assay.Payables,
                             StatementAnalyte.Assay.Interest,
+                            StatementAnalyte.Assay.Wages,
                             StatementAnalyte.Assay.Tax,
                             StatementAnalyte.Assay.Operating
                         }
@@ -217,14 +218,16 @@ namespace Harpoon
                             // Classifies dividends pay out
                             StatementAnalyte.Assay.NonControlling,
                             // Classifies loans that are non-financial
-                            StatementAnalyte.Assay.Bondholders
+                            // StatementAnalyte.Assay.Bondholders
                         }
                 },
                 // Investing activities include any sources and uses of cash from a company’s investments.
                 new SectionalAnalytes {
                     Sectional = StatementAnalyte.Sectional.InvestingActivities,
                     Assay = new List<StatementAnalyte.Assay> {
-                            StatementAnalyte.Assay.Capital
+                            StatementAnalyte.Assay.Capital,
+                            StatementAnalyte.Assay.Intangible,
+                            StatementAnalyte.Assay.Interest
                         }
                 }
             };
