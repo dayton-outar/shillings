@@ -205,6 +205,7 @@ namespace Harpoon
                         }
                 },                
                 // Cash from financing activities includes the sources of cash from investors and banks, as well as the way cash is paid to shareholders.
+                // How is the business financed?
                 new SectionalAnalytes {
                     Sectional = StatementAnalyte.Sectional.FinancingActivities,
                     Assay = new List<StatementAnalyte.Assay> {
@@ -222,6 +223,7 @@ namespace Harpoon
                         }
                 },
                 // Investing activities include any sources and uses of cash from a company’s investments.
+                // What does the business invest it's money?
                 new SectionalAnalytes {
                     Sectional = StatementAnalyte.Sectional.InvestingActivities,
                     Assay = new List<StatementAnalyte.Assay> {
