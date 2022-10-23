@@ -112,19 +112,17 @@ export default {
             fetchTitle: 'Indices',
             deleteTitle: 'Delete Index Value',
             detailComponent: '',
-            filterQuery: (this.index && this.begin && this.end) ? 
-                { and: [ { marketIndex: { no: { eq: this.index } } }, { log: { logged: { gte: this.begin } } }, { log: { logged: { lte: this.end } } } ] } : 
-                (this.begin && this.end) ? { and: [ { log: { logged: { gte: this.begin } } }, { log: { logged: { lte: this.end } } } ] } : null,
+            filterQuery: this.query(),
             newStockIndex: {
                 no: 0
             }
         }
     },
-    created() {
-        this.get()
-    },
     computed: {
-        ...mapState({ data: state => state.stockIndices.stockIndices })
+        ...mapState({ data: state => state.stockIndices.stockIndices }),
+        filterProps() { // https://stackoverflow.com/questions/42737034/vue-js-watch-multiple-properties-with-single-handler
+            return `${this.index}${this.begin}${this.end}`
+        }
     },
     methods: {
         ...mapActions('stockIndices', ['fetch', 'delete']),
@@ -144,6 +142,19 @@ export default {
             this.newStockIndex.no += 1
 
             this.isCreatePanelActive = true
+        },
+        query() {
+            return (this.index && this.begin && this.end) ? 
+                { and: [ { marketIndex: { no: { eq: this.index } } }, { log: { logged: { gte: this.begin } } }, { log: { logged: { lte: this.end } } } ] } : 
+                (this.begin && this.end) ? { and: [ { log: { logged: { gte: this.begin } } }, { log: { logged: { lte: this.end } } } ] } : null
+        }
+    },
+    watch: {
+        filterProps: function() {
+            console.log(`${this.begin} ${this.end}`)
+            console.log(`${this.filterQuery}`)
+            this.filterQuery = this.query()
+            this.get()
         }
     }
 }

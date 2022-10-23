@@ -38,8 +38,8 @@ export default {
           t.prices = JSON.parse(t.prices)
         }
         catch (err) {
-          console.log(err.message)
-          console.log('Already parsed')
+          //console.log(err.message)
+          //console.log('Already parsed')
         }
 
         return t
