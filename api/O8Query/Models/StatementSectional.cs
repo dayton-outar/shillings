@@ -6,10 +6,6 @@ namespace O8Query.Models
     public class StatementSectional
     {
         /// <summary>
-        /// Title of summary item
-        /// </summary>
-        public string SummaryTitle { get; set; }
-        /// <summary>
         /// Statement type
         /// </summary>
         public StatementAnalyte.StatementType Type { get; set; }

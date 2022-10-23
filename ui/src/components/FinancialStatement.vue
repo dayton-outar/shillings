@@ -139,7 +139,7 @@
                         <th>{{ summaryTitle }}</th>
                         <th></th>
                         <th></th>
-                        <th class="right-aligned">{{ formatNet() }}</th>
+                        <th class="right-aligned">{{ formatMoney( netValue ) }}</th>
                         <th></th>
                         <th></th>
                     </template>
@@ -215,17 +215,77 @@ export default {
     computed: {
         ...mapState(['sections', 'assays']),
         statementSections() {
-            const iss = this.sections.findIndex(ss => ss.type.toLowerCase() === this.type.replace(' ', '_').toLowerCase());
+            const iss = this.sections.findIndex(ss => ss.type.toLowerCase() === this.type.replace(' ', '_').toLowerCase())
 
-            return this.sections[iss].sections;
+            return this.sections[iss].sections
         },
-        summaryTitle() { // Throws error if fetchSection not completed
-            const iss = this.sections.findIndex(ss => ss.type.toLowerCase() === this.type.replace(' ', '_').toLowerCase());
+        summaryTitle() {
+            let title = ''
 
-            return this.sections[iss] ? this.sections[iss].summaryTitle : '';
+            switch(this.type) {
+                case 'Income':
+                    title = 'Net Income'
+                    break
+                case 'Financial Position':
+                    title = 'Total Equity and Liabilities'
+                    break
+                case 'Cash Flow':
+                    title = 'Net Cash Change'
+                    break
+            }
+
+            return title
+        },
+        totalRevenues() {
+            return this.get('REVENUES').reduce((t, v) => t + (parseFloat(v.amount.toString().replace(/[^0-9.-]+/g,'')) || 0), 0)
+        },
+        totalGains() {
+            return this.get('GAINS').reduce((t, v) => t + (parseFloat(v.amount.toString().replace(/[^0-9.-]+/g,'')) || 0), 0)
+        },
+        totalExpenses() {
+            return this.get('EXPENSES').reduce((t, v) => t + (parseFloat(v.amount.toString().replace(/[^0-9.-]+/g,'')) || 0), 0)
+        },
+        totalLosses() {
+            return this.get('LOSSES').reduce((t, v) => t + (parseFloat(v.amount.toString().replace(/[^0-9.-]+/g,'')) || 0), 0)
+        },
+        totalEquity() {
+            return this.get('EQUITY').reduce((t, v) => t + (parseFloat(v.amount.toString().replace(/[^0-9.-]+/g,'')) || 0), 0)
+        },
+        totalLiabilities() {
+            return this.get('LIABILITIES').reduce((t, v) => t + (parseFloat(v.amount.toString().replace(/[^0-9.-]+/g,'')) || 0), 0)
+        },
+        totalOperations() {
+            return this.get('OPERATING_ACTIVITIES').reduce((t, v) => t + (parseFloat(v.amount.toString().replace(/[^0-9.-]+/g,'')) || 0), 0)
+        },
+        totalFinances() {
+            return this.get('FINANCING_ACTIVITIES').reduce((t, v) => t + (parseFloat(v.amount.toString().replace(/[^0-9.-]+/g,'')) || 0), 0)
+        },
+        totalInvestments() {
+            return this.get('INVESTING_ACTIVITIES').reduce((t, v) => t + (parseFloat(v.amount.toString().replace(/[^0-9.-]+/g,'')) || 0), 0)
+        },
+        netValue() {
+            let netVal = 0
+
+            switch(this.type) {
+                case 'Income': 
+                    netVal = (this.totalRevenues + this.totalGains) - (this.totalExpenses + this.totalLosses)
+                    break
+                case 'Financial Position': 
+                    netVal = (this.totalEquity + this.totalLiabilities)
+                    break
+                case 'Cash Flow':
+                    netVal = (this.totalOperations + this.totalFinances + this.totalInvestments)
+                    break
+            }
+            
+            return netVal
+
         }
     },
     methods: {
+        get(section) {
+            return this.analytes.filter(a => a.section === section)
+        },
         removeStatement() {
             this.$emit('removed', this.no)
         },
@@ -380,15 +440,6 @@ export default {
         },
         getItems() {
             return this.analytes
-        },
-        formatNet() {
-            const netValue = this.analytes.reduce((t, v) => {
-                const amt = parseFloat(v.amount.toString().replace(/[^0-9.-]+/g,'')) || 0;
-
-                return t + amt;
-                }, 0);
-            
-            return this.formatMoney(netValue)
         }
     }
 }

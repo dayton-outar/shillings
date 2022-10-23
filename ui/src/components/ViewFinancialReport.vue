@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="bg-white p-5">
         <div class="columns">
             <div class="column is-full">
                 <div class="media">
@@ -15,7 +15,7 @@
             </div>
         </div>
         <div v-for="(statementType, ix) in statementTypes" :key="ix" class="columns">
-            <div class="column is-full">
+            <div class="column is-full pb-6">
                 <div class="has-border-bottom-thin">
                     <h4 class="title is-4">Statement of {{ formatTitleCase(statementType) }}</h4>
                     <h5 class="subtitle is-5 has-text-grey">{{ formatDate(data.statementDate, 'D MMMM YYYY') }}</h5>
@@ -131,7 +131,7 @@
                                 </template>
                                 <template v-if="revenues.length || gains.length || expenses.length || losses.length">
                                     <tr>
-                                        <th>Net Profit</th>
+                                        <th>Net Income</th>
                                         <th class="text-right">{{ formatMoney( netProfit ) }}</th>
                                     </tr>
                                 </template>
@@ -200,8 +200,8 @@
                                 </template>
                                 <template v-if="operations.length || finances.length || investments.length">
                                     <tr>
-                                        <td>Net Change in Cash</td>
-                                        <td class="text-right">{{ formatMoney( netCash ) }}</td>
+                                        <th>Net Cash Change</th>
+                                        <th class="text-right">{{ formatMoney( netCash ) }}</th>
                                     </tr>
                                 </template>
                             </template>

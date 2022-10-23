@@ -83,7 +83,6 @@ namespace Harpoon
         public List<StatementSectional> GetSectionals() {
             return new List<StatementSectional> {
                 new StatementSectional {
-                    SummaryTitle = "Net Income",
                     Type = StatementAnalyte.StatementType.Income,
                     Sections = new List<StatementAnalyte.Sectional> { 
                             StatementAnalyte.Sectional.Revenues,
@@ -95,17 +94,14 @@ namespace Harpoon
                         }
                 },
                 new StatementSectional {
-                    SummaryTitle = "",
                     Type = StatementAnalyte.StatementType.FinancialPosition,
                     Sections = new List<StatementAnalyte.Sectional> { 
                             StatementAnalyte.Sectional.Assets,
                             StatementAnalyte.Sectional.Liabilities,
-                            StatementAnalyte.Sectional.Equity,
-                            StatementAnalyte.Sectional.EquityShare
+                            StatementAnalyte.Sectional.Equity
                         }
                 },
                 new StatementSectional {
-                    SummaryTitle = "Cash and Cash Equivalents at End of Period",
                     Type = StatementAnalyte.StatementType.CashFlow,
                     Sections = new List<StatementAnalyte.Sectional> { 
                             StatementAnalyte.Sectional.OperatingActivities,

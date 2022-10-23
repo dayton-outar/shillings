@@ -51,7 +51,6 @@ export default {
       const response = await graphQlClient.query({
         query: gql`query {
               sectionals {
-                summaryTitle,
                 type,
                 sections
               }
