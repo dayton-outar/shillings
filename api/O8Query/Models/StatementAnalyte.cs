@@ -80,7 +80,7 @@ namespace O8Query.Models
             Payables = 32768,
             Current =  65536,
             Fixed = 131072,
-            Debt = 262144,
+            Loan = 262144,
             Intagible = 524288,
             
             /// <summary>
@@ -89,10 +89,18 @@ namespace O8Query.Models
             Capital = 1048576,
             Retained = 2097152,
             Reserves = 4194304,
-            // 8388608,
-            // 2097152,
-            // 4194304,
-            // 8388608,
+
+            // Cashflow differentiators
+            Dividends = 8388608,
+            /// <summary>
+            /// Money spent on buying or selling stocks
+            /// </summary>
+            Shares = 2097152,
+            // <summary>
+            // Further classify common stocks from treasury stocks
+            // </summary>
+            Treasury = 4194304,
+            Bondholders = 8388608,
             // 16777216,
             // 33554432,
             // 67108864

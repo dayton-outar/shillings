@@ -174,7 +174,7 @@ namespace Harpoon
                     Sectional = StatementAnalyte.Sectional.Liabilities,
                     Assay = new List<StatementAnalyte.Assay> {
                             StatementAnalyte.Assay.Current,
-                            StatementAnalyte.Assay.Debt,
+                            StatementAnalyte.Assay.Loan,
                             StatementAnalyte.Assay.Fixed,
                             StatementAnalyte.Assay.Payables
                         }
@@ -188,22 +188,43 @@ namespace Harpoon
                             StatementAnalyte.Assay.NonControlling
                         }
                 },
+                // Credit(s): https://www.investopedia.com/investing/what-is-a-cash-flow-statement/
+                // The operating activities on the CFS include any sources and uses of cash from business activities.
                 new SectionalAnalytes {
                     Sectional = StatementAnalyte.Sectional.OperatingActivities,
                     Assay = new List<StatementAnalyte.Assay> {
+                            StatementAnalyte.Assay.Receivables,
+                            StatementAnalyte.Assay.Inventories,
+                            StatementAnalyte.Assay.Depreciation,
+                            StatementAnalyte.Assay.Impairment,
+                            StatementAnalyte.Assay.Payables,
+                            StatementAnalyte.Assay.Interest,
+                            StatementAnalyte.Assay.Tax,
                             StatementAnalyte.Assay.Operating
                         }
-                },
+                },                
+                // Cash from financing activities includes the sources of cash from investors and banks, as well as the way cash is paid to shareholders.
                 new SectionalAnalytes {
                     Sectional = StatementAnalyte.Sectional.FinancingActivities,
                     Assay = new List<StatementAnalyte.Assay> {
-                            StatementAnalyte.Assay.Capital
+                            StatementAnalyte.Assay.Loan,
+                            StatementAnalyte.Assay.Shares,
+                            StatementAnalyte.Assay.Dividends,
+                            // Classifies treasury shares from common shares
+                            StatementAnalyte.Assay.Treasury,
+                            // Classifies dividends pay out
+                            StatementAnalyte.Assay.Shareholders,
+                            // Classifies dividends pay out
+                            StatementAnalyte.Assay.NonControlling,
+                            // Classifies loans that are non-financial
+                            StatementAnalyte.Assay.Bondholders
                         }
                 },
+                // Investing activities include any sources and uses of cash from a company’s investments.
                 new SectionalAnalytes {
                     Sectional = StatementAnalyte.Sectional.InvestingActivities,
                     Assay = new List<StatementAnalyte.Assay> {
-                            StatementAnalyte.Assay.Investment
+                            StatementAnalyte.Assay.Capital
                         }
                 }
             };
