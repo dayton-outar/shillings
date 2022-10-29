@@ -19,6 +19,7 @@ namespace O8Query.Models
 
         public enum Sectional
         {
+            None = 0,
             // Income
             // Credit: https://www.investopedia.com/terms/i/incomestatement.asp#toc-understanding-the-income-statement
             Revenues = 1,
@@ -101,10 +102,11 @@ namespace O8Query.Models
             // </summary>
             Treasury = 33554432,
             Wages = 67108864,
-            // Bondholders = 134217728, // 2^27
+            // Creditor = 134217728, // 2^27
             // 268435456,
             // 536870912
-
+            //
+            Note = 1073741824
             // Cash Flow
         }
 

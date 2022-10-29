@@ -107,6 +107,7 @@ namespace Harpoon
                             StatementAnalyte.Sectional.OperatingActivities,
                             StatementAnalyte.Sectional.FinancingActivities,
                             StatementAnalyte.Sectional.InvestingActivities,
+                            StatementAnalyte.Sectional.None
                         }
                 }
             };
@@ -230,6 +231,12 @@ namespace Harpoon
                             StatementAnalyte.Assay.Capital,
                             StatementAnalyte.Assay.Intangible,
                             StatementAnalyte.Assay.Interest
+                        }
+                },
+                new SectionalAnalytes {
+                    Sectional = StatementAnalyte.Sectional.None,
+                    Assay = new List<StatementAnalyte.Assay> {
+                            StatementAnalyte.Assay.Note
                         }
                 }
             };
