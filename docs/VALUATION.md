@@ -3,7 +3,17 @@
 ## Valuing Stocks
 
 The value of any asset following the present value rule is, 
+
 $$\huge{Value = \sum_{t=1}^{t=n}{CF_{t} \over (1 + r)^t}}$$
+
+where,
+
+<blockquote>
+<p>n = Life of the asset</p>
+<p>CF<sub>t</sub> = Cash flow in period t</p>
+<p>r = Discount rate reflecting the riskiness of the estimated cash flows</p>
+</blockquote>
+
 
 ...<sup><a href="#footnote-1">1</a></sup>
 
