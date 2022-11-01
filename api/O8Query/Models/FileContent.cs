@@ -15,6 +15,7 @@ namespace O8Query.Models
         }
 
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long No { get; set; }
 
         [Required]

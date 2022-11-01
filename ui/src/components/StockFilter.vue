@@ -6,6 +6,7 @@
             placeholder="Click to select..."
             v-model="dates"
             :date-formatter="dateFormatter"
+            icon-pack="fas"
             range
             @input="dateChanged">
           </b-datepicker>

@@ -1,7 +1,6 @@
 <template>
     <div>
-        <stocks-filter @filterChanged="filterChanged" />
-        <stock-indices :readOnly="true" :showTools="false" :begin="beginDate" :end="endDate" />
+        <stocks-filter @filterChanged="filterChanged" />        
         <portfolio-form />
         <portfolio :formattedDateRange="formattedDateRange" />
         <section v-if="totalTradings">
@@ -95,6 +94,7 @@
               </div>
             </b-collapse>
           </div>
+          <stock-indices :readOnly="true" :showTools="false" :begin="beginDate" :end="endDate" />
           <stock-trades :formattedDateRange="formattedDateRange" :tradings="totalTradings" />
         </section>
     </div>

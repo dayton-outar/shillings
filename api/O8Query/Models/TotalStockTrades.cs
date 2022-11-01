@@ -11,14 +11,13 @@ namespace O8Query.Models
     {
         private string _pricesXml = string.Empty;
 
-        /// <summary>
-        /// Company code for stock
-        /// </summary>
         public string Code { get; set; }
+
         /// <summary>
-        /// Company name associated with stock
+        /// Stock and company information
         /// </summary>
-        public string Security { get; set; }
+        [ForeignKey("StockCode")]
+        public Stock Stock { get; set; }
         
         /// <summary>
         /// Total volume of stocks traded
