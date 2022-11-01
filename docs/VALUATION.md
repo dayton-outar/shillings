@@ -21,11 +21,11 @@ where,
 <p>r = Discount rate reflecting the riskiness of the estimated cash flows</p>
 </blockquote>
 
-Cash flow can be determined from 3 main sources for stocks. They are,
+Cash flow can be determined from 2 main sources for stocks: dividends and free cash flow. Some of the mathematical approaches to evaluation of a stock includes,
 
-1. Dividends
-2. Free Cash Flow to Equity
-3. Free Cash Flow to Firm
+1. Dividend-Discount Model
+2. Free Cash Flow to Equity Model
+3. Free Cash Flow to Firm Model
 
 If the company that issued stocks on a stock market pays dividends, a version of the Discounted Cash Flow Model referred to as the _Dividend-Discount Model_ can be applied to arrive at the net present value of the stock.
 
@@ -51,6 +51,11 @@ The main ingredients needed to arrive at the value of a company includes,
 4. Interest Rates of Jurisdiction
 
     These rates are described as the risk-free rate
+
+
+$$\huge{Enterprise Value in Year T = V_T^L = { FCF_{T + 1} \over r_{wacc} - g } }$$
+
+
 
 ## Valuing Real Estate
  - ...
