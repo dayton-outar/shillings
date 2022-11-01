@@ -12,6 +12,13 @@ export default {
         formatMoney(amount) {
             let amt = parseFloat(amount.toString().replace(/[^0-9.-]+/g,'')) || 0;
             return new Intl.NumberFormat('en-JM', { style: 'currency', currency: 'JMD', currencyDisplay: 'symbol', currencySign: 'accounting' }).format(amt)
+        },
+        formatPercentage(percentage) {
+            return `${ parseFloat(percentage).toFixed(2) }%`
+        },
+        formatVolume(volume) {
+            const nfi = new Intl.NumberFormat('en-US')
+            return nfi.format(volume)
         }
     }
 }

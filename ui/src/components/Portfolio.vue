@@ -78,8 +78,11 @@
 <script>
 import { mapGetters, mapActions } from 'vuex'
 
+import utilMixin from '../utils/utilMixin'
+
 export default ({
   props: ['formattedDateRange'],
+  mixins: [utilMixin],
   data() {
     return {
       defaultSortDirection: 'desc',
@@ -106,18 +109,7 @@ export default ({
           type: 'is-danger'
         })
       })
-    },
-    formatVolume(volume) {
-      const nfi = new Intl.NumberFormat('en-US')
-      return nfi.format(volume)
-    },
-    formatMoney(amount) {
-      const cfi = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' })
-      return cfi.format(amount)
-    },
-    formatPercentage(percentage) {
-      return `${ percentage }%`
-    },
+    },    
     formatTotalPurchaseCost() {
       const totalPurchaseCost = this.holdings.reduce((t, v) => {
         return t + v.purchaseCost
