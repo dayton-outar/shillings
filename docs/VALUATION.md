@@ -3,7 +3,7 @@
 ## Valuing Stocks
 
 The value of any asset following the present value rule is, 
-$$Value = \sum_{t=1}^{t=n}{CF_t \over (1 + r)^t}$$
+$${large}Value = \sum_{t=1}^{t=n}{CF_t \over (1 + r)^t}$$
 
 ...<sup><a href="#footnote-1">1</a></sup>
 
@@ -32,6 +32,7 @@ $$Value = \sum_{t=1}^{t=n}{CF_t \over (1 + r)^t}$$
 17. [What Is Free Cash Flow?](https://www.thebalancemoney.com/what-is-free-cash-flow-and-how-can-you-calculate-it-393111) - [The Balance](https://www.thebalancemoney.com/)
 18. [Stable Growth vs. 2-Stage Valuation Model](https://corporatefinanceinstitute.com/resources/templates/excel-modeling/stable-growth-vs-2-stage-valuation-model/) - [CFI](https://corporatefinanceinstitute.com/)
 30. [Markdown Math Support](https://github.blog/2022-05-19-math-support-in-markdown/)
+31. [Sigma, summation symbol in Latex](https://latexhelp.com/latex-sigma-symbol/) - [Latex Help](https://latexhelp.com/)
 
 ## Tutorial Videos
 
