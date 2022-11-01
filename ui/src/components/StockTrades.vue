@@ -17,8 +17,8 @@
             detailed
             default-sort="percentage">
             
-            <b-table-column field="security" label="Security" sortable v-slot="props">
-              {{ props.row.security }}
+            <b-table-column field="stock.name" label="Security" sortable v-slot="props">
+              {{ props.row.stock.name }}
             </b-table-column>
 
             <!--
@@ -47,11 +47,11 @@
 
             <template #detail="props">
               <article>
-                <h5 class="title is-5">{{ props.row.security }}</h5>
+                <h5 class="title is-5">{{ props.row.stock.name }}</h5>
                 <div class="py-3">
                   <span class="tag is-dark is-medium">{{ formatMoney(props.row.lowestPrice) }}</span> <span class="tag is-info is-medium">{{ formatMoney(props.row.highestPrice) }}</span>
                 </div>
-                <stocks-line :name="props.row.security" :stocks="props.row.prices" :isDetail="true" />
+                <stocks-line :name="props.row.stock.name" :stocks="props.row.prices" :isDetail="true" />
                 <!--
                 <b-table
                   :data="props.row.prices"

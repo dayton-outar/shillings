@@ -12,8 +12,48 @@ export default {
                 end: $end
                 order: { volume: DESC }
               ) {
-                code,
-                security,
+                stock {
+                  code,
+                  name,
+                  currency,
+                  stockType,
+                  issuedShares,
+                  outstandingShares,
+                  isListed,
+                  created,
+                  company {
+                    code,
+                    name,
+                    about,
+                    totalEmployed,
+                    wiki,
+                    webSite,
+                    founded,
+                    countryCode,
+                    created,
+                    industries {
+                      no,
+                      name,
+                      wiki
+                    },
+                    logo {
+                      no,
+                      type,
+                      fileName,
+                      contentType,
+                      contentSize,
+                      created
+                    },
+                    files {
+                      no,
+                      type,
+                      fileName,
+                      contentType,
+                      contentSize,
+                      created
+                    }
+                  }
+                },
                 volume,
                 openingDate,
                 openingPrice,
