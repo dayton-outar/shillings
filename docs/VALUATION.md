@@ -3,7 +3,7 @@
 ## Valuing Stocks
 
 The value of any asset following the present value rule is, 
-$${\large}Value = \sum_{t=1}^{t=n}{CF_t \over (1 + r)^t}$$
+$${\large Value = \sum_{t=1}^{t=n}{CF_t \over (1 + r)^t}}$$
 
 ...<sup><a href="#footnote-1">1</a></sup>
 
