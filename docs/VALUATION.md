@@ -1,7 +1,5 @@
 # Valuation Models Used
 
-## Valuing Stocks
-
 There are 2 main approaches to valuation,
 
 1. Discounted Cash Flow Model
@@ -56,19 +54,13 @@ The main ingredients needed to arrive at the value of a company includes,
 $$\huge{Enterprise Value in Year T = V_T^L = { FCF_{T + 1} \over r_{wacc} - g } }$$
 
 
-
-## Valuing Real Estate
- - ...
-
 ## Further Reading
 
 1. Corporate Finance: The Core, Global Edition by Jonathan Berk, Peter Demarzo
 2. The Intelligent Investor by Benjamin Graham, David Clark
 3. Warren Buffett and the Interpretation of Financial Statements by Mary Buffett
-4. The Site Book by Richard M. Fenker *
 5. Investment Valuation by Aswath Damodaran
 6. Investment Banking by Joshua Rosenbaum and Joshua Pearl
-7. How to Measure Anything by Douglas W. Hubbard *
 8. Introduction to Financial Accounting by Charles T. Horngren
 9. Financial Shenanigans by Howard M. Schilit
 10. [How Investors Can Use Adjusted Funds From Operations (AFFO) to Measure REIT Performance](https://www.millionacres.com/real-estate-investing/reits/how-to-use-affo-to-meaure-reit-performance/)
