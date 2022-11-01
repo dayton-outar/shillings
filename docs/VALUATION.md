@@ -2,6 +2,13 @@
 
 ## Valuing Stocks
 
+There are 2 main approaches to valuation,
+
+1. Discounted Cash Flow Model
+2. Relative Valuation
+
+### Discounted Cash Flow Model
+
 The value of any asset following the present value rule is, 
 
 $$\huge{Value = \sum_{t=1}^{t=n}{CF_{t} \over (1 + r)^t}}$$
@@ -14,8 +21,25 @@ where,
 <p>r = Discount rate reflecting the riskiness of the estimated cash flows</p>
 </blockquote>
 
+Cash flow can be determined from 3 main sources for stocks. They are,
 
-...<sup><a href="#footnote-1">1</a></sup>
+1. Dividends
+2. Free Cash Flow to Equity
+3. Free Cash Flow to Firm
+
+If the company that issued stocks on a stock market pays dividends, a version of the Discounted Cash Flow Model referred to as the _Dividend-Discount Model_ can be applied to arrive at the net present value of the stock.
+
+The equation below applies to a single N-year investor, who will collect dividends for N years and
+then sell the stock, or to a series of investors who hold the stock for shorter periods and
+then resell it.<sup><a href="#footnote-1">1</a></sup>
+
+$$\huge{P_0 = {Div_1 \over 1 + r_E} + {Div_2 \over (1 + r_E)^2} + {Div_3 \over (1 + r_E)^3} + \ldots + {Div_N \over (1 + r_E)^N} + { P_N \over (1 + r_E)^N } }$$
+
+For the special case in which the firm eventually
+pays dividends and is never acquired, it is possible to hold the shares forever.<sup><a href="#footnote-1">1</a></sup>
+
+$$\huge{P_0 = {Div_1 \over 1 + r_E} + {Div_2 \over (1 + r_E)^2} + {Div_3 \over (1 + r_E)^3} + \ldots = \sum_{n=1}^\infty {Div_n \over (1 + r_E)^n} }$$
+
 
 ## Valuing Real Estate
  - ...
@@ -53,4 +77,4 @@ where,
 
 ___
 
-<a id="footnote-1"><sup>1</sup></a> ...
+<a id="footnote-1"><sup>1</sup></a> Find on page 314 in _Corporate Finance: The Core, Global Edition_
