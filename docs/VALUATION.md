@@ -5,7 +5,7 @@ There are 2 main approaches to valuation,
 1. Discounted Cash Flow Model
 2. Relative Valuation
 
-### Discounted Cash Flow Model
+## Discounted Cash Flow Model
 
 The value of any asset following the present value rule is, 
 
