@@ -2,8 +2,8 @@
 
 ## Valuing Stocks
 
-When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are 
-$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
+The value of any asset following the present value rule is, 
+$$Value = \sum_{t=1}^{t=n}{CF_t \over (1 + r)^t}$$
 
 ...<sup><a href="#footnote-1">1</a></sup>
 
