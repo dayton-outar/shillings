@@ -40,6 +40,17 @@ pays dividends and is never acquired, it is possible to hold the shares forever.
 
 $$\huge{P_0 = {Div_1 \over 1 + r_E} + {Div_2 \over (1 + r_E)^2} + {Div_3 \over (1 + r_E)^3} + \ldots = \sum_{n=1}^\infty {Div_n \over (1 + r_E)^n} }$$
 
+The main ingredients needed to arrive at the value of a company includes,
+
+1. Financial Statements
+   
+   3 main statements are required: Income-Expense, Balance Sheet and Cashflow Statement
+
+2. Stock Prices
+3. Stock Indices
+4. Interest Rates of Jurisdiction
+
+    These rates are described as the risk-free rate
 
 ## Valuing Real Estate
  - ...
