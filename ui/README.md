@@ -67,14 +67,15 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## Further Reading
 
-1. [Vue Apollo v4: the first look](https://dev.to/n_tepluhina/vue-apollo-v4-the-first-look-c32)
-2. [Vue Apollo: Smart Query](https://apollo.vuejs.org/api/smart-query.html#options)
-3. [Combining GraphQL and Vuex](https://markus.oberlehner.net/blog/combining-graphql-and-vuex/) by Markus Oberlehner
-4. [How to change page titles when using vue-router?](https://stackoverflow.com/questions/51639850/how-to-change-page-titles-when-using-vue-router) - StackOverflow
-5. [My Vue Experience after 3 projects in 18 months](https://dev.to/crisarji/my-vue-experience-after-3-projects-in-18-months-456c)
-6. [Financial Chart: Candlestick Sample](https://www.chartjs.org/chartjs-chart-financial/)
-7. Front-End Development Projects with Vue.js by Raymond Camden, Hugo Di Francesco, Clifford Gurney, Philip Kirkbride, Maya Shavin (Packt Publishing)
-8. Building Vue.js Applications with GraphQL by Heitor Ramon Ribeiro (Packt Publishing)
+1. Front-End Development Projects with Vue.js by Raymond Camden, Hugo Di Francesco, Clifford Gurney, Philip Kirkbride, Maya Shavin (Packt Publishing)
+2. Building Vue.js Applications with GraphQL by Heitor Ramon Ribeiro (Packt Publishing)
+3. [Vue Apollo v4: the first look](https://dev.to/n_tepluhina/vue-apollo-v4-the-first-look-c32)
+4. [Vue Apollo: Smart Query](https://apollo.vuejs.org/api/smart-query.html#options)
+5. [Combining GraphQL and Vuex](https://markus.oberlehner.net/blog/combining-graphql-and-vuex/) by Markus Oberlehner
+6. [How to change page titles when using vue-router?](https://stackoverflow.com/questions/51639850/how-to-change-page-titles-when-using-vue-router) - StackOverflow
+7. [My Vue Experience after 3 projects in 18 months](https://dev.to/crisarji/my-vue-experience-after-3-projects-in-18-months-456c)
+8. [Financial Chart: Candlestick Sample](https://www.chartjs.org/chartjs-chart-financial/)
+9. [How To Create a Global Event Bus in Vue 2](https://www.digitalocean.com/community/tutorials/vuejs-global-event-bus) - [Digital Ocean](https://www.digitalocean.com/)
 
 ## Tutorial Videos
 

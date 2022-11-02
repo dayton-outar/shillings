@@ -99,6 +99,7 @@ There is a simple design pattern that achieves the motives of the overall plan (
 ## Further Reading
 
 1. [How to Set Up a Cron Job in Linux](https://phoenixnap.com/kb/set-up-cron-job-linux)
+2. [Load node.js module from string in memory](https://stackoverflow.com/questions/17581830/load-node-js-module-from-string-in-memory)
 
 ## Tutorial Videos
 

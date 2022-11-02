@@ -299,6 +299,11 @@ query {
 15. [XML columns in a Code-First application](https://stackoverflow.com/questions/12631290/xml-columns-in-a-code-first-application) - StackOverflow
 16. [NUnit vs. XUnit vs. MSTest: Comparing Unit Testing Frameworks In C#](https://www.lambdatest.com/blog/nunit-vs-xunit-vs-mstest/) by Himanshu Sheth
 17. [How to do Canary Deployments on Kubernetes](https://phoenixnap.com/kb/kubernetes-canary-deployments)
+18. [Say hello to Hot Chocolate 12!](https://chillicream.com/blog/2021/09/27/hot-chocolate-12) - [ChilliCream](https://chillicream.com/)
+19. [9 Ways To Secure your GraphQL API — GraphQL Security Checklist](https://www.apollographql.com/blog/graphql/security/9-ways-to-secure-your-graphql-api-security-checklist/) - [Apollo GraphQL](https://www.apollographql.com/)
+20. [GraphQL Authentication and Authorization in DotNet 6 using MongoDB](https://medium.com/@mohsenasadi501/graphql-authentication-and-authorization-in-dotnet-6-using-mongodb-e1de0bfbe240) by [Mohsenasadi](https://medium.com/@mohsenasadi501)
+21. [Clean Architecture Solution Template](https://github.com/jasontaylordev/CleanArchitecture) - [Jason Taylor](https://github.com/jasontaylordev)
+22. [EF Core 5 Table Valued Functions Unable to translate collection subquery in projection since the parent query doesn't project key columns of all Exception](https://github.com/dotnet/efcore/issues/23830) - [Dotnet EF Core Github](https://github.com/dotnet/efcore)
 
 ## Tutorial Videos
 
