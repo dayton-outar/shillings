@@ -61,6 +61,7 @@ Had some issue installing a package to integrate vue with graphql and [this refe
 ```bash
 npm install @vue/apollo-composable --save --legacy-peer-deps
 ```
+
 ## Customize Configuration
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
@@ -89,3 +90,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 7. [Vue JS 3 Tutorial for Beginners #11 - The Composition API (part 2)](https://youtu.be/0FwBjPeLqQ8) - [The Net Ninja](https://www.youtube.com/c/TheNetNinja)
 8. [Vue 3 Animations & Transitions](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ghm7-iTfS9n468Kp7l9Ipu) - [The Net Ninja](https://www.youtube.com/c/TheNetNinja)
 9. [Animating Vue Router Transitions in Vue 3](https://youtu.be/L77Uq93XXzk)
+10. [Vue.js Tutorial: Add Analytics to Your App with Google Analytics](https://youtu.be/Umj51NqKF8Y)
