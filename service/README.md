@@ -96,10 +96,14 @@ The founder of this application enjoys the use of certain new features as you wi
 
 There is a simple design pattern that achieves the motives of the overall plan (which is to gather information). Please follow the motto of **KISS** (Keep it Straightforward and Simple). A sophisticated design pattern is only needed when the application is required to scale up to meet more needs for various use cases. Currently, this is a simple use case.
 
+### To-Do Notes
+
+Remember to upgrade [puppeteer](https://github.com/puppeteer/puppeteer/releases?page=8)
+
 ## Further Reading
 
 1. [How to Set Up a Cron Job in Linux](https://phoenixnap.com/kb/set-up-cron-job-linux)
-2. [Load node.js module from string in memory](https://stackoverflow.com/questions/17581830/load-node-js-module-from-string-in-memory)
+2. [Load node.js module from string in memory](https://stackoverflow.com/questions/17581830/load-node-js-module-from-string-in-memory) <sup><a href="https://github.com/floatdrop/require-from-string" target="_blank">Github</a></sup>
 
 ## Tutorial Videos
 
