@@ -280,6 +280,48 @@ query {
 }
 ```
 
+```csharp
+using System;
+using System.Linq;
+
+namespace GettingCountries
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var svc = new Countries.NET.CountriesService();
+
+            var countries = svc.GetAll();
+
+            foreach(var country in countries)
+            {
+                if (country.Currencies.Count() > 0)
+                {
+                    string currencyDetails = string.Empty;
+                    try
+                    {
+                        var currency = TeixeiraSoftware.Finance.Currency.ByAlphabeticCode(country.Currencies.First().Code);
+
+                        currencyDetails = string.Format(" ... ({0}: {1} --> {2} [{3}])", currency.AlphabeticCode, currency.NumericCode, currency.Name, currency.Sign);
+                    }
+                    catch { }
+
+                    Console.WriteLine("{0} ... {1}{2}", country.CCA2, country.Name, currencyDetails);
+                }
+                else
+                {
+                    Console.WriteLine("{0} ... {1}", country.CCA2, country.Name);
+                }
+            }
+
+            Console.ReadKey();
+        }
+    }
+}
+```
+
+
 ## Further Reading
 
 1. [ASP.NET Core Fundamentals](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/?view=aspnetcore-5.0&tabs=linux)
