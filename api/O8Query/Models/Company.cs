@@ -71,10 +71,5 @@ namespace O8Query.Models
         public List<FileContent> Files { get; set; }
 
         public List<Stock> Stocks { get; set; }
-
-        public FileContent Logo()
-        {
-            return this.Files.Count() == 0 ? null : this.Files.Where(f => f.Type == FileContent.FileType.Logo).OrderByDescending(f => f.Created).First();
-        }
     }
 }
