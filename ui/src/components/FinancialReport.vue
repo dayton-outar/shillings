@@ -189,9 +189,6 @@ export default {
       removeStatement(ix) {
           this.statements.splice(ix, 1);
       },
-      assign() {
-        delete this.formData.company.logo
-      },
       validate() {
         let valid = true
 

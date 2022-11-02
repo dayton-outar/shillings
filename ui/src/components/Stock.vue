@@ -304,13 +304,6 @@ export default {
     },
     methods: {
         ...mapActions('stocks', ['create', 'update']),
-        assign() {
-            delete this.formData.company.logo
-            this.formData.indices = this.formData.indices.map(i => {
-                delete i.market.company.logo
-                return i
-            })
-        },
         validate() {
             let valid = true
 

@@ -56,7 +56,7 @@
                                 <figure class="media-left">
                                     <div class="image is-48x48">
                                         <img class="is-rounded"
-                                            :src="(props.row.company.logo ? `${fileApiHost}?no=${props.row.company.logo.no}` : require(`../assets/no-image.png`))" />
+                                            :src="(getLogo(props.row.company.files) ? `${fileApiHost}?no=${getLogo(props.row.company.files)[0].no}` : require(`../assets/no-image.png`))" />
                                     </div>
                                 </figure>
                                 <div class="media-content">

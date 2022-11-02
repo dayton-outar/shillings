@@ -36,14 +36,6 @@ export default {
                       name,
                       wiki
                     },
-                    logo {
-                      no,
-                      type,
-                      fileName,
-                      contentType,
-                      contentSize,
-                      created
-                    },
                     files {
                       no,
                       type,

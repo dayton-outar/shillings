@@ -225,7 +225,7 @@
                             </div>
                         </b-upload>
                         <b-message 
-                            :title="(dropFile ? `File: ${dropFile.name} (${formatBytes(dropFile.size)})` : `File: ${formData.logo.fileName} (${formatBytes(formData.logo.contentSize)})`)" 
+                            :title="(dropFile ? `File: ${dropFile.name} (${formatBytes(dropFile.size)})` : `File: ${getLogo(formData.files)[0].fileName} (${formatBytes(getLogo(formData.files)[0].contentSize)})`)" 
                             v-if="hasImg" 
                             aria-close-label="Close message"
                             @close="(hasImg = false)">
@@ -330,6 +330,7 @@ import prettyBytes from 'pretty-bytes';
 import config from '../config'
 
 import formMixin from '../utils/formMixin'
+import utilMixin from '../utils/utilMixin'
 
 import Form from './Form.vue'
 
@@ -337,14 +338,14 @@ export default {
     components: {
         's-form': Form,
     },
-    mixins: [formMixin],
+    mixins: [formMixin, utilMixin],
     data() {
         return {
             createTitle: 'Create Company',
             companyIndustries: this.data.industries.map(i => i.no),
             dropFile: null,
-            hasImg: (this.editMode && !!this.data.logo),
-            imgSrc: this.data.logo ? `${config.fileApiHost}?no=${this.data.logo.no}` : '#',
+            hasImg: (this.editMode && !!this.data.files),
+            imgSrc: this.getLogo(this.data.files) ? `${config.fileApiHost}?no=${this.getLogo(this.data.files)[0].no}` : '#',
             validation: {
                 code: {
                     type: '',

@@ -19,6 +19,10 @@ export default {
         formatVolume(volume) {
             const nfi = new Intl.NumberFormat('en-US')
             return nfi.format(volume)
+        },
+        // --
+        getLogo(fileContents) {
+            return fileContents.filter(f => f.type === "LOGO");
         }
     }
 }

@@ -84,7 +84,6 @@ export default {
     methods: {
         ...mapActions('indices', ['create', 'update']),
         assign() {
-            delete this.formData.market.company.logo
             this.formData.no = parseInt(this.formData.no, 10)
         }
     }

@@ -38,14 +38,6 @@ export default {
                     name,
                     wiki
                   },
-                  logo {
-                    no,
-                    type,
-                    fileName,
-                    contentType,
-                    contentSize,
-                    created
-                  },
                   files {
                     no,
                     type,
@@ -118,14 +110,6 @@ export default {
                     name,
                     wiki
                   },
-                  logo {
-                    no,
-                    type,
-                    fileName,
-                    contentType,
-                    contentSize,
-                    created
-                  },
                   files {
                     no,
                     type,
@@ -181,14 +165,6 @@ export default {
                     no,
                     name,
                     wiki
-                  },
-                  logo {
-                    no,
-                    type,
-                    fileName,
-                    contentType,
-                    contentSize,
-                    created
                   },
                   files {
                     no,

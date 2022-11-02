@@ -5,7 +5,7 @@
                 <div class="media">
                     <div class="media-left">
                         <figure class="image is-64x64">
-                            <img :src="(data.company.logo ? `${fileApiHost}?no=${data.company.logo.no}` : require(`../assets/no-image.png`))" alt="Company Logo" />
+                            <img :src="(getLogo(data.company.files) ? `${fileApiHost}?no=${getLogo(data.company.files)[0].no}` : require(`../assets/no-image.png`))" alt="Company Logo" />
                         </figure>
                     </div>
                     <div class="media-content">

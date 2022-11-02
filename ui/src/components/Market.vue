@@ -99,10 +99,7 @@ export default {
         ...mapState('companies', ['companies'])
     },
     methods: {
-        ...mapActions('markets', ['create', 'update']),
-        assign() {
-            delete this.formData.company.logo
-        }
+        ...mapActions('markets', ['create', 'update'])
     }
 }
 

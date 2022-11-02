@@ -52,7 +52,7 @@
                                 <figure class="media-left">
                                     <div class="image is-48x48">
                                         <img class="is-rounded"
-                                            :src="(props.row.logo ? `${fileApiHost}?no=${props.row.logo.no}` : require(`../assets/no-image.png`))" alt="Company Logo" />
+                                            :src="(getLogo(props.row.files) && getLogo(props.row.files).length > 0 ? `${fileApiHost}?no=${getLogo(props.row.files)[0].no}` : require(`../assets/no-image.png`))" alt="Company Logo" />
                                     </div>
                                 </figure>
                                 <div class="media-content">
@@ -108,6 +108,7 @@ import moment from 'moment'
 
 import config from '../config'
 import tableMixin from '../utils/tableMixin'
+import utilMixin from '../utils/utilMixin'
 
 import SearchBar from './SearchBar.vue'
 import TableToolBar from './TableToolBar'
@@ -121,7 +122,7 @@ export default {
         'search-bar': SearchBar,
         'table-tool-bar': TableToolBar
     },
-    mixins: [tableMixin],
+    mixins: [tableMixin, utilMixin],
     data() {
         return {
             fetchTitle: 'Companies',
