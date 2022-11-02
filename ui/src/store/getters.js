@@ -35,7 +35,7 @@ export default {
     },
     holdings(state) {
       const ph = state.portfolioHoldings.map(h => {
-        const itrade = state.totalTradings.find(t => t.code === h.security.code)
+        const itrade = state.totalTradings.find(t => t.stock.code === h.security.code)
         let newPrice = itrade ? itrade.closingPrice : 0
         let oldCost = h.volume * h.unitPrice
         let newCost = itrade ? h.volume * itrade.closingPrice : 0
