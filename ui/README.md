@@ -76,6 +76,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 7. [My Vue Experience after 3 projects in 18 months](https://dev.to/crisarji/my-vue-experience-after-3-projects-in-18-months-456c)
 8. [Financial Chart: Candlestick Sample](https://www.chartjs.org/chartjs-chart-financial/)
 9. [How To Create a Global Event Bus in Vue 2](https://www.digitalocean.com/community/tutorials/vuejs-global-event-bus) - [Digital Ocean](https://www.digitalocean.com/)
+10. [Using Vue Currency Input with Buefy](https://codesandbox.io/s/using-vue-currency-input-with-buefy-pnl3q?file=/src/App.vue) - [CodeSandbox](https://codesandbox.io/)
 
 ## Tutorial Videos
 
@@ -84,4 +85,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 3. [Vue.js Todo App](https://www.youtube.com/playlist?list=PLEhEHUEU3x5q-xB1On4CsLPts0-rZ9oos) - [Andre Madarang](https://www.youtube.com/c/drehimself)
 4. [GraphQL Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9iK6Qhn-QLcXCXPQUov1U7f) - [The Net Ninja](https://www.youtube.com/c/TheNetNinja)
 5. [Electron Tutorial](https://www.youtube.com/playlist?list=PLbu98QxRH81ILK1p1BnSRMPr2x-6Zd1oX) - [Red Stapler](https://www.youtube.com/c/RedStapler_channel)
-6. [Vue 3 Animations & Transitions](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ghm7-iTfS9n468Kp7l9Ipu) - [The Net Ninja](https://www.youtube.com/c/TheNetNinja)
+6. [Vue JS 3 Tutorial for Beginners #10 - The Composition API (part 1)](https://youtu.be/V-kxBWcPJfo) - [The Net Ninja](https://www.youtube.com/c/TheNetNinja)
+7. [Vue JS 3 Tutorial for Beginners #11 - The Composition API (part 2)](https://youtu.be/0FwBjPeLqQ8) - [The Net Ninja](https://www.youtube.com/c/TheNetNinja)
+8. [Vue 3 Animations & Transitions](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ghm7-iTfS9n468Kp7l9Ipu) - [The Net Ninja](https://www.youtube.com/c/TheNetNinja)
+9. [Animating Vue Router Transitions in Vue 3](https://youtu.be/L77Uq93XXzk)
