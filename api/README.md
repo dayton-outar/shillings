@@ -280,6 +280,10 @@ query {
 }
 ```
 
+Remember to implement [WatchDog.NET](https://www.nuget.org/packages/WatchDog.NET)
+
+See below snippet of using [Countries.NET API](https://github.com/YoussefSell/Countries.Net) that can be used to gather information for countries,
+
 ```csharp
 using System;
 using System.Linq;
@@ -320,7 +324,9 @@ namespace GettingCountries
     }
 }
 ```
+[TeixeiraSoftware.Finance.Currency](https://andremarcondesteixeira.github.io/TeixeiraSoftware.Finance.Currency/) could also be a good addition instead of building own API.
 
+Also, security needed. So, [Adding JWT Bearer Authentication to a Hot Chocolate 12 GraphQL API](https://github.com/tnc1997/samples/tree/main/adding-jwt-bearer-authentication-to-a-hot-chocolate-12-graphql-api) will prove useful.
 
 ## Further Reading
 
@@ -351,9 +357,15 @@ namespace GettingCountries
 
 1. [.NET 5 REST API Tutorial](https://www.youtube.com/playlist?list=PLeD0-5Hw0ZJ_GlY21kfzfQD-N17i8pdTS)
 2. [Getting started with GraphQL and HotChocolate](https://youtu.be/Hh8L6I2BV7k)
-3. [GraphQL Schema Stitching](https://youtu.be/ODBR7kZHp-s)
-4. [Real-time Data fetching with GraphQL and Blazor](https://youtu.be/iDAYdrFHqGU)
-5. [Elegant API Versioning in ASP.NET Core (Web API)](https://youtu.be/iVHtKG0eU_s) - [Nick Chapas](https://www.youtube.com/c/Elfocrash/)
-6. [Setting up JWT support (Authentication) | ASP.NET Core 5 REST API Tutorial 9](https://youtu.be/M6AkbBaDGJE) - [Nick Chapas](https://www.youtube.com/c/Elfocrash/)
-7. [10 C# Libraries To Save You Time And Energy](https://youtu.be/uS0hRJqamfU)
-8. [Creating NuGet Packages the easy way with .NET Standard in C#](https://youtu.be/AF1y9gLcxjQ)
+3. [Getting started with GraphQL Subscriptions in .NET](https://youtu.be/wHC9gOk__y0)
+4. [GraphQL Schema Stitching](https://youtu.be/ODBR7kZHp-s)
+5. [Real-time Data fetching with GraphQL and Blazor](https://youtu.be/iDAYdrFHqGU)
+6. [Elegant API Versioning in ASP.NET Core (Web API)](https://youtu.be/iVHtKG0eU_s) - [Nick Chapas](https://www.youtube.com/c/Elfocrash/)
+7. [Setting up JWT support (Authentication) | ASP.NET Core 5 REST API Tutorial 9](https://youtu.be/M6AkbBaDGJE) - [Nick Chapas](https://www.youtube.com/c/Elfocrash/)
+8. [10 C# Libraries To Save You Time And Energy](https://youtu.be/uS0hRJqamfU)
+9. [Creating NuGet Packages the easy way with .NET Standard in C#](https://youtu.be/AF1y9gLcxjQ)
+10. [.NET 6 - Web API Logging 📝](https://youtu.be/LO-QKMHK5ps)
+11. [Adding JWT Bearer Authentication to a Hot Chocolate 12 GraphQL API](https://youtu.be/oxgSk_Q-D3g)
+12. [Authentication (w/ Firebase) - GRAPHQL API IN .NET w/ HOT CHOCOLATE #8.1](https://youtu.be/7Xk0BuisZjg)
+13. [Authorization - GRAPHQL API IN .NET w/ HOT CHOCOLATE #8.2](https://youtu.be/XtdUExto_24)
+14. [How to structure a .NET Solution (project separation & architecture)](https://youtu.be/YiVqwoFMieg) - [Nick Chapas](https://www.youtube.com/c/Elfocrash/)
