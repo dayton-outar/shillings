@@ -50,10 +50,10 @@ export default {
         add({ commit }, payload) {
             commit('add', payload)
         },
-        updatePortfolio({ commit }, payload) {
+        update({ commit }, payload) {
             commit('modify', payload)
         },
-        removePortfolio({ commit }, code) {
+        remove({ commit }, code) {
             commit('remove', code)
         },
         flush({ commit }) {

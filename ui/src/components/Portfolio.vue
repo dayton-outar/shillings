@@ -94,9 +94,9 @@ export default ({
     ...mapGetters(['holdings'])
   },
   methods: {
-    ...mapActions(['removePortfolio']),
+    ...mapActions('holdings', ['remove']),
     removeMyPortfolio(id) {
-      this.removePortfolio(id).then(() => {
+      this.remove(id).then(() => {
         this.$buefy.toast.open({
           duration: 3000,
           message: `Successfully removed a stock holding`,
