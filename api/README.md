@@ -352,6 +352,7 @@ Also, security needed. So, [Adding JWT Bearer Authentication to a Hot Chocolate 
 20. [GraphQL Authentication and Authorization in DotNet 6 using MongoDB](https://medium.com/@mohsenasadi501/graphql-authentication-and-authorization-in-dotnet-6-using-mongodb-e1de0bfbe240) by [Mohsenasadi](https://medium.com/@mohsenasadi501)
 21. [Clean Architecture Solution Template](https://github.com/jasontaylordev/CleanArchitecture) - [Jason Taylor](https://github.com/jasontaylordev)
 22. [EF Core 5 Table Valued Functions Unable to translate collection subquery in projection since the parent query doesn't project key columns of all Exception](https://github.com/dotnet/efcore/issues/23830) - [Dotnet EF Core Github](https://github.com/dotnet/efcore)
+23. [Generating SQL Backup Script for Tables & Data from any .NET Application using SMO](https://weblogs.asp.net/shahar/generating-sql-backup-script-for-tables-amp-data-from-any-net-application-using-smo) by Shahar Gvirtz's
 
 ## Tutorial Videos
 
