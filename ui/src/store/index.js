@@ -1,9 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-import state from './state'
 import getters from './getters'
-import actions from './actions'
 import mutations from './mutations'
 
 import companies from './companies'
@@ -15,16 +13,17 @@ import stocks from './stocks'
 import finances from './finances'
 import dividends from './dividends'
 import trades from './trades'
+import holdings from './holdings'
+import dependencies from './dependencies'
 
 Vue.use(Vuex)
 
 export const store = new Vuex.Store({
     strict: true,
-    state,
     getters,
     mutations,
-    actions,
-    modules: {        
+    modules: {
+        dependencies,
         companies,
         industries,
         markets,
@@ -33,6 +32,7 @@ export const store = new Vuex.Store({
         stocks,
         dividends,
         finances,
-        trades
+        trades,
+        holdings
     }
 })

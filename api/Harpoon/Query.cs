@@ -80,8 +80,10 @@ namespace Harpoon
         [UseSorting]
         public IQueryable<FinancialReport> GetFinancialReports([ScopedService]StocksQuery sq) => sq.FinancialReports;
 
-        public List<StatementSectional> GetSectionals() {
-            return new List<StatementSectional> {
+        public Dependencies GetDependencies() {
+            var dependencies = new Dependencies();
+
+            dependencies.Sectionals = new List<StatementSectional> {
                 new StatementSectional {
                     Type = StatementAnalyte.StatementType.Income,
                     Sections = new List<StatementAnalyte.Sectional> { 
@@ -111,10 +113,8 @@ namespace Harpoon
                         }
                 }
             };
-        }
 
-        public List<SectionalAnalytes> GetAssays() {
-            return new List<SectionalAnalytes> {
+            dependencies.Assays = new List<SectionalAnalytes> {
                 new SectionalAnalytes {
                     Sectional = StatementAnalyte.Sectional.Revenues,
                     Assay = new List<StatementAnalyte.Assay> { 
@@ -240,6 +240,8 @@ namespace Harpoon
                         }
                 }
             };
+
+            return dependencies;
         }
     }
 }

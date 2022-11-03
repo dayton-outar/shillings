@@ -142,16 +142,16 @@ export default {
       'pricePercentages'
       ])
   },
-  beforeMount() {
+  created() {
     this.$emit('changeLoading', true)
     this.formatDates([new Date(), new Date()])
 
-    this.$store.dispatch('trades/fetch', {
+    this.fetch({
         companyCode: '',
         begin: `${ moment.utc().format('YYYY-MM-DDT00:00:00.000') }Z`,
         end: `${ moment.utc().format('YYYY-MM-DDT00:00:00.000') }Z`
       }).then(() => {
-        this.$store.dispatch('getPortfolio')
+        this.fetchHoldings()
         this.$emit('changeLoading', false)
       })
   },
@@ -169,7 +169,7 @@ export default {
         begin: `${ moment( v.dates[0] ).format('YYYY-MM-DDT00:00:00.000') }Z`, // Clumsy but it's a pain to remove the offset...
         end: `${ moment( v.dates[1] ).format('YYYY-MM-DDT00:00:00.000') }Z`
       }).then(() => {
-        this.$store.dispatch('getPortfolio')
+        this.fetchHoldings()
         this.$emit('changeLoading', false)
       })
     },
@@ -177,7 +177,9 @@ export default {
       this.formattedDateRange = moment( dates[0] ).isSame(moment( dates[1] )) ? `${ moment( dates[0] ).format('dddd, MMM D, YYYY')}` : `${ moment( dates[0] ).format('dddd, MMM D, YYYY')} to ${ moment( dates[1] ).format('dddd, MMM D, YYYY') }`
     },
     ...mapActions('trades', ['fetch']),
-    ...mapActions(['addPortfolio', 'flushPortfolio'])
+    ...mapActions({ // Credit: https://stackoverflow.com/questions/62407970/mapping-actions-from-a-nemespaced-vuex-modules-into-components-methods-works-onl
+      fetchHoldings: 'holdings/fetch'
+    })
   }
 }
 

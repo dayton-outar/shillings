@@ -107,6 +107,7 @@ import { mapState, mapActions } from 'vuex'
 
 import config from '../config'
 import tableMixin from '../utils/tableMixin'
+import utilMixin from '../utils/utilMixin'
 
 import TableToolBar from './TableToolBar'
 import SearchBar from './SearchBar.vue'
@@ -118,7 +119,7 @@ export default {
         'search-bar': SearchBar,
         'table-tool-bar': TableToolBar
     },
-    mixins: [tableMixin],
+    mixins: [tableMixin, utilMixin],
     data() {
         return {
             fetchTitle: 'Markets',

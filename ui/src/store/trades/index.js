@@ -87,7 +87,6 @@ export default {
 
         commit('set', {
             type: 'totalTrades',
-            pk: '',
             payload: totalTrades
         })
   

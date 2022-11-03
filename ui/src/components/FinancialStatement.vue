@@ -209,15 +209,14 @@ export default {
         }
     },
     beforeCreate() {
-      this.$store.dispatch('fetchSections');
-      this.$store.dispatch('fetchAssays');      
+      this.$store.dispatch('dependencies/fetch');   
     },
     computed: {
-        ...mapState(['sections', 'assays']),
+        ...mapState('dependencies', ['dependencies']),
         statementSections() {
-            const iss = this.sections.findIndex(ss => ss.type.toLowerCase() === this.type.replace(' ', '_').toLowerCase())
+            const iss = this.dependencies.sectionals.findIndex(ss => ss.type.toLowerCase() === this.type.replace(' ', '_').toLowerCase())
 
-            return this.sections[iss].sections
+            return this.dependencies.sectionals[iss].sections
         },
         summaryTitle() {
             let title = ''
@@ -397,10 +396,10 @@ export default {
         getSectionAssays(sectionName) {
             let ias = -1
             if (sectionName) {
-                ias = this.assays.findIndex(as => as.sectional.toLowerCase() === sectionName.replace(' ', '_').toLowerCase())
+                ias = this.dependencies.assays.findIndex(as => as.sectional.toLowerCase() === sectionName.replace(' ', '_').toLowerCase())
             }
 
-            return ias > -1 ? this.assays[ias].assay : []
+            return ias > -1 ? this.dependencies.assays[ias].assay : []
         },
         openItem(sequence) {
             const item = this.analytes.find(p => p.sequence === sequence)

@@ -114,14 +114,14 @@ export default ({
         ...mapState('stocks', ['stocks'])
     },
     methods: {
-      ...mapActions(['addPortfolio', 'flushPortfolio']),
+      ...mapActions('holdings', ['add', 'flush']),
       addMyPortfolio() {
         const initPrice = this.unitPrice
         const strippedPrice = initPrice.toString().replace(/[^0-9.-]+/g,'')
         const initVolume = this.volume
         const strippedVolume = initVolume.toString().replace(/[^0-9.-]+/g,'')
 
-        this.addPortfolio({
+        this.add({
           security: {
             code: this.chosenStock.code,
             name: this.chosenStock.name

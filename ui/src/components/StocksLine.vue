@@ -22,7 +22,7 @@ export default {
         } else {
           return this.stocks.map(d => {
             return {
-              name: d.security,
+              name: d.stock.name,
               data: d.prices.map(p => [Date.UTC(moment(p.Date).toDate().getFullYear(), moment(p.Date).toDate().getMonth(), moment(p.Date).toDate().getDate()), p.ClosingPrice])
             }
           })
