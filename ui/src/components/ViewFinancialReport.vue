@@ -281,7 +281,30 @@
                 <div class="content">
                     <table class="table">
                         <tbody>
-                            
+                            <tr>
+                                <th>Cash and equivalents</th>
+                                <td>...</td>
+                            </tr>
+                            <tr>
+                                <th>Total assets</th>
+                                <td>{{ formatMoney( totalAssets ) }}</td>
+                            </tr>
+                            <tr>
+                                <th>Total liabilities</th>
+                                <td>{{ formatMoney( totalLiabilities ) }}</td>
+                            </tr>
+                            <tr>
+                                <th>Total equity</th>
+                                <td>{{ formatMoney( totalEquity ) }}</td>
+                            </tr>
+                            <tr>
+                                <th>Return on assets</th>
+                                <td>{{ formatPercentage( roa ) }}</td>
+                            </tr>
+                            <tr>
+                                <th>Return on capital</th>
+                                <td>...</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -303,7 +326,26 @@
                 <div class="content">
                     <table class="table">
                         <tbody>
-                            
+                            <tr>
+                                <th>Cash from operations</th>
+                                <td>{{ formatMoney( totalOperatingActivities ) }}</td>
+                            </tr>
+                            <tr>
+                                <th>Cash from investing</th>
+                                <td>{{ formatMoney( totalInvestingActivities ) }}</td>
+                            </tr>
+                            <tr>
+                                <th>Cash from financing</th>
+                                <td>{{ formatMoney( totalFinancingActivities ) }}</td>
+                            </tr>
+                            <tr>
+                                <th>Net change in cash</th>
+                                <td>{{ formatMoney( netCash ) }}</td>
+                            </tr>
+                            <tr>
+                                <th>Free cash flow</th>
+                                <td>...</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -416,6 +458,12 @@ export default {
         },
         eps() { // Earnings per Stock
             return this.get('INCOME', 'EARNINGS_PER_STOCK')
+        },
+        roa() {
+            return ( this.netProfit / this.totalAssets ) * 100
+        },
+        roc() {
+            return 0  
         },
         operations() {
             return this.get('CASH_FLOW', 'OPERATING_ACTIVITIES')
