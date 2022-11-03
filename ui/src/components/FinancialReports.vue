@@ -100,7 +100,8 @@
                             <component :is="detailComponent"
                                 :data="props.row" 
                                 :editMode="true"
-                                @close="$refs.tbl.toggleDetails(props.row)" />
+                                @close="$refs.tbl.toggleDetails(props.row)"
+                                :showDetails="false" />
                         </template>
 
                     </b-table>

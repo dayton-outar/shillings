@@ -14,205 +14,302 @@
                 </div>
             </div>
         </div>
-        <div v-for="(statementType, ix) in statementTypes" :key="ix" class="columns">
-            <div class="column is-full pb-6">
-                <div class="has-border-bottom-thin">
-                    <h4 class="title is-4">Statement of {{ formatTitleCase(statementType) }}</h4>
-                    <h5 class="subtitle is-5 has-text-grey">{{ formatDate(data.statementDate, 'D MMMM YYYY') }}</h5>
+        <template v-if="showDetails">
+            <div v-for="(statementType, ix) in statementTypes" :key="ix" class="columns">
+                <div class="column is-full pb-6">
+                    <div class="has-border-bottom-thin">
+                        <h4 class="title is-4">Statement of {{ formatTitleCase(statementType) }}</h4>
+                        <h5 class="subtitle is-5 has-text-grey">{{ formatDate(data.statementDate, 'D MMMM YYYY') }}</h5>
+                    </div>
+                    <div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="wide-70"></th>
+                                    <th class="text-right wide-30">$'000</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <template v-if="statementType === 'FINANCIAL_POSITION'">
+                                    <template v-if="assets.length">
+                                        <tr>
+                                            <th colspan="2">Assets</th>
+                                        </tr>
+                                        <tr v-for="i in assets" :key="i.no">
+                                            <td><p class="ml-4">{{ i.description }}</p></td>
+                                            <td class="text-right">{{ formatMoney(i.amount) }}</td>
+                                        </tr>
+                                        <tr>
+                                            <th><p class="ml-4">Total Assets</p></th>
+                                            <th class="text-right">{{ formatMoney( totalAssets ) }}</th>
+                                        </tr>
+                                    </template>
+                                    <template v-if="liabilities.length">
+                                        <tr>
+                                            <th colspan="2">Liabilities</th>
+                                        </tr>
+                                        <tr v-for="i in liabilities" :key="i.no">
+                                            <td><p class="ml-4">{{ i.description }}</p></td>
+                                            <td class="text-right">{{ formatMoney(i.amount) }}</td>
+                                        </tr>
+                                        <tr>
+                                            <th><p class="ml-4">Total Liabilities</p></th>
+                                            <th class="text-right">{{ formatMoney( totalLiabilities ) }}</th>
+                                        </tr>
+                                    </template>
+                                    <template v-if="equities.length">
+                                        <tr>
+                                            <th colspan="2">Equity</th>
+                                        </tr>
+                                        <tr v-for="i in equities" :key="i.no">
+                                            <td><p class="ml-4">{{ i.description }}</p></td>
+                                            <td class="text-right">{{ formatMoney(i.amount) }}</td>
+                                        </tr>
+                                        <tr>
+                                            <th><p class="ml-4">Total Equity</p></th>
+                                            <th class="text-right">{{ formatMoney( totalEquity ) }}</th>
+                                        </tr>
+                                    </template>
+                                    <template v-if="liabilities.length && equities.length">
+                                        <tr>
+                                            <th>Total Equity and Liabilities</th>
+                                            <th class="text-right">{{ formatMoney( totalEquityAndLiabilities ) }}</th>
+                                        </tr>
+                                    </template>
+                                </template>
+                                <template v-if="statementType === 'INCOME'">
+                                    <template v-if="revenues.length">
+                                        <tr>
+                                            <th colspan="2">Revenues</th>
+                                        </tr>
+                                        <tr v-for="i in revenues" :key="i.no">
+                                            <td><p class="ml-4">{{ i.description }}</p></td>
+                                            <td class="text-right">{{ formatMoney(i.amount) }}</td>
+                                        </tr>
+                                        <tr>
+                                            <th><p class="ml-4">Total Revenues</p></th>
+                                            <th class="text-right">{{ formatMoney( totalRevenues ) }}</th>
+                                        </tr>
+                                    </template>
+                                    <template v-if="gains.length">
+                                        <tr>
+                                            <th colspan="2">Gains</th>
+                                        </tr>
+                                        <tr v-for="i in gains" :key="i.no">
+                                            <td><p class="ml-4">{{ i.description }}</p></td>
+                                            <td class="text-right">{{ formatMoney(i.amount) }}</td>
+                                        </tr>                                    
+                                        <tr>
+                                            <th><p class="ml-4">Total Gains</p></th>
+                                            <th class="text-right">{{ formatMoney( totalGains ) }}</th>
+                                        </tr>
+                                    </template>
+                                    <template v-if="expenses.length">
+                                        <tr>
+                                            <th colspan="2">Expenses</th>
+                                        </tr>
+                                        <tr v-for="i in expenses" :key="i.no">
+                                            <td><p class="ml-4">{{ i.description }}</p></td>
+                                            <td class="text-right">{{ formatMoney(i.amount) }}</td>
+                                        </tr>
+                                        <tr>
+                                            <th><p class="ml-4">Total Expenses</p></th>
+                                            <th class="text-right">{{ formatMoney( totalExpenses ) }}</th>
+                                        </tr>
+                                    </template>
+                                    <template v-if="losses.length">
+                                        <tr>
+                                            <th colspan="2">Losses</th>
+                                        </tr>
+                                        <tr v-for="i in losses" :key="i.no">
+                                            <td><p class="ml-4">{{ i.description }}</p></td>
+                                            <td class="text-right">{{ formatMoney(i.amount) }}</td>
+                                        </tr>
+                                        <tr>
+                                            <th><p class="ml-4">Total Losses</p></th>
+                                            <th class="text-right">{{ formatMoney( totalLosses ) }}</th>
+                                        </tr>
+                                    </template>
+                                    <template v-if="revenues.length || gains.length || expenses.length || losses.length">
+                                        <tr>
+                                            <th>Net Income</th>
+                                            <th class="text-right">{{ formatMoney( netProfit ) }}</th>
+                                        </tr>
+                                    </template>
+                                    <tr>
+                                        <th colspan="2">&nbsp;</th>
+                                    </tr>
+                                    <template v-if="profitShares.length">
+                                        <tr>
+                                            <th colspan="2">Profit Attributable to:</th>
+                                        </tr>
+                                        <tr v-for="i in profitShares" :key="i.no">
+                                            <td><p class="ml-4">{{ i.description }}</p></td>
+                                            <td class="text-right">{{ formatMoney(i.amount) }}</td>
+                                        </tr>
+                                    </template>
+                                    <tr>
+                                        <th colspan="2">&nbsp;</th>
+                                    </tr>
+                                    <template v-if="eps.length">
+                                        <tr>
+                                            <th>Earnings per Stock Unit</th>
+                                            <th class="text-right">$</th>
+                                        </tr>
+                                        <tr v-for="i in eps" :key="i.no">
+                                            <td><p class="ml-4">{{ i.description }}</p></td>
+                                            <td class="text-right">{{ formatMoney(i.amount) }}</td>
+                                        </tr>
+                                    </template>
+                                </template>
+                                <template v-if="statementType === 'CASH_FLOW'">
+                                    <template v-if="operations.length">
+                                        <tr>
+                                            <th colspan="2">Operating Activities</th>
+                                        </tr>
+                                        <tr v-for="i in operations" :key="i.no">
+                                            <td><p class="ml-6">{{ i.description }}</p></td>
+                                            <td class="text-right">{{ formatMoney(i.amount) }}</td>
+                                        </tr>
+                                        <tr>
+                                            <th></th>
+                                            <th class="text-right">{{ formatMoney( totalOperatingActivities ) }}</th>
+                                        </tr>
+                                    </template>
+                                    <template v-if="finances.length">
+                                        <tr>
+                                            <th colspan="2">Financing Activities</th>
+                                        </tr>
+                                        <tr v-for="i in finances" :key="i.no">
+                                            <td><p class="ml-6">{{ i.description }}</p></td>
+                                            <td class="text-right">{{ formatMoney(i.amount) }}</td>
+                                        </tr>
+                                        <tr>
+                                            <th></th>
+                                            <th class="text-right">{{ formatMoney( totalFinancingActivities ) }}</th>
+                                        </tr>
+                                    </template>
+                                    <template v-if="investments.length">
+                                        <tr>
+                                            <th colspan="2">Investing Activities</th>
+                                        </tr>
+                                        <tr v-for="i in investments" :key="i.no">
+                                            <td><p class="ml-6">{{ i.description }}</p></td>
+                                            <td class="text-right">{{ formatMoney(i.amount) }}</td>
+                                        </tr>
+                                        <tr>
+                                            <th></th>
+                                            <th class="text-right">{{ formatMoney( totalInvestingActivities ) }}</th>
+                                        </tr>
+                                    </template>
+                                    <template v-if="operations.length || finances.length || investments.length">
+                                        <tr>
+                                            <th>Net Cash Change</th>
+                                            <th class="text-right">{{ formatMoney( netCash ) }}</th>
+                                        </tr>
+                                    </template>
+                                </template>
+                            </tbody>
+                        </table>
+                    </div>                
                 </div>
-                <div>
+            </div>
+        </template>
+        <template>
+            <b-collapse class="card" animation="slide" aria-id="incomeStatement" :open="true">
+              <template #trigger="props">
+                <div
+                  class="card-header"
+                  role="button"
+                  aria-controls="incomeStatement">
+                  <p class="card-header-title">Income Statement</p>
+                  <a class="card-header-icon">
+                    <b-icon pack="fas" :icon="props.open ? 'caret-down' : 'caret-up'" />
+                  </a>
+                </div>
+              </template>
+              <div class="card-content">
+                <div class="content">
                     <table class="table">
-                        <thead>
-                            <tr>
-                                <th class="wide-70"></th>
-                                <th class="text-right wide-30">$'000</th>
-                            </tr>
-                        </thead>
                         <tbody>
-                            <template v-if="statementType === 'FINANCIAL_POSITION'">
-                                <template v-if="assets.length">
-                                    <tr>
-                                        <th colspan="2">Assets</th>
-                                    </tr>
-                                    <tr v-for="i in assets" :key="i.no">
-                                        <td><p class="ml-4">{{ i.description }}</p></td>
-                                        <td class="text-right">{{ formatMoney(i.amount) }}</td>
-                                    </tr>
-                                    <tr>
-                                        <th><p class="ml-4">Total Assets</p></th>
-                                        <th class="text-right">{{ formatMoney( totalAssets ) }}</th>
-                                    </tr>
-                                </template>
-                                <template v-if="liabilities.length">
-                                    <tr>
-                                        <th colspan="2">Liabilities</th>
-                                    </tr>
-                                    <tr v-for="i in liabilities" :key="i.no">
-                                        <td><p class="ml-4">{{ i.description }}</p></td>
-                                        <td class="text-right">{{ formatMoney(i.amount) }}</td>
-                                    </tr>
-                                    <tr>
-                                        <th><p class="ml-4">Total Liabilities</p></th>
-                                        <th class="text-right">{{ formatMoney( totalLiabilities ) }}</th>
-                                    </tr>
-                                </template>
-                                <template v-if="equities.length">
-                                    <tr>
-                                        <th colspan="2">Equity</th>
-                                    </tr>
-                                    <tr v-for="i in equities" :key="i.no">
-                                        <td><p class="ml-4">{{ i.description }}</p></td>
-                                        <td class="text-right">{{ formatMoney(i.amount) }}</td>
-                                    </tr>
-                                    <tr>
-                                        <th><p class="ml-4">Total Equity</p></th>
-                                        <th class="text-right">{{ formatMoney( totalEquity ) }}</th>
-                                    </tr>
-                                </template>
-                                <template v-if="liabilities.length && equities.length">
-                                    <tr>
-                                        <th>Total Equity and Liabilities</th>
-                                        <th class="text-right">{{ formatMoney( totalEquityAndLiabilities ) }}</th>
-                                    </tr>
-                                </template>
-                            </template>
-                            <template v-if="statementType === 'INCOME'">
-                                <template v-if="revenues.length">
-                                    <tr>
-                                        <th colspan="2">Revenues</th>
-                                    </tr>
-                                    <tr v-for="i in revenues" :key="i.no">
-                                        <td><p class="ml-4">{{ i.description }}</p></td>
-                                        <td class="text-right">{{ formatMoney(i.amount) }}</td>
-                                    </tr>
-                                    <tr>
-                                        <th><p class="ml-4">Total Revenues</p></th>
-                                        <th class="text-right">{{ formatMoney( totalRevenues ) }}</th>
-                                    </tr>
-                                </template>
-                                <template v-if="gains.length">
-                                    <tr>
-                                        <th colspan="2">Gains</th>
-                                    </tr>
-                                    <tr v-for="i in gains" :key="i.no">
-                                        <td><p class="ml-4">{{ i.description }}</p></td>
-                                        <td class="text-right">{{ formatMoney(i.amount) }}</td>
-                                    </tr>                                    
-                                    <tr>
-                                        <th><p class="ml-4">Total Gains</p></th>
-                                        <th class="text-right">{{ formatMoney( totalGains ) }}</th>
-                                    </tr>
-                                </template>
-                                <template v-if="expenses.length">
-                                    <tr>
-                                        <th colspan="2">Expenses</th>
-                                    </tr>
-                                    <tr v-for="i in expenses" :key="i.no">
-                                        <td><p class="ml-4">{{ i.description }}</p></td>
-                                        <td class="text-right">{{ formatMoney(i.amount) }}</td>
-                                    </tr>
-                                    <tr>
-                                        <th><p class="ml-4">Total Expenses</p></th>
-                                        <th class="text-right">{{ formatMoney( totalExpenses ) }}</th>
-                                    </tr>
-                                </template>
-                                <template v-if="losses.length">
-                                    <tr>
-                                        <th colspan="2">Losses</th>
-                                    </tr>
-                                    <tr v-for="i in losses" :key="i.no">
-                                        <td><p class="ml-4">{{ i.description }}</p></td>
-                                        <td class="text-right">{{ formatMoney(i.amount) }}</td>
-                                    </tr>
-                                    <tr>
-                                        <th><p class="ml-4">Total Losses</p></th>
-                                        <th class="text-right">{{ formatMoney( totalLosses ) }}</th>
-                                    </tr>
-                                </template>
-                                <template v-if="revenues.length || gains.length || expenses.length || losses.length">
-                                    <tr>
-                                        <th>Net Income</th>
-                                        <th class="text-right">{{ formatMoney( netProfit ) }}</th>
-                                    </tr>
-                                </template>
-                                <tr>
-                                    <th colspan="2">&nbsp;</th>
-                                </tr>
-                                <template v-if="profitShares.length">
-                                    <tr>
-                                        <th colspan="2">Profit Attributable to:</th>
-                                    </tr>
-                                    <tr v-for="i in profitShares" :key="i.no">
-                                        <td><p class="ml-4">{{ i.description }}</p></td>
-                                        <td class="text-right">{{ formatMoney(i.amount) }}</td>
-                                    </tr>
-                                </template>
-                                <tr>
-                                    <th colspan="2">&nbsp;</th>
-                                </tr>
-                                <template v-if="eps.length">
-                                    <tr>
-                                        <th>Earnings per Stock Unit</th>
-                                        <th class="text-right">$</th>
-                                    </tr>
-                                    <tr v-for="i in eps" :key="i.no">
-                                        <td><p class="ml-4">{{ i.description }}</p></td>
-                                        <td class="text-right">{{ formatMoney(i.amount) }}</td>
-                                    </tr>
-                                </template>
-                            </template>
-                            <template v-if="statementType === 'CASH_FLOW'">
-                                <template v-if="operations.length">
-                                    <tr>
-                                        <th colspan="2">Operating Activities</th>
-                                    </tr>
-                                    <tr v-for="i in operations" :key="i.no">
-                                        <td><p class="ml-6">{{ i.description }}</p></td>
-                                        <td class="text-right">{{ formatMoney(i.amount) }}</td>
-                                    </tr>
-                                    <tr>
-                                        <th></th>
-                                        <th class="text-right">{{ formatMoney( totalOperatingActivities ) }}</th>
-                                    </tr>
-                                </template>
-                                <template v-if="finances.length">
-                                    <tr>
-                                        <th colspan="2">Financing Activities</th>
-                                    </tr>
-                                    <tr v-for="i in finances" :key="i.no">
-                                        <td><p class="ml-6">{{ i.description }}</p></td>
-                                        <td class="text-right">{{ formatMoney(i.amount) }}</td>
-                                    </tr>
-                                    <tr>
-                                        <th></th>
-                                        <th class="text-right">{{ formatMoney( totalFinancingActivities ) }}</th>
-                                    </tr>
-                                </template>
-                                <template v-if="investments.length">
-                                    <tr>
-                                        <th colspan="2">Investing Activities</th>
-                                    </tr>
-                                    <tr v-for="i in investments" :key="i.no">
-                                        <td><p class="ml-6">{{ i.description }}</p></td>
-                                        <td class="text-right">{{ formatMoney(i.amount) }}</td>
-                                    </tr>
-                                    <tr>
-                                        <th></th>
-                                        <th class="text-right">{{ formatMoney( totalInvestingActivities ) }}</th>
-                                    </tr>
-                                </template>
-                                <template v-if="operations.length || finances.length || investments.length">
-                                    <tr>
-                                        <th>Net Cash Change</th>
-                                        <th class="text-right">{{ formatMoney( netCash ) }}</th>
-                                    </tr>
-                                </template>
-                            </template>
+                            <tr>
+                                <th>Revenue</th>
+                                <td>{{ formatMoney( totalRevenues ) }}</td>
+                            </tr>
+                            <tr>
+                                <th>Operating Expenses</th>
+                                <td>{{ formatMoney( totalOperatingExpenses ) }}</td>
+                            </tr>
+                            <tr>
+                                <th>Net income</th>
+                                <td>{{ formatMoney( netProfit ) }}</td>
+                            </tr>
+                            <tr>
+                                <th>Net profit margin</th>
+                                <td>{{ formatPercentage( profitMargin ) }}</td>
+                            </tr>
+                            <tr>
+                                <th>Earnings per stock</th>
+                                <td>{{ formatMoney( basicEps ) }}</td>
+                            </tr>
+                            <tr>
+                                <th>EBITDA</th>
+                                <td>{{ formatMoney( ebitda ) }}</td>
+                            </tr>
+                            <tr>
+                                <th>Effective tax rate</th>
+                                <td>{{ formatPercentage( taxRate ) }}</td>
+                            </tr>
                         </tbody>
                     </table>
-                </div>                
-            </div>
-        </div>
+                </div>
+              </div>
+            </b-collapse>
+            <b-collapse class="card" animation="slide" aria-id="balanceSheet" :open="false">
+              <template #trigger="props">
+                <div
+                  class="card-header"
+                  role="button"
+                  aria-controls="balanceSheet">
+                  <p class="card-header-title">Balance Sheet</p>
+                  <a class="card-header-icon">
+                    <b-icon pack="fas" :icon="props.open ? 'caret-down' : 'caret-up'" />
+                  </a>
+                </div>
+              </template>
+              <div class="card-content">
+                <div class="content">
+                    <table class="table">
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+              </div>
+            </b-collapse>
+            <b-collapse class="card" animation="slide" aria-id="cashFlow" :open="false">
+              <template #trigger="props">
+                <div
+                  class="card-header"
+                  role="button"
+                  aria-controls="cashFlow">
+                  <p class="card-header-title">Cash Flow</p>
+                  <a class="card-header-icon">
+                    <b-icon pack="fas" :icon="props.open ? 'caret-down' : 'caret-up'" />
+                  </a>
+                </div>
+              </template>
+              <div class="card-content">
+                <div class="content">
+                    <table class="table">
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+              </div>
+            </b-collapse>
+        </template>
     </div>
 </template>
 
@@ -222,7 +319,7 @@ import config from '../config'
 import utilMixin from '../utils/utilMixin'
 
 export default {
-    props: ['data'],
+    props: ['data', 'showDetails'],
     mixins: [utilMixin],
     data() {
         return {
@@ -281,11 +378,41 @@ export default {
         totalLosses() {
             return this.losses.reduce((p, c) => c.amount + p, 0)
         },
+        totalOperatingExpenses() {
+            const ox = this.expenses.filter(e => e.analyte.indexOf('OPERATING') > -1)
+            return ox.reduce((p, c) => c.amount + p, 0)
+        },
+        totalInterestExpenses() {
+            const ix = this.expenses.filter(e => e.analyte.indexOf('INTEREST') > -1)
+            return ix.reduce((p, c) => c.amount + p, 0)
+        },
+        totalDepreciationAndAmortization() {
+            const ix = this.expenses.filter(e => e.analyte.indexOf('DEPRECIATION') > -1 || e.analyte.indexOf('IMPAIRMENT') > -1)
+            return ix.reduce((p, c) => c.amount + p, 0)
+        },
+        tax() {
+            const taxes = this.expenses.filter(e => e.analyte.indexOf('TAX') > -1)
+            return taxes.reduce((p, c) => c.amount + p, 0)
+        },
         netProfit() {
             return ( this.totalRevenues + this.totalGains ) - ( this.totalExpenses + this.totalLosses )
         },
         profitMargin() {
             return ( ( this.netProfit / this.totalRevenues ) * 100).toFixed(2)
+        },
+        ebitda() {
+            return ( this.netProfit + this.tax + this.totalInterestExpenses + this.totalDepreciationAndAmortization )
+        },
+        taxRate() {
+            return ( this.tax / ( this.netProfit + this.tax ) ) * 100  
+        },
+        basicEps() {
+            const basic = this.eps.filter(e => e.analyte.indexOf('BASIC') > -1)[0]
+            return basic ? basic.amount : 0
+        },
+        dilutedEps() {
+            const diluted = this.eps.filter(e => e.analyte.indexOf('DILUTED') > -1)[0]
+            return diluted ? diluted.amount : 0
         },
         eps() { // Earnings per Stock
             return this.get('INCOME', 'EARNINGS_PER_STOCK')
