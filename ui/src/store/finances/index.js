@@ -98,7 +98,7 @@ export default {
             }
           })
     
-          response.data.createFinancialReport.analytes.forEach(el => {
+          response.data.createFinancialReport.financialReport.analytes.forEach(el => {
             el.state = 'Closed';
           })
 
@@ -108,7 +108,7 @@ export default {
             payload: response.data.createFinancialReport
         })
     
-        return Promise.resolve(response.data.updateCompany.company)
+        return Promise.resolve(response.data.createFinancialReport.financialReport)
     },
     async fetch({ commit }, request) {
         const response = await graphQlClient.query({
@@ -281,7 +281,7 @@ export default {
             }
           })
     
-          response.data.updateFinancialReport.analytes.forEach(el => {
+          response.data.updateFinancialReport.financialReport.analytes.forEach(el => {
             el.state = 'Closed';
           })
 
@@ -291,7 +291,7 @@ export default {
             payload: response.data.updateFinancialReport
         })
     
-        return Promise.resolve(response.data.updateCompany.company)
+        return Promise.resolve(response.data.updateFinancialReport.financialReport)
     },
     async delete({ commit }, report) {
         const response = await graphQlClient.mutate({

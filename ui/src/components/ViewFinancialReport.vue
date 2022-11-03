@@ -40,7 +40,7 @@
                                     </tr>
                                     <tr>
                                         <th><p class="ml-4">Total Assets</p></th>
-                                        <th class="text-right">{{ formatMoney(assets.reduce((p, c) => c.amount + p, 0)) }}</th>
+                                        <th class="text-right">{{ formatMoney( totalAssets ) }}</th>
                                     </tr>
                                 </template>
                                 <template v-if="liabilities.length">
@@ -53,7 +53,7 @@
                                     </tr>
                                     <tr>
                                         <th><p class="ml-4">Total Liabilities</p></th>
-                                        <th class="text-right">{{ formatMoney(liabilities.reduce((p, c) => c.amount + p, 0)) }}</th>
+                                        <th class="text-right">{{ formatMoney( totalLiabilities ) }}</th>
                                     </tr>
                                 </template>
                                 <template v-if="equities.length">
@@ -66,7 +66,7 @@
                                     </tr>
                                     <tr>
                                         <th><p class="ml-4">Total Equity</p></th>
-                                        <th class="text-right">{{ formatMoney(equities.reduce((p, c) => c.amount + p, 0)) }}</th>
+                                        <th class="text-right">{{ formatMoney( totalEquity ) }}</th>
                                     </tr>
                                 </template>
                                 <template v-if="liabilities.length && equities.length">
@@ -87,7 +87,7 @@
                                     </tr>
                                     <tr>
                                         <th><p class="ml-4">Total Revenues</p></th>
-                                        <th class="text-right">{{ formatMoney(revenues.reduce((p, c) => c.amount + p, 0)) }}</th>
+                                        <th class="text-right">{{ formatMoney( totalRevenues ) }}</th>
                                     </tr>
                                 </template>
                                 <template v-if="gains.length">
@@ -100,7 +100,7 @@
                                     </tr>                                    
                                     <tr>
                                         <th><p class="ml-4">Total Gains</p></th>
-                                        <th class="text-right">{{ formatMoney(gains.reduce((p, c) => c.amount + p, 0)) }}</th>
+                                        <th class="text-right">{{ formatMoney( totalGains ) }}</th>
                                     </tr>
                                 </template>
                                 <template v-if="expenses.length">
@@ -113,7 +113,7 @@
                                     </tr>
                                     <tr>
                                         <th><p class="ml-4">Total Expenses</p></th>
-                                        <th class="text-right">{{ formatMoney(expenses.reduce((p, c) => c.amount + p, 0)) }}</th>
+                                        <th class="text-right">{{ formatMoney( totalExpenses ) }}</th>
                                     </tr>
                                 </template>
                                 <template v-if="losses.length">
@@ -126,7 +126,7 @@
                                     </tr>
                                     <tr>
                                         <th><p class="ml-4">Total Losses</p></th>
-                                        <th class="text-right">{{ formatMoney(losses.reduce((p, c) => c.amount + p, 0)) }}</th>
+                                        <th class="text-right">{{ formatMoney( totalLosses ) }}</th>
                                     </tr>
                                 </template>
                                 <template v-if="revenues.length || gains.length || expenses.length || losses.length">
@@ -135,6 +135,9 @@
                                         <th class="text-right">{{ formatMoney( netProfit ) }}</th>
                                     </tr>
                                 </template>
+                                <tr>
+                                    <th colspan="2">&nbsp;</th>
+                                </tr>
                                 <template v-if="profitShares.length">
                                     <tr>
                                         <th colspan="2">Profit Attributable to:</th>
@@ -144,12 +147,12 @@
                                         <td class="text-right">{{ formatMoney(i.amount) }}</td>
                                     </tr>
                                 </template>
+                                <tr>
+                                    <th colspan="2">&nbsp;</th>
+                                </tr>
                                 <template v-if="eps.length">
                                     <tr>
-                                        <th colspan="2">Earnings per Stock Unit</th>
-                                    </tr>
-                                    <tr>
-                                        <th></th>
+                                        <th>Earnings per Stock Unit</th>
                                         <th class="text-right">$</th>
                                     </tr>
                                     <tr v-for="i in eps" :key="i.no">
@@ -169,7 +172,7 @@
                                     </tr>
                                     <tr>
                                         <th></th>
-                                        <th class="text-right">{{ formatMoney(operations.reduce((p, c) => c.amount + p, 0)) }}</th>
+                                        <th class="text-right">{{ formatMoney( totalOperatingActivities ) }}</th>
                                     </tr>
                                 </template>
                                 <template v-if="finances.length">
@@ -182,7 +185,7 @@
                                     </tr>
                                     <tr>
                                         <th></th>
-                                        <th class="text-right">{{ formatMoney(finances.reduce((p, c) => c.amount + p, 0)) }}</th>
+                                        <th class="text-right">{{ formatMoney( totalFinancingActivities ) }}</th>
                                     </tr>
                                 </template>
                                 <template v-if="investments.length">
@@ -195,7 +198,7 @@
                                     </tr>
                                     <tr>
                                         <th></th>
-                                        <th class="text-right">{{ formatMoney(investments.reduce((p, c) => c.amount + p, 0)) }}</th>
+                                        <th class="text-right">{{ formatMoney( totalInvestingActivities ) }}</th>
                                     </tr>
                                 </template>
                                 <template v-if="operations.length || finances.length || investments.length">
@@ -239,8 +242,17 @@ export default {
         equities() {
             return this.get('FINANCIAL_POSITION', 'EQUITY')
         },
+        totalAssets() {
+            return this.assets.reduce((p, c) => c.amount + p, 0)
+        },
+        totalLiabilities() {
+            return this.liabilities.reduce((p, c) => c.amount + p, 0)
+        },
+        totalEquity() {
+            return this.equities.reduce((p, c) => c.amount + p, 0)
+        },
         totalEquityAndLiabilities() {
-            return (this.liabilities.reduce((p, c) => c.amount + p, 0) + this.equities.reduce((p, c) => c.amount + p, 0))
+            return (this.totalLiabilities + this.totalEquity)
         },
         revenues() {
             return this.get('INCOME', 'REVENUES')
@@ -257,8 +269,23 @@ export default {
         profitShares() {
             return this.get('INCOME', 'PROFIT_SHARE')
         },
+        totalRevenues() {
+            return this.revenues.reduce((p, c) => c.amount + p, 0)
+        },
+        totalGains() {
+            return this.gains.reduce((p, c) => c.amount + p, 0)
+        },
+        totalExpenses() {
+            return this.expenses.reduce((p, c) => c.amount + p, 0)
+        },
+        totalLosses() {
+            return this.losses.reduce((p, c) => c.amount + p, 0)
+        },
         netProfit() {
-            return ( this.revenues.reduce((p, c) => c.amount + p, 0) + this.gains.reduce((p, c) => c.amount + p, 0) ) - ( this.expenses.reduce((p, c) => c.amount + p, 0) + this.losses.reduce((p, c) => c.amount + p, 0) )
+            return ( this.totalRevenues + this.totalGains ) - ( this.totalExpenses + this.totalLosses )
+        },
+        profitMargin() {
+            return ( ( this.netProfit / this.totalRevenues ) * 100).toFixed(2)
         },
         eps() { // Earnings per Stock
             return this.get('INCOME', 'EARNINGS_PER_STOCK')
@@ -272,8 +299,17 @@ export default {
         investments() {
             return this.get('CASH_FLOW', 'INVESTING_ACTIVITIES')
         },
+        totalOperatingActivities() {
+            return this.operations.reduce((p, c) => c.amount + p, 0)
+        },
+        totalFinancingActivities() {
+            return this.finances.reduce((p, c) => c.amount + p, 0)
+        },
+        totalInvestingActivities() {
+            return this.investments.reduce((p, c) => c.amount + p, 0)
+        },
         netCash() {
-            return ( this.operations.reduce((p, c) => c.amount + p, 0) + this.finances.reduce((p, c) => c.amount + p, 0) + this.investments.reduce((p, c) => c.amount + p, 0) )
+            return ( this.totalOperatingActivities + this.totalFinancingActivities + this.totalInvestingActivities )
         }
     },
     methods: {

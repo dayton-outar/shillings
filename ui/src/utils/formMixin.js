@@ -36,7 +36,7 @@ export default {
 
                         this.$buefy.dialog.alert({
                             title: this.title,
-                            message: `Successfully updated ${response.name}`,
+                            message: `Successfully updated ${response.name ? '' : response.name}`, // TODO: Good?
                             confirmText: 'OK',
                             type: 'is-success',
                             hasIcon: true,
@@ -67,7 +67,7 @@ export default {
 
                         this.$buefy.dialog.alert({
                             title: this.title,
-                            message: `Successfully created ${response.name}`,
+                            message: `Successfully created ${response.name ? '' : response.name}`,
                             confirmText: 'OK',
                             type: 'is-success',
                             hasIcon: true,
