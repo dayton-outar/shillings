@@ -524,7 +524,7 @@ export default {
             // INT = Interest Expense
             // CAPEX = Capital Expenditures
             
-            return this.totalOperatingActivities + (this.totalInterestExpenses * (1 - (this.taxRate / 100) ) ) - this.totalCapEx
+            return Math.abs(this.totalOperatingActivities) + Math.abs(this.totalInterestExpenses * (1 - (this.taxRate / 100) ) ) - Math.abs(this.totalCapEx)
         }
     },
     methods: {
