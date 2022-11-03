@@ -14,6 +14,7 @@ import stockIndices from './stockIndices'
 import stocks from './stocks'
 import finances from './finances'
 import dividends from './dividends'
+import trades from './trades'
 
 Vue.use(Vuex)
 
@@ -31,6 +32,7 @@ export const store = new Vuex.Store({
         stockIndices,
         stocks,
         dividends,
-        finances
+        finances,
+        trades
     }
 })

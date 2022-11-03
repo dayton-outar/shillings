@@ -3,7 +3,7 @@
         <stocks-filter @filterChanged="filterChanged" />        
         <portfolio-form />
         <portfolio :formattedDateRange="formattedDateRange" />
-        <section v-if="totalTradings">
+        <section v-if="totalTrades">
           <div class="mb-5">
             <b-collapse class="card" animation="slide" aria-id="volumeShares" :open="false">
               <template #trigger="props">
@@ -89,13 +89,13 @@
                     <p>This line chart visualizes closing price each day for the period.</p>
                     <p>From a glance, you can see the stock with the highest closing price.</p>
                   </b-message>
-                  <stocks-line :stocks="totalTradings" :isDetail="false" />
+                  <stocks-line :stocks="totalTrades" :isDetail="false" />
                 </div>
               </div>
             </b-collapse>
           </div>
           <stock-indices :readOnly="true" :showTools="false" :begin="beginDate" :end="endDate" />
-          <stock-trades :formattedDateRange="formattedDateRange" :tradings="totalTradings" />
+          <stock-trades :formattedDateRange="formattedDateRange" :tradings="totalTrades" />
         </section>
     </div>
 </template>
@@ -135,7 +135,7 @@ export default {
     }
   },
   computed: {
-    ...mapState(['totalTradings']),
+    ...mapState('trades', ['totalTrades']),
     ...mapGetters([
       'volumeShares',
       'tradeCosts',
@@ -146,7 +146,7 @@ export default {
     this.$emit('changeLoading', true)
     this.formatDates([new Date(), new Date()])
 
-    this.$store.dispatch('fetchTotalStockTrades', {
+    this.$store.dispatch('trades/fetch', {
         companyCode: '',
         begin: `${ moment.utc().format('YYYY-MM-DDT00:00:00.000') }Z`,
         end: `${ moment.utc().format('YYYY-MM-DDT00:00:00.000') }Z`
@@ -164,7 +164,7 @@ export default {
       this.$emit('changeLoading', true)
       this.formatDates(v.dates)
 
-      this.fetchTotalStockTrades({
+      this.fetch({
         companyCode: lc,
         begin: `${ moment( v.dates[0] ).format('YYYY-MM-DDT00:00:00.000') }Z`, // Clumsy but it's a pain to remove the offset...
         end: `${ moment( v.dates[1] ).format('YYYY-MM-DDT00:00:00.000') }Z`
@@ -176,7 +176,8 @@ export default {
     formatDates(dates) {
       this.formattedDateRange = moment( dates[0] ).isSame(moment( dates[1] )) ? `${ moment( dates[0] ).format('dddd, MMM D, YYYY')}` : `${ moment( dates[0] ).format('dddd, MMM D, YYYY')} to ${ moment( dates[1] ).format('dddd, MMM D, YYYY') }`
     },
-    ...mapActions(['fetchTotalStockTrades', 'addPortfolio', 'flushPortfolio'])
+    ...mapActions('trades', ['fetch']),
+    ...mapActions(['addPortfolio', 'flushPortfolio'])
   }
 }
 

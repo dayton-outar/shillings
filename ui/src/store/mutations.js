@@ -31,15 +31,12 @@ export default {
     setAssays(state, payload) {
       state.assays = payload
     },
-    setTotalStockTrades(state, payload) {
-      state.totalTradings = payload
-    },
     setPortfolio(state, payload) {
       state.portfolioHoldings = payload
     },
     // ---
     addPortfolio(state, payload) {
-      const itrade = state.totalTradings.find(t => t.code === payload.security.code)
+      const itrade = state.trades.totalTrades.find(t => t.code === payload.security.code)
       let newPrice = itrade ? itrade.closingPrice : 0
       let oldCost = payload.volume * payload.unitPrice
       let newCost = itrade ? payload.volume * itrade.closingPrice : 0

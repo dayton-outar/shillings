@@ -91,30 +91,30 @@ export default {
             },
             totalCount,
             nodes {
-                  code,
-                  name,
-                  about,
-                  totalEmployed,
-                  wiki,
-                  webSite,
-                  founded,
-                  countryCode,
-                  created,
-                  industries {
-                    no,
-                    name,
-                    wiki
-                  },
-                  files {
-                    no,
-                    type,
-                    fileName,
-                    contentType,
-                    contentSize,
-                    created
-                  }
-                }
+              code,
+              name,
+              about,
+              totalEmployed,
+              wiki,
+              webSite,
+              founded,
+              countryCode,
+              created,
+              industries {
+                no,
+                name,
+                wiki
+              },
+              files {
+                no,
+                type,
+                fileName,
+                contentType,
+                contentSize,
+                created
               }
+            }
+          }
         }`,
         variables: {
           first: request.first,

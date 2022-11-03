@@ -1,0 +1,97 @@
+import gql from 'graphql-tag'
+import graphQlClient from '../../apollo'
+import mutations from '../mutations'
+
+export default {
+  namespaced: true,
+  state: {
+    totalTrades: null
+  },
+  mutations,
+  actions: {
+    async fetch({ commit }, request) {
+        const response = await graphQlClient.query({
+          query: gql`query Get($companyCode: String, $begin: DateTime!, $end: DateTime!) {
+                totalTrades
+                (
+                  companyCode: $companyCode
+                  begin: $begin
+                  end: $end
+                  order: { volume: DESC }
+                ) {
+                  stock {
+                    code,
+                    name,
+                    currency,
+                    stockType,
+                    issuedShares,
+                    outstandingShares,
+                    isListed,
+                    created,
+                    company {
+                      code,
+                      name,
+                      about,
+                      totalEmployed,
+                      wiki,
+                      webSite,
+                      founded,
+                      countryCode,
+                      created,
+                      industries {
+                        no,
+                        name,
+                        wiki
+                      },
+                      files {
+                        no,
+                        type,
+                        fileName,
+                        contentType,
+                        contentSize,
+                        created
+                      }
+                    }
+                  },
+                  volume,
+                  openingDate,
+                  openingPrice,
+                  closingDate,
+                  closingPrice,
+                  lowestPrice,
+                  highestPrice,
+                  marketCapitalization,
+                  percentage,
+                  prices
+                }
+              }`,
+            variables: {
+                companyCode: request.companyCode,
+                begin: request.begin,
+                end: request.end
+            }
+        })
+  
+        const totalTrades = response.data.totalTrades.map(t => {
+          try {
+            t.prices = JSON.parse(t.prices)
+          }
+          catch (err) {
+            // TODO: Raise appropriate response
+            //console.log(err.message)
+            //console.log('Already parsed')
+          }
+  
+          return t
+        })
+
+        commit('set', {
+            type: 'totalTrades',
+            pk: '',
+            payload: totalTrades
+        })
+  
+        return Promise.resolve(totalTrades)
+    }
+  }
+}

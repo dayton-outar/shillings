@@ -1,8 +1,8 @@
 export default {
     volumeShares(state) {
-        const volumes = state.totalTradings.map(t => {
+        const volumes = state.trades.totalTrades.map(t => {
             return {
-              name: t.security,
+              name: t.stock.name,
               y: t.volume,
               sliced: false,
               selected: false
@@ -12,9 +12,9 @@ export default {
         return volumes
     },
     tradeCosts(state) {
-        const costs = state.totalTradings.map(t => {
+        const costs = state.trades.totalTrades.map(t => {
             return {
-              name: t.security,
+              name: t.stock.name,
               x: t.volume,
               y: t.closingPrice,
               z: t.volume * t.closingPrice
@@ -24,9 +24,9 @@ export default {
         return costs
     },
     pricePercentages(state) {
-        const changes = state.totalTradings.map(t => {
+        const changes = state.trades.totalTrades.map(t => {
           return {
-            name: t.security,
+            name: t.stock.name,
             data: [ t.percentage ]
           }
         })
@@ -35,7 +35,7 @@ export default {
     },
     holdings(state) {
       const ph = state.portfolioHoldings.map(h => {
-        const itrade = state.totalTradings.find(t => t.stock.code === h.security.code)
+        const itrade = state.trades.totalTrades.find(t => t.stock.code === h.security.code)
         let newPrice = itrade ? itrade.closingPrice : 0
         let oldCost = h.volume * h.unitPrice
         let newCost = itrade ? h.volume * itrade.closingPrice : 0
