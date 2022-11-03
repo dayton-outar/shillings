@@ -374,6 +374,9 @@ export default {
         updateItem(n, p, v) {
             const ix = this.analytes.findIndex(p => p.sequence === n)
             this.analytes[ix][p] = v
+            if (p === 'section') {
+                this.analytes[ix]['analyte'] = []
+            }
         },
         removeItem(id) {
             const ix =this.analytes.findIndex(p => p.sequence === id)

@@ -216,6 +216,10 @@
             </div>
         </template>
         <template>
+            <div class="has-border-bottom-thin mb-6">
+                <h4 class="title is-4">Summary</h4>
+                <h5 class="subtitle is-5 has-text-grey">{{ formatDate(data.statementDate, 'D MMMM YYYY') }}</h5>
+            </div>
             <b-collapse class="card" animation="slide" aria-id="incomeStatement" :open="true">
               <template #trigger="props">
                 <div
@@ -283,7 +287,7 @@
                         <tbody>
                             <tr>
                                 <th>Cash and equivalents</th>
-                                <td>...</td>
+                                <td>{{ formatMoney( totalCashAssets ) }}</td>
                             </tr>
                             <tr>
                                 <th>Total assets</th>
@@ -303,7 +307,7 @@
                             </tr>
                             <tr>
                                 <th>Return on capital</th>
-                                <td>...</td>
+                                <td>{{ formatPercentage( roc ) }}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -344,7 +348,7 @@
                             </tr>
                             <tr>
                                 <th>Free cash flow</th>
-                                <td>...</td>
+                                <td>{{ formatMoney( freeCashFlow ) }}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -384,8 +388,17 @@ export default {
         totalAssets() {
             return this.assets.reduce((p, c) => c.amount + p, 0)
         },
+        totalCashAssets() {
+            return this.assets.filter(l => l.analyte.indexOf('CASH') > -1).reduce((p, c) => c.amount + p, 0)
+        },
+        totalCurrentAssets() {
+            return this.assets.filter(l => l.analyte.indexOf('CURRENT') > -1).reduce((p, c) => c.amount + p, 0)
+        },
         totalLiabilities() {
             return this.liabilities.reduce((p, c) => c.amount + p, 0)
+        },
+        totalCurrentLiabilities() {
+            return this.liabilities.filter(l => l.analyte.indexOf('CURRENT') > -1).reduce((p, c) => c.amount + p, 0)
         },
         totalEquity() {
             return this.equities.reduce((p, c) => c.amount + p, 0)
@@ -405,8 +418,14 @@ export default {
         losses() {
             return this.get('INCOME', 'LOSSES')
         },
+        totalShareholderProfit() {
+            return this.profitShares.filter(l => l.analyte.indexOf('SHAREHOLDERS') > -1).reduce((p, c) => c.amount + p, 0)
+        },
         profitShares() {
             return this.get('INCOME', 'PROFIT_SHARE')
+        },
+        weightAverageCommonShares() {
+            return ( this.totalShareholderProfit / this.basicEps ) // Basic EPS has been rounded down and presents some range of error
         },
         totalRevenues() {
             return this.revenues.reduce((p, c) => c.amount + p, 0)
@@ -421,20 +440,16 @@ export default {
             return this.losses.reduce((p, c) => c.amount + p, 0)
         },
         totalOperatingExpenses() {
-            const ox = this.expenses.filter(e => e.analyte.indexOf('OPERATING') > -1)
-            return ox.reduce((p, c) => c.amount + p, 0)
+            return this.expenses.filter(e => e.analyte.indexOf('OPERATING') > -1).reduce((p, c) => c.amount + p, 0)
         },
         totalInterestExpenses() {
-            const ix = this.expenses.filter(e => e.analyte.indexOf('INTEREST') > -1)
-            return ix.reduce((p, c) => c.amount + p, 0)
+            return this.losses.filter(e => e.analyte.indexOf('INTEREST') > -1).reduce((p, c) => c.amount + p, 0)
         },
         totalDepreciationAndAmortization() {
-            const ix = this.expenses.filter(e => e.analyte.indexOf('DEPRECIATION') > -1 || e.analyte.indexOf('IMPAIRMENT') > -1)
-            return ix.reduce((p, c) => c.amount + p, 0)
+            return this.expenses.filter(e => e.analyte.indexOf('DEPRECIATION') > -1 || e.analyte.indexOf('IMPAIRMENT') > -1).reduce((p, c) => c.amount + p, 0)
         },
         tax() {
-            const taxes = this.expenses.filter(e => e.analyte.indexOf('TAX') > -1)
-            return taxes.reduce((p, c) => c.amount + p, 0)
+            return this.expenses.filter(e => e.analyte.indexOf('TAX') > -1).reduce((p, c) => c.amount + p, 0)
         },
         netProfit() {
             return ( this.totalRevenues + this.totalGains ) - ( this.totalExpenses + this.totalLosses )
@@ -449,12 +464,10 @@ export default {
             return ( this.tax / ( this.netProfit + this.tax ) ) * 100  
         },
         basicEps() {
-            const basic = this.eps.filter(e => e.analyte.indexOf('BASIC') > -1)[0]
-            return basic ? basic.amount : 0
+            return this.eps.filter(e => e.analyte.indexOf('BASIC') > -1).reduce((p, c) => c.amount + p, 0)
         },
         dilutedEps() {
-            const diluted = this.eps.filter(e => e.analyte.indexOf('DILUTED') > -1)[0]
-            return diluted ? diluted.amount : 0
+            return this.eps.filter(e => e.analyte.indexOf('DILUTED') > -1).reduce((p, c) => c.amount + p, 0)
         },
         eps() { // Earnings per Stock
             return this.get('INCOME', 'EARNINGS_PER_STOCK')
@@ -462,8 +475,10 @@ export default {
         roa() {
             return ( this.netProfit / this.totalAssets ) * 100
         },
-        roc() {
-            return 0  
+        roc() { // Credit: https://corporatefinanceinstitute.com/resources/accounting/capital-employed/
+            const capitalEmployed = (this.totalAssets - this.totalCurrentLiabilities)
+            const ebit = ( this.netProfit + this.tax + this.totalInterestExpenses )
+            return ( ebit / capitalEmployed ) * 100
         },
         operations() {
             return this.get('CASH_FLOW', 'OPERATING_ACTIVITIES')
@@ -483,8 +498,33 @@ export default {
         totalInvestingActivities() {
             return this.investments.reduce((p, c) => c.amount + p, 0)
         },
+        totalCapEx() {
+            return this.investments.filter(e => e.analyte.indexOf('CAPITAL') > -1).reduce((p, c) => c.amount + p, 0)
+        },
         netCash() {
             return ( this.totalOperatingActivities + this.totalFinancingActivities + this.totalInvestingActivities )
+        },
+        freeCashFlow() {
+            // Credit: https://corporatefinanceinstitute.com/resources/financial-modeling/free-cash-flow-to-firm-fcff/
+            // -- Approach #1
+            // FCFF = NI + D&A +INT(1 – TAX RATE) – CAPEX – ΔNet WC
+
+            // Where: 
+            // NI = Net Income
+
+            // D&A = Depreciation and Amortization
+            // Int = Interest Expense
+            // CAPEX = Capital Expenditures
+            // Δ Net WC = Net Change in Working capital
+
+            // -- Approach #2
+            // FCFF = CFO + INT(1-Tax Rate) – CAPEX
+            // Where: 
+            // CFO = Cash Flow from Operations
+            // INT = Interest Expense
+            // CAPEX = Capital Expenditures
+            
+            return this.totalOperatingActivities + (this.totalInterestExpenses * (1 - (this.taxRate / 100) ) ) - this.totalCapEx
         }
     },
     methods: {
