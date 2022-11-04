@@ -1,9 +1,9 @@
 <template>
   <div>
     <div v-if="isLoading" class="preloader"></div>
-    <div class="">
+    <div class="has-background-success">
       <div class="container">
-        <b-navbar spaced>
+        <b-navbar spaced type="is-success">
           <template #brand>
             <b-navbar-item tag="router-link" :to="{ path: '/' }">
               <img src="./assets/logo.png" alt="Shillings: Your Guide to Wealth">
@@ -22,9 +22,9 @@
         </b-navbar>        
       </div>
     </div>
-    <div class="bg-light-gray">
+    <div class="">
       <div class="container">        
-        <div class="bg-white py-5 px-4">
+        <div class="has-background-white py-5 px-4">
           <router-view />
         </div>      
       </div>
@@ -79,7 +79,7 @@ export default {
 }
 
 body {
-  background: #fafafa;
+  background: #f5f5f5;
 }
 
 .preloader {
@@ -101,27 +101,6 @@ body {
 	70% { transform: scale(1); }
   85% { transform: scale(1.3); }
   100% { transform: scale(1); }
-}
-
-.bg-white {
-  background: #fff;
-}
-
-.bg-light-gray {
-  background: #fafafa;
-}
-
-.bg-dark-blue-gradient {
-    background: #013769;
-    background: -moz-linear-gradient(left, #013769 0%, #0082c0 54%, #013769 100%);
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#013769), color-stop(54%,#0082c0), color-stop(100%,#013769));
-    background: -webkit-linear-gradient(left, #013769 0%,#0082c0 54%,#013769 100%);
-    background: -o-linear-gradient(left, #013769 0%,#0082c0 54%,#013769 100%);
-    background: -ms-linear-gradient(left, #013769 0%,#0082c0 54%,#013769 100%);
-    background: linear-gradient(to right, #013769 0%,#0082c0 54%,#013769 100%);
-    -webkit-box-shadow: 0 20px 58px #013b6b inset;
-    -ms-box-shadow: 0 20px 58px #013b6b inset;
-    box-shadow: 0 20px 58px #013b6b inset;
 }
 
 .right-aligned {
