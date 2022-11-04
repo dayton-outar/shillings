@@ -325,7 +325,6 @@
 
 <script>
 import { mapState, mapActions } from 'vuex'
-import moment from 'moment'
 import prettyBytes from 'pretty-bytes';
 import config from '../config'
 
@@ -404,7 +403,7 @@ export default {
         ...mapState('industries', ['industries']),
         foundedDate: {
             get() {
-                return moment(this.formData.founded).toDate()
+                return this.convertToDate(this.formData.founded)
             },
             set(value) {
                 this.formData.founded = value
@@ -516,7 +515,7 @@ export default {
             return prettyBytes(bytes, { locale: 'en' })
         },
         formatDate(date) {
-            return moment(date).format('MMMM, YYYY')
+            return this.formatDate(date, 'MMMM, YYYY')
         }
     },
     watch: {

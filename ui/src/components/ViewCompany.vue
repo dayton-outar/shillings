@@ -52,8 +52,6 @@
 </template>
 
 <script>
-import moment from 'moment'
-
 import config from '../config'
 import utilMixin from '../utils/utilMixin'
 
@@ -68,7 +66,7 @@ export default {
     },
     methods: {
         foundedYear(founded) {
-            return moment(founded).toDate().getFullYear()
+            return this.convertToDate(founded).getFullYear()
         }
     }
 }

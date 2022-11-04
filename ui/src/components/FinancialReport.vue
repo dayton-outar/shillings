@@ -37,8 +37,7 @@
                         </b-select>
                     </b-field>
                 </div>
-                <div class="column is-one-fifth">
-                    <!--                     
+                <div class="column is-one-fifth">                   
                     <b-field
                         label="Date"
                         label-position="inside"
@@ -46,14 +45,14 @@
                         :message="validation.statementDate.message">
                         <b-datepicker
                             ref="datepicker"                    
-                            v-model="formData.statementDate"
+                            v-model="statementDate"
                             label-position=""
                             placeholder="Set Statement Date"
+                            icon-pack="fas"
                             expanded
                             @input="clearVStatementDate">
                         </b-datepicker>
                     </b-field>
-                    -->
                 </div>
                 <div class="column is-one-fifth">
                     <b-field>
@@ -177,6 +176,14 @@ export default {
         },
         outstandingStatements() {
             return this.types.filter(t => !this.statements.map(s => s.Type).includes(t))
+        },
+        statementDate: {
+            get() {
+                return this.convertToDate(this.formData.statementDate)
+            },
+            set(value) {
+                this.formData.statementDate = value
+            }
         }
     },
     methods: {

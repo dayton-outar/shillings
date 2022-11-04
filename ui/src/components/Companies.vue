@@ -104,7 +104,6 @@
 
 <script>
 import { mapState, mapActions } from 'vuex'
-import moment from 'moment'
 
 import config from '../config'
 import tableMixin from '../utils/tableMixin'
@@ -158,7 +157,7 @@ export default {
             props.toggleDetails(props.row)
         },
         foundedYear(founded) {
-            return moment(founded).toDate().getFullYear()
+            return this.convertToDate(founded).getFullYear()
         }
     }
 }
