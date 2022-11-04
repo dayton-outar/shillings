@@ -9,7 +9,7 @@
                     icon-left="plus"
                     v-if="!isCreatePanelActive"
                     @click.prevent="create" />
-                <component :is="detailComponent" :data="newDividend" :editMode="false" v-if="isCreatePanelActive" @close="close" />
+                <component :is="detailComponent" :data="newStockIndex" :editMode="false" v-if="isCreatePanelActive" @close="close" />
             </div>
         </div>
 
@@ -102,12 +102,14 @@ import utilMixin from '../utils/utilMixin'
 
 import TableToolBar from './TableToolBar'
 import SearchBar from './SearchBar.vue'
+import StockIndex from './StockIndex.vue'
 
 export default {
     props: ['index', 'readOnly', 'showTools', 'begin', 'end'],
     components: {
         'search-bar': SearchBar,
-        'table-tool-bar': TableToolBar
+        'table-tool-bar': TableToolBar,
+        'stock-index': StockIndex
     },
     mixins: [tableMixin, utilMixin],
     data() {
@@ -115,10 +117,16 @@ export default {
             sort: ['log.logged', 'desc'],
             fetchTitle: 'Indices',
             deleteTitle: 'Delete Index Value',
-            detailComponent: '',
+            detailComponent: 'stock-index',
             filterQuery: this.query(),
             newStockIndex: {
-                no: 0
+                no: 0,
+                value: 0,
+                valueChange: 0,
+                log: {
+                    no: 0,
+                    logged: new Date()
+                }
             }
         }
     },

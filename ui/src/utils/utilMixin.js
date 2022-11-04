@@ -12,8 +12,11 @@ export default {
         formatDateUTC(stmtDate, format) {
             return moment.utc(stmtDate).format(format)
         },
+        parseMoney(amount) {
+            return parseFloat(amount.toString().replace(/[^0-9.-]+/g,'')) || 0
+        },
         formatMoney(amount) {
-            let amt = parseFloat(amount.toString().replace(/[^0-9.-]+/g,'')) || 0;
+            let amt = this.parseMoney(amount)
             return new Intl.NumberFormat('en-JM', { style: 'currency', currency: 'JMD', currencyDisplay: 'symbol', currencySign: 'accounting' }).format(amt)
         },
         formatPercentage(percentage) {

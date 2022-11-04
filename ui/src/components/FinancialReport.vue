@@ -242,7 +242,7 @@ export default {
                 delete i.vAmt
                 delete i.state
 
-                i.amount = parseFloat(i.amount.toString().replace(/[^0-9.-]+/g,'')) || 0
+                i.amount = this.parseMoney(i.amount)
 
                 return i
             })

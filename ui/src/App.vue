@@ -31,7 +31,7 @@
     </div>
     <footer class="footer has-background-dark has-text-primary-light">
       <div class="content has-text-centered">
-        <p>&copy; Dayton Outar 2021</p>
+        <p>&copy; Kri&#962;y&#962; 2022</p>
       </div>
     </footer>
   </div>
@@ -92,7 +92,7 @@ body {
   background-color: #ffffff;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url(./assets/stocks-chart.png);
+  background-image: url(./assets/logo-icon.png);
   animation: 1s beat 0.15s infinite alternate;
 }
 

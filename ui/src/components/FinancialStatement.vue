@@ -236,31 +236,31 @@ export default {
             return title
         },
         totalRevenues() {
-            return this.get('REVENUES').reduce((t, v) => t + (parseFloat(v.amount.toString().replace(/[^0-9.-]+/g,'')) || 0), 0)
+            return this.get('REVENUES').reduce((t, v) => t + (this.parseMoney(v.amount)), 0)
         },
         totalGains() {
-            return this.get('GAINS').reduce((t, v) => t + (parseFloat(v.amount.toString().replace(/[^0-9.-]+/g,'')) || 0), 0)
+            return this.get('GAINS').reduce((t, v) => t + (this.parseMoney(v.amount)), 0)
         },
         totalExpenses() {
-            return this.get('EXPENSES').reduce((t, v) => t + (parseFloat(v.amount.toString().replace(/[^0-9.-]+/g,'')) || 0), 0)
+            return this.get('EXPENSES').reduce((t, v) => t + (this.parseMoney(v.amount)), 0)
         },
         totalLosses() {
-            return this.get('LOSSES').reduce((t, v) => t + (parseFloat(v.amount.toString().replace(/[^0-9.-]+/g,'')) || 0), 0)
+            return this.get('LOSSES').reduce((t, v) => t + (this.parseMoney(v.amount)), 0)
         },
         totalEquity() {
-            return this.get('EQUITY').reduce((t, v) => t + (parseFloat(v.amount.toString().replace(/[^0-9.-]+/g,'')) || 0), 0)
+            return this.get('EQUITY').reduce((t, v) => t + (this.parseMoney(v.amount)), 0)
         },
         totalLiabilities() {
-            return this.get('LIABILITIES').reduce((t, v) => t + (parseFloat(v.amount.toString().replace(/[^0-9.-]+/g,'')) || 0), 0)
+            return this.get('LIABILITIES').reduce((t, v) => t + (this.parseMoney(v.amount)), 0)
         },
         totalOperations() {
-            return this.get('OPERATING_ACTIVITIES').reduce((t, v) => t + (parseFloat(v.amount.toString().replace(/[^0-9.-]+/g,'')) || 0), 0)
+            return this.get('OPERATING_ACTIVITIES').reduce((t, v) => t + (this.parseMoney(v.amount)), 0)
         },
         totalFinances() {
-            return this.get('FINANCING_ACTIVITIES').reduce((t, v) => t + (parseFloat(v.amount.toString().replace(/[^0-9.-]+/g,'')) || 0), 0)
+            return this.get('FINANCING_ACTIVITIES').reduce((t, v) => t + (this.parseMoney(v.amount)), 0)
         },
         totalInvestments() {
-            return this.get('INVESTING_ACTIVITIES').reduce((t, v) => t + (parseFloat(v.amount.toString().replace(/[^0-9.-]+/g,'')) || 0), 0)
+            return this.get('INVESTING_ACTIVITIES').reduce((t, v) => t + (this.parseMoney(v.amount)), 0)
         },
         netValue() {
             let netVal = 0
@@ -319,7 +319,7 @@ export default {
                 item.vAnl.message = ''
             }
 
-            let amt = parseFloat(item.amount.toString().replace(/[^0-9.-]+/g,'')) || 0;
+            let amt = this.parseMoney(item.amount);
             if (!amt) {
                 item.vAmt.type = 'is-danger'
                 item.vAmt.message = 'Please enter amount'

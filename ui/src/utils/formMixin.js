@@ -31,12 +31,12 @@ export default {
 
             if (this.editMode) {
                 this.update( this.formData )
-                    .then(response => {
+                    .then(() => {
                         this.isLoading = false
 
                         this.$buefy.dialog.alert({
                             title: this.title,
-                            message: `Successfully updated ${response.name ? '' : response.name}`, // TODO: Good?
+                            message: `Successfully updated`,
                             confirmText: 'OK',
                             type: 'is-success',
                             hasIcon: true,
@@ -62,12 +62,12 @@ export default {
                     })
             } else {
                 this.create( this.formData )
-                    .then(response => {
+                    .then(() => {
                         this.isLoading = false
 
                         this.$buefy.dialog.alert({
                             title: this.title,
-                            message: `Successfully created ${response.name ? '' : response.name}`,
+                            message: `Successfully created`,
                             confirmText: 'OK',
                             type: 'is-success',
                             hasIcon: true,
