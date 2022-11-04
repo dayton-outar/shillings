@@ -15,40 +15,46 @@ export default {
   actions: {
     async create({ commit }, stockIndex) { // TODO: Fix
       const response = await graphQlClient.mutate({
-        mutation: gql`mutation CreateMarketIndex($input: CreateMarketIndexInput!) {
-          createMarketIndex ( input: $input) {
-            marketIndex {
-              no,
-              name,
-              market {
-                code,
+        mutation: gql`mutation CreateStockIndex($input: CreateStockIndexInput!) {
+          createStockIndex ( input: $input) {
+            no,
+              marketIndex {
+                no,
                 name,
-                company {
-                  code,
-                  name,
-                  about,
-                  totalEmployed,
-                  wiki,
-                  webSite,
-                  founded,
-                  countryCode,
-                  created,
-                  industries {
-                    no,
+                market {
+                    code,
                     name,
-                    wiki
-                  },
-                  files {
-                    no,
-                    type,
-                    fileName,
-                    contentType,
-                    contentSize,
-                    created
-                  }
+                    company {
+                    code,
+                    name,
+                    about,
+                    totalEmployed,
+                    wiki,
+                    webSite,
+                    founded,
+                    countryCode,
+                    created,
+                    industries {
+                        no,
+                        name,
+                        wiki
+                    },
+                    files {
+                        no,
+                        type,
+                        fileName,
+                        contentType,
+                        contentSize,
+                        created
+                    }
+                    }
                 }
+              },
+              value,
+              valueChange,
+              log {
+                logged
               }
-            }
           }
         }`,
         variables: {
