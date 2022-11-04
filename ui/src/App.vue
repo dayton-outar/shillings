@@ -3,27 +3,23 @@
     <div v-if="isLoading" class="preloader"></div>
     <div class="">
       <div class="container">
-        <div class="">
-          <b-navbar>
-            <template #brand>
-              <b-navbar-item tag="router-link" :to="{ path: '/' }">
-                  <img
-                      src="./assets/logo.png"
-                      alt="Shillings: Your Guide to Wealth">
-              </b-navbar-item>
-            </template>
-            <template #start>
-              <b-navbar-item tag="router-link" :to="{ path: '/finance-reports' }">Finance Reports</b-navbar-item>
-              <b-navbar-item tag="router-link" :to="{ path: '/companies' }">Companies</b-navbar-item>
-              <b-navbar-dropdown label="Manage">
-                <b-navbar-item tag="router-link" :to="{ path: '/stocks' }">Stocks</b-navbar-item>
-                <b-navbar-item tag="router-link" :to="{ path: '/markets' }">Markets</b-navbar-item>
-                <b-navbar-item tag="router-link" :to="{ path: '/indices' }">Indices</b-navbar-item>
-                <b-navbar-item tag="router-link" :to="{ path: '/industries' }">Industries</b-navbar-item>
-              </b-navbar-dropdown>            
-            </template>
-          </b-navbar>
-        </div>        
+        <b-navbar spaced>
+          <template #brand>
+            <b-navbar-item tag="router-link" :to="{ path: '/' }">
+              <img src="./assets/logo.png" alt="Shillings: Your Guide to Wealth">
+            </b-navbar-item>
+          </template>
+          <template #start>
+            <b-navbar-item tag="router-link" :to="{ path: '/finance-reports' }">Finance Reports</b-navbar-item>
+            <b-navbar-item tag="router-link" :to="{ path: '/companies' }">Companies</b-navbar-item>
+            <b-navbar-dropdown label="Manage">
+              <b-navbar-item tag="router-link" :to="{ path: '/stocks' }">Stocks</b-navbar-item>
+              <b-navbar-item tag="router-link" :to="{ path: '/markets' }">Markets</b-navbar-item>
+              <b-navbar-item tag="router-link" :to="{ path: '/indices' }">Indices</b-navbar-item>
+              <b-navbar-item tag="router-link" :to="{ path: '/industries' }">Industries</b-navbar-item>
+            </b-navbar-dropdown>            
+          </template>
+        </b-navbar>        
       </div>
     </div>
     <div class="bg-light-gray">
