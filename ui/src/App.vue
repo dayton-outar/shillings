@@ -1,20 +1,29 @@
 <template>
   <div>
     <div v-if="isLoading" class="preloader"></div>
-    <div class="bg-dark-blue-gradient">
+    <div class="">
       <div class="container">
-        <div class="py-5 px-4">
-          <img alt="Jamaica Stock Exchange" src="./assets/logo.png">
-        </div>
-        <div>
-          <router-link to="/">Home</router-link> |
-          <router-link to="/finance-reports">Finance Reports</router-link> |
-          <router-link to="/companies">Companies</router-link> |
-          <router-link to="/stocks">Stocks</router-link> |
-          <router-link to="/markets">Markets</router-link> |
-          <router-link to="/indices">Indices</router-link> |
-          <router-link to="/industries">Industries</router-link>
-        </div>
+        <div class="">
+          <b-navbar>
+            <template #brand>
+              <b-navbar-item tag="router-link" :to="{ path: '/' }">
+                  <img
+                      src="./assets/logo.png"
+                      alt="Shillings: Your Guide to Wealth">
+              </b-navbar-item>
+            </template>
+            <template #start>
+              <b-navbar-item tag="router-link" :to="{ path: '/finance-reports' }">Finance Reports</b-navbar-item>
+              <b-navbar-item tag="router-link" :to="{ path: '/companies' }">Companies</b-navbar-item>
+              <b-navbar-dropdown label="Manage">
+                <b-navbar-item tag="router-link" :to="{ path: '/stocks' }">Stocks</b-navbar-item>
+                <b-navbar-item tag="router-link" :to="{ path: '/markets' }">Markets</b-navbar-item>
+                <b-navbar-item tag="router-link" :to="{ path: '/indices' }">Indices</b-navbar-item>
+                <b-navbar-item tag="router-link" :to="{ path: '/industries' }">Industries</b-navbar-item>
+              </b-navbar-dropdown>            
+            </template>
+          </b-navbar>
+        </div>        
       </div>
     </div>
     <div class="bg-light-gray">
