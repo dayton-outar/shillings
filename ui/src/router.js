@@ -17,49 +17,49 @@ export default new Router({
             path: '/',
             name: 'dashboard',
             component: Dashboard,
-            meta: { title: 'Shillings: Dashboard' }
+            meta: { title: 'Dashboard' }
         },
         {
             path: '/finance-reports',
             name: 'finance-reports',
             component: FinancialReports,
-            meta: { title: 'Shillings: Financial Reports' }
+            meta: { title: 'Financial Reports' }
         },
         {
             path: '/companies',
             name: 'companies',
             component: Companies,
-            meta: { title: 'Shillings: Companies' }
+            meta: { title: 'Companies' }
         },
         {
             path: '/stocks',
             name: 'stocks',
             component: Stocks,
-            meta: { title: 'Shillings: Stocks' }
+            meta: { title: 'Stocks' }
         },
         {
             path: '/markets',
             name: 'markets',
             component: Markets,
-            meta: { title: 'Shillings: Markets' }
+            meta: { title: 'Markets' }
         },
         {
             path: '/indices',
             name: 'indices',
             component: MarketIndices,
-            meta: { title: 'Shillings: Market Indices' }
+            meta: { title: 'Market Indices' }
         },
         {
             path: '/industries',
             name: 'industries',
             component: Industries,
-            meta: { title: 'Shillings: Industries' }
+            meta: { title: 'Industries' }
         },
         {
             path: '/about-company',
             name: 'about-company',
             component: ViewCompany,
-            meta: { title: 'Shillings: About Company' }
+            meta: { title: 'About Company' }
         }
     ]
 })
