@@ -79,7 +79,6 @@ Do I need [Fluentd](https://docs.fluentd.org/)?
 1. [Simply Wall St](https://simplywall.st/)
 2. [Google Finance](https://www.google.com/finance/)
 3. [Yahoo Finance](https://finance.yahoo.com/)
-4. [MyMoneyJA](https://mymoneyja.com/)
 
 ## Further Reading
 
