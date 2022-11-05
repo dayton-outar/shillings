@@ -485,8 +485,9 @@ export default {
         },
         basicEps() {
             let bEps = 0
-            bEps = this.eps ? 
-                    this.eps.filter(e => e.analyte.indexOf('BASIC') > -1).reduce((p, c) => c.amount + p, 0) : 
+            const basic = this.eps.filter(e => e.analyte.indexOf('BASIC') > -1)
+            bEps = basic ? 
+                    basic.reduce((p, c) => c.amount + p, 0) : 
                     ( (this.totalShareholderProfit && this.weighedAverageSharesOutstanding) ? this.totalShareholderProfit / this.weighedAverageSharesOutstanding : 0)
             return bEps
         },
