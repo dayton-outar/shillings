@@ -138,7 +138,10 @@ export default {
             fetchTitle: 'Financial Reports',
             deleteTitle: 'Delete Financial Report',
             detailComponent: 'financial-report',
-            newReport: {}
+            newReport: {
+                company: {},
+                analytes: [],
+            }
         }
     },
     computed: {
