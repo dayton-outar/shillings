@@ -92,7 +92,8 @@ namespace Harpoon
                             StatementAnalyte.Sectional.Gains,
                             StatementAnalyte.Sectional.Losses,
                             StatementAnalyte.Sectional.ProfitShare,
-                            StatementAnalyte.Sectional.EarningsPerStock
+                            StatementAnalyte.Sectional.EarningsPerStock,
+                            StatementAnalyte.Sectional.SharesOutstanding
                         }
                 },
                 new StatementSectional {
@@ -158,6 +159,13 @@ namespace Harpoon
                     Assay = new List<StatementAnalyte.Assay> {
                             StatementAnalyte.Assay.Basic,
                             StatementAnalyte.Assay.Diluted
+                        }
+                },
+                // Inspired by Coca-Cola financial statements
+                new SectionalAnalytes {
+                    Sectional = StatementAnalyte.Sectional.SharesOutstanding,
+                    Assay = new List<StatementAnalyte.Assay> {
+                            StatementAnalyte.Assay.Note
                         }
                 },
                 new SectionalAnalytes {

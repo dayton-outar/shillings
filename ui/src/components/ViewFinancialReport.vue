@@ -151,6 +151,19 @@
                                     <tr>
                                         <th colspan="2">&nbsp;</th>
                                     </tr>
+                                    <template v-if="sharesOutstanding.length">
+                                        <tr>
+                                            <th>Shares Outstanding</th>
+                                            <th class="text-right">$</th>
+                                        </tr>
+                                        <tr v-for="i in sharesOutstanding" :key="i.no">
+                                            <td><p class="ml-4">{{ i.description }}</p></td>
+                                            <td class="text-right">{{ formatMoney(i.amount) }}</td>
+                                        </tr>
+                                    </template>                                    
+                                    <tr>
+                                        <th colspan="2">&nbsp;</th>
+                                    </tr>
                                     <template v-if="eps.length">
                                         <tr>
                                             <th>Earnings per Stock Unit</th>
@@ -255,6 +268,10 @@
                             <tr>
                                 <th>Earnings per stock</th>
                                 <td>{{ formatMoney( basicEps ) }}</td>
+                            </tr>
+                            <tr>
+                                <th>Shares outstanding</th>
+                                <td>{{ formatMoney( weighedAverageSharesOutstanding ) }}</td>
                             </tr>
                             <tr>
                                 <th>EBITDA</th>
@@ -424,8 +441,11 @@ export default {
         profitShares() {
             return this.get('INCOME', 'PROFIT_SHARE')
         },
-        weightAverageCommonShares() {
-            return ( this.totalShareholderProfit / this.basicEps ) // Basic EPS has been rounded down and presents some range of error
+        sharesOutstanding() {
+            return this.get('INCOME', 'SHARES_OUTSTANDING')
+        },
+        weighedAverageSharesOutstanding() {
+            return this.sharesOutstanding.reduce((p, c) => c.amount + p, 0)
         },
         totalRevenues() {
             return this.revenues.reduce((p, c) => c.amount + p, 0)
@@ -464,7 +484,11 @@ export default {
             return ( this.tax / ( this.netProfit + this.tax ) ) * 100  
         },
         basicEps() {
-            return this.eps.filter(e => e.analyte.indexOf('BASIC') > -1).reduce((p, c) => c.amount + p, 0)
+            let bEps = 0
+            bEps = this.eps ? 
+                    this.eps.filter(e => e.analyte.indexOf('BASIC') > -1).reduce((p, c) => c.amount + p, 0) : 
+                    ( (this.totalShareholderProfit && this.weighedAverageSharesOutstanding) ? this.totalShareholderProfit / this.weighedAverageSharesOutstanding : 0)
+            return bEps
         },
         dilutedEps() {
             return this.eps.filter(e => e.analyte.indexOf('DILUTED') > -1).reduce((p, c) => c.amount + p, 0)

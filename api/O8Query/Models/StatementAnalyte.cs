@@ -33,13 +33,15 @@ namespace O8Query.Models
             // Income - Company's Earnings per Stock Calculation
             EarningsPerStock = 6,
 
-            // Financial Position
-            Assets = 7,
-            Liabilities = 8,
-            Equity = 9,
+            /// <summary>
+            /// Items describing shares outstanding
+            /// </summary>
+            SharesOutstanding = 7,
 
-            // Financial Position - Equity Attributable
-            EquityShare = 10, // TODO: May not be needed
+            // Financial Position
+            Assets = 8,
+            Liabilities = 9,
+            Equity = 10,
 
             // Cash Flows
             OperatingActivities = 11,
@@ -53,18 +55,19 @@ namespace O8Query.Models
         public enum Assay
         {
             // Income-Expense
-            Operating = 1,
+            Operating = 1, // 2^0
             Direct = 2,
             Depreciation = 4,
-            Impairment = 8,
-            Interest = 16,
-            Other = 32,
             /// <summary>
             /// Permanent reduction in the value of a company asset. It may be a fixed asset or an intangible asset.
             /// </summary>
             /// <remarks>
             /// Credit: https://www.investopedia.com/terms/i/impairment.asp
             /// </remarks>
+            Impairment = 8,
+            Interest = 16,
+            Other = 32,
+            
             Investment = 64,
             Tax = 128,
 
@@ -88,10 +91,20 @@ namespace O8Query.Models
             /// Money available for immediate use
             /// </summary>
             Capital = 1048576,
+            /// <summary>
+            /// Retained earnings
+            /// </summary>
             Retained = 2097152,
+            /// <summary>
+            /// Money held in bank reserves
+            /// </summary>
             Reserves = 4194304,
 
             // Cashflow differentiators
+
+            /// <summary>
+            /// Total dividends paid or received
+            /// </summary>
             Dividends = 8388608, // 2^23
             /// <summary>
             /// Money spent on buying or selling stocks
@@ -101,13 +114,19 @@ namespace O8Query.Models
             // Further classify common stocks from treasury stocks
             // </summary>
             Treasury = 33554432,
-            Wages = 67108864,
-            // Creditor = 134217728, // 2^27
-            // 268435456,
-            // 536870912
-            //
-            Note = 1073741824
-            // Cash Flow
+            /// <summary>
+            /// Wages and salary paid out to employees
+            /// </summary>
+            Wages = 67108864, // 2^26
+            
+            // 3 left ... 27 -> 29
+            
+            /// <summary>
+            /// More details that can be used for next period.
+            /// Cane be used for stating forex conversion gains or losses,
+            /// stating weighed average cost of outstanding shares and so on.
+            /// <summary>
+            Note = 1073741824 // 2^30 ... Max
         }
 
         /// <summary>

@@ -98,7 +98,7 @@
             </div>
         </template>
         <template #confirm>
-            <view-financial-report :data="formData" />
+            <view-financial-report :data="formData" :showDetails="true" />
         </template>
   </s-form>
 </template>
