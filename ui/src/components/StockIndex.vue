@@ -162,7 +162,12 @@ export default {
     methods: {
         ...mapActions('stockIndices', ['create', 'update']),
         assign() {
-            this.formData.no = parseInt(this.formData.no, 10)
+            this.formData.no = parseInt(this.formData.no, 10)            
+            this.formData.log.details = `Manual entry for ${this.formData.marketIndex.name}`
+            this.formData.log.event = 'INFORMATION'
+            this.formData.log.type = 'STOCK'
+            this.formData.value = this.parseMoney( this.formData.value ) // TODO: Vue3 ... VueCurrency component
+            this.formData.valueChange = this.parseMoney( this.formData.valueChange )
         },
         validate() {
             let valid = true

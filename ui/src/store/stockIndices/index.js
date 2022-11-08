@@ -13,18 +13,19 @@ export default {
   },
   mutations,
   actions: {
-    async create({ commit }, stockIndex) { // TODO: Fix
+    async create({ commit }, stockIndex) {
       const response = await graphQlClient.mutate({
         mutation: gql`mutation CreateStockIndex($input: CreateStockIndexInput!) {
           createStockIndex ( input: $input) {
-            no,
+            stockIndex {
+              no,
               marketIndex {
                 no,
                 name,
                 market {
-                    code,
-                    name,
-                    company {
+                  code,
+                  name,
+                  company {
                     code,
                     name,
                     about,
@@ -35,34 +36,41 @@ export default {
                     countryCode,
                     created,
                     industries {
-                        no,
-                        name,
-                        wiki
+                      no,
+                      name,
+                      wiki
                     },
                     files {
-                        no,
-                        type,
-                        fileName,
-                        contentType,
-                        contentSize,
-                        created
+                      no,
+                      type,
+                      fileName,
+                      contentType,
+                      contentSize,
+                      created
                     }
-                    }
+                  }
                 }
               },
               value,
               valueChange,
               log {
+                no,
+                details,
+                event,
+                type,
                 logged
               }
+            }
           }
         }`,
         variables: {
           input: {
             stockIndex: {
               no: stockIndex.no,
-              name: stockIndex.name,
-              market: stockIndex.market
+              marketIndex: stockIndex.marketIndex,
+              value: stockIndex.value,
+              valueChange: stockIndex.valueChange,
+              log: stockIndex.log
             }
           }
         }
@@ -71,10 +79,10 @@ export default {
       commit('add', {
         type: 'stockIndices',
         pk: 'no',
-        payload: response.data.createStockIndex.stockIndices
+        payload: response.data.createStockIndex.stockIndex
       })
 
-      return Promise.resolve(response.data.createMarketIndex.marketIndex)
+      return Promise.resolve(response.data.createStockIndex.stockIndex)
     },
     async fetch({ commit }, request) {
       const response = await graphQlClient.query({
@@ -101,9 +109,9 @@ export default {
                 no,
                 name,
                 market {
-                    code,
-                    name,
-                    company {
+                  code,
+                  name,
+                  company {
                     code,
                     name,
                     about,
@@ -114,24 +122,28 @@ export default {
                     countryCode,
                     created,
                     industries {
-                        no,
-                        name,
-                        wiki
+                      no,
+                      name,
+                      wiki
                     },
                     files {
-                        no,
-                        type,
-                        fileName,
-                        contentType,
-                        contentSize,
-                        created
+                      no,
+                      type,
+                      fileName,
+                      contentType,
+                      contentSize,
+                      created
                     }
-                    }
+                  }
                 }
               },
               value,
               valueChange,
               log {
+                no,
+                details,
+                event,
+                type,
                 logged
               }
             }
@@ -155,40 +167,52 @@ export default {
 
       return Promise.resolve(response.data.marketIndices)
     },
-    async update({ commit }, stockIndex) { // TODO: Fix
+    async update({ commit }, stockIndex) {
       const response = await graphQlClient.mutate({
         mutation: gql`mutation UpdateStockIndex($input: UpdateStockIndexInput!) {
           updateStockIndex ( input: $input) {
-            marketIndex {
+            stockIndex {
               no,
-              name,
-              market {
-                code,
+              marketIndex {
+                no,
                 name,
-                company {
+                market {
                   code,
                   name,
-                  about,
-                  totalEmployed,
-                  wiki,
-                  webSite,
-                  founded,
-                  countryCode,
-                  created,
-                  industries {
-                    no,
+                  company {
+                    code,
                     name,
-                    wiki
-                  },
-                  files {
-                    no,
-                    type,
-                    fileName,
-                    contentType,
-                    contentSize,
-                    created
+                    about,
+                    totalEmployed,
+                    wiki,
+                    webSite,
+                    founded,
+                    countryCode,
+                    created,
+                    industries {
+                      no,
+                      name,
+                      wiki
+                    },
+                    files {
+                      no,
+                      type,
+                      fileName,
+                      contentType,
+                      contentSize,
+                      created
+                    }
                   }
                 }
+              },
+              value,
+              valueChange,
+              log {
+                no,
+                details,
+                event,
+                type,
+                logged
               }
             }
           }
@@ -196,9 +220,11 @@ export default {
         variables: {
           input: {
             stockIndex: {
-                no: stockIndex.no,
-                name: stockIndex.name,
-                market: stockIndex.market
+              no: stockIndex.no,
+              marketIndex: stockIndex.marketIndex,
+              value: stockIndex.value,
+              valueChange: stockIndex.valueChange,
+              log: stockIndex.log
             }
           }
         }
@@ -212,10 +238,10 @@ export default {
 
       return Promise.resolve(response.data.updateStockIndex.stockIndex)
     },
-    async delete({ commit }, stockIndex) { // TODO: Fix
+    async delete({ commit }, stockIndex) {
       const response = await graphQlClient.mutate({
-        mutation: gql`mutation DeleteMarketIndex($input: DeleteMarketIndexInput!) {
-          deleteMarketIndex ( input: $input) {
+        mutation: gql`mutation DeleteStockIndex($input: DeleteStockIndexInput!) {
+          deleteStockIndex ( input: $input) {
             boolean
           }
         }`,
@@ -226,7 +252,7 @@ export default {
         }
       })
 
-      if (response.data.deleteMarketIndex.boolean)
+      if (response.data.deleteStockIndex.boolean)
       {
         commit('remove', {
           type: 'stockIndices',
@@ -235,7 +261,7 @@ export default {
         })
       }
       
-      return Promise.resolve(response.data.deleteMarketIndex.boolean)
+      return Promise.resolve(response.data.deleteStockIndex.boolean)
     }
   }
 }

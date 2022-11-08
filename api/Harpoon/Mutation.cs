@@ -468,6 +468,74 @@ namespace Harpoon
 
         #endregion
 
+        #region Manage Stock Index
+
+        [UseDbContext(typeof(StocksQuery))]
+        public StockIndex CreateStockIndex([ScopedService]StocksQuery sq, StockIndex stockIndex)
+        {
+            string sql = "EXEC [dbo].[CreateStockIndex] @stockIndex, @no OUTPUT";
+            
+            string stockIndexXml = SerializationHelper.Serialize<StockIndex>(stockIndex);
+            List<SqlParameter> parms = new List<SqlParameter>
+            { 
+                // Create parameters
+                new SqlParameter { ParameterName = "@stockIndex", Value = stockIndexXml },
+                new SqlParameter { ParameterName = "@no", SqlDbType = SqlDbType.BigInt, Direction = ParameterDirection.Output }
+            };
+
+            sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
+
+            var param = parms.Where(p => p.ParameterName == "@no").First();
+            if (param.Value != null)
+            {
+                stockIndex.No =  Convert.ToInt64(param.Value);
+            }
+
+            return stockIndex;
+        }
+
+        [UseDbContext(typeof(StocksQuery))]
+        public StockIndex UpdateStockIndex([ScopedService]StocksQuery sq, StockIndex stockIndex)
+        {
+            string sql = "EXEC [dbo].[UpdateStockIndex] @stockIndex";
+            
+            string marketIndexXml = SerializationHelper.Serialize<StockIndex>(stockIndex);
+            List<SqlParameter> parms = new List<SqlParameter>
+            { 
+                // Update parameters
+                new SqlParameter { ParameterName = "@stockIndex", Value = marketIndexXml }  
+            };
+
+            sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
+
+            return stockIndex;
+        }
+
+        [UseDbContext(typeof(StocksQuery))]
+        public bool DeleteStockIndex([ScopedService]StocksQuery sq, long no)
+        {
+            bool result = false;
+
+            try
+            {
+                string sql = "EXEC [dbo].[DeleteStockIndex] @no";
+                
+                List<SqlParameter> parms = new List<SqlParameter>
+                { 
+                    // Update parameters
+                    new SqlParameter { ParameterName = "@no", Value = no }  
+                };
+
+                sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
+
+                result = true;
+            } catch {}
+
+            return result;
+        }
+
+        #endregion
+
         #region Manage Industries
 
         [UseDbContext(typeof(StocksQuery))]
