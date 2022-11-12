@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="columns" v-if="!readOnly">
+        <div class="columns" v-if="!options.readOnly">
             <div class="column">
                 <b-button 
                     type="is-info"
@@ -16,7 +16,7 @@
         <div class="columns">
             <div class="column is-full">
                 <div class="box my-4 mx-1">
-                    <table-tool-bar :page="page" :pageLengths="pageLengths" @refresh="get" @change="changeLen" v-if="showTools" />
+                    <table-tool-bar :page="page" :pageLengths="pageLengths" @refresh="get" @change="changeLen" v-if="options.showTools" />
 
                     <b-table
                         ref="tbl"
@@ -25,15 +25,15 @@
                         :data="data.nodes"
                         icon-pack="fas"
                         :total="data.totalCount"
-                        :paginated="showTools"
+                        :paginated="options.showTools"
                         :pagination-simple="true"
                         :per-page="page"
                         :current-page.sync="currentPage"
                         :sort-icon="sortIcon" 
                         :sort-icon-size="sortIconSize"
                         :default-sort="sort"
-                        :backend-sorting="showTools"
-                        :backend-pagination="showTools"
+                        :backend-sorting="options.showTools"
+                        :backend-pagination="options.showTools"
                         :striped="true" 
                         :hoverable="true"
                         @sort="sortTable"
@@ -55,7 +55,7 @@
                             {{ formatMoney(props.row.valueChange) }}
                         </b-table-column>
 
-                        <b-table-column width="5%" v-slot="props" v-if="!readOnly">
+                        <b-table-column width="5%" v-slot="props" v-if="!options.readOnly">
                             <template>
                                 <b-button
                                     size="is-small"
@@ -66,7 +66,7 @@
                             </template>
                         </b-table-column>
 
-                        <b-table-column width="5%" v-slot="props" v-if="!readOnly">
+                        <b-table-column width="5%" v-slot="props" v-if="!options.readOnly">
                             <template>
                                 <b-button
                                     size="is-small"
@@ -105,7 +105,7 @@ import SearchBar from './SearchBar.vue'
 import StockIndex from './StockIndex.vue'
 
 export default {
-    props: ['index', 'readOnly', 'showTools', 'begin', 'end'],
+    props: ['index', 'begin', 'end', 'options'],
     components: {
         'search-bar': SearchBar,
         'table-tool-bar': TableToolBar,

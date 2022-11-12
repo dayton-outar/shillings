@@ -91,13 +91,13 @@ namespace Harpoon
         [UseDbContext(typeof(StocksQuery))]
         public Dividend CreateDividends([ScopedService]StocksQuery sq, Dividend dividend)
         {
-            string sql = "EXEC [dbo].[CreateDividends] @dividends";
+            string sql = "EXEC [dbo].[CreateDividends] @dividends, @no OUTPUT";
             
             string dividendsXml = SerializationHelper.Serialize<Dividend>(dividend);
             List<SqlParameter> parms = new List<SqlParameter>
             { 
                 // Update parameters
-                new SqlParameter { ParameterName = "@dividend", Value = dividendsXml },
+                new SqlParameter { ParameterName = "@dividends", Value = dividendsXml },
                 new SqlParameter { ParameterName = "@no", SqlDbType = SqlDbType.BigInt, Direction = ParameterDirection.Output }
             };
 

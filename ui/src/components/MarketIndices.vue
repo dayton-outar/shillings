@@ -91,7 +91,7 @@
                         <template #detail="props">
                             <article>
                                 <h5 class="title is-5">{{ props.row.name }}</h5>
-                                <component :is="detailComponent" :data="props.row" :editMode="true" @close="$refs.tbl.toggleDetails(props.row)" :index="props.row.no" :readOnly="false" :showTools="true" />
+                                <component :is="detailComponent" :data="props.row" :editMode="true" @close="$refs.tbl.toggleDetails(props.row)" :index="props.row.no" :options="mixOptions" />
                             </article>
                         </template>
 
@@ -130,6 +130,10 @@ export default {
             newIndex: {
                 no: '',
                 name: ''
+            },
+            mixOptions: {
+                readOnly: true,
+                showTools: true
             }
         }
     },

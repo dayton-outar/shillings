@@ -88,7 +88,7 @@
                         </b-table-column>
 
                         <template #detail="props">
-                            <component :is="detailComponent" :data="props.row" :editMode="true" @close="$refs.tbl.toggleDetails(props.row)" :stockCode="props.row.code" :readOnly="true" />
+                            <component :is="detailComponent" :data="props.row" :editMode="true" @close="$refs.tbl.toggleDetails(props.row)" :stockCode="props.row.code" :options="sOptions" />
                         </template>
 
                     </b-table>
@@ -127,6 +127,9 @@ export default {
                 code: '',
                 name: '',
                 company: {}
+            },
+            sOptions: {
+                readOnly: false
             }
         }
     },

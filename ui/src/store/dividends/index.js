@@ -15,13 +15,19 @@ export default {
   actions: {
     async create({ commit }, dividend) {
       const response = await graphQlClient.mutate({
-        mutation: gql`mutation CreateDividends($input: CreatDividendsInput!) {
+        mutation: gql`mutation CreateDividends($input: CreateDividendsInput!) {
           createDividends ( input: $input) {
             dividend {
               no,
               stock {
                 code,
                 name,
+                currency,
+                stockType,
+                issuedShares,
+                outstandingShares,
+                isListed,
+                created,
                 company {
                   code,
                   name,
@@ -45,6 +51,25 @@ export default {
                     contentSize,
                     created
                   }
+                },
+                indices {
+                  no,
+                  name,
+                  market {
+                    code,
+                    name,
+                    company {
+                      code,
+                      name,
+                      about,
+                      totalEmployed,
+                      wiki,
+                      webSite,
+                      founded,
+                      countryCode,
+                      created
+                    }
+                  }
                 }
               },
               currency,
@@ -55,23 +80,23 @@ export default {
           }
         }`,
         variables: {
-            input: {
-                dividend: {
-                    no: dividend.no,
-                    stock: dividend.stock,
-                    currency: dividend.name,
-                    amount: dividend.amount,
-                    recordDate: dividend.recordDate,
-                    paymentDate: dividend.paymentDate,
-                    log: {
-                        no: 0,
-                        type: 'ANNOUNCEMENT',
-                        event: 'INFORMATION',
-                        details: `Created dividends manually for ${dividend.stock.name}`,
-                        logged: new Date()
-                    }
-                }
+          input: {
+            dividend: {
+              no: dividend.no,
+              stock: dividend.stock,
+              currency: dividend.currency,
+              amount: dividend.amount,
+              recordDate: dividend.recordDate,
+              paymentDate: dividend.paymentDate,
+              log: {
+                no: 0,
+                type: 'ANNOUNCEMENT',
+                event: 'INFORMATION',
+                details: `Created dividends manually for ${dividend.stock.name}`,
+                logged: new Date()
+              }
             }
+          }
         }
       })
 
@@ -107,6 +132,12 @@ export default {
               stock {
                 code,
                 name,
+                currency,
+                stockType,
+                issuedShares,
+                outstandingShares,
+                isListed,
+                created,
                 company {
                   code,
                   name,
@@ -129,6 +160,25 @@ export default {
                     contentType,
                     contentSize,
                     created
+                  }
+                },
+                indices {
+                  no,
+                  name,
+                  market {
+                    code,
+                    name,
+                    company {
+                      code,
+                      name,
+                      about,
+                      totalEmployed,
+                      wiki,
+                      webSite,
+                      founded,
+                      countryCode,
+                      created
+                    }
                   }
                 }
               },
@@ -166,6 +216,12 @@ export default {
               stock {
                 code,
                 name,
+                currency,
+                stockType,
+                issuedShares,
+                outstandingShares,
+                isListed,
+                created,
                 company {
                   code,
                   name,
@@ -189,6 +245,25 @@ export default {
                     contentSize,
                     created
                   }
+                },
+                indices {
+                  no,
+                  name,
+                  market {
+                    code,
+                    name,
+                    company {
+                      code,
+                      name,
+                      about,
+                      totalEmployed,
+                      wiki,
+                      webSite,
+                      founded,
+                      countryCode,
+                      created
+                    }
+                  }
                 }
               },
               currency,
@@ -201,19 +276,19 @@ export default {
         variables: {
           input: {
             dividend: {
-                no: dividend.no,
-                stock: dividend.stock,
-                currency: dividend.name,
-                amount: dividend.amount,
-                recordDate: dividend.recordDate,
-                paymentDate: dividend.paymentDate,
-                log: {
-                    no: 0,
-                    type: 'ANNOUNCEMENT',
-                    event: 'INFORMATION',
-                    details: '',
-                    logged: ''
-                }
+              no: dividend.no,
+              stock: dividend.stock,
+              currency: dividend.currency,
+              amount: dividend.amount,
+              recordDate: dividend.recordDate,
+              paymentDate: dividend.paymentDate,
+              log: {
+                no: 0,
+                type: 'ANNOUNCEMENT',
+                event: 'INFORMATION',
+                details: '',
+                logged: new Date()
+              }
             }
           }
         }
@@ -222,14 +297,14 @@ export default {
       commit('modify', {
         type: 'dividends',
         pk: 'no',
-        payload: response.data.updateDividends.marketIndex
+        payload: response.data.updateDividends.dividend
       })
 
-      return Promise.resolve(response.data.updateDividends.marketIndex)
+      return Promise.resolve(response.data.updateDividends.dividend)
     },
     async delete({ commit }, dividend) {      
       const response = await graphQlClient.mutate({
-        mutation: gql`mutation DeleteDividend($input: DeleteDividendInput!) {
+        mutation: gql`mutation DeleteDividend($input: DeleteDividendsInput!) {
           deleteDividends ( input: $input) {
             boolean
           }
