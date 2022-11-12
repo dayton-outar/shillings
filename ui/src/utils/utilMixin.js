@@ -1,5 +1,6 @@
 import _ from 'lodash'
 import moment from 'moment'
+import prettyBytes from 'pretty-bytes';
 
 export default {
     methods: {
@@ -29,6 +30,9 @@ export default {
         // --
         getLogo(fileContents) {
             return fileContents.filter(f => f.type === "LOGO");
+        },
+        formatBytes(bytes) {
+            return prettyBytes(bytes, { locale: 'en' })
         },
         convertToDate(date) {
             return moment(date).toDate()
