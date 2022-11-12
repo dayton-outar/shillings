@@ -1,6 +1,6 @@
 <template>
     <div class="column is-full">
-        <div class="columns" v-if="!readOnly">
+        <div class="columns" v-if="!options.readOnly">
             <div class="column">
                 <b-button 
                     type="is-info"
@@ -43,11 +43,11 @@
                             {{ props.row.stock.name }}
                         </b-table-column>
 
-                        <b-table-column label="Record Date" sortable v-slot="props">
+                        <b-table-column field="recordDate" label="Record Date" sortable v-slot="props">
                             {{ formatDate(props.row.recordDate, 'MMM-DD-YYYY') }}
                         </b-table-column>
 
-                        <b-table-column label="Payment Date" sortable v-slot="props">
+                        <b-table-column field="paymentDate" label="Payment Date" sortable v-slot="props">
                             {{ formatDate(props.row.paymentDate, 'MMM-DD-YYYY') }}
                         </b-table-column>
 
@@ -55,7 +55,7 @@
                             {{ formatMoney(props.row.amount) }}
                         </b-table-column>
 
-                        <b-table-column width="5%" v-slot="props" v-if="!readOnly">
+                        <b-table-column width="5%" v-slot="props" v-if="!options.readOnly">
                             <template>
                                 <b-button
                                     size="is-small"
@@ -66,7 +66,7 @@
                             </template>
                         </b-table-column>
 
-                        <b-table-column width="5%" v-slot="props" v-if="!readOnly">
+                        <b-table-column width="5%" v-slot="props" v-if="!options.readOnly">
                             <template>
                                 <b-button
                                     size="is-small"
@@ -102,12 +102,14 @@ import utilMixin from '../utils/utilMixin'
 
 import TableToolBar from './TableToolBar'
 import SearchBar from './SearchBar.vue'
+import Dividend from './Dividend.vue'
 
 export default {
-    props: ['stockCode', 'readOnly'],
+    props: ['stockCode', 'options'],
     components: {
         'search-bar': SearchBar,
-        'table-tool-bar': TableToolBar
+        'table-tool-bar': TableToolBar,
+        'dividend-detail': Dividend
     },
     mixins: [tableMixin, utilMixin],
     data() {

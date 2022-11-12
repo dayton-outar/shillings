@@ -94,7 +94,7 @@
               </div>
             </b-collapse>
           </div>
-          <stock-indices :readOnly="true" :showTools="false" :begin="beginDate" :end="endDate" />
+          <stock-indices :options="sixOptions" :begin="beginDate" :end="endDate" />
           <stock-trades :formattedDateRange="formattedDateRange" :tradings="totalTrades" />
         </section>
     </div>
@@ -131,7 +131,11 @@ export default {
       formattedDateRange: '',
       isLoading: false,
       beginDate: new Date(),
-      endDate: new Date()
+      endDate: new Date(),
+      sixOptions: {
+        readOnly: true,
+        showTools: true
+      }
     }
   },
   computed: {
