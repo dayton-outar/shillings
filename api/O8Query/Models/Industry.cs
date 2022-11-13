@@ -29,5 +29,7 @@ namespace O8Query.Models
         public string Wiki { get; set; }
 
         public List<Company> Companies { get; set; }
+
+        public List<MarketIndex> MarketIndices { get; set; }
     }
 }

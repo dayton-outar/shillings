@@ -47,6 +47,11 @@ export default {
                     created
                   }
                 }
+              },
+              industries {
+                no,
+                name,
+                wiki
               }
             }
           }
@@ -56,7 +61,8 @@ export default {
             marketIndex: {
               no: marketIndex.no,
               name: marketIndex.name,
-              market: marketIndex.market
+              market: marketIndex.market,
+              industries: marketIndex.industries
             }
           }
         }
@@ -119,6 +125,11 @@ export default {
                     created
                   }
                 }
+              },
+              industries {
+                no,
+                name,
+                wiki
               }
             }
           }
@@ -175,6 +186,11 @@ export default {
                     created
                   }
                 }
+              },
+              industries {
+                no,
+                name,
+                wiki
               }
             }
           }
@@ -182,9 +198,10 @@ export default {
         variables: {
           input: {
             marketIndex: {
-                no: marketIndex.no,
-                name: marketIndex.name,
-                market: marketIndex.market
+              no: marketIndex.no,
+              name: marketIndex.name,
+              market: marketIndex.market,
+              industries: marketIndex.industries
             }
           }
         }

@@ -39,6 +39,8 @@ namespace O8Query.Data
         [NotMapped]
         public DbSet<TotalStockTrades> TotalTrades { get; set; }
 
+        public DbSet<InterestRate> InterestRates { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //new StocksQuerySeeder(modelBuilder).Seed();
