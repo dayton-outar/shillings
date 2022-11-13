@@ -28,6 +28,38 @@
                     </b-field>
                 </div>
             </div>
+            <div class="columns">
+                <div class="column">
+                <b-field 
+                    label="Industries"
+                    :type="validation.industries.type"
+                    :message="validation.industries.message">                    
+                    <b-dropdown
+                        v-model="indexIndustries"
+                        multiple
+                        scrollable
+                        aria-role="list"
+                        expanded>
+                        <template #trigger>
+                        <b-button
+                            type="is-light"
+                            expanded
+                            icon-right="menu-down">
+                            Selected ({{ indexIndustries.length }})
+                        </b-button>
+                        </template>
+
+                        <b-dropdown-item aria-role="listitem" 
+                        v-for="industry in industries.nodes" 
+                        :key="industry.no"
+                        :value="industry.no">
+                        {{industry.name}}
+                        </b-dropdown-item>
+
+                    </b-dropdown>                    
+                </b-field>
+                </div>
+            </div>
         </template>
         <template #confirm>
             <div class="columns">
@@ -44,6 +76,16 @@
                         label="Market">
                         {{ formData.market.name }}
                     </b-field>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                <b-field 
+                    label="Industries">
+                    <ul class="list">
+                        <li class="list-item" v-for="industry in industries.nodes.filter(i => indexIndustries.includes(i.no))" :key="industry.no">{{industry.name}}</li>
+                    </ul>
+                </b-field>
                 </div>
             </div>
         </template>
@@ -65,6 +107,17 @@ export default {
     data() {
         return {
             createTitle: `Create Market Index`,
+            indexIndustries: this.data.industries.map(i => i.no),
+            validation: {
+                name: {
+                    type: '',
+                    message: ''
+                },
+                industries: {
+                    type: '',
+                    message: ''
+                }
+            }
         }
     },
     beforeCreate() {
@@ -76,14 +129,48 @@ export default {
                 filter: { name: { startsWith: '' } },
                 ordering: [{ name: 'ASC' }]
             })
+        
+        this.$store.dispatch('industries/fetch', { // TODO: Remove after implementing Global cache
+                first: 100,
+                last: null,
+                next: null,
+                previous: null,
+                filter: { name: { startsWith: '' } },
+                ordering: [{ name: 'ASC' }]
+            })
     },
     computed: {
-        ...mapState('markets', ['markets'])
+        ...mapState('markets', ['markets']),
+        ...mapState('industries', ['industries']),
     },
     methods: {
         ...mapActions('indices', ['create', 'update']),
         assign() {
             this.formData.no = parseInt(this.formData.no, 10)
+            this.formData.industries = this.industries.nodes.filter(i => this.indexIndustries.includes(i.no))
+        },
+        validate() {
+            let valid = true
+
+            if (!this.formData.name) {
+                this.validation.name.type = 'is-danger'
+                this.validation.name.message = 'Please enter name'
+                valid = false
+            } else {
+                this.validation.name.type = ''
+                this.validation.name.message = ''
+            }
+
+            // if (this.indexIndustries.length == 0) {
+            //     this.validation.industries.type = 'is-danger'
+            //     this.validation.industries.message = 'Please choose at least one (1) industry'
+            //     valid = false
+            // } else {
+            //     this.validation.industries.type = ''
+            //     this.validation.industries.message = ''
+            // }
+
+            this.isValid = valid
         }
     }
 }

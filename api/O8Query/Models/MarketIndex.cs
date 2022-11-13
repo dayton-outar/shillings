@@ -27,6 +27,8 @@ namespace O8Query.Models
 
         [GraphQLIgnore]
         public List<Stock> Stocks { get; set; }
-
+        
+        
+        public List<Industry> Industries { get; set; }
     }
 }
