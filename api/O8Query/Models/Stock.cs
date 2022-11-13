@@ -10,6 +10,13 @@ namespace O8Query.Models
     /// </summary>
     public class Stock
     {
+        public enum StockClass
+        {
+            None = 0,
+            Common = 1,
+            Preferred = 2
+        }
+
         [Key]
         [Required(ErrorMessage = "Please enter stock code")]
         [MaxLength(20)]
@@ -28,8 +35,7 @@ namespace O8Query.Models
         /// <summary>
         /// Stock type: ORDINARY, PREFERRED, etc.
         /// </summary>
-        [MaxLength(50)]
-        public string StockType { get; set; }
+        public StockClass StockType { get; set; }
 
         /// <summary>
         /// Authorized Issued shares

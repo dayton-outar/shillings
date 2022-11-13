@@ -325,7 +325,6 @@
 
 <script>
 import { mapState, mapActions } from 'vuex'
-import prettyBytes from 'pretty-bytes';
 import config from '../config'
 
 import formMixin from '../utils/formMixin'
@@ -344,7 +343,7 @@ export default {
             companyIndustries: this.data.industries.map(i => i.no),
             dropFile: null,
             hasImg: (this.editMode && !!this.data.files),
-            imgSrc: this.getLogo(this.data.files) ? `${config.fileApiHost}?no=${this.getLogo(this.data.files)[0].no}` : '#',
+            imgSrc: this.data.files.length ? `${config.fileApiHost}?no=${this.getLogo(this.data.files)[0].no}` : '#',
             validation: {
                 code: {
                     type: '',
@@ -510,12 +509,6 @@ export default {
             }
 
             this.isValid = valid
-        },
-        formatBytes(bytes) {
-            return prettyBytes(bytes, { locale: 'en' })
-        },
-        formatDate(date) {
-            return this.formatDate(date, 'MMMM, YYYY')
         }
     },
     watch: {

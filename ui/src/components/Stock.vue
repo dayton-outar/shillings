@@ -128,7 +128,7 @@
                         :type="validation.indices.type"
                         :message="validation.indices.message">
                         <b-dropdown
-                            v-model="formData.indices"
+                            v-model="indices"
                             multiple
                             scrollable
                             aria-role="list"
@@ -138,14 +138,14 @@
                                     type="is-light"
                                     expanded
                                     icon-right="menu-down">
-                                    Selected ({{ formData.indices ? formData.indices.length : 0 }})
+                                    Selected ({{ indices ? indices.length : 0 }})
                                 </b-button>
                             </template>
 
                             <b-dropdown-item aria-role="listitem" 
                                 v-for="index in marketIndices.nodes" 
                                 :key="index.no"
-                                :value="index" :class="(formData.indices && formData.indices.some(i => i.no === index.no) ? 'is-active': '')">
+                                :value="index.no">
                                 {{index.name}}
                             </b-dropdown-item>
 
@@ -216,7 +216,7 @@
                 <b-field 
                     label="Market Indices">
                     <ul class="list">
-                        <li class="list-item" v-for="index in marketIndices.nodes.filter(i => formData.indices.map(i => i.no).includes(i.no))" :key="index.no">{{index.name}}</li>
+                        <li class="list-item" v-for="index in marketIndices.nodes.filter(i => indices.includes(i.no))" :key="index.no">{{index.name}}</li>
                     </ul>
                 </b-field>
                 </div>
@@ -241,6 +241,7 @@ export default {
     data() {
         return {
             createTitle: 'Create Stock',
+            indices: this.data.indices.map(i => i.no),
             validation: {
                 code: {
                     type: '',
@@ -304,6 +305,9 @@ export default {
     },
     methods: {
         ...mapActions('stocks', ['create', 'update']),
+        assign() {
+            this.formData.indices = this.marketIndices.nodes.filter(i => this.indices.includes(i.no))
+        },
         validate() {
             let valid = true
 
@@ -379,7 +383,7 @@ export default {
                 this.validation.company.message = ''
             }
 
-            if (this.formData.indices.length == 0) {
+            if (this.indices.length == 0) {
                 this.validation.indices.type = 'is-danger'
                 this.validation.indices.message = 'Please choose at least one (1) market index'
                 valid = false

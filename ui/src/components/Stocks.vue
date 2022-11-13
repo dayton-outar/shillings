@@ -126,7 +126,8 @@ export default {
             newStock: {
                 code: '',
                 name: '',
-                company: {}
+                company: {},
+                isListed: true
             },
             sOptions: {
                 readOnly: false
