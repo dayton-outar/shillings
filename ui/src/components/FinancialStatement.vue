@@ -212,8 +212,7 @@ export default {
                     numeralDecimalScale: 0,
                     numeralThousandsGroupStyle: 'thousand'
                 }
-            },
-            iNo: 0
+            }
         }
     },
     beforeCreate() {
@@ -349,12 +348,12 @@ export default {
         },
         addItem() {
           const sqs = this.analytes.map(a => a.sequence);
-          const maxNo = Math.max(...sqs)
-          this.iNo = maxNo > this.iNo ? (maxNo + 1) : (this.iNo + 1)
+          const maxNo = sqs.length
+          let iNo = maxNo + 1;
 
           this.analytes.push({
               no: 0,
-              sequence: this.iNo,
+              sequence: iNo,
               description: '',
               vDesc: {
                 type: '',
@@ -390,13 +389,15 @@ export default {
             const ix =this.analytes.findIndex(p => p.sequence === id)
             if (ix > -1) {
                 this.analytes.splice(ix, 1)
-            }            
-
-            if (this.analytes.length === 0) {
-                this.iNo = 0;
+                this.rearrangeSequence(id);
             }
-          
-            //this.analytes.forEach(a => a.no = (a.no - 1))
+        },
+        rearrangeSequence(start) {
+            // Find all items with sequence > start
+            let affected = this.analytes.filter(i => i.sequence > start)
+            for(let x in affected) {
+                affected[x].sequence--
+            }
         },
         flushItems() {
           this.analytes = []
@@ -452,7 +453,7 @@ export default {
             return this.analytes
         },
         nextDescription(sequence) {
-            if (sequence < this.iNo) {
+            if (sequence < this.analytes.length) {
                 sequence++;
             }
             if (this.$refs[`description-${this.type}-${sequence}`]) {
@@ -468,7 +469,7 @@ export default {
             }
         },
         nextAmount(sequence) {
-            if (sequence < this.iNo) {
+            if (sequence < this.analytes.length) {
                 sequence++;
             }
             if (this.$refs[`amount-${this.type}-${sequence}`]) {
