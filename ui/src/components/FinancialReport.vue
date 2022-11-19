@@ -196,6 +196,10 @@ export default {
       removeStatement(ix) {
           this.statements.splice(ix, 1);
       },
+      assign() {
+        this.formData.log.details = `${this.editMode ? 'Updated' : 'Created'} ${this.formatTitleCase(this.formData.period)} Report for ${this.formData.company.name} for ${this.formatDate(this.formData.statementDate, 'MMM D, YYYY')}`
+        this.formData.log.logged = new Date()
+      },
       validate() {
         let valid = true
 

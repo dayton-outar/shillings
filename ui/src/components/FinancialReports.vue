@@ -141,6 +141,7 @@ export default {
             newReport: {
                 company: {},
                 analytes: [],
+                log: {}
             }
         }
     },
