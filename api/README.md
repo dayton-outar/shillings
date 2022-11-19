@@ -6,7 +6,7 @@ The web api offers the service of communicating information from the stock track
 
  * [.NET 6](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
  * [Entity Framework](https://docs.microsoft.com/en-us/ef/)
- * [Hot Chocolate](https://chillicream.com/docs/)
+ * [Hot Chocolate](https://chillicream.com/)
 
 ## Installation
 

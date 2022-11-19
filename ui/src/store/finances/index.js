@@ -14,9 +14,9 @@ export default {
   mutations,
   actions: {
     async create({ commit }, report) {
-        const response = await graphQlClient.mutate({
-            mutation: gql`mutation CreateFinancialReport($input: CreateFinancialReportInput!) {
-              createFinancialReport(input: $input) {
+      const response = await graphQlClient.mutate({
+        mutation: gql`mutation CreateFinancialReport($input: CreateFinancialReportInput!) {
+          createFinancialReport(input: $input) {
                 financialReport{
                   no,
                   company {
@@ -69,6 +69,7 @@ export default {
             variables: {
               input: {
                 financialReport: {
+                  no: 0,
                   company: {
                     code: report.company.code,
                     name: report.company.name,
@@ -90,7 +91,7 @@ export default {
                     no: 0,
                     type: 'ANNOUNCEMENT',
                     event: 'INFORMATION',
-                    details: report.description,
+                    details: report.log.details,
                     logged: report.log.logged
                   }
                 }
@@ -273,7 +274,7 @@ export default {
                     no: 0,
                     type: 'ANNOUNCEMENT',
                     event: 'INFORMATION',
-                    details: report.description,
+                    details: report.log.details,
                     logged: report.log.logged
                   }
                 }

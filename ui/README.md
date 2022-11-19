@@ -12,12 +12,16 @@ Another useful mention, is that users can add a portfolio of stocks purchased to
 
 ### Highlighted Packages
 
- * [Vue](https://vuejs.org/)
+ * [Vue](https://vuejs.org/)<sup><a href="https://v2.vuejs.org/">Vue 2</a></sup>
  * [Vuex](https://vuex.vuejs.org/)
  * [Vue Router](https://router.vuejs.org/)
  * [Apollo](https://www.apollographql.com/docs/react/)
  * [Buefy](https://buefy.org/)
+ * [Bulma](https://bulma.io/)
  * [ChartJS](https://www.chartjs.org/)
+ * [Vue Currency Input](https://vue-currency-input-next.netlify.app/)
+ * [Font Awesome](https://fontawesome.com/)
+ * [Animate.css](https://animate.style/)
  
 ## Installation
 

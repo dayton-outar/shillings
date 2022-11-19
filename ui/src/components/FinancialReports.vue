@@ -11,7 +11,7 @@
                     icon-left="plus" 
                     v-if="!isCreatePanelActive"
                     @click.prevent="create" />
-                <component :is="detailComponent" :data="newReport" :editMode="false" v-if="isCreatePanelActive" @close="close" />
+                <financial-report :data="newReport" :editMode="false" v-if="isCreatePanelActive" @close="close" />
             </div>
         </div>
 
@@ -141,6 +141,7 @@ export default {
             newReport: {
                 company: {},
                 analytes: [],
+                log: {}
             }
         }
     },

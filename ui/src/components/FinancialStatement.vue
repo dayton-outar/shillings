@@ -41,7 +41,12 @@
                             v-if="getState(props.row.state)" 
                             :type="props.row.vDesc.type" 
                             :message="props.row.vDesc.message">
-                            <b-input :value="props.row.description" @input="updateItem(props.row.sequence, 'description', $event)" />
+                            <b-input 
+                                :ref="(`description-${type}-${props.row.sequence}`)" 
+                                :value="props.row.description" 
+                                @keyup.up.native="previousDescription(props.row.sequence)"
+                                @keyup.down.native="nextDescription(props.row.sequence)" 
+                                @input="updateItem(props.row.sequence, 'description', $event)" />
                         </b-field>
                         <p v-else>{{ props.row.description }}</p>
                     </b-table-column>
@@ -54,7 +59,7 @@
                             <b-select placeholder="Choose Section" :value="props.row.section" @input="updateItem(props.row.sequence, 'section', $event)" expanded>
                                 <option 
                                     v-for="section in statementSections" 
-                                    :key="section"
+                                    :key="`section_${section}`"
                                     :value="section">{{ formatTitleCase(section) }}</option>
                             </b-select>
                         </b-field>
@@ -80,7 +85,7 @@
                                     <b-dropdown-item 
                                         aria-role="listitem"
                                         v-for="ass in getSectionAssays(props.row.section)"
-                                        :key="ass"
+                                        :key="`assay_${ass}`"
                                         :value="ass">
                                         {{ formatTitleCase(ass) }}
                                     </b-dropdown-item>
@@ -96,9 +101,12 @@
                             :type="props.row.vAmt.type" 
                             :message="props.row.vAmt.message">
                             <b-input 
+                                :ref="(`amount-${type}-${props.row.sequence}`)" 
                                 v-cleave="masks.price" 
                                 custom-class="text-right" 
                                 :value="props.row.amount" 
+                                @keyup.up.native="previousAmount(props.row.sequence)"
+                                @keyup.down.native="nextAmount(props.row.sequence)"
                                 @input="updateItem(props.row.sequence, 'amount', $event)" />
                         </b-field>
                         <p v-else>{{ formatMoney(props.row.amount) }}</p>
@@ -442,6 +450,38 @@ export default {
         },
         getItems() {
             return this.analytes
+        },
+        nextDescription(sequence) {
+            if (sequence < this.iNo) {
+                sequence++;
+            }
+            if (this.$refs[`description-${this.type}-${sequence}`]) {
+                this.$refs[`description-${this.type}-${sequence}`].focus()
+            }
+        },
+        previousDescription(sequence) {
+            if (sequence > 1) {
+                sequence--;
+            }
+            if (this.$refs[`description-${this.type}-${sequence}`]) {
+                this.$refs[`description-${this.type}-${sequence}`].focus()
+            }
+        },
+        nextAmount(sequence) {
+            if (sequence < this.iNo) {
+                sequence++;
+            }
+            if (this.$refs[`amount-${this.type}-${sequence}`]) {
+                this.$refs[`amount-${this.type}-${sequence}`].focus()
+            }
+        },
+        previousAmount(sequence) {
+            if (sequence > 1) {
+                sequence--;
+            }
+            if (this.$refs[`amount-${this.type}-${sequence}`]) {
+                this.$refs[`amount-${this.type}-${sequence}`].focus()
+            }
         }
     }
 }

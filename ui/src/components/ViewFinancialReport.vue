@@ -15,7 +15,7 @@
             </div>
         </div>
         <template v-if="showDetails">
-            <div v-for="(statementType, ix) in statementTypes" :key="ix" class="columns">
+            <div v-for="(statementType, ix) in statementTypes" :key="(`stmt_type_${ix}`)" class="columns">
                 <div class="column is-full pb-6">
                     <div class="has-border-bottom-thin">
                         <h4 class="title is-4">Statement of {{ formatTitleCase(statementType) }}</h4>
@@ -35,7 +35,7 @@
                                         <tr>
                                             <th colspan="2">Assets</th>
                                         </tr>
-                                        <tr v-for="i in assets" :key="i.no">
+                                        <tr v-for="i in assets" :key="(`${statementType}_${i.sequence}`)">
                                             <td><p class="ml-4">{{ i.description }}</p></td>
                                             <td class="text-right">{{ formatMoney(i.amount) }}</td>
                                         </tr>
@@ -48,7 +48,7 @@
                                         <tr>
                                             <th colspan="2">Liabilities</th>
                                         </tr>
-                                        <tr v-for="i in liabilities" :key="i.no">
+                                        <tr v-for="i in liabilities" :key="(`${statementType}_${i.sequence}`)">
                                             <td><p class="ml-4">{{ i.description }}</p></td>
                                             <td class="text-right">{{ formatMoney(i.amount) }}</td>
                                         </tr>
@@ -61,7 +61,7 @@
                                         <tr>
                                             <th colspan="2">Equity</th>
                                         </tr>
-                                        <tr v-for="i in equities" :key="i.no">
+                                        <tr v-for="i in equities" :key="(`${statementType}_${i.sequence}`)">
                                             <td><p class="ml-4">{{ i.description }}</p></td>
                                             <td class="text-right">{{ formatMoney(i.amount) }}</td>
                                         </tr>
@@ -82,7 +82,7 @@
                                         <tr>
                                             <th colspan="2">Revenues</th>
                                         </tr>
-                                        <tr v-for="i in revenues" :key="i.no">
+                                        <tr v-for="i in revenues" :key="(`${statementType}_${i.sequence}`)">
                                             <td><p class="ml-4">{{ i.description }}</p></td>
                                             <td class="text-right">{{ formatMoney(i.amount) }}</td>
                                         </tr>
@@ -95,7 +95,7 @@
                                         <tr>
                                             <th colspan="2">Gains</th>
                                         </tr>
-                                        <tr v-for="i in gains" :key="i.no">
+                                        <tr v-for="i in gains" :key="(`${statementType}_${i.sequence}`)">
                                             <td><p class="ml-4">{{ i.description }}</p></td>
                                             <td class="text-right">{{ formatMoney(i.amount) }}</td>
                                         </tr>                                    
@@ -108,7 +108,7 @@
                                         <tr>
                                             <th colspan="2">Expenses</th>
                                         </tr>
-                                        <tr v-for="i in expenses" :key="i.no">
+                                        <tr v-for="i in expenses" :key="(`${statementType}_${i.sequence}`)">
                                             <td><p class="ml-4">{{ i.description }}</p></td>
                                             <td class="text-right">{{ formatMoney(i.amount) }}</td>
                                         </tr>
@@ -121,7 +121,7 @@
                                         <tr>
                                             <th colspan="2">Losses</th>
                                         </tr>
-                                        <tr v-for="i in losses" :key="i.no">
+                                        <tr v-for="i in losses" :key="(`${statementType}_${i.sequence}`)">
                                             <td><p class="ml-4">{{ i.description }}</p></td>
                                             <td class="text-right">{{ formatMoney(i.amount) }}</td>
                                         </tr>
@@ -143,7 +143,7 @@
                                         <tr>
                                             <th colspan="2">Profit Attributable to:</th>
                                         </tr>
-                                        <tr v-for="i in profitShares" :key="i.no">
+                                        <tr v-for="i in profitShares" :key="(`${statementType}_${i.sequence}`)">
                                             <td><p class="ml-4">{{ i.description }}</p></td>
                                             <td class="text-right">{{ formatMoney(i.amount) }}</td>
                                         </tr>
@@ -156,7 +156,7 @@
                                             <th>Shares Outstanding</th>
                                             <th class="text-right">$</th>
                                         </tr>
-                                        <tr v-for="i in sharesOutstanding" :key="i.no">
+                                        <tr v-for="i in sharesOutstanding" :key="(`${statementType}_${i.sequence}`)">
                                             <td><p class="ml-4">{{ i.description }}</p></td>
                                             <td class="text-right">{{ formatMoney(i.amount) }}</td>
                                         </tr>
@@ -169,7 +169,7 @@
                                             <th>Earnings per Stock Unit</th>
                                             <th class="text-right">$</th>
                                         </tr>
-                                        <tr v-for="i in eps" :key="i.no">
+                                        <tr v-for="i in eps" :key="(`${statementType}_${i.sequence}`)">
                                             <td><p class="ml-4">{{ i.description }}</p></td>
                                             <td class="text-right">{{ formatMoney(i.amount) }}</td>
                                         </tr>
@@ -180,7 +180,7 @@
                                         <tr>
                                             <th colspan="2">Operating Activities</th>
                                         </tr>
-                                        <tr v-for="i in operations" :key="i.no">
+                                        <tr v-for="i in operations" :key="(`${statementType}_${i.sequence}`)">
                                             <td><p class="ml-6">{{ i.description }}</p></td>
                                             <td class="text-right">{{ formatMoney(i.amount) }}</td>
                                         </tr>
@@ -193,7 +193,7 @@
                                         <tr>
                                             <th colspan="2">Financing Activities</th>
                                         </tr>
-                                        <tr v-for="i in finances" :key="i.no">
+                                        <tr v-for="i in finances" :key="(`${statementType}_${i.sequence}`)">
                                             <td><p class="ml-6">{{ i.description }}</p></td>
                                             <td class="text-right">{{ formatMoney(i.amount) }}</td>
                                         </tr>
@@ -206,7 +206,7 @@
                                         <tr>
                                             <th colspan="2">Investing Activities</th>
                                         </tr>
-                                        <tr v-for="i in investments" :key="i.no">
+                                        <tr v-for="i in investments" :key="(`${statementType}_${i.sequence}`)">
                                             <td><p class="ml-6">{{ i.description }}</p></td>
                                             <td class="text-right">{{ formatMoney(i.amount) }}</td>
                                         </tr>
@@ -475,13 +475,13 @@ export default {
             return ( this.totalRevenues + this.totalGains ) - ( this.totalExpenses + this.totalLosses )
         },
         profitMargin() {
-            return ( ( this.netProfit / this.totalRevenues ) * 100).toFixed(2)
+            return this.totalRevenues > 0 ? ( ( this.netProfit / this.totalRevenues ) * 100).toFixed(2) : 0
         },
         ebitda() {
             return ( this.netProfit + this.tax + this.totalInterestExpenses + this.totalDepreciationAndAmortization )
         },
         taxRate() {
-            return ( this.tax / ( this.netProfit + this.tax ) ) * 100  
+            return this.netProfit > 0 ? ( this.tax / ( this.netProfit + this.tax ) ) * 100  : 0
         },
         basicEps() {
             let bEps = 0
