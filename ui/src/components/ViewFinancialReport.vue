@@ -475,13 +475,13 @@ export default {
             return ( this.totalRevenues + this.totalGains ) - ( this.totalExpenses + this.totalLosses )
         },
         profitMargin() {
-            return ( ( this.netProfit / this.totalRevenues ) * 100).toFixed(2)
+            return this.totalRevenues > 0 ? ( ( this.netProfit / this.totalRevenues ) * 100).toFixed(2) : 0
         },
         ebitda() {
             return ( this.netProfit + this.tax + this.totalInterestExpenses + this.totalDepreciationAndAmortization )
         },
         taxRate() {
-            return ( this.tax / ( this.netProfit + this.tax ) ) * 100  
+            return this.netProfit > 0 ? ( this.tax / ( this.netProfit + this.tax ) ) * 100  : 0
         },
         basicEps() {
             let bEps = 0

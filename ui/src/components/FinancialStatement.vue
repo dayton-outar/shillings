@@ -59,7 +59,7 @@
                             <b-select placeholder="Choose Section" :value="props.row.section" @input="updateItem(props.row.sequence, 'section', $event)" expanded>
                                 <option 
                                     v-for="section in statementSections" 
-                                    :key="section"
+                                    :key="`section_${section}`"
                                     :value="section">{{ formatTitleCase(section) }}</option>
                             </b-select>
                         </b-field>
@@ -85,7 +85,7 @@
                                     <b-dropdown-item 
                                         aria-role="listitem"
                                         v-for="ass in getSectionAssays(props.row.section)"
-                                        :key="ass"
+                                        :key="`assay_${ass}`"
                                         :value="ass">
                                         {{ formatTitleCase(ass) }}
                                     </b-dropdown-item>
