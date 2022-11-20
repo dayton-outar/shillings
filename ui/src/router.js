@@ -7,6 +7,7 @@ import Stocks from './components/Stocks.vue'
 import Markets from './components/Markets.vue'
 import MarketIndices from './components/MarketIndices.vue'
 import Industries from './components/Industries.vue'
+import InterestRates from './components/InterestRates.vue'
 import ViewCompany from './components/ViewCompany.vue'
 
 Vue.use(Router)
@@ -54,6 +55,12 @@ export default new Router({
             name: 'industries',
             component: Industries,
             meta: { title: 'Industries' }
+        },
+        {
+            path: '/rates',
+            name: 'rates',
+            component: InterestRates,
+            meta: { title: 'Interest Rates' }
         },
         {
             path: '/about-company',

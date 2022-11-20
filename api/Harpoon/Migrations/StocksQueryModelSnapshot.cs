@@ -306,10 +306,18 @@ namespace Harpoon.Migrations
                         .HasMaxLength(2)
                         .HasColumnType("nvarchar(2)");
 
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("date");
+
+                    b.Property<long>("LogNo")
+                        .HasColumnType("bigint");
+
                     b.Property<decimal>("Rate")
                         .HasColumnType("decimal(5,4)");
 
                     b.HasKey("No");
+
+                    b.HasIndex("LogNo");
 
                     b.ToTable("InterestRates");
                 });
@@ -691,6 +699,17 @@ namespace Harpoon.Migrations
                         .IsRequired();
 
                     b.Navigation("Company");
+
+                    b.Navigation("Log");
+                });
+
+            modelBuilder.Entity("O8Query.Models.InterestRate", b =>
+                {
+                    b.HasOne("O8Query.Models.Log", "Log")
+                        .WithMany()
+                        .HasForeignKey("LogNo")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Log");
                 });

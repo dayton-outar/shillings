@@ -80,6 +80,13 @@ namespace Harpoon
         [UseSorting]
         public IQueryable<FinancialReport> GetFinancialReports([ScopedService]StocksQuery sq) => sq.FinancialReports;
 
+        [UseDbContext(typeof(StocksQuery))]
+        [UsePaging]
+        [UseProjection]
+        [UseFiltering]
+        [UseSorting]
+        public IQueryable<InterestRate> GetInterestRates([ScopedService]StocksQuery sq) => sq.InterestRates;
+
         public Dependencies GetDependencies() {
             var dependencies = new Dependencies();
 
