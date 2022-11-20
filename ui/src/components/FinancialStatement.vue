@@ -29,8 +29,9 @@
                         :sort-icon="sortIcon" 
                         :sort-icon-size="sortIconSize"
                         :default-sort-direction="defaultSortDirection" 
-                        :striped="true" 
-                        :hoverable="true">
+                        striped
+                        hoverable
+                        @select="rowSelected">
 
                     <b-table-column field="no" label="#" sortable v-slot="props" width="5%">
                         {{ props.row.sequence }}
@@ -42,7 +43,7 @@
                             :type="props.row.vDesc.type" 
                             :message="props.row.vDesc.message">
                             <b-input 
-                                :ref="(`description-${type}-${props.row.sequence}`)" 
+                                :ref="(`description-${stmtType}-${props.row.sequence}`)" 
                                 :value="props.row.description" 
                                 @keyup.up.native="previousDescription(props.row.sequence)"
                                 @keyup.down.native="nextDescription(props.row.sequence)" 
@@ -74,7 +75,12 @@
                                 :always="(props.row.vAnl.message !== '')"
                                 :active="(props.row.vAnl.message !== '')"
                                 :type="props.row.vAnl.type">
-                                <b-dropdown :expanded="true" v-model="props.row.analyte" multiple aria-role="list" @change="updateItem(props.row.sequence, 'analyte', $event)">
+                                <b-dropdown 
+                                    v-model="props.row.analyte"
+                                    multiple aria-role="list"
+                                    expanded
+                                    :triggers="['click', 'focus']"
+                                    @change="updateItem(props.row.sequence, 'analyte', $event)">
 
                                     <template #trigger>
                                         <b-button type="is-light" expanded icon-right="menu-down">
@@ -101,7 +107,7 @@
                             :type="props.row.vAmt.type" 
                             :message="props.row.vAmt.message">
                             <b-input 
-                                :ref="(`amount-${type}-${props.row.sequence}`)" 
+                                :ref="(`amount-${stmtType}-${props.row.sequence}`)" 
                                 v-cleave="masks.price" 
                                 custom-class="text-right" 
                                 :value="props.row.amount" 
@@ -199,6 +205,7 @@ export default {
             sortIcon: 'arrow-up',
             sortIconSize: 'is-small',
             selectedAnalytes: [],
+            // selected: null,
             isItemsValid: true,
             analytes: JSON.parse(JSON.stringify(this.data.filter(s => s.type === this.type.replace(' ', '_').toUpperCase()))).map(a => { a.state = 'Closed'; return a; }),
             masks: {
@@ -241,6 +248,9 @@ export default {
             }
 
             return title
+        },
+        stmtType() {
+            return this.type.replace(' ', '_').toLowerCase()
         },
         totalRevenues() {
             return this.get('REVENUES').reduce((t, v) => t + (this.parseMoney(v.amount)), 0)
@@ -484,6 +494,13 @@ export default {
                 this.$refs[`amount-${this.type}-${sequence}`].focus()
             }
         }
+        // rowSelected(row) {
+        //     if (this.$refs[`description-${this.stmtType}-${row.sequence}`]) {
+        //         this.$refs[`description-${this.stmtType}-${row.sequence}`].focus()
+        //     } else if (this.$refs[`amount-${this.stmtType}-${row.sequence}`]) {
+        //         this.$refs[`amount-${this.stmtType}-${row.sequence}`].focus()
+        //     }
+        // }
     }
 }
 
