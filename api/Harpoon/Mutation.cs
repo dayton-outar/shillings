@@ -86,6 +86,74 @@ namespace Harpoon
 
         #endregion
 
+        #region Manage Interest Rates
+
+        [UseDbContext(typeof(StocksQuery))]
+        public InterestRate CreateInterestRate([ScopedService]StocksQuery sq, InterestRate rate)
+        {
+            string sql = "EXEC [dbo].[CreateInterestRate] @rate, @no OUTPUT";
+            
+            string rateXml = SerializationHelper.Serialize<InterestRate>(rate);
+            List<SqlParameter> parms = new List<SqlParameter>
+            { 
+                // Update parameters
+                new SqlParameter { ParameterName = "@rate", Value = rateXml },
+                new SqlParameter { ParameterName = "@no", SqlDbType = SqlDbType.BigInt, Direction = ParameterDirection.Output }
+            };
+
+            sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
+
+            var param = parms.Where(p => p.ParameterName == "@no").First();
+            if (param.Value != null)
+            {
+                rate.No =  Convert.ToInt64(param.Value);
+            }
+
+            return rate;
+        }
+
+        [UseDbContext(typeof(StocksQuery))]
+        public InterestRate UpdateInterestRate([ScopedService]StocksQuery sq, InterestRate rate)
+        {
+            string sql = "EXEC [dbo].[UpdateInterestRate] @rate";
+            
+            string rateXml = SerializationHelper.Serialize<InterestRate>(rate);
+            List<SqlParameter> parms = new List<SqlParameter>
+            { 
+                // Update parameters
+                new SqlParameter { ParameterName = "@rate", Value = rateXml }  
+            };
+
+            sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
+
+            return rate;
+        }
+
+        [UseDbContext(typeof(StocksQuery))]
+        public bool DeleteInterestRate([ScopedService]StocksQuery sq, long no)
+        {
+            bool result = false;
+
+            try
+            {
+                string sql = "EXEC [dbo].[DeleteInterestRate] @no";
+                
+                List<SqlParameter> parms = new List<SqlParameter>
+                { 
+                    // Update parameters
+                    new SqlParameter { ParameterName = "@no", Value = no }  
+                };
+
+                sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
+
+                result = true;
+            } catch {}
+
+            return result;
+        }
+
+        #endregion
+
         #region Manage Dividends
 
         [UseDbContext(typeof(StocksQuery))]

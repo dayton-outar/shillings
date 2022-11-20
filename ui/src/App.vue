@@ -17,6 +17,7 @@
               <b-navbar-item tag="router-link" :to="{ path: '/markets' }">Markets</b-navbar-item>
               <b-navbar-item tag="router-link" :to="{ path: '/indices' }">Indices</b-navbar-item>
               <b-navbar-item tag="router-link" :to="{ path: '/industries' }">Industries</b-navbar-item>
+              <b-navbar-item tag="router-link" :to="{ path: '/rates' }">Interest Rates</b-navbar-item>
             </b-navbar-dropdown>            
           </template>
         </b-navbar>        
