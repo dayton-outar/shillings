@@ -19,6 +19,9 @@ namespace O8Query.Models
 
         public enum Sectional
         {
+            /// <summary>
+            /// General item
+            /// </summary>
             None = 0,
             // Income
             // Credit: https://www.investopedia.com/terms/i/incomestatement.asp#toc-understanding-the-income-statement
@@ -118,8 +121,10 @@ namespace O8Query.Models
             /// Wages and salary paid out to employees
             /// </summary>
             Wages = 67108864, // 2^26
+
+            ExchangeRateChanges = 134217728,
             
-            // 3 left ... 27 -> 29
+            // 2 left ... 28 -> 29
             
             /// <summary>
             /// More details that can be used for next period.

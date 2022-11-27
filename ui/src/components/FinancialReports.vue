@@ -134,7 +134,7 @@ export default {
     mixins: [tableMixin, utilMixin],
     data() {
         return {
-            sort: ['statementDate', 'asc'],
+            sort: ['statementDate', 'desc'],
             fetchTitle: 'Financial Reports',
             deleteTitle: 'Delete Financial Report',
             detailComponent: 'financial-report',

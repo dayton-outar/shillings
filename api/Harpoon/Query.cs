@@ -251,7 +251,7 @@ namespace Harpoon
                 new SectionalAnalytes {
                     Sectional = StatementAnalyte.Sectional.None,
                     Assay = new List<StatementAnalyte.Assay> {
-                            StatementAnalyte.Assay.Note
+                            StatementAnalyte.Assay.ExchangeRateChanges
                         }
                 }
             };

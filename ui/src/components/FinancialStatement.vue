@@ -282,6 +282,9 @@ export default {
         totalInvestments() {
             return this.get('INVESTING_ACTIVITIES').reduce((t, v) => t + (this.parseMoney(v.amount)), 0)
         },
+        totalFxChanges() {
+            return this.get('NONE').filter(e => e.analyte.indexOf('EXCHANGE_RATE_CHANGES') > -1).reduce((p, c) => c.amount + p, 0)
+        },
         netValue() {
             let netVal = 0
 
@@ -293,7 +296,7 @@ export default {
                     netVal = (this.totalEquity + this.totalLiabilities)
                     break
                 case 'Cash Flow':
-                    netVal = (this.totalOperations + this.totalFinances + this.totalInvestments)
+                    netVal = (this.totalOperations + this.totalFinances + this.totalInvestments + this.totalFxChanges)
                     break
             }
             

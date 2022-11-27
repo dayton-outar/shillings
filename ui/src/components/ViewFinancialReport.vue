@@ -215,6 +215,12 @@
                                             <th class="text-right">{{ formatMoney( totalInvestingActivities ) }}</th>
                                         </tr>
                                     </template>
+                                    <template v-if="fxChanges.length">
+                                        <tr>
+                                            <td>Effects of Exchange Rates on Cash</td>
+                                            <th class="text-right">{{ formatMoney( totalFxChanges ) }}</th>
+                                        </tr>
+                                    </template>
                                     <template v-if="operations.length || finances.length || investments.length">
                                         <tr>
                                             <th>Net Cash Change</th>
@@ -250,7 +256,7 @@
                     <table class="table">
                         <tbody>
                             <tr>
-                                <th>Revenue</th>
+                                <th style="width: 50%">Revenue</th>
                                 <td>{{ formatMoney( totalRevenues ) }}</td>
                             </tr>
                             <tr>
@@ -303,7 +309,7 @@
                     <table class="table">
                         <tbody>
                             <tr>
-                                <th>Cash and equivalents</th>
+                                <th style="width: 50%">Cash and equivalents</th>
                                 <td>{{ formatMoney( totalCashAssets ) }}</td>
                             </tr>
                             <tr>
@@ -348,7 +354,7 @@
                     <table class="table">
                         <tbody>
                             <tr>
-                                <th>Cash from operations</th>
+                                <th style="width: 50%">Cash from operations</th>
                                 <td>{{ formatMoney( totalOperatingActivities ) }}</td>
                             </tr>
                             <tr>
@@ -514,6 +520,9 @@ export default {
         investments() {
             return this.get('CASH_FLOW', 'INVESTING_ACTIVITIES')
         },
+        fxChanges() {
+            return this.get('CASH_FLOW', 'NONE')
+        },
         totalOperatingActivities() {
             return this.operations.reduce((p, c) => c.amount + p, 0)
         },
@@ -526,8 +535,11 @@ export default {
         totalCapEx() {
             return this.investments.filter(e => e.analyte.indexOf('CAPITAL') > -1).reduce((p, c) => c.amount + p, 0)
         },
+        totalFxChanges() {
+            return this.fxChanges.filter(e => e.analyte.indexOf('EXCHANGE_RATE_CHANGES') > -1).reduce((p, c) => c.amount + p, 0)
+        },
         netCash() {
-            return ( this.totalOperatingActivities + this.totalFinancingActivities + this.totalInvestingActivities )
+            return ( this.totalOperatingActivities + this.totalFinancingActivities + this.totalInvestingActivities + this.totalFxChanges )
         },
         freeCashFlow() {
             // Credit: https://corporatefinanceinstitute.com/resources/financial-modeling/free-cash-flow-to-firm-fcff/
