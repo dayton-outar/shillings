@@ -17,36 +17,40 @@ function readStocks() {
     const tradeDate = params.date;
 
     let ordinary = document.querySelectorAll('table')[1];
-    ordinary.querySelectorAll('tbody > tr').forEach((item) => {
-        let cols = item.querySelectorAll('td');
-        let closingPrice = parseFloat(cols[3].textContent.trim().replace(/,/g, ''));
-        let priceChange = cols[4] ? parseFloat(cols[4].textContent.trim().replace(/,/g, '')) : 0
-        results.push({
-            code: cols[1].querySelector('a').href.split('instrument=')[1].split('-')[0],
-            security: cols[1].querySelector('a').title.trim(),
-            volume: parseInt(cols[7].textContent.trim().replace(/,/g, ''), 10),
-            closing: closingPrice,
-            change: priceChange,
-            percentage: (priceChange / (closingPrice - priceChange)).toFixed(2),
-            date: tradeDate
+    if (ordinary) {
+        ordinary.querySelectorAll('tbody > tr').forEach((item) => {
+            let cols = item.querySelectorAll('td');
+            let closingPrice = parseFloat(cols[3].textContent.trim().replace(/,/g, ''));
+            let priceChange = cols[4] ? parseFloat(cols[4].textContent.trim().replace(/,/g, '')) : 0
+            results.push({
+                code: cols[1].querySelector('a').href.split('instrument=')[1].split('-')[0],
+                security: cols[1].querySelector('a').title.trim(),
+                volume: parseInt(cols[7].textContent.trim().replace(/,/g, ''), 10),
+                closing: closingPrice,
+                change: priceChange,
+                percentage: (priceChange / (closingPrice - priceChange)).toFixed(2),
+                date: tradeDate
+            });
         });
-    });
+    }
 
-    let preferred = document.querySelectorAll('table')[2];
-    preferred.querySelectorAll('tbody > tr').forEach((item) => {
-        let cols = item.querySelectorAll('td');
-        let closingPrice = parseFloat(cols[3].textContent.trim().replace(/,/g, ''));
-        let priceChange = cols[4] ? parseFloat(cols[4].textContent.trim().replace(/,/g, '')) : 0;
-        results.push({
-            code: cols[1].textContent.trim().replace(/\n/g, ''),
-            security: cols[1].querySelector('a').title.trim(),
-            volume: parseInt(cols[7].textContent.trim().replace(/,/g, ''), 10),
-            closing: closingPrice,
-            change: priceChange,
-            percentage: (priceChange / (closingPrice - priceChange)).toFixed(2),
-            date: tradeDate
+    let preferred = document.querySelectorAll('table')[3];
+    if (preferred) {
+        preferred.querySelectorAll('tbody > tr').forEach((item) => {
+            let cols = item.querySelectorAll('td');
+            let closingPrice = parseFloat(cols[3].textContent.trim().replace(/,/g, ''));
+            let priceChange = cols[4] ? parseFloat(cols[4].textContent.trim().replace(/,/g, '')) : 0;
+            results.push({
+                code: cols[1].querySelector('a').href.split('instrument=')[1].split('-')[0],
+                security: cols[1].querySelector('a').title.trim(),
+                volume: parseInt(cols[7].textContent.trim().replace(/,/g, ''), 10),
+                closing: closingPrice,
+                change: priceChange,
+                percentage: (priceChange / (closingPrice - priceChange)).toFixed(2),
+                date: tradeDate
+            });
         });
-    });
+    }
 
     return results;
 }
