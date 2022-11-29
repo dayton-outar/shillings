@@ -399,8 +399,9 @@ export default {
             this.analytes[ix][p] = v
 
             if (p === 'section') {
-                if (v == 'SHARES_OUTSTANDING') {
-                    this.analytes[ix].analyte = [ this.getSectionAssays(v)[0] ]
+                let sectionAssays = this.getSectionAssays(v);
+                if (sectionAssays.length == 1) {
+                    this.analytes[ix].analyte = [ sectionAssays[0] ]
                 } else {
                     this.analytes[ix].analyte = []
                 }
