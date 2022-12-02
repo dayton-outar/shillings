@@ -283,7 +283,7 @@ export default {
             return this.get('INVESTING_ACTIVITIES').reduce((t, v) => t + (this.parseMoney(v.amount)), 0)
         },
         totalFxChanges() {
-            return this.get('NONE').filter(e => e.analyte.indexOf('EXCHANGE_RATE_CHANGES') > -1).reduce((p, c) => c.amount + p, 0)
+            return this.get('NONE').filter(e => e.analyte.indexOf('EXCHANGE_RATE_CHANGES') > -1).reduce((t, v) => t + this.parseMoney(v.amount), 0)
         },
         netValue() {
             let netVal = 0
