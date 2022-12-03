@@ -230,26 +230,29 @@ export default {
             this.validation.statementDate.message = ''
         }
 
-        for (const s of this.$refs.stmt) {
-            s.validateItems()
-        }
+        const outcome = valid
+        if (this.$refs.stmt) {
+            for (const s of this.$refs.stmt) {
+                s.validateItems()
+            }
 
-        let iiv = this.$refs.stmt.reduce((p, c) => { return { isItemsValid: p.isItemsValid && c.isItemsValid } }, { isItemsValid: true }).isItemsValid
+            let iiv = this.$refs.stmt.reduce((p, c) => { return { isItemsValid: p.isItemsValid && c.isItemsValid } }, { isItemsValid: true }).isItemsValid
 
-        const outcome = valid && iiv
+            outcome = outcome && iiv
 
-        if (outcome) {
-            this.formData.analytes = this.$refs.stmt.flatMap(s => s.getItems()).map(i => {
-                delete i.vDesc
-                delete i.vSec
-                delete i.vAnl
-                delete i.vAmt
-                delete i.state
+            if (outcome) {
+                this.formData.analytes = this.$refs.stmt.flatMap(s => s.getItems()).map(i => {
+                    delete i.vDesc
+                    delete i.vSec
+                    delete i.vAnl
+                    delete i.vAmt
+                    delete i.state
 
-                i.amount = this.parseMoney(i.amount)
+                    i.amount = this.parseMoney(i.amount)
 
-                return i
-            })
+                    return i
+                })
+            }
         }
 
         this.isValid = outcome
