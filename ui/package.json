@@ -27,6 +27,7 @@
     "pretty-bytes": "^6.0.0",
     "uuid": "^3.4.0",
     "vue": "^2.6.11",
+    "vue-currency-input": "^3.0.2",
     "vue-router": "^3.5.1",
     "vuex": "^3.6.2"
   },

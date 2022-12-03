@@ -236,10 +236,11 @@ namespace Harpoon
 
                     company.Files.Add(new FileContent{
                         Type = FileContent.FileType.Logo,
-                        FileName = file.Name,
-                        Created = DateTime.Now,
+                        FileName = file.Name,                        
                         Content = bytes,
-                        ContentSize = bytes.Length
+                        ContentSize = bytes.Length,
+                        ContentType = GetContentType(file.Name),
+                        Created = DateTime.Now
                     });
                 }
             }
