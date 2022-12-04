@@ -230,7 +230,7 @@ export default {
             this.validation.statementDate.message = ''
         }
 
-        const outcome = valid
+        let outcome = valid
         if (this.$refs.stmt) {
             for (const s of this.$refs.stmt) {
                 s.validateItems()
