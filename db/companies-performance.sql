@@ -24,9 +24,9 @@
 -- --GROUP BY c.[Code], c.[Name], f.[StatementDate]
 -- ORDER BY f.[StatementDate]
 
-DBCC DROPCLEANBUFFERS;
-DBCC FREEPROCCACHE;
-GO
+-- DBCC DROPCLEANBUFFERS;
+-- DBCC FREEPROCCACHE;
+-- GO
 
 --- INCOME TOTALS ... INCLUDES REVENUE
 SELECT    pvtEarnings.[No]

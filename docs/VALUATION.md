@@ -45,13 +45,19 @@ The main ingredients needed to arrive at the value of a company includes,
    3 main statements are required: Income-Expense, Balance Sheet and Cashflow Statement
 
 2. Stock Prices
+
+   Used to calculate the risk and return. Helps to deduce _Cost of capital_
+
 3. Stock Indices
+
+   Used to arrive at a &beta; for the risk value of stock or portfolio being evaluated
+
 4. Interest Rates of Jurisdiction
 
-    These rates are described as the risk-free rate
+    These rates are described as the risk-free rate; important to calculate _Cost of capital_
 
 
-$$\huge{Enterprise Value in Year T = V_T^L = { FCF_{T + 1} \over r_{wacc} - g } }$$
+$$\huge{Enterprise\text{ }Value\text{ }in\text{ }Year\text{ }T = V_T^L = { FCF_{T + 1} \over r_{wacc} - g } }$$
 
 
 ## Further Reading
