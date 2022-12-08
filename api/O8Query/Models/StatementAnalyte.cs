@@ -124,7 +124,12 @@ namespace O8Query.Models
 
             ExchangeRateChanges = 134217728,
             
-            // 2 left ... 28 -> 29
+            /// <summary>
+            /// Shows adjustments for operating activities to accommodate indirect method
+            /// </summary>
+            Adjustments = 268435456,
+
+            // 1 left ... 29
             
             /// <summary>
             /// More details that can be used for next period.
