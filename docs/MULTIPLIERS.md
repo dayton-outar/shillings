@@ -48,17 +48,48 @@ The _efficiency_ ratios seeks to take a peek into the operating activities of th
 
 Let's take a look at these ratios.
 
- - Accounts Receivable Turnover
+ - Receivables Turnover
 
    This ratio is a measure of efficiently the company converts its _Accounts Receivables_ into cash. This is calculated as,
 
-   $$\large \text{Accounts Receivable Turnover} = { \text{Revenues} \over \frac{1}{2} (\text{ Current Period Accounts Receivable} + \text{Previous Period Accounts Receivables} ) }$$
+   $$\large \text{Receivables Turnover} = { \text{Revenues} \over \text{Average Accounts Receivables} }$$
 
-   A value ...
+   The _Average Accounts Receivables_ for 2 periods could be calculated as,
+
+   $$\large \text{Average Accounts Receivables} = \frac{1}{2} (\text{ Current Period Accounts Receivable} + \text{Previous Period Accounts Receivables} )$$
+
+   This ratio becomes more easily understood when it is used to divide 365 days to give the _Average Collection Period_. The _Average Collection Period_ states the number of days that the company takes to collect monies owed it from offering goods and services to its customers. The shorter the period is, the better it will be for the companies cashflow. However, there is no set scale on which the number of days would raise concern but it can be used to compare to other companies as a measure of efficiency. According to Investopedia, it is more preferrable to have an _Average Collection Period_ of 25 days.[^3]
 
  - Inventory Turnover
+
+   $$\large \text{Inventory Turnover} = { \text{} \over \text{Average Cost of Inventory} }$$
+
+   The _Average Cost of Inventory_ for 2 periods could be calculated as,
+
+   $$\large \text{Average Cost of Inventory} = \frac{1}{2} (\text{ Current Cost of Inventory} + \text{Previous Cost of Inventory})$$
+
+   When we use this ratio to divide 365 days to give the _Days Sales of Inventory_. The number of days determined from _Days Sales of Inventory_ is a measure of how quickly the company can convert its stock of inventory into sales.[^4] A low number of days determined by the _Day Sales of Inventory_ indicates high efficiency. There is no set scale but it can be used to compare against other companies or to compare the performance of the same company against other periods.
+
+## Profitability
+
+_Profitability_ ratios are the most attractive and sought after ratios (or multipliers). Given there are no shenanigans, it's usually a good baseline for them to seriously consider investing in a particular stock.
+
+Here are the ratios use to determine the _Profitability_ of a company.
+
+ - Profit margin
+ - Return on Equity
+ - Return on Assets
+ - Return on Capital Employed
+
+## Market Prospects
+
+
 
 
 [^1]: Page 300, Chapter _, The Financial Times - Guide to Investing.
 
 [^2]: Page 298, Chapter _, The Financial Times - Guide to Investing. I preferred 0.5 rather than 0.3 based on Financial Ratio Cheatsheet from [MyAccountCourse.com](https://www.myaccountcourse.com)
+
+[^3]: [Average Collection Period Formula, How It Works, Example](https://www.investopedia.com/terms/a/average_collection_period.asp)
+
+[^4]: [Days Sales of Inventory (DSI): Definition, Formula, Importance](https://www.investopedia.com/terms/d/days-sales-inventory-dsi.asp)
