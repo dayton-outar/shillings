@@ -83,6 +83,10 @@ Here are the ratios use to determine the _Profitability_ of a company.
 
 ## Market Prospects
 
+ - Earnings Per Share
+ - Price-to-Earnings Ratio
+ - Dividend Payout Ratio
+ - Dividend Yield
 
 
 
