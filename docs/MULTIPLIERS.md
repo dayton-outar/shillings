@@ -26,7 +26,7 @@ To get an idea of the _liquidity_ of a company the following ratios can be used,
    
    The current ratio, which is also an indicator or _working capital_, is calculated as,
 
-   $$\large
+   $$
    \text{Current Ratio} = { \text{Total of Current Assets} \over \text{Total of Current Liabilities} }
    $$
 
@@ -42,7 +42,7 @@ To get an idea of the _liquidity_ of a company the following ratios can be used,
 
    The more useful _Debt-to-Equity_ ratio narrows the debt value to long-term debts owed to a financial institution such as a bank rather than all liabilities. This is considered to be a _Modified D/E Ratio_ also recognized as _Capital Gearing_, which would be calculated as,
 
-   $$\large
+   $$
    \text{Debt-to-Equity} = {\text{Long-term Debt} \over \text{Shareholder's Equity}}
    $$
 
