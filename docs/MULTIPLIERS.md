@@ -62,7 +62,7 @@ Let's take a look at these ratios.
 
  - Inventory Turnover
 
-   $$\large \text{Inventory Turnover} = { \text{} \over \text{Average Cost of Inventory} }$$
+   $$\large \text{Inventory Turnover} = { \text{Cost of Sales} \over \text{Average Cost of Inventory} }$$
 
    The _Average Cost of Inventory_ for 2 periods could be calculated as,
 
