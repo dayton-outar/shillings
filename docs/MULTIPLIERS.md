@@ -72,28 +72,79 @@ Let's take a look at these ratios.
 
 ## Profitability
 
-_Profitability_ ratios are the most attractive and sought after ratios (or multipliers). Given there are no shenanigans, it's usually a good baseline for them to seriously consider investing in a particular stock.
+_Profitability_ ratios are the most attractive and sought after ratios (or multipliers). Given there are no shenanigans, it's usually a good baseline to seriously consider investing in a particular stock. The main theme of _Profitability_ ratios is on the income earned from the investment made.
 
 Here are the ratios use to determine the _Profitability_ of a company.
 
  - Profit margin
+
+   This measures the ability of a company to make money from operating activities. While there are several variations of calculating profit margin. The margin that is considered here is _Net Income Margin_, which is the margin after all expenses have been paid. It is calculated as,
+
+   $$\large \text{Net Income Margin} = { \text{Net Income} \over \text{Revenues} }$$
+
+   There is no scale for the values returned from this ratio. It is best used to compare companies against companies and periods of a company against another period of same company. It is almost impossible for any company to achieve a margin of 1 (or 100%) but once the company can maintain margins above 0, it is a positive result.
+
  - Return on Equity
+
+   This measures the ability of a company to generate profits from its shareholders investments. This indicates to investors how efficiently a company can make money from their investments. It is calculated as,
+
+   $$\large \text{Return on Equity} = { \text{Net Income} \over \text{Shareholder's Equity} }$$
+
+   > Relatively high or low ROE ratios will vary significantly from one industry group or sector to another. Still, a common shortcut for investors is to consider a return on equity near the long-term average of the S&P 500 (14%) as an acceptable ratio and anything less than 10% as poor.[^5]
+
  - Return on Assets
+
+   This metric is similar to _Return on Equity_ but now takes debt into consideration.
+
+   $$\large \text{Return on Assets} = { \text{Net Income} \over \text{Total Assets} }$$
+
+   According to Investopedia, a value of 0.5 is considered to be good and 2.0 is considered to be excellent.[^6]
+
+   > A positive ROA ratio usually indicates an upward profit trend as well. ROA is most useful for comparing companies in the same industry as different industries use assets differently. For instance, construction companies use large, expensive equipment while software companies use computers and servers.
+
  - Return on Capital Employed
+
+   This metric determines the degree of profit made from the basis of the _capital_ used in its operating activities. The _Capital Employed_ is considered to be _Total Assets_ less _Current Liabilities_. With that in mind we can calculate this metric as,
+
+   $$\large \text{Return on Capital Employed} = { \text{Net Income} + \text{Interest Expense} + \text{Tax} \over \text{Capital Employed} }$$
+
+   > The general rule about ROCE is the higher the ratio, the better. That's because it is a measure of profitability. A ROCE of at least 20% is usually a good sign that the company is in a good financial position. But keep in mind that you shouldn't compare the ROCE ratios of companies in different industries. As with any financial metric, it's best to do an apples-to-apples comparison.[^8]
 
 ## Market Prospects
 
- - Earnings Per Share
- - Price-to-Earnings Ratio
- - Dividend Payout Ratio
+ - Earnings Per Stock Unit (EPS)
+   
+   This divides the profit made by the 
+ - Price-to-Earnings (P/E)
+ - Price-to-Book (P/B)
+
+   This ...
+   
+   $$\large \text{P/B} = { \text{Market Price of Stock Unit} \over \text{Book Value per Stock Unit}  } $$
+
+   The _Book Value per Stock Unit_ is calculated as,
+
+   $$\large \text{Book Value per Stock Unit} = { \text{Shareholder's Equity} \over \text{Number of Common Stock Units Outstanding} } $$
+
+   _Weighted Average of Common Stock Units Outstanding_ in dollars could be used instead of _Number of Common Stock Units Outstanding_.
+
+ - Dividend Payout
  - Dividend Yield
 
 
 
-[^1]: Page 300, Chapter _, The Financial Times - Guide to Investing.
+[^1]: Page 300, The Financial Times - Guide to Investing.
 
-[^2]: Page 298, Chapter _, The Financial Times - Guide to Investing. I preferred 0.5 rather than 0.3 based on Financial Ratio Cheatsheet from [MyAccountCourse.com](https://www.myaccountcourse.com)
+[^2]: Page 298, The Financial Times - Guide to Investing. I preferred 0.5 rather than 0.3 based on Financial Ratio Cheatsheet from [MyAccountCourse.com](https://www.myaccountcourse.com)
 
 [^3]: [Average Collection Period Formula, How It Works, Example](https://www.investopedia.com/terms/a/average_collection_period.asp)
 
 [^4]: [Days Sales of Inventory (DSI): Definition, Formula, Importance](https://www.investopedia.com/terms/d/days-sales-inventory-dsi.asp)
+
+[^5]: [Return on Equity (ROE) Calculation and What It Means](https://www.investopedia.com/terms/r/returnonequity.asp)
+
+[^6]: [Return on Assets (ROA): Formula and 'Good' ROA Defined](https://www.investopedia.com/terms/r/returnonassets.asp)
+
+[^7]: Financial Ratio Cheatsheet from [MyAccountCourse.com](https://www.myaccountcourse.com)
+
+[^8]: [Return on Capital Employed (ROCE): Ratio, Interpretation, and Example](https://www.investopedia.com/terms/r/roce.asp)
