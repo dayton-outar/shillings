@@ -112,24 +112,59 @@ Here are the ratios use to determine the _Profitability_ of a company.
 
 ## Market Prospects
 
+The common items used in calculating metrics used by investors in the stock market is the _Market Price per Stock Unit_ and the _Earnings per Stock Unit_. All these metrics are used to provide the investor with some idea of the kind of advantage that can be had from buying common stock units of a particular company.
+
+The main metrics are as follows,
+
  - Earnings Per Stock Unit (EPS)
    
-   This divides the profit made by the 
+   This divides the profit made by the number of stock units issued. Most financial reports will have a note indicating the _Weighted Average Number of Stock Units Outstanding_ in the currency of the country in which the company is incorporated. So, the more popular calculation is done as follows,
+
+   $$\large \text{Earnings Per Stock Unit} = { \text{Net Income Attributable to Oweners} \over \text{Weighted Average Number of Stock Units Outstanding} }$$
+
+   For some companies, the _Net Income_ has to be split between _Shareholders_ and those of _Non-controlling Interests_. When calculating _EPS_, the split that belongs to _Shareholders_ must be used to arrive at an accurate value. There's no set scale for the value of _EPS_.
+
  - Price-to-Earnings (P/E)
+
+   This metric is a good measure of the hype around a particular stock. A _P/E_ value usually tells how much investors are willing to pay just to participate in the profits of a company. This could include the prospects of getting dividends depending on whether or not the company has a good _Dividend Payout_ policy.
+
+   $$\large \text{P/E} = { \text{Market Price per Stock Unit} \over \text{Earnings per Stock Unit} }$$
+
+   Author of _The Intelligent Investor_, Benjamin Graham, had his ideas about the values of _P/E_ ratios. Graham believes that _stocks should have a P/E ratio of no greater than 15_. So, from his philosophy a stock is considered to be grossly overpriced if it's _P/E_ exceeds a value of 15.
+
  - Price-to-Book (P/B)
 
-   This ...
+   Another measure of investors response to a particular stock is the _P/B_. This is just taking another angle from the _P/E_ by associating investors' impression of the value of the company. _P/B_ is calculated as,
    
-   $$\large \text{P/B} = { \text{Market Price of Stock Unit} \over \text{Book Value per Stock Unit}  } $$
+   $$\large \text{P/B} = { \text{Market Price per Stock Unit} \over \text{Book Value per Stock Unit}  }$$
 
    The _Book Value per Stock Unit_ is calculated as,
 
-   $$\large \text{Book Value per Stock Unit} = { \text{Shareholder's Equity} \over \text{Number of Common Stock Units Outstanding} } $$
+   $$\large \text{Book Value per Stock Unit} = { \text{Shareholder's Equity} \over \text{Number of Common Stock Units Outstanding} }$$
 
-   _Weighted Average of Common Stock Units Outstanding_ in dollars could be used instead of _Number of Common Stock Units Outstanding_.
+   _Weighted Average of Common Stock Units Outstanding_ could be used instead of _Number of Common Stock Units Outstanding_ in the same way it was used for _EPS_. According to Benjamin Graham, stocks where the _P/E_ multiplied by the _P/B_ exceeds 22 are considered overpriced. So, let's say for a particular case that a stock's _P/E_ is 15, it's _P/B_ should not exceed 1.5.
 
  - Dividend Payout
+
+   This measures the total amount of dividends paid out to shareholders relative to the net income of the company. It is calculated as,
+
+   $$\large \text{Dividend Payout} = { \text{Dividends per Stock Unit} \over \text{Earnings per Stock Unit} }$$
+
+   > The payout ratio is 0% for companies that do not pay dividends and is 100% for companies that pay out their entire net income as dividends.[^9]
+
+   Companies payout dividends depending on their circumstances and their relationship with their stakeholders (both shareholders, customers and employees).
+
  - Dividend Yield
+   
+   Shows how much a company pays out in divideds relative to the market price of its common stock unit. It is calculated as,
+
+   $$\large \text{Dividend Yield} = { \text{Dividends per Stock Unit} \over \text{Market Price per Stock Unit} }$$
+
+   > Those companies expected to grow their profits at a fast rate will have low dividend yields because investors tend to bid up the share price. These **lower-yield** shares are often labelled ‘growth shares’. **Higher-yield** (or simply yield) stocks are expected to have low profits growth and are labelled ‘value shares’.[^10]
+
+   Companies with stocks that rarely pay out dividends are assumed to be focusing and growth, hence the label ‘growth shares’. Otherwise, a low dividend yield could indicate that the stock is overpriced.
+   
+   > There is no right level of dividend yield and changes in share price can make this measure volatile.[^11]
 
 
 
@@ -148,3 +183,9 @@ Here are the ratios use to determine the _Profitability_ of a company.
 [^7]: Financial Ratio Cheatsheet from [MyAccountCourse.com](https://www.myaccountcourse.com)
 
 [^8]: [Return on Capital Employed (ROCE): Ratio, Interpretation, and Example](https://www.investopedia.com/terms/r/roce.asp)
+
+[^9]: [Dividend Payout Ratio Definition, Formula, and Calculation](https://www.investopedia.com/terms/d/dividendpayoutratio.asp)
+
+[^10]: Page 286, The Financial Times - Guide to Investing.
+
+[^11]: Page 216, The Finance Book by Stuart Warner and Si Hussain.
