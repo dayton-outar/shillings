@@ -329,6 +329,10 @@
                                 <td>{{ formatMoney( totalEquity ) }}</td>
                             </tr>
                             <tr>
+                                <th>Book value per stock</th>
+                                <td>{{ this.bvs == 0 ? '&ndash;' : formatMoney( bvs ) }}</td>
+                            </tr>
+                            <tr>
                                 <th>Quick Ratio</th>
                                 <td>{{ formatPercentage( quickRatio ) }}</td>
                             </tr>
@@ -557,6 +561,9 @@ export default {
         },
         debtToEquity() {
             return ( this.totalLongtermDebt / this.totalShareholdersEquity ) * 100
+        },
+        bvs() {
+            return this.weighedAverageSharesOutstanding == 0 ? 0 : ( this.totalShareholdersEquity / this.weighedAverageSharesOutstanding )
         },
         operations() {
             return this.get('CASH_FLOW', 'OPERATING_ACTIVITIES')
