@@ -88,7 +88,7 @@ Here are the ratios use to determine the _Profitability_ of a company.
 
    This measures the ability of a company to generate profits from its shareholders investments. This indicates to investors how efficiently a company can make money from their investments. It is calculated as,
 
-   $$\large \text{Return on Equity} = { \text{Net Income} \over \text{Shareholder's Equity} }$$
+   $$\large \text{Return on Equity} = { \text{Shareholders' Net Income} \over \text{Shareholders' Equity} }$$
 
    > Relatively high or low ROE ratios will vary significantly from one industry group or sector to another. Still, a common shortcut for investors is to consider a return on equity near the long-term average of the S&P 500 (14%) as an acceptable ratio and anything less than 10% as poor.[^5]
 

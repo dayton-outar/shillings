@@ -313,6 +313,10 @@
                                 <td>{{ formatMoney( totalCashAssets ) }}</td>
                             </tr>
                             <tr>
+                                <th>Inventories</th>
+                                <td>{{ this.totalInventories == 0 ? '&ndash;' : formatMoney( this.totalInventories ) }}</td>
+                            </tr>
+                            <tr>
                                 <th>Total assets</th>
                                 <td>{{ formatMoney( totalAssets ) }}</td>
                             </tr>
@@ -325,12 +329,28 @@
                                 <td>{{ formatMoney( totalEquity ) }}</td>
                             </tr>
                             <tr>
+                                <th>Quick Ratio</th>
+                                <td>{{ formatPercentage( quickRatio ) }}</td>
+                            </tr>
+                            <tr>
+                                <th>Current ratio</th>
+                                <td>{{ formatPercentage( currentRatio ) }}</td>
+                            </tr>
+                            <tr>
+                                <th>Debt to equity</th>
+                                <td>{{ formatPercentage( debtToEquity ) }}</td>
+                            </tr>
+                            <tr>
                                 <th>Return on assets</th>
                                 <td>{{ formatPercentage( roa ) }}</td>
                             </tr>
                             <tr>
                                 <th>Return on capital</th>
                                 <td>{{ formatPercentage( roc ) }}</td>
+                            </tr>
+                            <tr>
+                                <th>Return on equity</th>
+                                <td>{{ formatPercentage( roe ) }}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -408,11 +428,17 @@ export default {
         equities() {
             return this.get('FINANCIAL_POSITION', 'EQUITY')
         },
+        inventories() {
+            return this.assets.filter(l => l.analyte.indexOf('INVENTORIES') > -1)
+        },
         totalAssets() {
             return this.assets.reduce((p, c) => c.amount + p, 0)
         },
         totalCashAssets() {
             return this.assets.filter(l => l.analyte.indexOf('CASH') > -1).reduce((p, c) => c.amount + p, 0)
+        },
+        totalInventories() {
+            return this.inventories.reduce((p, c) => c.amount + p, 0)
         },
         totalCurrentAssets() {
             return this.assets.filter(l => l.analyte.indexOf('CURRENT') > -1).reduce((p, c) => c.amount + p, 0)
@@ -420,11 +446,20 @@ export default {
         totalLiabilities() {
             return this.liabilities.reduce((p, c) => c.amount + p, 0)
         },
+        totalLongtermDebt() {
+            return this.liabilities.filter(l => l.analyte.indexOf('LOAN') > -1).reduce((p, c) => c.amount + p, 0)
+        },
         totalCurrentLiabilities() {
             return this.liabilities.filter(l => l.analyte.indexOf('CURRENT') > -1).reduce((p, c) => c.amount + p, 0)
         },
         totalEquity() {
             return this.equities.reduce((p, c) => c.amount + p, 0)
+        },
+        totalNonControllingEquity() {
+            return this.equities.filter(l => l.analyte.indexOf('NON_CONTROLLING') > -1).reduce((p, c) => c.amount + p, 0)
+        },
+        totalShareholdersEquity() {
+            return this.totalEquity - this.totalNonControllingEquity
         },
         totalEquityAndLiabilities() {
             return (this.totalLiabilities + this.totalEquity)
@@ -441,7 +476,7 @@ export default {
         losses() {
             return this.get('INCOME', 'LOSSES')
         },
-        totalShareholderProfit() {
+        totalShareholdersProfit() {
             return this.profitShares.filter(l => l.analyte.indexOf('SHAREHOLDERS') > -1).reduce((p, c) => c.amount + p, 0)
         },
         profitShares() {
@@ -494,7 +529,7 @@ export default {
             const basic = this.eps.filter(e => e.analyte.indexOf('BASIC') > -1)
             bEps = basic ? 
                     basic.reduce((p, c) => c.amount + p, 0) : 
-                    ( (this.totalShareholderProfit && this.weighedAverageSharesOutstanding) ? this.totalShareholderProfit / this.weighedAverageSharesOutstanding : 0)
+                    ( (this.totalShareholdersProfit && this.weighedAverageSharesOutstanding) ? this.totalShareholdersProfit / this.weighedAverageSharesOutstanding : 0)
             return bEps
         },
         dilutedEps() {
@@ -503,13 +538,25 @@ export default {
         eps() { // Earnings per Stock
             return this.get('INCOME', 'EARNINGS_PER_STOCK')
         },
+        quickRatio() {
+            return ( ( this.totalCashAssets - this.totalInventories ) / this.totalCurrentLiabilities ) * 100
+        },
+        currentRatio() {
+            return ( this.totalCashAssets / this.totalCurrentLiabilities ) * 100
+        },
         roa() {
             return ( this.netProfit / this.totalAssets ) * 100
+        },
+        roe() {
+            return ( this.totalShareholdersProfit / this.totalShareholdersEquity ) * 100
         },
         roc() { // Credit: https://corporatefinanceinstitute.com/resources/accounting/capital-employed/
             const capitalEmployed = (this.totalAssets - this.totalCurrentLiabilities)
             const ebit = ( this.netProfit + this.tax + this.totalInterestExpenses )
             return ( ebit / capitalEmployed ) * 100
+        },
+        debtToEquity() {
+            return ( this.totalLongtermDebt / this.totalShareholdersEquity ) * 100
         },
         operations() {
             return this.get('CASH_FLOW', 'OPERATING_ACTIVITIES')

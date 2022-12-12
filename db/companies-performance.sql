@@ -61,7 +61,7 @@ FROM
             , a.[Amount]
     FROM [stocks].[dbo].[StatementAnalytes] a
         INNER JOIN [stocks].[dbo].[FinancialReports] f ON f.[No] = a.[ReportNo]
-    WHERE a.[Type] = 1 AND ( a.[Section] = 6 AND ( ( a.[Analyte] & 1024 ) > 0 ))) e ON i.[No] = e.[No]) earnings
+    WHERE a.[Type] = 1 AND ( a.[Section] = 6 AND ( ( a.[Analyte] & 1024 ) = 1024 ))) e ON i.[No] = e.[No]) earnings
 PIVOT 
 (
     SUM(earnings.[Amount]) FOR earnings.[Section] IN ( [1], [2], [3], [4] )
