@@ -88,7 +88,7 @@ Here are the ratios use to determine the _Profitability_ of a company.
 
    This measures the ability of a company to generate profits from its shareholders investments. This indicates to investors how efficiently a company can make money from their investments. It is calculated as,
 
-   $$\large \text{Return on Equity} = { \text{Shareholders' Net Income} \over \text{Shareholders' Equity} }$$
+   $$\large \text{Return on Equity} = { \text{Net Income Attributable to Owners} \over \text{Shareholders' Equity} }$$
 
    > Relatively high or low ROE ratios will vary significantly from one industry group or sector to another. Still, a common shortcut for investors is to consider a return on equity near the long-term average of the S&P 500 (14%) as an acceptable ratio and anything less than 10% as poor.[^5]
 
@@ -120,7 +120,7 @@ The main metrics are as follows,
    
    This divides the profit made by the number of stock units issued. Most financial reports will have a note indicating the _Weighted Average Number of Stock Units Outstanding_ in the currency of the country in which the company is incorporated. So, the more popular calculation is done as follows,
 
-   $$\large \text{Earnings Per Stock Unit} = { \text{Net Income Attributable to Oweners} \over \text{Weighted Average Number of Stock Units Outstanding} }$$
+   $$\large \text{Earnings Per Stock Unit} = { \text{Net Income Attributable to Owners} \over \text{Weighted Average Number of Stock Units Outstanding} }$$
 
    For some companies, the _Net Income_ has to be split between _Shareholders_ and those of _Non-controlling Interests_. When calculating _EPS_, the split that belongs to _Shareholders_ must be used to arrive at an accurate value. There's no set scale for the value of _EPS_.
 
