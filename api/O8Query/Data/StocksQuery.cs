@@ -41,10 +41,14 @@ namespace O8Query.Data
 
         public DbSet<InterestRate> InterestRates { get; set; }
 
+        [NotMapped]
+        public DbSet<ReportedEarnings> Earnings { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //new StocksQuerySeeder(modelBuilder).Seed();
             modelBuilder.Entity<TotalStockTrades>().HasKey(t => new { t.Code, t.ClosingDate });
+            modelBuilder.Entity<ReportedEarnings>().HasKey(e => new { e.Code, e.StatementDate });
         }
     }
 }

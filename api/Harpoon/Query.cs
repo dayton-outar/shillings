@@ -87,6 +87,11 @@ namespace Harpoon
         [UseSorting]
         public IQueryable<InterestRate> GetInterestRates([ScopedService]StocksQuery sq) => sq.InterestRates;
 
+        [UseDbContext(typeof(StocksQuery))]
+        [UseProjection]
+        [UseSorting]
+        public IQueryable<ReportedEarnings> GetReportedEarnings(FinancialReport.Periodical period, System.DateTime begin, System.DateTime end, [ScopedService]StocksQuery sq) => sq.Earnings.FromSqlInterpolated($"SELECT * FROM [dbo].[Earnings]({period}, {begin.Date}, {end.Date})").AsQueryable();
+
         public Dependencies GetDependencies() {
             var dependencies = new Dependencies();
 

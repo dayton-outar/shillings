@@ -34,7 +34,7 @@ namespace Harpoon.Migrations
 
                     b.HasIndex("CompaniesCode");
 
-                    b.ToTable("AnnouncementCompany");
+                    b.ToTable("AnnouncementCompany", (string)null);
                 });
 
             modelBuilder.Entity("CompanyFileContent", b =>
@@ -49,7 +49,7 @@ namespace Harpoon.Migrations
 
                     b.HasIndex("FilesNo");
 
-                    b.ToTable("CompanyFileContent");
+                    b.ToTable("CompanyFileContent", (string)null);
                 });
 
             modelBuilder.Entity("CompanyIndustry", b =>
@@ -64,7 +64,7 @@ namespace Harpoon.Migrations
 
                     b.HasIndex("IndustriesNo");
 
-                    b.ToTable("CompanyIndustry");
+                    b.ToTable("CompanyIndustry", (string)null);
                 });
 
             modelBuilder.Entity("IndustryMarketIndex", b =>
@@ -79,7 +79,7 @@ namespace Harpoon.Migrations
 
                     b.HasIndex("MarketIndicesNo");
 
-                    b.ToTable("IndustryMarketIndex");
+                    b.ToTable("IndustryMarketIndex", (string)null);
                 });
 
             modelBuilder.Entity("MarketIndexStock", b =>
@@ -94,7 +94,7 @@ namespace Harpoon.Migrations
 
                     b.HasIndex("StocksCode");
 
-                    b.ToTable("MarketIndexStock");
+                    b.ToTable("MarketIndexStock", (string)null);
                 });
 
             modelBuilder.Entity("O8Query.Models.Announcement", b =>
@@ -118,7 +118,7 @@ namespace Harpoon.Migrations
 
                     b.HasIndex("LogNo");
 
-                    b.ToTable("Announcements");
+                    b.ToTable("Announcements", (string)null);
                 });
 
             modelBuilder.Entity("O8Query.Models.Company", b =>
@@ -161,7 +161,7 @@ namespace Harpoon.Migrations
 
                     b.HasKey("Code");
 
-                    b.ToTable("Companies");
+                    b.ToTable("Companies", (string)null);
                 });
 
             modelBuilder.Entity("O8Query.Models.Dividend", b =>
@@ -199,7 +199,7 @@ namespace Harpoon.Migrations
 
                     b.HasIndex("StockCode");
 
-                    b.ToTable("Dividends");
+                    b.ToTable("Dividends", (string)null);
                 });
 
             modelBuilder.Entity("O8Query.Models.FileContent", b =>
@@ -235,7 +235,7 @@ namespace Harpoon.Migrations
 
                     b.HasKey("No");
 
-                    b.ToTable("Files");
+                    b.ToTable("Files", (string)null);
                 });
 
             modelBuilder.Entity("O8Query.Models.FinancialReport", b =>
@@ -268,7 +268,7 @@ namespace Harpoon.Migrations
 
                     b.HasIndex("LogNo");
 
-                    b.ToTable("FinancialReports");
+                    b.ToTable("FinancialReports", (string)null);
                 });
 
             modelBuilder.Entity("O8Query.Models.Industry", b =>
@@ -290,7 +290,7 @@ namespace Harpoon.Migrations
 
                     b.HasKey("No");
 
-                    b.ToTable("Industries");
+                    b.ToTable("Industries", (string)null);
                 });
 
             modelBuilder.Entity("O8Query.Models.InterestRate", b =>
@@ -319,7 +319,7 @@ namespace Harpoon.Migrations
 
                     b.HasIndex("LogNo");
 
-                    b.ToTable("InterestRates");
+                    b.ToTable("InterestRates", (string)null);
                 });
 
             modelBuilder.Entity("O8Query.Models.Log", b =>
@@ -345,7 +345,7 @@ namespace Harpoon.Migrations
 
                     b.HasKey("No");
 
-                    b.ToTable("Logs");
+                    b.ToTable("Logs", (string)null);
                 });
 
             modelBuilder.Entity("O8Query.Models.Market", b =>
@@ -366,7 +366,7 @@ namespace Harpoon.Migrations
 
                     b.HasIndex("CompanyCode");
 
-                    b.ToTable("Markets");
+                    b.ToTable("Markets", (string)null);
                 });
 
             modelBuilder.Entity("O8Query.Models.MarketIndex", b =>
@@ -389,7 +389,7 @@ namespace Harpoon.Migrations
 
                     b.HasIndex("MarketCode");
 
-                    b.ToTable("MarketIndices");
+                    b.ToTable("MarketIndices", (string)null);
                 });
 
             modelBuilder.Entity("O8Query.Models.StatementAnalyte", b =>
@@ -427,7 +427,7 @@ namespace Harpoon.Migrations
 
                     b.HasIndex("ReportNo");
 
-                    b.ToTable("StatementAnalytes");
+                    b.ToTable("StatementAnalytes", (string)null);
                 });
 
             modelBuilder.Entity("O8Query.Models.Stock", b =>
@@ -466,7 +466,7 @@ namespace Harpoon.Migrations
 
                     b.HasIndex("CompanyCode");
 
-                    b.ToTable("Stocks");
+                    b.ToTable("Stocks", (string)null);
                 });
 
             modelBuilder.Entity("O8Query.Models.StockIndex", b =>
@@ -495,7 +495,7 @@ namespace Harpoon.Migrations
 
                     b.HasIndex("MarketIndexNo");
 
-                    b.ToTable("StockIndices");
+                    b.ToTable("StockIndices", (string)null);
                 });
 
             modelBuilder.Entity("O8Query.Models.StockTrading", b =>
@@ -536,7 +536,7 @@ namespace Harpoon.Migrations
 
                     b.HasIndex("SecurityCode");
 
-                    b.ToTable("StockTradings");
+                    b.ToTable("StockTradings", (string)null);
                 });
 
             modelBuilder.Entity("O8Query.Models.TotalStockTrades", b =>
@@ -578,7 +578,7 @@ namespace Harpoon.Migrations
 
                     b.HasIndex("StockCode");
 
-                    b.ToTable("TotalTrades");
+                    b.ToTable("TotalTrades", (string)null);
                 });
 
             modelBuilder.Entity("AnnouncementCompany", b =>
