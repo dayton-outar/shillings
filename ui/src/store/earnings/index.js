@@ -5,7 +5,7 @@ import mutations from '../mutations'
 export default {
   namespaced: true,
   state: {
-    earnings: null
+    earnings: []
   },
   mutations,
   actions: {
