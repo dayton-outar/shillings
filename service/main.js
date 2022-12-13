@@ -427,6 +427,31 @@ function getIndices() {
 
         beginning = moment(args[1]);
         ending = moment(args[2]);
+    } else {
+        if (args[0]) {
+            // Validate date pattern as YYYY-MM-DD
+            if (!/^\d{4}[-](0?[1-9]|1[012])[-](0?[1-9]|[12][0-9]|3[01])$/.test(args[0])) {
+                console.log('This date format is not acceptable');
+                process.exit(1);
+            }
+
+            if (!moment(args[0]).isValid()) {
+                console.log(`Begin date, ${args[1]}, is invalid`);
+                process.exit(1);
+            }
+        }
+
+        if (args[1]) {
+            if (args[1] !== '++') {
+                if (!moment(args[1]).isValid()) {
+                    console.log(`End date, ${args[2]}, is invalid`);
+                    process.exit(1);
+                }
+            }
+        }
+
+        beginning = moment(args[0]);
+        ending = moment(args[1]);
     }
 
     if (beginning.isSameOrBefore(ending)) {
