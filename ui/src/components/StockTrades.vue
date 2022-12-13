@@ -58,7 +58,7 @@
                   striped
                   hoverable>
                   <b-table-column field="Date" label="Date" v-slot="details">
-                    {{ formatDate(details.row.Date) }}
+                    {{ formatDate(details.row.Date, 'ddd. MMM, D, YYYY') }}
                   </b-table-column>
                   <b-table-column field="ClosingPrices" label="ClosingPrice" numeric v-slot="details">
                     {{ formatMoney(details.row.ClosingPrice) }}
@@ -90,7 +90,9 @@
 
 <script>
 import StocksLine from './StocksLine.vue'
-import moment from 'moment'
+
+// import tableMixin from '../utils/tableMixin'
+import utilMixin from '../utils/utilMixin'
 
 export default {
   name: 'StockTrades',
@@ -98,6 +100,7 @@ export default {
   components: {
     'stocks-line':StocksLine,
   },
+  mixins: [utilMixin],
   data() {
     return {
       defaultSortDirection: 'desc',
@@ -106,20 +109,6 @@ export default {
     }
   },
   methods: {
-    formatVolume(volume) {
-      const nfi = new Intl.NumberFormat('en-US')
-      return nfi.format(volume)
-    },
-    formatMoney(amount) {
-      const cfi = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' })
-      return cfi.format(amount)
-    },
-    formatPercentage(percentage) {
-      return `${ percentage }%`
-    },
-    formatDate(date) {
-      return  `${ moment(date).format('ddd. MMM, D, YYYY') }`
-    },
     formatTotalMarketCapitalization() {
       const totalMarketCapitalization = this.tradings.reduce((t, v) => {
         return t + v.marketCapitalization

@@ -3,104 +3,112 @@
         <stocks-filter @filterChanged="filterChanged" />        
         <portfolio-form />
         <portfolio :formattedDateRange="formattedDateRange" />
-        <section v-if="totalTrades">
-          <div class="mb-5">
-            <b-collapse class="card" animation="slide" aria-id="volumeShares" :open="false">
-              <template #trigger="props">
-                <div
-                  class="card-header"
-                  role="button"
-                  aria-controls="volumeShares">
-                  <p class="card-header-title">Volume Shares: Pie Chart</p>
-                  <a class="card-header-icon">
-                    <b-icon pack="fas" :icon="props.open ? 'caret-down' : 'caret-up'" />
-                  </a>
-                </div>
-              </template>
-              <div class="card-content">
-                <div class="content">
-                  <b-message title="Volume Shares" type="is-info" aria-close-label="Close message">
-                    <p>The volume shares visualizes the percentage division of the volume of stocks traded for the period.</p>
-                    <p>All the divisions are divided by the total volume of shares traded within the period.</p>
-                  </b-message>
-                  <volumes-pie :volumes="volumeShares" />
-                </div>
+        <b-tabs v-model="activeTab">
+          <b-tab-item label="Stock Trades">
+            <section v-if="totalTrades">
+              <div class="mb-5">
+                <b-collapse class="card" animation="slide" aria-id="volumeShares" :open="false">
+                  <template #trigger="props">
+                    <div
+                      class="card-header"
+                      role="button"
+                      aria-controls="volumeShares">
+                      <p class="card-header-title">Volume Shares: Pie Chart</p>
+                      <a class="card-header-icon">
+                        <b-icon pack="fas" :icon="props.open ? 'caret-down' : 'caret-up'" />
+                      </a>
+                    </div>
+                  </template>
+                  <div class="card-content">
+                    <div class="content">
+                      <b-message title="Volume Shares" type="is-info" aria-close-label="Close message">
+                        <p>The volume shares visualizes the percentage division of the volume of stocks traded for the period.</p>
+                        <p>All the divisions are divided by the total volume of shares traded within the period.</p>
+                      </b-message>
+                      <volumes-pie :volumes="volumeShares" />
+                    </div>
+                  </div>
+                </b-collapse>
+                <b-collapse class="card" animation="slide" aria-id="priceBar" :open="false">
+                  <template #trigger="props">
+                    <div
+                      class="card-header"
+                      role="button"
+                      aria-controls="priceBar">
+                      <p class="card-header-title">Price Changes: Bar Chart</p>
+                      <a class="card-header-icon">
+                        <b-icon pack="fas" :icon="props.open ? 'caret-down' : 'caret-up'" />
+                      </a>
+                    </div>
+                  </template>
+                  <div class="card-content">
+                    <div class="content">
+                      <b-message title="Price Changes" type="is-info" aria-close-label="Close message">
+                        <p>This bar chart visualizes percentage change of the closing price from the opening price for the period.</p>
+                        <p>Price changes can exceed over 100%, in which case will account for a dramatic gain or loss of your stock.</p>
+                      </b-message>
+                      <price-bar :changes="pricePercentages" />
+                    </div>
+                  </div>
+                </b-collapse>
+                <b-collapse class="card" animation="slide" aria-id="tradeCost" :open="false">
+                  <template #trigger="props">
+                    <div
+                      class="card-header"
+                      role="button"
+                      aria-controls="tradeCost">
+                      <p class="card-header-title">Trade Cost: Bubble Chart</p>
+                      <a class="card-header-icon">
+                        <b-icon pack="fas" :icon="props.open ? 'caret-down' : 'caret-up'" />
+                      </a>
+                    </div>
+                  </template>
+                  <div class="card-content">
+                    <div class="content">
+                      <b-message title="Trade Cost" type="is-info" aria-close-label="Close message">
+                        <p>This bubble chart visualizes an approximation of the total money spent trading certain stocks for the period.</p>
+                        <p>The biggest bubble means that most of the money was spent on that stock for the period.</p>
+                      </b-message>
+                      <trade-cost :costs="tradeCosts" />
+                    </div>
+                  </div>
+                </b-collapse>
+                <b-collapse class="card" animation="slide" aria-id="stocksClosingPrices" :open="false">
+                  <template #trigger="props">
+                    <div
+                      class="card-header"
+                      role="button"
+                      aria-controls="stocksClosingPrices">
+                      <p class="card-header-title">Closing Prices: Line Chart</p>
+                      <a class="card-header-icon">
+                        <b-icon pack="fas" :icon="props.open ? 'caret-down' : 'caret-up'" />
+                      </a>
+                    </div>
+                  </template>
+                  <div class="card-content">
+                    <div class="content">
+                      <b-message title="Closing Prices" type="is-info" aria-close-label="Close message">
+                        <p>This line chart visualizes closing price each day for the period.</p>
+                        <p>From a glance, you can see the stock with the highest closing price.</p>
+                      </b-message>
+                      <stocks-line :stocks="totalTrades" :isDetail="false" />
+                    </div>
+                  </div>
+                </b-collapse>
               </div>
-            </b-collapse>
-            <b-collapse class="card" animation="slide" aria-id="priceBar" :open="false">
-              <template #trigger="props">
-                <div
-                  class="card-header"
-                  role="button"
-                  aria-controls="priceBar">
-                  <p class="card-header-title">Price Changes: Bar Chart</p>
-                  <a class="card-header-icon">
-                    <b-icon pack="fas" :icon="props.open ? 'caret-down' : 'caret-up'" />
-                  </a>
-                </div>
-              </template>
-              <div class="card-content">
-                <div class="content">
-                  <b-message title="Price Changes" type="is-info" aria-close-label="Close message">
-                    <p>This bar chart visualizes percentage change of the closing price from the opening price for the period.</p>
-                    <p>Price changes can exceed over 100%, in which case will account for a dramatic gain or loss of your stock.</p>
-                  </b-message>
-                  <price-bar :changes="pricePercentages" />
-                </div>
-              </div>
-            </b-collapse>
-            <b-collapse class="card" animation="slide" aria-id="tradeCost" :open="false">
-              <template #trigger="props">
-                <div
-                  class="card-header"
-                  role="button"
-                  aria-controls="tradeCost">
-                  <p class="card-header-title">Trade Cost: Bubble Chart</p>
-                  <a class="card-header-icon">
-                    <b-icon pack="fas" :icon="props.open ? 'caret-down' : 'caret-up'" />
-                  </a>
-                </div>
-              </template>
-              <div class="card-content">
-                <div class="content">
-                  <b-message title="Trade Cost" type="is-info" aria-close-label="Close message">
-                    <p>This bubble chart visualizes an approximation of the total money spent trading certain stocks for the period.</p>
-                    <p>The biggest bubble means that most of the money was spent on that stock for the period.</p>
-                  </b-message>
-                  <trade-cost :costs="tradeCosts" />
-                </div>
-              </div>
-            </b-collapse>
-            <b-collapse class="card" animation="slide" aria-id="stocksClosingPrices" :open="false">
-              <template #trigger="props">
-                <div
-                  class="card-header"
-                  role="button"
-                  aria-controls="stocksClosingPrices">
-                  <p class="card-header-title">Closing Prices: Line Chart</p>
-                  <a class="card-header-icon">
-                    <b-icon pack="fas" :icon="props.open ? 'caret-down' : 'caret-up'" />
-                  </a>
-                </div>
-              </template>
-              <div class="card-content">
-                <div class="content">
-                  <b-message title="Closing Prices" type="is-info" aria-close-label="Close message">
-                    <p>This line chart visualizes closing price each day for the period.</p>
-                    <p>From a glance, you can see the stock with the highest closing price.</p>
-                  </b-message>
-                  <stocks-line :stocks="totalTrades" :isDetail="false" />
-                </div>
-              </div>
-            </b-collapse>
-          </div>
-          <stock-indices :options="sixOptions" :begin="beginDate" :end="endDate" />
-          <stock-trades :formattedDateRange="formattedDateRange" :tradings="totalTrades" />
-        </section>
+              <stock-indices :options="sixOptions" :begin="beginDate" :end="endDate" />
+              <stock-trades :formattedDateRange="formattedDateRange" :tradings="totalTrades" />
+            </section>
+          </b-tab-item>
+          <b-tab-item label="Company Earnings">
+            <earnings />
+          </b-tab-item>
+        </b-tabs>
+        
     </div>
 </template>
 
-<script>
+<script lang="js">
 import { mapState, mapGetters, mapActions } from 'vuex'
 import moment from 'moment'
 
@@ -113,6 +121,7 @@ import TradeCost from './TradeCost.vue'
 import PortfolioForm from './PortfolioForm.vue'
 import Portfolio from './Portfolio.vue'
 import StockIndices from './StockIndices.vue'
+import Earnings from './Earnings.vue'
 
 export default {
   components: {
@@ -124,7 +133,8 @@ export default {
     'stocks-line':StocksLine,
     'stock-trades':StockTrades,
     'price-bar': PriceBar,
-    'trade-cost': TradeCost
+    'trade-cost': TradeCost,
+    'earnings': Earnings
   },
   data() {
     return {
@@ -135,7 +145,8 @@ export default {
       sixOptions: {
         readOnly: true,
         showTools: true
-      }
+      },
+      activeTab: 1
     }
   },
   computed: {

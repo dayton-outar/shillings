@@ -1,0 +1,93 @@
+<template>
+    <div class="panel is-light">
+        <h4 class="panel-heading">
+            Earnings
+        </h4>
+        <div class="panel-block">
+            <div class="column">
+                <b-table
+                    :data="data"
+                    icon-pack="fas"
+                    :default-sort="sort"
+                    striped
+                    hoverable>
+
+                    <b-table-column label="Company" sortable v-slot="props">
+                        {{ props.row.company.name }}
+                        <!-- <article class="media">
+                            <figure class="media-left">
+                                <div class="image is-48x48">
+                                    <img class="is-rounded"
+                                        :src="(getLogo(props.row.files) && getLogo(props.row.files).length > 0 ? `${fileApiHost}?no=${getLogo(props.row.files)[0].no}` : require(`../assets/no-image.png`))" alt="Company Logo" />
+                                </div>
+                            </figure>
+                            <div class="media-content">
+                                <p v-if="props.row.webSite"><a :href="props.row.webSite"
+                                    target="_blank">{{props.row.name}}</a></p>
+                                <p v-else>{{ props.row.name }}</p>
+                                <p class="has-text-weight-light">{{ props.row.code }}</p>
+                            </div>
+                        </article> -->
+                    </b-table-column>
+
+                    <b-table-column field="statementDate" label="Date" sortable v-slot="props">
+                        {{ formatDate(props.row.statementDate, 'MMM-DD-YYYY') }}
+                    </b-table-column>
+
+                    <b-table-column field="revenues" label="Revenues" sortable v-slot="props">
+                        {{ formatMoney( props.row.revenues ) }}
+                    </b-table-column>
+
+                    <b-table-column field="earnings" label="Earnings" sortable v-slot="props">
+                        {{ formatMoney( props.row.earnings ) }}
+                    </b-table-column>
+
+                    <b-table-column field="margin" label="Margin" sortable v-slot="props">
+                        {{ formatPercentage( props.row.margin * 100 ) }}
+                    </b-table-column>
+
+                    <template #empty>
+                        <div class="has-text-centered">No records</div>
+                    </template>
+                </b-table>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+import { mapState, mapActions } from 'vuex'
+
+import config from '../config'
+//import tableMixin from '../utils/tableMixin'
+import utilMixin from '../utils/utilMixin'
+
+export default {
+    mixins: [utilMixin],
+    data() {
+        return {
+            sort: ['statementDate', 'desc'],
+            fetchTitle: 'Company Earnings',
+            //deleteTitle: 'Delete Interest Rate',
+            //detailComponent: 'interest-rate',
+            fileApiHost: config.fileApiHost,
+            // filterQuery: null
+        }
+    },
+    created() {
+        this.fetch({
+            period: 'ANNUAL',
+            begin: '2009-01-01',
+            end: '2022-12-01',
+            ordering: this.sortingQuery
+        })
+    },
+    computed: {
+        ...mapState({ data: state => state.earnings.earnings })
+    },
+    methods: {
+        ...mapActions('earnings', ['fetch']),
+    }
+}
+
+</script>

@@ -14,6 +14,7 @@ import finances from './finances'
 import dividends from './dividends'
 import rates from './rates'
 import trades from './trades'
+import earnings from './earnings'
 import holdings from './holdings'
 import dependencies from './dependencies'
 
@@ -35,6 +36,7 @@ export const store = new Vuex.Store({
         rates,
         finances,
         trades,
+        earnings,
         holdings
     }
 })
