@@ -1,7 +1,7 @@
 <template>
     <div class="panel is-light">
         <h4 class="panel-heading">
-            Earnings
+            Earnings: {{ formattedDateRange }}
         </h4>
         <div class="panel-block">
             <div class="column">
@@ -13,21 +13,20 @@
                     hoverable>
 
                     <b-table-column label="Company" sortable v-slot="props">
-                        {{ props.row.company.name }}
-                        <!-- <article class="media">
+                        <article class="media">
                             <figure class="media-left">
                                 <div class="image is-48x48">
                                     <img class="is-rounded"
-                                        :src="(getLogo(props.row.files) && getLogo(props.row.files).length > 0 ? `${fileApiHost}?no=${getLogo(props.row.files)[0].no}` : require(`../assets/no-image.png`))" alt="Company Logo" />
+                                        :src="(getLogo(props.row.company.files) && getLogo(props.row.company.files).length > 0 ? `${fileApiHost}?no=${getLogo(props.row.company.files)[0].no}` : require(`../assets/no-image.png`))" alt="Company Logo" />
                                 </div>
                             </figure>
                             <div class="media-content">
-                                <p v-if="props.row.webSite"><a :href="props.row.webSite"
-                                    target="_blank">{{props.row.name}}</a></p>
-                                <p v-else>{{ props.row.name }}</p>
-                                <p class="has-text-weight-light">{{ props.row.code }}</p>
+                                <p v-if="props.row.company.webSite"><a :href="props.row.company.webSite"
+                                    target="_blank">{{props.row.company.name}}</a></p>
+                                <p v-else>{{ props.row.company.name }}</p>
+                                <p class="has-text-weight-light">{{ props.row.company.code }}</p>
                             </div>
-                        </article> -->
+                        </article>
                     </b-table-column>
 
                     <b-table-column field="statementDate" label="Date" sortable v-slot="props">
@@ -63,6 +62,7 @@ import config from '../config'
 import utilMixin from '../utils/utilMixin'
 
 export default {
+    props: ['formattedDateRange'],
     mixins: [utilMixin],
     data() {
         return {
