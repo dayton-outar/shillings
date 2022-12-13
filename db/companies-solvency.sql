@@ -30,7 +30,8 @@ DECLARE @start INT = 0,
 --                                     END DESC) [Index]
 SELECT
          pvtSolvency.[CompanyCode]
-        , pvtSolvency.[StatementDate]        
+        , pvtSolvency.[StatementDate] 
+        , pvtSolvency.[8] [Total Assets]
 --         , ISNULL(pvtSolvency.[8], 0) [Current Assets]
 --         , ISNULL(pvtSolvency.[9], 0) [Current Liabilities]
 --         , ISNULL(pvtSolvency.[8], 0) / ISNULL(pvtSolvency.[9], 0) [Ratio] -- Working Capital and Current Ratio
@@ -40,21 +41,21 @@ FROM
 SELECT    f.[CompanyCode]
             , f.[StatementDate]
             , a.[Section]
-            , CASE WHEN (a.[Analyte] & 65536) = 65536 THEN
-                1
-                ELSE
-                0
-                END [Current]
-            , CASE WHEN (a.[Analyte] & 262144) = 262144 THEN
-                1
-                ELSE
-                0
-                END [Debt] --Loan
-            , CASE WHEN (a.[Analyte] & 512) = 512 THEN
-                1
-                ELSE
-                0
-                END [EquityType] -- Non-controlling
+        --     , CASE WHEN (a.[Analyte] & 65536) = 65536 THEN
+        --         1
+        --         ELSE
+        --         0
+        --         END [Current]
+        --     , CASE WHEN (a.[Analyte] & 262144) = 262144 THEN
+        --         1
+        --         ELSE
+        --         0
+        --         END [Debt] --Loan
+        --     , CASE WHEN (a.[Analyte] & 512) = 512 THEN
+        --         1
+        --         ELSE
+        --         0
+        --         END [EquityType] -- Non-controlling
             , SUM(a.[Amount]) [Amount]            
     FROM [stocks].[dbo].[StatementAnalytes] a
         INNER JOIN [stocks].[dbo].[FinancialReports] f ON f.[No] = a.[ReportNo]
@@ -64,7 +65,7 @@ SELECT    f.[CompanyCode]
     ) solvency -- Elements for Total Assets, Current Ratio and Debt-to-Equity
 PIVOT 
 (
-    SUM(solvency.[Amount]) FOR solvency.[Current] IN ( [0], [1] )
+    SUM(solvency.[Amount]) FOR solvency.[Section] IN ( [8] )
 ) pvtSolvency
 -- --WHERE CompanyCode = 'gk'
 -- ORDER BY CASE WHEN @sortBy = 0
