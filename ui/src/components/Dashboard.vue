@@ -101,7 +101,7 @@
             </section>
           </b-tab-item>
           <b-tab-item label="Company Earnings">
-            <earnings />
+            <earnings :formattedDateRange="formattedDateRange" />
           </b-tab-item>
         </b-tabs>
         
