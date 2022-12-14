@@ -91,7 +91,7 @@
                         <p>This line chart visualizes closing price each day for the period.</p>
                         <p>From a glance, you can see the stock with the highest closing price.</p>
                       </b-message>
-                      <stocks-line :stocks="totalTrades" :isDetail="false" />
+                      <stocks-line :stocks="totalTrades" :options="{ isDetail: false}" />
                     </div>
                   </div>
                 </b-collapse>

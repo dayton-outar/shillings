@@ -43,13 +43,15 @@
             <b-table-column field="marketCapitalization" label="Market Cap" numeric sortable v-slot="props" width="12%">
               {{ formatMoney(props.row.marketCapitalization) }}
             </b-table-column>
-
-            <b-table-column field="volume" label="Volume" numeric sortable v-slot="props">
-              {{ formatNumber(props.row.volume) }}
-            </b-table-column>
             
             <b-table-column field="closingPrice" label="Closing" numeric sortable v-slot="props">
               {{ formatMoney(props.row.closingPrice) }}
+            </b-table-column>
+
+            <b-table-column v-slot="props">
+              <div style="height: 32px">
+                <stocks-line :name="props.row.stock.name" :stocks="props.row.prices" :options="thumbLineOptions" />
+              </div>
             </b-table-column>
             
             <b-table-column field="percentage" label="Percentage" numeric sortable v-slot="props">
@@ -62,7 +64,7 @@
                 <div class="py-3">
                   <span class="tag is-dark is-medium">{{ formatMoney(props.row.lowestPrice) }}</span> <span class="tag is-info is-medium">{{ formatMoney(props.row.highestPrice) }}</span>
                 </div>
-                <stocks-line :name="props.row.stock.name" :stocks="props.row.prices" :isDetail="true" />
+                <stocks-line :name="props.row.stock.name" :stocks="props.row.prices" :options="detailOptions" />
                 <!--
                 <b-table
                   :data="props.row.prices"
@@ -119,6 +121,16 @@ export default {
       sortIcon: 'arrow-up',
       sortIconSize: 'is-small',
       fileApiHost: config.fileApiHost,
+      thumbLineOptions: {
+        isDetail: true,
+        height: 48,
+        width: 100
+      },
+      detailOptions: {
+        isDetail: true,
+        height: null,
+        width: null
+      }
     }
   },
   methods: {
