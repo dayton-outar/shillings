@@ -1,7 +1,6 @@
-DECLARE @start INT = 0,
-        @page INT = 10,
-        @sortBy TINYINT = 2,
-        @sortOrder VARCHAR(4) = 'asc';
+DECLARE @period INT,
+        @begin DATE,
+        @end DATE;
 
 --- SOLVENCY: Elements for Total Assets, Current Ratio and Debt-to-Equity
 SELECT    totalAssets.[No]
@@ -25,6 +24,8 @@ FROM
     FROM [stocks].[dbo].[StatementAnalytes] a
         INNER JOIN [stocks].[dbo].[FinancialReports] f ON f.[No] = a.[ReportNo]
     WHERE a.[Type] = 2
+        AND f.[Period] = @period
+        AND f.[StatementDate] BETWEEN @begin AND @end
     GROUP BY f.[No], f.[CompanyCode], f.[StatementDate], a.[Section]
 ) assets
 PIVOT 
@@ -47,6 +48,8 @@ FROM
         INNER JOIN [stocks].[dbo].[FinancialReports] f ON f.[No] = a.[ReportNo]
     WHERE a.[Type] = 2
         AND (a.[Analyte] & 65536) = 65536
+        AND f.[Period] = @period
+        AND f.[StatementDate] BETWEEN @begin AND @end
     GROUP BY f.[No], f.[CompanyCode], f.[StatementDate], a.[Section]
 ) wc
 PIVOT 
@@ -68,6 +71,8 @@ FROM
     FROM [stocks].[dbo].[StatementAnalytes] a
         INNER JOIN [stocks].[dbo].[FinancialReports] f ON f.[No] = a.[ReportNo]
     WHERE a.[Type] = 2
+        AND f.[Period] = @period
+        AND f.[StatementDate] BETWEEN @begin AND @end
         AND ( ( a.[Section] = 9 AND (a.[Analyte] & 262144) = 262144 ) OR ( a.[Section] = 10 AND (a.[Analyte] & 512) = 0 ) )
     GROUP BY f.[No], f.[CompanyCode], f.[StatementDate], a.[Section]
 ) de

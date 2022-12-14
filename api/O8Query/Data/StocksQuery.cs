@@ -44,11 +44,15 @@ namespace O8Query.Data
         [NotMapped]
         public DbSet<ReportedEarnings> Earnings { get; set; }
 
+        [NotMapped]
+        public DbSet<Solvency> Solvencies { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //new StocksQuerySeeder(modelBuilder).Seed();
             modelBuilder.Entity<TotalStockTrades>().HasKey(t => new { t.Code, t.ClosingDate });
             modelBuilder.Entity<ReportedEarnings>().HasKey(e => new { e.Code, e.StatementDate });
+            modelBuilder.Entity<Solvency>().HasKey(s => new { s.Code, s.StatementDate });
         }
     }
 }

@@ -92,6 +92,11 @@ namespace Harpoon
         [UseSorting]
         public IQueryable<ReportedEarnings> GetReportedEarnings(FinancialReport.Periodical period, System.DateTime begin, System.DateTime end, [ScopedService]StocksQuery sq) => sq.Earnings.FromSqlInterpolated($"SELECT * FROM [dbo].[Earnings]({period}, {begin.Date}, {end.Date})").AsQueryable();
 
+        [UseDbContext(typeof(StocksQuery))]
+        [UseProjection]
+        [UseSorting]
+        public IQueryable<Solvency> GetSolvencies(FinancialReport.Periodical period, System.DateTime begin, System.DateTime end, [ScopedService]StocksQuery sq) => sq.Solvencies.FromSqlInterpolated($"SELECT * FROM [dbo].[Solvency]({period}, {begin.Date}, {end.Date})").AsQueryable();
+
         public Dependencies GetDependencies() {
             var dependencies = new Dependencies();
 

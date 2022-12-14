@@ -100,8 +100,11 @@
               <stock-trades :formattedDateRange="formattedDateRange" :tradings="totalTrades" />
             </section>
           </b-tab-item>
-          <b-tab-item label="Company Earnings">
+          <b-tab-item label="Companies' Earnings">
             <earnings :formattedDateRange="formattedDateRange" />
+          </b-tab-item>
+          <b-tab-item label="Companies' Solvency">
+            <solvencies :formattedDateRange="formattedDateRange" />
           </b-tab-item>
         </b-tabs>
         
@@ -122,6 +125,7 @@ import PortfolioForm from './PortfolioForm.vue'
 import Portfolio from './Portfolio.vue'
 import StockIndices from './StockIndices.vue'
 import Earnings from './Earnings.vue'
+import Solvencies from './Solvencies.vue'
 
 export default {
   components: {
@@ -134,7 +138,8 @@ export default {
     'stock-trades':StockTrades,
     'price-bar': PriceBar,
     'trade-cost': TradeCost,
-    'earnings': Earnings
+    'earnings': Earnings,
+    'solvencies': Solvencies
   },
   data() {
     return {
