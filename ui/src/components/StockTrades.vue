@@ -18,7 +18,18 @@
             default-sort="percentage">
             
             <b-table-column field="stock.name" label="Security" sortable v-slot="props">
-              {{ props.row.stock.name }}
+              <article class="media">
+                <figure class="media-left" v-if="props.row.stock.company">
+                  <div class="image is-48x48">
+                    <img class="is-rounded"
+                        :src="(getLogo(props.row.stock.company.files) && getLogo(props.row.stock.company.files).length > 0 ? `${fileApiHost}?no=${getLogo(props.row.stock.company.files)[0].no}` : require(`../assets/no-image.png`))" alt="Company Logo" />
+                  </div>
+                </figure>
+                <div class="media-content">
+                  <p>{{ props.row.stock.code }}</p>
+                  <small v-if="props.row.stock.company">{{ props.row.stock.company.name}}</small>                  
+                </div>
+              </article>
             </b-table-column>
 
             <!--
@@ -34,7 +45,7 @@
             </b-table-column>
 
             <b-table-column field="volume" label="Volume" numeric sortable v-slot="props">
-              {{ formatVolume(props.row.volume) }}
+              {{ formatNumber(props.row.volume) }}
             </b-table-column>
             
             <b-table-column field="closingPrice" label="Closing" numeric sortable v-slot="props">
@@ -91,6 +102,7 @@
 <script>
 import StocksLine from './StocksLine.vue'
 
+import config from '../config'
 // import tableMixin from '../utils/tableMixin'
 import utilMixin from '../utils/utilMixin'
 
@@ -105,7 +117,8 @@ export default {
     return {
       defaultSortDirection: 'desc',
       sortIcon: 'arrow-up',
-      sortIconSize: 'is-small'
+      sortIconSize: 'is-small',
+      fileApiHost: config.fileApiHost,
     }
   },
   methods: {
@@ -121,7 +134,7 @@ export default {
         return t + v.volume
       }, 0)
 
-      return this.formatVolume(totalVolumesTraded)
+      return this.formatNumber(totalVolumesTraded)
     }
   }
 }

@@ -23,7 +23,7 @@ export default {
         formatPercentage(percentage) {
             return `${ parseFloat(percentage).toFixed(2) }%`
         },
-        formatVolume(volume) {
+        formatNumber(volume) {
             const nfi = new Intl.NumberFormat('en-US')
             return nfi.format(volume)
         },

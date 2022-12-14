@@ -334,11 +334,11 @@
                             </tr>
                             <tr>
                                 <th>Quick Ratio</th>
-                                <td>{{ formatPercentage( quickRatio ) }}</td>
+                                <td>{{ formatNumber( quickRatio ) }}</td>
                             </tr>
                             <tr>
                                 <th>Current ratio</th>
-                                <td>{{ formatPercentage( currentRatio ) }}</td>
+                                <td>{{ formatNumber( currentRatio ) }}</td>
                             </tr>
                             <tr>
                                 <th>Debt to equity</th>
@@ -543,10 +543,10 @@ export default {
             return this.get('INCOME', 'EARNINGS_PER_STOCK')
         },
         quickRatio() {
-            return ( ( this.totalCashAssets - this.totalInventories ) / this.totalCurrentLiabilities ) * 100
+            return ( ( this.totalCurrentAssets - this.totalInventories ) / this.totalCurrentLiabilities )
         },
         currentRatio() {
-            return ( this.totalCashAssets / this.totalCurrentLiabilities ) * 100
+            return ( this.totalCurrentAssets / this.totalCurrentLiabilities )
         },
         roa() {
             return ( this.netProfit / this.totalAssets ) * 100

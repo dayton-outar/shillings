@@ -146,7 +146,7 @@ export default {
         readOnly: true,
         showTools: true
       },
-      activeTab: 1
+      activeTab: 0
     }
   },
   computed: {
