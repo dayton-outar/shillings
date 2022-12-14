@@ -31,13 +31,15 @@ export default {
   },
   data() {
       return {
-          lineChartId: `stocks-line-${ uuidv4()}`
+          lineChartId: `stocks-line-${ uuidv4()}`,
+          positive: true
       }
   },
   mounted() {
     // if (this.options.isDetail) {
       
     // }
+    this.positive = this.stocks.length && this.stocks[this.stocks.length - 1].ClosingPrice > this.stocks[0].ClosingPrice 
     this.renderLineChart()
   },
   watch: {
@@ -49,6 +51,7 @@ export default {
     renderLineChart() {
       const chartHeight = this.options.height
       const chartWidth = this.options.width
+      const positive = this.positive
 
       window.Highcharts.chart(`${ this.lineChartId }`, {
         chart: {
@@ -108,6 +111,9 @@ export default {
               // verticalAlign: 'middle'
             },
             plotOptions: {
+              line: {
+                color: positive ? 'green' : 'red'
+              },
               series: {
                 label: {
                   connectorAllowed: false

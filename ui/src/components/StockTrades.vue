@@ -54,7 +54,7 @@
               </div>
             </b-table-column>
             
-            <b-table-column field="percentage" label="Percentage" numeric sortable v-slot="props">
+            <b-table-column field="percentage" label="Change" numeric sortable v-slot="props">
               {{ formatPercentage(props.row.percentage) }}
             </b-table-column>
 
