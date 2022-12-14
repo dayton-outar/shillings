@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using HotChocolate;
 
 namespace O8Query.Models
 {
@@ -36,6 +37,14 @@ namespace O8Query.Models
         /// Stock type: ORDINARY, PREFERRED, etc.
         /// </summary>
         public StockClass StockType { get; set; }
+
+        [GraphQLIgnore]
+        [NotMapped]
+        public int StockTypeInt
+        {
+            get { return (int)this.StockType; }
+            set { this.StockType = (StockClass)value; }
+        }
 
         /// <summary>
         /// Authorized Issued shares
