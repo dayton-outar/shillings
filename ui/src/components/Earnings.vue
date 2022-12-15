@@ -24,9 +24,9 @@
                                 <p v-if="props.row.company.webSite"><a :href="props.row.company.webSite"
                                     target="_blank">{{props.row.company.name}}</a></p>
                                 <p v-else>{{ props.row.company.name }}</p>
-                                <div v-for="(i, ix) in props.row.company.industries" :key="ix">
+                                <span v-for="(i, ix) in props.row.company.industries" :key="ix">
                                     <b-tag rounded>{{ i.name }}</b-tag>&nbsp;
-                                </div>
+                                </span>
                             </div>
                         </article>
                     </b-table-column>
