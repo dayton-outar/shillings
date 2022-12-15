@@ -6,6 +6,8 @@ Networks used to facilitate payment of goods and services on this platform.
 
 1. [Mastering Bitcoin](https://github.com/bitcoinbook/bitcoinbook)
 2. [Mastering Ethereum](https://github.com/ethereumbook/ethereumbook)
+3. [List of Bank Response Codes | Credit Card Decline Codes](https://paymentcloudinc.com/blog/credit-card-decline-codes/)
+4. [Response Codes and Error Codes | Mastercard Merchant Presented QR | Mastercard Developers](https://developer.mastercard.com/mastercard-merchant-presented-qr/documentation/server-apis/response-error-codes/)
 
 ## Tutorial Videos
 
