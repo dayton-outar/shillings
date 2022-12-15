@@ -47,6 +47,8 @@ namespace O8Query.Data
         [NotMapped]
         public DbSet<Solvency> Solvencies { get; set; }
 
+        public DbSet<DataSource> DataSources { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //new StocksQuerySeeder(modelBuilder).Seed();

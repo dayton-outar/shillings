@@ -23,5 +23,7 @@ namespace O8Query.Models
         /// </summary>
         [Required]
         public Company Company { get; set; }
+
+        public DataSource Source { get; set; }
     }
 }

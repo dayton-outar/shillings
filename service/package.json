@@ -27,6 +27,7 @@
     "globalize": "^1.7.0",
     "iana-tz-data": "^2019.1.0",
     "mssql": "^6.3.1",
+    "require-from-string": "^2.0.2",
     "sleep": "^6.3.0",
     "xml-js": "^1.6.11",
     "yargs": "^16.2.0"

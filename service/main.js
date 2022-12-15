@@ -1,7 +1,9 @@
 const moment = require('moment'),
     puppeteer = require('puppeteer'),
     sleep = require('sleep'),
-    Globalize = require('globalize');
+    Globalize = require('globalize'),
+    requireFromString = require('require-from-string'),
+    fs = require('fs');
 
 const O8Q = require('./db.js');
 
@@ -275,10 +277,42 @@ switch (args[0]) {
 
         break;
 
+    case 'test':
+        console.log('Running in test ...');
+        performTest();
+
+        break;
+
     default:
         getStocks();        
 
         break;
+}
+
+async function performTest() {
+    // const currency = 'jmd';
+    // const beginning = moment('2022-01-01');
+    // const ending = moment('2022-12-15');
+    // const urls = [
+    //     `https://www.jamstockex.com/trading/corporate-actions/?instrumentCode=jbg-${currency}&fromDate=${beginning.format('YYYY-MM-DD')}&thruDate=${ending.format('YYYY-MM-DD')}`,
+    //     `https://www.jamstockex.com/trading/corporate-actions/?instrumentCode=gk-${currency}&fromDate=${beginning.format('YYYY-MM-DD')}&thruDate=${ending.format('YYYY-MM-DD')}`
+    // ];
+
+    const tradeDate = moment('2022-12-01');
+    const response = await O8Q.getMarketSources();
+
+    if (response.success) {
+        for(const source of response.data) {
+            const url = source.Endpoint.replace('{{date}}', tradeDate.format('YYYY-MM-DD'));
+            const cb = requireFromString(`module.exports = ${source.Reader}`);
+
+            run([url], cb)
+                .then(console.log)
+                .catch(console.error);
+        }
+    } else {
+        console.error(response.message);
+    }
 }
 
 function getStocks() {

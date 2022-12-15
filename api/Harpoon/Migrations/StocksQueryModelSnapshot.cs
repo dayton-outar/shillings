@@ -34,7 +34,7 @@ namespace Harpoon.Migrations
 
                     b.HasIndex("CompaniesCode");
 
-                    b.ToTable("AnnouncementCompany", (string)null);
+                    b.ToTable("AnnouncementCompany");
                 });
 
             modelBuilder.Entity("CompanyFileContent", b =>
@@ -49,7 +49,7 @@ namespace Harpoon.Migrations
 
                     b.HasIndex("FilesNo");
 
-                    b.ToTable("CompanyFileContent", (string)null);
+                    b.ToTable("CompanyFileContent");
                 });
 
             modelBuilder.Entity("CompanyIndustry", b =>
@@ -64,7 +64,34 @@ namespace Harpoon.Migrations
 
                     b.HasIndex("IndustriesNo");
 
-                    b.ToTable("CompanyIndustry", (string)null);
+                    b.ToTable("CompanyIndustry");
+                });
+
+            modelBuilder.Entity("DataSource", b =>
+                {
+                    b.Property<long>("No")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("No"), 1L, 1);
+
+                    b.Property<string>("Endpoint")
+                        .IsRequired()
+                        .HasMaxLength(2100)
+                        .HasColumnType("nvarchar(2100)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Reader")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("No");
+
+                    b.ToTable("DataSources");
                 });
 
             modelBuilder.Entity("IndustryMarketIndex", b =>
@@ -79,7 +106,7 @@ namespace Harpoon.Migrations
 
                     b.HasIndex("MarketIndicesNo");
 
-                    b.ToTable("IndustryMarketIndex", (string)null);
+                    b.ToTable("IndustryMarketIndex");
                 });
 
             modelBuilder.Entity("MarketIndexStock", b =>
@@ -94,7 +121,7 @@ namespace Harpoon.Migrations
 
                     b.HasIndex("StocksCode");
 
-                    b.ToTable("MarketIndexStock", (string)null);
+                    b.ToTable("MarketIndexStock");
                 });
 
             modelBuilder.Entity("O8Query.Models.Announcement", b =>
@@ -118,7 +145,7 @@ namespace Harpoon.Migrations
 
                     b.HasIndex("LogNo");
 
-                    b.ToTable("Announcements", (string)null);
+                    b.ToTable("Announcements");
                 });
 
             modelBuilder.Entity("O8Query.Models.Company", b =>
@@ -161,7 +188,7 @@ namespace Harpoon.Migrations
 
                     b.HasKey("Code");
 
-                    b.ToTable("Companies", (string)null);
+                    b.ToTable("Companies");
                 });
 
             modelBuilder.Entity("O8Query.Models.Dividend", b =>
@@ -199,7 +226,7 @@ namespace Harpoon.Migrations
 
                     b.HasIndex("StockCode");
 
-                    b.ToTable("Dividends", (string)null);
+                    b.ToTable("Dividends");
                 });
 
             modelBuilder.Entity("O8Query.Models.FileContent", b =>
@@ -235,7 +262,7 @@ namespace Harpoon.Migrations
 
                     b.HasKey("No");
 
-                    b.ToTable("Files", (string)null);
+                    b.ToTable("Files");
                 });
 
             modelBuilder.Entity("O8Query.Models.FinancialReport", b =>
@@ -268,7 +295,7 @@ namespace Harpoon.Migrations
 
                     b.HasIndex("LogNo");
 
-                    b.ToTable("FinancialReports", (string)null);
+                    b.ToTable("FinancialReports");
                 });
 
             modelBuilder.Entity("O8Query.Models.Industry", b =>
@@ -290,7 +317,7 @@ namespace Harpoon.Migrations
 
                     b.HasKey("No");
 
-                    b.ToTable("Industries", (string)null);
+                    b.ToTable("Industries");
                 });
 
             modelBuilder.Entity("O8Query.Models.InterestRate", b =>
@@ -319,7 +346,7 @@ namespace Harpoon.Migrations
 
                     b.HasIndex("LogNo");
 
-                    b.ToTable("InterestRates", (string)null);
+                    b.ToTable("InterestRates");
                 });
 
             modelBuilder.Entity("O8Query.Models.Log", b =>
@@ -345,7 +372,7 @@ namespace Harpoon.Migrations
 
                     b.HasKey("No");
 
-                    b.ToTable("Logs", (string)null);
+                    b.ToTable("Logs");
                 });
 
             modelBuilder.Entity("O8Query.Models.Market", b =>
@@ -362,11 +389,16 @@ namespace Harpoon.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<long?>("SourceNo")
+                        .HasColumnType("bigint");
+
                     b.HasKey("Code");
 
                     b.HasIndex("CompanyCode");
 
-                    b.ToTable("Markets", (string)null);
+                    b.HasIndex("SourceNo");
+
+                    b.ToTable("Markets");
                 });
 
             modelBuilder.Entity("O8Query.Models.MarketIndex", b =>
@@ -389,7 +421,61 @@ namespace Harpoon.Migrations
 
                     b.HasIndex("MarketCode");
 
-                    b.ToTable("MarketIndices", (string)null);
+                    b.ToTable("MarketIndices");
+                });
+
+            modelBuilder.Entity("O8Query.Models.ReportedEarnings", b =>
+                {
+                    b.Property<string>("Code")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("StatementDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CompanyCode")
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<decimal>("Earnings")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("Margin")
+                        .HasColumnType("decimal(5,4)");
+
+                    b.Property<decimal>("Revenues")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Code", "StatementDate");
+
+                    b.HasIndex("CompanyCode");
+
+                    b.ToTable("Earnings");
+                });
+
+            modelBuilder.Entity("O8Query.Models.Solvency", b =>
+                {
+                    b.Property<string>("Code")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("StatementDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<decimal>("Assets")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("CompanyCode")
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<decimal>("Current")
+                        .HasColumnType("decimal(5,4)");
+
+                    b.Property<decimal>("Debt")
+                        .HasColumnType("decimal(5,4)");
+
+                    b.HasKey("Code", "StatementDate");
+
+                    b.HasIndex("CompanyCode");
+
+                    b.ToTable("Solvencies");
                 });
 
             modelBuilder.Entity("O8Query.Models.StatementAnalyte", b =>
@@ -427,7 +513,7 @@ namespace Harpoon.Migrations
 
                     b.HasIndex("ReportNo");
 
-                    b.ToTable("StatementAnalytes", (string)null);
+                    b.ToTable("StatementAnalytes");
                 });
 
             modelBuilder.Entity("O8Query.Models.Stock", b =>
@@ -466,7 +552,7 @@ namespace Harpoon.Migrations
 
                     b.HasIndex("CompanyCode");
 
-                    b.ToTable("Stocks", (string)null);
+                    b.ToTable("Stocks");
                 });
 
             modelBuilder.Entity("O8Query.Models.StockIndex", b =>
@@ -495,7 +581,7 @@ namespace Harpoon.Migrations
 
                     b.HasIndex("MarketIndexNo");
 
-                    b.ToTable("StockIndices", (string)null);
+                    b.ToTable("StockIndices");
                 });
 
             modelBuilder.Entity("O8Query.Models.StockTrading", b =>
@@ -536,7 +622,7 @@ namespace Harpoon.Migrations
 
                     b.HasIndex("SecurityCode");
 
-                    b.ToTable("StockTradings", (string)null);
+                    b.ToTable("StockTradings");
                 });
 
             modelBuilder.Entity("O8Query.Models.TotalStockTrades", b =>
@@ -578,7 +664,7 @@ namespace Harpoon.Migrations
 
                     b.HasIndex("StockCode");
 
-                    b.ToTable("TotalTrades", (string)null);
+                    b.ToTable("TotalTrades");
                 });
 
             modelBuilder.Entity("AnnouncementCompany", b =>
@@ -722,7 +808,13 @@ namespace Harpoon.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("DataSource", "Source")
+                        .WithMany()
+                        .HasForeignKey("SourceNo");
+
                     b.Navigation("Company");
+
+                    b.Navigation("Source");
                 });
 
             modelBuilder.Entity("O8Query.Models.MarketIndex", b =>
@@ -734,6 +826,24 @@ namespace Harpoon.Migrations
                         .IsRequired();
 
                     b.Navigation("Market");
+                });
+
+            modelBuilder.Entity("O8Query.Models.ReportedEarnings", b =>
+                {
+                    b.HasOne("O8Query.Models.Company", "Company")
+                        .WithMany()
+                        .HasForeignKey("CompanyCode");
+
+                    b.Navigation("Company");
+                });
+
+            modelBuilder.Entity("O8Query.Models.Solvency", b =>
+                {
+                    b.HasOne("O8Query.Models.Company", "Company")
+                        .WithMany()
+                        .HasForeignKey("CompanyCode");
+
+                    b.Navigation("Company");
                 });
 
             modelBuilder.Entity("O8Query.Models.StatementAnalyte", b =>

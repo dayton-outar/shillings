@@ -16,6 +16,33 @@ const config = {
 }
 
 const O8Q = {
+    getMarketSources: async function() {
+        let result = {
+            success: false,
+            message: 'Failed to get markets',
+            data: {}
+        };
+
+        try {
+
+            let pool = await sql.connect(config);
+
+            let dbr = await pool.request()
+                .query('SELECT s.[Name] [SourceName], s.[Endpoint], s.[Reader] FROM [dbo].[Markets] m INNER JOIN [dbo].[DataSources] s ON m.[SourceNo] = s.[No]');
+
+            result = {
+                success: true,
+                message: `Successfully retrieved sources`,
+                data: dbr.recordset
+            };
+
+        } catch(ex) {
+            console.error( ex.message );
+            result.message = ex.message;
+        }
+
+        return result;
+    },
     updateStocks: async function ( tradings ) {
         let result = {
             success: false,
