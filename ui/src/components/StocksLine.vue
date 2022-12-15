@@ -17,12 +17,14 @@ export default {
             const prices = this.stocks.map(p => [Date.UTC(moment(p.Date).toDate().getFullYear(), moment(p.Date).toDate().getMonth(), moment(p.Date).toDate().getDate()), p.ClosingPrice])
             return [{
               name: this.name,
+              enableMouseTracking: false,
               data: prices
             }]
         } else {
           return this.stocks.map(d => {
             return {
               name: d.stock.name,
+              enableMouseTracking: false,
               data: d.prices.map(p => [Date.UTC(moment(p.Date).toDate().getFullYear(), moment(p.Date).toDate().getMonth(), moment(p.Date).toDate().getDate()), p.ClosingPrice])
             }
           })
