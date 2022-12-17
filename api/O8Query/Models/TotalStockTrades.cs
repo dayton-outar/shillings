@@ -16,7 +16,7 @@ namespace O8Query.Models
         /// <summary>
         /// Stock and company information
         /// </summary>
-        [ForeignKey("StockCode")]
+        [ForeignKey("StockNo")]
         public Stock Stock { get; set; }
         
         /// <summary>

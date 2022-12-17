@@ -10,11 +10,24 @@ namespace O8Query.Models
     /// </summary>
     public class Market
     {
+        /// <summary>
+        /// Uniuely identifies market
+        /// </summary>
+        //[Key]
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public long No { get; set; }
+        
+        /// <summary>
+        /// Code used by Stock Exchange to classify markets
+        /// </summary>
         [Required(ErrorMessage = "Please enter index code for market")]
         [MaxLength(20)]
         public string Code { get; set; }
 
+        /// <summary>
+        /// Name that describes the market of a given Stock Exchange
+        /// </summary>
         [Required]
         public string Name { get; set; }
 

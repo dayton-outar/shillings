@@ -18,11 +18,23 @@ namespace O8Query.Models
             Preferred = 2
         }
 
+        /// <summary>
+        /// Uniuely identifies stock
+        /// </summary>
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public long No { get; set; }
+
+        /// <summary>
+        /// Code given to this stock by the Stock Exchange
+        /// </summary>
         [Required(ErrorMessage = "Please enter stock code")]
         [MaxLength(20)]
         public string Code { get; set; }
 
+        /// <summary>
+        /// Description of stock
+        /// </summary>
         [Required]
         public string Name { get; set; }
 
@@ -34,10 +46,16 @@ namespace O8Query.Models
         public string Currency { get; set; }
 
         /// <summary>
-        /// Stock type: ORDINARY, PREFERRED, etc.
+        /// Stock type: <code>Common</code>, <code>Preferred</code> (or <code>None</code>)
         /// </summary>
+        /// <remarks>
+        /// <code>None</code> is initial state when stock is entered on record by scraper
+        /// </remarks>
         public StockClass StockType { get; set; }
 
+        /// <summary>
+        /// Used when generating input parameter to database
+        /// </summary>
         [GraphQLIgnore]
         [NotMapped]
         public int StockTypeInt
@@ -45,6 +63,11 @@ namespace O8Query.Models
             get { return (int)this.StockType; }
             set { this.StockType = (StockClass)value; }
         }
+
+        /// <summary>
+        /// Market in which this stock trades
+        /// </summary>
+        public Market Market { get; set; }
 
         /// <summary>
         /// Authorized Issued shares
@@ -70,9 +93,15 @@ namespace O8Query.Models
         //[Required]
         public bool isListed { get; set; }
 
+        /// <summary>
+        /// Date and time when stock was recorded in this system
+        /// </summary>
         [Required]
         public DateTime Created { get; set; }
 
+        /// <summary>
+        /// Market indices that are associates with this stock
+        /// </summary>
         public List<MarketIndex> Indices { get; set; }
     }
 }

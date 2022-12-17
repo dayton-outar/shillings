@@ -17,7 +17,7 @@ namespace Harpoon
         [UseProjection]
         [UseFiltering]
         [UseSorting]
-        public IQueryable<StockTrading> GetStockTradings([ScopedService]StocksQuery sq) => sq.StockTradings.Include(t => t.Security);
+        public IQueryable<StockTrading> GetStockTradings([ScopedService]StocksQuery sq) => sq.StockTradings.Include(t => t.Stock);
 
         [UseDbContext(typeof(StocksQuery))]
         [UsePaging]
