@@ -26,7 +26,7 @@ function readStocks() {
             let priceChange = cols[4] ? parseFloat(cols[4].textContent.trim().replace(/,/g, '')) : 0
             results.push({
                 code: cols[1].querySelector('a').href.split('instrument=')[1].split('-')[0],
-                security: cols[1].querySelector('a').title.trim(),
+                name: cols[1].querySelector('a').title.trim(),
                 volume: parseInt(cols[7].textContent.trim().replace(/,/g, ''), 10),
                 closing: closingPrice,
                 change: priceChange,
@@ -44,7 +44,7 @@ function readStocks() {
             let priceChange = cols[4] ? parseFloat(cols[4].textContent.trim().replace(/,/g, '')) : 0;
             results.push({
                 code: cols[1].querySelector('a').href.split('instrument=')[1].split('-')[0],
-                security: cols[1].querySelector('a').title.trim(),
+                name: cols[1].querySelector('a').title.trim(),
                 volume: parseInt(cols[7].textContent.trim().replace(/,/g, ''), 10),
                 closing: closingPrice,
                 change: priceChange,

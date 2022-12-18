@@ -11,7 +11,10 @@ namespace O8Query.Models
     {
         private string _pricesXml = string.Empty;
 
-        public string Code { get; set; }
+        /// <summary>
+        /// Used by database context to make unique identification
+        /// </summary>
+        public long No { get; set; }
 
         /// <summary>
         /// Stock and company information

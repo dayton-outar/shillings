@@ -52,7 +52,7 @@ namespace O8Query.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //new StocksQuerySeeder(modelBuilder).Seed();
-            modelBuilder.Entity<TotalStockTrades>().HasKey(t => new { t.Code, t.ClosingDate });
+            modelBuilder.Entity<TotalStockTrades>().HasKey(t => new { t.No, t.ClosingDate });
             modelBuilder.Entity<ReportedEarnings>().HasKey(e => new { e.Code, e.StatementDate });
             modelBuilder.Entity<Solvency>().HasKey(s => new { s.Code, s.StatementDate });
         }
