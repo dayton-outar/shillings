@@ -352,16 +352,23 @@ namespace Harpoon
         [UseDbContext(typeof(StocksQuery))]
         public Stock CreateStock([ScopedService]StocksQuery sq, Stock stock)
         {
-            string sql = "EXEC [dbo].[CreateStock] @stock";
+            string sql = "EXEC [dbo].[CreateStock] @stock, @no OUTPUT";
             
             string stockXml = SerializationHelper.Serialize<Stock>(stock);
             List<SqlParameter> parms = new List<SqlParameter>
             { 
                 // Create parameters
-                new SqlParameter { ParameterName = "@stock", Value = stockXml }  
+                new SqlParameter { ParameterName = "@stock", Value = stockXml },
+                new SqlParameter { ParameterName = "@no", SqlDbType = SqlDbType.BigInt, Direction = ParameterDirection.Output }
             };
 
             sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
+
+            var param = parms.Where(p => p.ParameterName == "@no").First();
+            if (param.Value != null)
+            {
+                stock.No =  Convert.ToInt64(param.Value);
+            }
 
             return stock;
         }
@@ -384,18 +391,18 @@ namespace Harpoon
         }
 
         [UseDbContext(typeof(StocksQuery))]
-        public bool DeleteStock([ScopedService]StocksQuery sq, string stockCode)
+        public bool DeleteStock([ScopedService]StocksQuery sq, long stockNo)
         {
             bool result = false;
 
             try
             {
-                string sql = "EXEC [dbo].[DeleteStock] @stockCode";
+                string sql = "EXEC [dbo].[DeleteStock] @stockNo";
                 
                 List<SqlParameter> parms = new List<SqlParameter>
                 { 
                     // Update parameters
-                    new SqlParameter { ParameterName = "@stockCode", Value = stockCode }  
+                    new SqlParameter { ParameterName = "@stockNo", Value = stockNo }  
                 };
 
                 sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
@@ -413,16 +420,23 @@ namespace Harpoon
         [UseDbContext(typeof(StocksQuery))]
         public Market CreateMarket([ScopedService]StocksQuery sq, Market market)
         {
-            string sql = "EXEC [dbo].[CreateMarket] @market";
+            string sql = "EXEC [dbo].[CreateMarket] @market, @no OUTPUT";
             
             string marketXml = SerializationHelper.Serialize<Market>(market);
             List<SqlParameter> parms = new List<SqlParameter>
             { 
                 // Create parameters
-                new SqlParameter { ParameterName = "@market", Value = marketXml }  
+                new SqlParameter { ParameterName = "@market", Value = marketXml },
+                new SqlParameter { ParameterName = "@no", SqlDbType = SqlDbType.BigInt, Direction = ParameterDirection.Output }
             };
 
             sq.Database.ExecuteSqlRaw(sql, parms.ToArray());
+
+            var param = parms.Where(p => p.ParameterName == "@no").First();
+            if (param.Value != null)
+            {
+                market.No =  Convert.ToInt64(param.Value);
+            }
 
             return market;
         }
@@ -445,18 +459,18 @@ namespace Harpoon
         }
 
         [UseDbContext(typeof(StocksQuery))]
-        public bool DeleteMarket([ScopedService]StocksQuery sq, string marketCode)
+        public bool DeleteMarket([ScopedService]StocksQuery sq, long marketNo)
         {
             bool result = false;
 
             try
             {
-                string sql = "EXEC [dbo].[DeleteMarket] @marketCode";
+                string sql = "EXEC [dbo].[DeleteMarket] @marketNo";
                 
                 List<SqlParameter> parms = new List<SqlParameter>
                 { 
                     // Update parameters
-                    new SqlParameter { ParameterName = "@marketCode", Value = marketCode }  
+                    new SqlParameter { ParameterName = "@marketNo", Value = marketNo }  
                 };
 
                 sq.Database.ExecuteSqlRaw(sql, parms.ToArray());

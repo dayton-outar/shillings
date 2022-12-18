@@ -98,19 +98,19 @@ const O8Q = {
 
             let pool = await sql.connect(config);
 
-            let companies = xml2json.json2xml(listing, {
+            let stocks = xml2json.json2xml(listing, {
                 compact: true,
                 ignoreComment: true,
                 spaces: 4
             });
 
             let dbr = await pool.request()
-                .input('companies', sql.Xml, companies)
-                .execute('UpdateCompaniesDetails');
+                .input('stocks', sql.Xml, stocks)
+                .execute('UpdateStocksDetails');
 
             result = {
                 success: dbr.returnValue === 0,
-                message: `Successfully updated ${listing.companies.length} companies`,
+                message: `Successfully updated ${listing.stocks.length} stocks`,
                 data: {}
             };
 

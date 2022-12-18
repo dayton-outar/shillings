@@ -219,6 +219,8 @@ namespace Harpoon
                 new SectionalAnalytes {
                     Sectional = StatementAnalyte.Sectional.OperatingActivities,
                     Assay = new List<StatementAnalyte.Assay> {
+                            StatementAnalyte.Assay.Operating,
+                            StatementAnalyte.Assay.Adjustments,
                             StatementAnalyte.Assay.Receivables,
                             StatementAnalyte.Assay.Inventories,
                             StatementAnalyte.Assay.Depreciation,
@@ -226,8 +228,7 @@ namespace Harpoon
                             StatementAnalyte.Assay.Payables,
                             StatementAnalyte.Assay.Interest,
                             StatementAnalyte.Assay.Wages,
-                            StatementAnalyte.Assay.Tax,
-                            StatementAnalyte.Assay.Operating
+                            StatementAnalyte.Assay.Tax
                         }
                 },                
                 // Cash from financing activities includes the sources of cash from investors and banks, as well as the way cash is paid to shareholders.

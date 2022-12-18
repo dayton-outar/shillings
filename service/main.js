@@ -126,7 +126,7 @@ function readIndices() {
     items.forEach((item) => {
         let cols = item.querySelectorAll('td');
         results.push({
-            index: 'JSE',
+            indexNo: 1,
             date: cols[0].textContent.trim(),
             value: parseFloat(cols[1].textContent.trim().replace(/,/g, '')),
             change: parseFloat(cols[2].textContent.trim().replace(/,/g, ''))
@@ -144,6 +144,7 @@ function readDividends() {
         let camt = cols[5].textContent.trim().split(' ');
         results.push({
             code: cols[1].textContent.trim(),
+            // marketNo: 1,
             recordDate: cols[0].textContent.trim(),
             paymentDate: cols[4].textContent.trim(),
             currency: camt[0].trim(),
