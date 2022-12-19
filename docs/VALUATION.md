@@ -59,6 +59,15 @@ The main ingredients needed to arrive at the value of a company includes,
 
 $$\huge{Enterprise\text{ }Value\text{ }in\text{ }Year\text{ }T = V_T^L = { FCF_{T + 1} \over r_{wacc} - g } }$$
 
+---
+Below from The Site Book by Richard M. Fenker.
+
+**Demand** is a result of the complex and changing relationship between competition, image, and customer sources. Usually there are plenty of potential customers. Whether or not you get your share depends on image and competition. Image is a broad concept that describes all of the features that influence a customer's perception. Image includes drop-in features such as visibility or access, the physical characteristics of the area around the site, and the market presence (or familiarity) of your concept. **Competition** includes any business a customer thinks of when making a decision to "eat out" or to "buy tires." Both direct and indirect competitors will impact your site both by providing additional draw (possibly), but also by dividing up the supply of customers from various sources. The interactions between these three elements generates a quantitative measurement of the demand for your store or restaurant. The site evaluation model presented in this book uses a fairly simple formula for quantifying demand.
+
+$$\text{Demand }= \frac{\text{Total Customers}}{\text{Competition}}$$
+
+The total number of customers refers to the number of customers coming from each source (the total volume of potential customers in the trade area). Clearly, the higher the competition, the more choices each customer will have, which will lower the demand for your concept. Obviously, if the number of potential customers is also high, lots of competition won't matter as much because there will still be many customers available to visit your concept. A good image acts to increase the demand for your concept by increasing the chances that customers will choose you over the competition. We tend to prefer to shop or dine at businesses that are convenient to reach within the trade area, easily located fromthe street, accessible, established in the market, and so forth.
+
 
 ## Further Reading
 
