@@ -23,7 +23,7 @@ Globalize.load( require( 'cldr-data' ).entireMainFor( 'en' ) );
 //         ordinary.querySelectorAll('tbody > tr').forEach((item) => {
 //             let cols = item.querySelectorAll('td');
 //             let closingPrice = parseFloat(cols[3].textContent.trim().replace(/,/g, ''));
-//             let priceChange = cols[4] ? parseFloat(cols[4].textContent.trim().replace(/,/g, '')) : 0
+//             let priceChange = cols[4] ? parseFloat(cols[4].textContent.trim().replace(/,/g, '')) : 0;
 //             results.push({
 //                 marketNo: 2,
 //                 code: cols[1].querySelector('a').href.split('instrument=')[1].split('-')[0],
@@ -193,70 +193,6 @@ async function run(urls, cb) {
     })
 }
 
-// Stocks do not print on a Friday, Saturday nor Sunday. JSE Stocks begin at 1999-09-27
-async function runner(bringToCurrentDate, begin, end, rest = 2) {
-    beginning = (begin) ? moment(begin) : moment();
-    ending = (end) ? moment(end) : ((bringToCurrentDate) ? moment() : moment(begin));
-
-    if (moment(beginning.format('YYYY-MM-DD')).isSame(moment(ending.format('YYYY-MM-DD')))) {
-
-        console.log(`Running scraper for ${beginning.format('YYYY-MM-DD')}`);
-
-        await run([
-                    `https://www.jamstockex.com/trading/trade-quotes/?market=main-market&date=${beginning.format('YYYY-MM-DD')}`//,
-                    //`https://www.jamstockex.com/trading/trade-quotes/?market=junior-market&date=${beginning.format('YYYY-MM-DD')}`
-                ], readStocks)
-            .then(stocks => {
-                let tradings = {
-                    stocks
-                };
-
-                if (tradings.stocks.length > 0) {
-                    console.log(`${tradings.stocks.length} trades pulled ${tradings.stocks[0].date}`);
-
-                    O8Q.updateStocks(tradings)
-                        .then(r => console.log(r.message))
-                        .catch(e => console.error(e.message));
-                }
-            })
-            .catch(console.error);
-    } else {
-        if (moment(beginning.format('YYYY-MM-DD')).isBefore(moment(ending.format('YYYY-MM-DD')))) {
-
-            console.log(`Run scraper from ${beginning.format('YYYY-MM-DD')} to ${ending.format('YYYY-MM-DD')} ...`);
-
-            while (moment(beginning.format('YYYY-MM-DD')).isBefore(moment(ending.format('YYYY-MM-DD')))) {
-
-                console.log(`Reading stocks for ${beginning.format('YYYY-MM-DD')}`);
-
-                await run([
-                        `https://www.jamstockex.com/trading/trade-quotes/?market=main-market&date=${beginning.format('YYYY-MM-DD')}`//,
-                        //`https://www.jamstockex.com/trading/trade-quotes/?market=junior-market&date=${beginning.format('YYYY-MM-DD')}`
-                    ], readStocks)
-                    .then(stocks => {
-                        let tradings = {
-                            stocks
-                        };
-
-                        if (tradings.stocks.length > 0) {
-                            console.log(`${tradings.stocks.length} trades pulled on ${tradings.stocks[0].date}`);
-
-                            O8Q.updateStocks(tradings)
-                                .then(r => console.log(r.message))
-                                .catch(e => console.error(e.message));
-                        }
-                    })
-                    .catch(console.error);
-
-                console.log(`Sleeping for ${rest} seconds`);
-                sleep.sleep(rest);
-                beginning.add(1, 'd');
-            }
-        }
-    }
-
-    getIndices();
-}
 
 const args = process.argv.slice(2);
 
@@ -266,7 +202,7 @@ if (args.length > 3) {
 }
 
 let beginning = moment();
-let ending = moment();
+let ending = beginning;
 
 if (args[1]) {
     // Validate date pattern as YYYY-MM-DD
@@ -284,50 +220,54 @@ if (args[1]) {
 }
 
 if (args[2]) {
-    if (args[2] !== '++') {
-        if (!/^\d{4}[-](0?[1-9]|1[012])[-](0?[1-9]|[12][0-9]|3[01])$/.test(args[2])) {
-            console.log('This date format is not acceptable');
-            process.exit(1);
-        }
-
-        if (!moment(args[2]).isValid()) {
-            console.log(`End date, ${args[2]}, is invalid`);
-            process.exit(1);
-        }
-
-        ending = moment(args[2]);
+    if (!/^\d{4}[-](0?[1-9]|1[012])[-](0?[1-9]|[12][0-9]|3[01])$/.test(args[2])) {
+        console.log('This date format is not acceptable');
+        process.exit(1);
     }
+
+    if (!moment(args[2]).isValid()) {
+        console.log(`End date, ${args[2]}, is invalid`);
+        process.exit(1);
+    }
+
+    ending = moment(args[2]);
 }
 
 if (ending.isBefore(beginning)) {
-    console.log(`Invalid date range`);
+    console.log(`Invalid date range: ${ending.format('ddd. MMM D, YYYY')} is earler than ${beginning.format('ddd. MMM D, YYYY')}`);
     process.exit(1);
+}
+
+if (beginning.isSame(ending)) {
+    console.log(`Running scraper for ${beginning.format('YYYY-MM-DD')}`);
+} else {
+    console.log(`Running scraper from ${beginning.format('YYYY-MM-DD')} to ${ending.format('YYYY-MM-DD')} ...`);
 }
 
 switch (args[0]) {
     case 'companies':
-        getCompanies();
+        // getCompanies();
 
         break;
     
     case 'indices':
-        getIndices();
+        // getIndices();
 
         break;
 
     case 'test':
         console.log('Running in test ...');
-        performTest();
+        // performTest(beginning, ending);
 
         break;
 
     case 'stocks':
-        getStocks();        
+        // getStocks();        
 
         break;
 }
 
-async function performTest() {
+async function performTest(beginning, ending) {
     // const currency = 'jmd';
     // const beginning = moment('2022-01-01');
     // const ending = moment('2022-12-15');
@@ -336,12 +276,13 @@ async function performTest() {
     //     `https://www.jamstockex.com/trading/corporate-actions/?instrumentCode=gk-${currency}&fromDate=${beginning.format('YYYY-MM-DD')}&thruDate=${ending.format('YYYY-MM-DD')}`
     // ];
 
-    const tradeDate = moment('2022-12-07');
-    const response = await O8Q.getSources(2);
+    const tradeDate = moment('2022-12-15');
+    const response = await O8Q.getSources(1);
 
     if (response.success) {
         for(const source of response.data) {
             const url = source.Endpoint.replace('{{date}}', tradeDate.format('YYYY-MM-DD'));
+            // const url = source.Endpoint.replace('{{beginning}}', beginning.format('YYYY-MM-DD')).replace('{{ending}}', ending.format('YYYY-MM-DD'))
             const cb = requireFromString(`module.exports = ${source.Reader}`);
 
             run([url], cb)
@@ -353,20 +294,36 @@ async function performTest() {
     }
 }
 
-function getStocks() {
+// Stocks do not print on a Friday, Saturday nor Sunday. JSE Stocks begin at 1999-09-27
+async function getStocks(beginning, ending, rest = 2) {
+    // const response = await O8Q.getSources(1);
 
-    
+    while (moment(beginning.format('YYYY-MM-DD')).isBefore(moment(ending.format('YYYY-MM-DD')))) {
 
-    if (args.length == 0) {
-        runner(false, moment().format('YYYY-MM-DD'));
-    } else if (args.length == 1) {
-        runner(false, moment(args[0]).format('YYYY-MM-DD'));
-    } else {
-        if (args[1] === '++') {
-            runner(true, moment(args[0]).format('YYYY-MM-DD'));
-        } else {
-            runner(false, moment(args[0]).format('YYYY-MM-DD'), moment(args[1]).format('YYYY-MM-DD'));
-        }
+        console.log(`Reading stocks for ${beginning.format('YYYY-MM-DD')}`);
+
+        await run([
+                `https://www.jamstockex.com/trading/trade-quotes/?market=main-market&date=${beginning.format('YYYY-MM-DD')}`//,
+                //`https://www.jamstockex.com/trading/trade-quotes/?market=junior-market&date=${beginning.format('YYYY-MM-DD')}`
+            ], readStocks)
+            .then(stocks => {
+                let tradings = {
+                    stocks
+                };
+
+                if (tradings.stocks.length > 0) {
+                    console.log(`${tradings.stocks.length} trades pulled on ${tradings.stocks[0].date}`);
+
+                    O8Q.updateStocks(tradings)
+                        .then(r => console.log(r.message))
+                        .catch(e => console.error(e.message));
+                }
+            })
+            .catch(console.error);
+
+        console.log(`Sleeping for ${rest} seconds`);
+        sleep.sleep(rest);
+        beginning.add(1, 'd');
     }
 }
 
