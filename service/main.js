@@ -10,52 +10,54 @@ const O8Q = require('./db.js');
 Globalize.load( require( 'cldr-data' ).entireSupplemental() );
 Globalize.load( require( 'cldr-data' ).entireMainFor( 'en' ) );
 
-function readStocks() {
-    let results = [];
+// function readStocks() {
+//     let results = [];
 
-    const urlSearchParams = new URLSearchParams(window.location.search);
-    const params = Object.fromEntries(urlSearchParams.entries());
-    //--
-    const tradeDate = params.date;
+//     const urlSearchParams = new URLSearchParams(window.location.search);
+//     const params = Object.fromEntries(urlSearchParams.entries());
+//     //--
+//     const tradeDate = params.date;
 
-    let ordinary = document.querySelectorAll('table')[1];
-    if (ordinary) {
-        ordinary.querySelectorAll('tbody > tr').forEach((item) => {
-            let cols = item.querySelectorAll('td');
-            let closingPrice = parseFloat(cols[3].textContent.trim().replace(/,/g, ''));
-            let priceChange = cols[4] ? parseFloat(cols[4].textContent.trim().replace(/,/g, '')) : 0
-            results.push({
-                code: cols[1].querySelector('a').href.split('instrument=')[1].split('-')[0],
-                name: cols[1].querySelector('a').title.trim(),
-                volume: parseInt(cols[7].textContent.trim().replace(/,/g, ''), 10),
-                closing: closingPrice,
-                change: priceChange,
-                percentage: (priceChange / (closingPrice - priceChange)).toFixed(2),
-                date: tradeDate
-            });
-        });
-    }
+//     let ordinary = document.querySelectorAll('table')[1];
+//     if (ordinary) {
+//         ordinary.querySelectorAll('tbody > tr').forEach((item) => {
+//             let cols = item.querySelectorAll('td');
+//             let closingPrice = parseFloat(cols[3].textContent.trim().replace(/,/g, ''));
+//             let priceChange = cols[4] ? parseFloat(cols[4].textContent.trim().replace(/,/g, '')) : 0
+//             results.push({
+//                 marketNo: 2,
+//                 code: cols[1].querySelector('a').href.split('instrument=')[1].split('-')[0],
+//                 name: cols[1].querySelector('a').title.trim(),
+//                 volume: parseInt(cols[7].textContent.trim().replace(/,/g, ''), 10),
+//                 closing: closingPrice,
+//                 change: priceChange,
+//                 percentage: (priceChange / (closingPrice - priceChange)).toFixed(2),
+//                 date: tradeDate
+//             });
+//         });
+//     }
 
-    let preferred = document.querySelectorAll('table')[3];
-    if (preferred) {
-        preferred.querySelectorAll('tbody > tr').forEach((item) => {
-            let cols = item.querySelectorAll('td');
-            let closingPrice = parseFloat(cols[3].textContent.trim().replace(/,/g, ''));
-            let priceChange = cols[4] ? parseFloat(cols[4].textContent.trim().replace(/,/g, '')) : 0;
-            results.push({
-                code: cols[1].querySelector('a').href.split('instrument=')[1].split('-')[0],
-                name: cols[1].querySelector('a').title.trim(),
-                volume: parseInt(cols[7].textContent.trim().replace(/,/g, ''), 10),
-                closing: closingPrice,
-                change: priceChange,
-                percentage: (priceChange / (closingPrice - priceChange)).toFixed(2),
-                date: tradeDate
-            });
-        });
-    }
+//     let preferred = document.querySelectorAll('table')[3];
+//     if (preferred) {
+//         preferred.querySelectorAll('tbody > tr').forEach((item) => {
+//             let cols = item.querySelectorAll('td');
+//             let closingPrice = parseFloat(cols[3].textContent.trim().replace(/,/g, ''));
+//             let priceChange = cols[4] ? parseFloat(cols[4].textContent.trim().replace(/,/g, '')) : 0;
+//             results.push({
+//                 marketNo: 2,
+//                 code: cols[1].querySelector('a').href.split('instrument=')[1].split('-')[0],
+//                 name: cols[1].querySelector('a').title.trim(),
+//                 volume: parseInt(cols[7].textContent.trim().replace(/,/g, ''), 10),
+//                 closing: closingPrice,
+//                 change: priceChange,
+//                 percentage: (priceChange / (closingPrice - priceChange)).toFixed(2),
+//                 date: tradeDate
+//             });
+//         });
+//     }
 
-    return results;
-}
+//     return results;
+// }
 
 function readCompanies() {
     let results = [];
@@ -120,21 +122,21 @@ function readCompanyDetails() {
     }
 }
 
-function readIndices() {
-    let results = [];
-    let items = document.querySelectorAll('table > tbody > tr');
-    items.forEach((item) => {
-        let cols = item.querySelectorAll('td');
-        results.push({
-            indexNo: 1,
-            date: cols[0].textContent.trim(),
-            value: parseFloat(cols[1].textContent.trim().replace(/,/g, '')),
-            change: parseFloat(cols[2].textContent.trim().replace(/,/g, ''))
-        });
-    });
+// function readIndices() {
+//     let results = [];
+//     let items = document.querySelectorAll('table > tbody > tr');
+//     items.forEach((item) => {
+//         let cols = item.querySelectorAll('td');
+//         results.push({
+//             indexNo: 1,
+//             date: cols[0].textContent.trim(),
+//             value: parseFloat(cols[1].textContent.trim().replace(/,/g, '')),
+//             change: parseFloat(cols[2].textContent.trim().replace(/,/g, ''))
+//         });
+//     });
 
-    return results;
-}
+//     return results;
+// }
 
 function readDividends() {
     let results = [];
@@ -250,10 +252,6 @@ async function runner(bringToCurrentDate, begin, end, rest = 2) {
                 sleep.sleep(rest);
                 beginning.add(1, 'd');
             }
-        } else {
-            let message = moment().isBefore(moment(beginning.format('YYYY-MM-DD'))) ?
-                'Date has not yet arrived for scraping. Too far in the future' : `Invalid date range`;
-            console.log(message);
         }
     }
 
@@ -267,13 +265,52 @@ if (args.length > 3) {
     process.exit(1);
 }
 
+let beginning = moment();
+let ending = moment();
+
+if (args[1]) {
+    // Validate date pattern as YYYY-MM-DD
+    if (!/^\d{4}[-](0?[1-9]|1[012])[-](0?[1-9]|[12][0-9]|3[01])$/.test(args[1])) {
+        console.log('This date format is not acceptable');
+        process.exit(1);
+    }
+
+    if (!moment(args[1]).isValid()) {
+        console.log(`Begin date, ${args[1]}, is invalid`);
+        process.exit(1);
+    }
+
+    beginning = moment(args[1]);
+}
+
+if (args[2]) {
+    if (args[2] !== '++') {
+        if (!/^\d{4}[-](0?[1-9]|1[012])[-](0?[1-9]|[12][0-9]|3[01])$/.test(args[2])) {
+            console.log('This date format is not acceptable');
+            process.exit(1);
+        }
+
+        if (!moment(args[2]).isValid()) {
+            console.log(`End date, ${args[2]}, is invalid`);
+            process.exit(1);
+        }
+
+        ending = moment(args[2]);
+    }
+}
+
+if (ending.isBefore(beginning)) {
+    console.log(`Invalid date range`);
+    process.exit(1);
+}
+
 switch (args[0]) {
-    case 'read-companies':
+    case 'companies':
         getCompanies();
 
         break;
     
-    case 'read-indices':
+    case 'indices':
         getIndices();
 
         break;
@@ -284,7 +321,7 @@ switch (args[0]) {
 
         break;
 
-    default:
+    case 'stocks':
         getStocks();        
 
         break;
@@ -299,8 +336,8 @@ async function performTest() {
     //     `https://www.jamstockex.com/trading/corporate-actions/?instrumentCode=gk-${currency}&fromDate=${beginning.format('YYYY-MM-DD')}&thruDate=${ending.format('YYYY-MM-DD')}`
     // ];
 
-    const tradeDate = moment('2022-12-01');
-    const response = await O8Q.getMarketSources();
+    const tradeDate = moment('2022-12-07');
+    const response = await O8Q.getSources(2);
 
     if (response.success) {
         for(const source of response.data) {
@@ -318,27 +355,7 @@ async function performTest() {
 
 function getStocks() {
 
-    if (args[0]) {
-        // Validate date pattern as YYYY-MM-DD
-        if (!/^\d{4}[-](0?[1-9]|1[012])[-](0?[1-9]|[12][0-9]|3[01])$/.test(args[0])) {
-            console.log('This date format is not acceptable');
-            process.exit(1);
-        }
-
-        if (!moment(args[0]).isValid()) {
-            console.log(`Begin date, ${args[0]}, is invalid`);
-            process.exit(1);
-        }
-    }
-
-    if (args[1]) {
-        if (args[1] !== '++') {
-            if (!moment(args[1]).isValid()) {
-                console.log(`End date, ${args[1]}, is invalid`);
-                process.exit(1);
-            }
-        }
-    }
+    
 
     if (args.length == 0) {
         runner(false, moment().format('YYYY-MM-DD'));

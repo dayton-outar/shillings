@@ -19,16 +19,27 @@ namespace O8Query.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long No { get; set; }
 
+        /// <summary>
+        /// Name that describes this index
+        /// </summary>
         [Required]
         public string Name { get; set; }
 
+        /// <summary>
+        /// Market in which this index is created
+        /// </summary>
         [Required]
         public Market Market { get; set; }
 
+        /// <summary>
+        /// List of stocks in this index
+        /// </summary>
         [GraphQLIgnore]
-        public List<Stock> Stocks { get; set; }
+        public List<Stock> Stocks { get; set; }        
         
-        
+        /// <summary>
+        /// List of industries associated with stocks in this index portfolio
+        /// </summary>
         public List<Industry> Industries { get; set; }
     }
 }

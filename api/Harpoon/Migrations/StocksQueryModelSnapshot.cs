@@ -89,6 +89,9 @@ namespace Harpoon.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("SourceType")
+                        .HasColumnType("int");
+
                     b.HasKey("No");
 
                     b.ToTable("DataSources");

@@ -16,7 +16,7 @@ const config = {
 }
 
 const O8Q = {
-    getMarketSources: async function() {
+    getSources: async function( sourceType ) {
         let result = {
             success: false,
             message: 'Failed to get markets',
@@ -28,7 +28,8 @@ const O8Q = {
             let pool = await sql.connect(config);
 
             let dbr = await pool.request()
-                .query('SELECT s.[Name] [SourceName], s.[Endpoint], s.[Reader] FROM [dbo].[Markets] m INNER JOIN [dbo].[DataSources] s ON m.[SourceNo] = s.[No]');
+                .input('sourceType', sql.Int, sourceType)
+                .query('SELECT s.[Name] [SourceName], s.[Endpoint], s.[Reader] FROM [dbo].[DataSources] s WHERE s.[SourceType] = @sourceType');
 
             result = {
                 success: true,
