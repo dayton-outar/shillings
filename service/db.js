@@ -29,7 +29,7 @@ const O8Q = {
 
             let dbr = await pool.request()
                 .input('sourceType', sql.Int, sourceType)
-                .query('SELECT s.[Name] [SourceName], s.[Endpoint], s.[Reader] FROM [dbo].[DataSources] s WHERE s.[SourceType] = @sourceType');
+                .query('SELECT s.[No], s.[Name], s.[Endpoint], s.[Reader] FROM [dbo].[DataSources] s WHERE S.[No] = 1'); // s.[SourceType] = @sourceType
 
             result = {
                 success: true,

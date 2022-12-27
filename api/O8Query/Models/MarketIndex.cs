@@ -26,6 +26,13 @@ namespace O8Query.Models
         public string Name { get; set; }
 
         /// <summary>
+        /// Code used by Stock Exchange to classify index
+        /// </summary>
+        [Required]
+        [MaxLength(20)]
+        public string Code { get; set; }
+
+        /// <summary>
         /// Market in which this index is created
         /// </summary>
         [Required]

@@ -257,7 +257,7 @@ switch (args[0]) {
 
     case 'test':
         console.log('Running in test ...');
-        // performTest(beginning, ending);
+        performTest(beginning, ending);
 
         break;
 
@@ -267,65 +267,85 @@ switch (args[0]) {
         break;
 }
 
-async function performTest(beginning, ending) {
-    // const currency = 'jmd';
-    // const beginning = moment('2022-01-01');
-    // const ending = moment('2022-12-15');
-    // const urls = [
-    //     `https://www.jamstockex.com/trading/corporate-actions/?instrumentCode=jbg-${currency}&fromDate=${beginning.format('YYYY-MM-DD')}&thruDate=${ending.format('YYYY-MM-DD')}`,
-    //     `https://www.jamstockex.com/trading/corporate-actions/?instrumentCode=gk-${currency}&fromDate=${beginning.format('YYYY-MM-DD')}&thruDate=${ending.format('YYYY-MM-DD')}`
-    // ];
-
-    const tradeDate = moment('2022-12-15');
+// Stocks do not print on a Friday, Saturday nor Sunday. JSE Stocks begin at 1999-09-27
+async function performTest(beginning, ending, rest = 2) {
+    let results = {
+        indices: [],
+        stocks: []
+    };
     const response = await O8Q.getSources(1);
+    let urls = [];
+    let sources = [];
 
     if (response.success) {
-        for(const source of response.data) {
-            const url = source.Endpoint.replace('{{date}}', tradeDate.format('YYYY-MM-DD'));
-            // const url = source.Endpoint.replace('{{beginning}}', beginning.format('YYYY-MM-DD')).replace('{{ending}}', ending.format('YYYY-MM-DD'))
-            const cb = requireFromString(`module.exports = ${source.Reader}`);
+        
+        for(const d of response.data) {
+            let begin = moment(beginning); // Clone beginning time
+            urls = [];
+            while (begin.isSameOrBefore(ending)) {
+                urls.push(d.Endpoint.replace('{{date}}', begin.format('YYYY-MM-DD')));
+                
+                begin.add(1, 'd');
+            }
 
-            run([url], cb)
-                .then(console.log)
-                .catch(console.error);
+            sources.push({
+                urls,
+                cb: d.Reader
+            })
         }
+
+        for(const source of sources) {
+            const cb = requireFromString(`module.exports = ${source.cb}`);
+
+            let rs = await run( source.urls, cb );
+            let s = rs.flatMap(r => r.stocks);
+            let i = rs.flatMap(r => r.indices);
+            results.stocks.push( s );
+            results.indices.push( i );
+            
+            console.log(`Sleeping for ${rest} seconds`);
+            sleep.sleep(rest);
+        }
+
+        results.stocks = results.stocks.flat().sort((a, b) => {
+            if ( moment(a.date).isBefore(moment(b.date)) ) return -1;
+            if ( moment(a.date).isAfter(moment(b.date)) ) return -1;
+
+            return 0;
+        });
+        results.indices = results.indices.flat().sort((a, b) => {
+            if ( moment(a.date).isBefore(moment(b.date)) ) return -1;
+            if ( moment(a.date).isAfter(moment(b.date)) ) return -1;
+
+            return 0;
+        });
+
+        if (results.stocks.length > 0) {
+            console.log(`Updating stock prices ...`);
+
+            let tr = await O8Q.updateStocks({
+                    stocks: results.stocks
+                });
+
+            console.log(tr.message);
+        }
+
+        if (results.indices.length > 0) {
+            console.log(`Updating indices ...`);
+
+            ir = O8Q.updateIndices({
+                    indices: results.indices
+                });
+            
+            console.log(ir.message);
+        }
+
     } else {
         console.error(response.message);
     }
 }
 
-// Stocks do not print on a Friday, Saturday nor Sunday. JSE Stocks begin at 1999-09-27
-async function getStocks(beginning, ending, rest = 2) {
-    // const response = await O8Q.getSources(1);
 
-    while (moment(beginning.format('YYYY-MM-DD')).isBefore(moment(ending.format('YYYY-MM-DD')))) {
-
-        console.log(`Reading stocks for ${beginning.format('YYYY-MM-DD')}`);
-
-        await run([
-                `https://www.jamstockex.com/trading/trade-quotes/?market=main-market&date=${beginning.format('YYYY-MM-DD')}`//,
-                //`https://www.jamstockex.com/trading/trade-quotes/?market=junior-market&date=${beginning.format('YYYY-MM-DD')}`
-            ], readStocks)
-            .then(stocks => {
-                let tradings = {
-                    stocks
-                };
-
-                if (tradings.stocks.length > 0) {
-                    console.log(`${tradings.stocks.length} trades pulled on ${tradings.stocks[0].date}`);
-
-                    O8Q.updateStocks(tradings)
-                        .then(r => console.log(r.message))
-                        .catch(e => console.error(e.message));
-                }
-            })
-            .catch(console.error);
-
-        console.log(`Sleeping for ${rest} seconds`);
-        sleep.sleep(rest);
-        beginning.add(1, 'd');
-    }
-}
 
 function getCompanies() {
     return new Promise((resolve, reject) => {
