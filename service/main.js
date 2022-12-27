@@ -10,55 +10,6 @@ const O8Q = require('./db.js');
 Globalize.load( require( 'cldr-data' ).entireSupplemental() );
 Globalize.load( require( 'cldr-data' ).entireMainFor( 'en' ) );
 
-// function readStocks() {
-//     let results = [];
-
-//     const urlSearchParams = new URLSearchParams(window.location.search);
-//     const params = Object.fromEntries(urlSearchParams.entries());
-//     //--
-//     const tradeDate = params.date;
-
-//     let ordinary = document.querySelectorAll('table')[1];
-//     if (ordinary) {
-//         ordinary.querySelectorAll('tbody > tr').forEach((item) => {
-//             let cols = item.querySelectorAll('td');
-//             let closingPrice = parseFloat(cols[3].textContent.trim().replace(/,/g, ''));
-//             let priceChange = cols[4] ? parseFloat(cols[4].textContent.trim().replace(/,/g, '')) : 0;
-//             results.push({
-//                 marketNo: 2,
-//                 code: cols[1].querySelector('a').href.split('instrument=')[1].split('-')[0],
-//                 name: cols[1].querySelector('a').title.trim(),
-//                 volume: parseInt(cols[7].textContent.trim().replace(/,/g, ''), 10),
-//                 closing: closingPrice,
-//                 change: priceChange,
-//                 percentage: (priceChange / (closingPrice - priceChange)).toFixed(2),
-//                 date: tradeDate
-//             });
-//         });
-//     }
-
-//     let preferred = document.querySelectorAll('table')[3];
-//     if (preferred) {
-//         preferred.querySelectorAll('tbody > tr').forEach((item) => {
-//             let cols = item.querySelectorAll('td');
-//             let closingPrice = parseFloat(cols[3].textContent.trim().replace(/,/g, ''));
-//             let priceChange = cols[4] ? parseFloat(cols[4].textContent.trim().replace(/,/g, '')) : 0;
-//             results.push({
-//                 marketNo: 2,
-//                 code: cols[1].querySelector('a').href.split('instrument=')[1].split('-')[0],
-//                 name: cols[1].querySelector('a').title.trim(),
-//                 volume: parseInt(cols[7].textContent.trim().replace(/,/g, ''), 10),
-//                 closing: closingPrice,
-//                 change: priceChange,
-//                 percentage: (priceChange / (closingPrice - priceChange)).toFixed(2),
-//                 date: tradeDate
-//             });
-//         });
-//     }
-
-//     return results;
-// }
-
 function readCompanies() {
     let results = [];
     let items = document.querySelectorAll('table > tbody > tr');
@@ -122,22 +73,6 @@ function readCompanyDetails() {
     }
 }
 
-// function readIndices() {
-//     let results = [];
-//     let items = document.querySelectorAll('table > tbody > tr');
-//     items.forEach((item) => {
-//         let cols = item.querySelectorAll('td');
-//         results.push({
-//             indexNo: 1,
-//             date: cols[0].textContent.trim(),
-//             value: parseFloat(cols[1].textContent.trim().replace(/,/g, '')),
-//             change: parseFloat(cols[2].textContent.trim().replace(/,/g, ''))
-//         });
-//     });
-
-//     return results;
-// }
-
 function readDividends() {
     let results = [];
     let items = document.querySelectorAll('table > tbody > tr');
@@ -172,6 +107,7 @@ async function run(urls, cb) {
 
             // Credit: https://github.com/puppeteer/puppeteer/issues/594
             for (const url of urls) {
+                console.log(`Scraping from ${url}`);
 
                 await page.goto(url, {
                     waitUntil: 'networkidle2',
@@ -255,20 +191,15 @@ switch (args[0]) {
 
         break;
 
-    case 'test':
-        console.log('Running in test ...');
-        performTest(beginning, ending);
-
-        break;
-
     case 'stocks':
-        // getStocks();        
+        console.log('Getting stocks and indices ...');
+        getStocks(beginning, ending);       
 
         break;
 }
 
 // Stocks do not print on a Friday, Saturday nor Sunday. JSE Stocks begin at 1999-09-27
-async function performTest(beginning, ending, rest = 2) {
+async function getStocks(beginning, ending, rest = 2) {
     let results = {
         indices: [],
         stocks: []
@@ -293,6 +224,8 @@ async function performTest(beginning, ending, rest = 2) {
                 cb: d.Reader
             })
         }
+
+        console.log(`Acquired ${sources.length} source(s)`);
 
         for(const source of sources) {
             const cb = requireFromString(`module.exports = ${source.cb}`);
@@ -333,7 +266,7 @@ async function performTest(beginning, ending, rest = 2) {
         if (results.indices.length > 0) {
             console.log(`Updating indices ...`);
 
-            ir = O8Q.updateIndices({
+            let ir = await O8Q.updateIndices({
                     indices: results.indices
                 });
             
