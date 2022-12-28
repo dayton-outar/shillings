@@ -167,7 +167,7 @@ export default {
     this.formatDates([new Date(), new Date()])
 
     this.fetch({
-        companyCode: '',
+        marketNo: -1,
         begin: `${ moment.utc().format('YYYY-MM-DDT00:00:00.000') }Z`,
         end: `${ moment.utc().format('YYYY-MM-DDT00:00:00.000') }Z`
       }).then(() => {
@@ -180,12 +180,12 @@ export default {
       this.beginDate = `${ moment( v.dates[0] ).format('YYYY-MM-DDT00:00:00.000') }Z`
       this.endDate = `${ moment( v.dates[1] ).format('YYYY-MM-DDT00:00:00.000') }Z`
 
-      let lc = v.stocks.reduce((a, v) => a === '' ? `"${v.code}"` : a.concat(`,`, `"${v.code}"`), '')
+      // let lc = v.stocks.reduce((a, v) => a === '' ? `"${v.code}"` : a.concat(`,`, `"${v.code}"`), '')
       this.$emit('changeLoading', true)
       this.formatDates(v.dates)
 
       this.fetch({
-        companyCode: lc,
+        marketNo: -1,
         begin: `${ moment( v.dates[0] ).format('YYYY-MM-DDT00:00:00.000') }Z`, // Clumsy but it's a pain to remove the offset...
         end: `${ moment( v.dates[1] ).format('YYYY-MM-DDT00:00:00.000') }Z`
       }).then(() => {

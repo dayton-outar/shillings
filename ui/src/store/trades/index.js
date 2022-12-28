@@ -11,10 +11,10 @@ export default {
   actions: {
     async fetch({ commit }, request) {
       const response = await graphQlClient.query({
-        query: gql`query Get($companyCode: String, $begin: DateTime!, $end: DateTime!) {
+        query: gql`query Get($marketNo: Long!, $begin: DateTime!, $end: DateTime!) {
           totalTrades
           (
-            companyCode: $companyCode
+            marketNo: $marketNo,
             begin: $begin
             end: $end
             order: { volume: DESC }
@@ -66,7 +66,7 @@ export default {
           }
         }`,
         variables: {
-          companyCode: request.companyCode,
+          marketNo: request.marketNo,
           begin: request.begin,
           end: request.end
         }
