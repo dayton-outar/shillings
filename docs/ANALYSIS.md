@@ -214,4 +214,6 @@ These are the classification of shenanigans that can be undertaken by companies 
 
 ## References
 
-1. Financial Shenanigans, Fourth Edition by Howard M. Schilit
+1. Warren Buffett and the Interpretation of Financial Statements by Mary Buffett
+2. Financial Shenanigans, Fourth Edition by Howard M. Schilit
+3. Introduction to Financial Accounting by Charles T. Horngren
