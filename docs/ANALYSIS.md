@@ -223,19 +223,25 @@ These are the classification of shenanigans that can be undertaken by companies 
    1. Recording bogus CFFO (Cash Flow from Operations) from a normal bank borrowing
 
       > Delphi went to its bank (Bank One) and offered to sell it $200 million in precious metals inventory. Not surprisingly, Bank One had no interest in buying inventory. Remember, we are talking about a bank, not an auto parts manufacturer. Delphi understood this and crafted the agreement in such a way that Bank One would be able to "sell" the inventory back to Delphi a few weeks later (after year-end). In exchange for the bank's "ownership" of the inventory for a few weeks, Delphi would buy it back at a small premium to the original sale price.
-      > 
+      >
       > ...
       >
       > Delphi should have recorded the $200 million received from Bank One as a borrowing (an increase in cash flow from financing activities).
-      > 
+      >
       > ...
       >
       > Delphi brazenly recorded it as the sale of $200 million in inventory [placing it under cash flow from operating activities]. In so doing, Delphi inflated revenue and earnings ...
 
 
    2. Boosting CFFO by selling receivables before the collection date
+      
+      > In 2004, pharmaceutical distributor Cardinal Health needed to generate a lot more cash. So management decided to sell accounts receivable to help the company raise cash very quickly. By the end of the second quarter (December 2004), Cardinal Health had sold $800 million in customer receivables. This transaction was the primary driver of the company's robust $971 million in CFFO growth in December 2004 over the prior-year period.
 
    3. Inflating CFFO by faking the sale of receivables
+      
+      > ... Peregrine [a company] transferred its receivables to a bank in exchange for cash; however, the risk of collection loss remained with Peregrine. That collection risk was huge, of course, because _there were no customers_&mdash;many of the related risk of loss had not been transferred, Peregrine remained on the hook to return the cash to the bank when the receivables inevitably were not collected.
+      > 
+      > Since the receivables had never actually been transferred, the economics of this transaction would be more akin to a collaterized loan, .... Peregrine borrowed money from the bank and used receivables as collateral. On the Statement of Cash Flows, this should be presented as a _Financing_ inflow. Peregrine, however, ignored the economic reality of the situation. Instead, it recorded the transaction as the sale of receivables and shamelessly reported the cash received as an _Operating_ inflow.
 
 2. Moving cash outflows from the Operating section to other sections
    
