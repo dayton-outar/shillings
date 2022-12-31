@@ -58,7 +58,7 @@ Let's take a look at these ratios.
 
    $$\large \text{Average Accounts Receivables} = \frac{1}{2} (\text{ Current Period Accounts Receivable} + \text{Previous Period Accounts Receivables} )$$
 
-   This ratio becomes more easily understood when it is used to divide 365 days to give the _Average Collection Period_. The _Average Collection Period_ states the number of days that the company takes to collect monies owed it from offering goods and services to its customers. The shorter the period is, the better it will be for the companies cashflow. However, there is no set scale on which the number of days would raise concern but it can be used to compare to other companies as a measure of efficiency. According to Investopedia, it is more preferrable to have an _Average Collection Period_ of 25 days.[^3]
+   This ratio becomes more easily understood when it is used to divide 365 days to give the _Average Collection Period_ (also referred to as _Days' Sales Outstanding_). The _Average Collection Period_ states the number of days that the company takes to collect monies owed it from offering goods and services to its customers. The shorter the period is, the better it will be for the companies cashflow. However, there is no set scale on which the number of days would raise concern but it can be used to compare to other companies as a measure of efficiency. According to Investopedia, it is more preferrable to have an _Average Collection Period_ of 25 days.[^3]
 
  - Inventory Turnover
 
@@ -68,7 +68,7 @@ Let's take a look at these ratios.
 
    $$\large \text{Average Cost of Inventory} = \frac{1}{2} (\text{ Current Cost of Inventory} + \text{Previous Cost of Inventory})$$
 
-   When we use this ratio to divide 365 days to give the _Days Sales of Inventory_. The number of days determined from _Days Sales of Inventory_ is a measure of how quickly the company can convert its stock of inventory into sales.[^4] A low number of days determined by the _Day Sales of Inventory_ indicates high efficiency. There is no set scale but it can be used to compare against other companies or to compare the performance of the same company against other periods.
+   When we use this ratio to divide 365 days to give the _Days' Sales of Inventory_. The number of days determined from _Days' Sales of Inventory_ is a measure of how quickly the company can convert its stock of inventory into sales.[^4] A low number of days determined by the _Days' Sales of Inventory_ indicates high efficiency. There is no set scale but it can be used to compare against other companies or to compare the performance of the same company against other periods.
 
 ## Profitability
 
@@ -166,13 +166,15 @@ The main metrics are as follows,
    
    > There is no right level of dividend yield and changes in share price can make this measure volatile.[^11]
 
-## Market Demand
+## Appendix
 
-**Demand** is a result of the complex and changing relationship between competition, image, and customer sources. Usually there are plenty of potential customers. Whether or not you get your share depends on image and competition. Image is a broad concept that describes all of the features that influence a customer's perception. Image includes drop-in features such as visibility or access, the physical characteristics of the area around the site, and the market presence (or familiarity) of your concept. **Competition** includes any business a customer thinks of when making a decision to "eat out" or to "buy tires." Both direct and indirect competitors will impact your site both by providing additional draw (possibly), but also by dividing up the supply of customers from various sources. The interactions between these three elements generates a quantitative measurement of the demand for your store or restaurant. The site evaluation model presented in this book uses a fairly simple formula for quantifying demand.[^12]
+Measuring _market demand_ can prove useful. A formula for measuring deman was found in _The Site Book_. See the excerpt below.
 
-$$\text{Demand }= \frac{\text{Total Customers}}{\text{Competition}}$$[^12]
-
-The total number of customers refers to the number of customers coming from each source (the total volume of potential customers in the trade area). Clearly, the higher the competition, the more choices each customer will have, which will lower the demand for your concept. Obviously, if the number of potential customers is also high, lots of competition won't matter as much because there will still be many customers available to visit your concept. A good image acts to increase the demand for your concept by increasing the chances that customers will choose you over the competition. We tend to prefer to shop or dine at businesses that are convenient to reach within the trade area, easily located fromthe street, accessible, established in the market, and so forth.[^12]
+> **Demand** is a result of the complex and changing relationship between competition, image, and customer sources. Usually there are plenty of potential customers. Whether or not you get your share depends on image and competition. Image is a broad concept that describes all of the features that influence a customer's perception. Image includes drop-in features such as visibility or access, the physical characteristics of the area around the site, and the market presence (or familiarity) of your concept. **Competition** includes any business a customer thinks of when making a decision to "eat out" or to "buy tires." Both direct and indirect competitors will impact your site both by providing additional draw (possibly), but also by dividing up the supply of customers from various sources. The interactions between these three elements generates a quantitative measurement of the demand for your store or restaurant. The site evaluation model presented in this book uses a fairly simple formula for quantifying demand.[^12]
+>
+> $$\text{Demand }= \frac{\text{Total Customers}}{\text{Competition}}$$
+>
+> The total number of customers refers to the number of customers coming from each source (the total volume of potential customers in the trade area). Clearly, the higher the competition, the more choices each customer will have, which will lower the demand for your concept. Obviously, if the number of potential customers is also high, lots of competition won't matter as much because there will still be many customers available to visit your concept. A good image acts to increase the demand for your concept by increasing the chances that customers will choose you over the competition. We tend to prefer to shop or dine at businesses that are convenient to reach within the trade area, easily located fromthe street, accessible, established in the market, and so forth.[^12]
 
 ## References
 
