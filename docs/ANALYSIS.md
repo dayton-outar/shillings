@@ -127,6 +127,7 @@ These are the classification of shenanigans that can be undertaken by companies 
       > ... improperly [recording] costs on the Balance Sheet as an asset (or "capitalizing" the costs), instead of expensing them immediately.
         ... assets [fall] into two categories: (1) those that are expected to produce a future benefit (e.g. inventory, equipment, and prepaid insurance) and (2) those that are ultimately expected to be exchanged for another asset such as cash (e.g., receivables and investments).
       > ...
+      > 
       > **Warning Signs of Improperly Capitalizing Normal Operating Expenses**
       >
       >  - Unwarranted improvements in profit margins and a large jump in certain assets
@@ -182,22 +183,38 @@ These are the classification of shenanigans that can be undertaken by companies 
    Techniques involved includes,
 
    1. Creating reserves and releasing them into income in a later period
+      
+      > When business is booming and earnings far exceed Wall Street estimates, companies may be tempted not to report all their revenue, but instead to save some of it for a rainy day. ... storing it [earnings] on the Balance Sheet until it is needed during a later period.
 
    2. Smoothing income by improperly accounting for derivatives
+      
+      > Companies with healthy businesses can engage in income-smoothing shenanigans to give the illusion of nice, steady, predictable results. Consider mortgage giant Federal Home Loan Mortgage Corporation (Freddie Mac, or Freddie) and its desire to portray very smooth earnings despite a period of volative interest rate movements. Freddie's attempts to smooth earnings went to the extreme and led to a $5 billon fraud.
 
    3. Creating reserves in conjunction with an acqusition and releasing them into income in a later period
 
-   4. Recording current-period sales in a lter period
+      > ... acquisitive companies create some of the biggest challenges for investors. ... combined companies immediately become more difficult to analyze on an apples-to-apples basis. ... acquisition accounting rules create distortions in the presentation of cash flow from operations. ... companies making acquisitions might be tempted to have the target company hold back some revenue that was earned before the deal closes so that the acquirer can record it in the later period.
+
+   4. Recording current-period sales in a later period
+      
+      > ... it is unlikely that the auditors will even know about this trick, and your customers certainly won't object since they will get billed later than they expected. ... it portrays higher sales in the later period.
 
 7. Shifting future expenses to the current period
    
    Techniques involved includes,
 
    1. Improperly writing off assets in the current period to avoid expenses in a future period
+      
+      > ... AOL had accumulated more than $314 million in the asset account labeled "deferred membership acquisition costs" (DMAC). But the company still had a big problem: those costs represented tomorrow's expense, and they would need to be amortized over the next eight quarters&mdash;a $40 million hit to earnings each quarter. ... AOL switched gears by announcing "a one-time charge" to write off the entire amount in one fell swoop. ... it had to come up with a justification to convince the auditors that this asset account had suddenly become "impaired" and would provide no future benefit. So AOL claimed that the write-off was necessary to reflect changes in its evolving business model, including rediced reliance on subscribers' fees as the company developed other revenue source.
+
+      > ... NVIDIA writing off inventory that it did not throw away
 
    2. Improperly recording charges to establish reserves used to reduce future expenses
 
+      > ... company that is taking a restructuring charge (such as laying off workers) might consider padding the total dollars written off to lower future-period operating expenses. Thus, salary expense to employees who are laid off today will decline in future periods, as any future severance payments received will be bundled into today's one-time charge. The result: future periods' above-the-line operating expense disappears, and the current period's below-the-line restructuring charge increases by that same amount.
+
 ### Cash Flow Shenanigans
+
+> ... high net income along with low CFFO (Cash Flow from Operations) often signals the presence of some **Earnings Manipulation Shenanigans**
 
 1. Shifting Financing cash inflows to the Operating section
    
