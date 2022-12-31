@@ -222,6 +222,17 @@ These are the classification of shenanigans that can be undertaken by companies 
 
    1. Recording bogus CFFO (Cash Flow from Operations) from a normal bank borrowing
 
+      > Delphi went to its bank (Bank One) and offered to sell it $200 million in precious metals inventory. Not surprisingly, Bank One had no interest in buying inventory. Remember, we are talking about a bank, not an auto parts manufacturer. Delphi understood this and crafted the agreement in such a way that Bank One would be able to "sell" the inventory back to Delphi a few weeks later (after year-end). In exchange for the bank's "ownership" of the inventory for a few weeks, Delphi would buy it back at a small premium to the original sale price.
+      > 
+      > ...
+      >
+      > Delphi should have recorded the $200 million received from Bank One as a borrowing (an increase in cash flow from financing activities).
+      > 
+      > ...
+      >
+      > Delphi brazenly recorded it as the sale of $200 million in inventory [placing it under cash flow from operating activities]. In so doing, Delphi inflated revenue and earnings ...
+
+
    2. Boosting CFFO by selling receivables before the collection date
 
    3. Inflating CFFO by faking the sale of receivables
