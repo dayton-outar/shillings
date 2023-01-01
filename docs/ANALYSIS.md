@@ -366,17 +366,31 @@ These are the classification of shenanigans that can be undertaken by companies 
    Techniques involved includes,
 
    1. Inheriting operating inflows in a normal business acquisition
+      
+      > ... the mere act of acquiring a company provides benefit to CFFO. ... it's a peculiar side effect from the accounting rules that segregate cash flows into three sections
+      >
+      > Imagine you are a company that is getting ready to make a business acquisition. When you pay for the acquisition, you do so without affecting CFFO. If you buy the company with cash, the payment is recorded as an _investing outflow_. If you offer stock instead, there is, of course, no cash outflow.
 
    2. Acquiring contracts or customers rather than developing them internally
+      
+      > Among the hundreds of businesses Tyco owned was an electronic security monitoring provider. Home security monitoring was a fast-growing industry in the 1990s, and Tyco's ADT division proved to be among the most popular brand names. Tyco generated new security systems contracts in two ways: through its own direct sales force and through an external network of dealerships. The dealers allowed Tyco to outsource a portion of its sales force. They were not on Tyco's payroll, but they sold security contracts, and Tyco paid them about $800 for every new customer.
+      >
+      > ... Tyco executives did not view these $800 payments to dealers to be normal customer solicitation costs, as the economics would suggest. Instead, they deemed these payments to be a purchase price for the "acquisitions" of contracts.
+      >
+      > ... customer solicitation costs resemble normal operating expenditures much more closely than they resemble business acquisitions. As a result, it makes more sense for them to be recorded on the Statement of Cash Flows in the same way that Tyco's internal sales force commissions are recorded: as operating outflows.
 
    3. Boosting CFFO by creatively structuring the sale of a business
+      
+      This is basically doing an Earnings Manipulation after acquisition as mentioned under ***Creating reserves in conjunction with an acqusition and releasing them into income in a later period***
 
 3. Manipulating key metrics
+   
+   > Sometimes a company will acquire a competitor in order to wind down a competing product and move the target's customers onto the acquirer's platform. This may be a good business strategy, but it could wreak havoc with organic growth metrics. For example, 3D printer manufacturer 3D Systems acquired competitor Z-Corp in 2012 and quickly announced that it would discontinue some of Z-Corp's products. Naturally, Z-Corp's revenue fell after being acquired, and 3D Systems reported strong organic growth. Any revenue growth that 3D Systems derived from legacy Z-Corp customers should not be considered organic.
 
 ## References
 
-1. Warren Buffett and the Interpretation of Financial Statements by Mary Buffett
-2. Financial Shenanigans, Fourth Edition by Howard M. Schilit
-3. Introduction to Financial Accounting by Charles T. Horngren
+1. Introduction to Financial Accounting by Charles T. Horngren
+2. Warren Buffett and the Interpretation of Financial Statements by Mary Buffett
+3. Financial Shenanigans, Fourth Edition by Howard M. Schilit
 
 [^1]: See [Efficiency Ratios](./MULTIPLIERS.md#efficiency)
