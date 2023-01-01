@@ -248,6 +248,10 @@ These are the classification of shenanigans that can be undertaken by companies 
    Techniques involved includes,
 
    1. Inflating CFFO with boomerang transactions
+      
+      > Global Crossing sold large blocks of future network capacity to telecom customers. At the same time, the company purchased a similar dollar amount of capacity from these same customers. In other words, Global Crossing would sell capacity to a customer and _simultaneously buy a similar amount of capacity_ on a different network. This was a classic _boomerang_ transaction. You can almost picture some Global Crossing executive telling the company's customers, "You scratch my back, and I'll scratch yours."
+      >
+      > So what does this have to do with cash flow? Well, Global Crossing recorded these boomerang transactions in a way that artificially inflated CFFO. The company recorded the cash that it received from its customers in these transactions as an Operating inflow; however, the cash that it paid to the same customers was recorded as an Investing outflow. Essentially, Global Crossing inflated cash flow from operating activities by depressing cash flow from investing activities.
 
    2. Improperly capitalizing normal operating costs
 
