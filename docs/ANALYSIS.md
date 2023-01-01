@@ -254,22 +254,48 @@ These are the classification of shenanigans that can be undertaken by companies 
       > So what does this have to do with cash flow? Well, Global Crossing recorded these boomerang transactions in a way that artificially inflated CFFO. The company recorded the cash that it received from its customers in these transactions as an Operating inflow; however, the cash that it paid to the same customers was recorded as an Investing outflow. Essentially, Global Crossing inflated cash flow from operating activities by depressing cash flow from investing activities.
 
    2. Improperly capitalizing normal operating costs
+      
+      > Recording normal operating costs as an asset rather than as an expense sounds simple, and frankly, it is quite easy to do. However, it is one of the scariest and most lethal shenanigans out there. Why? Because it is a simple sleight of hand that does more than just embellish earnings&mdash;it inflates operating cash flow as well.
+      >
+      > ... By classifying billions of dollars of normal operating costs as capital equipment purchases, WorldCom not only artificially inflated its profits, but it also overstated its CFFO.
 
    3. Recording the purchase of inventory as an investing outflow
+      
+      > The economics of purchasing goods to be sold to customers suggests that these purchases should be classified as an operating activity on the Statement of Cash Flows. Normally, this would be the case. Curiously, some companies treat these purchases as an Investing ourflow.
+      >
+      > ...
+      > 
+      > While Netflix's Income Statement appropriately reflected the economics of its DVD costs, its Statement of Cash Flows did not. You would think that the purchase of DVDs would have been presented on the SCF as an operating outflow just like the purchase of any inventory particularly the purchase of the new releases that were amortized for only one year). However, Netflix did not see it that way. Instead, it considered the purchase of DVDs to be the purchase of a capital asset, and therefore the cash outflows were presented in the Investing section. This treatment effectively moved a big cash outflow (payment for DVDs) from the Operating to the investing section, thereby inflating CFFO.
 
    4. Shifting operating cash outflows off the Statement of Cash Flows
+      
+      > Most companies with an employee pension plan fund those plans with cash that is invested to grow and meet the company's projected long-term obligations. These contributions have the unfortunate effect of reducing reported cash flows. What if pensions could be funded without depleting precious cash flow?
+      >
+      > In 2011, Diageo (maker of spirits including Johnnie Walker, Smirnoff and Guinness) funded its U.K. pension scheme with GBP535 million of whiskey. As the whiskey ages, its value would increase, improving the funded status of the plan. All the while, reported cash flows remain unaffected.
 
 3. Boosting operating cash flow using unsustainable activities
    
    Techniques involved includes,
 
    1. Boosting CFFO by paying vendors more slowly
+      
+      > Want to save a little more cash this year? Use your "delay-payments" lifeline: wait until the beginning of January to pay your December bills. If you push your payments out a month, your end-of-year bank balance will be higher, and it will cosmetically seem as if you generated more cash this year.
 
    2. Boosting CFFO by collecting from customers more quickly
+      
+      > For high-end electric automaker Tesla Motors, liquidity and cash flow have been particularly important metrics for investors and lenders. Since its found in 2003, Tesla had never posted a full year of positive free cash flow, and therefore the company had become entirely reliant on debt financing and equity issuances to continue funding its operations. In 2016, Tesla's operating cash outflows appeared to have improved, amounting to net outflows of $124 million, down from outflows of $524 million in 2015. However, what changed most significantly in terms of cash flow that year was that the company _began accepting orders and refundable customer deposits_ for its Model 3 sedan, which had been introduced only in concept. These deposits accounted for $350 million of additional inflows, or 88 percent of the reported improvement in 2016. Skeptical investors would have noted that fundamentally the business continued to burn cash at historical rates, but because of a successful marketing campaign, it was able to "borrow" from future periods and accelerate customer payments to report better results.
 
    3. Boosting CFFO by purchasing less inventory
+      
+      > Home Depot lowered its inventory levels simply by not restocking shelves after goods had been sold. In other words, the company just did not purchase as much inventory from vendors as in previous years.
+      >
+      > ... a company choosing to purchase less inventory would also provide an artificial and unsustainable boost to CFFO.
 
    4. Boosting CFFO with one-time benefits
+      
+      > ... Sun Microsystems, pocketed nearly $2 billion from Microsoft in 2004 ($1.6 billion of which was immediately recognized as income). Sun presented this large one-time item in plain view on its Statement of Operations, listing it separately as "settlement income." Sun's disclosure made it very easy for investors to understand that the income from this settlement was nonrecurring and unrelated to its normal operations; it was reported "below the line" as nonoperating income.
+      >
+      > Sun's Statement of Cash Flows, however, was less clear. The company recorded the $2 billion in cash as an operating inflow (as is appropriated under the indirect method), but it was not listed separately on the SCF; rather it was simply bondled with net income.
 
 ### Key Metrics Shenanigans
 
@@ -278,22 +304,40 @@ These are the classification of shenanigans that can be undertaken by companies 
    Techniques involved includes,
 
    1. Highlighting a misleading metric as a surrogate for revenue
+      
+      > Companies often prominently disclose SSS (_same-store sales_) in their Earnings Releases, and investors use it as a key indicator of company performance.
+      >
+      > ...
+      >
+      > However, because SSS fall outside of GAAP coverage, no universally accepted definition exists, and calculations may vary from company to company.
 
    2. Highlighting a misleading metric as a surrogate for earnings
+      
+      > ... management removed $97 million in expenses for interest, tax, depreciation and some other items to to a metric it called _adjusted EBITDA_ (earnings before interest, taxes, depreciation, and amortization). Then, it removed $15 million in non-cash stock compensation expense, bringing the company to and adjusted cash EBITDA of _negative_ $8 million.
 
    3. Highlighting a misleading metric as a surrogate for cash flow
+      
+      > Companies sometimes present metrics like "cash earnings" or "cash EBITDA" (as we just saw with Global Crossing). Do not confuse these metrics with substitutes for cash flow! Many companies and investors alike believe that these metrics (as well as plain old EBITDA) are good surrogates for cash flow simply because the calculation includes the adding back of noncash expenses such as depreciation.
 
 2. Distorting Balance Sheet metrics to avoid showing deterioration
    
    Techniques involved includes,
 
    1. Distorting accounts receivable metrics to hide revenue problems
+      
+      Mentioned under Cash Flow Shenanigans in ***Boosting CFFO by selling receivables before the collection date***
 
    2. Distorting inventory metrics to hide profitability problems
+      
+      Mentioned under Cash Flow Shenanigans in ***Boosting operating cash flow using unsustainable activities***
 
    3. Distorting financial asset metrics to hide impairment problems
+      
+      > New Century realized that investors would be seriously spooked if they knew that the company had reduced its reserves while its subprime loan portfolio was souring and that this reduction was the primary driver of earnings. Indeed, analysts who followed New Century were monitoring the company's allowance for loan losses closely as the subprime market started to crack. So when the company released its September 2006 results, management quietly changed its reserve presentation. ... the company grouped the loan loss reserve with another reserve (allowances for real estate owned) and presented the two together as one unit ... By combining the two reserves, New Century could say in its release that reserves increased from $236.5 million in June to $239 .4 million in September. However, the number on which investors had previously been focused&mdash;the loan loss reserve&mdash;declined from $209.9 million to $191.6 million. The loan loss reserve fell because bad loans that had been written off (call _charge-offs_) had accelerated and New Century had failed to record a sufficient expense to refill the reserve
 
    4. Distorting debt metrics to hide liquidity problems
+      
+      > The centerpiece of Parmalat's fraud seems to have been the company's use of offshore entities to hide fictitious or impaired assets, fabricate the reduction of debt, and create fake income. The scope of the fraudulent activities that Parmalat is alleged to have engaged in is quite amazing. SEC litigation against the company names a few, including forging the repurchase of its debt, faking the sale of bogus or uncollectible receivables, falsifying the payment of payables, recording fictional revenue, mischaracterizing debt as equity, disguising intercompany loans as income, and diverting company cash to various bisinesses owned by members of the CEO's family.
 
 ### Acquisition Accounting Shenanigans
 
