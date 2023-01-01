@@ -346,12 +346,20 @@ These are the classification of shenanigans that can be undertaken by companies 
    Techniques involved includes,
 
    1. Inflating profits through tricks at a target company before a deal closes
+      
+      > ... the goal of the target and acquirer: to make the postclosing period beautiful. One way to accomplish this goal is to depress earnings in the period just before the deal&mdash;called the _stub period_.
 
    2. Inflating profits by hiding losses at deal closing
+      
+      > Around 2008, Olympus had bought three companies and paid far more than they were worth, according to Woodford. This inflated price (totaling 30 percent of the deal value) was labeled "fees to a middleman." Woodford pointed out that the cut for investment bankers typically would be 1 to 2 percent, so the $674 million paid on the $2 billion deals likely was a payment to cover losses and move the investments off the Balance Sheet to an unconsolidated related-party entity.
 
    3. Creating dubious new revenue streams after closing
+      
+      > Both buyers and sellers of businesses have great flexibility in structuring a deal to create dubious future revenue streams. For example, assume Buyer Ben wants to purchase Seller Same's business, and they come to terms on a price of $5 million, which is the fair market value of the company. Buyer Ben then says to Seller Sam, "I will instead pay you $6 million (rather than the $5 million), provided you also agree to pay me a $1 million licensing fee next year." This change has no real economic impact to either Buyer Ben or Seller Sam, but the change in structure allows Ben to show $1 million more in revenue in the year following the acquisition.
 
    4. Inflating profits by releasing suspicious reserves either before or just after closing
+      
+      > The acquirer can also set up a bigger-than-necessary reserve for contingent consideration payments that might be paid to the owners of the target company, then later release some of the reserves back into income when they are deemed unnecessary.
 
 2. Inflating reported cash flow
    
