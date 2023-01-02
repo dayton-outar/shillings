@@ -285,6 +285,82 @@ pay a large sum to purchase an existing copyright from the owner. For example, a
 
 > ... **long-term liabilities** are those that fall due more than 1 year after the balance sheet date.
 
+Bonds, leases and pensions are usually classified as long-term liabilities.
+
+### Stockholder's Equity
+
+> The articles of incorporation referenced earlier establish the maximum number of shares of stock a company can legally issue. We call these **authorized shares**. When the company receives cash or other consideration in exchange for authorized stock certificates, the shares become **issued shares**. We call shares that are issued and held by the stockholders **outstanding shares**. Often the articles of incorporation specify the process whereby the shareholders can authorize additional shares in the future.
+
+> Sometimes a company buys back shares of stock from its own shareholders. It might buy them to reduce shareholder claims permanently. Alternatively, companies may hold the shares for later use, usually to distribute as part of employee bonuses or stock purchase plans. We call such temporarily held shares **treasury stock**. Treasury shares are considered issued, but because the company holds them, they are no longer considered outstanding.
+
+> **Preferred stock** offers the stockholder different rights and preferential treatment relative to common stockholders. The terms of preferred stock can include almost any arrangement the company and stockholders agree upon. For example, preferred stockholders often surrender the right to vote. In exchange, they usually have a right to dividends before common shareholders can receive a dividend.
+
+> In addition to the cumulative dividend feature, preferred stock usually has a specific **liquidating value**&mdash;the amount a company needs to pay to all preferred stockholders, in addition to any dividends in arrears, before it distributes any assets to common stockholders if the company is liquidated. The stock certificate generally states the exact liquidating value, which is often the same as par value. Because par value often defines the liquidating value and may define the amount of the dividend, it is economically important for preferred stock.
+
+> **Stock options** give the holder the right to purchase a specific number of shares of a corporation’s capital stock at a predetermined price, known as the exercise price or strike price, for a specific time period. Companies often give options to employees as part of their compensation. The company typically gives (or grants) the options to an employee with the provision that the employee must remain with the company for a period of time before being allowed to exercise the options, at which point the options become vested options—options that the holders have the power to exercise. Once vested, the employee may exercise the options anytime before they expire, usually for another 5 years or so. Stock options are especially valuable to executives and other employees because they can gain the benefits of stock price increases without bearing the risks of price declines. Shareholders can also benefit from stock options because they motivate employees to work hard and to make decisions that increase the value of their shares.
+
+> Many companies use restricted stock plans instead of stock option plans to motivate their employees. Granting **restricted stock** is like paying employees with common stock instead of cash. Restricted stock typically has constraints that prohibit employees from selling the stock until it vests and require employees to forfeit the stock if they leave the company prior to the end of the vesting period. Some firms also require that the stock be sold back to the issuing company if the employee decides to sell. Similar to the accounting for a stock option plan, a restricted stock plan requires a company to record a salary and wage expense over the vesting period in an amount equal to the value of the stock awarded. Each period the expense is offset by an increase to paid-in capital. Employees receive an asset that will increase and decrease in value exactly in proportion to the increases and decreases in value experienced by shareholders. In addition, employees holding restricted stock receive the same dividends that common stockholders receive.
+
+> A **stock split** refers to the distribution of additional shares to existing stockholders without any additional consideration provided by the stockholders to the firm. Issuance of one additional share for each share currently owned is a “two-for-one” split. For example, suppose the Allstar Equipment Company has 100,000 shares outstanding with a market value of $150 per share and par value of $10 per share. The total market value of the stock is thus $15 million. Suppose Allstar Equipment gives each shareholder an additional share for each share owned. The total number of shares would increase to 200,000. If nothing else about the company changes (assets, liabilities, and equity all stay the same), the total market value of the outstanding stock should still be $15 million. With 200,000 shares outstanding, though, the market value per share should drop to $75. Shareholders are as well-off as they were before because they have paid no additional money and they still have the same proportional ownership interest in the company.
+
+> **Stock dividends** are also distributions of additional shares to existing shareholders without additional consideration provided by the stockholder. However, the relative number of new shares issued is usually smaller than in a split, although this is not a requirement. More importantly, a stock dividend increases the number of shares but does not change the per share par value. Consequently, the total par value of common stock reported on the balance sheet increases.
+
+#### Retained Earnings Restrictions
+
+> The most closely watched part of stockholders’ equity, both by shareholders and creditors, is retained earnings. Boards of directors can make decisions that benefit shareholders but hurt creditors. For example, directors might pay excessive dividends that jeopardize payments of creditors’ claims. To protect creditors, state laws or contractual obligations often restrict dividend-declaring power. For example, authorities in some jurisdictions do not permit boards to declare dividends if those dividends would cause stockholders’ equity to be less than total paid-in capital. Therefore, retained earnings must exceed the cost of treasury stock. If there is no treasury stock, retained earnings must be positive. This restriction limits payments and thus protects the position of the creditors. Furthermore, many lenders require debt covenants that restrict certain uses of cash, such as dividend payments.
+>
+> To reflect these limitations, management may designate a portion of retained earnings as being unavailable for dividends or otherwise restricted. Most companies with restrictions of retained earnings disclose them in the footnotes. Occasionally, restrictions appear as a line item on the balance sheet called **restricted retained earnings** or **appropriated retained earnings**&mdash;a part of retained earnings that companies cannot reduce by dividend declarations. In Europe, companies often use the term reserves to refer to restricted retained earnings. Accountants use the term **reserve** in many ways, but we will use it to mean only one thing: restrictions of dividend declarations. In the United States, reserves are not common. When they exist, they generally represent a statement by the board of directors of its intent to restrict dividend payments to retain cash for a particular purpose such as a plant expansion. In many countries, laws further restrict the payment of dividends, resulting in a shareholders’ equity line called legal reserves.
+
+#### Capital and Reserves
+
+Issued share capital is the total amount of shares that have been given to shareholders.
+
+> To raise finance, a company can issue different types of shares ... Only ordinary share capital confers the rights of ownership in the company. Ordinary shareholders are ‘equity’ owners in the business.
+> 
+> When a company issues ordinary shares in exchange for consideration (typically cash), the sums are recorded as **share capital** and cannot be paid back to shareholders except by court approval, e.g. on liquidation of a business.
+>
+> _Individual_ shareholders can sell shares, e.g. through a stock exchange (for listed companies) or to a private buyer. From a _company_ perspective, however, this has no effect on the capital invested in the company as shareholders are re-selling shares previously issued by the company.
+> 
+> **Reserves** belong to shareholders and are classified as _revenue_ or _capital_. The distinction determines whether or not the reserve is distributable, i.e. can be paid out to shareholders as dividends. Revenue reserves are distributable and are created by a company’s trading and operating activities. Profits can be distributed as dividends to shareholders. Any profits not distributed accumulate in a ‘retained earnings’ reserve available for future distribution.
+> 
+> In contrast, capital reserves are not distributable. They exist to protect creditors.
+> 
+> A company’s ‘capital and reserves’ balance is an indicator of its financial strength ...
+> 
+> A company planning to pay dividends to its shareholders can only do so from its revenue reserves. It cannot legally pay a dividend if the payment would have the effect of reducing its net assets to below its _capital_ reserves (plus share capital) balance. These regulations are known as _capital maintenance rules_ and prevent shareholders extracting too much cash from the company.
+>
+> Creditors have priority in a winding up and capital maintenance rules help give ‘substance’ to this prioritisation, i.e. there would be no point in creditors having priority over shareholders on a winding up if there were no restrictions on a company’s ability to pay dividends to shareholders ...
+> 
+> While legal protection exists, it is important for creditors and lenders to note that capital reserves may nevertheless be depleted where a company is making losses.
+>
+> **Capital reserves** are created in a variety of ways:
+> 1. Shareholder contributions
+>
+>    The share premium reserve is created when shares are issued by a company at a price in excess of the nominal value of shares. The share premium reserve is a non-distributable legal reserve and an example of what is known as a ‘capital reserve’.
+>
+> 2. Statute
+>
+>    Companies may be required to maintain certain types of reserves by legislation. For example there is a requirement to create a _capital redemption reserve_ consisting of the nominal value of shares repurchased and cancelled by a company. This reserve maintains capital in the business providing protection for creditors.
+>
+> 3. Accounting requirements
+>
+>    Most other reserves result from accounting requirements and reflect measurement changes in equity rather than profit and loss. Some common examples are given below.
+>    1. _Revaluation reserve_. Fixed assets may be revalued to fair value. A revaluation surplus is a capital reserve and therefore cannot be distributed, although a surplus may be transferred periodically to the profit and loss reserve and distributed as a dividend. The amount that can be transferred is based on the difference between depreciation on the revalued carrying amount of the asset and depreciation based on the asset’s original cost. When a revalued asset is sold, any balance in the reserve (relating to the asset sold) may be transferred to retained earnings and distributed as a dividend.
+>    2. _Foreign currency translation reserve_. Foreign currency differences arising from converting (‘translating’) assets, liabilities, income and expenses from an entity’s functional currency to the reporting currency result in a foreign currency reserve. The reserve arises only in group situations in consolidated accounts. It is only on disposal of a foreign entity that any accumulated translation differences can be recognised as part of the profit on sale of the entity.
+[^1]
+
+### Intercorporate Investments and Consolidations
+
+...
+
+#### Consolidated Financial Statements
+
+> Why have subsidiaries? Why not integrate the smaller companies into the larger parent to create a single legal entity? The reasons include limiting the liabilities in a risky venture, saving income taxes, conforming to government regulations with respect to a part of the business, doing business in a foreign country, and expanding in an orderly way while retaining the ability to subsequently sell or spin off the separate corporate subsidiary. For example, there are often tax advantages for the sellers when an acquisition involves selling the capital stock of a going concern instead of its individual assets. Sometimes foreign subsidiaries face more favorable treatment from their country of residence than a foreign parent corporation would experience.
+
+#### Noncontrolling Interests
+
+> ... Coca-Cola owns more than 50% but less than 100% of many companies. Coca-Cola consolidates each company into its consolidated financial statements but recognizes the claim on some of the consolidated assets held by other owners. These claims are called noncontrolling interests. **Noncontrolling interests** represent the claims of nonmajority shareholders in the assets and earnings of a company whose accounts are consolidated into the accounts of the majority shareholder. On its consolidated 2011 earnings statement, Coca-Cola shows a reduction of net income of $62 million due to noncontrolling interests. On the consolidated balance sheet, Coca-Cola shows $286 million of noncontrolling interests. Note that the labels are identical: noncontrolling interests. Thus, it is up to you, the reader, to know that the $62 million on the income statement is the current year increase, whereas the $286 million on the balance sheet is the cumulative effect.
+
 ## Warren Buffet's Interpretation of Financial Statements
 
 ...
@@ -353,7 +429,7 @@ These are the classification of shenanigans that can be undertaken by companies 
 
       > Investors should be extra vigilant when _analyzing_ companies using percentage-of-completion accounting, since the reported results hinge on the company's estimates about its own progress.
 
-      > Investors shold use a measure called "days' sales outstanding" (DSO)[^1] to evaluate how quickly customers are paying their bills relative to how quickly revenue is recorded. A higher DSO could indicate more aggressive revenue recognition in addition to simply poor cash management.
+      > Investors shold use a measure called "days' sales outstanding" (DSO)[^2] to evaluate how quickly customers are paying their bills relative to how quickly revenue is recorded. A higher DSO could indicate more aggressive revenue recognition in addition to simply poor cash management.
 
       We could say that ***recording revenue before completing material obligations*** and ***recording revenue far in excess of work completed*** are generally the same thing but the subtle difference is that this technique (_recording in excess of work completed_) is legitimized through a POC policy. Basically both techniques involves recognizing revenue before completion of delivery of the product or service offered by the company (or business).
 
@@ -429,7 +505,7 @@ These are the classification of shenanigans that can be undertaken by companies 
       
       > ... consider a piece of equipment that management first assumed would last for 10 years but that breaks down permanently during year 5. Once it's out of service, the original depreciation schedule should be abandoned, and the remaining asset balance must be oved to the Expense section immediately. If the company instead chooses to continue depreciating the asset according to the original 10-year plan, it will have failed to write down an appropriately capitalized cost that had later become impaired.
 
-      > ... DSI [Days' Sales of Inventory][^1] standardizes the inventory balance relative to inventory sold (i.e., cost of good sold) in a period. This calculation helps investors determine whether an increase in the absolute level of inventory is in line with the overall growth of the business or whether it might be a harbinger of margin pressure.
+      > ... DSI [Days' Sales of Inventory][^2] standardizes the inventory balance relative to inventory sold (i.e., cost of good sold) in a period. This calculation helps investors determine whether an increase in the absolute level of inventory is in line with the overall growth of the business or whether it might be a harbinger of margin pressure.
 
       > An additional measure can be used to test whether an inventory buildup might be justified by upcoming demand: simply compare the growth in the absolute level of inventory with the company's expected revenue growth. If inventory growth far exceeds the expected sales growth, the inventory bulge is probably unwarranted and a concern for investors.
 
@@ -675,7 +751,9 @@ These are the classification of shenanigans that can be undertaken by companies 
 ## References
 
 1. Introduction to Financial Accounting by Charles T. Horngren
-2. Warren Buffett and the Interpretation of Financial Statements by Mary Buffett
-3. Financial Shenanigans, Fourth Edition by Howard M. Schilit
+2. The Finance Book by Stuart Warner and Si Hussain
+3. Warren Buffett and the Interpretation of Financial Statements by Mary Buffett
+4. Financial Shenanigans, Fourth Edition by Howard M. Schilit
 
-[^1]: See [Efficiency Ratios](./MULTIPLIERS.md#efficiency)
+[^1]: Excerpts from Chapter 15 - Capital and reserves, The Finance Book by Stuart Warner and Si Hussain
+[^2]: See [Efficiency Ratios](./MULTIPLIERS.md#efficiency)
