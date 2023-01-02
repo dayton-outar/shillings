@@ -52,11 +52,11 @@ These days they seem to be just called _Receivables_.
 
 Take a look at the balance sheet below.
 
-[Balance Sheet of Biwheels Company](/.attachments/bi-wheel-balance-sheet.png)
+![Balance Sheet of Biwheels Company](.attachments/bi-wheel-balance-sheet.png)
 
 Take note of the income statement made from the balance sheet above.
 
-[Income Statement of Biwheels Company](/.attachments/bi-wheel-income-statement.png)
+![Income Statement of Biwheels Company](.attachments/bi-wheel-income-statement.png)
 
 > You can think of income statements as filling in the gaps between balance sheets. The balance sheets show the financial position of the company at discrete points in time, and the income statements explain the changes that have taken place between those points.
 
