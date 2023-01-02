@@ -1,14 +1,20 @@
 # Financial Report Analysis
 
-## Measuring Income
+## Introduction to Financial Accounting
 
-### The Accounting Time Period
+...
 
-> Established purely for accounting purposes, the fiscal year does not necessarily end on December 31. Many companies choose the end of calendar-year quarters (March 31, June 30, and September 30) as their fiscal year end. [^1]
+### Measuring Income
+
+...
+
+#### The Accounting Time Period
+
+> Established purely for accounting purposes, the fiscal year does not necessarily end on December 31. Many companies choose the end of calendar-year quarters (March 31, June 30, and September 30) as their fiscal year end.
 
 This is an important point to note for data-entry purposes when it comes to the _statement dates_ for annual reports.
 
-### Revenues and Expenses
+#### Revenues and Expenses
 
 > Companies obtain assets by selling products or services and use assets in producing and delivering those products or services. When they sell products or services, they record **revenue** (sometimes called **sales** or **sales revenue** [or **turnover**]), which is the increase in net assets resulting from selling products or services. Revenues increase owners’ equity. In contrast, **expenses** are decreases in net assets as a result of consuming or giving up resources in the process of providing products or services to a customer. Expenses decrease owners’ equity. **Income** (also known as **profits** or **earnings**) is the excess of revenues over expenses. If expenses exceed revenues, we call it a loss.
 > 
@@ -24,11 +30,11 @@ These days they seem to be just called _Receivables_.
 
 > ... **cost of goods sold** expense (also called **cost of sales** or **cost of revenue**) is the original acquisition cost of the inventory that a company sells to customers during the reporting period.
 
-### Accrual vs. Cash
+#### Accrual vs. Cash
 
 > Under the **accrual basis**, accountants record revenue as it is earned and record expenses as they are incurred, regardless of when cash changes hands. In contrast, the **cash basis** recognizes revenue when a company receives cash and recognizes expenses when it pays cash.
 
-### Recognition of Revenues
+#### Recognition of Revenues
 
 > For revenues to be recognized under U.S. GAAP, it must satisfy the following criteria:
 > 
@@ -38,7 +44,7 @@ These days they seem to be just called _Receivables_.
 > 
 > Revenue recognition for most retail companies, such as Wal-Mart, Safeway, and McDonald’s, is straightforward. Such companies earn and realize revenue at the point of sale&mdash;when a customer makes a full payment by cash, check, or credit card and takes possession of the goods. Other companies may earn and realize revenue at times other than the point of sale.
 
-### Recognition of Expired Assets
+#### Recognition of Expired Assets
 
 > **depreciation** is the systematic allocation of the acquisition cost of long-lived assets to the expense accounts of the particular accounting periods that benefit from the use of the assets. Depreciation applies to physical assets that a company owns, such as buildings, equipment, furniture, and fixtures, that the company expects to use for multiple periods. (Land is not subject to depreciation because it does not deteriorate over time.)
 > 
@@ -46,7 +52,7 @@ These days they seem to be just called _Receivables_.
 >
 > In summary, inventory costs are _product costs_ that accountants match to the revenues they help generate. Rent is a _period cost_ that accountants record in the period it benefits. Because equipment benefits many periods, accountants spread its cost over those periods as depreciation expense.
 
-### Income Statement
+#### Income Statement
 
 > _In summary, inventory costs are product costs that accountants match to the revenues they help generate. Rent is a period cost that accountants record in the period it benefits. Because equipment benefits many periods, accountants spread its cost over those periods as depreciation expense._
 
@@ -62,13 +68,226 @@ Take note of the income statement made from the balance sheet above.
 
 > One area that requires judgment, and therefore leaves room for ethical conflicts, is depreciation.
 
-### Cash Dividends
+> the **operating expenses**, which is a group of recurring expenses that pertain to the firm’s routine, ongoing operations. Examples of such expenses are wages, rent, depreciation, and various other operation-oriented expenses, such as telephone, heat, and advertising. We deduct these operating expenses from the gross profit to obtain **operating income** (also called **operating profit** or **income from operations**).
+
+> **gross profit** (also called **gross margin**), ... is the excess of sales revenue over the cost of the inventory that was sold.
+
+#### Statement of Stockholders’ Equity
+
+> The **statement of stockholders’ equity** (or **statement of shareholders’ equity**) shows all changes during the year in each stockholders’ equity account. It starts with the beginning balance in each account, followed by a list of all changes that occurred during the period, followed by the ending balance.
+>
+> Changes in stockholders’ equity arise from three main sources:
+>
+> 1. _Net income or net loss_. A period’s net income (net loss) increases (decreases) the balance in the retained earnings portion of stockholders’ equity.
+> 2. _Transactions with shareholders_. For many companies, the most common transaction with shareholders is the declaration of dividends, which reduces retained earnings.
+> 3. **Other comprehensive income (OCI)**. These are specific changes in stockholders’ equity that do not result from net income or transactions with shareholders. Items classified as other comprehensive income increase or decrease stockholders’ equity but are not recorded as part of paid-in capital or retained earnings. Rather, companies accumulate these items in a stockholders’ equity account entitled **Accumulated Other Comprehensive Income (AOCI)**.
+>
+> ...
+>
+> Many companies with negative retained earnings use the more descriptive term **accumulated deficit**.
+
+
+#### Cash Dividends
 
 > Another decrease in the Retained Earnings account arises from **cash dividends**, distributions of cash to stockholders.
 
 > The board of directors _declares_&mdash;announces its intention to pay&mdash;a dividend on one date (declaration date), payable to those stockholders on _record_ as owning the stock on a second date (record date), and actually _pays_ the dividend on a third date (payment date).
 
+### Accrual Accounting
+
+...
+
+#### Adjustments to the Accounts
+
+> **Explicit transactions** are observable events, such as cash receipts and disbursements, credit purchases, and credit sales that trigger the majority of day-to-day routine journal entries.
+> 
+> ...
+> 
+> **Implicit transactions** are events, such as the passage of time, that do not generate source documents or any visible evidence that the event actually occurred. Because there is no specific notification to record such events, accountants do not formally recognize them in the accounting records until the end of an accounting period. For example, accountants prepare entries for depreciation expense or the expiration of prepaid rent from special schedules or memorandums at the end of an accounting period. An explicit event did not trigger such entries. Accountants recorded the related explicit transaction at the time the company purchased the depreciable asset or made the initial rent payment. We call the end-of-period entries that record these implicit events adjustments. **Adjustments** (also called **adjusting entries**) assign the financial effects of implicit transactions to the appropriate time periods. Thus, adjustments occur at periodic intervals, usually at the end of the accounting cycle when accountants are about to prepare the financial statements.
+
+> The principal adjustments arise from four basic types of implicit transactions:
+> 1. Expiration or consumption of unexpired costs
+>    
+>    Biwheels paid $6,000 in January to cover rent for the months of January, February, and March. The company initially recorded$6,000 of Prepaid Rent as an asset. As each day passed, Biwheels incurred rent expense and theasset declined in value. However, there is no benefit to recording daily adjusting entries. Rather,Biwheels made a $2,000 adjustment at the end of each month to reflect the gradual expiration of the rent costs.
+>
+> 2. Earning of revenues received in advance
+>
+>    Just as a company acquires assets and recognizes the related expense over time as it uses the assets, it may receive revenue in advance and then earn the revenue over time. **Unearned revenue** (also called **revenue received in advance** or **deferred revenue**) represents cash received from customers who pay in advance for goods or services that the company promises to deliver at a future date. The company receives cash before it earns the related revenue. This commitment to provide goods or services in the future is a liability, and the company must record both the receipt of cash and the liability.
+>
+> 3. Accrual of unrecorded expenses
+>    
+>    Wages are an example of a liability that grows moment to moment as employees perform their duties. The services provided by employees represent expenses. It is unnecessary to make hourly, daily, or even weekly formal entries in the accounts for many accrued expenses, as the cost of such frequent recording would exceed the benefits. This is true, even though computers can perform these tasks effortlessly. The costs of computing are small, but in this case the benefits are even smaller. Accountants aggregate these costs only when they prepare financial statements, and this rarely needs to be done hourly or daily. Consequently, they make adjustments to bring each accrued expense (and corresponding liability) account up-to-date at the end of the accounting period, just before they prepare the formal financial statements. These adjustments are necessary to accurately match the expenses to the period in which they help generate revenues.
+>
+> 4. Accrual of unrecorded revenues
+>    
+>    Just as the realization of unearned revenues is the mirror image of the expiration of prepaid expenses, the accrual of unrecorded revenues is the mirror image of the accrual of unrecorded expenses. Because the company has not received cash, there is no explicit transaction to trigger a journal entry. However, according to the revenue recognition principle, revenues affect stockholders’ equity in the period a company earns them, not the period in which it receives cash. Thus, an adjustment is required to recognize revenues earned but not yet received.
+
+#### Current Assets and Liabilities
+
+> **Current assets** are cash and other assets that a company expects to convert to cash, sell, or consume during the next 12 months (or within the normal operating cycle if longer than 1 year). Similarly, **current liabilities** are those liabilities that come due within the next year (or within the normal operating cycle if longer than a year).
+> 
+> ...
+>
+> The difference between current assets and current liabilities is **working capital** (**net working capital** or **net current assets**).
+
+### Statement of Cash Flows
+
+...
+
+#### Purposes of Cash Flow Statement
+
+> Why do managers and investors use a statement of cash flows?
+> 
+> 1. It helps them understand the relationship of net income to changes in cash balances. Cash
+balances can decline despite positive net income and vice versa.
+> 2. It reports past cash flows as an aid to
+>    1. predicting future cash flows,
+>    2. evaluating how management generates and uses cash, and
+>    3. determining a company’s ability to pay interest, dividends, and debts when they are due.
+> 3. It identifies specific increases and decreases in a firm’s productive assets.
+
+> **Cash equivalents** are highly liquid short-term investments that a company can easily and quickly convert into cash, such as money market funds and Treasury bills.
+
+#### Typical Activities Affecting Cash
+
+> Operating decisions affect the major day-to-day activities that generate revenues and expenses. The first major section of the statement of cash flows, **cash flows from operating activities** [CFFO], summarizes the cash impact of such decisions.
+> ...
+>
+> **Operating activities** are transactions that affect the purchase, processing, and selling of a company’s products and services. For example, making sales, collecting accounts receivable, recording an expense for cost of goods sold, purchasing inventory, and paying accounts payable or employee wages are all operating activities. The thing these transactions have in common is that they are an integral part of the major income-generating activities of the company.
+
+> Managers make financing decisions when they decide whether and how to raise or repay cash. For example, when a company needs cash, financial managers may decide whether to borrow money from a bank or other lender or issue additional capital stock. When there is excess cash, financial managers may decide to repay previous borrowings or to buy back previously issued stock. To understand financing decisions, we use the section of the statement of cash flows labeled **cash flows from financing activities**. **Financing activities** are a company’s transactions that obtain resources by borrowing from creditors or selling shares of stock and use resources to repay creditors or provide a return to shareholders.
+
+> After raising capital, managers must decide how to invest the capital. These investing decisions include the choices to (1) acquire or dispose of plant, property, equipment, and other long-term productive assets, and (2) provide or collect cash as a lender or as an owner of securities. The statement of cash flows covers the results of investing decisions in a section labeled **cash flows from investing activities**. **Investing activities** are transactions that acquire or dispose of long-lived assets or acquire or dispose of securities held for investment purposes that are not cash equivalents. Thus, purchasing property or equipment is an investing activity, but purchasing inventory or prepaying rent are operating activities. Why? Because a company will generally use property and equipment for multiple years, whereas it will use inventory and prepaid rent within one year.
+
+![Typical Operating, Investing, and Financing Activities](.attachments/cash-flow-sections-structure.png)
+
+> _There is one more item you will see on the cash flow statements of companies with international operations—the effect of exchange rates on cash. Companies show this effect after the operating, investing, and financing activities. The effect of exchange rates is not a cash flow, but it appears on the cash flow statement because it is necessary for the reconciliation of cash balances at the beginning and end of the period._
+
+#### Cash Flows from Investing Activities
+
+![Analysis of Effects of Financing and Investing Transactions on Cash](.attachments/analysis-effects-financing-investing.png)
+
+> ... selling investment securities (except for securities that are cash equivalents) increases cash (+) and making a loan decreases cash (–). Notice that buying or selling securities that are cash equivalents does not change cash. It simply turns one type of cash into another type of cash.
+
+### Approaches to Calculating the Cash Flows from Operating Activities
+
+> Under current U.S. GAAP, companies can use either of two approaches to compute cash flows from operating activities (or cash flows from operations). The **direct method** subtracts operating cash disbursements from operating cash collections to arrive at net cash flow from operations. The **indirect method** starts with the accrual net income from the income statement and adjusts it to reflect only those income statement activities that involve actual cash receipts and cash disbursements. Both methods produce the same amount of net cash provided by (or used for) operating activities. The only difference is the format of the operating section of the cash flow statement.
+
+![Analysis of Effects of Operating Transactions on Cash](.attachments/analysis-effects-operations.png)
+
+> These cash flows are associated with revenues and expenses on the income statement. Notice that recording revenue from the sales of goods or services does not necessarily increase cash. Only sales for cash immediately increase cash. There is no cash effect of credit sales until the customer actually pays. Biwheels must collect its accounts receivable to generate any cash. Similarly, cash received for services to be performed in the future is an operating cash inflow recognized in the statement of cash flows even though a company may not earn and record the revenue until a later period.
+
+> **ADJUSTMENT FOR DEPRECIATION** The first adjustment is to add depreciation expense back to net income. We do this because we deducted depreciation of $100 when computing the net income of $57,900, but there is no related operating cash outflow in January. In fact, depreciation never entails an operating cash flow because the cash flow occurred as an investing activity when Biwheels paid for the equipment. Because we deducted $100 of depreciation in computing January’s net income, adding it back simply cancels the deduction. There is no cash flow effect of depreciation. A word of caution—do not interpret the $100 depreciation add-back as a cash inflow. While line items in the financing and investing sections of a statement of cash flows represent cash inflows and cash outflows, the line items in the operating section of an indirect method statement are not cash flows. Rather, they are adjustments of net income. An adjustment similar to the one made for depreciation will apply to any expense for which there is never an operating cash outflow.
+
+> **ADJUSTMENT FOR REVENUES** Consider Biwheels’ revenues. If all of Biwheels’ sales were for cash, there would be no accounts receivable, the associated cash flows would occur at the time of sale, and the cash inflow would equal the sales revenue. However, Biwheels’ January sales are all on open account. Thus, each sale initially increases accounts receivable, and the cash inflow occurs when Biwheels collects the receivable from the customer. You can compute the amount of cash collections from income statement and balance sheet data in two steps: (1) compute the total amount Biwheels could possibly collect in the month, which is the sales for the month plus the accounts receivable balance at the beginning of the month, and (2) from this you subtract the amount that Biwheels has not yet collected, the accounts receivable at the end of the month.
+
+> **ADJUSTMENT FOR COST OF GOODS SOLD** Just as we adjusted sales to compute cash collections from customers, we can adjust cost of goods sold to compute cash outflow for payments to suppliers. To do this, we use one income statement account, Cost of Goods Sold, and two balance sheet accounts, Inventory and Accounts Payable.
+
+> **ADJUSTMENTS FOR OTHER EXPENSES** ... a general approach to adjustments
+>
+> - Adjust for revenues and expenses that do not require cash:
+>
+>   - Add back depreciation.
+>   - Add back other expenses that do not require cash.
+>   - Deduct revenues that do not generate cash.
+>
+> - Adjust for changes in noncash assets and liabilities relating to operating activities:
+>   
+>   - Add decreases in operating assets.
+>   - Deduct increases in operating assets.
+>   - Add increases in operating liabilities.
+>   - Deduct decreases in operating liabilities.
+
+#### The Statement of Cash Flows and the Balance Sheet Equation
+
+> The balance sheet equation provides the conceptual basis for all financial statements, including the statement of cash flows.
+>
+> $$\large \text{Assets} = \text{Liabilities} + \text{Stockholders' equity}$$
+> 
+> $$\large \text{Cash} + \text{Noncash assets (NCA)} = \text{L} + \text{SE}$$
+> 
+> $$\large \Delta\text{Cash} = \Delta \text{L} + \Delta \text{SE} - \Delta \text{NCA}$$
+> 
+> Therefore:
+>
+> Change in cash = Change in all noncash accounts
+>
+> or
+>
+> What happened to cash = Why it happened
+>
+> ...
+> 
+> Direct method = Indirect method
+
+### Long-lived Assets
+
+> Long-lived assets can be either tangible or intangible. **Tangible assets** (also called **fixed assets**) are physical items that you can see and touch. Examples are land, buildings, and equipment. In contrast, **intangible assets** lack physical substance. They generally consist of contractual rights, legal rights, or economic benefits. Examples are patents, trademarks, and copyrights. Financial instruments such as accounts receivable, notes receivable, and investments in bonds and stocks also lack physical substance, but these assets are not classified as intangibles for accounting purposes. Accounts and notes receivable represent claims to cash and are accounted for ... Investments in bonds and stocks aren’t classified as intangible assets because they are not part of the operating activities of the company.
+
+> For tangible assets such as buildings, machinery, and equipment, they call it _depreciation_. They use **amortization** to refer to the allocation of the costs of intangible assets to the periods that benefit from these assets. Finally, for natural resources, they call it **depletion**.
+
+#### Contrasting Long-lived Asset Expenditures with Expenses
+
+> companies make expenditures to purchase assets. For those assets to remain on the balance sheet they must continue to provide future economic benefits to the company and be reliably measured. Companies use the benefits provided by some assets, such as advertising services, almost immediately, so they record such expenditures directly as expenses. Companies use the benefits of other assets, such as prepaid rent, within a year, so the expenditures are classified as current assets for a short period before companies recognize them as expenses. Finally, companies **capitalize** assets that have benefits lasting more than a year; that is, they record the purchase price in a long-term asset account and recognize part of the purchase price as an expense each period as they use the asset. Capital expenditures result in new long-lived assets, or they increase the capacity, efficiency, or useful life of existing long-lived assets.
+> 
+> Sometimes it is difficult to decide whether to capitalize or expense a particular expenditure. Consider the expenditure for work performed on an engine. The company should capitalize this expenditure only if it increases the capacity, efficiency, or useful life of the engine beyond initial expectations. If it merely keeps the engine running as expected, it is an expense. In the absence of contradictory evidence, most accountants would call it an expense. Why? Because accountants and auditors watch for tendencies to understate current expenses, thereby overstating income, through the unjustified capitalization of expenditures that should be expensed.
+
+> The **fair value** of an asset is the price for which a company could sell the asset to an independent third party. When a stock trades actively, we typically assume that the fair value of the stock is the best indicator of the value of the transaction. After all, if we asked four different appraisers to appraise the land, they would probably arrive at four different values, while the stock exchange determines a value for shares of stock at any given point in time.
+
+#### Depreciation of Buildings and Equipment
+
+> The cost a company allocates as depreciation over the total useful life of the asset is the **depreciable value** (also **depreciable base** or **allocation base**). It is the difference between the total acquisition cost and the estimated residual value. The **residual value**, also known as **terminal value**, **disposal value**, **salvage value**, and **scrap value**, is the amount a company expects to receive from sale or disposal of a long-lived asset at the end of its useful life. The **useful life** or **service life** of an asset is the shorter of the physical life of the asset or the economic life of the asset. The economic life of an asset and its physical life need not be the same. The physical life of an asset depends on the wear and tear it takes while in use.
+
+> Depreciation methods differ primarily in the amount of cost allocated to each accounting period. A list of depreciation amounts for each period of an asset’s useful life is a **depreciation schedule**.
+
+#### Impairment of Assets
+
+> Downward revaluations due to impairment occur under both U.S. GAAP and IFRS. Both U.S. GAAP and IFRS require that, at each reporting date, companies assess whether impairment indicators exist for long-lived assets. Companies must review assets for impairment whenever indicators suggest that impairment is possible. Indicators that may lead to a review for impairment include, but are not limited to, _a significant decline in the market price of an asset, a significant change in the manner in which an asset is being used, an adverse change in legal or business environment, evidence of obsolescence or physical damage, or a forecast indicating that the company will experience continuing losses associated with the use of the asset_.
+>
+> Suppose that Intel, a company reporting under U.S. GAAP, owns equipment with a net book value of $150,000. Due to a change in technology and product demand, Intel determines that it must review the asset for impairment. U.S. GAAP requires a two-step process. The first step in the impairment review is a **recoverability test** that compares the sum of the expected future net cash flows from the use of the asset plus its expected future disposal value with the current carrying value of the asset. If the sum of the estimated cash flows plus disposal value is greater than the carrying value, the asset is not impaired. If the sum of the estimated cash flows plus disposal value is less than the carrying value, Intel must consider the asset to be impaired. Suppose Intel estimates the total expected future net cash flows to be $127,000. Because this is less than the carrying value of $150,000, there is evidence of impairment. Thus Intel proceeds to the second step, computation of the dollar amount of the impairment loss.
+> 
+> The impairment loss is the amount by which the carrying value of the asset exceeds its fair value. If there is an active market for the asset being evaluated, the fair value is the current market price. In the absence of an active market, Intel must estimate the fair value using appropriate valuation techniques. One such valuation technique estimates the fair value of an asset as the _present value_ of the expected future net cash flows generated by the asset. ... Under this valuation technique it would use the present value of those expected future net cash flows to calculate the magnitude of the loss. Assume that the market price (fair value) of the equipment in our example is known and is $105,000. Therefore, Intel must record an impairment loss of $45,000.
+
+#### Intangible Assets
+
+> In recent years we have seen an increase in the number of firms in the economy that are “knowledge-based” businesses. The value of these firms lies in intangibles such as internal research and development activities and intellectual capital. However, under existing U.S. GAAP, if a company does not acquire these resources externally, it cannot record them as assets. Some analysts believe that R&D and perhaps other expenditures for intellectual capital should be capitalized, and they adjust the financial statements accordingly
+
+> **Patents** are grants made by the federal government to the inventor of a product or process, bestowing (in the United States) the exclusive right to produce and sell a given product, or use a process, for up to 20 years. After that time, others can manufacture the product or use the process. Suppose a company acquires a newly patented product from an inventor for $170,000. Although the remaining legal life of this patent is 20 years, because of fast-changing technology, the economic life of the patent is only 5 years. The company would amortize the asset over 5 years, the shorter of the economic or legal life, making the annual amortization expense ($170,000 ÷ 5) = $34,000.
+
+> **Copyrights** are exclusive rights to reproduce and sell a book, musical composition, film, or similar creative item. In the United States, the federal government issues these rights and provides protection to a company or individual for the life of the creator plus 70 years. The initial costs of obtaining copyrights from the government are nominal; however, a company may
+pay a large sum to purchase an existing copyright from the owner. For example, a publisher of paperback books will sometimes pay the author of a popular novel in excess of $1 million for the writer’s copyright. Although copyrights have a long legal life, their economic lives are frequently significantly shorter.
+
+> **Trademarks** are distinctive identifications of a manufactured product or of a service, taking the form of a name, a sign, a slogan, a logo, or an emblem. Well-known examples include the distinctive cursive script logo for Coca-Cola, the McDonald’s Golden Arches and the Nike Swoosh logo. Trademarks, trade names, trade brands, secret formulas, and similar items are property rights with economic lives that depend on their estimated length of use. If you look at Coca-Cola’s balance sheet, you see no accounting recognition of its secret formula. The company did not purchase the formula, rather it was developed internally. As a result, Coca-Cola did not record an asset. In fact, the story is that Coca-Cola chose to keep the formula a secret instead of patenting it because it did not want the patent protection to expire, leaving others free to produce the product. The Coca-Cola balance sheet also does not report an intangible asset for the Coca-Cola trademark, although Coke has spent millions of advertising dollars creating public awareness of the brand and millions more dollars protecting it from infringement. Coca-Cola’s balance sheet does show an account entitled Trademarks. What does this account represent? Coca-Cola acquired the trademarks of such companies as _Fanta_ and _Minute-Maid_, so it lists them as intangible assets. Similarly, PepsiCo includes a trademark value for _Gatorade_ among its intangible assets because it purchased the trademark rights when it bought Quaker Oats Company.
+
+> **Franchises** and **licenses** are legal contracts that grant the buyer the right to sell a product or service in accordance with specified conditions. An example is a local Starbucks franchise. The buyer obtains the right to use the Starbucks name, to acquire branded products such as cups, and to share in advertising and special promotions. In exchange, the franchisee promises to follow Starbucks procedures and maintain standards of quality, cleanliness, and pricing. Other private sector companies may award franchises for car dealerships, fast-food restaurants, hotel operations, or gasoline stations. These types of franchise agreements typically have a finite life. While the terms of franchise agreements can differ significantly, most often franchisees capitalize the up-front franchise fee and amortize that fee over the life of the franchise agreement.
+
+> A **leasehold** is the right to use a fixed asset (such as a building or some portion thereof) for a specified period of time beyond 1 year. Companies often classify leaseholds with plant assets on the balance sheet, although they are technically intangible assets. A company that owns its own plant clearly counts that plant as a tangible asset. However, if a company leases the plant, then it owns only the right to use the leased plant, not the plant itself.
+> 
+> ... a **leasehold improvement**, which occurs when a tenant spends money to add new materials or improvements to a leased property. These improvements become part of the leased property and revert to the landlord at the end of the lease.
+
+#### Goodwill
+
+> Goodwill is an intangible asset that cannot be separated from the company that owns it and therefore it cannot be sold or transferred. A company can recognize **goodwill** only when it buys another company. Goodwill is the excess of the amount paid for the acquired company over the fair value of its identifiable net assets.
+>
+> ...
+> 
+> Companies do not amortize goodwill. However, they must review goodwill for impairment whenever events or circumstances suggest the possibility of impairment.
+
+#### Depletion of Natural Resources
+
+> Our final group of long-lived assets is natural resources (sometimes called wasting assets), such as minerals, oil, and timber. Depletion is the accounting mechanism used to allocate the acquisition cost of natural resources over time. Depletion differs from depreciation because depletion focuses specifically on the physical use and exhaustion of the natural resources, whereas depre ciation focuses more broadly on any reduction of the economic value of a fixed asset, including physical deterioration and obsolescence.
+>
+> Accountants usually classify the costs of natural resources as noncurrent assets. However, buying natural resources is actually like buying massive quantities of inventories under the ground (iron ore) or above the ground (timber). Depletion expense is the measure of the portion of this “long-term inventory” that a company uses up in a particular period. For example, a coal mine may have a total cost of $20 million and originally contain an estimated 1 million tons of usable coal. The depletion rate would be ($20 million ÷ 1 million tons) = $20 per ton. If the company mined 100,000 tons during the first year, the depletion expense would be (100,000 tons × $20), or $2 million for that year. Each year the company would measure the amount of coal extracted and record the amount of depletion based on that usage.
+>
+> As our coal mine example shows, companies measure depletion on a units-of-production basis. They may directly reduce the asset account, or they may accumulate depletion in a separate contra account similar to accumulated depreciation. Environmental laws and ethical responsibility often lead a firm to expend substantial amounts to return the site to a safe and attractive condition after exhausting the natural resources. When calculating the depletion per unit, companies add these expected future costs when computing the total costs subject to depletion. Therefore, the depletion per unit includes not only the original cost of the resources but also future restoration costs. The companies add the portion of depletion that represents future costs for site restoration to an Asset Retirement Liability account that grows as extraction continues.
+
+### Liabilities and Interest
+
+> ... **long-term liabilities** are those that fall due more than 1 year after the balance sheet date.
+
 ## Warren Buffet's Interpretation of Financial Statements
+
+...
 
 ### Income Statements
 
@@ -134,7 +353,7 @@ These are the classification of shenanigans that can be undertaken by companies 
 
       > Investors should be extra vigilant when _analyzing_ companies using percentage-of-completion accounting, since the reported results hinge on the company's estimates about its own progress.
 
-      > Investors shold use a measure called "days' sales outstanding" (DSO)[^x] to evaluate how quickly customers are paying their bills relative to how quickly revenue is recorded. A higher DSO could indicate more aggressive revenue recognition in addition to simply poor cash management.
+      > Investors shold use a measure called "days' sales outstanding" (DSO)[^1] to evaluate how quickly customers are paying their bills relative to how quickly revenue is recorded. A higher DSO could indicate more aggressive revenue recognition in addition to simply poor cash management.
 
       We could say that ***recording revenue before completing material obligations*** and ***recording revenue far in excess of work completed*** are generally the same thing but the subtle difference is that this technique (_recording in excess of work completed_) is legitimized through a POC policy. Basically both techniques involves recognizing revenue before completion of delivery of the product or service offered by the company (or business).
 
@@ -210,7 +429,7 @@ These are the classification of shenanigans that can be undertaken by companies 
       
       > ... consider a piece of equipment that management first assumed would last for 10 years but that breaks down permanently during year 5. Once it's out of service, the original depreciation schedule should be abandoned, and the remaining asset balance must be oved to the Expense section immediately. If the company instead chooses to continue depreciating the asset according to the original 10-year plan, it will have failed to write down an appropriately capitalized cost that had later become impaired.
 
-      > ... DSI [Days' Sales of Inventory][^x] standardizes the inventory balance relative to inventory sold (i.e., cost of good sold) in a period. This calculation helps investors determine whether an increase in the absolute level of inventory is in line with the overall growth of the business or whether it might be a harbinger of margin pressure.
+      > ... DSI [Days' Sales of Inventory][^1] standardizes the inventory balance relative to inventory sold (i.e., cost of good sold) in a period. This calculation helps investors determine whether an increase in the absolute level of inventory is in line with the overall growth of the business or whether it might be a harbinger of margin pressure.
 
       > An additional measure can be used to test whether an inventory buildup might be justified by upcoming demand: simply compare the growth in the absolute level of inventory with the company's expected revenue growth. If inventory growth far exceeds the expected sales growth, the inventory bulge is probably unwarranted and a concern for investors.
 
@@ -459,5 +678,4 @@ These are the classification of shenanigans that can be undertaken by companies 
 2. Warren Buffett and the Interpretation of Financial Statements by Mary Buffett
 3. Financial Shenanigans, Fourth Edition by Howard M. Schilit
 
-[^1]: Page 47. The Accounting Time Period. Chapter 2. Introduction to Financial Accounting by Horngren
-[^x]: See [Efficiency Ratios](./MULTIPLIERS.md#efficiency)
+[^1]: See [Efficiency Ratios](./MULTIPLIERS.md#efficiency)
