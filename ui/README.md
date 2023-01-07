@@ -82,6 +82,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 8. [Financial Chart: Candlestick Sample](https://www.chartjs.org/chartjs-chart-financial/)
 9. [How To Create a Global Event Bus in Vue 2](https://www.digitalocean.com/community/tutorials/vuejs-global-event-bus) - [Digital Ocean](https://www.digitalocean.com/)
 10. [Using Vue Currency Input with Buefy](https://codesandbox.io/s/using-vue-currency-input-with-buefy-pnl3q?file=/src/App.vue) - [CodeSandbox](https://codesandbox.io/)
+11. [Add Keyboard Shortcuts to your Vue App](https://focusedlabs.io/blog/add-keyboard-shortcuts-to-your-vue-app)
 
 ## Tutorial Videos
 

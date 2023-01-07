@@ -1,55 +1,14 @@
 const moment = require('moment'),
     puppeteer = require('puppeteer'),
     sleep = require('sleep'),
-    Globalize = require('globalize');
+    Globalize = require('globalize'),
+    requireFromString = require('require-from-string'),
+    fs = require('fs');
 
 const O8Q = require('./db.js');
 
 Globalize.load( require( 'cldr-data' ).entireSupplemental() );
 Globalize.load( require( 'cldr-data' ).entireMainFor( 'en' ) );
-
-function readStocks() {
-    let results = [];
-
-    const urlSearchParams = new URLSearchParams(window.location.search);
-    const params = Object.fromEntries(urlSearchParams.entries());
-    //--
-    const tradeDate = params.date;
-
-    let ordinary = document.querySelectorAll('table')[1];
-    ordinary.querySelectorAll('tbody > tr').forEach((item) => {
-        let cols = item.querySelectorAll('td');
-        let closingPrice = parseFloat(cols[3].textContent.trim().replace(/,/g, ''));
-        let priceChange = cols[4] ? parseFloat(cols[4].textContent.trim().replace(/,/g, '')) : 0
-        results.push({
-            code: cols[1].querySelector('a').href.split('instrument=')[1].split('-')[0],
-            security: cols[1].querySelector('a').title.trim(),
-            volume: parseInt(cols[7].textContent.trim().replace(/,/g, ''), 10),
-            closing: closingPrice,
-            change: priceChange,
-            percentage: (priceChange / (closingPrice - priceChange)).toFixed(2),
-            date: tradeDate
-        });
-    });
-
-    let preferred = document.querySelectorAll('table')[2];
-    preferred.querySelectorAll('tbody > tr').forEach((item) => {
-        let cols = item.querySelectorAll('td');
-        let closingPrice = parseFloat(cols[3].textContent.trim().replace(/,/g, ''));
-        let priceChange = cols[4] ? parseFloat(cols[4].textContent.trim().replace(/,/g, '')) : 0;
-        results.push({
-            code: cols[1].textContent.trim().replace(/\n/g, ''),
-            security: cols[1].querySelector('a').title.trim(),
-            volume: parseInt(cols[7].textContent.trim().replace(/,/g, ''), 10),
-            closing: closingPrice,
-            change: priceChange,
-            percentage: (priceChange / (closingPrice - priceChange)).toFixed(2),
-            date: tradeDate
-        });
-    });
-
-    return results;
-}
 
 function readCompanies() {
     let results = [];
@@ -114,22 +73,6 @@ function readCompanyDetails() {
     }
 }
 
-function readIndices() {
-    let results = [];
-    let items = document.querySelectorAll('table > tbody > tr');
-    items.forEach((item) => {
-        let cols = item.querySelectorAll('td');
-        results.push({
-            index: 'JSE',
-            date: cols[0].textContent.trim(),
-            value: parseFloat(cols[1].textContent.trim().replace(/,/g, '')),
-            change: parseFloat(cols[2].textContent.trim().replace(/,/g, ''))
-        });
-    });
-
-    return results;
-}
-
 function readDividends() {
     let results = [];
     let items = document.querySelectorAll('table > tbody > tr');
@@ -138,6 +81,7 @@ function readDividends() {
         let camt = cols[5].textContent.trim().split(' ');
         results.push({
             code: cols[1].textContent.trim(),
+            // marketNo: 1,
             recordDate: cols[0].textContent.trim(),
             paymentDate: cols[4].textContent.trim(),
             currency: camt[0].trim(),
@@ -163,6 +107,7 @@ async function run(urls, cb) {
 
             // Credit: https://github.com/puppeteer/puppeteer/issues/594
             for (const url of urls) {
+                console.log(`Scraping from ${url}`);
 
                 await page.goto(url, {
                     waitUntil: 'networkidle2',
@@ -184,74 +129,6 @@ async function run(urls, cb) {
     })
 }
 
-// Stocks do not print on a Friday, Saturday nor Sunday. JSE Stocks begin at 1999-09-27
-async function runner(bringToCurrentDate, begin, end, rest = 2) {
-    beginning = (begin) ? moment(begin) : moment();
-    ending = (end) ? moment(end) : ((bringToCurrentDate) ? moment() : moment(begin));
-
-    if (moment(beginning.format('YYYY-MM-DD')).isSame(moment(ending.format('YYYY-MM-DD')))) {
-
-        console.log(`Running scraper for ${beginning.format('YYYY-MM-DD')}`);
-
-        await run([
-                    `https://www.jamstockex.com/trading/trade-quotes/?market=main-market&date=${beginning.format('YYYY-MM-DD')}`//,
-                    //`https://www.jamstockex.com/trading/trade-quotes/?market=junior-market&date=${beginning.format('YYYY-MM-DD')}`
-                ], readStocks)
-            .then(stocks => {
-                let tradings = {
-                    stocks
-                };
-
-                if (tradings.stocks.length > 0) {
-                    console.log(`${tradings.stocks.length} trades pulled ${tradings.stocks[0].date}`);
-
-                    O8Q.updateStocks(tradings)
-                        .then(r => console.log(r.message))
-                        .catch(e => console.error(e.message));
-                }
-            })
-            .catch(console.error);
-    } else {
-        if (moment(beginning.format('YYYY-MM-DD')).isBefore(moment(ending.format('YYYY-MM-DD')))) {
-
-            console.log(`Run scraper from ${beginning.format('YYYY-MM-DD')} to ${ending.format('YYYY-MM-DD')} ...`);
-
-            while (moment(beginning.format('YYYY-MM-DD')).isBefore(moment(ending.format('YYYY-MM-DD')))) {
-
-                console.log(`Reading stocks for ${beginning.format('YYYY-MM-DD')}`);
-
-                await run([
-                        `https://www.jamstockex.com/trading/trade-quotes/?market=main-market&date=${beginning.format('YYYY-MM-DD')}`//,
-                        //`https://www.jamstockex.com/trading/trade-quotes/?market=junior-market&date=${beginning.format('YYYY-MM-DD')}`
-                    ], readStocks)
-                    .then(stocks => {
-                        let tradings = {
-                            stocks
-                        };
-
-                        if (tradings.stocks.length > 0) {
-                            console.log(`${tradings.stocks.length} trades pulled on ${tradings.stocks[0].date}`);
-
-                            O8Q.updateStocks(tradings)
-                                .then(r => console.log(r.message))
-                                .catch(e => console.error(e.message));
-                        }
-                    })
-                    .catch(console.error);
-
-                console.log(`Sleeping for ${rest} seconds`);
-                sleep.sleep(rest);
-                beginning.add(1, 'd');
-            }
-        } else {
-            let message = moment().isBefore(moment(beginning.format('YYYY-MM-DD'))) ?
-                'Date has not yet arrived for scraping. Too far in the future' : `Invalid date range`;
-            console.log(message);
-        }
-    }
-
-    getIndices();
-}
 
 const args = process.argv.slice(2);
 
@@ -260,59 +137,148 @@ if (args.length > 3) {
     process.exit(1);
 }
 
+let beginning = moment();
+let ending = beginning;
+
+if (args[1]) {
+    // Validate date pattern as YYYY-MM-DD
+    if (!/^\d{4}[-](0?[1-9]|1[012])[-](0?[1-9]|[12][0-9]|3[01])$/.test(args[1])) {
+        console.log('This date format is not acceptable');
+        process.exit(1);
+    }
+
+    if (!moment(args[1]).isValid()) {
+        console.log(`Begin date, ${args[1]}, is invalid`);
+        process.exit(1);
+    }
+
+    beginning = moment(args[1]);
+}
+
+if (args[2]) {
+    if (!/^\d{4}[-](0?[1-9]|1[012])[-](0?[1-9]|[12][0-9]|3[01])$/.test(args[2])) {
+        console.log('This date format is not acceptable');
+        process.exit(1);
+    }
+
+    if (!moment(args[2]).isValid()) {
+        console.log(`End date, ${args[2]}, is invalid`);
+        process.exit(1);
+    }
+
+    ending = moment(args[2]);
+}
+
+if (ending.isBefore(beginning)) {
+    console.log(`Invalid date range: ${ending.format('ddd. MMM D, YYYY')} is earler than ${beginning.format('ddd. MMM D, YYYY')}`);
+    process.exit(1);
+}
+
+if (beginning.isSame(ending)) {
+    console.log(`Running scraper for ${beginning.format('YYYY-MM-DD')}`);
+} else {
+    console.log(`Running scraper from ${beginning.format('YYYY-MM-DD')} to ${ending.format('YYYY-MM-DD')} ...`);
+}
+
 switch (args[0]) {
-    case 'read-companies':
-        getCompanies();
+    case 'companies':
+        // getCompanies();
 
         break;
     
-    case 'read-indices':
-        getIndices();
+    case 'indices':
+        // getIndices();
 
         break;
 
-    default:
-        getStocks();        
+    case 'stocks':
+        console.log('Getting stocks and indices ...');
+        getStocks(beginning, ending);       
 
         break;
 }
 
-function getStocks() {
+// Stocks do not print on a Friday, Saturday nor Sunday. JSE Stocks begin at 1999-09-27
+async function getStocks(beginning, ending, rest = 2) {
+    let results = {
+        indices: [],
+        stocks: []
+    };
+    const response = await O8Q.getSources(1);
+    let urls = [];
+    let sources = [];
 
-    if (args[0]) {
-        // Validate date pattern as YYYY-MM-DD
-        if (!/^\d{4}[-](0?[1-9]|1[012])[-](0?[1-9]|[12][0-9]|3[01])$/.test(args[0])) {
-            console.log('This date format is not acceptable');
-            process.exit(1);
-        }
-
-        if (!moment(args[0]).isValid()) {
-            console.log(`Begin date, ${args[0]}, is invalid`);
-            process.exit(1);
-        }
-    }
-
-    if (args[1]) {
-        if (args[1] !== '++') {
-            if (!moment(args[1]).isValid()) {
-                console.log(`End date, ${args[1]}, is invalid`);
-                process.exit(1);
+    if (response.success) {
+        
+        for(const d of response.data) {
+            let begin = moment(beginning); // Clone beginning time
+            urls = [];
+            while (begin.isSameOrBefore(ending)) {
+                urls.push(d.Endpoint.replace('{{date}}', begin.format('YYYY-MM-DD')));
+                
+                begin.add(1, 'd');
             }
-        }
-    }
 
-    if (args.length == 0) {
-        runner(false, moment().format('YYYY-MM-DD'));
-    } else if (args.length == 1) {
-        runner(false, moment(args[0]).format('YYYY-MM-DD'));
-    } else {
-        if (args[1] === '++') {
-            runner(true, moment(args[0]).format('YYYY-MM-DD'));
-        } else {
-            runner(false, moment(args[0]).format('YYYY-MM-DD'), moment(args[1]).format('YYYY-MM-DD'));
+            sources.push({
+                urls,
+                cb: d.Reader
+            })
         }
+
+        console.log(`Acquired ${sources.length} source(s)`);
+
+        for(const source of sources) {
+            const cb = requireFromString(`module.exports = ${source.cb}`);
+
+            let rs = await run( source.urls, cb );
+            let s = rs.flatMap(r => r.stocks);
+            let i = rs.flatMap(r => r.indices);
+            results.stocks.push( s );
+            results.indices.push( i );
+            
+            console.log(`Sleeping for ${rest} seconds`);
+            sleep.sleep(rest);
+        }
+
+        results.stocks = results.stocks.flat().sort((a, b) => {
+            if ( moment(a.date).isBefore(moment(b.date)) ) return -1;
+            if ( moment(a.date).isAfter(moment(b.date)) ) return -1;
+
+            return 0;
+        });
+        results.indices = results.indices.flat().sort((a, b) => {
+            if ( moment(a.date).isBefore(moment(b.date)) ) return -1;
+            if ( moment(a.date).isAfter(moment(b.date)) ) return -1;
+
+            return 0;
+        });
+
+        if (results.stocks.length > 0) {
+            console.log(`Updating stock prices ...`);
+
+            let tr = await O8Q.updateStocks({
+                    stocks: results.stocks
+                });
+
+            console.log(tr.message);
+        }
+
+        if (results.indices.length > 0) {
+            console.log(`Updating indices ...`);
+
+            let ir = await O8Q.updateIndices({
+                    indices: results.indices
+                });
+            
+            console.log(ir.message);
+        }
+
+    } else {
+        console.error(response.message);
     }
 }
+
+
 
 function getCompanies() {
     return new Promise((resolve, reject) => {
@@ -423,6 +389,31 @@ function getIndices() {
 
         beginning = moment(args[1]);
         ending = moment(args[2]);
+    } else {
+        if (args[0]) {
+            // Validate date pattern as YYYY-MM-DD
+            if (!/^\d{4}[-](0?[1-9]|1[012])[-](0?[1-9]|[12][0-9]|3[01])$/.test(args[0])) {
+                console.log('This date format is not acceptable');
+                process.exit(1);
+            }
+
+            if (!moment(args[0]).isValid()) {
+                console.log(`Begin date, ${args[1]}, is invalid`);
+                process.exit(1);
+            }
+        }
+
+        if (args[1]) {
+            if (args[1] !== '++') {
+                if (!moment(args[1]).isValid()) {
+                    console.log(`End date, ${args[2]}, is invalid`);
+                    process.exit(1);
+                }
+            }
+        }
+
+        beginning = moment(args[0]);
+        ending = moment(args[1]);
     }
 
     if (beginning.isSameOrBefore(ending)) {

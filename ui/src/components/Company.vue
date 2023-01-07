@@ -438,7 +438,7 @@ export default {
 
             if (!this.formData.about) {
                 this.validation.about.type = 'is-danger'
-                this.validation.about.message = 'Please enter summary about the formData'
+                this.validation.about.message = 'Please enter summary about the company'
                 valid = false
             } else {
                 this.validation.about.type = ''

@@ -24,10 +24,10 @@ namespace O8Query.Models
         public Log Log { get; set; }
 
         /// <summary>
-        /// Company information
+        /// Stock details
         /// </summary>
-        [ForeignKey("SecurityCode")]
-        public Stock Security { get; set; }
+        [Required]
+        public Stock Stock { get; set; }
         
         /// <summary>
         /// Total volume of stocks traded

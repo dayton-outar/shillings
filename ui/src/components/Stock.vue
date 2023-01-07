@@ -95,8 +95,8 @@
                             v-model="formData.stockType"
                             placeholder="Choose Stock Type"
                             expanded>
-                            <option value="ORDINARY">Ordinary</option>
-                            <option value="PREFFERRED">Preferred</option>
+                            <option value="COMMON">Common</option>
+                            <option value="PREFERRED">Preferred</option>
                         </b-select>
                     </b-field>
                 </div>

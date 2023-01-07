@@ -21,7 +21,7 @@ Vue.use(Buefy)
 
 // const utilMixin = {
 //   methods: {
-//     formatVolume(volume) {
+//     formatNumber(volume) {
 //       const nfi = new Intl.NumberFormat('en-US')
 //       return nfi.format(volume)
 //     },

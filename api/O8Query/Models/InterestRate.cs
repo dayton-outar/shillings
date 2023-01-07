@@ -24,6 +24,11 @@ public class InterestRate
     public string CountryCode { get; set; }
 
     /// <summary>
+    /// Lifetime of loans on which interest rate is determined. Term is in months.
+    /// </summary>
+    public int Term { get; set; }
+
+    /// <summary>
     /// Interest rate
     /// </summary>
     [Required]

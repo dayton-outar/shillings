@@ -19,7 +19,7 @@
             </b-table-column>
             
             <b-table-column field="volume" label="Volume" numeric sortable v-slot="props">
-              {{ formatVolume(props.row.volume) }}
+              {{ formatNumber(props.row.volume) }}
             </b-table-column>
             
             <b-table-column field="unitPrice" label="Unit Price" numeric sortable v-slot="props">

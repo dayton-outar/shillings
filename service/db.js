@@ -16,6 +16,34 @@ const config = {
 }
 
 const O8Q = {
+    getSources: async function( sourceType ) {
+        let result = {
+            success: false,
+            message: 'Failed to get markets',
+            data: {}
+        };
+
+        try {
+
+            let pool = await sql.connect(config);
+
+            let dbr = await pool.request()
+                .input('sourceType', sql.Int, sourceType)
+                .query('SELECT s.[No], s.[Name], s.[Endpoint], s.[Reader] FROM [dbo].[DataSources] s WHERE s.[SourceType] = @sourceType'); 
+
+            result = {
+                success: true,
+                message: `Successfully retrieved sources`,
+                data: dbr.recordset
+            };
+
+        } catch(ex) {
+            console.error( ex.message );
+            result.message = ex.message;
+        }
+
+        return result;
+    },
     updateStocks: async function ( tradings ) {
         let result = {
             success: false,
@@ -71,19 +99,19 @@ const O8Q = {
 
             let pool = await sql.connect(config);
 
-            let companies = xml2json.json2xml(listing, {
+            let stocks = xml2json.json2xml(listing, {
                 compact: true,
                 ignoreComment: true,
                 spaces: 4
             });
 
             let dbr = await pool.request()
-                .input('companies', sql.Xml, companies)
-                .execute('UpdateCompaniesDetails');
+                .input('stocks', sql.Xml, stocks)
+                .execute('UpdateStocksDetails');
 
             result = {
                 success: dbr.returnValue === 0,
-                message: `Successfully updated ${listing.companies.length} companies`,
+                message: `Successfully updated ${listing.stocks.length} stocks`,
                 data: {}
             };
 

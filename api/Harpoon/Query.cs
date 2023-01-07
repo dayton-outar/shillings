@@ -17,7 +17,7 @@ namespace Harpoon
         [UseProjection]
         [UseFiltering]
         [UseSorting]
-        public IQueryable<StockTrading> GetStockTradings([ScopedService]StocksQuery sq) => sq.StockTradings.Include(t => t.Security);
+        public IQueryable<StockTrading> GetStockTradings([ScopedService]StocksQuery sq) => sq.StockTradings.Include(t => t.Stock);
 
         [UseDbContext(typeof(StocksQuery))]
         [UsePaging]
@@ -29,7 +29,7 @@ namespace Harpoon
         [UseDbContext(typeof(StocksQuery))]
         [UseProjection]
         [UseSorting]
-        public IQueryable<TotalStockTrades> GetTotalTrades(string companyCode, System.DateTime begin, System.DateTime end, [ScopedService]StocksQuery sq) => sq.TotalTrades.FromSqlInterpolated($"SELECT * FROM [dbo].[TotalStocksTraded]({companyCode}, {begin.Date}, {end.Date})").AsQueryable();
+        public IQueryable<TotalStockTrades> GetTotalTrades(long marketNo, System.DateTime begin, System.DateTime end, [ScopedService]StocksQuery sq) => sq.TotalTrades.FromSqlInterpolated($"SELECT * FROM [dbo].[TotalStocksTraded]({marketNo}, {begin.Date}, {end.Date})").AsQueryable();
 
         [UseDbContext(typeof(StocksQuery))]
         [UsePaging]
@@ -86,6 +86,16 @@ namespace Harpoon
         [UseFiltering]
         [UseSorting]
         public IQueryable<InterestRate> GetInterestRates([ScopedService]StocksQuery sq) => sq.InterestRates;
+
+        [UseDbContext(typeof(StocksQuery))]
+        [UseProjection]
+        [UseSorting]
+        public IQueryable<ReportedEarnings> GetReportedEarnings(FinancialReport.Periodical period, System.DateTime begin, System.DateTime end, [ScopedService]StocksQuery sq) => sq.Earnings.FromSqlInterpolated($"SELECT * FROM [dbo].[Earnings]({period}, {begin.Date}, {end.Date})").AsQueryable();
+
+        [UseDbContext(typeof(StocksQuery))]
+        [UseProjection]
+        [UseSorting]
+        public IQueryable<Solvency> GetSolvencies(FinancialReport.Periodical period, System.DateTime begin, System.DateTime end, [ScopedService]StocksQuery sq) => sq.Solvencies.FromSqlInterpolated($"SELECT * FROM [dbo].[Solvency]({period}, {begin.Date}, {end.Date})").AsQueryable();
 
         public Dependencies GetDependencies() {
             var dependencies = new Dependencies();
@@ -209,6 +219,8 @@ namespace Harpoon
                 new SectionalAnalytes {
                     Sectional = StatementAnalyte.Sectional.OperatingActivities,
                     Assay = new List<StatementAnalyte.Assay> {
+                            StatementAnalyte.Assay.Operating,
+                            StatementAnalyte.Assay.Adjustments,
                             StatementAnalyte.Assay.Receivables,
                             StatementAnalyte.Assay.Inventories,
                             StatementAnalyte.Assay.Depreciation,
@@ -216,8 +228,7 @@ namespace Harpoon
                             StatementAnalyte.Assay.Payables,
                             StatementAnalyte.Assay.Interest,
                             StatementAnalyte.Assay.Wages,
-                            StatementAnalyte.Assay.Tax,
-                            StatementAnalyte.Assay.Operating
+                            StatementAnalyte.Assay.Tax
                         }
                 },                
                 // Cash from financing activities includes the sources of cash from investors and banks, as well as the way cash is paid to shareholders.
@@ -251,7 +262,7 @@ namespace Harpoon
                 new SectionalAnalytes {
                     Sectional = StatementAnalyte.Sectional.None,
                     Assay = new List<StatementAnalyte.Assay> {
-                            StatementAnalyte.Assay.Note
+                            StatementAnalyte.Assay.ExchangeRateChanges
                         }
                 }
             };

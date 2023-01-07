@@ -30,8 +30,8 @@
                         :sort-icon-size="sortIconSize"
                         :default-sort-direction="defaultSortDirection" 
                         striped
-                        hoverable
-                        @select="rowSelected">
+                        hoverable>
+                    <!--@select="rowSelected"-->
 
                     <b-table-column field="no" label="#" sortable v-slot="props" width="5%">
                         {{ props.row.sequence }}
@@ -57,7 +57,11 @@
                             v-if="getState(props.row.state)"
                             :type="props.row.vSec.type" 
                             :message="props.row.vSec.message">
-                            <b-select placeholder="Choose Section" :value="props.row.section" @input="updateItem(props.row.sequence, 'section', $event)" expanded>
+                            <b-select 
+                                placeholder="Choose Section" 
+                                :value="props.row.section" 
+                                @input="updateItem(props.row.sequence, 'section', $event)" 
+                                expanded>
                                 <option 
                                     v-for="section in statementSections" 
                                     :key="`section_${section}`"
@@ -77,9 +81,9 @@
                                 :type="props.row.vAnl.type">
                                 <b-dropdown 
                                     v-model="props.row.analyte"
-                                    multiple aria-role="list"
+                                    multiple
+                                    aria-role="list"
                                     expanded
-                                    :triggers="['click', 'focus']"
                                     @change="updateItem(props.row.sequence, 'analyte', $event)">
 
                                     <template #trigger>
@@ -204,7 +208,6 @@ export default {
             defaultSortDirection: 'desc',
             sortIcon: 'arrow-up',
             sortIconSize: 'is-small',
-            selectedAnalytes: [],
             // selected: null,
             isItemsValid: true,
             analytes: JSON.parse(JSON.stringify(this.data.filter(s => s.type === this.type.replace(' ', '_').toUpperCase()))).map(a => { a.state = 'Closed'; return a; }),
@@ -279,6 +282,9 @@ export default {
         totalInvestments() {
             return this.get('INVESTING_ACTIVITIES').reduce((t, v) => t + (this.parseMoney(v.amount)), 0)
         },
+        totalFxChanges() {
+            return this.get('NONE').filter(e => e.analyte.indexOf('EXCHANGE_RATE_CHANGES') > -1).reduce((t, v) => t + this.parseMoney(v.amount), 0)
+        },
         netValue() {
             let netVal = 0
 
@@ -290,7 +296,7 @@ export default {
                     netVal = (this.totalEquity + this.totalLiabilities)
                     break
                 case 'Cash Flow':
-                    netVal = (this.totalOperations + this.totalFinances + this.totalInvestments)
+                    netVal = (this.totalOperations + this.totalFinances + this.totalInvestments + this.totalFxChanges)
                     break
             }
             
@@ -383,7 +389,7 @@ export default {
               },
               type: this.type.replace(' ', '_').toUpperCase(),
               section: 0,
-              analyte: this.selectedAnalytes,
+              analyte: [],
               state: 'Opened',
               amount: 'J$'
           })
@@ -391,8 +397,14 @@ export default {
         updateItem(n, p, v) {
             const ix = this.analytes.findIndex(p => p.sequence === n)
             this.analytes[ix][p] = v
+
             if (p === 'section') {
-                this.analytes[ix]['analyte'] = []
+                let sectionAssays = this.getSectionAssays(v);
+                if (sectionAssays.length == 1) {
+                    this.analytes[ix].analyte = [ sectionAssays[0] ]
+                } else {
+                    this.analytes[ix].analyte = []
+                }
             }
         },
         removeItem(id) {
@@ -466,32 +478,32 @@ export default {
             if (sequence < this.analytes.length) {
                 sequence++;
             }
-            if (this.$refs[`description-${this.type}-${sequence}`]) {
-                this.$refs[`description-${this.type}-${sequence}`].focus()
+            if (this.$refs[`description-${this.stmtType}-${sequence}`]) {
+                this.$refs[`description-${this.stmtType}-${sequence}`].focus()
             }
         },
         previousDescription(sequence) {
             if (sequence > 1) {
                 sequence--;
             }
-            if (this.$refs[`description-${this.type}-${sequence}`]) {
-                this.$refs[`description-${this.type}-${sequence}`].focus()
+            if (this.$refs[`description-${this.stmtType}-${sequence}`]) {
+                this.$refs[`description-${this.stmtType}-${sequence}`].focus()
             }
         },
         nextAmount(sequence) {
             if (sequence < this.analytes.length) {
                 sequence++;
             }
-            if (this.$refs[`amount-${this.type}-${sequence}`]) {
-                this.$refs[`amount-${this.type}-${sequence}`].focus()
+            if (this.$refs[`amount-${this.stmtType}-${sequence}`]) {
+                this.$refs[`amount-${this.stmtType}-${sequence}`].focus()
             }
         },
         previousAmount(sequence) {
             if (sequence > 1) {
                 sequence--;
             }
-            if (this.$refs[`amount-${this.type}-${sequence}`]) {
-                this.$refs[`amount-${this.type}-${sequence}`].focus()
+            if (this.$refs[`amount-${this.stmtType}-${sequence}`]) {
+                this.$refs[`amount-${this.stmtType}-${sequence}`].focus()
             }
         }
         // rowSelected(row) {

@@ -215,6 +215,12 @@
                                             <th class="text-right">{{ formatMoney( totalInvestingActivities ) }}</th>
                                         </tr>
                                     </template>
+                                    <template v-if="fxChanges.length">
+                                        <tr>
+                                            <td>Effects of Exchange Rates on Cash</td>
+                                            <th class="text-right">{{ formatMoney( totalFxChanges ) }}</th>
+                                        </tr>
+                                    </template>
                                     <template v-if="operations.length || finances.length || investments.length">
                                         <tr>
                                             <th>Net Cash Change</th>
@@ -250,7 +256,7 @@
                     <table class="table">
                         <tbody>
                             <tr>
-                                <th>Revenue</th>
+                                <th style="width: 50%">Revenue</th>
                                 <td>{{ formatMoney( totalRevenues ) }}</td>
                             </tr>
                             <tr>
@@ -303,8 +309,12 @@
                     <table class="table">
                         <tbody>
                             <tr>
-                                <th>Cash and equivalents</th>
+                                <th style="width: 50%">Cash and equivalents</th>
                                 <td>{{ formatMoney( totalCashAssets ) }}</td>
+                            </tr>
+                            <tr>
+                                <th>Inventories</th>
+                                <td>{{ this.totalInventories == 0 ? '&ndash;' : formatMoney( this.totalInventories ) }}</td>
                             </tr>
                             <tr>
                                 <th>Total assets</th>
@@ -319,12 +329,32 @@
                                 <td>{{ formatMoney( totalEquity ) }}</td>
                             </tr>
                             <tr>
+                                <th>Book value per stock</th>
+                                <td>{{ this.bvs == 0 ? '&ndash;' : formatMoney( bvs ) }}</td>
+                            </tr>
+                            <tr>
+                                <th>Quick Ratio</th>
+                                <td>{{ formatNumber( quickRatio ) }}</td>
+                            </tr>
+                            <tr>
+                                <th>Current ratio</th>
+                                <td>{{ formatNumber( currentRatio ) }}</td>
+                            </tr>
+                            <tr>
+                                <th>Debt to equity</th>
+                                <td>{{ formatPercentage( debtToEquity ) }}</td>
+                            </tr>
+                            <tr>
                                 <th>Return on assets</th>
                                 <td>{{ formatPercentage( roa ) }}</td>
                             </tr>
                             <tr>
                                 <th>Return on capital</th>
                                 <td>{{ formatPercentage( roc ) }}</td>
+                            </tr>
+                            <tr>
+                                <th>Return on equity</th>
+                                <td>{{ formatPercentage( roe ) }}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -348,7 +378,7 @@
                     <table class="table">
                         <tbody>
                             <tr>
-                                <th>Cash from operations</th>
+                                <th style="width: 50%">Cash from operations</th>
                                 <td>{{ formatMoney( totalOperatingActivities ) }}</td>
                             </tr>
                             <tr>
@@ -402,11 +432,17 @@ export default {
         equities() {
             return this.get('FINANCIAL_POSITION', 'EQUITY')
         },
+        inventories() {
+            return this.assets.filter(l => l.analyte.indexOf('INVENTORIES') > -1)
+        },
         totalAssets() {
             return this.assets.reduce((p, c) => c.amount + p, 0)
         },
         totalCashAssets() {
             return this.assets.filter(l => l.analyte.indexOf('CASH') > -1).reduce((p, c) => c.amount + p, 0)
+        },
+        totalInventories() {
+            return this.inventories.reduce((p, c) => c.amount + p, 0)
         },
         totalCurrentAssets() {
             return this.assets.filter(l => l.analyte.indexOf('CURRENT') > -1).reduce((p, c) => c.amount + p, 0)
@@ -414,11 +450,20 @@ export default {
         totalLiabilities() {
             return this.liabilities.reduce((p, c) => c.amount + p, 0)
         },
+        totalLongtermDebt() {
+            return this.liabilities.filter(l => l.analyte.indexOf('LOAN') > -1).reduce((p, c) => c.amount + p, 0)
+        },
         totalCurrentLiabilities() {
             return this.liabilities.filter(l => l.analyte.indexOf('CURRENT') > -1).reduce((p, c) => c.amount + p, 0)
         },
         totalEquity() {
             return this.equities.reduce((p, c) => c.amount + p, 0)
+        },
+        totalNonControllingEquity() {
+            return this.equities.filter(l => l.analyte.indexOf('NON_CONTROLLING') > -1).reduce((p, c) => c.amount + p, 0)
+        },
+        totalShareholdersEquity() {
+            return this.totalEquity - this.totalNonControllingEquity
         },
         totalEquityAndLiabilities() {
             return (this.totalLiabilities + this.totalEquity)
@@ -435,7 +480,7 @@ export default {
         losses() {
             return this.get('INCOME', 'LOSSES')
         },
-        totalShareholderProfit() {
+        totalShareholdersProfit() {
             return this.profitShares.filter(l => l.analyte.indexOf('SHAREHOLDERS') > -1).reduce((p, c) => c.amount + p, 0)
         },
         profitShares() {
@@ -488,7 +533,7 @@ export default {
             const basic = this.eps.filter(e => e.analyte.indexOf('BASIC') > -1)
             bEps = basic ? 
                     basic.reduce((p, c) => c.amount + p, 0) : 
-                    ( (this.totalShareholderProfit && this.weighedAverageSharesOutstanding) ? this.totalShareholderProfit / this.weighedAverageSharesOutstanding : 0)
+                    ( (this.totalShareholdersProfit && this.weighedAverageSharesOutstanding) ? this.totalShareholdersProfit / this.weighedAverageSharesOutstanding : 0)
             return bEps
         },
         dilutedEps() {
@@ -497,13 +542,28 @@ export default {
         eps() { // Earnings per Stock
             return this.get('INCOME', 'EARNINGS_PER_STOCK')
         },
+        quickRatio() {
+            return ( ( this.totalCurrentAssets - this.totalInventories ) / this.totalCurrentLiabilities )
+        },
+        currentRatio() {
+            return ( this.totalCurrentAssets / this.totalCurrentLiabilities )
+        },
         roa() {
             return ( this.netProfit / this.totalAssets ) * 100
+        },
+        roe() {
+            return ( this.totalShareholdersProfit / this.totalShareholdersEquity ) * 100
         },
         roc() { // Credit: https://corporatefinanceinstitute.com/resources/accounting/capital-employed/
             const capitalEmployed = (this.totalAssets - this.totalCurrentLiabilities)
             const ebit = ( this.netProfit + this.tax + this.totalInterestExpenses )
             return ( ebit / capitalEmployed ) * 100
+        },
+        debtToEquity() {
+            return ( this.totalLongtermDebt / this.totalShareholdersEquity ) * 100
+        },
+        bvs() {
+            return this.weighedAverageSharesOutstanding == 0 ? 0 : ( this.totalShareholdersEquity / this.weighedAverageSharesOutstanding )
         },
         operations() {
             return this.get('CASH_FLOW', 'OPERATING_ACTIVITIES')
@@ -513,6 +573,9 @@ export default {
         },
         investments() {
             return this.get('CASH_FLOW', 'INVESTING_ACTIVITIES')
+        },
+        fxChanges() {
+            return this.get('CASH_FLOW', 'NONE')
         },
         totalOperatingActivities() {
             return this.operations.reduce((p, c) => c.amount + p, 0)
@@ -526,8 +589,11 @@ export default {
         totalCapEx() {
             return this.investments.filter(e => e.analyte.indexOf('CAPITAL') > -1).reduce((p, c) => c.amount + p, 0)
         },
+        totalFxChanges() {
+            return this.fxChanges.filter(e => e.analyte.indexOf('EXCHANGE_RATE_CHANGES') > -1).reduce((p, c) => c.amount + p, 0)
+        },
         netCash() {
-            return ( this.totalOperatingActivities + this.totalFinancingActivities + this.totalInvestingActivities )
+            return ( this.totalOperatingActivities + this.totalFinancingActivities + this.totalInvestingActivities + this.totalFxChanges )
         },
         freeCashFlow() {
             // Credit: https://corporatefinanceinstitute.com/resources/financial-modeling/free-cash-flow-to-firm-fcff/
