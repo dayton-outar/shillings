@@ -4,4 +4,4 @@ export MSSQLUSER=SA
 export MSSQLPWD=Password44
 
 echo "$(date) ... Executing scraper"
-/usr/local/bin/node /home/dayton/Documents/Projects/shillings/service/main.js
+/usr/local/bin/node /home/dayton/Documents/Projects/shillings/service/main.js stocks
