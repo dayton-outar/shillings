@@ -370,3 +370,4 @@ Also, security needed. So, [Adding JWT Bearer Authentication to a Hot Chocolate 
 12. [Authentication (w/ Firebase) - GRAPHQL API IN .NET w/ HOT CHOCOLATE #8.1](https://youtu.be/7Xk0BuisZjg)
 13. [Authorization - GRAPHQL API IN .NET w/ HOT CHOCOLATE #8.2](https://youtu.be/XtdUExto_24)
 14. [How to structure a .NET Solution (project separation & architecture)](https://youtu.be/YiVqwoFMieg) - [Nick Chapas](https://www.youtube.com/c/Elfocrash/)
+15. [.NET 6 - Message Broker with RabbitMQ 🐰🐰🐰](https://youtu.be/eEipVEq8F1k) - [Mohamad Lawand](https://www.youtube.com/@MohamadLawand)
