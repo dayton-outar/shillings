@@ -104,6 +104,8 @@ Remember to upgrade [puppeteer](https://github.com/puppeteer/puppeteer/releases?
 
 1. [How to Set Up a Cron Job in Linux](https://phoenixnap.com/kb/set-up-cron-job-linux)
 2. [Load node.js module from string in memory](https://stackoverflow.com/questions/17581830/load-node-js-module-from-string-in-memory) <sup><a href="https://github.com/floatdrop/require-from-string" target="_blank">Github</a></sup>
+3. [CLI Table 3](https://www.npmjs.com/package/cli-table3)
+4. [Commander.js](https://www.npmjs.com/package/commander)
 
 ## Tutorial Videos
 
