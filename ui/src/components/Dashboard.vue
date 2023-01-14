@@ -168,8 +168,8 @@ export default {
 
     this.fetch({
         marketNo: -1,
-        begin: `${ moment.utc().format('YYYY-MM-DDT00:00:00.000') }Z`,
-        end: `${ moment.utc().format('YYYY-MM-DDT00:00:00.000') }Z`
+        begin: `${ moment(this.beginDate).format('YYYY-MM-DDT00:00:00.000') }Z`,
+        end: `${ moment(this.endDate).format('YYYY-MM-DDT00:00:00.000') }Z`
       }).then(() => {
         this.fetchHoldings()
         this.$emit('changeLoading', false)

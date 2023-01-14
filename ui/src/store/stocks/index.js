@@ -18,6 +18,7 @@ export default {
         mutation: gql`mutation CreateStock($input: CreateStockInput!) {
           createStock ( input: $input) {
             stock {
+              no,
               code,
               name,
               currency,
@@ -118,6 +119,7 @@ export default {
             },
             totalCount,
             nodes {
+              no,
               code,
               name,
               currency,
@@ -195,6 +197,7 @@ export default {
         mutation: gql`mutation UpdateStock($input: UpdateStockInput!) {
           updateStock ( input: $input) {
             stock {
+              no,
               code,
               name,
               currency,

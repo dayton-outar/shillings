@@ -7,16 +7,7 @@ export default {
     },
     mutations: {
         add(state, payload) {
-            const itrade = state.trades.totalTrades.find(t => t.code === payload.security.code)
-            let newPrice = itrade ? itrade.closingPrice : 0
-            let oldCost = payload.volume * payload.unitPrice
-            let newCost = itrade ? payload.volume * itrade.closingPrice : 0
-
             payload.id = uuidv4()
-            payload.purchaseCost = oldCost
-            payload.currentPrice = newPrice
-            payload.currentCost = newCost
-            payload.variance = (newCost - oldCost)
 
             state.portfolio.push(payload)
             localStorage.setItem('my-portfolio', JSON.stringify(state.portfolio))

@@ -20,6 +20,7 @@ export default {
             order: { volume: DESC }
           ) {
             stock {
+              no,
               code,
               name,
               currency,
