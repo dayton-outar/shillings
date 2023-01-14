@@ -102,7 +102,7 @@ export default ({
     },
     beforeCreate() {
       this.$store.dispatch('stocks/fetch', {
-        first: 100,
+        first: 200,
         last: null,
         next: null,
         previous: null,
