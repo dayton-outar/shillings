@@ -14,6 +14,8 @@ namespace Harpoon
 {
     public class Mutation
     {
+        public string GetToken([Service] IdentityService ids, string email, string password) => ids.Authenticate(email, password);
+
         #region Manage Financial Reports
 
         [UseDbContext(typeof(StocksQuery))]

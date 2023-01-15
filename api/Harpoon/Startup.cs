@@ -16,6 +16,9 @@ using HotChocolate.Types;
 
 using O8Query.Models;
 using O8Query.Data;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace Harpoon
 {
@@ -41,6 +44,9 @@ namespace Harpoon
                     .AllowAnyMethod();
                 });
             });
+
+            services.AddScoped<IdentityService>();
+            // services.AddHttpContextAccessor();
 
             string connectionString = Configuration.GetConnectionString("HarpoonDatabase");
 
@@ -68,7 +74,21 @@ namespace Harpoon
                 .AddFiltering()
                 .AddSorting()
                 .AddProjections()
-                .AddMutationConventions();
+                .AddMutationConventions()
+                .AddAuthorization();
+            
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(options => {
+                    options.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateAudience = true,
+                        ValidateIssuer = true,
+                        ValidateIssuerSigningKey = true,
+                        ValidIssuer = "https://localhost:5001/",
+                        ValidAudience = "www",
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("B3atiful$undayMorning"))
+                    };
+                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -84,8 +104,8 @@ namespace Harpoon
             //app.UseHttpsRedirection();
 
             app.UseRouting();
-
-            //app.UseAuthorization();
+            app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseEndpoints( endpoints => 
                 {
