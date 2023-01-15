@@ -44,7 +44,7 @@
               {{ formatMoney(props.row.marketCapitalization) }}
             </b-table-column>
             
-            <b-table-column field="closingPrice" label="Closing" numeric sortable v-slot="props">
+            <b-table-column field="closingPrice" label="Price" numeric sortable v-slot="props">
               {{ formatMoney(props.row.closingPrice) }}
             </b-table-column>
 
