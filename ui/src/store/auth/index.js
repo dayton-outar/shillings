@@ -36,10 +36,7 @@ export default {
                 token: response.data.token.string
             }
 
-            commit('set', {
-                type: 'profile',
-                payload: pf
-            })
+            commit('set', pf)
         
             return Promise.resolve(pf)
         }
