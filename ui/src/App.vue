@@ -10,9 +10,9 @@
             </b-navbar-item>
           </template>
           <template #start>
-            <b-navbar-item tag="router-link" :to="{ path: '/finance-reports' }">Finance Reports</b-navbar-item>
-            <b-navbar-item tag="router-link" :to="{ path: '/companies' }">Companies</b-navbar-item>
-            <b-navbar-dropdown label="Manage">
+            <b-navbar-item v-if="auth.isAuthenticated" tag="router-link" :to="{ path: '/finance-reports' }">Finance Reports</b-navbar-item>
+            <b-navbar-item v-if="auth.isAuthenticated" tag="router-link" :to="{ path: '/companies' }">Companies</b-navbar-item>
+            <b-navbar-dropdown v-if="auth.isAuthenticated" label="Manage">
               <b-navbar-item tag="router-link" :to="{ path: '/stocks' }">Stocks</b-navbar-item>
               <b-navbar-item tag="router-link" :to="{ path: '/markets' }">Markets</b-navbar-item>
               <b-navbar-item tag="router-link" :to="{ path: '/indices' }">Indices</b-navbar-item>
@@ -39,17 +39,17 @@
 </template>
 
 <script>
-//import Dashboard from './components/Dashboard.vue'
+import { mapState } from 'vuex'
 
 export default {
   name: 'App',
-  components: {
-    //'dashboard': Dashboard
-  },
   data() {
     return {
       isLoading: false
     }
+  },
+  computed: {
+    ...mapState({ auth: state => state.auth.profile })
   },
   watch: {
     $route: {

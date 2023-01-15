@@ -9,6 +9,7 @@ import MarketIndices from './components/MarketIndices.vue'
 import Industries from './components/Industries.vue'
 import InterestRates from './components/InterestRates.vue'
 import ViewCompany from './components/ViewCompany.vue'
+import Login from './components/Login.vue'
 
 Vue.use(Router)
 
@@ -19,6 +20,12 @@ export default new Router({
             name: 'dashboard',
             component: Dashboard,
             meta: { title: 'Dashboard' }
+        },
+        {
+            path: '/login',
+            name: 'login',
+            component: Login,
+            meta: { title: 'Login' }
         },
         {
             path: '/finance-reports',
