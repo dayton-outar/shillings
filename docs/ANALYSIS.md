@@ -308,9 +308,13 @@ pay a large sum to purchase an existing copyright from the owner. For example, a
 #### Goodwill
 
 > Goodwill is an intangible asset that cannot be separated from the company that owns it and therefore it cannot be sold or transferred. A company can recognize **goodwill** only when it buys another company. Goodwill is the excess of the amount paid for the acquired company over the fair value of its identifiable net assets.
+
+Investopedia defines _goodwill_ as follows[^2],
+
+> Specifically, a goodwill definition is the portion of the purchase price that is higher than the sum of the net fair value of all of the assets purchased in the acquisition and the liabilities assumed in the process.
 >
-> ...
-> 
+> The value of a company’s name, brand reputation, loyal customer base, solid customer service, good employee relations, and proprietary technology represent aspects of goodwill. This value is why one company may pay a premium for another.
+
 > Companies do not amortize goodwill. However, they must review goodwill for impairment whenever events or circumstances suggest the possibility of impairment.
 
 #### Depletion of Natural Resources
@@ -493,7 +497,7 @@ These are the classification of shenanigans that can be undertaken by companies 
       > 
       > ...
       >
-      > Investors shold use a measure called "days' sales outstanding" (DSO)[^2] to evaluate how quickly customers are paying their bills relative to how quickly revenue is recorded. A higher DSO could indicate more aggressive revenue recognition in addition to simply poor cash management.
+      > Investors shold use a measure called "days' sales outstanding" (DSO)[^3] to evaluate how quickly customers are paying their bills relative to how quickly revenue is recorded. A higher DSO could indicate more aggressive revenue recognition in addition to simply poor cash management.
 
       We could say that ***recording revenue before completing material obligations*** and ***recording revenue far in excess of work completed*** are generally the same thing but the subtle difference is that this technique (_recording in excess of work completed_) is legitimized through a POC policy. Basically both techniques involves recognizing revenue before completion of delivery of the product or service offered by the company (or business).
 
@@ -581,7 +585,7 @@ These are the classification of shenanigans that can be undertaken by companies 
       > 
       > ...
       >
-      > ... DSI [Days' Sales of Inventory][^2] standardizes the inventory balance relative to inventory sold (i.e., cost of good sold) in a period. This calculation helps investors determine whether an increase in the absolute level of inventory is in line with the overall growth of the business or whether it might be a harbinger of margin pressure.
+      > ... DSI [Days' Sales of Inventory][^3] standardizes the inventory balance relative to inventory sold (i.e., cost of good sold) in a period. This calculation helps investors determine whether an increase in the absolute level of inventory is in line with the overall growth of the business or whether it might be a harbinger of margin pressure.
       > 
       > ...
       >
@@ -850,4 +854,5 @@ These are the classification of shenanigans that can be undertaken by companies 
 4. Financial Shenanigans, Fourth Edition by Howard M. Schilit
 
 [^1]: Excerpts from Chapter 15 - Capital and reserves, The Finance Book by Stuart Warner and Si Hussain
-[^2]: See [Efficiency Ratios](./MULTIPLIERS.md#efficiency)
+[^2]: [Goodwill (Accounting): What It Is, How It Works, How To Calculate](https://www.investopedia.com/terms/g/goodwill.asp). Investopedia.
+[^3]: See [Efficiency Ratios](./MULTIPLIERS.md#efficiency)
