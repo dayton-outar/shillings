@@ -65,11 +65,17 @@ Take note of the income statement made from the balance sheet above.
 ![Income Statement of Biwheels Company](.attachments/bi-wheel-income-statement.png)
 
 > You can think of income statements as filling in the gaps between balance sheets. The balance sheets show the financial position of the company at discrete points in time, and the income statements explain the changes that have taken place between those points.
-
+>
+> ...
+>
 > One area that requires judgment, and therefore leaves room for ethical conflicts, is depreciation.
-
+>
+> ...
+>
 > the **operating expenses**, which is a group of recurring expenses that pertain to the firm’s routine, ongoing operations. Examples of such expenses are wages, rent, depreciation, and various other operation-oriented expenses, such as telephone, heat, and advertising. We deduct these operating expenses from the gross profit to obtain **operating income** (also called **operating profit** or **income from operations**).
-
+> 
+> ...
+>
 > **gross profit** (also called **gross margin**), ... is the excess of sales revenue over the cost of the inventory that was sold.
 
 #### Statement of Stockholders’ Equity
@@ -90,7 +96,9 @@ Take note of the income statement made from the balance sheet above.
 #### Cash Dividends
 
 > Another decrease in the Retained Earnings account arises from **cash dividends**, distributions of cash to stockholders.
-
+> 
+> ...
+>
 > The board of directors _declares_&mdash;announces its intention to pay&mdash;a dividend on one date (declaration date), payable to those stockholders on _record_ as owning the stock on a second date (record date), and actually _pays_ the dividend on a third date (payment date).
 
 ### Accrual Accounting
@@ -104,7 +112,9 @@ Take note of the income statement made from the balance sheet above.
 > ...
 > 
 > **Implicit transactions** are events, such as the passage of time, that do not generate source documents or any visible evidence that the event actually occurred. Because there is no specific notification to record such events, accountants do not formally recognize them in the accounting records until the end of an accounting period. For example, accountants prepare entries for depreciation expense or the expiration of prepaid rent from special schedules or memorandums at the end of an accounting period. An explicit event did not trigger such entries. Accountants recorded the related explicit transaction at the time the company purchased the depreciable asset or made the initial rent payment. We call the end-of-period entries that record these implicit events adjustments. **Adjustments** (also called **adjusting entries**) assign the financial effects of implicit transactions to the appropriate time periods. Thus, adjustments occur at periodic intervals, usually at the end of the accounting cycle when accountants are about to prepare the financial statements.
-
+> 
+> ...
+>
 > The principal adjustments arise from four basic types of implicit transactions:
 > 1. Expiration or consumption of unexpired costs
 >    
@@ -145,7 +155,9 @@ balances can decline despite positive net income and vice versa.
 >    2. evaluating how management generates and uses cash, and
 >    3. determining a company’s ability to pay interest, dividends, and debts when they are due.
 > 3. It identifies specific increases and decreases in a firm’s productive assets.
-
+> 
+> ...
+>
 > **Cash equivalents** are highly liquid short-term investments that a company can easily and quickly convert into cash, such as money market funds and Treasury bills.
 
 #### Typical Activities Affecting Cash
@@ -154,9 +166,13 @@ balances can decline despite positive net income and vice versa.
 > ...
 >
 > **Operating activities** are transactions that affect the purchase, processing, and selling of a company’s products and services. For example, making sales, collecting accounts receivable, recording an expense for cost of goods sold, purchasing inventory, and paying accounts payable or employee wages are all operating activities. The thing these transactions have in common is that they are an integral part of the major income-generating activities of the company.
-
+> 
+> ...
+>
 > Managers make financing decisions when they decide whether and how to raise or repay cash. For example, when a company needs cash, financial managers may decide whether to borrow money from a bank or other lender or issue additional capital stock. When there is excess cash, financial managers may decide to repay previous borrowings or to buy back previously issued stock. To understand financing decisions, we use the section of the statement of cash flows labeled **cash flows from financing activities**. **Financing activities** are a company’s transactions that obtain resources by borrowing from creditors or selling shares of stock and use resources to repay creditors or provide a return to shareholders.
-
+> 
+> ...
+>
 > After raising capital, managers must decide how to invest the capital. These investing decisions include the choices to (1) acquire or dispose of plant, property, equipment, and other long-term productive assets, and (2) provide or collect cash as a lender or as an owner of securities. The statement of cash flows covers the results of investing decisions in a section labeled **cash flows from investing activities**. **Investing activities** are transactions that acquire or dispose of long-lived assets or acquire or dispose of securities held for investment purposes that are not cash equivalents. Thus, purchasing property or equipment is an investing activity, but purchasing inventory or prepaying rent are operating activities. Why? Because a company will generally use property and equipment for multiple years, whereas it will use inventory and prepaid rent within one year.
 
 ![Typical Operating, Investing, and Financing Activities](.attachments/cash-flow-sections-structure.png)
@@ -176,13 +192,21 @@ balances can decline despite positive net income and vice versa.
 ![Analysis of Effects of Operating Transactions on Cash](.attachments/analysis-effects-operations.png)
 
 > These cash flows are associated with revenues and expenses on the income statement. Notice that recording revenue from the sales of goods or services does not necessarily increase cash. Only sales for cash immediately increase cash. There is no cash effect of credit sales until the customer actually pays. Biwheels must collect its accounts receivable to generate any cash. Similarly, cash received for services to be performed in the future is an operating cash inflow recognized in the statement of cash flows even though a company may not earn and record the revenue until a later period.
-
+> 
+> ...
+>
 > **ADJUSTMENT FOR DEPRECIATION** The first adjustment is to add depreciation expense back to net income. We do this because we deducted depreciation of $100 when computing the net income of $57,900, but there is no related operating cash outflow in January. In fact, depreciation never entails an operating cash flow because the cash flow occurred as an investing activity when Biwheels paid for the equipment. Because we deducted $100 of depreciation in computing January’s net income, adding it back simply cancels the deduction. There is no cash flow effect of depreciation. A word of caution—do not interpret the $100 depreciation add-back as a cash inflow. While line items in the financing and investing sections of a statement of cash flows represent cash inflows and cash outflows, the line items in the operating section of an indirect method statement are not cash flows. Rather, they are adjustments of net income. An adjustment similar to the one made for depreciation will apply to any expense for which there is never an operating cash outflow.
-
+> 
+> ...
+>
 > **ADJUSTMENT FOR REVENUES** Consider Biwheels’ revenues. If all of Biwheels’ sales were for cash, there would be no accounts receivable, the associated cash flows would occur at the time of sale, and the cash inflow would equal the sales revenue. However, Biwheels’ January sales are all on open account. Thus, each sale initially increases accounts receivable, and the cash inflow occurs when Biwheels collects the receivable from the customer. You can compute the amount of cash collections from income statement and balance sheet data in two steps: (1) compute the total amount Biwheels could possibly collect in the month, which is the sales for the month plus the accounts receivable balance at the beginning of the month, and (2) from this you subtract the amount that Biwheels has not yet collected, the accounts receivable at the end of the month.
-
+> 
+> ...
+>
 > **ADJUSTMENT FOR COST OF GOODS SOLD** Just as we adjusted sales to compute cash collections from customers, we can adjust cost of goods sold to compute cash outflow for payments to suppliers. To do this, we use one income statement account, Cost of Goods Sold, and two balance sheet accounts, Inventory and Accounts Payable.
-
+> 
+> ...
+>
 > **ADJUSTMENTS FOR OTHER EXPENSES** ... a general approach to adjustments
 >
 > - Adjust for revenues and expenses that do not require cash:
@@ -223,7 +247,9 @@ balances can decline despite positive net income and vice versa.
 ### Long-lived Assets
 
 > Long-lived assets can be either tangible or intangible. **Tangible assets** (also called **fixed assets**) are physical items that you can see and touch. Examples are land, buildings, and equipment. In contrast, **intangible assets** lack physical substance. They generally consist of contractual rights, legal rights, or economic benefits. Examples are patents, trademarks, and copyrights. Financial instruments such as accounts receivable, notes receivable, and investments in bonds and stocks also lack physical substance, but these assets are not classified as intangibles for accounting purposes. Accounts and notes receivable represent claims to cash and are accounted for ... Investments in bonds and stocks aren’t classified as intangible assets because they are not part of the operating activities of the company.
-
+> 
+> ...
+>
 > For tangible assets such as buildings, machinery, and equipment, they call it _depreciation_. They use **amortization** to refer to the allocation of the costs of intangible assets to the periods that benefit from these assets. Finally, for natural resources, they call it **depletion**.
 
 #### Contrasting Long-lived Asset Expenditures with Expenses
@@ -231,13 +257,17 @@ balances can decline despite positive net income and vice versa.
 > companies make expenditures to purchase assets. For those assets to remain on the balance sheet they must continue to provide future economic benefits to the company and be reliably measured. Companies use the benefits provided by some assets, such as advertising services, almost immediately, so they record such expenditures directly as expenses. Companies use the benefits of other assets, such as prepaid rent, within a year, so the expenditures are classified as current assets for a short period before companies recognize them as expenses. Finally, companies **capitalize** assets that have benefits lasting more than a year; that is, they record the purchase price in a long-term asset account and recognize part of the purchase price as an expense each period as they use the asset. Capital expenditures result in new long-lived assets, or they increase the capacity, efficiency, or useful life of existing long-lived assets.
 > 
 > Sometimes it is difficult to decide whether to capitalize or expense a particular expenditure. Consider the expenditure for work performed on an engine. The company should capitalize this expenditure only if it increases the capacity, efficiency, or useful life of the engine beyond initial expectations. If it merely keeps the engine running as expected, it is an expense. In the absence of contradictory evidence, most accountants would call it an expense. Why? Because accountants and auditors watch for tendencies to understate current expenses, thereby overstating income, through the unjustified capitalization of expenditures that should be expensed.
-
+> 
+> ...
+>
 > The **fair value** of an asset is the price for which a company could sell the asset to an independent third party. When a stock trades actively, we typically assume that the fair value of the stock is the best indicator of the value of the transaction. After all, if we asked four different appraisers to appraise the land, they would probably arrive at four different values, while the stock exchange determines a value for shares of stock at any given point in time.
 
 #### Depreciation of Buildings and Equipment
 
 > The cost a company allocates as depreciation over the total useful life of the asset is the **depreciable value** (also **depreciable base** or **allocation base**). It is the difference between the total acquisition cost and the estimated residual value. The **residual value**, also known as **terminal value**, **disposal value**, **salvage value**, and **scrap value**, is the amount a company expects to receive from sale or disposal of a long-lived asset at the end of its useful life. The **useful life** or **service life** of an asset is the shorter of the physical life of the asset or the economic life of the asset. The economic life of an asset and its physical life need not be the same. The physical life of an asset depends on the wear and tear it takes while in use.
-
+> 
+> ...
+>
 > Depreciation methods differ primarily in the amount of cost allocated to each accounting period. A list of depreciation amounts for each period of an asset’s useful life is a **depreciation schedule**.
 
 #### Impairment of Assets
@@ -251,16 +281,26 @@ balances can decline despite positive net income and vice versa.
 #### Intangible Assets
 
 > In recent years we have seen an increase in the number of firms in the economy that are “knowledge-based” businesses. The value of these firms lies in intangibles such as internal research and development activities and intellectual capital. However, under existing U.S. GAAP, if a company does not acquire these resources externally, it cannot record them as assets. Some analysts believe that R&D and perhaps other expenditures for intellectual capital should be capitalized, and they adjust the financial statements accordingly
-
+> 
+> ...
+>
 > **Patents** are grants made by the federal government to the inventor of a product or process, bestowing (in the United States) the exclusive right to produce and sell a given product, or use a process, for up to 20 years. After that time, others can manufacture the product or use the process. Suppose a company acquires a newly patented product from an inventor for $170,000. Although the remaining legal life of this patent is 20 years, because of fast-changing technology, the economic life of the patent is only 5 years. The company would amortize the asset over 5 years, the shorter of the economic or legal life, making the annual amortization expense ($170,000 ÷ 5) = $34,000.
-
+> 
+> ...
+>
 > **Copyrights** are exclusive rights to reproduce and sell a book, musical composition, film, or similar creative item. In the United States, the federal government issues these rights and provides protection to a company or individual for the life of the creator plus 70 years. The initial costs of obtaining copyrights from the government are nominal; however, a company may
 pay a large sum to purchase an existing copyright from the owner. For example, a publisher of paperback books will sometimes pay the author of a popular novel in excess of $1 million for the writer’s copyright. Although copyrights have a long legal life, their economic lives are frequently significantly shorter.
-
+> 
+> ...
+>
 > **Trademarks** are distinctive identifications of a manufactured product or of a service, taking the form of a name, a sign, a slogan, a logo, or an emblem. Well-known examples include the distinctive cursive script logo for Coca-Cola, the McDonald’s Golden Arches and the Nike Swoosh logo. Trademarks, trade names, trade brands, secret formulas, and similar items are property rights with economic lives that depend on their estimated length of use. If you look at Coca-Cola’s balance sheet, you see no accounting recognition of its secret formula. The company did not purchase the formula, rather it was developed internally. As a result, Coca-Cola did not record an asset. In fact, the story is that Coca-Cola chose to keep the formula a secret instead of patenting it because it did not want the patent protection to expire, leaving others free to produce the product. The Coca-Cola balance sheet also does not report an intangible asset for the Coca-Cola trademark, although Coke has spent millions of advertising dollars creating public awareness of the brand and millions more dollars protecting it from infringement. Coca-Cola’s balance sheet does show an account entitled Trademarks. What does this account represent? Coca-Cola acquired the trademarks of such companies as _Fanta_ and _Minute-Maid_, so it lists them as intangible assets. Similarly, PepsiCo includes a trademark value for _Gatorade_ among its intangible assets because it purchased the trademark rights when it bought Quaker Oats Company.
-
+> 
+> ...
+>
 > **Franchises** and **licenses** are legal contracts that grant the buyer the right to sell a product or service in accordance with specified conditions. An example is a local Starbucks franchise. The buyer obtains the right to use the Starbucks name, to acquire branded products such as cups, and to share in advertising and special promotions. In exchange, the franchisee promises to follow Starbucks procedures and maintain standards of quality, cleanliness, and pricing. Other private sector companies may award franchises for car dealerships, fast-food restaurants, hotel operations, or gasoline stations. These types of franchise agreements typically have a finite life. While the terms of franchise agreements can differ significantly, most often franchisees capitalize the up-front franchise fee and amortize that fee over the life of the franchise agreement.
-
+> 
+> ...
+>
 > A **leasehold** is the right to use a fixed asset (such as a building or some portion thereof) for a specified period of time beyond 1 year. Companies often classify leaseholds with plant assets on the balance sheet, although they are technically intangible assets. A company that owns its own plant clearly counts that plant as a tangible asset. However, if a company leases the plant, then it owns only the right to use the leased plant, not the plant itself.
 > 
 > ... a **leasehold improvement**, which occurs when a tenant spends money to add new materials or improvements to a leased property. These improvements become part of the leased property and revert to the landlord at the end of the lease.
@@ -290,19 +330,33 @@ Bonds, leases and pensions are usually classified as long-term liabilities.
 ### Stockholder's Equity
 
 > The articles of incorporation referenced earlier establish the maximum number of shares of stock a company can legally issue. We call these **authorized shares**. When the company receives cash or other consideration in exchange for authorized stock certificates, the shares become **issued shares**. We call shares that are issued and held by the stockholders **outstanding shares**. Often the articles of incorporation specify the process whereby the shareholders can authorize additional shares in the future.
-
+> 
+> ...
+>
 > Sometimes a company buys back shares of stock from its own shareholders. It might buy them to reduce shareholder claims permanently. Alternatively, companies may hold the shares for later use, usually to distribute as part of employee bonuses or stock purchase plans. We call such temporarily held shares **treasury stock**. Treasury shares are considered issued, but because the company holds them, they are no longer considered outstanding.
-
+> 
+> ...
+>
 > **Preferred stock** offers the stockholder different rights and preferential treatment relative to common stockholders. The terms of preferred stock can include almost any arrangement the company and stockholders agree upon. For example, preferred stockholders often surrender the right to vote. In exchange, they usually have a right to dividends before common shareholders can receive a dividend.
-
+> 
+> ...
+>
 > In addition to the cumulative dividend feature, preferred stock usually has a specific **liquidating value**&mdash;the amount a company needs to pay to all preferred stockholders, in addition to any dividends in arrears, before it distributes any assets to common stockholders if the company is liquidated. The stock certificate generally states the exact liquidating value, which is often the same as par value. Because par value often defines the liquidating value and may define the amount of the dividend, it is economically important for preferred stock.
-
+> 
+> ...
+>
 > **Stock options** give the holder the right to purchase a specific number of shares of a corporation’s capital stock at a predetermined price, known as the exercise price or strike price, for a specific time period. Companies often give options to employees as part of their compensation. The company typically gives (or grants) the options to an employee with the provision that the employee must remain with the company for a period of time before being allowed to exercise the options, at which point the options become vested options—options that the holders have the power to exercise. Once vested, the employee may exercise the options anytime before they expire, usually for another 5 years or so. Stock options are especially valuable to executives and other employees because they can gain the benefits of stock price increases without bearing the risks of price declines. Shareholders can also benefit from stock options because they motivate employees to work hard and to make decisions that increase the value of their shares.
-
+> 
+> ...
+>
 > Many companies use restricted stock plans instead of stock option plans to motivate their employees. Granting **restricted stock** is like paying employees with common stock instead of cash. Restricted stock typically has constraints that prohibit employees from selling the stock until it vests and require employees to forfeit the stock if they leave the company prior to the end of the vesting period. Some firms also require that the stock be sold back to the issuing company if the employee decides to sell. Similar to the accounting for a stock option plan, a restricted stock plan requires a company to record a salary and wage expense over the vesting period in an amount equal to the value of the stock awarded. Each period the expense is offset by an increase to paid-in capital. Employees receive an asset that will increase and decrease in value exactly in proportion to the increases and decreases in value experienced by shareholders. In addition, employees holding restricted stock receive the same dividends that common stockholders receive.
-
+> 
+> ...
+>
 > A **stock split** refers to the distribution of additional shares to existing stockholders without any additional consideration provided by the stockholders to the firm. Issuance of one additional share for each share currently owned is a “two-for-one” split. For example, suppose the Allstar Equipment Company has 100,000 shares outstanding with a market value of $150 per share and par value of $10 per share. The total market value of the stock is thus $15 million. Suppose Allstar Equipment gives each shareholder an additional share for each share owned. The total number of shares would increase to 200,000. If nothing else about the company changes (assets, liabilities, and equity all stay the same), the total market value of the outstanding stock should still be $15 million. With 200,000 shares outstanding, though, the market value per share should drop to $75. Shareholders are as well-off as they were before because they have paid no additional money and they still have the same proportional ownership interest in the company.
-
+> 
+> ...
+>
 > **Stock dividends** are also distributions of additional shares to existing shareholders without additional consideration provided by the stockholder. However, the relative number of new shares issued is usually smaller than in a split, although this is not a requirement. More importantly, a stock dividend increases the number of shares but does not change the per share par value. Consequently, the total par value of common stock reported on the balance sheet increases.
 
 #### Retained Earnings Restrictions
@@ -416,19 +470,29 @@ These are the classification of shenanigans that can be undertaken by companies 
    1. Recording revenue before completing material obligations under the contract
 
       > ... pushed customers to sign contracts just before quarter-end, believing that the signing of a contract was the key event to permit recording revenue.
-
+      > 
+      > ...
+      >
       > ... revenues should be recognized when earned, not at the point of signing a contract
-
+      > 
+      > ...
+      >
       > ... the company began to recognize some revenue earlier in the sales process &mdash; at the point of shipment, rather than delivery.
 
    2. Recording revenue far in excess of work completed on the contract
       
       > ... [recording] revenue in a far greater amount than is warranted
-
+      > 
+      > ...
+      >
       > Specifically, Ulvac [a company] had just changed its revenue recognition approach to percentage-of-completion (POC), and as a result, it began booking sales much earlier than it would with its traditional approach. ... Ulvac provides an illustration of the dramatic jump in reported revenue when a company switches from standard revenue recognition practices to the more aggressive POC approach.
-
+      > 
+      > ...
+      >
       > Investors should be extra vigilant when _analyzing_ companies using percentage-of-completion accounting, since the reported results hinge on the company's estimates about its own progress.
-
+      > 
+      > ...
+      >
       > Investors shold use a measure called "days' sales outstanding" (DSO)[^2] to evaluate how quickly customers are paying their bills relative to how quickly revenue is recorded. A higher DSO could indicate more aggressive revenue recognition in addition to simply poor cash management.
 
       We could say that ***recording revenue before completing material obligations*** and ***recording revenue far in excess of work completed*** are generally the same thing but the subtle difference is that this technique (_recording in excess of work completed_) is legitimized through a POC policy. Basically both techniques involves recognizing revenue before completion of delivery of the product or service offered by the company (or business).
@@ -444,11 +508,17 @@ These are the classification of shenanigans that can be undertaken by companies 
    1. Recording revenue from transactions that lack economic substance
       
       > In these transactions, the so-called customer is either under no obligation to keep or pay for the product, or no product or service was even traferred in the first place.
-
+      > 
+      > ...
+      >
       > Brightpoint proceeded to record the $15 million "insurance recovery" as income in the December quarter (which netted out its unreported losses). AIG recorded what amounted to bogus revenue on the insurance premiums over the next three years. Economic sense dictates that this transaction was not an insurance contract because no real risk had been transferred. Indeed, the transaction was nothing more than a financing arrangement: Brightpoint deposited cash at AIG, which AIG eventually refunded as purported "insurance claim payments."
-
+      > 
+      > ...
+      >
       > As we have learned, ***a rapid increase in accounts receivable is often an indication of deteriorating financial health***
-
+      > 
+      > ...
+      >
       > .... [a company] not only sold products to a distributor but later repurchased from that same distributor unwanted, unused, or overpriced products, initiating a "round-trip" cash payment that would come back to Autonomy [another company]. According to the SEC, this scheme alon inflated Autonomy's reported revenue by nearly $200 million between 2009 and 2011.
 
    2. Recording revenue from transactions that lack a resonable arm's-length process
@@ -458,7 +528,9 @@ These are the classification of shenanigans that can be undertaken by companies 
    3. Recording revenue on receipts from non-revenue-producing transactions
       
       > Apparently, auto parts manufacturer Delphi Corporation failed to understand the distinction between a liability and revenue. In late December 2000, Delphi took out a $200 million short-term loan, posting inventory as collateral. Rather than recording the cash received as a liability that needed to be paid back, Delphi improperly recorded it as the sale of goods &mdash; as if the inventory posted as collateral had been purchased by the bank.
-
+      > 
+      > ...
+      >
       > When purchasing goods from a vendor, cash normally flows in one direction &mdash; from the customer to the vendor. Sometimes, cash will flow in the opposite direction, usually in the form of a volume rebate or refund. Booking these cash rebates as revenue would clearly be inappropriate, as they should be considered an adjustment to the cost of inventory purchased. However, the creative folks at Sunbeam did not see it that way. Sunbeam played a neat trick to boost revenue in which it advanced cash to vendors and then recorded revenue when that cash was repaid. Additionally, Sunbeam would commit to future purchases from a particular vendor in exchange for an immediate "rebate" from that vendor, which Sunbeam, or course, recorded as revenue.
 
   4. Recording revenue from inappropriate transactions, but at inflated amounts
@@ -476,7 +548,9 @@ These are the classification of shenanigans that can be undertaken by companies 
    2. Boosting income through misleading classifications
       
       > While treating interest income as revenue clearly would be appropriate for banks and other financial institutions, it certainly sounds a bit unusual for a restaurant.
-
+      > 
+      > ...
+      >
       > Companies can produce misleadingly strong revenue and operating income growth simply by benefiting from one of the quirks of consolidation accounting. Let's look at the accounting if a company decided to form several majority-owned joint ventures, owning 60 percent of each. Accounting rules require that the units be consolidated and that the "parent" report all the revenue and operating expenses as operating income (that is, above the line) as if were its own; the 40 percent owned by others would be subtracted later on the Income Statement (below the line).
 
 4. Shifting current expenses to a later period
@@ -504,17 +578,25 @@ These are the classification of shenanigans that can be undertaken by companies 
    3. Failing to write down assets with impaired value
       
       > ... consider a piece of equipment that management first assumed would last for 10 years but that breaks down permanently during year 5. Once it's out of service, the original depreciation schedule should be abandoned, and the remaining asset balance must be oved to the Expense section immediately. If the company instead chooses to continue depreciating the asset according to the original 10-year plan, it will have failed to write down an appropriately capitalized cost that had later become impaired.
-
+      > 
+      > ...
+      >
       > ... DSI [Days' Sales of Inventory][^2] standardizes the inventory balance relative to inventory sold (i.e., cost of good sold) in a period. This calculation helps investors determine whether an increase in the absolute level of inventory is in line with the overall growth of the business or whether it might be a harbinger of margin pressure.
-
+      > 
+      > ...
+      >
       > An additional measure can be used to test whether an inventory buildup might be justified by upcoming demand: simply compare the growth in the absolute level of inventory with the company's expected revenue growth. If inventory growth far exceeds the expected sales growth, the inventory bulge is probably unwarranted and a concern for investors.
 
    4. Failing to record expenses for uncollectible receivables and devalued investments
       
       > ... companies can inflate earnings by failing to turn assets into expenses when a clear loss in value has occurred.
-
+      > 
+      > ...
+      >
       > ... companies cannot just close their eyes and pray that all their receivables will eventually be collected.
-
+      > 
+      > ...
+      >
       > Companies must routinely adjust their accounts receivable balance to reflect expected customer defaults. This entails recording an expense on the Income Statement ("bad debts expense") and a reduction of accounts receivable on the Balance Sheet (the "allowance for doubtful accounts," which offsets gross receivables). Failing to record sufficient bad debts expense, or inappropriately reversing past bad debts expense, creates artificial profits.
 
 5. Employing techniques to hide expenses or losses
@@ -524,15 +606,21 @@ These are the classification of shenanigans that can be undertaken by companies 
    1. Failing to record an expense at the appropriate amount from a current transaction
       
       > ... aims to lower the period's total expenses by failing to record an actual obligation giving rise to an expense (like rent).
-
+      > 
+      > ...
+      >
       > ... Symbol [a company] paid bonuses to employees in the March 2000 quarter but failed to record the related obligation to pay $3.5 million in Federal Insurance Contributions Act (FICA) insurance.
-
+      > 
+      > ...
+      >
       > Tell a supplier that you will agree to purchase $9 million of office products and that you will pay an inflated price od $10 million. In exchange for this large order, you ask the supplier to pay you a $1 million up-front "rebate" upon signing the agreement. You then improperly record the rebate as an immediate reduction of your office expenses. By using this trick, you have boosted earnings by the $1 millon receipt, which should have been recorded as a reduction of the inflated price of future office supplies purchases.
 
    2. Recording inappropriately low expenses by using aggresive accounting assumptions
       
       > In 2012, Deere [a company] estimated that the residual value of its rental equipment would aount to 55 percent of the initial value, leaving 45 percent of the initial cost to be depreciated. However, in each subsequent year, this estimate increases, reaching 63 percent in 2015. By increasing the estimate, the company would now be depreciating only 37 percent (down from 45 percent) of the initial value. Because of this subtle change in estimate of the residual value, Deere materially lowered its depreciation expense and artificially boosted its gross margin and operating income.
-
+      > 
+      > ...
+      >
       > Just a simple change in the month designated as the measurement date for the pension plan can inflate profits. For example, in 2004, Raytheon Co. changed the date on whic it measured its pension plan from October 31 to December 31. This simple change provided a $41 million ($0.09 bump to earnings per share) bottom-line boost, which accounted for about 10 percent of Raytheon's earnings for the entire year.
 
    3. Reducing expenses by releasing reserves from previous charges
@@ -566,7 +654,9 @@ These are the classification of shenanigans that can be undertaken by companies 
    1. Improperly writing off assets in the current period to avoid expenses in a future period
       
       > ... AOL had accumulated more than $314 million in the asset account labeled "deferred membership acquisition costs" (DMAC). But the company still had a big problem: those costs represented tomorrow's expense, and they would need to be amortized over the next eight quarters&mdash;a $40 million hit to earnings each quarter. ... AOL switched gears by announcing "a one-time charge" to write off the entire amount in one fell swoop. ... it had to come up with a justification to convince the auditors that this asset account had suddenly become "impaired" and would provide no future benefit. So AOL claimed that the write-off was necessary to reflect changes in its evolving business model, including rediced reliance on subscribers' fees as the company developed other revenue source.
-
+      > 
+      > ...
+      >
       > ... NVIDIA writing off inventory that it did not throw away
 
    2. Improperly recording charges to establish reserves used to reduce future expenses
@@ -747,6 +837,10 @@ These are the classification of shenanigans that can be undertaken by companies 
 3. Manipulating key metrics
    
    > Sometimes a company will acquire a competitor in order to wind down a competing product and move the target's customers onto the acquirer's platform. This may be a good business strategy, but it could wreak havoc with organic growth metrics. For example, 3D printer manufacturer 3D Systems acquired competitor Z-Corp in 2012 and quickly announced that it would discontinue some of Z-Corp's products. Naturally, Z-Corp's revenue fell after being acquired, and 3D Systems reported strong organic growth. Any revenue growth that 3D Systems derived from legacy Z-Corp customers should not be considered organic.
+
+## Glossary of Accounting Line Items Descriptions
+
+...
 
 ## References
 
