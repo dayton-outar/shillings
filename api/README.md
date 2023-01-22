@@ -355,6 +355,7 @@ Also, security needed. So, [Adding JWT Bearer Authentication to a Hot Chocolate 
 23. [EF Core 5 Table Valued Functions Unable to translate collection subquery in projection since the parent query doesn't project key columns of all Exception](https://github.com/dotnet/efcore/issues/23830) - [Dotnet EF Core Github](https://github.com/dotnet/efcore)
 24. [Generating SQL Backup Script for Tables & Data from any .NET Application using SMO](https://weblogs.asp.net/shahar/generating-sql-backup-script-for-tables-amp-data-from-any-net-application-using-smo) by Shahar Gvirtz's
 25. [How to implement Google Authentication in Node JS using Passport JS](https://medium.com/@prashantramnyc/how-to-implement-google-authentication-in-node-js-using-passport-js-9873f244b55e)
+26. [MaxExecutionDepth should allow the level of depth it is set to #2414](https://github.com/ChilliCream/graphql-platform/issues/2414)
 
 
 ## Tutorial Videos
@@ -374,3 +375,4 @@ Also, security needed. So, [Adding JWT Bearer Authentication to a Hot Chocolate 
 13. [How to structure a .NET Solution (project separation & architecture)](https://youtu.be/YiVqwoFMieg) - [Nick Chapas](https://www.youtube.com/c/Elfocrash/)
 14. [.NET 6 - Message Broker with RabbitMQ 🐰🐰🐰](https://youtu.be/eEipVEq8F1k) - [Mohamad Lawand](https://www.youtube.com/@MohamadLawand)
 15. [IdentityServer](https://www.youtube.com/playlist?list=PLbRWKsP7SsOiPrdc6XwCZ-ur2jTgQgSKe)
+16. [Use the execution depth validation rule to secure your GraphQL server.](https://youtu.be/PYZSSlVCuJc) - [ChilliCream](https://www.youtube.com/@ChilliCream)
