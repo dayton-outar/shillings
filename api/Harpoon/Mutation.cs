@@ -4,6 +4,7 @@ using System.Data;
 using System.Collections.Generic;
 using HotChocolate;
 using HotChocolate.Data;
+using HotChocolate.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Data.SqlClient;
 
@@ -18,6 +19,7 @@ namespace Harpoon
 
         #region Manage Financial Reports
 
+        [Authorize]
         [UseDbContext(typeof(StocksQuery))]
         public FinancialReport CreateFinancialReport([ScopedService]StocksQuery sq, FinancialReport financialReport)
         {
@@ -44,6 +46,7 @@ namespace Harpoon
             return financialReport;
         }
 
+        [Authorize]
         [UseDbContext(typeof(StocksQuery))]
         public FinancialReport UpdateFinancialReport([ScopedService]StocksQuery sq, FinancialReport financialReport)
         {
@@ -63,6 +66,7 @@ namespace Harpoon
             return financialReport;
         }
 
+        [Authorize]
         [UseDbContext(typeof(StocksQuery))]
         public bool DeleteFinancialReport([ScopedService]StocksQuery sq, long no)
         {
@@ -90,6 +94,7 @@ namespace Harpoon
 
         #region Manage Interest Rates
 
+        [Authorize]
         [UseDbContext(typeof(StocksQuery))]
         public InterestRate CreateInterestRate([ScopedService]StocksQuery sq, InterestRate rate)
         {
@@ -114,6 +119,7 @@ namespace Harpoon
             return rate;
         }
 
+        [Authorize]
         [UseDbContext(typeof(StocksQuery))]
         public InterestRate UpdateInterestRate([ScopedService]StocksQuery sq, InterestRate rate)
         {
@@ -131,6 +137,7 @@ namespace Harpoon
             return rate;
         }
 
+        [Authorize]
         [UseDbContext(typeof(StocksQuery))]
         public bool DeleteInterestRate([ScopedService]StocksQuery sq, long no)
         {
@@ -158,6 +165,7 @@ namespace Harpoon
 
         #region Manage Dividends
 
+        [Authorize]
         [UseDbContext(typeof(StocksQuery))]
         public Dividend CreateDividends([ScopedService]StocksQuery sq, Dividend dividend)
         {
@@ -182,6 +190,7 @@ namespace Harpoon
             return dividend;
         }
 
+        [Authorize]
         [UseDbContext(typeof(StocksQuery))]
         public Dividend UpdateDividends([ScopedService]StocksQuery sq, Dividend dividend)
         {
@@ -199,6 +208,7 @@ namespace Harpoon
             return dividend;
         }
 
+        [Authorize]
         [UseDbContext(typeof(StocksQuery))]
         public bool DeleteDividends([ScopedService]StocksQuery sq, long no)
         {
@@ -226,6 +236,7 @@ namespace Harpoon
 
         #region Manage Companies
 
+        [Authorize]
         [UseDbContext(typeof(StocksQuery))]
         public Company CreateCompany([ScopedService]StocksQuery sq, Company company, HotChocolate.Types.IFile file)
         {
@@ -261,6 +272,7 @@ namespace Harpoon
             return company;
         }
 
+        [Authorize]
         [UseDbContext(typeof(StocksQuery))]
         public Company UpdateCompany([ScopedService]StocksQuery sq, Company company, HotChocolate.Types.IFile file)
         {
@@ -324,6 +336,7 @@ namespace Harpoon
             return company;
         }
 
+        [Authorize]
         [UseDbContext(typeof(StocksQuery))]
         public bool DeleteCompany([ScopedService]StocksQuery sq, string companyCode)
         {
@@ -351,6 +364,7 @@ namespace Harpoon
 
         #region Manage Stocks
 
+        [Authorize]
         [UseDbContext(typeof(StocksQuery))]
         public Stock CreateStock([ScopedService]StocksQuery sq, Stock stock)
         {
@@ -375,6 +389,7 @@ namespace Harpoon
             return stock;
         }
 
+        [Authorize]
         [UseDbContext(typeof(StocksQuery))]
         public Stock UpdateStock([ScopedService]StocksQuery sq, Stock stock)
         {
@@ -392,6 +407,7 @@ namespace Harpoon
             return stock;
         }
 
+        [Authorize]
         [UseDbContext(typeof(StocksQuery))]
         public bool DeleteStock([ScopedService]StocksQuery sq, long stockNo)
         {
@@ -419,6 +435,7 @@ namespace Harpoon
 
         #region Manage Markets
 
+        [Authorize]
         [UseDbContext(typeof(StocksQuery))]
         public Market CreateMarket([ScopedService]StocksQuery sq, Market market)
         {
@@ -443,6 +460,7 @@ namespace Harpoon
             return market;
         }
 
+        [Authorize]
         [UseDbContext(typeof(StocksQuery))]
         public Market UpdateMarket([ScopedService]StocksQuery sq, Market market)
         {
@@ -460,6 +478,7 @@ namespace Harpoon
             return market;
         }
 
+        [Authorize]
         [UseDbContext(typeof(StocksQuery))]
         public bool DeleteMarket([ScopedService]StocksQuery sq, long marketNo)
         {
@@ -487,6 +506,7 @@ namespace Harpoon
 
         #region Manage Market Index
 
+        [Authorize]
         [UseDbContext(typeof(StocksQuery))]
         public MarketIndex CreateMarketIndex([ScopedService]StocksQuery sq, MarketIndex marketIndex)
         {
@@ -511,6 +531,7 @@ namespace Harpoon
             return marketIndex;
         }
 
+        [Authorize]
         [UseDbContext(typeof(StocksQuery))]
         public MarketIndex UpdateMarketIndex([ScopedService]StocksQuery sq, MarketIndex marketIndex)
         {
@@ -528,6 +549,7 @@ namespace Harpoon
             return marketIndex;
         }
 
+        [Authorize]
         [UseDbContext(typeof(StocksQuery))]
         public bool DeleteMarketIndex([ScopedService]StocksQuery sq, long no)
         {
@@ -555,6 +577,7 @@ namespace Harpoon
 
         #region Manage Stock Index
 
+        [Authorize]
         [UseDbContext(typeof(StocksQuery))]
         public StockIndex CreateStockIndex([ScopedService]StocksQuery sq, StockIndex stockIndex)
         {
@@ -579,6 +602,7 @@ namespace Harpoon
             return stockIndex;
         }
 
+        [Authorize]
         [UseDbContext(typeof(StocksQuery))]
         public StockIndex UpdateStockIndex([ScopedService]StocksQuery sq, StockIndex stockIndex)
         {
@@ -596,6 +620,7 @@ namespace Harpoon
             return stockIndex;
         }
 
+        [Authorize]
         [UseDbContext(typeof(StocksQuery))]
         public bool DeleteStockIndex([ScopedService]StocksQuery sq, long no)
         {
@@ -623,6 +648,7 @@ namespace Harpoon
 
         #region Manage Industries
 
+        [Authorize]
         [UseDbContext(typeof(StocksQuery))]
         public Industry CreateIndustry([ScopedService]StocksQuery sq, Industry industry)
         {
@@ -647,6 +673,7 @@ namespace Harpoon
             return industry;
         }
 
+        [Authorize]
         [UseDbContext(typeof(StocksQuery))]
         public Industry UpdateIndustry([ScopedService]StocksQuery sq, Industry industry)
         {
@@ -664,6 +691,7 @@ namespace Harpoon
             return industry;
         }
 
+        [Authorize]
         [UseDbContext(typeof(StocksQuery))]
         public bool DeleteIndustry([ScopedService]StocksQuery sq, long no)
         {
