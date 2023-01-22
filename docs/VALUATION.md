@@ -29,12 +29,12 @@ If the company that issued stocks on a stock market pays dividends, a version of
 
 The equation below applies to a single N-year investor, who will collect dividends for N years and
 then sell the stock, or to a series of investors who hold the stock for shorter periods and
-then resell it.<sup><a href="#footnote-1">1</a></sup>
+then resell it.[^1]
 
 $$\huge{P_0 = {Div_1 \over 1 + r_E} + {Div_2 \over (1 + r_E)^2} + {Div_3 \over (1 + r_E)^3} + \ldots + {Div_N \over (1 + r_E)^N} + { P_N \over (1 + r_E)^N } }$$
 
 For the special case in which the firm eventually
-pays dividends and is never acquired, it is possible to hold the shares forever.<sup><a href="#footnote-1">1</a></sup>
+pays dividends and is never acquired, it is possible to hold the shares forever.[^1]
 
 $$\huge{P_0 = {Div_1 \over 1 + r_E} + {Div_2 \over (1 + r_E)^2} + {Div_3 \over (1 + r_E)^3} + \ldots = \sum_{n=1}^\infty {Div_n \over (1 + r_E)^n} }$$
 
@@ -59,7 +59,7 @@ The main ingredients needed to arrive at the value of a company includes,
 
 $$\huge{Enterprise\text{ }Value\text{ }in\text{ }Year\text{ }T = V_T^L = { FCF_{T + 1} \over r_{wacc} - g } }$$
 
-...
+> we observed that the value of a firm is a function of three variables—its capacity to generate cash flows, its expected growth in these cash flows, and the uncertainty associated with these cash flows
 
 
 ## Further Reading
@@ -95,6 +95,6 @@ $$\huge{Enterprise\text{ }Value\text{ }in\text{ }Year\text{ }T = V_T^L = { FCF_{
 3. [How to calculate percentage price changes correctly with natural logs for stock prices](https://youtu.be/Ytk_WTmPhCs) - [Stachanov Holding B.V.](https://www.youtube.com/c/StachanovSolutionsServices)
 4. [Free Cash Flow: Back to Basics](https://youtu.be/9GnwzjV9qS0) - [Aswath Damodaran](https://www.youtube.com/c/AswathDamodaranonValuation)
 
-___
 
-<a id="footnote-1"><sup>1</sup></a> Find on page 314 in _Corporate Finance: The Core, Global Edition_
+[^1]: Page 314. Chapter 9. _Corporate Finance: The Core, Global Edition_ by Jonathan Berk and Peter Demarzo.
+[^2]: Page 460. Chapter 17. _Investment Valuation_ by Aswath Damodaran.

@@ -83,6 +83,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 9. [How To Create a Global Event Bus in Vue 2](https://www.digitalocean.com/community/tutorials/vuejs-global-event-bus) - [Digital Ocean](https://www.digitalocean.com/)
 10. [Using Vue Currency Input with Buefy](https://codesandbox.io/s/using-vue-currency-input-with-buefy-pnl3q?file=/src/App.vue) - [CodeSandbox](https://codesandbox.io/)
 11. [Add Keyboard Shortcuts to your Vue App](https://focusedlabs.io/blog/add-keyboard-shortcuts-to-your-vue-app)
+12. [Navigation Guards](https://v3.router.vuejs.org/guide/advanced/navigation-guards.html#global-before-guards)
 
 ## Tutorial Videos
 

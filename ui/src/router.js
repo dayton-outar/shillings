@@ -9,16 +9,23 @@ import MarketIndices from './components/MarketIndices.vue'
 import Industries from './components/Industries.vue'
 import InterestRates from './components/InterestRates.vue'
 import ViewCompany from './components/ViewCompany.vue'
+import Login from './components/Login.vue'
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
     routes: [
         {
             path: '/',
             name: 'dashboard',
             component: Dashboard,
             meta: { title: 'Dashboard' }
+        },
+        {
+            path: '/login',
+            name: 'login',
+            component: Login,
+            meta: { title: 'Login' }
         },
         {
             path: '/finance-reports',
@@ -70,3 +77,14 @@ export default new Router({
         }
     ]
 })
+
+router.beforeEach((to, from, next) => {
+    let token = JSON.parse(localStorage.getItem('sh-auth')) // TODO: Is there a more robust security
+    if (!token) {
+        if (to.name == 'dashboard' || to.name == 'login') next()
+        else next({ name: 'login' })
+    }
+    else next()
+})
+
+export default router

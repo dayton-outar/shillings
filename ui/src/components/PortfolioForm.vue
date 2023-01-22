@@ -11,7 +11,7 @@
                   placeholder="Choose Security">
                   <option
                     v-for="stock in stocks.nodes" 
-                    :key="stock.code"
+                    :key="stock.no"
                     :value="stock">
                     {{stock.name}}
                   </option>
@@ -102,7 +102,7 @@ export default ({
     },
     beforeCreate() {
       this.$store.dispatch('stocks/fetch', {
-        first: 100,
+        first: 200,
         last: null,
         next: null,
         previous: null,
@@ -111,7 +111,8 @@ export default ({
       })
     },
     computed: {
-        ...mapState('stocks', ['stocks'])
+        ...mapState('stocks', ['stocks']),
+        ...mapState('trades', ['totalTrades'])
     },
     methods: {
       ...mapActions('holdings', ['add', 'flush']),
@@ -120,14 +121,25 @@ export default ({
         const strippedPrice = initPrice.toString().replace(/[^0-9.-]+/g,'')
         const initVolume = this.volume
         const strippedVolume = initVolume.toString().replace(/[^0-9.-]+/g,'')
+        const volume = parseInt(strippedVolume === '' ? 0 : strippedVolume, 10)
+        const unitPrice = parseFloat(strippedPrice === '' ? 0 : strippedPrice)
+
+        const itrade = this.totalTrades.find(t => t.stock.no === this.chosenStock.no)
+        let newPrice = itrade ? itrade.closingPrice : 0
+        let oldCost = volume * unitPrice
+        let newCost = itrade ? volume * itrade.closingPrice : 0
 
         this.add({
           security: {
-            code: this.chosenStock.code,
+            no: this.chosenStock.no,
             name: this.chosenStock.name
           },
-          volume: parseInt(strippedVolume === '' ? 0 : strippedVolume, 10),
-          unitPrice: parseFloat(strippedPrice === '' ? 0 : strippedPrice)
+          volume: volume,
+          unitPrice: unitPrice,
+          purchaseCost: oldCost,
+          currentPrice: newPrice,
+          currentCost: newCost,
+          variance: (newCost - oldCost)
         }).then( () => {
           this.chosenStock = null
           this.volume = 0

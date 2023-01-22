@@ -18,6 +18,7 @@ import earnings from './earnings'
 import solvencies from './solvencies'
 import holdings from './holdings'
 import dependencies from './dependencies'
+import auth from './auth'
 
 Vue.use(Vuex)
 
@@ -39,6 +40,7 @@ export const store = new Vuex.Store({
         trades,
         earnings,
         solvencies,
-        holdings
+        holdings,
+        auth
     }
 })

@@ -350,9 +350,13 @@ Also, security needed. So, [Adding JWT Bearer Authentication to a Hot Chocolate 
 18. [Say hello to Hot Chocolate 12!](https://chillicream.com/blog/2021/09/27/hot-chocolate-12) - [ChilliCream](https://chillicream.com/)
 19. [9 Ways To Secure your GraphQL API — GraphQL Security Checklist](https://www.apollographql.com/blog/graphql/security/9-ways-to-secure-your-graphql-api-security-checklist/) - [Apollo GraphQL](https://www.apollographql.com/)
 20. [GraphQL Authentication and Authorization in DotNet 6 using MongoDB](https://medium.com/@mohsenasadi501/graphql-authentication-and-authorization-in-dotnet-6-using-mongodb-e1de0bfbe240) by [Mohsenasadi](https://medium.com/@mohsenasadi501)
-21. [Clean Architecture Solution Template](https://github.com/jasontaylordev/CleanArchitecture) - [Jason Taylor](https://github.com/jasontaylordev)
-22. [EF Core 5 Table Valued Functions Unable to translate collection subquery in projection since the parent query doesn't project key columns of all Exception](https://github.com/dotnet/efcore/issues/23830) - [Dotnet EF Core Github](https://github.com/dotnet/efcore)
-23. [Generating SQL Backup Script for Tables & Data from any .NET Application using SMO](https://weblogs.asp.net/shahar/generating-sql-backup-script-for-tables-amp-data-from-any-net-application-using-smo) by Shahar Gvirtz's
+21. [GraphQL: Simple authorization and authentication with HotChocolate 11 and ASP.NET Core 3](https://medium.com/@marcinjaniak/graphql-simple-authorization-and-authentication-with-hotchocolate-11-and-asp-net-core-3-162e0a35743d) by Marcin Janiak
+22. [Clean Architecture Solution Template](https://github.com/jasontaylordev/CleanArchitecture) - [Jason Taylor](https://github.com/jasontaylordev)
+23. [EF Core 5 Table Valued Functions Unable to translate collection subquery in projection since the parent query doesn't project key columns of all Exception](https://github.com/dotnet/efcore/issues/23830) - [Dotnet EF Core Github](https://github.com/dotnet/efcore)
+24. [Generating SQL Backup Script for Tables & Data from any .NET Application using SMO](https://weblogs.asp.net/shahar/generating-sql-backup-script-for-tables-amp-data-from-any-net-application-using-smo) by Shahar Gvirtz's
+25. [How to implement Google Authentication in Node JS using Passport JS](https://medium.com/@prashantramnyc/how-to-implement-google-authentication-in-node-js-using-passport-js-9873f244b55e)
+26. [MaxExecutionDepth should allow the level of depth it is set to #2414](https://github.com/ChilliCream/graphql-platform/issues/2414)
+
 
 ## Tutorial Videos
 
@@ -368,5 +372,8 @@ Also, security needed. So, [Adding JWT Bearer Authentication to a Hot Chocolate 
 10. [.NET 6 - Web API Logging 📝](https://youtu.be/LO-QKMHK5ps)
 11. [Adding JWT Bearer Authentication to a Hot Chocolate 12 GraphQL API](https://youtu.be/oxgSk_Q-D3g)
 12. [Authentication (w/ Firebase) - GRAPHQL API IN .NET w/ HOT CHOCOLATE #8.1](https://youtu.be/7Xk0BuisZjg)
-13. [Authorization - GRAPHQL API IN .NET w/ HOT CHOCOLATE #8.2](https://youtu.be/XtdUExto_24)
-14. [How to structure a .NET Solution (project separation & architecture)](https://youtu.be/YiVqwoFMieg) - [Nick Chapas](https://www.youtube.com/c/Elfocrash/)
+13. [How to structure a .NET Solution (project separation & architecture)](https://youtu.be/YiVqwoFMieg) - [Nick Chapas](https://www.youtube.com/c/Elfocrash/)
+14. [.NET 6 - Message Broker with RabbitMQ 🐰🐰🐰](https://youtu.be/eEipVEq8F1k) - [Mohamad Lawand](https://www.youtube.com/@MohamadLawand)
+15. [IdentityServer](https://www.youtube.com/playlist?list=PLbRWKsP7SsOiPrdc6XwCZ-ur2jTgQgSKe)
+16. [Use the execution depth validation rule to secure your GraphQL server.](https://youtu.be/PYZSSlVCuJc) - [ChilliCream](https://www.youtube.com/@ChilliCream)
+17. [How to create auditing for your GraphQL requests with Hot Chocolate.](https://youtu.be/VSEg4hXDkTA) - [ChilliCream](https://www.youtube.com/@ChilliCream)

@@ -9,6 +9,10 @@ Apart from providing analysis on companies, this project seeks to enable custome
 
 [Payment Networks](./NETWORKS.md)
 
+[List of Stock Markets](https://www.tradinghours.com/markets)
+
+[Wiki: List of Stock Markets](https://en.wikipedia.org/wiki/List_of_stock_exchanges)
+
 **Business Analysis**
 
 - Compare to find gaps in,

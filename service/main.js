@@ -74,6 +74,10 @@ function readCompanyDetails() {
 }
 
 function readDividends() {
+    // // To use libraries while puppeteer loads page, you can dynamically load library in console like so,
+    // var script = document.createElement('script');
+    // script.src = 'https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js';
+
     let results = [];
     let items = document.querySelectorAll('table > tbody > tr');
     items.forEach((item) => {

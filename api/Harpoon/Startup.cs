@@ -16,6 +16,9 @@ using HotChocolate.Types;
 
 using O8Query.Models;
 using O8Query.Data;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace Harpoon
 {
@@ -42,6 +45,9 @@ namespace Harpoon
                 });
             });
 
+            services.AddScoped<IdentityService>();
+            // services.AddHttpContextAccessor();
+
             string connectionString = Configuration.GetConnectionString("HarpoonDatabase");
 
             services.AddControllers();
@@ -56,7 +62,7 @@ namespace Harpoon
                         .UseLoggerFactory(s.GetRequiredService<ILoggerFactory>())
                 )
                 .AddGraphQLServer()
-                .SetPagingOptions(new HotChocolate.Types.Pagination.PagingOptions{ DefaultPageSize = 20, MaxPageSize = 100, IncludeTotalCount = true })
+                .SetPagingOptions(new HotChocolate.Types.Pagination.PagingOptions{ DefaultPageSize = 20, MaxPageSize = 500, IncludeTotalCount = true })
                 // TODO: For debugging purposes. Credit https://stackoverflow.com/questions/65764361/how-can-i-get-more-error-details-or-logging-when-an-exception-is-thrown-in-a-ho
                 .ModifyRequestOptions(opt => opt.IncludeExceptionDetails = _env.IsDevelopment())
                 .AddQueryType<Query>()
@@ -68,7 +74,22 @@ namespace Harpoon
                 .AddFiltering()
                 .AddSorting()
                 .AddProjections()
-                .AddMutationConventions();
+                .AddMaxExecutionDepthRule(3, skipIntrospectionFields: true)
+                .AddMutationConventions()
+                .AddAuthorization();
+            
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(options => {
+                    options.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateAudience = true,
+                        ValidateIssuer = true,
+                        ValidateIssuerSigningKey = true,
+                        ValidIssuer = "https://localhost:5001/",
+                        ValidAudience = "www",
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("B3atiful$undayMorning"))
+                    };
+                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -84,8 +105,8 @@ namespace Harpoon
             //app.UseHttpsRedirection();
 
             app.UseRouting();
-
-            //app.UseAuthorization();
+            app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseEndpoints( endpoints => 
                 {

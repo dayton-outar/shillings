@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 using O8Query.Models;
 using O8Query.Data;
+using HotChocolate.AspNetCore.Authorization;
 
 namespace Harpoon
 {
@@ -52,6 +53,7 @@ namespace Harpoon
         [UseSorting]
         public IQueryable<StockIndex> GetStockIndices([ScopedService]StocksQuery sq) => sq.StockIndices;
 
+        [Authorize]
         [UseDbContext(typeof(StocksQuery))]
         [UsePaging]
         [UseProjection]
@@ -66,6 +68,7 @@ namespace Harpoon
         [UseSorting]
         public IQueryable<Industry> GetIndustries([ScopedService]StocksQuery sq) => sq.Industries;
 
+        [Authorize]
         [UseDbContext(typeof(StocksQuery))]
         [UsePaging]
         [UseProjection]
