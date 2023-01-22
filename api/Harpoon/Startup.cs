@@ -74,7 +74,7 @@ namespace Harpoon
                 .AddFiltering()
                 .AddSorting()
                 .AddProjections()
-                .AddMaxExecutionDepthRule(3, skipIntrospectionFields: true)
+                .AddMaxExecutionDepthRule(7, skipIntrospectionFields: true)
                 .AddMutationConventions()
                 .AddAuthorization();
             

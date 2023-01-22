@@ -1,11 +1,11 @@
 <template>
     <div>
-        <stocks-filter @filterChanged="filterChanged" />        
+        <stocks-filter @filterChanged="filterChanged" />
+        <!--<stock-indices :options="sixOptions" :begin="beginDate" :end="endDate" />-->
         <portfolio-form />
         <portfolio :formattedDateRange="formattedDateRange" />
         <b-tabs v-model="activeTab">
-          <b-tab-item v-if="totalTrades" label="Stock Trades">
-            <stock-indices :options="sixOptions" :begin="beginDate" :end="endDate" />
+          <b-tab-item v-if="totalTrades" label="Stock Trades">            
             <stock-trades :formattedDateRange="formattedDateRange" :tradings="totalTrades" />
           </b-tab-item>
           <b-tab-item label="Companies' Earnings">

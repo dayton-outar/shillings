@@ -39,7 +39,7 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState, mapActions } from 'vuex'
 
 export default {
   name: 'App',
@@ -62,7 +62,11 @@ export default {
   beforeMount() {
     this.isLoading = false // true
   },
+  created() {
+    this.fetch()
+  },
   methods: {
+    ...mapActions('auth', ['fetch']),
     setLoading(isItLoading) {
       this.isLoading = isItLoading
     }

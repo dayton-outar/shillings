@@ -11,11 +11,20 @@ export default {
     },
     mutations: {
         set(state, payload) {
-            state.profile = payload
-            localStorage.setItem('sh-auth', JSON.stringify(state.profile))
+            if (payload) {
+                state.profile = payload
+                localStorage.setItem('sh-auth', JSON.stringify(state.profile))
+            }
+        },
+        flush(state) {
+            state.portfolio = []
+            localStorage.removeItem('sh-auth')
         }
     },
     actions: {
+        fetch({ commit }) {
+            commit('set', JSON.parse(localStorage.getItem('sh-auth')))
+        },
         async authenticate({ commit }, credentials) {
             const response = await graphQlClient.mutate({
                 mutation: gql`mutation Get($input: TokenInput!) {
