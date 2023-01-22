@@ -13,7 +13,7 @@ import Login from './components/Login.vue'
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
     routes: [
         {
             path: '/',
@@ -77,3 +77,14 @@ export default new Router({
         }
     ]
 })
+
+router.beforeEach((to, from, next) => {
+    let token = JSON.parse(localStorage.getItem('sh-auth')) // TODO: Is there a more robust security
+    if (!token) {
+        if (to.name == 'dashboard' || to.name == 'login') next()
+        else next({ name: 'login' })
+    }
+    else next()
+})
+
+export default router

@@ -81,7 +81,7 @@ export default {
                     password: this.password
                 })
                     .then(() => {
-
+                        this.$router.push({ path: '/finance-reports' })
                     })
                     .catch(err => {
                         this.$buefy.dialog.alert({
