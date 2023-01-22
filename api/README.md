@@ -376,3 +376,4 @@ Also, security needed. So, [Adding JWT Bearer Authentication to a Hot Chocolate 
 14. [.NET 6 - Message Broker with RabbitMQ 🐰🐰🐰](https://youtu.be/eEipVEq8F1k) - [Mohamad Lawand](https://www.youtube.com/@MohamadLawand)
 15. [IdentityServer](https://www.youtube.com/playlist?list=PLbRWKsP7SsOiPrdc6XwCZ-ur2jTgQgSKe)
 16. [Use the execution depth validation rule to secure your GraphQL server.](https://youtu.be/PYZSSlVCuJc) - [ChilliCream](https://www.youtube.com/@ChilliCream)
+17. [How to create auditing for your GraphQL requests with Hot Chocolate.](https://youtu.be/VSEg4hXDkTA) - [ChilliCream](https://www.youtube.com/@ChilliCream)
