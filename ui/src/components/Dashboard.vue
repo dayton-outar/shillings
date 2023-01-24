@@ -59,14 +59,14 @@ import PriceBar from './PriceBar.vue'
 import TradeCost from './TradeCost.vue'
 import PortfolioForm from './PortfolioForm.vue'
 import Portfolio from './Portfolio.vue'
-import StockIndices from './StockIndices.vue'
+// import StockIndices from './StockIndices.vue'
 import Earnings from './Earnings.vue'
 import Solvencies from './Solvencies.vue'
 
 export default {
   components: {
     'stocks-filter': StockFilter,
-    'stock-indices': StockIndices,
+    // 'stock-indices': StockIndices,
     'portfolio': Portfolio,
     'portfolio-form': PortfolioForm,
     'volumes-pie': VolumesPie,

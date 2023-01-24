@@ -64,7 +64,14 @@
                 <div class="py-3">
                   <span class="tag is-dark is-medium">{{ formatMoney(props.row.lowestPrice) }}</span> <span class="tag is-info is-medium">{{ formatMoney(props.row.highestPrice) }}</span>
                 </div>
-                <stocks-line :name="props.row.stock.name" :stocks="props.row.prices" :options="detailOptions" />
+                <div class="columns">
+                  <div class="column is-three-quarters">
+                    <stocks-line :name="props.row.stock.name" :stocks="props.row.prices" :options="detailOptions" />
+                  </div>
+                  <!-- <div class="column">
+                    <view-company :data="props.row.stock.company" />
+                  </div> -->
+                </div>
                 <!--
                 <b-table
                   :data="props.row.prices"
@@ -103,6 +110,7 @@
 
 <script>
 import StocksLine from './StocksLine.vue'
+// import ViewCompany from './ViewCompany.vue'
 
 import config from '../config'
 // import tableMixin from '../utils/tableMixin'
@@ -113,6 +121,7 @@ export default {
   props: ['tradings', 'formattedDateRange'],
   components: {
     'stocks-line':StocksLine,
+    //'view-company': ViewCompany
   },
   mixins: [utilMixin],
   data() {
