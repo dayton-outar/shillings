@@ -53,17 +53,17 @@
 import { mapState, mapGetters, mapActions } from 'vuex'
 import moment from 'moment'
 
-import StockFilter from './StockFilter.vue'
-import VolumesPie from './VolumesPie.vue'
-import StocksLine from './StocksLine.vue'
-import StockTrades from './StockTrades.vue'
-import PriceBar from './PriceBar.vue'
-import TradeCost from './TradeCost.vue'
-import PortfolioForm from './PortfolioForm.vue'
-import Portfolio from './Portfolio.vue'
-// import StockIndices from './StockIndices.vue'
-import Earnings from './Earnings.vue'
-import Solvencies from './Solvencies.vue'
+import StockFilter from '../components/StockFilter.vue'
+import VolumesPie from '../components/VolumesPie.vue'
+import StocksLine from '../components/StocksLine.vue'
+import StockTrades from '../components/StockTrades.vue'
+import PriceBar from '../components/PriceBar.vue'
+import TradeCost from '../components/TradeCost.vue'
+import PortfolioForm from '../components/PortfolioForm.vue'
+import Portfolio from '../components/Portfolio.vue'
+// import StockIndices from '../components/StockIndices.vue'
+import Earnings from '../components/Earnings.vue'
+import Solvencies from '../components/Solvencies.vue'
 
 export default {
   components: {
