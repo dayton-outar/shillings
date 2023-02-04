@@ -1,11 +1,11 @@
 <template>
     <div>
-        <stocks-filter @filterChanged="filterChanged" />
+        <stocks-filter :dates="filterDates" :selectedMarket="market" @filterChanged="filterChanged" />
         <!--<stock-indices :options="sixOptions" :begin="beginDate" :end="endDate" />-->
         <portfolio-form />
         <portfolio :formattedDateRange="formattedDateRange" />
         <b-tabs v-model="activeTab">
-          <b-tab-item v-if="totalTrades" label="Stock Trades">            
+          <b-tab-item label="Stock Trades">            
             <stock-trades :formattedDateRange="formattedDateRange" :tradings="totalTrades" />
           </b-tab-item>
           <b-tab-item label="Companies' Earnings">
@@ -14,33 +14,33 @@
           <b-tab-item label="Companies' Solvency">
             <solvencies :formattedDateRange="formattedDateRange" />
           </b-tab-item>
-          <b-tab-item v-if="totalTrades" label="Volume Shares">
+          <b-tab-item v-if="false" label="Volume Shares">
             <b-message title="Volume Shares" type="is-info" aria-close-label="Close message">
               <p>The volume shares visualizes the percentage division of the volume of stocks traded for the period.</p>
               <p>All the divisions are divided by the total volume of shares traded within the period.</p>
             </b-message>
             <volumes-pie :volumes="volumeShares" />
           </b-tab-item>
-          <b-tab-item v-if="totalTrades" label="Price Changes">
+          <b-tab-item v-if="false" label="Price Changes">
             <b-message title="Price Changes" type="is-info" aria-close-label="Close message">
               <p>This bar chart visualizes percentage change of the closing price from the opening price for the period.</p>
               <p>Price changes can exceed over 100%, in which case will account for a dramatic gain or loss of your stock.</p>
             </b-message>
             <price-bar :changes="pricePercentages" />
           </b-tab-item>
-          <b-tab-item v-if="totalTrades" label="Trade Cost">
+          <b-tab-item v-if="false" label="Trade Cost">
             <b-message title="Trade Cost" type="is-info" aria-close-label="Close message">
               <p>This bubble chart visualizes an approximation of the total money spent trading certain stocks for the period.</p>
               <p>The biggest bubble means that most of the money was spent on that stock for the period.</p>
             </b-message>
             <trade-cost :costs="tradeCosts" />
           </b-tab-item>
-          <b-tab-item v-if="totalTrades" label="Closing Prices">
+          <b-tab-item v-if="false" label="Closing Prices">
             <b-message title="Closing Prices" type="is-info" aria-close-label="Close message">
               <p>This line chart visualizes closing price each day for the period.</p>
               <p>From a glance, you can see the stock with the highest closing price.</p>
             </b-message>
-            <stocks-line :stocks="totalTrades" :options="{ isDetail: false}" />
+            <stocks-line :stocks="false" :options="{ isDetail: false}" />
           </b-tab-item>
         </b-tabs>
         
@@ -81,8 +81,11 @@ export default {
     return {
       formattedDateRange: '',
       isLoading: false,
-      beginDate: new Date(),
-      endDate: new Date(),
+      filterDates: [moment().subtract(7, 'days').toDate(), moment().toDate()],
+      market: {
+        no: -1,
+        name: 'All Markets'
+      },
       sixOptions: {
         readOnly: true,
         showTools: true
@@ -100,12 +103,12 @@ export default {
   },
   created() {
     this.$emit('changeLoading', true)
-    this.formatDates([new Date(), new Date()])
+    this.formatDates(this.filterDates)
 
     this.fetch({
         marketNo: -1,
-        begin: `${ moment(this.beginDate).format('YYYY-MM-DDT00:00:00.000') }Z`,
-        end: `${ moment(this.endDate).format('YYYY-MM-DDT00:00:00.000') }Z`
+        begin: `${ moment(this.filterDates[0]).format('YYYY-MM-DDT00:00:00.000') }Z`,
+        end: `${ moment(this.filterDates[1]).format('YYYY-MM-DDT00:00:00.000') }Z`
       }).then(() => {
         this.fetchHoldings()
         this.$emit('changeLoading', false)
@@ -121,7 +124,7 @@ export default {
       this.formatDates(v.dates)
 
       this.fetch({
-        marketNo: -1,
+        marketNo: v.market.no,
         begin: `${ moment( v.dates[0] ).format('YYYY-MM-DDT00:00:00.000') }Z`, // Clumsy but it's a pain to remove the offset...
         end: `${ moment( v.dates[1] ).format('YYYY-MM-DDT00:00:00.000') }Z`
       }).then(() => {
