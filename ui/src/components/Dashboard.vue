@@ -47,7 +47,7 @@
     </div>
 </template>
 
-<script lang="js">
+<script>
 import { mapState, mapGetters, mapActions } from 'vuex'
 import moment from 'moment'
 
