@@ -152,6 +152,9 @@ export default ({
   },
   methods: {
     ...mapActions('holdings', ['remove']),
+    create() {
+      console.log('Yet to do')
+    },
     removeMyPortfolio(id) {
       this.remove(id).then(() => {
         this.$buefy.toast.open({
