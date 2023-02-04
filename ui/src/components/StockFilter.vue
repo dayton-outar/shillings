@@ -4,7 +4,7 @@
         <div class="column is-one-fifth">
           <b-datepicker
             placeholder="Click to select..."
-            v-model="dates"
+            v-model="pickDates"
             :date-formatter="dateFormatter"
             icon-pack="fas"
             range
@@ -14,7 +14,7 @@
         <div class="column is-four-fifths">
           <b-dropdown
             :expanded="true"
-            v-model="selectedMarket"
+            v-model="chosenMarket"
             scrollable
             aria-role="list"
             @change="selectMarket">
@@ -23,7 +23,7 @@
                 type="is-light"
                 expanded
                 icon-right="menu-down">
-                {{ selectedMarket.name }}
+                {{ chosenMarket.name }}
               </b-button>
             </template>
             
@@ -59,11 +59,11 @@ export default {
   },
   methods: {
     dateChanged() {
-      this.$emit('filterChanged', { dates: this.dates, market: this.selectedMarket })
+      this.$emit('filterChanged', { dates: this.pickDates, market: this.chosenMarket })
     },
     selectMarket(v) {
-      this.selectedMarket = v
-      this.$emit('filterChanged', { dates: this.dates, market: this.selectedMarket })
+      this.chosenMarket = v
+      this.$emit('filterChanged', { dates: this.pickDates, market: this.chosenMarket })
     },
     dateFormatter(dates) {
       return `${ moment(dates[0]).format('MMM-D-YYYY') } ⟶ ${ moment(dates[1]).format('MMM-D-YYYY') }`
@@ -73,7 +73,10 @@ export default {
     ...mapState('markets', ['markets'])
   },
   data() {
-    return {}
+    return {
+      pickDates: this.dates,
+      chosenMarket: this.selectedMarket
+    }
   }
 }
 </script>
