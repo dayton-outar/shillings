@@ -22,11 +22,13 @@
         <div class="column">
           <b-table 
             :data="holdings"
+            icon-pack="fas"
             :sort-icon="sortIcon"
             :sort-icon-size="sortIconSize"
             :default-sort-direction="defaultSortDirection"
             :striped="true"
             :hoverable="true"
+            detailed
             default-sort="variance">
             
             <b-table-column field="stock.name" label="Security" sortable v-slot="props">
@@ -79,6 +81,17 @@
               </template>
             </b-table-column>
 
+            <template #detail="props">
+              <article>
+                <h5 class="title is-5">{{ props.row.stock.name }}</h5>
+                <div class="columns">
+                  <div class="column is-full">
+                    <stocks-line :name="props.row.stock.name" :stocks="props.row.prices" :options="stocksLineOptions" />
+                  </div>
+                </div>
+              </article>
+            </template>
+
             <template #footer>
               <th>Total</th>
               <th></th>
@@ -87,6 +100,7 @@
               <th></th>
               <th class="right-aligned">{{ formatTotalCurrentCost() }}</th>
               <th class="right-aligned">{{ formatTotalGainOrLoss() }}</th>
+              <th></th>
               <th></th>
             </template>
 
@@ -108,11 +122,13 @@ import { mapGetters, mapActions } from 'vuex'
 import config from '../config'
 import utilMixin from '../utils/utilMixin'
 
-import PortfolioForm from '../components/PortfolioForm.vue'
+import PortfolioForm from './PortfolioForm.vue'
+import StocksLine from './StocksLine.vue'
 
 export default ({
   components: {
     'portfolio-form': PortfolioForm,
+    'stocks-line':StocksLine
   },
   props: ['formattedDateRange'],
   mixins: [utilMixin],
@@ -122,6 +138,13 @@ export default ({
       sortIcon: 'arrow-up',
       sortIconSize: 'is-small',
       fileApiHost: config.fileApiHost,
+      isCreatePanelActive: false,
+      stocksLineOptions: {
+        showDetail: true,
+        showPositiveNegative: false,
+        height: null,
+        width: null
+      }
     }
   },
   computed: {

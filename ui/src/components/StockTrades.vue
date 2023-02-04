@@ -32,9 +32,15 @@
             </article>
           </b-table-column>
 
+          <b-table-column field="volume" label="Volume" numeric sortable v-slot="props" width="12%">
+            {{ formatNumber(props.row.volume) }}
+          </b-table-column>
+
+          <!--
           <b-table-column field="marketCapitalization" label="Market Cap" numeric sortable v-slot="props" width="12%">
             {{ formatMoney(props.row.marketCapitalization) }}
           </b-table-column>
+          -->
             
           <b-table-column field="closingPrice" label="Price" numeric sortable v-slot="props">
             {{ formatMoney(props.row.closingPrice) }}

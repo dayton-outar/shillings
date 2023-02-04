@@ -48,7 +48,8 @@ export default {
           purchaseCost: h.purchaseCost,
           currentPrice: newPrice,
           currentCost: newCost,
-          variance: (newCost - h.purchaseCost)
+          variance: (newCost - h.purchaseCost),
+          prices: itrade ? itrade.prices : []
         }
       })
 
