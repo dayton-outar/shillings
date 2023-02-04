@@ -1,18 +1,23 @@
 <template>
-    <div class="panel is-light">
-      <h4 class="panel-heading">
-        My Portfolio: {{ formattedDateRange }}
-      </h4>
+  <div>
+    <div class="columns">
       <div class="column is-full">
         <b-button 
           type="is-info"
           size="is-medium"
           icon-pack="fas"
           icon-left="plus"
+          class="is-pulled-right"
           v-if="!isCreatePanelActive"
           @click.prevent="create">Add Investment</b-button>
           <portfolio-form v-if="isCreatePanelActive" @close="close" />
       </div>
+    </div>
+    
+    <div class="panel is-light">
+      <h4 class="panel-heading">
+        My Portfolio: {{ formattedDateRange }}
+      </h4>
       <div class="panel-block">
         <div class="column">
           <b-table 
@@ -94,6 +99,7 @@
         
       </div>
     </div>
+  </div>    
 </template>
 
 <script>
