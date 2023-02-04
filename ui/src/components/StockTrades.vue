@@ -6,111 +6,89 @@
     <div class="panel-block">
       <div class="column">
         <p>{{ tradings.length }} stocks traded</p>
-          <b-table 
-            :data="tradings"
-            icon-pack="fas"
-            :sort-icon="sortIcon"
-            :sort-icon-size="sortIconSize"
-            :default-sort-direction="defaultSortDirection"
-            striped
-            hoverable
-            detailed
-            default-sort="percentage">
+        <b-table 
+          :data="tradings"
+          icon-pack="fas"
+          :sort-icon="sortIcon"
+          :sort-icon-size="sortIconSize"
+          :default-sort-direction="defaultSortDirection"
+          striped
+          hoverable
+          detailed
+          default-sort="percentage">
             
-            <b-table-column field="stock.name" label="Security" sortable v-slot="props">
-              <article class="media">
-                <figure class="media-left" v-if="props.row.stock.company">
-                  <div class="image is-48x48">
-                    <img class="is-rounded"
+          <b-table-column field="stock.name" label="Security" sortable v-slot="props">
+            <article class="media">
+              <figure class="media-left" v-if="props.row.stock.company">
+                <div class="image is-48x48">
+                  <img class="is-rounded"
                         :src="(getLogo(props.row.stock.company.files) && getLogo(props.row.stock.company.files).length > 0 ? `${fileApiHost}?no=${getLogo(props.row.stock.company.files)[0].no}` : require(`../assets/no-image.png`))" alt="Company Logo" />
-                  </div>
-                </figure>
-                <div class="media-content">
-                  <p>{{ props.row.stock.code }}</p>
-                  <small v-if="props.row.stock.company">{{ props.row.stock.company.name}}</small>                  
                 </div>
-              </article>
-            </b-table-column>
-
-            <!--
-            <b-table-column field="highestPrice" numeric sortable v-slot="props">
-              <span>
-                <span class="tag is-dark">{{ formatMoney(props.row.lowestPrice) }}</span> <span class="tag is-info">{{ formatMoney(props.row.highestPrice) }}</span>
-              </span>
-            </b-table-column>
-            -->
-
-            <b-table-column field="marketCapitalization" label="Market Cap" numeric sortable v-slot="props" width="12%">
-              {{ formatMoney(props.row.marketCapitalization) }}
-            </b-table-column>
-            
-            <b-table-column field="closingPrice" label="Price" numeric sortable v-slot="props">
-              {{ formatMoney(props.row.closingPrice) }}
-            </b-table-column>
-
-            <b-table-column v-slot="props">
-              <div style="height: 32px">
-                <stocks-line :name="props.row.stock.name" :stocks="props.row.prices" :options="thumbLineOptions" />
+              </figure>
+              <div class="media-content">
+                <p><span class="tag is-light"><small>{{ props.row.stock.stockType }}</small></span> | {{ props.row.stock.code }}</p>
+                <small v-if="props.row.stock.company">{{ props.row.stock.company.name}}</small>                  
               </div>
-            </b-table-column>
+            </article>
+          </b-table-column>
+
+          <b-table-column field="marketCapitalization" label="Market Cap" numeric sortable v-slot="props" width="12%">
+            {{ formatMoney(props.row.marketCapitalization) }}
+          </b-table-column>
             
-            <b-table-column field="percentage" label="Change" numeric sortable v-slot="props">
-              {{ formatPercentage(props.row.percentage) }}
-            </b-table-column>
+          <b-table-column field="closingPrice" label="Price" numeric sortable v-slot="props">
+            {{ formatMoney(props.row.closingPrice) }}
+          </b-table-column>
 
-            <template #detail="props">
-              <article>
-                <h5 class="title is-5">{{ props.row.stock.name }}</h5>
-                <div class="py-3">
-                  <span class="tag is-dark is-medium">{{ formatMoney(props.row.lowestPrice) }}</span> <span class="tag is-info is-medium">{{ formatMoney(props.row.highestPrice) }}</span>
-                </div>
-                <div class="columns">
-                  <div class="column is-three-quarters">
-                    <stocks-line :name="props.row.stock.name" :stocks="props.row.prices" :options="detailOptions" />
-                  </div>
-                  <!-- <div class="column">
-                    <view-company :data="props.row.stock.company" />
-                  </div> -->
-                </div>
-                <!--
-                <b-table
-                  :data="props.row.prices"
-                  striped
-                  hoverable>
-                  <b-table-column field="Date" label="Date" v-slot="details">
-                    {{ formatDate(details.row.Date, 'ddd. MMM, D, YYYY') }}
-                  </b-table-column>
-                  <b-table-column field="ClosingPrices" label="ClosingPrice" numeric v-slot="details">
-                    {{ formatMoney(details.row.ClosingPrice) }}
-                  </b-table-column>
-                </b-table>
-                -->
-              </article>
-            </template>
-
-            <template #footer>
-              <th></th>
-              <th>Total</th>
-              <th class="right-aligned">{{ formatTotalMarketCapitalization() }}</th>
-              <th class="right-aligned">{{ formatTotalVolume() }}</th>
-              <th></th>
-              <th></th>
-              <!--<th></th>-->
-            </template>
-
-            <template #empty>
-                <div class="has-text-centered">No records</div>
-            </template>
+          <b-table-column v-slot="props">
+            <div style="height: 32px">
+              <stocks-line :name="props.row.stock.name" :stocks="props.row.prices" :isPositive="props.row.prices.length && props.row.prices[props.row.prices.length - 1].ClosingPrice > props.row.prices[0].ClosingPrice" :options="thumbLineOptions" />
+            </div>
+          </b-table-column>
             
-          </b-table>
-        </div>
+          <b-table-column field="percentage" label="Change" numeric sortable v-slot="props">
+            {{ formatPercentage(props.row.percentage) }}
+          </b-table-column>
+
+          <template #detail="props">
+            <article>
+              <h5 class="title is-5">{{ props.row.stock.name }}</h5>
+              <div class="py-3">
+                <span class="tag is-dark is-medium">{{ formatMoney(props.row.lowestPrice) }}</span> <span class="tag is-info is-medium">{{ formatMoney(props.row.highestPrice) }}</span>
+              </div>
+              <div class="columns">
+                <div class="column is-three-quarters">
+                  <stocks-line :name="props.row.stock.name" :stocks="props.row.prices" :options="detailOptions" />
+                </div>
+                <div class="column">
+                  <view-company :data="props.row.stock.company" />
+                </div>
+              </div>
+            </article>
+          </template>
+
+          <template #footer>
+            <th></th>
+            <th>Total</th>
+            <th class="right-aligned">{{ formatTotalMarketCapitalization() }}</th>
+            <th class="right-aligned">{{ formatTotalVolume() }}</th>
+            <th></th>
+            <th></th>
+          </template>
+
+          <template #empty>
+            <div class="has-text-centered">No records</div>
+          </template>
+            
+        </b-table>
       </div>
+    </div>
   </div>
 </template>
 
 <script>
 import StocksLine from './StocksLine.vue'
-// import ViewCompany from './ViewCompany.vue'
+import ViewCompany from './ViewCompany.vue'
 
 import config from '../config'
 // import tableMixin from '../utils/tableMixin'
@@ -121,7 +99,7 @@ export default {
   props: ['tradings', 'formattedDateRange'],
   components: {
     'stocks-line':StocksLine,
-    //'view-company': ViewCompany
+    'view-company': ViewCompany
   },
   mixins: [utilMixin],
   data() {
@@ -131,12 +109,14 @@ export default {
       sortIconSize: 'is-small',
       fileApiHost: config.fileApiHost,
       thumbLineOptions: {
-        isDetail: true,
+        showDetail: false,
+        showPositiveNegative: true,
         height: 48,
         width: 100
       },
       detailOptions: {
-        isDetail: true,
+        showDetail: true,
+        showPositiveNegative: false,
         height: null,
         width: null
       }

@@ -6,7 +6,7 @@
         <portfolio :formattedDateRange="formattedDateRange" />
         <b-tabs v-model="activeTab">
           <b-tab-item label="Stock Trades">            
-            <stock-trades :formattedDateRange="formattedDateRange" :tradings="totalTrades" />
+            <stock-trades v-if="totalTrades" :formattedDateRange="formattedDateRange" :tradings="totalTrades" />
           </b-tab-item>
           <b-tab-item label="Companies' Earnings">
             <earnings :formattedDateRange="formattedDateRange" />
@@ -83,6 +83,7 @@ export default {
     return {
       formattedDateRange: '',
       isLoading: false,
+      // TODO: Get latest traded date and use instead of date based on browser settings
       filterDates: [moment().subtract(7, 'days').toDate(), moment().toDate()],
       market: {
         no: -1,
@@ -108,7 +109,7 @@ export default {
     this.formatDates(this.filterDates)
 
     this.fetch({
-        marketNo: -1,
+        marketNo: this.market.no,
         begin: `${ moment(this.filterDates[0]).format('YYYY-MM-DDT00:00:00.000') }Z`,
         end: `${ moment(this.filterDates[1]).format('YYYY-MM-DDT00:00:00.000') }Z`
       }).then(() => {

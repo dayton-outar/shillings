@@ -7,28 +7,21 @@ import { mapState } from 'vuex'
 import { v4 as uuidv4 } from 'uuid'
 import moment from 'moment'
 
+import utilMixin from '../utils/utilMixin'
+
 export default {
   name: 'StocksLine',
-  props: ['stocks', 'name', 'options'],
+  props: ['stocks', 'name', 'isPositive', 'options'],
+  mixins: [utilMixin],
   computed: {
     ...mapState(['companies']),
     preparedPrices() {
-        if (this.options.isDetail) {
-            const prices = this.stocks.map(p => [Date.UTC(moment(p.Date).toDate().getFullYear(), moment(p.Date).toDate().getMonth(), moment(p.Date).toDate().getDate()), p.ClosingPrice])
-            return [{
-              name: this.name,
-              enableMouseTracking: false,
-              data: prices
-            }]
-        } else {
-          return this.stocks.map(d => {
-            return {
-              name: d.stock.name,
-              enableMouseTracking: false,
-              data: d.prices.map(p => [Date.UTC(moment(p.Date).toDate().getFullYear(), moment(p.Date).toDate().getMonth(), moment(p.Date).toDate().getDate()), p.ClosingPrice])
-            }
-          })
-        }
+      const prices = this.stocks.map(p => [Date.UTC(moment(p.Date).toDate().getFullYear(), moment(p.Date).toDate().getMonth(), moment(p.Date).toDate().getDate()), p.ClosingPrice])
+      return [{
+        name: this.name,
+        enableMouseTracking: this.options.showDetail,
+        data: prices
+      }]
     }
   },
   data() {
@@ -38,10 +31,9 @@ export default {
       }
   },
   mounted() {
-    // if (this.options.isDetail) {
+    // if (this.options.showDetail) {
       
-    // }
-    this.positive = this.stocks.length && this.stocks[this.stocks.length - 1].ClosingPrice > this.stocks[0].ClosingPrice 
+    // } 
     this.renderLineChart()
   },
   watch: {
@@ -53,7 +45,30 @@ export default {
     renderLineChart() {
       const chartHeight = this.options.height
       const chartWidth = this.options.width
-      const positive = this.positive
+      const showDetails = this.options.showDetail
+      const fm = this.formatMoney
+      const defaultPlotOptions = {
+        series: {
+          label: {
+            connectorAllowed: false
+          }
+        }
+      }
+      const negPosPlotOpions = {
+        line: {
+          marker: {
+            enabled: showDetails
+          },
+          color: this.isPositive ? 'green' : 'red'
+        },
+        series: {
+          label: {
+            connectorAllowed: false
+          }
+        }
+      }
+      
+      const linePlotOptions = this.options.showPositiveNegative ? negPosPlotOpions : defaultPlotOptions
 
       window.Highcharts.chart(`${ this.lineChartId }`, {
         chart: {
@@ -64,85 +79,72 @@ export default {
         title: {
           text: null // 'Stock Closing Price'
         },
-            subtitle: {
-              text: null // 'Source: www.jamstockex.com'
-            },
-            yAxis: {
-              visible: false,
-              title: {
-                text: 'Closing Price'
-              },
-              labels: {
-                enabled: false,
-                formatter() {
-                  const cfi = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' })
-                  return `${ cfi.format(this.value) }`
-                }
-              },
-            },
-            xAxis: {
-              visible: false,
-              type: 'datetime',
-              title: {
-                text: 'Date'
-              },
-              labels: {
-                enabled: false,
-                formatter: function () {
-                  return window.Highcharts.dateFormat('%b %e, %Y', this.value);
-                }
-              }
-            },
-            tooltip: {
-              enabled: false,
-              useHTML: true,
-              formatter() {
-                const cfi = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' })
-
-                return `<div style="color: ${this.point.color }">
-                          <h6 class="title is-6">${ this.series.name }</h6>
-                          <p class"is-size-5">${ moment.utc(this.point.x).format('MMM D, YYYY') }: <strong>${ cfi.format(this.point.y) }</strong></p>
-                        </div>`
-              },
-              followPointer: false // true
-            },
-            legend: {
-              enabled: false,
-              // layout: 'vertical',
-              // align: 'right',
-              // verticalAlign: 'middle'
-            },
-            plotOptions: {
-              line: {
-                color: positive ? 'green' : 'red'
-              },
-              series: {
-                label: {
-                  connectorAllowed: false
-                },
-                //pointStart: 2010
-              }
-            },
-            series: this.preparedPrices,
-            responsive: {
-              rules: [{
-                condition: {
-                  maxWidth: 500
-                },
-                chartOptions: {
-                  legend: {
-                      layout: 'horizontal',
-                      align: 'center',
-                      verticalAlign: 'bottom'
-                  }
-                }
-              }]
-            },
-            credits: {
-                enabled: false
+        subtitle: {
+          text: null // 'Source: www.jamstockex.com'
+        },
+        yAxis: {
+          visible: showDetails,
+          title: {
+            text: 'Closing Price'
+          },
+          labels: {
+            enabled: showDetails,
+            formatter() {
+              return `${ fm(this.value) }`
             }
-          })
-      }
+          },
+        },
+        xAxis: {
+          visible: showDetails,
+          type: 'datetime',
+          title: {
+            text: 'Date'
+          },
+          labels: {
+            enabled: showDetails,
+            formatter: function () {
+              return window.Highcharts.dateFormat('%b %e, %Y', this.value);
+            }
+          }
+        },
+        tooltip: {
+          enabled: showDetails,
+          useHTML: true,
+          formatter() {
+            return `<div style="color: ${this.point.color }">
+                      <h6 class="title is-6">${ this.series.name }</h6>
+                      <p class"is-size-5">${ moment.utc(this.point.x).format('MMM D, YYYY') }: <strong>${ fm(this.point.y) }</strong></p>
+                    </div>`
+          },
+          followPointer: showDetails
+        },
+        legend: {
+          enabled: false,
+          // layout: 'vertical',
+          // align: 'right',
+          // verticalAlign: 'middle'
+        },
+        plotOptions: linePlotOptions,
+        series: this.preparedPrices,
+        responsive: {
+          rules: [{
+            condition: {
+              maxWidth: 500
+            },
+            chartOptions: {
+              legend: {
+                  layout: 'horizontal',
+                  align: 'center',
+                  verticalAlign: 'bottom'
+              }
+            }
+          }]
+        },
+        credits: {
+            enabled: false
+        }
+      })
+    }
   }
 }
 
