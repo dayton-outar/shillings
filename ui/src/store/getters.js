@@ -42,7 +42,7 @@ export default {
 
         return {
           id: h.id,
-          security: h.security,
+          stock: itrade ? itrade.stock : null,
           volume: h.volume,
           unitPrice: h.unitPrice,
           purchaseCost: h.purchaseCost,

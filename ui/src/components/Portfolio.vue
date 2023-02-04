@@ -1,8 +1,18 @@
 <template>
-    <div class="panel is-info">
+    <div class="panel is-light">
       <h4 class="panel-heading">
         My Portfolio: {{ formattedDateRange }}
       </h4>
+      <div class="column is-full">
+        <b-button 
+          type="is-info"
+          size="is-medium"
+          icon-pack="fas"
+          icon-left="plus"
+          v-if="!isCreatePanelActive"
+          @click.prevent="create">Add Investment</b-button>
+          <portfolio-form v-if="isCreatePanelActive" @close="close" />
+      </div>
       <div class="panel-block">
         <div class="column">
           <b-table 
@@ -14,18 +24,29 @@
             :hoverable="true"
             default-sort="variance">
             
-            <b-table-column field="security.name" label="Security" sortable v-slot="props">
-              {{ props.row.security.name }}
+            <b-table-column field="stock.name" label="Security" sortable v-slot="props">
+              <article class="media">
+                <figure class="media-left" v-if="props.row.stock.company">
+                  <div class="image is-48x48">
+                    <img class="is-rounded"
+                          :src="(getLogo(props.row.stock.company.files) && getLogo(props.row.stock.company.files).length > 0 ? `${fileApiHost}?no=${getLogo(props.row.stock.company.files)[0].no}` : require(`../assets/no-image.png`))" alt="Company Logo" />
+                  </div>
+                </figure>
+                <div class="media-content">
+                  <p><span class="tag is-light"><small>{{ props.row.stock.stockType }}</small></span> | {{ props.row.stock.code }}</p>
+                  <small v-if="props.row.stock.company">{{ props.row.stock.company.name}}</small>                  
+                </div>
+              </article>
             </b-table-column>
             
-            <b-table-column field="volume" label="Volume" numeric sortable v-slot="props">
+            <b-table-column field="volume" label="Quantity" numeric sortable v-slot="props">
               {{ formatNumber(props.row.volume) }}
             </b-table-column>
             
-            <b-table-column field="unitPrice" label="Unit Price" numeric sortable v-slot="props">
+            <b-table-column field="unitPrice" label="Purchase Price" numeric sortable v-slot="props">
               {{ formatMoney(props.row.unitPrice) }}
             </b-table-column>
-            
+
             <b-table-column field="purchaseCost" label="Purchase Cost" numeric sortable v-slot="props">
               {{ formatMoney(props.row.purchaseCost) }}
             </b-table-column>
@@ -38,11 +59,11 @@
               {{ formatMoney(props.row.currentCost) }}
             </b-table-column>
             
-            <b-table-column field="variance" label="Gain or Loss" numeric sortable v-slot="props">
-              {{ formatMoney(props.row.variance) }}
+            <b-table-column field="variance" label="Gain/Loss" numeric sortable v-slot="props">
+              <span :class="(props.row.variance > 0 ? 'has-text-success-dark' : ( props.row.variance < 0 ? 'has-text-danger-dark' : ''))">{{ formatMoney(props.row.variance) }}</span>
             </b-table-column>
 
-            <b-table-column v-slot="props">
+            <b-table-column v-slot="props" centered>
               <template>
                 <b-button
                   @click="removeMyPortfolio(props.row.id)"
@@ -78,16 +99,23 @@
 <script>
 import { mapGetters, mapActions } from 'vuex'
 
+import config from '../config'
 import utilMixin from '../utils/utilMixin'
 
+import PortfolioForm from '../components/PortfolioForm.vue'
+
 export default ({
+  components: {
+    'portfolio-form': PortfolioForm,
+  },
   props: ['formattedDateRange'],
   mixins: [utilMixin],
   data() {
     return {
       defaultSortDirection: 'desc',
       sortIcon: 'arrow-up',
-      sortIconSize: 'is-small'
+      sortIconSize: 'is-small',
+      fileApiHost: config.fileApiHost,
     }
   },
   computed: {

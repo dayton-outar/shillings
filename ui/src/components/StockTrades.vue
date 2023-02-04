@@ -47,7 +47,7 @@
           </b-table-column>
             
           <b-table-column field="percentage" label="Change" numeric sortable v-slot="props">
-            {{ formatPercentage(props.row.percentage) }}
+            <span :class="(props.row.percentage > 0 ? 'tag is-medium is-light is-success' : ( props.row.percentage < 0 ? 'tag is-medium is-light is-danger' : 'tag is-medium is-light'))">{{ formatPercentage(props.row.percentage) }}</span>
           </b-table-column>
 
           <template #detail="props">

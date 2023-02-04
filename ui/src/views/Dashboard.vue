@@ -2,7 +2,6 @@
     <div>
         <stocks-filter :dates="filterDates" :selectedMarket="market" @filterChanged="filterChanged" />
         <!--<stock-indices :options="sixOptions" :begin="beginDate" :end="endDate" />-->
-        <portfolio-form />
         <portfolio :formattedDateRange="formattedDateRange" />
         <b-tabs v-model="activeTab">
           <b-tab-item label="Stock Trades">            
@@ -59,7 +58,6 @@ import StocksLine from '../components/StocksLine.vue'
 import StockTrades from '../components/StockTrades.vue'
 import PriceBar from '../components/PriceBar.vue'
 import TradeCost from '../components/TradeCost.vue'
-import PortfolioForm from '../components/PortfolioForm.vue'
 import Portfolio from '../components/Portfolio.vue'
 // import StockIndices from '../components/StockIndices.vue'
 import Earnings from '../components/Earnings.vue'
@@ -70,7 +68,6 @@ export default {
     'stocks-filter': StockFilter,
     // 'stock-indices': StockIndices,
     'portfolio': Portfolio,
-    'portfolio-form': PortfolioForm,
     'volumes-pie': VolumesPie,
     'stocks-line':StocksLine,
     'stock-trades':StockTrades,
