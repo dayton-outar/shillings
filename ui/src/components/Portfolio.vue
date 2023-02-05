@@ -155,7 +155,7 @@ export default ({
     create() {
       this.isCreatePanelActive = true
     },
-    close(e) {
+    close() {
       this.isCreatePanelActive = false
     },
     removeMyPortfolio(id) {

@@ -53,11 +53,11 @@ import { mapState, mapGetters, mapActions } from 'vuex'
 import moment from 'moment'
 
 import StockFilter from '../components/StockFilter.vue'
-import VolumesPie from '../components/VolumesPie.vue'
-import StocksLine from '../components/StocksLine.vue'
 import StockTrades from '../components/StockTrades.vue'
-import PriceBar from '../components/PriceBar.vue'
-import TradeCost from '../components/TradeCost.vue'
+// import VolumesPie from '../components/VolumesPie.vue'
+// import StocksLine from '../components/StocksLine.vue'
+// import PriceBar from '../components/PriceBar.vue'
+// import TradeCost from '../components/TradeCost.vue'
 import Portfolio from '../components/Portfolio.vue'
 // import StockIndices from '../components/StockIndices.vue'
 import Earnings from '../components/Earnings.vue'
@@ -68,11 +68,11 @@ export default {
     'stocks-filter': StockFilter,
     // 'stock-indices': StockIndices,
     'portfolio': Portfolio,
-    'volumes-pie': VolumesPie,
-    'stocks-line':StocksLine,
+    // 'volumes-pie': VolumesPie,
+    // 'stocks-line':StocksLine,
     'stock-trades':StockTrades,
-    'price-bar': PriceBar,
-    'trade-cost': TradeCost,
+    // 'price-bar': PriceBar,
+    // 'trade-cost': TradeCost,
     'earnings': Earnings,
     'solvencies': Solvencies
   },
