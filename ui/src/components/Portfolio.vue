@@ -31,7 +31,7 @@
             detailed
             default-sort="variance">
             
-            <b-table-column field="stock.name" label="Security" sortable v-slot="props">
+            <b-table-column label="Security" sortable v-slot="props">
               <article class="media">
                 <figure class="media-left" v-if="props.row.stock.company">
                   <div class="image is-48x48">
@@ -153,7 +153,10 @@ export default ({
   methods: {
     ...mapActions('holdings', ['remove']),
     create() {
-      console.log('Yet to do')
+      this.isCreatePanelActive = true
+    },
+    close(e) {
+      this.isCreatePanelActive = false
     },
     removeMyPortfolio(id) {
       this.remove(id).then(() => {

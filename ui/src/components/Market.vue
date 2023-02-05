@@ -69,7 +69,6 @@
 
 <script>
 import { mapState, mapActions } from 'vuex' 
-// import moment from 'moment'
 
 import formMixin from '../utils/formMixin'
 
@@ -87,13 +86,13 @@ export default {
     },
     beforeCreate() {
         this.$store.dispatch('companies/fetch',{ // TODO: Remove after implementing Global cache
-                first: 100,
-                last: null,
-                next: null,
-                previous: null,
-                filter: { name: { startsWith: '' } },
-                ordering: [{ name: 'ASC' }]
-            })
+            first: 100,
+            last: null,
+            next: null,
+            previous: null,
+            filter: { name: { startsWith: '' } },
+            ordering: [{ name: 'ASC' }]
+        })
     },
     computed: {
         ...mapState('companies', ['companies'])
