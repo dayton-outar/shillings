@@ -53,17 +53,18 @@
           </b-table-column>
             
           <b-table-column field="percentage" label="Change" numeric sortable v-slot="props">
-            <span :class="(props.row.percentage > 0 ? 'tag is-medium is-light is-success' : ( props.row.percentage < 0 ? 'tag is-medium is-light is-danger' : 'tag is-medium is-light'))">{{ formatPercentage(props.row.percentage) }}</span>
+            <span :class="(`tag is-medium is-fullwidth is-light ${(props.row.percentage > 0 ? 'is-success' : ( props.row.percentage < 0 ? 'is-danger' : ''))}`)">{{ formatPercentage(props.row.percentage) }}</span>
           </b-table-column>
 
           <template #detail="props">
             <article>
               <h5 class="title is-5">{{ props.row.stock.name }}</h5>
-              <div class="py-3">
-                <span class="tag is-dark is-medium">{{ formatMoney(props.row.lowestPrice) }}</span> <span class="tag is-info is-medium">{{ formatMoney(props.row.highestPrice) }}</span>
-              </div>
+              
               <div class="columns">
                 <div class="column is-three-quarters">
+                  <div class="py-3">
+                    <span class="tag is-dark is-medium">{{ formatMoney(props.row.lowestPrice) }}</span> <span class="tag is-info is-medium">{{ formatMoney(props.row.highestPrice) }}</span>
+                  </div>
                   <stocks-line :name="props.row.stock.name" :stocks="props.row.prices" :options="detailOptions" />
                 </div>
                 <div class="column">
