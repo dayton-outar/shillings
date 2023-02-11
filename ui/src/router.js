@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Dashboard from './components/Dashboard.vue'
+import Dashboard from './views/Dashboard.vue'
 import FinancialReports from './components/FinancialReports.vue'
 import Companies from './components/Companies.vue'
 import Stocks from './components/Stocks.vue'

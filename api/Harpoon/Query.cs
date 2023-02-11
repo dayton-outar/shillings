@@ -68,7 +68,6 @@ namespace Harpoon
         [UseSorting]
         public IQueryable<Industry> GetIndustries([ScopedService]StocksQuery sq) => sq.Industries;
 
-        [Authorize]
         [UseDbContext(typeof(StocksQuery))]
         [UsePaging]
         [UseProjection]
@@ -83,6 +82,7 @@ namespace Harpoon
         [UseSorting]
         public IQueryable<FinancialReport> GetFinancialReports([ScopedService]StocksQuery sq) => sq.FinancialReports;
 
+        [Authorize]
         [UseDbContext(typeof(StocksQuery))]
         [UsePaging]
         [UseProjection]

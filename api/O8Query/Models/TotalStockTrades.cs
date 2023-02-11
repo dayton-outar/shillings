@@ -42,8 +42,8 @@ namespace O8Query.Models
         /// <summary>
         /// Change between opening price and closing price during period represented in percentage
         /// </summary>
-        [Column(TypeName = "decimal(18,2)")]
-        public decimal Percentage { get; set; }
+        [Column(TypeName = "float")]
+        public double Percentage { get; set; }
 
         /// <summary>
         /// Opening date of these aggregates

@@ -18,32 +18,33 @@ export default {
         mutation: gql`mutation CreateMarket($input: CreateMarketInput!) {
           createMarket ( input: $input) {
             market {
+              no
+              code,
+              name,
+              company {
                 code,
                 name,
-                company {
-                  code,
+                about,
+                totalEmployed,
+                wiki,
+                webSite,
+                founded,
+                countryCode,
+                created,
+                industries {
+                  no,
                   name,
-                  about,
-                  totalEmployed,
-                  wiki,
-                  webSite,
-                  founded,
-                  countryCode,
-                  created,
-                  industries {
-                    no,
-                    name,
-                    wiki
-                  },
-                  files {
-                    no,
-                    type,
-                    fileName,
-                    contentType,
-                    contentSize,
-                    created
-                  }
+                  wiki
+                },
+                files {
+                  no,
+                  type,
+                  fileName,
+                  contentType,
+                  contentSize,
+                  created
                 }
+              }
             }
           }
         }`,
@@ -86,6 +87,7 @@ export default {
             }
             totalCount,
             nodes {
+              no,
               code,
               name,
               company {
@@ -138,32 +140,33 @@ export default {
         mutation: gql`mutation UpdateMarket($input: UpdateMarketInput!) {
           updateMarket ( input: $input) {
             market {
+              no,
+              code,
+              name,
+              company {
                 code,
                 name,
-                company {
-                  code,
+                about,
+                totalEmployed,
+                wiki,
+                webSite,
+                founded,
+                countryCode,
+                created,
+                industries {
+                  no,
                   name,
-                  about,
-                  totalEmployed,
-                  wiki,
-                  webSite,
-                  founded,
-                  countryCode,
-                  created,
-                  industries {
-                    no,
-                    name,
-                    wiki
-                  },
-                  files {
-                    no,
-                    type,
-                    fileName,
-                    contentType,
-                    contentSize,
-                    created
-                  }
+                  wiki
+                },
+                files {
+                  no,
+                  type,
+                  fileName,
+                  contentType,
+                  contentSize,
+                  created
                 }
+              }
             }
           }
         }`,

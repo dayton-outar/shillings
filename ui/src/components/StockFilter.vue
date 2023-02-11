@@ -4,7 +4,7 @@
         <div class="column is-one-fifth">
           <b-datepicker
             placeholder="Click to select..."
-            v-model="dates"
+            v-model="pickDates"
             :date-formatter="dateFormatter"
             icon-pack="fas"
             range
@@ -14,25 +14,24 @@
         <div class="column is-four-fifths">
           <b-dropdown
             :expanded="true"
-            v-model="selectedStocks"
-            multiple
+            v-model="chosenMarket"
             scrollable
             aria-role="list"
-            @change="selectStocks">
+            @change="selectMarket">
             <template #trigger>
               <b-button
                 type="is-light"
                 expanded
                 icon-right="menu-down">
-                Selected ({{ selectedStocks.length }})
+                {{ chosenMarket.name }}
               </b-button>
             </template>
             
             <b-dropdown-item aria-role="listitem" 
-                v-for="stock in stocks.nodes" 
-                :key="stock.code"
-                :value="stock">
-              {{stock.name}}
+                v-for="market in markets.nodes" 
+                :key="market.no"
+                :value="market">
+              {{market.name}}
             </b-dropdown-item>
 
           </b-dropdown>
@@ -47,8 +46,9 @@ import moment from 'moment'
 
 export default {
   name: 'StockFilter',
+  props: ['dates', 'selectedMarket'],
   beforeCreate() {
-    this.$store.dispatch('stocks/fetch', {
+    this.$store.dispatch('markets/fetch', {
         first: 200,
         last: null,
         next: null,
@@ -59,23 +59,23 @@ export default {
   },
   methods: {
     dateChanged() {
-      this.$emit('filterChanged', { dates: this.dates, stocks: this.selectedStocks })
+      this.$emit('filterChanged', { dates: this.pickDates, market: this.chosenMarket })
     },
-    selectStocks(v) {
-      this.selectedStocks = v
-      this.$emit('filterChanged', { dates: this.dates, stocks: this.selectedStocks })
+    selectMarket(v) {
+      this.chosenMarket = v
+      this.$emit('filterChanged', { dates: this.pickDates, market: this.chosenMarket })
     },
     dateFormatter(dates) {
       return `${ moment(dates[0]).format('MMM-D-YYYY') } ⟶ ${ moment(dates[1]).format('MMM-D-YYYY') }`
     }
   },
   computed: {
-    ...mapState('stocks', ['stocks'])
+    ...mapState('markets', ['markets'])
   },
   data() {
     return {
-      dates: [new Date(), new Date()],
-      selectedStocks: []
+      pickDates: this.dates,
+      chosenMarket: this.selectedMarket
     }
   }
 }

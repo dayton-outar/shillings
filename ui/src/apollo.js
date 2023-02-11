@@ -3,7 +3,7 @@ import { ApolloClient } from 'apollo-client'
 import { createUploadLink } from 'apollo-upload-client'
 import { InMemoryCache } from 'apollo-cache-inmemory'
 
-const authProfile = JSON.parse(localStorage.getItem('sh-auth'))
+const authProfile = JSON.parse(localStorage.getItem('sh-auth')) // TODO: Need to raise an event or find event reload this. This only loads when application starts
 
 export default new ApolloClient({
   link: createUploadLink({ 

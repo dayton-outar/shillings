@@ -1,12 +1,11 @@
 <template>
     <div>
-        <stocks-filter @filterChanged="filterChanged" />        
-        <portfolio-form />
+        <stocks-filter :dates="filterDates" :selectedMarket="market" @filterChanged="filterChanged" />
+        <!--<stock-indices :options="sixOptions" :begin="beginDate" :end="endDate" />-->
         <portfolio :formattedDateRange="formattedDateRange" />
         <b-tabs v-model="activeTab">
-          <b-tab-item v-if="totalTrades" label="Stock Trades">
-            <stock-indices :options="sixOptions" :begin="beginDate" :end="endDate" />
-            <stock-trades :formattedDateRange="formattedDateRange" :tradings="totalTrades" />
+          <b-tab-item label="Stock Trades">            
+            <stock-trades v-if="totalTrades" :formattedDateRange="formattedDateRange" :tradings="totalTrades" />
           </b-tab-item>
           <b-tab-item label="Companies' Earnings">
             <earnings :formattedDateRange="formattedDateRange" />
@@ -14,6 +13,7 @@
           <b-tab-item label="Companies' Solvency">
             <solvencies :formattedDateRange="formattedDateRange" />
           </b-tab-item>
+          <!--
           <b-tab-item v-if="totalTrades" label="Volume Shares">
             <b-message title="Volume Shares" type="is-info" aria-close-label="Close message">
               <p>The volume shares visualizes the percentage division of the volume of stocks traded for the period.</p>
@@ -42,38 +42,37 @@
             </b-message>
             <stocks-line :stocks="totalTrades" :options="{ isDetail: false}" />
           </b-tab-item>
+          -->
         </b-tabs>
         
     </div>
 </template>
 
-<script lang="js">
+<script>
 import { mapState, mapGetters, mapActions } from 'vuex'
 import moment from 'moment'
 
-import StockFilter from './StockFilter.vue'
-import VolumesPie from './VolumesPie.vue'
-import StocksLine from './StocksLine.vue'
-import StockTrades from './StockTrades.vue'
-import PriceBar from './PriceBar.vue'
-import TradeCost from './TradeCost.vue'
-import PortfolioForm from './PortfolioForm.vue'
-import Portfolio from './Portfolio.vue'
-import StockIndices from './StockIndices.vue'
-import Earnings from './Earnings.vue'
-import Solvencies from './Solvencies.vue'
+import StockFilter from '../components/StockFilter.vue'
+import StockTrades from '../components/StockTrades.vue'
+// import VolumesPie from '../components/VolumesPie.vue'
+// import StocksLine from '../components/StocksLine.vue'
+// import PriceBar from '../components/PriceBar.vue'
+// import TradeCost from '../components/TradeCost.vue'
+import Portfolio from '../components/Portfolio.vue'
+// import StockIndices from '../components/StockIndices.vue'
+import Earnings from '../components/Earnings.vue'
+import Solvencies from '../components/Solvencies.vue'
 
 export default {
   components: {
     'stocks-filter': StockFilter,
-    'stock-indices': StockIndices,
+    // 'stock-indices': StockIndices,
     'portfolio': Portfolio,
-    'portfolio-form': PortfolioForm,
-    'volumes-pie': VolumesPie,
-    'stocks-line':StocksLine,
+    // 'volumes-pie': VolumesPie,
+    // 'stocks-line':StocksLine,
     'stock-trades':StockTrades,
-    'price-bar': PriceBar,
-    'trade-cost': TradeCost,
+    // 'price-bar': PriceBar,
+    // 'trade-cost': TradeCost,
     'earnings': Earnings,
     'solvencies': Solvencies
   },
@@ -81,8 +80,12 @@ export default {
     return {
       formattedDateRange: '',
       isLoading: false,
-      beginDate: new Date(),
-      endDate: new Date(),
+      // TODO: Get latest traded date and use instead of date based on browser settings
+      filterDates: [moment().subtract(7, 'days').toDate(), moment().toDate()],
+      market: {
+        no: -1,
+        name: 'All Markets'
+      },
       sixOptions: {
         readOnly: true,
         showTools: true
@@ -100,12 +103,12 @@ export default {
   },
   created() {
     this.$emit('changeLoading', true)
-    this.formatDates([new Date(), new Date()])
+    this.formatDates(this.filterDates)
 
     this.fetch({
-        marketNo: -1,
-        begin: `${ moment(this.beginDate).format('YYYY-MM-DDT00:00:00.000') }Z`,
-        end: `${ moment(this.endDate).format('YYYY-MM-DDT00:00:00.000') }Z`
+        marketNo: this.market.no,
+        begin: `${ moment(this.filterDates[0]).format('YYYY-MM-DDT00:00:00.000') }Z`,
+        end: `${ moment(this.filterDates[1]).format('YYYY-MM-DDT00:00:00.000') }Z`
       }).then(() => {
         this.fetchHoldings()
         this.$emit('changeLoading', false)
@@ -121,7 +124,7 @@ export default {
       this.formatDates(v.dates)
 
       this.fetch({
-        marketNo: -1,
+        marketNo: v.market.no,
         begin: `${ moment( v.dates[0] ).format('YYYY-MM-DDT00:00:00.000') }Z`, // Clumsy but it's a pain to remove the offset...
         end: `${ moment( v.dates[1] ).format('YYYY-MM-DDT00:00:00.000') }Z`
       }).then(() => {

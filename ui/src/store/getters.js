@@ -42,13 +42,14 @@ export default {
 
         return {
           id: h.id,
-          security: h.security,
+          stock: itrade ? itrade.stock : null,
           volume: h.volume,
           unitPrice: h.unitPrice,
           purchaseCost: h.purchaseCost,
           currentPrice: newPrice,
           currentCost: newCost,
-          variance: (newCost - h.purchaseCost)
+          variance: (newCost - h.purchaseCost),
+          prices: itrade ? itrade.prices : []
         }
       })
 

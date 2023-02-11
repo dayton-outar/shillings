@@ -10,7 +10,6 @@
                     </div>
                     <div class="media-content">
                         <p class="title is-4">{{ data.name }}</p>
-                        <p class="subtitle is-6">{{ data.code }}</p>
                     </div>
                 </div>
             </div>
