@@ -48,7 +48,7 @@
 
           <b-table-column v-slot="props">
             <div style="height: 32px">
-              <stocks-line :name="props.row.stock.name" :stocks="props.row.prices" :isPositive="props.row.prices.length && props.row.prices[props.row.prices.length - 1].ClosingPrice > props.row.prices[0].ClosingPrice" :options="thumbLineOptions" />
+              <stocks-line :name="props.row.stock.name" :stocks="props.row.prices" :isPositive="props.row.prices.length && props.row.prices[props.row.prices.length - 1].ClosingPrice >= props.row.prices[0].ClosingPrice" :options="thumbLineOptions" />
             </div>
           </b-table-column>
             
