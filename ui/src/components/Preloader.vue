@@ -1,5 +1,5 @@
 <template>
-    <div v-if="isLoading" class="preloader"></div>
+    <div v-show="isLoading" class="preloader"></div>
 </template>
 
 <script>

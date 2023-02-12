@@ -64,15 +64,15 @@ export default {
     }
   },
   created() {
-    this.setLoading(true)
-    this.fetch()
-      .then(() => {
-        // this.setLoading(false)
-      })
+    window.addEventListener('online', (e) => {
+      console.log('online', e);
+    });
+    window.addEventListener('offline', (e) => {
+      console.log('offline', e);
+    });
   },
   methods: {
-    ...mapActions('auth', ['fetch']),
-    ...mapActions('dependencies', ['setLoading'])
+    ...mapActions('auth', ['fetch'])
   }
 }
 </script>
