@@ -150,6 +150,12 @@ export default {
         }
     },
     created() {
+        this.setLoading(true)
+        this.$store.dispatch('dependencies/fetch')
+            .then(() => {
+                this.setLoading(false)
+            })
+
         this.$store.dispatch('companies/fetch', { // TODO: Remove after implementing Global cache
                 first: 100,
                 last: null,
@@ -187,6 +193,7 @@ export default {
         }
     },
     methods: {
+        ...mapActions('dependencies', ['setLoading']),
         ...mapActions('finances', ['create', 'update']),
       addStatement(type) {
           this.statements.push({

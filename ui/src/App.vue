@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-if="isLoading" class="preloader"></div>
+    <preloader :isLoading="isLoading" />
     <div class="has-background-success">
       <div class="container">
         <b-navbar spaced type="is-success">
@@ -41,15 +41,19 @@
 <script>
 import { mapState, mapActions } from 'vuex'
 
+import Preloader from './components/Preloader.vue'
+
 export default {
   name: 'App',
+  components: {
+    'preloader': Preloader,
+  },
   data() {
-    return {
-      isLoading: false
-    }
+    return {}
   },
   computed: {
-    ...mapState({ auth: state => state.auth.profile })
+    ...mapState({ auth: state => state.auth.profile }),
+    ...mapState({ isLoading: state => state.dependencies.isLoading })
   },
   watch: {
     $route: {
@@ -59,24 +63,21 @@ export default {
       }
     }
   },
-  beforeMount() {
-    this.isLoading = false // true
-  },
   created() {
-    this.fetch()
+    window.addEventListener('online', (e) => {
+      console.log('online', e);
+    });
+    window.addEventListener('offline', (e) => {
+      console.log('offline', e);
+    });
   },
   methods: {
-    ...mapActions('auth', ['fetch']),
-    setLoading(isItLoading) {
-      this.isLoading = isItLoading
-    }
+    ...mapActions('auth', ['fetch'])
   }
 }
-
 </script>
 
 <style>
-
 * {
   margin: 0;
   padding: 0;
@@ -87,29 +88,7 @@ body {
   background: #f5f5f5;
 }
 
-.preloader {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 999999;
-  background-color: #ffffff;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-image: url(./assets/logo-icon.png);
-  animation: 1s beat 0.15s infinite alternate;
-}
-
-@keyframes beat {
-  0% { transform: scale(1); }
-	70% { transform: scale(1); }
-  85% { transform: scale(1.3); }
-  100% { transform: scale(1); }
-}
-
 .right-aligned {
     text-align: right !important;
 }
-
 </style>
