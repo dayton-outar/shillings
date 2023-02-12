@@ -65,11 +65,15 @@ export default {
   },
   created() {
     window.addEventListener('online', (e) => {
-      console.log('online', e);
-    });
+      console.log('online', e)
+    })
+
     window.addEventListener('offline', (e) => {
-      console.log('offline', e);
-    });
+      console.log('offline', e)
+    })
+
+    this.fetch()
+    
   },
   methods: {
     ...mapActions('auth', ['fetch'])
