@@ -5,6 +5,7 @@ import mutations from '../mutations'
 export default {
   namespaced: true,
   state: {
+    isLoading: false,
     dependencies: {
         sections: [],
         assays: []
@@ -34,6 +35,12 @@ export default {
         })
 
         return Promise.resolve(response.data.dependencies)
+    },
+    async setLoading({ commit }, isLoading) {
+        commit('set', {
+            type: 'isLoading',
+            payload: isLoading
+        })
     }
   }
 }

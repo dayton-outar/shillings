@@ -1,8 +1,13 @@
 <template>
     <div>
+      <div>
         <stocks-filter :dates="filterDates" :selectedMarket="market" @filterChanged="filterChanged" />
+      </div>
         <!--<stock-indices :options="sixOptions" :begin="beginDate" :end="endDate" />-->
+      <div class="my-6">
         <portfolio :formattedDateRange="formattedDateRange" />
+      </div>
+      <div>
         <b-tabs v-model="activeTab">
           <b-tab-item label="Stock Trades">            
             <stock-trades v-if="totalTrades" :formattedDateRange="formattedDateRange" :tradings="totalTrades" />
@@ -44,7 +49,7 @@
           </b-tab-item>
           -->
         </b-tabs>
-        
+      </div>
     </div>
 </template>
 
@@ -79,7 +84,6 @@ export default {
   data() {
     return {
       formattedDateRange: '',
-      isLoading: false,
       // TODO: Get latest traded date and use instead of date based on browser settings
       filterDates: [moment().subtract(7, 'days').toDate(), moment().toDate()],
       market: {
@@ -95,6 +99,7 @@ export default {
   },
   computed: {
     ...mapState('trades', ['totalTrades']),
+    ...mapState({ isLoading: state => state.dependencies.isLoading }),
     ...mapGetters([
       'volumeShares',
       'tradeCosts',
@@ -102,7 +107,7 @@ export default {
       ])
   },
   created() {
-    this.$emit('changeLoading', true)
+    this.setLoading(true)
     this.formatDates(this.filterDates)
 
     this.fetch({
@@ -111,7 +116,7 @@ export default {
         end: `${ moment(this.filterDates[1]).format('YYYY-MM-DDT00:00:00.000') }Z`
       }).then(() => {
         this.fetchHoldings()
-        this.$emit('changeLoading', false)
+        this.setLoading(false)
       })
   },
   methods: {
@@ -120,7 +125,7 @@ export default {
       this.endDate = `${ moment( v.dates[1] ).format('YYYY-MM-DDT00:00:00.000') }Z`
 
       // let lc = v.stocks.reduce((a, v) => a === '' ? `"${v.code}"` : a.concat(`,`, `"${v.code}"`), '')
-      this.$emit('changeLoading', true)
+      this.setLoading(true)
       this.formatDates(v.dates)
 
       this.fetch({
@@ -129,12 +134,13 @@ export default {
         end: `${ moment( v.dates[1] ).format('YYYY-MM-DDT00:00:00.000') }Z`
       }).then(() => {
         this.fetchHoldings()
-        this.$emit('changeLoading', false)
+        this.setLoading(false)
       })
     },
     formatDates(dates) {
       this.formattedDateRange = moment( dates[0] ).isSame(moment( dates[1] )) ? `${ moment( dates[0] ).format('dddd, MMM D, YYYY')}` : `${ moment( dates[0] ).format('dddd, MMM D, YYYY')} to ${ moment( dates[1] ).format('dddd, MMM D, YYYY') }`
     },
+    ...mapActions('dependencies', ['setLoading']),
     ...mapActions('trades', ['fetch']),
     ...mapActions({ // Credit: https://stackoverflow.com/questions/62407970/mapping-actions-from-a-nemespaced-vuex-modules-into-components-methods-works-onl
       fetchHoldings: 'holdings/fetch'
