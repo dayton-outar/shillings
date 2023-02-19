@@ -13,22 +13,7 @@
                     hoverable>
 
                     <b-table-column label="Company" sortable v-slot="props">
-                        <article class="media">
-                            <figure class="media-left">
-                                <div class="image is-48x48">
-                                    <img class="is-rounded"
-                                        :src="(getLogo(props.row.company.files) && getLogo(props.row.company.files).length > 0 ? `${fileApiHost}?no=${getLogo(props.row.company.files)[0].no}` : require(`../assets/no-image.png`))" alt="Company Logo" />
-                                </div>
-                            </figure>
-                            <div class="media-content">
-                                <p v-if="props.row.company.webSite"><a :href="props.row.company.webSite"
-                                    target="_blank">{{props.row.company.name}}</a></p>
-                                <p v-else>{{ props.row.company.name }}</p>
-                                <span v-for="(i, ix) in props.row.company.industries" :key="ix">
-                                    <b-tag rounded>{{ i.name }}</b-tag>&nbsp;
-                                </span>
-                            </div>
-                        </article>
+                        <company-tag :data="props.row.company" />
                     </b-table-column>
 
                     <b-table-column field="statementDate" label="Date" sortable v-slot="props">
@@ -59,21 +44,20 @@
 <script>
 import { mapState, mapActions } from 'vuex'
 
-import config from '../config'
-//import tableMixin from '../utils/tableMixin'
 import utilMixin from '../utils/utilMixin'
+
+import CompanyTag from './CompanyTag.vue'
 
 export default {
     props: ['formattedDateRange'],
+    components: {
+        'company-tag': CompanyTag
+    },
     mixins: [utilMixin],
     data() {
         return {
             sort: ['statementDate', 'desc'],
-            fetchTitle: 'Company Earnings',
-            //deleteTitle: 'Delete Interest Rate',
-            //detailComponent: 'interest-rate',
-            fileApiHost: config.fileApiHost,
-            // filterQuery: null
+            fetchTitle: 'Company Earnings'
         }
     },
     created() {
