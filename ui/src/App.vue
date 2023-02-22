@@ -30,7 +30,7 @@
         </p>
         <p class="subtitle has-text-white">
           <br />
-          Why wait for a statement from your stock broker when you can get it here daily?<br />
+          Why wait for a statement from your stock broker when you can get it here daily for FREE?<br />
           <br />
           Just enter purchase details,<br />
           submit to your portfolio here on Shillings<br />
