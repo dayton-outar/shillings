@@ -18,18 +18,7 @@
           default-sort="percentage">
             
           <b-table-column field="stock.name" label="Security" sortable v-slot="props">
-            <article class="media">
-              <figure class="media-left" v-if="props.row.stock.company">
-                <div class="image is-48x48">
-                  <img class="is-rounded"
-                        :src="(getLogo(props.row.stock.company.files) && getLogo(props.row.stock.company.files).length > 0 ? `${fileApiHost}?no=${getLogo(props.row.stock.company.files)[0].no}` : require(`../assets/no-image.png`))" alt="Company Logo" />
-                </div>
-              </figure>
-              <div class="media-content">
-                <p><span class="tag is-light"><small>{{ props.row.stock.stockType }}</small></span> | {{ props.row.stock.code }}</p>
-                <small v-if="props.row.stock.company">{{ props.row.stock.company.name}}</small>                  
-              </div>
-            </article>
+            <stock-tag :data="props.row.stock" />
           </b-table-column>
 
           <b-table-column field="volume" label="Volume" numeric sortable v-slot="props" width="12%">
@@ -96,9 +85,8 @@
 <script>
 import StocksLine from './StocksLine.vue'
 import ViewCompany from './ViewCompany.vue'
+import StockTag from './StockTag.vue'
 
-import config from '../config'
-// import tableMixin from '../utils/tableMixin'
 import utilMixin from '../utils/utilMixin'
 
 export default {
@@ -106,7 +94,8 @@ export default {
   props: ['tradings', 'formattedDateRange'],
   components: {
     'stocks-line':StocksLine,
-    'view-company': ViewCompany
+    'view-company': ViewCompany,
+    'stock-tag': StockTag
   },
   mixins: [utilMixin],
   data() {
@@ -114,7 +103,6 @@ export default {
       defaultSortDirection: 'desc',
       sortIcon: 'arrow-up',
       sortIconSize: 'is-small',
-      fileApiHost: config.fileApiHost,
       thumbLineOptions: {
         showDetail: false,
         showPositiveNegative: true,

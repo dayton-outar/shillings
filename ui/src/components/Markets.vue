@@ -52,19 +52,7 @@
                         </b-table-column>
 
                         <b-table-column field="company" label="Company" v-slot="props" width="40%">
-                            <article class="media">
-                                <figure class="media-left">
-                                    <div class="image is-48x48">
-                                        <img class="is-rounded"
-                                            :src="(getLogo(props.row.company.files) ? `${fileApiHost}?no=${getLogo(props.row.company.files)[0].no}` : require(`../assets/no-image.png`))" />
-                                    </div>
-                                </figure>
-                                <div class="media-content">
-                                    <p v-if="props.row.company.webSite"><a :href="props.row.company.webSite"
-                                            target="_blank">{{props.row.company.name}}</a></p>
-                                    <p v-else>{{ props.row.company.name }}</p>
-                                </div>
-                            </article>
+                            <company-tag :data="props.row.company" />
                         </b-table-column>
 
                         <b-table-column width="5%" v-slot="props">
@@ -105,19 +93,20 @@
 <script>
 import { mapState, mapActions } from 'vuex'
 
-import config from '../config'
 import tableMixin from '../utils/tableMixin'
 import utilMixin from '../utils/utilMixin'
 
 import TableToolBar from './TableToolBar'
 import SearchBar from './SearchBar.vue'
 import Market from './Market.vue'
+import CompanyTag from './CompanyTag.vue'
 
 export default {
     components: {
         'market-detail': Market,
         'search-bar': SearchBar,
-        'table-tool-bar': TableToolBar
+        'table-tool-bar': TableToolBar,
+        'company-tag': CompanyTag
     },
     mixins: [tableMixin, utilMixin],
     data() {
@@ -125,7 +114,6 @@ export default {
             fetchTitle: 'Markets',
             deleteTitle: 'Delete Market',
             detailComponent: 'market-detail',
-            fileApiHost: config.fileApiHost,
             newMarket: {
                 code: '',
                 name: '',

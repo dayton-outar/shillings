@@ -255,6 +255,7 @@ export default {
         variables: {
           input: {
             stock: {
+              no: stock.no,
               code: stock.code,
               name: stock.name,
               currency: stock.currency,

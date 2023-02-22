@@ -48,20 +48,7 @@
                         @page-change="pageChange">
 
                         <b-table-column field="name" label="Company" sortable v-slot="props">
-                            <article class="media">
-                                <figure class="media-left">
-                                    <div class="image is-48x48">
-                                        <img class="is-rounded"
-                                            :src="(getLogo(props.row.files) && getLogo(props.row.files).length > 0 ? `${fileApiHost}?no=${getLogo(props.row.files)[0].no}` : require(`../assets/no-image.png`))" alt="Company Logo" />
-                                    </div>
-                                </figure>
-                                <div class="media-content">
-                                    <p v-if="props.row.webSite"><a :href="props.row.webSite"
-                                            target="_blank">{{props.row.name}}</a></p>
-                                    <p v-else>{{ props.row.name }}</p>
-                                    <p class="has-text-weight-light">{{ props.row.code }}</p>
-                                </div>
-                            </article>
+                            <company-tag :data="props.row" />
                         </b-table-column>
 
                         <b-table-column field="founded" label="Founded" sortable v-slot="props" width="5%">
@@ -113,13 +100,15 @@ import SearchBar from './SearchBar.vue'
 import TableToolBar from './TableToolBar'
 import Company from './Company.vue'
 import ViewCompany from './ViewCompany.vue'
+import CompanyTag from './CompanyTag.vue'
 
 export default {
     components: {
         'company-detail': Company,
         'company-info': ViewCompany,
         'search-bar': SearchBar,
-        'table-tool-bar': TableToolBar
+        'table-tool-bar': TableToolBar,
+        'company-tag': CompanyTag
     },
     mixins: [tableMixin, utilMixin],
     data() {

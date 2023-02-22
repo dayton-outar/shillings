@@ -31,19 +31,8 @@
             detailed
             default-sort="variance">
             
-            <b-table-column label="Security" sortable v-slot="props">
-              <article class="media">
-                <figure class="media-left" v-if="props.row.stock.company">
-                  <div class="image is-48x48">
-                    <img class="is-rounded"
-                          :src="(getLogo(props.row.stock.company.files) && getLogo(props.row.stock.company.files).length > 0 ? `${fileApiHost}?no=${getLogo(props.row.stock.company.files)[0].no}` : require(`../assets/no-image.png`))" alt="Company Logo" />
-                  </div>
-                </figure>
-                <div class="media-content">
-                  <p><span class="tag is-light"><small>{{ props.row.stock.stockType }}</small></span> | {{ props.row.stock.code }}</p>
-                  <small v-if="props.row.stock.company">{{ props.row.stock.company.name}}</small>                  
-                </div>
-              </article>
+            <b-table-column field="stock.name" label="Security" sortable v-slot="props">
+              <stock-tag :data="props.row.stock" />
             </b-table-column>
             
             <b-table-column field="volume" label="Quantity" numeric sortable v-slot="props">
@@ -105,7 +94,10 @@
             </template>
 
             <template #empty>
-                <div class="has-text-centered">No records</div>
+                <div class="has-text-centered is-size-4">
+                  <p>Watch your stocks by adding them here.</p> 
+                  <p><a @click.prevent="create">Click here to add first stock</a>.</p>
+                </div>                
             </template>
             
           </b-table>
@@ -119,16 +111,17 @@
 <script>
 import { mapGetters, mapActions } from 'vuex'
 
-import config from '../config'
 import utilMixin from '../utils/utilMixin'
 
 import PortfolioForm from './PortfolioForm.vue'
 import StocksLine from './StocksLine.vue'
+import StockTag from './StockTag.vue'
 
 export default ({
   components: {
     'portfolio-form': PortfolioForm,
-    'stocks-line':StocksLine
+    'stocks-line':StocksLine,
+    'stock-tag': StockTag
   },
   props: ['formattedDateRange'],
   mixins: [utilMixin],
@@ -137,7 +130,6 @@ export default ({
       defaultSortDirection: 'desc',
       sortIcon: 'arrow-up',
       sortIconSize: 'is-small',
-      fileApiHost: config.fileApiHost,
       isCreatePanelActive: false,
       stocksLineOptions: {
         showDetail: true,

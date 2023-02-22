@@ -19,8 +19,10 @@ export default {
           createMarketIndex ( input: $input) {
             marketIndex {
               no,
+              code,
               name,
               market {
+                no,
                 code,
                 name,
                 company {
@@ -97,8 +99,10 @@ export default {
             totalCount,
             nodes {
               no,
+              code,
               name,
               market {
+                no,
                 code,
                 name,
                 company {
@@ -158,8 +162,10 @@ export default {
           updateMarketIndex ( input: $input) {
             marketIndex {
               no,
+              code,
               name,
               market {
+                no,
                 code,
                 name,
                 company {

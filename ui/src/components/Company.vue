@@ -230,7 +230,7 @@
                             aria-close-label="Close message"
                             @close="(hasImg = false)">
                             <img :src="imgSrc" alt="Company Logo" />
-                        </b-message>          
+                        </b-message>
                     </b-field>
                 </b-field>                
                 </div>
@@ -342,7 +342,7 @@ export default {
             createTitle: 'Create Company',
             companyIndustries: this.data.industries.map(i => i.no),
             dropFile: null,
-            hasImg: (this.editMode && !!this.data.files),
+            hasImg: (this.editMode && !!this.data.files && this.data.files.length),
             imgSrc: this.data.files.length ? `${config.fileApiHost}?no=${this.getLogo(this.data.files)[0].no}` : '#',
             validation: {
                 code: {

@@ -23,6 +23,21 @@
         </b-navbar>        
       </div>
     </div>
+    <section class="hero is-medium shillings-bg" v-if="showHero">
+      <div class="hero-body">
+        <p class="title has-text-white">
+          Watch Your Investments in Stocks
+        </p>
+        <p class="subtitle has-text-white">
+          <br />
+          Why wait for a statement from your stock broker when you can get it here daily?<br />
+          <br />
+          Just enter purchase details,<br />
+          submit to your portfolio here on Shillings<br />
+          and watch your stocks every day when you come here.
+        </p>
+      </div>
+    </section>
     <div class="">
       <div class="container">        
         <div class="has-background-white py-5 px-4">
@@ -32,7 +47,8 @@
     </div>
     <footer class="footer has-background-dark has-text-primary-light">
       <div class="content has-text-centered">
-        <p>&copy; Kri&#962;y&#962; 2022</p>
+        <p><i class="fa-solid fa-envelope"></i> <strong class="has-text-white">Email:</strong> krisyslimited@gmail.com</p>
+        <p>&copy; Kri&#962;y&#962; Limited 2022</p>
       </div>
     </footer>
   </div>
@@ -49,7 +65,9 @@ export default {
     'preloader': Preloader,
   },
   data() {
-    return {}
+    return {
+      showHero: true
+    }
   },
   computed: {
     ...mapState({ auth: state => state.auth.profile }),
@@ -60,16 +78,21 @@ export default {
       immediate: true,
       handler(to) {
         document.title = to.meta.title || `JSE Stock Tracker`
+        this.showHero = to.name == 'dashboard'
       }
     }
   },
   created() {
     window.addEventListener('online', (e) => {
-      console.log('online', e);
-    });
+      console.log('online', e)
+    })
+
     window.addEventListener('offline', (e) => {
-      console.log('offline', e);
-    });
+      console.log('offline', e)
+    })
+
+    this.fetch()
+    
   },
   methods: {
     ...mapActions('auth', ['fetch'])
@@ -91,4 +114,15 @@ body {
 .right-aligned {
     text-align: right !important;
 }
+
+.shillings-bg {
+    background-image: url(./assets/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #163509;
+    overflow: hidden;
+    padding: 0;
+}
+
 </style>
