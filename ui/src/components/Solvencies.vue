@@ -12,7 +12,7 @@
                     striped
                     hoverable>
 
-                    <b-table-column label="Company" sortable v-slot="props">
+                    <b-table-column field="company.name" label="Company" sortable v-slot="props">
                         <company-tag :data="props.row.company" />
                     </b-table-column>
 
