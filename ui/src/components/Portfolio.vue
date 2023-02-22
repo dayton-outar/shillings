@@ -94,7 +94,10 @@
             </template>
 
             <template #empty>
-                <div class="has-text-centered">No records</div>
+                <div class="has-text-centered is-size-4">
+                  <p>Watch your stocks by adding them here.</p> 
+                  <p><a @click.prevent="create">Click here to add first stock</a>.</p>
+                </div>                
             </template>
             
           </b-table>
