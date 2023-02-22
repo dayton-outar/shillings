@@ -13,7 +13,6 @@
           <portfolio-form v-if="isCreatePanelActive" @close="close" />
       </div>
     </div>
-    
     <div class="panel is-light">
       <h4 class="panel-heading">
         My Portfolio: {{ formattedDateRange }}
