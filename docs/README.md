@@ -18,3 +18,9 @@ Apart from providing analysis on companies, this project seeks to enable custome
 - Compare to find gaps in,
   - [JTraderPro](https://jtraderpro.jamstockex.com/)
   - [Sagicor eInvest](https://einvest.sagicorjamaica.com/login)
+
+
+## References
+
+1. [Outline of industry](https://en.wikipedia.org/wiki/Outline_of_industry)
+1. [List of Industries - United States](https://www.ibisworld.com/united-states/list-of-industries/)
