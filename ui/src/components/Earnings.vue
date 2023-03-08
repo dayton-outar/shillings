@@ -49,7 +49,7 @@ import utilMixin from '../utils/utilMixin'
 import CompanyTag from './CompanyTag.vue'
 
 export default {
-    props: ['formattedDateRange'],
+    props: ['formattedDateRange', 'begin', 'end'],
     components: {
         'company-tag': CompanyTag
     },
@@ -64,7 +64,7 @@ export default {
         this.fetch({
             period: 'ANNUAL',
             begin: '2009-01-01',
-            end: '2022-12-01',
+            end: this.end,
             ordering: this.sortingQuery
         })
     },
