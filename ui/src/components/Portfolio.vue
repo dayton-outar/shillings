@@ -84,11 +84,11 @@
               <th>Total</th>
               <th></th>
               <th></th>
+              <th></th>
               <th class="right-aligned">{{ formatTotalPurchaseCost() }}</th>
               <th></th>
               <th class="right-aligned">{{ formatTotalCurrentCost() }}</th>
               <th class="right-aligned">{{ formatTotalGainOrLoss() }}</th>
-              <th></th>
               <th></th>
             </template>
 
