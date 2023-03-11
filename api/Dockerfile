@@ -1,5 +1,5 @@
-FROM mcr.microsoft.com/dotnet/aspnet:5.0
+FROM mcr.microsoft.com/dotnet/aspnet:6.0
 WORKDIR /app
-COPY ./build ./
+COPY ./Harpoon/bin/Debug/net6.0/publish ./
 EXPOSE 5000
 ENTRYPOINT ["dotnet", "Harpoon.dll"]

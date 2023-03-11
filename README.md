@@ -35,30 +35,32 @@ Going to need 4 types of containers:
 3. MSSQL container hosting the database
 4. Cron service running node
 
-Build docker image from Dockerfile for Harpoon. (Given that the `dotnet publish` command is ran on Harpoon to create the _build_ folder)
+Build docker image from Dockerfile for Harpoon. (Given that the `dotnet publish` command is ran on Harpoon to create the _build_ folder). Tagging with a version number is also important.
 
 ```bash
 cd api
-docker build -t krysis/harpoon .
+docker build -t krisys/harpoon:latest .
 ```
 
-Run docker container for Harpoon
+Run docker container for Harpoon.
+
+Set external to 5000 but forward traffic internally to port 80. Port 80 is the default port when the dotnet application is published using `dotnet publish`.
 
 ```bash
-docker run -d --name harpoon -p 5000:5000 krysis/harpoon
+docker run -d --name harpoon -p 5000:80 krisys/harpoon:latest
 ```
 
 Build docker image from Dockerfile for UI. (Gien that the `npm run serve` command is ran to create _dist_ folder)
 
 ```bash
 cd ui
-docker build -t krysis/jse-stock-tracker .
+docker build -t krisys/jse-stock-tracker .
 ```
 
 Run docker container for UI
 
 ```bash
-docker run -d --name ui -p 8080:80 krysis/jse-stock-tracker
+docker run -d --name ui -p 8080:80 krisys/shillings:latest
 ```
 
 Using docker-compose in root folder
@@ -71,6 +73,18 @@ Shutting down containers
 
 ```bash
 docker-compose down
+```
+
+To enable Kubernetes to pull from a private repository
+
+```bash
+kubectl create secret docker-registry docker-hub-cred --docker-username <username> --docker-password <password>
+```
+
+To expose LoadBalancer externally use the following minikube command
+
+```bash
+minikube service <service>
 ```
 
 Do I need [Fluentd](https://docs.fluentd.org/)?
@@ -96,4 +110,4 @@ Do I need [Fluentd](https://docs.fluentd.org/)?
 3. [Kubernetes 101](https://www.youtube.com/playlist?list=PL2_OBreMn7FoYmfx27iSwocotjiikS5BD)
 4. [Kubernetes Tutorial for Beginners [FULL COURSE in 4 Hours]](https://youtu.be/X48VuDVv0do)
 5. [How to Create Helm Charts - The Ultimate Guide](https://youtu.be/jUYNS90nq8U)
-6. [How I Pick Stocks](https://youtu.be/IPwDxoomxuA)
+6. [How to Use Private Docker Registry Images | Kubernetes For Beginners | CKA Cert Prep](https://youtu.be/xYk6qCyXOY4)

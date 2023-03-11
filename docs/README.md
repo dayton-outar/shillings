@@ -30,6 +30,7 @@ Apart from providing analysis on companies, this project seeks to enable custome
 
 1. [Outline of industry](https://en.wikipedia.org/wiki/Outline_of_industry)
 1. [List of Industries - United States](https://www.ibisworld.com/united-states/list-of-industries/)
+1. [How I Pick Stocks](https://youtu.be/IPwDxoomxuA)
 
 ## Videos
 
