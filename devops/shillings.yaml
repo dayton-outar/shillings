@@ -27,11 +27,9 @@ kind: Service
 metadata:
   name: shillings-service
 spec:
-  type: LoadBalancer
   selector:
     app: shillings
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 8080
-      nodePort: 30000
+      targetPort: 80

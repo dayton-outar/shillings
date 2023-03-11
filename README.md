@@ -54,7 +54,7 @@ Build docker image from Dockerfile for UI. (Gien that the `npm run serve` comman
 
 ```bash
 cd ui
-docker build -t krisys/jse-stock-tracker .
+docker build -t krisys/shillings:latest .
 ```
 
 Run docker container for UI
@@ -85,6 +85,12 @@ To expose LoadBalancer externally use the following minikube command
 
 ```bash
 minikube service <service>
+```
+
+You can also use port forwarding to reach the nodes. For example, to reach a service,
+
+```bash
+kubectl port-forward service/<service> 8080:80
 ```
 
 Do I need [Fluentd](https://docs.fluentd.org/)?

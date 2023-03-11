@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: harpoon-deployment
+  labels:
+    app: harpoon
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: harpoon
+  template:
+    metadata:
+      labels:
+        app: harpoon
+    spec:
+      containers:
+      - name: harpoon
+        image: krisyslimited/harpoon:latest
+        ports:
+        - containerPort: 5000
+        env:
+        - name: ASPNETCORE_URLS
+          value: http://+:5000
+      imagePullSecrets:
+      - name: docker-hub-cred
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: harpoon-service
+spec:
+  selector:
+    app: harpoon
+  ports:
+    - protocol: TCP
+      port: 5000
+      targetPort: 5000
