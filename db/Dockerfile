@@ -10,11 +10,11 @@ RUN mkdir -p /var/opt/mssql/bkup
 
 WORKDIR /app
 
-# Copy backup file
-COPY ./*.bak /var/opt/mssql/bkup
-
 # Copy initialization scripts
-COPY ./*.sh /app
+COPY ./scripts /app
+
+# Copy backup file
+COPY ./bkup /var/opt/mssql/bkup
 
 # Grant permissions for the run-initialization script to be executable
 RUN chmod +x /app/run-initialization.sh
