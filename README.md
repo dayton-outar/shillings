@@ -63,6 +63,18 @@ Run docker container for UI
 docker run -d --name ui -p 8080:80 krisys/shillings:latest
 ```
 
+For the database, the docker image would have instructions to transfer backup file into the app folder
+
+```bash
+docker build -t krisys/sex:latest db/.
+```
+
+When running this container, 
+
+```bash
+docker run -d --name shillings-db -p 1411:1433 -e ACCEPT_EULA Y -e MSSQL_SA_PASSWORD Password44
+```
+
 Using docker-compose in root folder
 
 ```bash

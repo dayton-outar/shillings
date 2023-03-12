@@ -5,18 +5,19 @@ USER root
 # Create app directory
 RUN mkdir -p /app
 
+# Create backup directory
+RUN mkdir -p /var/opt/mssql/bkup
+
 WORKDIR /app
 
+# Copy backup file
+COPY ./*.bak /var/opt/mssql/bkup
+
 # Copy initialization scripts
-COPY . /app
+COPY ./*.sh /app
 
 # Grant permissions for the run-initialization script to be executable
 RUN chmod +x /app/run-initialization.sh
-
-# Set environment variables, not to have to write them with docker run command
-# Note: make sure that your password matches what is in the run-initialization script 
-ENV MSSQL_SA_PASSWORD Password44
-ENV ACCEPT_EULA Y
 
 # Expose port 1433 in case accesing from other container
 EXPOSE 1433
