@@ -132,3 +132,7 @@ Do I need [Fluentd](https://docs.fluentd.org/)?
 4. [Kubernetes Tutorial for Beginners [FULL COURSE in 4 Hours]](https://youtu.be/X48VuDVv0do)
 5. [How to Create Helm Charts - The Ultimate Guide](https://youtu.be/jUYNS90nq8U)
 6. [How to Use Private Docker Registry Images | Kubernetes For Beginners | CKA Cert Prep](https://youtu.be/xYk6qCyXOY4)
+7. [Kubernetes StatefulSet simply explained | Deployment vs StatefulSet](https://youtu.be/pPQKAR1pA9U)
+8. [Understanding StatefulSets in Kubernetes](https://youtu.be/zj6r_EEhv6s)
+9. [Persistent Volumes on Kubernetes for beginners](https://youtu.be/ZxC6FwEc9WQ)
+10. [Kubernetes Backup and Restore made easy!](https://youtu.be/01qcYSck1c4)
