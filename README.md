@@ -156,6 +156,7 @@ Do I need [Fluentd](https://docs.fluentd.org/)?
 13. [Kubernetes: how to debug CrashLoopBackOff](https://stackoverflow.com/questions/44673957/kubernetes-how-to-debug-crashloopbackoff)
 14. [Minikube – /opt/mssql/bin/sqlservr: Error: The system directory [/.system] could not be created](https://mycsharpdeveloper.wordpress.com/2022/10/30/minikube-opt-mssql-bin-sqlservr-error-the-system-directory-system-could-not-be-created/)
 15. [SQL Server Docker container immediately exiting](https://stackoverflow.com/questions/72383490/sql-server-docker-container-immediately-exiting)
+16. [Pull an Image from a Private Registry](https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/)
 
 ## Tutorial Video
 
