@@ -104,10 +104,12 @@ namespace Harpoon
             {
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                app.UseHttpsRedirection();
+            }
 
             app.UseCors();
-
-            //app.UseHttpsRedirection();
 
             app.UseRouting();
             app.UseAuthentication();
