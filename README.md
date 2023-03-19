@@ -41,6 +41,21 @@ Build docker image from Dockerfile for Harpoon. (Given that the `dotnet publish`
 cd api
 docker build -t krisys/harpoon:latest .
 ```
+Before running harpoon environment variables must be set
+
+```bash
+HARPOON_DB_SRV=localhost
+HARPOON_DB_PRT=1401
+HARPOON_DB_DB=stocks
+HARPOON_DB_USR=SA
+HARPOON_DB_PWD=Password44
+```
+
+These environment variables must be set in the `/etc/environment` file. The changes can be reloaded with,
+
+```bash
+source /etc/environment
+```
 
 Run docker container for Harpoon.
 
@@ -105,6 +120,18 @@ You can also use port forwarding to reach the nodes. For example, to reach a ser
 kubectl port-forward service/<service> 8080:80
 ```
 
+When addressing permission issues within minikube container
+
+```bash
+docker exec -it -u root minikube bash
+```
+
+When entering into container using `kubectl`,
+
+```bash
+kubectl exec -it [pod] -- bash
+```
+
 Do I need [Fluentd](https://docs.fluentd.org/)?
 
 ## Role Models
@@ -126,6 +153,9 @@ Do I need [Fluentd](https://docs.fluentd.org/)?
 10. [Deploy SQL Server Linux containers on Kubernetes with StatefulSets](https://learn.microsoft.com/en-us/sql/linux/sql-server-linux-kubernetes-best-practices-statefulsets?view=sql-server-ver16)
 11. [Statefulset vs Deployment | Differences & Use Cases](https://www.containiq.com/post/statefulset-vs-deployment#:~:text=A%20StatefulSet%20is%20better%20suited,servers%20like%20Nginx%20and%20Apache.)
 12. [Backup Databases on Kubernetes With VolumeSnapshots](https://www.percona.com/blog/backup-databases-on-kubernetes-with-volumesnapshots/)
+13. [Kubernetes: how to debug CrashLoopBackOff](https://stackoverflow.com/questions/44673957/kubernetes-how-to-debug-crashloopbackoff)
+14. [Minikube – /opt/mssql/bin/sqlservr: Error: The system directory [/.system] could not be created](https://mycsharpdeveloper.wordpress.com/2022/10/30/minikube-opt-mssql-bin-sqlservr-error-the-system-directory-system-could-not-be-created/)
+15. [SQL Server Docker container immediately exiting](https://stackoverflow.com/questions/72383490/sql-server-docker-container-immediately-exiting)
 
 ## Tutorial Video
 

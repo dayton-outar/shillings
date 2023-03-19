@@ -1,16 +1,27 @@
 apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mssql-claim
+spec:
+  storageClassName: standard
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 5Gi
+---
+apiVersion: v1
 kind: PersistentVolume
 metadata:
   name: mssql-pv-volume
-  labels:
-    type: local
 spec:
+  storageClassName: standard
   capacity:
     storage: 5Gi
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: "/mnt/data"
+    path: "/home/data"
 ---
 apiVersion: apps/v1
 kind: StatefulSet
@@ -18,7 +29,7 @@ metadata:
   name: mssql
 spec:
   serviceName: mssql
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: mssql
@@ -29,7 +40,7 @@ spec:
     spec:
       containers:
       - name: mssql
-        image: mcr.microsoft.com/mssql/server:2019-CU3-ubuntu-18.04
+        image: krisyslimited/sex:latest
         ports:
         - containerPort: 1433
           name: tcpsql
@@ -51,7 +62,7 @@ kind: Service
 metadata:
   name: mssql-shillings
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     statefulset.kubernetes.io/pod-name: mssql-shillings
   ports:

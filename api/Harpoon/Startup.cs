@@ -48,7 +48,12 @@ namespace Harpoon
             services.AddScoped<IdentityService>();
             // services.AddHttpContextAccessor();
 
-            string connectionString = Configuration.GetConnectionString("HarpoonDatabase");
+            string connectionString = string.Format("Server={0},{1};Database={2};Persist Security Info=True;User ID={3};Password={4};", 
+                        Environment.GetEnvironmentVariable("HARPOON_DB_HST"),
+                        Environment.GetEnvironmentVariable("HARPOON_DB_PRT"),
+                        Environment.GetEnvironmentVariable("HARPOON_DB_DB"),
+                        Environment.GetEnvironmentVariable("HARPOON_DB_USR"),
+                        Environment.GetEnvironmentVariable("HARPOON_DB_PWD"));
 
             services.AddControllers();
             services.AddDbContext<BlobQuery>(
