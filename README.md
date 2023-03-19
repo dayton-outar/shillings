@@ -123,6 +123,9 @@ Do I need [Fluentd](https://docs.fluentd.org/)?
 7. [Quickstart: Run SQL Server Linux container images with Docker](https://learn.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-ver16&pivots=cs1-bash)
 8. [Example: Deploying WordPress and MySQL with Persistent Volumes](https://kubernetes.io/docs/tutorials/stateful-application/mysql-wordpress-persistent-volume/)
 9. [Quickstart: Deploy a SQL Server container with Azure Kubernetes Services (AKS)](https://learn.microsoft.com/en-us/sql/linux/quickstart-sql-server-containers-kubernetes?view=sql-server-ver16)
+10. [Deploy SQL Server Linux containers on Kubernetes with StatefulSets](https://learn.microsoft.com/en-us/sql/linux/sql-server-linux-kubernetes-best-practices-statefulsets?view=sql-server-ver16)
+11. [Statefulset vs Deployment | Differences & Use Cases](https://www.containiq.com/post/statefulset-vs-deployment#:~:text=A%20StatefulSet%20is%20better%20suited,servers%20like%20Nginx%20and%20Apache.)
+12. [Backup Databases on Kubernetes With VolumeSnapshots](https://www.percona.com/blog/backup-databases-on-kubernetes-with-volumesnapshots/)
 
 ## Tutorial Video
 
