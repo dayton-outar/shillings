@@ -105,7 +105,7 @@ docker-compose down
 To enable Kubernetes to pull from a private repository
 
 ```bash
-kubectl create secret docker-registry docker-hub-cred --docker-username <username> --docker-password <password>
+kubectl create secret docker-registry docker-hub-cred --docker-username=<username> --docker-password=<password>
 ```
 
 To expose LoadBalancer externally use the following minikube command

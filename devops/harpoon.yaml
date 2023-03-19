@@ -21,17 +21,17 @@ spec:
         - containerPort: 5000
         env:
         - name: ASPNETCORE_URLS
-          value: http://+:5000
+          value: "http://+:5000"
         - name: HARPOON_DB_DB
-          value: stocks
+          value: "stocks"
         - name: HARPOON_DB_HST
-          value: mssql-shillings
+          value: "mssql-shillings"
         - name: HARPOON_DB_PRT
-          value: 1433
+          value: "1433"
         - name: HARPOON_DB_USR
-          value: sa
+          value: "sa"
         - name: HARPOON_DB_PWD
-          value: Password77
+          value: "Password77"
       imagePullSecrets:
       - name: docker-hub-cred
 ---
