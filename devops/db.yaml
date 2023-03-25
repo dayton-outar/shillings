@@ -62,13 +62,13 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: mssql-shillings
+  name: mssql-0
 spec:
   type: ClusterIP
   selector:
-    statefulset.kubernetes.io/pod-name: mssql-shillings
+    statefulset.kubernetes.io/pod-name: mssql-0
   ports:
     - protocol: TCP
       port: 1433
-      targetPort: 1411
+      targetPort: 1433
       name: tcpsql
