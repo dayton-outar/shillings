@@ -83,6 +83,7 @@ export default {
     }
   },
   created() {
+
     window.addEventListener('online', (e) => {
       console.log('online', e)
     })

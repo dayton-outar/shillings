@@ -63,7 +63,7 @@ export default {
     created() {
         this.fetch({
             period: 'ANNUAL',
-            begin: '2009-01-01',
+            begin: '2009-01-01', // TODO: Make begin date dynamic
             end: this.end,
             ordering: this.sortingQuery
         })

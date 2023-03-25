@@ -84,6 +84,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 10. [Using Vue Currency Input with Buefy](https://codesandbox.io/s/using-vue-currency-input-with-buefy-pnl3q?file=/src/App.vue) - [CodeSandbox](https://codesandbox.io/)
 11. [Add Keyboard Shortcuts to your Vue App](https://focusedlabs.io/blog/add-keyboard-shortcuts-to-your-vue-app)
 12. [Navigation Guards](https://v3.router.vuejs.org/guide/advanced/navigation-guards.html#global-before-guards)
+13. [Modes and Environment Variables](https://cli.vuejs.org/guide/mode-and-env.html)
+14. [How To Use Environment Variables in Vue.js](https://www.digitalocean.com/community/tutorials/vuejs-working-with-environment-variables)
 
 ## Tutorial Videos
 

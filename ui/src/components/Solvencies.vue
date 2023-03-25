@@ -61,10 +61,9 @@ export default {
         }
     },
     created() {
-        console.log( this.begin )
         this.fetch({
             period: 'ANNUAL',
-            begin: '1990-01-01',
+            begin: '1990-01-01', // TODO: Make begin date dynamic
             end: this.end,
             ordering: this.sortingQuery
         })
