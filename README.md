@@ -170,3 +170,6 @@ Do I need [Fluentd](https://docs.fluentd.org/)?
 8. [Understanding StatefulSets in Kubernetes](https://youtu.be/zj6r_EEhv6s)
 9. [Persistent Volumes on Kubernetes for beginners](https://youtu.be/ZxC6FwEc9WQ)
 10. [Kubernetes Backup and Restore made easy!](https://youtu.be/01qcYSck1c4)
+11. [Kubernetes Cron/CronJobs in 10 minutes](https://youtu.be/PUhqw0laR3A)
+12. [Understanding Logging: Containers & Microservices](https://youtu.be/MMVdkzeQ848)
+13. [[ Kube 34 ] Monitor Kubernetes Logs using EFK stack - Elasticsearch, FluentBit & Kibana](https://youtu.be/8nWh1GLd7nY)

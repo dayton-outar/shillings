@@ -30,8 +30,9 @@ Apart from providing analysis on companies, this project seeks to enable custome
 
 1. [Outline of industry](https://en.wikipedia.org/wiki/Outline_of_industry)
 1. [List of Industries - United States](https://www.ibisworld.com/united-states/list-of-industries/)
-1. [How I Pick Stocks](https://youtu.be/IPwDxoomxuA)
 
 ## Videos
 
 1. [How to Install Google Analytics 4 (Updated in 2022) with GTAG or GTM](https://youtu.be/6upqv3kaIIk) - [Analytics Mania - Google Tag Manager & Analytics](https://www.youtube.com/@AnalyticsMania)
+1. [How I Pick Stocks](https://youtu.be/IPwDxoomxuA)
+1. [AdSense Onboarding Video Series](https://www.youtube.com/playlist?list=PLbAFD4oU9YcqHD_h-b8e8wCYo2XUqbIHM)
