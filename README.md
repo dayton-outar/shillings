@@ -157,6 +157,7 @@ Do I need [Fluentd](https://docs.fluentd.org/)?
 14. [Minikube – /opt/mssql/bin/sqlservr: Error: The system directory [/.system] could not be created](https://mycsharpdeveloper.wordpress.com/2022/10/30/minikube-opt-mssql-bin-sqlservr-error-the-system-directory-system-could-not-be-created/)
 15. [SQL Server Docker container immediately exiting](https://stackoverflow.com/questions/72383490/sql-server-docker-container-immediately-exiting)
 16. [Pull an Image from a Private Registry](https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/)
+17. [How To Use minikube for Local Kubernetes Development and Testing](https://www.digitalocean.com/community/tutorials/how-to-use-minikube-for-local-kubernetes-development-and-testing)
 
 ## Tutorial Video
 

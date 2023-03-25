@@ -10,6 +10,6 @@ ENV HARPOON_DB_PWD Password77
 
 COPY ./Harpoon/bin/Debug/net6.0/publish ./
 
-EXPOSE 5000
+EXPOSE 5000 1433
 
 ENTRYPOINT ["dotnet", "Harpoon.dll"]

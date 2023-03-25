@@ -30,6 +30,7 @@ spec:
   selector:
     app: shillings
   ports:
-    - protocol: TCP
+    - name: tcpweb
+      protocol: TCP
       port: 80
       targetPort: 80
