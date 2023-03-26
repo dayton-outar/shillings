@@ -25,7 +25,7 @@ spec:
         - name: HARPOON_DB_DB
           value: "stocks"
         - name: HARPOON_DB_HST
-          value: "172.17.0.6"
+          value: "mssql-service"
         - name: HARPOON_DB_PRT
           value: "1433"
         - name: HARPOON_DB_USR
