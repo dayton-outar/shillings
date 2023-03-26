@@ -174,3 +174,5 @@ Do I need [Fluentd](https://docs.fluentd.org/)?
 11. [Kubernetes Cron/CronJobs in 10 minutes](https://youtu.be/PUhqw0laR3A)
 12. [Understanding Logging: Containers & Microservices](https://youtu.be/MMVdkzeQ848)
 13. [[ Kube 34 ] Monitor Kubernetes Logs using EFK stack - Elasticsearch, FluentBit & Kibana](https://youtu.be/8nWh1GLd7nY)
+14. [Kubernetes Secrets in 5 Minutes!](https://youtu.be/cQAEK9PBY8U)
+15. [Kubernetes Secret Management Explained](https://youtu.be/o36yTfGDmZ0)
