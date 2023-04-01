@@ -132,6 +132,18 @@ When entering into container using `kubectl`,
 kubectl exec -it [pod] -- bash
 ```
 
+To copy a file from local machine to a pod,
+
+```bash
+kubectl cp /<path-to-your-file>/<file-name> <pod-name>:<fully-qualified-file-name> -c <container-name>
+```
+
+To copy a file from pod to local machine,
+
+```bash
+kubectl cp <pod-name>:<fully-qualified-file-name> /<path-to-your-file>/<file-name> -c <container-name>
+```
+
 Do I need [Fluentd](https://docs.fluentd.org/)?
 
 ## Role Models

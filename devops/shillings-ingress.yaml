@@ -1,0 +1,17 @@
+
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: shillings-ingress
+spec:
+  rules:
+    - host: 45-79-244-66.ip.linodeusercontent.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: shillings-service
+                port: 
+                  number: 80
