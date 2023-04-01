@@ -5,7 +5,7 @@ metadata:
   name: shillings-ingress
 spec:
   rules:
-    - host: 45-79-244-66.ip.linodeusercontent.com
+    - host: shillings.info
       http:
         paths:
           - path: /
