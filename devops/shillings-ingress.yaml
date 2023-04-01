@@ -1,14 +1,15 @@
-
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: shillings-ingress
+  annotations:
+    kubernetes.io/ingress.class: nginx
 spec:
   rules:
     - host: shillings.info
       http:
         paths:
-          - path: /
+          - path: "/"
             pathType: Prefix
             backend:
               service:

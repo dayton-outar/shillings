@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: harpoon
-        image: krisyslimited/harpoon:latest
+        image: krisyslimited/harpoon:1.1
         ports:
         - containerPort: 5000
         env:
@@ -32,6 +32,8 @@ spec:
           value: "sa"
         - name: HARPOON_DB_PWD
           value: "Password77"
+        - name: SHILLINGS_DOMAIN
+          value: "http://shillings.info"
       imagePullSecrets:
       - name: docker-hub-cred
 ---

@@ -39,7 +39,7 @@ namespace Harpoon
         {
             services.AddCors( o => {
                 o.AddDefaultPolicy(b => {
-                    b.WithOrigins(new string[] { "http://localhost:8080" })
+                    b.WithOrigins(new string[] { Environment.GetEnvironmentVariable("SHILLINGS_DOMAIN") })
                     .AllowAnyHeader()
                     .AllowAnyMethod();
                 });
