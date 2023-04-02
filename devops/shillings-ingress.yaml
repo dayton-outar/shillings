@@ -20,3 +20,13 @@ spec:
                 name: shillings-service
                 port: 
                   number: 80
+    - host: api.shillings.info
+      http:
+        paths:
+          - path: "/"
+            pathType: Prefix
+            backend:
+              service:
+                name: harpoon-service
+                port: 
+                  number: 5000

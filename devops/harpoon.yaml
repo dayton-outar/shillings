@@ -34,9 +34,9 @@ spec:
         - name: HARPOON_DB_PWD
           value: "Password77"
         - name: SHILLINGS_DOMAIN
-          value: "http://shillings.info"
+          value: "https://shillings.info"
         - name: HARPOON_DOMAIN
-          value: "https://45-79-244-66.ip.linodeusercontent.com:5001/"
+          value: "https://api.shillings.info"
       imagePullSecrets:
       - name: docker-hub-cred
 ---
@@ -49,7 +49,7 @@ spec:
   selector:
     app: harpoon
   ports:
-    - name: tcpapi
+    - name: httpapi
       protocol: TCP
       port: 5000
       targetPort: 5000
