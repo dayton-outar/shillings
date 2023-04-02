@@ -90,7 +90,7 @@ namespace Harpoon
                         ValidateAudience = true,
                         ValidateIssuer = true,
                         ValidateIssuerSigningKey = true,
-                        ValidIssuer = "https://localhost:5001/",
+                        ValidIssuer = Environment.GetEnvironmentVariable("HARPOON_DOMAIN"),
                         ValidAudience = "www",
                         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("B3atiful$undayMorning"))
                     };

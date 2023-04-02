@@ -18,10 +18,11 @@ Here's a overview of the DevOps progression,
 
 8. Create domain on Linode   
 9. Install Ingress Controller into Kubernetes cluster on Linode
-10. Purchase SSL certificate from [GoDaddy](https://www.godaddy.com/)
-11. Create TLS secret from the provided SSL certificate files
-11. Apply ingress for domain name
-12. Create A/AAAA Record for domain name using the external IP provided by the ingress that was applied in prior step
+10. Generate private key and Certificate Signing Request (.csr) file from ingress controller
+11. Purchase SSL certificate from [GoDaddy](https://www.godaddy.com/) and use the content of the .csr file generated in prior step
+12. Create TLS secret from the provided SSL certificate files
+13. Apply ingress for domain name
+14. Create A/AAAA Record for domain name using the external IP provided by the ingress that was applied in prior step
     
     ![A/AAAA record entry](/.attachments/linode-dns.png)
 
@@ -116,6 +117,12 @@ To enable Kubernetes to pull from a private repository
 kubectl create secret docker-registry docker-hub-cred --docker-username=<username> --docker-password=<password> --docker-email=<email>
 ```
 
+To create TLS secret
+
+```bash
+kubectl create secret tls <secret-name> --namespace <namespace> --key server.key --cert server.crt
+```
+
 To expose LoadBalancer externally use the following minikube command
 
 ```bash
@@ -178,6 +185,7 @@ Do I need [Fluentd](https://docs.fluentd.org/)?
 20. [Deploying NGINX Ingress on Linode Kubernetes Engine](https://www.linode.com/docs/guides/deploy-nginx-ingress-on-lke/)
 21. [Edit my domain nameservers](https://ie.godaddy.com/help/edit-my-domain-nameservers-664)
 22. [Guides - Manage DNS Records](https://www.linode.com/docs/products/networking/dns-manager/guides/manage-dns-records/)
+23. [NGINX: Generate CSRs (Certificate Signing Requests)](https://ie.godaddy.com/help/nginx-generate-csrs-certificate-signing-requests-3601)
 
 ## Tutorial Video
 

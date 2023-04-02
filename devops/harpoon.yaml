@@ -16,9 +16,10 @@ spec:
     spec:
       containers:
       - name: harpoon
-        image: krisyslimited/harpoon:1.1
+        image: krisyslimited/harpoon:1.2
         ports:
         - containerPort: 5000
+        - containerPort: 5001
         env:
         - name: ASPNETCORE_URLS
           value: "http://+:5000"
@@ -34,6 +35,8 @@ spec:
           value: "Password77"
         - name: SHILLINGS_DOMAIN
           value: "http://shillings.info"
+        - name: HARPOON_DOMAIN
+          value: "https://45-79-244-66.ip.linodeusercontent.com:5001/"
       imagePullSecrets:
       - name: docker-hub-cred
 ---
@@ -50,3 +53,7 @@ spec:
       protocol: TCP
       port: 5000
       targetPort: 5000
+    - name: httpsapi
+      protocol: TCP
+      port: 5001
+      targetPort: 5001
