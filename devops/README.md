@@ -123,6 +123,11 @@ To create TLS secret
 kubectl create secret tls <secret-name> --namespace <namespace> --key server.key --cert server.crt
 ```
 
+Create generic secret
+```bash
+create secret generic shillings-db-secret --from-literal=password='<password>'
+```
+
 To expose LoadBalancer externally use the following minikube command
 
 ```bash

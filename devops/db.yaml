@@ -48,7 +48,10 @@ spec:
         - name: ACCEPT_EULA
           value: "Y"
         - name: MSSQL_SA_PASSWORD
-          value: Password77
+          valueFrom:
+            secretKeyRef:
+              name: shillings-db-secret
+              key: password
         volumeMounts:
         - name: mssql-data
           mountPath: "/var/opt/mssql"

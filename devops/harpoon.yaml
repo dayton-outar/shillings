@@ -16,27 +16,19 @@ spec:
     spec:
       containers:
       - name: harpoon
-        image: krisyslimited/harpoon:1.2
+        image: krisyslimited/harpoon:1.3
         ports:
         - containerPort: 5000
-        - containerPort: 5001
         env:
         - name: ASPNETCORE_URLS
           value: "http://+:5000"
-        - name: HARPOON_DB_DB
-          value: "stocks"
         - name: HARPOON_DB_HST
           value: "mssql-service"
-        - name: HARPOON_DB_PRT
-          value: "1433"
-        - name: HARPOON_DB_USR
-          value: "sa"
         - name: HARPOON_DB_PWD
-          value: "Password77"
-        - name: SHILLINGS_DOMAIN
-          value: "https://shillings.info"
-        - name: HARPOON_DOMAIN
-          value: "https://api.shillings.info"
+          valueFrom:
+            secretKeyRef:
+              name: shillings-db-secret
+              key: password
       imagePullSecrets:
       - name: docker-hub-cred
 ---
@@ -45,7 +37,6 @@ kind: Service
 metadata:
   name: harpoon-service
 spec:
-  type: LoadBalancer
   selector:
     app: harpoon
   ports:
@@ -53,7 +44,3 @@ spec:
       protocol: TCP
       port: 5000
       targetPort: 5000
-    - name: httpsapi
-      protocol: TCP
-      port: 5001
-      targetPort: 5001

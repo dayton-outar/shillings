@@ -7,16 +7,16 @@ metadata:
 spec:
   tls:
   - hosts:
-    - shillings.info
+    - api.shillings.info
     secretName: shillings-tls
   rules:
-    - host: shillings.info
+    - host: api.shillings.info
       http:
         paths:
           - path: "/"
             pathType: Prefix
             backend:
               service:
-                name: shillings-service
+                name: harpoon-service
                 port: 
-                  number: 80
+                  number: 5000
