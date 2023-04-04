@@ -9,6 +9,9 @@ spec:
   - hosts:
     - shillings.info
     secretName: shillings-tls
+  - hosts:
+    - api.shillings.info
+    secretName: api-shillings-tls
   rules:
     - host: shillings.info
       http:
@@ -18,5 +21,15 @@ spec:
             backend:
               service:
                 name: shillings-service
-                port: 
+                port:
                   number: 80
+    - host: api.shillings.info
+      http:
+        paths:
+          - path: "/"
+            pathType: Prefix
+            backend:
+              service:
+                name: harpoon-service
+                port: 
+                  number: 5000
