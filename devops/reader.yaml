@@ -15,7 +15,10 @@ spec:
             - name: O8DBHOST
               value: "mssql-service"
             - name: MSSQLPWD
-              value: "Password77"
+              valueFrom:
+                secretKeyRef:
+                  name: shillings-db-secret
+                  key: password
           restartPolicy: OnFailure
           imagePullSecrets:
           - name: docker-hub-cred
