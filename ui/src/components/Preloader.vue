@@ -25,6 +25,16 @@ export default {
   animation: 1s beat 0.15s infinite alternate;
 }
 
+.img-preloader {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    max-width: 450px;
+    max-height: 450px;
+    margin-bottom: 20px;
+    z-index: 100;
+}
+
 @keyframes beat {
   0% { transform: scale(1); }
 	70% { transform: scale(1); }

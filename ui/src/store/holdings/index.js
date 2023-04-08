@@ -36,6 +36,9 @@ export default {
     },
     actions: {
         fetch({ commit }) {
+            if (!localStorage.getItem('my-portfolio')) {
+                localStorage.setItem('my-portfolio', JSON.stringify([]))
+            }
             commit('set', JSON.parse(localStorage.getItem('my-portfolio')))
         },
         add({ commit }, payload) {

@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: shillings-deployment
+  labels:
+    app: shillings
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: shillings
+  template:
+    metadata:
+      labels:
+        app: shillings
+    spec:
+      containers:
+      - name: shillings
+        image: krisyslimited/shillings:1.8
+        ports:
+        - containerPort: 80
+      imagePullSecrets:
+      - name: docker-hub-cred
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: shillings-service
+spec:
+  selector:
+    app: shillings
+  ports:
+    - name: tcpweb
+      protocol: TCP
+      port: 80
+      targetPort: 80

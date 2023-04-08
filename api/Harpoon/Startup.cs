@@ -39,7 +39,7 @@ namespace Harpoon
         {
             services.AddCors( o => {
                 o.AddDefaultPolicy(b => {
-                    b.WithOrigins(new string[] { "http://localhost:8080" })
+                    b.WithOrigins(new string[] { Environment.GetEnvironmentVariable("SHILLINGS_DOMAIN") })
                     .AllowAnyHeader()
                     .AllowAnyMethod();
                 });
@@ -48,7 +48,12 @@ namespace Harpoon
             services.AddScoped<IdentityService>();
             // services.AddHttpContextAccessor();
 
-            string connectionString = Configuration.GetConnectionString("HarpoonDatabase");
+            string connectionString = string.Format("Server={0},{1};Database={2};User Id={3};Password={4};", 
+                        Environment.GetEnvironmentVariable("HARPOON_DB_HST"),
+                        Environment.GetEnvironmentVariable("HARPOON_DB_PRT"),
+                        Environment.GetEnvironmentVariable("HARPOON_DB_DB"),
+                        Environment.GetEnvironmentVariable("HARPOON_DB_USR"),
+                        Environment.GetEnvironmentVariable("HARPOON_DB_PWD"));
 
             services.AddControllers();
             services.AddDbContext<BlobQuery>(
@@ -85,7 +90,7 @@ namespace Harpoon
                         ValidateAudience = true,
                         ValidateIssuer = true,
                         ValidateIssuerSigningKey = true,
-                        ValidIssuer = "https://localhost:5001/",
+                        ValidIssuer = Environment.GetEnvironmentVariable("HARPOON_DOMAIN"),
                         ValidAudience = "www",
                         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("B3atiful$undayMorning"))
                     };
@@ -99,10 +104,12 @@ namespace Harpoon
             {
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                app.UseHttpsRedirection();
+            }
 
             app.UseCors();
-
-            //app.UseHttpsRedirection();
 
             app.UseRouting();
             app.UseAuthentication();

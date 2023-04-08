@@ -8,6 +8,20 @@
     <meta name="keywords" content="stocks,statement,companies,company performance">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WXT7BKRZM2"></script>
+    <script>
+      window.GA_TRACKING_ID = 'G-WXT7BKRZM2';
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', GA_TRACKING_ID, {
+        app_name: 'Shillings',
+        send_page_view: false
+      });
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4405807819928154" crossorigin="anonymous"></script>
   </head>
   <body>
     <noscript>

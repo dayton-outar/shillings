@@ -1,0 +1,77 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mssql-claim
+spec:
+  storageClassName: standard
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 5Gi
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: mssql-pv-volume
+spec:
+  storageClassName: standard
+  capacity:
+    storage: 5Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/home/data"
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: mssql
+spec:
+  serviceName: mssql
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mssql
+  template:
+    metadata:
+      labels:
+        app: mssql
+    spec:
+      containers:
+      - name: mssql
+        image: krisyslimited/sex:latest
+        ports:
+        - containerPort: 1433
+          name: tcpsql
+        env:
+        - name: ACCEPT_EULA
+          value: "Y"
+        - name: MSSQL_SA_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: shillings-db-secret
+              key: password
+        volumeMounts:
+        - name: mssql-data
+          mountPath: "/var/opt/mssql"
+      volumes:
+      - name: mssql-data
+        persistentVolumeClaim:
+          claimName: mssql-claim
+      imagePullSecrets:
+      - name: docker-hub-cred
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mssql-service
+spec:
+  type: ClusterIP
+  selector:
+    app: mssql
+  ports:
+    - protocol: TCP
+      port: 1433
+      targetPort: 1433
+      name: tcpsql

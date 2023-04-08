@@ -1,0 +1,24 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: shillings-scraper
+spec:
+  schedule: "0 22 * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: shillings-scraper
+            image: krisyslimited/reader:1.0
+            env:
+            - name: O8DBHOST
+              value: "mssql-service"
+            - name: MSSQLPWD
+              valueFrom:
+                secretKeyRef:
+                  name: shillings-db-secret
+                  key: password
+          restartPolicy: OnFailure
+          imagePullSecrets:
+          - name: docker-hub-cred

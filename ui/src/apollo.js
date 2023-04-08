@@ -10,7 +10,7 @@ const getToken = () => {
 
 export default new ApolloClient({
   link: createUploadLink({ 
-    uri: 'http://localhost:5000/graphql', 
+    uri: (process.env.NODE_ENV == 'production' ? `https://api.shillings.info/graphql/` : `http://localhost:5000/graphql`), 
     headers:  {
       authorization: getToken()
     }

@@ -356,6 +356,9 @@ Also, security needed. So, [Adding JWT Bearer Authentication to a Hot Chocolate 
 24. [Generating SQL Backup Script for Tables & Data from any .NET Application using SMO](https://weblogs.asp.net/shahar/generating-sql-backup-script-for-tables-amp-data-from-any-net-application-using-smo) by Shahar Gvirtz's
 25. [How to implement Google Authentication in Node JS using Passport JS](https://medium.com/@prashantramnyc/how-to-implement-google-authentication-in-node-js-using-passport-js-9873f244b55e)
 26. [MaxExecutionDepth should allow the level of depth it is set to #2414](https://github.com/ChilliCream/graphql-platform/issues/2414)
+27. [Setting up Kestrel port in configuration file in ASP.NET Core](https://dejanstojanovic.net/aspnet/2018/december/setting-up-kestrel-port-in-configuration-file-in-aspnet-core/)
+28. [5 ways to set the URLs for an ASP.NET Core app](https://andrewlock.net/5-ways-to-set-the-urls-for-an-aspnetcore-app/)
+29. [Allow specifying host and port or port in ASPNETCORE_URLS](https://github.com/dotnet/aspnetcore/issues/43135)
 
 
 ## Tutorial Videos

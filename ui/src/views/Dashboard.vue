@@ -13,10 +13,10 @@
             <stock-trades v-if="totalTrades" :formattedDateRange="formattedDateRange" :tradings="totalTrades" />
           </b-tab-item>
           <b-tab-item label="Companies' Earnings">
-            <earnings :formattedDateRange="formattedDateRange" />
+            <earnings :formattedDateRange="formattedDateRange" :end="filterDates[1]" />
           </b-tab-item>
           <b-tab-item label="Companies' Solvency">
-            <solvencies :formattedDateRange="formattedDateRange" />
+            <solvencies :formattedDateRange="formattedDateRange" :end="filterDates[1]" />
           </b-tab-item>
           <!--
           <b-tab-item v-if="totalTrades" label="Volume Shares">
