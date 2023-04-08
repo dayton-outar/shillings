@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: shillings
-        image: krisyslimited/shillings:1.7
+        image: krisyslimited/shillings:1.8
         ports:
         - containerPort: 80
       imagePullSecrets:

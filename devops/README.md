@@ -191,6 +191,7 @@ Do I need [Fluentd](https://docs.fluentd.org/)?
 21. [Edit my domain nameservers](https://ie.godaddy.com/help/edit-my-domain-nameservers-664)
 22. [Guides - Manage DNS Records](https://www.linode.com/docs/products/networking/dns-manager/guides/manage-dns-records/)
 23. [NGINX: Generate CSRs (Certificate Signing Requests)](https://ie.godaddy.com/help/nginx-generate-csrs-certificate-signing-requests-3601)
+24. [Kubernetes service - Loadbalancer with HTTPS](https://stackoverflow.com/questions/50950590/kubernetes-service-loadbalancer-with-https)
 
 ## Tutorial Video
 
