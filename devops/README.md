@@ -17,7 +17,7 @@ Here's a overview of the DevOps progression,
    ![Edit Name Servers on GoDaddy](/.attachments/godaddy-nameservers.png)
 
 8. Create domain on Linode   
-9. Install Ingress Controller into Kubernetes cluster on Linode
+9. Install Ingress Controller into Kubernetes cluster on Linode using Helm (`helm install ingress-nginx`)
 10. Generate private key and Certificate Signing Request (.csr) file from ingress controller
 11. Purchase SSL certificate from [GoDaddy](https://www.godaddy.com/) and use the content of the .csr file generated in prior step
 12. Create TLS secret from the provided SSL certificate files
