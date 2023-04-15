@@ -192,7 +192,7 @@ Do I need [Fluentd](https://docs.fluentd.org/)?
 22. [Guides - Manage DNS Records](https://www.linode.com/docs/products/networking/dns-manager/guides/manage-dns-records/)
 23. [NGINX: Generate CSRs (Certificate Signing Requests)](https://ie.godaddy.com/help/nginx-generate-csrs-certificate-signing-requests-3601)
 24. [Kubernetes service - Loadbalancer with HTTPS](https://stackoverflow.com/questions/50950590/kubernetes-service-loadbalancer-with-https)
-25. [How to Set Up SSL with NGINX](https://youtu.be/X3Pr5VATOyA) - [NGINX](https://www.youtube.com/@nginx_official)
+25. 
 
 ## Tutorial Video
 
@@ -210,3 +210,4 @@ Do I need [Fluentd](https://docs.fluentd.org/)?
 12. [[ Kube 34 ] Monitor Kubernetes Logs using EFK stack - Elasticsearch, FluentBit & Kibana](https://youtu.be/8nWh1GLd7nY)
 13. [Kubernetes Secrets in 5 Minutes!](https://youtu.be/cQAEK9PBY8U)
 14. [Kubernetes Secret Management Explained](https://youtu.be/o36yTfGDmZ0)
+15. [How to Set Up SSL with NGINX](https://youtu.be/X3Pr5VATOyA) - [NGINX](https://www.youtube.com/@nginx_official)
