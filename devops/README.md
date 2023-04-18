@@ -192,7 +192,11 @@ Do I need [Fluentd](https://docs.fluentd.org/)?
 22. [Guides - Manage DNS Records](https://www.linode.com/docs/products/networking/dns-manager/guides/manage-dns-records/)
 23. [NGINX: Generate CSRs (Certificate Signing Requests)](https://ie.godaddy.com/help/nginx-generate-csrs-certificate-signing-requests-3601)
 24. [Kubernetes service - Loadbalancer with HTTPS](https://stackoverflow.com/questions/50950590/kubernetes-service-loadbalancer-with-https)
-25. 
+25. [How To Set Up a Firewall with UFW on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-ubuntu-18-04)
+26. [How To Install and Use Docker Compose on Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-22-04)
+27. [How to copy files from one machine to another using ssh](https://unix.stackexchange.com/questions/106480/how-to-copy-files-from-one-machine-to-another-using-ssh)
+28. [How To Install Nginx on Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-22-04)
+29. [Nginx Redirect HTTP to HTTPS](https://linuxhint.com/nginx-redirect-http-https/)
 
 ## Tutorial Video
 
