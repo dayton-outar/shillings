@@ -88,6 +88,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 14. [How To Use Environment Variables in Vue.js](https://www.digitalocean.com/community/tutorials/vuejs-working-with-environment-variables)
 15. [Tracking Single Page Applications With Google Analytics](https://www.bounteous.com/insights/2018/03/30/single-page-applications-google-analytics)
 16. [Google Analytics with Single Page Application(SPA) in VueJs](https://morioh.com/p/49394ea827f5)
+17. [... how to set htmlWebpackPlugin.options.title in ... Vue 3 projects](https://stackoverflow.com/questions/62023604/where-to-find-or-how-to-set-htmlwebpackplugin-options-title-in-project-created-w)
 
 ## Tutorial Videos
 
