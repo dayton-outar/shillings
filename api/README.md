@@ -359,6 +359,8 @@ Also, security needed. So, [Adding JWT Bearer Authentication to a Hot Chocolate 
 27. [Setting up Kestrel port in configuration file in ASP.NET Core](https://dejanstojanovic.net/aspnet/2018/december/setting-up-kestrel-port-in-configuration-file-in-aspnet-core/)
 28. [5 ways to set the URLs for an ASP.NET Core app](https://andrewlock.net/5-ways-to-set-the-urls-for-an-aspnetcore-app/)
 29. [Allow specifying host and port or port in ASPNETCORE_URLS](https://github.com/dotnet/aspnetcore/issues/43135)
+30. [PDF Parsing: the Ultimate Guide to Extract Data From PDF Files](https://parsio.io/blog/pdf-parsing-ultimate-guide-to-extract-data-from-pdf-files/)
+31. [Use Parseur document parsing API](https://help.parseur.com/en/articles/3566128-use-parseur-document-parsing-api)
 
 
 ## Tutorial Videos
