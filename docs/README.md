@@ -37,3 +37,4 @@ Apart from providing analysis on companies, this project seeks to enable custome
 1. [How I Pick Stocks](https://youtu.be/IPwDxoomxuA)
 1. [AdSense Onboarding Video Series](https://www.youtube.com/playlist?list=PLbAFD4oU9YcqHD_h-b8e8wCYo2XUqbIHM)
 1. [The Complete Guide to Dividend Investing on the Jamaica Stock Market](https://youtu.be/guhqztem9fA)
+1. [How to trade stocks with Jtraderpro](https://youtu.be/OwlkE77s1AI)
