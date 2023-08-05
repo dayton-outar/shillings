@@ -61,7 +61,7 @@ Remember, these profiles are not mutually exclusive, and many investors may exhi
 
 Keep in mind that these are generalizations, and there can be exceptions. Investors' educational backgrounds and skills can vary widely within each profile. Additionally, the investment landscape is constantly evolving, so individuals may acquire new skills and knowledge over time.
 
-## Understanding Capital Preservation
+### Understanding Capital Preservation
 
 "Capital preservation" refers to a primary investment objective or strategy where the focus is on safeguarding the initial investment amount or capital, often with a lower tolerance for risk. Conservative investors prioritize the protection of their principal sum and are willing to accept potentially lower returns in exchange for a higher level of safety and reduced exposure to market fluctuations.
 
