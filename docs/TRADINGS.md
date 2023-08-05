@@ -11,13 +11,10 @@ Trading is an economic activity based on human behaviour and the perception of t
 > ...
 >
 > **Technical analysis** is the study of chart patterns in an attempt to forecast future price movements.[^2]
-[^1]
 >
 > ...
 >
 > **behavioral finance** includes human psychology, market positioning, market sentiment,cognitive bias, feedback loops, and other individual human and group behavior characteristics that lead to price moves that cannot be explained by rational macro factors.[^3]
-[^1]
-
 
 ## References
 
