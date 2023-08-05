@@ -6,15 +6,17 @@ Trading is an economic activity based on human behaviour and the perception of t
 >
 > ...
 >
-> **Fundamental analysis** is the study of macroeconomic factors that drive markets (as opposed to other factors like momentum, positioning, and psychology ...).
+> **Fundamental analysis** is the study of macroeconomic factors that drive markets (as opposed to other factors like momentum, positioning, and psychology ...).[^1]
 >
 > ...
 >
-> **Technical analysis** is the study of chart patterns in an attempt to forecast future price movements.
+> **Technical analysis** is the study of chart patterns in an attempt to forecast future price movements.[^2]
+[^1]
 >
 > ...
 >
-> **behavioral finance** includes human psychology, market positioning, market sentiment,cognitive bias, feedback loops, and other individual human and group behavior characteristics that lead to price moves that cannot be explained by rational macro factors.
+> **behavioral finance** includes human psychology, market positioning, market sentiment,cognitive bias, feedback loops, and other individual human and group behavior characteristics that lead to price moves that cannot be explained by rational macro factors.[^3]
+[^1]
 
 
 ## References
@@ -24,3 +26,7 @@ Trading is an economic activity based on human behaviour and the perception of t
 ## Tutorial Videos
 
 1. [The ONLY Candlestick Pattern Guide You'll EVER NEED](https://youtu.be/tW13N4Hll88) - [TradingLab](https://www.youtube.com/@TradingLabOfficial)
+
+[^1]: [Investors. Fundamental Analysis](./INVESTORS.md#fundamental-analysis)
+[^2]: [Investors. Technical Analysis](./INVESTORS.md#technical-analysis)
+[^3]: [Investors. Behavioural Finance](./INVESTORS.md#behavioural-finance)
