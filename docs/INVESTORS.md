@@ -57,3 +57,5 @@ Certainly! There are various types of investor profiles based on their investmen
 Remember, these profiles are not mutually exclusive, and many investors may exhibit a combination of these characteristics based on their changing goals and market conditions. It's essential to understand your own financial objectives and risk tolerance before adopting a particular investor profile.
 
 Keep in mind that these are generalizations, and there can be exceptions. Investors' educational backgrounds and skills can vary widely within each profile. Additionally, the investment landscape is constantly evolving, so individuals may acquire new skills and knowledge over time.
+
+<image src="/.attachments/chatgpt-logo.png" alt="Chat GPT Logo" width="16" height="16" />
