@@ -57,4 +57,38 @@ The three little questions,
 These questions attempts to get into the deeper reasons that customers choose a product (see "This is Marketing" by Seth Godin).
 
 > Unless you have compelling answers to all three questions, meaning that customers find them irresistible, you haven’t got a brand.
+>
+> ...
+>
+> Clorox is a company that understands differentiation. When Clorox purchased Hidden Valley ranch dressing, their marketing people had the good sense not to add it to their product line and rename it Clorox Hidden Valley. In fact, the name Clorox has never appeared on any of Hidden Valley’s packages, advertisements, or other marketing materials. Yet you’d be surprised at how many companies have violated common sense and paid the price. The lesson? Keep it pure, keep it different.
 
+### The Evolution of Marketing
+
+> As we’ve moved from a one-size-fits-all economy to a mass-customization economy, the attention of marketing has shifted from features, to benefits, to experience, to tribal identification. In other words, selling has evolved from an emphasis on “what it has,” to “what it does,” to “what you’ll feel,” to “who you are.” This shift demonstrates that, while features and benefits are still important to people, personal identity has become even more important.
+
+> The success of the Nike brand is ample proof that de Bono’s concept works. As a weekend athlete, my two nagging doubts are that I might be congenitally lazy, and that I might have little actual ability. I’m not really worried about my shoes. But when the Nike folks say, “Just do it,” they’re peering into my soul. I begin to feel that, if they understand me that well, their shoes are probably pretty good. I’m then willing to join the tribe of Nike.
+
+### Globalism vs. Tribalism
+
+> We’ve heard a lot of talk about globalism—the knocking down of national, economic, and cultural barriers to create a single society. In the 1960s Marshall McLuhan envisioned a world so connected by technology that the old divisions would disappear, made obsolete by a massive “global village.” Forty years later we have no global village, and we probably never will, at least in the usual sense of a village—an intimate community united by a single language and culture. Instead we have a global communication network, an electronic layer on top of the old divisions that influences them and adds to them, but doesn’t replace them.
+>
+> The fact is, we need divisions just as much as we need ways to transcend them. Without barriers there would be no safety—against war, disease, natural disaster, a feeling of alienation, of being lost in an uncaring world. The faster globalism removes barriers, the faster people erect new ones. They create intimate worlds they can understand, and where they can be somebody and feel as if they belong. They create tribes.
+>
+> If you stretch the concept of tribe just a little, you can see that a brand creates a kind of tribe. Depending on your Unique Buying State, you can join any number of tribes on any number of days and feel part of something bigger than yourself. You can belong to the Callaway tribe when you play golf, the VW tribe when you drive to work, and the Williams-Sonoma tribe when you cook a meal. You’re part of a select clan (or so you feel) when you buy products from these clearly differentiated companies. Brands are the little gods of modern life, each ruling a different need, activity, mood, or situation. Yet you’re in control. If your latest god falls from Olympus, you can switch to another one.
+
+### Focus, Focus, Focus
+
+> Yet focus is difficult to achieve because it means giving something up. It runs counter to our most basic marketing instinct: If we narrow our offering, won’t we narrow our opportunities for profit? Answer: Not necessarily. It’s often better to be number one in a small category than to be number three in a large one. At number three your strategy may have to include a low price, whereas at number one you can charge a premium. History has shown that it pays handsomely to be number one in your category—first, because of higher margins, and second, because the risk of commoditization is almost nonexistent. Yet number two can also be profitable, despite a smaller market share. Number three, or four, or five, however, may only be worth the effort if you think you have a realistic shot at becoming number two someday.
+>
+> Can’t be number one or number two? Redefine your category. The industrial-strength software product Framemaker only made it to number three as a word-processing product, but as a document-publishing product it quickly became number one, with double its previous sales. All it took was a change of focus.
+>
+> ...
+> Brand extensions make less sense when they’re driven by a desire for short-term profits without regard to focus. What makes them especially seductive is that they can work remarkably well in the short term, even as they undermine the position of the brand. A recent example of defocusing by brand extension is the Cayenne, an SUV from Porsche. In a single misguided stroke, Porsche has pulled the rug out from under its reputation as a maker of classic sports cars. They maintain that the Cayenne is an example of Porsche innovation, but Porsche fans will say it’s a grab for profits in a tired market. Had Porsche invented the SUV, people might see it as innovation, but at the tail-end of the trend it looks more like greed—especially since Porsche is already highly profitable. Naturally, the new car will sell. It’s got the revered Porsche styling, engineering, and pedigree, all of which can be harvested through line extension. But the question is, what does Porsche now stand for?
+>
+> ...
+>
+> Even in the best of times, the principle of focus is a hard mistress, demanding fidelity, courage, and determination. And when a company faces additional pressure from stockholder expectations, political infighting, unexpected competition, or changes in management, there’s a temptation to extend the product line for short-term relief, even at the expense of its market position. Resist, because the long-term survival of a brand depends on staying focused. As positioning expert Jack Trout succinctly puts it, “differentiate or die.”
+
+## Collaborate
+
+> Management guru Peter Drucker maintains that the most important shift in business today is from “ownership” to “partnership,” and from “individual tasks” to “collaboration.” The successful company is not the one with the most brains, he suggests, but the most brains acting in concert. Brand managers and communication firms are responding to this new challenge in a number of interesting ways.

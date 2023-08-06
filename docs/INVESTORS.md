@@ -171,7 +171,7 @@ Key aspects of quantitative analysis include:
 
 1. **Data Mining:** Quantitative analysts, also known as "quants," gather and analyze vast amounts of historical data to identify patterns and relationships that may not be apparent through traditional methods.
 
-2. **Model Building:** Quants create mathematical models and algorithms that capture market behaviors and trends. These models may be used to forecast prices, manage risk, and optimize trading strategies.
+2. **Model Building:** Quants create mathematical models and algorithms that capture market behaviours and trends. These models may be used to forecast prices, manage risk, and optimize trading strategies.
 
 3. **Risk Management:** Quantitative analysis is often used to assess and manage risk. Complex risk models can help quantify potential losses and identify scenarios that could impact investment portfolios.
 
@@ -191,27 +191,53 @@ While technical analysis focuses on price patterns and trends, fundamental analy
 
 ## Behavioural Finance
 
-Behavioral finance plays a significant role in how investors make decisions, and it is closely related to the concepts discussed in the book "Predictably Irrational" by Dan Ariely. Behavioral finance is a field that combines principles from psychology and economics to understand how psychological and emotional factors influence financial decision-making.
+Behavioural finance plays a significant role in how investors make decisions, and it is closely related to the concepts discussed in the book "Predictably Irrational" by Dan Ariely. Behavioural finance is a field that combines principles from psychology and economics to understand how psychological and emotional factors influence financial decision-making.
 
-In "Predictably Irrational," Dan Ariely explores various ways in which human behavior deviates from traditional economic models of rational decision-making. He discusses cognitive biases, irrational behaviors, and the psychological factors that often lead people to make less-than-optimal choices. These same principles apply to investors and their decision-making processes. Here's how behavioral finance ties into investor decisions:
+In "Predictably Irrational," Dan Ariely explores various ways in which human behaviour deviates from traditional economic models of rational decision-making. He discusses cognitive biases, irrational behaviours, and the psychological factors that often lead people to make less-than-optimal choices. These same principles apply to investors and their decision-making processes. Here's how behavioural finance ties into investor decisions:
 
-1. **Emotional Decision-Making:** Behavioral finance highlights that emotions can play a significant role in investment decisions. Investors may make decisions based on fear, greed, overconfidence, or other emotional responses, which can lead to irrational choices and potentially suboptimal outcomes.
+1. **Emotional Decision-Making:** Behavioural finance highlights that emotions can play a significant role in investment decisions. Investors may make decisions based on fear, greed, overconfidence, or other emotional responses, which can lead to irrational choices and potentially suboptimal outcomes.
 
 2. **Loss Aversion:** People tend to feel the pain of losses more strongly than the pleasure of gains, a phenomenon known as loss aversion. This can lead investors to hold onto losing investments for too long or sell winning investments too early, impacting their portfolio's performance.
 
-3. **Herding Behavior:** Behavioral finance recognizes that individuals often follow the crowd or herd, even if it goes against their better judgment. This can lead to market bubbles, where investors collectively overvalue certain assets.
+3. **Herding Behaviour:** Behavioural finance recognizes that individuals often follow the crowd or herd, even if it goes against their better judgment. This can lead to market bubbles, where investors collectively overvalue certain assets.
 
 4. **Anchoring:** Anchoring is a cognitive bias where people rely too heavily on the first piece of information they receive when making decisions. Investors might anchor their price expectations to a recent high or low, regardless of the asset's true value.
 
-5. **Overconfidence:** Behavioral finance acknowledges that people tend to be overconfident in their own abilities and predictions. Investors may believe they can consistently outperform the market, leading to excessive trading and poor performance.
+5. **Overconfidence:** Behavioural finance acknowledges that people tend to be overconfident in their own abilities and predictions. Investors may believe they can consistently outperform the market, leading to excessive trading and poor performance.
 
 6. **Confirmation Bias:** Investors often seek out information that confirms their existing beliefs and ignore information that contradicts them. This can lead to a distorted view of the market and poor decision-making.
 
 7. **Disposition Effect:** This refers to the tendency for investors to sell winning investments too soon to lock in gains, while holding onto losing investments in the hope of a rebound.
 
-8. **Framing:** How a decision or information is presented can significantly influence an investor's choices. Behavioral finance recognizes that framing can impact risk perceptions and decision outcomes.
+8. **Framing:** How a decision or information is presented can significantly influence an investor's choices. Behavioural finance recognizes that framing can impact risk perceptions and decision outcomes.
 
-Understanding these behavioral biases and irrational tendencies can help investors make more informed decisions. Behavioral finance suggests that recognizing and addressing these biases can lead to better outcomes and improved portfolio management. Many financial professionals integrate insights from behavioral finance into their advisory services to assist clients in making more rational and well-informed investment choices.
+Understanding these behavioural biases and irrational tendencies can help investors make more informed decisions. Behavioural finance suggests that recognizing and addressing these biases can lead to better outcomes and improved portfolio management. Many financial professionals integrate insights from behavioural finance into their advisory services to assist clients in making more rational and well-informed investment choices.
+
+### Sentiment Analysis
+
+Sentiment analysis can be considered within the subset of _Behavioural Finance_.
+
+Sentiment analysis is a natural language processing (NLP) technique used to analyze and determine the emotional tone or sentiment expressed in a piece of text, such as news articles, social media posts, reviews, and more. It involves using computational methods to identify and quantify the sentiment as positive, negative, or neutral, and sometimes even more nuanced emotions.
+
+In the context of news for investors, sentiment analysis involves applying this technique to financial news articles, reports, and other textual sources related to the financial markets and investment decisions. The goal is to gauge the prevailing sentiment surrounding a particular stock, market, industry, or economy. This can be valuable for investors for several reasons:
+
+1. **Market Insights:** Sentiment analysis can provide insights into how market participants are feeling about specific assets, sectors, or the overall market. Positive sentiment may suggest optimism and potential buying interest, while negative sentiment may indicate concerns or potential selling pressure.
+
+2. **News Impact:** News articles often influence market movements. Sentiment analysis can help investors quickly assess whether a news story is generally positive, negative, or neutral, and how it might impact the associated assets.
+
+3. **Event Prediction:** By analyzing the sentiment of news articles, investors may get an idea of how certain events or announcements could impact markets. For example, sentiment analysis ahead of an earnings release could offer insights into market expectations.
+
+4. **Risk Management:** Monitoring sentiment can help investors stay informed about potential risks or opportunities associated with specific investments.
+
+5. **Algorithmic Trading:** Some quantitative and algorithmic trading strategies incorporate sentiment analysis to make automated trading decisions based on news sentiment.
+
+6. **Contrarian Opportunities:** Sentiment analysis can identify cases where prevailing sentiment might be excessively positive or negative, potentially presenting contrarian investment opportunities.
+
+7. **Market Trends:** Over time, sentiment analysis can help identify shifts in market sentiment, potentially indicating changing investor sentiment towards certain stocks, sectors, or markets.
+
+It's important to note that sentiment analysis has its limitations. Context and nuance in language can sometimes be challenging for automated algorithms to accurately capture. Additionally, sentiment analysis may not always provide a complete picture of market behaviour, as other factors, such as fundamental data, technical analysis, and macroeconomic trends, also play significant roles in investment decisions.
+
+Despite these limitations, sentiment analysis can be a valuable tool for investors to quickly assess market sentiment, gather insights from news and social media, and incorporate additional data points into their investment analysis and decision-making process.
 
 <image src="/.attachments/chatgpt-logo.png" alt="Chat GPT Logo" width="16" height="16" />
 
