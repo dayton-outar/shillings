@@ -21,7 +21,7 @@ I believe that there are many combinations of what to expect from each investor 
 
 All investors are susceptible to some level of psychological stimulus based on their human condition. So, all investors at some point in their financial life will manifest one or more of the behaviours listed under [Behavioural Finance](#behavioural-finance). Nonetheless, anchoring the emotional responses to the market is two main disciplines that guides the logic in their decision-making. These disciplines are described in [Fundamental Analysis](#fundamental-analysis) and [Technical Analysis](#technical-analysis).
 
-![Venn Diagram of Investors classified in Behavioural Finance, Technical and Fundamental Analysis](/.attachments/types.of.investors.png)
+![Venn Diagram of Investors classified in Behavioural Finance, Technical and Fundamental Analysis](/.attachments/types.of.investors-ii.png)
 
 © Dayton Outar, 2023
 
