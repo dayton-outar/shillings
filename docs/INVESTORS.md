@@ -1,7 +1,7 @@
 
 # Investors
 
-I believe that there are many combinations of what to expect from each investor in the same way that human beings are a complex combination of nature and nurture. In attempt to better understand investors, I have classified their approach in 4 categories based on the information that I have gathered from ChatGPT, reading investment books and conversations with investors. The 4 categories that I use to identify investors are,
+I believe that there are many combinations of what to expect from each investor in the same way that human beings are a complex combination of nature and nurture. In attempt to better understand investors, I have classified their approach in 4 categories based on the information that I have gathered from ChatGPT, reading investment books and conversations with investors. The 4 categories that I use to classify investors are,
 
  1. Horizon Appetite
 
@@ -19,7 +19,9 @@ I believe that there are many combinations of what to expect from each investor 
     
     Some investors are motivated purely by profit while others are more socially responsible. Socially responsible investors invest in a business because they believe that it is championing a cause that they believe in.
 
+All investors are susceptible to some level of psychological stimulus based on their human condition. So, all investors at some point in their financial life will manifest one or more of the behaviours listed under [Behavioural Finance](#behavioural-finance). Nonetheless, anchoring the emotional responses to the market is two main disciplines that guides the logic in their decision-making. These disciplines are described in [Fundamental Analysis](#fundamental-analysis) and [Technical Analysis](#technical-analysis).
 
+![Venn Diagram of Investors classified in Behavioural Finance, Technical and Fundamental Analysis](/.attachments/types.of.investors.png)
 
 © Dayton Outar, 2023
 
