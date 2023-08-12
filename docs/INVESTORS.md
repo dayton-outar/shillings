@@ -11,9 +11,9 @@ I believe that there are many combinations of what to expect from each investor 
 
     Some investors rather not get into the gory details of any kind of analysis and these persons rather invest in indexes and ETFs. They have a more passive approach. This is in contrast to active investors that pay attention to daily stock prices and invest their time in technical analysis concepts such as studying candlestick charting of stock price trades.
 
- 3. Risk Appetite
+ 3. Risk Tolerance
 
-    Some investors are more conservative when it comes on to managing risk. Some prefer growth stocks, while some prefer value stocks. Risk appetite overlaps horizon appetite. I think conservative investors usually invest long-term but since there are levels of risk, this category provides variation and add complexity to the investor.
+    Some investors are more conservative when it comes on to managing risk. Some prefer growth stocks, while some prefer value stocks. Risk tolerance overlaps horizon appetite. I think conservative investors usually invest long-term but since there are levels of risk, this category provides variation and add complexity to the investor.
 
  4. Business Focus
     
