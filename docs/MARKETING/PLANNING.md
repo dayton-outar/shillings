@@ -49,7 +49,30 @@ When identifying your target market look at the following data:
 - **Interests:** Are there any commonalities between your customers in terms of their interests?
 - **Stage of life:** In what stage of life are your customers? For example, they could be college students or parents.
 
-We recommend reading this article for more information on target market identification.
+We recommend reading [What Is a Target Market (And How to Find Yours in 2023)](https://blog.hootsuite.com/target-market/) for more information on target market identification. Here are a few snippets,
+
+ > Your target market sets the tone for your entire marketing strategy — from how you develop and name your products or services right through to the marketing channels you use to promote them.
+ >
+ > ...
+ >
+ > Don’t be afraid to get highly specific. This is all about targeting your marketing efforts effectively, not stopping people from buying your product.
+ >
+ > ...
+ >
+ > Some data points you might want to consider are:
+ >
+ > - **Age:** You don’t need to get too specific here. It won’t likely make a difference whether your average customer is 24 or 27. But knowing which decade of life your customers are in can be very useful.
+ > - **Location (and time zone):** Where in the world do your existing customers live? In addition to understanding which geographic areas to target, this helps you figure out what hours are most important for your customer service and sales reps to be online, and [what time](https://blog.hootsuite.com/best-time-to-post-on-social-media/) you should schedule your social ads and posts to ensure best visibility.
+ > - **Language:** Don’t assume your customers speak the same language you do. And don’t assume they speak the dominant language of their (or your) current physical location.
+ > - **Spending power and patterns:** How much money do your current customers have to spend? How do they approach purchases in your price category?
+ > - **Interests:** What do your customers like to do, besides using your products or services? What TV shows do they watch? What other businesses do they interact with?
+ > - **Challenges:** What pain points are your customers facing? Do you understand how your product or service helps them address those challenges?
+ > - **Stage of life:** Are your customers likely to be college students? New parents? Parents of teens? Retirees?
+ >
+ > ...
+ >
+ > Now it’s time to boil everything you’ve discovered so far into one simple statement that defines your target market. This is actually the first step in creating a **brand positioning statement**, but that’s a project for another day. For now, let’s stick to creating a statement that clearly defines your target market.
+ > “To **urban-dwelling, educated, techno-savvy consumers who worry about the environment** that future generations will inherit, Zipcar is the car-sharing service that lets you save money and reduce your carbon footprint, making you feel you’ve made a smart, responsible choice that demonstrates your commitment to protecting the environment.”
 
 ## 3. Goals
 Setting the right goals will help you to define the most appropriate marketing strategies and budgets. When setting your marketing goals, you should first consider analyzing the goals of your business/organization.
