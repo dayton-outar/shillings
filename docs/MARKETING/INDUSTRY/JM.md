@@ -132,9 +132,11 @@ As of August 2023, there are at least 5 thought leaders (or social media influen
 
 3. **[Jermaine McDonald](https://twitter.com/jerrymackd):** Jermaine McDonald is the founder of the [Learn, Grow, Invest Club](https://learngrowinvestclub.com/) and educates prospects on personal finance and the Jamaican stock market on his YouTube channel, [Learn Grow Invest](https://www.youtube.com/c/LearnGrowInvestClub).
 
-4. **Anna Nova:** Anna Novia offers personal financial advice on her YouTube channel, [Anna Novia](https://www.youtube.com/@annanovia94)
+4. **[Odetta Rockhead-Kerr]:** Odetta Rockhead-Kerr personal finance advice and tips on making money on her YouTube channel, [Odetta Rockhead-Kerr](https://www.youtube.com/@RockstarAcademy)
 
-5. **Demetress Fairman:** Demetress Fairman offers personal financial advice on his YouTube channel, [Demetress Fairman](https://www.youtube.com/@DemetressFairman)
+5. **Anna Nova:** Anna Novia offers personal financial advice on her YouTube channel, [Anna Novia](https://www.youtube.com/@annanovia94)
+
+6. **Demetress Fairman:** Demetress Fairman offers personal financial advice on his YouTube channel, [Demetress Fairman](https://www.youtube.com/@DemetressFairman)
 
 Here's how they stack up,
 
@@ -143,5 +145,6 @@ Here's how they stack up,
 | Randy Rowe      | 10.3K followers (Twitter) | 68K posts (Twitter) | stocks, personal finance, social commentary |
 | Kalila Reynolds | 49.9K subscribers | 1.1K videos | personal finance, financial education |
 | Jermaine McDonald | 9.08K subscribers | 251 videos | faith, personal finance, financial education |
+| Odetta Rockhead-Kerr | 600K subscribers | 373 videos | making money |
 | Anna Novia | 27K subscribers | 102 videos | travel, self-development, making money |
 | Demetress Fairman | 12.6K subscribers | 183 videos | business, making money, personal finance |

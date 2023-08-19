@@ -4,7 +4,7 @@ This body of work is the foundation of an online business that is dedicated to e
 
 The education provided in this project involves constant updates to the state of each business that are on a stock exchange by breaking down the details of annual and quarterly report through the presentation of all the important multiples (or financial ratios) that can be calculated from each report. Also, provided in the continuous learning experience is the evaluation of the business as an asset. The studying of multiples, business evaluation and the effects of the economy constitutes **Fundamental Analysis**.
 
-
+...
 
 [Financial Ratios](./MULTIPLIERS.md)
 
@@ -19,11 +19,39 @@ Apart from providing analysis on companies, this project seeks to enable custome
 
 [Wiki: List of Stock Markets](https://en.wikipedia.org/wiki/List_of_stock_exchanges)
 
-**Business Analysis**
+## Business Analysis: Marketing Strategy To-Do
 
-- Compare to find gaps in,
+- Build Buyer Persona
+  
+  Persons to interview include,
+  1. Christopher Shaw - Beginner
+  2. Tracy-Ann Davis - Intermediate
+  3. Jermaine McDonald - Educator, Financially Savvy
+  4. Akeel Herdsman - Quantitative Trader, Financially Savvy
+
+- Determine competitors, stakeholders and overall landscape
+
+- Determine strategy for brand awareness
+
+- Compare to find gaps on e-commerce platforms that facilitate equities trading such as,
   - [JTraderPro](https://jtraderpro.jamstockex.com/)
   - [Sagicor eInvest](https://einvest.sagicorjamaica.com/login)
+  - [JMMB Moneyline](https://moneyline.jmmb.com/)
+
+- Adopt good ideas of analysis from,
+  - [Google Finance](https://www.google.com/finance/?hl=en)
+  - [Yahoo Finance](https://finance.yahoo.com/)
+  - [Reuters Finance](https://www.reuters.com/markets/stocks/)
+  - [Simply Wall Street](https://simplywall.st/)
+
+### Value Proposition
+
+ - Fully digitized trading platform integrated with insights (financial analysis) and training
+    - Ease of access to analysis of stock prices and company performance (technical and fundamental analysis)
+    - An integrated learning experience. [Khan Academy](https://www.khanacademy.org/) course outlines, quizzes and videos comes to mind.
+
+### Purpose
+
 
 
 ## References
