@@ -88,7 +88,7 @@ Also, see mobile apps below,
 #### Sagicor eInvest Linking Domains
 
 | Root Domain | DA | Linking Domains | Spam Score |
-|:--- | ---:| ---:| ---:| ---:|
+|:--- | ---:| ---:| ---:|
 | sagicor.com | 43 | 2970 | 28% |
 | link-de.com | 37 | 5401 | 21% |
 | freekeyworddifficultytool.com | 36 | 4129 | 39% |
