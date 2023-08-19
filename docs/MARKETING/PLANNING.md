@@ -73,6 +73,8 @@ We recommend reading [What Is a Target Market (And How to Find Yours in 2023)](h
  >
  > Now it’s time to boil everything you’ve discovered so far into one simple statement that defines your target market. This is actually the first step in creating a **brand positioning statement**, but that’s a project for another day. For now, let’s stick to creating a statement that clearly defines your target market.
  >
+ > For example, here’s Zipcar’s brand positioning statement, as cited in the classic marketing text Kellogg on Marketing. We’re interested in the first part of the statement, which defines the target market:
+ >
  > “To **urban-dwelling, educated, techno-savvy consumers who worry about the environment** that future generations will inherit, Zipcar is the car-sharing service that lets you save money and reduce your carbon footprint, making you feel you’ve made a smart, responsible choice that demonstrates your commitment to protecting the environment.”
 
 ## 3. Goals
