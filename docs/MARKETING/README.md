@@ -19,9 +19,9 @@ Conducting [market research](./RESEARCH/) can be one of the most tedious tasks a
 
    This is incredibly important for local businesses. What is the approximate market size for your product/service? For example, if you are selling cars: how many households there are in your area, that have a base income of over ____? How often do people buy new cars in your area?
 
-2. Industry Standards
+2. [Industry](./INDUSTRY/) and Industry Standards
    
-   Current sales statistics in your industry, for example, average pricing, average turnovers and so on.
+   Current landscape of the major players (or stakeholders) within the industry. Current sales statistics in your industry, for example, average pricing, average turnovers and so on.
 
 3. Market Dynamics
    
