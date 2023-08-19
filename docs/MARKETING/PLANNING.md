@@ -23,15 +23,15 @@ Conducting market research can be one of the most tedious tasks at first, but it
    
    Current sales statistics in your industry, for example, average pricing, average turnovers and so on.
 
-3. Market dynamics/seasonality
+3. Market Dynamics
    
    Are your products/services seasonal? When do people tend to purchase more and when less? This is incredibly important when planning your advertising activities.
 
-4. Competition analysis
+4. Competition Analysis
    
    Who are they? How do they do their marketing activities? How could their activities impact your company? How does their product/service differ from others?
 
-5. Product/service analysis
+5. Product/Service Analysis
    
    How does your product/service compare to others in the market? What are your main selling points? How does your product/service stand out? Are there any smaller things you could tweak to make a fast improvement?
 
@@ -72,6 +72,7 @@ We recommend reading [What Is a Target Market (And How to Find Yours in 2023)](h
  > ...
  >
  > Now it’s time to boil everything you’ve discovered so far into one simple statement that defines your target market. This is actually the first step in creating a **brand positioning statement**, but that’s a project for another day. For now, let’s stick to creating a statement that clearly defines your target market.
+ >
  > “To **urban-dwelling, educated, techno-savvy consumers who worry about the environment** that future generations will inherit, Zipcar is the car-sharing service that lets you save money and reduce your carbon footprint, making you feel you’ve made a smart, responsible choice that demonstrates your commitment to protecting the environment.”
 
 ## 3. Goals
