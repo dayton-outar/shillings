@@ -52,6 +52,15 @@ Apart from providing analysis on companies, this project seeks to enable custome
 
 ### Purpose
 
+Why did I biuld Shillings?
+
+1. I wanted to better understand the market response to a stock over a span of 10 years to get an idea of the risk and possibilities. This was technical analysis. Getting the history over that period of time was not easily visualized by the Jamaica Stock Exchange.
+
+2. I wanted to compare fundamental ratios like profit margin and liquidity but no easy way of doing this was offered on the Jamaica Stock Exchange. This was done for the US Stock Exchange on the Google Finance website (also Yahoo Finance). Reports were not consolidated into one central place.
+
+3. Basic company profile was not offered by the Jamaica Stock Exchange. Value investors need to know the story of each company. There's more to a Stock Exchange than the stock prices. The company's listed are usually the main contributors to an economy and offer goods and services within the local and global marketplace.
+
+Shillings seeks to deliver structured information by making use of visualization tools. Information will be provided in a visually appealing way that engages novice investors to learn as they invest.
 
 ### Competitors
 
