@@ -106,6 +106,8 @@ As of my last knowledge update in September 2021, there are several brokerage fi
 
 Please be aware that this is not an exhaustive list, and there might be other brokerage firms operating in Jamaica's stock market. To get the most accurate and up-to-date information about brokerage firms in Jamaica, it's recommended to check with the Jamaica Stock Exchange or consult reliable financial sources.
 
+<image src="/.attachments/chatgpt-logo.png" alt="Chat GPT Logo" width="16" height="16" />
+
 _I noticed that ChatGPT did not list the following as brokers,_
 
 1. **[GK Capital Management Limited](https://gk-capital.com/):** A subsidiary of GraceKennedy Financial Group offers brokerage services for trading on the JSE.
@@ -143,5 +145,3 @@ Here's how they stack up,
 | Jermaine McDonald | 9.08K subscribers | 251 videos | faith, personal finance, financial education |
 | Anna Novia | 27K subscribers | 102 videos | travel, self-development, making money |
 | Demetress Fairman | 12.6K subscribers | 183 videos | business, making money, personal finance |
-
-<image src="/.attachments/chatgpt-logo.png" alt="Chat GPT Logo" width="16" height="16" />
