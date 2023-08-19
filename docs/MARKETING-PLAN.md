@@ -1,4 +1,4 @@
-## Marketing Plan Criteria
+# Marketing Plan Criteria
 
 _Credit to Chris, the founder of Adacted, for the article, [5 Important Elements of a Marketing Plan](https://adacted.com/marketing-plan-elements/). All of the content below is extracted from this article in the event that the content is taken down._
 
@@ -10,11 +10,10 @@ Not having your marketing plan elements set up properly could lead to a waste of
 
 When you are just starting to write a marketing plan, it is important to first focus on the main elements you want to address. Some of the marketing elements can be situational, but most of them are usually derived from standard marketing principles. Those principles stay true to any business, from a hair salon to an international logistics business.
 
-## 5 Basic Elements of a Marketing Plan
+## 1. Market Research
 
 Conducting market research can be one of the most tedious tasks at first, but it will pay dividends for years after. This part should take up the biggest chunk of your planning – sure, too much research and not enough action can be harmful, but in most cases, we see people not going in-depth enough and ending up paying expensive marketing companies to do their homework for them.
 
-### 1. Market Research
 
 1. Market Size
 
@@ -36,7 +35,7 @@ Conducting market research can be one of the most tedious tasks at first, but it
    
    How does your product/service compare to others in the market? What are your main selling points? How does your product/service stand out? Are there any smaller things you could tweak to make a fast improvement?
 
-### 2. Target Market
+## 2. Target Market
 
 Knowing your target market is a crucial element for any sort of marketing activity – otherwise, you could end up taking shots in the dark.
 
@@ -52,10 +51,10 @@ When identifying your target market look at the following data:
 
 We recommend reading this article for more information on target market identification.
 
-### 3. Goals
+## 3. Goals
 Setting the right goals will help you to define the most appropriate marketing strategies and budgets. When setting your marketing goals, you should first consider analyzing the goals of your business/organization.
 
-#### Business Goals
+### Business Goals
 
 Goals give businesses directions and ambitions – without them, it would be difficult to grow and expand.
 
@@ -63,13 +62,13 @@ Business goals could be, for example, increasing sales revenue, expanding the cu
 
 Knowing your business goals will help you to set appropriate marketing goals that will directly support your business.
 
-#### Marketing Goals
+### Marketing Goals
 
 Good marketing goals have one thing in common – they are measurable. Because of the nature of marketing, it is quite often difficult to objectively measure the impact of your efforts. Digital marketing has made goal tracking much more measurable then it was in the past, but often our marketing activities will still have effects we cannot see.
 
 Your marketing goals could be increasing brand awareness, increasing the number of leads that your sales team gets, increasing in-store traffic and so on.
 
-### 4. Marketing Strategy
+## 4. Marketing Strategy
 
 After doing your market research, identifying your target audience and setting your marketing goals the next important element is to develop a marketing strategy. Select what marketing or promotional strategies you want to work on.
 
@@ -94,7 +93,7 @@ Here are some other ideas and strategies that might help to get your imagination
 
 - Unconventional methods could also bring a lot of attention. These could be doing product demonstrations in unusual places, doing a flash mob in the streets, we’ve even seen companies put stickers in public places to get more attention.
 
-### 5. Budget
+## 5. Budget
 
 One of the most important elements in your marketing plan is going to be your budget. The size of your marketing activities is going to be determined by the budget you can spend on different campaigns.
 
