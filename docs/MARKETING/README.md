@@ -125,4 +125,24 @@ One of the most important elements in your marketing plan is going to be your bu
 
 What things can you do by yourself – what services do you need to outsource? Which strategies are looking more promising?
 
-When setting your budget, also think about what has worked for you in the past– if possible expand on that.
+When setting your budget, also think about what has worked for you in the past – if possible expand on that.
+
+## Conclusion
+
+...
+
+> Here are some questions to ask in evaluating a marketing plan.
+> 
+> 1. Is the plan simple and succinct? Is it easy to understand and act on? Does it communicate its content clearly and practically? Is it not unnecessarily
+long?
+> 
+> 2. Is the plan complete? Does it include all the necessary elements? Does it have the right breadth and depth? Achieving the right balance between
+­completeness and lots of detail and simplicity and clear focus is often the key to a well-constructed marketing plan.
+> 
+> 3. Is the plan specific? Are its objectives concrete and measurable? Does it provide a clear course of action? Does it include specific activities, each with
+ specific dates of completion, specific persons responsible, and specific budgets?
+>
+> 4. Is the plan realistic? Are the sales goals, expense budgets, and milestone dates realistic? Has a frank and honest self-critique been conducted to raise
+possible concerns and objections? [^1]
+
+[^1]: Marketing Memo: Marketing Plan Criteria on page 77, Chapter 2: Developing Marketing Strategies and Plans. Marketing Management, 15<sup>th</sup> Edition by Philip Kotler and Kevin Lane Keller.

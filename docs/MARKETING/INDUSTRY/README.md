@@ -34,6 +34,8 @@ The stock market industry involves a wide range of participants who play differe
 
 These are just a few of the many players in the stock market industry, and the landscape can vary based on the country and specific market.
 
+<image src="/.attachments/chatgpt-logo.png" alt="Chat GPT Logo" width="16" height="16" />
+
 ## Jurisdictions
 
 See specific players for,
