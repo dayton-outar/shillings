@@ -1,4 +1,4 @@
-# Stack Market Industry
+# Stock Market Industry
 
 ## Players in the Stock Market
 
