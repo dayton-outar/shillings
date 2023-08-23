@@ -92,3 +92,9 @@ These questions attempts to get into the deeper reasons that customers choose a 
 ## Collaborate
 
 > Management guru Peter Drucker maintains that the most important shift in business today is from “ownership” to “partnership,” and from “individual tasks” to “collaboration.” The successful company is not the one with the most brains, he suggests, but the most brains acting in concert. Brand managers and communication firms are responding to this new challenge in a number of interesting ways.
+>
+> ...
+>
+> The third model, the integrated marketing team, bears little resemblance to the traditional out-sourcing model. It sees branding as a continuous network activity that needs to be controlled from within the company. In this model, best-of-breed specialist firms are selected to work alongside internal marketing people on a virtual “superteam,” which is then “coached” by the company’s design manager. The advantages of this model are the ability to unify a message across media, the freedom to work with best-of-breed specialists, plus internal stewardship. This last benefit is important, because it means that brand knowledge can accrue to the company, instead of vanishing through a revolving door with the last firm to work on it. A drawback of an integrated marketing team is that it requires a strong internal team to run it.
+
+![The Integrated Marketing Team](/.attachments/imt2art.jpg)
