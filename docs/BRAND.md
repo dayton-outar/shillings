@@ -1,5 +1,7 @@
 # Notes from The Brand Gap
 
+© 2006 BY MARTY NEUMEIER
+
 ## Introduction
 
 > To manage a brand is to manage something much less tangible—an aura, an invisible layer of meaning that surrounds the product.
@@ -98,3 +100,17 @@ These questions attempts to get into the deeper reasons that customers choose a 
 > The third model, the integrated marketing team, bears little resemblance to the traditional out-sourcing model. It sees branding as a continuous network activity that needs to be controlled from within the company. In this model, best-of-breed specialist firms are selected to work alongside internal marketing people on a virtual “superteam,” which is then “coached” by the company’s design manager. The advantages of this model are the ability to unify a message across media, the freedom to work with best-of-breed specialists, plus internal stewardship. This last benefit is important, because it means that brand knowledge can accrue to the company, instead of vanishing through a revolving door with the last firm to work on it. A drawback of an integrated marketing team is that it requires a strong internal team to run it.
 
 ![The Integrated Marketing Team](/.attachments/imt2art.jpg)
+
+> The network organization isn’t new; a successful model of unbundling has existed for years. It’s called Hollywood.
+>
+> A half-century ago, the major Hollywood studios not only owned the soundstages and backlots necessary for their movies, but also the producers, directors, writers, actors, cinematographers, musicians, PR specialists, and distributors. Some even built theater chains for the exclusive use of their own properties. As the dream machines cranked out hundreds of look-alike movies to feed their growing overhead, movie-making began to slide from craft to commodity. The independents soon learned how to end-run the mega-studios by producing high-quality “little” films and low-budget B-movies.
+>
+> What happened next? The big studios learned from the small ones, and began unbundling their vertically integrated companies. By switching to a network model, the studios could avail themselves of the best talent for each project, thereby creating unique products and shedding unnecessary overhead. In reversing the trend toward commoditization, they encouraged the growth of an artisan community, not unlike those that grew up around the cathedrals of Europe. Like the cathedral-builders, Hollywood specialists don’t see themselves as technicians, but as craftspeople working in a creative network.
+>
+> ...
+>
+> Thanks to the Hollywood model, design managers are now learning how to assemble top-notch teams of specialists, inspire them to work together productively—even joyfully—then disband them when the project’s over, only to reassemble them in a different configuration for the next project. The lesson hasn’t been lost on other industries. Soon every knowledge-based business will adopt some version of the Hollywood model, and, years from now, many will undoubtedly agree with Noel Coward’s statement that “work was more fun than fun.”
+
+Take note of the movie credits in the image below that gives the Aha! about the Hollywood approach.
+
+![Movie credits showing specialist involved](/.attachments/movie_credits4.jpg)

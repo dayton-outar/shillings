@@ -58,11 +58,11 @@ These days they seem to be just called _Receivables_.
 
 Take a look at the balance sheet below.
 
-![Balance Sheet of Biwheels Company](.attachments/bi-wheel-balance-sheet.png)
+![Balance Sheet of Biwheels Company](/.attachments/bi-wheel-balance-sheet.png)
 
 Take note of the income statement made from the balance sheet above.
 
-![Income Statement of Biwheels Company](.attachments/bi-wheel-income-statement.png)
+![Income Statement of Biwheels Company](/.attachments/bi-wheel-income-statement.png)
 
 > You can think of income statements as filling in the gaps between balance sheets. The balance sheets show the financial position of the company at discrete points in time, and the income statements explain the changes that have taken place between those points.
 >
@@ -175,13 +175,13 @@ balances can decline despite positive net income and vice versa.
 >
 > After raising capital, managers must decide how to invest the capital. These investing decisions include the choices to (1) acquire or dispose of plant, property, equipment, and other long-term productive assets, and (2) provide or collect cash as a lender or as an owner of securities. The statement of cash flows covers the results of investing decisions in a section labeled **cash flows from investing activities**. **Investing activities** are transactions that acquire or dispose of long-lived assets or acquire or dispose of securities held for investment purposes that are not cash equivalents. Thus, purchasing property or equipment is an investing activity, but purchasing inventory or prepaying rent are operating activities. Why? Because a company will generally use property and equipment for multiple years, whereas it will use inventory and prepaid rent within one year.
 
-![Typical Operating, Investing, and Financing Activities](.attachments/cash-flow-sections-structure.png)
+![Typical Operating, Investing, and Financing Activities](/.attachments/cash-flow-sections-structure.png)
 
 > _There is one more item you will see on the cash flow statements of companies with international operations—the effect of exchange rates on cash. Companies show this effect after the operating, investing, and financing activities. The effect of exchange rates is not a cash flow, but it appears on the cash flow statement because it is necessary for the reconciliation of cash balances at the beginning and end of the period._
 
 #### Cash Flows from Investing Activities
 
-![Analysis of Effects of Financing and Investing Transactions on Cash](.attachments/analysis-effects-financing-investing.png)
+![Analysis of Effects of Financing and Investing Transactions on Cash](/.attachments/analysis-effects-financing-investing.png)
 
 > ... selling investment securities (except for securities that are cash equivalents) increases cash (+) and making a loan decreases cash (–). Notice that buying or selling securities that are cash equivalents does not change cash. It simply turns one type of cash into another type of cash.
 
@@ -189,7 +189,7 @@ balances can decline despite positive net income and vice versa.
 
 > Under current U.S. GAAP, companies can use either of two approaches to compute cash flows from operating activities (or cash flows from operations). The **direct method** subtracts operating cash disbursements from operating cash collections to arrive at net cash flow from operations. The **indirect method** starts with the accrual net income from the income statement and adjusts it to reflect only those income statement activities that involve actual cash receipts and cash disbursements. Both methods produce the same amount of net cash provided by (or used for) operating activities. The only difference is the format of the operating section of the cash flow statement.
 
-![Analysis of Effects of Operating Transactions on Cash](.attachments/analysis-effects-operations.png)
+![Analysis of Effects of Operating Transactions on Cash](/.attachments/analysis-effects-operations.png)
 
 > These cash flows are associated with revenues and expenses on the income statement. Notice that recording revenue from the sales of goods or services does not necessarily increase cash. Only sales for cash immediately increase cash. There is no cash effect of credit sales until the customer actually pays. Biwheels must collect its accounts receivable to generate any cash. Similarly, cash received for services to be performed in the future is an operating cash inflow recognized in the statement of cash flows even though a company may not earn and record the revenue until a later period.
 > 
