@@ -268,3 +268,4 @@ Despite these limitations, sentiment analysis can be a valuable tool for investo
 ## References
 
 1. Predictably Irrational by Dan Ariely
+2. [How the News Affects Stock Prices](https://www.investopedia.com/ask/answers/155.asp) by Brian Beers

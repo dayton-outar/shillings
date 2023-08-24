@@ -112,6 +112,8 @@ _I noticed that ChatGPT did not list the following as brokers,_
 
 1. **[GK Capital Management Limited](https://gk-capital.com/):** A subsidiary of GraceKennedy Financial Group offers brokerage services for trading on the JSE.
 
+See [Brokers/Member Dealers](https://www.jamstockex.com/investors/brokers/) for more Stock Brokerage Firms that could be working within the industry.
+
 ## Communities and Thought Leaders
 
 ### Communities
