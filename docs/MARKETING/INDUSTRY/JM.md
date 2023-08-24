@@ -132,7 +132,7 @@ As of August 2023, there are at least 5 thought leaders (or social media influen
 
 3. **[Jermaine McDonald](https://twitter.com/jerrymackd):** Jermaine McDonald is the founder of the [Learn, Grow, Invest Club](https://learngrowinvestclub.com/) and educates prospects on personal finance and the Jamaican stock market on his YouTube channel, [Learn Grow Invest](https://www.youtube.com/c/LearnGrowInvestClub).
 
-4. **[Odetta Rockhead-Kerr]:** Odetta Rockhead-Kerr personal finance advice and tips on making money on her YouTube channel, [Odetta Rockhead-Kerr](https://www.youtube.com/@RockstarAcademy)
+4. **[Odetta Rockhead-Kerr](https://www.instagram.com/odettarockheadkerr/?hl=en):** Odetta Rockhead-Kerr personal finance advice and tips on making money on her YouTube channel, [Odetta Rockhead-Kerr](https://www.youtube.com/@RockstarAcademy)
 
 5. **Anna Nova:** Anna Novia offers personal financial advice on her YouTube channel, [Anna Novia](https://www.youtube.com/@annanovia94)
 

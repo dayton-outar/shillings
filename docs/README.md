@@ -74,6 +74,7 @@ Shillings seeks to deliver structured information by making use of visualization
 >
 > Domain Authority builds over time. It is based on a scale that measures the likelihood of a website ranking on Google’s SERP. Today it is still considered one of the many metrics executives, heads of marketing, and SEO professionals should pay attention to. But when looking and analyzing, the playing field should be equal. Compare your site and DA to those of similar value.[^1]
 
+See [Domain Authority: What is Domain Authority and why it is important?](https://moz.com/learn/seo/domain-authority).
 
 |     | Founded | Domain Authority | Linking Domains | Inbound Links | Ranking Keywords |
 |:--- |:--- | ---:| ---:| ---:| ---:|
