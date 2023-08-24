@@ -1,6 +1,6 @@
 # Notes from The Brand Gap
 
-© 2006 BY MARTY NEUMEIER
+© 2006 By Marty Neumeier
 
 ## Introduction
 
@@ -116,3 +116,43 @@ Take note of the movie credits in the image below that gives the Aha! about the 
 ![Movie credits showing specialist involved](/.attachments/movie_credits4.jpg)
 
 ## Innovate
+
+> Innovation requires creativity, and creativity gives many business people a twitch. Anything new, by definition, is untried, and therefore unsafe. Yet when you ask executives where they expect to find their most sustainable competitive advantage, what do they answer? Innovation. Because the truth is, innovation lies at the heart of both better design and better business. It magnifies drive inside the organization. it slashes the costs of inefficiency, duplication, and corporate ennui. It confers the ability to produce uncommon, yet practical, responses to real problems.
+>
+> ...
+>
+> Creativity, however, demands the opposite. It requires an unnatural act. To achieve originality we need to abandon the comforts of habit, reason, and the approval of our peers, and strike out in new directions. In the world of branding, creativity doesn’t require reinventing the wheel, but simply thinking in fresh ways. It requires looking for what industrial designer Raymond Loewy called MAYA—the Most Advanced Yet Acceptable solution. Creative professionals excel at MAYA. While market researchers describe how the world is, creative people describe how it could be. Their thinking is often so fresh that they zag even when they should zig. But without fresh thinking, there’s no chance of magic.
+>
+> ...
+>
+> ... Corporate America has a similar saying: “Don’t rock the boat.” No wonder people are afraid of signing off on new ideas—by keeping your head down you’re more likely to keep it attached. Then where will innovation come from? Most likely from the outside, or from people inside who think outside.
+>
+> ...
+>
+> ... But Smuckers was a good name from day one—distinctive, short, spellable, pronounceable, likable, portable, and protectable. And while the company presents it as slightly silly, the name benefits strongly from onomatopoeia. “Smuckers” sounds like smacking lips, the preverbal testament to a yummy jam.
+>
+> ...
+>
+> Generally speaking, high-imagery names are more memorable than low-imagery names. Names constructed from Greek and Latin root words tend to be low-imagery names. Accenture and Innoveda come to mind. Names that use Anglo-Saxon words, or the names of people, tend to be high-imagery names, producing vivid mental pictures that aid recall. Think of Apple Computer and Betty Crocker. Some of most powerful names are those that combine well with a visual treatment to create a memorable brand icon.
+
+> **The 7 Criteria For A Good Name:**
+>
+> 1. **Distinctiveness.** Does it stand out from the crowd, especially from other names in its class? Does it separate well from ordinary text and speech? The best brand names have the “presence” of a proper noun.
+>
+> 2. **Brevity.** Is it short enough to be easily recalled and used? Will it resist being reduced to a nickname? Long multi-word names will be quickly shortened to non-communicating initials.
+>
+> 3. **Appropriateness.** Is there a reasonable fit with the business purpose of the entity? If it would work just as well—or better—for another entity, keep looking
+>
+> 4. **Easy Spelling And Pronunciation.** Will most people be able to spell the name after hearing it spoken? Will they be able to pronounce it after seeing it written? A name shouldn’t into a spelling test or make people feel ignorant.
+>
+> 5. **Likability.** Will people enjoy using it? Names that are intellectually stimulating, or provide a good “mouth feel,” have a headstart over those that don’t.
+>
+> 6. **Extendibility.** Does it have “legs”? Does it suggest a visual interpretation or lend itself to a number of creative executions? Great names provide endless opportunities for brandplay.
+>
+> 7. **Protectability.** Can it be trademarked? Is it available for web use? While many names can be trademarked, some names are more defensible than others, making them safer and more valuable in the long run.
+
+> Logos are dead! Long live icons and avatars! Why? Because logos as we know them—logo-types, monograms, abstract symbols, and other two-dimensional trademarks—are products of the printing press and mass communication. They evolved as a way to identify brands rather than to differentiate them. Today marketers realize that branding is not about stamping a trademark on anything that moves. It’s about managing relationships between the company and its constituents, conducting a conversation among many people over many channels. We still have the printing press at our beck and call, but we also have the Internet, TV, telemarketing, live events, and other media to work with. Icons and avatars respond to this new reality by jumping off the printed page and interacting with people wherever they are.
+>
+> Aristotle was a born brander. He believed that “perception starts with the eye,” and that “the greatest thing by far is to be a master of metaphor.”
+
+At this point, I was thinking that the Jamaican folklore around a visiting bee was symbolic of a coming fortune. In China, the bee symbolizes ambition and the success that comes from hard work. Could this be the avatar for Shillings?
