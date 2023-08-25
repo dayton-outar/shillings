@@ -156,3 +156,42 @@ Take note of the movie credits in the image below that gives the Aha! about the 
 > Aristotle was a born brander. He believed that “perception starts with the eye,” and that “the greatest thing by far is to be a master of metaphor.”
 
 At this point, I was thinking that the Jamaican folklore around a visiting bee was symbolic of a coming fortune. In China, the bee symbolizes ambition and the success that comes from hard work. Could this be the avatar for Shillings?
+
+> While not all brands are products and not all products are sold at retail, a book on brand would be remiss to ignore the importance of packaging. For many products, the package is the branding. It’s also the last and best chance to influence a prospect this side of the checkout counter.
+>
+> In some retail environments, such as the supermarket, it’s possible for a package to reach 100% of people shopping in that category. For several seconds, or even a few precious minutes, the shopper is completely focused on the differences among brands. Previous intentions to buy one product over another are suddenly put aside and memories of past advertising are shoved into the background as the competing packages go “mano a mano” for the shopper’s attention. This is known as a branding moment.
+> 
+> Retail brand managers funnel a large portion of their marketing budgets into package design, because the return on investment is likely to be higher with packaging than with advertising, promotion, public relations, or other spending options. For many retail products, packaging not only makes the final sale, it strikes a significant blow for the brand, since experience with the product is often the best foundation for customer loyalty.
+>
+> Marketers know this, but they’re not sure what makes it work. How, exactly, does one package beat another at the point of sale? How much of the battle is won by logic and how much by magic? Is it science or art? As you might guess, it’s both. But since most marketers favor left-brain thinking, most packages end up heavy on facts and light on emotion, the ingredient customers want most. Instead, customers are greeted with features, benefits, and what one shopper I interviewed called “scientific mumbo jumbo.”
+>
+> Before you can create emotion with a package, however, you need to understand the natural reading sequence of your category. It so happens that customers process messages in a certain order, depending on the product, and messages presented out of order go unheeded.
+>
+> Here’s an example of a typical reading sequence: 
+> 1. the shopper notices the package on the shelf—the result of good colors, strong contrast, an arresting photo, bold typography, or other technique; 
+> 2. the shopper mentally asks “What is it?,” bringing the product name and category into play; 
+> 3. then “Why should I care?,” which is best answered with a very brief why-to-buy message; 
+> 4. which in turn elicits a desire for more information to define and support the why-to-buy message; 
+> 5. the shopper is finally ready for the “mumbo-jumbo” necessary to make a decision—features, price, compatibilities, guarantees, awards, or whatever the category dictates.
+>
+> Uncultivated websites shove a tangle of unruly data in your face, then expect YOU to sort it out: a typical home page tries to squeeze an average of 25 pieces of information, some of it animated, into an area the size of a handkerchief. The closest relative of today’s web page is a newspaper page, yet most home pages make newspaper pages seem easy to navigate. The concept of a natural reading sequence has yet to reach the bastion of bad taste we fondly call the web.
+>
+> ... But what exactly are the invisible chains keeping web design from achieving its full potential? It boils down to three: technophobia, turfismo, and featuritis.
+>
+> _TECHNOPHOBIA_, the fear of new technology, keeps a lot of skilled designers out of web design. They’re mostly afraid the technical demands of the medium will engulf their projects, leaving little time to work on the aesthetics. The result is that most web design, thus deprived of disciplined designers, still falls below the aesthetic level considered standard for catalogs, annual reports, and books.
+>
+> _TURFISMO_, the second problem, is the behind-the-screen politicking that transforms the home page into a patchwork of tiny fiefdoms. You can see exactly which departments have the power and which don’t, as turfy managers fight for space on the company marquee. Simplify the home page? Sure, but not at my expense!
+>
+> Finally, _FEATURITIS_, an infectious desire for MORE, afflicts everyone from the CEO to the programmer. The tendency to add features, articles, graphics, animations, links, buttons, bells, and whistles comes naturally to most people. The ability to subtract features is the rare gift of the true communicator. An oft-heard excuse for cluttered pages is that most people hate clicking, and prefer to see all their choices on one page. The truth is, most people LIKE clicking—they just hate waiting. Eternal waiting, along with confusion and clutter, are the real enemies of communication. Put your website on a diet. You’ll find that subtraction, not addition, is the formula for clear communication.
+
+## Validate
+
+> The standard model for communication has three components: sender, message, and receiver. The sender (your company) develops a message (web page, ad, brochure, direct mail piece, etc.) and sends it to a receiver (your target audience). Communication complete.
+>
+> What this model fails to recognize is that real–world communication is a dialog. I say something to you, you say something back. You may say it only to yourself, like when you read a magazine ad, but your brain is nevertheless an indispensible component of the total communication system. You respond by buying the advertised brand, or by mentally storing the information for future use, or by simply turning the page. With the standard communication model, the sender doesn’t know—and seemingly doesn’t care—how the receiver actually responded.
+
+> The standard model is an antique. Today we can no longer afford to close our eyes, catapult a message into the ether, cross our fingers, and hope that it hits the target. Companies need feedback. Feedback turns communication into something more like a theatre performance than a magazine. If we’re dying on stage, the audience lets us know. The feedback is immediate and unambiguous, which lets us make appropriate changes before the next performance.
+
+![New Communication Model](/.attachments/103fig01.jpg)
+
+> When we solicit feedback from customers, the communication model has a fourth component. The sender creates a message, sends it to a receiver, and, instead of stopping there, the communication continues as the receiver sends a message back. With every turn around the feedback loop, the communication gets stronger and more focused. The new model is a blueprint for revolution. It transforms marketing communication into a contact sport, and spectators into full participants.
