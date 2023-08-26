@@ -154,6 +154,7 @@ Here's how they stack up,
 ## Industry Forces
 
 | | Main Questions | |
+|:--- |:--- | |
 | <p><strong>Competitors</strong></p><p>Identifies incumbent competitors and their relative strengths</p> | <ul></ul> | |
 | <p><strong>New Entrants</strong></p><p>Identifies new, insurgent players and determines whether they compete with a business model different from yours</p> | <ul></ul> | |
 | <p><strong>Substitute Products and Services</strong></p><p>Describes potential substitutes for your offers - including those from other markets and industries</p> | <ul></ul> | |
