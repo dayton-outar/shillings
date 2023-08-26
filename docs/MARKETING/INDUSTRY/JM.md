@@ -150,3 +150,12 @@ Here's how they stack up,
 | Odetta Rockhead-Kerr | 600K subscribers | 373 videos | making money |
 | Anna Novia | 27K subscribers | 102 videos | travel, self-development, making money |
 | Demetress Fairman | 12.6K subscribers | 183 videos | business, making money, personal finance |
+
+## Industry Forces
+
+| | Main Questions | |
+| <p><strong>Competitors</strong></p><p>Identifies incumbent competitors and their relative strengths</p> | <ul></ul> | |
+| <p><strong>New Entrants</strong></p><p>Identifies new, insurgent players and determines whether they compete with a business model different from yours</p> | <ul></ul> | |
+| <p><strong>Substitute Products and Services</strong></p><p>Describes potential substitutes for your offers - including those from other markets and industries</p> | <ul></ul> | |
+| <p><strong>Suppliers and Other Value Chain Actors</strong></p><p>Describes the key value chain incumbents in your market and spots new, emerging players</p> | <ul></ul> | |
+| <p><strong>Stakeholders</strong></p><p>Specifies which actors may influence your organization and business model</p> | <ul></ul> | |
