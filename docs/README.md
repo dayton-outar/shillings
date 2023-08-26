@@ -21,6 +21,17 @@ Apart from providing analysis on companies, this project seeks to enable custome
 
 ![Shillings Business Canvas](/.attachments/shillings.business.canvas-2.png)
 
+
+<img src="/.attachments/strategy.canvas.png" usemap="#image-map">
+
+<map name="image-map">
+    <area target="_blank" alt="Business Canvas" title="Business Canvas" href="#" coords="439,337,670,463" shape="rect">
+    <area target="_blank" alt="Industry Forces" title="Industry Forces" href="./MARKETING/INDUSTRY/" coords="319,398,110" shape="circle">
+    <area target="_blank" alt="Economic Forces" title="Economic Forces" href="./MARKETING/ECONOMY/" coords="558,587,108" shape="circle">
+    <area target="_blank" alt="Market Forces" title="Market Forces" href="./MARKETING/MARKET/" coords="792,392,110" shape="circle">
+    <area target="_blank" alt="Key Trends" title="Key Trends" href="./MARKETING/TRENDS/" coords="554,217,110" shape="circle">
+</map>
+
 ## Business Analysis: Marketing Strategy To-Do
 
 - Build Buyer Persona
