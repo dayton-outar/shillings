@@ -53,7 +53,7 @@ namespace Harpoon
         [UseSorting]
         public IQueryable<StockIndex> GetStockIndices([ScopedService]StocksQuery sq) => sq.StockIndices;
 
-        [Authorize]
+        [Authorize(Roles = new [] { "administrator" })]
         [UseDbContext(typeof(StocksQuery))]
         [UsePaging]
         [UseProjection]

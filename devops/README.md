@@ -164,6 +164,20 @@ To copy a file from pod to local machine,
 kubectl cp <pod-name>:<fully-qualified-file-name> /<path-to-your-file>/<file-name> -c <container-name>
 ```
 
+## Docker Commands on Shared CPU
+
+To run the scraper,
+
+```bash
+docker run --name root-scraper -itd -e O8DBHOST=db -e MSSQLPWD='[Password]' --network=root_default krisyslimited/reader:1.0
+```
+To run the api,
+
+```bash
+docker run -d --name root-api -p 5000:5000 -e ASPNETCORE_URLS=http://+:5000 -e HARPOON_DB_HST=db -e HARPOON_DB_PWD='[Password]' --network=root_default krisyslimited/harpoon:1.5
+```
+
+
 Do I need [Fluentd](https://docs.fluentd.org/)?
 
 ## Further Reading

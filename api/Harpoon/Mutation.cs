@@ -236,7 +236,7 @@ namespace Harpoon
 
         #region Manage Companies
 
-        [Authorize]
+        [Authorize(Roles = new [] { "administrator" })]
         [UseDbContext(typeof(StocksQuery))]
         public Company CreateCompany([ScopedService]StocksQuery sq, Company company, HotChocolate.Types.IFile file)
         {
@@ -272,7 +272,7 @@ namespace Harpoon
             return company;
         }
 
-        [Authorize]
+        [Authorize(Roles = new [] { "administrator" })]
         [UseDbContext(typeof(StocksQuery))]
         public Company UpdateCompany([ScopedService]StocksQuery sq, Company company, HotChocolate.Types.IFile file)
         {
@@ -336,7 +336,7 @@ namespace Harpoon
             return company;
         }
 
-        [Authorize]
+        [Authorize(Roles = new [] { "administrator" })]
         [UseDbContext(typeof(StocksQuery))]
         public bool DeleteCompany([ScopedService]StocksQuery sq, string companyCode)
         {
