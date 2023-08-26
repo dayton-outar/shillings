@@ -19,7 +19,7 @@ Apart from providing analysis on companies, this project seeks to enable custome
 
 [Wiki: List of Stock Markets](https://en.wikipedia.org/wiki/List_of_stock_exchanges)
 
-![Shillings Business Canvas](/.attachments/shillings.business.canvas.png)
+![Shillings Business Canvas](/.attachments/shillings.business.canvas-2.png)
 
 ## Business Analysis: Marketing Strategy To-Do
 
