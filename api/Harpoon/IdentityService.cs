@@ -27,6 +27,7 @@ public class IdentityService
 
         if (roles.Count > 0)
         {
+            // TODO: This token is not authenticating when used in Authorization header
             return this.GenerateAccessToken(email, Guid.NewGuid().ToString(), roles.ToArray());
         }
 
