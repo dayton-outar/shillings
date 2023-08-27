@@ -2,7 +2,7 @@
 
 | | Main Questions | |
 |:--- |:--- |:--- |
-| <p><strong>Competitors</strong></p><p>Identifies incumbent competitors and their relative strengths</p> | <ul><li>Who are our competitors?</li><li>Who are the dominant players?</li><li>What are their competitive advantagees or disadvantages? (Describe their main offers)</li><li>Which <i>customer segments</i> are they focusing on?</li><li>What is their <i>cost structure</i>?</li><li>How much influence do they exert on our <i>customer segments</i>, <i>revenue streams</i>, and margins?</li></ul> | <ul><li>See the [competitors](#competitors). Main competitors: JTrader Pro and Simply Wall Street.</li><li></li><li></li></ul> |
+| <p><strong>Competitors</strong></p><p>Identifies incumbent competitors and their relative strengths</p> | <ul><li>Who are our competitors?</li><li>Who are the dominant players?</li><li>What are their competitive advantages or disadvantages? (Describe their main offers)</li><li>Which <i>customer segments</i> are they focusing on?</li><li>What is their <i>cost structure</i>?</li><li>How much influence do they exert on our <i>customer segments</i>, <i>revenue streams</i>, and margins?</li></ul> | <ul><li>See [competitors](#competitors).</li><li>Main competitors: JTrader Pro and Simply Wall Street.</li><li>See [competitive analysis](#competitive-analysis).</li><li>Most competitors are focused on investors/traders including retail traders.</li><li>_Don't know their cost structure yet_</li><li>Some players only providing analysis tools have a significant following</li></ul> |
 | <p><strong>New Entrants</strong></p><p>Identifies new, insurgent players and determines whether they compete with a business model different from yours</p> | <ul><li>Who are the new entrants in your market?</li><li>How are they different?</li><li>What competitive advantage or disadvantages do they have?</li><li>Which barriers must they overcome?</li><li>What are their <i>value propositions</i>?</li><li>Which <i>customer segments</i> are they focused on?</li><li>What is their <i>cost structure</i>?</li><li>To what extent do they influence your <i>customer segments</i>, <i>revenue streams</i>, and margins?</li></ul> | |
 | <p><strong>Substitute Products and Services</strong></p><p>Describes potential substitutes for your offers - including those from other markets and industries</p> | <ul><li>Which products or services could replace ours?</li><li>How much do they cost compared to ours?</li><li>How easy it is for customers to switch to these substitutes?</li><li>What business model traditions do these substitute products stem from (e.g. high-speed trains versus airplanes, mobile phones versus cameras, Skype versus long-distance telephone companies)?</li></ul> | |
 | <p><strong>Suppliers and Other Value Chain Actors</strong></p><p>Describes the key value chain incumbents in your market and spots new, emerging players</p> | <ul><li>Who are the key players in your industry value chain?</li><li>To what extent does your business model depend on other players?</li><li>Are peripheral players emerging?</li><li>Which are most profitable?</li></ul> | |
@@ -210,3 +210,17 @@ Also, see mobile apps below,
 | dataslist.com | 9 | 46 | 38% |
 | loginoniq.com | 6 | 58 | 8% |
 | ... | | | |
+
+### Competitive Analysis
+
+#### MyMoneyJA
+
+![MyMoneyJA Offers and Price Plans](/.attachments/mymoneyja-price-plans.png)
+
+#### MoneyMax 101
+
+![MoneyMax 101 Offers and Price Plans](/.attachments/moneymax101-price-plans.png)
+
+#### Simply Wall Street
+
+![Simply Wall Street Offers and Price Plans](/.attachments/simplywall.st-price-plans.png)
