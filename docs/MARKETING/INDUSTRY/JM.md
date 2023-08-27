@@ -1,4 +1,4 @@
-# Jamaica's Stock Market
+# Jamaica's Stock Market Industry
 
 | | Main Questions | Jamaica's Landscape |
 |:--- |:--- |:--- |

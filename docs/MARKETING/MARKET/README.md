@@ -46,3 +46,10 @@
       - Understand financial reports
       - Understand financial ratios
       - Understands how to do intrinsic valuations
+
+
+## Jurisdictions
+
+See market details for,
+
+ - [Jamaica](./JM.md)
