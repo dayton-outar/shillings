@@ -1,6 +1,16 @@
 # Jamaica's Stock Market
 
-## Market Makers
+| | Main Questions | |
+|:--- |:--- |:--- |
+| <p><strong>Competitors</strong></p><p>Identifies incumbent competitors and their relative strengths</p> | <ul><li>Who are our competitors?</li><li>Who are the dominant players?</li><li>What are their competitive advantagees or disadvantages? (Describe their main offers)</li><li>Which <i>customer segments</i> are they focusing on?</li><li>What is their <i>cost structure</i>?</li><li>How much influence do they exert on our <i>customer segments</i>, <i>revenue streams</i>, and margins?</li></ul> | <ul><li>See the [competitors](#competitors). Main competitors: JTrader Pro and Simply Wall Street.</li><li></li><li></li></ul> |
+| <p><strong>New Entrants</strong></p><p>Identifies new, insurgent players and determines whether they compete with a business model different from yours</p> | <ul><li>Who are the new entrants in your market?</li><li>How are they different?</li><li>What competitive advantage or disadvantages do they have?</li><li>Which barriers must they overcome?</li><li>What are their <i>value propositions</i>?</li><li>Which <i>customer segments</i> are they focused on?</li><li>What is their <i>cost structure</i>?</li><li>To what extent do they influence your <i>customer segments</i>, <i>revenue streams</i>, and margins?</li></ul> | |
+| <p><strong>Substitute Products and Services</strong></p><p>Describes potential substitutes for your offers - including those from other markets and industries</p> | <ul><li>Which products or services could replace ours?</li><li>How much do they cost compared to ours?</li><li>How easy it is for customers to switch to these substitutes?</li><li>What business model traditions do these substitute products stem from (e.g. high-speed trains versus airplanes, mobile phones versus cameras, Skype versus long-distance telephone companies)?</li></ul> | |
+| <p><strong>Suppliers and Other Value Chain Actors</strong></p><p>Describes the key value chain incumbents in your market and spots new, emerging players</p> | <ul><li>Who are the key players in your industry value chain?</li><li>To what extent does your business model depend on other players?</li><li>Are peripheral players emerging?</li><li>Which are most profitable?</li></ul> | |
+| <p><strong>Stakeholders</strong></p><p>Specifies which actors may influence your organization and business model</p> | <ul><li>Which stakeholders might influence your business model?</li><li>How influential are shareholders? Workers? The government? Lobbyists?</li></ul> | |
+
+## Major Players
+
+### Market Makers
 
 The specific market makers in Jamaica's stock market might have changed or evolved. In Jamaica's stock market context, market makers are entities that provide liquidity and facilitate trading by offering to buy and sell specific securities at quoted bid and ask prices. They play a crucial role in ensuring there is a continuous market for securities.
 
@@ -14,13 +24,13 @@ At the time of my last update, some of the market makers operating in the Jamaic
 
 Please note that the information provided might have changed since my last update, and I recommend checking with the Jamaica Stock Exchange or reliable financial news sources for the most up-to-date information on market makers in Jamaica's stock market.
 
-## Clearing House
+### Clearing House
 
 As of my last update in September 2021, the Jamaica Central Securities Depository (JCSD) is the central clearing and settlement entity for the Jamaica Stock Exchange (JSE). The JCSD handles the clearing, settlement, and custody of securities traded on the JSE. It's responsible for ensuring that trades are settled, ownership is transferred, and the associated securities are properly accounted for.
 
 Please note that the information provided is based on the situation as of September 2021, and there might have been developments or changes since that time. I recommend checking with the Jamaica Stock Exchange or reliable financial sources for the most current information about clearinghouses for the JSE.
 
-## Market Data Providers
+### Market Data Providers
 
 As of my last update in September 2021, there are several market data providers that offer information and data related to Jamaica's stock market. These providers offer real-time and historical data on stock prices, trading volumes, indices, and other market-related information. Keep in mind that the market data landscape can change, so it's advisable to verify this information with current sources. Some of the market data providers in Jamaica's stock market might include:
 
@@ -40,7 +50,7 @@ As of my last update in September 2021, there are several market data providers 
 
 Please note that the availability of specific market data providers can change over time. It's recommended to directly check with the Jamaica Stock Exchange, financial news outlets, and relevant financial institutions for the most up-to-date and accurate information on market data providers for Jamaica's stock market.
 
-## Regulators
+### Regulators
 
 As of my last update in September 2021, the regulatory oversight of the Jamaican stock market is primarily carried out by the Financial Services Commission (FSC) and the Jamaica Stock Exchange (JSE). These organizations have roles in regulating and overseeing various aspects of the financial and securities markets in Jamaica.
 
@@ -50,7 +60,7 @@ As of my last update in September 2021, the regulatory oversight of the Jamaican
 
 Please note that regulatory landscapes can evolve, and there might have been changes or developments since my last update. It's recommended to verify this information with current sources, such as the Financial Services Commission and the Jamaica Stock Exchange, for the most accurate and up-to-date information about regulatory authorities in Jamaica's stock market.
 
-## Financial News Media Houses: Bloggers and Journalists
+### Financial News Media Houses: Bloggers and Journalists
 
 As of my last knowledge update in September 2021, several financial news media outlets provide coverage and news related to Jamaica's stock market and financial developments. Please note that the availability of sources can change over time, so it's a good idea to verify this information with current sources. Here are some financial news media houses that might deliver news on Jamaica's stock market:
 
@@ -80,7 +90,7 @@ Other minor players that deliver news and offer thought leadership on matters re
 
 3. **[Jamaica Stock Exchange Newsroom](https://www.jamstockex.com/newsroom/):** The Jamaica Stock Exchange provides a compilation of the major Company News, Corporate Actions, Upcoming AGM’s or EGM’s and the Bond Indices on a weekly basis.
 
-## Stock Brokerage Firms
+### Stock Brokerage Firms
 
 As of my last knowledge update in September 2021, there are several brokerage firms in Jamaica that facilitate buying and selling of securities on the Jamaica Stock Exchange (JSE). These firms act as intermediaries between investors and the stock market, executing trade orders on behalf of their clients. Please note that the brokerage landscape might have changed since then, so it's a good idea to verify the information with current sources. Here are some brokerage firms that were active in Jamaica's stock market:
 
@@ -114,9 +124,9 @@ _I noticed that ChatGPT did not list the following as brokers,_
 
 See [Brokers/Member Dealers](https://www.jamstockex.com/investors/brokers/) for more Stock Brokerage Firms that could be working within the industry.
 
-## Communities and Thought Leaders
+### Communities and Thought Leaders
 
-### Communities
+#### Communities
 
 As of August 2023, a few communities exist that focus on analysing Jamaica's public businesses and the Stock Market. Some communities include,
 
@@ -124,7 +134,7 @@ As of August 2023, a few communities exist that focus on analysing Jamaica's pub
 
 2. **[Learn, Grow and Invest](https://www.youtube.com/c/LearnGrowInvestClub):** Learn Grow Invest is an investment community founded on Biblical principles and built on Deuteronomy 8:18. The community was founded by the husband and wife team - Jermaine & Renate McDonald.
 
-### Thought Leaders
+#### Thought Leaders
 
 As of August 2023, there are at least 5 thought leaders (or social media influencers) that brings some focus on the Jamaican stock market,
 
@@ -151,12 +161,52 @@ Here's how they stack up,
 | Anna Novia | 27K subscribers | 102 videos | travel, self-development, making money |
 | Demetress Fairman | 12.6K subscribers | 183 videos | business, making money, personal finance |
 
-## Industry Forces
 
-| | Main Questions | |
-|:--- |:--- |:--- |
-| <p><strong>Competitors</strong></p><p>Identifies incumbent competitors and their relative strengths</p> | <ul><li>Who are our competitors?</li><li>Who are the dominant players?</li><li>What are their competitive advantagees or disadvantages? (Describe their main offers)</li><li>Which <i>customer segments</i> are they focusing on?</li><li>What is their <i>cost structure</i>?</li><li>How much influence do they exert on our <i>customer segments</i>, <i>revenue streams</i>, and margins?</li></ul> | |
-| <p><strong>New Entrants</strong></p><p>Identifies new, insurgent players and determines whether they compete with a business model different from yours</p> | <ul><li>Who are the new entrants in your market?</li><li>How are they different?</li><li>What competitive advantage or disadvantages do they have?</li><li>Which barriers must they overcome?</li><li>What are their <i>value propositions</i>?</li><li>Which <i>customer segments</i> are they focused on?</li><li>What is their <i>cost structure</i>?</li><li>To what extent do they influence your <i>customer segments</i>, <i>revenue streams</i>, and margins?</li></ul> | |
-| <p><strong>Substitute Products and Services</strong></p><p>Describes potential substitutes for your offers - including those from other markets and industries</p> | <ul><li>Which products or services could replace ours?</li><li>How much do they cost compared to ours?</li><li>How easy it is for customers to switch to these substitutes?</li><li>What business model traditions do these substitute products stem from (e.g. high-speed trains versus airplanes, mobile phones versus cameras, Skype versus long-distance telephone companies)?</li></ul> | |
-| <p><strong>Suppliers and Other Value Chain Actors</strong></p><p>Describes the key value chain incumbents in your market and spots new, emerging players</p> | <ul><li>Who are the key players in your industry value chain?</li><li>To what extent does your business model depend on other players?</li><li>Are peripheral players emerging?</li><li>Which are most profitable?</li></ul> | |
-| <p><strong>Stakeholders</strong></p><p>Specifies which actors may influence your organization and business model</p> | <ul><li>Which stakeholders might influence your business model?</li><li>How influential are shareholders? Workers? The government? Lobbyists?</li></ul> | |
+## Competitors
+
+![Domain Authority by Tier](/.attachments/domain-authority-by-tier.png)
+
+> What’s a good score? It depends. But a good DA is a HIGH DA.
+>
+> However, it depends on how long the domain and your business have existed. To give you a quick sense, websites that have been around a very long time, like Google and Apple, will have a high DA (95+).
+>
+> Conversely, startups with a new website will probably be near 10-20. It’s easier to move the needle when it’s lower than trying to move from 70 to 80 plus. On average, Domain Authority of 50 and above is good, with 60-70 very good and above 80 excellent.
+>
+> Domain Authority builds over time. It is based on a scale that measures the likelihood of a website ranking on Google’s SERP. Today it is still considered one of the many metrics executives, heads of marketing, and SEO professionals should pay attention to. But when looking and analyzing, the playing field should be equal. Compare your site and DA to those of similar value.[^1]
+
+See [Domain Authority: What is Domain Authority and why it is important?](https://moz.com/learn/seo/domain-authority).
+
+|     | Founded | Domain Authority | Linking Domains | Inbound Links | Ranking Keywords |
+|:--- |:--- | ---:| ---:| ---:| ---:|
+| [Simply Wall Street](https://simplywall.st) | Mar 2015 | 64 | 22.5k | 3.1m | 114.2k |
+| [TIKR Financial Data](https://app.tikr.com/) | Aug 2020 | 34 | 430 | 7.9k | 2 |
+| [MoneyMax 101](https://moneymax101.com/) | Nov 2011 | 21 | 238 | 1.3k | 81 |
+| [Every Mickle](https://www.everymickle.com/) | March 2016 | 16 | 53 | 536 | 17 |
+| [MyMoneyJA](https://mymoneyja.com/) | Nov 2020 | 12 | 193 | 367 | 0 |
+| [JSE Investor](https://jseinvestor.com) | Jan 2017 | 9 | 131 | 428 | 92 |
+| [JTrader Pro](https://jtraderpro.jamstockex.com) | Nov 2020 | 40 | 60 | 149 | 3 |
+| [Sagicor eInvest](https://einvest.sagicorjamaica.com/login) | April 2021 | 34 | [11](#sagicor-einvest-linking-domains) | 18 | 0 |
+| [JMMB Moneyline](https://moneyline.jmmb.com) | May 1998 * | 32 | 2.2k | 218.8k | 432 |
+
+Also, see mobile apps below,
+
+| | Rating | Downloads | Release |
+|:--- | ---:| ---:|:--- |
+| JSA | 4.3 | 5k | May 2020 |
+| JStock | 4.8 | 1k+ | Nov 2020 |
+
+### Sagicor eInvest Linking Domains
+
+| Root Domain | DA | Linking Domains | Spam Score |
+|:--- | ---:| ---:| ---:|
+| sagicor.com | 43 | 2970 | 28% |
+| link-de.com | 37 | 5401 | 21% |
+| freekeyworddifficultytool.com | 36 | 4129 | 39% |
+| linkmio.com | 35 | 5460 | 20% |
+| nutter.life | 35 | 1050 | 9% |
+| nitter.ir | 34 | 972 | 17% |
+| c99.nl | 31 | 2310 | 37% |
+| fdn.org | 30 | 365 | --% |
+| dataslist.com | 9 | 46 | 38% |
+| loginoniq.com | 6 | 58 | 8% |
+| ... | | | |
