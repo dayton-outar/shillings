@@ -155,8 +155,8 @@ Here's how they stack up,
 
 | | Main Questions | |
 |:--- |:--- |:--- |
-| <p><strong>Competitors</strong></p><p>Identifies incumbent competitors and their relative strengths</p> | <ul></ul> | |
-| <p><strong>New Entrants</strong></p><p>Identifies new, insurgent players and determines whether they compete with a business model different from yours</p> | <ul></ul> | |
-| <p><strong>Substitute Products and Services</strong></p><p>Describes potential substitutes for your offers - including those from other markets and industries</p> | <ul></ul> | |
-| <p><strong>Suppliers and Other Value Chain Actors</strong></p><p>Describes the key value chain incumbents in your market and spots new, emerging players</p> | <ul></ul> | |
-| <p><strong>Stakeholders</strong></p><p>Specifies which actors may influence your organization and business model</p> | <ul></ul> | |
+| <p><strong>Competitors</strong></p><p>Identifies incumbent competitors and their relative strengths</p> | <ul><li>Who are our competitors?</li><li>Who are the dominant players?</li><li>What are their competitive advantagees or disadvantages? (Describe their main offers)</li><li>Which <i>customer segments</i> are they focusing on?</li><li>WHat is their <i>cost structure</i>?</li><li>How much influence do they exert on our <i>customer segments</i>, <i>revenue streams</i>, and margins?</li></ul> | |
+| <p><strong>New Entrants</strong></p><p>Identifies new, insurgent players and determines whether they compete with a business model different from yours</p> | <ul><li>Who are the new entrants in your market?</li><li>How are they different?</li><li>What competitive advantage or disadvantages do they have?</li><li>Which barriers must they overcome?</li><li>What are their <i>value propositions</i>?</li><li>Which <i>customer segments</i> are they focused on?</li><li>What is their <i>cost structure</i>?</li><li>To what extent do they influence your <i>customer segments</i>, <i>revenue streams</i>, and margins?</li></ul> | |
+| <p><strong>Substitute Products and Services</strong></p><p>Describes potential substitutes for your offers - including those from other markets and industries</p> | <ul><li></li><li></li><li></li><li></li></ul> | |
+| <p><strong>Suppliers and Other Value Chain Actors</strong></p><p>Describes the key value chain incumbents in your market and spots new, emerging players</p> | <ul><li></li><li></li><li></li><li></li></ul> | |
+| <p><strong>Stakeholders</strong></p><p>Specifies which actors may influence your organization and business model</p> | <ul><li></li><li></li><li></li><li></li></ul> | |
