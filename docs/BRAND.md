@@ -295,7 +295,7 @@ At this point, I was thinking that the Jamaican folklore around a visiting bee w
 > Perfection? It never existed. Control? Fuhget-aboudit. As entrepreneurial consultant Guy Kawasaki advises his clients: “Don’t worry, be crappy.” Let the brand live, breathe, make mistakes, be human. Instead of trying to present a Teflon-smooth surface, project a three-dimensional personality, inconsistencies and all. Brands can afford to be inconsistent—as long as they don’t abandon their defining attributes. They’re like people. For example, in the morning you can wear a T-shirt, and in the evening a dress shirt. One moment you can be serious, and the next laugh out loud. Despite these apparent inconsistencies in your dress and demeanor, your friends and colleagues will still recognize you. What makes you “you” is deeper than appearances and moods. I’ll venture one step further, and say that brands that don’t project depth and humanity tend to create suspicion among customers.
 
 ![Shirts Folded](/.attachments/shirts_folded.jpg)
-<small>If People Can Change Their Clothes to Suit The Occasion, Why Can't Brands?</small>
+If People Can Change Their Clothes to Suit The Occasion, Why Can't Brands?
 
 > The old paradigm in which identity systems try to control the “look” of an organization only result in cardboard characters, not three-dimensional protagonists. The new paradigm calls for heroes with flaws—living brands.
 
