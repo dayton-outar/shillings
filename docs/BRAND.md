@@ -22,6 +22,8 @@
 >
 > Trust creation is a fundamental goal of brand design.
 
+The foundation of brand is trust. Customers trust your brand when their experiences consistently meet or beat their expectations
+
 What can our brand be trusted to deliver to our customers?
 
 > If a company’s brand value is such a large part of its assets, why isn’t it listed on the balance sheet? Good question. But while companies ponder this, they’re already using brand values as tools to obtain financing, put a price on licensing deals, evaluate mergers and acquisitions, assess damages in litigation cases, and justify the price of their stock.
@@ -295,8 +297,8 @@ At this point, I was thinking that the Jamaican folklore around a visiting bee w
 > Perfection? It never existed. Control? Fuhget-aboudit. As entrepreneurial consultant Guy Kawasaki advises his clients: “Don’t worry, be crappy.” Let the brand live, breathe, make mistakes, be human. Instead of trying to present a Teflon-smooth surface, project a three-dimensional personality, inconsistencies and all. Brands can afford to be inconsistent—as long as they don’t abandon their defining attributes. They’re like people. For example, in the morning you can wear a T-shirt, and in the evening a dress shirt. One moment you can be serious, and the next laugh out loud. Despite these apparent inconsistencies in your dress and demeanor, your friends and colleagues will still recognize you. What makes you “you” is deeper than appearances and moods. I’ll venture one step further, and say that brands that don’t project depth and humanity tend to create suspicion among customers.
 
 ![Shirts Folded](/.attachments/shirts_folded.jpg)
-<br />
-<small>If People Can Change Their Clothes to Suit The Occasion, Why Can't Brands?</small>
+
+If People Can Change Their Clothes to Suit The Occasion, Why Can't Brands?
 
 > The old paradigm in which identity systems try to control the “look” of an organization only result in cardboard characters, not three-dimensional protagonists. The new paradigm calls for heroes with flaws—living brands.
 
@@ -314,3 +316,22 @@ At this point, I was thinking that the Jamaican folklore around a visiting bee w
 
 ![Brand Value by Top US Companies](/.attachments/141tab01.jpg)
 
+### Where are all the CBOs?
+
+> The more a brand becomes distributed, the more it requires strong, centralized management.
+> 
+> Creativity can quickly turn to chaos in the absence of adult supervision (as any parent knows). And while controlled chaos is necessary for innovation and change, uncontrolled chaos can make a brand schizophrenic and confused.
+> 
+> The growing need for internal stewardship has given rise to the appointment of what we might call chief brand officers, or CBOs—highly experienced professionals who manage brand collaboration at the highest corporate level. CBOs are rare birds, because they need the ability to strategize with the chief, and also inspire creativity among the troops. In effect they must form a human bridge across the brand gap, connecting the company’s left brain with its right brain, bringing business strategy in line with customer experience. A CBO is the executive who lies awake at night thinking, “How can we build the brand?”
+
+### The Virtuous Circle
+
+> In the last century, many companies found themselves trapped a vicious circle of R&D investment, initial market success, competitive pressure, and pricecutting, until commoditization eventually forced them out of the market.
+>
+> Branding creates the opposite effect—a virtuous circle. By combining logic and magic, a company can ignite a chain reaction that leads from differentiation to collaboration to innovation to validation and finally to cultivation. Built into cultivation is the mandate to question all assumptions, leapfrog the status quo, and begin the cycle again. With each turn, the company and its brand spiral higher, taking it further from commoditization and closer to the Holy Grail of marketing: a sustainable competitive advantage.
+
+Warren Buffet calls this sustainable competitive advantage, _durable competitive advantage_.
+
+> A brand is not a logo. A brand is not a corporate identity system. It’s a person’s gut feeling about a product, service, or company. Because it depends on others for its existence, it must become a guarantee of trustworthy behavior. Good branding makes business integral to society and creates opportunity for everyone, from the chief executive to the most distant customer.
+
+![Spiral Model of Cultivation](/.attachments/spiral4_f.jpg)
