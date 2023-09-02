@@ -88,7 +88,9 @@ Other minor players that deliver news and offer thought leadership on matters re
 
 2. **[Every Mickle](https://www.everymickle.com/):** Every Mickle offers a blog maintained by thought leader, Randy Rowe.
 
-3. **[Jamaica Stock Exchange Newsroom](https://www.jamstockex.com/newsroom/):** The Jamaica Stock Exchange provides a compilation of the major Company News, Corporate Actions, Upcoming AGM’s or EGM’s and the Bond Indices on a weekly basis.
+3. **[IC Insider](http://icinsider.com/):** News, Views & Advice from Investors's Choice.
+
+4. **[Jamaica Stock Exchange Newsroom](https://www.jamstockex.com/newsroom/):** The Jamaica Stock Exchange provides a compilation of the major Company News, Corporate Actions, Upcoming AGM’s or EGM’s and the Bond Indices on a weekly basis.
 
 ### Stock Brokerage Firms
 
@@ -213,14 +215,29 @@ Also, see mobile apps below,
 
 ### Competitive Analysis
 
-Market share?
-Customer base?
-Marketing tactics?
-Distribution channels?
-Financial performance?
+Q. Market share?
+
+A. Can get the market share for brokerages from JCSD
+
+Q. Customer base?
+
+A. _Don't know_
+
+Q. Marketing tactics?
+
+A. Most seem to rely on word-of-mouth, investment clubs and thought leaders (or influencers).
+
+Q. Distribution channels? 
+
+A. All distributes analysis over the internet. Trading information is also distributed over the internet. Trading is facilitated by a stock brokerage firm.
+
+Q. Financial performance?
+
+A. Most of these applications except the JTrader Pro is owned privately. JTrader Pro is owned by the Jamaica Stock Exchange.
 
 
 Advantages? Disadvantages? Opportunities for them? Threats to them?
+
 
 Analyze the features, quality, pricing, and uniqueness of their products or services compared to yours. Identify any gaps in the market that you could potentially exploit.
 
@@ -242,7 +259,40 @@ Compare your own performance and strategies with those of your competitors. Iden
 
 #### MyMoneyJA
 
+I think the greatest feature on MyMoneyJA is the offered in the **Portfolio** section. The charts shown are standard across every stocks analysis platform. The presentation of the information is more friendly to experts. Portfolio information is presented in separate cards rather than a grid, which makes a quick comparison difficult. The information presented on most pages including the _Overview_ confronts the user with cognitive loading problem, too much information all in one area.
+
+I think their **Dollar-cost Averaging** feature is a good idea.
+
+![MyMoneyJA Dollar-cost Averaging Feature](/.attachments/mymoneyja-dca.png)
+
+My first impression of the **Corporate Actions** is that it needs context, the context of the company that they're associated with. I think Jamaica Stock Exchange has a better delivery of the _Corporate Actions_ within the _Instrument Summary_.
+
+![Jamaica Stock Exchange Instrument Summary of a Common Stock](/.attachments/jse-instrument-summary.png)
+
+No real value is added to news other than financial news related to companies on the stock exchanged is centralized into one place. The claim is that the news is filtered and curated. Because the news presented is broadened to more sources other than the Jamaica Stock Exchange, the feeds from the other sources has to be filtered. There is no curation, users are sent directly to the source of information when news links are clicked.
+
+When it comes to alerts, I think people are less welcoming to more bombardment of information to their devices and personal space. Less is more (A more minimal approach is more effective). I don't think alerts provide any great value to investors. It may provide some value to day and swing traders but they may prefer to be using a stock screener where they can quickly find opportunities for capital gains.
+
+The financial reports are in PDF format, which is what is provided by either the listed company's website or the Jamaica Stock Exchange. It's listed under the FREE plan as a value added feature by stating, "Current and last financial year report".
+
+In their attempt to appeal to prospects they have announced their future plans in their price plans. I think this price plan has not changed since 2020 and yet this review was done in 2023. They have promised,
+ - Sentiment analysis on news and social media chatter
+ - Private/public contests
+ - Themes (dark mode)
+ - Access to market research newsletter
+ - Ability to run custom market data queries
+
+There are two promised features that are stand outs: the sentiment analysis and the market research newsletter. Newsletters are provided by some Stock Brokerage firms and it basically consist of insightful information about the market trends. So, for MyMoneyJA would have to offer a unique selling proposition to appeal to investors who already are receiving newsletters from their Stock Brokers. The sentimental analysis can be a real unique selling proposition if they present the information in a way that is digestable to the investors.
+
 ![MyMoneyJA Offers and Price Plans](/.attachments/mymoneyja-price-plans.png)
+
+So, what does MyMoneyJA offer to the regular investor that is of unique value?
+
+I think MyMoneyJA that offer unique value includes information that is sold by the Jamaica Stock Exchange, such as,
+ - Full history of Corporate Actions
+ - All history of company news
+ - Views of the current market queue (BUY and SELL orders) and live trading data
+
 
 #### MoneyMax 101
 
