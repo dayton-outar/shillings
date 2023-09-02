@@ -291,7 +291,11 @@ Based on the analysis, derive actionable insights. Identify opportunities to exp
 
 #### JTrader Pro
 
-The JTrader Pro application can be accessed over the internet at https://jtraderpro.jamstockex.com/. This is a financial trading platform and yet it is not an eCommerce application. It does not allow for users to make payments online to buy stocks. Placing orders has to be placed through Stock Brokerage Firms, which are listed on the platform. The investor/trader would place the order on JTrader Pro, where the user would have setup a particular Broker to a JCSD account.
+The JTrader Pro application can be accessed over the internet at https://jtraderpro.jamstockex.com/. This is a financial trading platform and yet it is not an eCommerce application. It does not allow for users to make payments online to buy stocks. Placing orders has to be placed through Stock Brokerage Firms, which are listed on the platform.
+
+![JTrader Pro: Placing orders](/.attachments/jtrader-3.png)
+
+The investor/trader would place the order on JTrader Pro, where the user would have setup a particular Broker to a JCSD account.
 
 ![Accounts Overview](/.attachments/jtrader-accounts-overview.png)
 
@@ -303,3 +307,22 @@ This approach is in contrast to internet FX trading platform, [IQ Option](https:
 
 ![IQ Option offering Practice Account](/.attachments/iq-option.png)
 
+The process of trading stocks on JTrader Pro, as mentioned above, demostrates that there is a lot of friction in the trading process. It's important to note that the on-boarding process is also a long  process. Simply put, the on-boarding process involves indicating to your Broker that you're interested in trading on the JTrader platform, providing all the necessary KYC information so that it can be processed by the JCSD. I have personally made request to be on-boarded onto JTrader Pro after making trades through a Broker for over a year. It took over a month to get access to JTrader Pro.
+
+Trading platforms like **JMMB Moneyline** may have less friction in their on-boarding and trading, since the users of **JMMB Moneyline** would have an account with JMMB. In this case, BUY and SELL orders can be more quickly facitlitated since JMMB are custodians of their account. Two-factor security is implemented in the same manner as many banking application to confirm placement of orders.
+
+![JMMB Moneyline Order Screen](/.attachments/jmmb-moneyline-buy-order-screen.png)
+
+See also a screen in **JMMB Moneyline**, where the list of BUY/SELL orders are shown for a particular stock.
+
+![JMMB Moneyline BUY/SELL Orders for a Stock](/.attachments/jmmb-moneyline-buy-stocks.png)
+
+These trading applications also offer the feature to generate statements that show the gains/loss made on stocks within a portfolio. This is pretty much as far as these trading platforms go when it comes to offering analysis.
+
+The experience on **JTrader Pro** and **JMMB Moneyline** are not as immersive as FX Trading Platforms such as **IQ Options**. See a screen from **IQ Options**, where the user can place orders while viewing the live trades.
+
+![IQ Options Trading Dashboard](/.attachments/iq-dash.png)
+
+The **JTrader Pro** platform offers a screen that shows the live BUY and SELL orders of a particular stock but is more for viewing purposes to inform the decision-making. When the user makes the decision, the user will have to navigate to the screen that places the order.
+
+![JTrader Live BUY/SELL orders](/.attachments/jtrader-2.png)
