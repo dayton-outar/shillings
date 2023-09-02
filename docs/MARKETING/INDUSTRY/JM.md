@@ -290,3 +290,16 @@ Identify what sets you apart from your competitors. It could be your unique feat
 Based on the analysis, derive actionable insights. Identify opportunities to exploit your competitors' weaknesses, ways to differentiate your offerings, and strategies to strengthen your competitive position.
 
 #### JTrader Pro
+
+The JTrader Pro application can be accessed over the internet at https://jtraderpro.jamstockex.com/. This is a financial trading platform and yet it is not an eCommerce application. It does not allow for users to make payments online to buy stocks. Placing orders has to be placed through Stock Brokerage Firms, which are listed on the platform. The investor/trader would place the order on JTrader Pro, where the user would have setup a particular Broker to a JCSD account.
+
+![Accounts Overview](/.attachments/jtrader-accounts-overview.png)
+
+If the orders are BUY orders, the order would have to be followed by a **Pending Fund Request**.
+
+![JTrader Pro Funds In/Out](/.attachments/jtraderpro-funds-in-out.png)
+
+This approach is in contrast to internet FX trading platform, [IQ Option](https://iqoption.com/en), where the wallet for trading is funded through credit card transactions. An important point to note about **IQ Option** is that they provided a _practice account_ as well as a real account.
+
+![IQ Option offering Practice Account](/.attachments/iq-option.png)
+
