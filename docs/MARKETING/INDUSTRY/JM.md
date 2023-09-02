@@ -288,3 +288,5 @@ History and live information can be had from the Jamaica Stock Exchange. So, the
 Identify what sets you apart from your competitors. It could be your unique features, exceptional customer service, innovative technology, or any other factor that gives you a competitive edge.
 
 Based on the analysis, derive actionable insights. Identify opportunities to exploit your competitors' weaknesses, ways to differentiate your offerings, and strategies to strengthen your competitive position.
+
+#### JTrader Pro
