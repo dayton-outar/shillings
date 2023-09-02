@@ -40,6 +40,38 @@ Conducting effective business research involves a systematic and structured appr
 
 Remember that conducting thorough business research requires attention to detail, critical thinking, and the ability to synthesize information into actionable insights. It's also important to stay updated with the latest research methods and tools in order to conduct more effective and efficient research.
 
+## Competitor Analysis Questions
+
+Market share?
+
+Customer base?
+
+Marketing tactics?
+
+Distribution channels? 
+
+Financial performance?
+
+Advantages? Disadvantages? Opportunities for them? Threats to them?
+
+Analyze the features, quality, pricing, and uniqueness of their products or services compared to yours. Identify any gaps in the market that you could potentially exploit.
+
+Determine how your competitors position themselves in the market. Are they focusing on a specific niche, offering premium products, or catering to a broader audience? Understand their unique value proposition and how it compares to yours.
+
+Identify their target audience and customer demographics. Are they serving the same customers as you or targeting a different segment? This can help you refine your own target audience and tailor your marketing efforts.
+
+Analyze their marketing strategies, including their branding, messaging, advertising channels, and content strategies. Understand what resonates with their audience and how you can differentiate your approach.
+
+Examine their distribution channels and partnerships. Are they selling through online platforms, brick-and-mortar stores, or both? Understanding their distribution methods can help you optimize your own distribution strategy.
+
+Evaluate their online presence, including their website, social media profiles, and customer reviews. Look for customer feedback and complaints to identify areas where you can outperform them.
+
+If possible, gather information about their financial performance. This includes revenue, profit margins, and any recent funding rounds. Understanding their financial health can provide insights into their overall business stability.
+
+Try to anticipate their future plans based on their recent activities, acquisitions, partnerships, and industry trends. This can help you prepare for potential changes in the competitive landscape.
+
+Compare your own performance and strategies with those of your competitors. Identify areas where you're lagging behind and areas where you're excelling.
+
 ## Jurisdictions
 
 See specific organizations to gather marketing information for,

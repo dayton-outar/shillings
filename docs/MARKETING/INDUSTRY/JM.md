@@ -236,26 +236,6 @@ Q. Financial performance?
 A. Most of these applications except the JTrader Pro is owned privately. JTrader Pro is owned by the Jamaica Stock Exchange.
 
 
-Advantages? Disadvantages? Opportunities for them? Threats to them?
-
-
-Analyze the features, quality, pricing, and uniqueness of their products or services compared to yours. Identify any gaps in the market that you could potentially exploit.
-
-Determine how your competitors position themselves in the market. Are they focusing on a specific niche, offering premium products, or catering to a broader audience? Understand their unique value proposition and how it compares to yours.
-
-Identify their target audience and customer demographics. Are they serving the same customers as you or targeting a different segment? This can help you refine your own target audience and tailor your marketing efforts.
-
-Analyze their marketing strategies, including their branding, messaging, advertising channels, and content strategies. Understand what resonates with their audience and how you can differentiate your approach.
-
-Examine their distribution channels and partnerships. Are they selling through online platforms, brick-and-mortar stores, or both? Understanding their distribution methods can help you optimize your own distribution strategy.
-
-Evaluate their online presence, including their website, social media profiles, and customer reviews. Look for customer feedback and complaints to identify areas where you can outperform them.
-
-If possible, gather information about their financial performance. This includes revenue, profit margins, and any recent funding rounds. Understanding their financial health can provide insights into their overall business stability.
-
-Try to anticipate their future plans based on their recent activities, acquisitions, partnerships, and industry trends. This can help you prepare for potential changes in the competitive landscape.
-
-Compare your own performance and strategies with those of your competitors. Identify areas where you're lagging behind and areas where you're excelling.
 
 #### MyMoneyJA
 
@@ -288,11 +268,13 @@ There are two promised features that are stand outs: the sentiment analysis and 
 
 So, what does MyMoneyJA offer to the regular investor that is of unique value?
 
-I think MyMoneyJA that offer unique value includes information that is sold by the Jamaica Stock Exchange, such as,
- - Full history of Corporate Actions
- - All history of company news
- - Views of the current market queue (BUY and SELL orders) and live trading data
+I think MyMoneyJA present opportunities to offer unique value to investors with the following features,
+ 1. Full history of Corporate Actions
+ 2. All history of company news
+ 3. Views of the current market queue (BUY and SELL orders) and live trading data
+ 4. Sentiment analysis on news and social discourse about companies
 
+History and live information can be had from the Jamaica Stock Exchange. So, their real value-added is in the user experience of the provided information. The sentiment analysis is the only stand out that I see from this app as a unique selling proposition. All other features are standard for applications that offer stock market analysis, even the dividend calculations.
 
 #### MoneyMax 101
 
