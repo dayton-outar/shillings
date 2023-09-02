@@ -282,12 +282,10 @@ History and live information can be had from the Jamaica Stock Exchange. So, the
 
 #### Simply Wall Street
 
+![Simply Wall Street Dash includes announcements](/.attachments/simplywall.st-announcements.png)
+
 ![Simply Wall Street Offers and Price Plans](/.attachments/simplywall.st-price-plans.png)
 
-
-Identify what sets you apart from your competitors. It could be your unique features, exceptional customer service, innovative technology, or any other factor that gives you a competitive edge.
-
-Based on the analysis, derive actionable insights. Identify opportunities to exploit your competitors' weaknesses, ways to differentiate your offerings, and strategies to strengthen your competitive position.
 
 #### JTrader Pro
 
@@ -326,3 +324,13 @@ The experience on **JTrader Pro** and **JMMB Moneyline** are not as immersive as
 The **JTrader Pro** platform offers a screen that shows the live BUY and SELL orders of a particular stock but is more for viewing purposes to inform the decision-making. When the user makes the decision, the user will have to navigate to the screen that places the order.
 
 ![JTrader Live BUY/SELL orders](/.attachments/jtrader-2.png)
+
+So, all the main features of **JTrader Pro** is to facilitate trading of stocks and monitoring portfolios. The approach to have the trades made through the bank accounts of Stock Broker is slow but it limits the risk of the Jamaica Central Securities Depository (JCSD) from handling fraud that comes from the use of stolen credit cards.
+
+Creating a trading platform must involve access to the live trades, which must come from the central authority, JCSD. The technical and fundamental analysis can be integrated into the trading experience in an immersive way but the real challenge in making trading frictionless is enabling the users to top-up their wallet with a convenient online payment solution, such as credit cards. But the question arises: how do you handle chargebacks that come as a result of using stolen credit cards?
+
+If the risk of using credit cards as the payment solution is taken up, we can look at involving the Brokers by having payments trasferred to their accounts by setting up the backbone of the application with multiple gateway credentials, where each credential is associated with a particular Broker. See screenshot below for an application that stores gateway credentials in database.
+
+![Managing Gateways](/.attachments/manage-gateways-1.png)
+
+Because **JTrader Pro** is owned by the Jamaica Stock Exchange, it has a captive audience. That captive audience may feel that they have to take what Jamaica Stock Exchange has to offer them. But what if a better option could be provided?
