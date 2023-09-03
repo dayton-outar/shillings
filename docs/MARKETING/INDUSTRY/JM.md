@@ -290,6 +290,8 @@ I think that their marketing tactics when it comes to price plan is the most att
 
 ![Simply Wall Street Offers and Price Plans](/.attachments/simplywall.st-price-plans.png)
 
+As it relates to the marketing tactics within the application, they make good use of the bull in a suit as their avatar.
+
 The dashboard presents a lot of information but the cognitive load does not appear overwhelming. The main theme is the news and how well industries over the world are doing. The information on the dashboard can be defaulted to show for a particular jurisdiction once that is set in the customer's profile.
 
 ![Simply Wall Street Dash](/.attachments/simplywall.st-dash.png)
@@ -310,12 +312,33 @@ A company report on Simply Wall Street contains sections for,
 6. Management
 7. Ownership
 
-All that information is suitable for investors that are keen on fundamental analysis of companies listed on the stock exchange. While the information is comprehensive, it can be overwhelming. I think this tool is a value investor's dream. One thing that is intended to be intuitive but can be consterning is the snowflake. The snowflake is intended to 
+All that information is suitable for investors that are keen on fundamental analysis of companies listed on the stock exchange. While the information is comprehensive, it can be overwhelming. I think this tool is a value investor's dream. One thing that is intended to be intuitive but can be consterning is the snowflake. The snowflake is intended to be a _quick "eyeball" scan of a particular stock, a group of stocks or the stock market as a whole". The feedback that I have received from one customer is that she was confounded as to what to think about it and how to make decisions from it. I see it and I understand it but would I make a stock order decision based on it? No. It's like a scorecard that tries to involve the complexities of dividend payout, intrinsic value, financial health, past performance and future prospects. Most of the times, there's not enough information to arrive at a conclusion for some of the 5 points of complexity of the snowflake.
 
 ![Simply Wall Street Company Report Header](/.attachments/simplywall.st-company.report.png)
 
+One of the most intriguing features of the company report is the intrinsic valuation. Intrinsic valuation can be a very involved process and is susceptible to bias. Some describe the process of intrinsic valuation as art using mathematics. it's probably one of the most sophisticated metric to arrive at. For investors that are into fundamental analysis, this is a must-have feature.
 
+![Simply Wall Street Intrinsic Value](/.attachments/simplywall.st-intrinsic-value.png)
 
+Other popular metrics are showcased in this application but is done with some visualization to increase the appeal. Take for example the P/E ratio makes use of a speedometer, where anything over 20x start to go into the red (this is coming from philosophies of Benjamin Graham and Warren Buffet).
+
+![Simply Wall Street P/E Ratio](/.attachments/simplywall.st-pe.ratio.png)
+
+That same visualization concept of using the speedometer is extended to ROCE and ROA.
+
+![Simply Wall Street ROCE and ROA](/.attachments/simplywall.st-more.ratios.png)
+
+A new feature that went into beta testing in 2023 is the _Revenue & Expenses Breakdown_, which makes use of a Sankey diagram.
+
+![Simply Wall Street Revenue & Expenses Breakdown](/.attachments/simplywall.st-revenue.breakdown.png)
+
+This application even extracts ownership information provided in the annual reports.
+
+![Simply Wall Street Ownership](/.attachments/simplywall.st-owners.png)
+
+The company report is impressive!
+
+So, when it comes to comprehensive analysis and presentation of the information, Simply Wall Street outperforms all competitors. The fundamental analysis is provided for 5 companies per month for each customer but when that customer pays for PREMIUM or UNLIMITED service they get the technical analysis from the Stock Screener. Wow! That's hard to outperform. This is obviously the standard.
 
 #### JTrader Pro
 
