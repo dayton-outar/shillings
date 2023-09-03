@@ -282,9 +282,39 @@ History and live information can be had from the Jamaica Stock Exchange. So, the
 
 #### Simply Wall Street
 
-![Simply Wall Street Dash includes announcements](/.attachments/simplywall.st-announcements.png)
+[Simply Wall Street](https://simplywall.st/) has the most comprehensive list of features when it comes to fundamental analysis. The page designs are engaging and the information is presented within context. This application gathers information on stocks for about 89 jurisdictions (countries), which is mind-blowing. It's global reach is one of its greatest strengths. Also, what must be noted is the ability for this application to gather the most current information that's usually found in the annual and quarterly report of every company listed on the Jamaica Stock Exchange.
+
+![Simply Wall Street Markets: Jamaica](/.attachments/simplywall.st-markets.png)
+
+I think that their marketing tactics when it comes to price plan is the most attractive and engaging of all the applications that offer analytics for the Jamaican market. The prices place emphasis on volume of information that the prospects can gather. There is some mention of additional features but when it comes to features, only 2 features sets the FREE plan apart from the UNLIMITED plan: the Stock Screener and the Export feature.
 
 ![Simply Wall Street Offers and Price Plans](/.attachments/simplywall.st-price-plans.png)
+
+The dashboard presents a lot of information but the cognitive load does not appear overwhelming. The main theme is the news and how well industries over the world are doing. The information on the dashboard can be defaulted to show for a particular jurisdiction once that is set in the customer's profile.
+
+![Simply Wall Street Dash](/.attachments/simplywall.st-dash.png)
+
+The news within this application is indeed _filtered and curated_. By observing the icons for each news item, you can deduce that the news is being classified. The source is probably the Jamaica Stock Exchange but they don't make any reference to that in their application. Corporate actions are bundled into news, which makes sense. Corporate actions like dividend payout announcements are given a narrative to explain the announcement.
+
+See below a screenshot of the _curated_ dividend announcement.
+
+![Simply Wall Street Dividend Announcement](/.attachments/simplywall.st-dividend.png)
+
+A company report on Simply Wall Street contains sections for,
+
+1. Valuation (which includes Intrinsic Valuation)
+2. Future Growth
+3. Past Performance
+4. Financial Health
+5. Dividend
+6. Management
+7. Ownership
+
+All that information is suitable for investors that are keen on fundamental analysis of companies listed on the stock exchange. While the information is comprehensive, it can be overwhelming. I think this tool is a value investor's dream. One thing that is intended to be intuitive but can be consterning is the snowflake. The snowflake is intended to 
+
+![Simply Wall Street Company Report Header](/.attachments/simplywall.st-company.report.png)
+
+
 
 
 #### JTrader Pro
