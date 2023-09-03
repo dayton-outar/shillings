@@ -237,9 +237,9 @@ Also, see mobile apps below,
 | loginoniq.com | 6 | 58 | 8% |
 | ... | | | |
 
-### Feature & Price Plan Review
+#### Feature & Price Plan Review
 
-#### MyMoneyJA
+##### MyMoneyJA
 
 I think the greatest feature on MyMoneyJA is the offered in the **Portfolio** section. The charts shown are standard across every stocks analysis platform. The presentation of the information is more friendly to experts. Portfolio information is presented in separate cards rather than a grid, which makes a quick comparison difficult. The information presented on most pages including the _Overview_ confronts the user with cognitive loading problem, too much information all in one area.
 
@@ -278,11 +278,11 @@ I think MyMoneyJA present opportunities to offer unique value to investors with 
 
 History and live information can be had from the Jamaica Stock Exchange. So, their real value-added is in the user experience of the provided information. The sentiment analysis is the only stand out that I see from this app as a unique selling proposition. All other features are standard for applications that offer stock market analysis, even the dividend calculations.
 
-#### MoneyMax 101
+##### MoneyMax 101
 
 ![MoneyMax 101 Offers and Price Plans](/.attachments/moneymax101-price-plans.png)
 
-#### Simply Wall Street
+##### Simply Wall Street
 
 [Simply Wall Street](https://simplywall.st/) has the most comprehensive list of features when it comes to fundamental analysis. The page designs are engaging and the information is presented within context. This application gathers information on stocks for about 89 jurisdictions (countries), which is mind-blowing. It's global reach is one of its greatest strengths. Also, what must be noted is the ability for this application to gather the most current information that's usually found in the annual and quarterly report of every company listed on the Jamaica Stock Exchange.
 
@@ -344,7 +344,7 @@ So, when it comes to comprehensive analysis and presentation of the information,
 
 But what if there are investors who want to compare multiples such as margins and index P/E ratios, where would they get that vizualization? An excellent visualization that allows investors to compare market capitalization for the US Market can be found at [Companies Market Cap](https://companiesmarketcap.com/). This concept can be extended for profit margins, ROA and so on. I do not see where Simply Wall Street does this.
 
-#### JTrader Pro
+##### JTrader Pro
 
 The JTrader Pro application can be accessed over the internet at https://jtraderpro.jamstockex.com/. This is a financial trading platform and yet it is not an eCommerce application. It does not allow for users to make payments online to buy stocks. Placing orders has to be placed through Stock Brokerage Firms, which are listed on the platform.
 
