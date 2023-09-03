@@ -336,7 +336,9 @@ This application even extracts ownership information provided in the annual repo
 
 The company report is impressive!
 
-So, when it comes to comprehensive analysis and presentation of the information, Simply Wall Street outperforms all competitors. The fundamental analysis is provided for 5 companies per month for each customer but when that customer pays for PREMIUM or UNLIMITED service they get more reports and they also get technical analysis from the Stock Screener. Wow! That's hard to outperform. This is obviously the standard.
+So, when it comes to comprehensive analysis and presentation of the information, Simply Wall Street outperforms all competitors. The fundamental analysis is provided for 5 companies per month for each customer but when that customer pays for PREMIUM or UNLIMITED service they get more reports and they also get technical analysis from the Stock Screener. Wow! That's hard to outperform.
+
+But what if there are investors who want to compare multiples such as margins and index P/E ratios, where would they get that vizualization? An excellent visualization that allows investors to compare market capitalization for the US Market can be found at [Companies Market Cap](https://companiesmarketcap.com/). This concept can be extended for profit margins, ROA and so on. I do not see where Simply Wall Street does this.
 
 #### JTrader Pro
 
