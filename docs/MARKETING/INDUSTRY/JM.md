@@ -188,6 +188,8 @@ A. Most of these applications except the JTrader Pro is owned privately. JTrader
 
 ### Competitive Analysis
 
+#### Domain Authority
+
 ![Domain Authority by Tier](/.attachments/domain-authority-by-tier.png)
 
 > What’s a good score? It depends. But a good DA is a HIGH DA.
@@ -219,7 +221,7 @@ Also, see mobile apps below,
 | JSA | 4.3 | 5k | May 2020 |
 | JStock | 4.8 | 1k+ | Nov 2020 |
 
-### Sagicor eInvest Linking Domains
+##### Sagicor eInvest Linking Domains
 
 | Root Domain | DA | Linking Domains | Spam Score |
 |:--- | ---:| ---:| ---:|
@@ -234,6 +236,8 @@ Also, see mobile apps below,
 | dataslist.com | 9 | 46 | 38% |
 | loginoniq.com | 6 | 58 | 8% |
 | ... | | | |
+
+### Feature & Price Plan Review
 
 #### MyMoneyJA
 
