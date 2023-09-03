@@ -166,6 +166,28 @@ Here's how they stack up,
 
 ## Competitors
 
+Q. Market share?
+
+A. Can get the market share for brokerages from JCSD
+
+Q. Customer base?
+
+A. _Don't know_
+
+Q. Marketing tactics?
+
+A. Most seem to rely on word-of-mouth, investment clubs and thought leaders (or influencers).
+
+Q. Distribution channels? 
+
+A. All distributes analysis over the internet. Trading information is also distributed over the internet. Trading is facilitated by a stock brokerage firm.
+
+Q. Financial performance?
+
+A. Most of these applications except the JTrader Pro is owned privately. JTrader Pro is owned by the Jamaica Stock Exchange.
+
+### Competitive Analysis
+
 ![Domain Authority by Tier](/.attachments/domain-authority-by-tier.png)
 
 > What’s a good score? It depends. But a good DA is a HIGH DA.
@@ -212,30 +234,6 @@ Also, see mobile apps below,
 | dataslist.com | 9 | 46 | 38% |
 | loginoniq.com | 6 | 58 | 8% |
 | ... | | | |
-
-### Competitive Analysis
-
-Q. Market share?
-
-A. Can get the market share for brokerages from JCSD
-
-Q. Customer base?
-
-A. _Don't know_
-
-Q. Marketing tactics?
-
-A. Most seem to rely on word-of-mouth, investment clubs and thought leaders (or influencers).
-
-Q. Distribution channels? 
-
-A. All distributes analysis over the internet. Trading information is also distributed over the internet. Trading is facilitated by a stock brokerage firm.
-
-Q. Financial performance?
-
-A. Most of these applications except the JTrader Pro is owned privately. JTrader Pro is owned by the Jamaica Stock Exchange.
-
-
 
 #### MyMoneyJA
 
@@ -320,7 +318,7 @@ One of the most intriguing features of the company report is the intrinsic valua
 
 ![Simply Wall Street Intrinsic Value](/.attachments/simplywall.st-intrinsic-value.png)
 
-Other popular metrics are showcased in this application but is done with some visualization to increase the appeal. Take for example the P/E ratio makes use of a speedometer, where anything over 20x start to go into the red (this is coming from philosophies of Benjamin Graham and Warren Buffet).
+Other popular metrics are showcased in this application but is done with some visualization to increase the appeal. Take for example the P/E ratio that makes use of a speedometer, where anything over 20x start to go into the red (this is coming from philosophies of Benjamin Graham and Warren Buffet).
 
 ![Simply Wall Street P/E Ratio](/.attachments/simplywall.st-pe.ratio.png)
 
@@ -338,7 +336,7 @@ This application even extracts ownership information provided in the annual repo
 
 The company report is impressive!
 
-So, when it comes to comprehensive analysis and presentation of the information, Simply Wall Street outperforms all competitors. The fundamental analysis is provided for 5 companies per month for each customer but when that customer pays for PREMIUM or UNLIMITED service they get the technical analysis from the Stock Screener. Wow! That's hard to outperform. This is obviously the standard.
+So, when it comes to comprehensive analysis and presentation of the information, Simply Wall Street outperforms all competitors. The fundamental analysis is provided for 5 companies per month for each customer but when that customer pays for PREMIUM or UNLIMITED service they get more reports and they also get technical analysis from the Stock Screener. Wow! That's hard to outperform. This is obviously the standard.
 
 #### JTrader Pro
 
