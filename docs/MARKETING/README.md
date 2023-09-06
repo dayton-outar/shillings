@@ -146,3 +146,11 @@ long?
 possible concerns and objections? [^1]
 
 [^1]: Marketing Memo: Marketing Plan Criteria on page 77, Chapter 2: Developing Marketing Strategies and Plans. Marketing Management, 15<sup>th</sup> Edition by Philip Kotler and Kevin Lane Keller.
+
+## Further Reading
+
+1. [What is a Marketing Plan and How to Make One? - Venngage](https://venngage.com/blog/marketing-plan/)
+2. [How to Create a Buyer Persona in 5 Steps (+ Free Templates)](https://www.smartbugmedia.com/inbound-marketing-personas)
+3. [Topic Clusters: The Next Evolution of SEO](https://blog.hubspot.com/marketing/topic-clusters-seo)
+4. [10 Tips I Learned About Creating Viral Campaigns From Larry Kim](https://blog.hubspot.com/marketing/viral-campaign-tips-larry-kim)
+5. [Campaign Performance: How to Analyze Marketing Campaigns?](https://www.clicdata.com/blog/analyze-marketing-campaign-performance/)
