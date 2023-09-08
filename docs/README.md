@@ -4,6 +4,18 @@ This body of work is the foundation of an online business that is dedicated to e
 
 The education provided in this project involves constant updates to the state of each business that are on a stock exchange by breaking down the details of annual and quarterly report through the presentation of all the important multiples (or financial ratios) that can be calculated from each report. Also, provided in the continuous learning experience is the evaluation of the business as an asset. The studying of multiples, business evaluation and the effects of the economy constitutes **Fundamental Analysis**.
 
+Definition: In one succinct sentence, what is the product or service?
+
+Users: Who is it for?
+
+Purpose: Why do we want to create it? ...
+
+Differentiation: How will it solve that problem or pain point better than the current solutions?
+
+Value: How will it make our business and users' lives better?
+
+[How to Develop your Business Design Philosophy](https://drawbackwards.com/blog/how-to-develop-your-design-philosophy)
+
 ...
 
 [Financial Ratios](./MULTIPLIERS.md)
