@@ -8,3 +8,6 @@ echo "$(date) ... Executing scraper"
 
 # docker run --name scraper -itd -e MSSQLPWD='$MSSQLPWD' --network=root_default krisyslimited/reader:0417
 # docker run -itd --network=multi-host-network busybox
+
+## Production
+#0 23 * * * /usr/bin/docker start -i root-scraper >> /root/my-cron.log
