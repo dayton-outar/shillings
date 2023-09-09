@@ -49,7 +49,7 @@ public class IdentityService
         var signingCredentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
         var token = new JwtSecurityToken(
-            "https://localhost:5001/",
+            Environment.GetEnvironmentVariable("HARPOON_DOMAIN"),
             "www",
             claims,
             expires: DateTime.Now.AddDays(90),
