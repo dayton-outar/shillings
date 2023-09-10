@@ -280,7 +280,11 @@ History and live information can be had from the Jamaica Stock Exchange. So, the
 
 ##### MoneyMax 101
 
+MoneyMax 101 is basically a WordPress Blog that uses plugins to bring it's services to their prospects and customers. The user experience, in terms of page layout, look and feel needs improvement.
+
 ![MoneyMax 101 Offers and Price Plans](/.attachments/moneymax101-price-plans.png)
+
+The offerings in their price plan are similar to MyMoneyJA. The main difference is that the features are summarized under categories of interest to investors. The main takeaway from this particular application is the pricing for subscribing to their services. So, the highest available plan costs US$10.49 per month. This positions them somewhere in between MyMoneyJA and Simply Wall Street. One of their plans is "Coming Soon". How long has that subscription plan been "Coming Soon"?
 
 ##### Simply Wall Street
 
