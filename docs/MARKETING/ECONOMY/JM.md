@@ -2,9 +2,155 @@
 
 | | Main Questions | Jamaica's Landscape |
 |:--- |:--- |:--- |
-| <p><strong>Global Market Conditions</strong><br /><small>Outlines current overall conditions from a macroeconomic perspective</small></p> | <ul><li>Is the economy in a boom or bust phase?</li><li>Describe general market sentiment. What is the GDP growth rate?</li><li>How high is the unemployment rate?</li></ul> | <ul><li>As of 2023, the economy seems to be coming out of decline</li><li>As of March 2023, [the Jamaican economy epxereinced 4% to 5.5% growth](https://jis.gov.jm/jamaicas-economy-continues-on-strong-growth-path/)</li><li>As of April 2023, [the unemployment rate has dropped to 4.5 percent](https://jis.gov.jm/unemployment-falls-to-new-record-low-4-5-per-cent/).</li></ul> |
+| <p><strong>Global Market Conditions</strong><br /><small>Outlines current overall conditions from a macroeconomic perspective</small></p> | <ul><li>Is the economy in a boom or bust phase?</li><li>Describe general market sentiment. What is the GDP growth rate?</li><li>How high is the unemployment rate?</li></ul> | <ul><li>As of 2023, the economy seems to be coming out of decline</li><li>As of March 2023, [the Jamaican economy experienced 4% to 5.5% growth](https://jis.gov.jm/jamaicas-economy-continues-on-strong-growth-path/)</li><li>As of April 2023, [the unemployment rate has dropped to 4.5 percent](https://jis.gov.jm/unemployment-falls-to-new-record-low-4-5-per-cent/).</li></ul> |
 | <p><strong>Capital Markets</strong><br /><small>Describes current capital market conditions as they relate to your capital needs</small></p> | <ul><li>What is the state of the capital markets?</li><li>How easy is it to obtain funding in your particular market?</li><li>Is seed capital, venture capital, public funding, market capital, or credit readily available?</li><li>How costly is it to procure funds?</li></ul> | <ul><li></li><li></li><li></li><li></li></ul> |
 | <p><strong>Commodities and Other Resources</strong><br /><small>Highlights current prices and price trends for resources required for your business model</small></p> | <ul><li>Describe the current status of markets for commodities and other resources essential to your business (e.g. oil prices and labor costs).</li><li>How easy is it to obtain the resources needed to execute your business model (e.g. attract prime talent)? How costly are they?</li><li>Where are prices headed?</li></ul> | <ul><li>The essential resources needed for an e-Commerce Trading Platform is labour, computers, office space and cloud services.</li><li>Software Engineers salary ranges from US$33,000 to US$52,000 per annum</li><li>As of September 2023, the inflation rate is 6.6%. Target inflation rate is between 4% and 6%. Prices are stabilizing.[^1]</li></ul> |
 | <p><strong>Economic Infrastrucute</strong><br /><small>Describes the economic infrastructure of the market in which your business operates</small></p> | <ul><li>How good is the (public) infrastructure in your market?</li><li>How would you characterize transportation, trade, school quality, and access to suppliers and customers?</li><li>How high are individual and corporate taxes?</li><li>How good are public services for organizations?</li><li>How would you rate the quality of life?</li></ul> | <ul><li></li><li></li></ul> |
 
+## Public Services
+
+Jamaica offers a range of public services to its residents and visitors. These services are provided by various government agencies and institutions. Here is a list of some common public services available in Jamaica:
+
+1. **Healthcare Services:** 
+   - Public hospitals and clinics provide healthcare services to Jamaican citizens, including emergency care, vaccinations, and medical consultations.
+
+2. **Education Services:** 
+   - Public schools offer free primary and secondary education.
+   - Public universities and colleges provide higher education opportunities.
+
+3. **Police and Security Services:** 
+   - The Jamaica Constabulary Force (JCF) is responsible for maintaining law and order, as well as ensuring public safety.
+
+4. **Fire Services:** 
+   - The Jamaica Fire Brigade provides fire prevention and emergency response services.
+
+5. **Transportation Services:** 
+   - The Jamaica Urban Transit Company (JUTC) operates public buses in Kingston and St. Andrew.
+   - The Transport Authority regulates public transportation services, including taxis and route taxis.
+
+6. **Public Utilities:**
+   - The National Water Commission (NWC) provides water and sewerage services.
+   - The Jamaica Public Service Company (JPS) provides electricity.
+
+7. **Social Services:** 
+   - The Ministry of Labour and Social Security offers social assistance programs and employment services.
+   - The Child Development Agency (now merged into the Child Protection and Family Services Agency) focuses on child welfare.
+
+8. **Postal and Communication Services:** 
+   - The Jamaica Post provides postal and courier services.
+   - The Office of Utilities Regulation (OUR) regulates telecommunications and utilities.
+
+9. **Environmental Services:** 
+   - The National Environment and Planning Agency (NEPA) oversees environmental protection and conservation efforts.
+
+10. **Judicial and Legal Services:** 
+    - The court system provides access to justice through various levels of courts.
+    - Legal Aid is available to those who cannot afford legal representation.
+
+11. **Immigration and Passport Services:**
+    - The Passport, Immigration, and Citizenship Agency (PICA) manages passports and immigration services.
+
+12. **Taxation and Revenue Services:** 
+    - The Tax Administration Jamaica (TAJ) collects taxes and customs duties.
+
+13. **Public Records and Documentation Services:** 
+    - The Registrar General's Department manages birth, death, marriage, and property records.
+
+14. **Tourism and Culture Services:**
+    - The Jamaica Tourist Board promotes tourism.
+    - The Institute of Jamaica supports cultural preservation and promotion.
+
+15. **Agricultural and Food Services:** 
+    - The Ministry of Agriculture and Fisheries oversees agricultural programs and food safety.
+
+16. **Trade and Commerce Services:** 
+    - The Jamaica Trade and Invest (JAMPRO) agency promotes trade and investment opportunities.
+
+Please note that the availability and quality of these services may vary, and it's advisable to contact the respective government agencies or visit their official websites for the most up-to-date information and specific details on accessing these services.
+
+<image src="/.attachments/chatgpt-logo.png" alt="Chat GPT Logo" width="16" height="16" />
+
+## Taxes
+
+Jamaica has a tax system that includes various taxes at the national and local levels. Here is a list of some of the main taxes in Jamaica:
+
+1. **Income Tax:** 
+   - Individuals and businesses are subject to income tax in Jamaica. The tax rates and thresholds can vary depending on the type of income and the taxpayer's status.
+
+2. **General Consumption Tax (GCT):** 
+   - GCT is a value-added tax (VAT) on goods and services in Jamaica. The standard rate is 15%, but some items may be exempt or subject to a reduced rate.
+
+3. **Customs Duties and Import Taxes:** 
+   - Jamaica imposes customs duties and import taxes on goods imported into the country. The rates can vary depending on the type of goods and their origin.
+
+4. **Property Tax:** 
+   - Property owners in Jamaica are required to pay property tax on real estate holdings. The tax rate is based on the assessed value of the property.
+
+5. **Stamp Duty:** 
+   - Stamp duty is a tax on various legal documents, including property transfers, leases, and certain financial transactions.
+
+6. **Transfer Tax:** 
+   - Transfer tax is levied on the transfer of property in Jamaica.
+
+7. **Special Consumption Tax (SCT):** 
+   - SCT is applied to specific goods such as alcohol, tobacco, and motor vehicles. The rates can vary depending on the type of product.
+
+8. **Environmental Levy:** 
+   - An environmental levy is imposed on the importation of certain environmentally harmful products, such as single-use plastic bags and Styrofoam containers.
+
+9. **Asset Tax:** 
+   - Asset tax is levied on the value of certain assets owned by businesses.
+
+10. **Motor Vehicle Licenses and Registration Fees:** 
+    - Owners of motor vehicles are required to pay annual license fees and registration fees.
+
+11. **Travel Tax:** 
+    - A travel tax is levied on passengers departing from Jamaican airports.
+
+12. **Gaming Taxes:** 
+    - Taxes are imposed on various forms of gambling and gaming activities.
+
+13. **Education Tax:** 
+    - A special tax is levied to fund education in Jamaica.
+
+14. **Hotel Accommodation Tax:** 
+    - Tourists staying in hotels and accommodations are subject to this tax.
+
+15. **Fuel Tax:** 
+    - Taxes are applied to the sale of gasoline and diesel fuel.
+
+16. **Sugary Beverage Tax:** 
+    - A tax on sugary beverages to promote public health.
+
+It's important to note that tax rates and regulations may change over time, so it's advisable to consult with the Jamaica Tax Administration (TAJ) or a qualified tax professional for the most up-to-date information and guidance on taxation in Jamaica. Additionally, specific exemptions and deductions may apply to certain taxpayers and transactions.
+
+<image src="/.attachments/chatgpt-logo.png" alt="Chat GPT Logo" width="16" height="16" />
+
+## Economic Complexity Trade Score
+
+As of 2021, Jamaica has had a economic complexity trade score of -0.23.[^2]
+
+Jamaica's negative Economic Complexity Trade Score suggests that its exports are less diverse and less economically complex compared to some other countries. There are several factors that contribute to this negative score:
+
+1. **Dependence on a Few Key Exports:** Jamaica's economy has historically been heavily dependent on a few key exports, most notably bauxite/aluminum and tourism. This concentration in a limited number of sectors can result in a lower Economic Complexity Trade Score.
+
+2. **Limited Export Diversification:** The country's export portfolio is relatively narrow, with a significant reliance on primary commodities and low-sophistication products. This lack of diversification can restrict economic complexity.
+
+3. **Lack of Technological Advancement:** The production of more sophisticated and technologically advanced goods often requires significant investments in research and development, infrastructure, and education. Jamaica may face challenges in these areas, contributing to a lower score in terms of product sophistication.
+
+4. **Limited Access to Global Markets:** Exporting more complex and diverse products often requires access to global markets and the ability to meet international quality and regulatory standards. Barriers to market access can hinder the development of more complex exports.
+
+5. **Economic Challenges:** Jamaica has faced economic challenges, including high public debt, fiscal deficits, and external vulnerabilities. These factors can impact the country's ability to invest in economic diversification and technological advancements.
+
+6. **Size of the Economy:** Jamaica is a relatively small economy in the global context, which can limit the scope and scale of its exports. Smaller economies may have fewer resources and opportunities for diversification.
+
+7. **Historical Factors:** Historical factors, such as colonial legacies and patterns of trade, can also influence a country's economic structure and export composition.
+
+It's important to note that while Jamaica's negative Economic Complexity Trade Score reflects these challenges, the country has been making efforts to diversify its economy and improve its export competitiveness. For instance, there have been initiatives to promote the export of agricultural products and to develop the business process outsourcing (BPO) industry.
+
+Overcoming these challenges and improving the Economic Complexity Trade Score often requires a combination of government policies, investments in education and infrastructure, efforts to enhance the business environment, and strategies to promote innovation and economic diversification. Additionally, economic conditions can change over time, so it's important to monitor Jamaica's progress and evolving economic structure.
+
+<image src="/.attachments/chatgpt-logo.png" alt="Chat GPT Logo" width="16" height="16" />
+
 [^1]: [Bank of Jamaica](https://boj.org.jm/)
+[^2]: [OEC Profile of Jamaica, 2021](https://oec.world/en/profile/country/jam)
