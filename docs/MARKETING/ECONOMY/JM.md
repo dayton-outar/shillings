@@ -126,6 +126,8 @@ It's important to note that tax rates and regulations may change over time, so i
 
 <image src="/.attachments/chatgpt-logo.png" alt="Chat GPT Logo" width="16" height="16" />
 
+More details on taxes can be found on [PriceWaterhouseCoopers Tax Summaries for Jamaica](https://taxsummaries.pwc.com/jamaica/corporate/other-taxes).
+
 ## Economic Complexity Trade Score
 
 As of 2021, Jamaica has had a economic complexity trade score of -0.23.[^2]
