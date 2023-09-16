@@ -42,41 +42,39 @@ Remember that conducting thorough business research requires attention to detail
 
 ## Competitor Analysis Questions
 
-Market share?
+What are competitor's,
+ - Market share?
+ - Customer base?
+ - Marketing tactics?
+ - Distribution channels? 
+ - Financial performance?
+ - Advantages? Disadvantages? Opportunities for them? Threats to them? (SWOT)
 
-Customer base?
+### Competitor Analysis Checklist
 
-Marketing tactics?
+ - Analyze the features, quality, pricing, and uniqueness of their products or services compared to yours. Identify any gaps in the market that you could potentially exploit.
 
-Distribution channels? 
+ - Determine how your competitors position themselves in the market. Are they focusing on a specific niche, offering premium products, or catering to a broader audience? Understand their unique value proposition and how it compares to yours.
 
-Financial performance?
+ - Identify their target audience and customer demographics. Are they serving the same customers as you or targeting a different segment? This can help you refine your own target audience and tailor your marketing efforts.
 
-Advantages? Disadvantages? Opportunities for them? Threats to them?
+ - Analyze their marketing strategies, including their branding, messaging, advertising channels, and content strategies. Understand what resonates with their audience and how you can differentiate your approach.
 
-Analyze the features, quality, pricing, and uniqueness of their products or services compared to yours. Identify any gaps in the market that you could potentially exploit.
+ - Examine their distribution channels and partnerships. Are they selling through online platforms, brick-and-mortar stores, or both? Understanding their distribution methods can help you optimize your own distribution strategy.
 
-Determine how your competitors position themselves in the market. Are they focusing on a specific niche, offering premium products, or catering to a broader audience? Understand their unique value proposition and how it compares to yours.
+ - Evaluate their online presence, including their website, social media profiles, and customer reviews. Look for customer feedback and complaints to identify areas where you can outperform them.
 
-Identify their target audience and customer demographics. Are they serving the same customers as you or targeting a different segment? This can help you refine your own target audience and tailor your marketing efforts.
+ - If possible, gather information about their financial performance. This includes revenue, profit margins, and any recent funding rounds. Understanding their financial health can provide insights into their overall business stability.
 
-Analyze their marketing strategies, including their branding, messaging, advertising channels, and content strategies. Understand what resonates with their audience and how you can differentiate your approach.
+ - Try to anticipate their future plans based on their recent activities, acquisitions, partnerships, and industry trends. This can help you prepare for potential changes in the competitive landscape.
 
-Examine their distribution channels and partnerships. Are they selling through online platforms, brick-and-mortar stores, or both? Understanding their distribution methods can help you optimize your own distribution strategy.
-
-Evaluate their online presence, including their website, social media profiles, and customer reviews. Look for customer feedback and complaints to identify areas where you can outperform them.
-
-If possible, gather information about their financial performance. This includes revenue, profit margins, and any recent funding rounds. Understanding their financial health can provide insights into their overall business stability.
-
-Try to anticipate their future plans based on their recent activities, acquisitions, partnerships, and industry trends. This can help you prepare for potential changes in the competitive landscape.
-
-Compare your own performance and strategies with those of your competitors. Identify areas where you're lagging behind and areas where you're excelling.
+ - Compare your own performance and strategies with those of your competitors. Identify areas where you're lagging behind and areas where you're excelling.
 
 ![Unique Selling Proposition Diagram](/.attachments/unique-selling-proposition.png)
 
-Identify what sets you apart from your competitors. It could be your unique features, exceptional customer service, innovative technology, or any other factor that gives you a competitive edge.
+ - Identify what sets you apart from your competitors. It could be your unique features, exceptional customer service, innovative technology, or any other factor that gives you a competitive edge.
 
-Based on the analysis, derive actionable insights. Identify opportunities to exploit your competitors' weaknesses, ways to differentiate your offerings, and strategies to strengthen your competitive position.
+ - Based on the analysis, derive actionable insights. Identify opportunities to exploit your competitors' weaknesses, ways to differentiate your offerings, and strategies to strengthen your competitive position.
 
 ## Jurisdictions
 
