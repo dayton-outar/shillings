@@ -76,6 +76,8 @@ What are competitor's,
 
  - Based on the analysis, derive actionable insights. Identify opportunities to exploit your competitors' weaknesses, ways to differentiate your offerings, and strategies to strengthen your competitive position.
 
+ <image src="/.attachments/chatgpt-logo.png" alt="Chat GPT Logo" width="16" height="16" />
+
 ## Jurisdictions
 
 See specific organizations to gather marketing information for,
