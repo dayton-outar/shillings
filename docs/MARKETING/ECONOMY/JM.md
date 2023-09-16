@@ -3,9 +3,9 @@
 | | Main Questions | Jamaica's Landscape |
 |:--- |:--- |:--- |
 | <p><strong>Global Market Conditions</strong><br /><small>Outlines current overall conditions from a macroeconomic perspective</small></p> | <ul><li>Is the economy in a boom or bust phase?</li><li>Describe general market sentiment. What is the GDP growth rate?</li><li>How high is the unemployment rate?</li></ul> | <ul><li>As of 2023, the economy seems to be coming out of decline</li><li>As of March 2023, [the Jamaican economy experienced 4% to 5.5% growth](https://jis.gov.jm/jamaicas-economy-continues-on-strong-growth-path/)</li><li>As of April 2023, [the unemployment rate has dropped to 4.5 percent](https://jis.gov.jm/unemployment-falls-to-new-record-low-4-5-per-cent/).</li></ul> |
-| <p><strong>Capital Markets</strong><br /><small>Describes current capital market conditions as they relate to your capital needs</small></p> | <ul><li>What is the state of the capital markets?</li><li>How easy is it to obtain funding in your particular market?</li><li>Is seed capital, venture capital, public funding, market capital, or credit readily available?</li><li>How costly is it to procure funds?</li></ul> | <ul><li></li><li></li><li></li><li></li></ul> |
+| <p><strong>Capital Markets</strong><br /><small>Describes current capital market conditions as they relate to your capital needs</small></p> | <ul><li>What is the state of the capital markets?</li><li>How easy is it to obtain funding in your particular market?</li><li>Is seed capital, venture capital, public funding, market capital, or credit readily available?</li><li>How costly is it to procure funds?</li></ul> | <ul><li>See [State of Capital Markets](#state-of-capital-markets)</li><li>[Up to J$40M can be accessed under certain conditions](https://www.jncb.com/Business/Loans-Financing/Unsecured_Loans).</li>Apart from getting loans, [being listed on JSE](https://www.jamstockex.com/listings/listing-process/) can provide equity.<li></li><li>Unsecured loans up to J$20M can be accessed by using receivables. Sometimes business must be customer for 1 year.</li></ul> |
 | <p><strong>Commodities and Other Resources</strong><br /><small>Highlights current prices and price trends for resources required for your business model</small></p> | <ul><li>Describe the current status of markets for commodities and other resources essential to your business (e.g. oil prices and labor costs).</li><li>How easy is it to obtain the resources needed to execute your business model (e.g. attract prime talent)? How costly are they?</li><li>Where are prices headed?</li></ul> | <ul><li>The essential resources needed for an e-Commerce Trading Platform is labour, computers, office space and cloud services.</li><li>Software Engineers salary ranges from US$33,000 to US$52,000 per annum</li><li>As of September 2023, the inflation rate is 6.6%. Target inflation rate is between 4% and 6%. Prices are stabilizing.[^1]</li></ul> |
-| <p><strong>Economic Infrastrucute</strong><br /><small>Describes the economic infrastructure of the market in which your business operates</small></p> | <ul><li>How good is the (public) infrastructure in your market?</li><li>How would you characterize transportation, trade, school quality, and access to suppliers and customers?</li><li>How high are individual and corporate taxes?</li><li>How good are public services for organizations?</li><li>How would you rate the quality of life?</li></ul> | <ul><li></li><li></li></ul> |
+| <p><strong>Economic Infrastrucute</strong><br /><small>Describes the economic infrastructure of the market in which your business operates</small></p> | <ul><li>How good is the (public) infrastructure in your market? How good are public services for organizations?</li><li>How would you characterize transportation, trade, school quality, and access to suppliers and customers?</li><li>How high are individual and corporate taxes?</li><li>How would you rate the quality of life?</li></ul> | <ul><li>[Public services](#public-services) are fairly good.</li><li>Roads are being improved for transport across the country. Internet can be accessed all urban areas in the country. There is a vibrant services economy.</li><li>See [Tax Rates](#tax-rates).</li><li>As of 2023, [there seems to be a decline in crime](https://www.riotimesonline.com/brazil-news/mercosur/central-america/jamaica-known-for-its-high-murder-rate-records-drop-in-homicides-in-first-half-of-2023/); increase in GDP growth; decrease in unemployment rate.</li></ul> |
 
 ## Public Services
 
@@ -123,6 +123,25 @@ Jamaica has a tax system that includes various taxes at the national and local l
     - A tax on sugary beverages to promote public health.
 
 It's important to note that tax rates and regulations may change over time, so it's advisable to consult with the Jamaica Tax Administration (TAJ) or a qualified tax professional for the most up-to-date information and guidance on taxation in Jamaica. Additionally, specific exemptions and deductions may apply to certain taxpayers and transactions.
+
+### Tax Rates
+
+As of my last knowledge update in September 2021, I can provide you with a general overview of individual and corporate tax rates in Jamaica. However, please note that tax rates and regulations can change over time, so it's essential to verify the current rates with the Jamaican tax authorities or a qualified tax professional for the most up-to-date information.
+
+Individual Tax Rates in Jamaica (2021):
+1. Personal Income Tax: Jamaica uses a progressive tax system for individuals, with tax rates ranging from 0% to 25% on different income levels. Here are the income tax rates for individuals in 2021:
+
+   - Up to JMD 1,272,360: 0%
+   - JMD 1,272,361 to JMD 6,361,801: 25%
+
+2. National Insurance Scheme (NIS): In addition to income tax, employees and employers are required to contribute to the National Insurance Scheme (NIS) in Jamaica. The contribution rate varies, with employees contributing 2.5% of their earnings up to a specified ceiling, and employers contributing a matching amount.
+
+Corporate Tax Rates in Jamaica (2021):
+1. Corporate Income Tax: The corporate income tax rate in Jamaica for most companies was 25% in 2021. However, certain businesses, such as those in the tourism industry, were eligible for reduced tax rates.
+
+2. Special Economic Zone (SEZ) Companies: Companies operating within Special Economic Zones in Jamaica may enjoy tax incentives and a reduced corporate income tax rate of 12.5%.
+
+Please keep in mind that tax rates and regulations can change, so it's crucial to check with the Jamaican Tax Administration or a tax professional for the most current tax rates and rules for individuals and corporations in Jamaica in 2023 or beyond.
 
 <image src="/.attachments/chatgpt-logo.png" alt="Chat GPT Logo" width="16" height="16" />
 
