@@ -1,4 +1,6 @@
-# Valuation Models Used
+# Asset Evaluation
+
+> Valuation matters in the super-long-term, for example, while positioning and momentum matter much more in the short-term.[^1]
 
 There are 2 main approaches to valuation,
 
@@ -29,12 +31,12 @@ If the company that issued stocks on a stock market pays dividends, a version of
 
 The equation below applies to a single N-year investor, who will collect dividends for N years and
 then sell the stock, or to a series of investors who hold the stock for shorter periods and
-then resell it.[^1]
+then resell it.[^2]
 
 $$\huge{P_0 = {Div_1 \over 1 + r_E} + {Div_2 \over (1 + r_E)^2} + {Div_3 \over (1 + r_E)^3} + \ldots + {Div_N \over (1 + r_E)^N} + { P_N \over (1 + r_E)^N } }$$
 
 For the special case in which the firm eventually
-pays dividends and is never acquired, it is possible to hold the shares forever.[^1]
+pays dividends and is never acquired, it is possible to hold the shares forever.[^2]
 
 $$\huge{P_0 = {Div_1 \over 1 + r_E} + {Div_2 \over (1 + r_E)^2} + {Div_3 \over (1 + r_E)^3} + \ldots = \sum_{n=1}^\infty {Div_n \over (1 + r_E)^n} }$$
 
@@ -103,5 +105,6 @@ $$\huge{Enterprise\text{ }Value\text{ }in\text{ }Year\text{ }T = V_T^L = { FCF_{
 6. [REIT Valuation](https://youtu.be/lz8T0owadXU) - [Chris Hughen](https://www.youtube.com/@ChrisHughen)
 
 
-[^1]: Page 314. Chapter 9. _Corporate Finance: The Core, Global Edition_ by Jonathan Berk and Peter Demarzo.
-[^2]: Page 460. Chapter 17. _Investment Valuation_ by Aswath Damodaran.
+[^1]: Page 75. Chapter 5. _The Art of Currency Trading_ by Brent Donnelly.
+[^2]: Page 314. Chapter 9. _Corporate Finance: The Core, Global Edition_ by Jonathan Berk and Peter Demarzo.
+[^3]: Page 460. Chapter 17. _Investment Valuation_ by Aswath Damodaran.

@@ -1,6 +1,6 @@
-# Stock Trading Analysis
+# Securities Trading Analysis
 
-This body of work is the foundation of an online business that is dedicated to educate the common man about the business of trading stocks and to facilitate the ease of trading these stocks. The philosophy around the education of stock trading are classified in three categories: Fundamental Analysis, Technical Analysis and Behavioural Economics.
+This body of work is the foundation of an online business that is dedicated to educate the common man about the business of trading securities and to facilitate the ease of trading these securities. The philosophy around the education of securities trading are classified in three categories: Fundamental Analysis, Technical Analysis and Behavioural Economics.
 
 The education provided in this project involves constant updates to the state of each business that are on a stock exchange by breaking down the details of annual and quarterly report through the presentation of all the important multiples (or financial ratios) that can be calculated from each report. Also, provided in the continuous learning experience is the evaluation of the business as an asset. The studying of multiples, business evaluation and the effects of the economy constitutes **Fundamental Analysis**.
 
@@ -18,7 +18,15 @@ Trading is an economic activity based on human behaviour and the perception of t
 >
 > ... **behavioral finance** includes human psychology, market positioning, market sentiment,cognitive bias, feedback loops, and other individual human and group behavior characteristics that lead to price moves that cannot be explained by rational macro factors.[^3]
 
+## References
 
+1. The Art of Currency Trading by Brent Donnelly
+2. Corporate Finance: The Core, Global Edition by Jonathan Berk and Peter Demarzo
+3. Predictably Irrational by Dan Ariely
+
+## Tutorial Videos
+
+1. [The ONLY Candlestick Pattern Guide You'll EVER NEED](https://youtu.be/tW13N4Hll88) - [TradingLab](https://www.youtube.com/@TradingLabOfficial)
 
 [^1]: [Investors. Fundamental Analysis](./INVESTORS.md#fundamental-analysis)
 [^2]: [Investors. Technical Analysis](./INVESTORS.md#technical-analysis)
