@@ -74,10 +74,11 @@ Apart from providing analysis on companies, this project seeks to enable custome
  - Fully digitized trading platform integrated with insights (financial analysis) and training
     - Ease of access to analysis of stock prices and company performance (technical and fundamental analysis)
     - An integrated learning experience. [Khan Academy](https://www.khanacademy.org/) course outlines, quizzes and videos comes to mind.
+    - Make use of visual media as much as possible. Make less use of written content. Less reading more visual appeal.
 
 ### Purpose
 
-Why did I biuld Shillings?
+Why did I build Shillings?
 
 1. I wanted to better understand the market response to a stock over a span of 10 years to get an idea of the risk and possibilities. This was technical analysis. Getting the history over that period of time was not easily visualized by the Jamaica Stock Exchange.
 
@@ -86,6 +87,18 @@ Why did I biuld Shillings?
 3. Basic company profile was not offered by the Jamaica Stock Exchange. Value investors need to know the story of each company. There's more to a Stock Exchange than the stock prices. The company's listed are usually the main contributors to an economy and offer goods and services within the local and global marketplace.
 
 Shillings seeks to deliver structured information by making use of visualization tools. Information will be provided in a visually appealing way that engages novice investors to learn as they invest.
+
+### Monetization
+
+"The whales pay for the minnows". I think ultimately, the best monetization strategy is to,
+
+1. Build customer base by offering analytical tools and trading free of cost. This will cost the business.
+
+2. Once critical mass of customer base is arrived, companies listed on the stock exchange can be charged to better prepare their customer profile to appeal to investors. A subscription fee for seamless advertising. Offer a subscription for companies to have an enhanced profile, including additional multimedia content, promotional materials, and priority placement on your website.
+
+3. After critical mass of businesses subscribing, customers who want special services can be charged. (Need to figure those special services: access to historical archives of company reports and other related history of listed companies)
+
+Step 1 may take 4 to 5 years.
 
 ## References
 

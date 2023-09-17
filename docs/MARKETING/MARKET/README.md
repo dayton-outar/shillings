@@ -10,7 +10,7 @@
 
 2. When can you find time to look at your investments?
    
-   1. How much time do you spend monitoring your investments?
+   1. How much time do you spend monitoring your investments? What do you look for?
    2. What time management challenges do you face in finding time for reviewing your investments?
 
 3. Have you ever purchased stocks?
@@ -28,14 +28,7 @@
    
    1. How much would you pay for the service from that site and what services are worth paying for?
 
-6. What intimidates you about the Stock Market?
-
-7. What is your goal when it comes to investments (investments in stocks)?
-
-   1. (Is it just about money?)
-   2. (Do you get any thrills from investing in stocks?)
-
-8. What type of investor do you think you are?
+6. What type of investor do you think you are?
 
    - Beginner
       - Does not know how to interpret financial reports 
@@ -47,6 +40,14 @@
       - Understand financial ratios
       - Understands how to do intrinsic valuations
 
+7. What intimidates you about the Stock Market?
+
+8. What is your goal when it comes to investments (investments in stocks)?
+
+   1. (Is it just about money?)
+   2. (Do you get any thrills from investing in stocks?)
+
+9. What challenges do you have
 
 ## Jurisdictions
 
