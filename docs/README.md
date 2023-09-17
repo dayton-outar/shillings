@@ -18,9 +18,9 @@ Value: How will it make our business and users' lives better?
 
 ...
 
-[Financial Ratios](./MULTIPLIERS.md)
+[Financial Ratios](./ANALYSIS/MULTIPLIERS.md)
 
-[Evaluation Methods](./VALUATION.md)
+[Evaluation Methods](./ANALYSIS/VALUATION.md)
 
 
 Apart from providing analysis on companies, this project seeks to enable customers to purchase and sell stocks via a chosen stock broker online. This project adds value by offering the convenience to conduct business this without submitting anything physical or go into any office in person.
