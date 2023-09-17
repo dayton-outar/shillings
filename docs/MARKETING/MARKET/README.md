@@ -47,7 +47,7 @@
    1. (Is it just about money?)
    2. (Do you get any thrills from investing in stocks?)
 
-9. What challenges do you have
+9. What challenges do you have when it comes to tracking and trading stocks? (What are your needs in this context?)
 
 ## Jurisdictions
 
