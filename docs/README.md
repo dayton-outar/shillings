@@ -2,6 +2,10 @@
 
 ***Shillings*** is the first story-based securities trading platform. Its goal is to create an immersive learning experience for tracking and trading securities.
 
+There's a story behind all the numbers and symbols. There's a story behind how the companies listed were formed. There's a story of the impact each listed company is making regionally and globally. There's a story behind how well each company is performing.
+
+## Value Proposition
+
 ***Shillings*** caters to,
 
 1. Investors
@@ -81,6 +85,7 @@ Step 1 may take 4 to 5 years.
   - [Reuters Finance](https://www.reuters.com/markets/stocks/)
   - [Simply Wall Street](https://simplywall.st/)
 
+- Start _smallest viable market_ by inviting a select few to experience the _beta_ version
 ...
 
 [Financial Ratios](./ANALYSIS/MULTIPLIERS.md)
