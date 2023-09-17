@@ -27,6 +27,8 @@
 5. What does a great investment trading website look like?
    
    1. How much would you pay for the service from that site and what services are worth paying for?
+   2. What about the solutions already available: MoneyMax101, MyMoneyJa, SimplyWall.st, JTrader Pro?
+   3. What about the services provided by your brokerage?
 
 6. What type of investor do you think you are?
 
