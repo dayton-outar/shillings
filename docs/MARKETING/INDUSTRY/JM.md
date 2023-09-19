@@ -350,7 +350,7 @@ But what if there are investors who want to compare multiples such as margins an
 
 ##### JTrader Pro
 
-The JTrader Pro application can be accessed over the internet at https://jtraderpro.jamstockex.com/. This is a financial trading platform and yet it is not an eCommerce application. It does not allow for users to make payments online to buy stocks. Placing orders has to be placed through Stock Brokerage Firms, which are listed on the platform.
+The JTrader Pro application created by [Software Architects](https://www.softwarearchitectsjm.com/portfolio) can be accessed over the internet at https://jtraderpro.jamstockex.com/. This is a financial trading platform and yet it is not an eCommerce application. It does not allow for users to make payments online to buy stocks. Placing orders has to be placed through Stock Brokerage Firms, which are listed on the platform.
 
 ![JTrader Pro: Placing orders](/.attachments/jtrader-3.png)
 
@@ -395,3 +395,8 @@ If the risk of using credit cards as the payment solution is taken up, we can lo
 ![Managing Gateways](/.attachments/manage-gateways-1.png)
 
 Because **JTrader Pro** is owned by the Jamaica Stock Exchange, it has a captive audience. That captive audience may feel that they have to take what Jamaica Stock Exchange has to offer them. But what if a better option could be provided?
+
+##### Few Good Mentions
+
+ - [Investing.com](https://www.investing.com/stock-screener/?sp=country::119|sector::a|industry::a|equityType::a|exchange::124%3Ceq_market_cap;1)
+ - [WeBull](https://www.webull.com/)

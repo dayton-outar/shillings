@@ -99,6 +99,7 @@ Step 1 may take 4 to 5 years.
 
 <img src="/.attachments/strategy.canvas.png" usemap="#image-map">
 
+<!-- Generated at Free Online Image Map Generator: https://www.image-map.net/ -->
 <map name="image-map">
     <area target="_blank" alt="Business Canvas" title="Business Canvas" href="#" coords="439,337,670,463" shape="rect">
     <area target="_blank" alt="Industry Forces" title="Industry Forces" href="./MARKETING/INDUSTRY/" coords="319,398,110" shape="circle">
