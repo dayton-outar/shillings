@@ -123,5 +123,6 @@ Step 1 may take 4 to 5 years.
 1. [AdSense Onboarding Video Series](https://www.youtube.com/playlist?list=PLbAFD4oU9YcqHD_h-b8e8wCYo2XUqbIHM)
 1. [The Complete Guide to Dividend Investing on the Jamaica Stock Market](https://youtu.be/guhqztem9fA)
 1. [How to trade stocks with Jtraderpro](https://youtu.be/OwlkE77s1AI)
+1. [Investing in the Jamaica Stock Market for Beginners - Make Money with Stocks](https://youtu.be/bsXA7nJ7jW8?si=9r-996221fzkeRLn)
 
 [^1]: [Importance of Domain Authority as the Key Site Metric for Growth](https://www.responsify.com/importance-of-domain-authority/) by Ginny Dwyer
