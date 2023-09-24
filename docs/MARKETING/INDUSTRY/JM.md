@@ -400,3 +400,5 @@ Because **JTrader Pro** is owned by the Jamaica Stock Exchange, it has a captive
 
  - [Investing.com](https://www.investing.com/stock-screener/?sp=country::119|sector::a|industry::a|equityType::a|exchange::124%3Ceq_market_cap;1)
  - [WeBull](https://www.webull.com/)
+    - [Webull for Beginners Tutorial - What You MUST Know](https://youtu.be/4CEw1ZNjBMs?si=AOmk11ye6wtrLM5M)
+    - [Webull App Tutorial for COMPLETE Beginners! [DON'T FORGET THIS]](https://youtu.be/MMvTMfxT6uE?si=RNTJ1LJJGwToWWYO)
