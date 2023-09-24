@@ -177,6 +177,8 @@ To run the api,
 docker run -d --name root-api -p 5000:5000 -e ASPNETCORE_URLS=http://+:5000 -e HARPOON_DB_HST=db -e HARPOON_DB_PWD='[Password]' --network=root_default krisyslimited/harpoon:1.5
 ```
 
+When changing UI, copy the files from `dist` folder to `/var/www/html` folder using scp.
+
 
 Do I need [Fluentd](https://docs.fluentd.org/)?
 

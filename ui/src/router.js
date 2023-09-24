@@ -87,11 +87,11 @@ router.beforeEach((to, from, next) => {
     else next()
 })
 
-router.afterEach((to) => {
-    gtag('config', window.GA_TRACKING_ID, {
-        app_name: 'Shillings',
-        send_page_view: true
-      })
-})
+// router.afterEach((to) => {
+//     gtag('config', window.GA_TRACKING_ID, {
+//         app_name: 'Shillings',
+//         send_page_view: true
+//       })
+// })
 
 export default router

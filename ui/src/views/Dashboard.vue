@@ -8,47 +8,7 @@
         <portfolio :formattedDateRange="formattedDateRange" />
       </div>
       <div>
-        <b-tabs v-model="activeTab">
-          <b-tab-item label="Stock Trades">            
-            <stock-trades v-if="totalTrades" :formattedDateRange="formattedDateRange" :tradings="totalTrades" />
-          </b-tab-item>
-          <b-tab-item label="Companies' Earnings">
-            <earnings :formattedDateRange="formattedDateRange" :end="filterDates[1]" />
-          </b-tab-item>
-          <b-tab-item label="Companies' Solvency">
-            <solvencies :formattedDateRange="formattedDateRange" :end="filterDates[1]" />
-          </b-tab-item>
-          <!--
-          <b-tab-item v-if="totalTrades" label="Volume Shares">
-            <b-message title="Volume Shares" type="is-info" aria-close-label="Close message">
-              <p>The volume shares visualizes the percentage division of the volume of stocks traded for the period.</p>
-              <p>All the divisions are divided by the total volume of shares traded within the period.</p>
-            </b-message>
-            <volumes-pie :volumes="volumeShares" />
-          </b-tab-item>
-          <b-tab-item v-if="totalTrades" label="Price Changes">
-            <b-message title="Price Changes" type="is-info" aria-close-label="Close message">
-              <p>This bar chart visualizes percentage change of the closing price from the opening price for the period.</p>
-              <p>Price changes can exceed over 100%, in which case will account for a dramatic gain or loss of your stock.</p>
-            </b-message>
-            <price-bar :changes="pricePercentages" />
-          </b-tab-item>
-          <b-tab-item v-if="totalTrades" label="Trade Cost">
-            <b-message title="Trade Cost" type="is-info" aria-close-label="Close message">
-              <p>This bubble chart visualizes an approximation of the total money spent trading certain stocks for the period.</p>
-              <p>The biggest bubble means that most of the money was spent on that stock for the period.</p>
-            </b-message>
-            <trade-cost :costs="tradeCosts" />
-          </b-tab-item>
-          <b-tab-item v-if="totalTrades" label="Closing Prices">
-            <b-message title="Closing Prices" type="is-info" aria-close-label="Close message">
-              <p>This line chart visualizes closing price each day for the period.</p>
-              <p>From a glance, you can see the stock with the highest closing price.</p>
-            </b-message>
-            <stocks-line :stocks="totalTrades" :options="{ isDetail: false}" />
-          </b-tab-item>
-          -->
-        </b-tabs>
+        <stock-trades v-if="totalTrades" :formattedDateRange="formattedDateRange" :tradings="totalTrades" />
       </div>
     </div>
 </template>
@@ -93,8 +53,7 @@ export default {
       sixOptions: {
         readOnly: true,
         showTools: true
-      },
-      activeTab: 0
+      }
     }
   },
   computed: {

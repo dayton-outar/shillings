@@ -33,29 +33,20 @@
             <b-table-column field="stock.name" label="Security" sortable v-slot="props">
               <stock-tag :data="props.row.stock" />
             </b-table-column>
-            
-            <b-table-column field="volume" label="Quantity" numeric sortable v-slot="props">
-              {{ formatNumber(props.row.volume) }}
-            </b-table-column>
-            
-            <b-table-column field="unitPrice" label="Purchase Price" numeric sortable v-slot="props">
-              {{ formatMoney(props.row.unitPrice) }}
-            </b-table-column>
 
             <b-table-column field="purchaseCost" label="Purchase Cost" numeric sortable v-slot="props">
-              {{ formatMoney(props.row.purchaseCost) }}
-            </b-table-column>
-            
-            <b-table-column field="currentPrice" label="Current Price" numeric sortable v-slot="props">
-              {{ formatMoney(props.row.currentPrice) }}
+              <div class="is-size-7">{{ formatNumber(props.row.volume) }}&nbsp;x&nbsp;{{ formatMoney(props.row.unitPrice) }}&nbsp;=</div>
+              <div class="is-size-5 has-text-weight-medium">{{ formatMoney(props.row.purchaseCost) }}</div>
             </b-table-column>
             
             <b-table-column field="currentCost" label="Current Cost" numeric sortable v-slot="props">
-              {{ formatMoney(props.row.currentCost) }}
+              <div class="is-size-7">{{ formatNumber(props.row.volume) }}&nbsp;x&nbsp;{{ formatMoney(props.row.currentPrice) }}&nbsp;=</div>
+              <div class="is-size-5 has-text-weight-medium">{{ formatMoney(props.row.currentCost) }}</div>
             </b-table-column>
             
             <b-table-column field="variance" label="Gain/Loss" numeric sortable v-slot="props">
-              <span :class="(props.row.variance > 0 ? 'has-text-success-dark' : ( props.row.variance < 0 ? 'has-text-danger-dark' : ''))">{{ formatMoney(props.row.variance) }}</span>
+              <div :class="('is-size-7') + (props.row.variance > 0 ? ' has-text-success-dark' : ( props.row.variance < 0 ? ' has-text-danger-dark' : ''))">{{ formatMoney(props.row.currentCost) }}&nbsp;-&nbsp;{{ formatMoney(props.row.purchaseCost) }}&nbsp;=</div>
+              <div :class="('is-size-5 has-text-weight-medium') + (props.row.variance > 0 ? ' has-text-success-dark' : ( props.row.variance < 0 ? ' has-text-danger-dark' : ''))">{{ formatMoney(props.row.variance) }}</div>
             </b-table-column>
 
             <b-table-column v-slot="props" centered>
@@ -83,10 +74,7 @@
             <template #footer>
               <th>Total</th>
               <th></th>
-              <th></th>
-              <th></th>
               <th class="right-aligned">{{ formatTotalPurchaseCost() }}</th>
-              <th></th>
               <th class="right-aligned">{{ formatTotalCurrentCost() }}</th>
               <th class="right-aligned">{{ formatTotalGainOrLoss() }}</th>
               <th></th>
