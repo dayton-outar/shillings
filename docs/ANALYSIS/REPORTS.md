@@ -2,6 +2,8 @@
 
 ## Introduction to Financial Accounting
 
+© 2014 Charles T. Horngren, Gary L. Sundem, John A. Elliott, Donna R. Philbrick
+
 Important excerpts of key concepts such as financial statement preparation, accrual accounting, transaction analysis, ethical considerations, and financial analysis are highlighted. Also highlighted key points of adhering to accounting standards and ethical guidelines in financial reporting. This provides a solid foundation for understanding and applying the core principles of financial accounting.
 
 ### Measuring Income
