@@ -1,4 +1,4 @@
-# Branding Ideas
+# Branding Strategy
 
 Change name from shillings to,
  - ching

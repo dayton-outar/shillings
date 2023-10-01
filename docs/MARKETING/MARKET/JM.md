@@ -142,3 +142,147 @@ As of my last knowledge update in September 2021, I can provide insights into so
 Please keep in mind that these trends and shifts were based on information available up to September 2021. To get the most current insights into the state of the Jamaica Stock Exchange and any ongoing shifts, it's advisable to consult recent reports, news articles, and official sources related to the JSE.
 
 <image src="/.attachments/chatgpt-logo.png" alt="Chat GPT Logo" width="16" height="16" />
+
+## Interviews
+
+### Financially Savvy
+
+Akeel Herdsman - Quantitative Trader, Financially Savvy, Day Trader
+
+Demographics: 40 - 60 y-o age group
+
+1. Where is the market heading?
+
+   More people will get involved into trading stocks directly. There will be increased volume of trades. Looking to see Jamaica Stock Exchange expand hours of trading.
+
+2. What are your biggest needs regarding the Jamaica Stock market?
+
+   Access to real-time information and ability to do trading real-time. Currently, doesn't think the market is deep enough and liquid enough for each stock.
+
+3. What do you want to get done?
+
+   Make money
+
+4. How much time do you spend monitoring your investments?
+
+   At least once a week. Sometimes, 3 times for the week; 30 minutes every session.
+
+5. What do you look out for?
+
+   BUY and SELL orders and the trends of these orders. (Technical analysis.)
+
+6. Biggest frustration?
+
+   Not being able to see the action real-time. (He at the time of this interview did not have access to JTrader Pro)
+
+7. What does a grat investment trading website look like?
+
+   Has candlestick charts.
+
+8. How much are you willing to pay for a service that delivers what you want?
+
+   US$1 to US$2 per month given a 30-day trial. Wouldn't want to think about the expense.
+
+### Intermediate, Almost Savvy
+
+Tracy-Ann Davis - Read Reports, IPOs; Understands Stock Price movements; Don't know to calculate intrinsic value.
+
+Demographics: 20 - 40 y-o age group
+
+1. Where is the market heading?
+
+   More people will get involved into trading stocks for themselves. Trading stocks in overseas market.
+
+2. How much time do you spend monitoring your investments?
+
+   1 hour for the week. Some weeks no monitoring until IPO, Dividend, Quarterly Report or AGM announcement. Listen for ex-date to get in for dividends. (Sometimes she misses opportunities since she is not on platform every day)
+
+3. What do you look for?
+
+    - P/E ratio
+    - BUY and SELL orders
+    - Dividend Yield
+    - Dividend Policy. Liquidity of companies in IPO report. 
+    - Connections between companies in shareholder list (for example Barita owns shares in Derrimon Trading) and the stock price of related parties that are listed. Look out for pension fund companies in shareholder list. 
+    - Look at revenue growth rate to identify growth stocks from value stocks.
+    - Makes projection comparison of what stocks could give the best gains over period of time. How best can she spend $X?
+
+4. What do you want to get done?
+
+   Make money
+
+5. Biggest frustration?
+
+   Before JTrader, it took too long for the Broker to place orders. Having Brokers place orders are best for long-term, not short-term investment. (She is a short-term investor)
+
+6. How much money can you invest in stocks each month?
+
+   J$1k - J$9k
+
+7. What about the analytical solutions on the internet?
+
+   SimplyWall.st is too much of a learning curve to grasp. JTrader Pro is strictly for trading stocks.
+
+8. What about services provided by brokerages?
+
+   Not beneficial to have 1 brokerage. However, some services are great such as on-boarding onto IPOs and APOs and analysis reports provided in newsletters on their recommendations.
+
+9. How much are you willing to pay for a service that delivers what you want?
+
+   US$10 per month
+  
+**BONUS:** If intrinsic valuation is done, it's a good idea to show a breakdown of how the numbers were arrived.
+
+### Beginner
+
+Christopher Shaw - Reads IPO, Short-term Trader
+
+Demographics: 40 - 60 y-o age group
+
+1. Where is the market heading?
+
+   More people want to trade stocks in overseas market.
+
+2. How much time do you spend monitoring your investments?
+
+   2 hour for the month. 5 hours per month, if the market is up (bullish).
+
+3. What do you look for?
+
+    - Looks at indices for trends of overall market
+    - RSI
+    - MACD
+    - Stochastic Oscillator
+    - Moving Averages
+
+4. What do you want to get done?
+
+   Make money
+
+5. Biggest frustration?
+
+   Data is not real-time and lack of technical analysis tools.
+
+6. How much money can you invest in stocks each month?
+
+   J$1k - J$9k
+
+7. What about the analytical solutions on the internet?
+
+   Investing.com has the technical analysis tools and a stock screener but it takes a day for the information to update. It's not real-time.
+
+8. What about services provided by brokerages?
+
+   I have several brokerage accounts, including those with Sagicor and JMMB. Brokerages are great for purchasing stocks when they are IPO and APO.
+
+9. How much are you willing to pay for a service that delivers what you want?
+
+   US$35 per month
+
+**BONUS**:
+ - Less steps in doing trades instead of going to several pages to complete a trade
+ - Aestehtically pleasing interface but not too fancy
+ - An environment to ease the anxiety of traders
+ - A gaming-type of environment that tracks behaviour and gives positive reinforcement. (Maybe points and badges classifying traders and their style)
+ - Sentiment analysis that interprets the possible market response to news announcements (or just any announcement)
+ - A GPT bot to give suggestions on trades based on real-time information (GPT - Generative Pre-trained Transformer)
