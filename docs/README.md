@@ -47,7 +47,7 @@ Differentiation: How will it solve that problem or pain point better than the cu
 
 Value: How will it make our business and users' lives better?
 
-### Monetization
+## Monetization
 
 "The whales pay for the minnows". I think ultimately, the best monetization strategy is to,
 
