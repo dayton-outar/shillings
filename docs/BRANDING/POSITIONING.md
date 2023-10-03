@@ -182,7 +182,7 @@ Well, yeah. I definitely know this one.
 > 
 > The new campaign was just conventional brag-and-boast advertising.
 
-## Chapter 5. You Cen't Get There from Here
+## Chapter 5. You Can't Get There from Here
 
 > Today a company can have a great product, a great sales force, a great advertising campaign and still fail miserably if it happens to be in a position in which “you can’t get there from here.” No matter how many millions it is prepared to spend.
 >
@@ -436,7 +436,7 @@ Well, yeah. I definitely know this one.
 > 
 > Today the everybody trap may keep you afloat if you’re already in office or already own a substantial share of market. But it’s deadly if you want to build a position from nowhere.
 
-## Chapter 8. Repositioning the competition
+## Chapter 8. Repositioning the Competition
 
 > There comes a time when you can’t find a creneau. With hundreds of variations in each product category on the market, the chances of finding an open hole today are very slim.
 > 
