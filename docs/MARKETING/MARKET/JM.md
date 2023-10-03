@@ -233,21 +233,25 @@ Demographics: 20 - 40 y-o age group
   
 **BONUS:** If intrinsic valuation is done, it's a good idea to show a breakdown of how the numbers were arrived.
 
-### Beginner
+### Intermediate - Almost Savvy
 
 Christopher Shaw - Reads IPO, Short-term Trader
 
 Demographics: 40 - 60 y-o age group
 
-1. Where is the market heading?
+ 1. Where is the market heading?
 
-   More people want to trade stocks in overseas market.
+    More people want to trade stocks in overseas market.
 
-2. How much time do you spend monitoring your investments?
+ 2. How many other persons do you know that trade stocks?
 
-   2 hour for the month. 5 hours per month, if the market is up (bullish).
+    4
 
-3. What do you look for?
+ 3. How much time do you spend monitoring your investments?
+
+    2 hour for the month. 5 hours per month, if the market is up (bullish).
+
+ 4. What do you look for?
 
     - Looks at indices for trends of overall market
     - RSI
@@ -255,29 +259,29 @@ Demographics: 40 - 60 y-o age group
     - Stochastic Oscillator
     - Moving Averages
 
-4. What do you want to get done?
+ 5. What do you want to get done?
 
-   Make money
+    Make money
 
-5. Biggest frustration?
+ 6. Biggest frustration?
 
-   Data is not real-time and lack of technical analysis tools.
+    Data is not real-time and lack of technical analysis tools.
 
-6. How much money can you invest in stocks each month?
+ 7. How much money can you invest in stocks each month?
 
-   J$1k - J$9k
+    J$1k - J$9k
 
-7. What about the analytical solutions on the internet?
+ 8. What about the analytical solutions on the internet?
 
-   Investing.com has the technical analysis tools and a stock screener but it takes a day for the information to update. It's not real-time.
+    Investing.com has the technical analysis tools and a stock screener but it takes a day for the information to update. It's not real-time.
 
-8. What about services provided by brokerages?
+ 9. What about services provided by brokerages?
 
-   I have several brokerage accounts, including those with Sagicor and JMMB. Brokerages are great for purchasing stocks when they are IPO and APO.
+    I have several brokerage accounts, including those with Sagicor and JMMB. Brokerages are great for purchasing stocks when they are IPO and APO.
 
-9. How much are you willing to pay for a service that delivers what you want?
+10. How much are you willing to pay for a service that delivers what you want?
 
-   US$35 per month
+    US$35 per month
 
 **BONUS**:
  - Less steps in doing trades instead of going to several pages to complete a trade
@@ -286,3 +290,52 @@ Demographics: 40 - 60 y-o age group
  - A gaming-type of environment that tracks behaviour and gives positive reinforcement. (Maybe points and badges classifying traders and their style)
  - Sentiment analysis that interprets the possible market response to news announcements (or just any announcement)
  - A GPT bot to give suggestions on trades based on real-time information (GPT - Generative Pre-trained Transformer)
+
+### Long-term Investor
+
+Conrad Nicely - Can't be bothered
+
+Demographics: 40 - 60 y-o age group
+
+1. Where is the market heading?
+
+   --
+
+2. How many other persons do you know that trade stocks?
+
+   --
+
+2. How much time do you spend monitoring your investments?
+
+   --
+
+3. What do you look for?
+
+   --
+
+4. What do you want to get done?
+
+   Make money
+
+5. Biggest frustration?
+
+   --
+
+6. How much money can you invest in stocks each month?
+
+   --
+
+7. What about the analytical solutions on the internet?
+
+   --
+
+8. What about services provided by brokerages?
+
+   --
+
+9. How much are you willing to pay for a service that delivers what you want?
+
+   --
+
+**BONUS**:
+ - All my information, even portfolio information needs to be secured. No disclosure of information, even to the DBA.
