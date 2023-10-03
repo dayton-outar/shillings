@@ -534,4 +534,86 @@ Reminds me of understanding the stages of the buyer's journey by first identifyi
 
 ## Chapter 9. The Power of the Name
 
+> The name is the hook that hangs the brand on the product ladder in the prospect’s mind. In the positioning era, the single most important marketing decision you can make is what to name the product.
+>
+> Shakespeare was wrong. A rose by any other name would not smell as sweet. Not only do you see what you want to see, you also smell what you want to smell. Which is why the single most important decision in the marketing of perfume is the name you decide to put on the brand.
 > 
+> Would “Alfred” have sold as well as “Charlie?” Don’t bet on it.
+> 
+> And Hog Island in the Caribbean was going nowhere until they changed the name to Paradise Island.
+>
+> ...
+>
+> Like Head & Shoulders shampoo, Intensive Care skin lotion, and Close-Up toothpaste.
+>
+> Or like DieHard for a longer-lasting battery. Shake ’n Bake for a new way to cook chicken. Edge for a shaving cream that lets you shave closer.
+> 
+> A name should not go “over the edge,” though. That is, become so close to the product itself that it becomes generic, a general name for all products of its class rather than a trade name for a specific brand.
+>
+> ...
+> 
+> Many people think Time is a great name for a magazine. And in a way, it is. Short, catchy, memorable. But it’s also subtle and tricky. (Time could be a trade magazine for the watch industry.)
+>
+> _Fortune is another name cut out of the same cloth. (Fortune could be a magazine for stockbrokers, commodity traders, or gamblers. It’s not clear.) Business Week is a much better name. Also a more successful magazine._
+>
+> ...
+> 
+> Engineers and scientists in love with their own creations are responsible for some of the really bad names. Names like XD-12, for example. (Presumably standing for “experimental design number 12.”) These are inside jokes that have no meaning in the mind of the prospect.
+>
+> ...
+> 
+> The first company into the mind with a new product or new idea is going to become famous. Whether the name is Lindbergh or Smith or Rumplestiltskin.
+>
+> Coca-Cola was first with a cola drink. Kodak was first with low-cost photography. Xerox was first with the plain-paper copier.
+>
+> ...
+> 
+> With names like “high-fructose corn syrup,” it’s no wonder that even in the trade the products were considered imitation or second-class in comparison with sucrose or “real sugar.” So Corn Products, one of the major suppliers of corn syrups, decided to call its sweeteners “corn sugars.” This move allowed the company to put corn on an equal footing with cane and beet.
+> 
+> “Consider all three types of sugar,” say the ads. “Cane, beet, and corn.”
+> 
+> Marketing people should know that the Federal Trade Commission is the keeper of the generics for many industries. But the FTC can be persuaded. “If we can’t call it sugar, can we put corn syrup in a soft drink and call the product ‘sugar-free’?”
+> 
+> Special-interest groups recognize the power of a good name. The “Right to Life” movement and “fair trade” laws are two examples.
+> 
+> And what senator or representative would dare oppose a bill called the “Clean Air Act?”
+>
+> ...
+> 
+> What does a company do when its name (Goodrich) is similar to the name of a larger company in the same field (Goodyear)?
+> 
+> ...
+>
+> B. F. Goodrich was the first domestic company to market steel-belted radial-ply tires in the United States. Yet several years later when tire buyers were asked which company makes steel-belted radials, 56 percent named Goodyear, which didn’t make them for the domestic market. Only 47 percent said Goodrich, which did.
+
+## Chapter 10. The No-Name Trap
+
+> ...
+
+## Chapter 16. Positioning an Island: Jamaica
+
+> When Edward Seaga replaced socialist Michael Manley as Jamaican prime minister, he proclaimed an open door for capitalist investment.
+>
+> David Rockefeller was so impressed, he formed a group of 25 American corporate chiefs specifically for the purpose of developing Jamaica. In the due course of events the Jamaicans, encouraged by the Rockefeller committee, hired us to develop a position for the island of Jamaica.
+>
+> ...
+>
+> At 7402 feet, Blue Mountain in Jamaica is higher than any point in the United States east of the Mississippi River.
+>
+> ...
+> 
+> Conceptually, this approach says to tourists that the things they travel a great distance to Hawaii for (natural beauty, big green mountains, beautiful beaches, wonderful year-round weather) can be found a lot closer to home, down in the Caribbean.
+> 
+> Jamaica could even copy one of the most successful of Hawaii’s marketing ploys: meeting tourists with flowers at the airport.
+> 
+> Jamaica has beautiful flowers and this gesture, above all, would say that Jamaica is a friendly place as well as a beautiful one.
+> 
+> “The Hawaii of the Caribbean” provides a quick visual analogy. Jamaica doesn’t have the luxury of building that visual image over the years. Transferring Hawaii’s mental picture postcards will save enormous amounts of time and money.
+>
+> Furthermore, the concept strongly differentiates Jamaica from the other Caribbean destinations.
+>
+> ...
+> 
+> If you’re wondering why you haven’t heard much about the Hawaii of the Caribbean, you’ll have to ask Mr. Seaga. He is widely viewed as a Caribbean Ronald Reagan, but “he is really the Jimmy Carter of Jamaica,” a Rockefeller aide told The Wall Street Journal. “He’s the person who gets involved in every detail and agonizes over every issue.”
+> 
+> Presumably he is still agonizing over this one.
