@@ -588,7 +588,149 @@ Reminds me of understanding the stages of the buyer's journey by first identifyi
 
 ## Chapter 10. The No-Name Trap
 
+> “I’m going to L.A.,” the corporate executive will say. “And then I have to make a trip to New York.” Why is Los Angeles often called L.A., but New York is seldom called N.Y.?
+>
+> “I worked for GE for a couple of years and then went to Western Union.” Why is General Electric often called GE, but Western Union is seldom called WU?
+>
+> General Motors is often GM, American Motors is often AM, but Ford Motor is almost never FM.
+>
+> The principle at work here is phonetic shorthand.
+>
+> Ra-di-o Cor-po-ra-tion of A-mer-i-ca is 12 syllables long. No wonder most people use R-C-A, three syllables long.
+>
+> Gen-er-al E-lec-tric is six syllables long, so most people use G-E, two syllables.
+>
+> Gen-er-al Mo-tors is often GM. A-mer-i-can Mo-tors is often AM. But Ford Mo-tor is almost never referred to as FM. The single syllable Ford says it all.
+>
+> But where there’s no phonetic advantage, most people won’t use initials. New York and N.Y. are both two syllables long. So while the initials N.Y. are often written, they are seldom spoken.
+> 
+> Los An-ge-les is four syllables long, so L.A. is frequently used. Note, too, that San Fran-cis-co, a four-syllable word, is seldom shortened to “S.F.” Why? There’s a perfectly good two syllable word (Frisco) to use a shorthand for San Francisco. Which is why people say “Jer-sey” for New Jersey instead of “N.J.”
+> 
+> When they have a choice of a word or a set of initials, both equal in phonetic length, people will invariably use the word, not the initials.
+> 
+> Phonetic length can sometimes fool you. The initials WU look a lot shorter than the name Western Union. But phonetically they are exactly the same length. Dou-ble-U U. West-ern Un-ion. (Except for W, every other English language letter is just one syllable.)
+> 
+> While customers refer to companies phonetically, the companies they talk about have a different way of looking at themselves. Companies are visually oriented. They go to a lot of trouble making sure the names look right without considering how it sounds.
+>
 > ...
+> 
+> A company must be extremely well known before it can use initials successfully. Apparently the use of the initials “GE” triggers the words “General Electric” inside the brain.
+>
+> Invariably, people must know the name first before they will respond to initials. The Federal Bureau of Investigation and the Internal Revenue Service are extremely well known. So we respond instantly to FBI and IRS.
+>
+> ...
+> 
+> When you were a child, you first learned to speak and then to read. And you learned to read slowly and laboriously by saying the words out loud as you forced your mind to connect the written word with the aural sound stored in the brain.
+>
+> By comparison, learning to speak requires much less effort than learning to read. We store sounds directly and then play them back in various combinations as our mental dexterity improves.
+>
+> As you grow up, you learn to translate written words into the aural language needed by the brain so rapidly that you are unaware the translation process is taking place.
+>
+> ...
+> 
+> Another reason companies drop their names for initials is the obsolescence of the name itself. RCA sells a lot of things besides radios.
+>
+> And how about United Shoe Machinery? The company had become a conglomerate. Furthermore, the domestic shoe machinery market was drying up as imports continually increased their share. What to do? They took the easy way out. United Shoe Machinery changed its name to USM Corporation. And lived anonymously ever after.
+>
+> ...
+> 
+> In spite of the drawbacks, companies are lured to initials like moths to a candle. The success of the IBMs of this world seems to be proof that initials are effective. It’s the classic confusion between cause and effect.
+>
+> International Business Machines became so rich and famous (the cause) that everyone knew what company you were talking about when you used its initials (the effect).
+>
+> When you try to reverse the procedure, it doesn’t work. You can’t use the initials of a company that is only modestly successful (the cause) and then expect it to become rich and famous (the effect).
+
+## Chapter 11. The Free-Ride Trap
+
+> Take a product called Alka-Seltzer Plus. Let’s see if we can visualize how Alka-Seltzer Plus might have gotten its name.
+>
+> A bunch of the boys are sitting around a conference table trying to name a new cold remedy designed to compete with Dristan and Contac.
+>
+> “I have it,” says Harry. “Let’s call it Alka-Seltzer Plus. That way we can take advantage of the $20 million a year we’re already spending on the Alka-Seltzer name.”
+>
+> “Good thinking, Harry,” and another money-saving idea is instantly accepted, as most money-saving ideas usually are.
+> 
+> But lo and behold, instead of eating into the Dristan and Contac market, the new product turns around and eats into the Alka-Seltzer market.
+> 
+> Every so often the makers of Alka-Seltzer Plus redesign the label. The “Alka-Seltzer” gets smaller and smaller, and the “Plus” gets bigger and bigger.
+> 
+> A better name for the product would have been Bromo-Seltzer Plus. That way they could have taken business away from the competition.
+>
+> In the product era life was simpler. Each company specialized in a single line. The name told it all.
+> 
+> Standard Oil, U.S. Steel, U.S. Rubber, United Airlines, Pennsylvania Railroad.
+> 
+> But technological progress created opportunities. So companies started branching into new fields.
+>
+> Enter the conglomerate. The company that specializes in nothing. By development or acquisition, the conglomerate is prepared to enter any field in which it thinks it can make a buck.
+>
+> Take General Electric. GE makes everything from jet engines to nuclear power plants to plastics.
+> 
+> RCA is in satellite communications, solid-state electronics, and rent-a-cars.
+> 
+> Many people pooh-pooh the conglomerate. Companies should “stick to their knitting,” they say. But conglomerates have provided the capital to sustain vigorous competition in the marketplace. If it weren’t for the conglomerates, we would be a nation of semimonopolies.
+>
+> Take copiers, for example. Xerox, the pioneer in the plain-paper field, now faces competition from the computer manufacturer (IBM), from a photo company (Kodak), and from a postage-meter company (Pitney Bowes).
+> 
+> Even when conglomerates grow by acquisition (RCA’s purchase of Hertz, ITT’s purchase of Avis), they provide the money needed to sustain growth and competition.
+> 
+> Otherwise, when the original founders retired or died, the tax bite would leave the company too weak to defend its turf.
+> 
+> The typical life cycle of a corporation starts with an entrepreneur with an idea. If successful, you can count on two things, death and taxes, to ensure that the operation will end up as part of a conglomerate.
+>
+> ...
+> 
+> When the company develops a product by external acquisition, it usually keeps the existing name. RCA kept the Hertz name. ITT kept the Avis name.
+>
+> But not always.
+> 
+> When Sperry-Rand developed a computer line internally, they called the product Univac. When Xerox went into computers by external acquisition, they changed the name from Scientific Data Systems to Xerox Data Systems.
+> 
+> Corporate egos aside, when should a company use the house name and when should they select a new name? (You can’t really disregard corporate egos. Try telling General Electric not to put the GE name on a new product and you’ll begin to appreciate the enormity of the corporate ego problem.)
+>
+> One reason why the principles of name selection remain so elusive is the Charles Lindbergh syndrome.
+> 
+> If you get into the mind first, any name is going to work.
+> 
+> If you didn’t get there first, then you are flirting with disaster if you don’t select an appropriate name.
+>
+> To illustrate the advantages of separate names rather than house names, compare the strategies of Procter & Gamble with those of Colgate-Palmolive.
+>
+> You’ll find many house names in the Colgate-Palmolive line. To name a few: Colgate toothpaste, Colgate toothbrushes, Palmolive Rapid Shave, Palmolive dishwashing liquid, Palmolive soap.
+> 
+> You won’t find any house names in the Procter & Gamble lineup. Procter & Gamble carefully positions each product so that it occupies a unique niche in the mind. For example: Tide makes clothes “white.” Cheer makes them “whiter than white.” And Bold makes them “bright.”
+>
+> With fewer brands Procter & Gamble does twice as much business and makes five times as much profit as Colgate-Palmolive.
+>
+> While it’s fashionable on Madison Avenue these days to pooh-pooh Procter & Gamble advertising, it’s interesting to note that Procter & Gamble makes more money every year than all of America’s 6000 advertising agencies combined.
+>
+> ...
+> 
+> When you look into the prospect’s mind, you can see what went wrong.
+>
+> It’s the teeter-totter principle. One name can’t stand for two distinctly different products. When one goes up, the other goes down.
+>
+> ...
+>
+> One reason why companies keep looking for a free ride is that they underestimate the value of anonymity.
+>
+> In politics, in marketing, in life, anonymity is a resource, easily squandered by too much publicity.
+> 
+> “You can’t beat somebody with a nobody,” goes the old political saying. But today you can.
+> 
+> The rapid rise of a “nobody” like Gary Hart is proof that politics is a different game today. The old maxims are no longer valid.
+> 
+> Richard Nixon may be the best-known political name in the world. But almost any nobody could beat him.
+> 
+> Publicity is like eating. Nothing kills the appetite quite as much as a hearty meal. And nothing kills the publicity potential of a product or a person quite as much as a cover story in a national magazine.
+> 
+> The media are constantly looking for the new and different, the fresh young face.
+> 
+> In dealing with media, you must conserve your anonymity until you are ready to spend it. And then when you spend it, spend it big. Always keeping in mind that the objective is not publicity or communication for its own sake, but publicity to achieve a position in the prospect’s mind.
+
+## Chapter 12. The Line-Extension Trap
+
+> 
 
 ## Chapter 16. Positioning an Island: Jamaica
 
