@@ -730,7 +730,121 @@ Reminds me of understanding the stages of the buyer's journey by first identifyi
 
 ## Chapter 12. The Line-Extension Trap
 
+> When the marketing history of the past decade is written, the single most significant trend will have to be line extension. That is, taking the name of an established product and using it on a new one. (The free-ride trap carried to its ultimate conclusion.)
+>
+> Dial soap, Dial deodorant.
+>
+> Life Savers candy. Life Savers gum.
+>
+> Kleenex tissue. Kleenex towels.
+>
+> Line extension has swept through the advertising and marketing community like Sherman through Georgia. And for some very sound reasons.
+>
+> Logic is on the side of line extension. Arguments of economics. Trade acceptance. Consumer acceptance. Lower advertising costs. Increased income. The corporate image.
+>
+> Logic is on the side of line extension. Truth, unfortunately, is not.
+>
+> Line extension is a result of clear, hard-headed, inside-out thinking that goes something like this:
 > 
+> “We make Dial soap, a great product that gets the biggest share of the bar-soap market. When our customers see Dial deodorant, they’ll know it comes from the makers of the great Dial soap.”
+> 
+> “Furthermore,” and this is the clincher, “Dial is a deodorant soap. Our customers will expect us to produce a high-quality underarm deodorant.” In short, Dial soap customers will buy Dial deodorants.
+>
+> ...
+> 
+> Dial has a large share of the soap market and a very small share of the deodorant market.
+>
+> ...
+>
+> Let’s look at line extension from the point of view of the prospect and work backward.
+>
+> Both Dial and Bayer hold strong positions inside the prospect’s mind.
+>
+> But what does it mean to own a position in the mind? Simply this: The brand name becomes a surrogate or substitute for the generic name.
+> 
+> “Where is the Bayer?”
+>
+> “Hand me the Dial.”
+>
+> The stronger the position, the more often this substitution takes place. Some brands are so strong they are practically generic. Fiberglas, Formica, Jell-O, Kleenex, Band-Aid, Sanka. “Generic” brand names are, of course, close to the edge, so they have to be handled carefully or Uncle Sam will take your goodies away.
+>
+> From a communication point of view, the generic brand name is very efficient. One word serves in place of two. When you have a generic brand name, you can afford to ignore the brand and promote the category.
+> 
+> “Coffee keeps you awake? Drink Sanka.”
+>
+> “Serve your family low-calorie Jell-O instead of cake or pie.”
+> 
+> From the prospect’s point of view, line extension works against the generic brand position. It blurs the sharp focus of the brand in the mind. No longer can the prospect say “Bayer” if he or she wants aspirin. Or “Dial” for soap.
+>
+> In a sense, line extension educates the prospect to the fact that Bayer is nothing but a brand name. It destroys the illusion that Bayer is a superior form of aspirin. Or that Dial is deodorant soap rather than just a brand name for a deodorant soap.
+>
+> ...
+>
+> The consumer and the manufacturer see things in totally different ways.
+>
+> Would you believe that to the folks down in Atlanta, Coca-Cola is not a soft drink? To the manufacturer, Coca-Cola is a company, a brand name, an institution, and a great place to work.
+> 
+> But to the consumer, Coca-Cola is a sweet, dark, carbonated beverage. What’s in the glass is Coke. It’s not a cola drink manufactured by a company called Coca-Cola.
+> 
+> The tablets in a bottle of aspirin are Bayer. Not aspirin manufactured by a company called Bayer. (The company name, of course, is Sterling Drug, not Bayer. So Bayer nonaspirin could just as logically have been called Sterling nonaspirin.)
+> 
+> The great strength of a generic brand name is this close identification with the product itself. In the consumer’s mind, Bayer is aspirin and every other aspirin brand becomes “imitation Bayer.”
+> 
+> The Coca-Cola slogan, “The real thing,” capitalizes on the tendency of the prospect to put the first product into the mind on a pedestal and to treat the me-too products as somehow inferior to the original.
+>
+> ...
+> 
+> Perhaps the classic example of the line-extension trap is what happened to Protein 21 shampoo.
+> 
+> A number of years ago the Mennen company introduced a combination shampoo/conditioner called Protein 21, which rapidly carved out a 13 percent share of the shampoo market.
+> 
+> Then Mennen hit the line-extension lure. In rapid succession, the company introduced Protein 21 hairspray in regular and extra hold, scented and unscented. Also Protein 21 conditioner (in two formulas) and Protein 21 concentrate. And to make sure you can’t remember what to put on your hair, Mennen also markets Protein 29. For men.
+> 
+> No wonder Protein 21’s share of the shampoo market has fallen from 13 percent to 2 percent. And the decline is bound to continue.
+> 
+> But as incredible as it may seem, line extensions continue to sweep the packaged goods field.
+
+## Chapter 13. When Line Extension Can Work
+
+> One of the reasons for the continuing popularity of line extension is that in the short term, line extension has some advantages.
+>
+> Let’s say there was going to be a professional swimming team in New York. “Here come the Wets” might be a typical newspaper headline announcing the event. With one word, “Wets,” we know it’s (1) a professional sports team, (2) located in the metropolitan New York area, and (3) involved in some kind of water sport.
+>
+> But that’s only in the short term. As the original announcement fades in the mind, confusion sets in.
+>
+> ...
+>
+> Because the line-extension name is related to the original name, it achieves an instant flash of understanding. “Ah, yes, Diet Coca-Cola.”
+>
+> It also generates an instant flash of sales. When Alka-Seltzer announces a new product like Alka-Seltzer Plus, everybody stocks up on it. Consumers aren’t necessarily buying it, but retailers are.
+> 
+> So the early sales figures look good. (To book $1 million worth of business, you only have to sell $35 worth to every supermarket.)
+> 
+> Business looks great the first 6 months as you fill the pipelines. But when the reorders don’t come in, all of a sudden things turn dark.
+>
+> After the initial recognition of a line-extension brand, the prospect is never quite sure there is such a product.
+> 
+> Schlitz Light, Pall Mall Extra Mild, Jergens Extra Dry. Brand names like these slide into (and out of) the mind effortlessly. They require almost no mental work on the part of the prospect.
+>
+> Easy come, easy go. Line-extension names are forgettable because they have no independent position in the mind. They are satellites to the original brand name. Their only contribution is to blur the position occupied by the original name. Often with catastrophic results.
+
+## Chapter 14. Positioning a Company: Xerox
+
+> When a new employee accepts a job, he or she “buys” the company. (With its recruiting programs, a company is actually selling itself.)
+> 
+> Who would you rather work for, General Electric or the Schenectady Electrical Works?
+> 
+> Every year companies across the country compete for top graduates at the nation’s leading universities. Who do you think gets the cream of the crop?
+> 
+> That’s right. The companies that occupy the best positions in the minds of the prospective employee. The General Electrics, the Procter & Gambles.
+> 
+> _And when investors buy a share of stock, what they are really paying for is a piece of that company’s position, now and in the future._
+> 
+> How much a person is willing to pay for that stock (six or sixty times earnings) depends on the strength of that position in the buyer’s mind.
+> 
+> Positioning a company effectively has lots of advantages if you happen to be an officer or director of that corporation. It’s not easy, though.
+
+...
 
 ## Chapter 16. Positioning an Island: Jamaica
 
@@ -759,3 +873,115 @@ Reminds me of understanding the stages of the buyer's journey by first identifyi
 > If you’re wondering why you haven’t heard much about the Hawaii of the Caribbean, you’ll have to ask Mr. Seaga. He is widely viewed as a Caribbean Ronald Reagan, but “he is really the Jimmy Carter of Jamaica,” a Rockefeller aide told The Wall Street Journal. “He’s the person who gets involved in every detail and agonizes over every issue.”
 > 
 > Presumably he is still agonizing over this one.
+
+## Chapter 23. Positioning Yourself and Your Career
+
+> What are you? People suffer from the same disease as products. They try to be all things to all people.
+> 
+> The problem with this approach is the mind of the prospect. It’s difficult enough to link one concept with each product. It’s almost impossible with two or three or more concepts.
+> 
+> The most difficult part of positioning is selecting that one specific concept to hang your hat on. Yet you must, if you want to cut through the prospect’s wall of indifference.
+> 
+> What are you? What is your own position in life? Can you sum up your own position in a single concept? Then can you run your own career to establish and exploit that position?
+> 
+> Most people aren’t ruthless enough to set up a single concept for themselves. They vacillate. They expect others to do it for them.
+>
+> “I’m the best lawyer in Dallas.”
+>
+> Are you? How often would your name be mentioned if we took a survey of the Dallas legal community?
+>
+> “I’m the best lawyer in Dallas” is a position that can be achieved with some talent, some luck, and a lot of strategy. And the first step is to isolate the concept that you are going to use to establish that long-term position. It’s not easy. But the rewards can be great.
+>
+> ...
+> 
+> Therefore, anything worthwhile doing is worthwhile doing lousy.
+>
+> Your reputation will probably be better within the company if you try many times and succeed sometimes than if you fear failure and only try for sure things.
+>
+> ...
+> 
+> Remember Leonard Slye? Few people did, until he changed his name to Roy Rogers, an important first step in becoming a motion picture star.
+>
+> How about Marion Morrison? A little feminine for a he-man cowboy, so he changed it to John Wayne.
+>
+> ...
+>
+> Common law grants you the right to adopt any name you want as long as you’re not trying to defraud or be deceptive. So don’t change your name to McDonald and open up a hamburger stand.
+>
+> ...
+> 
+> As young executives, they notice that top managers usually use initials: J. S. Smith, R. H. Jones. So they do the same. On memos and in letters.
+>
+> It’s a mistake. You can afford to do that only if everyone knows who you are. If you’re on your way up, if you’re trying to burn your name into the minds of top management, you need a name, not a set of initials. For exactly the same reasons your company does.
+>
+> Write your name and look at it. Roger P. Dinkelacker.
+>
+> What a name like this says psychologically to management is: We are such a big company and you have such an insignificant job that you must use the “P” to differentiate yourself from the other Roger Dinkelackers on the staff.
+>
+> ...
+> 
+> Frank Sinatra, Jr., is an example of the most difficult kind of line-extension name. He literally started with two strikes against him.
+>
+> With a name like Frank Sinatra, Jr., the audience says to itself, “He’s not going to be able to sing as well as his father.”
+>
+> Since you hear what you expect to hear, of course he doesn’t.
+>
+> ...
+> 
+> Some ambitious, intelligent people find themselves trapped in situations where their future looks bleak. So what do they generally do?
+>
+> They try harder. They try to compensate by long hours of hard work and effort. The secret of success is to keep your nose to the grindstone, do your job better than the next person, and fame and fortune will come your way, right?
+>
+> Wrong. Trying harder is rarely the pathway to success. Trying smarter is the better way.
+>
+> It’s the story of the shoemaker’s children all over again. Too often, management people don’t know how to manage their own careers.
+> 
+> Their own promotional strategy is often based on the naive assumption that ability and hard work are all that counts. And so they dig in and work harder, waiting for the day that someone will tap them on the shoulder with the magic wand.
+> 
+> But that day seldom comes.
+> 
+> The truth is, the road to fame and fortune is rarely found within yourself. The only sure way to success is to find yourself a horse to ride. It may be difficult for the ego to accept, but success in life is based more on what others can do for you than on what you can do for yourself.
+> 
+> Kennedy was wrong. Ask not what you can do for your company. Ask what your company can do for you. Therefore, if you want to take maximum advantage of the opportunities that your career has to offer, you must keep your eyes open and find yourself a horse to do the job for you.
+>
+> **The first horse to ride is your company.** Where is your company going? Or more impolitely, is it going anywhere at all?
+>
+> Too many good people have taken their good prospects and locked them into situations that are doomed to failure. But failure at least gives you a second chance. Even worse is the company with less than average chances for growth.
+> 
+> No matter how brilliant you are, it never pays to cast your lot with a loser. Even the best officer on the Titanic wound up in the same lifeboat as the worst. And that’s if he was lucky enough to stay out of the water.
+> 
+> You can’t do it yourself. If your company is going nowhere, get yourself a new one. While you can’t always pick an IBM or a Xerox, you ought to be able to do considerably better than average.
+> 
+> Place your bets on the growth industries. Tomorrow-type products like computers, electronics, optics, communications.
+> 
+> And don’t forget that soft services of all types are growing at a much faster rate than hard products. So look at banks, leasing, insurance, medical, financial, and consulting service companies.
+> 
+> Don’t forget that your experience with yesterday-type products can blind you to opportunities in totally different product areas. And especially services.
+> 
+> And when you change jobs to join one of those tomorrow-type companies, don’t just ask how much they are going to pay you today.
+> 
+> Also ask how much they are likely to pay you tomorrow.
+>
+> **The second horse to ride is your boss.** Ask yourself the same questions about your boss as you asked yourself about your company.
+>
+> Is he or she going anywhere? If not, who is? Always try to work for the smartest, brightest, most competent person you can find.
+>
+> If you look at biographies of successful people, it’s amazing to find how many crawled up the ladder of success right behind someone else. From their first assignment in some menial job to their last as president or CEO of a major company.
+> 
+> Yet some people actually like to work for incompetents. I suppose they feel that a fresh flower stands out better if it’s surrounded by wilted ones. They forget the tendency of top management to throw the whole bunch out if they become dissatisfied with an operation.
+> 
+> Two types of individuals come in looking for jobs.
+>
+> One is inordinately proud of his or her specialty. He or she will often say, “You people really need me around here. You’re weak in my specialty.”
+> 
+> The other type says just the opposite. “You’re strong in my specialty. You do a terrific job, and I want to work with the best.”
+>
+> Which type is more likely to get the job? Right. The latter person.
+> 
+> On the other hand, strange as it might seem, top management people see more of the other type. The person who wants to be an expert. Preferably with a big title and salary to match.
+> 
+> “Hitch your wagon to a star,” said Ralph Waldo Emerson. Good advice then. Even better advice now.
+> 
+> If your boss is going places, chances are good that you are too.
+>
+> **The third horse to ride is a friend.** Many business people have an enormous number of personal friends but no business friends. And while personal friends are awfully nice to have and can sometimes get you a deal on a TV set or braces for the kids, they’re usually not too helpful when it comes to finding a better job.
