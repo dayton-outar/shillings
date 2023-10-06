@@ -78,6 +78,16 @@ Step 1 may take 4 to 5 years.
     <area target="_blank" alt="Key Trends" title="Key Trends" href="./MARKETING/TRENDS/" coords="554,217,110" shape="circle">
 </map>
 
+## Feature
+
+Breaking IPOs down in the app could bring value to prospects. Here is the checklist[2],
+ 1. Object of the offer. What is the funds raised to be used for?
+ 2. About the company: industry overiew (market size, potential growth and key industry parameters), the business of the company and the financial statement (debt/equity ratio, sales growth, operating margins), coverage ratio and ROCE.
+ 3. About the leadership: board of directors, management team, experience and remuneration (capital structure; list of shareholders).
+ 4. Valuation of company
+ 5. Risk Factors
+
+
 ## References
 
 1. [Outline of industry](https://en.wikipedia.org/wiki/Outline_of_industry)
@@ -94,5 +104,7 @@ Step 1 may take 4 to 5 years.
 1. [The Complete Guide to Dividend Investing on the Jamaica Stock Market](https://youtu.be/guhqztem9fA)
 1. [How to trade stocks with Jtraderpro](https://youtu.be/OwlkE77s1AI)
 1. [Investing in the Jamaica Stock Market for Beginners - Make Money with Stocks](https://youtu.be/bsXA7nJ7jW8?si=9r-996221fzkeRLn)
+1. [The Top 5 Jamaican Dividend Stock To Invest Right Now in 2022](https://youtu.be/DooE-5QiL_4?si=Sm8La8h7ogpktpk-) - [Garth Grant](https://www.youtube.com/@GarthGrant)
 
 [^1]: [Importance of Domain Authority as the Key Site Metric for Growth](https://www.responsify.com/importance-of-domain-authority/) by Ginny Dwyer
+[^2]: [How to Analyze an IPO: A complete Guide | Top 5 Tips to Analyze an IPO the Best Way](https://youtu.be/1iBlLTvIxX8?si=eBN9oIzZuFsBkZlH) - [Prateek Singh - LearnApp](https://www.youtube.com/@PrateekSinghLearnApp)
