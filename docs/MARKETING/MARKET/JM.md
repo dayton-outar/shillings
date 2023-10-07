@@ -183,6 +183,8 @@ Demographics: 40 - 60 y-o age group
 
    US$1 to US$2 per month given a 30-day trial. Wouldn't want to think about the expense.
 
+**BONUS:** When asked about important features, he mentioned the need for _charts_. Highlights the need for presenting information in visually appealing way.
+
 ### Intermediate, Almost Savvy
 
 Tracy-Ann Davis - Read Reports, IPOs; Understands Stock Price movements; Don't know to calculate intrinsic value.
