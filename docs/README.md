@@ -111,7 +111,7 @@ Drive traffic to site with [Simple Traffic](https://www.simpletraffic.co/).
 1. [How I Pick Stocks](https://youtu.be/IPwDxoomxuA)
 1. [The Complete Guide to Dividend Investing on the Jamaica Stock Market](https://youtu.be/guhqztem9fA) - [Learn Grow Invest](https://www.youtube.com/@learngrowinvest)
 1. [How to trade stocks with Jtraderpro](https://youtu.be/OwlkE77s1AI) - [Kalila Reynolds Media](https://www.youtube.com/@kalilahrey)
-1. [Investing in the Jamaica Stock Market for Beginners - Make Money with Stocks](https://youtu.be/bsXA7nJ7jW8?si=9r-996221fzkeRLn)
+1. [Investing in the Jamaica Stock Market for Beginners](https://youtu.be/bsXA7nJ7jW8?si=9r-996221fzkeRLn) - [Learn Grow Invest](https://www.youtube.com/@learngrowinvest)
 1. [The Top 5 Jamaican Dividend Stock To Invest Right Now in 2022](https://youtu.be/DooE-5QiL_4?si=Sm8La8h7ogpktpk-) - [Garth Grant](https://www.youtube.com/@GarthGrant)
 1. [How to Buy Stocks in Jamaica 2022](https://youtu.be/sRaCVQXm-QA?si=XVFmGSwpS3IM4sJN) - [Emar Morrison](https://www.youtube.com/@emarjm)
 
