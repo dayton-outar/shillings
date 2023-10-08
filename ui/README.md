@@ -89,6 +89,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 15. [Tracking Single Page Applications With Google Analytics](https://www.bounteous.com/insights/2018/03/30/single-page-applications-google-analytics)
 16. [Google Analytics with Single Page Application(SPA) in VueJs](https://morioh.com/p/49394ea827f5)
 17. [... how to set htmlWebpackPlugin.options.title in ... Vue 3 projects](https://stackoverflow.com/questions/62023604/where-to-find-or-how-to-set-htmlwebpackplugin-options-title-in-project-created-w)
+18. [Thoughts on Server-Sent Events, HTTP/2, and Envoy](https://medium.com/@kaitmore/server-sent-events-http-2-and-envoy-6927c70368bb)
+19. [Event Streaming Made Easy with Event-Stream and JavaScript Fetch](https://medium.com/@bs903944/event-streaming-made-easy-with-event-stream-and-javascript-fetch-8d07754a4bed)
 
 ## Tutorial Videos
 
