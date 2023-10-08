@@ -109,11 +109,11 @@ Drive traffic to site with [Simple Traffic](https://www.simpletraffic.co/).
 
 1. [How to Install Google Analytics 4 (Updated in 2022) with GTAG or GTM](https://youtu.be/6upqv3kaIIk) - [Analytics Mania - Google Tag Manager & Analytics](https://www.youtube.com/@AnalyticsMania)
 1. [How I Pick Stocks](https://youtu.be/IPwDxoomxuA)
-1. [AdSense Onboarding Video Series](https://www.youtube.com/playlist?list=PLbAFD4oU9YcqHD_h-b8e8wCYo2XUqbIHM)
-1. [The Complete Guide to Dividend Investing on the Jamaica Stock Market](https://youtu.be/guhqztem9fA)
-1. [How to trade stocks with Jtraderpro](https://youtu.be/OwlkE77s1AI)
+1. [The Complete Guide to Dividend Investing on the Jamaica Stock Market](https://youtu.be/guhqztem9fA) - [Learn Grow Invest](https://www.youtube.com/@learngrowinvest)
+1. [How to trade stocks with Jtraderpro](https://youtu.be/OwlkE77s1AI) - [Kalila Reynolds Media](https://www.youtube.com/@kalilahrey)
 1. [Investing in the Jamaica Stock Market for Beginners - Make Money with Stocks](https://youtu.be/bsXA7nJ7jW8?si=9r-996221fzkeRLn)
 1. [The Top 5 Jamaican Dividend Stock To Invest Right Now in 2022](https://youtu.be/DooE-5QiL_4?si=Sm8La8h7ogpktpk-) - [Garth Grant](https://www.youtube.com/@GarthGrant)
+1. [How to Buy Stocks in Jamaica 2022](https://youtu.be/sRaCVQXm-QA?si=XVFmGSwpS3IM4sJN) - [Emar Morrison](https://www.youtube.com/@emarjm)
 
 [^1]: [Importance of Domain Authority as the Key Site Metric for Growth](https://www.responsify.com/importance-of-domain-authority/) by Ginny Dwyer
 [^2]: [How to Analyze an IPO: A complete Guide | Top 5 Tips to Analyze an IPO the Best Way](https://youtu.be/1iBlLTvIxX8?si=eBN9oIzZuFsBkZlH) - [Prateek Singh - LearnApp](https://www.youtube.com/@PrateekSinghLearnApp)
