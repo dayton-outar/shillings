@@ -2,7 +2,7 @@
 
 - Build Buyer Persona
 
-- Determine competitors, stakeholders and overall landscape
+- Determine competitors, stakeholders and overall landscape. Remember to build infographic of critical processes in on-boarding and trading stocks on Stock Exchanges
 
 - Determine strategy for brand awareness
 
@@ -18,5 +18,3 @@
   - [Simply Wall Street](https://simplywall.st/)
 
 - Start _smallest viable market_ by inviting a select few to experience the _beta_ version
-
-- Remember to build infographic of critical processes in on-boarding and trading stocks on Stock Exchanges
