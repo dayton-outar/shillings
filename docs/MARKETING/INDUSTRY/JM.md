@@ -402,3 +402,7 @@ Because **JTrader Pro** is owned by the Jamaica Stock Exchange, it has a captive
  - [WeBull](https://www.webull.com/)
     - [Webull for Beginners Tutorial - What You MUST Know](https://youtu.be/4CEw1ZNjBMs?si=AOmk11ye6wtrLM5M)
     - [Webull App Tutorial for COMPLETE Beginners! [DON'T FORGET THIS]](https://youtu.be/MMvTMfxT6uE?si=RNTJ1LJJGwToWWYO)
+ - [Robinhood](https://robinhood.com/us/en/)
+ - [Charles Schwab](https://www.schwab.com/trading/tools-and-platforms)
+ - [eTrade](https://us.etrade.com/platforms)
+ - [Trading 212](https://www.trading212.com/)

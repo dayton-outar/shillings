@@ -87,6 +87,15 @@ Breaking IPOs down in the app could bring value to prospects. Here is the checkl
  4. Valuation of company
  5. Risk Factors
 
+ GraceKennedy created a portal for customers of their brokerage firm to submit applications to buy shares from IPOs and APOs.[^3]
+
+ Need to find ways to deconstruct annual and quarterly reports using extraction tools such as,
+  - [Asprise OCR wth Table Detection](http://asprise.com/ocr-detect-table-api/free-ocr-online-index.html)
+  - [Tessearact OCR](https://github.com/tesseract-ocr/tesseract)
+
+Build better logo with [BrandCrowd](https://www.brandcrowd.com/).
+
+Drive traffic to site with [Simple Traffic](https://www.simpletraffic.co/).
 
 ## References
 
@@ -108,3 +117,4 @@ Breaking IPOs down in the app could bring value to prospects. Here is the checkl
 
 [^1]: [Importance of Domain Authority as the Key Site Metric for Growth](https://www.responsify.com/importance-of-domain-authority/) by Ginny Dwyer
 [^2]: [How to Analyze an IPO: A complete Guide | Top 5 Tips to Analyze an IPO the Best Way](https://youtu.be/1iBlLTvIxX8?si=eBN9oIzZuFsBkZlH) - [Prateek Singh - LearnApp](https://www.youtube.com/@PrateekSinghLearnApp)
+[^3]: [GK One Wealth](https://gk-capital.com/gk-one-wealth/?playlist=87add44&video=58719e1)
