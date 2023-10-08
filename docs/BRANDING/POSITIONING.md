@@ -985,3 +985,187 @@ Reminds me of understanding the stages of the buyer's journey by first identifyi
 > If your boss is going places, chances are good that you are too.
 >
 > **The third horse to ride is a friend.** Many business people have an enormous number of personal friends but no business friends. And while personal friends are awfully nice to have and can sometimes get you a deal on a TV set or braces for the kids, they’re usually not too helpful when it comes to finding a better job.
+>
+> Most of the big breaks that happen in a person’s career happen because a business friend recommended that person.
+>
+> ...
+> 
+> When you need a job, it’s usually too late to try that type of tactic. The way to ride the friendship horse is to keep in touch regularly with all your business friends.
+>
+> Send them tear sheets of articles they may be interested in, clips of publicity items, and congratulatory letters when they get promoted.
+> 
+> And don’t assume people always see stories that might have mentioned them. They don’t. And they always appreciate it when someone sends them an item they may have missed.
+>
+> **The fourth horse to ride is an idea.** On the night before he died, Victor Hugo wrote in his diary, “Nothing, not all the armies of the world, can stop an idea whose time has come.”
+>
+> Everyone knows that an idea can take you to the top faster than anything else. But people sometimes expect too much of an idea. They want one that is not only great, but one that everyone else thinks is great too.
+> 
+> There are no such ideas. If you wait until an idea is ready to be accepted, it’s too late. Someone else will have preempted it.
+> 
+> Or in the in-out vocabulary of a few years ago: Anything definitely in is already on its way out.
+> 
+> ...
+> 
+> “One indication of the validity of a principle,” according to psychologist Charles Osgood, “is the vigor and persistence with which it is opposed.” “In any field,” says Dr. Osgood, “if people see that a principle is obvious nonsense and easy to refute, they tend to ignore it. On the other hand, if the principle is difficult to refute and it causes them to question some of their own basic assumptions with which their names may be identified, they have to go out of their way to find something wrong with it.”
+>
+> Never be afraid of conflict.
+> 
+> ...
+> 
+> An idea or concept without an element of conflict is not an idea at all. It’s motherhood, apple pie, and the flag, revisited.
+>
+> **The fifth horse to ride is faith.** Faith in others and their ideas. The importance of getting outside of yourself, of finding your fortune on the outside, is illustrated by the story of a man who was a failure most of his life.
+> 
+> His name was Ray Kroc, and he was a lot older than most people and a failure to boot when he met two brothers who changed his life.
+> 
+> For the brothers had an idea, but no faith. So they sold their idea as well as their name to Ray Kroc for relatively few dollars.
+> 
+> ...
+> 
+> **The sixth horse to ride is yourself.** There is one other horse. An animal that is mean, difficult, and unpredictable. Yet people often try to ride it. With very little success.
+>
+> That horse is yourself. It is possible to succeed in business or in life all by yourself. But it’s not easy.
+> 
+> Like life itself, business is a social activity. As much cooperation as competition.
+> 
+> Take selling, for example, You don’t make a sale all by yourself. Somebody also has to buy what you’re selling.
+> 
+> So remember, the winningest jockeys are not necessarily the lightest, the smartest, or the strongest. The best jockey doesn’t win the race.
+> 
+> The jockey that wins the race is usually the one with the best horse.
+> 
+> So pick yourself a horse to ride and then ride it for all it’s worth.
+
+## Chapter 24. Positioning Your Business
+
+> **1. What position do you own?**
+>
+> Positioning is thinking in reverse. Instead of starting with yourself, you start with the mind of the prospect.
+>
+> Instead of asking what you are, you ask what position you already own in the mind of the prospect.
+> 
+> Changing minds in our overcommunicated society is an extremely difficult task. It’s much easier to work with what’s already there.
+> 
+> In determining the state of the prospect’s mind, it’s important not to let corporate egos get in the way. You get the answer to the question “What position do we own?” from the marketplace, not from the marketing manager.
+> 
+> If this requires a few dollars for research, so be it. Spend the money. It’s better to know exactly what you’re up against now than to discover it later when nothing can be done about it.
+>
+> Don’t be narrow-minded. You must look at the big picture, not the details.
+>
+> Sabena’s problem is not Sabena, the airline, but Belgium, the country.
+> 
+> Seven-Up’s problem is not the prospect’s attitude toward lemon/lime drinks, but the overwhelming share of mind occupied by the colas. “Get me a soda,” to many people, means a Coke or a Pepsi.
+> 
+> Looking at the big picture helped Seven-Up develop its successful uncola program.
+> 
+> Most products today are like 7-Up before the uncola campaign. They have weak or nonexistent positions in the minds of most prospects.
+> 
+> What you must do is to find a way into the mind by hooking your product, service, or concept to what’s already there.
+>
+> **2. What position do you want to own?**
+> 
+> Here is where you bring out your crystal ball and try to figure out the best position to own from a long-term point of view. “Own” is the key word. Too many programs set out to communicate a position that is impossible to preempt because someone else already owns it.
+> 
+> Ford failed to position the Edsel successfully. One reason was there simply was no room in the mind of the auto buyer for another heavily chromed, medium-priced car.
+> 
+> ...
+> 
+> Sometimes you can want too much. You can want to own a position that’s too broad. A position that can’t be established in the prospect’s mind. And even if it could, it couldn’t be defended against the assaults of narrowly based products like Nyquil.
+>
+> This, of course, is the everybody trap, and one example is a famous campaign for a beer called Rheingold. This brewery wanted to preempt New York City’s working class. (Not a bad objective when you consider the large number of heavy beer drinkers in this group.)
+> 
+> So they produced some marvelous commercials featuring Italians drinking Rheingold, Blacks drinking Rheingold, Irish drinking Rheingold, Jews drinking Rheingold, and so on.
+> 
+> Well, rather than appeal to everybody, they ended up appealing to nobody. The reason was simple. Prejudice being a basic human commodity, the fact that one ethnic group drank Rheingold sure didn’t impress another ethnic group.
+> 
+> In fact, all the campaign did was alienate every ethnic group in New York.
+>
+> ...
+> 
+> **3. Whom must you outgun?**
+> 
+> If your proposed position calls for a head-to-head approach against a marketing leader, forget it. It’s better to go around an obstacle rather than over it. Back up. Try to select a position that no one else has a firm grip on.
+> 
+> You must spend as much time thinking about the situation from the point of view of your competitors as you do thinking about it from your own.
+> 
+> Prospects don’t buy, they choose. Among brands of automobiles. Among brands of beer. Among brands of computers. The merit, or lack of merit, of your brand is not nearly as important as your position among the possible choices.
+> 
+> ...
+> 
+> **4. Do you have enough money?**
+> 
+> A big obstacle to successful positioning is attempting to achieve the impossible. It takes money to build a share of mind. It takes money to establish a position. It takes money to hold a position once you’ve established it.
+
+I'm sure there are ways to get publicity without money. Advertising will cost but you advertise to hold your position in the market not to get to that position.
+
+> If you don’t spend enough to get above the noise level, you allow the Procter & Gambles of this world to take your concept away from you. One way to cope with the noise-level problem is to reduce the geographic scope of your problem. To introduce new products or new ideas on a market-by-market basis rather than nationally or even internationally.
+> 
+> With a given number of dollars, it’s better to overspend in one city than to underspend in several cities. If you become successful in one location, you can always roll out the program to other places. Provided the first location is appropriate.
+> 
+> If you can become the No. 1 scotch in New York (the No. 1 scotch-drinking area of the country), you can roll out the product to the rest of the U.S.A.
+>
+> **5. Can you stick it out?**
+> 
+> You can think of our overcommunicated society as a constant crucible of change. As one idea replaces another in bewildering succession.
+>
+> To cope with change, it’s important to take a long-range point of view. To determine your basic position and then stick to it.
+> 
+> Positioning is a concept that is cumulative. Something that takes advantage of advertising’s long-range nature.
+> 
+> You have to hang in there, year after year. Most successful companies rarely change a winning formula. How many years have you seen those Marlboro men riding into the sunset? Crest has been fighting cavities for so long they’re into their second generation of kids. Because of change, a company must think even more strategically than it did before.
+> 
+> With rare exceptions, a company should almost never change its basic positioning strategy. Only its tactics, those short-term maneuvers that are intended to implement a longterm strategy.
+>
+> ...
+> 
+> The line-extension trap is a good example. What you are really doing when you line-extend is weakening your basic position. And once that’s gone, you are adrift without an anchor.
+>
+> Levi’s line-extended into casual clothes. And then found its basic position in jeans undermined by “designer label” jeans.
+>
+> **6. Do you match your position?**
+> 
+> Creative people often resist positioning thinking because they believe it restricts their creativity.
+> 
+> And you know what? It does. Positioning thinking does restrict creativity.
+> 
+> “Avis is only No. 2 in rent-a-cars, so why go with us? We try harder.” This doesn’t sound like an ad. It sounds like the presentation of the marketing strategy. In truth, it’s both.
+> 
+> Do your advertisements for yourself match your position? Do your clothes, for example, tell the world that you’re a banker or a lawyer or an artist?
+> 
+> Or do you wear creative clothes that undermine your position?
+>
+> Creativity by itself is worthless. Only when it is subordinated to the positioning objective can creativity make a contribution.
+>
+> **The role of the outsider**
+> 
+> The question sometimes arises: Do we do it ourselves or do we hire someone to position us?
+>
+> The someone that often gets hired is an advertising agency. An ad agency? Who needs help from those Madison Avenue hucksters?
+> 
+> Everybody. But only the rich can afford to hire an advertising agency. All the others have to learn how to do it themselves. Have to learn how to apply the invaluable ingredient only available from the outsider.
+> 
+> And what does the outsider supply? An ingredient called ignorance. In other words, objectivity.
+> 
+> By not knowing what goes on inside a company, the outsider is better able to see what is happening on the outside. In the mind of the prospect.
+> 
+> The outsider is naturally attuned to outside-in thinking, while the insider is more comfortable with inside-out thinking.
+> 
+> Objectivity is the key ingredient supplied by the advertising or marketing communication or public relations agency.
+>
+> **What the outsider doesn’t supply**
+>
+> In a word, magic. Some business managers believe that the role of an advertising agency is to wave a magic wand which causes prospects to immediately rush out and buy the product.
+> 
+> The wand, of course, is called “creativity,” a commodity much sought after by the neophyte advertiser.
+> 
+> The popular view is that the agency “creates.” And that the best agencies are filled with a substance called “creativity” which they liberally apply to their advertising solutions.
+> 
+> In advertising circles, the story is told about an advertising agency that was very creative. So creative, in fact, it could take straw and spin it into gold.
+> 
+> Now you might have heard of them because they had a very creative name. Rumplestiltskin, Inc.
+> 
+> The legend lives on. Even today, some people think agencies are so creative that they can spin straw into gold.
+> 
+> Not true. Advertising agencies can’t spin straw into gold. If they could, they’d be in the straw-spinning business and not the advertising business.
+> 
+> Today, creativity is dead. The name of the game on Madison Avenue is positioning.

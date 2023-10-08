@@ -185,6 +185,54 @@ Demographics: 40 - 60 y-o age group
 
 **BONUS:** When asked about important features, he mentioned the need for _charts_. Highlights the need for presenting information in visually appealing way.
 
+### Savvy Investor
+
+Ryan ---
+
+Demographics: 40 - 60 y-o age group
+
+1. Where is the market heading?
+
+   --
+
+2. How many other persons do you know that trade stocks?
+
+   --
+
+2. How much time do you spend monitoring your investments?
+
+   --
+
+3. What do you look for?
+
+   --
+
+4. What do you want to get done?
+
+   Make money
+
+5. Biggest frustration?
+
+   --
+
+6. How much money can you invest in stocks each month?
+
+   --
+
+7. What about the analytical solutions on the internet?
+
+   --
+
+8. What about services provided by brokerages?
+
+   --
+
+9. How much are you willing to pay for a service that delivers what you want?
+
+   --
+
+**BONUS**: (Ask about Bloomberg Terminal. What is offered in it? How much for that service? What does he think about WeBull, Charles Schwab, eTrade and RobinHood.)
+
 ### Intermediate, Almost Savvy
 
 Tracy-Ann Davis - Read Reports, IPOs; Understands Stock Price movements; Don't know to calculate intrinsic value.
