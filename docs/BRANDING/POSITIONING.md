@@ -843,8 +843,44 @@ Reminds me of understanding the stages of the buyer's journey by first identifyi
 > How much a person is willing to pay for that stock (six or sixty times earnings) depends on the strength of that position in the buyer’s mind.
 > 
 > Positioning a company effectively has lots of advantages if you happen to be an officer or director of that corporation. It’s not easy, though.
+>
+> ...
+> 
+> Most people think that the bigger, more successful companies have the better people. And the smaller, less successful companies have the leftovers.
+>
+> So if your company occupies the top rung of the product ladder in the prospect’s mind, you can be sure that the prospect will also think that your company has the best people.
+> 
+> If you’re not on top and you tell the prospect you have the better people.… Well, that’s one of those inconsistencies that doesn’t usually get resolved in your favor.
+>
+> ...
+> 
+> Even the stock market consistently undervalues conglomerates like ITT and Gulf & Western. (Many companies are worth more broken into parts than they are worth whole.)
+>
+> ...
+> 
+> Why would Xerox want a position? Xerox has a position. Xerox is the Coca-Cola of copiers.
+>
+> Xerox sees the office market moving toward systems, expecially computer-based information systems. So Xerox bought Scientific Data Systems and subsequently changed the name to Xerox Data Systems.
+>
+> “Our objective in acquiring SDS,” said the chairman, “was to offer broader-based information systems. We feel that to really seize the opportunities around the world for supplying information, we had to broaden out from graphics, as IBM is broadening out into graphics. People in the seventies who can say to a customer, ‘We can handle all your information needs, whether fascimile transmission, graphics, or whatever,’ will have an enormous advantage.”
+>
+> Six years later, Xerox Data Systems folded. But the loss of XDS didn’t stop Xerox from trying to broaden the company’s product line. Xerox was still committed to the concept of going beyond copiers.
+> 
+> In the years to come, Xerox introduced a parade of office automation products. The XTEN network, the Ethernet network, the Star workstation, the 820 personal computer. “Now the industry will know our secret for certain,” declared a Xerox vice president. “We want to be No. 1 in this market.”
+>
+> ...
+> 
+> What can Xerox do? Our message to Xerox is to stop fighting copiers. You can’t change what’s in the prospect’s mind.
+>
+> ...
+> 
+> Xerox is a $9 billion company with more than 100,000 employees. It ought to be impossible to position an enterprise as big and diverse as Xerox with a single word.
+> 
+> But in an overcommunicated society there is only so much room in the mind. Today Xerox means just one word—copiers. Tomorrow Xerox could use lasography to create a broader mental position.
 
-...
+## Chapter 15. Positioning a Country: Belgium
+
+>
 
 ## Chapter 16. Positioning an Island: Jamaica
 
