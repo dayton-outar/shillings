@@ -880,7 +880,39 @@ Reminds me of understanding the stages of the buyer's journey by first identifyi
 
 ## Chapter 15. Positioning a Country: Belgium
 
+> Belgium is a beautiful country with many of the things that appeal to the seasoned European traveler. Like interesting cities, historical palaces, museums, and art galleries.
+> 
+> Oddly enough, many Belgian people don’t have a high opinion of their own country as a tourist attraction. That attitude is perhaps epitomized by a sign that used to be at the Brussels airport. Among other things it said, “Welcome to Belga country. Weather: mild, but rains 220 days a year, on average.”
+> 
+> As the result, Belgium’s favorite tourist strategy was to promote the central location of Brussels as a “gateway” city and the ease of getting somewhere else. Like London, Paris, and Rome. (If you want to visit New York, fly to Philadelphia because it’s close by.)
 >
+> ...
+> 
+> But while “beautiful” was a good position, it wasn’t really enough as a tourist promotion theme. To position a country as a destination, you need attractions that will keep the traveler around for at least a few days.
+>
+> ...
+>
+> The “three-star city” strategy had three important things going for it.
+>
+> First, it related Belgium to a destination that was already in the mind of the traveler, Amsterdam. In any positioning program, if you can start with a strongly held perception, you’ll be that much ahead in your efforts to establish your own position.
+> 
+> Second, the Michelin Guide, another entity already in the mind of the traveler, gave the concept credibility.
+> 
+> Finally, the “five cities to visit” made Belgium a bona fide destination.
+> 
+> Eventually the “three-star cities of beautiful Belgium” concept was moved into television. The response was substantial.
+> 
+> ...
+> 
+> Now you might be wondering why, after all this, you haven’t seen much about Belgium and its three-star cities.
+>
+> A number of events kept this program from getting off the ground. All of which holds a lesson for anyone embarked on a positioning program.
+> 
+> New management not committed to the program arrived on the scene, and when headquarters in Brussels wanted to change the strategy, they quickly acquiesced.
+> 
+> The lesson here is that a successful positioning program requires a major long-term commitment by the people in charge. Whether it’s the head of a corporation, a church, an airline, or a country.
+>
+> In a constantly changing political environment, this is difficult to accomplish.
 
 ## Chapter 16. Positioning an Island: Jamaica
 
@@ -909,6 +941,8 @@ Reminds me of understanding the stages of the buyer's journey by first identifyi
 > If you’re wondering why you haven’t heard much about the Hawaii of the Caribbean, you’ll have to ask Mr. Seaga. He is widely viewed as a Caribbean Ronald Reagan, but “he is really the Jimmy Carter of Jamaica,” a Rockefeller aide told The Wall Street Journal. “He’s the person who gets involved in every detail and agonizes over every issue.”
 > 
 > Presumably he is still agonizing over this one.
+
+...
 
 ## Chapter 23. Positioning Yourself and Your Career
 
@@ -1205,3 +1239,63 @@ I'm sure there are ways to get publicity without money. Advertising will cost bu
 > Not true. Advertising agencies can’t spin straw into gold. If they could, they’d be in the straw-spinning business and not the advertising business.
 > 
 > Today, creativity is dead. The name of the game on Madison Avenue is positioning.
+
+## Chapter 25. Playing the Positioning Game
+
+> To be successful today at positioning, you must have a large degree of mental flexibility. You must be able to select and use words with as much disdain for the history book as for the dictionary.
+> 
+> Not that conventional, accepted meanings are not important. Quite the contrary. You must select the words which trigger the meanings you want to establish.
+> 
+> But is this ethical? Remember, words have no meaning. They are empty containers until you fill them with meaning. If you want to reposition a product, a person, or a country, you often have to first change the container.
+> 
+> In a sense, every product or service is “packaged goods.” If it isn’t sold in a box, the name becomes the box.
+>
+> ...
+> 
+> Language is the currency of the mind. To think conceptually, you manipulate words. With the right choice of words, you can influence the thinking process itself. (As proof that the mind “thinks with words” and not abstract thoughts, consider how a language is learned. To be really fluent in a foreign language, say French, you must learn to think in French.)
+>
+> But there are limits. If a word is so far out of touch with reality, the mind just refuses to use the word. It says “large” on the tube that everyone except the manufacturer calls a “small” toothpaste tube. It says “economy” on the tube that everyone calls “large.”
+>
+> The People’s Republic of China is usually called “Red China” because no one believes it is a “people’s republic.” (Inside the country, the People’s Republic of China is undoubtedly an effective name.)
+>
+> ...
+> 
+> To play the game successfully, you must make decisions on what your company will be doing not next month or next year but in 5 years, 10 years. In other words, instead of turning the wheel to meet each fresh wave, a company must point itself in the right direction.
+>
+> You must have vision. There’s no sense building a position based on a technology that’s too narrow. Or a product that’s becoming obsolete. Or a name that’s defective.
+>
+> ...
+> 
+> When you trace the history of how leadership positions were established, from Hershey in chocolate to Hertz in rent-a-cars, the common thread is not marketing skill or even product innovation. The common thread is seizing the initiative before the competitor has a chance to get established. The leader usually poured in the marketing money while the situation was still fluid.
+>
+> Hershey, for example, established a position in chocolate so strong that Hershey felt it didn’t need to advertise at all. This conviction was a luxury that competitors like Mars couldn’t afford.
+> 
+> Finally Hershey decided to advertise. But not in time. Today the Hershey milk chocolate bar is not the largest seller. It’s not even in the top 5.
+> 
+> You can see that establishing a leadership position depends not only on luck and timing but also on a willingness to pour it on when others stand back and wait.
+>
+> ...
+> 
+> Only an obvious idea will work today. The overwhelming volume of communication prevents anything else from succeeding.
+> 
+> But the obvious isn’t always so obvious. “Boss” Kettering had a sign which he placed on the wall of the General Motors Research Building in Dayton: “This problem when solved will be simple.”
+>
+> “Raisins from California. Nature’s candy.”
+> 
+> “Moist and meaty Gainesburgers. The canned dog food without the can.”
+> 
+> “Bubble Yum. Number yum in bubble gum.”
+> 
+> These are the kinds of simple ideas that work today. Simple concepts expressed with simple words used in a straightforward way.
+> 
+> Often the solution to a problem is so simple that thousands of people have looked at it without seeing it. When an idea is clever or complicated, however, we should be suspicious. It probably won’t work because it’s not simple enough.
+>
+> ...
+> 
+> The secret to establishing a successful position is to keep two things in balance: (1) A unique position with (2) an appeal that’s not too narrow.
+>
+> ...
+> 
+> In positioning, smaller may be better. It is usually better to look for smaller targets that you can own exclusively rather than a bigger market you have to share with three or four other brands.
+>
+> You can’t be all things to all people and still have a powerful position.
