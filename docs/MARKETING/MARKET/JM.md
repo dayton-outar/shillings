@@ -187,7 +187,7 @@ Demographics: 40 - 60 y-o age group
 
 ### Savvy Investor
 
-Ryan ---
+Ryan Daley, Market Maker
 
 Demographics: 40 - 60 y-o age group
 
@@ -217,7 +217,7 @@ Demographics: 40 - 60 y-o age group
 
 6. How much money can you invest in stocks each month?
 
-   --
+   20k+ per month
 
 7. What about the analytical solutions on the internet?
 
