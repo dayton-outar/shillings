@@ -12,4 +12,8 @@
 >
 > The reason we can’t serve up a single, all-powerful, all-purpose definition is a clue to understanding why it’s so hard to design good digital products and services. We’re talking about the challenges inherent in language and representation. No document fully and accurately represents the intended meaning of its author. No label or definition totally captures the meaning of a document. And no two readers experience or understand a particular document or definition or label in quite the same way. The relationship between words and meaning is tricky at best.1 And here’s the paradox of defining information architecture: by defining and clarifying semantic concepts, IA makes them more understandable and findable, but at a cost, because definitions are so imperfect and limiting at the same time. The definition of IA itself is a great illustration of this paradox.
 >
->
+> ...
+> 
+> The three circles illustrate the interdependent nature of users, content, and context within a complex, adaptive information ecology.
+
+![Users, Content, Context Illustration](/.attachments/users.context.content.png)
