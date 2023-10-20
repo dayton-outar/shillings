@@ -17,3 +17,27 @@
 > The three circles illustrate the interdependent nature of users, content, and context within a complex, adaptive information ecology.
 
 ![Users, Content, Context Illustration](/.attachments/users.context.content.png)
+
+## Chapter 3. Design for Finding
+
+> Information architecture is not restricted to taxonomies, search engines, and the other things that help users find stuff in an information environment. Information architecture starts with people and the reason they come to your site or use your app: they have an information need.
+>
+> ...
+> 
+> Modeling needs and behaviors forces us to ask useful questions about what kind of information users want, how much information is enough, and how they actually interact with the architecture.
+> 
+> ...
+> 
+> But people don’t always know exactly what they want. Have you ever visited a website just to poke around? By exploring the site, you’re trying to find information of a sort; you just don’t know exactly what you’re looking for. Even when you do, you may not have the language to express it: is it “skin cancer,” or “melanoma”?
+>
+> ...
+> 
+> So back to the question: what do people want? Let’s use the metaphor of fishing to get at the answer:
+>
+> - _The perfect catch_
+>   Sometimes users really are looking for the right answer.
+>
+> - _Lobster trapping_
+>   What about the times you’re looking for more than just a single answer? Let’s say you’re hoping to find out about good bed-and-breakfast inns in Stratford, Ontario. Or you want to learn something about Lewis and Clark’s journey of exploration. Or you need to get a sense of what sort of financial plans can help you save for retirement.
+>
+>
