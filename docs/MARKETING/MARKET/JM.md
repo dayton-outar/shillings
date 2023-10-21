@@ -197,15 +197,20 @@ Demographics: 40 - 60 y-o age group
 
 2. How many other persons do you know that trade stocks?
 
-   --
+   Just family and 2 other friends
 
 2. How much time do you spend monitoring your investments?
 
-   --
+   Everyday
 
 3. What do you look for?
 
-   --
+   - Dividends policy
+   - Global market coverage. The reach of the listed company's products and services in other countries.
+   - Regional market coverage. The reach of the listed company's products and services within the country.
+   - Competitive advantage
+   - History of the company
+   - Shareholder connections. Who or which company has ownership stake in listed companies.
 
 4. What do you want to get done?
 
@@ -213,7 +218,7 @@ Demographics: 40 - 60 y-o age group
 
 5. Biggest frustration?
 
-   --
+   - Insider Trading is too rampant. I think JSE is 20% fair.
 
 6. How much money can you invest in stocks each month?
 
@@ -221,7 +226,7 @@ Demographics: 40 - 60 y-o age group
 
 7. What about the analytical solutions on the internet?
 
-   --
+   Bloomberg Terminal had a lot of information. I did trading as well in Bloomberg Terminal. Uses Charles Schwab as well. It takes 20 minutes to complete trade in Charles Schwab.
 
 8. What about services provided by brokerages?
 
@@ -229,9 +234,11 @@ Demographics: 40 - 60 y-o age group
 
 9. How much are you willing to pay for a service that delivers what you want?
 
-   --
+   (Ryan does not really have stock in Jamaica or is enthusiastic about trading in Jamaica)
 
-**BONUS**: (Ask about Bloomberg Terminal. What is offered in it? How much for that service? What does he think about WeBull, Charles Schwab, eTrade and RobinHood.)
+**BONUS**:
+  
+  (Waiting on screenshots of Bloomberg Terminal)
 
 ### Intermediate, Almost Savvy
 
