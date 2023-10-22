@@ -1,6 +1,6 @@
 # Business Design Philosophy
 
-***Shillings*** is the first story-based securities trading platform. Its goal is to create an immersive learning experience for tracking and trading securities.
+***Shillings*** is the first story-based stock trading platform. Its goal is to create an immersive learning experience for tracking and trading securities.
 
 There's a story behind all the numbers and symbols. There's a story behind how the companies listed were formed. There's a story of the impact each listed company is making regionally and globally. There's a story behind how well each company is performing.
 
