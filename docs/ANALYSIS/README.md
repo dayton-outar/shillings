@@ -18,6 +18,12 @@ Trading is an economic activity based on human behaviour and the perception of t
 >
 > ... **behavioral finance** includes human psychology, market positioning, market sentiment, cognitive bias, feedback loops, and other individual human and group behavior characteristics that lead to price moves that cannot be explained by rational macro factors.[^3]
 
+## TO DO
+
+ 1. Complete Valuation Notes
+ 2. Take Notes from "The Art of Currency Trading" on Technical Analysis. It can also entail information from Japanese Candelstick Chart book.
+ 3. Take Notes from "Predictably Irrational" on Behavioural Finance.
+
 ## References
 
 1. The Art of Currency Trading by Brent Donnelly

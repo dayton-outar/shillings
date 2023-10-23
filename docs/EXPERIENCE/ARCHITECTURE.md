@@ -60,3 +60,7 @@
 
 ## Chapter 4. Design for Understanding
 
+> We only understand things in relationship to something else. The frame around a painting changes how we perceive it, and the place the frame is hanging in changes it even more: we understand an image displayed in New York’s Museum of Modern Art differently than one hanging in a shared bathroom in a ratty hotel. Context matters.
+
+## Chapter 5. The Anatomy of an Information Architecture
+
