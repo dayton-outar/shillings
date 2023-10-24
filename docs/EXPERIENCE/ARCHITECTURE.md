@@ -62,5 +62,22 @@
 
 > We only understand things in relationship to something else. The frame around a painting changes how we perceive it, and the place the frame is hanging in changes it even more: we understand an image displayed in New York’s Museum of Modern Art differently than one hanging in a shared bathroom in a ratty hotel. Context matters.
 
-## Chapter 5. The Anatomy of an Information Architecture
+## Chapter 6. Organization Systems
 
+> Believe it or not, we’re all becoming librarians. This quiet yet powerful revolution is driven by the decentralizing force of the global Internet. Not long ago, the responsibility for labeling, organizing, and providing access to information fell squarely in the laps of librarians. These librarians spoke in strange languages about Dewey Decimal Classification and the Anglo-American Cataloguing Rules. They classified, cataloged, and helped you find the information you needed.
+> 
+> As the Internet provides users with the freedom to publish information, it quietly burdens them with the responsibility to organize that information. New information technologies open the floodgates for exponential content growth, which creates a need for innovation in content organization.
+>
+> As we struggle to meet these challenges, we unknowingly adopt the language of librarians. How should we label that content? Is there an existing classification scheme we can borrow? Who’s going to catalog all of that information?
+>
+> ...
+>
+> ... Classification is particularly difficult when you’re organizing abstract concepts such as subjects, topics, or functions. For example, what is meant by “alternative healing,” and should it be cataloged under “philosophy,” “religion,” “health and medicine,” or all of the above? The organization of words and phrases, taking into account their inherent ambiguity, presents a very real and substantial challenge.
+>
+> ...
+>
+> The heterogeneous nature of information environments makes it difficult to impose any single structured organization system on the content. It usually doesn’t make sense to classify documents at varying levels of granularity side by side. An article and a magazine should be treated differently. Similarly, it may not make sense to handle varying formats the same way. Each format will have uniquely important characteristics. For example, we need to know certain things about images, such as file format (JPG, PNG, etc.) and resolution (1024 × 768, 1280 × 800, etc.). It is difficult and often misguided to attempt a one-size-fits-all approach to the organization of heterogeneous content. This is a fundamental flaw of many enterprise taxonomy initiatives.
+> 
+> ...
+> 
+> The fact is that labeling and organization systems are intensely affected by their creators’ perspectives.3 We see this at the corporate level with websites organized according to internal divisions or org charts, with groupings such as _marketing, sales, customer support, human resources,_ and _information systems_. How does a customer visiting this website know where to go for technical information about a product she just purchased? To design usable organization systems, we need to escape from our own mental models of content labeling and organization.

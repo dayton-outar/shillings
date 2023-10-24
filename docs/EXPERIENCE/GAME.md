@@ -16,3 +16,18 @@
 
 I can understand the story that chess is telling but what story is checkers telling; what story is Jamaican dominoes telling; what story is Candy Crush telling.
 
+## Chapter 6. The Elements Support a Theme
+
+> Sounds easy, but what is a theme? The theme is what your game is about. It is the idea that ties your entire game together—the idea that all the elements must support. If you don’t know what your theme is, it is very likely that your game is not engaging people as much as it could. Most game themes are experience based; that is, the goal of the design is to deliver an essential experience to the player.
+>
+> ...
+>
+> A unifying theme is good—it focuses your design toward a single goal. But some themes are better than others. The best themes are ones that resonate with ­players—themes that touch players deeply.
+> 
+> ...
+> 
+> When you manage to tap into one of these resonant themes, you have something deep and powerful that has a true ability to move people and to give them an experience that is both transcendent and transforming.
+>
+> ...
+> 
+> And it is certainly true that the players cannot always state clearly the theme of a work that truly moves them—and that is because theme often operates at a subconscious level. Players know they like a game, but they can’t quite say why. Often, the reason is that all of the elements are reinforcing a theme that is interesting or important to them. Theme is not about some puzzle-based symbolism where the designer intends a secret message. Theme is about focusing your work toward something that holds meaning for your players.
