@@ -31,3 +31,17 @@ I can understand the story that chess is telling but what story is checkers tell
 > ...
 > 
 > And it is certainly true that the players cannot always state clearly the theme of a work that truly moves them—and that is because theme often operates at a subconscious level. Players know they like a game, but they can’t quite say why. Often, the reason is that all of the elements are reinforcing a theme that is interesting or important to them. Theme is not about some puzzle-based symbolism where the designer intends a secret message. Theme is about focusing your work toward something that holds meaning for your players.
+
+## Chapter 7. The Game Begins with an Idea
+
+> The purpose of design is to solve problems, and game design is no exception. Before you start coming up with ideas, you need to be certain of why you are doing it, and a problem statement is a way to state that clearly.
+> 
+> ...
+> 
+> There are three advantages of clearly stating your problem:
+> 
+> 1. Broader creative space. Most people jump to solutions too fast and start their creative process there. If you start your process at the problem instead of at a proposed solution, you will be able to explore a broader creative space and find solutions that are hiding where no one else is looking.
+> 
+> 2. Clear measurement. You have a clear measurement of the quality of proposed ideas: How well do they solve the problem?
+> 
+> 3. Better communication. When you are designing with a team, communication is much easier if the problem has been clearly stated. Very often, collaborators will be trying to solve quite different problems and not realize it if the problem has not been clearly stated.

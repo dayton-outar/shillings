@@ -42,6 +42,7 @@ Why did I build Shillings?
 
 Shillings seeks to deliver structured information by making use of visualization tools. Information will be provided in a visually appealing way that engages novice investors to learn as they invest.
 
+Consumers are not satisfied with the manner in which information is presented by the Jamaica Stock Exchange and they want the most up-to-date information presented in a manner that makes it easier for their decision making (without having to do too much to organize the information).
 
 Differentiation: How will it solve that problem or pain point better than the current solutions?
 
