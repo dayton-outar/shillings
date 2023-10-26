@@ -45,3 +45,17 @@ I can understand the story that chess is telling but what story is checkers tell
 > 2. Clear measurement. You have a clear measurement of the quality of proposed ideas: How well do they solve the problem?
 > 
 > 3. Better communication. When you are designing with a team, communication is much easier if the problem has been clearly stated. Very often, collaborators will be trying to solve quite different problems and not realize it if the problem has not been clearly stated.
+
+## Chapter 8. The Game Improves through Iteration
+
+> Some people are quite disconcerted by this combination of snap decisions combined with sudden reversals. But it is the most efficient way to make full use of your decision-making power, and game design is all about making decisions—you need to make the best decisions possible, as fast as possible, and this slightly eccentric behavior is the way to do it. It’s always better to commit to an idea sooner, rather than later—you will get to a good decision much faster than if you bide your time considering potential alternatives. Just don’t fall in love with your decision and be ready to reverse it the moment it isn’t working for you.
+
+## Chapter 9. The Game Is Made for a Player
+
+> At one point in his career, Albert Einstein was asked by a small local organization to be the guest of honor at a luncheon and to give a lecture about his research. He agreed to do so. The luncheon was quite pleasant, and when the time came, the host anxiously announced that Albert Einstein, the famous scientist, was there to talk about his theories of special and general relativity. Einstein took the stage, and looking out a largely nonacademic audience consisting of mostly old ladies, he explained to them that he certainly could talk about his work, but it was a bit dull, and he was thinking perhaps instead the audience would prefer to hear him play the violin. The host and audience both agreed that it sounded like a fine idea. Einstein proceeded to play several pieces he knew well, creating a delightful experience the entire audience was able to enjoy and surely one they remembered for the rest of their lives.
+>
+> Einstein was able to create such a memorable experience because he knew his audience.
+> 
+> ...
+> 
+> As with everything else in game design, the key here is a kind of listening. You must learn to listen to your players, thoroughly and deeply.
