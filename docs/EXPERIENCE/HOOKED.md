@@ -110,11 +110,11 @@ Is this the Law of First working against competitors of Google. Google is percei
 > 
 > ...
 > 
-> An external trigger communicates the next action the user should take. Often, the desired action is made explicitly clear.
+> An **external trigger** communicates the next action the user should take. Often, the desired action is made explicitly clear.
 >
 > ...
 > 
-> Companies can utilize four types of external triggers to move users to complete desired actions:
+> Companies can utilize four types of **external triggers** to move users to complete desired actions:
 > 
 > 1. Paid Triggers
 > 
@@ -127,4 +127,69 @@ Is this the Law of First working against competitors of Google. Google is percei
 > 3. Relationship Triggers
 > 
 >    One person telling others about a product or service can be a highly effective external trigger for action. Whether through an electronic invitation, a Facebook “like,” or old fashioned word of mouth, product referrals from friends and family are often a key component of technology diffusion.
+>    
+>    ...
+>    
+>    Unfortunately, some companies utilize viral loops and relationship triggers in unethical ways: by deploying so-called dark patterns. When designers intentionally trick users into inviting friends or blasting a message to their social networks, they may see some initial growth, but it comes at the expense of users’ goodwill and trust. When people discover they’ve been duped, they vent their frustration and stop using the product.
+>    
+>    Proper use of relationship triggers requires building an engaged user base that is enthusiastic about sharing the benefits of the product with others.
+>    
+> 4. Owned Triggers
+>    
+>    Owned triggers consume a piece of real estate in the user’s environment. They consistently show up in daily life and it is ultimately up to the user to opt in to allowing these triggers to appear.
+>    
+>    For example, an app icon on the user’s phone screen, an e-mail newsletter to which the user subscribes, or an app update notification only appears if the user wants it there. As long as the user agrees to receive a trigger, the company that sets the trigger owns a share of the user’s attention.
+> 
+> When a product becomes tightly coupled with a thought, an emotion, or a preexisting routine, it leverages an **internal trigger**. Unlike external triggers, which use sensory stimuli like a morning alarm clock or giant “Login Now” button, you can’t see, touch, or hear an **internal trigger**.
+> 
+> ...
+> 
+> Emotions, particularly negative ones, are powerful internal triggers and greatly influence our daily routines. Feelings of boredom, loneliness, frustration, confusion, and indecisiveness often instigate a slight pain or irritation and prompt an almost instantaneous and often mindless action to quell the negative sensation. For instance, Yin often uses Instagram when she fears a special moment will be lost forever.
+
+This emotion that Yin experiences is called FOMO - Fear of Missing Out.
+
+> The severity of the discomfort may be relatively minor—perhaps her fear is below the perceptibility of consciousness—but that’s exactly the point. Our life is filled with tiny stressors and we’re usually unaware of our habitual reactions to these nagging issues.
 >
+> Positive emotions can also serve as internal triggers, and may even be triggered themselves by a need to satisfy something that is bothering us. After all, we use products to find solutions to problems. The desire to be entertained can be thought of as the need to satiate boredom. A need to share good news can also be thought of as an attempt to find and maintain social connections.
+> 
+> ...
+> 
+> The study demonstrated that people suffering from symptoms of depression used the Internet more. Why is that? One hypothesis is that those with depression experience negative emotions more frequently than the general population and seek relief by turning to technology to lift their mood.
+> 
+> ...
+> 
+> When bored, many people seek excitement and turn to dramatic news headlines. When we feel overly stressed, we seek serenity, perhaps finding relief in sites like Pinterest. When we feel lonely, destinations like Facebook and Twitter provide instant social connections.
+> 
+> Once we’re hooked, using these products does not always require an explicit call to action. Instead, they rely upon our automatic responses to feelings that precipitate the desired behavior. Products that attach to these internal triggers provide users with quick relief. ***Once a technology has created an association in users’ minds that the product is the solution of choice, they return on their own, no longer needing prompts from external triggers***.
+>
+> The association between an internal trigger and your product, however, is not formed overnight. It can take weeks or months of frequent usage for internal triggers to latch onto cues. New habits are sparked by external triggers, but associations with internal triggers are what keeps users hooked.
+>
+> ...
+> 
+> ... _Finding customers’ internal triggers requires learning more about people than what they can tell you in a survey, though. It requires digging deeper to understand how your users feel._
+> 
+> _The ultimate goal of a habit-forming product is to solve the user’s pain by creating an association so that the user identifies the company’s product or service as the source of relief._
+> 
+> ...
+> 
+> ... Yet talking to users to reveal these wants will likely prove ineffective because they themselves don’t know which emotions motivate them. People just don’t think in these terms. You’ll often find that people’s _declared preferences_ — what they say they want — are far different from their _revealed preferences_ — what they actually do.
+> 
+> ...
+> 
+> What would your users want to achieve by using your solution? Where and when will they use it? What emotions influence their use and will trigger them to action?
+> 
+> ...
+> 
+> Dorsey believes a clear description of users—their desires, emotions, the context with which they use the product—is paramount to building the right solution. In addition to Dorsey’s user narratives, tools like customer development,11 usability studies, and empathy maps12 are examples of methods for learning about potential users.
+> 
+> One method is to try asking the question “Why?” as many times as it takes to get to an emotion. Usually, this will happen by the fifth why.
+>
+> ...
+> 
+> A large component of Instagram’s success—and what brings its millions of users back nearly every day—is the company’s ability to understand its users’ triggers. For people like Yin, Instagram is a harbor for emotions and inspirations, a virtual memoir preserved in pixels.
+> 
+> Yin’s habitual use of the service started with an external trigger—a recommendation from a friend and weeks of repetitious use before she became a regular user.
+
+## Chapter 3. Action
+
+> 
