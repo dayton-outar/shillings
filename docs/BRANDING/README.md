@@ -19,3 +19,8 @@ Confidence level: High
 Sources:
 1. https://en.wikipedia.org/wiki/Shilling
 2. https://www.investopedia.com/terms/s/shilling.asp
+
+Got some more ideas for name change. They are as follows:
+ - Stock Ping
+ - Stock Riot
+ - Stong
