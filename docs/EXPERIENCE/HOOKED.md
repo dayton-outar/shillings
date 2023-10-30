@@ -192,4 +192,62 @@ This emotion that Yin experiences is called FOMO - Fear of Missing Out.
 
 ## Chapter 3. Action
 
+> The trigger, driven by internal or external cues, informs the user of what to do next; however, if the user does not take action, the trigger is useless. To initiate action, doing must be easier than thinking. Remember, a habit is a behavior done with little or no conscious thought. The more effort—either physical or mental—required to perform the desired action, the less likely it is to occur.
+>
+> ...
 > 
+> _Fogg posits that there are three ingredients required to initiate any and all behaviors: (1) the user must have sufficient motivation; (2) the user must have the ability to complete the desired action; and (3) a trigger must be present to activate the behavior._
+>
+> The Fogg Behavior Model is represented in the formula B = MAT, which represents that a given behavior will occur when motivation, ability, and a trigger are present at the same time and in sufficient degrees. If any component of this formula is missing or inadequate, the user will not cross the “Action Line” and the behavior will not occur.
+>
+> ...
+> 
+> While a trigger cues an action, **motivation** defines the level of desire to take that action.
+> 
+> ...
+> 
+> Fogg states that all humans are motivated ***to seek pleasure and avoid pain***; ***to seek hope and avoid fear***; and finally, ***to seek social acceptance and avoid rejection***. The two sides of the three Core Motivators can be thought of as levers to increase or decrease the likelihood of someone’s taking a particular action by increasing or decreasing that person’s motivation.
+> 
+> ...
+> 
+> However, even with the right trigger enabled and motivation running high, product designers often find users still don’t behave the way they want them to. What’s missing in this equation? Usability—or rather, the **ability** of the user to take action easily.
+> 
+> ...
+> 
+> Seven years after Blogger’s birth, a new company described at first as a “microblogging” service sought to bring sharing to the masses: Twitter. For many, blogging was still a difficult, time-consuming venture, but anyone could type short, casual messages. Tweeting began to enter the national lexicon as Twitter gained wider adoption, climbing to 500 million registered users by 2012.5 Critics first discounted Twitter’s 140-character message limitation as gimmicky and restrictive; little did they realize the constraint actually increased users’ ability to create. A few keyboard taps and users were sharing. As of late 2013, 340 million tweets were sent every day.
+> 
+> ...
+> 
+> Fogg describes six “elements of simplicity”—the factors that influence a task’s difficulty.6 These are:
+> 
+> 1. Time—how long it takes to complete an action.
+> 2. Money—the fiscal cost of taking an action.
+> 3. Physical effort—the amount of labor involved in taking the action.
+> 4. Brain cycles—the level of mental effort and focus required to take an action.
+> 5. Social deviance—how accepted the behavior is by others.
+> 6. Non-routine—according to Fogg, “How much the action matches or disrupts existing routines.”
+>
+> To increase the likelihood that a behavior will occur, Fogg instructs designers to focus on simplicity as a function of the user’s scarcest resource at that moment. In other words: Identify what the user is missing. What is making it difficult for the user to accomplish the desired action?
+> 
+> Is the user short on time? Is the behavior too expensive? Is the user exhausted after a long day of work? Is the product too difficult to understand? Is the user in a social context where the behavior could be perceived as inappropriate? Is the behavior simply so far removed from the user’s normal routine that its strangeness is off-putting?
+> 
+> These factors will differ by person and context; therefore, designers should ask, “What is the thing that is missing that would allow my users to proceed to the next step?” Designing with an eye toward simplifying the overall user experience reduces friction, removes obstacles, and helps push the user across Fogg’s action line.
+> 
+> The action phase of the Hook Model incorporates Fogg’s six elements of simplicity by asking designers to consider how their technology can facilitate the simplest actions in anticipation of reward. The easier an action, the more likely the user is to do it and to continue the cycle through the next phase of the Hook Model.
+> 
+> ...
+> 
+> Traditionally, registering for a new account with an app or Web site requires several steps. The user is prompted to enter an e-mail address, create a password, and submit other information such as a name or phone number. This burden introduces significant friction that discourages users from signing up. Mobile devices present the special challenge of smaller screens and slower typing speeds.
+> 
+> However, today it is nearly impossible to browse the web or use a mobile app without encountering a Facebook Login prompt (figure 8). Many companies have eliminated several steps in the registration process by enabling users to register with their sites via their existing Facebook credentials.
+> 
+> ...
+> 
+> To ease the way for link sharing, Twitter created an embeddable Tweet button for third-party sites, allowing them to offer visitors a one-click way to tweet directly from their pages. The external trigger opens a preset message, reducing the cognitive effort of composing the tweet and saving several steps to sharing.
+> 
+> Google, the world’s most popular search engine, was not the first to market. When it launched in the late 1990s, it competed against incumbents such as Yahoo!, Lycos, AltaVista, and Excite. How did Google come to dominate the multibillion-dollar industry?
+> 
+> For starters, Google’s PageRank algorithm proved to be a much more effective way to index the web. By ranking pages based on how frequently other sites linked to them, Google improved search relevancy. Compared with directory-based search tools such as Yahoo!, Google was a massive time-saver. Google also beat out other search engines that had become polluted with irrelevant content and cluttered with advertising. From its inception, Google’s clean, simple home page and search results pages were solely focused on streamlining the act of searching and getting relevant results.
+> 
+> Simply put, Google reduced the amount of time and the cognitive effort required to find what the user was looking for. The company continues to relentlessly improve its search engine by finding new ways to remove whatever might be in the user’s way—no matter how seemingly trivial. While its home page remains remarkably pristine, Google now offers myriad tools to make searching easier and faster—including automatic spelling correction, predictive results based on partial queries, and search results that load even as the user is typing. Google’s efforts are intended to make searching easier to keep users coming back.
+
