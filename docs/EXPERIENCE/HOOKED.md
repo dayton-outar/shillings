@@ -250,4 +250,48 @@ This emotion that Yin experiences is called FOMO - Fear of Missing Out.
 > For starters, Google’s PageRank algorithm proved to be a much more effective way to index the web. By ranking pages based on how frequently other sites linked to them, Google improved search relevancy. Compared with directory-based search tools such as Yahoo!, Google was a massive time-saver. Google also beat out other search engines that had become polluted with irrelevant content and cluttered with advertising. From its inception, Google’s clean, simple home page and search results pages were solely focused on streamlining the act of searching and getting relevant results.
 > 
 > Simply put, Google reduced the amount of time and the cognitive effort required to find what the user was looking for. The company continues to relentlessly improve its search engine by finding new ways to remove whatever might be in the user’s way—no matter how seemingly trivial. While its home page remains remarkably pristine, Google now offers myriad tools to make searching easier and faster—including automatic spelling correction, predictive results based on partial queries, and search results that load even as the user is typing. Google’s efforts are intended to make searching easier to keep users coming back.
+> 
+> Many of life’s most treasured moments come and go in an instant. We try to capture these memories in photos, but if our camera is out of reach or too cumbersome to catch the shot, we lose those moments forever. Apple recognized it could help iPhone owners take more photos by making the process easier. The company made the camera app directly launchable from the locked screen, without requiring a password. Compared with the number of steps needed to access photo apps on other smartphones, the simple flick gesture of the native iPhone camera gives it a virtual monopoly as users’ go-to solution whenever they need to snap a quick pic.
+> 
+> ...
+> 
+> The fact is, increasing motivation is expensive and time consuming. Web site visitors tend to ignore instructional text; they are often multitasking and have little patience for explanations about why or how they should do something.
+> 
+> ...
+> 
+> However, although the principle seems elementary, the law, like many other theories of human behavior, has exceptions. The field of behavioral economics, as studied by luminaries such as Nobel Prize winner Daniel Kahneman, exposed exceptions to the rational model of human behavior. Even the notion that people always consume more if something costs less is a tendency, not an absolute.
+> 
+> ...
+> 
+> It is worth mentioning four of these brain biases in particular. Even though users are often unaware of these influences on their behavior, heuristics can predict their actions.
+>
+> In 1975 researchers Stephen Worchel, Jerry Lee, and Akanbi Adewole wanted to know how people would value cookies in two identical glass jars.8 One jar held ten cookies while the other contained just two. Which cookies would people value more?
+>
+> Although the cookies and jars were identical, participants valued the ones in the near-empty jar more highly.
+>
+> _The appearance of **scarcity** affected their perception of value._
+> 
+> ...
+> 
+> For an example of how perception of a limited supply can increase sales, look no further than Amazon.com. My recent search for a DVD revealed there were “only 14 left in stock”, while a search for a book I’ve had my eye on says only three copies remain. Is the world’s largest online retailer almost sold out of nearly everything I want to buy or are they using the scarcity heuristic to influence my buying behavior?
+>
+> ...
+> 
+> _The mind takes shortcuts informed by our surroundings to make quick and sometimes erroneous judgments._
+>
+> When Bell performed his concert in the subway station, few stopped to listen. But when **framed in the context** of a concert hall, he can charge beaucoup bucks.
+> 
+> The framing heuristic not only influences our behaviors; it literally changes how our brain perceives pleasure. For example, a 2007 study attempted to measure if price had any influence on the taste of wine.10 The researchers had study participants sample wine while in a functional magnetic resonance imaging (fMRI) machine.
+>
+> As the fMRI machine scanned the blood flow in the various regions of their brains, the tasters were informed of the cost of each wine sampled. The sample started with a $5 wine and progressed to a $90 bottle. Interestingly, as the price of the wine increased, so did the participants’ enjoyment of the wine. Not only did they say they enjoyed the wine more but their brain corroborated their feelings, showing higher spikes in the regions associated with pleasure. Little did the study participants realize that they were tasting the same wine each time. This study demonstrates how perception can form a personal reality based on how a product is framed, even when there is little relationship with objective quality. Not only did they say they enjoyed the wine more but their brain corroborated their feelings, showing higher spikes in the regions associated with pleasure. Little did the study participants realize that they were tasting the same wine each time. This study demonstrates how perception can form a personal reality based on how a product is framed, even when there is little relationship with objective quality.
+> 
+> ...
+> 
+> _People often anchor to one piece of information when making a decision._
+> 
+> ...
+> 
+> _The study demonstrates the endowed **progress effect**, a phenomenon that increases motivation as people believe they are nearing a goal._
+
+## Chapter 4. Variable Reward
 
