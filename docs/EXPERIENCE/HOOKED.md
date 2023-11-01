@@ -295,3 +295,44 @@ This emotion that Yin experiences is called FOMO - Fear of Missing Out.
 
 ## Chapter 4. Variable Reward
 
+> In the 1940s two researchers, James Olds and Peter Milner, accidentally discovered how a special area of the brain is the source of our cravings. The researchers implanted electrodes in the brains of lab mice that enabled the mice to give themselves tiny electric shocks to a small area of the brain, the nucleus accumbens.1 The mice quickly became hooked on the sensation.
+> 
+> Olds and Milner demonstrated that the lab mice would forgo food, water, and even run across a painful electrified grid for the opportunity to continue pressing the lever that administered the shocks. A few years later, other researchers tested the human response to self-administered stimulus in the same area of the brain. The results were just as dramatic as in the mouse trial—subjects wanted to do nothing but press the brain-stimulating button. Even when the machine was turned off, people continued pressing the button. Researchers had to forcibly take the devices from subjects who refused to relinquish them.
+> 
+> Given the responses they had earlier found in lab animals, Olds and Milner concluded that they had discovered the brain’s pleasure center. In fact, we now know other things that feel good also activate the same neural region. Sex, delicious food, a bargain, and even our digital devices all tap into this deep recess of the brain, providing the impetus for many of our behaviors.
+> 
+> ...
+> 
+> _The study revealed that what draws us to act is not the sensation we receive from the reward itself, but the need to alleviate the craving for that reward._
+> 
+> ...
+> 
+> Researchers believe laughter may in fact be a release valve when we experience the discomfort and excitement of uncertainty, but without fear of harm.
+> 
+> ...
+> 
+> Without variability we are like children in that once we figure out what will happen next, we become less excited by the experience.
+> 
+> Variable rewards can be found in all sorts of products and experiences that hold our attention. They fuel our drive to check e-mail, browse the web, or bargain-shop. I propose that variable rewards come in three types: _the tribe_, _the hunt_, and _the self_. Habit-forming products utilize one or more of these variable reward types.
+> 
+> We are a species that depends on one another. Rewards of the tribe, or social rewards, are driven by our connectedness with other people.
+> 
+> _Our brains are adapted to seek rewards that make us feel accepted, attractive, important, and included._
+> 
+> ...
+> 
+> Facebook provides numerous examples of variable social rewards. Logging in reveals an endless stream of content friends have shared, comments from others, and running tallies of how many people have “liked” something. The uncertainty of what users will find each time they visit the site creates the intrigue needed to pull them back again.
+> 
+> While variable content gets users to keep searching for interesting tidbits in their News Feeds, a click of the “Like” button provides a variable reward for the content’s creators. “Likes” and comments offer tribal validation for those who shared the content, and provide variable rewards that motivate them to continue posting.
+> 
+> ...
+> 
+> Stack Overflow devotees write responses in anticipation of rewards of the tribe. Each time a user submits an answer, other members have the opportunity to vote the response up or down. The best responses percolate upward, accumulating points for their authors. When they reach certain point levels, members earn badges, which confer special status and privileges. Naturally, the process of accumulating upvotes is highly variable—no one knows how many will be received from the community when responding to a question.
+> 
+> Stack Overflow works because, like all of us, software engineers find satisfaction in contributing to a community they care about. The element of variability also turns a seemingly mundane task into an engaging, gamelike experience. Yet on Stack Overflow, points are not just an empty game mechanic; they confer special value by representing how much someone has contributed to his or her tribe. Users enjoy the feeling of helping their fellow programmers and earning the respect of people whose opinions they value.
+> 
+> _League of Legends_, a popular computer game, launched in 2009 and quickly achieved tremendous success. Soon after its launch, however, the game’s owners found they had a serious problem: The online video game was filled with “trolls”—people who enjoyed bullying other players while being protected by the anonymity the game provides. _League of Legends_ soon earned a nasty reputation for having an “unforgiving—even abusive—community.” A leading industry publication wrote, “League of Legends has become well known for at least two things: proving the power of the free-to-play model in the West and a vicious player community.”11
+> 
+> To combat the trolls, the game creators designed a reward system leveraging Bandura’s social learning theory, which they called Honor Points. The system gave players the ability to award points for particularly sportsmanlike conduct worthy of recognition. These virtual kudos encouraged positive behavior and helped the best and most cooperative players to stand out in the community. The number of points earned was highly variable and could only be conferred by other players. Honor Points soon became a coveted marker of tribe-conferred status and helped weed out trolls by signaling to others which players should be avoided.
+>
+> _The need to acquire physical objects, such as food and other supplies that aid our survival, is part of our brain’s operating system._
