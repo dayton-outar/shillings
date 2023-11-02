@@ -336,3 +336,40 @@ This emotion that Yin experiences is called FOMO - Fear of Missing Out.
 > To combat the trolls, the game creators designed a reward system leveraging Bandura’s social learning theory, which they called Honor Points. The system gave players the ability to award points for particularly sportsmanlike conduct worthy of recognition. These virtual kudos encouraged positive behavior and helped the best and most cooperative players to stand out in the community. The number of points earned was highly variable and could only be conferred by other players. Honor Points soon became a coveted marker of tribe-conferred status and helped weed out trolls by signaling to others which players should be avoided.
 >
 > _The need to acquire physical objects, such as food and other supplies that aid our survival, is part of our brain’s operating system._
+> 
+> ...
+> 
+> _The rewards of the self are fueled by “intrinsic motivation” as highlighted by the work of Edward Deci and Richard Ryan. Their self-determination theory espouses that people desire, among other things, to gain a sense of competency. Adding an element of mystery to this goal makes the pursuit all the more enticing._
+> 
+> Rewards of the self are a defining component in video games, as players seek to master the skills needed to pursue their quest. Leveling up, unlocking special powers, and other game mechanics fulfill a player’s desire for competency by showing progression and completion.
+> 
+> You do not have to be a hard-core video gamer to be heavily influenced by gamelike experiences. The humble e-mail system provides an example of how the search for mastery, completion, and competence moves users to habitual and sometimes mindless actions. Have you ever caught yourself checking your e-mail for no particular reason? Perhaps you unconsciously decided to open it to see what messages might be waiting for you. For many, the number of unread messages represents a sort of goal to be completed.
+
+Even YouTube has this variable reward built into it.
+
+> At first Mahalo garnered significant attention and traffic. At its high point 14.1 million users worldwide visited the site monthly.21 But over time, users began to lose interest. Although the payout of the bounties was variable, somehow users did not find the monetary rewards enticing enough.
+> 
+> As Mahalo struggled to retain users, another Q&A site began to boom. Quora, launched in 2010 by two former Facebook employees, quickly grew in popularity. Unlike Mahalo, Quora did not offer a single cent to anyone answering user questions. Why, then, have users remained highly engaged with Quora but not with Mahalo, despite its variable monetary rewards?
+> 
+> In Mahalo’s case, executives assumed that paying users would drive repeat engagement with the site. After all, people like money, right? Unfortunately, Mahalo had an incomplete understanding of its users’ drivers.
+> 
+> Ultimately, the company found that people did not want to use a Q&A site to make money. If the trigger was a desire for monetary rewards, users were better off spending their time earning an hourly wage. And if the payouts were meant to take the form of a game, like a slot machine, then the rewards came far too infrequently and were too small to matter.
+> 
+> However, Quora demonstrated that social rewards and the variable reinforcement of recognition from peers proved to be much more frequent and salient motivators. Quora instituted an upvoting system that reports user satisfaction with answers and provides a steady stream of social feedback. Quora’s social rewards have proven more attractive than Mahalo’s monetary rewards.
+> 
+> _Only by understanding what truly matters to users can a company correctly match the right variable reward to their intended behavior._
+> 
+> Recently, gamification—defined as the use of gamelike elements in nongame environments—has been used with varying success. Points, badges, and leaderboards can prove effective, but only if they scratch the user’s itch. When there is a mismatch between the customer’s problem and the company’s assumed solution, no amount of gamification will help spur engagement. Likewise, if the user has no ongoing itch at all—say, no need to return repeatedly to a site that lacks any value beyond the initial visit—gamification will fail because of a lack of inherent interest in the product or service offered. In other words, gamification is not a “one size fits all” solution for driving user engagement.
+> 
+> Variable rewards are not magic fairy dust that a product designer can sprinkle onto a product to make it instantly more attractive. Rewards must fit into the narrative of why the product is used and align with the user’s internal triggers and motivations.
+> 
+> ...
+> 
+> The magic words the researchers discovered? The phrase “But you are free to accept or refuse.”
+> 
+> The “but you are free” technique demonstrates how we are more likely to be persuaded to give when our ability to choose is reaffirmed. Not only was the effect observed during face-to-face interactions, but also over e-mail. Although the research did not directly look at how products and services might use the technique, the study provides an important insight into how companies maintain or lose the user’s attention.
+> 
+> Why does reminding people of their freedom to choose, as demonstrated in the French bus fare study, prove so effective?
+> 
+> The researchers believe the phrase “But you are free” disarms our instinctive rejection of being told what to do. If you have ever grumbled at your mother when she tells you to put on a coat or felt your blood pressure rise when your boss micromanages you, you have experienced what psychologists term _reactance_, the hair-trigger response to threats to your autonomy.
+> 

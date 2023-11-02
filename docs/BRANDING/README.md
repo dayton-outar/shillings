@@ -24,3 +24,6 @@ Got some more ideas for name change. They are as follows:
  - Stock Ping
  - Stock Riot
  - Stong
+ - Stockpile?
+ - Jing
+ - Gimbl
