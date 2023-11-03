@@ -373,3 +373,33 @@ Even YouTube has this variable reward built into it.
 > 
 > The researchers believe the phrase “But you are free” disarms our instinctive rejection of being told what to do. If you have ever grumbled at your mother when she tells you to put on a coat or felt your blood pressure rise when your boss micromanages you, you have experienced what psychologists term _reactance_, the hair-trigger response to threats to your autonomy.
 > 
+> I have not used Fitocracy for long, but it is easy to see how someone could get hooked. Fitocracy is first and foremost an online community. The app roped me in by closely mimicking real-world gym jabber among friends. The ritual of connecting with like-minded people existed long before Fitocracy, and the company leverages this behavior by making it easier and more rewarding to share encouragement, exchange advice, and receive praise. In fact, a recent study found social factors were the most important reasons people used the service and recommended it to others.
+> 
+> Social acceptance is something we all crave, and Fitocracy leverages the universal need for connection as an on-ramp to fitness, making new tools and features available to users as they develop new habits. The choice for the Fitocracy user is therefore between the old way of doing an existing behavior and the company’s tailored solution for easing the user into healthy new habits.
+> 
+> ...
+> 
+> Unfortunately, too many companies build their products betting users will do what they make them do instead of letting them do what they want to do. Companies fail to change user behaviors because they do not make their services enjoyable for its own sake, often asking users to learn new, unfamiliar actions instead of making old routines easier.
+> 
+> _Companies that successfully change behaviors present users with an implicit choice between their old way of doing things and a new, more convenient way to fulfill existing needs._
+> 
+> By maintaining the users’ freedom to choose, products can facilitate the adoption of new habits and change behavior for good.
+> 
+> ...
+> 
+> At the heart of every episode—and also across each season’s narrative arc—is a problem the characters must resolve. For example, during an episode in the first season, Walter White must find a way to dispose of the bodies of two rival drug dealers. Challenges prevent resolution of the conflict and suspense is created as the audience waits to find out how the story line ends. In this particular episode White discovers one of the drug dealers is still alive and is faced with the dilemma of having to kill someone he thought was already dead. Invariably, each episode’s central conflict is resolved near the end of the show, at which time a new challenge arises to pique the viewer’s curiosity. By design, the only way to know how Walter gets out of the mess he is in at the end of the latest episode is to watch the next episode.
+> 
+> ...
+> 
+> While _Breaking Bad_ built suspense over time as the audience wondered how the series would end, eventually interest in the show waned when it finally concluded. The series enthralled viewers with each new episode, but now that it is all over, how many people who saw it once will watch it again? With the plot lines known and the central mysteries revealed, the show just won’t seem as interesting the second time around. Perhaps this series might resurrect interest with a new spin-off show in the future, but viewership for old episodes people have already seen will never peak as it did when they were new.
+> 
+> _Experiences with finite variability become less engaging because they eventually become predictable._
+> 
+> Businesses with finite variability are not inferior per se; they just operate under different constraints. They must constantly churn out new content and experiences to cater to their consumers’ insatiable desire for novelty.
+> 
+> ...
+> 
+> Platforms like YouTube, Facebook, Pinterest, and Twitter all leverage user-generated content to provide visitors with a never-ending stream of newness. Naturally, even sites utilizing infinite variability are not guaranteed to hold on to users forever. Eventually—to borrow from the title of Michael Lewis’s 1999 book about the dot-com boom in Silicon Valley—the “new new thing” comes along and consumers migrate to it for the reasons discussed in earlier chapters. However, products utilizing infinite variability stand a better chance of holding on to users’ attention, while those with finite variability must constantly reinvent themselves just to keep pace.
+
+## Chapter 5. Investment
+
