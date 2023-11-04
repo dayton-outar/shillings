@@ -33,6 +33,7 @@ Trading is an economic activity based on human behaviour and the perception of t
 ## Tutorial Videos
 
 1. [The ONLY Candlestick Pattern Guide You'll EVER NEED](https://youtu.be/tW13N4Hll88) - [TradingLab](https://www.youtube.com/@TradingLabOfficial)
+2. [How To Read Candlestick Charts FAST (Beginner's Guide)](https://youtu.be/AOz1YPOKvEs?si=kS_vLSuCSuWVExS8)
 
 [^1]: [Investors. Fundamental Analysis](./INVESTORS.md#fundamental-analysis)
 [^2]: [Investors. Technical Analysis](./INVESTORS.md#technical-analysis)
