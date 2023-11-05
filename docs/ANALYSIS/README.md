@@ -22,8 +22,8 @@ Trading is an economic activity based on human behaviour and the perception of t
 
 ## TO DO
 
- 1. Complete Valuation Notes
- 2. Take Notes from "Japanese Candelstick Chart" on Technical Analysis.
+ 1. Complete Valuation Notes in [Asset Evaluation](./VALUATION.md).
+ 2. Take Notes from "Japanese Candelstick Chart" on [Technical Analysis](./TECHNICAL.md).
  3. Take Notes from "Thinking Fast and Slow" on [Behavioural Finance](./BEHAVIOUR.md).
 
 ## References
@@ -38,6 +38,6 @@ Trading is an economic activity based on human behaviour and the perception of t
 1. [The ONLY Candlestick Pattern Guide You'll EVER NEED](https://youtu.be/tW13N4Hll88) - [TradingLab](https://www.youtube.com/@TradingLabOfficial)
 2. [How To Read Candlestick Charts FAST (Beginner's Guide)](https://youtu.be/AOz1YPOKvEs?si=kS_vLSuCSuWVExS8)
 
-[^1]: [Investors. Fundamental Analysis](../MARKETING/INVESTORS.md#fundamental-analysis)
-[^2]: [Investors. Technical Analysis](../MARKETING/INVESTORS.md#technical-analysis)
-[^3]: [Investors. Behavioural Finance](../MARKETING/INVESTORS.md#behavioural-finance)
+[^1]: [Investors. Fundamental Analysis](/docs/MARKETING/INVESTORS.md#fundamental-analysis)
+[^2]: [Investors. Technical Analysis](/docs/MARKETING/INVESTORS.md#technical-analysis)
+[^3]: [Investors. Behavioural Finance](/docs/MARKETING/INVESTORS.md#behavioural-finance)
