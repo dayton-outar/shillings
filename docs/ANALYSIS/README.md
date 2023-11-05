@@ -23,14 +23,15 @@ Trading is an economic activity based on human behaviour and the perception of t
 ## TO DO
 
  1. Complete Valuation Notes
- 2. Take Notes from "The Art of Currency Trading" on Technical Analysis. It can also entail information from Japanese Candelstick Chart book.
- 3. Take Notes from "Predictably Irrational" on Behavioural Finance.
+ 2. Take Notes from "Japanese Candelstick Chart" on Technical Analysis.
+ 3. Take Notes from "Thinking Fast and Slow" on [Behavioural Finance](./BEHAVIOUR.md).
 
 ## References
 
 1. The Art of Currency Trading by Brent Donnelly
 2. Corporate Finance: The Core, Global Edition by Jonathan Berk and Peter Demarzo
 3. Predictably Irrational by Dan Ariely
+4. Thinking Fast and Slow by Daniel Kahneman
 
 ## Tutorial Videos
 
