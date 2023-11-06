@@ -403,3 +403,14 @@ Even YouTube has this variable reward built into it.
 
 ## Chapter 5. Investment
 
+> A psychological phenomenon known as the escalation of commitment has been shown to make our brains do all sorts of funny things. The power of commitment makes some people play video games until they keel over and die. It is used to influence people to give more to charity. It has even been used to coerce prisoners of war into switching allegiances. The commitments we make have a powerful effect on us and play an important role in the things we do, the products we buy, and the habits we form.
+> 
+> _The more users invest time and effort into a product or service, the more they value it. In fact, there is ample evidence to suggest that our labor leads to love._
+> 
+> ...
+> 
+> The results showed that those who made their own origami animals valued their creation five times higher than the second group’s valuation, and nearly as high as the expert-made origami values. In other words, those who invested labor associated greater value with their paper creations simply because they had worked on them. Ariely calls this the IKEA effect.
+> 
+> ...
+> 
+> Unlike its competitors who sell preassembled merchandise, IKEA puts its customers to work. It turns out there’s a hidden benefit to making users invest physical effort in assembling the product—by asking customers to assemble their own furniture, Ariely believes they adopt an irrational love of the furniture they built, just like the test subjects did in the origami experiments. Businesses that leverage user effort confer higher value to their products simply because their users have put work into them. The users have _invested_ in the products through their labor.
