@@ -414,3 +414,220 @@ Even YouTube has this variable reward built into it.
 > ...
 > 
 > Unlike its competitors who sell preassembled merchandise, IKEA puts its customers to work. It turns out there’s a hidden benefit to making users invest physical effort in assembling the product—by asking customers to assemble their own furniture, Ariely believes they adopt an irrational love of the furniture they built, just like the test subjects did in the origami experiments. Businesses that leverage user effort confer higher value to their products simply because their users have put work into them. The users have _invested_ in the products through their labor.
+> 
+> ...
+> 
+> In a classic Aesop’s fable, a hungry fox encounters grapes hanging from a vine. The fox desperately wants the grapes. Yet as hard as he tries, he cannot reach them. Frustrated, the fox decides the grapes must be sour and that therefore he would not want them anyway.
+> 
+> The fox comforts himself by changing his perception of the grapes because it is too uncomfortable to reconcile the thought that the grapes are sweet and ready for the taking, and yet he cannot have them. To reconcile these two conflicting ideas, the fox changes his perception of the grapes and in the process relieves the pain of what psychologists term _cognitive dissonance_.
+> 
+> The irrational manipulation of the way one sees the world is not limited to fictional animals in children’s stories. We humans do this as well.
+> 
+> Consider your reaction the first time you sipped a beer or tried spicy food. Was it tasty? Unlikely. Our bodies are designed to reject alcohol and capsaicin, the compound that creates the sensation of heat in spicy food. Our innate reaction to these acquired tastes is to reject them, yet we learn to like them through repeated exposure. We see others enjoying them, try a little more, and over time condition ourselves. To avoid the cognitive dissonance of not liking something that others seem to take so much pleasure in, we slowly change our perception of the thing we once did not enjoy.
+> 
+> ...
+> 
+> These tendencies of ours lead to a mental process known as _rationalization_, in which we change our attitudes and beliefs to adapt psychologically. Rationalization helps us give reasons for our behaviors, even when those reasons might have been designed by others.
+> 
+> ...
+> 
+> The last step of the Hook Model is the _investment phase_, the point at which users are asked to do a bit of work. Here, users are prompted to put something of value into the system, which increases the likelihood of their using the product and of successive passes through the Hook cycle.
+
+The stock trading has its inherent hooks within it. Especially, when traders invest money. The _inherent_ hook of stock trading need to be amplified, simplified and leveraged.
+
+> In Twitter, for example, the investment comes in the form of following another user. There is no immediate reward for following someone, no stars or badges to affirm the action. Following is an investment in the service, which increases the likelihood of the user checking Twitter in the future.
+> 
+> Also in contrast to the action phase, the investment phase increases friction. This certainly breaks conventional thinking in the product design community that all user experiences should be as easy and effortless as possible. This approach still generally holds true, as does my advice in the action phase to make the intended actions as simple as possible. In the investment phase, however, asking users to do a bit of work comes _after_ users have received variable rewards, not before. The timing of asking for user investment is critically important. By asking for the investment after the reward, the company has an opportunity to leverage a central trait of human behavior.
+> 
+> ...
+> 
+> _The stored value users put into the product increases the likelihood they will use it again in the future and comes in a variety of forms._
+> 
+> Every time users of Apple’s iTunes add a song to their collection, they are strengthening ties to the service. The songs on a playlist are an example of how content increases the value of a service. Neither iTunes nor their users created the songs, yet the more content users add, the more valuable the music library becomes.
+> 
+> ...
+> 
+> _The collection of memories and experiences, in aggregate, becomes more valuable over time and the service becomes harder to leave as users’ personal investment in the site grows._
+> 
+> ...
+> 
+> _The company found that the more information users invested in the site, the more committed they became to it._
+> 
+> On the morning of Twitter’s initial public offering on November 7, 2013, a news commentator on Bloomberg Television said that “the technology needed to build the company could be built in a day.” In fact, he was right. Twitter is a simple application. With a bit of basic programming know-how, anyone can build their very own clone of the multibillion-dollar social media behemoth.
+> 
+> In fact, several companies have tried to supplant the popular social network. One of the most notable attempts came from a disgruntled developer who decided to build App.net, an ad-free alternative that many tech industry watchers argue is actually a better product. However, like other attempts to copy the service, App.net has failed to take off. Why is this?
+> 
+> Collecting people to follow on Twitter, as well as collecting followers, provides tremendous value and is a key driver of what keeps Twitter users hooked.
+> 
+> From the follower side of the equation, the more Twitter users curate the list of people they follow, the better the service will be at delivering interesting content.
+>
+> _Investing in following the right people increases the value of the product by displaying more relevant and interesting content in each user’s Twitter feed. It also tells Twitter a lot about its users, which in turn improves the service overall._
+> 
+> ...
+> 
+> Reputation is a form of stored value users can literally take to the bank.
+> 
+> ...
+> 
+> On eBay both buyers and sellers take their reputations very seriously. The e-commerce giant surfaces user-generated quality scores for every buyer and seller, and awards its most active users with badges to symbolize their trustworthiness. Businesses with bad reputations find it difficult, if not impossible, to compete against highly rated sellers. Reputation is a form of stored value that increases the likelihood of using a service.
+> 
+> _Reputation makes users, both buyers and sellers, more likely to stick with whichever service they have invested their efforts in to maintain a high-quality score_
+> 
+> ...
+> 
+> Investing time and effort into learning to use a product is a form of investment and stored value.
+> 
+> ...
+> 
+> _Once users have invested the effort to acquire a skill, they are less likely to switch to a competing product._
+> 
+> ...
+> 
+> I recommend that you progressively stage the investment you want from users into small chunks of work, starting with small, easy tasks and building up to harder tasks during successive cycles through the Hook Model.
+> 
+> ...
+> 
+> _Habit-forming technologies leverage the user’s past behavior to initiate an external trigger in the future._
+> 
+> ...
+> 
+> The more users invest in a product through tiny bits of work, the more valuable the product becomes in their lives and the less they question its use. Users do not stay hooked forever, though. Invariably, the next big thing will come along and provide a better, more compelling hook. However, by creating habits fueled by investments in a product or service, companies make switching to a competitor difficult. User habits are hard to break and confer powerful competitive advantages to any company fortunate enough to successfully create them.
+
+## Chapter 6. What Are You Going to Do with This?
+
+> You are now equipped to use the Hook Model to ask yourself these five fundamental questions for building effective hooks:
+>
+> 1.	What do users really want? What pain is your product relieving? (_Internal trigger_)
+> 
+> 2.	What brings users to your service? (_External trigger_)
+> 
+> 3.	What is the simplest action users take in anticipation of reward, and how can you simplify your product to make this action easier? (_Action_)
+> 
+> 4.	Are users fulfilled by the reward yet left wanting more? (_Variable reward_)
+> 
+> 5.	What “bit of work” do users invest in your product? Does it load the next trigger and store value to improve the product with use? (_Investment_)
+>
+> ...
+> 
+> Heady altruistic ambitions can at times outpace reality. Too often, designers of manipulative technology have a strong motivation to improve the lives of their users, but when pressed they admit they would not actually use their own creations. Their holier-than-thou products often try to “gamify” some task no one really wants to do by inserting run-of-the-mill incentives such as badges or points that don’t actually hold value for their users.
+> 
+> ...
+> 
+> A book like this one is read and thought about for a while until the next interesting piece of brain candy comes along. As we learned in the chapter on variable rewards, games like FarmVille and Angry Birds engross users, but are then relegated to the gaming dustbin along with other hyper-addictive has-beens such as Pac-Man and Mario Bros.
+> 
+> Entertainment is a hits-driven business because the brain reacts to stimulus by wanting more and more of it, ever hungry for continuous novelty.
+> 
+> _Building an enterprise on ephemeral desires is akin to running on an incessantly rolling treadmill: You have to keep up with the constantly changing demands of your users._
+> 
+> In this quadrant the sustainable business is not purely the game, the song, or the book—profit comes from an effective distribution system for getting those goods to market while they’re still hot, and at the same time keeping the pipeline full of fresh releases to feed an eager audience.
+
+## Chapter 7. The Bible App
+
+> _The most highly regarded entrepreneurs are driven by meaning, a vision for greater good that drives them forward._
+>
+> Start-ups are grueling and only the most fortunate persevere before finding success. If you only build for fame or fortune, you will likely find neither. Build for meaning, though, and you can’t go wrong.
+> 
+> ...
+> 
+> “Unlike other companies, when we started, we were not building a Bible reader for seminary students. YouVersion was designed to be used by everyone, every day,” Gruenewald says, attributing much of the app’s success to a relentless focus on creating habitual Bible readers.
+
+## Chapter 8. Habit Testing and Where to Look for Habit-Forming Opportunities
+
+> Does your users’ internal trigger frequently prompt them to action? Is your external trigger cueing them when they are most likely to act? Is your design simple enough to make taking the action easy? Does the reward satisfy your users’ need while leaving them wanting more? Do your users invest a bit of work in the product, storing value to improve the experience with use and loading the next trigger?
+> 
+> By identifying where your technology is lacking, you can focus on developing improvements to your product where it matters most.
+> 
+> ...
+> 
+> _The Hook Model can be a helpful tool for filtering out bad ideas with low habit potential as well as a framework for identifying room for improvement in existing products._
+> 
+> However, after the designer has formulated new hypotheses, there is no way to know which ideas will work without testing them with actual users.
+> 
+> _Building a habit-forming product is an iterative process and requires user-behavior analysis and continuous experimentation._
+> 
+> ...
+> 
+> Habit Testing does not always require a live product; however, it can be difficult to draw clear conclusions without a comprehensive view of how people are using your system. The following steps assume you have a product, users, and meaningful data to explore.
+>
+> **Step 1: Identify**
+> 
+> The initial question for Habit Testing is “Who are the product’s habitual users?” Remember, the more frequently your product is used, the more likely it is to form a user habit.
+> 
+> _First, define what it means to be a devoted user. How often “should” one use your product?_
+> 
+> ...
+> 
+> If you are building a social networking app like Twitter or Instagram, you should expect habitual users to visit the service multiple times per day. On the other hand, you should not expect users of a movie recommendation site like Rotten Tomatoes to visit more than once or twice a week (because their visits will come on the heels of seeing a movie or researching one to watch). Don’t come up with an overly aggressive prediction that only accounts for überusers; you are looking for a realistic guess to calibrate how often typical users will interact with your product.
+> 
+> ...
+> 
+> **Step 2: Codify**
+> 
+> Users will interact with your product in slightly different ways. Even if you have a standard user flow, the way users engage with your product creates a unique fingerprint. Where users are coming from, decisions made when registering, and the number of friends using the service are just a few of the behaviors that help create a recognizable pattern. Sift through the data to determine if similarities emerge.
+> 
+> _You are looking for a Habit Path—a series of similar actions shared by your most loyal users._
+> 
+> For example, in its early days, Twitter discovered that once new users followed thirty other members, they hit a tipping point that dramatically increased the odds they would keep using the site.
+> 
+> Every product has a different set of actions that devoted users take; the goal of finding the Habit Path is to determine which of these steps is critical for creating devoted users so that you can modify the experience to encourage this behavior.
+> 
+> **Step 3: Modify**
+> 
+> Armed with new insights, it is time to revisit your product and identify ways to nudge new users down the same Habit Path taken by devotees. This may include an update to the registration funnel, content changes, feature removal, or increased emphasis on an existing feature. Twitter used the insights gained from the previous step to modify its on-boarding process, encouraging new users to immediately begin following others.
+> 
+> Habit Testing is a continual process you can implement with every new feature and product iteration.
+> 
+> _Tracking users by cohort and comparing their activity with that of habitual users should guide how products evolve and improve._
+> 
+>
+> ...
+> 
+> **Discovering Habit-forming Opportunities**
+>
+> ...
+> 
+> When it comes to developing new products, there are no guarantees. Along with creating an engaging product as described in this book, start-ups must also find a way to monetize and grow. Although this book does not cover business models for delivering customer value or methods for profitable customer acquisition, both are necessary components of any successful business. Several things must go right for a new company to succeed, and forming user habits is just one of them.
+> 
+> ...
+> 
+> _Studying your own needs can lead to remarkable discoveries and new ideas because the designer always has a direct line to at least one user: him- or herself._
+> 
+> For example, Buffer, a service for posting updates to social networks, was inspired by its founder’s insightful observations of his own behavior.
+> 
+> ...
+> 
+> Careful introspection can uncover opportunities for building habit-forming products.
+>
+> _As you go about your day, ask yourself why you do or do not do certain things and how those tasks could be made easier or more rewarding._
+> 
+> Observing your own behavior can inspire the next habit-forming product or inform a breakthrough improvement to an existing solution.
+> 
+> ...
+> 
+> **Nascent Behaviors**
+> 
+> Sometimes technologies that appear to cater to a niche will cross into the mainstream. Behaviors that start with a small group of users can expand to a wider population, but only if they cater to a broad need. However, the fact that the technology is at first used only by a small population often deceives observers into dismissing the product’s true potential.
+> 
+> A striking number of world-changing innovations were written off as mere novelties with limited commercial appeal. George Eastman’s Brownie camera, preloaded with a film roll and selling for just $1, was originally marketed as a child’s toy. Established studio photographers saw the device as little more than a cheap plaything.
+> 
+> The invention of the telephone was also dismissed at first. Sir William Henry Preece, the chief engineer of the British post office, famously declared, “The Americans have need of the telephone, but we do not. We have plenty of messenger boys.”
+> 
+> In 1911 Ferdinand Foch, the future commander in chief of the Allied forces in World War I, said, “Airplanes are interesting toys but of no military value.”
+> 
+> ...
+> 
+> Naturally, now we do read books and newspapers over the Internet. When technologies are new, people are often skeptical. Old habits die hard and few people have the foresight to see how new innovations will eventually change their routines. However, by looking to early adopters who have already developed nascent behaviors, entrepreneurs and designers can identify niche use cases, which can be taken mainstream.
+> 
+> ...
+> 
+> Entrepreneurs looking for windows of opportunity would be wise to consider Maples’s metaphor.
+>
+> _Wherever new technologies suddenly make a behavior easier, new possibilities are born._
+> 
+> ...
+> 
+> Technological changes often create opportunities to build new hooks. However, sometimes no technology change is required.
+> 
+> _Many companies have found success in driving new habit formation by identifying how changing user interactions can create new routines._
+> 
+> Whenever a massive change occurs in the way people interact with technology, expect to find plenty of opportunities ripe for harvesting. Changes in interface suddenly make all sorts of behaviors easier. Subsequently, when the effort required to accomplish an action decreases, usage tends to explode.

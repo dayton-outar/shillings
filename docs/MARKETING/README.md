@@ -19,6 +19,8 @@
 
 - Start _smallest viable market_ by inviting a select few to experience the _beta_ version
 
+:bulb: People learn from each other. There's a habit-forming hook there. How can the product be designed so that people can learn from each other easily. List steps taken?
+
 ## Questions for JSE: JCSD
 
 1. Do you have any market research publications? (research done on investors and traders)
