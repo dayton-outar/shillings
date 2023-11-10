@@ -80,3 +80,7 @@
 > _It wasn’t a focus on usability that made this a great experience. It was psychology._
 > 
 > Usability clears the way for a good experience by eliminating troublesome interface distractions, but a great experience stems from something more—an awareness of why people could or do care. The danger is in confusing “ease of use” with actually desiring to use something. ... To be clear, if a business approached me tomorrow about making their time-tracking tool fun to use, I’d start by making sure it was first easy to use. Adding “playful” elements on top of a frustrating experience will only complicate things. ... However, I’ve seen cases where the motivation to do something outweighed the usability challenges—the pull outweighed the friction.
+
+![User Experience Hierarchy of Needs](/.attachments/ux.hierarchy.of.needs.png)
+
+## Chapter 2. Why Aesthetics?
