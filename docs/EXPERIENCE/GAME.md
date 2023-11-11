@@ -59,3 +59,49 @@ I can understand the story that chess is telling but what story is checkers tell
 > ...
 > 
 > As with everything else in game design, the key here is a kind of listening. You must learn to listen to your players, thoroughly and deeply.
+> 
+> ...
+> 
+> **Bartle’s Taxonomy of Player Types**
+>
+> 1. **♦ Achievers** want to achieve the goals of the game. Their primary pleasure is challenge.
+> 
+> 2. **♠ Explorers** want to get to know the breadth of the game. Their primary pleasure is discovery.
+> 
+> 3. **♥ Socializers** are interested in relationships with other people. They primarily seek the pleasures of fellowship.
+> 
+> 4. **♣ Killers** are interested in competing with and defeating others. This category does not map well to LeBlanc’s taxonomy. For the most part, it seems killers enjoy a mix of the pleasures of competition and destruction. Interestingly, Bartle characterizes them as primarily interested in “imposing themselves on others” and includes in this category people who are primarily interested in helping others.
+> 
+> Bartle also proposes a fascinating graph (Figure 9.4) that shows how the four types neatly cover a sort of space: that is, achievers are interested in acting on the world, explorers are interested in interacting with the world, socializers are interested in interacting with players, and killers are interested in acting on players.
+> 
+> ![Bartle Taxonomy Matrix](/.attachments/bartle.matrix.png)
+> 
+> **More Pleasure: MORE!**
+>
+> We must use caution when trying to make such simple taxonomies to describe something as complex as human desire. Under close scrutiny, both LeBlanc’s and Bartle’s taxonomies (and other similar lists) have gaps and when misused can gloss over subtle pleasures that might easily be missed, such as “destruction” and “nurturing,” which we encountered in our discussion of gender stereotypes. The following is a list of a few more pleasures to be considered:
+>
+> - **Anticipation**: When you know a pleasure is coming, just waiting for it is a kind of pleasure.
+> 
+> - **Completion**: It feels good to finish something. Many games take advantage of the pleasure of completion—any game where you have to “collect all the treasures,” “destroy all the bad guys,” or otherwise “clear the level” is taking advantage of this pleasure.
+> 
+> - **Delight in another’s misfortune**: Typically, we feel this when some unjust ­person suddenly gets their comeuppance. It is an important aspect of ­competitive games. The Germans call it schadenfreude (pronounced “shoddenfroyduh”).
+> 
+> - **Gift giving**: There is a unique pleasure when you make someone else happy through the surprise of a gift. We wrap our presents to heighten and intensify this surprise. The pleasure is not just that the person is happy but that you made them happy.
+> 
+> - **Humor**: Two unconnected things are suddenly united by a paradigm shift. It is hard to describe, but we all know it when it happens. Weirdly, it causes us to make a barking noise.
+>
+> - **Possibility**: This is the pleasure of having many choices and knowing you could pick any one of them. This is often experienced when shopping or at a buffet table.
+> 
+> - **Pride in an accomplishment**: This is a pleasure all its own that can persist long after the accomplishment was made. The Yiddish word naches (pronounced “nock-hess”) is about this kind of pleased satisfaction, usually referring to pride in children or grandchildren.
+>
+> - **Surprise**: The brain likes surprises.
+> 
+> - **Thrill**: There is a saying among roller coaster designers that “fear minus death equals fun.”Thrill is that kind of fun—you experience terror but feel secure in your safety.
+> 
+> - **Triumph over adversity**: This is that pleasure that you have accomplished something that you knew was a long shot. Typically, this pleasure is accompanied by shouts of personal triumph. The Italians have a word for this pleasure: fiero (pronounced fee-air-o).
+> 
+> - **Wonder**: An overwhelming feeling of awe and amazement. It almost always leads to a feeling of curiosity, which is how “wonder” gets its name.
+
+And there are many, many more. I list these pleasures that fall outside of easy classification to illustrate the richness of the pleasure space. Lists of pleasures can serve as convenient rules of thumb, but don’t forget to keep an open mind for ones that might not be on your list. Also keep in mind that pleasure is very context-sensitive. What might be very pleasurable in one context (dancing at a party) might be torturously embarrassing in another context (dancing at a job interview).
+
+## Chapter 10.
