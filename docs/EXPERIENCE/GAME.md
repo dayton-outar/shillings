@@ -101,7 +101,7 @@ I can understand the story that chess is telling but what story is checkers tell
 > - **Triumph over adversity**: This is that pleasure that you have accomplished something that you knew was a long shot. Typically, this pleasure is accompanied by shouts of personal triumph. The Italians have a word for this pleasure: fiero (pronounced fee-air-o).
 > 
 > - **Wonder**: An overwhelming feeling of awe and amazement. It almost always leads to a feeling of curiosity, which is how “wonder” gets its name.
-
-And there are many, many more. I list these pleasures that fall outside of easy classification to illustrate the richness of the pleasure space. Lists of pleasures can serve as convenient rules of thumb, but don’t forget to keep an open mind for ones that might not be on your list. Also keep in mind that pleasure is very context-sensitive. What might be very pleasurable in one context (dancing at a party) might be torturously embarrassing in another context (dancing at a job interview).
+>
+> And there are many, many more. I list these pleasures that fall outside of easy classification to illustrate the richness of the pleasure space. Lists of pleasures can serve as convenient rules of thumb, but don’t forget to keep an open mind for ones that might not be on your list. Also keep in mind that pleasure is very context-sensitive. What might be very pleasurable in one context (dancing at a party) might be torturously embarrassing in another context (dancing at a job interview).
 
 ## Chapter 10.
