@@ -373,3 +373,6 @@ Crowd likes crowd. Also, this also explains social proofing.
 > A second main lesson is that although irrationality is commonplace, it does not necessarily mean that we are helpless. Once we understand when and where we may make erroneous decisions, we can try to be more vigilant, force ourselves to think differently about these decisions, or use technology to overcome our inherent shortcomings. This is also where businesses and policy makers could revise their thinking and consider how to design their policies and products so as to provide free lunches.
 
 ## Thinking Fast and Slow
+
+© 2011 by Daniel Kahneman
+

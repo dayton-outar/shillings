@@ -1,37 +1,5 @@
 # Technical Analysis
 
-## The Art of Currency Trading
-
-© 2019 by Brent Donnelly. John Wiley & Sons, Inc.
-
-### Chapter 6. Understand Technical Analysis I
-
-> While it is hard to assess the forecasting value of technical analysis, there is another simple reason that using technical analysis is inherently risky (assuming you are a human being). Humans are designed to see patterns. It’s how our biology works. It allows us to simplify and process a complex world. _It is called apophenia: the human tendency to perceive meaningful patterns within random data._
-> 
-> ...
-> 
-> I strongly advise you to learn about technical analysis and use it as a tool—but consider it a risk management and tactical tool, not a trade selection or forecasting tool.
-> 
-> ...
-> 
-> _Occam’s Razor states that among competing hypotheses, the one with the fewest assumptions should be selected. Other, more complicated solutions may ultimately prove correct, but—in the absence of certainty—the fewer assumptions that are made, the better._
-> 
-> When using technical analysis as a risk management and tactical tool, simpler is always better.
-> 
-> ...
-> 
-> My trading strategy is short-term so I use 20-period, 55-period, 100-period, and 200-period moving averages on 10-minute and 1-hour charts. I prefer the 55-hour and 200-hour moving averages as fast and slow indicators for my trading but whether you use 55-hour or 100-hour or 200-hour, the idea and results will be about the same.
-> 
-> ...
-> 
-> There are countless indicators used for measuring momentum, overbought and oversold conditions. I find MACD, RSI, Parabolic SAR, and the Deviation to be most useful.
-> 
-> ...
-> 
-> First, the basics of candlestick construction. The difference between the open and the close is called the body of the candlestick. That is the fat part that is black and white (some systems use green and red in place of black and white). The tails outside the body are called the shadow of the candlestick and represent the full range that traded outside of the OPEN/CLOSE range.
-> 
-> When the candle is green or white, it means the currency pair went up on the day and if it is red or black the currency pair went down. So, to recap, the body is the open to close range, the color defines if the currency pair rose or fell, and the shadows (sometimes called wicks, as in candle wicks) are the intraday extension outside the open-to-close range.
-
 ## Chat GPT
 
 ### Indicators and Tools for Technical Analysis
@@ -85,3 +53,47 @@ Confidence Level: The information provided is based on my knowledge of technical
 Sources:
 - [Investopedia - Technical Analysis](https://www.investopedia.com/terms/t/technicalanalysis.asp)
 - [StockCharts - Technical Indicators and Overlays](https://school.stockcharts.com/doku.php?id=technical_indicators)
+
+## The Art of Currency Trading
+
+© 2019 by Brent Donnelly. John Wiley & Sons, Inc.
+
+### Chapter 6. Understand Technical Analysis I
+
+> While it is hard to assess the forecasting value of technical analysis, there is another simple reason that using technical analysis is inherently risky (assuming you are a human being). Humans are designed to see patterns. It’s how our biology works. It allows us to simplify and process a complex world. _It is called apophenia: the human tendency to perceive meaningful patterns within random data._
+> 
+> ...
+> 
+> I strongly advise you to learn about technical analysis and use it as a tool—but consider it a risk management and tactical tool, not a trade selection or forecasting tool.
+> 
+> ...
+> 
+> _Occam’s Razor states that among competing hypotheses, the one with the fewest assumptions should be selected. Other, more complicated solutions may ultimately prove correct, but—in the absence of certainty—the fewer assumptions that are made, the better._
+> 
+> When using technical analysis as a risk management and tactical tool, simpler is always better.
+> 
+> ...
+> 
+> My trading strategy is short-term so I use 20-period, 55-period, 100-period, and 200-period moving averages on 10-minute and 1-hour charts. I prefer the 55-hour and 200-hour moving averages as fast and slow indicators for my trading but whether you use 55-hour or 100-hour or 200-hour, the idea and results will be about the same.
+> 
+> ...
+> 
+> There are countless indicators used for measuring momentum, overbought and oversold conditions. I find MACD, RSI, Parabolic SAR, and the Deviation to be most useful.
+> 
+> ...
+> 
+> First, the basics of candlestick construction. The difference between the open and the close is called the body of the candlestick. That is the fat part that is black and white (some systems use green and red in place of black and white). The tails outside the body are called the shadow of the candlestick and represent the full range that traded outside of the OPEN/CLOSE range.
+> 
+> When the candle is green or white, it means the currency pair went up on the day and if it is red or black the currency pair went down. So, to recap, the body is the open to close range, the color defines if the currency pair rose or fell, and the shadows (sometimes called wicks, as in candle wicks) are the intraday extension outside the open-to-close range.
+
+## Technical Analysis of the Financial Markets
+
+© 1999 by John J. Murphy
+
+Published by the Penguin Group
+
+> I had no idea when _Technical Analysis of the Futures Markets_ was published in 1986 that it would create such an impact on the industry. It has been referred to by many in the field as the “Bible” of technical analysis.
+> 
+> ...
+> 
+> ... Old techniques like Japanese candlestick charting and newer ones like Market Profile have become part of the technical landscape.
