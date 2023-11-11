@@ -396,6 +396,15 @@ If the risk of using credit cards as the payment solution is taken up, we can lo
 
 Because **JTrader Pro** is owned by the Jamaica Stock Exchange, it has a captive audience. That captive audience may feel that they have to take what Jamaica Stock Exchange has to offer them. But what if a better option could be provided?
 
+My experience using JTrader Pro was as follows,
+
+ - November 7, 2023 at 9:00 AM. I created a ***Fund In Request*** entry, which was placed in _Pending_ state.
+ - November 7, 2023 at 9:14 AM. An ACH Transfer was done through my online banking platform to brokers account.
+ - Novermber 7, 2023 at 9:20 AM. Sent email to broker to inform her that money was sent to brokers account and it was to fulfill the ***Fund In Request*** so that I can place a BUY order.
+ - November 9, 2023 at 1:34 PM. I sent another email after noticing that I still was not able to place a BUY order. Broker decided to follow up.
+ - November 10, 2023 at 10:55 AM. I received an email feedback from JTrader Pro to go ahead and place BUY order as the JTrader Account was updated.
+ - TBC ...
+
 ##### Few Good Mentions
 
  - [Investing.com](https://www.investing.com/stock-screener/?sp=country::119|sector::a|industry::a|equityType::a|exchange::124%3Ceq_market_cap;1)
