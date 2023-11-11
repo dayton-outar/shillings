@@ -102,8 +102,8 @@ These questions attempts to get into the deeper reasons that customers choose a 
 ### The New Collaboratives
 
 > The third model, the integrated marketing team, bears little resemblance to the traditional out-sourcing model. It sees branding as a continuous network activity that needs to be controlled from within the company. In this model, best-of-breed specialist firms are selected to work alongside internal marketing people on a virtual “superteam,” which is then “coached” by the company’s design manager. The advantages of this model are the ability to unify a message across media, the freedom to work with best-of-breed specialists, plus internal stewardship. This last benefit is important, because it means that brand knowledge can accrue to the company, instead of vanishing through a revolving door with the last firm to work on it. A drawback of an integrated marketing team is that it requires a strong internal team to run it.
-
-![The Integrated Marketing Team](/.attachments/imt2art.jpg)
+>
+> ![The Integrated Marketing Team](/.attachments/imt2art.jpg)
 
 ### Hooray for Hollywood
 
@@ -216,7 +216,7 @@ At this point, I was thinking that the Jamaican folklore around a visiting bee w
 
 > Over the last 15 years my firm has store-tested hundreds of package designs. When we first adopted this practice, the reactions of shoppers to our prototypes often differed in the extreme. One shopper would love design A, but hate—I mean HATE—design B. We began to realize that the audience for one product was likely to be different than the audience for another, and that its taste in design was also likely to be different. A little more delving revealed a fundamental split between two main personality types, those who relied mostly on hard information (facts) to make a purchase, and those who relied mostly on soft information (feelings).
 
-![Peronal Interest Chart](/.attachments/personality_wheel.jpg)
+![Personal Interest Chart](/.attachments/personality_wheel.jpg)
 
 > Eventually we were able to diagram the shades of difference we found in the shoppers we encountered. The chart above divides the world into four mindsets, based on people’s job interests: applying, creating, preserving, and discovering. “Appliers,” for example, gravitate toward graphics that are precise, realistic, and familiar, while “creators” go for the lyrical, abstract, and novel. Guess what? If you divide the chart down the middle, you have an approximate map of the left and right brain.
 
