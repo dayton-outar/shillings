@@ -413,7 +413,7 @@ Demographics: 40 - 60 y-o age group
 
 2. How much time do you spend monitoring your investments?
 
-   --
+   Randy Rowe Community. (How much value do you get from the community?)
 
 3. What do you look for?
 
@@ -445,7 +445,7 @@ Demographics: 40 - 60 y-o age group
 
 10. How do you move around stocks to get dividends from different companies?
 
-   --
+    --
 
 **BONUS**:
  - Suggested that a trading platform could be sold to Barita
