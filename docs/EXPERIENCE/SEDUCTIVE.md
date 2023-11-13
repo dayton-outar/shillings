@@ -83,4 +83,10 @@
 
 ![User Experience Hierarchy of Needs](/.attachments/ux.hierarchy.of.needs.png)
 
-## Chapter 2. Why Aesthetics?
+## Chapter 4. Are you Attractive?
+
+> _Emotion is not a luxury: it is an expression of basic mechanisms of life regulation developed in evolution, and is indispensable for survival. It plays a critical role in virtually all aspects of learning, reasoning, and creativity. Somewhat surprisingly, it may play a role in the construction of consciousness._
+> 
+> ...
+> 
+> Similarly, the user interface design decisions we make affect the perceived personality of our applications.
