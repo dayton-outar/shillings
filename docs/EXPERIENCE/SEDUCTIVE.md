@@ -90,3 +90,32 @@
 > ...
 > 
 > Similarly, the user interface design decisions we make affect the perceived personality of our applications.
+> 
+> ...
+> 
+> Products have a personality. Why should we care? Consider this:
+>
+> - People identify with (or avoid) certain personalities.
+> - Trust is related to personality.
+> - Perception and expectations are linked with personality.
+> - Consumers choose products that are an extension of themselves.
+> - We treat sufficiently advanced technology as though it were human.
+
+## Chapter 8. Are you Fun to be Around?
+
+> That said, these are good arguments for the careful use of humor. But these are not reasons to avoid adding humor to our interactions. sure, if there are doubts, it’s much easier to avoid taking the risk of humor. however, you also risk publishing content that fails to engage people in a meaningful or memorable way. Adding a bit of humor will not only make you interaction more human, it can also add levity to an otherwise stressful situation, leading to any number of beneficial physiological effects (more on this in a moment).
+>
+> ...
+> 
+> One of the things I love about MailChimp is how you engage people emotionally in little ways, across different interactions. Did the company begin with the idea of making e-mail management fun, or was this a change along the way?
+> 
+> The humor and personality of MailChimp is really just a natural channeling of who we are as a company. People don’t want to interact with a corporate edifice if they don’t have to. We’ve found that by letting our personality shine through in the application we can make mundane work feel kind of fun. The emotional engagement we layer into the app is designed to enhance the experience, and never impede the workflow. The little jokes that Freddie, our chimp mascot, cracks at the top of a page set a tone for the relationship people have with the app.
+> 
+> ...
+> 
+> Our emotional design techniques employ a common psychology concept called priming. Each emotional design interaction point shapes a user’s perception of the MailChimp brand, and, if well executed, slowly builds good will and trust. The limbic system in our brains handles both emotion and long-term memory so we can easily recall things that are good for us or bad for us. By employing emotional design in our app, we’re consciously shaping positive memories of our brand that not only encourage users to stick around, but also turn them into evangelists for a product they love.
+> 
+> ...
+> 
+> When we’re anxious, the neural transmitter _norepinephrine_ is released into
+the brain. norepinephrine is the brain equivalent of adrenaline, and it creates a rush of fear or anxiety. during these anxious moments we are more alert and focused. in situations where focus is needed, such as editing a paper for grammatical errors, a bit of anxiety-induced norepinephrine might be just the right thing.
