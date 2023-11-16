@@ -119,3 +119,23 @@
 > 
 > When we’re anxious, the neural transmitter _norepinephrine_ is released into
 the brain. norepinephrine is the brain equivalent of adrenaline, and it creates a rush of fear or anxiety. during these anxious moments we are more alert and focused. in situations where focus is needed, such as editing a paper for grammatical errors, a bit of anxiety-induced norepinephrine might be just the right thing.
+
+## Chapter 10. Are you Stimulating?
+
+> ![Landscape of Stimulating Users](/.attachments/stimulations.png)
+> 
+> ...
+> 
+> What information can you display in a way that arouses curiosity and encourages pattern-seeking behavior?
+
+## Chapter 11. Are you Mysterious?
+
+> Great storytellers know how to turn an ordinary event—say, a trip to the grocer—into a suspenseful one by withholding information. In new relationships, flirtation often involves some element of playful teasing, whether through conversation or more sensual revelations. and newsrooms have made a science out of crafting irresistible headlines: “Your PC might be infected!” or “are you prepared for the tax law changes?”
+> 
+> We are captivated by unanswered questions.
+> 
+> ....
+> 
+> With two or three dozen hot Wheels to choose from, guess which one the kids go for? In my experience, the one that gets attention (and allowances) is the mystery car—the one that is unknown.
+> 
+> Crazy? Perhaps it is. But this exact same bit of psychology also works on grown-ups.
