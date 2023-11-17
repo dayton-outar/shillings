@@ -139,3 +139,39 @@ the brain. norepinephrine is the brain equivalent of adrenaline, and it creates 
 > With two or three dozen hot Wheels to choose from, guess which one the kids go for? In my experience, the one that gets attention (and allowances) is the mystery car—the one that is unknown.
 > 
 > Crazy? Perhaps it is. But this exact same bit of psychology also works on grown-ups.
+> 
+> ...
+> 
+> When we become aware that information is missing—when something changes from being known (or so we thought) to an unknown state—we become curious. This is the explanation of curiosity posed by behavioral economist George Loewenstein in his information gap theory. Loewenstein says, “Curiosity happens when we feel a gap in our knowledge.”
+> 
+> ...
+> 
+> ![Zone of Curiosity](/.attachments/zone.of.curiosity.png)
+> 
+> ...
+> 
+> Simply stated: I’m curious because there’s a gap between “what I know and what I want to know.” two notable implications come from this perspective:
+> 
+> - The _intensity_ of curiosity correlates to the likelihood of certain information to resolve the information gap. Loewenstein’s own tests confirmed that subjects were more curious when given parts of a greater whole—the need to complete enough of a picture puzzle to determine what it was (a picture of an animal) resulted in more interaction than a scenario where each block was a discrete picture.
+> 
+> - Curiosity correlates with our own understanding of a particular domain. The more we know about some topic, the more likely we are to focus on our own information gaps. If I know eight of ten items, I’m more curious about the remaining two than if I only know two of ten things.
+> 
+> ...
+> 
+> LinkedIn gives you a _personalized_ glimpse of what could be known, essentially teasing you with relevant information such as, “Someone at [company name] viewed your profile.” The site moves you into an unknown state by sharing bits of knowledge that can only be fully known as a paid member. Nothing has been given away for free—I still don’t know who looked at my profile, but I’m aware of some partial knowledge that might be worthwhile to know in full (see the top screen on the following page). As one friend said, “If someone from apple has been looking at my profile, you can bet I want to know who!”
+> 
+> If this partial information proves relevant and valuable, you’ll want to know more, right? In essence, they’ve created a “zone of curiosity” between two previously known states.
+> 
+> ...
+> 
+> If you want to make someone curious, make them aware of something they don’t know. Find information you can use to tease people. Chances are, you’re either withholding all the specific information or giving it all away. To get attention and engage the senses, look for ways to turn these direct messages into a quest. A few tips:
+> - Make your tease interesting, or at least proportionate in appeal to the cost.
+> - Strive to make the information personally relevant to the user.
+> - Offer the promise of something worthwhile—what will it cost?
+> - Establish trust through previous experiences and context clues.
+> - Use visuals to suggest or create the immediate perception of mystery.
+> - Don’t try to lure users with something that is given away freely elsewhere.
+
+## Chapter 12. Can People Express Themselves Around You?
+
+> The need for self-expression shows up in just about any area where people are allowed to control something, especially where this control is tied to an identity. The most obvious place for this is games, especially ones where the player has an avatar to dress and decorate. (It’s interesting to note that these avatars are most often idealized versions of the person in real life.) While the game Farmville doesn’t have avatars to customize, the player’s farm becomes an artistic canvas. Most players start off by simply thinking about an organized way to plant crops; more ambitious players use their farms to create some rather interesting works of art.
