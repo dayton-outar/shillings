@@ -97,3 +97,9 @@ Published by the Penguin Group
 > ...
 > 
 > ... Old techniques like Japanese candlestick charting and newer ones like Market Profile have become part of the technical landscape.
+
+...
+
+## Japanese Candlestick Charting Techniques
+
+![Candlestick Cheet Sheet](/.attachments/candlestick.cheat.sheet.webp)

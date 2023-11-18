@@ -2,12 +2,16 @@
 
 > Valuation matters in the super-long-term, for example, while positioning and momentum matter much more in the short-term.[^1]
 
+![Valuation Models](/.attachments/valuation-models.png)
+
 There are 2 main approaches to valuation,
 
 1. Discounted Cash Flow Model
 2. Relative Valuation
 
-## Discounted Cash Flow Model
+## Discounted Cashflow Model
+
+![Discounted Cashflow Model](/.attachments/discounted-cashflow-model.png)
 
 The value of any asset following the present value rule is, 
 
