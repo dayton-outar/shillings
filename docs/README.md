@@ -81,7 +81,7 @@ Step 1 may take 4 to 5 years.
 
 ## Feature
 
-Breaking IPOs down in the app could bring value to prospects. Here is the checklist[2],
+Breaking IPOs down in the app could bring value to prospects. Here is the checklist,
  1. Object of the offer. What is the funds raised to be used for?
  2. About the company: industry overiew (market size, potential growth and key industry parameters), the business of the company and the financial statement (debt/equity ratio, sales growth, operating margins), coverage ratio and ROCE.
  3. About the leadership: board of directors, management team, experience and remuneration (capital structure; list of shareholders).

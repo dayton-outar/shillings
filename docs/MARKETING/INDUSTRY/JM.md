@@ -403,7 +403,9 @@ My experience using JTrader Pro was as follows,
  - Novermber 7, 2023 at 9:20 AM. Sent email to broker to inform her that money was sent to brokers account and it was to fulfill the ***Fund In Request*** so that I can place a BUY order.
  - November 9, 2023 at 1:34 PM. I sent another email after noticing that I still was not able to place a BUY order. Broker decided to follow up.
  - November 10, 2023 at 10:55 AM. I received an email feedback from JTrader Pro to go ahead and place BUY order as the JTrader Account was updated.
- - TBC ...
+ - November 13, 2023 at 7:58 AM. I placed a BUY order for 970 stock units at $62 per stock unit.
+   
+   ![BUY Order for NCBFG Units](/.attachments/jtrader.order.62.ncbfg.png)
 
 ##### Few Good Mentions
 
