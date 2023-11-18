@@ -418,3 +418,5 @@ My experience using JTrader Pro was as follows,
  - [eTrade](https://us.etrade.com/platforms)
  - [Trading 212](https://www.trading212.com/)
  - [Stockpile](https://www.stockpile.com/)
+
+[^1]: [Importance of Domain Authority as the Key Site Metric for Growth](https://www.responsify.com/importance-of-domain-authority/) by Ginny Dwyer

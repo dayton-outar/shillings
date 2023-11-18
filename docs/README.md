@@ -81,14 +81,14 @@ Step 1 may take 4 to 5 years.
 
 ## Feature
 
-Breaking IPOs down in the app could bring value to prospects. Here is the checklist,[^2]
+Breaking IPOs down in the app could bring value to prospects. Here is the checklist,[^1]
  1. Object of the offer. What is the funds raised to be used for?
  2. About the company: industry overiew (market size, potential growth and key industry parameters), the business of the company and the financial statement (debt/equity ratio, sales growth, operating margins), coverage ratio and ROCE.
  3. About the leadership: board of directors, management team, experience and remuneration (capital structure; list of shareholders).
  4. Valuation of company
  5. Risk Factors
 
- GraceKennedy created a portal for customers of their brokerage firm to submit applications to buy shares from IPOs and APOs.[^3]
+ GraceKennedy created a portal for customers of their brokerage firm to submit applications to buy shares from IPOs and APOs.[^2]
 
  Need to find ways to deconstruct annual and quarterly reports using extraction tools such as,
   - [Asprise OCR wth Table Detection](http://asprise.com/ocr-detect-table-api/free-ocr-online-index.html)
@@ -116,6 +116,5 @@ Drive traffic to site with [Simple Traffic](https://www.simpletraffic.co/).
 1. [The Top 5 Jamaican Dividend Stock To Invest Right Now in 2022](https://youtu.be/DooE-5QiL_4?si=Sm8La8h7ogpktpk-) - [Garth Grant](https://www.youtube.com/@GarthGrant)
 1. [How to Buy Stocks in Jamaica 2022](https://youtu.be/sRaCVQXm-QA?si=XVFmGSwpS3IM4sJN) - [Emar Morrison](https://www.youtube.com/@emarjm)
 
-[^1]: [Importance of Domain Authority as the Key Site Metric for Growth](https://www.responsify.com/importance-of-domain-authority/) by Ginny Dwyer
-[^2]: [How to Analyze an IPO: A complete Guide | Top 5 Tips to Analyze an IPO the Best Way](https://youtu.be/1iBlLTvIxX8?si=eBN9oIzZuFsBkZlH) - [Prateek Singh - LearnApp](https://www.youtube.com/@PrateekSinghLearnApp)
-[^3]: [GK One Wealth](https://gk-capital.com/gk-one-wealth/?playlist=87add44&video=58719e1)
+[^1]: [How to Analyze an IPO: A complete Guide | Top 5 Tips to Analyze an IPO the Best Way](https://youtu.be/1iBlLTvIxX8?si=eBN9oIzZuFsBkZlH) - [Prateek Singh - LearnApp](https://www.youtube.com/@PrateekSinghLearnApp)
+[^2]: [GK One Wealth](https://gk-capital.com/gk-one-wealth/?playlist=87add44&video=58719e1)
