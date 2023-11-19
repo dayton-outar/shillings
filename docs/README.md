@@ -62,7 +62,7 @@ Step 1 may take 4 to 5 years.
 
 ## Business Plan
 
-...
+... [TODO: Complete Business Canvas]
 
 
 ![Shillings Business Canvas](/.attachments/shillings.business.canvas-2.png)
@@ -98,6 +98,13 @@ Build better logo with [BrandCrowd](https://www.brandcrowd.com/).
 
 Drive traffic to site with [Simple Traffic](https://www.simpletraffic.co/).
 
+Repo issues should contain backlog of features for _Tech Strategy_.
+
+### Topic Cluster Ideas
+
+- What is a Stock Market?
+- Shorting Stocks
+
 ## References
 
 1. [Outline of industry](https://en.wikipedia.org/wiki/Outline_of_industry)
@@ -105,6 +112,8 @@ Drive traffic to site with [Simple Traffic](https://www.simpletraffic.co/).
 1. [List of Stock Markets](https://www.tradinghours.com/markets)
 1. [Wiki: List of Stock Markets](https://en.wikipedia.org/wiki/List_of_stock_exchanges)
 1. [How to Develop your Business Design Philosophy](https://drawbackwards.com/blog/how-to-develop-your-design-philosophy)
+1. [The top 10 reasons small businesses fail – and how to avoid them](https://www.boq.com.au/business/small-business/business-knowledge-hub/opening-a-small-business/the-top-ten-reasons-small-businesses-fail)
+1. [11 Expert Tips for Conducting Better Market Research](https://www.checkmarket.com/blog/11-expert-tips-for-conducting-better-market-research/)
 
 ## Videos
 
@@ -115,6 +124,9 @@ Drive traffic to site with [Simple Traffic](https://www.simpletraffic.co/).
 1. [Investing in the Jamaica Stock Market for Beginners](https://youtu.be/bsXA7nJ7jW8?si=9r-996221fzkeRLn) - [Learn Grow Invest](https://www.youtube.com/@learngrowinvest)
 1. [The Top 5 Jamaican Dividend Stock To Invest Right Now in 2022](https://youtu.be/DooE-5QiL_4?si=Sm8La8h7ogpktpk-) - [Garth Grant](https://www.youtube.com/@GarthGrant)
 1. [How to Buy Stocks in Jamaica 2022](https://youtu.be/sRaCVQXm-QA?si=XVFmGSwpS3IM4sJN) - [Emar Morrison](https://www.youtube.com/@emarjm)
+1. [Robinhood vs Charles Schwab 2023: Best Brokerage?](https://youtu.be/OlTiorM1fYQ)
+1. [Robinhood vs Charles Schwab | Which Brokerage Is Better For You?](https://youtu.be/RzmUCm835T4)
+1. [Charles Schwab Trading Platform Web Tutorial](https://youtu.be/CZsiRomcUeE)
 
 [^1]: [How to Analyze an IPO: A complete Guide | Top 5 Tips to Analyze an IPO the Best Way](https://youtu.be/1iBlLTvIxX8?si=eBN9oIzZuFsBkZlH) - [Prateek Singh - LearnApp](https://www.youtube.com/@PrateekSinghLearnApp)
 [^2]: [GK One Wealth](https://gk-capital.com/gk-one-wealth/?playlist=87add44&video=58719e1)
