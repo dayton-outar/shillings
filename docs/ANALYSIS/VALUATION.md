@@ -79,6 +79,9 @@ $$\huge{Enterprise\text{ }Value\text{ }in\text{ }Year\text{ }T = V_T^L = { FCF_{
 
 > we observed that the value of a firm is a function of three variables—its capacity to generate cash flows, its expected growth in these cash flows, and the uncertainty associated with these cash flows
 
+See below an example of the breakdown of the intrinsic value of GK stock on JSE by Simply Wall Street.
+
+![Breakdown of fair value of GK stock on JSE](/.attachments/SimplyWall.St-Instrinsic.Value.GK.2022.png)
 
 ## Further Reading
 
