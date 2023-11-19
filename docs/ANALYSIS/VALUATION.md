@@ -11,7 +11,13 @@ There are 2 main approaches to valuation,
 
 ## Discounted Cashflow Model
 
+See below the model used by Damodaran to identify the type of Cashflow model to use to evaluate an asset,
+
 ![Discounted Cashflow Model](/.attachments/discounted-cashflow-model.png)
+
+Now, compare the above model by Damodaran with Simply Wall Street's model (or flowchart),
+
+![Simply Wall Street](/.attachments/simply.wall.st.intrinsic-value-flowchart.png)
 
 The value of any asset following the present value rule is, 
 
