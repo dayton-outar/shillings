@@ -15,9 +15,18 @@ See below the model used by Damodaran to identify the type of Cashflow model to 
 
 ![Discounted Cashflow Model](/.attachments/discounted-cashflow-model.png)
 
-Now, compare the above model by Damodaran with Simply Wall Street's model (or flowchart),
+Now, compare the above model by Damodaran with Simply Wall Street's model (or flowchart),[^2]
 
-![Simply Wall Street](/.attachments/simply.wall.st.intrinsic-value-flowchart.png)
+> DCF is the most widely-accepted method to calculate the fair value of a company. It is based on the premise that the fair value of a company is the total value of its incoming cash flow less its expenses, technically called Free Cash Flows (FCF), discounted to today&#39;s value.
+>
+> The SWS app uses four variations of DCF depending on the characteristics of a particular stock, such as industry and data availability.
+> 
+> - **2-Stage Discounted Cash Flow Model:** suitable for companies that do not necessarily grow at a constant rate over time. They tend to be high-growth initially, and become stable after a couple of years.
+> - **Dividend Discount Model (DDM):** accurate for companies that consistently pays out a meaningful portion of their earnings as dividends.
+> - **Excess Returns Model:** used for financial companies such as banks and insurance, generally do not have a significant proportion of physical assets, and face different regulatory requirements for cash holdings.
+> - **Adjusted-Funds-From-Operations (AFFO) 2-Stage Discounted Cash Flow Model:** used for Real Estate Investment Trusts (REITs), as they incur capital gains and other real estate-specific factors which impacts their free cash flows.
+>
+> ![Simply Wall St Discounted Cash Flow Model Selection Process](/.attachments/simply.wall.st.intrinsic-value-flowchart.png)
 
 The value of any asset following the present value rule is, 
 
@@ -39,14 +48,11 @@ Cash flow can be determined from 2 main sources for stocks: dividends and free c
 
 If the company that issued stocks on a stock market pays dividends, a version of the Discounted Cash Flow Model referred to as the _Dividend-Discount Model_ can be applied to arrive at the net present value of the stock.
 
-The equation below applies to a single N-year investor, who will collect dividends for N years and
-then sell the stock, or to a series of investors who hold the stock for shorter periods and
-then resell it.[^2]
+The equation below applies to a single N-year investor, who will collect dividends for N years and then sell the stock, or to a series of investors who hold the stock for shorter periods and then resell it.[^3]
 
 $$\huge{P_0 = {Div_1 \over 1 + r_E} + {Div_2 \over (1 + r_E)^2} + {Div_3 \over (1 + r_E)^3} + \ldots + {Div_N \over (1 + r_E)^N} + { P_N \over (1 + r_E)^N } }$$
 
-For the special case in which the firm eventually
-pays dividends and is never acquired, it is possible to hold the shares forever.[^2]
+For the special case in which the firm eventually pays dividends and is never acquired, it is possible to hold the shares forever.
 
 $$\huge{P_0 = {Div_1 \over 1 + r_E} + {Div_2 \over (1 + r_E)^2} + {Div_3 \over (1 + r_E)^3} + \ldots = \sum_{n=1}^\infty {Div_n \over (1 + r_E)^n} }$$
 
@@ -116,5 +122,5 @@ $$\huge{Enterprise\text{ }Value\text{ }in\text{ }Year\text{ }T = V_T^L = { FCF_{
 
 
 [^1]: Page 75. Chapter 5. _The Art of Currency Trading_ by Brent Donnelly.
-[^2]: Page 314. Chapter 9. _Corporate Finance: The Core, Global Edition_ by Jonathan Berk and Peter Demarzo.
-[^3]: Page 460. Chapter 17. _Investment Valuation_ by Aswath Damodaran.
+[^2]: [Simply Wall Street. Company Analysis Model](https://github.com/SimplyWallSt/Company-Analysis-Model/blob/master/MODEL.markdown)
+[^3]: Page 314. Chapter 9. _Corporate Finance: The Core, Global Edition_ by Jonathan Berk and Peter Demarzo.
