@@ -104,4 +104,44 @@ I can understand the story that chess is telling but what story is checkers tell
 >
 > And there are many, many more. I list these pleasures that fall outside of easy classification to illustrate the richness of the pleasure space. Lists of pleasures can serve as convenient rules of thumb, but don’t forget to keep an open mind for ones that might not be on your list. Also keep in mind that pleasure is very context-sensitive. What might be very pleasurable in one context (dancing at a party) might be torturously embarrassing in another context (dancing at a job interview).
 
-## Chapter 10.
+## Chapter 10. The Experience is in the Player's Mind
+
+> The following are some of the key components necessary to create an activity that puts a player into a flow state:
+> 
+> - **Clear goals**: When our goals are clear, we are able to more easily stay focused on our task. When goals are unclear, we are not “into” our task, for we aren’t at all certain whether our current actions are useful.
+> 
+> - **No distractions**: Distractions steal focus from our task. No focus, no flow. This means engaging both mind and hands. Menial labor with no thought makes the mind wander; just sitting and thinking can make the hands fidget. These “itchy” feelings are each a kind of distraction.
+> 
+> - **Direct feedback**: If every time we take an action, we have to wait before we know what effect the action caused, we will quickly become distracted and lose focus on our task. When feedback is immediate, we can easily stay focused.
+> 
+> - **Continuously challenging**: Human beings love a challenge. But it must be a challenge we think we can achieve. If we start to think we can’t achieve it, we feel frustrated, and our minds start seeking an activity more likely to be rewarding. On the other hand, if the challenge is too easy, we feel bored, and again, our minds start seeking more rewarding activities.
+> 
+> Flow activities must manage to stay in the narrow margin of challenge that lies between boredom and frustration, for both of these unpleasant extremes cause our mind to change its focus to a new activity.
+
+## Chapter 11. The Player's Mind is Driven by the Player's Motivation
+
+> Surprisingly, Ryan and Deci suggest that we have precisely three mental needs:
+> 
+> 1. **Competence**: I need to feel good at something.
+>
+> 2. **Autonomy**: I need freedom to do things my own way.
+>
+> 3. **Relatedness**: I need to connect with other people.
+>
+> ...
+> 
+> For an interesting perspective on the motivations in your game, try putting each one on a matrix, where one axis is internal/external and the other is have-to/want-to. It is one more illustration of how richly complex and interesting human motivation can be.
+> 
+> ![Motivation Matrix](/.attachments/motivation.matrix.png)
+> 
+> ...
+> 
+> It is impossible to overestimate the importance of novelty as motivation in the realm of game design. Human beings are natural explorers, and we are always interested in that which is new.
+> 
+> ...
+> 
+> So do not despair at man’s insatiable appetite for novelty—instead, embrace it, and give the people what they want: something they have never experienced before.
+
+## Chapter 12. Some Elements are Game Mechanics
+
+> 

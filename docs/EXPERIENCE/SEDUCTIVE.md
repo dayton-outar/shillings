@@ -175,3 +175,18 @@ the brain. norepinephrine is the brain equivalent of adrenaline, and it creates 
 ## Chapter 12. Can People Express Themselves Around You?
 
 > The need for self-expression shows up in just about any area where people are allowed to control something, especially where this control is tied to an identity. The most obvious place for this is games, especially ones where the player has an avatar to dress and decorate. (It’s interesting to note that these avatars are most often idealized versions of the person in real life.) While the game Farmville doesn’t have avatars to customize, the player’s farm becomes an artistic canvas. Most players start off by simply thinking about an organized way to plant crops; more ambitious players use their farms to create some rather interesting works of art.
+
+## Chapter 13. Small First Steps
+
+> Whenever you can put something into simpler terms, you increase the odds that people will actually do that thing. Suggest a particular course of action, nudge people to take a first step, set up defaults, get a small initial commitment—these are the kinds of little details that can shape the path and change behavior.
+> 
+> ...
+> 
+> Closely related to the endowed progress effect is a principle called _sequencing_—if you want to motivate people to do something, break the task down into small steps.
+> 
+> ...
+> 
+> In most of my personal and professional interactions, I’ve stopped making big requests of people. My e-mails are direct and to the point, and I clearly state the next intended action. I’ve also stopped making multiple requests in a single e-mail, unless they are all closely related. Based on what I’ve learned about attention spans, interest, and motivation, if getting people to actually do something is the goal, you have to make the process as simple as possible!
+
+## Chapter 14. Coming on Too Strong
+
