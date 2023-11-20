@@ -132,7 +132,7 @@ I can understand the story that chess is telling but what story is checkers tell
 > 
 > For an interesting perspective on the motivations in your game, try putting each one on a matrix, where one axis is internal/external and the other is have-to/want-to. It is one more illustration of how richly complex and interesting human motivation can be.
 > 
-> ![Motivation Matrix](/.attachments/motivation.matrix.png)
+> ![Motivation Matrix](/.attachments/motivation.matrix-1.png)
 > 
 > ...
 > 
