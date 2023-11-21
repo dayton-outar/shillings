@@ -190,3 +190,22 @@ the brain. norepinephrine is the brain equivalent of adrenaline, and it creates 
 
 ## Chapter 14. Coming on Too Strong
 
+> Does limiting the number of available choices make a difference? Numerous researchers have found that when presented with more options, we’re far less likely to take any action at all.
+> 
+> ...
+> 
+> _If every additional form field lowered response rates by 10 percent, what would you cut?_
+
+## Chapter 15. The Path of Least Resistance
+
+> Given two choices, we tend to choose the one that doesn’t require anything of us.
+> 
+> ...
+> 
+> We’ve talked about sticking with defaults, or continuing with what we already do. But why do we have a status-quo bias? Why do we prefer to leave things as they are?
+>
+> There are the obvious candidates: Fear of the unknown. Laziness. Safety (“hey, this seems to be what most people choose”). A sense of identity. Habit.
+> 
+> One of the more interesting findings about our inertia has to do with ownership bias and loss aversion. We hate to lose stuff. Even if there is more to be had, we hate letting go of what we already have. This can be seen with investors who hold on to stocks long after they should (rationally) have let them go. (Loss aversion explains this “sunk cost” effect.) But, personal investment is not required for us to develop an attachment to something. Consider some studies conducted by Amos tversky and Daniel Kahneman.
+
+## Chapter 14. The Influence of Words
