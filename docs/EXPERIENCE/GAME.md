@@ -144,4 +144,16 @@ I can understand the story that chess is telling but what story is checkers tell
 
 ## Chapter 12. Some Elements are Game Mechanics
 
+> As with many things in game design, we do not have a universally ­agreed-upon taxonomy of game mechanics. One reason for this is that the mechanics of gameplay, even for simple games, tend to be quite complex and very difficult to ­disentangle. Attempts at simplifying these complex mechanics to the point of perfect ­mathematical understanding result in systems of description that are obviously incomplete. Economic “game theory” is an example of this. You would think with a name like “game theory,” it would be of great use to game designers, but in truth, it can only handle such simple systems that it is seldom useful for designing real games.
+>
+> ...
 > 
+> **Mechanic 1: Space**
+>
+> Every game takes place in some kind of space. This space is the “magic circle” of gameplay. It defines the various places that can exist in a game and how those places are related to one another. As a game mechanic, space is a mathematical construct. We need to strip away all visuals, all aesthetics, and simply look at the abstract construction of a game’s space.
+> 
+> ...
+> 
+> At first glance, you might say it is a discrete 2D space, like a chessboard, with most of the middle cells missing. But it can be more simply represented as a 1D space—a single line of forty discrete points, which connects to itself in a loop. Sure, on the game board, the corner spaces look special because they are bigger, but ­functionally that doesn’t matter, since each game square is a zero-dimensional space. Multiple game pieces can be in a single game square, but their relative ­positions within that square are meaningless.
+> 
+> But not all game spaces are discrete. A pool table is an example of a continuous 2D space. It has a fixed length and width, and the balls can freely move about on the table, ricocheting off of the walls or falling into the holes, which are in fixed ­positions. Everyone would agree that the space is continuous, but is it 2D? Since clever players can sometimes cause the balls to leave the table and hop over each other, you could certainly argue that this is really a 3D game space, and for some purposes, it is useful to think of it that way. There are no hard and fast rules for these abstract functional spaces. When designing a new game, there are times it will be useful for you to think of your space as 2D and there are times when thinking of it as 3D is more useful. The same goes for continuous vs. discrete. The ­purpose of stripping down a game into a functional space is so that you can more easily think about it, without the distractions of aesthetics or the real world. If you are thinking about modifying the game of soccer to a playing field with new boundaries, you will probably think about it in terms of a 2D continuous space.
