@@ -157,3 +157,21 @@ I can understand the story that chess is telling but what story is checkers tell
 > At first glance, you might say it is a discrete 2D space, like a chessboard, with most of the middle cells missing. But it can be more simply represented as a 1D space—a single line of forty discrete points, which connects to itself in a loop. Sure, on the game board, the corner spaces look special because they are bigger, but ­functionally that doesn’t matter, since each game square is a zero-dimensional space. Multiple game pieces can be in a single game square, but their relative ­positions within that square are meaningless.
 > 
 > But not all game spaces are discrete. A pool table is an example of a continuous 2D space. It has a fixed length and width, and the balls can freely move about on the table, ricocheting off of the walls or falling into the holes, which are in fixed ­positions. Everyone would agree that the space is continuous, but is it 2D? Since clever players can sometimes cause the balls to leave the table and hop over each other, you could certainly argue that this is really a 3D game space, and for some purposes, it is useful to think of it that way. There are no hard and fast rules for these abstract functional spaces. When designing a new game, there are times it will be useful for you to think of your space as 2D and there are times when thinking of it as 3D is more useful. The same goes for continuous vs. discrete. The ­purpose of stripping down a game into a functional space is so that you can more easily think about it, without the distractions of aesthetics or the real world. If you are thinking about modifying the game of soccer to a playing field with new boundaries, you will probably think about it in terms of a 2D continuous space.
+> 
+> ...
+> 
+> **Mechanic 2: Time**
+> 
+> In the real world, **time** is the most mysterious of dimensions. Against our will, we travel through it, ever forward, with no way to stop, turn around, slow down, or speed up. In the world of games, we often try to remedy this lack of control by creating toy worlds that let us play with time like gods.
+> 
+> ...
+> 
+> **Mechanic 3: Objects**
+> 
+> A space without anything in it is, well, just a space. Your game space will surely have **objects** in it. Characters, props, tokens, scoreboards, or anything that can be seen or manipulated in your game falls into this category. Objects are the “nouns” of game mechanics. Technically, there are times you might consider the space itself an object, but usually the space of your game is different enough from other objects that it stands apart. Objects generally have one or more **attributes**, one of which is often the current position in the game space.
+> 
+> ...
+> 
+> **Mechanic 4: Actions**
+> 
+> The next important game mechanic is the **action**. Actions are the “verbs” of game mechanics. There are two perspectives on actions or, put another way, two ways to answer the question “What can the players do?”
