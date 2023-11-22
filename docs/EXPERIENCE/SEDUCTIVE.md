@@ -196,7 +196,7 @@ the brain. norepinephrine is the brain equivalent of adrenaline, and it creates 
 > 
 > _If every additional form field lowered response rates by 10 percent, what would you cut?_
 
-## Chapter 15. The Path of Least Resistance
+## Chapter 16. The Path of Least Resistance
 
 > Given two choices, we tend to choose the one that doesn’t require anything of us.
 > 
@@ -208,4 +208,115 @@ the brain. norepinephrine is the brain equivalent of adrenaline, and it creates 
 > 
 > One of the more interesting findings about our inertia has to do with ownership bias and loss aversion. We hate to lose stuff. Even if there is more to be had, we hate letting go of what we already have. This can be seen with investors who hold on to stocks long after they should (rationally) have let them go. (Loss aversion explains this “sunk cost” effect.) But, personal investment is not required for us to develop an attachment to something. Consider some studies conducted by Amos tversky and Daniel Kahneman.
 
-## Chapter 14. The Influence of Words
+## Chapter 17. The Influence of Words
+
+> _the way in which issues and data are stated can alter our judgment and affect decisions_
+> 
+> ...
+> 
+> This leads us to another rather curious mind hack, one exploited by salespeople, magicians, and others: _anchoring_. When making decisions, we rely too heavily—or anchor—on one trait or piece of information. This is because most of our judgments are not _absolute_ (based on all available information in the world), but rather _relative_, typically to the initial anchor being set.
+>
+> ...
+> 
+> ***“Never underestimate the power of using ‘you’ in your writing!”***
+> 
+> Why does sierra advocate an informal, conversational writing style? Because this is what the brain looks for to see if it should be engaged. We may think we want to pay attention to a lecture, but when the speaker (or writer) speaks directly to “you,” the brain thinks we are now engaged in a conversation.
+> 
+> ...
+> 
+> In 2009, blogger dustin Curtis, curious about the effects of forceful language, ran a little experiment. At the bottom of his web site, he has a call to action that invites people to follow him on twitter. He wanted to see if he could “increase the clickthrough rate even more by altering the way [this phrase] was worded.”
+> 
+> He began with a statement: “I’m on Twitter,” and found that this produced a 4.70 percent clickthrough rate.
+> 
+> Then he switched to a command: “Follow me on Twitter,” which produced a 7.31 percent clickthrough rate.
+> 
+> Then he tried a stronger personal command: “You should follow me on Twitter,” which produced a 10.09 percent clickthrough rate.
+> 
+> Finally, he added the literal callout “here,” for a final phrase of “You should follow me on Twitter here.” The result was a remarkable 12.81 percent clickthrough rate.
+> 
+> ...
+> 
+> Obsessing over every word isn’t always required. Just being clear and direct can change behavior.
+
+## Chapter 18. An Eye for Details
+
+> ![Example of a service blueprint that documents every discrete step in an experience.](/.attachments/service.blueprint.png)
+
+## Chapter 19. Real World Games
+
+> Given the sustained interest that people give to a good game, it should come as no surprise that businesses have begun looking to gaming as a way to create customer loyalty or build interest in their service. This trend of adding things like points and badges to make sites more gamelike is widespread.
+> 
+> ...
+> 
+> What are the common characteristics shared by most games?
+> 
+> ...
+> 
+> I’ve found that most items tend to fit into one of these categories:
+> 
+> - Play & Challenges
+> 
+> - Conflicts & Choices
+> 
+> - Feedback Loops
+> 
+> - Goals & rewards
+> 
+> - Imaginary World
+>
+> ...
+> 
+> ![Classifying Motivators](/.attachments/elements.of.game.design.png)
+> 
+> ...
+> 
+> At their core, games are about play. But, what makes them games is the introduction of a challenge (or a series of small extrinsic challenges presented in the form of goals). Win the most points. Stay alive. Solve the riddle. Avoid being tagged.
+>
+> Succeeding at this challenge is complicated by artificial conflicts and choices. These are imposed by a set of rules that all players (or the player) agree to. Conflicts may come in the form of scarce resources, competition, or choices and calculations we have to make during the course of the game. Other players may help or hamper our efforts.
+>
+> Along the way, there will be all kinds of _feedback loops_ to let us know how we’re doing. These can be in real time or at periodic intervals. That strategy didn’t work so well. I wonder what will happen if I pair these cards? Dang, I lost a life.
+> 
+> Sometimes these feedback loops lead to or come in the form of extrinsic motivators such as _goals_ and _rewards_. get to the next level. Earn a badge. try this path next.
+> 
+> Finally, all of this takes place in an _imaginary world_ that we choose to enter.
+
+## Chapter 20. A Challenge Worth Pursuing
+
+> ***(Play + Challenges) + (Rewards + Goals) = Game***
+> 
+> The problem with many of the current attempts to “gamify” real life and business applications is that the formula above has been replaced with something more like this:
+> 
+> ***~(Play + Challenges)~ + (Rewards + Goals) = Game***
+> 
+> But rewards and goals (without challenges and play) do not make something a game. Or at least not one that’s very fun to play.
+> 
+> ...
+> 
+> For example, the social game **FarmVille** works because of three things:
+> 
+> - _Appointment mechanic_—you must return at an appointed time to harvest your crop
+> 
+> - _Self-expression_—you decide how to plant your garden
+> 
+> - _Social gifting_—you get ahead in the game by inviting more players.
+> 
+> Or, take pictionary. What makes it a fun game?
+> 
+> - _Limited duration_—60 seconds to guess what’s being drawn
+> 
+> - _Group competition_—groups compete against each other
+> 
+> - _Teamwork_—you must work together (in your team) to win the game
+> 
+> - _Self-expression_—whoever’s turn it is must decide how to render their image
+> 
+> - _Pattern recognition_—the team must guess what’s being drawn
+> 
+> ...
+> 
+> ![Challenge/Ability Balance Chart](/.attachments/flow.results.chart.png)
+>
+> _Flow results when the challenge is equal to your ability; If something is too easy, boredom results. Too challenging, and people become overwhelmed._
+
+## Chapter 21. Making Things Difficult
+
