@@ -320,3 +320,75 @@ the brain. norepinephrine is the brain equivalent of adrenaline, and it creates 
 
 ## Chapter 21. Making Things Difficult
 
+> By limiting noms, foodspotting encourages people to be more selective about which foods deserve special recognition. The site claims, “The blue ribbon (the ‘nom’) means more because it’s hard to get.” People won’t give every dish a nomination lest they have no remaining noms to give to a dish that really is exceptional.
+> 
+> Dribbble’s founders don’t hide their use of scarcity to encourage high quality submissions:
+> 
+> _“In case it isn’t obvious, the reason we throttle shots is to encourage players to post with care—we hope scarcity induces quality. (So far, so good.) We’ll be introducing other ways to accrue shots for meritorious behavior, but we want everyone to know that you’ll always have a base of 24 shots to work with each month.”_
+> 
+> ...
+> 
+> There’s another twist on scarcity, one that may seem contrary to everything stated so far. This twist is one of creating artificial limits—specifically, character limits. By enforcing a scarcity of characters, you can actually encourage participation. (This is different from creating desire as with the examples above.) Twitter is the perfect example of this.
+> 
+> The technical limits of mobile text messaging were the original constraint behind Twitter’s 140-character limit. But it is precisely this character limit that has driven a new form of written expression.
+> 
+> ...
+> 
+> One explanation of why scarcity works so well on us has to with decision making. it’s easier to go along with the crowd and buy the thing that is scarce. Why? according to persuasion expert robert cialdini in his 1998 book _Influence: The Psychology of Persuasion_, things “that are difficult to possess are typically better than those that are easy to possess.” People use this defining attribute—_limited availability_—to aid in their decision-making processes.
+> 
+> ...
+> 
+> The ultimate effect of all these constraints is that people are forced to make choices:
+>
+> _Do I do this now, or later?_
+>
+> _How should I go about doing this task?_
+>
+> _Who should I involve?_
+>
+> _What should I focus on first?_
+> 
+> In fact, much of the tension in games comes from setting up opposition between your long-term and short-term goals. for example, the big goal in Donkey Kong might be to save the princess. However, you’re presented with a short-term goal: go after the mushroom. This will give you more strength and points, but also puts your life in jeopardy. This immediate reward may jeopardize your success at the larger goal. Do you put yourself at risk? Or play it safe and focus only on the long-term goal?
+> 
+> Obviously, most of the software apps and Web sites we use haven’t yet reached this level of sophistication or emotional involvement. The field of behavioral economics has studied the factors that affect a decision. Game designers have explored ways to present players with different challenges.
+
+## Chapter 22. How are We Doing?
+
+> Far too often, we have interesting data, but it’s not displayed in a way that is compelling. in this discussion of numbers and data, it’s easy to lose sight of the fact that we are emotional beings; there’s a growing body of research exploring how our affect (emotion) governs everything from decision making to memory. Make the time to look at what you are revealing and determine if there is a more compelling or emotional way to present that information.
+> 
+> ...
+> 
+> Competing with yourself is a very powerful motivator—if you provide something to compete against. This can be a best winning streak, a top score, the allure of the next level of mastery—the possibilities are endless.
+> 
+> ...
+> 
+> While competing against your own best score is a powerful motivator, social cues are much more powerful: How do i compare to my peers?
+> 
+> ...
+> 
+> I was designing a Web site for a client with a strong background in radio. they had been quite successful with their incentives programs for radio and assumed the same would apply to motivating user behaviors online. They proposed awarding points for things like commenting on a blog post or liking something.
+> 
+> This is dangerous territory and likely to yield less than stellar results. We know from various studies that what drives online behavior is not economic capital, but social capital.
+> 
+> The reasons people comment, share, like, and do all manner of social actions has to do with status, identity, reputation, and a host of other naturally occurring, intrinsic motivators. things like open source software and Wikipedia exist because of people’s intrinsic motivation. Mixing in external rewards and incentives is a surefire way to smother this passion or lead to unwanted results. As you read earlier, “rewards motivate people for more rewards.” If every comment is suddenly worth a few extra loyalty points, you really don’t care about the content of your comments anymore—you can start writing garbage and lots of it because you’re focused on the points (especially if they’re redeemable).
+> 
+> Yes, incentives work, but for very specific types of behavior.
+
+## Chapter 23. What's the Prize?
+
+> I think there is power in simply challenging someone to do something or to do the same thing in a new way.
+
+## CHapter 24. Let's Get Serious
+
+> ![Delight vs. Basic Needs](/.attachments/satisfaction.chart.png)
+> 
+> ...
+> 
+> Over time, exciters become performance needs, and then basic needs. This explains why receiving a dozen roses isn’t quite as exciting as it was the last time, or the time before that. If you bring home flowers every tuesday, this will quickly become a basic expectation, no longer thrilling and missed only when you forget.
+>
+> ...
+> 
+> Delight isn’t enough on it’s own—you also have to satisfy basic and (sometimes) performance needs. but, fail to also delight your customers and you leave yourself vulnerable to someone else who will make your customers swoon.
+
+## Chapter 25. Only the Beginning
+
