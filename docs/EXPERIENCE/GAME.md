@@ -150,7 +150,7 @@ I can understand the story that chess is telling but what story is checkers tell
 > 
 > **Mechanic 1: Space**
 >
-> Every game takes place in some kind of space. This space is the “magic circle” of gameplay. It defines the various places that can exist in a game and how those places are related to one another. As a game mechanic, space is a mathematical construct. We need to strip away all visuals, all aesthetics, and simply look at the abstract construction of a game’s space.
+> Every game takes place in some kind of **space**. This space is the “magic circle” of gameplay. It defines the various places that can exist in a game and how those places are related to one another. As a game mechanic, space is a mathematical construct. We need to strip away all visuals, all aesthetics, and simply look at the abstract construction of a game’s space.
 > 
 > ...
 > 
@@ -175,3 +175,30 @@ I can understand the story that chess is telling but what story is checkers tell
 > **Mechanic 4: Actions**
 > 
 > The next important game mechanic is the **action**. Actions are the “verbs” of game mechanics. There are two perspectives on actions or, put another way, two ways to answer the question “What can the players do?”
+> 
+> ...
+> 
+> **Mechanic 5: Rules**
+> 
+> The **rules** are really the most fundamental mechanic. They define the space, the timing, the objects, the actions, the consequences of the actions, the constraints on the actions, and the goals. In other words, they make possible all the mechanics we have seen so far and add the crucial thing that makes a game a game—goals.
+> 
+> ...
+> 
+> Rules are the most fundamental of all game mechanics. A game is not just defined by its rules; a game is its rules.
+> 
+> ...
+> 
+> **Mechanic 6: Skill**
+> 
+> The mechanic of **skill** shifts the focus away from the game and onto the player. Every game requires players to exercise certain skills. If the player’s skill level is a good match to the game’s difficulty, the player will feel challenged and stay in the flow channel.
+> 
+> ...
+> 
+> **Mechanic 7: Chance**
+> 
+> Our seventh and final game mechanic is **chance**. We deal with it last because it concerns interactions between all of the other six mechanics: space, time, objects, actions, rules, and skills.
+> 
+> Chance is an essential part of a fun game because chance means uncertainty, and uncertainty means surprises.
+
+## Chapter 13. Game Mechanics Must be in Balance
+
