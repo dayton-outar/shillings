@@ -389,6 +389,3 @@ the brain. norepinephrine is the brain equivalent of adrenaline, and it creates 
 > ...
 > 
 > Delight isn’t enough on it’s own—you also have to satisfy basic and (sometimes) performance needs. but, fail to also delight your customers and you leave yourself vulnerable to someone else who will make your customers swoon.
-
-## Chapter 25. Only the Beginning
-
