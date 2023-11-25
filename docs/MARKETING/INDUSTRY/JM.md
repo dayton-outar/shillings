@@ -2,7 +2,7 @@
 
 | | Main Questions | Jamaica's Landscape |
 |:--- |:--- |:--- |
-| <p><strong>Competitors</strong><br /><small>Identifies incumbent competitors and their relative strengths</small></p> | <ul><li>Who are our competitors?</li><li>Who are the dominant players?</li><li>What are their competitive advantages or disadvantages? (Describe their main offers)</li><li>Which <i>customer segments</i> are they focusing on?</li><li>What is their <i>cost structure</i>?</li><li>How much influence do they exert on our <i>customer segments</i>, <i>revenue streams</i>, and margins?</li></ul> | <ul><li>See [competitors](#competitors).</li><li>Main competitors: JTrader Pro and MyMoneyJA.</li><li>See [competitive analysis](#competition-analysis).</li><li>Most competitors are focused on investors/traders including retail traders.</li><li>Don't know their cost structure. May have to reverse engineer.</li><li>Some players only provide analysis tools but have a significant following</li></ul> |
+| <p><strong>Competitors</strong><br /><small>Identifies incumbent competitors and their relative strengths</small></p> | <ul><li>Who are our competitors?</li><li>Who are the dominant players?</li><li>What are their competitive advantages or disadvantages? (Describe their main offers)</li><li>Which <i>customer segments</i> are they focusing on?</li><li>What is their <i>cost structure</i>?</li><li>How much influence do they exert on our <i>customer segments</i>, <i>revenue streams</i>, and margins?</li></ul> | <ul><li>See [competitors](#competitors).</li><li>Main competitors: JTrader Pro and MyMoneyJA.</li><li>See [competition analysis](#competition-analysis).</li><li>Most competitors are focused on investors/traders including retail traders.</li><li>Don't know their cost structure. May have to reverse engineer.</li><li>Some players only provide analysis tools but have a significant following</li></ul> |
 | <p><strong>New Entrants</strong><br /><small>Identifies new, insurgent players and determines whether they compete with a business model different from yours</small></p> | <ul><li>Who are the new entrants in your market?</li><li>How are they different?</li><li>What competitive advantage or disadvantages do they have?</li><li>Which barriers must they overcome?</li><li>What are their <i>value propositions</i>?</li><li>Which <i>customer segments</i> are they focused on?</li><li>What is their <i>cost structure</i>?</li><li>To what extent do they influence your <i>customer segments</i>, <i>revenue streams</i>, and margins?</li></ul> | <ul><li>As of 2023, there are no new entrants</li></ul> |
 | <p><strong>Substitute Products and Services</strong><br /><small>Describes potential substitutes for your offers - including those from other markets and industries</small></p> | <ul><li>Which products or services could replace ours?</li><li>How much do they cost compared to ours?</li><li>How easy it is for customers to switch to these substitutes?</li><li>What business model traditions do these substitute products stem from (e.g. high-speed trains versus airplanes, mobile phones versus cameras, Skype versus long-distance telephone companies)?</li></ul> | <ul><li>There are no applications that provide ample analysis on a stock trading platform.</li><li>JTrader Pro is free but on-boarding involves many steps that takes time.</li><li>Retail investors will have to fill out paper forms with their brokers to switch to it.</li><li>The business model are based on a traditionally fragmented operations.</li></ul> |
 | <p><strong>Suppliers and Other Value Chain Actors</strong><br /><small>Describes the key value chain incumbents in your market and spots new, emerging players</small></p> | <ul><li>Who are the key players in your industry value chain?</li><li>To what extent does your business model depend on other players?</li><li>Are peripheral players emerging?</li><li>Which are most profitable?</li></ul> | <ul><li>See [key players](#key-players). _Infographic of operations needed_.</li><li>Analsis is heavily dependent on [market data providers](#market-data-providers). Trading is dependent on the [clearing house](#clearing-house). [Regulators](#regulators) oversee on-boarding and trading practices.</li><li>Stock trading and analysis platforms would be considered _peripheral_ in this market. Anything more _peripheral_ would be further down the value stream and would not be beneficial for business.</li><li>Jamaica Stock Exchange makes around 25% profit annually.</li></ul> |
@@ -410,7 +410,28 @@ My experience using JTrader Pro was as follows,
  - November 10, 2023 at 10:55 AM. I received an email feedback from JTrader Pro to go ahead and place BUY order as the JTrader Account was updated.
  - November 13, 2023 at 7:58 AM. I placed a BUY order for 970 stock units at $62 per stock unit.
    
-   ![BUY Order for NCBFG Units](/.attachments/jtrader.order.62.ncbfg.png)
+   ![BUY Order for NCBFG Units at $62](/.attachments/jtrader.order.62.ncbfg.png)
+
+ - November 21, 2023 at ~11 AM. I cancelled the previous BUY order for asking price of $62 because the market started trending up.
+ - November 21, 2023 at 11:32 AM. I placed a BUY order for 870 stock units at $69 per stock unit.
+
+   ![BUY Order for NCBFB Units at $69](/.attachments/jtrader.order.69.ncbfg.png)
+
+ - November 21, 2023 at 12:40 PM. A match was made and the order was filled.
+ - November 22, 2023 at 1:34 PM. I received a notification from my broker that the order was filled. I had not known this until later that day when I checked by email.
+ - November 22, 2023. Logged into JTrader and search to find if my account was updated with the new filled order. The added stock units could not be found in JTrader's "Accounts: Overview"
+
+   ![JTrader Account's Overview](/.attachments/jtrader.accounts.overview-2.png)
+
+ - November 22, 2023. After searching through the interface, I found an option in the main menu, "View Orders".
+
+   ![JTrader Main Menu](/.attachments/jtrader.main.menu.orders.png)
+
+ - November 22, 2023. When the "View Orders" menu link was navigated, the transaction status of the orders were displayed.
+
+   ![JTrader Transaction Status](/.attachments/jtrader.transactions.status.png)
+
+
 
 ##### Few Good Mentions
 
