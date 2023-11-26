@@ -1,5 +1,7 @@
 # Stock Market Industry
 
+![Stock Market Explained in an Inforgraphic](/.attachments/stock.market.explained.png)
+
 ## Players in the Stock Market
 
 The stock market industry involves a wide range of participants who play different roles in buying, selling, trading, and facilitating the exchange of stocks and other securities. Here are some of the key players in the stock market industry:
