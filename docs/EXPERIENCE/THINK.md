@@ -136,6 +136,20 @@
 > 
 >   **17. Omit needless words.**
 >   
->   Vigorous writing is concise. A sentence should contain no unnecessary words, a paragraph no unnecessary sentences, for the same reason that a drawing should have no unnecessary lines and a machine no unnecessary parts.
+>   _Vigorous writing is concise. A sentence should contain no unnecessary words, a paragraph no unnecessary sentences, for the same reason that a drawing should have no unnecessary lines and a machine no unnecessary parts._
 >
 > When I look at most Web pages, I’m struck by the fact that most of the words I see are just taking up space, because no one is ever going to read them. And just by being there, all the extra words suggest that you may actually _need_ to read them to understand what’s going on, which often makes pages seem more daunting than they actually are.
+> 
+> Getting rid of all those words that no one is going to read has several beneficial effects:
+> 
+> - It reduces the noise level of the page.
+> - It makes the useful content more prominent.
+> - It makes the pages shorter, allowing users to see more of each page at a glance without scrolling.
+> 
+> ...
+> 
+> Your objective should always be to eliminate instructions entirely by making everything self-explanatory, or as close to it as possible. When instructions are absolutely necessary, cut them back to the bare minimum.
+
+Based on the advice from _Design of Everyday Things_, it's best to use affordances instead of copious instructions. Usually too many instructions may mean that the user experience requires improvement.
+
+## Chapter 6. Street Signs and Breadcrumbs
