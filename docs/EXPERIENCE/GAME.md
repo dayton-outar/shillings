@@ -202,3 +202,48 @@ I can understand the story that chess is telling but what story is checkers tell
 
 ## Chapter 13. Game Mechanics Must be in Balance
 
+> To novice designers, the business of balancing a game seems quite ­mysterious—but really, balancing a game is nothing more than adjusting the elements of the game until they deliver the experience you want.
+> 
+> ...
+> 
+> **The Twelve Most Common Types of Game Balance**
+> 
+> ***Balance Type #1: Fairness***
+>
+> One quality that players universally seek in games is fairness. Players want to feel that the forces working against them do not have an advantage that will make them impossible to defeat. One of the simplest ways to ensure this is to make your game symmetrical, that is, to give equal resources and powers to all players. Most traditional board games (such as checkers, chess, and Monopoly) and almost all sports use this method to be sure that no player has an unfair advantage over another.
+> 
+> ...
+> 
+> One simple way to balance elements for fairness is to make sure that whenever something in your game has an advantage over something else, yet another thing has an advantage over that! Often referred to as “circular balance,” the iconic example of this is the game of Rock, Paper, Scissors where
+>
+> - Rock breaks scissors
+> - Scissors cut paper
+> - Paper covers rock
+>
+> None of the elements can be supreme, because there is always another that can defeat it. It is a simple way to ensure that every game element has both strengths and weaknesses. Fighting games particularly like to use this technique to help ensure none of the warriors a player might choose are undefeatable.
+>
+> ...
+> 
+> ***Balance Type #2: Challenge vs. Success***
+> 
+> If play is too challenging, the player becomes frustrated. But if the player succeeds too easily, they can become bored. Keeping the player on the middle path means keeping the experiences of challenge and success in proper balance. This can be particularly difficult since players may have all different levels of skill. What one player finds boring, another may find challenging, and yet another may find frustrating. Some common techniques for striking a proper balance include the following:
+> 
+> - _Increase difficulty with each success_: This is a very common pattern in videogames—each level is harder than the last. Players build their skill until they can complete a level, only to be presented with one that challenges them yet again.
+> 
+> - _Let players get through easy parts fast_: Assuming your game has some method of gradually increasing the difficulty, you do yourself a service by allowing skilled players to finish a level quickly if they can easily master it. This way, skilled players will blow through easy levels, quickly getting to a challenge that is more interesting to them, while less skilled players will be challenged by the early levels. This lets every player quickly get to the part of the game that is a challenge. If you arrange it differently, such that each level takes one hour to play, regardless of skill level, skilled players may quickly grow bored from lack of challenge.
+> 
+> - _Create “layers of challenge”_: A popular pattern in games is to give a grade, or some number of stars, at the end of each level or mission. If you get a “D” or “F,” you must repeat the level, but if you get a “C” or better, you can continue. This creates a situation with a lot of flexibility in how you can play it. Novice players are thrilled to get a “C” and unlock the next level. As they gain experience and have unlocked all the levels, they may set themselves a new challenge—to earn an “A” (or even “A+”!) on earlier levels.
+> 
+> - _Let players choose the difficulty level_: A tried and true method is to let players choose to play on “easy, medium, or hard” modes. Some games (e.g., many Atari 2600 games) even let you change the difficulty-level midgame. The upside of this is that players can quickly find the appropriate challenge level for their skill level. The downside is that you have to create and balance multiple versions of your game. Also, it can detract from the “reality” of your game—players will argue over which version is the “real” one or be left feeling unsure whether any of them are “real.”
+> 
+> - _Playtest with a variety of players_: Many designers fall into a trap of only testing with people who are constantly exposed to the game and end up designing a game that is too frustrating for novices. Others fall into the opposite trap and only test their game with people who have never played before. They end up designing a game that experienced players quickly grow bored with. Wise designers playtest with a mix of skilled and novice players, to be sure that their game is fun at first, fun after a while, and fun much, much later.
+> 
+> - _Give the losers a break_: _Mario Kart_ is famous for its unusual system of giving out power-ups. Players who are ahead in the race get meager power-ups, while players who are far behind get the good stuff, allowing them to race ahead. This is a great system for that game because it feels more fair and keeps everyone engaged: players who are behind need to pay attention because a game-­changing power-up could come at any second, and players who are ahead cannot afford to rest on their laurels because that “blue shell” could hit them at any time. This tricky system does a great job at nudging all players to the center of the flow channel.
+> 
+> ...
+> 
+> Many designers are so afraid of players beating their game too easily that they make later levels so fiendishly difficult to win that 90% of players eventually give up on the game in frustration. These designers hope that the increased challenge will extend the play time—and there is something to that—if you have expended forty hours to get through level nine, you will probably be willing to work pretty hard to defeat level ten. But in truth, there are so many competing games to play that many players just give up in frustration. On the other hand, with a free to play game, this late-game frustration might be just what you want, to spur players to pay money and move toward completion. As a designer, it makes sense to ask yourself, “What percentage of players do I want to be able to complete this game?” and then design for that.
+>
+> ...
+> 
+> 
