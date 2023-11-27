@@ -107,3 +107,35 @@
 > When you’re editing your Web pages, it’s probably a good idea to start with the assumption that _everything_ is visual noise (the “presumed guilty until proven innocent” approach) and get rid of anything that’s not making a real contribution. In the face of limited time and attention, everything that’s not part of the solution must go.
 
 ## Chapter 4. Animal, Vegetable, or Mineral?
+
+> I think the rule of thumb might be something like “three mindless, unambiguous clicks equal one click that requires thought.”
+> 
+> ...
+> 
+> It was the feeling I get when I’m standing in front of two mailboxes labeled Stamped Mail and Metered Mail with a business reply card in my hand. What do they think it is—stamped or metered? And what happens if I drop it in the wrong box?
+> 
+> ...
+> 
+> This problem of giving the user difficult choices and questions that are hard to answer happens all the time in forms.
+> 
+> ...
+> 
+> When you can’t avoid giving me a difficult choice, you need to go out of your way to give me as much guidance as I need—but no more.
+> 
+> This guidance works best when it’s
+>
+> - Brief: The smallest amount of information that will help me
+>
+> - Timely: Placed so I encounter it exactly when I need it
+>
+> - Unavoidable: Formatted in a way that ensures that I’ll notice it
+
+## Chapter 5. Omit Needless Words
+
+> Of the five or six things that I learned in college, the one that has stuck with me the longest—and benefited me the most—is E. B. White’s seventeenth rule in _The Elements of Style_:
+> 
+>   **17. Omit needless words.**
+>   
+>   Vigorous writing is concise. A sentence should contain no unnecessary words, a paragraph no unnecessary sentences, for the same reason that a drawing should have no unnecessary lines and a machine no unnecessary parts.
+>
+> When I look at most Web pages, I’m struck by the fact that most of the words I see are just taking up space, because no one is ever going to read them. And just by being there, all the extra words suggest that you may actually _need_ to read them to understand what’s going on, which often makes pages seem more daunting than they actually are.
