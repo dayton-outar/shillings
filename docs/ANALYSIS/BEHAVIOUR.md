@@ -376,3 +376,22 @@ Crowd likes crowd. Also, this also explains social proofing.
 
 © 2011 by Daniel Kahneman
 
+### Introduction
+
+> We are often confident even when we are wrong, and an objective observer is more likely to detect our errors than we are.
+> 
+> ...
+> 
+> Social scientists in the 1970s broadly accepted two ideas about human nature. First, people are generally rational, and their thinking is normally sound. Second, emotions such as fear, affection, and hatred explain most of the occasions on which people depart from rationality.
+
+### Chapter 1. The Character of the Story
+
+> I adopt terms originally proposed by the psychologists Keith Stanovich and Richard West, and will refer to two systems in the mind, System 1 and System 2.
+> 
+> - _System 1_ operates automatically and quickly, with little or no effort and no sense of voluntary control.
+> 
+> - _System 2_ allocates attention to the effortful mental activities that demand it, including complex computations. The operations of System 2 are often associated with the subjective experience of agency, choice, and concentration.
+> 
+> ...
+> 
+> The division of labor between System 1 and System 2 is highly efficient: it minimizes effort and optimizes performance. The arrangement works well most of the time because System 1 is generally very good at what it does: its models of familiar situations are accurate, its short-term predictions are usually accurate as well, and its initial reactions to challenges are swift and generally appropriate. System 1 has biases, however, systematic errors that it is prone to make in specified circumstances. As we shall see, it sometimes answers easier questions than the one it was asked, and it has little understanding of logic and statistics. One further limitation of System 1 is that it cannot be turned off. If you are shown a word on the screen in a language you know, you will read it—unless your attention is totally focused elsewhere.
