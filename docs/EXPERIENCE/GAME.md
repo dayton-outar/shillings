@@ -246,4 +246,87 @@ I can understand the story that chess is telling but what story is checkers tell
 >
 > ...
 > 
+> ***Balance Type #3: Meaningful Choices***
 > 
+> There are many different ways to give a player choices in a game. Meaningful choices for a player lead them to ask themselves questions, such as the following:
+> 
+> - Where should I go?
+> 
+> - How should I spend my resources?
+> 
+> - What should I practice and try to perfect?
+> 
+> - How should I dress my character?
+> 
+> - Should I try to get through the game quickly or carefully?
+> 
+> - Should I focus on offense or defense?
+> 
+> - What strategy should I use in this situation?
+> 
+> - Which power should I choose?
+> 
+> - Should I play it safe or take a big risk?
+> 
+> A good game gives the player meaningful choices. Not just any choices but choices that will have a real impact on what happens next and how the game turns out. Many designers fall into the trap of offering the player meaningless choices; for example, in a racing game, you might have 50 vehicles to choose from, but if they all drive the same way, it is like having no choice at all. Other designers fall into a different trap—offering choices that no one would want. You might offer a soldier ten guns, all different, but if one of them is clearly better than the rest, again it is like having no choice at all.
+> 
+> When choices are offered to a player, but one of them is clearly better than the rest, this is called a **dominant strategy**. Once a dominant strategy is discovered, the game is no longer fun, because the puzzle of the game has been solved—there are no more choices to make. When you discover that a game you are working on has a dominant strategy, you must change the rules (balance things) so that this strategy no longer dominates and meaningful choice can be restored to the game.
+> 
+> Michael Mateas points out that the number of choices a player seeks is dependent on the number of things they desire:
+>
+> - If choices > desires, then the player is overwhelmed.
+> - If choices < desires, the player is frustrated.
+> - If choices = desires, the player has a feeling of freedom and fulfillment.
+>
+> So, to properly determine the number of choices, you need to figure out the types and number of things the player would like to do.
+> 
+> ...
+> 
+> One of the most exciting and interesting choices for a player to make is whether to play it safe and go for a small reward or take a big risk to try for a big reward. This is a hard decision to make, if the game is balanced properly. I find that about eight out of ten times someone comes to me asking for help on a game prototype that “just isn’t fun”; the game is missing this kind of meaningful choice. You could call this “balanced asymmetric risk,” since you are balancing a low risk with low reward against a high risk for high reward, but that is kind of a mouthful. This relationship comes up so often, and is so important, that I like to give it a shorter name: **triangularity**. The player is one point of the triangle, the low-risk choice is the second point, and the high-risk choice
+is the third.
+> 
+> ... Without the flying saucer, Space Invaders gets quite tedious, because your choices are few—you just shoot and shoot and shoot. With the flying saucer, you occasionally have a ery difficult, meaningful choice to make—should you play it safe or take a risk and go for the big points?
+> 
+> ...
+> 
+> A classic example of triangularity appears in the book _Hackers_ by Steven Levy. An MIT engineer hacked a vending machine giving each user a choice: get your snack from the vending machine for normal price as usual or take a chance. A digital coin could be flipped, resulting in your snack either costing double or being completely free.
+> 
+> ...
+> 
+> ***Balancing Type #4: Skill vs. Chance***
+> 
+> ... Too much chance negates the effects of player skill and vice versa. There is no easy answer for this one—some players prefer games with as few elements of chance as possible, and other players prefer the opposite. Games of skill tend to be more like athletic contests—systems of judgment that determine which player is the best. Games of chance often have a more relaxed, casual nature—after all, much of the outcome is up to fate.
+> 
+> One very common method of balancing these is to alternate the use of chance and skill in a game. For example, dealing out a hand of cards is pure chance—but choosing how to play them is pure skill. Rolling a die to see how far you move is pure chance—deciding where to move your piece is pure skill. This can create an alternating pattern of tension and relaxation that can be very pleasing to players.
+> 
+> Designer David Perry advises that the key to addictive game design is designing your game such that players are doing three things at all times: exercising a skill, taking risks, and working a strategy. And it is certainly true that any time players are taking risks, they are up against chance, in some way.
+> 
+> ...
+> 
+> ***Balancing Type #5: Head vs. Hands***
+> 
+> This type of balancing is quite straightforward: how much of the game should involve doing a challenging physical activity (be it steering, throwing, or pushing buttons dexterously), and how much of it should involve thinking? These two things are not as separate as they might seem on the surface—many games involve constant strategizing and puzzle solving while simultaneously pulling off feats of speed and dexterity.
+> 
+> ...
+> 
+> It is important, though, to understand what your target market prefers in a game—more thinking or more dexterity? And it is equally important that your game clearly communicate what balance you have chosen to put into it.
+> 
+> ...
+> 
+> ***Balance Type #6: Competition vs. Cooperation***
+> 
+> Competition and cooperation are basic, animal urges. All higher animals are driven to compete against others partly for survival and partly to establish their status in the community. Opposite of that, there is also a basic instinct to cooperate with others, since a team, with its many eyes and hands and its diverse abilities, is always more powerful than an individual. Competition and cooperation are so important to our survival that we need to experiment with them—partly to get better at them and partly to learn about our friends and family—so we get a better sense of who is good at what and how we can work together. Games provide a very socially safe way to explore how the people around us behave in stressful situations—this is a secret reason we like to play games together.
+> 
+> Some games find interesting ways to blend competition and cooperation. The arcade game Joust can be played solo, where a player competes against many ­computer-controlled enemies, or it can be played in a two-player mode, where both players compete against enemies together in the same arena. There is a tension between competition and cooperation in Joust that is very interesting: On the competitive side, the players get points based on how many enemies they defeat, and they can battle each other if they choose. But on the cooperative side, players can get higher scores overall if they coordinate their attacks and protect each other.
+> 
+> ...
+> 
+> ***Balance Type #7: Short vs. Long***
+> 
+> One important thing to balance in every game is the length of the gameplay. If the game is too short, players may not get a chance to develop and execute meaningful strategies. But if the game goes on too long, players may grow bored, or they may avoid the game because playing it requires too much of a time commitment.
+> 
+> ...
+> 
+> The main factors that determine when a game ends are the win or lose conditions. By altering these conditions, you can dramatically change the length of the game. The designers of the arcade game Spy Hunter came up with a very interesting system to balance the length of their game. In Spy Hunter, you drive a car that fires machine guns at enemies on a highway. In early prototypes, when your car was destroyed three times, the game was over. The game is very challenging, particularly for novice players, and the designers found that these players were having very short games and feeling frustrated—so they introduced a new rule: For the first ninety seconds of gameplay, the player has an unlimited supply of cars—they cannot lose the game during this time. After that time is up, they only have a few cars, and when they are destroyed, the game is over.
+> 
+> ***Balance Type #8: Rewards***
