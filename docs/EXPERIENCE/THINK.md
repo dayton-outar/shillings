@@ -156,7 +156,7 @@ Based on the advice from _Design of Everyday Things_, it's best to use affordanc
 
 > Persistent navigation should include the four elements you most need to have on hand at all times:
 > 
-> ![XYZ Corp. Navigation Bar](/.attachments/xyz.corp.nav.bar.png)
+> ![XYZ Corp. Navigation Bar](/.attachments/xyz.corp.nav.bar-1.png)
 > 
 > ...
 > 
