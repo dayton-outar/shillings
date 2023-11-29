@@ -334,3 +334,153 @@ Based on the advice from _Design of Everyday Things_, it's best to use affordanc
 
 ## Chapter 8. "The Farmer and the Cowman Should Be Friends"
 
+> The point is, it’s not productive to ask questions like “Do most people like pull-down menus?” The right kind of question to ask is “Does this pull-down, with these items and this wording in this context on this page create a good experience for most people who are likely to use this site?”
+> And there’s really only one way to answer that kind of question: testing. You have to use the collective skill, experience, creativity, and common sense of the team to build some version of the thing (even a crude version), then watch some people carefully as they try to figure out what it is and how to use it.
+> 
+> There’s no substitute for it.
+
+## Chapter 9. Usability Testing on 10 Cents a Day
+
+> After each round of tests, you should make time as soon as possible for the team to share their observations and decide which problems to fix and what you’re going to do to fix them.
+> 
+> ...
+> 
+> Whenever you test, you’re almost always going to find some serious usability problems. Unfortunately, they aren’t always the ones that get fixed. Often, for instance, people will say, “Yes, that’s a real problem. But that functionality is all going to change soon, and we can live with it until then.” Or faced with a choice between trying to fix one serious problem or a lot of simple problems, they opt for the low-hanging fruit.
+
+## Chapter 10. Mobile: It's not just a city in Alabama anymore
+
+> So, what’s different about usability when you’re designing for use on a mobile device?
+>
+> In one sense, the answer is: Not much. The basic principles are still the same. If anything, people are moving faster and reading even less on small screens.
+>
+> But there are _some_ significant differences about mobile that make for challenging new usability problems.
+> 
+> ...
+> 
+> The most obvious thing about mobile screens is that they’re small. For decades, we’ve been designing for screens which, while they may have felt small to Web designers at the time, were luxurious by today’s standards. And even then, designers were working overtime trying to squeeze everything into view.
+> 
+> One approach was Mobile First. Instead of designing a full-featured (and perhaps bloated) version of your Web site first and then paring it down to create the mobile version, you design the mobile version first based on the features and content that are most important to your users. Then you add on more features and content to create the desktop/full version.
+> 
+> It was a great idea. For one thing, Mobile First meant that you would work hard to determine what was really essential, what people needed most. Always a good thing to do.
+> 
+> But some people interpreted it to mean that you should choose what to include based on what people want to do when they’re mobile. This assumed that when people accessed the mobile version they were “on the move,” not sitting at their desk, so they’d only need the kinds of features you’d use on the move. For example, you might want to check your bank balances while out shopping, but you wouldn’t be likely to reconcile your checkbook or set up a new account.
+> 
+> Of course, it turned out this was wrong. People are just as likely to be using their mobile devices while sitting on the couch at home, and they want (and expect) to be able to do everything. Or at least, everybody wants to do _some_ things, and if you add them all up it amounts to everything.
+> 
+> If you’re going to include everything, you have to pay even more attention to prioritizing.
+> 
+> Things I want to use in a hurry or frequently should be close at hand. Everything else can be a few taps away, but there should be an obvious path to get to them.
+> 
+> In some cases, the lack of space on each screen means that mobile sites become much deeper than their full-size cousins, so you might have to tap down three, four, or five “levels” to get to some features or content.
+> 
+> This means that people will be tapping more, but that’s OK. With small screens it’s inevitable: To see the same amount of information, you’re going to be either tapping or scrolling a lot more. As long as the user continues to feel confident that what they want is further down the screen or behind that link or button, they’ll keep going.
+> 
+> ...
+> 
+> Affordances are visual clues in an object’s design that suggest how we can use it. ... Remember the doorknobs and the book
+by Don Norman? He popularized the term in the first edition of _The Design of Everyday Things_ in 1988 and the design world quickly adopted it.
+> 
+> Affordances are the meat and potatoes of a visual user interface. For instance, the three-dimensional style of some buttons makes it clear they’re meant to be clicked. The same as with the scent of information for links, the clearer the visual cues, the more unambiguous the signal.
+> 
+> For affordances to work, they need to be noticeable, and some characteristics of mobile devices have made them less noticeable or, worse, invisible. And by definition, affordances are the _last_ thing you should hide.
+
+## Chapter 11. Usability as Common Courtesy
+
+> Here are a few of the things that tend to make users feel like the people publishing a site don’t have their best interests at heart:
+> 
+> **Hiding information that I want.** The most common things to hide are customer support phone numbers, shipping rates, and prices.
+> 
+> The whole point of hiding support phone numbers is to try to keep users from calling, because each call costs money. The usual effect is to diminish goodwill and ensure that they’ll be even more annoyed when they do find the number and call. On the other hand, if the 800 number is in plain sight—perhaps even on every page—somehow knowing that they can call if they want to is often enough to keep people looking for the information on the site longer, increasing the chances that they’ll solve the problem themselves.
+> 
+> Some sites hide pricing information in hopes of getting users so far into the process that they’ll feel vested in it by the time they experience the sticker shock. My favorite example is Web sites for wireless access in public places like airports. Having seen a “Wireless access available!” sign and knowing that it’s free at some airports, you open up your laptop, find a signal, and try to connect. But then you have to scan, read, and click your way through three pages, following links like “Wireless Access” and “Click here to connect” before you get to a page that even hints at what it might cost you. It feels like an old phone sales tactic: If they can just keep you on the line long enough and keep throwing more of their marketing pitch at you, maybe they can convince you along the way.
+> 
+> **Punishing me for not doing things your way.** I should _never_ have to think about formatting data: whether or not to put dashes in my Social Security number, spaces in my credit card number, or parentheses in my phone number. Many sites perversely insist on no spaces in credit card numbers, when the spaces actually make it much easier to type the number correctly. Don’t make me jump through hoops just because you don’t want to write a little bit of code.
+> 
+> **Asking me for information you don’t really need.** Most users are very skeptical of requests for personal information and find it annoying if a site asks for more than what’s needed for the task at hand.
+> 
+> **Shucking and jiving me.** We’re always on the lookout for faux sincerity, and disingenuous attempts to convince me that you care about me can be particularly annoying. Think about what goes through your head every time you hear “Your call is important to us.”
+> 
+> **Putting sizzle in my way.** Having to wade through pages bloated with feel-good marketing photos makes it clear that you don’t understand—or care—that I’m in a hurry.
+> 
+> **Your site looks amateurish.** You can lose goodwill if your site looks sloppy, disorganized, or unprofessional, like no effort has gone into making it presentable.
+> 
+> Note that while people love to make comments about the appearance of sites—especially about whether they like the colors—almost no one is going to leave a site just because it doesn’t look great. (I tell people to ignore all comments that users make about colors during a user test, unless three out of four people use a word like “puke” to describe the color scheme. Then it’s worth rethinking.)
+> 
+> ...
+> 
+> The good news is that even if you make mistakes, it’s possible to restore my goodwill by doing things that convince me that you _do_ have my interests at heart. Most of these are just the flip side of the other list:
+> 
+> **Know the main things that people want to do on your site and make them obvious and easy.** It’s usually not hard to figure out what people want to do on a given Web site. I find that even people who disagree about everything else about their organization’s site almost always give me the same answer when I ask them, “What are the three main things your users want to do?” The problem is, making those things easy doesn’t always become the top priority it should be. (If most people are coming to your site to apply for a mortgage, nothing should get in the way of making it dead easy to apply for a mortgage.)
+> 
+> **Tell me what I want to know.** Be upfront about things like shipping costs, hotel daily parking fees, service outages—anything you’d rather _not_ be upfront about. You may lose points if your shipping rates are higher than I’d like, but you’ll often gain enough points for candor and for making it easy for me to compensate for the price difference.
+> 
+> **Save me steps wherever you can.** For instance, instead of giving me the shipping company’s tracking number for my purchase, put a link in my email receipt that opens their site and submits my tracking number when I click it. (As usual, Amazon was the first site to do this for me.)
+> 
+> **Put effort into it.** My favorite example is the HP technical support site, where it seems like an enormous amount of work has gone into (a) generating the information I need to solve my problems, (b) making sure that it’s accurate and useful, (c) presenting it clearly, and (d) organizing it so I can find it. I’ve had a lot of HP printers, and in almost every case where I’ve had a problem I’ve been able to solve it on my own. As a result, I keep buying HP printers.
+> 
+> **Know what questions I’m likely to have, and answer them.** Frequently Asked Questions lists are enormously valuable, especially if
+> 
+> - They really are FAQs, not marketing pitches masquerading as FAQs (also known as QWWPWAs: Questions We _Wish_ People Would Ask).
+> 
+> - You keep them up to date. Customer Service and Technical Support can easily give you a list of this week’s five most frequently asked questions. I would always put this list at the top of any site’s Support page.
+> 
+> - They’re candid. Often people are looking in the FAQs for the answer to a question you’d rather they hadn’t asked. Candor in these situations goes a _long_ way to increasing goodwill.
+> 
+> **Provide me with creature comforts like printer-friendly pages.** Some people love being able to print stories that span multiple pages with a single click, and CSS makes it relatively easy to create printer-friendly pages with little additional effort. Drop the ads (the possibility of a banner ad having any impact other than being annoying is even greater when it’s just taking up space on paper), but _don’t_ drop the illustrations, photos, and figures.
+> 
+> **Make it easy to recover from errors.** If you actually do enough user testing, you’ll be able to spare me from many errors before they happen. But where the potential for errors is unavoidable, always provide a graceful, obvious way for me to recover.
+> 
+> **When in doubt, apologize.** Sometimes you can’t help it: You just don’t have the ability or resources to do what the user wants (for instance, your university’s library system requires separate passwords for each of your catalog databases, so you can’t give users the single login they’d like). If you can’t do what they want, at least let them know that you know you’re inconveniencing them.
+
+## Chapter 12. Accessibility and You
+
+> Unfortunately, there’s also a lot that’s unlikely to convince 22-year-old developers and designers that they should be “doing accessibility.” Two arguments in particular tend to make them skeptical:
+> 
+> - **___% of the population has a disability.** Since their world consists largely of able-bodied 22-year-olds, it’s very hard for them to believe that a large percentage of the population actually needs help accessing the Web. They’re willing to write it off as the kind of exaggeration that people make when they’re advocating for a worthy cause, but there’s also a natural inclination to think, “If one of their claims is so clearly untrue, I’m entitled to be skeptical about the rest.”
+> 
+> - **Making things more accessible benefits everyone.** They know that some adaptations do, like the classic example, closed captioning, which does often come in handy for people who can hear.2 But since this always seems to be the only example cited, it feels a little like arguing that the space program was worthwhile because it gave us Tang.3 It’s much easier for developers and designers to imagine cases where accessibility adaptations are likely to make things worse for “everyone else.”
+> 
+> The worst thing about this skepticism is that it obscures the fact that there’s really only one reason that’s important:
+> 
+> - **It’s the right thing to do.** And not just the right thing; it’s profoundly the right thing to do, because the one argument for accessibility that doesn’t get made nearly often enough is how extraordinarily better it makes some people’s lives. Personally, I don’t think anyone should need more than this one example: Blind people with access to a computer can now read almost any newspaper or magazine on their own. Imagine that.
+> 
+> How many opportunities do we have to dramatically improve people’s lives just by doing our job a little better?
+> 
+> ...
+> 
+> Now you’re ready to do what most people think of as Web accessibility: implementing specific changes in your pages.
+>
+> As of right now, these are probably the most important things to do:
+> 
+> - **Add appropriate alt text to every image.** Add an empty (or “null”) alt attribute (<alt="">) for images that screen readers should ignore, and add helpful, descriptive text for the rest.
+> 
+> To learn how to write good alt text—and in fact to learn how to do any of the things in this list—head over to webaim.org. The folks at WebAIM have written excellent practical articles covering the nuts-and-bolts details of almost every accessibility technique.
+> 
+> - **Use headings correctly.** The standard HTML heading elements convey useful information about the logical organization of your content to people using screen readers and make it easier for them to navigate via the keyboard. Use `<h1>` for the page title or main content heading, `<h2>` for the major section headings, `<h3>` for subheadings, and so on, and then use CSS to redefine the visual appearance of each level.
+> 
+> - **Make your forms work with screen readers.** This largely boils down to using the HTML `<label>` element to associate the fields with their text labels, so people know what they’re supposed to enter.
+> 
+> - **Put a “Skip to Main Content” link at the beginning of each page.** Imagine having to spend 20 seconds (or a minute, or two) listening to the
+global navigation at the top of every page before you could look at the content, and you’ll understand why this is important.
+> 
+> - **Make all content accessible by keyboard.** Remember, not everyone can use a mouse.
+> 
+> - **Create significant contrast between your text and background.** Don’t ever use light grey text on a dark grey background, for instance.
+> 
+> - **Use an accessible template.** If you’re using WordPress, for example, make sure that the theme you choose has been designed to be accessible.
+> 
+> That’s it. You’ll probably learn how to do a lot more as you go along, but even if you do only what I’ve covered here, you’ll have made a really good start.
+
+## Chapter 13. Guide for the Perplexed
+
+> Back in the late 1990s, Usability and User Centered Design (UCD) were the terms most people used to describe any efforts to design with the user in mind. And there were essentially two “professions” that focused on making Web sites more usable: Usability (making sure things are designed in a way that enables people to use them successfully) and Information Architecture (making sure the content is organized in a way that allows people to find what they need).
+> 
+> Now the term you hear most often is User Experience Design, or just User Experience (UXD or UX, for short), and there are probably a dozen specialties involved, like Interaction Design, Interface Design, Visual Design, and Content Management—and, of course, Usability and Information Architecture—all under the UX umbrella.
+> 
+> One difference between User Centered Design and User Experience Design is their scope. UCD focused on designing the right product and making sure that it was usable. UX sees its role as taking the users’ needs into account at every stage of the product life cycle, from the time they see an ad on TV, through purchasing it and tracking its delivery online, and even returning it to a local branch store.
+> 
+> The good news is that there’s a lot more awareness now of the importance of focusing on the user. Steve Jobs (and Jonathan Ive) made a very compelling business case for UX, and as a result usability is an easier sell than it was even a few years ago.
+> 
+> The bad news is that where usability used to be the standard bearer for user-friendly design, now it’s got a lot of siblings looking for seats at the table, each convinced that their set of tools are the best ones for the job. The worse news is that not many people understand the differences between the specialties or the unique contributions they can make.
+> 
+> This is the field you’re playing on. So when someone tells you: “I’m in UX” or “Usability is so 2002—it’s all UX now,” smile graciously and ask them a few questions about how they’re learning about users, how they’re testing whether people can use what they’re building, and how they get changes to happen. If they don’t do any of those things, they need your help. If they do, learn from them. It’s not what we call ourselves that matters, it’s the attitude we bring and the skills we can contribute.
