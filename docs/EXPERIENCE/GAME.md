@@ -329,4 +329,173 @@ is the third.
 > 
 > The main factors that determine when a game ends are the win or lose conditions. By altering these conditions, you can dramatically change the length of the game. The designers of the arcade game Spy Hunter came up with a very interesting system to balance the length of their game. In Spy Hunter, you drive a car that fires machine guns at enemies on a highway. In early prototypes, when your car was destroyed three times, the game was over. The game is very challenging, particularly for novice players, and the designers found that these players were having very short games and feeling frustrated—so they introduced a new rule: For the first ninety seconds of gameplay, the player has an unlimited supply of cars—they cannot lose the game during this time. After that time is up, they only have a few cars, and when they are destroyed, the game is over.
 > 
+> ...
+> 
 > ***Balance Type #8: Rewards***
+> 
+> Why is it that people will spend so much time playing a videogame, just to get a good score? We have talked earlier about how games become structures of judgment and that people want to be judged. But people don’t just want any judgment—they want to be judged favorably. Rewards are the way the game tells the player “you have done well.”
+> 
+> There are several common types of rewards that games tend to give. Each is different, but they all have one thing in common—they fulfill the player’s desires.
+> 
+> - **Praise**: The simplest of rewards, the game just tells you that you did good work, through either an explicit statement, a special sound effect, or even an in-game character speaking to you. It all amounts to the same thing: the game has judged you, and it approves. Nintendo games are famous for giving players lots of ­secondary praise via sounds and animations for every reward they get.
+> 
+> - **Points**: In many games, points serve no purpose than a measure of the player’s success, be it through skill or luck. Sometimes these points are a gateway to another reward, but often, this measurement of your success is enough—­particularly if others can see it on a high score list.
+> 
+> - **Prolonged play**: In many games (pinball, for example), the goal of the game is to risk resources (in pinball, your ball) to rack up as many points as possible without losing what you have put at risk (your ball down the drain). In games with this structure of “lives,” the most valuable reward a player can get is an extra life. Other games that have time limits reward players by adding time to their play session, which really amounts to the same thing. Prolonged play is desirable because it allows for a higher score and a measure of success, but it also taps into our natural human drive for survival. Modern free to play games have a slight twist on this with the “energy” model. Run out of energy, and play is paused until you pay for more or until a certain number of hours pass.
+> 
+> - **A gateway**: While we have a desire to be judged favorably, we also have a desire to explore. Game structures that reward success by moving you to new parts of the game satisfy this basic urge. Anytime you earn access to a new level or win a key to a locked door, you have received a gateway reward.
+> 
+> - **Spectacle**: We like to enjoy beautiful and interesting things. Often, games will play music or show animations as a simple reward. The “intermission” at the end of level 2 in Pac-Man was probably the first example of this in a videogame. This kind of reward seldom satisfies players on its own, so it tends to be paired with other types of rewards.
+> 
+> - **Expression**: Many players like to express themselves within a game with special clothes or decorations. Even though these often have nothing to do with a goal in the game, they can be great fun for a player and satisfy a basic urge to make a mark on the world.
+> 
+> - **Powers**: Becoming more powerful is something that everyone desires in real life, and in a game, becoming more powerful is likely to improve the game’s judgment of a player’s success. These powers can come in many forms: getting “kinged” in checkers, becoming tall in _Super Mario World_, speeding up in _Sonic the Hedgehog_, and getting special weaponry in _Call of Duty_. The thing all powers have in common is that they give you a way to reach your goal more quickly than you could before.
+> 
+> - **Resources**: While casino games and lotteries reward the player with real money, videogames more frequently reward the player with resources they can only use in the game (e.g., food, energy, ammunition, hit points). Some games, instead of giving resources directly, give virtual money that the player can choose how to spend. Usually the things that one can buy with this money are resources, powers, prolonged play, or expression. Free to play games, of course, blur this distinction by letting you spend real money to get virtual money (but almost never the other way around).
+> 
+> - **Status**: High leaderboard rankings, special achievements, or anything else that gives a player higher status in the community of players can be very desirable award, especially to competitive players.
+> 
+> - **Completion**: Completing all the goals in a game gives a special feeling of closure to players that they seldom get from solving problems in real life. In many games, this is the ultimate reward—when you have reached this point, there is often no point in playing the game any further.
+> 
+> ...
+> 
+> But how to balance these rewards? That is, how many should be given out, and which ones? This is a difficult question, and the answer is different for almost every game. Generally, the more types of rewards you can work into your game, the better. Two other reward rules of thumb from the world of psychology include the following:
+> 
+> - People have a tendency to get acclimated to rewards the more they receive them, and what was rewarding an hour ago is no big deal now. One simple method many games use to overcome this is to gradually increase the value of the rewards as the player progresses in the game. In a way, this is a cheesy trick, but it works—even when you know the designer is doing it and why, it still feels very rewarding to suddenly get bigger rewards in conjunction with getting to a new part of a game.
+> 
+> - The power of _variable rewards_ over fixed ones has been proven in thousands of psychological experiments. For example, if every monster you defeat gives you ten points, that gets predictable and boring pretty quickly—but if every monster you defeat has a 2/3 chance of giving you zero points, but a 1/3 chance of giving you thirty points, this stays rewarding for a much longer time, even though you are receiving the same number of points on average. It’s like bringing donuts to work—if you bring them every Friday, people will come to expect them and take them for granted. But if you bring them every now and then on random days, they are a delightful surprise each time. Part of what makes triangularity so interesting to players is its connection to variable reward.
+> 
+> ...
+> 
+> ***Balance Type #9: Punishment***
+> 
+> The idea of a game that punishes the player can seem a little strange—aren’t games supposed to be fun? Paradoxically, though, punishment used properly can increase the enjoyment that players get from games. Here are some reasons that a game might punish players:
+> 
+> - **Punishment creates endogenous value**: We’ve talked about the importance of creating value within a game. Resources in a game are worth more if there is a chance they can be taken away.
+> 
+> - **Taking risks is exciting**: Particularly if the potential rewards are balanced against the risks! But you can only take risks if there are negative consequences or punishments. Giving players a chance to risk terrible consequences makes success much, much sweeter.
+> 
+> - **Possible punishment increases challenge**: We’ve discussed the importance of challenging players—when failure means a punishing setback in the game, the challenge of play increases. Increasing the punishment that comes with failure can be one way to increase the challenge.
+>
+> Here are some common types of punishment used in games. Many of them are simply rewards in reverse.
+> 
+> - **Shaming**: The opposite of praise, this is simply the game telling you that you are doing a bad job. This can happen with explicit messages (e.g., “Missed” or “Defeated!”) or with discouraging animations, sound effects, and music.
+> 
+> - **Loss of points**: Players find this type of punishment so painful that it is relatively rare in videogames or even in traditional games and sports. Maybe it is less an issue of it being painful and more of the fact that when players can lose points, it cheapens the value of the earned points. Points that can’t be taken away are very valuable—points that could be subtracted on the next bad move have less endogenous value.
+> 
+> - **Shortened play**: “Losing a life” in a game is an example of this kind of punishment. Some games that work on a timer will shorten play by taking time off the clock.
+> 
+> - **Terminated play**: Game over, man.
+> 
+> - **Setback**: When, after dying, a game returns you to the start of a level, or to the last checkpoint, this is a setback punishment. In games that are all about proceeding to the end, a setback is a very logical punishment. The balancing challenge is to figure out exactly where the checkpoints belong to make the punishments seem meaningful, but not unreasonable.
+> 
+> - **Removal of powers**: The designer must tread carefully here—players greatly treasure the powers they have earned, and to have them taken away may feel unfair to them. In Ultima Online, players who were killed in battle turned into ghosts. To come back to life, they had to find their way to a shrine. If they took too long getting there, they would lose valuable skill points that had taken weeks to earn. Many players felt this was too harsh a punishment. One way to remove powers fairly is to take them away temporarily. Some amusement parks feature bumper car battle tanks that shoot tennis balls at each other. The tanks have targets on each side, and if an opponent hits one of your targets with a tennis ball, your tank goes into an uncontrolled spin for five seconds and your gun becomes inoperable during that time.
+> 
+> - **Resource depletion**: Loss of money, goods, ammunition, shields, or hit points fall into this category. This is one of the most common types of game punishment.
+> 
+> One thing that psychological study has shown is that reward is always a better tool for reinforcement than punishment. Whenever possible, if you need to encourage a player to do something, it is better to use a reward than a punishment, if you can.
+> 
+> ...
+> 
+> ***Balance Type #10: Freedom vs. Controlled Experience***
+> 
+> Games are interactive, and the point of interactivity is to give the player control, or freedom, over the experience. But how much control? Giving the player control over everything is not only more work for the game developer; it can also be boring for the player! After all, a game isn’t meant to be a simulation of real life, but rather more interesting than real life—this sometimes means cutting out boring, complex, or unnecessary decisions and actions. One simple kind of game balance that every designer must consider is where to give the player freedom and how much freedom to give.
+> 
+> ...
+> 
+> ***Balance Type #11: Simple vs. Complex***
+> 
+> Simplicity and complexity of game mechanics can seem very paradoxical. Calling a game “simple” can be a criticism, such as “so simple it is boring.” It can also be a compliment: “so simple and elegant!” Complexity can also be a double-edged sword. Games are criticized as “overly complex and confusing” or complimented as “richly and intricately complex.” To make sure your game has the “good simplicity” and the “good complexity,” but not the bad, we need to look at the nature of simplicity and complexity in games and how to strike the right balance between them.
+> 
+> ...
+> 
+> **Emergent complexity** can be difficult to achieve, but is worth the effort. Ideally, one can create a simple ruleset out of which emerges the thing every game designer strives for: balanced surprises. If you can design a simple game that becomes a factory for a never-ending stream of balanced surprises, people will play your game for centuries to come. The only way to find out whether you have achieved this is to keep playing and changing your game over and over until the surprises start to come.
+> 
+> So, if emergent complexity is so great, why would anyone make a game that is innately complex? Well, sometimes you need the **innate complexity** to simulate a real-world situation, such as re-creating a historical battle. Other times, you add more innate complexity to balance your game a little better. The pawns in chess have movement rules that are innately complex: when they move, they can only move forward one square, into an unoccupied space, unless it is their first move, in which case they can move one or two spaces. One exception to this is when they are capturing another piece; in that case, they can only move diagonally forward, but only one square, even if it is their first move.
+> 
+> ...
+> 
+> ***Balance Type #12: Detail vs. Imagination***
+> 
+> Deciding exactly what details should be provided and which should be left to the player’s imagination is a different but important kind of balance to strike. Here are some tips for how to do it well.
+> 
+> - **Only detail what you can do well**: Players have rich, detailed imaginations. If there is something you need to present that is of lower quality than your players will be able to imagine, don’t do it—let the imagination do the heavy lifting! Let’s say you would like to play recorded dialog for your whole game, but you don’t have the budget for quality voice actors or you don’t have the storage space for all that dialog. An engineer might suggest trying speech synthesis, that is, letting the computer speak for the characters. After all, it is cheap, requires no storage space, and can be tuned somewhat to sound like different characters, right? All that is true—but also, it will make everyone sound like a robot, and unless you are making a game about robots, your players will not be able to take it seriously. An even cheaper alternative is to use subtitles. Some people might claim that this means there is no voice at all! But that isn’t true. The player’s imagination will fill in a voice—a voice far better than the one you will be able to synthesize. This same idea goes for just about everything in the game: scenery, sound effects, characters, animations, and special effects. If you can’t do it well, try to find a way to leave it to the player’s imagination.
+> 
+> - **Give details the imagination can use**: Players have a lot to learn when they come to a new game—any clear details you can give them that make the game easier to understand will be welcome. Consider the game of chess. It is mostly a somewhat abstract game, but some interesting details have been filled in. The game is set in a medieval era, and the pieces, which easily could have been numbered or just made as abstract shapes, are given the roles of people in a medieval court. It isn’t a lot of detail—the kings, for example, don’t have names, and we know nothing about their kingdoms or their policies—but none of that matters. In fact, if this were to be a real simulation of an army between two kingdoms, the rules of movement and capture would make no sense at all! What matters about the “kings” in chess is that the tallest of the chess pieces has movements that are slightly evocative of a real king. He is important and must move slowly and must be carefully guarded. Any other details can be left to the imaginations of the players to fill in as they see fit. Similarly, picturing the “knights” as horses helps us remember that they can jump around the board in ways the others cannot. By giving details that help our imaginations better grasp their functionality, the game becomes much more accessible to us.
+> 
+> - **Familiar worlds do not need much detail**: If you are creating a simulation of something that the player is likely to know very well, such as a city street or a house interior, you have little need to simulate every little detail—since the player already knows what these places are like, they will quickly fill them in with imagination, if you give them a few relevant details. If the point of your game, though, is to educate someone about a place they have never been before, imagination will be of little help, and you will find it necessary to fill in a great deal of detail.
+> 
+> - **Use the binocular effect**: When spectators bring binoculars to an opera or a sporting event, they use them mostly at the beginning of the event, to get a close-up view of the different players or performers. Once this close-up view has been put into memory, the glasses can be set aside, for now the imagination goes to work, filling in the close-ups on the tiny distant figures. Video games replicate this effect all the time, often by showing a close-up of a character at the beginning of the game who is going to be an inch-high sprite for the rest of the experience. It is an easy way to use a little detail to get a lot of imagination.
+> 
+> - **Give details that inspire imagination**: Again, chess is a great example. To be able to control all the members of a royal army is a fantasy that the mind quickly takes to—and of course, it is a fantasy—it only has to be tied to reality by a thin thread. Giving players situations they can easily fantasize about lets their imagination take wing, and all kinds of imaginary details will quickly crystallize around one little detail that the designer provided.
+
+## Chapter 14. Game Mechanics Support Puzzles
+
+> The thing that really seems to bother people about calling puzzles games is that they are not replayable. Once you figure out the best strategy, you can solve the puzzle every time, and it is no longer fun. Games are not usually this way. Most games have enough dynamic elements that each time you play you are confronted again with a new set of problems to solve.
+> 
+> ...
+> 
+> Contrast that to The Legend of Zelda: The Wind Waker, which has many puzzles but smoothly integrates them into environments in the game. When confronted with a river of lava, you have to figure out how to throw water jugs in the right pattern so that you can cross the river. When you are in a dungeon where the doors are opened and closed by a complex series of switches, you must figure out how to use items found in the dungeon (statues, etc.) to flip the switches so you can successfully get through all the doors. Some of these are quite complex; for example, some enemies in the dungeon are paralyzed when light falls on them. To get the doors open, you must lure the enemies onto the right switches and then shoot flaming arrows near enough to paralyze them to keep the door open so you can run out. But in all cases, the puzzle elements are natural parts of the environment, and the goals of solving the puzzle are direct goals of the player’s avatar.
+> 
+> ...
+> 
+> Can other genres include puzzles? Absolutely. When you play a fighting game and you have to stop and think about which strategies are going to work best against a particular opponent, you are solving a puzzle. When you play a racing game and are trying to figure out where on the track to use your turbo booster to finish the race in less than a minute, you are solving a puzzle. When you play a first-person shooter and you think about which order you should shoot the enemies so that you take the least damage, you are solving a puzzle.
+
+## Chapter 15. Players Play Games through an Interface
+
+> Like many things we encounter in game design, interface is not simple or easily described. “Interface” can mean many things—a game controller, a display device, a system of manipulating a virtual character, the way the game communicates information to the player, and many other things. To avoid confusion and to understand it properly, we need to separate it out into component parts.
+> 
+> ...
+> 
+> Information flows in a loop from player to game to player to game, round and round. It is almost like this flow pushes a waterwheel that generates experience when it spins. But it can’t be just any information that flows around this loop. The information that is returned to the player by the game dramatically affects what the player will do next. This information is generally called **feedback**, and the quality of this feedback can exert a powerful influence on how much the player understands and enjoys what is happening in your game.
+> 
+> The importance of good feedback is easily overlooked. One example is the net on a basketball hoop. The net does not affect the gameplay at all—but it slows the ball as it descends from the hoop, so that all players can clearly see, and even hear, that it went in.
+> 
+> ...
+> 
+> One kind of interface that tends to be associated with juicy fun is the touch interface found on phones and tablets. Touch interfaces have done a lot to change the world of gaming in a very short time. Young children, in particular, seem to take to touch interfaces with surprising ease. But why? The obvious answer is “because they are intuitive.”
+> 
+> ...
+> 
+> ***Step 1: List and Prioritize Information***
+> 
+> A game has to present a lot of information, but it is not all equally important. ... We might begin by listing all of the information the player needs
+to see. ... Now, we might sort these by importance:
+> 
+> **Need to know every moment:**
+> 
+> ...
+> 
+> **Need to glance at from time to time while playing:**
+> 
+> ...
+> 
+> **Need to know only occasionally:**
+> 
+> ...
+> 
+> ***Step 2: List Channels***
+> 
+> A channel of information is just a way of communicating a stream of data. ... Some possible channels of information might be
+> - The top center of the screen
+> - The bottom right of the screen
+> - My avatar
+> - Game sound effects
+> - Game music
+> - The border of the game screen
+> - The chest of the approaching enemy
+> - The word balloon over a character’s head
+> 
+> ...
+> 
+> ***Step 3: Map Information to Channels***
+> 
+> Now, the difficult task comes of mapping the types of information to the different channels.
+> 
+> ...
+> 
+> ***Step 4: Review Use of Dimensions***
+> 
+> A channel of information in a game can have several dimensions.
+
+## Chapter 16. Experiences Can Be Judged by Their Interest Curves
