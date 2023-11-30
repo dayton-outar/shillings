@@ -499,3 +499,43 @@ to see. ... Now, we might sort these by importance:
 > A channel of information in a game can have several dimensions.
 
 ## Chapter 16. Experiences Can Be Judged by Their Interest Curves
+
+> Interest curves can be a very useful tool when creating an entertainment ­experience. By charting out the level of expected interest over the course of an experience, trouble spots often become clear and can be corrected. Further, when observing guests having the experience, it is useful to compare their level of observed interest to the level of interest that you, as an entertainer, anticipated they would have. Often, plotting different curves for different demographics is a useful exercise. Depending on your experience, it might be great for some groups but boring for others (e.g., “guy movies” vs. “chick flicks”), or it might be an experience with “something for everyone,” meaning well-structured curves for several ­different demographic groups.
+> 
+> Once you start thinking about games and entertainment experiences in terms of interest curves, you start seeing the pattern of the good interest curve everywhere. You can see it in the three-act structure of a Hollywood movie. You can see it in the structure of popular songs (musical intro, verse, chorus, verse, chorus, bridge, big finish). When Aristotle says that every tragedy has a complication and a denouement, you can see it there. When comedians talk about the “rule of three,” you can see the interest curve.
+> 
+> ...
+> 
+> To determine the interest level, you have to experience it with your whole self, using your empathy and imagination and using skills of the right brain as well as the left. Still, your left brain may be happy to know that overall interest can be broken down further into other factors. There are many ways to do that, but I like to use these three:
+> 
+> ***Factor 1: Inherent Interest***
+> 
+> Some events are simply more interesting than others. Generally, risk is more ­interesting than safety, fancy is more interesting than plain, and the unusual is more interesting than the ordinary. Dramatic change and the potential for dramatic change are always interesting. Accordingly, a story about a man wrestling an alligator is probably going to be more interesting than a story about a man eating a cheese sandwich. We simply have internal drives that push us to be more interested in some things than others.
+> 
+> The events don’t stand alone, however. They build on one another, creating what is often called the story arc. Part of the inherent interest of events depends on how they relate to one another. For example, in the story of Goldilocks and the Three Bears, most of the events in the story aren’t very interesting: Goldilocks eats ­porridge, sits in chairs, and takes a nap. But these boring events make possible the more interesting part of the story where the bears discover their home has been disturbed.
+> 
+> ***Factor 2: Poetry of Presentation***
+> 
+> This refers to the aesthetics of the entertainment experience. The more beautiful the artistry used in presenting the experience, whether that artistry be writing, music, dance, acting, comedy, cinematography, graphic design, or whatever, the more interesting and compelling the guests will find it. Of course, if you can give a beautiful presentation to something that is inherently interesting in the first place, all the better.
+> 
+> ***Factor 3: Projection***
+> 
+> This is the extent to which you compel a guest to use their powers of empathy and imagination to put themselves into the experience. This factor is crucial to understanding the commonality between story and gameplay and requires some explanation.
+> 
+> ...
+> 
+> In terms of trying to build projection, imagination is as important as empathy. Humans exist in two worlds: the outward-facing world of perception and the inward-facing world of imagination. Every entertainment experience creates its own little world in the imagination. This world does not have to be realistic (although it might be), but it does need to be internally consistent. When the world is consistent and compelling, it fills the guest’s imagination, and mentally, the guest enters the world. We often say that the guest is “immersed” in the world. This kind of immersion increases projection, boosting the overall interest of the guest significantly. The suspension of disbelief that keeps the guest immersed in the story world is fragile indeed. One small contradiction is all it takes to bring the guest back to reality and “take them out” of the experience.
+> 
+> ...
+> 
+> Another way to build up the player’s projection into the world you have ­created is to provide multiple ways to enter that world. Many people think of toys and games based on popular movies or television shows as nothing but a gimmicky way to make a few extra dollars by riding the coattails of a successful entertainment experience. But these toys and games provide new ways for children to access an established fantasy world. The toys let them spend more time in that world, and the longer they spend imagining they are in the fantasy world, the greater their projection into that world and the characters in it becomes.
+> 
+> Interactive entertainment has an even more remarkable advantage, in terms of projection. The guest can be the main character. The events actually happen to the guest and are all the more interesting for that reason. Also, unlike story-based entertainment, where the story world exists only in the guest’s imagination, interactive entertainment creates significant overlap between perception and imagination, allowing the guest to directly manipulate and change the story world. This is why videogames can present events with little inherent interest or poetry but still be compelling to guests. What they lack in inherent interest and poetry of ­presentation, they can often make up for in projection.
+> 
+> ...
+> 
+> Some people find it useful to qualify the types of interest that happen at different points in their experience, letting you see which types of interest are holding the audience’s interest at different times, creating graphs that look something like:
+> 
+> ![Interest Curve showing Projection, Poetry and Inherent Interest](/.attachments/interest.curve.png)
+
+## Chapter 17. One Kind of Experience Is the Story
