@@ -106,7 +106,7 @@ Published by the Penguin Group
 
 © 2001 by Steve Nison
 
-## Chapter 1. Introduction
+### Chapter 1. Introduction
 
 > Year after year the flames of interest grow ever brighter for these charting tools. This is because candle charts:
 > 
@@ -144,7 +144,7 @@ Published by the Penguin Group
 > 
 > Fifth, the price action is the most direct and easily accessible method of seeing overall supply/demand relationships. There may be fundamental news not known to the general public, but you can expect it is already in the price. Those who have advance knowledge of some market-moving event will most likely buy or sell until current prices reflect their information.
 
-## Chapter 3. Constructing the Candlestick Lines
+### Chapter 3. Constructing the Candlestick Lines
 
 > ![Bar Chart vs. Candle Chart](/.attachments/bar.chart.vs.candle.chart.png)
 > 
@@ -180,5 +180,5 @@ Understanding the open and close prices assists traders in gauging market sentim
 
 <image src="/.attachments/chatgpt-logo.png" alt="Chat GPT Logo" width="16" height="16" />
 
-## Chapter 4. Reversal Patterns
+### Chapter 4. Reversal Patterns
 
