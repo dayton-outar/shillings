@@ -102,9 +102,9 @@ Published by the Penguin Group
 
 ## Japanese Candlestick Charting Techniques
 
-![Candlestick Cheet Sheet](/.attachments/candlestick.cheat.sheet.webp)
-
 © 2001 by Steve Nison
+
+![Candlestick Cheet Sheet](/.attachments/candlestick.cheat.sheet.webp)
 
 ### Chapter 1. Introduction
 
