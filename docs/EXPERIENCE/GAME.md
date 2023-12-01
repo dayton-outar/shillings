@@ -539,3 +539,184 @@ to see. ... Now, we might sort these by importance:
 > ![Interest Curve showing Projection, Poetry and Inherent Interest](/.attachments/interest.curve.png)
 
 ## Chapter 17. One Kind of Experience Is the Story
+
+> Stories and games can each be thought of as machines that help create experiences.
+> 
+> ...
+> 
+> The idea that the mechanics of traditional storytelling, which are innate to the human ability to communicate, are somehow nullified by interactivity is absurd. It is a poorly told story that doesn’t compel the listener to think and make decisions during the telling. When one is engaged in any kind of storyline, interactive or not, one is continually making decisions: “What will happen next?” “What should the hero do?” “Where did that rabbit go?” “Don’t open that door!” The difference only comes in the participant’s ability to take action. The desire to act and all the thoughts and emotions that go with that are present in both. A masterful storyteller knows how to create this desire within a listener’s mind and then knows exactly how and when (and when not) to fulfill it. This skill translates well into interactive media, although it is made more difficult because the storyteller must predict, account for, respond to, and smoothly integrate the actions of the participant into the experience.
+
+## Chapter 20. Worlds Contain Characters
+
+> If we are to create games that have great stories in them, these stories must contain memorable characters. It is an important question to ask: How are characters in games different than characters in other media? If we examine fictional characters in various media side by side, some differences become apparent. Here are some samples I chose from lists of the best novels, films, and videogames of the twentieth century.
+> 
+> ...
+> 
+> So, examining these lists, what patterns do we see?
+> 
+> - **Mental → Physical**. The characters in the novels are involved in deep psychic struggles. This makes sense, since in a novel we spend much of our time l­istening to the characters’ innermost thoughts. The characters in the movies are involved in both emotional and physical struggles, which are resolved through c­ ombinations of communication and action. Again, when you consider the medium, this makes sense: We cannot hear the thoughts of film characters, but we can see what they say and do. Finally, the game characters are involved in conflicts that are almost entirely physical. Since these characters mostly have no thoughts (the player does the thinking for them) and are only occasionally able to speak, this again makes perfect sense. In all three cases, the characters are defined by their media.
+> 
+> - **Reality → Fantasy**. The novels tend to be very reality based; the films tend to be rooted in reality, but often pushing toward fantasy, and the game worlds are almost entirely fantasy situations. And the characters reflect this—they are ­products of their environment.
+> 
+> - **Complex → Simple**. For a variety of reasons, the complexity of the plots and depth of the characters gradually diminishes as we move from novels to games.
+> 
+> ...
+> 
+> Designers often debate about which is more immersive: the first- or third-­person view. One argument is that greater projection can be achieved by providing a first-person perspective on a scene with no visible avatar. However, the power of e­mpathy is strong, and when controlling a visible avatar, guests often wince in imagined pain upon seeing their avatar suffer a blow or sigh in relief upon seeing their avatar escape physical harm. It is almost as if the avatar is a kind of kinesthetic voodoo doll for the guest. Bowlers are another example of this phenomenon, as they try to exert “body English” on a bowling ball as it rolls down the lane toward the pins. These movements are largely subconscious and are a result of a bowler projecting themself onto the ball. In this sense, the bowling ball serves as the bowler’s avatar.
+> 
+> And it is one thing to project ourselves into our avatar as if our avatar is a tool, but the experience of projection can be so much more powerful if we actually relate to the character in some way. So, what kinds of characters are best suited for players to project themselves into?
+> 
+> ***The Ideal Form***
+> 
+> The first type of character that is a good choice as an avatar is the kind that the player has always wanted to be. Characters like this—such as mighty warriors, powerful wizards, attractive princesses, ultra-suave secret agents—exert a pull on the psyche, since the force inside us that pushes us toward being our best finds the idea of projecting ourselves into an idealized form very appealing. Although these characters are not much like our real selves at all, they are people we sometimes dream about being.
+> 
+> ***The Blank Slate***
+> 
+> ... the less detail that goes into a character, the more opportunity the reader has to project themselves into that character.
+> 
+> ...
+> 
+> This idea has bearing well beyond the domain of comics. In videogames, we see the same phenomenon. Some of the most popular and compelling avatars are ones that are very iconic. Consider Mario: He isn’t much of an idealized form, but he is simple, hardly speaks, and is completely nonthreatening, so it is easy to project yourself into him.
+> 
+> The idealized form and the blank slate are often mixed. Consider Spider-Man, for example. He is an ideal form: a powerful and brave superhero, but the mask that covers his face makes him almost completely iconic—a blank slate that could be almost anyone.
+> 
+> ...
+> 
+> **Creating Compelling Game Characters**
+> 
+> Here I will summarize some of the methods I have found most useful for developing characters in games.
+> 
+> ***Character Tip #1: List Character Functions***
+> 
+> A very useful technique when coming up with the cast of characters in your game is to list all the functions that these characters need to fulfill. Then list the characters you had been thinking of putting in the game, and see how they match up. For example, if you are making an action platform game, your list might look like the following:
+> 
+> 1. Hero: the character who plays the game
+> 2. Mentor: gives advice and useful items
+> 3. Assistant: gives occasional tips
+> 4. Tutor: explains how to play the game
+> 5. Final boss: someone to have the last battle against
+> 6. Minions: bad guys
+> 7. Three bosses: tough guys to battle against
+> 8. Hostage: someone to rescue
+> 
+> ...
+> 
+> ***Character Tip #2: Define and Use Character Traits***
+> 
+> You want to choose traits that are going to stay with your character through many situations that really define them as a person. Sometimes these can be a little contradictory, but real people have contradictory traits, so why shouldn’t characters? Let’s say we gave Sabu and Lester these traits:
+> 
+>   _Sabu: trustworthy, short tempered, valiant, a fiery lover_
+>   _Lester: arrogant, sarcastic, spiritual, impulsive_
+> 
+> ...
+> 
+> ***Character Tip #3: Use the Interpersonal Circumplex***
+> 
+> Your characters won’t be alone, of course—they are going to interact with each other. One tool that Katherine Isbister brought from the world of social psychology into the world of game design is the **interpersonal circumplex**. It is a graph you can use to visualize the relationships between characters. It has two axes: friendliness and dominance.
+> 
+> 
+> ![Interpersonal Circumplex](/.attachments/interpersonal.circumplex.png)
+> 
+> The circumplex is not a be-all or end-all tool, but it can be useful for thinking about character relationships because of the questions it can prompt. So, let’s put it in our toolbox.
+> 
+> ![Putting Characters on the Interpersonal Circumplex](/.attachments/characters.interpersonal.circumplex.png)
+> 
+> ...
+> 
+> ***Character Tip #4: Make a Character Web***
+> 
+> The circumplex is a nice visual way to see some character relationships. But there can be many other factors in the relationships between your characters. The character web is a good way to explore how the characters feel about each other and why. The idea is simple: To analyze a character, write down what that character thinks of all the other characters. Here’s an example from the world of Archie comics:
+> ...
+> 
+> **Archie**
+> - **Veronica**: Archie is lured by her elegance and beauty. Though she is rich, Archie doesn’t care much about that.
+> - **Betty**: Archie’s true love, but her insecurity constantly gives him mixed signals, so he doesn’t pursue her as forcefully as he might.
+> - **Reggie**: Archie shouldn’t trust Reggie, but he often does, because Archie always tries to be a nice guy and Archie is kind of gullible.
+> - **Jughead**: Archie’s best friend. What they have in common is that they are both underdogs.
+> 
+> **Veronica**
+> - **Archie**: Veronica finds Archie attractive, but sometimes she seeks to date him to frustrate Betty and because she can always feel superior around him.
+> - **Betty**: Veronica trusts Betty as a friend because they were friends as little girls. Veronica likes how she can always feel superior to Betty in terms of wealth and class, but it really frustrates Veronica that Betty is a better person.
+> - **Reggie**: Reggie is an attractive buffoon who appreciates wealth, but Veronica gets frustrated that Reggie doesn’t really respect or love her.
+> - **Jughead**: A nauseating freak—Veronica can’t understand why Archie is friends with him. Veronica often bribes him with food to get what she wants.
+> 
+> **Betty**
+> - **Archie**: Her true love. She is shy, though, about telling him how she really feels, because Betty has low self-esteem.
+> - **Veronica**: Betty’s BFF. She can be mean sometimes, and she is too money crazy, but friends are friends forever, so Betty stays with Veronica.
+> - **Reggie**: Betty is intimidated by his wealth and showy attempts at class. She feels like she is supposed to like him, but secretly she is repelled by him.
+> - **Jughead**: Betty thinks he’s cute and funny and glad that he’s such a good friend to her true love.
+> 
+> **Reggie**
+> - **Archie**: Reggie’s archrival. Reggie can’t imagine what anyone sees in such a dopey nice guy. Occasionally, Reggie envies Archie’s popularity, but he always thinks he can find a tricky way to outdo Archie.
+> - **Veronica**: Reggie finds her attractive and rich—he likes the power of her wealth.
+> - **Betty**: Reggie finds her attractive, and though her low self-esteem is a turnoff, to be able to win her, he would show his superiority over Archie.
+> - **Jughead**: Reggie sees him as a total loser who deserves to be bullied, especially since he is friends with Archie.
+> 
+> **Jughead**
+> - **Archie**: Jughead’s best friend, and the only one who understands and appreciates Jughead’s love of food.
+> - **Veronica**: The mean girl that Archie likes.
+> - **Betty**: The nice girl that Archie likes.
+> - **Reggie**: A bully.
+> 
+> ...
+> 
+> ***Character Tip #5: Use Status***
+> 
+> Whenever people meet or interact, there is a hidden negotiation that constantly takes place. We are mostly not conscious of it, since it predates our ability to speak. It is our negotiation of status; that is, who is in charge of the current interaction? Status is not a matter of who you are; status is something you do.
+> 
+> ...
+> 
+> Any time two or more people interact in any setting—whether friends or enemies, collaborators or competitors, masters or servants—a negotiation of status takes place. We do this almost entirely subconsciously with posture, tone of voice, eye contact, and dozens of other detailed behaviors. What is surprising is how consistent these behaviors are across all cultures.
+> - **Typical low-status behaviors include** fidgeting, avoiding eye contact, touching one’s own face, and generally being tense.
+> - **Typical high-status behaviors include** being relaxed and in control, making strong eye contact, and, weirdly, not moving your head while you speak.
+> 
+> ...
+> 
+> Status is a largely unexplored area in interactive entertainment. ... Right now, most videogame characters behave the same way no matter who is around. It seems likely that the next generation of interactive game characters will seem more alive because they are aware of status.
+> 
+> 
+> ***Character Tip #6: Use the Power of the Voice***
+> 
+> The human voice is an incredibly powerful thing, which can affect us at a deep subconscious level. This is why talking pictures elevated the cinema from a novelty to the dominant art form of the twentieth century.
+> 
+> ***Character Tip #7: Use the Power of the Face***
+> 
+> A huge percentage of our brains is taken up with custom hardware for processing facial expression. We have the most complex and expressive faces in the entire animal kingdom. Notice, for example, our eye whites—other animals do not have visible eye whites. It would appear we evolved them as a method of communication. We are also the only animal that blushes and the only animal that cries.
+> 
+> ...
+> 
+> Facial animation doesn’t have to be expensive—you can get tremendous power out of simple animated eyebrows or eye shapes.
+> 
+> ***Character Tip #8: Powerful Stories Transform Characters***
+> 
+> One distinguishing feature of great stories is how their characters change. Video game designers seldom consider this, to their detriment. There is a tendency to treat game characters as fixed types—the villain is always the villain, the hero was born a hero. This makes for very boring storytelling.
+> 
+> ...
+> 
+> It is certainly true that meaningful character change is not possible for the main character in every game. But perhaps character change can happen to other characters in the game such as the sidekick or the villain.
+> 
+> ...
+> 
+> ***Character Tip #9: Let Your Characters Surprise Us***
+> 
+> This advice seems completely contrary to everything we know about storytelling and acting. We expect characters to behave realistically and believably. But here, Fitzgerald is telling us that in a good story, the characters do the opposite of what the audience expects. And it is totally true. When you know to look for it, you can see it everywhere. It’s in comedies, dramas, the classics, everywhere. The popular television show _Breaking Bad_ was practically founded on this principle. It’s yet another use for The Lens of Surprise. When characters have an emotional reaction that isn’t what we expect, we pay attention. And of course, fun is just pleasure with surprises, right? If you want players to enjoy playing with your characters, design each one the same way you would design a toy. Look for ways to let your characters surprise your players, and the players will hang on your characters’ every word and action.
+> 
+> ***Character Tip #10: Avoid the Uncanny Valley***
+> 
+> Japanese roboticist Masahiro Mori noted something interesting about human response to robots and other artificial characters. If you think about how people empathize, you might notice that the closer something is to seeming human, the more they can empathize with it. You might even lay this out on a graph like:
+> 
+> ![Empathy vs Human-likeness Chart](/.attachments/empathy.human-likeness.png)
+> 
+> And this makes perfect sense. The more something is like a person, the more empathy we give it. But Mori noted an interesting exception, as he worked on robots that tried to mimic humans—as soon as they started to get too human, perhaps moving from a metal face (think C-3PO) to one with artificial skin, people suddenly found them repulsive.
+> 
+> ![Uncanny Valley](/.attachments/uncanny.valley.png)
+> 
+> Mori referred to this surprising dip in the curve as “the uncanny valley.” The cause of this uneasy feeling may be that when we see things that almost look like people, our brains register them as “diseased people” who might be dangerous to be around. Zombies are a canonical example of the creepy things that live at the bottom of the uncanny valley.
+> 
+> The uncanny valley shows up in videogames and animation all the time. Every frame of films such as _Final Fantasy_ and _The Polar Express_ looks gorgeous and natural—when you just look at one frame. But when the films are in motion, there is something about the computer-generated humans that many people find creepy—somehow, they don’t move quite right—they got too close to the valley and fell in. Contrast those characters to the cartoony characters (fish, toys, cars, robots) in Pixar films that have no problem generating empathy, because they stay to the left side of the valley, where that puppy dog is.
+> 
+> Videogame characters can easily have the same problems—especially in games that try to mimic reality. The day may come where videogame characters are so human looking that they can safely exist on the right side of the valley, but until then, use caution—it’s a long way down.
+>
+> Characters definitely make a world more interesting, but for it to be a world at all, it needs something else—a space to exist.
+
+## Chapter 
