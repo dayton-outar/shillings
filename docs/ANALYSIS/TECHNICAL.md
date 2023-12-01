@@ -155,3 +155,30 @@ Published by the Penguin Group
 > ...
 > 
 > The Japanese say the real body is “the essence of the price movement.” This reflects a central concept about the power of the real bodies: By looking at the height and color of the real body, we get an immediate visual clue whether it’s the bulls or bears who are in control.
+
+In trading, a candlestick represents the price movement of an asset within a specific timeframe, commonly used in technical analysis. The high and low points of a candlestick provide crucial information:
+
+1. **High:** The topmost point of the vertical line (wick) represents the highest price reached for that asset within the chosen timeframe (e.g., a day, an hour, etc.). It signifies the highest price buyers were willing to pay during that period.
+
+2. **Low:** The bottom of the vertical line (wick) indicates the lowest price reached for the asset within the same timeframe. It reflects the lowest price at which sellers were willing to sell during that period.
+
+The open and close on a candlestick represent the prices at which an asset began and ended within a specific timeframe, such as a day, hour, or minute.
+
+- **Open:** The open price is depicted by the start of the candlestick's body. It signifies the price at which the asset started trading at the beginning of the selected timeframe.
+
+- **Close:** The close price is represented by the end of the candlestick's body. It shows the price at which the asset concluded trading at the end of the selected timeframe.
+
+The color of the candlestick (often green or red) depends on whether the closing price was higher or lower than the opening price:
+
+- **Green/White Candle:** The closing price is higher than the opening price, indicating a net price increase during that timeframe.
+  
+- **Red/Black Candle:** The closing price is lower than the opening price, signifying a net price decrease during that timeframe.
+
+The body of the candlestick illustrates the price range between the open and close. If the close is higher than the open, the body is typically hollow or filled in, representing an uptrend. Conversely, if the close is lower than the open, the body is usually filled or colored, indicating a downtrend.
+
+Understanding the open and close prices assists traders in gauging market sentiment, price direction, and potential trend reversals.
+
+<image src="/.attachments/chatgpt-logo.png" alt="Chat GPT Logo" width="16" height="16" />
+
+## Chapter 4. Reversal Patterns
+
