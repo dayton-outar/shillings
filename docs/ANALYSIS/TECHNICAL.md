@@ -1,8 +1,6 @@
 # Technical Analysis
 
-## Chat GPT
-
-### Indicators and Tools for Technical Analysis
+## Indicators and Tools for Technical Analysis
 
 Technical analysis is a method used by traders and investors to evaluate and predict future price movements in financial markets. It involves the use of various tools and indicators to make informed decisions. Here's a list of some common tools and indicators used in technical analysis:
 
@@ -53,6 +51,8 @@ Confidence Level: The information provided is based on my knowledge of technical
 Sources:
 - [Investopedia - Technical Analysis](https://www.investopedia.com/terms/t/technicalanalysis.asp)
 - [StockCharts - Technical Indicators and Overlays](https://school.stockcharts.com/doku.php?id=technical_indicators)
+
+<image src="/.attachments/chatgpt-logo.png" alt="Chat GPT Logo" width="16" height="16" />
 
 ## The Art of Currency Trading
 
