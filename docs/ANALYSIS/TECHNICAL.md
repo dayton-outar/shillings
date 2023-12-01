@@ -1,7 +1,5 @@
 # Technical Analysis
 
-## Indicators and Tools for Technical Analysis
-
 Technical analysis is a method used by traders and investors to evaluate and predict future price movements in financial markets. It involves the use of various tools and indicators to make informed decisions. Here's a list of some common tools and indicators used in technical analysis:
 
 1. **Candlestick Charts**: Candlestick charts display price movements over a specified time period, providing information on open, high, low, and close prices.
