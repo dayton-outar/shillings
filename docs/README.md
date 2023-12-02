@@ -97,3 +97,7 @@ Drive traffic to site with [Simple Traffic](https://www.simpletraffic.co/).
 1. [How to Develop your Business Design Philosophy](https://drawbackwards.com/blog/how-to-develop-your-design-philosophy)
 1. [The top 10 reasons small businesses fail – and how to avoid them](https://www.boq.com.au/business/small-business/business-knowledge-hub/opening-a-small-business/the-top-ten-reasons-small-businesses-fail)
 1. [11 Expert Tips for Conducting Better Market Research](https://www.checkmarket.com/blog/11-expert-tips-for-conducting-better-market-research/)
+
+## Videos
+
+1. [How does the stock market work? - Oliver Elfenbaum](https://youtu.be/p7HKvqRI_Bo?si=kmDktQkx80tZcLqb)

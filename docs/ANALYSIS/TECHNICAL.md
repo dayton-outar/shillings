@@ -96,6 +96,10 @@ Published by the Penguin Group
 > 
 > ... Old techniques like Japanese candlestick charting and newer ones like Market Profile have become part of the technical landscape.
 
+### Chapter 1. Philosophy of Technical Analysis
+
+> Technical analysis is the study of market action, primarily through the use of charts, for the purpose of forecasting future price trends.
+
 ...
 
 ## Japanese Candlestick Charting Techniques
@@ -180,3 +184,8 @@ Understanding the open and close prices assists traders in gauging market sentim
 
 ### Chapter 4. Reversal Patterns
 
+
+
+## Videos
+
+1. [Moving Average Trading - How to use Moving Averages](https://youtu.be/NqTPzObfkO0?si=ttnDf6Mt2uhT_MFp) - [Tradeciety.com](https://www.youtube.com/@Tradeciety)
