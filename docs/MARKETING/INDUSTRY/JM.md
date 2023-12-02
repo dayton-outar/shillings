@@ -432,7 +432,6 @@ My experience using JTrader Pro was as follows,
    ![JTrader Transaction Status](/.attachments/jtrader.transactions.status.png)
 
 
-
 ##### Few Good Mentions
 
  - [Investing.com](https://www.investing.com/stock-screener/?sp=country::119|sector::a|industry::a|equityType::a|exchange::124%3Ceq_market_cap;1)
@@ -444,5 +443,16 @@ My experience using JTrader Pro was as follows,
  - [eTrade](https://us.etrade.com/platforms)
  - [Trading 212](https://www.trading212.com/)
  - [Stockpile](https://www.stockpile.com/)
+
+## Videos
+
+1. [The Complete Guide to Dividend Investing on the Jamaica Stock Market](https://youtu.be/guhqztem9fA) - [Learn Grow Invest](https://www.youtube.com/@learngrowinvest)
+1. [How to trade stocks with Jtraderpro](https://youtu.be/OwlkE77s1AI) - [Kalila Reynolds Media](https://www.youtube.com/@kalilahrey)
+1. [Investing in the Jamaica Stock Market for Beginners](https://youtu.be/bsXA7nJ7jW8?si=9r-996221fzkeRLn) - [Learn Grow Invest](https://www.youtube.com/@learngrowinvest)
+1. [The Top 5 Jamaican Dividend Stock To Invest Right Now in 2022](https://youtu.be/DooE-5QiL_4?si=Sm8La8h7ogpktpk-) - [Garth Grant](https://www.youtube.com/@GarthGrant)
+1. [How to Buy Stocks in Jamaica 2022](https://youtu.be/sRaCVQXm-QA?si=XVFmGSwpS3IM4sJN) - [Emar Morrison](https://www.youtube.com/@emarjm)
+1. [Robinhood vs Charles Schwab 2023: Best Brokerage?](https://youtu.be/OlTiorM1fYQ)
+1. [Robinhood vs Charles Schwab | Which Brokerage Is Better For You?](https://youtu.be/RzmUCm835T4)
+1. [Charles Schwab Trading Platform Web Tutorial](https://youtu.be/CZsiRomcUeE)
 
 [^1]: [Importance of Domain Authority as the Key Site Metric for Growth](https://www.responsify.com/importance-of-domain-authority/) by Ginny Dwyer
