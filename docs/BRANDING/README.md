@@ -28,3 +28,5 @@ Got some more ideas for name change. They are as follows:
  - Jing
  - Gimbl
  - Stock Bong
+ - Stock Hub
+ - Stock Central
