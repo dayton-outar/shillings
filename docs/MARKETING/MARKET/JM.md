@@ -415,7 +415,7 @@ Demographics: 40 - 60 y-o age group
 
 2. How much value do you get from the Randy Rowe community?
 
-   ---
+   --
 
 3. How has MyMoneyJA.com helped in your decision-making? (Do you use any other tools for decision-making?)
 
