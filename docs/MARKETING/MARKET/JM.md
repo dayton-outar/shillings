@@ -425,6 +425,10 @@ Demographics: 40 - 60 y-o age group
 
    --
 
+5. Are you satisfied with all the tools you have to make decisions on trading stocks?
+
+   --
+
 **BONUS**:
  - Suggested that a trading platform could be sold to Barita
  - Insight into Randy Rowe's Community and MyMoneyJa.com
