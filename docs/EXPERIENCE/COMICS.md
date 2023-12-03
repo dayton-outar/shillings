@@ -97,7 +97,7 @@ Narrative + Art + Sequential Visual Storytelling = Comics
 > 
 > _It is awkward when copy has to cover for information that should have been supplied visually._
 > 
-> ![Batman riding in Gotham: Good design ](/.attachments/comic.book.subtext.good.design.jpg)
+> ![Batman riding in Gotham: Good design ](/.attachments/comic.book.good.design.jpg)
 > 
 > _When all the needed information is supplied visually, the copy can concentrate on subtext and/or information that visuals can’t easily impart._
 
@@ -113,6 +113,6 @@ Narrative + Art + Sequential Visual Storytelling = Comics
 > 
 > ...
 > 
-> ![Sgt. Rock]()
+> ![Sgt. Rock](/.attachments/comic.book.sgt.rock.jpg)
 > 
 > _When deciding what to show and not show, comics creators have to determine which parts of the overall narrative are expendable. Sometimes, even in action genres, periods of relative inactivity can give insights into characters, add mood, and provide a contrast to the scenes of overt action. Such is the case in this ***Sgt. Rock*** scene drawn by the late legendary artist, editor, and teacher Joe Kubert._
