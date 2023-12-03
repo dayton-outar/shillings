@@ -116,3 +116,90 @@ Narrative + Art + Sequential Visual Storytelling = Comics
 > ![Sgt. Rock](/.attachments/comic.book.sgt.rock.jpg)
 > 
 > _When deciding what to show and not show, comics creators have to determine which parts of the overall narrative are expendable. Sometimes, even in action genres, periods of relative inactivity can give insights into characters, add mood, and provide a contrast to the scenes of overt action. Such is the case in this ***Sgt. Rock*** scene drawn by the late legendary artist, editor, and teacher Joe Kubert._
+> 
+> **Encapsulation**
+> 
+> Comics creators need to consider a number of factors when deciding what to encapsulate from a narrative. These factors include (but are not limited to):
+> - Advancing the story:
+>   
+>   - Showing the information necessary to move the plot forward.
+>
+> - Establishing or reestablishing a scene, characters, or other information:
+>
+>   - In most cases, the first time a setting is seen in a story or issue, the artist needs to establish the scene’s characters and physical environment clearly. Also, when an established environment or character has not been seen by the reader for a while during the course of an issue, it is good to reestablish that scene or character when the focus returns to that locale or character. This reminds readers of information they may have forgotten and also shows them if there have been changes since the scene or characters were last seen.
+>
+>   In addition to the need to establish physical environments, creators need to establish the mood of the scene.
+> 
+> - Suspense/tension:
+> 
+>   - Does the creator wish to conceal or only partially reveal some information to build suspense?
+>
+> - Emphasis:
+> 
+>   - What information should be stressed or made blatant to the reader and what information should be revealed subtly or subconsciously or even withheld?
+> 
+> - Pacing:
+> 
+>   - At what pace does the creator wish the reader to experience the various aspects of the story?
+> 
+> - Marketing:
+> 
+>   - Covers and some splash pages are designed, at least in part, to entice the viewer to pick up and purchase a comic.
+> 
+> If the writer creates a full script, it is his or her job to make all the _reduction_ decisions, sorting out which moments to show in each panel. Full scripts include descriptions of the visual contents for every panel on each page, along with all dialogue, captions, and sound effects. This is part of the reason writers need to understand the principles and techniques of sequential visual storytelling.
+> 
+> In some cases, writers also make _encapsulation_ decisions, describing how far the “camera” will be from the subject or subjects in the panel, how the shot will be cropped, how the panel will be shaped, framed, lit, and so on. However, in many cases, when working from a full script that does not go deeply into panel descriptions, it is the artist who will make the bulk of the encapsulation decisions.
+> 
+> If the artist is also the writer or is working from another writer’s plot (as opposed to a full script), it will be his or her job to decide what to encapsulate and emphasize panel by panel.
+> 
+> Doing so involves another group of decisions:
+> 
+> - How close or far will the camera be from the subject(s)?
+> 
+> - At what angle will the subject(s) be seen?
+> 
+> - Which subjects will be of primary focus and which ones will be secondary?
+> 
+> - In what shape and size will the panel be in which the subject is encapsulated?
+> 
+> - How will the subject or scene be cropped and framed?
+> 
+> - How will the subject be lit and rendered?
+> 
+> - What sort of design balance works best?
+> 
+> If artists need to show Superman flying over Metropolis in a single panel, they have to decide how to frame that scene: the angle of the shot, how to crop it, and how much of the page’s “real estate” it will occupy.
+> 
+> ...
+> 
+> ![Superman over Metropolis](/.attachments/comic.book.superman.over.metropolis.all.jpg)
+> 
+> _The level of importance artists place on a scene and the number of pages they have to play with both affect the way artists frame the scene._
+> 
+> ![Superman over Metropolis](/.attachments/comic.book.superman.over.metropolis.reduced.jpg)
+> 
+> _If page count and space allow, the artist (with his or her editor’s blessing) may use larger and/or more visuals to give the scene a sense of scope, elapsed time, and/or emphasis_
+>
+> **Juxtaposition**
+> 
+> The artist must combine the encapsulated visuals (panels) into a sequence on the page by juxtaposing them next to one another in a desired order.
+> 
+> The order in which the panels are meant to be read should be clear. If a reader’s eye path does not follow the one that the artist intended, the reader will experience a very different, and probably confusing, story.
+> 
+> In addition to juxtaposing the panels, comics creators juxtapose the copy elements (captions, word balloons, sound effects) with the visuals and with other elements within each panel.
+> 
+> The addition of words to a panel creates a juxtaposition that can result in a range of effects.
+> 
+> The juxtaposition of the chosen panels and other visual elements tells the story for the readers, along with the visual information the readers conjure in their heads when filling in the gaps between the juxtaposed panels.
+> 
+> ![Superman soars](/.attachments/comic.book.superman.soars.jpg)
+> 
+> _Sometimes the words are ***redundant*** and simply reinforce what the visual shows. Generally, this is not considered good form and usually is reserved for titles aimed at a young audience or for scenes in which a point has to be made absolutely clear._
+> 
+> ![Superman moves to the call](/.attachments/comic.book.superman.irresistible.call.jpg)
+> 
+> _Complementary juxtaposition between art and words creates a fuller “picture” of the scenario for the reader, going beyond what either the visual or the words could produce alone._
+
+## Chapter 5. ALL ABOUT PANELS
+
+> A comics panel is visual content that encapsulates a moment from a larger narrative. Panels usually juxtapose visual content with words.
