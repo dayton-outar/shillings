@@ -67,7 +67,7 @@ Narrative + Art + Sequential Visual Storytelling = Comics
 > 
 > _This is an establishing shot of Gotham City at night._
 > 
-> ![Gotham City on Fire](/.attachments/comic.books.gotham.on.fire.jpg.jpg)
+> ![Gotham City on Fire](/.attachments/comic.books.gotham.on.fire.jpg)
 > 
 > _In this reestablishing shot, the same section of Gotham that was shown earlier in the story is now ablaze. Showing such a large and previously established area of the city on fire makes it immediately clear that the inferno is not confined to one or two buildings._
 > 
