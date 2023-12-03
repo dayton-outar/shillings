@@ -130,10 +130,10 @@ Published by the Penguin Group
 > 
 > _Resistance_ is the opposite of support and represents a price level or area _over the market_ where selling pressure overcomes buying pressure and a price advance is turned back.
 > 
-> ![Chart Trends: Resistance and Support](/.attachments/chart.trends.resistance.support.png.png)
+> ![Chart Trends: Resistance and Support](/.attachments/chart.trends.resistance.support.png)
 > _Shows rising support and resistance levels in uptrend. Points 2 and 4 are support levels which are usually previous reaction lows. Points 1 and 3 are resistance levels, usually marked by previous peaks._
 > 
-> ![Chart Trends: Resistance and Support - Down Trend](/.attachments/chart.trends.resistance.support.downtrend.png.png)
+> ![Chart Trends: Resistance and Support - Down Trend](/.attachments/chart.trends.resistance.support.downtrend.png)
 > _Shows support and resistance in a downtrend._
 > 
 > In an uptrend, the resistance levels represent pauses in that uptrend and are usually exceeded at some point. In a downtrend, support levels are not sufficient to stop the decline permanently, but are able to check it at least temporarily.
