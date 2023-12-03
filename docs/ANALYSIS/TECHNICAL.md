@@ -107,7 +107,54 @@ Published by the Penguin Group
 > The concept of _trend_ is absolutely essential to the technical approach to market analysis. All of the tools used by the chartist—support and resistance levels, price patterns, moving averages, trendlines, etc.—have the sole purpose of helping to measure the trend of the market for the purpose of participating in that trend. We often hear such familiar expressions as “always trade in the direction of the trend,” “never buck the trend,” or “the trend is your friend.” So let’s spend a little time to define what a trend is and classify it into a few categories.
 > 
 > In a general sense, the trend is simply the direction of the market, which way it’s moving. But we need a more precise definition with which to work. First of all, markets don’t generally move in a straight line in any direction. Market moves are characterized by a series of _zigzags_. These zigzags resemble a series of successive waves with fairly obvious peaks and troughs. _It is the direction of those peaks and troughs that constitutes market trend_.
-
+> 
+> ...
+> 
+> ... trend is usually broken down into the three categories mentioned in the previous chapter. Those three categories are the _major_, _intermediate_, and _near term trends_.
+> 
+> ...
+> 
+> ![Chart Trends: Classification](/.attachments/chart.trends.classification.png)
+> _Example of the three degrees of trend: major, secondary, and near term. Points 1, 2, 3, and 4 show the major uptrend. Wave 2-3 represents a secondary correction within the major uptrend. Each secondary wave in turn divides into near term trends. For example, secondary wave 2-3 divides into minor waves A-B-C._
+>
+> ![Chart Trends: Classification - Real Life Visualization](/.attachments/chart.trends.classification-real.png)
+> _The major trend (over a year) is up during 1997. A short term correction occurred during March. An intermediate correction lasted from August to November (three months). The intermediate correction broke down into three short term trends._
+> 
+> Quite a bit of misunderstanding arises because of different traders’ perceptions as to what is meant by a trend. To long term position traders, a few days’ to a few weeks’ price action might be insignificant. To a day trader, a two or three day advance might constitute a major uptrend. It’s especially important, then, to understand the different degrees of trend and to make sure that all involved in a transaction are talking about the same ones.
+> 
+> As a general statement, most trend-following approaches focus on the intermediate trend, which may last for several months. The near term trend is used primarily for timing purposes. In an intermediate uptrend, short term setbacks would be used to initiate long positions.
+> 
+> ...
+> 
+> The troughs, or reaction lows, are called _support_. The term is self-explanatory and indicates that support is a level or area on the chart _under the market_ where buying interest is sufficiently strong to overcome selling pressure. As a result, a decline is halted and prices turn back up again.
+> 
+> _Resistance_ is the opposite of support and represents a price level or area _over the market_ where selling pressure overcomes buying pressure and a price advance is turned back.
+> 
+> ![Chart Trends: Resistance and Support](/.attachments/chart.trends.resistance.support.png.png)
+> _Shows rising support and resistance levels in uptrend. Points 2 and 4 are support levels which are usually previous reaction lows. Points 1 and 3 are resistance levels, usually marked by previous peaks._
+> 
+> ![Chart Trends: Resistance and Support - Down Trend](/.attachments/chart.trends.resistance.support.downtrend.png.png)
+> _Shows support and resistance in a downtrend._
+> 
+> In an uptrend, the resistance levels represent pauses in that uptrend and are usually exceeded at some point. In a downtrend, support levels are not sufficient to stop the decline permanently, but are able to check it at least temporarily.
+> 
+> ...
+> 
+> ... If the support level is violated, then a trend _reversal_ from up to down is likely.
+> 
+> ...
+> 
+> _Whenever a support or resistance level is penetrated by a significant amount, they reverse their roles and become the opposite_. In other words, a resistance level becomes a support level and support becomes resistance.
+> 
+> ...
+> 
+> ![Chart Trends: Top Reversal](/.attachments/chart.trends.top.reversal.png)
+> _Example of a trend reversal. The failure of prices at point 5 to exceed the previous peak at point 3 followed by a downside violation of the previous low at point 4 constitutes a downside trend reversal. This type of pattern is called a double top._
+> 
+> ![Chart Trends: Bottom Reversal](/.attachments/chart.trends.bottom.reversal.png)
+> _Example of a bottom reversal pattern. Usually the first sign of a bottom is the ability of prices at point 5 to hold above the previous low at point 3. The bottom is confirmed when the peak at 4 is overcome._
+> 
+> 
 
 ## Japanese Candlestick Charting Techniques
 
