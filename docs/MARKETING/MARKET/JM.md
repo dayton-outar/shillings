@@ -350,25 +350,25 @@ Demographics: 40 - 60 y-o age group
 
 ### Long-term Investor
 
-Conrad Nicely - Can't be bothered
+Dayton Outar - Fundamental Investor
 
 Demographics: 40 - 60 y-o age group
 
 1. Where is the market heading?
 
-   --
+   Investors want access to real-time information on stocks and company information
 
 2. How many other persons do you know that trade stocks?
 
-   --
+   I know 5 persons and I know of investment communities
 
 2. How much time do you spend monitoring your investments?
 
-   --
+   About 30 minutes per week
 
 3. What do you look for?
 
-   --
+   Ratios that indicate company performance. Intrinsic value. Technicals that show the lowest price and the highest price of a stock ever.
 
 4. What do you want to get done?
 
@@ -376,23 +376,29 @@ Demographics: 40 - 60 y-o age group
 
 5. Biggest frustration?
 
-   --
+   - It takes too long and too many steps to fund JTrader platform
+   - JTrader could be a lot more user-friendly
+   - JSE information architecture could be improved for stocks and publicly listed companies. It could be more consolidated; have to visit too many pages for related information.
 
 6. How much money can you invest in stocks each month?
 
-   J$20k+ per month
+   J$1k - J$9k per month
 
 7. What about the analytical solutions on the internet?
 
-   --
+   I think Simply Wall Street is the best but you can get carried away with too many multiples that they present. Nonetheless, Simply Wall Street is comprehensive for Fundamental Analysis.
 
 8. What about services provided by brokerages?
 
-   --
+   I think there is a disconnect between the brokers and the JTrader platform. The fact that you have to send email to get their attention about a fund request from the platform and money being sent to their bank account. That part of the online trading experience needs improvement.
+
+   I like the newsletters that they send with all their analytical insights.
+
+   I like the statements but the figures are usually presenting the value of the stocks a month ago.
 
 9. How much are you willing to pay for a service that delivers what you want?
 
-   --
+   US$7 per month
 
 **BONUS**:
  - All my information, even portfolio information needs to be secured. No disclosure of information, even to the DBA.
