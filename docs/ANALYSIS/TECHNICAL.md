@@ -99,8 +99,144 @@ Published by the Penguin Group
 ### Chapter 1. Philosophy of Technical Analysis
 
 > Technical analysis is the study of market action, primarily through the use of charts, for the purpose of forecasting future price trends.
+> 
+> ...
+> 
+> There are three premises on which the technical approach is based:
+> 
+> 1. Market action discounts everything.
+> 2. Prices move in trends.
+> 3. History repeats itself.
+> 
+> ...
+> 
+> The technician believes that anything that can possibly affect the price—fundamentally, politically, psychologically, or otherwise—is actually reflected in the price of that market. It follows, therefore, that a study of price action is all that is required.
+> 
+> ...
+> 
+> There is a corollary to the premise that prices move in trends—_a trend in motion is more likely to continue than to reverse_.
+> 
+> ...
+> 
+> Since these patterns have worked well in the past, it is assumed that they will continue to work well in the future. They are based on the study of human psychology, which tends not to change. Another way of saying this last premise—that history repeats itself—is that the key to understanding the future lies in a study of the past, or that the future is just a repetition of the past.
+> 
+> While technical analysis concentrates on the study of market action, fundamental analysis focuses on the economic forces of supply and demand that cause prices to move higher, lower, or stay the same. ... The intrinsic value is what the fundamentals indicate something is actually worth based on the law of supply and demand.
+> 
+> ...
+> 
+> _The fundamentalist studies the cause of market movement, while the technician studies the effect_.
+> 
+> ...
+> 
+> Usually at the beginning of important market moves, the fundamentals do not explain or support what the market seems to be doing.
+> 
+> ...
+> 
+> Chart reading becomes a shortcut form of fundamental analysis. The reverse, however, is not true. Fundamental analysis does not include a study of price action. It is possible to trade financial markets using just the technical approach. It is doubtful that anyone could trade off the fundamentals alone with no consideration of the technical side of the market.
+> 
+> ... Because of the high leverage factor in the futures markets, timing is especially crucial in that arena.
+> 
+> ... A “buy and hold” strategy doesn’t apply to the futures arena. Both the technical and the fundamental approach can be used in the first phase—the forecasting process. However, the question of timing, of determining specific entry and exit points, is almost purely technical. Therefore, considering the steps the trader must go through before making a market commitment, it can be seen that the correct application of technical principles becomes indispensable at some point in the process, even if fundamental analysis was applied in the earlier stages of the decision. ...
+> 
+> One of the great strengths of technical analysis is its adaptability to virtually any trading medium and time dimension. There is no area of trading in either stocks or futures where these principles do not apply.
+> 
+> ...
+> 
+> The fundamentalist, however, who tends to specialize in only one group, doesn’t have that kind of flexibility.
+> 
+> ...
+> 
+> Rising commodity prices generally hint at a stronger economy and rising inflationary pressure. Falling commodity prices usually warn that the economy is slowing along with inflation. ... As a result, charts of commodity markets like gold and oil, along with Treasury Bonds, can tell us a lot about the strength or weakness of the economy and inflationary expectations. ... Even more impressive is the fact that trends in these futures markets usually show up long before they are reflected in traditional economic indicators that are released on a monthly or quarterly basis, and usually tell us what has already happened.
+> 
+> ...
+> 
+> The pricing structure in futures is much more complicated than in stocks. Each commodity is quoted in different units and increments. Grain markets, for example, are quoted in cents per bushel, livestock markets in cents per pound, gold and silver in dollars per ounce, and interest rates in basis points. The trader must learn the contract details of each market: which exchange it is traded on, how each contract is quoted, what the minimum and maximum price increments are, and what these price increments are worth.
+> 
+> Unlike stocks, futures contracts have expiration dates.
+> 
+> ...
+> 
+> All futures are traded on margin, which is usually less than 10% of the value of the contract. ... Relatively small price moves in either direction tend to become magnified in their impact on overall trading results. For this reason, it is possible to make or lose large sums of money very quickly in futures. Because a trader puts up only 10% of the value of the contract as margin, then a 10% move in either direction will either double the trader’s money or wipe it out. ...
+> 
+> From the standpoint of technical analysis, the high leverage factor makes timing in the futures markets much more critical than it is in stocks. The correct timing of entry and exit points is crucial in futures trading and much more difficult and frustrating than market analysis. Largely for this reason, technical trading skills become indispensable to a successful futures trading program.
+> 
+> ...
+> 
+> _Timing is everything in futures trading_. Determining the correct direction of the market only solves a portion of the trading problem. If the timing of the entry point is off by a day, or sometimes even minutes, it can mean the difference between a winner or a loser. It’s bad enough to be on the wrong side of the market and lose money. Being on the right side of the market and still losing money is one of the most frustrating and unnerving aspects of futures trading. It goes without saying that timing is almost purely technical in nature, because the fundamentals rarely change on a day-to-day basis.
+> 
+> ...
+> 
+> Technical analysis in stocks relies much more heavily on the use of _sentiment indicators and flow of funds analysis_. Sentiment indicators monitor the performance of different groups such as odd lotters, mutual funds, and floor specialists. Enormous importance is placed on sentiment indicators that measure the overall market bullishness and bearishness on the theory that the majority opinion is usually wrong. _Flow of funds_ analysis refers to the cash position of different groups, such as mutual funds or large institutional accounts. The thinking here is that the larger the cash position, the more funds that are available for stock purchases.
+> 
+> ...
+> 
+> The _Random Walk Theory_, developed and nurtured in the academic community, claims that price changes are “serially independent” and that price history is not a reliable indicator of future price direction. In a nutshell, price movement is random and unpredictable. The theory is based on the _efficient market hypothesis_, which holds that prices fluctuate randomly about their intrinsic value. It also holds that the best market strategy to follow would be a simple “buy and hold” strategy as opposed to any attempt to “beat the market.”
+> 
+> ...
+> 
+> ... However, the idea that markets are random is totally rejected by the technical community. If the markets were truly random, no forecasting technique would work.
 
-...
+### Chapter 2. Dow Theory
+
+> Charles Dow and his partner Edward Jones founded Dow Jones & Company in 1882. Most technicians and students of the markets concur that much of what we call technical analysis today has its origins in theories first proposed by Dow around the turn of the century. Dow published his ideas in a series of editorials he wrote for the Wall Street Journal. Most technicians today recognize and assimilate Dow’s basic ideas, whether or not they recognize the source. Dow Theory still forms the cornerstone of the study of technical analysis, even in the face of today’s sophisticated computer technology, and the proliferation of newer and supposedly better technical indicators.
+> 
+> On July 3, 1884, Dow published the first stock market average composed of the closing prices of eleven stocks: nine railroad companies and two manufacturing firms. Dow felt that these eleven stocks provided a good indication of the economic health of the country. In 1897, Dow determined that two separate indices would better represent that health, and created a 12 stock industrial index and a 20 stock rail index. By 1928 the industrial index had grown to include 30 stocks, the number at which it stands today.
+> 
+> ...
+> 
+> Dow applied his theoretical work to the stock market averages that he created; namely the Industrials and the Rails. However, most of his analytical ideas apply equally well to all market averages.
+> 
+> ...
+> 
+> Sound familiar? The idea that the markets reflect every possible knowable factor that affects overall supply and demand is one of the basic premises of technical theory ... The theory applies to market averages, as well as it does to individual markets, and even makes allowances for “acts of God.” While the markets cannot anticipate events such as earthquakes and various other natural calamities, they quickly discount such occurrences, and almost instantaneously assimilate their affects into the price action.
+> 
+> ...
+> 
+> Dow believed that the laws of action and reaction apply to the markets just as they do to the physical universe. He wrote, “Records of trading show that in many cases when a stock reaches top it will have a moderate decline and then go back again to near the highest figures. If after such a move, the price again recedes, it is liable to decline some distance” ...
+> 
+> Dow considered a trend to have three parts, _primary_, _secondary_, and _minor_, which he compared to the tide, waves, and ripples of the sea. The primary trend represents the tide, the secondary or intermediate trend represents the waves that make up the tide, and the minor trends behave like ripples on the waves.
+> 
+> ...
+> 
+> Dow focused his attention on primary or major trends, which he felt usually take place in three distinct phases: an accumulation phase, a public participation phase, and a distribution phase. ... The distribution phase takes place when newspapers begin to print increasingly bullish stories ...
+> 
+> ...
+> 
+> Dow, in referring to the Industrial and Rail Averages, meant that no important bull or bear market signal could take place unless both averages gave the same signal, thus confirming each other. He felt that both averages must exceed a previous secondary peak to confirm the inception or continuation of a bull market. He did not believe that the signals had to occur simultaneously, but recognized that a shorter length of time between the two signals provided stronger confirmation. When the two averages diverged from one another, Dow assumed that the prior trend was still maintained. ...
+> 
+> Dow recognized volume as a secondary but important factor in confirming price signals. Simply stated, _volume should expand or increase in the direction of the major trend_. In a major uptrend, volume would then increase as prices move higher, and diminish as prices fall. In a downtrend, volume should increase as prices drop and diminish as they rally. Dow considered volume a secondary indicator. He based his actual buy and sell signals entirely on closing prices.
+> 
+> ...
+> 
+> It relates a physical law to market movement, which states that an object in motion (in this case a trend) tends to continue in motion until some external force causes it to change direction.
+> 
+> ...
+> 
+> ![Basic Tenets: Failure Swing](/.attachments/basic.tent-failure.swing.png)
+> 
+> _Failure Swing. The failure of the peak at C to overcome A, followed by the violation of the low at B, constitutes a “sell” signal at S._
+> 
+> ![Basic Tenets: Nonfailure Swing](/.attachments/basic.tenet-nonfailure.swing.png)
+> 
+> _Nonfailure Swing. Notice that C exceeds A before falling below B. Some Dow theorists would see a “sell” signal at S1, while others would need to see a lower high at E before turning bearish at S2._
+> 
+> ...
+> 
+> Dow relied exclusively on closing prices. ...
+> 
+> ![Basic Tenet: Failure Swing Bottom](/.attachments/basic.tenet.buy.signal.png)
+>
+> _Failure Swing Bottom. The “buy” signal takes place when point B is exceeded (at B1)._
+> 
+> ...
+> 
+> In response to this criticism, traders must remember that Dow never intended to anticipate trends; rather he sought to recognize the emergence of major bull and bear markets and to capture the large middle portion of important market moves. ...
+> 
+> Dow apparently never intended to use his theory to forecast the direction of the stock market. He felt its real value was to use stock market direction as a barometric reading of general business conditions. We can only marvel at Dow’s vision and genius. In addition to formulating a great deal of today’s price forecasting methodology, he was among the first to recognize the usefulness of stock market averages as a leading economic indicator.
+> 
+> ... 
+> 
+> ... The standard definition of a trend, the classification of a trend into three categories and phases, the principles of confirmation and divergence, the interpretation of volume, and the use of percentage retracements (to name a few), all derive, in one way or another, from Dow Theory.
 
 ### Chapter 4. Basic Concepts of Trend
 
@@ -115,9 +251,11 @@ Published by the Penguin Group
 > ...
 > 
 > ![Chart Trends: Classification](/.attachments/chart.trends.classification.png)
+> 
 > _Example of the three degrees of trend: major, secondary, and near term. Points 1, 2, 3, and 4 show the major uptrend. Wave 2-3 represents a secondary correction within the major uptrend. Each secondary wave in turn divides into near term trends. For example, secondary wave 2-3 divides into minor waves A-B-C._
 >
 > ![Chart Trends: Classification - Real Life Visualization](/.attachments/chart.trends.classification-real.png)
+> 
 > _The major trend (over a year) is up during 1997. A short term correction occurred during March. An intermediate correction lasted from August to November (three months). The intermediate correction broke down into three short term trends._
 > 
 > Quite a bit of misunderstanding arises because of different traders’ perceptions as to what is meant by a trend. To long term position traders, a few days’ to a few weeks’ price action might be insignificant. To a day trader, a two or three day advance might constitute a major uptrend. It’s especially important, then, to understand the different degrees of trend and to make sure that all involved in a transaction are talking about the same ones.
@@ -131,9 +269,11 @@ Published by the Penguin Group
 > _Resistance_ is the opposite of support and represents a price level or area _over the market_ where selling pressure overcomes buying pressure and a price advance is turned back.
 > 
 > ![Chart Trends: Resistance and Support](/.attachments/chart.trends.resistance.support.png)
+> 
 > _Shows rising support and resistance levels in uptrend. Points 2 and 4 are support levels which are usually previous reaction lows. Points 1 and 3 are resistance levels, usually marked by previous peaks._
 > 
 > ![Chart Trends: Resistance and Support - Down Trend](/.attachments/chart.trends.resistance.support.downtrend.png)
+> 
 > _Shows support and resistance in a downtrend._
 > 
 > In an uptrend, the resistance levels represent pauses in that uptrend and are usually exceeded at some point. In a downtrend, support levels are not sufficient to stop the decline permanently, but are able to check it at least temporarily.
@@ -149,9 +289,11 @@ Published by the Penguin Group
 > ...
 > 
 > ![Chart Trends: Top Reversal](/.attachments/chart.trends.top.reversal.png)
+> 
 > _Example of a trend reversal. The failure of prices at point 5 to exceed the previous peak at point 3 followed by a downside violation of the previous low at point 4 constitutes a downside trend reversal. This type of pattern is called a double top._
 > 
 > ![Chart Trends: Bottom Reversal](/.attachments/chart.trends.bottom.reversal.png)
+> 
 > _Example of a bottom reversal pattern. Usually the first sign of a bottom is the ability of prices at point 5 to hold above the previous low at point 3. The bottom is confirmed when the peak at 4 is overcome._
 > 
 > 
