@@ -97,7 +97,7 @@ Narrative + Art + Sequential Visual Storytelling = Comics
 > 
 > _It is awkward when copy has to cover for information that should have been supplied visually._
 > 
-> ![Batman riding in Gotham: Good design ](/.attachments/comic.book.good.design.jpg)
+> ![Batman riding in Gotham: Good design ](/.attachments/comic.book.subtext.good.design.jpg)
 > 
 > _When all the needed information is supplied visually, the copy can concentrate on subtext and/or information that visuals can’t easily impart._
 
