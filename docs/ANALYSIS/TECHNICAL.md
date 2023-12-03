@@ -296,6 +296,50 @@ Published by the Penguin Group
 > 
 > _Example of a bottom reversal pattern. Usually the first sign of a bottom is the ability of prices at point 5 to hold above the previous low at point 3. The bottom is confirmed when the peak at 4 is overcome._
 > 
+> ...
+> 
+> _The longer the period of time that prices trade in a support or resistance area, the more significant that area becomes_. For example, if prices trade sideways for three weeks in a congestion area before moving higher, that support area would be more important than if only three days of trading had occurred.
+> 
+> _Volume is another way to measure the significance of support and resistance_. If a support level is formed on heavy volume, this would indicate that a large number of units changed hands, and would mark that support level as more important than if very little trading had taken place. Point and figure charts that measure the intraday trading activity are especially useful in identifying these price levels where most of the trading took place and, consequently, where support and resistance will be most likely to function.
+> 
+> _A third way to determine the significance of a support or resistance area is how recently the trading took place_. Because we are dealing with the reaction of traders to market movement and to positions that they have already taken or failed to take, it stands to reason that the more recent the activity, the more potent it becomes.
+> 
+> ...
+> 
+> ... Chart analysis is actually a study of human psychology and the reactions of traders to changing market conditions. ...
+> 
+> ...
+> 
+> There is a tendency for round numbers to stop advances or declines. Traders tend to think in terms of important round numbers, such as 10, 20, 25, 50, 75, 100 (and multiples of 1000), as price objectives and act accordingly. These round numbers, therefore, will often act as “psychological” support or resistance levels. A trader can use this information to begin taking profits as an important round number is approached.
+> 
+> ...
+> 
+> One trading application of this principle is to _avoid placing trading orders right at these obvious round numbers_. ... As a general rule, _avoid placing protective stops at obvious round numbers_.
+> 
+> ...
+> 
+> An _up trendline_ is a straight line drawn upward to the right along successive reaction lows ... A _down trendline_ is drawn downward to the right along successive rally peaks ...
+> 
+> ![Chart Trends: Up trendline](/.attachments/chart.trends.up.line.png)
+> 
+> _Example of an up trendline. The up trendline is drawn under the rising reaction lows. A tentative trendline is first drawn under two successively higher lows (points 1 and 3), but needs a third test to confirm the validity of the trendline (point 5)._
+> 
+> ![Chart Trends: Down trendline](/.attachments/chart.trends.down.line.png.png)
+> 
+> _A down trendline is drawn over the successively lower rally highs. The tentative down trendline needs two points (1 and 3) to be drawn and a third test (5) to confirm its validity._
+> 
+> ...
+> 
+> ... Very often, _the breaking of the trendline is one of the best early warnings of a change in trend_.
+> 
+> ![Chart Trends: A Breaking Trendnline](/.attachments/chart.trends.breaking.png)
+> 
+> _Once the up trendline has been established, subsequent dips near the line can be used as buying areas. Points 5 and 7 in this example could have been used for new or additional longs. The breaking of the trendline at point 9 called for liquidation of all longs by signaling a downside trend reversal._
+> 
+> ![Chart Trends: A Breaking Trendnline](/.attachments/chart.trends.breaking.up.png)
+> 
+> _Points 5 and 7 could have been used as selling areas. The breaking of the trendline at point 9 signaled an upside trend reversal._
+> 
 > 
 
 ## Japanese Candlestick Charting Techniques

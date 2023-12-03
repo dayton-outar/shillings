@@ -403,9 +403,9 @@ Demographics: 40 - 60 y-o age group
 **BONUS**:
  - All my information, even portfolio information needs to be secured. No disclosure of information, even to the DBA.
 
- ### Savvy
+ ### Financial Savvy
 
- Owin Watson 
+ Owin Watson - Investor and Businessman
 
  Demographics: 40 - 60 y-o age group
 
@@ -413,45 +413,17 @@ Demographics: 40 - 60 y-o age group
 
    --
 
-2. How many other persons do you know that trade stocks?
+2. How much value do you get from the Randy Rowe community?
+
+   ---
+
+3. How has MyMoneyJA.com helped in your decision-making? (Do you use any other tools for decision-making?)
 
    --
 
-2. How much time do you spend monitoring your investments?
-
-   Randy Rowe Community. (How much value do you get from the community?)
-
-3. What do you look for?
+4. What frustrations do you have with brokerages? (What do you like that they provide?)
 
    --
-
-4. What do you want to get done?
-
-   Make money
-
-5. Biggest frustration?
-
-   --
-
-6. How much money can you invest in stocks each month?
-
-   J$20k+ per month
-
-7. What about the analytical solutions on the internet?
-
-   --
-
-8. What about services provided by brokerages?
-
-   --
-
-9. How much are you willing to pay for a service that delivers what you want?
-
-   --
-
-10. How do you move around stocks to get dividends from different companies?
-
-    --
 
 **BONUS**:
  - Suggested that a trading platform could be sold to Barita
