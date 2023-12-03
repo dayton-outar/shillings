@@ -103,3 +103,4 @@ Drive traffic to site with [Simple Traffic](https://www.simpletraffic.co/).
 ## Videos
 
 1. [How does the stock market work? - Oliver Elfenbaum](https://youtu.be/p7HKvqRI_Bo?si=kmDktQkx80tZcLqb)
+1. [How to Build a Product that Scales into a Company](https://youtu.be/r-98YRAF1dY?si=xcr-K0mXHTtkqqfJ)
