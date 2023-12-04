@@ -424,7 +424,27 @@ Understanding the open and close prices assists traders in gauging market sentim
 
 ### Chapter 4. Reversal Patterns
 
-
+> Technicians watch for price clues alerting them to a shift in market psychology and trend. Reversal patterns are these technical clues. Western reversal indicators include double tops and bottoms, reversal days, head and shoulders, and island tops and bottoms. Yet the term “reversal pattern” is somewhat of a misnomer. Hearing that term may lead you to think of an old trend ending abruptly and then reversing to a new trend. This rarely happens. Trend changes usually occur slowly, in stages, as the underlying psychology shifts gears. A trend reversal signal implies that the prior trend is likely to change, but not necessarily reversing. Compare a trend to a car traveling forward. The car’s red brake lights go on and the car stops. The brake light was the reversal indicator showing that the prior trend (that is, the car moving forward) was about to end. But now that the car is stationary, will the driver then decide to put the car in reverse? Will he or she remain stopped? Will he or she decide to go forward again?
+> 
+> ...
+> 
+> **UMBRELLA LINES**
+> 
+> Umbrella lines are candles with very long lower shadows and a small real body at the top end of the range. These umbrella lines are fascinating in that these lines can be either bullish or bearish according to the market environment.
+> 
+> If an umbrella line emerges during a downtrend, it is a signal that the downtrend should end. In such a scenario, this umbrella line is labeled a _hammer_, as in “the market is hammering out” a base. The actual Japanese word for the hammer is takuri. This word means “trying to gauge the depth of the water by feeling for its bottom.” This is a perfect analogy for the hammer line as the market attempts to grope for a bottom. Coincidently, the hammer line looks likes a hammer with its head and handle.
+> 
+> As mentioned above, the character of umbrella lines changes based on the prevailing trend before the umbrella line. We saw that an umbrella line after a decline is a bullish signal called a hammer. However, if either of the "umbrella" emerges after a rally, it is a potential top reversal signal ominously called _a hanging man_. The name “hanging man” is derived from the fact that it looks like a hanging man with dangling legs.
+> 
+> ...
+> 
+> ![Wal-Mart Stores - Daily (Hammer)](/.attachments/wal-mart.stores.daily-hammer.png)
+> 
+> ...
+> 
+> The hanging man has the same shape as the hammer; the only difference is that a hanging man comes after an advance.
+> 
+> ![Microsoft - Daily (Hanging Man and Hammer)](/.attachments/microsoft-daily.hang.man.png)
 
 ## Videos
 
