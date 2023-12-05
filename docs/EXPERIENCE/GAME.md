@@ -719,4 +719,54 @@ to see. ... Now, we might sort these by importance:
 >
 > Characters definitely make a world more interesting, but for it to be a world at all, it needs something else—a space to exist.
 
-## Chapter 
+## Chapter 21. Worlds Contain Spaces
+
+> ... here are five common ways that designers organize their game spaces.
+> 
+> 1. **Linear**: A surprising number of games are arranged on a linear game space where a player can only move forward and (maybe) back along a line. Sometimes the line has two ends; other times, it loops back on itself.
+> 
+> 2. **Grid**: Arranging your game space on a grid has a lot of advantages. It can be easy for players to understand, it makes it easier to ensure that things line up, it keeps things in proper proportion, and of course, grids are very easy for computers to understand. Your grid need not be a grid of squares—it can also be of ­rectangles, hexagons (popular in war games), or even triangles.
+> 
+> 3. **Web**: A web arrangement is achieved by marking several points on a map and connecting them with paths. This is useful when you have several places you want players to visit but you want to give them a number of different ways to get to them. Sometimes there is meaningful travel along the paths, but other times, travel is instantaneous. Some examples of web-based game spaces are as follows:
+>    1. Fox and Geese
+>    2. Trivial Pursuit
+>    3. Zork
+>    4. Club Penguin
+>    5. Puzzle Quest
+> 
+> 4. **Points in space**: This somewhat uncommon type of game space is usually for games that want to evoke something like wandering a desert and occasionally returning to an oasis, like one does in an RPG. It also is common for games where players get to define the game space themselves. Some examples of this kind of spatial organization are the following:
+>    1. Bocce
+>    2. Animal Crossing
+>    3. Final Fantasy
+> 
+> 5. **Divided space**: This kind of space is most like a real map and is common in games that are trying to replicate a real map. It is achieved by carving the space up into sections in an irregular way. Some examples of games that have divided space are as follows:
+>    1. Risk
+>    2. Axis and Allies
+>    3. Dark Tower
+> 
+> ...
+> 
+> One very important thing to consider whenever you organize a space: What are the landmarks? The very first text adventure game, _Colossal Cave_, had two different mazes. In one, every area was described as “You are in a maze of twisty passages, all alike.” Just as confusing though was the opposite maze, in which every area was described as “You are in a maze of twisty passages, all different.” For it is certainly true that too much chaos is just as monotonous as too much order. Players of _Colossal Cave_ learned to drop items in the mazes, forming landmarks that helped them find their way. Any good game space has built-in landmarks, which help the players find where they are going and also make the space interesting to look at. Landmarks are what players remember and what they talk about, for they are what make a space memorable.
+> 
+> ...
+> 
+> Alexander notes that things that have the nameless quality usually have these aspects:
+> 
+> - They feel **alive**, as if they hold energy.
+> - They feel **whole**, like nothing is missing.
+> - They feel **comfortable**; it is pleasing to be around them.
+> - They feel **free**, not constrained unnaturally.
+> - They feel **exact**, as if they are just how they are supposed to be.
+> - They feel **egoless**, connected to the universe.
+> - They feel **eternal**, as if they have always been and always will be.
+> - They are **free from inner contradictions**.
+> 
+The last of those, “free from inner contradictions,” is tremendously important to any designer, because inner contradictions are at the heart of any bad design. If a device is supposed to make my life easier, and it is hard to use, that is a contradiction. If something is supposed to be fun, and it is boring or frustrating, that is a contradiction. A good designer must carefully remove inner contradictions, and not get used to them, or make excuses for them—so let’s add a tool to our toolbox for removing them.
+
+## Chapter 22. Some Interfaces Create a Feeling of Presence
+
+> Every simulation is a kind of new reality. It is worth thinking about some of the many kinds of reality that we can create:
+> - Logical Reality defines the rules of cause and effect.
+> - Spatial Reality defines how I move through space.
+> - Proprioceptive Reality defines where it feels like my body is.
+> - Social Reality defines how I interact with others.
