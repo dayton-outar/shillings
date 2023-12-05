@@ -770,3 +770,15 @@ The last of those, “free from inner contradictions,” is tremendously importa
 > - Spatial Reality defines how I move through space.
 > - Proprioceptive Reality defines where it feels like my body is.
 > - Social Reality defines how I interact with others.
+> 
+> ...
+> 
+> Unfortunately, presence does not come for free with these technologies. Presence is a fragile illusion, a magician’s trick where one awkward interaction can spoil the whole effect. If you are going to design an experience centered on a feeling of presence, you must consider the disturbing notion that presence might be even more important than gameplay. ... But if the presence is broken or interrupted, the player becomes very aware that they are in a headset, and may even become annoyed by the whole experience, no matter how good the gameplay actually is. ... Those who spend time working in these new media come to realize how fragile an illusion presence really is, and how much effort must be expended to preserve it. To that end, here are six of the greatest dangers to the ­feeling of presence.
+> 
+> ***Presence Breaker #1: Motion Sickness***
+> 
+> When you think about it, the phenomenon of motion sickness is incredibly strange. A person is confronted with unusual motion (say, that of a boat, car, or roller coaster), or the appearance of motion (say, an IMAX movie, or a VR car race), and their body responds by becoming gradually more nauseous, and possibly, ultimately vomiting.
+> 
+> ...
+> 
+> Exactly what triggers motion sickness differs vastly from person to person, but it is possible to create great experiences with no “motion discomfort” by ­following these tips.
