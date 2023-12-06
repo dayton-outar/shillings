@@ -89,3 +89,26 @@
 > Now that we have all the pieces, we can put them together in a (very cumbersome but comprehensive) set of formulas for estimating the return on the investment for a marketing website.*
 > 
 > (Leads x Closing Rate)(Price-Time and Materials) = Profit
+>
+> ![Content Marketing Formulas](/.attachments/content.marketing.formulas.png)
+>
+> ....
+> 
+> Launching the site is just the beginning. There’s still is a lot of work to do, here's what is involved.
+>
+> - The ongoing work to get results in search engines. Search engine marketing takes time.
+> - Create and promote relevant content consistently.
+> - Boost traffic with a new email newsletter on a regular basis.
+> - Following up on web leads and tracking them using a database.
+> 
+> ...
+> 
+> Here are the basic tools for content marketing:
+> 1. Blog
+> 2. Contact Form for Lead Generation
+> 3. Email Service Provider (such as MailChimp)
+> 4. Web Analytics
+> 5. Social Media Presence
+
+## Chapter 2. How it all Works
+
