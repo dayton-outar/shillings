@@ -782,3 +782,74 @@ The last of those, “free from inner contradictions,” is tremendously importa
 > ...
 > 
 > Exactly what triggers motion sickness differs vastly from person to person, but it is possible to create great experiences with no “motion discomfort” by ­following these tips.
+> 
+> 1. **Keep the framerate up**. Consider 60 frames per second (fps) your new absolute acceptable minimum. 90 fps or more should be your goal.
+> 
+> 2. **Avoid virtual camera movement**. I know. You want to make a first person shooter, you want to make a racing game, you want to have a dogfight in space. All of these require a virtual camera that whizzes all over the place while the real camera (the player’s eye) stays still. Well, guess what? Any time you create a disconnect between the eye and those little hairs in the inner ear, your player can become nauseated.
+> 
+> 3. **If you must move the camera, don’t accelerate**. Funny thing about those little hairs in your ears—they can only detect acceleration, not velocity. They can’t tell the difference between zipping down the highway at 80 miles per hour, and sitting perfectly still. What they notice is speeding up and slowing down.
+> 
+> 4. **Hide the edges**. Have you ever been sitting on a bus or train, and suddenly had a feeling of motion, only to look up and realize that your vehicle is not moving at all, but rather the one next to you is? The reason for this sensation of motion is that our brain uses the edges of our visual field to decide how we are moving. Clever VR developers have realized that if they hide the edges of the visual field with what is commonly called a “vignette” they can significantly reduce feelings of motion discomfort.
+> 
+> 5. **Teleport sparingly**. Since virtual motion can cause motion sickness, an obvious choice of travel is teleportation—it gets you there quickly, and causes no motion sickness—perfect, right? Unfortunately, no. Surprisingly, teleportation can be a significant presence breaker. It seems the way your mind creates the illusion of presence is by building a mental 3D model of the space around you. But it can only do this if you have looked at that space. It is a subtle thing, but each time you press that teleport button, you take yourself to place where you have no presence, and you won’t get the presence back until you spend time looking at your surroundings.
+> 
+> 6. **And whatever you do, keep the horizon level**. Certain kinds of motion, virtual or real, are shortcuts to trigger your motion sickness alarm circuit. Rolling the camera in a “barrel roll” style, so that the horizon does cartwheels in front of the player’s eyes, is the quickest shortcut to nausea city. So—don’t do that. The canals in your inner ear that control all this are circular and very good at detecting rotation, so, generally, you should avoid virtual rotation (where the camera rotates separately from the player’s head) of any kind. Part of what makes VR unique is that it lets players really turn around—for real! Use real rotation to let players look around an environment, and avoid virtual rotation whenever possible.
+> 
+> ...
+> 
+> ***Presence Breaker #2: Counter-Intuitive Interactions***
+> 
+> Of course, in any game we create, we want interactions to be clear and intuitive, but in VR, the stakes are much higher. A physical interaction that is confusing or counter-intuitive will break presence in an instant. And in VR, the importance of player interactions matching reality is much higher than in a screen-based game. For example, in a traditional adventure game, objects are often uni-taskers: screwdrivers are for unscrewing and nothing else. Knives are for cutting and nothing else. It is a sort of “key and lock” mentality. But when the phenomenon of presence takes over, and your body thinks the virtual world is real, a great deal more richness of interaction is expected. ...
+> 
+> ***Presence Breaker #3:***
+> 
+> Many players crave thrill and intense action—these are important pleasures in games. And VR is a powerful way to deliver these things. But some designers fail to realize how much more intense VR can be. We have a special nucleus in our brain that is responsible for paying attention to objects that come close to our bodies. Ask someone to put their hand near your face (it doesn’t work with your own hand), and you can feel that nucleus turn on. Traditional videogames cannot activate that nucleus, but VR and AR can. Many of our greatest fears involve bad things happening to our bodies, and VR can be used to make players feel like these things are really happening! VR can make you feel like your body is falling from a great height, like you are drowning, like bees are swarming around you, like creepy monsters are touching you. These things can be thrilling and exciting, but they can also be so overwhelming that people want to rip off the headset and stop the experience. The moment someone thinks “this is too much – I want this to stop,” you have already lost them, because their inner voice is quietly repeating, like a parent to a child, “it’s only pretend… it’s only pretend…” which means your player’s mind is actively fighting against the presence you are trying so carefully to create.
+> 
+> ***Presence Breaker #4: Unrealistic Audio***
+> 
+> If I pick up a virtual coin and hold it in my hand, turning it over to look at front and back, I might be really immersed in what I’m doing if it looks realistic. But if I then drop it, and it makes no sound, I’ll be reminded that the world is fake, and my presence is destroyed. ...
+> 
+> ***Presence Breaker #5: Proprioceptive Disconnect***
+> 
+> Proprioception is more than your sense of where your body is located, it also is your sense of how your body is positioned; your awareness that you are sitting or standing, for example, or that one foot is crossed over the other. In a screen-based videogame, our proprioceptive sense is irrelevant. In VR, making our real and virtual bodies match is key to maintaining presence. If you are seated while playing a VR game that involves your character walking about a room, your body perceives it as fake, and presence is broken. The scale alone is confusing to your body: if your physical body is seated, but your virtual head is six feet off the ground, your body and mind can perceive either that you are floating, or that the world is very small, for, even though you are looking at tall adults eye to eye, your body knows that if you stood up, you’d be the equivalent of eight feet tall! Your mind knows this isn’t possible, so it can create the strange feeling that everything around you is small.
+> 
+> Another type of proprioceptive disconnect involves objects penetrating the player’s body—walking through a virtual table, for example. Players do not like having their bodies penetrated by virtual objects. It feels disconcerting at first, as your mind and body struggle in subconscious fear, but soon it simply breaks presence. The fastest way to bring about a proprioceptive disconnect is to give players awkward virtual bodies that they can see. If visual sense of your body differs from your proprioceptive sense (those fake hands or feet aren’t positioned where your real ones are) your mind quickly rejects the reality as fake. Much better to show no body (your brain doesn’t mind this much, for some reason) than a body slightly out of place. Consider this the uncanny valley of VR avatars.
+> 
+> ***Presence Breaker #6: Lack of Identity***
+> 
+> Presence is the pervasive sense of being somewhere. But to be somewhere you must be someone. Presence and identity are closely entwined. VR filmmakers often fail to understand this. If someone make a screen-based movie of two people talking at a table, and we watch it, it seems quite normal. We are used to screen-based media being a sort of floating eye that flits around scenes invisible to the actors. But if the same movie is filmed with VR, suddenly your body is present, and you start to wonder, “Why are these two people ignoring me? Can’t they see I’m right here?” and of course, your presence in the world immediately makes you wonder about your identity in the world. Failing to address the question of the player’s identity will be a nagging reminder to the player that they aren’t really there.
+> 
+> **Six Presence Builders**
+> 
+> While it is very important to remove all the presence breakers that you can from your experience, it is not enough. Presence doesn’t just happen. Like starting a fire with only flint and tinder, presence must be patiently fostered and encouraged. These six techniques can help.
+>
+> ***Presence Builder #1: Hand Presence***
+> 
+> Because VR and AR are technologies of the body, and not just the eyes, the way we use our bodies during these experiences is very important. And the main way that humans interact with the world is with their hands. Remember our definition of play? “Manipulation that satisfies curiosity.” The very word “manipulate” comes from the Latin word “manus,” which means hand. There is something about seeing one’s own hands that is very special. “Lucid dreaming” is the name for the unusual experience of realizing you are dreaming, yet continuing to experience your dream. This is hard for most of us, for when we realize we are dreaming, our dreams tend to quickly fade. When avid lucid dreamers realize they are dreaming, a common technique they use to stabilize the dream state is to stare at their dream hand. Something about seeing one’s own hand seems to convince the mind that the world is solid and real. ... The strongest and best hand presence occurs when the player is able to meaningfully and naturally manipulate the environment around them.
+> 
+> ***Presence Builder #2: Social Presence***
+> 
+> Humans are social creatures, and a significant amount of our brain is dedicated to processing human faces and gestures. VR and AR have the power to create a special kind of telecommunication, one that feels more natural than a screen-based video call, because of the feeling of presence of another person. Being able to speak and gesture naturally with someone else in VR and AR is a very special experience, one that will become quite common when the number of connected headsets rises over ten million. Even a simple audio phone call creates a form of presence, as you feel you are in a sort of social space with that remote person. The presence created bymaking eye contact and seeing the gestures and movements of another person in the same space with me goes a long way to making a space, and that person, seem real… and if we can hand objects back and forth, all the better.
+> 
+> ***Presence Builder #3: Familiarity***
+> 
+> Remember how we said that in order to feel presence, you must look around your environment so that your mind can build an internal 3D model of it? That is only true when you are in an unfamiliar place. If a familiar location is presented to you, such as a car interior, a fast food counter, or a basketball court, if these types of places are already familiar to you, your brain will fill out the details without you even looking, building presence quite quickly. As we’ve discussed, novelty in games is very important—but giving the right amount of familiarity, especially in your immediate surroundings, can give a feeling of presence that is surprisingly strong.
+> 
+> ***Presence Builder #4: Realistic Audio***
+> 
+> Whatever amount of sound design and integration you normally do on a game, expect to double it for a VR experience, because so much more sound design effort is required to make interactions with objects seem realistic. Partly this is because spatialized sound (the illusion that sounds are coming from a particular location) is powerful and important in VR, but also because realistic sound is very contextual. Sounds echo differently in a small room than they do in a large one. Collision sounds are especially contextual. Dropping a coin on a wooden table sounds very different than dropping it onto a glass one. In a screen-based videogame, the difference might go unnoticed—but in VR, getting these details right does a huge amount to build up presence.
+> 
+> ***Presence Builder #5: Proprioceptive Alignment***
+> 
+> Proprioceptive disconnects degrade presence, but proprioceptive alignment, where your real-life body and virtual body are strongly aligned, does a great deal to build presence. In _I Expect You To Die_, we designed the game for seated players, and so we developed seated scenarios (sitting at a desk, sitting in a car) and it did a great deal to strengthen presence. Many games have been experimenting with novel ways to give strong proprioceptive alignment, such as archery games where your arrows are stored in a quiver on your back. In order to get a new arrow, you must reach over your shoulder and grab it—a very natural and proprioceptively aligned action. As technologies improve, and foot and full-body tracking become the norm, proprioceptive alignment will be even more important, and lead to even stronger presence.
+> 
+> ***Presence Builder #6: Comedy***
+> 
+> It sounds strange, but it is much easier to build presence in a comedic world than in a serious world. ... In a cartoonish comedy world, you don’t expect everything to work right. In fact, discovering the crazy rules of the world is part of the delight! ...
+> 
+> ...
+> 
+> Giving the players reasons to look around is critical, as that helps build presence
+
+## Chapter 23. The Look and Feel of a World Is Defined by Its Aesthetics
+
