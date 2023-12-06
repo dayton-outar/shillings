@@ -36,18 +36,15 @@ A buyer's journey would not be complete without _Buyer Personas_, which is basic
 
 - Build Buyer Persona
 
+- Prepare value proposition for each persona
+
 - Build infographic of critical processes in on-boarding and trading stocks on Stock Exchanges by showing overall landscape
 
 - Determine strategy for brand awareness
 
-- Compare to find gaps on e-commerce platforms that facilitate equities trading such as,
-  - [JTraderPro](https://jtraderpro.jamstockex.com/)
-  - [Sagicor eInvest](https://einvest.sagicorjamaica.com/login)
-  - [JMMB Moneyline](https://moneyline.jmmb.com/)
-
 - Start _smallest viable market_ by inviting a select few to experience the _beta_ version
 
-:bulb: People learn from each other. There's a habit-forming hook there. How can the product be designed so that people can learn from each other easily? List steps involved.
+:bulb: People learn from each other. How can the product be designed so that people can learn from each other easily?
 
 ## Questions for JSE: JCSD
 
