@@ -461,3 +461,7 @@ A bad example is when Jon Snow failed to go up against the _Night King_ in Game 
 > - When about to cross the threshold to return home, the protagonist is once again severely tested. He/she has a closer brush with death and is changed or experiences a **resurrection** on some level.
 >
 > - Having been transformed by the experience, the protagonist **returns home with the elixir** or the reward.
+
+## Chapter 10. ART: DRAWING for VISUAL STORYTELLING
+
+> Symmetrical designs often impart a feeling of formality, stiffness, or solemnity. Asymmetrical design can impart a wide range of feelings.
