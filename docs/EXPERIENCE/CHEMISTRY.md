@@ -112,3 +112,10 @@
 
 ## Chapter 2. How it all Works
 
+> ![Content Marketing Strategy Mind Map](/.attachments/content.marketing.mind.map.jpg)
+> 
+> It all starts with a clear understanding of why you’re in business and how you deliver value to your customers.
+> 
+> 1. **Mission, Vision and Values**: Why are you in business? What is your core offering? What does your company stand for? Know these first, or you’re building your marketing on sand.
+> 
+> 2. **Research: Audience Needs, Market Size, Competitive Analysis**: Know your niche. How do you meet the demands of your audience? What is your place in the market? Are you up against big, consolidated competitors? Or are you in a fragmented market? _Content strategy is the bait to use, but audience strategy is the pond to fish in_.
