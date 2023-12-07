@@ -114,8 +114,26 @@
 
 > ![Content Marketing Strategy Mind Map](/.attachments/content.marketing.mind.map.jpg)
 > 
+> **Strategy**
+> 
 > It all starts with a clear understanding of why you’re in business and how you deliver value to your customers.
 > 
 > 1. **Mission, Vision and Values**: Why are you in business? What is your core offering? What does your company stand for? Know these first, or you’re building your marketing on sand.
 > 
 > 2. **Research: Audience Needs, Market Size, Competitive Analysis**: Know your niche. How do you meet the demands of your audience? What is your place in the market? Are you up against big, consolidated competitors? Or are you in a fragmented market? _Content strategy is the bait to use, but audience strategy is the pond to fish in_.
+> 
+> **Branding**
+> 
+> Now you can create the perception you will project into the market. Branding is the perception of your position in the market, including all your content and imagery. It should be consistent from the first impression throughout the entire experience of each of your visitors and customers.
+> 
+> 3. **Position**: Now you can get specific about your target audience and their unmet needs. What is your unique point of difference? Use a positioning template to guide you through the positioning thought process.
+> 
+>    If you haven’t created your positioning statement yet, there’s a template for you in the Lab section.
+>
+> 4. **Messaging**: How can you best describe the value you provide? What evidence do you have to support your unique point of difference? Align your message with your position and your values. Find a clear and concise voice.
+> 
+> 5. **Visual Standards**: Create a visual continuity through colors, styles and type. Carry this through your website, your offline materials, your social networks, your email marketing and each piece of your content.
+> 
+> **Web Design**
+> 
+> 
