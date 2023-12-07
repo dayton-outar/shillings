@@ -853,3 +853,96 @@ The last of those, “free from inner contradictions,” is tremendously importa
 
 ## Chapter 23. The Look and Feel of a World Is Defined by Its Aesthetics
 
+> One thing you should consider carefully is finding a technical artist for your team. This unusual individual has the eye of an artist and the mind of a computer programmer. A talented technical artist can build bridges between the art team and the engineering team by being able to fluently speak both of their languages and by helping to build tools that make the artists feel in command of the technology and the engineers feel in command of the art. This balance is not something to be taken lightly—when it is not right, it feels like your game is cracked down the middle, but when you achieve it, your game is gorgeous and powerful in ways your players will have never seen before.
+
+## Chapter 24. Some Games Are Played with Other Players
+
+> Clearly, playing with other people is natural and, in fact, the preferred way for us to play games. But why? In this book so far, we have discussed dozens of reasons people play games: for pleasure, for challenge, for judgment, for rewards, for flow, for transcendence, and many more. Although some of those are enhanced by the presence of other players, none of them require that presence. What is it that we specifically seek when playing games with other people? There seem to be five main reasons:
+> 
+> 1. **Competition**: When we think of multiplayer games, competition is usually the first thing that comes to mind—and for good reason. It simultaneously fills ­several kinds of needs and desires for us. All at once, it
+>    1. Allows for a balanced game on a level playing field
+>    2. Provides us with a worthy opponent
+>    3. Gives us an interesting problem to solve
+>    4. Fulfills a deep inner need to determine our skill level relative to someone else in our social circle
+>    5. Allows for games involving complex strategy, choices, and psychology, all possible because of the intelligence and skill of our human opponent
+>
+> 2. **Collaboration**: The opposite of competition, this is the “other way” we like to play together. Collaborative games are enjoyable to us because they
+>    1.	Allow us to partake in game actions and employ game strategies that are impossible with just one person (e.g., one-on-one baseball makes almost no sense)
+>    2.	Let us enjoy the (presumably evolved) deep pleasures that come from group problem solving and being part of a successful team
+>
+> And while some people think of collaborative games as experimental, that is only the case when players are collaborating against an automated opponent. Most collaborative games follow the mold of team sports, which allow all the pleasures of collaboration and the pleasures of competition at the same time.
+> 
+> 3. **Meeting up**: We like to get together with our friends, but it can be socially awkward to just show up and be forced to make conversation on a regular basis. Games, like food, give us a convenient reason to be together, give us something to share, and give us something to focus on that won’t make anyone in the room uncomfortable. Games are a great way for kids and parents to spend time with each other, and many are the friendships held together by a weekly game of chess, golf, tennis, bridge, bingo, basketball, or, more recently, _League of Legends_, _Call of Duty_, or _Words with Friends_.
+> 
+> 4. **Exploring our friends**: And while it is great to have an excuse to meet up with our friends, games let us do something else that we can’t do so easily with just conversation—explore the minds and souls of our friends. In a conversation, we hear a friend’s opinions about likes and dislikes and their stories about the way they and other people have behaved. But these things are all filtered through the friend’s conception of what they think we want to hear. When we play a game with them, however, we get a glimpse of something more like the unvarnished truth. We get to see them solving problems. We get to see them making tough decisions under stress. We get to see them make decisions about when to cut someone a break and when to stab them in the back. We learn who we can trust and who we can’t. As Plato purportedly said, “You can learn more about a man in an hour of play than a year of conversation.”
+> 
+> 5. **Exploring ourselves**: Alone, games let us test the limits of our abilities, finding out what we enjoy and learning what we want to improve at. But when we are with others, we get to explore how we will behave in complex social situations, under stress. Do we have a tendency to let our friends win when they have a bad day, or to crush them unconditionally? Who do we prefer to team with, and why? How do we feel when publicly defeated, and how do we cope with that? How do our strategies differ from others, and why? Who do we choose to imitate, or find ourselves imitating? All these questions, and many others, are explored when we play games with other people. These are not trivial things—they are important things, close to the heart of how we see ourselves and how we relate to other people.
+
+## Chapter 25. Other Players Sometimes Form Communities
+
+> Games are something that inspires real passion in players, so it is not surprising that frequently, communities arise around games.
+> 
+> ...
+> 
+> There is a special feeling that goes with being part of a community. It is hard to describe, but we know it when we feel it. Two psychologists who set out to better understand this sense of community found that it has four primary elements:
+> 
+> 1. **Membership**: Something distinct makes it clear you are part of this group.
+> 2. **Influence**: Being part of this group gives you power over something.
+> 3. **Integration and fulfillment of needs**: Being part of this group does something for you.
+> 4. **Shared emotional connection**: You have some guarantee of sharing emotions about certain events with others in the group.
+> 
+> ...
+> 
+> But why, as a game designer, do you want communities to form around your game? There are three main reasons:
+> 
+> 1. **Being part of a community fills a social need**: People need to feel a part of something
+> 
+> 2. **Longer “period of contagion”**: The personal recommendation of a friend is the most influential factor when purchasing a game. Game designer Will Wright once pointed out that if we truly believe that interest in a game spreads like a virus, it makes sense to study epidemiology. And one thing that we know from epidemiology is that when the period of contagion doubles, the number of people who catch the disease can increase by ten times. “Catching the disease” in our case means buying the game. But what does “period of contagion” for a game mean? It is the time when a player is so excited about a game that they are talking about it constantly with everyone they know. Players who become part of a game community are likely to “stay contagious” for a long time, as the game will become a deeper part of their lives, giving them a lot to talk about. Will was, as usual, ahead of the curve, as virality is now seen as a key component for success in social and mobile games.
+> 
+> 3. **More hours of play**: It is often the case that players start to play a game for the game’s pleasures but stay with it over a long period for the community’s ­pleasures.
+> 
+> ...
+> 
+> Community is complex and involves many different interrelated psychological ­phenomena, but there are some basic things you can do to help foster a community around your game.
+> 
+> ***Community Tip #1: Foster Friendships***
+> 
+> The idea of online friendships seems simple. Just like real friendships, but online, right? But what do we really understand about the nature of friendship? And how can we translate it to a game environment? To have a meaningful online relationship with another person requires three things:
+> 
+> 1. **The ability to talk**: This sounds obvious. But a surprising number of online games have been created that offer players no ability to talk to each other—the designers hoping that some kind of nonverbal communication would happen through play and that would be enough. It is not enough. For a community to form, players must be able to speak to each other freely.
+> 
+> 2. **Someone worth talking to**: You cannot assume that all your players will want to talk to each other, any more than you can assume that strangers on a bus will mingle. The explosion of social media has shown us that most people are mainly interested in connecting with (1) their friends and (2) celebrities. You must have a clear understanding of who your players want to talk to and why.
+> 
+> 3. **Something worth talking about**: The first two items could be satisfied by a good chat room. Games that foster community give the players a steady stream of things to talk about. This can come from the gameplay itself ..., depth of strategy inherent in the game (e.g., strategy discussion is a prime topic for chess communities) or from events, or rule changes that are introduced over time ...
+> 
+> ...
+> 
+> ***Community Tip #2: Put Conflict at the Heart***
+> 
+> Online game pioneer Jonathan Baron makes the point that conflict is at the heart of all communities. A sports team becomes a strong community because they have conflict with other teams. ...
+> 
+> ***Community Tip #3: Use Architecture to Shape Your Community***
+> 
+> In some neighborhoods, people don’t really know their neighbors. In others, ­everyone knows everyone else, and the whole neighborhood has a sense of ­community. Is this because the people are different? No. It is usually a side effect of how the neighborhoods are designed. Neighborhoods that are designed to be walkable (and with meaningful destinations to walk to) give neighbors a chance to communicate. ...
+> 
+> ***Community Tip #4: Create Community Property***
+> 
+> When you can create things in your game that are not just owned by an individual player but by several, it can really encourage players to band together. Perhaps, for example, no individual player can afford to buy a ship in your game, but a group could team up and own it together. This group practically becomes an instant ­community, since they have to communicate frequently and be friendly to each other. ...
+> 
+> ***Community Tip #5: Let Players Express Themselves***
+> 
+> Self-expression is very important in any multiplayer game. And while it is certainly true that players can express themselves through their gameplay strategies and styles of play, why stop there? You are, after all, creating a fantasy world where players can be whatever they would like to: why not let them express that? Rich, expressive avatar creation systems are much beloved by players of online games. So are systems of conversation that allow players to convey emotion or choose colors and styles for their text to display. The purchase of “vanity items” in online games is a key part of monetization ...
+> 
+> ***Community Tip #6: Support Three Levels***
+> 
+> It is important to realize that when designing a game community, you are really designing three separate games for players at different levels of experience. Some might argue there are even more, but there are at the minimum these three:
+> 
+> 1. **Level 1: The newbie**. Players who are new to game communities are often ­overwhelmed. They aren’t yet challenged by the game itself—they are ­challenged just by learning to play the game. In a sense, learning to play the game is the game for them—and so you are obligated to design that learning process so that it is as rewarding as possible. If you don’t, newbies will give up on the game before they really get into it, and you will significantly limit your audience. One of the best ways to make newbies feel rewarded and connected to the game is to create situations where they get to interact meaningfully with more experienced players. Some experienced players like greeting and teaching newbies for their own enjoyment, but if not enough of your players tend to do this, then why not give in-game rewards for helping newbies?
+
+A good system to encourage experienced persons to help a novice is to use a reward system that will give them points to unlock features for a period of time.
+
+> 2. **Level 2: The player**. The player is past the newbie stage. They completely understand the game and are immersed in the game activities and in figuring out how to master them. Most of the design that goes into the game is aimed at this group.
+> 
+> 3. **Level 3: The elder**. For many games, particularly for any online game involving some kind of “leveling” system, there comes a point where the game itself is no longer interesting. Most of the secrets have been discovered, and many of the game pleasures have been squeezed dry. When players reach this state, they tend to leave, seeking a new game with new secrets. Some games, however, manage to retain these elder players by giving them an entirely different game to play—one that befits their level of skill, expertise, and devotion to the game. There is tremendous benefit to keeping elders around, since they are often some of the most vocal advertisers of your game and, further, they are experts about your game, often able to teach you how to improve it. Some typical “elder games” include the following:
+>    1. **A more difficult game**: Often, particularly in MMOs, the middle game is about gradual, clear progression toward a goal: when the goal is reached, then what? Sometimes a different kind of game is presented to the higher-level players, which is much more difficult—so difficult, in fact, that no one can ever consistently master it.
+>    2. **Governance privileges**: Some games give the elder players special levels of responsibility, such as deciding the rules of the game.
