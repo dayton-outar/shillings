@@ -946,3 +946,73 @@ A good system to encourage experienced persons to help a novice is to use a rewa
 > 3. **Level 3: The elder**. For many games, particularly for any online game involving some kind of “leveling” system, there comes a point where the game itself is no longer interesting. Most of the secrets have been discovered, and many of the game pleasures have been squeezed dry. When players reach this state, they tend to leave, seeking a new game with new secrets. Some games, however, manage to retain these elder players by giving them an entirely different game to play—one that befits their level of skill, expertise, and devotion to the game. There is tremendous benefit to keeping elders around, since they are often some of the most vocal advertisers of your game and, further, they are experts about your game, often able to teach you how to improve it. Some typical “elder games” include the following:
 >    1. **A more difficult game**: Often, particularly in MMOs, the middle game is about gradual, clear progression toward a goal: when the goal is reached, then what? Sometimes a different kind of game is presented to the higher-level players, which is much more difficult—so difficult, in fact, that no one can ever consistently master it.
 >    2. **Governance privileges**: Some games give the elder players special levels of responsibility, such as deciding the rules of the game.
+>    3. **The joy of creation**: Players who truly love a game often fantasize about extending it in new ways, particularly when they have grown tired of it. So, why not let them?
+>    4. **Guild management**: When players form groups, these groups often benefit from having organizers. Elders will often do this on their own, but if you give them a strong set of tools to help run their guild, the activity will be all the more appealing to them.
+>    5. **A chance to teach**: Just as many experts in real-world activities enjoy a chance to teach, so do game experts. If you can give them both permission and encouragement to do so, some of them will enjoy serving as ambassadors to the newbies and guides to the regular players. Some online games, such as _Entropia Universe_, give elders who would like to teach special status noting them as experts and teachers, which is something they are generally very proud of.
+> 
+> ...
+> 
+> ***Community Tip #7: Force Players to Depend on Each Other***
+> 
+> Conflict alone cannot create community. The conflict situation must be one where getting aid from other players will help resolve the conflict. ... In
+Toontown Online, our team decided on an unusual rule: players cannot heal themselves during a battle—they can only heal other players. There was a great deal of concern that some players would find the rule frustrating, but after we implemented it, this did not seem to be the case. Instead, it achieved its objectives well. It forced people to communicate (“I need a Toon-up!”) and encouraged them to help each other. ...
+> 
+> ***Community Tip #8: Manage Your Community***
+> 
+> If you believe that community is important to your game experience, you need to do more than just cross your fingers and hope it will happen. Now that games can be updated based on player feedback on an ongoing basis, players expect it. You need to create appropriate tools and systems to let your players communicate and organize, and you may need to have professional community managers who build and maintain a strong feedback loop between designers and players. Think of these managers like gardeners. They don’t create the communities directly, but they plant the seeds for them and encourage them to grow by observing and catering to their specific needs. This is a role of nurturing, listening, and encouraging. ...
+> 
+> ***Community Tip #9: Obligation to Others Is Powerful***
+> 
+> In parts of aboriginal Australia, it is considered rude to give a gift unexpectedly, because doing so creates a burden to give a return gift. This may be a cultural extreme, but obligation to others is something deeply felt in all cultures. If you can create situations where players can make promises to each other
+... or or owe each other favors ..., , players will take them seriously. ... Gifting was responsible for a huge part of the massively viral spread of Facebook
+games. ... Carefully designed systems of player-to-player commitment are an excellent way to get players to play your game on a regular basis and to help build strong community.
+> 
+> ***Community Tip #10: Create Community Events***
+> 
+> Almost all successful communities are anchored by regular events. In the real world, these can be meetings, parties, competitions, practice sessions, or awards ceremonies. And in the virtual world, it’s pretty much the same. Events serve many purposes for a community:
+> 
+> - They give players something to look forward to.
+> - They create a shared experience, which makes players feel more connected to their community.
+> - They punctuate time, giving players something to remember.
+> - They are a guarantee of an opportunity to connect with others.
+> - The knowledge that events are frequent makes players want to keep checking back to find out about which events are coming up.
+> 
+> Players will often create their own events, but why not create some of your own? With an online game, it can be as simple as creating a simple goal for players and sending a mass email.
+
+## Chapter 26. The Designer Usually Works with a Team
+
+> To create a modern videogame, a team of tremendous diversity is required. You need a team of people with a wide variety of artistic, technical, design, and business skills. They generally have very different backgrounds and value very different things. But if your game is going to be a great one, they will all have to pull together and set aside differences and disagreements to make the game as great as it can be.
+> 
+> ...
+> 
+> If you include everyone in the design process, taking every idea and suggestion seriously, you will
+> - Have more ideas to choose from
+> - Weed out flawed ideas quickly
+> - Be forced to view the game from many perspectives
+> - Make everyone on the team feel like they own the design
+
+## Chapter 27. The Team Sometimes Communicates through Documents
+
+> Many novice game designers, and other dreamers, have an interesting vision of how the process of game design works. Not being acquainted with the Rule of the Loop, they believe that the process of game design involves a genius game designer sitting down alone at a keyboard and typing out a glorious and ­perfect game design document. When this masterpiece is complete, all that needs to be done is to hand it to a competent team of programmers and artists and wait for them to turn this shining vision into a reality.
+
+**The Rule of the Loop**: _The more times you test and improve your design, the better your game will be._
+
+> Game documents have exactly two purposes: **memory** and **communication**.
+> 
+> ***Memory***
+> 
+> Humans have terrible memories. A game design will be full of thousands of ­important decisions that define how the game works and why. There is a good chance you will not be able to remember them all. When these brilliant ideas are fresh in your mind, you will likely feel that they are impossible to forget. But two weeks and two hundred design decisions later, it is very easy to forget even the most ingenious of solutions. If you get in the habit of recording your design decisions, it will save you the trouble of having to solve the same problems all over again. And moving the design process from my limited working memory into a document helps me think better—developing an idea on paper or on screen helps me flesh out a creative idea.
+> 
+> ***Communication***
+> 
+> Even if you are blessed with a perfect memory, though, decisions about the design of your game must be communicated to many other people on the team. Documents are a very effective way to do that. And this communication, ..., will be a dialog, for as soon as a decision is put on paper, someone will find a problem with it or come up with a way to make it better. Documents can get more minds on the design faster to more quickly find and fix weaknesses in the game design. So many people need to see and touch these documents; it’s easy to see why Google Docs has become the standard way to write and update game documents.
+> 
+> **Types of Game Documents**
+> 
+> Since the purpose of documents is for memory and communication, the types of documents you will need are defined by what needs to be remembered and what needs to be communicated. It is the rare game where one document serves all necessary purposes—usually it makes sense to create several different kinds of documents. There are six main groups that need to remember and communicate different things, and each generates its own special kind of documents.
+> 
+> ![Game Design Documentation Flow](/.attachments/game.design.documentation.flow.png)
+> 
+> ***Design***
+> 
+> 1. **Game design overview**: 
