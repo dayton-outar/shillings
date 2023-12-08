@@ -1105,12 +1105,84 @@ games. ... Carefully designed systems of player-to-player commitment are an exce
 > 
 > Response number three is the right answer. When someone makes a bad suggestion, it doesn’t mean they are dumb—it just means they are trying to help. And most of the time, when one of these bad suggestions comes up, it is a solution to an unstated problem.
 
-## Chapter 31. 
+## Chapter 31. The Designer Gives the Client a Pitch
 
 > | Type of Idea | Description | Value |
 > |:---          |:---         |   ---:|
-> |Idea          | Just a plain old idea | $0.083 (dime a dozen) |
+> | Idea         | Just a plain old idea | $0.083 (dime a dozen) |
 > | Cool idea    | An idea that captures the imagination | $5 |
 > | Really cool idea | A cool idea, shouted | $5 |
 > | Good idea    | An idea that someone could actually use | $100 |
 > | Good idea in the right place at the right time, sold convincingly | Just what it sounds like | $1,000,000+ |
+>
+> I know that’s silly, but the point is that when you pitch an idea, it won’t be judged on its overall merit—it will be judged by how useful it is, right now, to the person you are pitching it to. Those are the ideas that land deals worth millions. When you pitch a good idea and it gets rejected, don’t grind your teeth—take it to someone who can use it, or put it in your back pocket so you have it ready when its time finally comes.
+
+## Chapter 32. The Designer and Client Want the Game to Make a Profit
+
+> Every business model has its own unique jargon that serves as shorthand for talking about how the game makes money. If you want the money people to take you seriously, learn their language. If you can speak it as well as they do, they will make a place for you at the table. Learn to speak it better than they do, and you will find them deferring to your design decisions every time. Here are some terms you should know.
+> 
+> ***General Game Business Terms***
+> 
+> - **SKU**: Pronounced “skew.” Stands for “stock keeping unit.” It means a unique inventory item for a store. One game might come out as many SKUs, since each different console release is a SKU and each language version (Halo 3 in French) is a SKU. Publishers often measure themselves in terms of how many SKUs they put out in a year.
+> 
+> - **COGS**: No, not like cogs in a machine. This is cost of goods sold. That is, what does it cost, per unit, to actually make the game.
+> 
+> - **Burn rate**: What does it is cost, per month, to keep your studio open? Salaries, benefits, rent, etc.
+> 
+> - **Sold in vs. sold through**: When the retailer buys games from the publisher, they are “sold in,” that is, sold into the store. But when a customer buys the game, then we say it is “sold through.” Since the publisher has to buy back titles the retailer can’t sell, the number of sold-in and sold-through titles might be very different. If a boastful publisher brags to you that a title has sold 1.5 million copies, and it’s just been out for a week, you can often burst his bubble by asking “sold in or sold through?” In the end, only “sold through” matters.
+> 
+> - **Units sold**: Primarily important for retail and direct download games, this is simply how many times the game has been purchased. When pitching a new game, everyone will be trying to make determinations about how many units it will sell—often based on how well similar games have sold.
+> 
+> - **Breakeven**: How many units of the game have to be sold before the publisher makes back the money they put into the game. For example, if the game cost $400,000 to develop and market, and you collect $5 for every unit sold, breakeven will be at 80,000 units sold. Below that, you lose money—above that, you make profit.
+> 
+> ***Free-to-Play Business Terms**
+>
+> - **Churn**: What percent of players do you lose each month? Ideally, this number is zero. The bigger the churn, the worse your retention, and everyone will ask “What can we do to keep them playing?”
+> 
+> - **Cost of acquisition**: How much do you have to spend, on average, to get someone to download and play your game?
+> 
+> - **DAU**: daily active users. How many people played your game in the last twenty four hours? This is the easiest fact about an F2P game to measure, and obviously bigger is better, so DAU gets a lot of attention.
+> 
+> - **MAU**: monthly active users. How many players played your game in the last month? Wait a second, shouldn’t this just be DAU×30? No. If you have the same set of people playing your game every day, then your MAU will equal your DAU. If you have high churn, your MAU will be much greater than your DAU. Much is made of the MAU/DAU ratio.
+> 
+> - **ARPU**: average revenue per user. Typically this is quoted monthly. In other words, figure out how much money is collected in the last thirty days, and divide it by your MAU, and that gives you your ARPU.
+> 
+> - **ARPPU**: average revenue per paying user. That is, just looking at the players who pay money, how much to do they pay, on average? Like ARPU, this is also usually calculated on a monthly basis. This number will be higher (usually much higher) than your ARPU.
+> 
+> - **LTV**: lifetime value. How much money are you making from the average player from when they first try your game till the time when they quit and never play again? This is a hard number to calculate, but it is very important, since it tells you how much you can safely spend to acquire new players. If the LTV of your average player is $5, it is a reasonable idea to spend $4 to acquire a new player, because eventually you’ll make a dollar from them. But if your LTV is $3, spending $4 would be foolish.
+>
+> - **K-factor**: This is a term borrowed from the world of viral marketing, who borrowed it from the world of medicine. It is simply this: How many other new ­players does your average player bring in? If your game is very viral, and everyone is getting their friends to play, your k-factor is high. A high k-factor is very important, because strong virality drastically lowers the cost of acquisition.
+> 
+> - **Whale**: This unflattering term refers to players that pay A LOT for F2P games. Some will pay hundreds or even thousands of dollars if it helps them succeed. F2P designers pay a lot of attention to whales, as they can constitute a significant percentage of revenues for a game. One study found that 50% of game revenue comes from only 0.15% of players. If 50% of your revenue comes from whales, and you just found a way to get the whales to spend double what they normally do, that’s a big deal.
+>
+> ...
+> 
+> Try this: for whatever platform you care about most, make a list, right now, of the top ten moneymaking videogames of the last year. After you make your list, go on the web and compare reality to your list. If you had a perfect match, good job. If not, you should think about why you were off base. Did you not realize that titles based on movie franchises were so popular? Did you forget about F2P games? Did you think Pokémon wouldn’t be on the list? Did you assume that the games you liked best were the games everyone else liked? I can guarantee you that any funder you pitch to can name the top ten games. Why? Because the game industry is a hit-driven business. Publishers make their money off of big hits, and so they study the hits scrupulously, in an attempt to understand what made them successful.
+> 
+> ...
+> 
+> ... the challenge now is to stand out among the thousands of competitors.
+> 
+> Most people avoid barriers when they see them. They feel more comfortable following the crowd. But following the crowd means eventually fighting the crowd. Many successful developers have found that choosing the road less traveled by has indeed made all the difference.
+
+## Chapter 33. Games Transform Their Players
+
+> Games are one of many activities that people engage in to try to maintain and control their mood and emotional state. People play games to try to
+> 
+> - **Vent anger and frustration**: Games, particularly sports involving a lot of physical activity (football, basketball) or videogames involving a lot of fast action and battles, can be a cathartic way to “take out your feelings” on someone else in the safe world of the game.
+> 
+> - **Cheer up**: When a person is depressed, whimsical games with funny situations (Cranium, Mario Party) can be a way to take your mind off your troubles and remember that you can still have fun.
+> 
+> - **Gain perspective**: There are times when our troubles loom large on us and little things seem like they are the end of the world. Playing games gives us some distance from our real-world problems, so when we return, we more easily see them for what they are.
+> 
+> - **Build confidence**: After a few real-life failures, it is easy to start to feel like you aren’t good at anything, which can lead to a feeling that everything in your life is beyond your control. Playing a game where your choices and actions can lead to a successful outcome can give a feeling of mastery that helps remind you that you can succeed and that you have some control over your destiny.
+> 
+> - **Relax**: Sometimes we are simply unable to let go of our worries, because of either their size or their sheer number. Games force our brains to engage with something completely unconnected to our worries, letting us escape them for a while and giving us a much needed “emotional rest.”
+> 
+> ...
+> 
+> And interactive demonstration is one place that games and simulations excel. Education researchers frequently refer to Miller’s pyramid of learning:
+>
+> 
+> 
+> In this model, being able to do something is the pinnacle of knowledge, and game-based learning is almost entirely focused on doing.
