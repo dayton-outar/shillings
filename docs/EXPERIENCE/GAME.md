@@ -1183,6 +1183,6 @@ games. ... Carefully designed systems of player-to-player commitment are an exce
 > 
 > And interactive demonstration is one place that games and simulations excel. Education researchers frequently refer to Miller’s pyramid of learning:
 >
-> 
+> ![Pyramid of Learning](/.attachments/pyramid.of.learning.png)
 > 
 > In this model, being able to do something is the pinnacle of knowledge, and game-based learning is almost entirely focused on doing.
