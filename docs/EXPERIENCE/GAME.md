@@ -1135,7 +1135,7 @@ games. ... Carefully designed systems of player-to-player commitment are an exce
 > 
 > - **Breakeven**: How many units of the game have to be sold before the publisher makes back the money they put into the game. For example, if the game cost $400,000 to develop and market, and you collect $5 for every unit sold, breakeven will be at 80,000 units sold. Below that, you lose money—above that, you make profit.
 > 
-> ***Free-to-Play Business Terms**
+> ***Free-to-Play Business Terms***
 >
 > - **Churn**: What percent of players do you lose each month? Ideally, this number is zero. The bigger the churn, the worse your retention, and everyone will ask “What can we do to keep them playing?”
 > 
