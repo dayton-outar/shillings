@@ -32,3 +32,4 @@ Got some more ideas for name change. They are as follows:
  - Stock Central
  - Stock Bib
  - Stock Tip
+ - Stock Deck
