@@ -445,6 +445,8 @@ Understanding the open and close prices assists traders in gauging market sentim
 > The hanging man has the same shape as the hammer; the only difference is that a hanging man comes after an advance.
 > 
 > ![Microsoft - Daily (Hanging Man and Hammer)](/.attachments/microsoft-daily.hang.man.png)
+> 
+> **THE ENGULFING PATTERN**
 
 ## Videos
 

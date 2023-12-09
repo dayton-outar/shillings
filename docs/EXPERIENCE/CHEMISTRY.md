@@ -136,4 +136,96 @@
 > 
 > **Web Design**
 > 
+> ...
 > 
+> 7. **Keyword Research**: People are looking for you right now. If you find out what they’re searching for, you can align pages on the website with phrases that they’re searching for. Make sure to research keywords before you make the sitemap.
+> 
+> ...
+> 
+> 10. **Moodboards**: If the wireframes are about structure, the moodboards are about style. Here’s where the visual standards are executed online. Moodboards set background colors, button styles and type treatments for headers, links and body text.
+> 
+> ...
+> 
+> **Website Content**
+> 
+> You’ll create the website content during the web design process. Once the sitemap is final, the full scope of the content requirements is set. Finalize the initial content for the main marketing pages before development is complete, or it will delay the launch.
+> 
+> 14. **Strategy**: What questions does your audience have? What concerns? What do they desire, fear, trust and love? The website content topics and tone must align with the people who will be reading it. Create personas if necessary.
+> 
+> 15. **Write**: Write with these readers in mind [Buyer Personas]. Respect the time of the readers and be concise. Think ahead about traffic and use the target phrases. Pay close attention to formatting and internal linking. Select images and create videos that build credibility. Put your best foot forward, but be humble.
+> 
+> ...
+> 
+> **Create Content**
+> 
+> A website without a steady stream of useful content is just an online brochure. _It has no pulse_. It is simply an online advertisement. But add useful content and suddenly, there’s a bigger reason to visit. There’s a reason to share, to link and to open the newsletters. Content generates the trust that generates the fans, the leads and the sales.
+> 
+> 19. **Content Marketing Strategy**: A sustainable content marketing plan is based on the resources available: people, money and time, both internally and from vendors and partners. An effective content marketing plan is based on topics, tone and frequency that align with the needs of the audience. Personas and publishing calendars will help.
+> 
+> ...
+> 
+> 20. **Research**: A carefully researched article is more useful to your audience than an opinion piece. Visitors are more likely to search for, share, bookmark and read thorough “how-to” posts. Do your research and create something valuable. Surveys and original research with evidence are among the highest-value content on the web.
+> 
+> 21. **Create**: Write the posts, record the podcasts or shoot the videos—whichever _format_ is best for your audience. Use a ghostwriter, content template, content checklist or restaurant napkin—whichever _method_ is best for you and your team.
+> 
+> 22. **Curate**: Repurpose content from other sources, but add your own insights and perspective. Interviews, event recaps and article round-ups are all efficient ways to produce high-value content quickly.
+> 
+> ...
+> 
+> **Content Promotion**
+> 
+> Now we’re ready to promote our content. It’s not enough to just publish. Our focus here is content marketing, not advertising. That means making your content visible through search engine optimization, social media and email marketing. It’s time to market your marketing.
+> 
+> **Search Engine Optimization**
+> 
+> Ranking in search engines can provide a durable, consistent source of traffic. It requires research, careful writing, and a credible website and domain. This means enough link popularity to compete for the phrases you’re targeting.
+> 
+> 25. **Keyword Research**: As with web page content, blog posts and other content marketing should be aligned with keyphrases. As before, select keyphrases based on search volume, competition and relevance. ...
+> 
+> 26. **Guest Blogging**: Your content shouldn’t be limited to your own site. Writing high-quality content and submitting it to relevant blogs is good for branding and SEO. It’s a way to put your message in front of a new audience and make new friends.
+>
+> 27. **Search-Savvy PR**: Public relations activity can also create great linking opportunities. PR professionals who know the value of links take advantage of any media attention to seek authoritative links to specific web pages and blog posts.
+> 
+> 28. **Other Marketing Activity**: Of course, this goes beyond search optimization, but it’s worth noting that all kinds of offline marketing have potential search benefits. Events, partnerships, advertising, association memberships and sponsorships can all create link opportunities.
+> 
+> **Social Media**
+>
+> Social media marketing is a powerful channel for promoting content and an indispensable tool for online networking. Both of these outcomes are important for lead generation. Great social media marketing includes content promotion, content curation and one-to-one conversation.
+> 
+> 29. **Research**: Find specific people to connect with, such as prospects, bloggers, journalists, editors and influencers. Build lists of people to watch. Carefully research publications and blogs before pitching content.
+> 
+> 30. **Pitch**: For both PR and guest blogging, pitching content goes handin-hand with social media. Use social channels to build stronger connections gradually. Submit content with humility and sensitivity to the audience of the blog or publication. Always be thoughtful of editors’ time.
+> 
+> 31. **Social Sharing**: Post your content on the social networks where your audience spends time. Don’t be shy. Believe in your content and share each post multiple times over days, weeks and months. Deliberately share the post with people who will love what you wrote on social media and even with personal emails.
+> 
+> 32. **Conversation**: Don’t let your social stream fill up with promotional posts. Talk to people! Use social media as a tool for networking. When possible, move the conversation from casual mentions on Twitter to email, phone and face-to-face meetings.
+> 
+> **Email Marketing**
+>
+> Search engines and social networks are all owned by companies—but your email list belongs to you and your business. An engaged list of subscribers who look forward to your content is one of the most powerful tools for nurturing and generating leads.
+> 
+> 33. **Design and Production**: Your email template should be lightweight, mobile-friendly and easy to manage. Your subject line should be descriptive but leave room for curiosity. You should craft your teaser text and call to action to maximize clickthroughs.
+> 
+> 34. **Timing and Frequency**: When is your audience most likely to open? Friday at lunch or Saturday morning? How often should you send email? If your sales cycle is long, you may only need to send something monthly. Focus on quality, not quantity. Grow your audience by politely inviting your current prospects to join your list.
+> 
+> 35. **Testing**: Email marketing is easy to track, so each email is an opportunity for measurement and improvement. Use A/B test subject lines and experiment with timing. Add tracking codes using the Google URL Builder to compare campaigns. Keep experimenting and improving.
+>
+> ...
+> 
+> **Analytics**
+> 
+> Analytics is a decision support tool. Use it to do real analysis and check the results of experiments. The two most important numbers for lead generation are total traffic and conversion rate. Focus all your efforts on these two numbers.
+> 
+> 37. **Visitors and Overall Traffic Levels**: Adjusting for seasonality, is traffic up or down? Is your content attracting more visitors over time? Are the visitors bouncing after one page or going deeper into your website?
+> 
+> 38. **Traffic Sources**: Where are visitors coming from? Which of your promotion channels are effective? Which keyphrases, email campaigns and social channels are pulling in visitors?
+> 
+> 39. **Content Performance**: Which pages are connecting with visitors? Which topics are getting traction? Which are most successful at generating traffic and conversions?
+> 
+> 40. **Conversions**: The bottom line is the total number of leads or ecommerce sales. The total traffic times your conversion rate equals success. Other conversions include newsletter subscribers, job applicants and event registrants. Social follows are also conversions, but they don’t appear in Analytics.
+
+## Chapter 3. Traffic Sources
+
+> ...
+> 
+> As a content marketer, you must plan to generate traffic _through activity_. Let’s recategorize the traffic sources to align them with our three main content marketing techniques: search engine optimization, social media and email marketing.
