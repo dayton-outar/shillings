@@ -332,15 +332,158 @@ Published by the Penguin Group
 > 
 > ... Very often, _the breaking of the trendline is one of the best early warnings of a change in trend_.
 > 
-> ![Chart Trends: A Breaking Trendnline](/.attachments/chart.trends.breaking.png)
+> ![Chart Trends: A Breaking trendline](/.attachments/chart.trends.breaking.png)
 > 
 > _Once the up trendline has been established, subsequent dips near the line can be used as buying areas. Points 5 and 7 in this example could have been used for new or additional longs. The breaking of the trendline at point 9 called for liquidation of all longs by signaling a downside trend reversal._
 > 
-> ![Chart Trends: A Breaking Trendnline](/.attachments/chart.trends.breaking.up.png)
+> ![Chart Trends: A Breaking trendline](/.attachments/chart.trends.breaking.up.png)
 > 
 > _Points 5 and 7 could have been used as selling areas. The breaking of the trendline at point 9 signaled an upside trend reversal._
 > 
+> ...
 > 
+> It was mentioned earlier that support and resistance levels became the opposite once violated. The same principle holds true of trendlines. In other words, an up trendline (a support line) will usually become a resistance line once it’s decisively broken. A down trendline (a resistance line) will often become a support line once it’s decisively broken. This is why it’s usually a good idea to project all trendlines as far out to the right on the chart as possible even after they’ve been broken.
+>
+> This brings us to another interesting use of the trendline—the _fan principle_. ... The term “fan principle” derives from the appearance of the lines that gradually flatten out, resembling a fan. _The important point to remember here is that the breaking of the third line is the valid trend reversal signal_.
+> 
+> ![Chart Trends: Fan Principle - Breaking Up trend](/.attachments/chart.trends.fan.principle-1.png)
+>
+> _Example of the fan principle. The breaking of the third trendline signals the reversal of a trend. Notice also that the broken trendlines 1 and 2 often become resistance lines._
+> 
+> ![Chart Trends: Fan Principle - Breaking Down trend](/.attachments/chart.trends.fan.principle-2.png)
+> 
+> _The fan principle at a bottom. The breaking of the third trendline signals the upside trend reversal. The previously broken trendlines (1 and 2) often become support levels._
+> 
+> ...
+> 
+> In examining the three lines in the fan principle, it’s interesting to note how often the number three shows up in the study of technical analysis and the important role it plays in so many technical approaches. For example, the fan principle uses three lines; major bull and bear markets usually have three major phases (Dow Theory and Elliott Wave Theory); there are three kinds of gaps (to be covered shortly); some of the more commonly known reversal patterns, such as the triple top and the head and shoulders, have three prominent peaks; there are three different classifications of trend (major, secondary, and minor) and three trend directions (up, down, and sideways); among the generally accepted continuation patterns, there are three types of triangles—the symmetrical, ascending, and descending; there are three principle sources of information—price, volume, and open interest. For whatever the reason, the number three plays a very prominent role throughout the entire field of technical analysis.
+> 
+> ...
+> 
+> ![Chart Trends: Relative Steepness](/.attachments/chart.trends.steepness.png)
+> 
+> _Most valid trendlines rise at an angle approximating 45 degrees (see line 2). If the trendline is too steep (line 1), it usually indicates that the rate of ascent is not sustainable. A trendline that is too flat (line 3) suggests that the uptrend is too weak and probably suspect. Many technicians use 45 degree lines from previous tops or bottoms as major trendlines._
+> 
+> ...
+> 
+> In the case of an accelerating trend, sometimes several trendlines may have to be drawn at increasingly steeper angles. In my experience, however, where steeper trendlines become necessary, it is best to resort to another tool—_the moving average_—which is the same as a curvilinear trendline. One of the advantages of having access to several different types of technical indicators is being able to choose the one most appropriate for a given situation. All of the techniques covered in this book work well in certain situations, but not so well in others. By having an arsenal of tools to fall back on, the technician can quickly switch from one tool to another that might work better in a given situation. An accelerated trend is one of those cases where a moving average would be more useful than a series of steeper and steeper trendlines.
+> 
+> ...
+>
+> The _channel line_, or the _return line_ as it is sometimes called, is another useful variation of the trendline technique. Sometimes prices trend between two parallel lines—the basic trendline and the channel line. Obviously, when this is the case and when the analyst recognizes that a channel exists, this knowledge can be used to profitable advantage.
+> 
+> ...
+> 
+> ![Chart Trends: Channel Line](/.attachments/chart.trends.channel.line.png)
+> 
+> _Example of a trend channel. Once the basic up trendline is drawn (below points 1 and 3) a channel, or return, line (dotted line) can be projected over the first peak at 2, which is parallel to the basic up trendline._
+> 
+> ...
+> 
+> The breaking of the major trendline indicates an important change in trend. But the breaking of a rising channel line has exactly the opposite meaning, and signals an acceleration of the existing trend. Some traders view the clearing of the upper line in an uptrend as a reason to add to long positions.
+> 
+> ![Chart Trends: Channel Line Breaking](/.attachments/chart.trends.channel.line.breaking.png)
+> 
+> _The failure to reach the upper end of the channel is often an early warning that the lower line will be broken. Notice the failure to reach the upper line at point 5 is followed by the breaking of the basic up trendline at point 6._
+> 
+> Another way to use the channel technique is to spot failures to reach the channel line, usually a sign of a weakening trend. The failure of prices to reach the top of the channel (at point 5 in chart above) may be an early warning that the trend is turning, and increases the odds that the other line (the basic up trendline) will be broken. As a general rule of thumb, the failure of any move within an established price channel to reach one side of the channel usually indicates that the trend is shifting, and increases the likelihood that the other side of the channel will be broken.
+> 
+> ![Chart Trends: Breaking Up](/.attachments/chart.trends.channel.line.break.up.png)
+> 
+> _When the upper channel line is broken (as in wave 5), many chartists will redraw the basic up trendline parallel to the new upper channel line. In other words, line 4-6 is drawn parallel to line 3-5. Because the uptrend is accelerating, it stands to reason that the basic up trendline will do likewise._
+> 
+> ![Chart Trends: Breaking Down](/.attachments/chart.trends.channel.line.break.down.png)
+> 
+> _When prices fail to reach the upper channel line, and a down trendline is drawn over the two declining peaks (line 3-5), a tentative channel line can be drawn from the low at point 4 parallel to line 3-5. The lower channel line sometimes indicates where initial support will be evident._
+> 
+> Channel lines have measuring implications. _Once a breakout occurs from an existing price channel, prices usually travel a distance equal to the width of the channel_. Therefore, the user has to simply measure the width of the channel and then project that amount from the point at which either trendline is broken.
+> 
+> It should always be kept in mind, however, that of the two lines, the basic trendline is by far the more important and the more reliable. The channel line is a secondary use of the trendline technique. But the use of the channel line works often enough to justify its inclusion in the chartist’s toolkit.
+> 
+> ... after a particular market move, prices retrace a portion of the previous trend before resuming the move in the original direction. These countertrend moves tend to fall into certain predictable percentage parameters. The best known application of the phenomenon is the 50% _retracement_. ...
+> 
+> Besides the 50% retracement, there are minimum and maximum percentage parameters that are also widely recognized—_the one-third and the two-thirds retracements_. In other words, the price trend can be divided into thirds. Usually, a minimum retracement is about 33% and a maximum about 66%. What this means is that, in a correction of a strong trend, the market usually retraces at least a third of the previous move. This is very useful information for a number of reasons. If a trader is looking for a buying area under the market, he or she can just compute a 33-50% zone on the chart and use that price zone as a general frame of reference for buying opportunities.
+> 
+> ![Chart Trends: Retracement](/.attachments/chart.trends.retracement.png)
+> 
+> _Prices often retrace about half of the prior trend before resuming in the original direction. This example shows a 50% retracement. The minimum retracement is one-third and the maximum, two-thirds of the prior trend._
+> 
+> The maximum retracement parameter is 66%, which becomes an especially critical area. If the prior trend is to be maintained, the correction must stop at the two-thirds point. This then becomes a relatively low risk buying area in an uptrend or selling area in a downtrend. If prices move beyond the two-thirds point, the odds then favor a trend reversal rather than just a retracement. The move usually then retraces the entire 100% of the prior trend.
+> 
+> You may have noticed that the three percentage retracement parameters we’ve mentioned so far—50%, 33%, and 66%—are taken right from the original Dow Theory. When we get to the Elliott Wave Theory and Fibonacci ratios, we will see that followers of that approach use percentage retracements of 38% and 62%. I prefer to combine both approaches for a minimum retracement zone of 33-38% and a maximum zone of 62-66%. Some technicians round off these numbers even further to arrive at a 40-60% retracement zone.
+> 
+> ![Chart Trends: Dow Theory Retracements](/.attachments/chart.trends.dow.elliot.fibonacci.png)
+> 
+> _The three horizontal lines mark the 38%, 50%, and 62% retracement levels measured from the April 1997 low to the August high. The first decline fell to the 38% line, the second decline to the 62% line, and the third near the 50% line. Most corrections will find support in the 38% to 50% retracement zones. The 38% and 62% lines are Fibonacci retracements and are popular with chartists._
+
+Fibonacci retracement levels are used in technical analysis because of their perceived significance in identifying potential levels of support and resistance in financial markets. The Fibonacci sequence and its associated ratios are believed to reflect natural patterns and occurrences found in various aspects of life, including financial markets.
+
+The significance lies in the observation that these ratios, derived from the Fibonacci sequence (like 23.6%, 38.2%, 50%, 61.8%, etc.), tend to correspond with levels where price corrections often occur within a larger trend. Here are a few reasons why they are used:
+
+1. **Nature's Presence**: The Fibonacci sequence and ratios appear in natural phenomena, from the arrangement of leaves on plants to the proportions of the human body. This prevalence in nature leads some to believe that these ratios may also influence market behavior.
+
+2. **Psychological Levels**: Many traders and analysts believe that these Fibonacci levels are psychologically important to market participants. As a result, when these levels are reached, traders may buy or sell, causing price reactions.
+
+3. **Self-Fulfilling Prophecy**: The widespread use of Fibonacci retracements by traders and analysts means that these levels often become self-fulfilling prophecies. As more people use and act upon these levels, they can impact market behavior.
+
+4. **Support and Resistance**: The levels derived from the Fibonacci sequence are believed to represent potential areas of support (where prices may stop falling) or resistance (where prices may stop rising) within a larger trend.
+
+However, it's important to note that while Fibonacci retracements are widely used, they are not foolproof indicators. Market movements are influenced by various factors, and these levels should ideally be used in conjunction with other technical analysis tools and indicators for more robust trading decisions.
+
+Confidence Level: High
+
+Sources:
+1. Investopedia - Fibonacci Retracement: https://www.investopedia.com/terms/f/fibonacciretracement.asp
+2. Fibonacci Trading: How to Master the Time and Price Advantage by Carolyn Boroden
+
+<image src="/.attachments/chatgpt-logo.png" alt="Chat GPT Logo" width="16" height="16" />
+
+> Speaking of thirds, let’s touch on another technique that combines the trendline with percentage retracements—speedlines. This technique, developed by Edson Gould, is actually an adaptation of the idea of dividing the trend into thirds. The main difference from the percentage retracement concept is that the speed resistance lines (or speedlines) measure the rate of ascent or descent of a trend (in other words, its speed).
+> 
+> To construct a bullish _speedline_, find the highest point in the current uptrend. From that high point on the chart, a vertical line is drawn toward the bottom of the chart to where the trend began. That vertical line is then divided into thirds. A trendline is then drawn from the beginning of the trend through the two points marked off on the vertical line, representing the one-third and two-thirds points.
+> 
+> In a downtrend, just reverse the process. Measure the vertical distance from the low point in the downtrend to the beginning of the trend, and draw two lines from the beginning of the trend through the one-third and two-thirds points on the vertical line.
+> 
+> ![Chart Trends: Speedline](/.attachments/chart.trends.speedline.png)
+> 
+> _Examples of speed resistance lines in an uptrend. The vertical distance from the peak to the beginning of the trend is divided into thirds. Two trendlines are then drawn from point 1 through points 2 and 3. The upper line is the 2/3 speedline and the lower, the 1/3. The lines should act as support during market corrections. When they’re broken, they revert to resistance lines on bounces. Sometimes these speedlines intersect price action._
+> 
+> Each time a new high is set in an uptrend or a new low in a downtrend, a new set of lines must be drawn (because there is now a new high or low point). Because the _speedlines_ are drawn from the beginning of the trend to the one-third and two-thirds points, those trendlines may sometimes move through some of the price action. This is one case where trendlines are not drawn under lows or over highs, but actually through the price action.
+> 
+> ...
+> 
+> Charting software also allows the drawing of _Gann_ and _Fibonacci_ fan lines. _Fibonacci_ fan lines are drawn in the same fashion as the speedline. Except that Fibonacci lines are drawn at 38% and 62% angles. _Gann_ lines (named after the legendary commodity trader, W.D. Gann) are trendlines drawn from prominent tops or bottoms at specific geometric angles. The most important Gann line is drawn at a 45 degree angle from a peak or trough. Steeper Gann lines can be drawn during an uptrend at 63 3⁄ 4 degree and 75 degree angles. Flatter Gann lines can be drawn at 26 1⁄ 4 and 15 degree lines. It’s possible to draw as many as nine different Gann lines.
+> 
+> Gann and Fibonacci lines are used in the same way as speedlines. They are supposed to provide support during downward corrections. When one line is broken, prices will usually fall to the next lower line. Gann lines are somewhat controversial. Even if one of them works, you can’t be sure in advance which one it will be. Some chartists question the validity of drawing geometric trendlines at all.
+> 
+> ... _internal trendlines_ are drawn through the price action and connect as many internal peaks or troughs as possible. Some chartists develop a good eye for this type of trendline and find them useful. The problem with internal trendlines is that their drawing is very subjective; whereas the rules for drawing of more traditional trendlines along the extreme highs and lows are more exact.
+> 
+> ...
+> 
+> A _reversal day_ takes place either at a top or a bottom. The generally accepted definition of a _top reversal day_ is the setting of a new high in an uptrend, followed by a lower close on the same day. In other words, prices set a new high for a given upmove at some point during the day (usually at or near the opening) then weaken and actually close lower than the previous day’s closing. A _bottom reversal day_ would be a new low during the day followed by a higher close.
+> 
+> ...
+> 
+> The bottom reversal day is sometimes referred to as a _selling climax_. This is usually a dramatic turnaround at the bottom of a down move where all the discouraged longs have finally been forced out of the market on heavy volume. The subsequent absence of selling pressure creates a vacuum over the market, which prices quickly rally to fill. The selling climax is one of the more dramatic examples of the reversal day and, while it may not mark the final bottom of a falling market, it usually signals that a significant low has been seen.
+> 
+> ![Chart Trends: Top Reversal Day](/.attachments/chart.trends.top.reversal.day.png)
+> 
+> _Example of a top reversal day. The heavier the volume on the reversal day and the wider the range, the more important it becomes._
+> 
+> ...
+> 
+> ![Chart Trends: Chart Action of October 28, 1997](/.attachments/chart.trends.october.1997.reversal.day.png)
+> 
+> _The chart action of October 28, 1997 was a classic example of an upside reversal day or a “selling climax.” Prices opened sharply lower and closed sharply higher. The unusually heavy volume bar for that day added to its importance. Two less dramatic upside reversal days (see arrows) also marked price bottoms._
+> 
+> ...
+> 
+> Price _gaps_ are simply areas on the bar chart where no trading has taken place. In an uptrend, for example, prices open above the highest price of the previous day, leaving a gap or open space on the chart that is not filled during the day. In a downtrend, the day’s highest price is below the previous day’s low. Upside gaps are signs of market strength, while downside gaps are usually signs of weakness. Gaps can appear on long term weekly and monthly charts and, when they do, are usually very significant. But they are more commonly seen on daily bar charts.
+> 
+> Several myths exist concerning the interpretation of gaps. One of the maxims often heard is that “gaps are always filled.” This is simply not true. Some should be filled and others shouldn’t. We’ll also see that gaps have different forecasting implications depending on which types they are and where they occur.
+> 
+> There are three general types of gaps—_the breakaway_, _runaway (or measuring)_, and _exhaustion gaps_.
+
 
 ## Japanese Candlestick Charting Techniques
 
