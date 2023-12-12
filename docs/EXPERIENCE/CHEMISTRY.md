@@ -229,3 +229,75 @@
 > ...
 > 
 > As a content marketer, you must plan to generate traffic _through activity_. Let’s recategorize the traffic sources to align them with our three main content marketing techniques: search engine optimization, social media and email marketing.
+> 
+> **Search Engine Optimization (SEO)**
+> 
+> ...
+> 
+> Ultimately, all SEO efforts have one focus: **to indicate that your site is relevant**. Every time you see or hear the phrase “search engine optimization,” substitute the words “indicating relevance” and you’ll have the right mindset for good SEO work.
+> 
+> Your goal is simply to help Google help people find you. Cooperate with Google and stay on its good side. The key to SEO is to have valuable content and confirm this to Google with great links from relevant sites.
+>
+> ...
+> 
+> According to Advanced Web Rankings’ ongoing tracking of clickthrough rates by search position, the first three spots in Google get almost 54% of all clicks. The top spot gets 26%, second place gets 17% and so on down the line. The numbers are even higher when the search term includes a brand name. Everyone knows that page two is no-man’s land, but not everyone realizes that ranking first drives six times as much traffic as ranking fifth.
+> 
+> ...
+> 
+> **Authority (link popularity)**: Are there many links to your website? Are the links from sites with high authority themselves?
+> 
+> **Relevance (on-page keyword usage)**: Is the keyword used on the page? Is the page relevant for the broader topic?
+> 
+> **Other page aspects**: Content length, load time, structured markup, etc.
+>
+> **User signals**: Are visitors clicking through from search results? Are they spending long or short periods of time on the page?
+> 
+> **Domain name**: Is the domain a popular brand? Is the keyword on the domain name?
+> 
+> **Social activity**: Quantity and quality of social media shares and mentions of the page.
+> 
+> Suddenly it’s clear that links on other people’s websites are a big factor in how high you rank in search engines. If you’re serious about SEO, getting good links has to be part of your content marketing efforts ...
+>
+> ..
+> 
+> Now that we have a general idea of how search engines work, let’s introduce the three key SEO-related activities that a content marketer should focus on:
+> - Keyphrase research
+> - On-page search optimization
+> - Link popularity
+> 
+> ...
+> 
+> As a content marketer, you must carefully choose phrases that meet three criteria:
+> 
+> - **Search volume**: How many people are searching for this phrase?
+> - **Competition**: How many websites are relevant for this phrase? Are they powerful sites?
+> - **Relevance**: If someone found your site while searching for this phrase, would they be happy? Would you be happy they found you?
+> 
+> ...
+> 
+> Here’s a list of the most important places to use your target phrase to help Google understand that you are relevant. They are listed in order of importance.
+>
+> - **Title**: Between `<title>` and `</title>`.
+> - **Headers**: Between `<h1>` and `</h1>` as well as `<h2>` and so on.
+> - **Body text**: This is all the text on the page that isn’t within links.
+> - **Meta description**: Although it doesn’t actually appear on the web page, the meta description often appears in search results as the snippet.
+>
+> ...
+> 
+> Think about it: if 1,000 websites link to a page about the U-505 submarine and each of those 1,000 links have text such as “learn more about the U-505 submarine,” then the page must be relevant for that topic. The links are a powerful indicator of relevance. This is especially true if those 1,000 sites are also about submarines and those sites have many inbound links themselves.
+> 
+> This is why link popularity is an excellent way for search engines to see what sites are really about. As we saw from the Moz research above, link popularity is a heavily weighted ranking factor. Why? Because it’s hard to fake. If SEO was only about which page uses the phrase most often, anyone could put “U-505 submarine” on the page a hundred times and rank high. Google would then be full of spam. This is why links matter so much.
+> 
+> ...
+> 
+> The best links are from sites that have a high link popularity themselves. These links are worth more. Just like a popularity contest, one vote from someone popular is worth more than a dozen votes from the unknown.
+> 
+> ...
+> 
+> Links from related sites are generally better. A link from a completely irrelevant site is not as valuable, since that site doesn’t have as much credibility on that topic.
+> 
+> ...
+> 
+> Now that you understand link popularity, consider your target keyword. The likelihood of ranking for that phrase depends on the competition.
+> 
+> Do the high-ranking sites for the keyword have higher link popularity than you? Then choose another keyword.
