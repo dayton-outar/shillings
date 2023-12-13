@@ -301,3 +301,57 @@
 > Now that you understand link popularity, consider your target keyword. The likelihood of ranking for that phrase depends on the competition.
 > 
 > Do the high-ranking sites for the keyword have higher link popularity than you? Then choose another keyword.
+> 
+> ...
+> 
+> Lots of times, link text is simply “click here” or “www.example.com.” But when link text includes a keyword, it can be another indication of relevance. If the links to a page say “flying carpet safety,” then Google is likely to believe that this is what the page is about.
+> 
+> ...
+> 
+> When too many links to a page include the target keyword, it may look spammy. Google may penalize you for “over-optimization.”
+>
+> Don’t try too hard to get links with your exact keyword as link text. It looks unnatural. Balance is good.
+> 
+> ... Website owners can tell Google not to follow certain links by adding a tiny code that says “nofollow.” Google skips these links, which then have much less value (if any) to the website on the other end. Today, most popular blogs have links within comments set to “nofollow,” so blog commenting is not considered an important SEO tactic.
+>
+> ...
+> 
+> There are actually two types of relevance and two types of keyphrases. They attract two different types of visitors. _Understanding this is key to content marketing_.
+> 
+> ...
+> 
+> The keyphrase indicates the visitors’ intent. There are two types of keyphrases: question marks and dollar signs.
+> 
+> ... If you want a lot of leads, you have to help a lot of researchers.
+> 
+> ...
+> 
+> _“Companies have to create content that transcends the transaction-—content only about your products and services is called a brochure.”_
+> 
+> - Sites without content marketing are truly just ads. They’re known as brochure-ware websites. They don’t have pages that teach, help, inspire or entertain. They don’t target the broader set of phrases. They don’t attract a larger audience.
+> 
+> - Sites that do publish search optimized educational content often attract huge audiences. The goal of the content marketer is the unlock the expert knowledge within their organization and offer it to the world, growing attention and, ultimately, demand.
+> 
+> Build a mini-version of Wikipedia for your industry.
+> 
+> ...
+> 
+> In the end, ranking in search engines and indicating your relevance comes down to great content written by a credible author and supported by great links. In other words, if you want to rank high, be good. Build and maintain a great online presence. If you are the best site on the Internet for that topic, Google will try hard to help people find you.
+> 
+> Target good keyphrases, use them in appropriate ways and look for opportunities to get high-quality links to your site. But above all, _strive to be truly relevant_.
+> 
+> ...
+> 
+> **Social Media Marketing**
+> 
+> Traffic from social media is the direct result of activity. Unlike traffic from search engines, where one page may rank well for years, social media requires ongoing work. If you stop promoting content on social media, traffic from social networks will naturally drop. This is because social streams move fast. Most of the clicks, shares and interactions happen within hours or minutes of posting your article.
+> 
+> But it’s very hard to predict what people will share or click. Who knows what’s going to go viral tomorrow? People may love a post on one network, but ignore it on another. Last week, everyone liked that post. But today, it was mostly ignored. Social traffic is notorious for spikes and troughs, peaks and valleys.
+> 
+> ...
+> 
+> ... Social media is a powerful, efficient way to connect with the people who have already built the audience you’re targeting.
+> 
+> Our goal is to connect with people who have already built the audience you need to reach… Then borrow that audience in a sensitive and considerate way.
+> 
+> There are names for this kind of work: online networking, influencer marketing, blogger relations or just digital PR.

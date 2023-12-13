@@ -8,7 +8,7 @@ Branding will definitely set us up in the mental space of the market. So, the ne
 
 ![Relationship, Links and Traffic](/.attachments/relationships-links-rank-traffic-lead.png)
 
-We will need a good SEO strategy of acquiring backlinks through having several sites with high domain authority make reference to our site so that our site can rank high for customers that are looking for our product. Should we build a blog with relevant topics to gain that domain authority? This can be a time-consuming and expensive venture.
+We will need a good SEO strategy of acquiring backlinks through having several sites with high domain authority make reference to our site so that our site can rank high for customers that are looking for our product. Most definitely, the Jamaica Stock Exchange will have to endorse us. Should we build a blog with relevant topics to gain that domain authority? This can be a time-consuming and expensive venture. Initially, we can start with a small group of interested people to build out the product.
 
 ![Traffic Sources on the Internet](/.attachments/search-traffic-lead.png)
 
@@ -32,17 +32,19 @@ A buyer's journey would not be complete without _Buyer Personas_, which is basic
 
 ![Buyer Personas Insights](/.attachments/buyer-personas-insights.png)
 
-... So with all that in mind, here's a checklist of what to get done to be more confident of the marketing strategy needed for this product,
+The marketing strategy will initially be to,
 
-- Build Buyer Persona
+1. Start _smallest viable market_ by inviting a select few to experience the _beta_ version
 
-- Prepare value proposition for each persona
+2. Continually improve customer profile (or buyer persona) and value proposition through better understanding of the buyer's journey for the product but behaviour of active investors in the stock exchange
+
+Once the product reaches the first _minimum valuable product_ milestone (meaning it can now be _monetized_), then it can be _publicized_ through the investment clubs and social networks. A public relations strategy would have to include going to meetings to showcase the product with an impressionable brand to occupy a space in the prospect's mind as a leader in a new category.
+
+... Things left to do,
 
 - Build infographic of critical processes in on-boarding and trading stocks on Stock Exchanges by showing overall landscape
 
 - Determine strategy for brand awareness
-
-- Start _smallest viable market_ by inviting a select few to experience the _beta_ version
 
 :bulb: People learn from each other. How can the product be designed so that people can learn from each other easily?
 
