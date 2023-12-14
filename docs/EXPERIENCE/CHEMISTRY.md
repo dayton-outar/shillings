@@ -476,3 +476,7 @@
 > :bulb: Create content that addresses the questions and concerns that are specific to various stages in the buying process and the conversion funnel.
 > 
 > ---
+> 
+> There is an inverse correlation between the length of a form and the percentage of visitors who fill it out and submit. Studies show that shorter forms convert at a higher rate.
+> 
+> Resist the temptation to create a “warmer lead” by asking for too much information. Long forms are considered “greedy.” Often, you can gather the information you’re looking for when you follow up on the lead offline. For lead generation forms, include and require the minimum number of fields: name, phone number, email, and possibly company name and message.
