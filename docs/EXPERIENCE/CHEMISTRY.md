@@ -355,3 +355,28 @@
 > Our goal is to connect with people who have already built the audience you need to reach… Then borrow that audience in a sensitive and considerate way.
 > 
 > There are names for this kind of work: online networking, influencer marketing, blogger relations or just digital PR.
+> 
+> ...
+> 
+> So who creates content? Who can we connect with that might mention, link and share their authority?
+> 
+> - Journalists
+> - Authors
+> - Podcasters
+> - Academic Researchers
+> - Event Producers
+> - Bloggers and Blog Editors
+> 
+> ![How Relationships Affect Lead Generation](/.attachments/lead-generation-social.media.jpg)
+> 
+> ...
+> 
+> Promoting your own content is only one type of social media post. If that’s the only thing you share, you’re missing out on the networking benefits, and your account won’t be a lot of fun to follow. You’re using social as a dumping ground for links.
+> 
+> Really, there are three types of social media posts. (Fig. 4e)
+> 
+> - ⅓ of your posts are your own content, driving traffic to your website.
+> - ⅓ of your posts are news, ideas and advice from other people in your industry, shared partly to help your audience and partly to build relationships with those influencers.
+> - ⅓ of your posts are personal interactions, saying thank you, asking / answering questions and talking to people directly, with influencers as well as customers, strangers, friends and anyone else!
+> 
+> ![Social Media vs Online Networking](/.attachments/social.media-vs-online.networking.jpg)

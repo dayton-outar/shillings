@@ -6,7 +6,7 @@ There are a number of tactics to employ to win as much of the market as possible
 
 Branding will definitely set us up in the mental space of the market. So, the need to communicate the product through names, slogans and avatars will be critical.
 
-![Relationship, Links and Traffic](/.attachments/relationships-links-rank-traffic-lead.png)
+![Relationship, Links and Traffic](/.attachments/lead-generation-social.media.jpg)
 
 We will need a good SEO strategy of acquiring backlinks through having several sites with high domain authority make reference to our site so that our site can rank high for customers that are looking for our product. Most definitely, the Jamaica Stock Exchange will have to endorse us. Should we build a blog with relevant topics to gain that domain authority? This can be a time-consuming and expensive venture. Initially, we can start with a small group of interested people to build out the product.
 
@@ -14,7 +14,7 @@ We will need a good SEO strategy of acquiring backlinks through having several s
 
 A really good SEO strategy can simply be put as "getting people to talk about your product". So, if we can get journalists, bloggers and central authority organizations to talk about (or make reference) to our online product that will certainly help in driving the traffic we need to our site. Social media influencers can play a very important part in driving traffic to our product. So, identifying the right communities and engaging the leaders with the right incentive can help this project.
 
-![Relationship Networking](/.attachments/relationships-networking.png)
+![Social Media vs Online Networking](/.attachments/social.media-vs-online.networking.jpg)
 
 From my observation of the existing products that are in a similar category to this product, many do not have a blog. See [competition analysis](./INDUSTRY/JM.md#competition-analysis). Some make use of sites that provide a hack around the search engine algorithm to increase the domain authority. This approach may get the domain authority score up to 20 but to get to a more formidable score like 70, a lot of public relations with sites that have domain authority between 20 and 70 is required.
 
