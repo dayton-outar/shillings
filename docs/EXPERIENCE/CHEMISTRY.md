@@ -448,3 +448,31 @@
 > 
 > - **Trust and evidence**: Does the content include evidence of legitimacy? Do other people trust this brand? To increase trust, add “social proof” and other evidence, such as prominent testimonials, client logos, positive reviews, press mentions, industry credentials, association memberships, number of customers and years in business.
 > 
+> ![The Definitive Guide to Lead Generation](/.attachments/form.length-vs-conversion.rate.jpg)
+> 
+> ..
+> 
+> - **Obvious calls to action**: Does the site offer easy-to-find calls to action? Do the imagery and colors guide the visitors’ attention to the desired actions? Are there other distractions that pull attention away from the conversion buttons?
+> 
+> - **Urgency**: Does the site trigger “loss aversion” and remind visitors that they may risk, miss or lose something by not acting quickly?
+>
+> - **Short, easy forms**: Are the forms short and easy to complete? Or are they greedy, asking more questions than the visitor feels are necessary?
+> 
+> A site that aligns well with these elements will convert a higher percentage of visitors. Our goal is to add clarity, trust and relevance, while removing distraction, confusion and annoyance. Studies show that shorter forms convert at a higher rate.
+> 
+> ---
+>
+> :bulb: Typically, an overall conversion rate of 3% or more is considered high. If the conversion rate is 1% or lower, something is probably wrong.
+> 
+> ---
+> 
+> The better you understand your target audience, the more likely you are to create an online experience that converts well. When possible, create personas, send surveys or do focus group testing. If nothing else, talk to the sales and customer service teams to learn what questions, concerns and objections your potential customers have.
+> 
+> If you can discover the things that pique visitors’ interest; create urgency; and address any fears, uncertainties and doubts, it’s easier to create a website and develop content that speaks to visitors directly. This is great for your conversion rate.
+> 
+> 
+> ---
+>
+> :bulb: Create content that addresses the questions and concerns that are specific to various stages in the buying process and the conversion funnel.
+> 
+> ---
