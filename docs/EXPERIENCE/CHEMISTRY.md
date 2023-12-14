@@ -380,3 +380,69 @@
 > - ⅓ of your posts are personal interactions, saying thank you, asking / answering questions and talking to people directly, with influencers as well as customers, strangers, friends and anyone else!
 > 
 > ![Social Media vs Online Networking](/.attachments/social.media-vs-online.networking.jpg)
+> 
+> ![Social Media Network Comparison Chart](/.attachments/social.media.posts.share.jpg)
+> 
+> Together, these types of posts combine to drive traffic, build a brand, grow a personal network and, eventually, drive rank and revenue.
+> 
+> ...
+> 
+> **Email Marketing**
+> 
+> Although it may now seem like traditional digital marketing, email marketing is a powerful traffic generator. We don’t know any serious content marketers who don’t use email marketing.
+> 
+> ...
+> 
+> Ethical email marketers keep the following principles in mind:
+> 
+> - List growth
+> - List cleanliness
+> - Email timing
+> - Subject lines
+> - Content and calls to action
+> - Testing and reporting
+>
+> ...
+> 
+> The long-term goal of email marketing is to always measure results and continually improve. But unless you add special tracking code, the traffic from your email campaigns will be mixed together with all your other traffic in Google Analytics, making it harder to measure what people are doing after they arrive.
+> 
+> To make the traffic from email appear separately in Google Analytics, use the Google URL Builder. Put each link from your email into this tool, then add the three main parameters into the form: Campaign Source, Campaign Medium and Campaign Name.
+
+## Chapter 4. Conversions
+
+> All visitors—all of us—want our problems solved and our desires fulfilled. Maybe we were thinking of the problem or the desire when we came to the site, or maybe not. Either way, _visitors convert into customers when the hope for a solution is stronger than the fear that they’ll be disappointed_.
+>
+> So there are two factors at work: One is pulling them toward conversion, and the other is friction that is pushing them away.
+> 
+> If the motivation is stronger than the friction, the visitor converts, meeting their goals and yours.
+> 
+> ![Motivation vs Friction](/.attachments/user.motivation-vs-friction.jpg)
+> 
+> Generating leads and sales is the ultimate goal of most websites, but there are many types of conversions, and all of them are good. The smaller successes are important steps toward turning visitors into fans and fans into customers.
+> 
+> ...
+> 
+> Many factors determine the percentage of visitors that convert.
+> 
+> **Relevance and traffic source**: Is the website relevant to the visitor you attracted? How targeted is the website traffic? For example, visitors from social media are generally less likely to buy something or become a lead than visitors from search engines, because they typically don’t have strong intent..
+> **Overall design appeal of the site**: Does the site look professional? Credible?
+> **Clarity**: Is the main message of the website clear? Is it obvious what the company does? Or is the main message general and vague, such as “world class service”?
+> 
+> ...
+> 
+> ---
+> :bulb: **The 5-Second Test** To confirm that the site is communicating quickly and clearly, show it to someone who isn’t familiar with the brand. Don’t prepare them. Just say “I want to show you something” and pull up the site. After five seconds, turn off the screen. Now ask them. “What does this company do?” If they can’t tell you, the site has failed the test. When you ask the person what they remember about the site, you’ll learn which elements are the most visually prominent. Any surprises?
+> ---
+> 
+> If the site doesn’t pass the 5-Second Test, expect a low conversion rate.
+> 
+> - **Descriptive navigation**: Do the labels of the links and buttons help the visitor accurately predict what they’ll find when they click? Are they explicit? Or are they generic, such as “services”?
+> 
+> - **Provides key information**: Does the website answer the visitors’ most important questions? Does it address common objections?
+>
+> - **Simple words**: Does the site use simple, easy-to-understand language? Or does it use fancy jargon that some visitors may not quickly grasp?
+> 
+> - **Content format**: Is the content presented in a visual, compelling format, such as images and video? Is the textbased content legible and formatted for easy scanning and reading?
+> 
+> - **Trust and evidence**: Does the content include evidence of legitimacy? Do other people trust this brand? To increase trust, add “social proof” and other evidence, such as prominent testimonials, client logos, positive reviews, press mentions, industry credentials, association memberships, number of customers and years in business.
+> 
