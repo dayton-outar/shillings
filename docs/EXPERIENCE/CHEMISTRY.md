@@ -431,7 +431,9 @@
 > ...
 > 
 > ---
+>
 > :bulb: **The 5-Second Test** To confirm that the site is communicating quickly and clearly, show it to someone who isn’t familiar with the brand. Don’t prepare them. Just say “I want to show you something” and pull up the site. After five seconds, turn off the screen. Now ask them. “What does this company do?” If they can’t tell you, the site has failed the test. When you ask the person what they remember about the site, you’ll learn which elements are the most visually prominent. Any surprises?
+>
 > ---
 > 
 > If the site doesn’t pass the 5-Second Test, expect a low conversion rate.
