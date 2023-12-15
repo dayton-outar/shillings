@@ -577,7 +577,7 @@
 > 
 > A great blog post is the first step in the lead generation process. It should include all of the following elements.
 > 
-> 1. **Keyword-focused header**: Use the target keyphrase once in the <h1> header. Along with the <title>, this is one of the most important places to use the phrase.
+> 1. **Keyword-focused header**: Use the target keyphrase once in the `<h1>` header. Along with the `<title>`, this is one of the most important places to use the phrase.
 > 
 > 2. **Prominent email sign-up box with descriptive call to action**: A great email sign-up form tells people what they’re going to get and gives some evidence that it’s good.
 > 
