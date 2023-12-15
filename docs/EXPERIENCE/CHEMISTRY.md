@@ -480,3 +480,139 @@
 > There is an inverse correlation between the length of a form and the percentage of visitors who fill it out and submit. Studies show that shorter forms convert at a higher rate.
 > 
 > Resist the temptation to create a “warmer lead” by asking for too much information. Long forms are considered “greedy.” Often, you can gather the information you’re looking for when you follow up on the lead offline. For lead generation forms, include and require the minimum number of fields: name, phone number, email, and possibly company name and message.
+> 
+> ...
+> 
+> In our experience designing and building websites at Orbit Media, we have found that the subsequent page after a first conversion is an excellent place to let the visitor take action again. If visitors had enough interest and trust to take action once, they may take action twice if offered the opportunity on the thank you page.
+> 
+> The trick is to first give visitors what they want. For example, many ecommerce shopping carts ask visitors to create an account before checking out. This isn’t what the visitors were hoping for. They clicked “buy now,” not “buy after I give you my email address and password.”
+> 
+> In the Analytics accounts of our clients, we’ve seen the lack of a “guest checkout” option reduces sales by 30-50%. Requiring visitors to create accounts first is simply greed for more information on the part of a self-centered website owner. This is counter to the principles of content marketing. First, we give visitors what they want. Then, they may give us what we want.
+> 
+> On one website, we added the option to create an account after the checkout process. We included two simple sentences of benefit copy: “We’ll remember your address for a faster checkout next time. We’ll also store your order history and let you create a wishlist.” The percentage of shoppers who created accounts increased by 40%.
+> 
+> ...
+> 
+> “Enter email address” next to a subscribe button isn’t exactly a great pitch for your newsletter. On the other hand, if you include the right message next to that signup box, you may see a higher conversion rate for subscribers.
+> 
+> - **State the topic**: If the visitor can’t tell what the newsletter is going to be about, you aren’t conveying the value of subscribing.
+> 
+> - **Indicate frequency**: If the visitor can’t tell how often the newsletter is coming, they may hesitate to subscribe.
+> 
+> - **Social proof**: Show the number of subscribers or a testimonial to indicate that others appreciate the content.
+> 
+> ...
+> 
+> ... the percentage of website visitors who take action is called the conversion rate. Set up rates for each possible conversion on any website as separate goals within Google Analytics. This will allow you to measure the success of each, and then optimize the site to convert better. This is called conversion rate optimization (CRO).
+> 
+> ---
+> 
+> :bulb: Although form submissions are the main type of conversions, you can set up Google Analytics to measure other actions as goal completions, including time spent on the website, number of pages viewed and PDF downloads.
+> 
+> ---
+> 
+> To optimize the site for conversions, you need to see where any problems are and what needs to be fine-tuned. To help you see what’s happening on and around the conversion pages, Analytics has a report called “funnel visualization.”[^1]
+> 
+> ![Funnel Visualization](/.attachments/google.analytics.funnel.visualization.jpg)
+> 
+> ...
+> 
+> Now that you can see this activity, you can look for ways to improve the site to make it more compelling and easier to use. If the number is low, ask yourself the following questions:
+> 
+> - Did the site answer enough of visitors’ initial questions?
+> 
+>   Talk to the sales team to learn the most common questions and objections. Add content that answers top questions and addresses top concerns.
+>
+> - Did the site connect with visitors as people?
+> 
+>   The site should connect on a human level, through pictures of the team, videos from company leadership, photos of your offices, etc.
+> 
+> - Does the site convey trust?
+> 
+>   If not, add third-party credentials, badges for certifications, association memberships, testimonials, case studies, security information (ecommerce) and content that demonstrates experience and expertise.
+> 
+> - Is the site easy to use?
+> 
+>   Make sure the forms are short, and name pages and sections properly. Any tiny bit of confusion between the website and the visitor is friction. The site should guide visitors effortlessly through the series of pages that teaches them, helps them and gently offers to let them take action.
+> 
+> - Is the content compelling?
+> 
+>   All the text and video on the top pages must be concise and compelling. When visitors leave the contact form and go to other pages, they’re giving you another chance.
+> 
+> Two numbers determine your results: traffic and conversions. Traffic times the conversion rate equals leads and revenue. Now that you have a balanced view of both halves of the equation, you can approach web marketing more efficiently. Always try to diagnose and fix the biggest problems first and grab the lowest-hanging fruit.
+> 
+> ...
+> 
+> A great lead generation website has a specific set of pages, each with specific elements. Let’s break it down. The typical flow looks something like this.
+> 
+> ![Conversion Funnel](/.attachments/lead.generation.stages.pages.jpg)
+> 
+> The website gently leads the visitor through a series of steps: awareness, interest, trust, then action. That’s a classic “conversion funnel.” Notice how the pages align with steps in the funnel:
+> 
+> 1. **Blog post**: Attracts visitors with useful information (awareness)
+>
+>    It all starts before the visitor arrives at the website. They may come from email marketing or social media, but often, it starts with a search.
+> 
+>    Your audience is constantly looking for information relevant to your field, so the key is to write many helpful blog posts and align the articles with keyphrases. The articles should be so useful that the readers will be glad to have found you.
+> 
+>    While they’re there, they will find easy ways to get more of your helpful advice through email marketing (a prominent sign-up form), social media (icons that let them follow you) or more content (internal links to related content).
+> 
+> 2. **Web page**: Explains what you do (interest)
+> 
+>    Here’s where you begin selling. Like the blog post, the information here is helpful, but now it describes how you do the work for the prospect. The goal is to state the value you provide in simple terms, and provide evidence that you are legitimate.
+> 
+> 3. **About page**: Explains why you do what you do (trust)
+> 
+>    Visitors want to know who they might be working with. That’s why the “About” page is one of the most popular pages on every lead generation website. Here is where you put a face to the name, tell your story and explain your mission. In the words of Teddy Roosevelt, “Nobody cares how much you know, until they know how much you care.”
+> 
+>    Connecting the service to the people is critical, even if the organization is large and only the executives are listed here. Visitors who are interested in the service are always interested in the service provider.
+> 
+> 4. **Contact page**: Simple way to get in touch (action)
+> 
+>    The trick here is to get out of the way. It should be as effortless as possible with no distractions. Just a simple form. The idea is to start a conversation, not interrogate your visitors.
+> 
+> 5. **Thank you page**: They’ve completed the funnel and are now a lead (conversion)
+> 
+>    On many lead generation sites, this page is nothing more than two tiny words. That’s a missed opportunity. The thank you page is your first interaction with your new lead. Make it a good one by setting expectations. You’ve also got an opportunity here to create an even stronger connection.
+> 
+> A great blog post is the first step in the lead generation process. It should include all of the following elements.
+> 
+> 1. **Keyword-focused header**: Use the target keyphrase once in the <h1> header. Along with the <title>, this is one of the most important places to use the phrase.
+> 
+> 2. **Prominent email sign-up box with descriptive call to action**: A great email sign-up form tells people what they’re going to get and gives some evidence that it’s good.
+> 
+> 3. **Social media networks, but only those where you are truly active**: You don’t really want the visitor to leave your site, but if they do, send them to a network where you are truly engaged with your audience.
+> 
+> 4. **Compelling image or chart**: Every great post has a great image. This makes the post more attractive, both on your site and in the social streams when readers share it. This is your chance to explain concepts visually with informative charts or diagrams.
+> 
+> 5. **Helpful, detailed article**: It’s the deep, how-to content that positions you as the expert. These posts are more likely to rank in search engines and readers are more likely to share them. So go big. The more useful, the better.
+> 
+> 6. **Links to service pages and your about page**: It’s nice of you to give away your best advice, but it’s hard work, and it doesn’t necessarily generate leads. The pathway from posts to pages should be clear in the navigation.
+> 
+> 7. **Internal links to other blog posts and service pages**: Beyond the navigation, use internal links within your posts to guide visitors deeper into the site, both to other blog posts and to service pages.
+> 
+> 8. **Call to action for comments and more information**: Many visitors may get what they wanted from your super useful blog post and then leave. That’s fine, but to improve the chances that they’ll stick around, end each post with an invitation to get in touch for more information or with a question that invites a comment.
+> 
+> ![Blog Post Page](/.attachments/funnel.blog.post.page.jpg)
+> 
+> 9. **Contact link or phone number**: The top right corner is the standard place for contact information. Visitors will look for it here. Use a button to your contact page, your phone number or both.
+> 
+> 10. **Clear, simple description of services**: It’s best to call your services what your visitors would call them. Keep the language simple in your headers and body. Make sure to answer the questions that potential customers commonly ask. If you don’t, they may look for answers on other websites.
+> 
+> 11. **Evidence, examples, data and social proof**: Anyone can claim to do something, but not everyone can prove it. Add evidence of the benefits and return on investment of your services. This may include examples, statistics and research. Better yet, add social proof in the form of testimonials, using the voice of your happy customers.
+> 
+> 12. **Videos, demos and diagrams**: If you offer a service that requires a high degree of trust, videos are an excellent way to improve lead generation. They let the visitor see your face and hear your voice.
+> 
+>     If you offer a service that is difficult to explain, use diagrams and demos to explain those complex ideas.
+> 
+> ![Service Page](/.attachments/funnel.service.page.jpg)
+> 
+> 15. **Personality, values and your story**: Here you’ll answer the big questions: Why are you in this business? How long have you been doing this? What motivates your team? Why does this service matter?
+> 
+> ...
+> 
+> For the mobile-friendly version of your site, be careful where you put call to action buttons. Some parts of your page are right under the visitor’s thumb. Others are harder to reach.
+> 
+> ![Thumb's Reach on Mobile Device](/.attachments/mobile.phone.thumb.access.map.jpg)
+
+[^1]: [How to Set Up Funnels in Google Analytics: 6 Reports](https://cxl.com/blog/funnels-google-analytics/)
