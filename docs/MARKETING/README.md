@@ -42,7 +42,7 @@ Once the product reaches the first _minimum valuable product_ milestone (meaning
 
 ... Things left to do,
 
-- Build infographic of critical processes in on-boarding and trading stocks on Stock Exchanges by showing overall landscape
+- Complete and explain infographic of processes in on-boarding investors and trading stocks on Stock Exchanges
 
 - Determine strategy for brand awareness
 
