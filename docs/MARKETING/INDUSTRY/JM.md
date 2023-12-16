@@ -10,7 +10,7 @@
 
 ## Key Players
 
-![Stages of Stock Trading in Jamaica](/.attachments/Jamaica.Stock.Exchange.Landscape.png)
+![Stages of Stock Trading in Jamaica](/.attachments/Jamaica.Stock.Exchange.Landscape-2.png)
 
 ### Market Makers
 
