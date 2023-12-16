@@ -10,6 +10,8 @@
 
 ## Key Players
 
+1[Stages of Stock Trading in Jamaica](/.attachments/Jamaica.Stock.Exchange.Landscape.png)
+
 ### Market Makers
 
 The specific market makers in Jamaica's stock market might have changed or evolved. In Jamaica's stock market context, market makers are entities that provide liquidity and facilitate trading by offering to buy and sell specific securities at quoted bid and ask prices. They play a crucial role in ensuring there is a continuous market for securities.
