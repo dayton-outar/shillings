@@ -645,7 +645,59 @@
 
 ## Chapter 5. Content
 
-
+> Our company is where \
+> **[audience X]** finds \
+> **[content Y]** for \
+> **[benefit Z]**.
+> 
+> ...
+> 
+> **Audience X**
+> 
+> Unlike the target audience for our products and services, the target audience for our content marketing may be very broad. In content marketing, as we discovered in the Lecture section, we have two target audiences and two types of visitors:
+> 
+> - Potential customers we hope to sell to
+> - Anyone we can help through our expert advice
+>
+> That larger audience of people who are interested in our content can drive huge, indirect benefits. This includes a world of potential visitors, followers, subscribers and influencers. Without this second audience, we are unlikely to attract enough of that first audience to create steady demand.
+> 
+> **Content Y**
+> 
+> These are the topics and formats that we will publish. It is the overlap between the topics that we know and can teach, and the topics that our audience wants. When we share this expert knowledge, we pull our audience toward us.
+> 
+> Keep in mind that the types of content will go beyond the topics and include the **formats for content**, such as:
+> 
+> - Original research
+> - Opinion pieces
+> - Guest posts
+> - Interviews and roundups
+> - Video, audio and live events
+> 
+> Great content marketers publish more than an endless stream of blog posts.
+> 
+> **Benefit Z**
+> 
+> It has to be helpful. Our content will be useful, or at least entertaining. Our mission must name the specific benefits that our content offers our audience. If there is no benefit to them, we won’t win their attention, we won’t attract visitors and we won’t generate any demand.
+> 
+> So our mission and every piece of content within it must answer this question: _Why do they care? How does this help them? What task can they complete once they are finished reading this?_
+> 
+> ![Content Mission Venn Diagram](/.attachments/content.core.mission.jpg)
+> 
+> This is the core of our mission.
+> 
+> ...
+> 
+> Our marketing positioning statement (also known as a value proposition) describes our place in the market. ...
+> 
+> Put simply, this describes why we are in business. How we fit into our market.
+> 
+> To **[target audience]** that has \
+> **[unmet need]**, our company is the \
+> **[competitive set]** that has 
+> **[unique point of difference]** because it \
+> **[evidence 1, 2 and 3]**.
+> 
+> _Fill in these blanks before doing any marketing._
 
 ## Further Reading
 
