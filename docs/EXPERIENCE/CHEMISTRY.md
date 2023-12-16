@@ -609,11 +609,42 @@
 > 
 > 15. **Personality, values and your story**: Here you’ll answer the big questions: Why are you in this business? How long have you been doing this? What motivates your team? Why does this service matter?
 > 
+>     ...
+>
+> 16. **Testimonials, quotes and awards**: Just like the service pages, this is a good place to add evidence of legitimacy. Anything that applies to the entire business and not just one service will work. That includes awards, certifications, ratings and association memberships, as well as quotes from customers.
+> 
+> 17. **Simple contact form**: This is one of the best tips for optimizing a website to convert visitors into leads: Use a contact form with the minimum number of fields.
+> 
+>     Of course, you’ll need a lot of information to qualify them, but get it during the sales process. Don’t use a greedy form
+>
+> 18. **Phone number, address and directions**: Not all visitors want to become a web lead. Some want to call. Great. Put all of your contact information on this page, including a link to a map with directions. And If you have an attractive location, show a photo of it here. It helps build legitimacy
+> 
+> 19. **Simple contact form**: This is one of the best tips for optimizing a website to convert visitors into leads: use a contact form with the minimum number of fields. Of course, you’ll need a lot of information to qualify them, but get it during the sales process. Don’t use a greedy form.
+> 
+> 20. **Phone number, address and directions**: Not all visitors want to become a web lead. Some want to call. Great. Put all of your contact information on this page, including a link to a map with directions. And If you have an attractive location, show a photo of it here. It helps build legitimacy.
+> 
+> ![About Page](/.attachments/funnel.service.about.page.jpg)
+> 
+> ![Contact Page](/.attachments/funnel.service.contact.page.jpg)
+> 
+> 21. **A genuine thank-you**: Be sincere and use a personal tone. You should also explain what happens next. How soon will you be in touch? Who will make contact?
+> 
+> 22. **Email sign-up box**: If they were ready to reach out, they may already really like you and your brand. Give them the option to subscribe to more of the content that impressed them the first time
+> 
+> 23. **Social media networks**: Even if they don’t follow you, there’s still a chance to show them your latest thinking and a bit of your personality. Just make sure they’ll find helpful, relevant posts and positive interactions in your social streams.
+> 
+> 24. **Links to recommended articles and additional content**: If you don’t offer other options on this page, you might as well tell people to leave the site. Why not invite them back into your site for a bit more helpful advice?
+> 
+> ![Thank You](/.attachments/funnel.service.thank.you.jpg)
+> 
 > ...
 > 
 > For the mobile-friendly version of your site, be careful where you put call to action buttons. Some parts of your page are right under the visitor’s thumb. Others are harder to reach.
 > 
 > ![Thumb's Reach on Mobile Device](/.attachments/mobile.phone.thumb.access.map.jpg)
+
+## Chapter 5. Content
+
 
 
 ## Further Reading
