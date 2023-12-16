@@ -124,6 +124,7 @@ Drive traffic to site with [Simple Traffic](https://www.simpletraffic.co/).
 1. [The top 10 reasons small businesses fail – and how to avoid them](https://www.boq.com.au/business/small-business/business-knowledge-hub/opening-a-small-business/the-top-ten-reasons-small-businesses-fail)
 1. [11 Expert Tips for Conducting Better Market Research](https://www.checkmarket.com/blog/11-expert-tips-for-conducting-better-market-research/)
 1. [A Framework for Understanding Market Problems](https://swkhan.medium.com/a-framework-for-understanding-problems-9a47f9f90c3c)
+1. [How to Build a Compelling Value Proposition (4 Simple Steps)](https://underscore.vc/startupsecrets/how-to-write-a-value-proposition/)
 
 ## Videos
 
