@@ -44,6 +44,8 @@ Once the product reaches the first _minimum valuable product_ milestone (meaning
 
 - Complete and explain infographic of processes in on-boarding investors and trading stocks on Stock Exchanges
 
+- Digitize and map buyer personas to value propositions
+
 - Determine strategy for brand awareness
 
 :bulb: People learn from each other. How can the product be designed so that people can learn from each other easily?
