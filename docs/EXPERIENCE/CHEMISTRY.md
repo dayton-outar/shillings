@@ -615,4 +615,9 @@
 > 
 > ![Thumb's Reach on Mobile Device](/.attachments/mobile.phone.thumb.access.map.jpg)
 
+
+## Further Reading
+
+1. [The Beginner's Guide to SEO](https://moz.com/beginners-guide-to-seo)
+
 [^1]: [How to Set Up Funnels in Google Analytics: 6 Reports](https://cxl.com/blog/funnels-google-analytics/)

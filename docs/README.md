@@ -48,6 +48,30 @@ Differentiation: How will it solve that problem or pain point better than the cu
 
 Value: How will it make our business and users' lives better?
 
+Another important business idea for consideration is to start a brokerage firm, where this product will be used to access the services of the broker. According to Jamaican laws (the Securities Act[^1]),
+
+> an individual is eligible to apply for a dealer’s licence or an investor adviser’s licence if—
+> 
+> (a) he satisfies one of the following requirements, that is to say—
+> 
+>     (i) he holds a degree in economics, accounting or business related subjects; or
+> 
+>     (ii) has a professional qualification in law or accounting; or
+> 
+>     (iii) has successfully completed a programme of study in securities approved by the Commission; and
+> 
+> (b) has worked for at least two years in the securities industry; and
+> 
+> (c) has a net worth of at least ten million dollars or has acquired indemnity insurance for at least that amount.
+
+The law continues to state,
+
+> A company is eligible to apply for a dealer’s licence if it maintains capital of at least fifty million dollars.
+
+> A company is eligible to apply for an investment adviser’s licence if it maintains free assets of at least one million dollars.
+
+These are the requirements for starting a stock brokerage. If those requirements can be met, then that firm can use this as a way to position itself to members of the market that want a real-time digitized approach to the business of trading stocks.
+
 ## Monetization
 
 "The whales pay for the minnows". I think ultimately, the best monetization strategy is to,
@@ -99,8 +123,13 @@ Drive traffic to site with [Simple Traffic](https://www.simpletraffic.co/).
 1. [How to Develop your Business Design Philosophy](https://drawbackwards.com/blog/how-to-develop-your-design-philosophy)
 1. [The top 10 reasons small businesses fail – and how to avoid them](https://www.boq.com.au/business/small-business/business-knowledge-hub/opening-a-small-business/the-top-ten-reasons-small-businesses-fail)
 1. [11 Expert Tips for Conducting Better Market Research](https://www.checkmarket.com/blog/11-expert-tips-for-conducting-better-market-research/)
+1. [A Framework for Understanding Market Problems](https://swkhan.medium.com/a-framework-for-understanding-problems-9a47f9f90c3c)
 
 ## Videos
 
 1. [How does the stock market work? - Oliver Elfenbaum](https://youtu.be/p7HKvqRI_Bo?si=kmDktQkx80tZcLqb)
 1. [How to Build a Product that Scales into a Company](https://youtu.be/r-98YRAF1dY?si=xcr-K0mXHTtkqqfJ)
+1. [Value Props: Create a Product People Will Actually Buy](https://youtu.be/q8d9uuO1Cf4?si=WH3HG24mDASxoEE5)
+
+
+[^1]: [The Securities Act](https://laws.moj.gov.jm/legislation/subsids/S/The%20Securities%20Act.pdf)
