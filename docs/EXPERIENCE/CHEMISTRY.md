@@ -698,6 +698,62 @@
 > **[evidence 1, 2 and 3]**.
 > 
 > _Fill in these blanks before doing any marketing._
+> 
+> ...
+> 
+> The marketing position statement is general to the entire business, not specific to content. And it’s typically an internal document; it isn’t made public or posted online.
+> 
+> Here is a mission statement template that goes one level deeper. ... The final step in this template is very powerful since it forces us to name the actual tasks that our content will enable our audience to complete.
+> 
+> The content we produce helps our company accomplish **[goal]** and **[goal]** by providing **[adjective]** and **[adjective]** content that makes **[audience description]** feel **[emotion]** or **[emotion]** so that they can **[task]** or **[task]**.
+> 
+> _Fill in these blanks before going deeper into content marketing._
+> 
+> At this level, it gets easier. Social media falls under content marketing, so this template will look familiar. Our social media mission is a subset of your content marketing mission.
+> 
+> ...
+> 
+> Our social media account is where **[target audience]** can find **[what content]**.
+> 
+> Filling in these two simple blanks for each social network you use will guide us in what to share and how to engage with each community. Is it inspiration? Share quotes. Is it educational? Share links. Documenting this will help us stay on topic.
+> 
+> _Fill in these blanks before becoming active within a social network._
+> 
+> The most expensive mistake: missing our target.
+> 
+> The road to success is lined with burning wrecks of marketing campaigns that targeted the wrong audience, created the wrong content or built relevance in an irrelevant social network.
+> 
+> ...
+> 
+> At Orbit, one of our clients launched a site and simultaneously hired a PR firm to promote it. Rather than write an original press release, the PR firm simply copied the text from the website homepage and submitted it to the online newswires. Within minutes, there were more than 1,000 instances of that home page content on the web.
+> 
+> Google flagged this as likely spam and blacklisted the domain. Suddenly, the website disappeared from search results, even for searches for the business name. Imagine not ranking for the name of your business. Devastating.
+> 
+> ...
+> 
+> You’re an expert, with lots of specialized knowledge and skills. And there’s a lot of demand for that knowledge. Search is how we’ll connect your expertise with that audience.
+> 
+> It would be good for you and your business if they find you. Keyword research is the first step to make that happen.
+> 
+> If we know what they’re looking for, we’ll be able to help them find us. That’s why I research keyphrases before writing almost anything. It’s It would be foolish not to align my content with a keyphrase for which people are searching. Rather than simply writing content on a topic I find interesting, I can write content on a topic I find interesting and people are looking for.
+> 
+> Investigating keyphrases is like reading the minds of millions of people. It may sound strange, but I look up the popularity of words and phrases almost every day.
+> 
+> ...
+> 
+> As a content marketer, the two primary uses for keyphrase research are to find phrases to include in your content and to get ideas for new content. By doing keyphrase research, you’ll create content that is more friendly for search engines and more relevant to your audience.
+> 
+> ...
+> 
+> The ideal keyphrases are those that meet three criteria: many people are searching for them (high search volume), the website has a realistic chance of ranking relative to other sites (low competition) and the page that would rank is relevant to your business.
+> 
+> ...
+> 
+> Websites with higher Domain Authority have exponentially more credibility in search. A site with a Domain Authority of 60 may have eight times as much link popularity as a site with an authority of 50. Authority is plotted on a curve, not a line. ...
+> 
+> ![Domain Authority Curve](/.attachments/domain.authority.curve.jpg)
+> 
+> 
 
 ## Further Reading
 
