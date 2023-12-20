@@ -1014,6 +1014,37 @@ Hmm. I think shame and pride are basically the same thing.
 > ...
 > 
 > No one loves stock images. But they’re far better than no image at all. The problem with stock photos (especially stock photos of people) is that they are inauthentic. And it’s obvious.
+> 
+> ...
+> 
+> Short paragraphs let them get the meaning in short bursts. Many visitors scan down the page, glancing at headers and subheaders, then dive deeper into the paragraphs if something catches their interest.
+> 
+> ...
+> 
+> Designers know that visitors love white space, but somehow, _writers didn’t get the message_. Don’t write walls of text. Break up paragraphs to create white space on the page.
+> 
+> _The ideal length for a paragraph is 3 to 4 lines maximum_.
+> 
+> ...
+> 
+> When David Waterhouse analyzed the length of the top 50 YouTube videos, he found the average length was 2 minutes, 54 seconds. Clinton Stark reported that Google researchers from the YouTube team confirmed this recommended length.
+> 
+> ...
+> 
+> If a title is too long, it gets truncated, and people won’t be able to read it all. The cutoff point is around 60 characters. So use the target keyphrase once and keep it short. ...
+> 
+> _The ideal length for a title tag is 55 characters_.
+> 
+> As with the title tag, the meta description is visible in search results, and it gets cut off if it’s too long.
+> 
+> It should be a single sentence in plain English, summarizing the content of the page. Use the target keyphrase once and don’t make it too long.
+> 
+> _The ideal length for a meta description is 155 characters_.
+> 
+> ...
+> 
+> _Every piece of content should be as long as it takes to convey the message, and no longer_.
+
 
 ## Further Reading
 
