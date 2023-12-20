@@ -753,7 +753,267 @@
 > 
 > ![Domain Authority Curve](/.attachments/domain.authority.curve.jpg)
 > 
+> ...
 > 
+> Here’s how to research keywords fast. You can estimate your odds of ranking based on your Domain Authority and the keyword search volume. This is a shorthand way to quickly research keywords for which you can reasonably expect to rank.
+> 
+> | If your Domain Authority is ... | Target keyphrases with monthly searches of ... |
+> |:--- |:--- |
+> | less than 30 | less than 100 |
+> | less than 50 | less than 1,000 |
+> | less than 70 | less than 3,000 |
+> 
+> _Relevance_
+> 
+> It should go without saying that there is a third criteria for choosing keyphrases: relevance. It’s pointless to target a phrase that is completely irrelevant to your business. But it’s extremely useful to target phrases that are tangentially relevant and publish content that is useful to a broader audience beyond potential customers.
+> 
+> ...
+> 
+> In very competitive industries, it’s impossible to rank for the buyer-related phrases without having a robust content marketing program. The reason is simple. No content, no links. No links, no rank for the dollar sign phrases. No rank, no traffic. No traffic, no leads.
+> 
+> ![Visitors to Leads](/.attachments/visitors.to.conversion.jpg)
+> 
+> ...
+> 
+> Rather than simply write a great blog post, we took a few minutes to do the research using the Keyword Tool. We discovered that the phrase “graphic design vs. web design” is searched 58 times per month.
+> 
+> When checking competition in Google, there didn’t seem to be any popular domains ranking high. The sites that were ranking didn’t seem to be well-optimized (i.e., they didn’t have the phrase at the beginning of their title). It seemed we had found a very specific phrase with relatively low search volume but with very low competition. Bingo.
+> 
+> _Graphic Design vs. Web Design: Separate and Not Equal_, went live way back in June, 2010. In less than a week, it was ranking like a champion. It’s been in the first or second position for that phrase ever since. For the first few months, people visited it once or twice a day. Then a few sites began linking to it and traffic increased. When a high-profile blog linked to the article, it jumped again.
+> 
+> ...
+> 
+> Pages tend to rank higher in search engines when they are tightly focused on a single topic. It’s unlikely that one page will rank high for a dozen phrases. So if we expect to rank, we need to pick a phrase and create a great page on that topic.
+> 
+> But what about just two phrases? Can we optimize a page for a primary and secondary keyword? Yes. But only if we pick phrases that meet one of these two criteria:
+> 
+> 1. **Two phrases with overlapping words:** Ideally, the two keyphrases share words. Even better, the primary keyword is a subset of the secondary keyword. Here are some examples:
+>    - **Bad**: _“Social media for beginners”_ and _“Twitter tips”_: These phrases may share a meaning, but they don’t share any words.
+>    - **Good**: _“How to research keywords”_ and _“Keyword research tips”_: These two phrases both share two words, keyword and research, but the words appear in different order within the phrases.
+>    - **Better**: _“Google Authorship markup”_ and _“Google Authorship”_: Here, the second phrase is contained within the first phrase. One phrase is really just a more specific version of the other.
+> 
+> 2. **Two phrases with similar semantics and synonyms:** When you searched for your initial phrase in step three above, did you see any different, but related words or phrases bolded in the search results? If so, you’ve found an example of Google using semantic indexing.
+> 
+>    When you notice these words, it’s a sign that you can target both phrases on one page, even if you’re just using one of them in your writing. This allows you to target a secondary keyword that shares the same meaning as the primary keyword, even if the actual words aren’t the same.
+> 
+> Headlines are _first impressions_. You will be judged immediately and ruthlessly by this short set of words. We all scan (and dismiss) headlines continually. That’s what “surfing the web” means. Skimming over waves of headlines.
+> 
+> Even if you do everything else right, slaving away in the salt mines of content, working your fingers to the bone, everything will fail if you get this one thing wrong.
+>
+> So here’s how to write a good headline.
+> 
+> ...
+> 
+> 1. **My Headline Makes a Promise** If you don’t explain what’s in it for the reader, don’t expect them to read it. Period. All great headlines are benefit-driven.
+> 
+>    So make a promise. Make it specific.
+> 
+>    Ask yourself as if you’re the reader: “What’s in it for me?” The answer should jump off the page. If it doesn’t, be ready to hear crickets. You’re about to fail.
+> 
+>    ...
+> 
+> 2. **My Headline Triggers Curiosity** Specific is good, but don’t give everything away. Here’s a headline I saw yesterday that I appreciated, but gave me no reason to click.
+> 
+>    “Average Full-Time Work Week is 47 Hours, Gallop Says”
+> 
+>    That’s interesting, but why click? I got the point already.
+> 
+>    A great headline triggers curiosity. It doesn’t give too much away. Masters of headlines, Buzzfeed and Upworthy, have perfected this craft. Here are some some of Upworthy’s most shared headlines, each of which got millions of visits.
+> 
+>    - 9 Out of 10 Americans Are Completely Wrong About This Mind-Blowing Fact
+>    - A Brave Fan Asks Patrick Stewart a Question He Doesn’t Usually Get and Is Given a Beautiful Answer
+>    - His First 4 Sentences Were Interesting. The 5th Blew My Mind.
+>    - 13 Things You Never Knew About Tequila
+>    - Watch the First 54 Seconds. After That You’ll Be Hooked. I Swear.
+> 
+>    Teased? That’s the idea. You have to click to find out what they’re talking about.
+> 
+> 3. **My Headline Uses Numbers** List posts are popular for a reason: They set expectations about how much you’re getting yourself into. They also suggest variety; if you don’t like one thing, you might like something else.
+> 
+>    Numerals, not just numbers, are part of the magic. In a line of letters, numerals stand out. So don’t write a headline with “Eight Things,” write one with “8 things.”
+> 
+>    ...
+> 
+>    _Examples_:
+> 
+>    - 15 Things to Remove From Your Website Immediately
+>    - How to Increase Conversion Rates by 529%
+>    - 101 Ways to Write Top 10 Lists that Increase Traffic By 21%
+> 
+>    You get the idea.
+> 
+>    ...
+> 
+> 4. **My Headline Asks a Question** Question headlines have two benefits. First, they leverage a psychological effect, causing the reader’s mind to take the next step: answer the question …or wonder. The lack of completeness inherent in questions causes tension and interest in readers.
+> 
+>    Search is the second benefit. Google is focused on the meaning of a search query, not just combinations of words. It’s called “semantic indexing.” The natural language of a complete question helps Google understand how the article is useful.
+> 
+>    ...
+> 
+> 5. **My Headline Uses Power Words** Some words get clicked more than others. Other words get shared more. Word choice is critical to writing headlines. So choose carefully.
+> 
+>    Luckily, there’s data on which words get the best results. Here’s a summary of research on the power words.
+> 
+>    - Words that get more clicks from search results: _How to, [List-related numbers], Free, You, Tips, Blog post, Why, Best, Tricks, Great_
+>    - Words that get shared more (appear most often in viral posts): _Smart, Surprising, Science, History, Hacks (hacking, hackers and “life hack” related topics), Huge / Big, Critical_
+>    - Negative words that get shared more (negative words from viral posts): _Kill, Fear, Dark, Bleeding, War_
+>    - Words that get retweeted more: _You, Twitter, Please, Retweet, Post, Blog, Social, Free, Media, Help_
+>    - Words that increase email open rates: _Urgent, Breaking, Important, Alert_
+> 
+>    ...
+> 
+> 6. **My Headline Is Sized to Fit Its Purpose**
+> 
+>    Length matters. But different sizes fit different places. Headlines are everywhere, but they’re not one-size-fits-all. Here are places where your headline is likely to appear.
+> 
+>    - **Email Subject Lines** in the inbox
+>    - **Posts and Tweets** in social streams
+>    - **Search Results Pages** from your `<title>` tag
+>    - **At the Top of the Page** in the header `<h1>` tag
+> 
+>    You don’t have to use the same headline in every location. Pro marketers will tailor the length to the location, writing different headlines for different places. Here’s a guide for “headline” length.
+> 
+>    |  | Ideal Length for "Headlines in various places" |
+>    |:--- |:--- |
+>    | Title tags | 55 characters |
+>    | Email subject lines (for open rates) | 50 characters or less |
+>    | Facebook post (for likes & shares) | 100-140 characters |
+>    | Tweets (for retweets) | 120-130 characters
+> 
+> 7. **My Headline Puts the Keyword First**
+> 
+>    Using the target keyphrase at the beginning of the headline gives you good “keyphrase prominence,” helping to indicate relevance to search engines.
+> 
+>    It’s especially important for both the title tag `<title>` and the header `<h1>`. This is fundamental to on-page SEO best practices. It’s not important for email subject lines and social media post headlines.
+> 
+>    This may come naturally when you target longer, less competitive “how to” or question phrases. It’s more difficult when writing those Buzzfeed-style curiosity gap headlines.
+> 
+>    Conflicted? Yes, some of these tips contradict others. So here’s a pro-tip you probably haven’t seen before. This is part of our secret writing sauce here at Orbit…
+> 
+> 8. **My Headline Uses Punctuation (and a secondary headline)**
+> 
+>    Punctuation, such as colons, dashes and parentheses, also allow you to add a secondary headline, giving you two chances to catch the reader’s attention. Here are examples of double headlines that separate the first from the second with punctuation. Each leverages another of the techniques to catch readers’ attention.
+> 
+>    - **Uses a number:** The Complete Hamster Training Guide: 5 Circus Tricks Rodents Love
+>    - **Promises a specific benefit:** Hamster Training Tips - How To Train Your Hamster to Jump Through Hoops
+>    - **Creates urgency:** Train Your Pet Hamster (Before He Escapes Forever)
+>    - **Triggers curiosity:** Hamster Training: This Furry Guy Learned This Trick in Just 10 Minutes
+>    - **Asks a question:** What Tricks Can You Teach A Hamster? Training Advice from a Pet Rodent Expert
+> 
+>    ...
+> 
+>    This is Orbit’s formula for headlines: [keyphrase] : [number or trigger word] + [promise]
+> 
+> ...
+> 
+> _Bonus Tips_
+> 
+> - **Write lots of headlines before choosing one:** We write dozens before choosing one for an article.
+> - **Write headlines that create some urgency:** Hurry up and do this before your competition does!
+> - **Check the “emotional value” of your headline:** Put your headline into Advanced Marketing Institute’s _Headline Analyzer_, which will give you a percentage score of the emotional value. The higher, the better.
+
+![Sales Pitch using Greed](/.attachments/sales.pitch.emotion-1.jpg)
+
+![Sales Pitch using Fear](/.attachments/sales.pitch.emotion-2.jpg)
+
+![Sales Pitch using Altruism](/.attachments/sales.pitch.emotion-3.jpg)
+
+![Sales Pitch using Envy](/.attachments/sales.pitch.emotion-4.jpg)
+
+![Sales Pitch using Pride](/.attachments/sales.pitch.emotion-5.jpg)
+
+![Sales Pitch using Shame](/.attachments/sales.pitch.emotion-6.jpg)
+
+Hmm. I think shame and pride are basically the same thing.
+
+> - **Add a fun theme, then share with specific people:** Adding a theme adds interest. If you write a zombie-themed article about search marketing, you can then find people who love zombies and SEO. There are 31 people with “zombie” and “SEO” in their Twitter bios.
+> - **Keep your promises:** If the headline doesn’t fit the article, don’t use it or you’ll erode trust with your readers. That “ultimate guide” had better be the best. Those “5 Easy Ways” better not be complicated!
+> 
+> ...
+> 
+> Content marketers are writers. We write text in the form of posts. Blogging is a written, text-based medium, right? That’s true, but text is only part of it. Every great content marketer knows that the images are critical.
+> 
+> They are an all-important ingredient, a close second behind the headline. Every book needs a cover; every post needs an image.
+> 
+> ![Retention Rates: Content with Image](/.attachments/content.with.image.retention.rate.jpg)
+> 
+> If your post doesn’t have an image, don’t expect it to go very far.
+> 
+> ...
+> 
+> 1. **My Image Contains the Headline or a Quote**
+> 
+>    The “featured image” is the image that appears at the top of the post. It’s also typically the image that appears in social streams when the post gets shared.
+> 
+>    Do it well, and it will get clicked and reshared. Do it poorly, and viewers will scroll right past.
+> 
+>    One way to do it well is to _put the headline right into the image_. That way, the image contains the full meaning of the article and will stand on its own.
+> 
+>    ...
+> 
+>    By putting the headline into the image, people who even glance at the image will know the topic of the post.
+> 
+>    ...
+> 
+> 2. **My Image Has a Face**
+> 
+>    Faces are unique among all other possible imagery. They are unlike any other type of image. From the time we are infants, we have a tendency to stare at faces more than any other visual. Babies are more likely to gaze at shapes that resemble faces, even if it’s not an actual face.
+> 
+>    This is a hardwired visual preference. A cognitive bias built into all of us. Photo editors at magazines and newspapers have known this for decades. Images of faces grab and hold readers’ attention.
+> 
+>    :bulb: If you don’t have pictures of people in your website’s “About” section, add some immediately. Regardless of what industry you’re in, it helps to be a person. Humanize your site by adding pictures of your team.
+> 
+>    Faces create another subtle marketing opportunity. You can direct the viewer’s attention in specific directions.
+> 
+>    Eye tracking studies show that “you look where they look.” If the eyes in the image are looking in a certain direction, the eyes of the viewer will be pulled in that same direction.
+> 
+>    ![Power of the Eyes](/.attachments/power.of.the.eyes.jpg)
+> 
+>    The direction of the eyes creates an invisible arrow, irresistible to visitors. This can help you guide the visitors’ eyes toward the headline, pulling them into the content. Blogging pros and landing page designers have used this tactic for years.
+> 
+> 3. **My Image is Sized Properly for Social Media**
+> 
+>    ...
+> 
+>    The size doesn’t matter. It’s the shape of the image that counts. All of the social networks automatically resize photos for their social streams. As long as the image is roughly twice as wide as it is tall, it will look fine on every social network.
+> 
+>    If it’s taller than it is wide, the social network will likely cut off the top and bottom. The width-to-height ratio is called the “aspect ratio.” Images that are wide are called “landscape,” and images that are tall are called “portrait.” Give your blog images a landscape aspect ratio, or at least be sure that the focus of the image is centered vertically.
+> 
+> 4. **My Images are Consistent and Align with my Brand**
+> 
+>    If you establish your own style, readers will come to recognize it. It also speeds up the process of making images because a lot of design decisions are made in advance, such as layout, fonts and colors.
+> 
+>    ...
+>
+> 5. **My Images Explain Complex Concepts and Processes**
+> 
+>    Visuals make complicated things simple, even enjoyable to understand. They are fast shortcuts that save the visitor from reading paragraphs of text. ...
+> 
+>    Any time your meaning can be explained through a flow chart, pie chart or Venn diagram, take the time to sketch it out and add it to the post. It doesn’t have to be beautiful. It’s better to have an ok diagram that adds clarity than no diagram at all.
+> 
+>    ...
+> 
+> 6. **My Content Uses Multiple Images**
+> 
+>    Accept it. Your readers are really just scanners. According to research by NN Groups, the average visitor reads 28% of text on web pages, at most. This calculation is based on the average number of words on pages, the average time spent on page and the average reading speed of visitors. 28% is actually optimistic. The real number is probably closer to 20%.
+> 
+>    So how can you slow these scanners down? _Multiple images_.
+> 
+>    Your readers should never hit a wall of text. In other words, as they scroll down, at no point in your article should there be a screen of all text with no images. Images will keep readers flowing through the article, increasing the chance of catching their attention and slowing them down.
+> 
+>    Add an image every 500 pixels or so, usually after every three or four paragraphs.
+> 
+>    ...
+> 
+> 7. **I Have Permission to Use My Images**
+> 
+>    Not getting sued is always good. And it’s easy if you know where to look for images. Search tools at Flickr allow you to filter for images covered by the Creative Commons license, with levels of permission.
+> 
+>    The Google Images search tool also includes filters for usage rights. Check these before searching for that picture of wheelbarrows full of puppies.
+> 
+> ...
+> 
+> No one loves stock images. But they’re far better than no image at all. The problem with stock photos (especially stock photos of people) is that they are inauthentic. And it’s obvious.
 
 ## Further Reading
 
