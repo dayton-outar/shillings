@@ -1150,7 +1150,524 @@ Some marketing communities refer to the content hub as a topic cluster.
 
 ## Chapter 6. Promotion
 
+> ...
+> 
+> There are four main factors in visitor subscriptions. Coincidentally, they all start with ‘P’.
+> 
+> - **Prominence**: The signup form is highly visible on the page. It’s large, uses contrasting colors and appears in several places. The popup window is one way to make the signup form extremely prominent. Of course, no one likes popups, but they’re very effective. Ask any marketer who uses them.
+> 
+> - **Promise**: There is a description of the benefits to subscribing, what kind of information to expect and how frequently. In other words, “What’s in it for me?” If the email signup form doesn’t tell the visitor what they’ll get and how often, don’t expect them to subscribe.
+> 
+> - **Proof**: There’s evidence that it’s legitimate, especially social proof, such as a testimonial or number of subscribers.
+> 
+> - **Presents**: A gift is offered. It’s often called the content upgrade, free download, lead magnet or the ethical bribe. Whatever you call it, it’s an extremely common and effective content marketing tactic.
+> 
+> ...
+> 
+> The day of the week makes a difference. Although most businesses wouldn’t think of it, the research suggests that sending marketing emails on a weekend is a good thing. Saturdays and Sundays have higher clickthrough rates.
+> 
+> ![CTR for every day of the week](/.attachments/ctr..days.of.week.jpg)
+> 
+> _Effect of Day-of-Week on Clickthrough Rate_
+> 
+> ...
+> 
+> The time of day is another way to fine-tune your email marketing. The research suggests that early morning is a better time to send email.
+> 
+> ![CTR for every time of day](/.attachments/ctr.time.of.day.jpg)
+> 
+> _Effect of Time-of-Day on Clickthrough Rate_
+> ...
+> 
+> When posting to a network, you are basically adding a link and a teaser. The teaser is a headline and a short excerpt from the full post. There is no risk of a duplicate content penalty in Google, but you still don’t want to put the entire post in the teaser. If the teaser is too long, the reader may glean all the meaning and value without clicking and becoming a visitor.
+> 
+> ...
+> 
+> ... Depending on your level of activity on Twitter, it may be appropriate to tweet an article four to six times over two weeks or 10 times over a month.
+> 
+> ...
+> 
+> I consider guest blogging to be a content promotion tactic because it leverages the audience and influence of others to improve the visibility of content and companies.
+> 
+> There are two sides to guest blogging: Publishing your content on other sites (being a guest blogger) and seeking content from others for your site (blogger relations and guest blogger outreach). They are both powerful content marketing tactics with search marketing and social media benefits.
+> 
+> ...
+> 
+> ![Style, Substance and Following of and Ideal Guest Blogger](/.attachments/style.substance.following.jpg)
+> 
+> When outside experts write for your blog, you add a new voice to your site, you add credibility, you leverage their social networks, and _you get an article without spending the time and effort to write it yourself_. But you’ll get few or none of these results unless you select your guest bloggers carefully.
+> 
+> The first two criteria should be obvious. You want great writers. They know their subject matter and they write posts with substance. They’re skilled in crafting compelling content and they write posts with style. Read what they submit as if you were a visitor.
+> 
+> Ask yourself: Does the headline get your attention? Does the article hold it? Did you learn something from it? Would you be likely to comment or share it?
+> 
+> Social following, the third criteria for guest bloggers, is optional but highly desired: Do they have a large social following and are they willing to use it to drive some traffic your way? Look them up on Twitter, Facebook or LinkedIn. Some social media professionals use Klout, the somewhat controversial social media metric, to estimate online influence.
+> 
+> Ask yourself: Do they have an audience? Are they engaged within social channels?
+> 
+> ...
+> 
+> The outcomes of guest blogging are virtually indistinguishable from the outcomes of PR. Technically it is just one PR tactic, but as the news media revenue model continues to evolve, crowdsourcing of content becomes more prevalent, and publishing content becomes easier for blogs and brands, guest blogging will be ever more important for PR professionals.
+> 
+> Currently, guest blogging as a tactic falls into a gap between the skill sets of SEO and PR practitioners. Although SEO pros know the value of links, they don’t have access to powerful host blogs, since search engine optimizers don’t typically create content. PR pros can create compelling content, but they don’t typically understand the tactics and benefits of link popularity. Social media pros may be the first to bridge this gap.
+> 
+> Try it. You’ll find that the principles of guest blogging align closely with the philosophy of content marketing in general: create, connect, collaborate and help others. It’s fun.
+> 
+> ...
+> 
+> The more famous the influencer, the more patience you’ll need. If they have a following much larger than yours, go slow. The more similar you are in levels of authority, the faster you can go through this process.
+> 
+> ...
+> 
+> _“When I was in my twenties—I wasn’t successful at that time—I had a dream one night and I saw a billboard saying ‘Jerry Weintraub presents Elvis Presley at Madison Square Garden.’ The next morning I called his manager, Colonel Tom Parker, and said I wanted to take Elvis on a tour. He said no. I called him every day for an entire year and we had the same conversation every morning. Finally, I got a phone call from him and he asked me whether I still wanted to take Elvis on a tour. I said yes, very much so.”_
+> 
+> Since Elvis was one of the most famous people of his generation, a daily phone call for a year was necessary. But it worked. That’s persistence!
 
+## Chapter 7. Inspiration. Content Genesis
+
+> Remember, content marketing is about being social. So expect to sit alone when writing blog posts, but be social in your approach to the content. Interviews with experts add credibility to any website. Text-based interviews can be an efficient way to produce excellent articles. If you interview people who are influential, they may help promote your content through their social networks.
+> 
+> - Email an expert five questions.
+> - Email five experts one question.
+> - Invite fans and followers to ask questions on Facebook and Twitter. Have experts within your business write answers or answer questions on video.
+> 
+> ...
+> 
+> Every event that you attend is an opportunity to create content. Mentioning speakers or other attendees you meet will give you reasons to share the post with others. They’ll be likely to share it with their networks. If event summaries aren’t relevant to your audience, consider making this a guest post on another local blog or industry blog. If there’s a website for the event, they may also be interested in posting it.
+> 
+> ...
+> 
+> Content works in many ways. Some writing pulls your audience toward you, building awareness. Other content builds trust, compelling your audience to take action. In other words, _content can be useful at strengthening different parts of the funnel_.
+>  
+> The “funnel” is just a metaphor for the path that visitors take on their way to becoming leads and customers, starting with awareness and ending with action.
+
+Some marketers refer to the funnel as the "buyer's journey"
+
+> Every buyer of every product and every service goes through a series of steps: _awareness, interest, consideration and then the actual transaction_. From the impulse purchase of a Tootsie Pop in the checkout aisle to the government purchase of radar installations, every purchase goes through this funnel.
+> 
+> ...
+> 
+> Every great website first gives visitors the information they’re looking for and then gently guides them toward the information it wants them to read. Ultimately, it leads visitors to the contact page and subsequent thank you page. Content needs to support this process at every step.
+> 
+> ![The Funnel](/.attachments/the.funnel.or.buyers.journey.jpg)
+>
+> :spiral_notepad: NOTE! If you have more than one target audience or type of conversion, you may need to create more than one funnel. Each type of visitor has a separate set of interests and concerns that should be addressed with separate content. For example, one funnel may be for lead generation while a second funnel may be for newsletter subscribers.
+> 
+> ...
+> 
+> _Goal: Get attention, establish relevance to the topic, branding._
+> 
+> If your conversion rate from visitors into leads is good (above 2%), but traffic is low, the top of the funnel is weak.
+> 
+> ...
+> 
+> _Goal: Educate, engage, get visitors to go deeper and to subscribe and follow_
+> 
+> Your site has few shares and no comments. Traffic from campaigns is low and the email list isn’t growing. Very few visitors return to the site, and the average visitor sees less than two pages. _These are signs of weakness in the middle of the funnel_.
+> 
+> ...
+> 
+> _Goal: Turn “suspects” into prospects, build trust, inspire visitors, start a conversation._
+> 
+> If the conversion rate of your website is below 1%, you’ve got a problem at the bottom. If it’s not a complicated lead-generation process or confusing ecommerce checkout, the problem is probably the content.
+
+To get _conversion rate_: take the number of people who interact with a particular piece of content, like an email or a page on your website, and divide the number of conversions by that total.
+
+## Chapter 8. Conclusion
+
+> ...
+> 
+> ... It took Chris Brogan eight years to get his first 100 subscribers. Today he has hundreds of thousands of readers each month.
+
+## Appendix: HubSpot Notes
+
+### SEO Strategy
+
+```txt
+SEO Basics
+==========
+
+3 Steps Google uses to Find, Analyze and Rank
+---------------------------------------------
+
+1. Crawling/Discovery
+2. Indexing/Relevance
+3. Ranking/Authority
+
+Authority is how well known talked about and how much backlinks (reference) is made to the organization's resources.
+
+SEO Strategy
+-------------------
+[Check out Mozlow's Hierarchy of SEO Needs]
+
+ - How established is your business online?
+ - What resources do you have to dedicate to SEO?
+ - What industry are you in?
+ 
+ - Do you want to increase organic traffic?
+ - Do you want to increase the number of leads from your website? (probably same as sales conversions)
+ - Do you want to design a mobile-optimized website?
+ - Do you want to ensure your website is accessible for those with disabilities?
+ 
+ ... A lead generation form is a web form meant for capturing emails and other information of potential customers. The most common types of lead generation forms include contact forms, registration forms, and simple newsletter signup forms.
+ 
+ ... Important KPIs
+  - Organic traffic
+  - Keyword ranking
+  - Conversion rate
+  - Bounce rate
+  - Page load time
+  - Backlinks built
+  
+ ... getting featured as a guest blogger on an authoritative website within the industry
+
+How to measure a website's SEO authority
+----------------------------------------
+
+ - number of inbound links to your website
+ - number of unique domains that link to your website
+ - the quality of those links
+ 
+ backlink profiling tools includes,
+  - ahrefs
+  - majestic
+  - semrush
+  - moz
+
+On Page SEO
+===========
+
+Best Practices for Title Tags
+-----------------------------
+
+ - Include our primary keyword in your title tag
+ - Keep your title under 60 characters, if possible.
+ - Make sure both your page heading and title answer the searcher's primary question
+ 
+Create and Upload XML Sitemap to Search Engine
+----------------------------------------------
+
+ - Create XML sitemap
+ - Navigate to Google Search Console
+ - Enter domain name. Verify ownership
+ - Add sitemap. Sitemap should be accessible after domain name like https://shillings.info/sitemap.xml
+ 
+ 
+Writing and Editing Meta Descriptions
+-------------------------------------
+ 
+ - Write compelling content
+ - Include one or two keywords
+ - Aim for 155 -160 characters in meta description
+ - Avoid using special characters in meta description
+ 
+Write Descriptive Link Text
+---------------------------
+ 
+ - Stay on topic. Don't use text that has no relation to the page's content
+ - Don't use the page's URL as the link description, unless you have a good reason to do so, such as referencing a site's new address
+ - Keep descriptions concise. Aim for a few words or a short phrase
+ - Format links so that they're easy to spot
+ 
+Best Practices for Writing URLs
+-------------------------------
+ 
+ - Include your primary keyword
+ - Use hyphens between words
+ - Keep them short and simple
+ - Describe the page contents
+
+Best Technical SEO Elements
+---------------------------
+
+ - Robots.txt
+ - Canonicalizatin
+ - Protocols (Basically, using TLS Certificates)
+ - Redirect HTTP Codes (301, 302)
+ - Site speed (Site should load as fast as possible)
+
+
+Keyword Research
+================
+
+Defining Keyword Research
+-------------------------
+
+ - What are people searching for?
+ - How many people are searching for it?
+ - What format do they want to receive information in?
+ - How difficult will it be to rank for that search query?
+ 
+Head Terms
+----------
+
+ - Single keywords with lots of search volume and competition (e.g. marketing and insurance)
+
+Search Volume
+-------------
+
+ - Number of times a particular keyword is entered into a search engine per month
+ 
+Body Keywords
+-------------
+
+ - 2-3 word phrases
+ - decent search volume
+ - slightly more specific than head terms
+ - slightly less competition
+ - (e.g. marketing automation, car insurance)
+
+Long Tail
+---------
+
+ - make up majority of searches online
+ 
+Example of Long Tail
+--------------------
+
+ - "How to apply sunscreen"
+ - "How often should you apply sunscreen"
+ - "When to apply sunscreen"
+
+Topic Clusters
+--------------
+
+ - create targeted clusters of relevant content that cover a specific topic in depth
+ - rearrange site architecture to clusters of related content that link to a central pillar page
+
+Pillar Page
+-----------
+
+ - covers a topic in depth and is linked to a cluster of related content
+
+Buyer Personas
+--------------
+
+ - a semi-fictional representation of your ideal customer
+ - based on real data
+ - based on demographics, behaviours, motivations (psychographics) and goals
+ - based on interviews
+ 
+ ... can be used to better understand the target market and build upon their story: tell their current story and how the business comes into that storyline.
+ 
+Create Buyer Persona
+-----------------------------
+
+1. Aggregate information about a particular kind of person in your target market
+2. Find an avatar to represent that kind of person
+3. Give them a name.
+   (something memorable and alliterative, like Management Margaret or Skeptical Suzzy, which makes it easier for the team to remember them)
+4. Define the information that should be included
+5. Identify the best sources of that information
+   Sources include,
+    - Historical Data
+    - Customer Interviews (Surveys)
+    - Educated Guesses
+6. Identify commonalities among your most successful customers. 
+   Marketing team may ask questions like,
+	- How does a persona phrase their problem when they type it into Google?
+	- Where does each persona go to get help with their problem?
+	- What channels of communication do they prefer to be contacted through?
+	- Demographic information (helps with tone, languages, and imagery)
+   Sales team may ask questions like,
+   	- How high of a priority is overcoming this problem?
+   	- What kinds of goals is this problem preventing the persona from achieving?
+   	- Is this persona typically the only person involved in the purchasing decision?
+   	- How long or short do they expect the sales process to be?
+   	- Do they typically view your product's price as being high, low, or about average?
+   Services (or Operations) team may ask questions like,
+   	- What needs to happen in order for this persona to feel satisfied after purchasing your product?
+   	- What aspects of your product do they find most confusing?
+   	- What are their favourite features of your product?
+   	- What kinds of things will make them happy enough that they'll recommend your product to others?
+   	- What kinds of things will upset them enough that they'll recomment that people NOT buy your product?
+   
+   ... younger audience might respond better to casual and conversational tone, while older audiences may prefer formal and informative approach.
+   ... women might prefer more emotional or nurturing language, while men might prefer more assertive or action-oriented language
+   ... geographic location hints at culture, which the marketing must be sensitive towards: cultural nuances, values and norms
+   
+ - creation of your buyer personas should include input from as many different perspectives within your company as possible.
+ - more viewpoints that are included within the persona creation process, the better the final personas will be
+ - having a concrete understanding of the problem that the business means to solve that will form the foundation of the buyer's persona
+
+   ... personas should inform everything your customer-facing teams do.
+   ... personas should be updated on an ongoing basis
+ 
+Buyer's Journey
+---------------
+
+ - active research process someone goes through leading up to a purchase
+ - customer using keywords involving,
+     - "what is ...?" maps relatively to the awareness stage of buyer's journey.
+     - "how to ...?" maps relatively to the consideration or decision stage of buyer's journey.
+ - a page can be made to match the awareness and consideration stages
+ - a call to action can be placed on the consideration page to take the customer into the decision stage of the buyer's journey
+ 
+3 Stages of Buyer's
+-------------------
+
+ Awareness --> Consideration --> Decision
+
+How to do Keyword Research
+--------------------------
+
+1. Understand your customers and their goals
+2. Decide which topics you want to be known for
+3. Find out what terms people are searching for online. (Start at topic level, the zoom in)
+4. Note search volume and competition. 
+   (See what kind of content that is currently ranking for certain keywords. Emulate these but offer unique value)
+   (Check for trending keywords)
+5. Organize your keywords into topic clusters
+6. Prioritize which keywords or topic clusters you're going to focus on first
+
+Keyword Research Tools
+----------------------
+
+ - Google Keyword Planner
+ - Moz Keyword Explorer
+ - Answer the Public
+ - Keyword Surfer Chrome Extension
+
+
+Backlink Strategy
+=================
+
+ - link building is the process of manually encouraging people to link to your website from theirs
+ - the key to effective link building is to complement creating great content with manually building links
+ 
+ ... to calculate a baseline target for how many links you'll need to rank highly,
+  1. Choose a broad topic that you want to be known for
+  2. Plug that topic into Google and run a search
+  3. Run the URLs for the top 10 results through a link-checking tool (like https://moz.com/link-explorer)
+  4. Calculate the average number of root domains linking to these sites
+  
+  ... link building is about carefully and tactfully building meaningful relationships with the right people who can and want to link to your website
+  
+  some link building tactics include
+  (high potential reward, great resources required)
+   - website acquisitions
+   - big pr
+   - data journalism
+   - newsjacking
+  (low potentional reward, little resources required)
+   - link reclamation
+   - local citations
+   - guest posting
+   - sponsorships
+   - resource pages
+   - broken link building
+
+ ... to scale low-risk, low-reward link building tactics is by building lasting relationships.
+ 
+ ... freelance journalist are great resource for link building
+ 
+Relationship Building
+---------------------
+
+ ... relationship building should always start with you delivering value to the person you want a link from
+ 
+ - What relationships does your organization already have with journalists, bloggers, influencers, and others who might link to your site?
+ - Whom do you wish your organization had a relationship with?
+ - What value can you offer them to initiate a relationship?
+ 
+Press Request Alerts
+--------------------
+
+ ... requests that journalists send out asking for sources of information (like quotes on a certain topic from an industry expert)
+
+ ... if you respond quickly enough to a press request alert and give the journalist exactly the information they want,
+     then you could get a backlink from a high-quality publication.
+
+Press Request Alert Services
+----------------------------
+
+ ... free services
+  - HARO
+  - Source Bottle
+  - NARO PR
+  - #JournoRequest / #PRrequest
+ ... paid services
+  - Muck Rack
+  - Gorkana
+
+ ... user your email client's filters to surface the requests that have specific keywords and phrases that are relevant to you
+ 
+ ... here's how to respond effectively to press request alerts
+  1. Sign up for one press request alert service only to start
+  2. Browse these requests without responding for 1-2 weeks
+  3. Make a list of thought leaders in your organization who might offer quotes on relevant topics
+  4. Email them asking for quotes across those topics
+
+Optimizing Website for Rich Results
+===================================
+
+ ... rich results are supplemental information returned on a Search Engine Results Page (SERP).
+ 
+ SERPs can include:
+  - Organic results
+  - Paid ads
+  - Featured snippets
+  - Knowledge graphs
+  - Rich results
+
+ ... common rich results to optimize for include
+  - Image packs
+  - Local packs (geo-location of stores, etc.)
+  - Reviews
+  - Recipes
+  - Site links
+
+Image Optimization Best Practices
+---------------------------------
+ - Include a descriptive file name and detailed alt text
+ - Make sure your image URL is readable
+ - Optimize image size
+ - Include a title attribute
+
+Structured Data
+---------------
+
+ ... a standardized format for providing information about a page and classifying the page content
+ ... schema.org is the organization that creates the standardized language and rules used for structured data
+ ... JSON-LD is a script that can be placed within a web page to communicate structured data to search engines
+ ... steps to add structured data to a page
+  1. In the head HTML of your web page, add a script element set to JSON-LD ... <script type="application/ld+json">
+  2. Inside the script element, tell Google you're using Schema.org structured data
+  3. Based on the type of content you're describing, tell Google which kind of structured data you're using
+  4. Add all the required and recommended properties to give Google more information about the content being described
+  5. Make sure to test your page by using Google's Rich Results Test and Structured Data Testing Tools
+
+
+Optimizing Featured Snippets
+----------------------------
+
+ ... sometimes the featured snippet can come from a search result that is in the second spot or below
+
+ ... 3 reasons to care about featured snippets,
+  1. They show up for a lot of the terms your target customers are searching for ... who? what? where? when? why? how?
+  2. They often show up first in voice search results
+  3. You need an effective strategy for capturing how customers are changing the way they search
+  
+ ... to optimize for the featured snippet,
+  1. Identify your blog posts that currently rank in positions #1 - #5, and estimate which keywords they're ranking for
+  2. See if a featured snippet appears in search for those keywords (in an incognito mode)
+  3. Optimize your posts for the featured snippet
+  4. Submit the URLs to be re-crawled (using Google Search Console)
+  
+ ... format is critical when optimizing for the featured snippet
+ ... try to mimic the featured snippet for the keyword that you want your page to rank highly for and just add more value to the current featured snippet
+
+SEO Reporting
+=============
+
+ ... reporting is about telling the story of what happened on your website to influence what you're going to do next
+ ... start by setting SMART or FAST goals and establish KPIs for your website
+ ... SEO is an interative process. You can't go after everything all at once.
+ ... don't get carried away and over-optimize. If you change too many things at once, it could adversely affect your rank
+ ... use Google Search Console to check your search performance and rank for a keyword or page
+ ... use Google Analytics to track organic traffic to a page
+ ... connect your website to Google Search Console that will give great insights into organic traffic, as well as metrics relating to the website, indexation of pages, errors, etc.
+```
 
 ## Further Reading
 
