@@ -49,3 +49,11 @@ Once the product reaches the first _minimum valuable product_ milestone (meaning
 - Determine strategy for brand awareness
 
 :bulb: People learn from each other. How can the product be designed so that people can learn from each other easily?
+
+Notes left to take,
+
+ - Technical analysis
+
+ - Valuation
+
+ - Complete all readme for analaysis, branding, marketing and experience
