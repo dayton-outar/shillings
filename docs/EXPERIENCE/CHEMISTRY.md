@@ -1044,6 +1044,112 @@ Hmm. I think shame and pride are basically the same thing.
 > ...
 > 
 > _Every piece of content should be as long as it takes to convey the message, and no longer_.
+> 
+> Content chemistry is a science, but don’t forget the art. If your writing is boring, salesy or irrelevant, no amount of chemistry will help. All the usual rules apply. Know your audience. Do your research. Tell a story. Find your voice.
+> 
+> 1. **Write the “takeaway,” a single sentence summary.**
+> 
+>    You have to identify the voice of your brand; you need to figure out who the voice behind the blog is and to whom it is speaking.
+>
+> 2. **Write the outline and headers.**
+> 
+> 3. **Fill in the blanks with short, rough paragraphs.**
+> 
+> 4. **Edit, refine and polish.**
+> 
+> ...
+> 
+> I urge you to start writing content that actually is either 1) actionable, 2) a strong opinion, or 3) proven to some degree.
+> 
+> ![Physical, Cognitive, Feeling Venn Diagram](/.attachments/physical.cognitive.emotional.jpg)
+> 
+> Sebald’s three blogging criteria align perfectly with the user contexts Kissane describes.
+> 
+> - **Actionable = Physical**
+> - **Proven = Cognitive**
+> - **Strong Opinion = Emotional**
+> 
+> Unless the post connects on one of these levels, it probably isn’t worth the reader’s time (and they’re certainly not going to share it). We all need to make sure that our content meets one or more of these three criteria:
+> 
+> 1. **The reader can DO something**. It’s practical. There are steps they can take. Actionable posts lend themselves to list formats, which makes a post more scannable and reader-friendly.
+> 
+> 2. **The reader LEARNS something**. If you want to teach something, you need supporting evidence. Facts, research and expert input make your assertions more believable.
+> 
+> 3. **The reader FEELS something**. You felt something while you wrote it. It’s your voice and your opinion. It means something to you, good or bad. If you don’t care, why would your readers?
+> 
+> 
+> ...
+> 
+> “Stop trying to write. Do more research.” - **Robert Bruce**
+> 
+> ...
+> 
+> Online competition is intense. More than 2 million blog posts are published every day. That’s a lot of content. A bit discouraging, isn’t it?
+> 
+> But take a moment to think about the nature of competition. Online competition is based on topics. In Google, in social media, and in the minds of your audience, competition for attention is always specific to a topic.
+> 
+> Popular topics are crowded with competitors: famous blogs, big companies, and sites that have invested in content for years. If the topic is small, small websites can win attention, but it may not be enough to generate leads and sales. It’s hard to thrive in a tiny niche.
+> 
+> First, you have to understand this: Those bigger competitors win because they have more content and better content. This is how they become relevant for that topic in search engines, in social media and with their email subscribers.
+> 
+> To compete, you need to focus on a topic and build up a set of content around it. You need to be more organized and focused. To beat the big boys, you need content hubs.
+> 
+> When content is focused on a topic, it piles up, reaching higher above the competition and gaining visibility. If a content hub were drawn in 3D, _it would look like a mountain_, with a central peak surrounded by a wide base of subtopics.
+> 
+> Most marketers aren’t very focused. They publish a bit here and there. These are just small hills that never rise high enough to be visible.
+> 
+> ![Small hills of scattered, unrelated content](/.attachments/small.hills.and%20mountains.jpg)
+> 
+> A content _hub_ is a set of content (usually web pages) organized around a specific topic (usually a central page). It could be a category on a blog or a section of pages on a website. So content hubs are relevant to both web design and ongoing content marketing.
+
+Some marketing communities refer to the content hub as a topic cluster.
+
+> DON’T: Build a pile of medium-quality blog posts that all say similar things.
+> 
+> DO: Create a well-organized hub of diverse assets, in many formats, in many places, created by various people.
+> 
+> **Content on interrelated topics**: The posts or pages support each other, inviting the visitor to dig deeper through internal links, like a mini-Wikipedia.
+> 
+> ![Content with interrelated topics cluster](/.attachments/content.topics.jpg)
+> 
+> **Content targeted related phrases**: The center of the hub targets the broadest, most popular but most competitive keyphrase. It it supported by many pages that target related phrases, forming a large set of interconnected keyphrase-focused pages.
+>
+> ![Content with keywords](/.attachments/content.keywords.jpg)
+> 
+> **Content in different formats**: What you publish should vary. Appeal to your audiences’ various learning styles using different formats: blog posts, guides, videos, infographics, audio, etc
+> 
+> ![Content of different format](/.attachments/content.format.jpg)
+> 
+> **Content on other websites**: Where you publish should also vary. Write for other publications.
+> 
+> ![Content from different sites](/.attachments/content.location.jpg)
+> 
+> **Content created together with influencers**: Who creates this content? You don’t have to do all the work. Co-create content with people your audience trusts, people who have already built an audience that overlaps with yours. Collaborate with influencers.
+> 
+> ![Content by many creators](/.attachments/content.creator.jpg)
+> 
+> ... The general idea is to create more stuff, focused on a topic, organized around a central hub. But you’ll get better results if you take a more strategic approach:
+> 
+> 1. **Pick a topic** that’s valuable to you and important to your audience. Think about the questions your content can answer, the problems your business solves, and the phrases your audience is likely to search for. Make a list of these questions, answers and keywords. They should be closely related.
+> 
+> 2. **Check the competition** by searching for the phrases in Google. Use the MozBar to see the Domain Authority of the highranking sites. Use Open Site Explorer to check your own Domain Authority. Normally, you’d need an authority in the high end of the range of the high-ranking sites. But since we’re building an entire hub of content, we can win even for the more difficult phrases.
+> 
+> 3. **Find the influencers** who are relevant for these topics with your audience. You want to start making friends with these people early in the process. Follow them, share their content, comment and do anything else that slowly wins their attention in a positive way.
+> 
+> 4. **Publish the central hub**. This will be the center of the content hub. Make it your simplest, strongest and most useful piece of content on the topic. Optimize it for the most valuable and competitive keyphrase. Give it a clear call to action.
+> 
+> 5. **Publish supportive content**. Put your best advice out there. Each piece can target its own phrase, which are subtopics of the central hub.
+> 
+>    Make sure to create visual content that looks great when shared on social networks. Also, make sure everything links back to your hub. Use the target phrase for the hub in some of the links.
+> 
+> 6. **Co-create with the influencers** who are now in your network. Interview them, ask them for quotes, or include them in a survey, poll or research study. Make them aware of the hub you’ve created and politely request that they share. Invite them to contribute a guest post or offer to write something for their site.
+> 
+> 7. **Publish on other websites**. Pitch related posts to relevant blogs and media sites. These could be alternate versions of content you’ve published, created by repurposing and rewriting. In each case, they should link back to the hub.
+> 
+> By the end of the process, you should be able to check Analytics and see if you’re winning attention.
+
+## Chapter 6. Promotion
+
 
 
 ## Further Reading
