@@ -1669,6 +1669,1579 @@ SEO Reporting
  ... connect your website to Google Search Console that will give great insights into organic traffic, as well as metrics relating to the website, indexation of pages, errors, etc.
 ```
 
+### Content Marketing
+
+```txt
+The Power of Storytelling
+=========================
+
+The Golden Circle
+-----------------
+
+ ... "People don't buy what you do, they buy WHY you do it" - Simon Sinek
+ 
+ ... the golden circle is a concentric set of circles that starts from why, then they go to how and then what,
+  - Why are you doing what you're doing?
+  - How will this help your audience?
+  - What are you offering?
+
+Storytelling Points of View
+---------------------------
+
+ - First person
+ - Second person
+ - Third person
+ 
+ ... first-person point of view is used when
+  - the character is yourself
+  - the storytelling is more confessional
+  - the author seeks to build authority
+  - there is a known person, an author, behind the content
+ 
+ ... second-person point of view is used when
+  - the character is your audience
+  - understanding buyer personas (See [Keynote: Emotional Intelligence and Psychographic Targeting with Unruly](https://youtu.be/8WFSCBjptvw))
+  - showing empathy
+ 
+ ... third-person point of view is used when ("he said", "she said")
+  - discussing case studies about your customers
+  - the story is either fictional or non-fictional
+
+Essential Elements of Storytelling
+----------------------------------
+
+ - Characters
+ - Conflict
+ - Resolution
+
+ ... storytelling can't happen without valuing and understanding your audience
+ ... the target audience, the characters, in the story is best profiled in a buyer persona
+
+ ... the conflict is the lesson in how the character transforms through challenge
+ ... if your story lacks conflict, then you're probably not telling a story
+ ... make sure the conflict fits your prospect's problems, needs and stage of the buyer's journey
+ 
+ ... the resolution should wrap up the story but should also clearly call your audience to action
+ 
+Storytelling Best Practices
+---------------------------
+ 
+ - Use conflict to create emotional appeal
+ - Be consistent and authentic
+ - Keep the story clear and concise
+
+Building a Content Creation Framework
+=====================================
+
+ ... as a content professional you need to publish a lot of content for each of your buyer personas at different stages of the buyer's journey
+ ... content creation framework is a structure for publishing content, from the beginning stages to post-publication
+ ... a framework strikes that perfect balance between autonomous creativity and long-term content sustainability
+ ... content creation framework should always be evolving as your busines goals will vary from quarter to quarter and year to year.
+ 
+5 Steps to Building Content Creation Framework
+----------------------------------------------
+
+ 1. Conceptualizing content
+     - come up with appropriate ideas for content offers to get leads (prospective customer: name and email)
+     - keep tabs on frequently asked sales questions or important industry knowledge that would be helpful for the target market to know
+     - focus on creating content for every stage of the buyer's journey
+ 2. Planning a timeline
+     - create enough slack to execute your initiatives
+     - use goals to determine what content needs focus. From there, map out content needed and when it needs to go live
+     - identify company-wide initiatives that will need support from content over the next three months
+ 3. Creating a workflow
+     - a workflow is an intuitive breakdown of the content creation work. It consists of the sequence of steps a piece of content moves through from its initial creation to publication. some granular steps could be
+       - outline completed
+       - first draft completed
+       - editing completed
+       - design and formatting completed
+       - final draft completed
+       - published
+ 4. Reviewing and editing content
+     - this step is in place so that content is accurate, well written, and aligned with your brand
+     - the seven best practices
+        1. Set clear expectations.
+           Reviewer should know what they're looking for: grammatical errors, fact-checking, story gaps, wordsmithing and more.
+        2. Define roles in the reviewal process.
+           Each person should know what they need to do and when. 
+           Maybe you have a development editor looking at your content's oerall focus and structure before a copy editor goes in for more detailed edits. Or maybe you have a single editor reviewing everything
+        3. Determine a timeline.
+           With so many people involved in publishing content, set due dates and a high-level timeline so that each person is held accountable for their contributions
+        4. Use a style guide
+           Content needs to be consistently authentic, well written, and aligned with your company's brand - even among various writers with different writing styles, skill levels, and voices.
+        5. Track edits
+           Have content reviewers make suggestions by tracking changes as opposed to making edits directly.
+           
+           This way, the content creator knows where to make changes as opposed to figuring out what was altered.
+        6. Manage progress
+           Use some sort of document, like a project management software, to track progress.
+           
+           This document should reflect the roles, timeline, and deadlines you've determined for your reviewal process.
+ 5. Organizing and storing content
+     - Store content in a centralized location where the team can access it
+     - Develop a clear naming system
+       ... a clear naming system includes
+        - content format
+        - buyer's journey stage
+        - campaign
+        - year
+       ... for example, ebook-awareness-rockclimbinggear-2015
+
+In the awareness stage ...
+--------------------------
+ 
+ ... a prospect is experiencing and expressing symptoms of a problem or opportunity
+ 
+ ... they're doing research to more clearly understand, frame, and give a name to their problem
+ ... they're looking for educational content to help them answer some of their questions and concerns - think blog posts, ebooks, social content and how-to webinars
+
+In the consideration stage ...
+------------------------------
+
+ ... a prospect has clearly defined and given a name to their problem or opportunity
+ 
+ ... they're committed to researching and understanding all available approaches and methods to solving their problem or opportunity
+ ... create content that positions you as an expert in your industry. Demo videos, case studies, and FAQ articles are great resources to build relationships with readers and establish trust between your audience and your brand.
+
+In the decision stage ...
+-------------------------
+
+ ... a prospect has now decided on their solution strategy, method, or approach. They're compiling a long list of all available vendors and products in their given solution strategy.
+ 
+ ... they're researching to trim down this long list into a short list and ultimately make a final purchase decision - and that final purchase decision could be YOU
+
+
+Resources needed for Content Creation
+-------------------------------------
+
+ ... resources includes team and tools
+ 
+ ... 5 primary types of responsibilities in content creation
+  1. Content management and strategy
+      - involves creating a long-term content plan, mapping it to business needs, ensuring the other responsibilities are met, and analyzing the reports
+  2. Writing
+  3. Editing
+  4. Designing
+      - content needs to be packaged in a way that's appealing to readers
+      - average visitors spend 3 to 5 seconds scanning a website visually and then deciding if they want to spend time looking through it. this is the blink test
+      - a good designer can be the difference between a below average blink test pass rate and consistently getting people to stay on your site
+  5. Distributing
+      - content distributors, also known as social media coordinator or specialist, is responsible for bringing the content to market through a strategic promotion plan
+
+ ... 3 main tools in content creation
+  1. CMS (Content Management System)
+  2. Analytical tools (Google Analytics)
+  3. Planning and internal communication tools
+
+Planning a Long-term Content Strategy
+=====================================
+
+3 Steps to Creating a Long-term Content Plan
+--------------------------------------------
+ 1. Setting marketing goals
+ 2. Auditing or assessing your organization's initiatives and assets
+ 3. Identifying the buyer's journey for your buyer personas
+
+
+ ... setting goals can work backwards from determining the number of customers needed
+ 100 customers --> (requires) 250 website leads --> (requires) 1,500 website visits
+
+ ... auditing consist of content audit and event-based audit.
+ ... content audit is identifying all the assets your business uses to attract and engage your audience. By doing your content audit, you'll be able to identify resources that you already have.
+ ... organize your content audit by these categories:
+  - content title
+  - buyer's journey stage
+  - lifecycle stage (i.e. lead)
+  - content format (i.e. ebook, study guide, newsletter)
+  - targeted buyer persona
+  - topic
+  - any additional notes that provide value of context
+ ... where to look for content
+  - start with your file manager or marketing folder
+  - ask your sales team what type of collateral they use
+  - check in with more tenured employees
+  - pore through your customer relationship management system (CRM), and your content management system (CMS)
+
+ ... organize your event-based audit by:
+  - upcoming monthly priorities
+  - initiative overview
+  - theme
+  - prospective blog post topics based on your buyer personas
+  - inbound marketing campaign that ties your efforts together
+ ... tie everything together with a series of blog posts that could connect to a relevant content offer
+
+Working with influencers to improve your content
+================================================
+ ... see images: search-traffic-lead.png, relationships-links-rank-traffic-lead.png
+ ... there are two kinds of people on the internet: 1% content creators, 99% content consumers
+ 
+5 Types of Content Creators
+---------------------------
+ 1. Bloggers and Editors
+ 2. Journalists
+ 3. Researchers
+ 4. Podcasters
+ 5. Event Producers
+
+ ... tools to search for people like this exist on,
+  - https://followerwonk.com/
+  - https://buzzsumo.com/
+
+5 Ways to Collaborate
+---------------------
+ 1. Simple mentions
+ 2. Contributor quotes
+ 3. Expert roundup
+ 4. Guest blogging
+ 5. Deep dive interview
+
+Generating Content Ideas
+========================
+
+ ... a content generation process allows you to come up with a predictable flow of original, high-quality, and relevant content ideas.
+
+Reasons to Know How to Generate Content Ideas
+---------------------------------------------
+
+ - your days are busy
+ - uncover ideas that you may not have come up with on your own
+ - you will run out of ideas
+ - grow responsibly and keep up with increased demand
+
+4-Step Ideation Process
+-----------------------
+ ... an idea is nothing more nor less than a new combination of old elements
+ 
+ ... to generate ideas,
+  1. Gather raw material
+     (read and consume material from a wide variety of sources)
+  2. Digesting the material
+     (look for relationships, connections and combinations)
+  3. Unconscious processing
+     (Do things to bring your mind to good state of rest)
+  4. Expect the "eureka" moment
+     (make sure to write it down when it comes)
+
+ ... keep in mind when generating content ideas on your own,
+  - what are your buyer personas' reading habits?
+  - what are your competitors doing?
+  - what are people talking about on Quora?
+  
+ ... 3 ways to leverage Google
+  - autocomplete functionality
+  - "related searches" section
+  - "people also search for" box
+
+Creating Quality Blog Content
+=============================
+
+ ... blog posts need structure because
+  - it gives direction
+     - choose a topic to write about
+     - create a title 
+       (for almost every piece of content, come up with at least 5 - 10 different titles)
+       (the ideal blog post title length is 60 characters long. Headlines between 8 and 12 words are shared most often on Twitter)
+       (headlines ending with a bracketed clarfication performed 38% better than titles without clarification)
+       (head terms can be put at the beginning of the title)
+  - it will make content creation time more effective and efficient
+  - it will help in making content that is easily comprehend the content
+  - it will help in making content that is memorable
+
+ ... ultimately, content needs to attract, delight and engage
+
+ ... at a high level, write educational content. Put yourself in the shoes of your buyer personas. What questions are they asking
+ ... write about your industry, not yourself
+ 
+ ... sample questions to address in preparing content
+  - what are the most frequently asked questions you hear?
+  - what do our prospects and custoemrs need help with?
+  - what do you wish people knew about our industry?
+  - what are industry bloggers, social media, and even our competitors talking about?
+
+ ... picking a topic. for example, general topic could be the product your selling like "running shoes" (a head term) and then refine this by narrowing down to "Best running shoes for marathons" or "Lifetime of running shoes". So, when picking topic, do keyword research to refine the topic. Which keywords do your buyer personas use? Which are associated with your industry? Focus on one long-tail keyword per blog post (a very targeted search phrase that contains three or more words)
+  
+ ... make a list of topics that support a specific conversion
+ ... make the value of the blog post clear
+
+ ... choose a format for the post so that both people and search engines can easily read and understand it
+ 
+ ... some formats include the "list" formula and the "how-to" formula
+ 
+ ... "list" formula
+  Intro
+  Main Subheading
+  1. 
+  2. 
+  3. 
+  4. 
+  5. 
+  Subheading
+  Conclusion
+ 
+ ... "how-to" formula
+  Intro
+  Why it matters Subheading
+  1. 
+  2. 
+  3. 
+  4. 
+  5. 
+  Conclusion Subheading
+  Conclusion
+
+ ... when writing an Intro, make it captivating
+ ... according to HubSpot, the ideal blog post length is roughly 2,100 words
+ ... include your keywords in your copy but only in a natural, reader-friendly way
+ ... instead of repeating that term over and over in the content, you can change it up with synonyms (which could be another keyword)
+ ... whitespace allows the visitor to focus on the content, not the clutter (spaces around images and other content)
+ ... don't go overboard with bolding, consider only bolding one sentence per paragraph and possibly just bolding one sentence every few paragraphs
+ ... use featured images and videos to help reader better digest the content
+
+ ... make it a best practice to shorten the url without losing context to what the page is about
+ ... don't include numbers in your url like years or steps
+ ... making 301 redirects hurts your SEO strategy
+ ... search engines can't see images, image alt-text ultimately helps images rank in the image section of the SERP (search engine results page)
+ ... maximum suggested length of meta description is 150 - 160 character length. it should include the long-tail keywords
+ 
+ ... when linking to external websites, consider having that content open in a new window
+ ... places to place call-to-actions
+  - passive approach by including links (without any image) in the first paragraph (or second paragraph)
+    ... text call-to-actions near the top of the blog posts produce the highest clickthrough rates
+  - near the most relevant content
+    ... the best time to support a conversion is just after educating someone
+  - end of the content (best place to put image call-to-actions)
+  - pop-up call-to-actions are a great way to stick around so that the reader can't just scroll past it
+  
+ ... even for professional writers, writing is hard
+ ... first drafts are sloppy and that's normal
+ ... editing requires you to cut out the unnecessary or irrelevant
+ ... common grammar and style tips
+  - use contractions
+    (turning "do not" to "don't" to sound more human)
+  - write with simple language (less big words or none)
+  - use the active voice
+  - be clear and concise
+  - use short sentences and paragraphs
+  - cut fluffy words from your writing
+    (words such as "very", "really", "actually", "just" and "in order to" add unnecessary verbiage)
+  - adhere to a style guide
+     - how to handle punctuation, grammar, voice, and tone
+     - industry specific terms
+     - common mistakes
+     - any brand-specific guidelines
+  - use "you" and "your" (to sound more conversational)
+  - avoid jargon (use too many acronyms)
+  - don't be snarky (use sarcasm sparingly)
+  - use spell check
+
+How to Rank #1
+==============
+
+ ... when creating a topic cluster it's good to write content for a blog post per keyword around that topic. For example, the topics below,
+  - "writing skills"
+  - "blog post topics"
+  - "content creation tools"
+  - "brainstorm techniques"
+  - "content creation tools"
+  - "brainstorm techniques"
+ covers the topic, "content marketing"
+ 
+ ... the aim to get relevance and authority is to publish a lot of blog posts (content) that answer every question on a particular topic.
+ ... link all the topics together to get that topic cluster for search engine to notice and rank the website highly.
+ ... Google uses h1 as heading, h2 as subheading and h3 for list of items (for sub-subheading ... check SEO strategy)
+ ... then get backlinks from sites that closely relate to the topics without reaching out to competitors
+ 
+ ... making a few key changes to blog posts you've already written could dramaticall improve your rank
+ ... historical optimization works best for blogs that have already been around for several years
+ 
+ ... 3 reasons historical optimization leads to better search rankings
+  1. Google rewards freshness, and so do searchers
+  2. You're building off the existing search authority that the posts has already accumulated
+  3. The surge of new visits will naturally lead to new links and social shares
+
+ ... how to get started with historical optimization
+  1. identify the blog posts worth updaging
+      - posts that are outdated or could be improved
+      - posts that have potential to rank higher for topics and keywords with high search volume
+  2. update the content of the blog post to achieve 3 goals: accuracy, freshness, and comprehensiveness
+      - adding new sections to make it more comprehensive
+      - adding detail
+      - adding list items to a list post
+      - updating outdated information, like statistics and example
+  3. optimize the post for your target topic using on-page SEO tactics
+  4. publish your updated post as new, and re-promote it. (Ask Google to re-crawl it)
+      - it's good to wait 2 weeks to see any results in Google ranking after optimizations
+
+Repurposing Content
+===================
+
+ ... a prospect needs to see or hear your marketing message at least seven times before they take action and buy from you
+
+republishing best practices
+---------------------------
+  - strive to choose reputable sites to partner with
+  - don't republish all of your content, just top performing content
+  - update the headline of each republished piece of content
+  - wait at least 2 weeks before you republish your content
+  - include links throughout your republished post
+  - include a call-to-action in your posts
+
+to get the best out of recycled content use the A-C-E method,
+  - Adjust. What needs to be added, removed, or re-worded?
+  - Combine. You may be able to combine related or unrelated content to provide new value and meaning
+  - Expand. Is there an opportunity to expand on something you've already done in order to dig deeper into that topic?
+
+8 steps to recycling content into a long-form offer
+---------------------------------------------------
+  1. identify content format and topic (this is the seed that makes the tree)
+  2. make a list of supporting sub-topics (these are the roots of the tree)
+  3. choose strong sub-topics
+  4. create content for each supporting sub-topic
+  5. download or create a template for your guide
+  6. recycle blog content and format it into chapters
+  7. create the rest of the content needed to complete (introduction and conclusion)
+  8. update the calls-to-action on our blog posts
+
+Creating Topic Clusters and Pillar Pages
+========================================
+
+ ... the average first-page ranking will also rank well for about a thousand other relevant keywords
+ ... if you have a lot of sub-topics related to your broad topic, let's say 75, then consider only promoting your top-performing sub-topics on your resource pillar page
+ ... keep the user experience in mind, too much information might be overwhelming
+ ... if you decide to create a resource pillar page that contain a lot of external links, then develop an outreach plan to let the sources you include knows it exists (hopefully to get a backlink to that page)
+ ... 90% of website visitors prefer to read lengthy content in the form of a PDF as opposed to a website page
+
+ *** (review Examples of commonly used pillar page types)
+
+7 Steps to Creating a 10x Content Pillar Page
+---------------------------------------------
+
+ 1. Identify a specific topic you want to be known for and rank for online
+ 2. Identify your topic cluster
+ 3. Create blog posts for needed subtopics
+ 4. Repurpose your subtopic content into a downloadable content offer
+ 5. Deconstruct your downloadable content offer into a 10x content pillar page
+ 6. Link your relevant owned media to your 10x content pillar page
+ 7. Create a conversion path for people to access your 10x content pillar page
+
+ ... your pillar pages must alway be under construction
+ ... find a way to keep people coming back to your content
+ ... continue to educate or entertain them (or both). If you don't, someone else will
+
+3 Ways to Improve the On-page Experience of Pillar Pages
+--------------------------------------------------------
+
+ - offer various forms of media per section for the reader to engage with
+ - sprinkle in relevant content offers that progress your buyer personas through their buyer's journey
+ - insert a heatmap on your pillar page to better understand performance and optimization next steps (https://www.hotjar.com/ can do this)
+
+Creating Successful Video Marketing Strategy
+============================================
+
+ ... videos need to be created for every stage of marketing based on the inbound methodology: attract, engage and delight
+ 
+ ... videos in the "attract" stage should empathize with your prospects challenges
+  - short videos that show off brand personality
+  - thought leadership videos that establish you as a source of industry news and insight
+  - brand films that share your values and mission
+  - educational how-to videos that provide relevant tips for solving your audience's pain points (avoid speaking too much about your product)
+
+ ... "engage" videos are meant to convert your visitors into leads and ultimately close them into customers
+ ... examples of videos in the engage stage for converting visitors into leads,
+  - webinar filled with tactical advice
+  - product demos sent via email
+  - landing page promotional videos
+  - case studies
+  - in-depth educational how-to videos
+ ... help your audience visualize themselves using your product or service
+ ... 4x as many customers would rather watch a video about a product than read about it
+ 
+ ... examples of videos in the engage stage for closing your leads into customers,
+  - testimonials of customers with relatable stories
+  - in-depth product demos
+  - culture videos that sell viewers on your quality of service
+  - personalized videos that explain exactly how your product or service could help their business
+
+ ... the goal of the "delight" stage is to encourage customers to embrace your brand and become brand evangelist
+ ... examples of videos in the delight stage,
+  - thank you video in an email welcoming them into the community
+  - on-boarding video to get them set up for success with their new purchase
+  - building out a library of educational product training videos
+ ... empowering your customers to become successful users of your products or services creates well-informed, educated evangelists of your brand
+
+ ... consider creating at least two videos for the attract, engage, and delight stages
+
+Tips for Getting Started with Video Marketing
+---------------------------------------------
+
+ ... "the secret of getting ahead is getting started. the secret of getting started is breaking your complex, overwhelming tasks into small manageable tasks, and then starting on the first one." - Mark Twain
+
+ 1. Know your audience
+ 2. Create goals for your videos
+     - brand moment (? values, etc.)
+     - business moment (projects that business is about to embark upon)
+     - entertainment moment (culture, behind-the-scenes)
+ 3. Build credibility and findability
+     - ranking and relevance
+ 4. Adjust for your audience
+ 5. Resource management
+    ... who owns/does what?
+     - project management
+     - video making
+     - sharing
+ 6. Keep repeatable process: commitment, calendar and content
+ 7. Keep a toolkit
+ 8. Analyse and measure video
+
+Building a Guest Blogging Strategy
+==================================
+
+Reasons to Guest Blog
+---------------------
+
+ - it expands your audience
+ - it increases referral traffic to your website
+ - it helps your website's search engine optimization
+
+ ... domain authority is a prediction of how well your website will rank on search engines
+
+Creating a Guest Blogging Strategy
+----------------------------------
+
+ - write for websites that have higher domain authority
+ - syndicate your education content
+   ... offer multiple section of helpful content with navigation at the top of the page
+ - think critically about your link-building efforts
+ - provide outstanding service to your guest-authored content
+ - nurture the relationship with your contact
+
+ ... domain authority ranges by tier
+  - 0 - 20 ... these websites are either fairly new or not active
+  - 21 - 70 ... these websites generally have a healthy dedicated audience and enough domain authority to justify your content creation time (aim for these)
+  - 71+ ... these websites generally have top-industry blogs
+
+Link Building Best Practices
+----------------------------
+
+ - link to specific pages on your website
+ - link to educational content
+   ... link to something like an educational pillar page that promotes the landing page you're trying to send people to
+ - include your most valuable inbound link near the top of the page
+   ... links that are found near the top of the page pass more authority to the page they're linking to
+   ... link to other guest blog posts that you've authored on other websites when relevant
+    - this helps to increase the domain authority and ranking of the guest blog post, which will eventually lead to your pillar page
+ - expand your guest blogging portfolio
+
+Provide Outstanding Service
+---------------------------
+
+ - engage with people in the comments
+ - engage with people on social media
+
+Finding Guest Blogging Opportunities
+------------------------------------
+
+ - define your niche
+ - find relevant websites that allow guest authors
+ - do research on Twitter
+ - research websites that your buyer personas might visit often
+ - prioritize outreach to websites based on domain authority
+
+ ... why write for relevant websites?
+  - it ensures you'll reach a target audience that you want to get in front of
+  - building links from external websites to your site will be more valuable if they're related
+
+ ... finding relevant guest blogging sites
+  - do research on Google
+    ... [your market] + "guest post" or [your market] + "contributing writer" or [your market] + "writers wanted" keyword search
+  - research potential influences
+
+Securing a Guest Blogging Spot
+------------------------------
+
+ - do research on companies you want to write for
+ - engage with companies you want to write for
+   ... share and promote their work. Tagging the company and the author. Break down why you liked it.
+ - take the time to craft your pitch
+ - send a personalized email (review HubSpot video for an example)
+ - always be seeking new opportunities
+
+ ... preparing for a guest pitch
+  - know the websites author guidelines
+  - make sure your topic offers unique value
+  - consider offering ideas that you can repurpose from
+
+How to Write a Guest Blog Author Bio
+------------------------------------
+ 
+ ... an elevator pitch is a 30-send memorable description of what you do and/or what you sell
+
+ - follow the instructions given to you by your contact
+ - research the format for other guest blog authors
+
+ ... guest author bio best practices
+  - tell them about yourself
+  - choose a high-resolution photo of yourself
+  - keep it short and concise
+  - explain what you do in the third person
+  - include an element of validation
+  - provide something interesting or authentic about yourself
+  - offer social media channels where readers can engage with you
+  - include at least one inbound link to your website
+
+ ... when choosing bio links,
+  - link to your website. at a minimum, link to your homepage. However, you could link to a specific site page if it's educational and helpful
+  - don't link to a landing page. doing so could result in the site removing your link altogether
+
+How to Effectively Promote Content
+==================================
+
+Building a Promotional Plan
+---------------------------
+
+ ... strategically share content with the people who will benefit most from it
+ ... almost half of your customers likely view three to five pieces of content before engaging in your sales process?
+ ... update messaging of same content to resonate with different audiences (different messaging for audiences on Instagram versus Facebook versus Twitter)
+
+ ... questions to ask yourself when creating a promotional plan
+  - what content do I have available to promote?
+  - when will I promote this content?
+    ... when experimenting with the best times to share content with your audience, optimize for engagement
+    ... engagement can be measured in likes, comments and shares
+    ... buyer personas on email would only want to see content once per week whereas as personas on Twitter want content daily
+  - which persona can benefit from this content?
+  - how and where does this persona consume content?
+  - how can my messaging resonate with this persona?
+
+Promoting Content Organically
+-----------------------------
+
+ ... 10 ways to promote your content organically
+  1. Search engine optimization
+  2. Bots and messaging apps
+  3. Email
+  4. Social media
+  5. Live events and webinars
+  6. Podcasts
+  7. Influencer marketing !
+  8. Word-of-mouth
+  9. Content syndication
+     ... republishing existing content on additional websites
+ 10. Content repurposing
+     ... consider turning a blog post into an infographic or an ebook
+
+4 Ways to Support Paid Promotion
+--------------------------------
+ 1. Google Ads
+     - Search ads
+     - Display ads
+     - Remarketing - reaching out to visitors that were not converted into customers
+ 2. Social media ads
+     - Facebook ads
+     - Instagram ads (videos)
+     - Twitter ads
+     - Linked ads
+ 3. Paid influencer marketing
+     - Use buzzsumo and socialbaker to find influencers
+ 4. Native advertising
+     - sponsor content on websites relevant to your industry
+
+Improving Content
+-----------------
+
+ ... regularly promoting content keeps you at the top of your audience's radar
+ ... create a master internal resource where you can share all of your experiments and results so that others can see and learn from your work
+ ... learn from your customers to guide experiments to improve and create content
+ ... learn from your competitors by signing up for their services
+ ... learn from the experts: influencers
+
+
+Analyzing your Content
+======================
+
+ ... 75% of companies that miss their revenue goals don't know their visitor, lead, qualified leads, or sales opportunities data
+ ... a qualified lead is a prospect who has been generated by the marketing team, evaluated by the sales team and fits the profile of an ideal customer with the intent to buy.
+
+Organic Metrics to Track
+------------------------
+
+ ... organic metrics provide insight into two key areas,
+  - content performance across your non-paid channels
+  - the greatest opportunities for paid promotion
+
+ ... web page traffic metrics show you how your content is performing on your website. metrics such as,
+  - page views
+  - traffic sources (paid search, organic traffic, email marketing, and more)
+  - bounce rate
+  - referrals
+  - keyword ranking (SEO)
+
+ ... social media metrics are used to understand how the content your promote on social media is performaing. metrics such as,
+  - reach
+    ... is the number of unique people who view your content
+  - impressions
+    ... measure the total number of times your content has been viewed
+  - engagement
+    ... on social media involves a handful of metrics that are important to track depending on the platform: likes, shares, comments, retweets and so on
+  - click-through rate
+    ... is the percentage of people who clicked on a link in your post after viewing it
+
+ ... email metrics help to imrpve the performance of the content you share with your email database. metrics such as,
+  - open rate
+    ... shows how many people open your email
+  - click-through rate
+    ... shows how many people are clicking through in the email to view your content
+
+ ... by producing great content and improving your content promotion, you can increase the number of emailable contacts (subscribers) for your business
+
+ ... conversion metrics show how your content is impacting your business. metrics such as,
+  - leads generated
+  - conversion rate
+  - close rate
+ ... by tracking these metrics, you can understand how many leads your content is generating, how well your content converts visitors into leads, and at what rate the leads you generate become customers.
+
+
+Paid Metrics to Track
+---------------------
+
+ - Quality Score
+   ... is the way Google measures the effectiveness of your ad in Google Ads
+   ... achieving a higher quality score will lead to lower prices when bidding on ad placements and a better ad position
+ - CPC (cost-per-click)
+   ... or cost-per-thousand impression (CPM) are metrics that are important to track depending on the type of paid promotion you are using to support your content
+   ... in CPC, you pay every time someone clicks your ad. for CPM, you pay one price per thoudand impressions
+ - Cost-per-Acquisition
+   ... measures how much you are paying to acquire a lead
+ - Close Rate
+   ... the rate at which your paid leads become customers, you'll have a better sense for what types of content attract high-quality leads that ultimately pay for the product service that your business sells
+
+ ... continual evaluation of your performance will optimize your ads to yield the highest return on investment
+
+Attribution Models
+------------------
+
+ ... attribution models is a set of rules that measure the impact of multiple marketing touchpoints to make sense of the entire journey from stranger to customer
+
+ ... attribution models can tell you,
+  - how many leads first enter your website by your blog content
+  - which marketing channels generate the most leads
+  - which promotional channels are most influential when turning a lead into a customer
+
+ ... first-touch attribution is where 100% of the credit is assigned to the page that originally drove a visitor to your site
+ ... last-touch attribution singles out the first touchpoint of the most recent visit
+ ... last interaction model gives credit to the touchpoint where a conversion directly occurred
+ ... simple decay attribution model assigns a weighed percentage of the credit to the most recent touchpoints
+ ... linear attribution model gives all touchpoints the same credit
+
+Communicating Content Performance
+---------------------------------
+
+ - Make your goals clear and easy to understand
+ - Make your goals transparent
+ - Rally your team around their respective goals
+ - Use all of this information that you've created to communicate goal attainment to leadership
+```
+
+### Inbound Marketing
+
+```txt
+Inbound Marketing Fundamentals
+==============================
+ 
+ ... inbound marketing is a strategy that attracts and retains customers by creating valuable content and tailored experiences
+ 
+ ... the inbound methodology is a method for growign an organization by building lasting relationships with people and helping them reach their goals
+
+The Inbound Flywheel
+--------------------
+
+ - attract strangers
+ - engage prospects
+ - delight customers and promoters
+ 
+ ... in the attract stage, you attract visitors with useful content and eliminate barriers as they learn about your company
+ ... the key is to earn people's attention, not force it
+ ... marketing attract stage,
+  - blogging
+  - SEO
+  - social publishing
+  - paid search ads
+  - display advertising
+ ... focus on the attract stage if your goal is to generate more traffic and leads
+ 
+ ... in the engage stage, you make it easy to shop and buy from you by enabling buyers to interact with you on their preferred timeline and channels
+ ... focus on opening relationships, not just closing deals
+ ... marketing engage stage,
+  - website and email personalization
+  - database segmentation
+  - marketing automation
+  - lead nurturing
+  - multichannel communication
+ ... focus on the engage stage if you're looking to convert more leads and prospects , or trying to lower the cost to acquire new customers
+ 
+ ... in the delight stage, you help, support, and empower customers to reach their goals
+ ... focus on creating buzz around your brand
+ ... marketing delight stage
+  - social mentions
+  - reviews
+  - word-of-mouth
+  - customer loyalty program
+  - user-generated content
+ ... focus on the delight stage if you're looking to improve your customer retention, customer lifetime value, and referrals
+ 
+ ... you want the right traffic. the right traffic is the visitors who are most likely to become leads, and, ultimately, happy customers
+ ... buyer personas are created through research and analysis of who's already buying from you
+ ... they can help you get into the mindset of your potential buyers and create the right content
+ 
+ ... 80% of consumers are more likely to make a purchase when brands offer personalized experiences
+ ... 67% of consumers think it's important for brands to automatically adjust content based on current context
+ ... 42% of consumers will "get annoyed" if brands don't adjust their content to their needs
+
+ ... segmentation: customers expect unique experiences. this includes tailored recommendations, dynamic content, and exclusive offers
+ ... automation: effective marketing automation considers the evolving needs of your leads, and the behaviours and interactions they have with you across all your marketing channels
+ 
+ ... using behavioural inputs from multiple channels, such as likes on your social media posts, views to your pricing page, or engagements with particular pieces of content gives you the context you need to fully understand a lead's challenges
+ 
+ ... marketing attribution reports pull together all the relevant interactions from your buyer's journey using pre-built models that can definitively answer which channels and content are helping you meet your marketing goals
+
+ (what is your brand? what philosophy are you bringing to customers? what value do your promise to deliver to them?)
+ (what is the voice and tone you want to establish for your brand?)
+ 
+ ... keep emails short, simple, personalized and friendly
+ ... personalized has to go farther than putting the name in the salutation. it must indicate where the lead or customer is in the buyer's journey and understanding the product their interested in.
+ 
+ - Personalization and automation can be your best friend. It makes certain strategies accessible to you, even if you don't have a massive marketing team with a large budget
+ - Testing ad tracking how your content performs can also be key to unlocking further insights about your audience. This helps you create the type of experence they want to engage with.
+
+
+Inbound Marketing Toolkit
+-------------------------
+ ... tools in the toolkit include,
+ - CRM
+   ... a central place to organize all the details of your leads and customers
+ - SEO: SEMruch, Moz, Ahrefs, and Google Search Console
+ - Content Marketing: WordPress, Buzzsomo, HotJar, and Canva
+ - Social Media Marketing: Hootsuite, Buffer, and Sprout Social
+ - Advertising: AdRoll, Rollworks, 6Sense, and Adstream
+ - Marketing Automation Tools,
+    - Drip: Personalized Automated Emails (https://www.drip.com/)
+    - Marketo (https://nation.marketo.com/)
+    - Omnisend (https://www.omnisend.com/)
+ - Google Analytics
+ - Project Management: Trello
+
+Getting to Know Your Customer
+-----------------------------
+
+ ... buyer personas answer questions like,
+  - what is your ideal customers' background, goals, and challenges?
+  - what are their interests and needs?
+  - what incentivizes them?
+  - where do they get their information?
+
+ ... a deep understanding of your various buyer personas will aloow you to personalize your marketing for different segments of your audience.
+
+ ... buying insights reveal,
+  - which buyers are receptive, and which will ignore you?
+  - which aspects of your solution are relevant?
+  - what attitudes prevent your buyers from considering your solutions?
+  - what resources your buyers trust as they evaluate their options?
+  - which buyers are involved in the decision and how much influence they wield?
+ 
+ ... negative personas are the people that aren't a great fit for your business
+ ... create as few buyer personas as you can
+ ... create buyer personas based on buying insights or decision-making rather than demographics
+
+Conducting Buyer Persona Interviews
+-----------------------------------
+
+ ... buyer persona research uncovers,
+  - what are demographics of our buyers?
+  - what does success look like to our buyers?
+  - what are the reasons buyers decide to invest in solutions similar to ours?
+  - what prevents buyers from considering our solution?
+  - what influences are involved at each phase of the decision making process?
+
+ ... ways to get customer stories
+  - surveys
+  - forms
+  - your sales team
+  - social media
+  - interviews (best way to gain insight)
+
+ ... who to interview
+  - your customers
+  - people who considered your solution but chose a competitor
+  - people who considered you but didn't go with any solution
+  - people who never considered you and chose a competitor
+ 
+ ... interview folks who were most active in the decision-making process, and who made the decision within the last 3-6 months
+ ... hone in on questions that provide context about a buyer's demographics, their reasons for investing in your product, and what influences each phase of their decision making
+ 
+ ... interview considerations
+  - collect information on their role
+  - ask how they consume information
+  - find out their shopping preferences
+  - uncover their decision-making process
+
+ ... align your marketing, sales, and service strategies
+  - reallocate ad spend
+  - segment lists based on buyer persona
+  - optimize your web pages
+  - create content with your existing persona in mind
+
+Creating Content for Buyer's Journey
+====================================
+
+Awareness Stage Questions
+-------------------------
+
+ - How do buyers describe their challenges or goals?
+ - What symptoms are your buyers experiencing?
+ - How do buyers consume content or conduct research?
+ 
+Consideration Stage Questions
+-----------------------------
+
+ - What are possible solutions to address their challenges or goals?
+ - How do buyers perceive the pros and cons of each solution?
+ - How do buyers decide on the right solution?
+
+Decision Stage Questions
+------------------------
+
+ - What criteria do buyers use to evaluate the available offers?
+ - What do buyers like or dislike about your solution compared to alternatives?
+ - Who needs to be involved in the purchasing decision?
+
+Brainstorm Content for Buyer's Journey
+--------------------------------------
+
+ ... first identify topic and format
+ ... topic is the information, education or value your content provides
+ ... format is how you decide to arrange or present your topic: blog post, pdf guide, infographics, video, podcast, interactive (like quizzes and games)
+
+How CTAs Help Marketers
+-----------------------
+
+ - convert a visitor into a new contact (a lead)
+ - allow you to nurture those contacts through their buyer's journey
+ - measure the effectiveness of your content
+ - determine which content is driving the most customers and sales
+
+ ... CTA (call-to-action) tips for written content
+  - use actionable and specific language
+  - design your CTA to stand out
+  - keep your CTAs to a minimum
+
+ ... CTA tips for visual content
+  - include a CTA to your website if the content is hosted on another platform
+  - experiment with different types of CTAs (like visual or verbal)
+  - make your CTA stand out
+
+ ... CTA tips for audio content
+  - make your CTA easy to achieve
+  - shorten your URLs
+  - include your link in the show notes
+
+ ... CTA tips for interactive content
+  - consider inviting users to submit their emails as the CTA
+  - Gather valuable information to provide a personalized experience
+  - Use the results from your assessment or tool as the CTA
+
+Developing a Content Distribution Strategy
+==========================================
+
+ ... some content distribution options consists of owned, earned and paid
+ 
+Owned Channels
+--------------
+
+ - platforms your company owns
+ - includes your website, email and social media accounts
+
+Earned Channels
+---------------
+
+ - third party platforms that share your content
+ - includes guest posts, online forums or communities, and brand mentions
+
+ ... guest posts and brand mentions are most effective if the third-party has a similar audience
+ ... word-of-mouth falls under the category of earned media because it involves individuals voluntarily sharing their opinions and experiences about a product, service or brand
+ ... when people recommend or discuss something they like (or dislike) with others, it's a form of earned media because the entity has "earned" that conversation through the quality of their offerings, customer service, or other factors that influence people's perceptions.
+
+Paid Channels
+-------------
+
+ - platforms you pay to distribute content
+ - includes Google Ads, sponsored social media Ads, or paid influencer Ads
+
+ ... Google Ads and Social Media Ads allow you to control your target audience and require you to pay per impression or click
+
+Setting Content Distribution Goals
+----------------------------------
+
+ 1. Identify a purpose
+     - what content are you sharing?
+     - why are you sharing this content?
+     - what are your expectations after promoting this content?
+     
+     ... common purposes to consider
+      - driving brand awareness
+      - increasing traffic
+      - generating new leads
+      - converting leads to customers
+      - retaining customers
+     
+ 2. Craft a goal
+     - Make SMART goals (or FAST goals)
+
+ ... benefits of setting content distribution goals,
+  - set the tone of your distribution strategy
+  - help you choose the few most effective channels
+  - remind your team of what's important
+  - help develop focused strategy
+
+Identifying your Audiences Preferred Channels
+---------------------------------------------
+
+ 1. Use buyer personas
+ 2. Conduct online research
+ 3. Collect feedback
+ 4. Tap into audience insight tools (SparkToro, SocialBaker's, HubSpot, Etuma - www.etuma.com)
+ 
+ ... buyer personas often include demographics, behaviour patterns, motivations, challenges, and goals.
+ ... buyer personas can even outline where potential customers consume content or conduct research
+ 
+ ... online survey and social media polls,
+  - allow you to gather quick insights about specific topics
+  - enable you to reach wider audiences without substantial time and effort
+ 
+ ... conducting one-on-one interviews,
+  - are more time-consuming than surveys or polls
+  - allow you to gather more in-depth details
+
+ ... focus groups,
+  - allow you to collect qualitative feedback through a gap discussion
+  - can cause groupthink
+ ... typically, focus groups consist of 6 to 12 participants
+ ... a skilled moderator or facilitator can guide the discussion, manage the group dynamics, and ensure that all participants have the opportunity to share their perspectives
+
+Testing a New Marketing Channel
+-------------------------------
+
+ ... how to run tests that provide reliable results
+  1. identify a channel to test
+  2. develop a hypothesis
+  3. build your test
+  4. run the experiment
+  5. analyze your results
+
+ ... example of hypothesis: SnoozeCity wanted to test whether TikTok was a worthy new channel to invest in by comparing how it performed to Instagram
+     hypothesis:
+     promoting the mattress quiz through TikTok will drive 10% more conversions than promoting it through Instagram
+
+ ... example test plan
+  - test timeline: may 1 - may 31
+  - promotion dates: may 1, may 11, may 27 at 12 pm
+  - promotional assets: 3 videos, quiz landing page
+  - KPIs: quiz conversions
+  - DRIs (Direct Responsible Individual): Keyana to create video assets, Calvin to run Instagram promotions, and Flora to monitor TikTok promotions
+
+
+Understanding Behavioural Marketing and Customer Segmentation
+=============================================================
+
+ ... behavioural marketing is the method by which companies target audiences based on their behaviour, interests, intentions, geolocation, and other metrics using web analytics, cookies, search history, and other insights
+ ... customer segmentation is the process of separating your contacts into smaller groups of similar profiles
+ 
+ ... as an inbound marketer, your job is to examine all the clues your leads and customers have left behind through things like what they click, what content they download, where they stop engaging, the emails they open or don't open, and the pages on your website that they land on the most. Taking these clues you look for patterns, and using the patterns and themes that emerge, you can take action by grouping customers together in order to serve them in ways that suit their needs.
+
+ ... ways to use behavioural marketing and customer segmentation,
+  - email marketing
+  - advertising
+  - retargeting campaigns
+  - abandoned cart recovery
+  - upselling
+  - cross-selling
+
+Fundamentals of Behavioural Marketing and Customer Segmentation
+---------------------------------------------------------------
+
+ ... implementing behavioural marketing and customer segmentation includes,
+  1. define the interactions you want to track
+  2. implementing tracking
+  3. analyze and report how people are behaving on your website
+  4. use this information to segment your contacts
+  5. use your segmentation to nurture
+
+ ... when defining the interactions to track, ask
+  - who are you trying to reach?
+  - what do they need?
+  - what re the best ways to reach them?
+
+ ... pay attention to areas where there might be significant discrepancies in the conversion rates and to the points where your conversion rates are lowest
+  - what are you tracking and why?
+  - what are you not tracking and why?
+
+ ... tools for tracking web analytics
+  - Google Analytics
+  - Google Search Central
+  - Facebook Insights
+  - SimilarWeb
+  - HubSpot's Traffic Analytics
+
+ ... notice spikes or dips in specific behaviours and quantify them. then use this information to segment your contacts
+ 
+ ... segmentation can be categorized as implicit or explicit
+ ... implicit segmentation is based on characteristics implied by your contacts' behaviours
+ ... explicit segmentation is based on clear characteristics provided by your contacts or conversions
+
+Maximizing ROI with Marketing Attribution and Experimentation
+--------------------------------------------------------------
+
+ ... marketing attribution reporting helps you see the impact marketing had on s specific goal, usually a purchase or sale
+ ... attribution surfaces which interactions a person or group of people took along their hourney toward a desired outcome or 'conversion' point
+ 
+ ... attribution reporting answers questions like,
+  - what was the ROI of our Facebook Ad campaign last quarter?
+  - what content drove the most leads last month?
+  - where is the best place to invest my marketing resources?
+  - which pages are viewed the most before someone becomes a customer?
+
+Find the Attribution Model that fits Your Needs
+------------------------------------------------
+
+ [some of this content was covered in Content Marketing series]
+
+ - Single Source Attribution Models
+   assigns all the credit to one touchpoint, usually the first touch or last touch. Gives credit to the first interaction that led to the desired action.
+ - Multi-touch Attribution Models
+   these will give each contributing channel a slice of credit for the final conversion. These models are great because they account for the entirety of the buyer's journey
+
+
+Getting Proactive with your Marketing Data
+------------------------------------------
+
+ ... you want to fire bullets, then canonballs - Great by Choice, James C. Collins
+ 
+ - firing bullets
+   ... the idea is that you fire bullets or low-cost, low-risk and low-distraction experiments to figure out what will work for your business and audience
+ - firing canonballs
+   ... once you have the data to prove your experiment was a success, you then fire a canonball, where you concentrate resources into a big bet
+
+ ... every update, optimization, or change you make to your website, strategy or approach is backed by data forecastnig that it's the right move to make
+
+ ... a marketing experiment is a form of market research in which your goal is to discover new strategies for future campaigns or to validate existing ones
+ 
+ ... A/B testing, also known as split testing, is a marketing experiment where you split your audience to test a number of variations to a piece of content to determine which performs better
+ ... to run an A/B test, you need to create two different versions of one piece of content with changes to a single variable
+ 
+ Building Effective Experiments for Your Audience
+ ------------------------------------------------
+ 
+  ... split your sample groups equally and randomly
+  ... for tests where you have more control over the audience - like with emails - you need to test with two or more equal-sized audiences to achieve conclusive results. how you do this will vary depending on the A/B testing tool you use
+  
+
+Utilizing Marketing Automation and Artificial Intelligence
+==========================================================
+
+ ... important elements of using automation and AI
+ - data integrity
+   ... ensuring all incorrect, duplicate, or unused data is properly classified and migrated into the appropriate lifecycle stage for storage, archival, or destruction on an ongoing basis through automated policy enforcement
+   ... adhering to data privacy regulations like GDPR, CCPA, HIPAA and others are important here
+   ... tools that help with data integrity
+    - InCycle
+    - ZoomInfo
+    - ClearBit
+    - Gong
+    - HubSpot
+ - tech stack
+   ... a grouping of technologies that marketers leverage to conduct and improve their marketing activities
+   ... do all the technologies used connect and integrate with each other?
+ - cadence and content
+   ... utilizing journey mapping (based on your customers and prospects experience) is one way to better align your calendar and goals
+
+ ... areas to focus on in customer-facing processes,
+ - strategizing
+   ... think about things like the accuracy of your content, the level of personalization to the individual, and the timing of your messaging in conjunction to lead nurturing
+   ... tools for customer personalization on website include
+    - BrightInfo
+    - Everage
+    - Sitespect
+    - HubSpot
+   ... recommendation engines can also help,
+    - Adobe Target
+    - Optimizely
+    - Dynamic Yield
+    - Qubit Pro
+   ... chatbots never sleep
+ - humanizing
+   ... as an inbound marketer, you don't want your touchpoints to be efficient, you want them to be empathetic
+```
+
+### Inbound Sales
+
+```txt
+Inbound Sales Fundamentals
+==========================
+
+ ... most people don't trust sales people
+ ... sales persons answer key questions in the buyer's mind, such as,
+  - what's included in your offering?
+  - what does it cost?
+  - how does it compare to competitors?
+  - who else us using your offering - and do they like it?
+ ... the internet changed the buyer-seller relationship. now, the information buyers use to make a purchase decision is just a click away
+
+ ... your buyer is using the internet to research your company. are you using the internet to research your prospects?
+ ... your buyer is using social media to research your product. are you using social media to answer their questions?
+ ... your buyer is accustomed to being in charge of the sales conversation. are you ready to act as a guide and help them achieve their goals?
+
+ ... inbound sales tranforms sales to match the way people buy. inbound sales team base their entire sales strategy on the buyer rather than the seller
+ 
+ ... the buyer's journey is an active research process someone goes through leading up to a purchase
+ ... buyers don't want to be prospected, demo'd or closed in your sales process, they want to be educated, supported, and guided through their buying process
+ 
+ ... in the awareness stage, the thing the buyer is becoming aware of in this stage is their problem, not your solution. in this stage, you need to know,
+  - how do buyers describe their goals or challenges?
+  - how do buyers educate themselves on these goals or challenges?
+  - what are the consequences of inaction by the buyer?
+  - are there common misconceptions buyers have about addressing the goal or challenge?
+  - how do buyers decice whether the goal or challenge should be prioritized?
+
+ ... in the consideration stage, you need to know,
+  - what categories of solutions do buyers investigate?
+  - how do buyers educate themselves on the various categories?
+  - how do buyers perceive the pros and cons of each category?
+  - how do buyers decide which category is right for them?
+
+ ... a key component of an inbound sales strategy is connecting with the buyers before they enter the decision stage
+ ... in the decision stage, you need to know,
+  - what criteria do buyers use to evaluate the available offerings?
+  - what do buyers like about your offering compared to alternatives?
+  - what common concerns do buyers have with your offering?
+  - who needs to be involved in the decision? how does each person's perspective on the decision differ?
+  - do buyers want to try your offering before they purchase it?
+  - outside of purchasing, do buyers need to make additional preparations, such as implementation plans or training strategies?
+
+Inbound Sales Strategy
+----------------------
+
+ 1. the identify phase (identifying prospects)
+ 2. the connect phase (connecting with them)
+ 3. the explore phase (exploring their needs)
+ 4. the advise phase
+
+ ... gather as much information as you can about each invidivdual prospect so you can better understand their situation
+ ... the hallmark of an inbound sales strategy is finding ways to attract people to you
+ 
+ ... offer content or consultations to help the buyer diagnose their situation
+ 
+ ... examples of tailored presentations include,
+  - a powerpoint deck emphasizing only the value propositions aligned with the buyer's needs, using the buyer's terminology
+  - a product demonstration illustrating only the features important to the buyer, in order of importance to the buyer
+  - an ROI analysis customized to the buyer's metrics and business
+  - a proposal or contract that spells our a client's goals, agreed upon scope of work, and metrics that indicate success
+
+ ... your buyers are drowning in a flood of information overload. focus on helping them connect your company's broad positioning to their specific challengs
+
+The Identify Phase
+------------------
+
+ ... the goal in this phase is to identify leads within the large pool of available propsects
+ ... think about the customers who have benefited most from your offering. those are the kinds of people you want to identify because they'll likely be a good fit for what you do
+ 
+ ... most salespeople do a good job of starting with their target market, but they have trouble finding good leads within that market
+ ... start by targeting the people who might already be interested
+ ... majority of buyers start researching potential solutions long before engaging with salespeople
+
+ ... in this phase, you will
+ 1. Define your ideal customer profile and buyer personas
+ 2. Identify leads within that profile who have already started the research process
+
+ ... an ideal customer profile defines your target market
+ ... to determine an ideal customer profile, ask,
+  - are there economic factors that make a customer ideal or not ideal?
+    (b2b: annual revenue, number of customers, number of employees; b2c: person's income, education, household size)
+  - is there a certain time frame when your product or service is more likely to be a priority for someone?
+  - are there market segments that are ideal or not ideal to sell into?
+  - are there geographic locations that are ideal or not ideal?
+  - are there legal standards or other requirements that might exclude someone from purchasing your product or service?
+ ... at the beginning, keep it simple. Choose a couple of points from this list and use those as your starting point
+ ... as you build your ideal customer profile, involve other people from cross-functional feilds to help build
+
+Buyer Persona Interview Questions
+---------------------------------
+
+ - how do they describe their goals and challenges that your offering helps them with?
+ - how did they research those goals and challenges before they discovered your company?
+ - did they have any misconceptions about addressing their goals and challenges before your company helped them solve them?
+ - how did they decide these goals and challenges should be prioritized?
+ 
+ ... as you discuss these questions with real customers, you'll start to see patterns emerge. those patterns are what you want your buyer persona to capture.
+
+ ... ideal customer profile broadly describes your target market
+ ... buyer personas define the specific sorts of people in that market
+ ... start by creating your ideal customer profile, then define your personas based on the sorts of people you can help
+
+Listening for Active Buyers
+---------------------------
+
+ ... an inbound lead is a person who has visited your website and identified themselves in some way
+ 
+ ... ways to identify an inbound lead
+  - a live chat on your website
+  - a phone call into your company
+  - someone reaching out to you on LinkedIn or Twitter
+  - someone who filled out a form on your website
+ ... the moment an inound lead converts represents a moment of interest by the buyer
+ ... when it comes to contacting inbound leads, one rule is always try: faster is better. (less friction too)
+
+Priotitizing Leads
+------------------
+
+ 1. Configure your website to send inbound leads to your CRM in real time
+ 2. Prioritize leads through trigger events
+ 
+ ... focus on measuring how well a person compares to your ideal customer profile. if the person does not fit, place them in "unqualified"
+ ... anything that indicates that you could provide immediate value to someone is a trigger event
+ ... you should listen for trigger events that may suggest a buyer is active in the research, or awareness stage of the buyer's journey
+ 
+ ... b2b pro tip: monitor press releases and job postings to look for changes you can help with
+ 
+ ... when monitoring social media, look for,
+  - a mention by a potential buyer of your company or a competitor's company name
+  - a mention by a potential buyer of a keyword or hashtag aligned with your value proposition and what you sell or do
+  - a mention by a potential buyer of a product or service you offer
+
+Social Selling to Identify Active Buyers
+----------------------------------------
+
+ ... social selling tactics
+  - find the thought leaders on social media who your prospects follow
+  - find the LinkedIn groups where your prospects are active
+  - find the blogs your prospects read
+  - publish to your company's blog
+  - post helpful content to social media at least once in the morning, once around lunchtime, and once at the end of the day
+ 
+ ... make sure your name on the comment links back to your LinkedIn Profile or your company
+ ... oftentimes you'll find yourself fielding the same questions from multiple prospects. That's an industry pain point. It makes an excellent blog content.
+ ... go where the people are and share content that you genuinely believe will help them
+
+ ... a great technique to reach passive buyers is through common connections
+
+Two Categories of Enrichment Data
+----------------------------------
+
+ - information about the buyer's interest
+ - information about the buyer's demographics
+
+ ... tracking leads activity is important, where the came from and what content they consumed at each stage of the buyer's journey
+
+Earning the Attention of Today's Empowered Buyer's
+==================================================
+
+ ... the connect phase is the second part of your inbound sales strategy
+ ... modern buyers know they can get more insight by doing an online search than bu taking a cold call from a salesperson
+ ... if your outreach is human, helpful, and holistic, it's inbound. if your outreach focuses  solely on trying to push a product, it isn't
+ 
+ ... human means taking an empathetic, personable approach to doing business
+ ... helpful means providing people the insight and guidance they need at each step of the buyer's journey
+ ... holistic means providing the same level of human, helpful service to people at every stage of the lifecycle
+
+ ... define the categories of interests your buyers might have that your company can help with
+ ... list out the problems you help your customers solve, and map those problems to the content on your website
+ ... it's important to reach out to inbound leads as soon as possible, if it's been a few hours or days since a lead came in, you might need to remind them about the action they took
+ 
+ ... if you're calling a company that has shown interest in your offerings but that you don't have a specific contact at, you need to focus on the content the people there have shown interest in
+
+
+Sources to Supplement your Inbound Leads
+----------------------------------------
+
+ - Trigger events
+   
+   ... anything indicating that you can provide immediate value to someone
+   ... focus on the trigger eent first, and then explore whether the trigger event implies a goal or challenge you can help with
+   
+ - Common connections
+   
+   ... any person you and your prospect both know
+   ... examples,
+    - a customer refers potential buyer
+    - a fellow employee knows a potential buyer
+    - an acquaintance knows a potential buyer
+   ... use the opening 30 seconds to mention the common connection and explain the reason they thought it was a good idea for you and your prospect to talk
+   ... if you get the peron's voicemail, leave a message referencing your common connection and a helpful piece of content you'd like to share with them
+
+Moving to the Explore Phase
+---------------------------
+
+ - keep finding helpful ways to reach out
+   
+   ... create a sequence of content you share at regular intervals until a lead is ready to move forward
+   ... personalize each step of your outreach to the individual buyer
+   ... educate them on a goal or challenge they're currently facing
+   
+ - use technology to automate certain parts of your outreach
+   
+   ... helpful tenchnologies
+    - email template tool
+    - CR
+    - Meeting scheduling tool
+    - Email sequencing tool
+    
+   ... less-effective technologies
+    - Mail merge
+    - Auto-dialers
+   
+ - be ready to transition to the explore phase of your inbound strategy
+ 
+   ... you'll know this has happened when they conform they're interested in discussing a particular goal or challenge with you
+ 
+Best Practices for Outreach Sequences
+-------------------------------------
+
+ - inventory your existing content 
+   ... gaps in the content you find serve as a content roadmap for you in the future   
+ - keep messages short
+ - reference the buyer at least twice as much as you mention yourself
+ - end all emails with a question
+ - focus on being helpful
+ - personalize email subject lines
+ - use your personal voice and style
+
+ ... if you don't have much content, remember,
+  - useful content doesn't have to be from your company
+  - a free consultation is a great way to personalize an offer directly to the buyer's area of interest
+
+Content Sharing Strategy
+------------------------
+
+ - which mediums will you use to reach out to each person?
+ - when will you reach out?
+ - if you don't connect on the first outreach, when will you try again?
+ - how many times will you reach out before you give up?
+ - is there a specific order that your content should be shared in?
+
+ ... 5 or less steps should you be in your outreach sequences. after 5 touchpoints, the law of diminishing returns kicks in
+
+
+Understanding the Buyer's Context
+=================================
+
+ ... CGP, TCI, BA better than Budget-Authority-Needs-Timeline
+ Challenge - Do you ever struggle with X?
+ Goal - What goal is your challenge preventing you from achieving?
+ Plan - How do you plan to overcome your challenge?
+ 
+ Timeline - WHen do you need to achieve this goal?
+ Consequences - What happens if you don't achieve this goal?
+ Implications - After you achieve your goal, what will you do next?
+ 
+ Budget - What do you plan to invest to achieve this goal?
+ Authority - Who needs to be involved in this decision?
+ 
+ ... having a framework helps,
+  - Understanding: You can make sure you don't miss details that are important in understanding your buyer's context
+  - Effective communication: ou can have a structue for communication your prospect's story back to them helping them know that you heard them
+  - Advising: You can position your products and services as a solution to your buyer's challenges
+
+Starting an Exploratory Call
+----------------------------
+ ... to set yourself up for success,
+  1. Build rapport
+     ... people love to talk about their business ... what? who? how? when? where? why?
+     ... prevent rapport from going on too long
+  2. Recap what you learned in previous conversations
+     ... in your initial call, you should have set some expectations and secure buy-in for how this call would go
+  3. Set an agenda for the call
+
+Exploring a Prospect's Goal and Challenges
+------------------------------------------
+
+ ... people generally don't make changes unless they have a challenge that impedes their progress
+ ... be specific about challenges that you think they could be experiencing
+ ... map the challenges they face with their goals
+ ... it's important to know how they're already thinking of doing things now
+ 
+Motivating a Prospect to Take Action
+------------------------------------
+
+ ... confirm that they are indeed interested in implementing serveral of your solutions. if they aren't, find out why
+ ... help them think through the steps required between now and the achievement of the goal
+ ... if they're engaged heavily in planning, that means they're usually pretty serious about doing something differently
+
+Ending an Exploratory Call
+--------------------------
+
+ ... if you and your prospect don't have a shared vision of where the necessary resources and approval are going to come from, it's unlikely you'll be able to come to a final agreement to move forward
+ ... ask the prospect a direct question about their financial situation
+ ... focus on guiding and advising prospects who value your differentiation
+ ... their decision will be to pay your price, or continue to deal with their challenges, miss their goals, and face the consequences of a poor decision
+ 
+ ... reiterate what you have learnt and what you understand from the conversation before getting a commitment. confirm before commitment
+
+Delivering Personalized Sales Presentation
+==========================================
+
+ ... the advice phase is the final part of your inbound sales strategy
+ 
+ ... by sticking to the generic script, some salespeople fail to represent themselves as a solution to their prospect's specific needs
+ ... salespeople who use an inbound strategy tailor the presentation to the buyer's context
+ ... instead of focusing on when the prospect will buy, focus on when the prospect must achieve their goal
+ 
+Creating a Personalized Sales Presentation
+------------------------------------------
+
+ ... don't make the mistake of sending a proposal or contract to your prospect and leaving them to work through it alone
+ ... book a meeting with your prospect so you can guide them through the particulars of what they're agreeing to
+ 
+ ... goals for your presentation
+  - recap what you've learned about the prospect's goals and challenges so they know you completely understand their situation
+  - suggest ways to achieve their goals and overcome their challenges using your service or product
+  - confirm the prospect's budget, decision-making process, and timeline
+  - commit them to follow through on the plan you've worked with them to develop
+
+ ... the presentation is all about adding value (to the prospect or customer)
+ 
+ ... here's an inbound sales presentation flow
+  1. here's what I heard you tell me
+  2. here's how most people in your situation think about making this change
+  3. here are the pros and cons to the different approaches you can take
+  4. here's the approach that will yield the best outcome for you
+  5. here's why this choice makes the most sense for you
+  6. here's how we can best support that
+
+ ... a great sales presentation comes from understanding where the customer is
+ ... the plan you're about to present will close the gap between where they want to be and where they are now
+
+ ... be prepared to talk through different options and anticipate the questions they might have as they try to weigh the pros and cons of each
+ ... ensure you have complete buy-in from your prospect that your offering is the right one for them
+ ... confirm the decision
+  1. confirm timings
+  2. confirm your prospect's budget
+  3. understnad how your prospect typically goes about making a purchase
+
+Helping the Buyer Make the Decision
+-----------------------------------
+
+ ... change is scary, and your asking your prospect to change
+ ... you need to help them find the motivation to commit
+ 
+ ... use the 1-10 closing technique
+ 1. From 1 to 10, where 1 is “I’m not interested in working with you,” and 10 is “Sign me up now,” what number are you?
+ 2. Really? I’m surprised you picked a number so high. Based on our conversations, I figured you’d be much closer to a [lower number]. Why did you pick [their number]?
+ 3. Okay. Wow. It seems like there are some really good reasons why you’d like to move forward. But, now I’m confused again. Based on all of those reasons, I’m wondering why it’s not a 10?
+ 4. It seems like there are a lot of reasons to move forward: [list reasons]. It also sounds like you have X specific concerns. Now that we've discussed them, has your number changed at all? Are you still a [their number]?
+
+ ... IF THE PROSPECT GIVES YOU A NUMBER LOWER THAN SIX IN RESPONSE TO YOUR INITIAL QUESTION, DO NOT PROCEED. go back to explore phase
+ 
+ ... Before you ask for their business, you’re helping them weigh the benefits, risks, upside, and downside of making a decision to move forward — or not.
+```
+
 ## Further Reading
 
 1. [The Beginner's Guide to SEO](https://moz.com/beginners-guide-to-seo)
