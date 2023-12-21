@@ -1,6 +1,6 @@
 # Content Chemistry
 
-© 2016 by Orbit Media Studios, Andy Crestodina
+© 2016 by [Orbit Media Studios](https://www.orbitmedia.com/), Andy Crestodina
 
 ## Chapter 1. Welcome to Content Chemistry
 
