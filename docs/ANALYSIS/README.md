@@ -22,9 +22,8 @@ Trading is an economic activity based on human behaviour and the perception of t
 
 ## TO DO
 
- 1. Complete Valuation Notes in [Asset Evaluation](./VALUATION.md).
- 2. Take Notes from "Japanese Candelstick Chart" on [Technical Analysis](./TECHNICAL.md).
- 3. Take Notes from "Thinking Fast and Slow" on [Behavioural Finance](./BEHAVIOUR.md).
+ 1. Complete Valuation Notes in [Asset Evaluation](./VALUATION.md)
+ 2. Take Notes from "Japanese Candelstick Chart" on [Technical Analysis](./TECHNICAL.md)
 
 ## References
 
