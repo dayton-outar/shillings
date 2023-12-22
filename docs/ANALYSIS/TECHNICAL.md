@@ -489,8 +489,6 @@ Sources:
 
 © 2001 by Steve Nison
 
-![Candlestick Cheet Sheet](/.attachments/candlestick.cheat.sheet.webp)
-
 ### Chapter 1. Introduction
 
 > Year after year the flames of interest grow ever brighter for these charting tools. This is because candle charts:
@@ -566,6 +564,8 @@ Understanding the open and close prices assists traders in gauging market sentim
 <image src="/.attachments/chatgpt-logo.png" alt="Chat GPT Logo" width="16" height="16" />
 
 ### Chapter 4. Reversal Patterns
+
+![Candlestick Cheet Sheet](/.attachments/candlestick.cheat.sheet.webp)
 
 > Technicians watch for price clues alerting them to a shift in market psychology and trend. Reversal patterns are these technical clues. Western reversal indicators include double tops and bottoms, reversal days, head and shoulders, and island tops and bottoms. Yet the term “reversal pattern” is somewhat of a misnomer. Hearing that term may lead you to think of an old trend ending abruptly and then reversing to a new trend. This rarely happens. Trend changes usually occur slowly, in stages, as the underlying psychology shifts gears. A trend reversal signal implies that the prior trend is likely to change, but not necessarily reversing. Compare a trend to a car traveling forward. The car’s red brake lights go on and the car stops. The brake light was the reversal indicator showing that the prior trend (that is, the car moving forward) was about to end. But now that the car is stationary, will the driver then decide to put the car in reverse? Will he or she remain stopped? Will he or she decide to go forward again?
 > 
