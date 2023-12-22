@@ -569,10 +569,10 @@ Understanding the open and close prices assists traders in gauging market sentim
 
 > Technicians watch for price clues alerting them to a shift in market psychology and trend. Reversal patterns are these technical clues. Western reversal indicators include double tops and bottoms, reversal days, head and shoulders, and island tops and bottoms. Yet the term “reversal pattern” is somewhat of a misnomer. Hearing that term may lead you to think of an old trend ending abruptly and then reversing to a new trend. This rarely happens. Trend changes usually occur slowly, in stages, as the underlying psychology shifts gears. A trend reversal signal implies that the prior trend is likely to change, but not necessarily reversing. Compare a trend to a car traveling forward. The car’s red brake lights go on and the car stops. The brake light was the reversal indicator showing that the prior trend (that is, the car moving forward) was about to end. But now that the car is stationary, will the driver then decide to put the car in reverse? Will he or she remain stopped? Will he or she decide to go forward again?
 > 
-> ...
-> 
-> **UMBRELLA LINES**
-> 
+> ... 
+
+#### UMBRELLA LINES
+ 
 > Umbrella lines are candles with very long lower shadows and a small real body at the top end of the range. These umbrella lines are fascinating in that these lines can be either bullish or bearish according to the market environment.
 > 
 > If an umbrella line emerges during a downtrend, it is a signal that the downtrend should end. In such a scenario, this umbrella line is labeled a _hammer_, as in “the market is hammering out” a base. The actual Japanese word for the hammer is takuri. This word means “trying to gauge the depth of the water by feeling for its bottom.” This is a perfect analogy for the hammer line as the market attempts to grope for a bottom. Coincidently, the hammer line looks likes a hammer with its head and handle.
@@ -588,8 +588,60 @@ Understanding the open and close prices assists traders in gauging market sentim
 > The hanging man has the same shape as the hammer; the only difference is that a hanging man comes after an advance.
 > 
 > ![Microsoft - Daily (Hanging Man and Hammer)](/.attachments/microsoft-daily.hang.man.png)
+
+#### THE ENGULFING PATTERN
+
+> ... Most candle signals, ..., are based on combinations of individual candle lines. The engulfing pattern is the first of these multiple candle line patterns. The engulfing pattern is a major reversal signal with two opposite color real bodies composing this pattern.
 > 
-> **THE ENGULFING PATTERN**
+> ![Bullish Engulfing Pattern](/.attachments/bullish.engulfing.pattern.png)
+> 
+> _Bullish Engulfing Pattern_
+> 
+> When a white bullish real body wraps around, or _engulfs_, the prior period's black real body, it is indication of a _bullish engulfing pattern_. Another nickname is a "hugging line" for obvious reasons. This shows buying pressure has overwhelmed selling pressure.
+> 
+> ![Bearish Engulfing Patter](/.attachments/bearish.engulfing.pattern.png)
+> 
+> _Bearish Engulfing Pattern_
+> 
+> When a black real body wraps around, or _engulfs_, the prior period's white real body, it is indication of a _bearish engulfing pattern_. It is the signal of a top reversal. This shows that supply has overwhelmed demand.
+> 
+> There are three criteria for an engulfing pattern:
+>
+> 1. The market has to be in a clearly definable uptrend (for a bearish engulfing pattern) or downtrend (for a bullish engulfing pattern), even if the trend is short term.
+> 
+> 2. Two candles comprise the engulfing pattern. The second real body must engulf the prior real body (it need not engulf the shadows).
+> 
+> 3. The second real body of the engulfing pattern should be the opposite color of the first real body. (The exception to this rule is if the first real body of the engulfing pattern is a doji. Thus, after an extended fall, a doji engulfed by a very large white real body could be a bottom reversal. In an uptrend, a doji enveloped by a very large black real body could be a bearish reversal pattern).
+> 
+> ...
+> 
+> Some factors increasing the likelihood that an engulfing pattern could be an important turning signal are:
+> 
+> 1. If the first day of the engulfing pattern has a very small real body (i.e., a spinning top) and the second day has a very long real body. The small first real body candle reflects a dissipation of the prior trend’s force and the large second real body proves an increase in force behind the new move.
+> 
+> 2. If the engulfing pattern appears after a protracted or very fast move. A fast or extended move creates an overextended market (either overbought or oversold) and makes it vulnerable to profit taking.
+> 
+> 3. If there is heavy volume on the second real body of the engulfing pattern.
+> 
+> ...
+> 
+> ![Euro/Dollar - Daily (Bullish Engulfing Pattern)](/.attachments/euro.dollar-daily.bullish.engulfing.pattern.png)
+> 
+> _Euro/Dollar - Daily (Bullish Engulfing Pattern)_
+> 
+> ...
+> 
+> ![Cisco - Daily (Bearish Engulfing Pattern)](/.attachments/bearish.engulfing.pattern.png)
+> 
+> ...
+
+#### DARK-CLOUD COVER
+
+> ![Dark Cloud Cover](/.attachments/dark.cloud.cover.png)
+> 
+> _Dark-Cloud Cover_
+> 
+> Our next reversal pattern is the _dark-cloud cover_. It is a dual-candle pattern that is a top reversal after an uptrend or, at times, at the top of a congestion band. The first day of this two-candle patter is a strong white real body. The second day's price opens above the prior's session's high (that is, above the top of the upper shadow). However, by the end of the second day's session, the market closes deeply within the prior day's white body. The greater degree of penetration into the white body, the more likely this is a top. Some Japanese technicians require more than a 50-percent penetration of the black session's close into the white real body. If the black candle does not close below the halfway point of the white candlestick, it may be best to wait for more bearish confirmation following the dark-cloud cover. In some circumstances it can be viewed as a dark-cloud cover even if the open is over the prior session's close instead of the prior session's high.
 
 ## Videos
 
