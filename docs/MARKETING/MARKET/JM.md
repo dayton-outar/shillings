@@ -409,28 +409,24 @@ Demographics: 40 - 60 y-o age group
 
  Demographics: 40 - 60 y-o age group
 
-1. Where is the market heading?
-
-   --
-
-2. How much value do you get from the Randy Rowe community?
+1. How much value do you get from the Randy Rowe community?
 
    Randy Rowe offers courses on short-term investing. I believe the community that he's developed through his courses and club meetings, while enriching him, offers him the ability to easily influence a significant group of investors to affect market behaviour.
 
-3. How has MyMoneyJA.com helped in your decision-making? (Do you use any other tools for decision-making?)
+2. How has MyMoneyJA.com helped in your decision-making? (Do you use any other tools for decision-making?)
 
    I sign up for the free trial version. The value I get is from the news announcements.
 
    There's no interpretation of the news announcements by the system to indicate whether investors will BUY or SELL. This interpretation is offered by Randy Rowe.
 
-4. What frustrations do you have with brokerages? (What do you like that they provide?)
+3. Are you satisfied with all the tools you have to make decisions on trading stocks?
 
-   --
-
-5. Are you satisfied with all the tools you have to make decisions on trading stocks?
-
-   I use a spreadsheet to keep track of my portfolio. I use the free trial version of Simply Wall Street to get the multipliers and other fundamental analysis to understand the listed companies. I use the charts from the Jamaica Stock Exchange, such as the candlestick chart to determine the market behaviour and the current psychology of the investors.
+   I use,
+    - a spreadsheet to keep track of my portfolio
+    - the free trial version of Simply Wall Street to get the multipliers and other fundamental analysis to understand the listed companies
+    - the charts from the Jamaica Stock Exchange, such as the candlestick chart to determine the market behaviour and the current psychology of the investors.
+   
+   ...
 
 **BONUS**:
- - Suggested that a trading platform could be sold to Barita
- - Insight into Randy Rowe's Community and MyMoneyJa.com
+ - Suggested that a trading platform could be sold to Barita or Sagicor
