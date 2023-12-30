@@ -10,7 +10,28 @@
 
 ## Key Players
 
-![Stages of Stock Trading in Jamaica](/.attachments/Jamaica.Stock.Exchange.Landscape-2.png)
+![Stages of Stock Trading in Jamaica](/.attachments/jamaica.stock.exchange.landscape-3.png)
+
+Steps 1 (Transfer funds through bank and notify broker via email) and 2 (Communicate order through JTrader or to broker via email) can be done in any order but funds will have to be transferred through the bank for the broker to receive it.
+
+Once the broker acknowledes the funds have been received at Step 3, then the broker approves funds for use in JTrader or, if the investor prefers to also place order through broker, asks the broker to place the order (whether it be BUY or SELL).
+
+As of December 2023, the Jamaica Stock Exchange uses the NASDAQ electronic platform to match and fill orders so all orders are either placed directly onto that platform through a user interface that the broker's accredited trader uses or through the NASDAQ API. So, at Step 4, orders are placed into the NASDAQ system.
+
+It's possible that a trading platform can be built by accessing Jamaica's stock trading data through the NASDAQ API. But is it possible to gain this access without permission from Jamaica Stock Exchange? Is it possible that Jamaica Stock Exchange operates as an intermediary for this region by offering their ["API Services"](https://www.jamstockex.com/services/api-services/),
+
+> **Market Data Feed (MDF)**
+> 
+> The Market Data Feed (referred to as the MDF) is a JavaScript Object Notation (JSON), Application Programming Interface (API) that is used to display real-time market and allows consumers to:
+> 
+> - Display real-time market data to their customer base.
+> - Populate public data walls or websites.
+> 
+> _Market Data API – US$4000.00 per annum_
+> 
+> ...
+> 
+> To subscribe to the services above,  please contact the [marketing department](mailto:jsegroupmarketing@jamstockex.com)
 
 ### Market Makers
 
