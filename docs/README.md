@@ -1,8 +1,37 @@
 # Business Design Philosophy
 
-***Shillings*** is the first story-based stock trading platform. Its goal is to create an immersive learning experience for tracking and trading securities.
+***Shillings*** is the first story-based stock trading platform. Its goal is to reach the global stock trading market by bringing an immersive experience for tracking and trading securities.
 
-There's a story behind all the numbers and symbols. There's a story behind how the companies listed were formed. There's a story of the impact each listed company is making regionally and globally. There's a story behind how well each company is performing.
+Publicly listed companies and their investors have their stories surrounding the drama of its development and performance. Companies attempt to tell these stories in the quarterly and annual reports. _Shillings_ brings a different perspective of how to interpret ticker symbols and numbers to increase the participation rate in the various stock exchanges around the world.
+
+## The Plan
+
+1. Complete Market Research (January 2024)
+   1. Get information from JSE (January 10, 2024)
+   2. Get information from a brokerage firm (January 11, 2024)
+   3. Outline value proposition to each buyer persona
+   4. Determine branding strategy
+      1. Product name (Domain name)
+      2. Avatar/Logo
+      3. Positioning
+2. Complete Business Canvas (January 2024)
+3. Arrange focus group meeting for brainstorming and backlog discussion (January 2024)
+   1. Fill up and prune backlog
+   2. Decide upon features for Sprint 1 - MVP #2
+4. Build Portal (Login) for focus group (February 2024)
+5. Complete Sprint 1 (February 2024)
+6. Gather improvement ideas and backlog from focus group for second sprint, Sprint 2 (March 2024)
+7. Complete Sprint 2 (March 2024)
+8. Build Critical Mass from Influencers, Investment Clubs and Communities (April 2024)
+   1. Arrange meeting with communities
+   2. Deliver branded presentation
+   3. Usher commitment from members of community
+
+## The Problem
+
+Jamaica's increased exposure to technology creates a need for persons to do most things online.
+
+Online experience offered by Jamaica Stock Exchange is disjointed
 
 ## Value Proposition
 
