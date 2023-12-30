@@ -39,21 +39,3 @@ The marketing strategy will initially be to,
 2. Continually improve customer profile (or buyer persona) and value proposition through better understanding of the buyer's journey for the product but behaviour of active investors in the stock exchange
 
 Once the product reaches the first _minimum valuable product_ milestone (meaning it can now be _monetized_), then it can be _publicized_ through the investment clubs and social networks. A public relations strategy would have to include going to meetings to showcase the product with an impressionable brand to occupy a space in the prospect's mind as a leader in a new category.
-
-... Things left to do,
-
-- Complete and explain infographic of processes in on-boarding investors and trading stocks on Stock Exchanges
-
-- Digitize and map buyer personas to value propositions
-
-- Determine strategy for brand awareness
-
-:bulb: People learn from each other. How can the product be designed so that people can learn from each other easily?
-
-Notes left to take,
-
- - Technical analysis
-
- - Valuation
-
- - Complete all readme for analaysis, branding, marketing and experience

@@ -8,8 +8,9 @@ Publicly listed companies and their investors have their stories surrounding the
 
 1. Complete Market Research (January 2024)
    1. Get information from JSE (January 10, 2024)
+      - Complete and confirm [overall process for trading and KYC](/docs/MARKETING/INDUSTRY/JM.md#key-players).
    2. Get information from a brokerage firm (January 11, 2024)
-   3. Outline value proposition to each buyer persona
+   3. Outline value proposition for each buyer persona
    4. Determine branding strategy
       1. Product name (Domain name)
       2. Avatar/Logo
@@ -26,6 +27,17 @@ Publicly listed companies and their investors have their stories surrounding the
    1. Arrange meeting with communities
    2. Deliver branded presentation
    3. Usher commitment from members of community
+
+
+:bulb: People learn from each other. How can the product be designed so that people can learn from each other easily?
+
+Notes left to take,
+
+ - Technical analysis
+
+ - Valuation
+
+ - Complete all readme for analaysis, branding, marketing and experience
 
 ## The Problem
 
