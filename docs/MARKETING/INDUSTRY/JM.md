@@ -33,6 +33,8 @@ It's possible that a trading platform can be built by accessing Jamaica's stock 
 > 
 > To subscribe to the services above,  please contact the [marketing department](mailto:jsegroupmarketing@jamstockex.com)
 
+![Stages of KYC in Jamaica](/.attachments/jamaica.stock.exchange.landscape-kyc.png)
+
 ### Market Makers
 
 The specific market makers in Jamaica's stock market might have changed or evolved. In Jamaica's stock market context, market makers are entities that provide liquidity and facilitate trading by offering to buy and sell specific securities at quoted bid and ask prices. They play a crucial role in ensuring there is a continuous market for securities.
