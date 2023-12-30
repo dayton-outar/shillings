@@ -415,7 +415,7 @@ Demographics: 40 - 60 y-o age group
 
 2. How much value do you get from the Randy Rowe community?
 
-   Randy Rowe offers courses on short-term investing. I believe the community that he's developed through his courses and club meetings, while enriching him, offers him the ability to easily influence a significan group of investors to affect market behaviour.
+   Randy Rowe offers courses on short-term investing. I believe the community that he's developed through his courses and club meetings, while enriching him, offers him the ability to easily influence a significant group of investors to affect market behaviour.
 
 3. How has MyMoneyJA.com helped in your decision-making? (Do you use any other tools for decision-making?)
 
