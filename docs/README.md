@@ -31,7 +31,7 @@ Publicly listed companies and their investors have their stories surrounding the
 
 Jamaica's increased exposure to technology creates a need for persons to do most things online.
 
-Online experience offered by Jamaica Stock Exchange is disjointed
+Online experience offered by Jamaica Stock Exchange is disjointed[^1]
 
 ## Value Proposition
 
@@ -77,7 +77,7 @@ Differentiation: How will it solve that problem or pain point better than the cu
 
 Value: How will it make our business and users' lives better?
 
-Another important business idea for consideration is to start a brokerage firm, where this product will be used to access the services of the broker. According to Jamaican laws (the Securities Act[^1]),
+Another important business idea for consideration is to start a brokerage firm, where this product will be used to access the services of the broker. According to Jamaican laws (the Securities Act[^2]),
 
 > an individual is eligible to apply for a dealer’s licence or an investor adviser’s licence if—
 > 
@@ -162,4 +162,5 @@ Drive traffic to site with [Simple Traffic](https://www.simpletraffic.co/).
 1. [Value Props: Create a Product People Will Actually Buy](https://youtu.be/q8d9uuO1Cf4?si=WH3HG24mDASxoEE5)
 
 
-[^1]: [The Securities Act](https://laws.moj.gov.jm/legislation/subsids/S/The%20Securities%20Act.pdf)
+[^1]: [How to Value Companies Like a Value Investor - Chike Verwey | Learn Grow Invest Meeting - July 2020](https://youtu.be/JdgBlCKAa0M?si=K7wDavEWQvx02vWY&t=717)
+[^2]: [The Securities Act](https://laws.moj.gov.jm/legislation/subsids/S/The%20Securities%20Act.pdf)
