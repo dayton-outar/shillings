@@ -474,6 +474,7 @@ My experience using JTrader Pro was as follows,
 1. [The Complete Guide to Dividend Investing on the Jamaica Stock Market](https://youtu.be/guhqztem9fA) - [Learn Grow Invest](https://www.youtube.com/@learngrowinvest)
 1. [How to trade stocks with Jtraderpro](https://youtu.be/OwlkE77s1AI) - [Kalila Reynolds Media](https://www.youtube.com/@kalilahrey)
 1. [Investing in the Jamaica Stock Market for Beginners](https://youtu.be/bsXA7nJ7jW8?si=9r-996221fzkeRLn) - [Learn Grow Invest](https://www.youtube.com/@learngrowinvest)
+1. [How to Value Companies Like a Value Investor - Chike Verwey | Learn Grow Invest Meeting - July 2020](https://youtu.be/JdgBlCKAa0M?si=iYWiFcex19X7627A) - [Learn Grow Invest](https://www.youtube.com/@learngrowinvest)
 1. [The Top 5 Jamaican Dividend Stock To Invest Right Now in 2022](https://youtu.be/DooE-5QiL_4?si=Sm8La8h7ogpktpk-) - [Garth Grant](https://www.youtube.com/@GarthGrant)
 1. [How to Buy Stocks in Jamaica 2022](https://youtu.be/sRaCVQXm-QA?si=XVFmGSwpS3IM4sJN) - [Emar Morrison](https://www.youtube.com/@emarjm)
 1. [Robinhood vs Charles Schwab 2023: Best Brokerage?](https://youtu.be/OlTiorM1fYQ)
