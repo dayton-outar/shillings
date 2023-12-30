@@ -426,7 +426,7 @@ Demographics: 40 - 60 y-o age group
     - the free trial version of Simply Wall Street to get the multipliers and other fundamental analysis to understand the listed companies
     - the charts from the Jamaica Stock Exchange, such as the candlestick chart to determine the market behaviour and the current psychology of the investors.
    
-   ...
+   If I can do all of this with ease in one place, I would on-board that site.
 
 **BONUS**:
  - Suggested that a trading platform could be sold to Barita or Sagicor
