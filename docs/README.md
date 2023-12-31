@@ -11,10 +11,7 @@ Publicly listed companies and their investors have their stories surrounding the
       - Complete and confirm [overall process for trading and KYC](/docs/MARKETING/INDUSTRY/JM.md#key-players).
    2. Get information from a brokerage firm (January 11, 2024)
    3. Outline value proposition for each buyer persona
-   4. Determine branding strategy
-      1. Product name (Domain name)
-      2. Avatar/Logo
-      3. Positioning
+   4. Determine [branding strategy](./BRANDING/)
 2. Complete Business Canvas (January 2024)
 3. Arrange focus group meeting for brainstorming and backlog discussion (January 2024)
    1. Fill up and prune backlog
