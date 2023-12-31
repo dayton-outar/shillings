@@ -10,7 +10,7 @@
 > 
 > ...
 > 
-> Instead of relying on expensive marketing, habit-forming companies link their services to the users’ daily routines and emotions.7 A habit is at work when users feel a tad bored and instantly open Twitter. They feel a pang of loneliness and before rational thought occurs, they are scrolling through their Facebook feeds. A question comes to mind and before searching their brains, they query Google. The first-to-mind solution wins. In chapter 1 of this book, we explore the competitive advantages of habit-forming products.
+> Instead of relying on expensive marketing, habit-forming companies link their services to the users’ daily routines and emotions. A habit is at work when users feel a tad bored and instantly open Twitter. They feel a pang of loneliness and before rational thought occurs, they are scrolling through their Facebook feeds. A question comes to mind and before searching their brains, they query Google. The first-to-mind solution wins. In chapter 1 of this book, we explore the competitive advantages of habit-forming products.
 >
 > ...
 >
@@ -18,7 +18,7 @@
 
 ![The Hook Model Illustration](/.attachments/hook-model.jpeg)
 
-> A _trigger_ is the actuator of behavior—the spark plug in the engine. Triggers come in two types: external and internal.8 Habit-forming products start by alerting users with external triggers like an e-mail, a Web site link, or the app icon on a phone.
+> A _trigger_ is the actuator of behavior—the spark plug in the engine. Triggers come in two types: external and internal. Habit-forming products start by alerting users with external triggers like an e-mail, a Web site link, or the app icon on a phone.
 > 
 > ...
 > 
@@ -36,9 +36,9 @@
 
 ## Chapter 1. The Habit Zone
 
-> Habits are one of the ways the brain learns complex behaviors. Neuroscientists believe habits give us the ability to focus our attention on other things by storing automatic responses in the basal ganglia, an area of the brain associated with involuntary actions.2
+> Habits are one of the ways the brain learns complex behaviors. Neuroscientists believe habits give us the ability to focus our attention on other things by storing automatic responses in the basal ganglia, an area of the brain associated with involuntary actions.
 > 
-> Habits form when the brain takes a shortcut and stops actively deliberating over what to do next.3 The brain quickly learns to codify behaviors that provide a solution to whatever situation it encounters.
+> Habits form when the brain takes a shortcut and stops actively deliberating over what to do next. The brain quickly learns to codify behaviors that provide a solution to whatever situation it encounters.
 >
 > ...
 > 
@@ -64,7 +64,7 @@
 >
 > ...
 > 
-> Evernote’s CEO Phil Libin shared some revealing insights about how the company turns nonpaying users into revenue-generating ones.7 In 2011 Libin published a chart now known as the “smile graph.” With the percentage of sign-ups represented on the y-axis and time spent on the service on the x-axis, the chart showed that, although usage plummeted at first, it rocketed upward as people formed a habit of using the service. The resulting down-and-up curve gave the chart its emblematic smile shape (and Evernote’s CEO a matching grin).
+> Evernote’s CEO Phil Libin shared some revealing insights about how the company turns nonpaying users into revenue-generating ones. In 2011 Libin published a chart now known as the “smile graph.” With the percentage of sign-ups represented on the y-axis and time spent on the service on the x-axis, the chart showed that, although usage plummeted at first, it rocketed upward as people formed a habit of using the service. The resulting down-and-up curve gave the chart its emblematic smile shape (and Evernote’s CEO a matching grin).
 > 
 > In addition, as usage increased over time, so did customers’ willingness to pay. Libin noted that after the first month, only 0.5 percent of users paid for the service; however, this rate gradually increased. By month thirty-three, 11 percent of users had started paying. At month forty-two, a remarkable 26 percent of customers were paying for something they had previously used for free.
 >
@@ -94,7 +94,7 @@ This underscores Seth Godin's point about going for publicity first and starting
 
 Is this the Law of First working against competitors of Google. Google is perceived as the leader and was first to occupy the mind of the consumer and, since, the consumer has developed habits around Google it has now become hard to change.
 
-> A 2010 study found that some habits can be formed in a matter of weeks while others can take more than five months.23 The researchers also found that the complexity of the behavior and how important the habit was to the person greatly affected how quickly the routine was formed.
+> A 2010 study found that some habits can be formed in a matter of weeks while others can take more than five months. The researchers also found that the complexity of the behavior and how important the habit was to the person greatly affected how quickly the routine was formed.
 > 
 > ...
 > 
@@ -214,11 +214,11 @@ This emotion that Yin experiences is called FOMO - Fear of Missing Out.
 > 
 > ...
 > 
-> Seven years after Blogger’s birth, a new company described at first as a “microblogging” service sought to bring sharing to the masses: Twitter. For many, blogging was still a difficult, time-consuming venture, but anyone could type short, casual messages. Tweeting began to enter the national lexicon as Twitter gained wider adoption, climbing to 500 million registered users by 2012.5 Critics first discounted Twitter’s 140-character message limitation as gimmicky and restrictive; little did they realize the constraint actually increased users’ ability to create. A few keyboard taps and users were sharing. As of late 2013, 340 million tweets were sent every day.
+> Seven years after Blogger’s birth, a new company described at first as a “microblogging” service sought to bring sharing to the masses: Twitter. For many, blogging was still a difficult, time-consuming venture, but anyone could type short, casual messages. Tweeting began to enter the national lexicon as Twitter gained wider adoption, climbing to 500 million registered users by 2012. Critics first discounted Twitter’s 140-character message limitation as gimmicky and restrictive; little did they realize the constraint actually increased users’ ability to create. A few keyboard taps and users were sharing. As of late 2013, 340 million tweets were sent every day.
 > 
 > ...
 > 
-> Fogg describes six “elements of simplicity”—the factors that influence a task’s difficulty.6 These are:
+> Fogg describes six “elements of simplicity”—the factors that influence a task’s difficulty. These are:
 > 
 > 1. Time—how long it takes to complete an action.
 > 2. Money—the fiscal cost of taking an action.
@@ -265,7 +265,7 @@ This emotion that Yin experiences is called FOMO - Fear of Missing Out.
 > 
 > It is worth mentioning four of these brain biases in particular. Even though users are often unaware of these influences on their behavior, heuristics can predict their actions.
 >
-> In 1975 researchers Stephen Worchel, Jerry Lee, and Akanbi Adewole wanted to know how people would value cookies in two identical glass jars.8 One jar held ten cookies while the other contained just two. Which cookies would people value more?
+> In 1975 researchers Stephen Worchel, Jerry Lee, and Akanbi Adewole wanted to know how people would value cookies in two identical glass jars. One jar held ten cookies while the other contained just two. Which cookies would people value more?
 >
 > Although the cookies and jars were identical, participants valued the ones in the near-empty jar more highly.
 >
@@ -281,7 +281,7 @@ This emotion that Yin experiences is called FOMO - Fear of Missing Out.
 >
 > When Bell performed his concert in the subway station, few stopped to listen. But when **framed in the context** of a concert hall, he can charge beaucoup bucks.
 > 
-> The framing heuristic not only influences our behaviors; it literally changes how our brain perceives pleasure. For example, a 2007 study attempted to measure if price had any influence on the taste of wine.10 The researchers had study participants sample wine while in a functional magnetic resonance imaging (fMRI) machine.
+> The framing heuristic not only influences our behaviors; it literally changes how our brain perceives pleasure. For example, a 2007 study attempted to measure if price had any influence on the taste of wine. The researchers had study participants sample wine while in a functional magnetic resonance imaging (fMRI) machine.
 >
 > As the fMRI machine scanned the blood flow in the various regions of their brains, the tasters were informed of the cost of each wine sampled. The sample started with a $5 wine and progressed to a $90 bottle. Interestingly, as the price of the wine increased, so did the participants’ enjoyment of the wine. Not only did they say they enjoyed the wine more but their brain corroborated their feelings, showing higher spikes in the regions associated with pleasure. Little did the study participants realize that they were tasting the same wine each time. This study demonstrates how perception can form a personal reality based on how a product is framed, even when there is little relationship with objective quality. Not only did they say they enjoyed the wine more but their brain corroborated their feelings, showing higher spikes in the regions associated with pleasure. Little did the study participants realize that they were tasting the same wine each time. This study demonstrates how perception can form a personal reality based on how a product is framed, even when there is little relationship with objective quality.
 > 
@@ -295,7 +295,7 @@ This emotion that Yin experiences is called FOMO - Fear of Missing Out.
 
 ## Chapter 4. Variable Reward
 
-> In the 1940s two researchers, James Olds and Peter Milner, accidentally discovered how a special area of the brain is the source of our cravings. The researchers implanted electrodes in the brains of lab mice that enabled the mice to give themselves tiny electric shocks to a small area of the brain, the nucleus accumbens.1 The mice quickly became hooked on the sensation.
+> In the 1940s two researchers, James Olds and Peter Milner, accidentally discovered how a special area of the brain is the source of our cravings. The researchers implanted electrodes in the brains of lab mice that enabled the mice to give themselves tiny electric shocks to a small area of the brain, the nucleus accumbens. The mice quickly became hooked on the sensation.
 > 
 > Olds and Milner demonstrated that the lab mice would forgo food, water, and even run across a painful electrified grid for the opportunity to continue pressing the lever that administered the shocks. A few years later, other researchers tested the human response to self-administered stimulus in the same area of the brain. The results were just as dramatic as in the mouse trial—subjects wanted to do nothing but press the brain-stimulating button. Even when the machine was turned off, people continued pressing the button. Researchers had to forcibly take the devices from subjects who refused to relinquish them.
 > 
@@ -347,7 +347,7 @@ This emotion that Yin experiences is called FOMO - Fear of Missing Out.
 
 Even YouTube has this variable reward built into it.
 
-> At first Mahalo garnered significant attention and traffic. At its high point 14.1 million users worldwide visited the site monthly.21 But over time, users began to lose interest. Although the payout of the bounties was variable, somehow users did not find the monetary rewards enticing enough.
+> At first Mahalo garnered significant attention and traffic. At its high point 14.1 million users worldwide visited the site monthly. But over time, users began to lose interest. Although the payout of the bounties was variable, somehow users did not find the monetary rewards enticing enough.
 > 
 > As Mahalo struggled to retain users, another Q&A site began to boom. Quora, launched in 2010 by two former Facebook employees, quickly grew in popularity. Unlike Mahalo, Quora did not offer a single cent to anyone answering user questions. Why, then, have users remained highly engaged with Quora but not with Mahalo, despite its variable monetary rewards?
 > 
