@@ -266,7 +266,7 @@ Also, see mobile apps below,
 
 ##### MyMoneyJA
 
-I think the greatest feature on MyMoneyJA is the offered in the **Portfolio** section. The charts shown are standard across every stocks analysis platform. The presentation of the information is more friendly to experts. Portfolio information is presented in separate cards rather than a grid, which makes a quick comparison difficult. The information presented on most pages including the _Overview_ confronts the user with cognitive loading problem, too much information all in one area.
+I think the greatest feature on MyMoneyJA is offered in the **Portfolio** section. The charts shown are standard across every stocks analysis platform. The presentation of the information is more friendly to experts. Portfolio information is presented in separate cards rather than a grid, which makes a quick comparison difficult. The information presented on most pages including the _Overview_ confronts the user with cognitive loading problem, too much information all in one area.
 
 I think their **Dollar-cost Averaging** feature is onto something but a better idea is a feature for the bearish investors to show how much investment is required to break-even a stock that is in a loss.
 
