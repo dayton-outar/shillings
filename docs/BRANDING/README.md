@@ -12,7 +12,7 @@ The word "shillings" is not generic but rather a specific term related to curren
 
 "Shillings" does not convey a strong enough appeal to captivate a place in the minds of people to position it as an _immersive_ stock trading platform. So, the question raised from this is, how can we choose a name that will take the place in the minds of the people, where this project (or product) is the _first_ thing that comes to their mind? When persons want a place to get _real-time_ analytics of stock trading presented in a visually appealing and cohesive manner, they think of this project. We want our customers to _have fun while making money, studying businesses and trading stocks_. This project is a _playground_ for investors. It brings a gaming type of experience, where they get _the right amount of information on demand and at the right time_. It is a, _hub_, a _central_ repository of all information related to stocks showing all the important and profitable relationships between the players within the stock market industry.
 
-The _immersive_ experience is an appeal to develop this project in a way where users can _learn quickly_ and _improve their intelligence_ as they develop a _habit_ of visiting the project on a regular basis (at least weekly) to grow their insights and to win the game of stock trading.
+The _immersive_ experience is an appeal to develop this project in a way where users can _learn quickly_ and _improve their intelligence_ as they develop a _habit_ of visiting the project on a regular basis (at least weekly but hopefully daily) to grow their insights and to win the game of stock trading.
 
 ## The Name
 
