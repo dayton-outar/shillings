@@ -48,6 +48,12 @@ A few ideas for new name include,
 
   An appropriate avatar can provide inspiration for logos and be used in bringing the immersive experience to the trading platform. Avatars work well in advertising.
 
+  ## The Tagline
+
+  Taglines are a brief and to the point statement that communicates the product's essence to the customer. It's perfect for advertisement. Since, initially this project will start with a _small viable market_, and publicize through the different target communicates, the tagline is not mandatory or critical at the moment.
+
+  As the project picks up traction, we can determine an appropriate tagline.
+
   ## The Experience
 
   The brand is at the very core, the experience that we promise to provide to them.
