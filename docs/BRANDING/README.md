@@ -6,7 +6,7 @@ Without any knowledge and experience in branding, I decided to use the name, "sh
  - [The 22 Immutable Laws of Branding](./22.IMMUTABLE.LAWS.OF.BRANDING.md)
  - [Positioning: The Battle for your Mind](./POSITIONING.md)
 
-The word "shillings" is not generic but rather a specific term related to currency. Shillings have been used as a form of currency in various countries, and the term is not limited to a single region. However, the specific value and usage of shillings can vary from one country to another. It's important to note that many countries have transitioned to other forms of currency and no longer use shillings. It's important to note that it is still used in Kenya and Kenya has a stock exchange called [Nairobi Securities Exchange](https://www.nse.co.ke/).
+The word "shillings" is not generic but rather a specific term related to currency. "Shillings" has been used as a form of currency in various countries, and the term is not limited to a single region. However, the specific value and usage of shillings can vary from one country to another. It's important to note that many countries have transitioned to other forms of currency and no longer use shillings. It's important to note that it is still used in Kenya and Kenya has a stock exchange called [Nairobi Securities Exchange](https://www.nse.co.ke/).
 
 ## Positioning
 
