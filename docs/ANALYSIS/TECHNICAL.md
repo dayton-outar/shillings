@@ -674,3 +674,4 @@ Understanding the open and close prices assists traders in gauging market sentim
 ## Videos
 
 1. [Moving Average Trading - How to use Moving Averages](https://youtu.be/NqTPzObfkO0?si=ttnDf6Mt2uhT_MFp) - [Tradeciety.com](https://www.youtube.com/@Tradeciety)
+1. [This Gap Trading Strategy Prints You Money (Gap Up, Gap Down, Gap Fill)](https://youtu.be/qkChxbuUqvU?si=Py_JYTB2RyPr7-fy) - [Wysetrade](https://www.youtube.com/@Wysetrade)
