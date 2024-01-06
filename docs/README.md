@@ -55,24 +55,34 @@ Online experience offered by Jamaica Stock Exchange is disjointed[^1]
        - Make use of visual media as much as possible. Make less use of written content. Less reading more visual appeal.
 
    
-   <table style='border: 2px solid grey; vertical-align:top;'>
+   <table style='border: 2px solid grey;'>
       <tr>
-         <td rowspan='3' style='vertical-align:top'>
+         <td style='vertical-align:top'>
             <h5>Tracy Trader</h5>
             <img src='/.attachments/tracy-trader.jpg' alt='Avatar Portrait of Tracy Trader' width='100' height='100' />
             <p><strong>F<small>EMALE</small></strong></p>
             <h6>Goals</h6>
             <p>To make money. No loyalty to any particular stock or company.</p>
          </td>
-         <td>
+         <td style='vertical-align:top'>
             <h6>Challenges</h6>
             <ul>
                <li>It takes too long to make trades in the current system</li>
                <li>Some analytics are too difficult to learn</li>
                <li>At least 1 hour per week to monitor investments</li>
             </ul>
+            <h6>Personality</h6>
+            <ul>
+               <li>Knows community of investors</li>
+            </ul>
+            <h6>Tech</h6>
+            <ul>
+               <li>Mobile Phone</li>
+               <li>Internet Access</li>
+               <li>Social Networks: Telegram, Twitter</li>
+            </ul>
          </td>
-         <td>
+         <td style='vertical-align:top'>
             <h6>Needs</h6>
             <ul>
                <li>Fundamental Analysis Multiples: P/E, Dividend Yield, Liquidity, Profit Margin, Revenue Growth</li>
@@ -82,14 +92,11 @@ Online experience offered by Jamaica Stock Exchange is disjointed[^1]
                <li>Comparison projection to show possible gains/loss from stocks over period of time</li>
                <li>View BUY and SELL orders real-time</li>
             </ul>
+            <h6>Philosophy</h6>
+            <p>Tracy listens for announcements to make her next trading decision. IPOs is a chance to get in early and sell when the stock appreciates.</p>
+            <p>Whenever there is a dividend announcement, Tracy trades before the ex-date to get some of the dividends from as much stocks as possible. Tracy is scraping for everything she can get.</p>
          </td>
       <tr>
-      <tr>
-         <td>
-         </td>
-         <td>
-         </td>
-      </tr>
    </table>
 
 2. Brokers
