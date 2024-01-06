@@ -89,16 +89,6 @@ Online experience offered by Jamaica Stock Exchange is disjointed[^1]
          </td>
          <td>
          </td>
-         <td>
-         </td>
-      </tr>
-      <tr>
-         <td>
-         </td>
-         <td>
-         </td>
-         <td>
-         </td>
       </tr>
    </table>
 
