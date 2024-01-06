@@ -123,7 +123,7 @@ Online experience offered by Jamaica Stock Exchange is disjointed[^1]
             </ul>
             <h6>Personality</h6>
             <ul>
-               <li>Thinks more than she feels</li>
+               <li>Thinks more than he feels</li>
                <li>Introverted. Less influenced by others.</li>
                <li>Knows at least 4 persons that trade</li>
             </ul>
