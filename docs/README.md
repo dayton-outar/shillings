@@ -103,6 +103,55 @@ Online experience offered by Jamaica Stock Exchange is disjointed[^1]
       <tr>
    </table>
 
+   <table style='border: 2px solid grey;'>
+      <tr>
+         <td style='vertical-align:top'>
+            <h5>Chris Charts</h5>
+            <img src='/.attachments/chris-charts.jpg' alt='Avatar Portrait of Chris Charts' width='200' height='200' />
+            <p><small><strong>MALE</strong></small></p>
+            <p><small>44</small></p>
+            <p><small>J$1k - J$9k investment per month</small></p>
+            <h6>Goals</h6>
+            <p>To make money</p>
+         </td>
+         <td style='vertical-align:top'>
+            <h6>Challenges</h6>
+            <ul>
+               <li>BUY and SELL orders not showing in real-time*</li>
+               <li>No real-time technical analysis</li>
+               <li>At least 1 hour per week to trade stocks</li>
+            </ul>
+            <h6>Personality</h6>
+            <ul>
+               <li>Thinks more than she feels</li>
+               <li>Introverted. Less influenced by others.</li>
+               <li>Knows at least 4 persons that trade</li>
+            </ul>
+            <h6>Tech</h6>
+            <ul>
+               <li>Mobile Phone</li>
+               <li>Internet Access</li>
+            </ul>
+         </td>
+         <td style='vertical-align:top'>
+            <h6>Needs</h6>
+            <ul>
+               <li>Market & Industry indices and trends. Index P/E, P/BV</li>
+               <li>Moving Averages</li>
+               <li>Indicators. RSI, Stochastic Oscillator, MACD</li>
+               <li>Real-time Analysis of BUY and SELL orders</li>
+               <li>Less steps in trading</li>
+               <li>Good-looking UI</li>
+               <li>Gaming environment with rewards and feedback</li>
+               <li>Sentiment analysis to quickly summarize business news</li>
+               <li>A bot to suggest trades</li>
+            </ul>
+            <h6>Philosophy</h6>
+            <p>Chris trades wherever there is an opportunity to profit, whether it be getting money from dividends and new IPO.</p>
+         </td>
+      <tr>
+   </table>
+
 2. Brokers
    
    Value Proposition:
