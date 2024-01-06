@@ -57,23 +57,44 @@ Online experience offered by Jamaica Stock Exchange is disjointed[^1]
    
    <table style='border: 1px solid'>
       <tr>
-         <td rowspan='3'>
+         <td rowspan='3' style='vertical-align:top'>
             <h5>Tracy Trader</<h5>
-            <img src='/.attachments/tracy-trader.jpg' alt='Avatar Portrait of Tracy Trader' />
+            <img src='/.attachments/tracy-trader.jpg' alt='Avatar Portrait of Tracy Trader' width='100' height='100' />
             <p><strong>F<small>EMALE</small></strong></p>
-         </td>
-         <td>
             <h6>Goals</h6>
             <p>To make money. No loyalty to any particular stock or company.</p>
          </td>
+         <td style='vertical-align:top'>
+            <h6>Challenges</h6>
+            <ul>
+               <li>It takes too long to make trades in the current system</li>
+               <li>Some analytics are too difficult to learn</li>
+               <li>At least 1 hour per week to monitor investments</li>
+            </ul>
+         </td>
+         <td style='vertical-align:top'>
+            <h6>Needs</h6>
+            <ul>
+               <li>Fundamental Analysis Multiples: P/E, Dividend Yield, Liquidity, Profit Margin, Revenue Growth</li>
+               <li>Dividend Policy</li>
+               <li>IPO Analysis Breakdown</li>
+               <li>Shareholder Connections Tree</li>
+               <li>Comparison projection to show possible gains/loss from stocks over period of time</li>
+               <li>View BUY and SELL orders real-time</li>
+            </ul>
+         </td>
       <tr>
       <tr>
+         <td>
+         </td>
          <td>
          </td>
          <td>
          </td>
       </tr>
       <tr>
+         <td>
+         </td>
          <td>
          </td>
          <td>
