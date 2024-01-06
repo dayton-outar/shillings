@@ -60,7 +60,9 @@ Online experience offered by Jamaica Stock Exchange is disjointed[^1]
          <td style='vertical-align:top'>
             <h5>Tracy Trader</h5>
             <img src='/.attachments/tracy-trader.jpg' alt='Avatar Portrait of Tracy Trader' width='100' height='100' />
-            <p><strong>F<small>EMALE</small></strong></p>
+            <p><small><strong>FEMALE</strong></small></p>
+            <p><small>33</small></p>
+            <p><small>J$1k - J$9k investment per month</small></p>
             <h6>Goals</h6>
             <p>To make money. No loyalty to any particular stock or company.</p>
          </td>
