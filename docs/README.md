@@ -54,6 +54,33 @@ Online experience offered by Jamaica Stock Exchange is disjointed[^1]
        - An integrated learning experience. [Khan Academy](https://www.khanacademy.org/) course outlines, quizzes and videos comes to mind.
        - Make use of visual media as much as possible. Make less use of written content. Less reading more visual appeal.
 
+   
+   <table style='border: 1px solid'>
+      <tr>
+         <td rowspan='3'>
+            <h5>Tracy Trader</<h5>
+            <img src='/.attachments/tracy-trader.jpg' alt='Avatar Portrait of Tracy Trader' />
+            <p><strong>F<small>EMALE</small></strong></p>
+         </td>
+         <td>
+            <h6>Goals</h6>
+            <p>To make money. No loyalty to any particular stock or company.</p>
+         </td>
+      <tr>
+      <tr>
+         <td>
+         </td>
+         <td>
+         </td>
+      </tr>
+      <tr>
+         <td>
+         </td>
+         <td>
+         </td>
+      </tr>
+   </table>
+
 2. Brokers
    
    Value Proposition:
