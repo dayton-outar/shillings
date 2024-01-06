@@ -59,7 +59,7 @@ Online experience offered by Jamaica Stock Exchange is disjointed[^1]
       <tr>
          <td style='vertical-align:top'>
             <h5>Tracy Trader</h5>
-            <img src='/.attachments/tracy-trader.jpg' alt='Avatar Portrait of Tracy Trader' width='100' height='100' />
+            <img src='/.attachments/tracy-trader.jpg' alt='Avatar Portrait of Tracy Trader' width='200' height='200' />
             <p><small><strong>FEMALE</strong></small></p>
             <p><small>33</small></p>
             <p><small>J$1k - J$9k investment per month</small></p>
@@ -75,6 +75,8 @@ Online experience offered by Jamaica Stock Exchange is disjointed[^1]
             </ul>
             <h6>Personality</h6>
             <ul>
+               <li>Thinks more than she feels</li>
+               <li>Extroverted. Depends on social proofing.</li>
                <li>Knows community of investors</li>
             </ul>
             <h6>Tech</h6>
