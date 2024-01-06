@@ -58,7 +58,7 @@ Online experience offered by Jamaica Stock Exchange is disjointed[^1]
    <table style='border: 1px solid'>
       <tr>
          <td rowspan='3' style='vertical-align:top'>
-            <h5>Tracy Trader</<h5>
+            <h5>Tracy Trader</h5>
             <img src='/.attachments/tracy-trader.jpg' alt='Avatar Portrait of Tracy Trader' width='100' height='100' />
             <p><strong>F<small>EMALE</small></strong></p>
             <h6>Goals</h6>
