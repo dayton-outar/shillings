@@ -152,6 +152,92 @@ Online experience offered by Jamaica Stock Exchange is disjointed[^1]
       <tr>
    </table>
 
+   <table style='border: 2px solid grey;'>
+      <tr>
+         <td style='vertical-align:top'>
+            <h5>Tracy Trader</h5>
+            <img src='/.attachments/ingrid-investor.jpg' alt='Avatar Portrait of Ingrid Investor' width='200' height='200' />
+            <p><small><strong>FEMALE</strong></small></p>
+            <p><small>30</small></p>
+            <p><small>J$10k - J$20k investment per month</small></p>
+            <h6>Goals</h6>
+            <p>To make money: part of pension plan.</p>
+         </td>
+         <td style='vertical-align:top'>
+            <h6>Challenges</h6>
+            <ul>
+               <li>Too much information provided in analytics web sites</li>
+               <li>At least 30 minutes per week to check portfolio</li>
+            </ul>
+            <h6>Personality</h6>
+            <ul>
+               <li>Balancing thinking and feeling</li>
+               <li>Ambivert. Balances social with self-belief.</li>
+               <li>Doesn't know many investors</li>
+            </ul>
+            <h6>Tech</h6>
+            <ul>
+               <li>Prefer to check portfolio on laptop</li>
+               <li>Internet Access</li>
+            </ul>
+         </td>
+         <td style='vertical-align:top'>
+            <h6>Needs</h6>
+            <ul>
+               <li>Dividend Policy</li>
+               <li>Company announcements & sentiments about those announcements</li>
+               <li>Company's Financial Reports</li>
+            </ul>
+            <h6>Philosophy</h6>
+            <p>Ingrid is a long-term investor that buys value stocks that will offer dividends over a long period of time.</p>
+            <p>Ingrid expects to amass alot of stock units for a few stocks that can eventually pay dividends that she can live on, in her retirement.</p>
+         </td>
+      <tr>
+   </table>
+
+   <table style='border: 2px solid grey;'>
+      <tr>
+         <td style='vertical-align:top'>
+            <h5>Knows Nothing</h5>
+            <img src='/.attachments/knows-nothing.jpg' alt='Avatar Portrait of Knows Nothing' width='200' height='200' />
+            <p><small><strong>MALE</strong></small></p>
+            <p><small>18</small></p>
+            <p><small>J$1k investment per month</small></p>
+            <h6>Goals</h6>
+            <ul>
+               <li>To learn about stock investments</li>
+               <li>To make money</li>
+            </ul>
+         </td>
+         <td style='vertical-align:top'>
+            <h6>Challenges</h6>
+            <ul>
+               <li>Ticker symbols, terms and figures intimidate him</li>
+               <li>Charts also not easy to understand</li>
+            </ul>
+            <h6>Personality</h6>
+            <ul>
+               <li>Don't know what to think</li>
+               <li>Extroverted. Make decisions from hearsay.</li>
+               <li>Knows people that invest</li>
+            </ul>
+            <h6>Tech</h6>
+            <ul>
+               <li>Mobile Phone</li>
+               <li>Internet Access</li>
+            </ul>
+         </td>
+         <td style='vertical-align:top'>
+            <h6>Needs</h6>
+            <ul>
+               <li>Material to explain stocks in an engaging way</li>
+            </ul>
+            <h6>Philosophy</h6>
+            <p>No philosophy.</p>
+         </td>
+      <tr>
+   </table>
+
 2. Brokers
    
    Value Proposition:
