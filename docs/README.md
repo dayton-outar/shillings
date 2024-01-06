@@ -55,7 +55,7 @@ Online experience offered by Jamaica Stock Exchange is disjointed[^1]
        - Make use of visual media as much as possible. Make less use of written content. Less reading more visual appeal.
 
    
-   <table style='border: 1px solid'>
+   <table style='border: 2px solid grey; vertical-align:top;'>
       <tr>
          <td rowspan='3' style='vertical-align:top'>
             <h5>Tracy Trader</h5>
@@ -64,7 +64,7 @@ Online experience offered by Jamaica Stock Exchange is disjointed[^1]
             <h6>Goals</h6>
             <p>To make money. No loyalty to any particular stock or company.</p>
          </td>
-         <td style='vertical-align:top'>
+         <td>
             <h6>Challenges</h6>
             <ul>
                <li>It takes too long to make trades in the current system</li>
@@ -72,7 +72,7 @@ Online experience offered by Jamaica Stock Exchange is disjointed[^1]
                <li>At least 1 hour per week to monitor investments</li>
             </ul>
          </td>
-         <td style='vertical-align:top'>
+         <td>
             <h6>Needs</h6>
             <ul>
                <li>Fundamental Analysis Multiples: P/E, Dividend Yield, Liquidity, Profit Margin, Revenue Growth</li>
