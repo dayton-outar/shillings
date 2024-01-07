@@ -353,6 +353,7 @@ Drive traffic to site with [Simple Traffic](https://www.simpletraffic.co/).
 1. [How does the stock market work? - Oliver Elfenbaum](https://youtu.be/p7HKvqRI_Bo?si=kmDktQkx80tZcLqb)
 1. [How to Build a Product that Scales into a Company](https://youtu.be/r-98YRAF1dY?si=xcr-K0mXHTtkqqfJ)
 1. [Value Props: Create a Product People Will Actually Buy](https://youtu.be/q8d9uuO1Cf4?si=WH3HG24mDASxoEE5)
+1. [Value Proposition Canvas by Strategyzer.com explained through the Uber Example🚘](https://youtu.be/kiWkRiynPAo?si=w1UHWXlufSbHS3E8)
 
 
 [^1]: [How to Value Companies Like a Value Investor - Chike Verwey | Learn Grow Invest Meeting - July 2020](https://youtu.be/JdgBlCKAa0M?si=K7wDavEWQvx02vWY&t=717)
