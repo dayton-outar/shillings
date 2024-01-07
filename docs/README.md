@@ -155,7 +155,7 @@ Online experience offered by Jamaica Stock Exchange is disjointed[^1]
    <table style='border: 2px solid grey;'>
       <tr>
          <td style='vertical-align:top'>
-            <h5>Tracy Trader</h5>
+            <h5>Ingrid Investor</h5>
             <img src='/.attachments/ingrid-investor.jpg' alt='Avatar Portrait of Ingrid Investor' width='200' height='200' />
             <p><small><strong>FEMALE</strong></small></p>
             <p><small>30</small></p>
