@@ -103,6 +103,8 @@ Online experience offered by Jamaica Stock Exchange is disjointed[^1]
       <tr>
    </table>
 
+   ![Value Proposition Canvas for Tracy Trader](/.attachments/Value.Proposition.Canvas-Tracy.Trader-1.png)
+
    <table style='border: 2px solid grey;'>
       <tr>
          <td style='vertical-align:top'>
