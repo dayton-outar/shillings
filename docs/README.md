@@ -8,7 +8,7 @@ Publicly listed companies and their investors have their stories surrounding the
 
 1. Complete Market Research (January 2024)
    1. Get information from JSE (January 10, 2024)
-      - Complete and confirm [overall process for trading and KYC](/docs/MARKETING/INDUSTRY/JM.md#key-players).
+      - Complete and confirm [overall process for trading and KYC](/docs/MARKETING/INDUSTRY/JM.md#key-players)
    2. Get information from a brokerage firm (January 11, 2024)
    3. Outline value proposition for each buyer persona
    4. Determine [branding strategy](./BRANDING/)
@@ -161,7 +161,7 @@ Online experience offered by Jamaica Stock Exchange is disjointed[^1]
             <p><small>30</small></p>
             <p><small>J$10k - J$20k investment per month</small></p>
             <h6>Goals</h6>
-            <p>To make money: part of pension plan.</p>
+            <p>To make money: part of pension plan. Usually has some loyalty to a company.</p>
          </td>
          <td style='vertical-align:top'>
             <h6>Challenges</h6>
