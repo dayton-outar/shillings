@@ -510,8 +510,67 @@ Sources:
 
 ### Chapter 5. Major Reversal Patterns
 
-
-
+> There are two major categories of price patterns—reversal and continuation. As these names imply, reversal patterns indicate that an important reversal in trend is taking place. The continuation patterns, on the other hand, suggest that the market is only pausing for awhile, possibly to correct a near term overbought or oversold condition, after which the existing trend will be resumed. The trick is to distinguish between the two types of patterns as early as possible during the formation of the pattern.
+> 
+> ...
+> 
+> **Preliminary Points Common to All Reversal Patterns**
+> 
+> Before beginning our discussion of the individual major reversal patterns, there are a few preliminary points to be considered that are common to all of these reversal patterns.
+> 
+> 1. A prerequisite for any reversal pattern is the existence of a prior trend.
+> 2. The first signal of an impending trend reversal is often the breaking of an important trendline.
+> 3. The larger the pattern, the greater the subsequent move.
+> 4. Topping patterns are usually shorter in duration and more volatile than bottoms.
+> 5. Bottoms usually have smaller price ranges and take longer to build.
+> 6. Volume is usually more important on the upside.
+> 
+> ...
+> 
+> Price swings within the tops are wider and more violent. Tops usually take less time to form. Bottoms usually have smaller price ranges, but take longer to build. For this reason it is usually easier and less costly to identify and trade bottoms than to catch market tops. One consoling factor, which makes the more treacherous topping patterns worthwhile, is that _prices tend to decline faster than they go up_.
+> 
+> ...
+> 
+> ... Markets have a way of “falling of their own weight” once a bear move gets underway. Chartists like to see an increase in trading activity as prices drop, but it is not critical. At bottoms, however, the volume pickup is absolutely essential. If the volume pattern does not show a significant increase during the upside price breakout, the entire price pattern should be questioned.
+> 
+> ...
+> 
+> ![Major Reversal Patterns: Head & Shoulders](/.attachments/major.reversal.patterns-head.and.shoulders.png)
+> 
+> _Example of a head and shoulders top. The left and right shoulders (A and E) are at about the same height. The head (C) is higher than either shoulder. Notice the lighter volume on each peak. The pattern is completed on a close under the neckline (line 2). The minimum objective is the vertical distance from the head to the neckline projected downward from the breaking of the neckline. A return move will often occur back to the neckline, which should not recross the neckline once it has been broken._
+> 
+> [From the illustration above, note that] Prices then begin to decline to point D and something even more disturbing happens. The decline carries below the top of the previous peak at point A. Remember that, in an uptrend, a penetrated peak should function as support on subsequent corrections. The decline well under point A, almost to the previous reaction low at point B, is another warning that something may be going wrong with the uptrend.
+> 
+> The market rallies again to point E, this time on even lighter volume, and isn’t able to reach the top of the previous peak at point C. (That last rally at point E will often retrace one-half to two-thirds of the decline from points C to D.) To continue an uptrend, each high point must exceed the high point of the rally preceding it. The failure of the rally at point E to reach the previous peak at point C fulfills half of the requirement for a new downtrend—namely, descending peaks.
+> 
+> By this time, the major up trendline (line 1) has already been broken, usually at point D, constituting another danger signal. But, despite all of these warnings, all that we know at this point is that the trend has shifted from up to sideways. This might be sufficient cause to liquidate long positions, but not necessarily enough to justify new short sales.
+> 
+> ... _The deciding factor in the resolution of the head and shoulders top is a decisive closing violation of that neckline_. The market has now violated the trendline along the bottom of points B and D, has broken under support at point D, and has completed the requirement for a new downtrend—descending peaks and troughs. The new downtrend is now identified by the declining highs and lows at points C, D, E, and F. Volume should increase on the breaking of the neckline. A sharp increase in downside volume, however, is not critically important in the initial stages of a market top.
+> 
+> The accompanying volume pattern plays an important role in the development of the head and shoulders top as it does in all price patterns. As a general rule, the second peak (the head) should take place on lighter volume than the left shoulder. This is not a requirement, but a strong tendency and an early warning of diminishing buying pressure. The most important volume signal takes place during the third peak (the right shoulder). Volume should be noticeably lighter than on the previous two peaks. Volume should then expand on the breaking of the neckline, decline during the return move, and then expand again once the return move is over.
+> 
+> As mentioned earlier, volume is less critical during the completion of market tops. But, at some point, volume should begin to increase if the new downtrend is to be continued. Volume plays a much more decisive role at market bottoms, a subject to be discussed shortly. Before doing so, however, let’s discuss the measuring implications of the head and shoulders pattern.
+> 
+> ...
+> 
+> The head and shoulders bottom, or the _inverse head and shoulders_ as it is sometimes called, is pretty much a mirror image of the topping pattern. ...
+> 
+> ![Major Reversal Patterns: Inverse Head & Shoulders](/.attachments/major.reversal.patterns-inverse.head.and.shoulders.png.png)
+> 
+> _Example of an inverse head and shoulders. The bottom version of this pattern is a mirror image of the top. The only significant difference is the volume pattern in the second half of the pattern. The rally from the head should see heavier volume, and the breaking of the neckline should see a burst of trading activity. The return move back to the neckline is more common at bottoms._
+> 
+> The most important difference between the top and bottom patterns is the volume sequence. Volume plays a much more critical role in the identification and completion of a head and shoulders bottom. This point is generally true of all bottom patterns. It was stated earlier that markets have a tendency to “fall of their own weight.” At bottoms, however, markets require a significant increase in buying pressure, reflected in greater volume, to launch a new bull market.
+> 
+> A more technical way of looking at this difference is that a market can fall just from inertia. Lack of demand or buying interest on the part of traders is often enough to push a market lower; but a market does not go up on inertia. Prices only rise when demand exceeds supply and buyers are more aggressive than sellers.
+> 
+> The volume pattern at the bottom is very similar to that at the top for the first half of the pattern. That is, the volume at the head is a bit lighter than that at the left shoulder. The rally from the head, however, should begin to show not only an increase in trading activity, but the level of volume often exceeds that registered on the rally from the left shoulder. The dip to the right shoulder should be on very light volume. The critical point occurs at the rally through the neckline. This signal must be accompanied by a sharp burst of trading volume if the breakout is for real.
+> 
+> This point is where the bottom differs the most from the top. At the bottom, heavy volume is an absolutely essential ingredient in the completion of the basing pattern. The return move is more common at bottoms than at tops and should occur on light volume. Following that, the new uptrend should resume on heavier volume. The measuring technique is the same as at the top.
+> 
+> ...
+> 
+> Market tactics play an important role in all trading. Not all technical traders like to wait for the breaking of the neckline before initiating a new position. ... more aggressive traders, believing that they have correctly identified a head and shoulders bottom, will begin to probe the long side during the formation of the right shoulder. Or they will buy the first technical signal that the decline into the right shoulder has ended.
+> 
 
 ## Japanese Candlestick Charting Techniques
 
