@@ -555,7 +555,7 @@ Sources:
 > 
 > The head and shoulders bottom, or the _inverse head and shoulders_ as it is sometimes called, is pretty much a mirror image of the topping pattern. ...
 > 
-> ![Major Reversal Patterns: Inverse Head & Shoulders](/.attachments/major.reversal.patterns-inverse.head.and.shoulders.png.png)
+> ![Major Reversal Patterns: Inverse Head & Shoulders](/.attachments/major.reversal.patterns-inverse.head.and.shoulders.png)
 > 
 > _Example of an inverse head and shoulders. The bottom version of this pattern is a mirror image of the top. The only significant difference is the volume pattern in the second half of the pattern. The rally from the head should see heavier volume, and the breaking of the neckline should see a burst of trading activity. The return move back to the neckline is more common at bottoms._
 > 
@@ -571,6 +571,73 @@ Sources:
 > 
 > Market tactics play an important role in all trading. Not all technical traders like to wait for the breaking of the neckline before initiating a new position. ... more aggressive traders, believing that they have correctly identified a head and shoulders bottom, will begin to probe the long side during the formation of the right shoulder. Or they will buy the first technical signal that the decline into the right shoulder has ended.
 > 
+> ...
+> 
+> Once prices have moved through the neckline and completed a head and shoulders pattern, _prices should not recross the neckline again_. At a top, once the neckline has been broken on the downside, any decisive close back above the neckline is a serious warning that the initial breakdown was probably a bad signal, and creates what is often called, for obvious reasons, _a failed head and shoulders_. This type of pattern starts out looking like a classic head and shoulders reversal, but at some point in its development (either prior to the breaking of the neckline or just after it), prices resume their original trend.
+> 
+> ![Major Reversal Patterns: Failed Head & Shoulders](/.attachments/major.reversal.patterns-failed.head.and.shoulders.png)
+> 
+> _Tactics for a head and shoulders bottom. Many technical traders will begin to initiate long positions while the right shoulder (E) is still being formed. One-half to two-thirds pullback of the rally from points C to D, a decline to the same level as the left shoulder at point A, or the breaking of a short term down trendline (line 1) all provide early opportunities for market entry. More positions can be added on the breaking of the neckline or the return move back to the neckline._
+> 
+> There are two important lessons here. The first is that none of these chart patterns are infallible. They work most of the time, but not always. The second lesson is that technical traders must always be on the alert for chart signs that their analysis is incorrect. One of the keys to survival in the financial markets is to keep trading losses small and to exit a losing trade as quickly as possible. One of the greatest advantages of chart analysis is its ability to quickly alert the trader to the fact that he or she is on the wrong side of the market. The ability and willingness to quickly recognize trading errors and to take defensive action immediately are qualities not to be taken lightly in the financial markets.
+> 
+> ...
+> 
+> Most of the points covered in the treatment of the head and shoulders pattern are also applicable to other types of reversal patterns. The triple top or bottom, which is much rarer in occurrence, is just a slight variation of that pattern. The main difference is that the three peaks or troughs in the triple top or bottom are at about the same level. Chartists often disagree as to whether a reversal pattern is a head and shoulders or a triple top. The argument is academic, because both patterns imply the exact same thing.
+> 
+> The volume tends to decline with each successive peak at the top and should increase at the breakdown point. The triple top is not complete until support levels along both of the intervening lows have been broken. Conversely, prices must close through the two intervening peaks at the bottom to complete a triple bottom. (As an alternate strategy, the breaking of the nearest peak or trough can also be used as a reversal signal.) Heavy upside volume on the completion of the bottom is also essential.
+> 
+> ![Major Reversal Patterns: Triple Top](/.attachments/major.reversal.patterns-triple.top.png)
+> 
+> _A triple top. Similar to the head and shoulders except that all peaks are at the same level. Each rally peak should be on lighter volume. The pattern is complete when both troughs have been broken on heavier volume. The measuring technique is the height of the pattern projected downward from the breakdown point. Return moves back to the lower line are not unusual._
+> 
+> ![Major Reversal Patterns: Triple Bottom](/.attachments/major.reversal.patterns-triple.bottom.png)
+> 
+> _A triple bottom. Similar to a head and shoulders bottom except that each low is at the same level. A mirror image of the triple top except that volume is more important on the upside breakout._
+> 
+> The measuring implication is also similar to the head and shoulders, and is based on the height of the pattern. Prices will usually move a minimum distance from the breakout point at least equal to the height of the pattern. Once the breakout occurs, a return move to the breakout point is not unusual. Because the triple top or bottom represents only a minor variation of the head and shoulders pattern, we won’t say much more about it here.
+> 
+> A much more common reversal pattern is the double top or bottom. Next to the head and shoulders, it is the most frequently seen and the most easily recognized. For obvious reasons, the top is often referred to as an “M” and the bottom as a “W.” The general characteristics of a double top are similar to that of the head and shoulders and triple top except that only two peaks appear instead of three. The volume pattern is similar as is the measuring rule.
+> 
+> ![Major Reversal Patterns: Double Top](/.attachments/major.reversal.patterns-double.top.png)
+> 
+> _Example of a double top. This pattern has two peaks (A and C) at about the same level. The pattern is complete when the middle trough at point B is broken on a closing basis. Volume is usually lighter on the second peak (C) and picks up on the breakdown (D). A return move back to the lower line is not unusual. The minimum measuring target is the height of the top projected downward from the breakdown point._
+> 
+> ![Major Reversal Patterns: Double Bottom](/.attachments/major.reversal.patterns-double.bottom.png)
+> 
+> _Example of a double bottom. A mirror image of the double top. Volume is more important on the upside breakout. Return moves back to the breakout point are more common at bottoms._
+> 
+> ...
+> 
+> As in most other areas of market analysis, real-life examples are usually some variation of the ideal. For one thing, sometimes the two peaks are not at exactly the same price level. On occasion, the second peak will not quite reach the level of the first peak, which is not too problematical. What does cause some problems is when the second peak actually exceeds the first peak by a slight margin. What at first may appear to be a valid upside breakout and resumption of the uptrend may turn out to be part of the topping process. To help resolve this dilemma, some of the filtering criteria already mentioned may come in handy.
+> 
+> Most chartists require a close beyond a previous resistance peak instead of just an intraday penetration. Second, a price filter of some type might be used. One such example is a percentage penetration criterion (such as 1% or 3%). Third, the two day penetration rule could be used as an example of a time filter. In other words, prices would have to close beyond the top of the first peak for two consecutive days to signal a valid penetration. Another time filter could be a Friday close beyond the previous peak. The volume on the upside breakout might also provide a clue to its reliability.
+> 
+> These filters are certainly not infallible, but do serve to reduce the number of false signals (or whipsaws) that often occur. Sometimes these filters are helpful, and sometimes they’re not. The analyst must face the realization that he or she is dealing with percentages and probabilities, and that there will be times when bad signals occur. That’s simply a fact of trading life.
+> 
+> It’s not that unusual for the final leg or wave of a bull market to set a new high before reversing direction. In such a case, the final upside breakout would become a “bull trap.” ...
+> 
+> The terms “double top and bottom” are greatly overused in the financial markets. Most potential double tops or bottoms wind up being something else. The reason for this is that prices have a strong tendency to back off from a previous peak or bounce off a previous low. These price changes are a natural reaction and do not in themselves constitute a reversal pattern. Remember that, at a top, prices must actually violate the previous reaction low before the double top exists.
+> 
+> ![Major Reversal Patterns: Bull Trap](/.attachments/major.reversal.patterns-bull.trap.png)
+> 
+> _Example of a false breakout, usually called a bull trap. Sometimes near the end of a major uptrend, prices will exceed a previous peak before failing. Chartists use various time and price filters to reduce such whipsaws. This topping pattern would probably qualify as a double top._
+> 
+> ...
+> 
+> ... It is very difficult for the chartist to determine whether the pullback from the previous peak or the bounce from the previous low is just a temporary setback in the existing trend or the start of a double top or bottom reversal pattern. Because the technical odds usually favor continuation of the present trend, it is usually wise to await completion of the pattern before taking action.
+> 
+> ![Major Reversal Patterns: Pull Back](/.attachments/major.reversal.patterns-pull.back.png)
+> 
+> _Example of a normal pullback from a previous peak before resumption of the uptrend. This is normal market action and not to be confused with a double top. The double top only occurs when support at point B is broken._
+> 
+> ![Major Reversal Patterns: Bounce Off](/.attachments/major.reversal.patterns-bounce.off.png)
+> 
+> _Example of a normal bounce off a previous low. This is normal market action and not to be confused with a double bottom. Prices will normally bounce off a previous low at least once, causing premature calls for a double bottom._
+
+### Chapter 6. Continuation Patterns
+
+
 
 ## Japanese Candlestick Charting Techniques
 
