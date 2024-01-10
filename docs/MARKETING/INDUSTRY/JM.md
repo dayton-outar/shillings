@@ -175,6 +175,13 @@ The results from interview with Wealth Advisor, Danielle Cross, of GK Capital Ma
    2. Compliance officer does another review of the applicant
    3. Identity documents are ran against a Goerment system. (I get the feeling that Ms. Cross wasn't too certain about this step)
 
+   Through my personal interaction with Nashoniea Smith, I learnt that,
+   
+   1. 3 last recent pay slips were needed to prove source of income
+   2. The latest bill from a utility company was needed to prove address
+   3. An identity document was photographed to prove identity
+   4. Issue #57 describes all the information required from the applicant
+
 6. When asked about the needs and frustration of the firm, Ms. Cross wasn't willing to express those because she felt it was divulging confidential information about the company.
 
 
