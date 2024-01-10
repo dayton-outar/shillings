@@ -637,7 +637,177 @@ Sources:
 
 ### Chapter 6. Continuation Patterns
 
+> Reversal patterns usually take much longer to build and represent major trend changes. Continuation patterns, on the other hand, are usually shorter term in duration and are more accurately classified as near term or intermediate patterns.
+> 
+> ...
+> 
+> There are three types of triangles—symmetrical, ascending, and descending. (Some chartists include a fourth type of triangle known as an expanding triangle, or broadening formation. This is treated as a separate pattern later.) Each type of triangle has a slightly different shape and has different forecasting implications.
+> 
+> The symmetrical triangle shows two converging trendlines, the upper line descending and the lower line ascending. The vertical line at the left, measuring the height of the pattern, is called the base. The point of intersection at the right, where the two lines meet, is called the apex. For obvious reasons, the symmetrical triangle is also called a coil.
+> 
+> The ascending triangle has a rising lower line with a flat or horizontal upper line The descending triangle, by contrast, has the upper line declining with a flat or horizontal bottom line. Let’s see how each one is interpreted.
+> 
+> ![Continuation Patterns: Bullish Symmetrical](/.attachments/continuation.patterns-symmetrical.png)
+> 
+> _Example of a bullish symmetrical triangle. Notice the two converging trendlines. A close outside either trendline completes the pattern. The vertical line at the left is the base. The point at the right where the two lines meet is the apex._
+> 
+> ![Continuation Patterns: Ascending Triangle](/.attachments/continuation.patterns-ascending.png)
+> 
+> _Example of a bullish symmetrical triangle. Notice the two converging trendlines. A close outside either trendline completes the pattern. The vertical line at the left is the base. The point at the right where the two lines meet is the apex._
+> 
+> ![Continuation Patterns: Descending Triangle](/.attachments/continuation.patterns-descending.png)
+> 
+> _Example of a descending triangle. Notice the flat bottom line and the declining upper line. This is usually a bearish pattern._
+> 
+> **THE SYMMETRICAL TRIANGLE**
+> 
+> The _symmetrical triangle_ (or the coil) is usually a continuation pattern. It represents a pause in the existing trend after which the original trend is resumed. ...
+> 
+> The minimum requirement for a triangle is four reversal points. Remember that it always takes two points to draw a trendline. Therefore, in order to draw two converging trendlines, each line must be touched at least twice.
+> 
+> ...
+> 
+> There is a time limit for the resolution of the pattern, and that is the point where the two lines meet—at the apex. As a general rule, prices should break out in the direction of the prior trend somewhere between two-thirds to three-quarters of the horizontal width of the triangle. That is, the distance from the vertical base on the left of the pattern to the apex at the far right. Because the two lines must meet at some point, that time distance can be measured once the two converging lines are drawn. An upside breakout is signaled by a penetration of the upper trendline. If prices remain within the triangle beyond the three-quarters point, the triangle begins to lose its potency, and usually means that prices will continue to drift out to the apex and beyond.
+> 
+> ...
+> 
+> The actual trend signal is given by a closing penetration of one of the trendlines. Sometimes a return move will occur back to the penetrated trendline after the breakout. In an uptrend, that line has become a support line. In a downtrend, the lower line becomes a resistance line once it’s broken. The apex also acts as an important support or resistance level after the breakout occurs. Various penetration criteria can be applied to the breakout, similar to those covered in the previous two chapters. A minimum penetration criterion would be a closing price outside the trendline and not just an intraday penetration.
+> 
+> Volume should diminish as the price swings narrow within the triangle. This tendency for volume to contract is true of all consolidation patterns. But the volume should pick up noticeably at the penetration of the trendline that completes the pattern. The return move should be on light volume with heavier activity again as the trend resumes.
+> 
+> Two other points should be mentioned about volume. As is the case with reversal patterns, volume is more important on the upside than on the downside. An increase in volume is essential to the resumption of an uptrend in all consolidation patterns.
+> 
+> The second point about volume is that, even though trading activity diminishes during formation of the pattern, a close inspection of the volume usually gives a clue as to whether the heavier volume is occurring during the upmoves or down-moves. In an uptrend, for example, there should be a slight tendency for volume to be heavier during the bounces and lighter on the price dips.
+> 
+> ...
+>
+> **THE ASCENDING TRIANGLE**
+> 
+> The ascending and descending triangles are variations of the symmetrical, but have different forecasting implications.
+> 
+> ![Continuation Patterns: An Ascending Triangle](/.attachments/continuation.patterns-ascending.triangle.png)
+> 
+> _An ascending triangle. The pattern is completed on a decisive close above the upper line. This breakout should see a sharp increase in volume. That upper resistance line should act as support on subsequent dips after the breakout. The minimum price objective is obtained by measuring the height of the triangle (AB) and projecting that distance upward from the breakout point at C._
+> 
+> Notice that the upper trendline is flat, while the lower line is rising. This pattern indicates that buyers are more aggressive than sellers. It is considered a bullish pattern and is usually resolved with a breakout to the upside.
+> 
+> ... No matter where in the trend structure the ascending or descending triangles appear, they have very definite forecasting implications. The ascending triangle is bullish and the descending triangle is bearish. The symmetrical triangle, by contrast, is inherently a neutral pattern. This does not mean, however, that the symmetrical triangle does not have forecasting value. On the contrary, because the symmetrical triangle is a continuation pattern, the analyst must simply look to see the direction of the previous trend and then make the assumption that the previous trend will continue.
+> 
+> ...
+> 
+> **THE DESCENDING TRIANGLE**
+> 
+> The _descending triangle_ is just a mirror image of the ascending, and is generally considered a bearish pattern. ...
+> 
+> ...
+>
+> ![Continuation Patterns: A Descending Triangle](/.attachments/continuation.patterns-descending.triangle.png)
+> 
+> _A descending triangle. The bearish pattern is completed with a decisive close under the lower flat line. The measuring technique is the height of the triangle (AB) projected down from the breakout at point C._
+> 
+> This pattern indicates that sellers are more aggressive than buyers, and is usually resolved on the downside. The downside signal is registered by a decisive close under the lower trendline, usually on increased volume. A return move sometimes occurs which should encounter resistance at the lower trendline.
+> 
+> ...
+> 
+> The volume pattern in both the ascending and descending triangles is very similar in that the volume diminishes as the pattern works itself out and then increases on the breakout. As in the case of the symmetrical triangle, during the formation the chartist can detect subtle shifts in the volume pattern coinciding with the swings in the price action. This means that in the ascending pattern, the volume tends to be slightly heavier on bounces and lighter on dips. In the descending formation, volume should be heavier on the downside and lighter during the bounces.
+> 
+> One final factor to be considered on the subject of triangles is that of the time dimension. The triangle is considered an intermediate pattern, meaning that it usually takes longer than a month to form, but generally less than three months. A triangle that lasts less than a month is probably a different pattern, such as a pennant, ...
+> 
+> **THE BROADENING FORMATION**
+> 
+> This next price pattern is an unusual variation of the triangle and is relatively rare. It is actually an inverted triangle or a triangle turned backwards. All of the triangular patterns examined so far show converging trendlines. The _broadening formation,_ as the name implies, is just the opposite. ...
+> 
+> ![Continuation Patterns: Broadening Top](/.attachments/continuation.patterns-broadening.top.png)
+> 
+> _A broadening top. This type of expanding triangle usually occurs at major tops. It shows three successively higher peaks and two declining troughs. The violation of the second trough completes the pattern. This is an unusually difficult pattern to trade and fortunately is relatively rare._
+> 
+> The volume pattern also differs in this formation. In the other triangular patterns, volume tends to diminish as the price swings grow narrower. Just the opposite happens in the broadening formation. _The volume tends to expand along with the wider price swings_. This situation represents a market that is out of control and unusually emotional. Because this pattern also represents an unusual amount of public participation, it most often occurs at major market tops. _The expanding pattern, therefore, is usually a bearish formation_. It generally appears near the end of a major bull market.
+> 
+> **FLAGS AND PENNANTS**
+> 
+> The _flag_ and _pennant_ formations are quite common. They are usually treated together because they are very similar in appearance, tend to show up at about the same place in an existing trend, and have the same volume and measuring criteria.
+> 
+> The _flag_ and _pennant_ represent brief pauses in a dynamic market move. In fact, one of the requirements for both the flag and the pennant is that they be preceded by a sharp and almost straight line move. They represent situations where a steep advance or decline has gotten ahead of itself, and where the market pauses briefly to “catch its breath” before running off again in the same direction.
+> 
+> Flags and pennants are among the most reliable of continuation patterns and only rarely produce a trend reversal.
+> 
+> ![Continuation Patterns: Bullish Flag](/.attachments/continuation.patterns-bullish.flag.png)
+> 
+> _Example of a bullish flag. The flag usually occurs after a sharp move and represents a brief pause in the trend. The flag should slope against the trend. Volume should dry up during the formation and build again on the breakout. The flag usually occurs near the midpoint of the move._
+> 
+> ![Continuation Patterns: Bullish Pennant](/.attachments/continuation.patterns-bullish.pennant.png)
+> 
+> _A bullish pennant. Resembles a small symmetrical triangle, but usually lasts no longer than three weeks. Volume should be light during its formation. The move after the pennant is completed should duplicate the size of the move preceding it._
+> 
+> ... notice the steep price advance preceding the formations on heavy volume. Notice also the dramatic drop off in activity as the consolidation patterns form and then the sudden burst of activity on the upside breakout.
+> 
+> The pennant is identified by two converging trendlines and is more horizontal. It very closely resembles a small symmetrical triangle. An important requirement is that volume should dry up noticeably while each of the patterns is forming.
+> 
+> Both patterns are relatively short term and should be completed within one to three weeks. Pennants and flags in downtrends tend to take even less time to develop, and often last no longer than one or two weeks. Both patterns are completed on the penetration of the upper trendline in an uptrend. The breaking of the lower trendline would signal resumption of downtrends. The breaking of those trendlines should take place on heavier volume. As usual, upside volume is more critically important than downside volume.
+> 
+> ...
+> 
+> **THE WEDGE FORMATION**
+> 
+> The _wedge_ formation is similar to a symmetrical triangle both in terms of its shape and the amount of time it takes to form. Like the symmetrical triangle, it is identified by two converging trendlines that come together at an _apex_. In terms of the amount of time it takes to form, the wedge usually lasts more than one month but not more than three months, putting it into the intermediate category.
+> 
+> What distinguishes the _wedge_ is its noticeable slant. The wedge pattern has a noticeable slant either to the upside or the downside. As a rule, like the flag pattern, the wedge slants against the prevailing trend. Therefore, a _falling wedge is considered bullish and a rising wedge is bearish_.
+> 
+> ![Continuation Patterns: Bullish Failing Wedge](/.attachments/continuation.patterns-bullish.failing.wedge.png)
+> 
+> _Example of a bullish falling wedge. The wedge pattern has two converging trendlines, but slopes against the prevailing trend. A falling wedge is usually bullish._
+> 
+> ![Continuation Patterns: Bearish Wedge](/.attachments/continuation.patterns-bearish.wedge.png)
+> 
+> _Example of a bearish wedge. A bearish wedge should slope upward against the prevailing downtrend._
+> 
+> _Wedges_ show up most often within the existing trend and usually constitute continuation patterns. The wedge can appear at tops or bottoms and signal a trend reversal. But that type of situation is much less common. Near the end of an uptrend, the chartist may observe a clearcut rising wedge. Because a continuation wedge in an uptrend should slope downward against the prevailing trend, the rising wedge is a clue to the chartist that this is a bearish and not a bullish pattern. At bottoms, a falling wedge would be a tip-off of a possible end of a bear trend.
+> 
+> Whether the wedge appears in the middle or the end of a market move, the market analyst should always be guided by the general maxim that _a rising wedge is bearish and a falling wedge is bullish_.
+> 
+> **THE RECTANGLE FORMATION**
+> 
+> The _rectangle formation_ often goes by other names, but is usually easy to spot on a price chart. It represents a pause in the trend during which prices move sideways between two parallel horizontal lines.
+> 
+> The rectangle is sometimes referred to as a _trading range_ or a _congestion area_. In Dow Theory parlance, it is referred to as a line. Whatever it is called, it usually represents just a consolidation period in the existing trend, and is usually resolved in the direction of the market trend that preceded its occurrence. In terms of forecasting value, it can be viewed as being similar to the symmetrical triangle but with flat instead of converging trendlines.
+> 
+> ![Continuation Patterns: Bullish Rectangle](/.attachments/continuation.patterns-bullish.rectangle.png)
+> 
+> _Example of a bullish rectangle in an uptrend. This pattern is also called a trading range, and shows prices trading between two horizontal trendlines. It is also called a congestion area._
+> 
+> ![Continuation Patterns: Bearish Rectangle](/.attachments/continuation.patterns-bearish.rectangle.png)
+> 
+> _Example of a bearish rectangle. While rectangles are usually considered continuation patterns, the trader must always be alert for signs that it may turn into a reversal pattern, such as a triple bottom._
+> 
+> A decisive close outside either the upper or lower boundary signals completion of the rectangle and points the direction of the trend. The market analyst must always be on the alert, however, that the rectangular consolidation does not turn into a reversal pattern. ...
+> 
+> One important clue to watch for is the volume pattern. Because the price swings in both directions are fairly broad, the analyst should keep a close eye on which moves have the heavier volume. If the rallies are on heavier and the setbacks on lighter volume, then the formation is probably a continuation in the uptrend. If the heavier volume is on the downside, then it can be considered a warning of a possible trend reversal in the works.
+> 
+> Some chartists trade the swings within such a pattern by buying dips near the bottom and selling rallies near the top of the range. This technique enables the short term trader to take advantage of the well defined price boundaries, and profit from an otherwise trendless market. Because the positions are being taken at the extremes of the range, the risks are relatively small and well defined. If the trading range remains intact, this countertrend trading approach works quite well. When a breakout does occur, the trader not only exits the last losing trade immediately, but can reverse the previous position by initiating a new trade in the direction of the new trend. Oscillators are especially useful in sideways trading markets, but less useful once the breakout has occurred ...
+> 
+> Other traders assume the rectangle is a continuation pattern and take long positions near the lower end of the price band in an uptrend, or initiate short positions near the top of the range in downtrends. Others avoid such trendless markets altogether and await a clearcut breakout before committing their funds. Most trend-following systems perform very poorly during these periods of sideways and trendless market action.
+> 
+> ...
+> 
+> **THE CONTINUATION HEAD AND SHOULDERS PATTERN**
+> 
+> ... The head and shoulders pattern can sometimes appear as a continuation instead of a reversal pattern.
+> 
+> In the continuation head and shoulders variety, prices trace out a pattern that looks very similar to a sideways rectangular pattern except that the middle trough in an uptrend tends to be lower than either of the two shoulders.
+> 
+> ![Continuation Patterns: Bullish Continuation Head & Shoulders](/.attachments/continuation.patterns-bullish.continuation.head.and.shoulders.png)
+> 
+> _Example of a bullish continuation head and shoulders pattern._
+> 
+> n a downtrend, the middle peak in the consolidation exceeds the other two peaks. The result in both cases is a head and shoulders pattern turned upside down. Because it is turned upside down, there is no chance of confusing it with the reversal pattern.
+> 
+> ![Continuation Patterns: Bearish Continuation Head & Shoulders](/.attachments/continuation.patterns-bearish.continuation.head.and.shoulders.png.png)
+> 
+> _Example of a bearish continuation head and shoulders pattern._
 
+### Chapter 7. Volume and Open Interest
+
+> 
 
 ## Japanese Candlestick Charting Techniques
 
