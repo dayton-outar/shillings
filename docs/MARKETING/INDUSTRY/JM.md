@@ -151,6 +151,33 @@ _I noticed that ChatGPT did not list the following as brokers,_
 
 See [Brokers/Member Dealers](https://www.jamstockex.com/investors/brokers/) for more Stock Brokerage Firms that could be working within the industry.
 
+The results from interview with Wealth Advisor, Danielle Cross, of GK Capital Management Limited went as follows,
+
+1. Do you have any market research publications? (research done on investors and traders)
+
+   Not really. (She made reference to the monthly newsletter)
+
+2. Has there been an increase in the number of persons trading stocks each year?
+
+   Less interest has been shown in the stock market in the past 3 years since it has been down.
+
+3. Has there been a current trend towards short-term investing rather than long-term investing?
+   
+   Not sure.
+
+4. Do you have a documented list of complaints or suggestions from investors or traders regarding the Jamaican stock market?
+   
+   No
+
+5. Are the brokers the only ones that are responsible for doing KYC to on-board new investors?
+   
+   1. Application forms is reviewed by the Wealth Advisor for KYC
+   2. Compliance officer does another review of the applicant
+   3. Identity documents are ran against a Goerment system. (I get the feeling that Ms. Cross wasn't too certain about this step)
+
+6. When asked about the needs and frustration of the firm, Ms. Cross wasn't willing to express those because she felt it was divulging confidential information about the company.
+
+
 ### Communities and Thought Leaders
 
 #### Communities
