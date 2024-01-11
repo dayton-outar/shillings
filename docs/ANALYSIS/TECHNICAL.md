@@ -807,7 +807,21 @@ Sources:
 
 ### Chapter 7. Volume and Open Interest
 
+> ... _Price_ is by far the most important. _Volume_ and _open interest_ are secondary in importance and are used primarily as confirming indicators. Of those two, volume is the more important.
 > 
+> ...
+> 
+> Open interest represents the total number of outstanding longs or shorts in the market, _not the sum of both_. Open interest is the number of contracts. A contract must have both a _buyer_ and a _seller_. Therefore, two market participants—a _buyer_ and a _seller_—combine to create only one contract. The open interest figure reported each day is followed by either a positive or negative number showing the increase or decrease in the number of contracts for that day. It is those changes in the open interest levels, either up or down, that give the chartist clues as to the changing character of market participation and give open interest its forecasting value.
+> 
+> ...
+> 
+> ... if both participants in a trade are initiating a new position, the open interest will increase. If both are liquidating an old position, the open interest will decline. If, however, one is initiating a new trade while the other is liquidating an old trade, open interest will remain unchanged. By looking at the net change in the total open interest at the end of the day, the chartist is able to determine whether money is flowing into or out of the market. This information enables the analyst to draw some conclusions about the strength or weakness of the current price trend.
+> 
+> ...
+> 
+> The level of volume measures the intensity or urgency behind the price move. Heavier volume reflects a higher degree of intensity or pressure. By monitoring the level of volume along with price action, the technician is better able to gauge the buying or selling pressure behind market moves. This information can then be used to confirm price movement or warn that a price move is not to be trusted.
+> 
+> To state the rule more concisely, _volume should increase or expand in the direction of the existing price trend_. In an uptrend, volume should be heavier as the price moves higher, and should decrease or contract on price dips. As long as this pattern continues, volume is said to be confirming the price trend.
 
 ## Japanese Candlestick Charting Techniques
 
