@@ -822,6 +822,37 @@ Sources:
 > The level of volume measures the intensity or urgency behind the price move. Heavier volume reflects a higher degree of intensity or pressure. By monitoring the level of volume along with price action, the technician is better able to gauge the buying or selling pressure behind market moves. This information can then be used to confirm price movement or warn that a price move is not to be trusted.
 > 
 > To state the rule more concisely, _volume should increase or expand in the direction of the existing price trend_. In an uptrend, volume should be heavier as the price moves higher, and should decrease or contract on price dips. As long as this pattern continues, volume is said to be confirming the price trend.
+> 
+> ...
+> 
+> ... Continuation patterns, like the _triangle_, should be accompanied by a gradual drop off in volume. As a rule, the resolution of all price patterns (the breakout point) should be accompanied by heavier trading activity if the signal given by that breakout is real.
+> 
+> In a downtrend, the volume should be heavier during down moves and lighter on bounces. As long as that pattern continues, the selling pressure is greater than buying pressure and the downtrend should continue. It’s only when that pattern begins to change that the chartist starts looking for signs of a bottom.
+> 
+> By monitoring the price and volume together, we’re actually using two different tools to measure the same thing—pressure. By the mere fact that prices are trending higher, we can see that there is more buying than selling pressure. It stands to reason then that the greater volume should take place in the same direction as the prevailing trend. Technicians believe that _volume precedes price_, meaning that the loss of upside pressure in an uptrend or downside pressure in a downtrend actually shows up in the volume figures before it is manifested in a reversal of the price trend.
+> 
+> ...
+> 
+> It should be noted that volume reporting in the stock market is much more useful than in the futures markets. Stock trading volume is reported immediately, while it is reported a day late for futures. Levels of upside and downside volume are also available for stocks, but not in futures. The availability of volume data for stocks on each price change during the day has facilitated an even more advanced indicator called Money Flow, developed by Laszlo Birinyi, Jr. This real-time version of OBV tracks the level of volume on each price change in order to determine if money is flowing into or out of a stock. This sophisticated calculation, however, requires a lot of computer power and isn’t readily available to most traders.
+> 
+> ...
+> 
+> Let’s summarize some of the more important elements of price, volume, and open interest.
+> 
+> 1. Volume is used in all markets; open interest mainly in futures.
+> 2. Only the total volume and open interest are used for futures.
+> 3. Increasing volume (and open interest) indicate that the current price trend will probably continue.
+> 4. Declining volume (and open interest) suggest that the price trend may be changing.
+> 5. Volume precedes price. Changes in buying or selling pressure are often detected in volume before price.
+> 6. On balance volume (OBV), or some variation thereof, can be used to more accurately measure the direction of volume pressure.
+> 7. Within an uptrend, a sudden leveling off or decline in open interest often warns of a change in trend. (This applies only to futures.)
+> 8. Very high open interest at market tops is dangerous and can intensify downside pressure. (This applies only to futures.)
+> 9. A buildup in open interest during consolidation periods intensifies the ensuing breakout. (This applies only to futures.)
+> 10. Increases in volume (and open interest) help confirm the resolution of price patterns or any other significant chart developments that signal the beginning of a new trend.
+
+### Chapter 8. Long Term Charts
+
+
 
 ## Japanese Candlestick Charting Techniques
 
