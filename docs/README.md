@@ -25,6 +25,7 @@ Publicly listed companies and their investors have their stories surrounding the
 
 
 :bulb: People learn from each other. How can the product be designed so that people can learn from each other easily?
+ - Need an achievements and rewards system and live feed that shows percentage gains that person made as a social part of the system. This achievement feed item can be liked and commented by others (do we need a follow or friend request system)
 
 Notes left to take,
 
