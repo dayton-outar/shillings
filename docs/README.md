@@ -7,11 +7,9 @@ Publicly listed companies and their investors have their stories surrounding the
 ## The Plan
 
 1. Complete Market Research (January 2024)
-   1. Get information from JSE (January 10, 2024)
-      - Complete and confirm [overall process for trading and KYC](/docs/MARKETING/INDUSTRY/JM.md#key-players)
-   2. Get information from a brokerage firm (January 11, 2024)
-   3. Outline value proposition for each buyer persona
-   4. Determine [branding strategy](./BRANDING/)
+   1. Get API information from JSE (January 17, 2024)
+   2. Outline value proposition for each buyer persona
+   3. Determine [branding strategy](./BRANDING/)
 2. Complete Business Canvas (January 2024)
 3. Arrange focus group meeting for brainstorming and backlog discussion (January 2024)
    1. Fill up and prune backlog

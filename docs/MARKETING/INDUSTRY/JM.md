@@ -35,7 +35,11 @@ It's possible that a trading platform can be built by accessing Jamaica's stock 
 
 ![Stages of KYC in Jamaica](/.attachments/jamaica.stock.exchange.landscape-kyc.png)
 
-API solutions provided by [Credit Info](https://creditinfo.com/) can be used to retrieve and validate identity documents from customer on the internet through the browser.
+When someone indicates interest in investing in the stock market, the brokers are engaged and they are the ones that take the prospect through all the KYC steps to meet the due diligence needs to fulfill legal requirements. The information gathered usually includes, identity information, proof of address and sources of funds.
+
+At step 3 in the illustration above, the broker has to review the information and take it through a process of approval. The most critical part of the information is the identity document. While it is reviewed and approved before being uploaded to the JCSD system, it has to be validated by a Government system.
+
+API solutions provided by [Credit Info](https://creditinfo.com/) can be used to retrieve and validate identity documents from customer against Government systems on the internet through the browser.
 
 ### Market Makers
 
