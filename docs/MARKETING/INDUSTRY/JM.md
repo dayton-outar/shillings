@@ -35,6 +35,8 @@ It's possible that a trading platform can be built by accessing Jamaica's stock 
 
 ![Stages of KYC in Jamaica](/.attachments/jamaica.stock.exchange.landscape-kyc.png)
 
+API solutions provided by [Credit Info](https://creditinfo.com/) can be used to retrieve and validate identity documents from customer on the internet through the browser.
+
 ### Market Makers
 
 The specific market makers in Jamaica's stock market might have changed or evolved. In Jamaica's stock market context, market makers are entities that provide liquidity and facilitate trading by offering to buy and sell specific securities at quoted bid and ask prices. They play a crucial role in ensuring there is a continuous market for securities.
@@ -183,6 +185,14 @@ The results from interview with Wealth Advisor, Danielle Cross, of GK Capital Ma
    4. Issue #57 describes all the information required from the applicant
 
 6. When asked about the needs and frustration of the firm, Ms. Cross wasn't willing to express those because she felt it was divulging confidential information about the company.
+
+Simon Johnson community leader for "Stocks on d' Rocks" shares information gathered about Stock brokerage firm on Twitter on January 2024,
+
+![Top 4 Brokers in Jamaica in 2024](/.attachments/Screenshot_20240111_130252_Samsung%20Internet.jpg)
+
+A little bit more details on the broker firm,
+
+![More on the Top 4 Brokers in Jamaica in 2024](/.attachments/Screenshot_20240111_092950_Telegram.jpg)
 
 
 ### Communities and Thought Leaders
@@ -490,6 +500,9 @@ My experience using JTrader Pro was as follows,
 
    ![JTrader Transaction Status](/.attachments/jtrader.transactions.status.png)
 
+See below screenshot taking note of customer's experience during the fund-in process in JTrader Pro,
+
+![Stocks on d' Rocks members share experience of Fund In](/.attachments/Screenshot_20240111_125349_Telegram.jpg)
 
 ##### Few Good Mentions
 
@@ -502,6 +515,10 @@ My experience using JTrader Pro was as follows,
  - [eTrade](https://us.etrade.com/platforms)
  - [Trading 212](https://www.trading212.com/)
  - [Stockpile](https://www.stockpile.com/)
+
+## Further Readings
+
+1. [JSE shortening settlement time again](https://www.jamaicaobserver.com/business/jse-shortening-settlement-time-again/)
 
 ## Videos
 
