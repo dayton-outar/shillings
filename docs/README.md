@@ -51,7 +51,7 @@ Online experience offered by Jamaica Stock Exchange is disjointed[^1]
    Value Proposition:
     - Fully digitized trading platform integrated with insights (financial analysis) and training
        - Ease of access to analysis of stock prices and company performance (technical and fundamental analysis)
-       - An integrated learning experience. [Khan Academy](https://www.khanacademy.org/) course outlines, quizzes and videos comes to mind.
+       - An integrated learning experience. Injecting definitions from Investopedia into tips.
        - Make use of visual media as much as possible. Make less use of written content. Less reading more visual appeal.
    
    ![Buyer Persona for Tracy Trader](/.attachments/Buyer.Persona-Tracy.Trader-2.png)
@@ -68,7 +68,7 @@ Online experience offered by Jamaica Stock Exchange is disjointed[^1]
    
    Value Proposition:
     - Ease of on-boarding new investors
-    - Ease of tracking and trading securities. Showing and allowing communication between broker and investor at each stage of trading.
+    - Ease of tracking and trading fund-in and fund-out request. Showing and allowing communication between broker and investor at each stage of trading.
   
 3. Listed Companies
 
