@@ -27,7 +27,7 @@ It's possible that a trading platform can be built by accessing Jamaica's stock 
 > - Display real-time market data to their customer base.
 > - Populate public data walls or websites.
 > 
-> _Market Data API – US$4000.00 per annum_
+> _Market Data API – US$4,000.00 per annum_
 > 
 > ...
 > 
