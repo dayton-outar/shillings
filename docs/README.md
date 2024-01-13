@@ -54,7 +54,7 @@ Online experience offered by Jamaica Stock Exchange is disjointed[^1]
        - An integrated learning experience. [Khan Academy](https://www.khanacademy.org/) course outlines, quizzes and videos comes to mind.
        - Make use of visual media as much as possible. Make less use of written content. Less reading more visual appeal.
    
-   ![Buyer Persona for Tracy Trader](/.attachments/Buyer.Persona-Tracy.Trader.png)
+   ![Buyer Persona for Tracy Trader](/.attachments/Buyer.Persona-Tracy.Trader-2.png)
 
    ![Value Proposition Canvas for Tracy Trader](/.attachments/Value.Proposition.Canvas-Tracy.Trader-1.png)
 
