@@ -39,3 +39,5 @@ The marketing strategy will initially be to,
 2. Continually improve customer profile (or buyer persona) and value proposition through better understanding of the buyer's journey for the product but behaviour of active investors in the stock exchange
 
 Once the product reaches the first _minimum valuable product_ milestone (meaning it can now be _monetized_), then it can be _publicized_ through the investment clubs and social networks. A public relations strategy would have to include going to meetings to showcase the product with an impressionable brand to occupy a space in the prospect's mind as a leader in a new category.
+
+The traditional public relations approach to bringing awareness to a product still is the best approach. People will always be social and align themselves with a community to learn and grow in a particular discipline. So, getting awareness by approaching the communities is still better than making major expense in SEO.
