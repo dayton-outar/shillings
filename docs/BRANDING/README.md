@@ -42,6 +42,8 @@ A few ideas for new name include,
  - Stock Tip
  - Stock Deck
 
+Here's a helpful tip. Upon sharing the need to rebrand to Owin Watson, he agreed that the product need to be rebranded, especially that the current name suggest little money. The name, 'shillings', in Jamaica expresses meagre funds in daily conversation in the past. The word is still used as of this writing in the same manner. So, should we make up a name that expresses opulence? (If a new name is made, that name will need public relations to make it take hold in the minds of people)
+
  ## The Avatar
 
   Marty Neumeier in his book, _The Brand Gap_, encourages entrepreneurs to make use of avatars. Pillsbury has their avatar as the doughboy. Aflac has the duck. Kellog's has the tiger for their frosted flakes.
