@@ -150,7 +150,7 @@ Step 1 may take 4 to 5 years.
     <area target="_blank" alt="Key Trends" title="Key Trends" href="./MARKETING/TRENDS/" coords="554,217,110" shape="circle">
 </map>
 
-![Minimum Viable Segment](/.attachments/minimum.viable.segment.png)
+![Minimum Viable Segment](/.attachments/minimum.viable.segment-2.png)
 
 Build better logo with [BrandCrowd](https://www.brandcrowd.com/).
 
