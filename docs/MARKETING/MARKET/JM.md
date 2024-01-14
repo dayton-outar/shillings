@@ -188,7 +188,7 @@ Demographics: 20 - 40 y-o age group
   
 **BONUS:** If intrinsic valuation is done, it's a good idea to show a breakdown of how the numbers were arrived.
 
-##### Intermediate - Almost Savvy
+##### Intermediate, Almost Savvy
 
 Christopher Shaw - Reads IPO, Short-term Trader
 
