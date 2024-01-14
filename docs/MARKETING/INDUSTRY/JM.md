@@ -39,7 +39,7 @@ When someone indicates interest in investing in the stock market, the brokers ar
 
 At step 3 in the illustration above, the broker has to review the information and take it through a process of approval. The most critical part of the information is the identity document. While it is reviewed and approved before being uploaded to the JCSD system, it has to be validated by a Government system.
 
-API solutions provided by [Credit Info](https://creditinfo.com/) can be used to retrieve and validate identity documents from customer against Government systems on the internet through the browser. The GOJ is also making moves to make KYC easier by digitizing documents through NIDS[^2]. The finance sector will benefit from this initiative from the Government to simplify and speed up the process of on-boarding new customers. This initiative is something that is encouraged by the World Bank.[^3]
+API solutions provided by [Credit Info](https://creditinfo.com/) can be used to retrieve and validate identity documents from customer against Government systems on the internet through the browser. The GOJ is also making moves to make KYC easier by digitizing documents through NIDS[^2]. The finance sector will benefit from this initiative as it will simplify and speed up the process of on-boarding new customers. This initiative is something that is encouraged by the World Bank.[^3] So, we can expect that other countries that are aligned with the World Bank have similar ongoing projects.
 
 ### Market Makers
 
@@ -156,39 +156,6 @@ _I noticed that ChatGPT did not list the following as brokers,_
 1. **[GK Capital Management Limited](https://gk-capital.com/):** A subsidiary of GraceKennedy Financial Group offers brokerage services for trading on the JSE.
 
 See [Brokers/Member Dealers](https://www.jamstockex.com/investors/brokers/) for more Stock Brokerage Firms that could be working within the industry.
-
-The results from interview with Wealth Advisor, Danielle Cross, of GK Capital Management Limited went as follows,
-
-1. Do you have any market research publications? (research done on investors and traders)
-
-   Not really. (She made reference to the monthly newsletter)
-
-2. Has there been an increase in the number of persons trading stocks each year?
-
-   Less interest has been shown in the stock market in the past 3 years since it has been down.
-
-3. Has there been a current trend towards short-term investing rather than long-term investing?
-   
-   Not sure.
-
-4. Do you have a documented list of complaints or suggestions from investors or traders regarding the Jamaican stock market?
-   
-   No
-
-5. Are the brokers the only ones that are responsible for doing KYC to on-board new investors?
-   
-   1. Application forms is reviewed by the Wealth Advisor for KYC
-   2. Compliance officer does another review of the applicant
-   3. Identity documents are ran against a Goerment system. (I get the feeling that Ms. Cross wasn't too certain about this step)
-
-   Through my personal interaction with Nashoniea Smith, I learnt that,
-   
-   1. 3 last recent pay slips were needed to prove source of income
-   2. The latest bill from a utility company was needed to prove address
-   3. An identity document was photographed to prove identity
-   4. Issue #57 describes all the information required from the applicant
-
-6. When asked about the needs and frustration of the firm, Ms. Cross wasn't willing to express those because she felt it was divulging confidential information about the company.
 
 Simon Johnson community leader for "Stocks on d' Rocks" shares information gathered about Stock brokerage firm on Twitter on January 2024,
 

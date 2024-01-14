@@ -41,6 +41,294 @@ Investors in the Jamaica Stock Exchange (JSE) face various critical issues that 
 
 To navigate these critical issues, investors in the Jamaica Stock Exchange should conduct thorough research, diversify their portfolios, set realistic investment goals, and consider seeking advice from financial professionals. Additionally, staying informed about local and global economic developments is essential for making informed investment decisions.
 
+#### Interviews
+
+##### Financially Savvy
+
+Akeel Herdsman - Quantitative Trader, Financially Savvy, Day Trader
+
+Demographics: 40 - 60 y-o age group
+
+1. Where is the market heading?
+
+   More people will get involved into trading stocks directly. There will be increased volume of trades. Looking to see Jamaica Stock Exchange expand hours of trading.
+
+2. What are your biggest needs regarding the Jamaica Stock market?
+
+   Access to real-time information and ability to do trading real-time. Currently, doesn't think the market is deep enough and liquid enough for each stock.
+
+3. What do you want to get done?
+
+   Make money
+
+4. How much time do you spend monitoring your investments?
+
+   At least once a week. Sometimes, 3 times for the week; 30 minutes every session.
+
+5. What do you look out for?
+
+   BUY and SELL orders and the trends of these orders. (Technical analysis.)
+
+6. Biggest frustration?
+
+   Not being able to see the action real-time. (He at the time of this interview did not have access to JTrader Pro)
+
+7. What does a grat investment trading website look like?
+
+   Has candlestick charts.
+
+8. How much are you willing to pay for a service that delivers what you want?
+
+   US$1 to US$2 per month given a 30-day trial. Wouldn't want to think about the expense.
+
+**BONUS:** When asked about important features, he mentioned the need for _charts_. Highlights the need for presenting information in visually appealing way.
+
+##### Savvy Investor
+
+Ryan Daley, Market Maker
+
+Demographics: 40 - 60 y-o age group
+
+1. Where is the market heading?
+
+   --
+
+2. How many other persons do you know that trade stocks?
+
+   Just family and 2 other friends
+
+2. How much time do you spend monitoring your investments?
+
+   Everyday
+
+3. What do you look for?
+
+   - Dividends policy
+   - Global market coverage. The reach of the listed company's products and services in other countries.
+   - Regional market coverage. The reach of the listed company's products and services within the country.
+   - Competitive advantage
+   - History of the company
+   - Shareholder connections. Who or which company has ownership stake in listed companies.
+
+4. What do you want to get done?
+
+   Make money
+
+5. Biggest frustration?
+
+   - Insider Trading is too rampant. I think JSE is 20% fair.
+
+6. How much money can you invest in stocks each month?
+
+   20k+ per month
+
+7. What about the analytical solutions on the internet?
+
+   Bloomberg Terminal had a lot of information. I did trading as well in Bloomberg Terminal. Uses Charles Schwab as well. It takes 20 minutes to complete trade in Charles Schwab.
+
+8. What about services provided by brokerages?
+
+   --
+
+9. How much are you willing to pay for a service that delivers what you want?
+
+   (Ryan does not really have stock in Jamaica or is enthusiastic about trading in Jamaica)
+
+**BONUS**:
+  
+  (Waiting on screenshots of Bloomberg Terminal)
+
+##### Intermediate, Almost Savvy
+
+Tracy-Ann Davis - Read Reports, IPOs; Understands Stock Price movements; Don't know to calculate intrinsic value.
+
+Demographics: 20 - 40 y-o age group
+
+1. Where is the market heading?
+
+   More people will get involved into trading stocks for themselves. Trading stocks in overseas market.
+
+2. How much time do you spend monitoring your investments?
+
+   1 hour for the week. Some weeks no monitoring until IPO, Dividend, Quarterly Report or AGM announcement. Listen for ex-date to get in for dividends. (Sometimes she misses opportunities since she is not on platform every day)
+
+3. What do you look for?
+
+    - P/E ratio
+    - BUY and SELL orders
+    - Dividend Yield
+    - Dividend Policy. Liquidity of companies in IPO report. 
+    - Connections between companies in shareholder list (for example Barita owns shares in Derrimon Trading) and the stock price of related parties that are listed. Look out for pension fund companies in shareholder list. 
+    - Look at revenue growth rate to identify growth stocks from value stocks.
+    - Makes projection comparison of what stocks could give the best gains over period of time. How best can she spend $X?
+
+4. What do you want to get done?
+
+   Make money
+
+5. Biggest frustration?
+
+   Before JTrader, it took too long for the Broker to place orders. Having Brokers place orders are best for long-term, not short-term investment. (She is a short-term investor)
+
+6. How much money can you invest in stocks each month?
+
+   J$1k - J$9k
+
+7. What about the analytical solutions on the internet?
+
+   SimplyWall.st is too much of a learning curve to grasp. JTrader Pro is strictly for trading stocks.
+
+8. What about services provided by brokerages?
+
+   Not beneficial to have 1 brokerage. However, some services are great such as on-boarding onto IPOs and APOs and analysis reports provided in newsletters on their recommendations.
+
+9. How much are you willing to pay for a service that delivers what you want?
+
+   US$10 per month
+  
+**BONUS:** If intrinsic valuation is done, it's a good idea to show a breakdown of how the numbers were arrived.
+
+##### Intermediate - Almost Savvy
+
+Christopher Shaw - Reads IPO, Short-term Trader
+
+Demographics: 40 - 60 y-o age group
+
+ 1. Where is the market heading?
+
+    More people want to trade stocks in overseas market.
+
+ 2. How many other persons do you know that trade stocks?
+
+    4
+
+ 3. How much time do you spend monitoring your investments?
+
+    2 hour for the month. 5 hours per month, if the market is up (bullish).
+
+ 4. What do you look for?
+
+    - Looks at indices for trends of overall market
+    - RSI
+    - MACD
+    - Stochastic Oscillator
+    - Moving Averages
+
+ 5. What do you want to get done?
+
+    Make money
+
+ 6. Biggest frustration?
+
+    Data is not real-time and lack of technical analysis tools.
+
+ 7. How much money can you invest in stocks each month?
+
+    J$1k - J$9k
+
+ 8. What about the analytical solutions on the internet?
+
+    Investing.com has the technical analysis tools and a stock screener but it takes a day for the information to update. It's not real-time.
+
+ 9. What about services provided by brokerages?
+
+    I have several brokerage accounts, including those with Sagicor and JMMB. Brokerages are great for purchasing stocks when they are IPO and APO.
+
+10. How much are you willing to pay for a service that delivers what you want?
+
+    US$35 per month
+
+**BONUS**:
+ - Less steps in doing trades instead of going to several pages to complete a trade
+ - Aestehtically pleasing interface but not too fancy
+ - An environment to ease the anxiety of traders
+ - A gaming-type of environment that tracks behaviour and gives positive reinforcement. (Maybe points and badges classifying traders and their style)
+ - Sentiment analysis that interprets the possible market response to news announcements (or just any announcement)
+ - A GPT bot to give suggestions on trades based on real-time information (GPT - Generative Pre-trained Transformer)
+
+##### Long-term Investor
+
+Dayton Outar - Fundamental Investor
+
+Demographics: 40 - 60 y-o age group
+
+1. Where is the market heading?
+
+   Investors want access to real-time information on stocks and company information
+
+2. How many other persons do you know that trade stocks?
+
+   I know 5 persons and I know of investment communities
+
+2. How much time do you spend monitoring your investments?
+
+   About 30 minutes per week
+
+3. What do you look for?
+
+   Ratios that indicate company performance. Intrinsic value. Technicals that show the lowest price and the highest price of a stock ever.
+
+4. What do you want to get done?
+
+   Make money
+
+5. Biggest frustration?
+
+   - It takes too long and too many steps to fund JTrader platform
+   - JTrader could be a lot more user-friendly
+   - JSE information architecture could be improved for stocks and publicly listed companies. It could be more consolidated; have to visit too many pages for related information.
+
+6. How much money can you invest in stocks each month?
+
+   J$1k - J$9k per month
+
+7. What about the analytical solutions on the internet?
+
+   I think Simply Wall Street is the best but you can get carried away with too many multiples that they present. Nonetheless, Simply Wall Street is comprehensive for Fundamental Analysis.
+
+8. What about services provided by brokerages?
+
+   I think there is a disconnect between the brokers and the JTrader platform. The fact that you have to send email to get their attention about a fund request from the platform and money being sent to their bank account. That part of the online trading experience needs improvement.
+
+   I like the newsletters that they send with all their analytical insights.
+
+   I like the statements but the figures are usually presenting the value of the stocks a month ago.
+
+9. How much are you willing to pay for a service that delivers what you want?
+
+   US$7 per month
+
+**BONUS**:
+ - All my information, even portfolio information needs to be secured. No disclosure of information, even to the DBA.
+
+ ##### Financial Savvy
+
+ Owin Watson - Investor and Businessman
+
+ Demographics: 40 - 60 y-o age group
+
+1. How much value do you get from the Randy Rowe community?
+
+   Randy Rowe offers courses on short-term investing. I believe the community that he's developed through his courses and club meetings, while enriching him, offers him the ability to easily influence a significant group of investors to affect market behaviour.
+
+2. How has MyMoneyJA.com helped in your decision-making? (Do you use any other tools for decision-making?)
+
+   I sign up for the free trial version. The value I get is from the news announcements.
+
+   There's no interpretation of the news announcements by the system to indicate whether investors will BUY or SELL. This interpretation is offered by Randy Rowe.
+
+3. Are you satisfied with all the tools you have to make decisions on trading stocks?
+
+   I use,
+    - a spreadsheet to keep track of my portfolio
+    - the free trial version of Simply Wall Street to get the multipliers and other fundamental analysis to understand the listed companies
+    - the charts from the Jamaica Stock Exchange, such as the candlestick chart to determine the market behaviour and the current psychology of the investors.
+   
+   If I can do all of this with ease in one place, I would on-board that site.
+
+**BONUS**:
+ - Suggested that a trading platform could be sold to Barita or Sagicor
+
 ### Broker's Issues
 
 Brokers in the Jamaica Stock Exchange (JSE) face various critical issues that can significantly impact their operations and the services they provide to clients. These issues may include:
@@ -76,6 +364,41 @@ Brokers in the Jamaica Stock Exchange (JSE) face various critical issues that ca
 15. **Sustainability**: Like investors, brokers are increasingly considering ESG factors in their operations and investments. Integrating sustainable practices into their business models may be necessary to attract certain clients.
 
 To address these critical issues, brokers in the Jamaica Stock Exchange must prioritize risk management, compliance, technology investment, and ongoing staff training and development. Additionally, they should closely monitor market developments and regulatory changes that may impact their operations and adapt accordingly to remain competitive and compliant.
+
+#### Interviews
+
+The results from interview with Wealth Advisor, Danielle Cross, of GK Capital Management Limited went as follows,
+
+1. Do you have any market research publications? (research done on investors and traders)
+
+   Not really. (She made reference to the monthly newsletter)
+
+2. Has there been an increase in the number of persons trading stocks each year?
+
+   Less interest has been shown in the stock market in the past 3 years since it has been down.
+
+3. Has there been a current trend towards short-term investing rather than long-term investing?
+   
+   Not sure.
+
+4. Do you have a documented list of complaints or suggestions from investors or traders regarding the Jamaican stock market?
+   
+   No
+
+5. Are the brokers the only ones that are responsible for doing KYC to on-board new investors?
+   
+   1. Application forms is reviewed by the Wealth Advisor for KYC
+   2. Compliance officer does another review of the applicant
+   3. Identity documents are ran against a Goerment system. (I get the feeling that Ms. Cross wasn't too certain about this step)
+
+   Through my personal interaction with Nashoniea Smith, I learnt that,
+   
+   1. 3 last recent pay slips were needed to prove source of income
+   2. The latest bill from a utility company was needed to prove address
+   3. An identity document was photographed to prove identity
+   4. Issue #57 describes all the information required from the applicant
+
+6. When asked about the needs and frustration of the firm, Ms. Cross wasn't willing to express those because she felt it was divulging confidential information about the company.
 
 ### Listed Companies Issues
 
@@ -142,291 +465,3 @@ As of my last knowledge update in September 2021, I can provide insights into so
 Please keep in mind that these trends and shifts were based on information available up to September 2021. To get the most current insights into the state of the Jamaica Stock Exchange and any ongoing shifts, it's advisable to consult recent reports, news articles, and official sources related to the JSE.
 
 <image src="/.attachments/chatgpt-logo.png" alt="Chat GPT Logo" width="16" height="16" />
-
-## Interviews
-
-### Financially Savvy
-
-Akeel Herdsman - Quantitative Trader, Financially Savvy, Day Trader
-
-Demographics: 40 - 60 y-o age group
-
-1. Where is the market heading?
-
-   More people will get involved into trading stocks directly. There will be increased volume of trades. Looking to see Jamaica Stock Exchange expand hours of trading.
-
-2. What are your biggest needs regarding the Jamaica Stock market?
-
-   Access to real-time information and ability to do trading real-time. Currently, doesn't think the market is deep enough and liquid enough for each stock.
-
-3. What do you want to get done?
-
-   Make money
-
-4. How much time do you spend monitoring your investments?
-
-   At least once a week. Sometimes, 3 times for the week; 30 minutes every session.
-
-5. What do you look out for?
-
-   BUY and SELL orders and the trends of these orders. (Technical analysis.)
-
-6. Biggest frustration?
-
-   Not being able to see the action real-time. (He at the time of this interview did not have access to JTrader Pro)
-
-7. What does a grat investment trading website look like?
-
-   Has candlestick charts.
-
-8. How much are you willing to pay for a service that delivers what you want?
-
-   US$1 to US$2 per month given a 30-day trial. Wouldn't want to think about the expense.
-
-**BONUS:** When asked about important features, he mentioned the need for _charts_. Highlights the need for presenting information in visually appealing way.
-
-### Savvy Investor
-
-Ryan Daley, Market Maker
-
-Demographics: 40 - 60 y-o age group
-
-1. Where is the market heading?
-
-   --
-
-2. How many other persons do you know that trade stocks?
-
-   Just family and 2 other friends
-
-2. How much time do you spend monitoring your investments?
-
-   Everyday
-
-3. What do you look for?
-
-   - Dividends policy
-   - Global market coverage. The reach of the listed company's products and services in other countries.
-   - Regional market coverage. The reach of the listed company's products and services within the country.
-   - Competitive advantage
-   - History of the company
-   - Shareholder connections. Who or which company has ownership stake in listed companies.
-
-4. What do you want to get done?
-
-   Make money
-
-5. Biggest frustration?
-
-   - Insider Trading is too rampant. I think JSE is 20% fair.
-
-6. How much money can you invest in stocks each month?
-
-   20k+ per month
-
-7. What about the analytical solutions on the internet?
-
-   Bloomberg Terminal had a lot of information. I did trading as well in Bloomberg Terminal. Uses Charles Schwab as well. It takes 20 minutes to complete trade in Charles Schwab.
-
-8. What about services provided by brokerages?
-
-   --
-
-9. How much are you willing to pay for a service that delivers what you want?
-
-   (Ryan does not really have stock in Jamaica or is enthusiastic about trading in Jamaica)
-
-**BONUS**:
-  
-  (Waiting on screenshots of Bloomberg Terminal)
-
-### Intermediate, Almost Savvy
-
-Tracy-Ann Davis - Read Reports, IPOs; Understands Stock Price movements; Don't know to calculate intrinsic value.
-
-Demographics: 20 - 40 y-o age group
-
-1. Where is the market heading?
-
-   More people will get involved into trading stocks for themselves. Trading stocks in overseas market.
-
-2. How much time do you spend monitoring your investments?
-
-   1 hour for the week. Some weeks no monitoring until IPO, Dividend, Quarterly Report or AGM announcement. Listen for ex-date to get in for dividends. (Sometimes she misses opportunities since she is not on platform every day)
-
-3. What do you look for?
-
-    - P/E ratio
-    - BUY and SELL orders
-    - Dividend Yield
-    - Dividend Policy. Liquidity of companies in IPO report. 
-    - Connections between companies in shareholder list (for example Barita owns shares in Derrimon Trading) and the stock price of related parties that are listed. Look out for pension fund companies in shareholder list. 
-    - Look at revenue growth rate to identify growth stocks from value stocks.
-    - Makes projection comparison of what stocks could give the best gains over period of time. How best can she spend $X?
-
-4. What do you want to get done?
-
-   Make money
-
-5. Biggest frustration?
-
-   Before JTrader, it took too long for the Broker to place orders. Having Brokers place orders are best for long-term, not short-term investment. (She is a short-term investor)
-
-6. How much money can you invest in stocks each month?
-
-   J$1k - J$9k
-
-7. What about the analytical solutions on the internet?
-
-   SimplyWall.st is too much of a learning curve to grasp. JTrader Pro is strictly for trading stocks.
-
-8. What about services provided by brokerages?
-
-   Not beneficial to have 1 brokerage. However, some services are great such as on-boarding onto IPOs and APOs and analysis reports provided in newsletters on their recommendations.
-
-9. How much are you willing to pay for a service that delivers what you want?
-
-   US$10 per month
-  
-**BONUS:** If intrinsic valuation is done, it's a good idea to show a breakdown of how the numbers were arrived.
-
-### Intermediate - Almost Savvy
-
-Christopher Shaw - Reads IPO, Short-term Trader
-
-Demographics: 40 - 60 y-o age group
-
- 1. Where is the market heading?
-
-    More people want to trade stocks in overseas market.
-
- 2. How many other persons do you know that trade stocks?
-
-    4
-
- 3. How much time do you spend monitoring your investments?
-
-    2 hour for the month. 5 hours per month, if the market is up (bullish).
-
- 4. What do you look for?
-
-    - Looks at indices for trends of overall market
-    - RSI
-    - MACD
-    - Stochastic Oscillator
-    - Moving Averages
-
- 5. What do you want to get done?
-
-    Make money
-
- 6. Biggest frustration?
-
-    Data is not real-time and lack of technical analysis tools.
-
- 7. How much money can you invest in stocks each month?
-
-    J$1k - J$9k
-
- 8. What about the analytical solutions on the internet?
-
-    Investing.com has the technical analysis tools and a stock screener but it takes a day for the information to update. It's not real-time.
-
- 9. What about services provided by brokerages?
-
-    I have several brokerage accounts, including those with Sagicor and JMMB. Brokerages are great for purchasing stocks when they are IPO and APO.
-
-10. How much are you willing to pay for a service that delivers what you want?
-
-    US$35 per month
-
-**BONUS**:
- - Less steps in doing trades instead of going to several pages to complete a trade
- - Aestehtically pleasing interface but not too fancy
- - An environment to ease the anxiety of traders
- - A gaming-type of environment that tracks behaviour and gives positive reinforcement. (Maybe points and badges classifying traders and their style)
- - Sentiment analysis that interprets the possible market response to news announcements (or just any announcement)
- - A GPT bot to give suggestions on trades based on real-time information (GPT - Generative Pre-trained Transformer)
-
-### Long-term Investor
-
-Dayton Outar - Fundamental Investor
-
-Demographics: 40 - 60 y-o age group
-
-1. Where is the market heading?
-
-   Investors want access to real-time information on stocks and company information
-
-2. How many other persons do you know that trade stocks?
-
-   I know 5 persons and I know of investment communities
-
-2. How much time do you spend monitoring your investments?
-
-   About 30 minutes per week
-
-3. What do you look for?
-
-   Ratios that indicate company performance. Intrinsic value. Technicals that show the lowest price and the highest price of a stock ever.
-
-4. What do you want to get done?
-
-   Make money
-
-5. Biggest frustration?
-
-   - It takes too long and too many steps to fund JTrader platform
-   - JTrader could be a lot more user-friendly
-   - JSE information architecture could be improved for stocks and publicly listed companies. It could be more consolidated; have to visit too many pages for related information.
-
-6. How much money can you invest in stocks each month?
-
-   J$1k - J$9k per month
-
-7. What about the analytical solutions on the internet?
-
-   I think Simply Wall Street is the best but you can get carried away with too many multiples that they present. Nonetheless, Simply Wall Street is comprehensive for Fundamental Analysis.
-
-8. What about services provided by brokerages?
-
-   I think there is a disconnect between the brokers and the JTrader platform. The fact that you have to send email to get their attention about a fund request from the platform and money being sent to their bank account. That part of the online trading experience needs improvement.
-
-   I like the newsletters that they send with all their analytical insights.
-
-   I like the statements but the figures are usually presenting the value of the stocks a month ago.
-
-9. How much are you willing to pay for a service that delivers what you want?
-
-   US$7 per month
-
-**BONUS**:
- - All my information, even portfolio information needs to be secured. No disclosure of information, even to the DBA.
-
- ### Financial Savvy
-
- Owin Watson - Investor and Businessman
-
- Demographics: 40 - 60 y-o age group
-
-1. How much value do you get from the Randy Rowe community?
-
-   Randy Rowe offers courses on short-term investing. I believe the community that he's developed through his courses and club meetings, while enriching him, offers him the ability to easily influence a significant group of investors to affect market behaviour.
-
-2. How has MyMoneyJA.com helped in your decision-making? (Do you use any other tools for decision-making?)
-
-   I sign up for the free trial version. The value I get is from the news announcements.
-
-   There's no interpretation of the news announcements by the system to indicate whether investors will BUY or SELL. This interpretation is offered by Randy Rowe.
-
-3. Are you satisfied with all the tools you have to make decisions on trading stocks?
-
-   I use,
-    - a spreadsheet to keep track of my portfolio
-    - the free trial version of Simply Wall Street to get the multipliers and other fundamental analysis to understand the listed companies
-    - the charts from the Jamaica Stock Exchange, such as the candlestick chart to determine the market behaviour and the current psychology of the investors.
-   
-   If I can do all of this with ease in one place, I would on-board that site.
-
-**BONUS**:
- - Suggested that a trading platform could be sold to Barita or Sagicor
