@@ -39,7 +39,7 @@ When someone indicates interest in investing in the stock market, the brokers ar
 
 At step 3 in the illustration above, the broker has to review the information and take it through a process of approval. The most critical part of the information is the identity document. While it is reviewed and approved before being uploaded to the JCSD system, it has to be validated by a Government system.
 
-API solutions provided by [Credit Info](https://creditinfo.com/) can be used to retrieve and validate identity documents from customer against Government systems on the internet through the browser.
+API solutions provided by [Credit Info](https://creditinfo.com/) can be used to retrieve and validate identity documents from customer against Government systems on the internet through the browser. The GOJ is also making moves to make KYC easier by digitizing documents through NIDS[^2]. The finance sector will benefit from this initiative from the Government to simplify and speed up the process of on-boarding new customers. This initiative is something that is encouraged by the World Bank.[^3]
 
 ### Market Makers
 
@@ -537,3 +537,5 @@ See below screenshot taking note of customer's experience during the fund-in pro
 1. [Charles Schwab Trading Platform Web Tutorial](https://youtu.be/CZsiRomcUeE)
 
 [^1]: [Importance of Domain Authority as the Key Site Metric for Growth](https://www.responsify.com/importance-of-domain-authority/) by Ginny Dwyer
+[^2]: [NATIONAL IDENTIFICATION SYSTEM (NIDS)](https://opm.gov.jm/portfolios/national-identification-system/)
+[^3]: [BOJ to introduce e-KYC this year](https://www.jamaicaobserver.com/business/boj-to-introduce-e-kyc-this-year/)
