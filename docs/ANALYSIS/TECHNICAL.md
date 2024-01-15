@@ -874,7 +874,11 @@ Sources:
 
 ### Chapter 9. Moving Averages
 
+> The _moving average_ is one of the most versatile and widely used of all technical indicators. Because of the way it is constructed and the fact that it can be so easily quantified and tested, it is the basis for many mechanical trend-following systems in use today.
 > 
+> _Chart analysis is largely subjective and difficult to test_. As a result, chart analysis does not lend itself that well to computerization. Moving average rules, by contrast, can easily be programmed into a computer, which then generates specific buy and sell signals. While two technicians may disagree as to whether a given price pattern is a triangle or a wedge, or whether the volume pattern favors the bull or bear side, ***moving average trend signals are precise and not open to debate***.
+> 
+> Let’s begin by defining what a _moving average_ is. As the second word implies, it is an _average_ of a certain body of data. For example, if a 10 day average of closing prices is desired, the prices for the last 10 days are added up and the total is divided by 10. The term _moving_ is used because only the latest 10 days’ prices are used in the calculation. Therefore, the body of data to be averaged (the last 10 closing prices) moves forward with each new trading day. The most common way to calculate the moving average is to work from the total of the last 10 days’ closing prices. Each day the new close is added to the total and the close 11 days back is subtracted. The new total is then divided by the number of days (10).
 
 
 ## Japanese Candlestick Charting Techniques
