@@ -857,6 +857,25 @@ Sources:
 > ...
 > 
 > _Long range price charts provide a perspective on the market trend that is impossible to achieve with the use of daily charts alone_. During our introduction to the technical philosophy in Chapter 1, it was pointed out that one of the greatest advantages of chart analysis is the application of its principles to virtually any time dimension, including long range forecasting. We also addressed the fallacy, espoused by some, that technical analysis should be limited to short term “timing” with longer range forecasting left to the fundamental analyst.
+> 
+> ...
+> 
+> A question often raised concerning long term charts is whether or not historic price levels seen on the charts should be adjusted for inflation. After all, the argument goes, do these long range peaks and troughs have any validity if not adjusted to reflect the changes in the value of the U.S. dollar? This is a point of some controversy among analysts.
+> 
+> I do not believe that any adjustment is necessary on these long range charts for a number of reasons. The main reason is my belief that the markets themselves have already made the necessary adjustments. A currency declining in value causes commodities quoted in that currency to increase in value. The declining value of the dollar, therefore, would contribute to rising commodity prices. A rising dollar would cause the price of most commodities to fall.
+> 
+> ...
+> 
+> The final point in this debate goes to the heart of the technical theory, which states that price action discounts everything, even inflation. All financial markets adjust to periods of inflation and deflation and to changes in currency values. The real answer to whether long range charts should be adjusted for inflation lies in the charts themselves. Many markets fail at historic resistance levels set several years earlier and then bounce off support levels not seen in several years. It’s also clear that falling inflation since the early 1980s has helped support bull markets in bonds and stocks. It would seem that those markets have already made their own inflation adjustment.
+> 
+> ...
+> 
+> Long term charts are not meant for trading purposes. A distinction has to be made between market _analysis_ for forecasting purposes and the _timing_ of market commitments. Long term charts are useful in the analytical process to help determine the major trend and price objectives. They are not suitable, however, for the timing of entry and exit points and should not be used for that purpose. For that more sensitive task, daily and intraday charts should be utilized.
+
+### Chapter 9. Moving Averages
+
+> 
+
 
 ## Japanese Candlestick Charting Techniques
 
