@@ -879,6 +879,112 @@ Sources:
 > _Chart analysis is largely subjective and difficult to test_. As a result, chart analysis does not lend itself that well to computerization. Moving average rules, by contrast, can easily be programmed into a computer, which then generates specific buy and sell signals. While two technicians may disagree as to whether a given price pattern is a triangle or a wedge, or whether the volume pattern favors the bull or bear side, ***moving average trend signals are precise and not open to debate***.
 > 
 > Let’s begin by defining what a _moving average_ is. As the second word implies, it is an _average_ of a certain body of data. For example, if a 10 day average of closing prices is desired, the prices for the last 10 days are added up and the total is divided by 10. The term _moving_ is used because only the latest 10 days’ prices are used in the calculation. Therefore, the body of data to be averaged (the last 10 closing prices) moves forward with each new trading day. The most common way to calculate the moving average is to work from the total of the last 10 days’ closing prices. Each day the new close is added to the total and the close 11 days back is subtracted. The new total is then divided by the number of days (10).
+> 
+> The _moving average_ is essentially a trend following device. Its purpose is to identify or signal that a new trend has begun or that an old trend has ended or reversed. Its purpose is to track the progress of the trend. It might be viewed as a curving trendline. It does not, however, predict market action in the same sense that standard chart analysis attempts to do. ***The moving average is a follower, not a leader***. It never anticipates; it only reacts. The moving average follows a market and tells us that a trend has begun, but only after the fact.
+> 
+> ... Shorter term averages are more sensitive to the price action, whereas longer range averages are less sensitive. In certain types of markets, it is more advantageous to use a shorter average and, at other times, a longer and less sensitive average proves more useful.
+> 
+> ![Moving Averages: 20 vs 200 day](/.attachments/moving.averages-20.vs.200-day.png)
+> 
+> _A comparison of a 20 day and a 200 day moving average. During the sideways period from August to January, prices crossed the shorter average several times. However, they remained above the 200 day average throughout the entire period._
+> 
+> We have been using the closing price in all of our examples so far. However, while the closing price is considered to be the most important price of the trading day and the price most commonly used in moving average construction, the reader should be aware that some technicians prefer to use other prices. Some prefer to use a midpoint value, which is arrived at by dividing the day’s range by two.
+> 
+> Others include the closing price in their calculation by adding the high, low, and closing prices together and dividing the sum by three. Still others prefer to construct price bands by averaging the high and low prices separately. The result is two separate moving average lines that act as a sort of volatility buffer or neutral zone. Despite these variations, the closing price is still the price most commonly used for moving average analysis and is the price that we’ll be focusing most of our attention on in this chapter.
+> 
+> **The Simple Moving Average**
+> 
+> The _simple moving average_, or the arithmetic mean, is the type used by most technical analysts. But there are some who question its usefulness on two points. The first criticism is that only the period covered by the average (the last 10 days, for example) is taken into account. The second criticism is that the simple moving average gives equal weight to each day’s price. In a 10 day average, the last day receives the same weight as the first day in the calculation. Each day’s price is assigned a 10% weighting. In a 5 day average, each day would have an equal 20% weighting. Some analysts believe that a heavier weighting should be given to the more recent price action.
+> 
+> **The Linearly Weighted Moving Average**
+> 
+> In an attempt to correct the weighting problem, some analysts employ a _linearly weighted moving average_. In this calculation, the closing price of the 10th day (in the case of a 10 day average) would be multiplied by 10, the ninth day by nine, the eighth day by eight, and so on. The greater weight is therefore given to the more recent closings. The total is then divided by the sum of the multipliers (55 in the case of the 10 day average: 10 + 9 + 8 +…+ 1). However, the linearly weighted average still does not address the problem of including only the price action covered by the length of the average itself.
+> 
+> **The Exponentially Smoothed Moving Average**
+> 
+> This type of average addresses both of the problems associated with the simple moving average. First, the exponentially smoothed average assigns a greater weight to the more recent data. Therefore, it is a weighted moving average. But while it assigns lesser importance to past price data, it does include in its calculation all of the data in the life of the instrument. In addition, the user is able to adjust the weighting to give greater or lesser weight to the most recent day’s price. This is done by assigning a percentage value to the last day’s price, which is added to a percentage of the previous day’s value. The sum of both percentage values adds up to 100. For example, the last day’s price could be assigned a value of 10% (.10), which is added to the previous day’s value of 90% (.90). That gives the last day 10% of the total weighting. That would be the equivalent of a 20 day average. By giving the last day’s price a smaller value of 5% (.05), lesser weight is given to the last day’s data and the average is less sensitive. That would be the equivalent of a 40 day moving average.
+> 
+> ...
+> 
+> The simple moving average is the one most commonly used by technicians, and is the one that we’ll be concentrating on. Some traders use just one moving average to generate trend signals. The moving average is plotted on the bar chart in its appropriate trading day along with that day’s price action. ***When the closing price moves above the moving average, a buy signal is generated. A sell signal is given when prices move below the moving average.*** For added confirmation, some technicians also like to see the moving average line itself turn in the direction of the price crossing.
+> 
+> If a very short term average is employed (a 5 or 10 day), the average tracks prices very closely and several crossings occur. This action can be either good or bad. The use of a very sensitive average produces more trades (with higher commission costs) and results in many false signals (whipsaws). If the average is too sensitive, some of the short term random price movement (or “noise”) activates bad trend signals.
+> 
+> ![Moving Averages: Prices Signal](/.attachments/moving.averages.signals.png)
+> 
+> _Prices fell below the 50 day average during October (see left circle). The sell signal is stronger when the moving average also turns down (see left arrow). The buy signal during January was confirmed when the average itself turned higher._
+> 
+> While the shorter average generates more false signals, it has the advantage of giving trend signals earlier in the move. It stands to reason that the more sensitive the average, the earlier the signals will be. So there is a tradeoff at work here. The trick is to find the average that is sensitive enough to generate early signals, but insensitive enough to avoid most of the random “noise.”
+> 
+> ![Moving Averages: Shorter Average](/.attachments/moving.averages.shorter.averages.png)
+> 
+> _A shorter average gives earlier signals. The longer average is slower, but more reliable. The 10 day turned up first at the bottom. But it also gave a premature buy signal during November and an untimely sell signal during February (see boxes)._
+> 
+> ... The longer averages work better as long as the trend remains in force, but a shorter average is better when the trend is in the process of reversing.
+> 
+> It becomes clearer, therefore, that the use of one moving average alone has several disadvantages. It is usually more advantageous to employ two moving averages.
+> 
+> This technique is called the _double crossover method_. This means that a buy signal is produced when the shorter average crosses above the longer. For example, two popular combinations are the 5 and 20 day averages and the 10 and 50 day averages. In the former, a buy signal occurs when the 5 day average crosses above the 20, and a sell signal when the 5 day moves below the 20. In the latter example, the 10 day crossing above the 50 signals an uptrend, and a downtrend takes place with the 10 slipping under the 50. This technique of using two averages together lags the market a bit more than the use of a single average but produces fewer whipsaws.
+> 
+> ![Moving Averages: Double Crossover Method](/.attachments/moving.averages.double.crossover.png)
+> 
+> _The double crossover method uses two moving averages. The 5 and 20 day combination is popular with futures traders. The 5 day fell below the 20 day during October (see circle) and caught the entire downtrend in crude oil prices._
+> 
+> ...
+> 
+> **How to Use the 4-9-18-Day Moving Average System**
+> 
+> ...
+> 
+> A buying alert takes place in a downtrend when the 4 day crosses above both the 9 and the 18. A confirmed buy signal occurs when the 9 day then crosses above the 18. This places the 4 day over the 9 day which is over the 18 day. Some intermingling may occur during corrections or consolidations, but the general uptrend remains intact. Some traders may take profits during the intermingling process and some may use it as a buying opportunity. There is obviously a lot of room for flexibility here in applying the rules, depending on how aggressively one wants to trade.
+> 
+> ![Moving Averages: 9 - 18](/.attachments/moving.averages.9-18.png)
+> 
+> _Futures traders like the 9 and 18 day moving average combination. A sell signal was given in late October (first circle) when the 9 day fell below the 18. A buy signal was given in early 1998 when the 9 day crossed back above the 18 day._
+> 
+> When the uptrend reverses to the downside, the first thing that should take place is that the shortest (and most sensitive) average—the 4 day—dips below the 9 day and the 18 day. This is only a selling alert. Some traders, however, might use that initial crossing as reason enough to begin liquidating long positions. Then, if the next longer average—the 9 day—drops below the 18 day, a confirmed sell short signal is given.
+> 
+> ![Moving Averages: 4 - 9 - 18](/.attachments/moving.averages.4-9-18.png)
+> 
+> _The 4-9-18 day moving average combo is also popular with futures traders. At a bottom, the 4 day (solid line) turns up first and crosses the other two lines. Then the 9 day crosses over the 18 day (see circle), signaling a bottom._
+> 
+> ...
+> 
+> _Percentage envelopes_ can be used to help determine when a market has gotten overextended in either direction. In other words, they tell us when prices have strayed too far from their moving average line. In order to do this, the envelopes are placed at fixed percentages above and below the average. Shorter term traders, for example, often use 3% envelopes around a simple 21 day moving average. When prices reach one of the envelopes (3% from the average), the short term trend is considered to be overextended. For long range analysis, some possible combinations include 5% envelopes around a 10 week average or a 10% envelope around a 40 week average.
+> 
+> ![Moving Averages: 3 Percent Envelope](/.attachments/moving.averages.3.percent.envelope.png) 
+> 
+> _3% envelopes placed around a 21 day moving average of the Dow. Moves outside the envelopes suggest an overextended stock market._
+> 
+> ...
+> 
+> This technique was developed by John Bollinger. Two trading bands are placed around a moving average similar to the envelope technique. Except that _Bollinger Bands_ are placed two standard deviations above and below the moving average, which is usually 20 days. _Standard deviation_ is a statistical concept that describes how prices are dispersed around an average value. Using two standard deviations ensures that 95% of the price data will fall between the two trading bands. As a rule, prices are considered to be overextended on the upside (overbought) when they touch the upper band. They are considered overextended on the downside (oversold) when they touch the lower band.
+> 
+> ![Moving Averages: Bollinger Bands](/.attachments/moving.averages.bollinger.band.png)
+> 
+> _Bollinger bands plotted around a 20 day moving average. During the sideways period from August to January, prices kept touching the outer bands. Once the uptrend resumed, prices traded between the upper band and 20 day average._
+> 
+> ...
+> 
+> The simplest way to use Bollinger Bands is to use the upper and lower bands as price targets. In other words, if prices bounce off the lower band and cross above the 20 day average, the upper band becomes the upper price target. A crossing below the 20 day average would identify the lower band as the downside target. In a strong uptrend, prices will usually fluctuate between the upper band and the 20 day average. In that case, a crossing below the 20 day average warns of a trend reversal to the downside.
+> 
+> Bollinger Bands differ from envelopes in one major way. Whereas the envelopes stay a constant percentage width apart, Bollinger Bands expand and contract based on the last 20 days’ volatility. During a period of rising price volatility, the distance between the two bands will widen. Conversely, during a period of low market volatility, the distance between the two bands will contract. There is a tendency for the bands to alternate between expansion and contraction. When the bands are unusually far apart, that is often a sign that the current trend may be ending. When the distance between the two bands has narrowed too far, that is often a sign that a market may be about to initiate a new trend. Bollinger Bands can also be applied to weekly and monthly price charts by using _20 weeks_ and _20 months_ instead of _20 days_. Bollinger Bands work best when combined with overbought/oversold oscillators that are explained in the next chapter.
+> 
+> ...
+> 
+> One of the great advantages of using moving averages, and one of the reasons they are so popular as trend-following systems, is that they embody some of the oldest maxims of successful trading. They trade in the direction of the trend. They let profits run and cut losses short. The moving average system forces the user to obey those rules by providing specific buy and sell signals based on those principles.
+> 
+> ***Because they are trend-following in nature, however, moving averages work best when markets are in a trending period. They perform very poorly when markets get choppy and trade sideways for a period of time. And that might be a third to a half of the time.***
+> 
+> ... At other times, a nontrending method like the overbought–oversold oscillator is more appropriate. ... ***an indicator called ADX that tells you when a market is trending and when it is not, and whether the market climate favors a trending moving average technique or a nontrending oscillator approach***.
+> 
+> ...
+> 
+> One of the problems encountered with the moving average is choosing between a fast or a slow average. While one may work better in a trading range market, the other may be preferable in a trending market. The answer to the problem of choosing between the two may lie with an innovative approach called the “adaptive moving average.”
+
+### Chapter 10. Oscillators and Contrary Opinion
+
+> 
 
 
 ## Japanese Candlestick Charting Techniques
