@@ -1241,6 +1241,150 @@ Sources:
 
 ### Chapter 11. Point and Figure Charting
 
+> _The point and figure chart is a study of pure price movement_. That is to say, it does not take time into consideration while plotting the price action. A bar chart, by contrast, combines both price and time. Because of the way the bar chart is constructed, the vertical axis is the price scale and the horizontal axis, a time scale. On a daily chart, for example, each successive day’s price action moves one space or bar to the right. This happens even if prices saw little or no change for that day. Something must always be placed in the next space. On the point and figure chart, only the price changes are recorded. If no price change occurs, the chart is left untouched. During active market periods, a considerable amount of plotting may be required. During quiet market conditions, little or no plotting will be needed.
+> 
+> An important difference is the treatment of volume. Bar charts record volume bars under the day’s price action. Point and figure charts ignore volume numbers, as a separate entity. This last phrase, “as a separate entity,” is an important one. Although the volume numbers are not recorded on the point and figure chart, it does not necessarily follow that volume, or trading activity, is totally lost. On the contrary, since intraday point and figure charts record all price change activity, the heavier or lighter volume is reflected in the amount of price changes recorded on the chart. Because volume is one of the more important ingredients in determining the potency of support and resistance levels, point and figure charts become especially useful in determining at which price levels most of the trading activity took place and, hence, where the important support and resistance numbers are.
+> 
+> ...
+> 
+> ![Point and Figure: Bar Chart vs. Point and Figure](/.attachments/point.and.figure-bar.chart.v.point.and.figure.png)
+> 
+> _A comparison of a daily bar chart for the S&P 500 Index (left) and a point and figure chart (right) for the same time period. The point and figure chart uses x columns for rising prices and o columns for declining prices._
+> 
+> ![Point and Figure: S & P 500](/.attachments/point.and.figure-s&p.500.png)
+> 
+> _A buy signal is given when one x column rises above the top of a previous x column (see up arrows). A sell signal is given when a column of o’s falls below a previous o column (see down arrows). Signals are more precise on point and figure charts._
+> 
+> Correspondingly, when a column of o’s declines one box under a previous column of o’s, a downside breakout occurs. Notice how much more precise these breakouts are than those on the bar chart. These breakouts can, of course, be used as buy and sell signals. We’ll have more to say on buy and sell signals a bit later. But the charts demonstrate one of the advantages of the point and figure chart, mainly the greater precision and ease in recognizing trend signals.
+> 
+> ...
+> 
+> ... Let’s construct an intraday chart using some actual price data.
+> 
+> The following numbers describe 9 actual days of trading in a Swiss franc futures contract. The box size is 5 points. Therefore, every 5 point swing in either direction is plotted. We’ll start with a 1 box reversal chart.
+> 
+> Let’s begin on the left side of the chart. First the chart is scaled to reflect a 5 point increment for every box.
+> 
+> Column 1: Put a dot at 4875. Because the next number—4880—is higher, fill in the next box up to 4880.
+> 
+> Column 2: The next number is 4860. Move 1 column to the right, go down 1 box, and fill in all the o’s down to 4860.
+> 
+> Column 3: The next number is 4865. Move 1 column to the right, move up 1 box and put an x at 4865. Stop here. So far you have only 1 x marked in column 3 because prices have only moved up 1 box. On a 1 box reversal chart, there must always be at least 2 boxes filled in each column. Notice that the next number is 4850, calling for o’s down to that number. Do you go to the next column to record the column of declining o’s? The answer is no because that would leave only 1 mark, the x, in column 3. Therefore, in the column with the lone x (column 3) fill in o’s down to 4850.
+> 
+> Column 4: The next number is 4860. Move to the next column, move 1 box up, and plot in the x’s up to 4860.
+> 
+> Column 5: The next number is 4855. Because this is a move down, go to the next column, move down a box, and fill the o at 4860. Notice on the table that this is the last price of the day. Let’s do one more.
+> 
+> Column 6: The first number on 5/2 is 4870. So far, you only have one o in column 5. You must have at least 2 marks in each column. Therefore, fill in x’s (because prices are advancing) up to 4870. But notice that the last price on the previous day is blacked out. This is to help keep track of time. By blacking in the last price each day, it’s much easier to keep track of the separate days’ trading.
+> 
+> ![Point and Figure: 5 x 1](/.attachments/point.and.figure-5x1.png)
+> 
+> _A 5×1 point and figure chart of a Deutsche mark contract is shown in the upper chart. The blackened boxes show the end of each day’s trading._
+> 
+> Feel free to continue through the remainder of the chart to sharpen your understanding of the plotting process. Notice that this chart has several columns where both x’s and o’s are present. This situation will only develop on the 1 point reversal chart and is caused by the necessity of having at least 2 boxes filled in each column. Some purists might argue with combining the x’s and o’s. Experience will show, however, that this method of plotting prices makes it much easier to follow the order of the transactions.
+> 
+> ...
+> 
+> One principal advantage of the intraday 1 box reversal chart is the ability to obtain price objectives through use of the _horizontal count_. If you think back to our coverage of bar charts and price patterns, the question of price objectives was discussed. However, virtually all methods of obtaining price objectives off bar charts were based on what we call _vertical measurements_. This meant measuring the height of a pattern (the volatility) and projecting that distance upward or downward. For example, the head and shoulders pattern measured the distance from the head to the neckline and swung that objective from the break of that neckline.
+> 
+> As you can see, they’re not much different from ones already discussed on bar charting. Most of the patterns are variations on the double and triple tops and bottoms, head and shoulders, V’s and inverted V’s, and saucers. The term “fulcrum” shows up quite a bit in the point and figure literature. Essentially, the fulcrum is a well defined congestion area, occurring after a significant advance or decline, that forms an accumulation base or a distribution top. In a base, for example, the bottom of the area is subjected to repeated tests, interrupted by intermittent rally attempts. Very often, the fulcrum takes on the appearance of a double or triple bottom. The basing pattern is completed when a breakout (catapult) occurs over the top of the congestion area.
+> 
+> ![Point and Figure: Reversal Patterns](/.attachments/point.and.figure-reversal.patterns.png)
+> 
+> _Reversal patterns. (Source: Alexander H. Wheelan, Study Helps in Point and Figure Technique [New York, NY: Morgan, Rogers and Roberts, Inc., 1954] p. 25.) Reprinted in 1990 by Traders Press, P.O. Box 6206, Greenville, SC 29606.]_
+> 
+> Those reversal patterns with the most pronounced horizontal ranges obviously lend themselves quite well to the taking of count measurements. The V base, in contrast, because of the absence of a significant horizontal price area, would not be amenable to the taking of a horizontal count. The blackened boxes in the chart examples represent suggested buying and selling points. Notice that those entry points generally coincide with the retesting of support areas in a base or resistance areas in a top, breakout points, and the breaking of trendlines.
+> 
+> Trendline analysis on intraday charts is the same as that applied to bar charts. Up trendlines are drawn under successive lows and down trendlines are drawn over successive peaks. This is not true of the simplified point and figure chart ... It utilizes 45 degree lines and plots them differently.
+> 
+> ...
+> 
+> These are your basic up and down trendlines. Because of the severe condensation on these charts, it would be impractical to try to connect rally tops or reaction lows. The 45 degree line is, therefore, used. In an uptrend, _the bullish support line_ is drawn at a _45 degree angle_ upward to the right from under the lowest column of o’s. As long as prices remain above that line, the major trend is considered to be bullish. In a downtrend, the bearish resistance line is drawn at a 45 degree angle downward to the right from the top of the highest column of x’s. As long as prices remain below that down trendline, the trend is bearish.
+> 
+> ![Point and Figure: 45 Degree Angles](/.attachments/point.and.figure-45.degree.png)
+> 
+> _Examples of the Chartcraft three point reversal stock charts. Notice that the trendlines are drawn at 45 degree angles. (Source: Courtesy of Chartcraft, New Rochelle, NY.)_
+> 
+> At times, those lines may have to be adjusted. For example, sometimes a correction in an uptrend breaks below the rising support line after which the uptrend resumes. In such cases, a new support line must be drawn at a 45 degree angle from the bottom of that reaction low. Sometimes a trend is so strong that the original up trendline is simply too far away from the price action. In that case, a tighter trendline should be drawn in an attempt to arrive at a “best fitting” support line.
+> 
+> ...
+> 
+> **TRADING TACTICS**
+> 
+> Let’s look at the various ways that these point and figure charts can be used to determine specific entry and exit points.
+> 
+> 1. A simple buy signal can be used for the covering of old shorts and/or the initiation of new longs.
+> 2. A simple sell signal can be used for the liquidation of old longs and/or the initiation of new shorts.
+> 3. The simple signal can be used only for liquidation purposes with a complex formation needed for a new commitment.
+> 4. The trendline can be used as a filter. Long positions are taken above the trendline and short positions below the trendline.
+> 5. For stop protection, always risk below the last column of o’s in an uptrend and over the last column of x’s in a downtrend.
+> 6. The actual entry point can be varied as follows:
+>    1. Buy the actual breakout in an uptrend.
+>    2. Buy a 3 box reversal after the breakout occurs to obtain a lower entry point.
+>    3. Buy a 3 box reversal in the direction of the original breakout after a correction occurs. Not only does this require the added confirmation of a positive reversal in the right direction, but a closer stop point can now be used under the latest column of o’s.
+>    4. Buy a second breakout in the same direction as the original breakout signal.
+>
+> As you can readily see from the list, there are many different ways that the point and figure chart can be used. Once the basic technique is understood, there is almost unlimited flexibility as to how to best enter and exit a market using this approach.
+> 
+> The actual buy or sell signal occurs on the first signal. However, as the move continues, several other signals appear on the chart. These repeat buy or sell signals can be used for additional positions. Whether or not this is done, the protective stop point can be raised to just below the latest o column in an uptrend and lowered to just over the latest x column in a downtrend. This use of a _trailing_ stop allows the trader to stay with the position and protect accumulated profits at the same time.
+> 
+> ...
+> 
+> **ADVANTAGES OF POINT AND FIGURE CHARTS**
+> 
+> Let’s briefly recap some of the advantages of point and figure charting.
+> 
+> 1. By varying the box and reversal sizes, these charts can be adapted to almost any need. There are also many different ways these charts can be used for entry and exit points.
+> 2. Trading signals are more precise on point and figure charts than on bar charts.
+> 3. By following these specific point and figure signals, better trading discipline can be achieved.
+> 
+> ![Point and Figures: Treasury Bond](/.attachments/point.and.figure-treasury.bond.futures.png)
+> 
+> _This chart of Treasury Bond futures prices covers more than two years. The arrows mark the buy and sell signals. Most of the signals captured the market trend very well. Even when a bad signal is given, the chart quickly corrects itself._
+> 
+> ...
+> 
+> **COMPUTERIZED P&F CHARTING**
+> 
+> Computers have taken the drudgery out of point and figure charting. The days of laboriously constructing columns of x’s and o’s are gone. Most charting software packages do the charting for you. In addition, you can vary the box and reversal sizes with a keystroke to adjust the chart for shorter or longer term analysis. You can construct p&f charts from real-time (intraday) and end of day data, and you can apply them to any market you want. But you can do a lot more with a computer.
+
+### Chapter 12. Japanese Candlesticks
+
+> Charting market data in candlestick form uses the same data available for standard bar charts; open, high, low, and close prices. While using the exact same data, candlestick charts offer a much more visually appealing chart. Information seems to jump off the page (computer screen). The information displayed is more easily interpreted and analyzed. The box below is a depiction of of a single day of prices showing the difference between the bar (left) and the candlestick(s).
+> 
+> ![Candlesticks: The Candlestick](/.attachments/candlesticks-the.candlestick.png)
+> 
+> You can see how the name “candlesticks” came about. They look somewhat like a candle with a wick. The rectangle represents the difference between the open and close price for the day, and is called the _body_. Notice that the body can be either black or white. A _white body_ means that the close price was greater (higher) than the open price. Actually, the body is not white, but open (not filled), which makes it work better with computers. This is so that it will print correctly when printing charts on a computer. This is one of the adaptations that have occurred in the West; the Japanese use red for the open body. The _black body_ means that the close price was lower than the open price. The open and close prices are given much significance in Japanese candlesticks. The small lines above and below the body are referred to as _wicks_ or _hairs_ or _shadows_. Many different names for these lines appear in Japanese reference literature, which is odd since they represent the high and low prices for the day and are normally not considered vital in the analysis by the Japanese.
+> 
+> ...
+> 
+> Different body/shadow combinations have different meanings. Days in which the difference between the open and close prices is great are called _Long Days_. Likewise, days in which the difference between the open and close price is small, are called _Short Days_. Remember, we are only talking about the size of the body and no reference is made to the high and/or low prices.
+> 
+> ![Candlesticks: Long Days and Short Days](/.attachments/candlesticks-long.days.short.days.png)
+> 
+> ...
+> 
+> **CANDLE PATTERN ANALYSIS**
+> 
+> A Japanese candle pattern is a psychological depiction of traders’ mentality at the time. It vividly shows the actions of the traders as time unfolds in the market. The mere fact that humans react consistently during similar situations makes candle pattern analysis work.
+> 
+> A Japanese candle pattern can consist of a single candlestick line or be a combination of multiple lines, normally never more than five. While most candle patterns are used to determine reversal points in the market, there are a few that are used to determine trend continuation. They are referred to as reversal and continuation patterns. Whenever a reversal pattern has bullish implications, an inversely related pattern has bearish meaning. Similarly, whenever a continuation pattern has bullish implications, an opposite pattern gives bearish meaning. When there is a pair of patterns that work in both bullish and bearish situations, they usually have the same name. In a few cases, however, the bullish pattern and its bearish counterpart have completely different names.
+> 
+> ...
+> 
+> **FILTERED CANDLE PATTERNS**
+> 
+> A revolutionary concept developed by Greg Morris in 1991, called candle pattern filtering, provides a simple method to improve the overall reliability of candle patterns. While the short term trend of the market must be identified before a candle pattern can exist, determination of overbought and oversold markets using traditional technical analysis will enhance a candle pattern’s predictive ability. Concurrently, this technique helps eliminate bad or premature candle patterns.
+> 
+> One must first grasp how a traditional technical indicator responds to price data. In this example, Stochastics %D will be used. The stochastic indicator oscillates between 0 and 100, with 20 being oversold and 80 being overbought. The primary interpretation for this indicator is when %D rises above 80 and then falls below 80, a sell signal has been generated. Similarly, when it drops below 20 and then rises above 20, a buy signal is given.
+> 
+> Here is what we know about stochastics %D: When it enters the area above 80 or below 20, it will eventually generate a signal. In other words, it is just a matter of time until a signal is given. The area above 80 and below 20 is called the presignal area and represents the area that %D must get to before it can give a trading signal of its own.
+> 
+> ![Candlesticks: Pairing with Stochastic Oscillator](/.attachments/candlesticks-pairing.candlesticks.with.stochastic.oscillator.png)
+> 
+> The filtered candle pattern concept uses this presignal area. Candle patterns are considered only when %D is in its presignal area. If a candle pattern occurs when stochastics %D is at, say 65, the pattern is ignored. Also, only reversal candle patterns are considered using this concept.
+> 
+> Candle pattern filtering is not limited to using stochastics %D. Any technical oscillator that you might normally use for analysis can be used to filter candle patterns. Wilder’s RSI, Lambert’s CCI, and Williams’ %R are a few that will work equally as well.
 
 
 ## Japanese Candlestick Charting Techniques
