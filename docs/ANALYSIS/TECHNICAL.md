@@ -1386,6 +1386,9 @@ Sources:
 > 
 > Candle pattern filtering is not limited to using stochastics %D. Any technical oscillator that you might normally use for analysis can be used to filter candle patterns. Wilder’s RSI, Lambert’s CCI, and Williams’ %R are a few that will work equally as well.
 
+### Chapter 13. Elliott Wave Theory
+
+> 
 
 ## Japanese Candlestick Charting Techniques
 
