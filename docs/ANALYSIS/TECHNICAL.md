@@ -1388,7 +1388,197 @@ Sources:
 
 ### Chapter 13. Elliott Wave Theory
 
+> There are three important aspects of wave theory—_pattern_, _ratio_, and _time_—in that order of importance. _Pattern_ refers to the wave patterns or formations that comprise the most important element of the theory. _Ratio analysis_ is useful in determining retracement points and price objectives by measuring the relationships between the different waves. Finally, _time_ relationships also exist and can be used to confirm the wave patterns and ratios, but are considered by some Elliotticians to be less reliable in market forecasting.
 > 
+> Elliott Wave Theory was originally applied to the major stock market averages, particularly the Dow Jones Industrial Average. In its most basic form, the theory says that the stock market follows a repetitive rhythm of a five wave advance followed by a three wave decline.
+> 
+> ![Elliot Wave Theory: Basic Pattern](/.attachments/elliot.wave.theory-basic.pattern.png)
+> 
+> _The Basic Pattern. (A.J. Frost and Robert Prechter, Elliott Wave Principle [Gainesville, GA: New Classics Library, 1978], p. 20. Copyright © 1978 by Frost and Prechter.)_
+> 
+> If you count the waves, you will find that one complete cycle has eight waves—five up and three down. In the advancing portion of the cycle, notice that each of the five waves are numbered. Waves 1, 3, and 5—called _impulse_ waves—are rising waves, while waves 2 and 4 move against the uptrend. Waves 2 and 4 are called _corrective_ waves because they correct waves 1 and 3. After the five wave numbered advance has been completed, a three wave correction begins. The three corrective waves are identified by the letters a, b, c.
+> 
+> Along with the constant form of the various waves, there is the important consideration of degree. There are many different degrees of trend. Elliott, in fact, categorized nine different degrees of trend (or magnitude) ranging from a _Grand Supercycle_ spanning two hundred years to a _subminuette_ degree covering only a few hours. The point to remember is that the basic eight wave cycle remains constant no matter what degree of trend is being studied.
+> 
+> Each wave subdivides into waves of one lesser degree that, in turn, can also be subdivided into waves of even lesser degree. It also follows then that each wave is itself part of the wave of the next higher degree.
+> 
+> ![Elliot Wave Theory: 34 Waves](/.attachments/elliot.wave.theory-34.waves.png)
+> 
+> _(Frost and Prechter, p. 21. Copyright © 1978 by Frost and Prechter.)_
+> 
+> The largest two waves—1 and 2—can be subdivided into eight lesser waves that, in turn, can be subdivided into 34 even lesser waves. The two largest waves—1 and 2—are only the first two waves in an even larger five wave advance. Wave 3 of that next higher degree is about to begin.
+> 
+> The numbers shown so far 1,2,3,5,8,13,21,34,55,89,144—are not just random numbers. They are part of the _Fibonacci number sequence_, which forms the mathematical basis for the Elliott Wave Theory. ... Whether a given wave divides into five waves or three waves is determined by the direction of the next larger wave. ...
+> 
+> Being able to determine between threes and fives is obviously of tremendous importance in the application of this approach. That information tells the analyst what to expect next. A completed five wave move, for example, usually means that only part of a larger wave has been completed and that there’s more to come (unless it’s a fifth of a fifth). _One of the most important rules to remember is that a correction can never take place in five waves_. In a bull market, for example, if a five wave decline is seen, this means that it is probably only the first wave of a three wave (a-b-c) decline and that there’s more to come on the downside. In a bear market, a three wave advance should be followed by resumption of the downtrend. A five wave rally would warn of a more substantial move to the upside and might possibly even be the first wave of a new bull trend.
+> 
+> ...
+> 
+> So far, we’ve talked mainly about the impulse waves in the direction of the major trend. Let’s turn our attention now to the corrective waves. In general, corrective waves are less clearly defined and, as a result, tend to be more difficult to identify and predict. One point that is clearly defined, however, is that corrective waves can never take place in five waves. Corrective waves are threes, never fives (with the exception of triangles). We’re going to look at three classifications of corrective waves—zig-zags, flats, and triangles.
+> 
+> **Zig-Zag**
+> 
+> A zig-zag is a three wave corrective pattern, against the major trend, which breaks down into a 5-3-5 sequence.
+> 
+> ![Elliot Wave Theory: Bull Market Zig-Zag](/.attachments/elliot.wave.theory-bull.zig.zag.png)
+> 
+> _Bull Market Zig-Zag (5-3-5). (Frost and Prechter, p. 36. Copyright © 1978 by Frost and Prechter.)_
+> 
+> Notice that the middle wave B falls short of the beginning of wave A and that wave C moves well beyond the end of wave A.
+> 
+> ![Elliot Wave Theory: Bull Market Zig-Zag Variation](/.attachments/elliot.wave.theory-bull.zig.zag.variation.png)
+> 
+> _Bull Market Zig-Zag (5-3-5). (Frost and Prechter, p. 36. Copyright © 1978 by Frost and Prechter.)_
+> 
+> ![Elliot Wave Theory: Bear Market Zig-Zag](/.attachments/elliot.wave.theory-bear.zig.zag.png)
+> 
+> _Bear Market Zig-Zag (5-3 5). (Frost and Prechter, p. 36. Copyright © 1978 by Frost and Prechter.)_
+> 
+> ![Elliot Wave Theory: Bull Market Zig-Zag Variation](/.attachments/elliot.wave.theory-bear.zig.zag.variation.png)
+> 
+> _Bear Market Zig-Zag (5-3-5). (Frost and Prechter, p. 36 Copyright © 1978 by Frost and Prechter.)_
+> 
+> A less common variation of the zig-zag is the double zigzag. ... This variation sometimes occurs in larger corrective patterns. It is in effect two different 5-3-5 zig-zag patterns connected by an intervening a-b-c pattern.
+> 
+> ![Elliot Wave Theory: Double Zig Zag](/.attachments/elliot.wave.theory-double.zig.zag.png)
+> 
+> _Double Zig-Zag. (Frost and Prechter, p. 37. Copyright © 1978 by Frost and Prechter.)_
+> 
+> **Flats**
+> 
+> What distinguishes the flat correction from the zig-zag correction is that the flat follows a 3-3-5 pattern.
+> 
+> ![Elliot Wave Theory: ](/.attachments/elliot.wave.theory-bull.flat.png)
+> 
+> _Bull Market Flat (3-3-5), Normal Correction. (Frost and Prechter, p. 38. Copyright © 1978 by Frost and Prechter.)_
+> 
+> In general, the flat is more of a consolidation than a correction and is considered a sign of strength in a bull market.
+> 
+> ![Elliot Wave Theory: ](/.attachments/elliot.wave.theory-bull.flat.variation.png)
+> 
+> _Bull Market Flat (3-3-5), Normal Correction. (Frost and Prechter, p. 38. Copyright © 1978 by Frost and Prechter.)_
+> 
+> ![Elliot Wave Theory: ](/.attachments/elliot.wave.theory-bear.flat.png)
+> 
+> _Bear Market Flat (3-3-5), Normal Correction. (Frost and Prechter, p. 38. Copyright © 1978 by Frost and Prechter.)_
+> 
+> ![Elliot Wave Theory: ](/.attachments/elliot.wave.theory-bear.flat.variation.png)
+> 
+> _Bear Market Flat (3-3-5), Normal Correction. (Frost and Prechter, p. 38. Copyright © 1978 by Frost and Prechter.)_
+> 
+> In a bull market, for example, wave B rallies all the way to the top of wave A, showing greater market strength. The final wave C terminates at or just below the bottom of wave A in contrast to a zig-zag, which moves well under that point.
+> 
+> There are two “irregular” variations of the normal flat correction.
+> 
+> ![Elliot Wave Theory: ](/.attachments/elliot.wave.theory-bull.flat.irregular.png)
+> 
+> _Bull Market Flat (3-3-5), Irregular Correction. (Frost and Prechter,p. 39. Copyright © 1978 by Frost and Prechter.)_
+> 
+> ![Elliot Wave Theory: ](/.attachments/elliot.wave.theory-bull.flat.irregular.variation.png)
+> 
+> _Bull Market Flat (3-3-5), Irregular Correction. (Frost and Prechter, p. 39. Copyright © 1918 by Frost and Prechter.)_
+> 
+> ![Elliot Wave Theory: ](/.attachments/elliot.wave.theory-bear.flat.irregular.png)
+> 
+> _Bear Market Flat (3-3-5), Irregular Correction. (Frost and Prechter, p. 39. Copyright © 1978 by Frost and Prechter.)_
+> 
+> ![Elliot Wave Theory: ](/.attachments/elliot.wave.theory-bear.flat.irregular.variation.png)
+> 
+> _Bear Market Flat (3-3-5), Irregular Correction. (Frost and Prechter, p. 39. Copyright © 1978 by Frost and Prechter.)_
+> 
+> Another variation occurs when wave B reaches the top of A, but wave C fails to reach the bottom of A. Naturally, this last pattern denotes greater market strength in a bull market.
+> 
+> ![Elliot Wave Theory: ](/.attachments/elliot.wave.theory-bull.flat.inverted.irregular.png)
+> 
+> _Bull Market Flat (3-3-5), Inverted Irregular Correction. (Frost and Prechter, p. 40. Copyright © 1978 by Frost and Prechter.)_
+> 
+> ![Elliot Wave Theory: ](/.attachments/elliot.wave.theory-bull.flat.inverted.irregular.variation.png)
+> 
+> _Bull Market flat (3-3-5), Inverted Irregular Correction. (Frost and Prechter, p. 40. Copyright © 1978 by Frost and Prechter.)_
+> 
+> ![Elliot Wave Theory: ](/.attachments/elliot.wave.theory-bear.flat.inverted.irregular.png)
+> 
+> _Bear Market Flat (3-3-5), Inverted Irregular Correction (Frost and Prechter, p. 40. Copyright © 1978 by Frost and Prechter.)_
+> 
+> ![Elliot Wave Theory: ](/.attachments/elliot.wave.theory-bear.flat.inverted.irregular.variation.png)
+> 
+> _Bear Market Flat (3-3-5), Inverted Irregular Correction. (Frost and Prechter, p. 40. Copyright © 1978 by Frost and Prechter.)_
+> 
+> **Triangles**
+> 
+> Triangles usually occur in the fourth wave and precede the final move in the direction of the major trend. (They can also appear in the b wave of an a-b-c correction.) In an uptrend, therefore, it can be said that triangles are both bullish and bearish. They’re bullish in the sense that they indicate resumption of the uptrend. They’re bearish because they also indicate that after one more wave up, prices will probably peak.
+> 
+> ![Elliot Wave Theory: ](/.attachments/elliot.wave.theory-corrective.wave.triangles.png)
+> 
+> _Corrective Wave (Horizontal) Triangles. (Frost and Prechter, p. 43. Copyright © 1978 by Frost and Prechter.)_
+> 
+> Elliott’s interpretation of the triangle parallels the classical use of the pattern, but with his usual added precision. Remember from Chapter 6 that the triangle is usually a continuation pattern, which is exactly what Elliott said. Elliott’s triangle is a sideways consolidation pattern that breaks down into five waves, each wave in turn having three waves of its own. Elliott also classifies four different kinds of triangles—_ascending_, _descending_, _symmetrical_, and _expanding_—all of which were seen in Chapter 6.
+> 
+> Because chart patterns in commodity futures contracts sometimes don’t form as fully as they do in the stock market, it is not unusual for triangles in the futures markets to have only three waves instead of five. (Remember, however, that the minimum requirement for a triangle is still four points—two upper and two lower—to allow the drawing of two converging trendlines.) Elliott Wave Theory also holds that the fifth and last wave within the triangle sometimes breaks its trendline, giving a false signal, before beginning its “thrust” in the original direction.
+> 
+> Elliott’s measurement for the fifth and final wave after completion of the triangle is essentially the same as in classical charting—that is, the market is expected to move the distance that matches the widest part of the triangle (its height). There is another point worth noting here concerning the timing of the final top or bottom. According to Prechter, the apex of the triangle (the point where the two converging trendlines meet) often marks the timing for the completion of the final fifth wave.
+> 
+> **THE RULE OF ALTERNATION**
+> 
+> In its more general application, this rule or principle holds that the market usually doesn’t act the same way two times in a row. If a certain type of top or bottom occurred the last time around, it will probably not do so again this time. The rule of alternation doesn’t tell us exactly what will happen, but tells us what probably won’t. In its more specific application, it is most generally used to tell us what type of corrective pattern to expect. Corrective patterns tend to alternate. In other words, if corrective wave 2 was a simple a-b-c pattern, wave 4 will probably be a complex pattern, such as a triangle. Conversely, if wave 2 is complex, wave 4 will probably be simple. 
+> 
+> ![Elliot Wave Theory: ](/.attachments/elliot.wave.theory-rule.of.alternation.png)
+> 
+> _The Rule of Alternation. (Frost and Prechter, p. 50. Copyright © 1978 by Frost and Prechter.)_
+> 
+> 
+> **CHANNELING**
+> 
+> Another important aspect of wave theory is the use of _price channels_. You’ll recall that we covered trend channeling in Chapter 4. Elliott used price channels as a method of arriving at price objectives and also to help confirm the completion of wave counts. Once an uptrend has been established, an initial trend channel is constructed by drawing a basic up trendline along the bottoms of waves 1 and 2. A parallel channel line is then drawn over the top of wave 1 ... The entire uptrend will often stay within those two boundaries.
+> 
+> ![Elliot Wave Theory: ](/.attachments/elliot.wave.theory-channels.png)
+> 
+> _Old and New Channels. (Frost and Prechter, p. 62. Copyright © 1978 by Frost and Prechter.)_
+> 
+> If wave 3 begins to accelerate to the point that it exceeds the upper channel line, the lines have to be redrawn along the top of wave 1 and the bottom of wave 2 ... The final channel is drawn under the two corrective waves—2 and 4—and usually above the top of wave 3 ... If wave 3 is unusually strong, or an extended wave, the upper line may have to be drawn over the top of wave 1. The fifth wave should come close to the upper channel line before terminating. For the drawing of channel lines on long term trends, it’s recommended that semilog charts be employed along with arithmetic charts.
+>
+> ![Elliot Wave Theory: ](/.attachments/elliot.wave.theory-final.channel.png)
+> 
+> _Final Channel. (Frost and Prechter, p. 63. Copyright © 1978 by Frost and Prechter.)_
+> 
+> **WAVE 4 AS A SUPPORT AREA**
+> 
+> In concluding our discussion of wave formations and guidelines, one important point remains to be mentioned, and that is the significance of wave 4 as a support area in subsequent bear markets. Once five up waves have been completed and a bear trend has begun, that bear market will usually not move below the previous fourth wave of one lesser degree; that is, the last fourth wave that was formed during the previous bull advance. There are exceptions to that rule, but usually the bottom of the fourth wave contains the bear market. This piece of information can prove very useful in arriving at a maximum downside price objective.
+> 
+> ...
+>
+> It is important to keep in mind that wave theory was originally meant to be applied to the stock market averages. It doesn’t work as well in individual common stocks. It’s quite possible that it doesn’t work that well in some of the more thinly traded futures markets as well because mass psychology is one of the important foundations on which the theory rests. Gold, as an illustration, is an excellent vehicle for wave analysis because of its wide following.
+
+### Chapter 14. Time Cycles
+
+> ...
+>
+> It seems clear then that all phases of technical analysis depend to some extent on time considerations. Yet those considerations are not really applied in a consistent and dependable manner. That’s where time cycles come into play. Instead of playing a secondary or supporting role in market movement, cyclic analysts hold that time cycles are the determining factor in bull and bear markets. Not only is time the dominant factor, but all other technical tools can be improved by incorporating cycles. Moving averages and oscillators, for example, can be optimized by tying them to dominant cycles. Trendline analysis can be made more precise with cyclic analysis by determining which are valid trendlines and which are not. Price pattern analysis can be enhanced if combined with cyclic peaks and troughs. By the use of “time windows,” price movement can be filtered in such a way that extraneous action can be ignored and primary emphasis placed only on such times when important cycle tops and bottoms are due to occur.
+> 
+> **CYCLES**
+> 
+> The most intriguing book I’ve ever read on the subject of cycles was written by Edward R. Dewey, one of the pioneers of cyclic analysis, with Og Mandino entitled _Cycles: The Mysterious Forces That Trigger Events_. Thousands of seemingly unrelated cycles were isolated spanning hundreds and, in some cases, thousands of years. Everything from the 9.6 year cycle in Atlantic salmon abundance to the 22.20 year cycle in international battles from 1415 to 1930 was tracked. An average cycle of sunspot activity since 1527 was found to be 11.11 years. Several economic cycles, including the 18.33 year cycle in real estate activity and a 9.2 year stock market cycle, were presented.
+> 
+> ![Cycles: 22 Years of Sunspots](/.attachments/cycles-22.years.png)
+> 
+> _The 22.2 year cycle of incidence of sunspots. Drought often follows two years after the sunspot minima which last occurred in the early 1970s, and is due again in the mid 1990s. In the chart, the dotted line is the “ideal” cycle, and the solid line is the actual detrended data. (Courtesy of the Foundation for the Study of Cycles, Wayne, PA.)_
+> 
+> ![Cycles: International Battles](/.attachments/cycles-international.battles.png)
+> 
+> _The 22.2 year cycle in international battles was due to top in 1982. In the chart, the dotted line is the “ideal” cycle, and the solid line is the actual detrended data. (Courtesy of the Foundation for the Study of Cycles, Wayne, PA.)_
+> 
+> Two startling conclusions are discussed by Dewey. First, that many of the cycles of seemingly unrelated phenomena clustered around similar periods. On p. 188 of his book, Dewey listed 37 different examples of the 9.6 year cycle, including caterpillar abundance in New Jersey, coyote abundance in Canada, wheat acreage in the U.S., and cotton prices in the U.S. Why should such unrelated activities show the same cycles?
+> 
+> The second discovery was that these similar cycles acted in synchrony, that is, they turned at the same time. ... including marriages, immigration, and stock prices in the U.S. Dewey’s startling conclusion was that something “out there” in the universe must be causing these cycles; that there seemed to be a sort of pulse to the universe that accounted for the pervasive presence of these cycles throughout so many areas of human existence.
+> 
+> ![Cycles: 18 Years](/.attachments/cycles-18.years.png)
+> 
+> _The 18.2 year cycles on parade. (Source: Dewey, Edward R., Cycles: The Mysterious Forces That Trigger Events (New York: Manor Books, 1973.)_
+> 
+> In 1941, Dewey organized the Foundation for the Study of Cycles (900 W. Valley Rd., Suite 502, Wayne, PA 19087). It is the oldest organization engaged in cycles research and the recognized leader in the field. The Foundation publishes _Cycles_ magazine, which presents research in many different areas including economics and business. It also publishes a monthly report, _Cycle Projections_, which applies cyclical analysis to stocks, commodities, real estate and the economy.
+> 
+> In 1970, J.M. Hurst authored _The Profit Magic of Stock Transaction Timing_. Although it deals mainly with stock market cycles, this book represents one of the best explanations of cycle theory available in print, and is highly recommended reading. The following diagrams are derived from Hurst’s original work.
+
 
 ## Japanese Candlestick Charting Techniques
 
