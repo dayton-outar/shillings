@@ -33,6 +33,28 @@ It's possible that a trading platform can be built by accessing Jamaica's stock 
 > 
 > To subscribe to the services above,  please contact the [marketing department](mailto:jsegroupmarketing@jamstockex.com)
 
+See below results of conversation with Andrew Martin
+
+**Andrew Martin (IT)**
+
+ 1. Do you have any documentation about the structure of the information?
+    
+    No. API consumed by the public is in development but only brokers use the current API.
+
+ 2. As it relates archived information, can a customer decide how they want the information structured? (This is for archival data not the API)
+    
+    Information that was once on the site for download is old. The latest information will have all the necessary details for each record. Details on how the information can be delivered should be discussed with Suzzette McNaught (the IT Manager)
+
+ 3. I understand that the NASDAQ platform communicates with the JCSD system. What is the nature of the communication and how often does this communication happen? (Is it just during the creation of an account?)
+ 
+    JCSD's settlement system is slave when NASDAQ is master during order placement and match making. JCSD is the master when the account is being created.
+
+**Suzzette McNaught**
+
+ 1. I see API services advertized on the JSE site. Is there any documentation available for the API?
+ 2. What functions will be available from the API?
+ 3. What's involved in making request for archived data? Format? Data structure?
+
 ![Stages of KYC in Jamaica](/.attachments/jamaica.stock.exchange.landscape-kyc.png)
 
 When someone indicates interest in investing in the stock market, the brokers are engaged and they are the ones that take the prospect through all the KYC steps to meet the due diligence needs to fulfill legal requirements. The information gathered usually includes, identity information, proof of address and sources of funds.
