@@ -7,8 +7,9 @@ Publicly listed companies and their investors have their stories surrounding the
 ## The Plan
 
 1. Complete Market Research (January 2024)
-   1. Get API information from JSE (January 17, 2024)
-   2. Outline value proposition for each buyer persona
+   1. Outline value proposition for each buyer persona
+   2. Make appointment to see IT Manager and Library
+   3. Visit "Stocks on the Rocks". Gather needs and frustration of brokers and listed companies.   
    3. Determine [branding strategy](./BRANDING/)
 2. Complete Business Canvas (January 2024)
 3. Arrange focus group meeting for brainstorming and backlog discussion (January 2024)
