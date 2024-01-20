@@ -33,9 +33,9 @@ It's possible that a trading platform can be built by accessing Jamaica's stock 
 > 
 > To subscribe to the services above,  please contact the [marketing department](mailto:jsegroupmarketing@jamstockex.com)
 
-See below results of conversation with Andrew Martin
+See below results of conversation with Andrew Martin, Senior Database Administrator,
 
-**Andrew Martin (IT)**
+**[Andrew Martin](https://www.linkedin.com/in/andrew-martin-b5031039/)**
 
  1. Do you have any documentation about the structure of the information?
     
@@ -49,7 +49,7 @@ See below results of conversation with Andrew Martin
  
     JCSD's settlement system is slave when NASDAQ is master during order placement and match making. JCSD is the master when the account is being created.
 
-**Suzzette McNaught**
+**[Suzzette McNaught](https://www.linkedin.com/in/suzettemcnaught/)**
 
  1. I see API services advertized on the JSE site. Is there any documentation available for the API?
  2. What functions will be available from the API?
