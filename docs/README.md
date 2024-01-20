@@ -58,7 +58,7 @@ What is the 5-minute story of how the business makes the customer a hero?
    
    ![Buyer Persona for Tracy Trader](/.attachments/Buyer.Persona-Tracy.Trader-2.png)
 
-   ![Value Proposition Canvas for Tracy Trader](/.attachments/Value.Proposition.Canvas-Tracy.Trader.png)
+   ![Value Proposition Canvas for Tracy Trader](/.attachments/Shillings.Value.Proposition.Canvas-Tracy.Trader.png)
 
    ![Buyer Persona for Chris Charts](/.attachments/Buyer.Persona-Chris.Charts.png)
 
