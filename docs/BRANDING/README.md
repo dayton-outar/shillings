@@ -61,3 +61,7 @@ Here's a helpful tip. Upon sharing the need to rebrand to Owin Watson, he agreed
   ## The Experience
 
   The brand is at the very core, the experience that we promise to provide to them.
+
+  ## Videos
+
+  1. [How Brands Use Design & Marketing to Control Your Mind](https://youtu.be/p6aF5ma7BiM?si=5w_9Mrp8MqbgyJud)

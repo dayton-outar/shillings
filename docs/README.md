@@ -172,6 +172,9 @@ Drive traffic to site with [Simple Traffic](https://www.simpletraffic.co/).
 1. [How to Build a Product that Scales into a Company](https://youtu.be/r-98YRAF1dY?si=xcr-K0mXHTtkqqfJ)
 1. [Value Props: Create a Product People Will Actually Buy](https://youtu.be/q8d9uuO1Cf4?si=WH3HG24mDASxoEE5)
 1. [Value Proposition Canvas by Strategyzer.com explained through the Uber Example🚘](https://youtu.be/kiWkRiynPAo?si=w1UHWXlufSbHS3E8)
+1. [How I Brought My First Product to Market – Idea to Launch](https://youtu.be/5RJGSGTkpt0?si=Uw-A4_15oRvKgp41)
+1. [You will be executing immediately in 20 minutes | Blitzscaling Director's Cut](https://youtu.be/5mGMDdT6YrM?si=dSqpOWKN_OGSrGGn)
+1. [Aswath Damodaran: PRICELESS LECTURE About The Stock Market (Every Investor MUST WATCH)](https://youtu.be/zjXvbJUnCsM?si=Mze389kztEnuBROm)
 
 
 [^1]: [How to Value Companies Like a Value Investor - Chike Verwey | Learn Grow Invest Meeting - July 2020](https://youtu.be/JdgBlCKAa0M?si=K7wDavEWQvx02vWY&t=717)
