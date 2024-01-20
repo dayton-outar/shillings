@@ -41,6 +41,8 @@ Jamaica's increased exposure to technology creates a need for persons to do most
 
 Online experience offered by Jamaica Stock Exchange is disjointed[^1]
 
+What is the 5-minute story of how the business makes the customer a hero?
+
 ## Value Proposition
 
 ***Shillings*** caters to,

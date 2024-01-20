@@ -20,6 +20,18 @@ Trading is an economic activity based on human behaviour and the perception of t
 >
 > ... **behavioral finance** includes human psychology, market positioning, market sentiment, cognitive bias, feedback loops, and other individual human and group behavior characteristics that lead to price moves that cannot be explained by rational macro factors.
 
+...
+
+Warren Buffet and his mentor, Benjamin Graham, are strong believers in fundamental analysis, especially analysis that unravels the intrinsic value of a company, to determine how to buy stocks for the long-term. Buffett looks for stocks that he believes are undervalued by the market. He seeks companies with strong fundamentals, including a competitive advantage, consistent earnings, and a durable business model.
+
+The stock market, however, is filled with investors that may not embrace those beliefs. Investors are influenced to trade stocks on a number of factors that do not include the fundamental analysis of a company. Investors can be influenced by macro-economic factors such as inflation caused by changes in supply-chain management of goods and services in the world due to geo-political tensions. Investors are social beings and, hence, many will trade stocks based on what the 'herd' decides to do.
+
+Price action of stocks are based on supply and demand. It's basically a democratic process. When stocks are traded, it is basically investors voting with their money on whether they believe the value of a stock is going up or down. Socrates, the Greek Philosopher, expressed concerns about democracy when he criticised the idea of majority rule without a proper emphasis on wisdom and knowledge. He believed that decisions in a democratic society were often driven by the opinions of the majority, irrespective of their level of understanding or expertise on a given issue.
+
+Socrates argued that a democratic system could lead to decisions influenced by emotional appeals and demagogy rather than rational thinking and expertise. He was skeptical about the ability of the general populace to make informed and wise decisions, particularly in complex matters. Socrates believed that individuals with specialized knowledge and expertise, such as philosophers, should have a greater role in decision-making.
+
+So, let's bring the relevance of Socrates philosophy on democracy to Buffet's philosophy. Buffet's philosophy will only work if all investors were operating strictly off the performance of the company to which the stocks are associated.
+
 ## TO DO
 
  1. Complete Valuation Notes in [Asset Evaluation](./VALUATION.md)
