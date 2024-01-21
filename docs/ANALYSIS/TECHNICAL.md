@@ -1631,6 +1631,66 @@ Sources:
 > 
 > Moving averages can also be tied to cycles. You could use different moving averages to track different cycle lengths. To generate a moving average crossover system for a 40 day cycle, you could use a 40 day moving average in conjunction with a 20 day average (one-half of the 40 day cycle) or a 10 day average (one-quarter of the 40 day cycle). The main problem with this approach is determining what the dominant cycles are at a particular point in time.
 
+### Chapter 15, Computers and Trading Systems
+
+> It may strike you that there are too many indicators from which to choose. Instead of simplifying our lives, has the computer only served to complicate things by giving us so much more to look at? Charting packages offer 80 different studies that are available to the technician. How does one possibly reach any conclusions (and find the time to trade) with so much data to contend with? We’ll say a few words about some work being done in that direction.
+> 
+> ...
+> 
+> When first starting out, the user must collect historical data going back for at least several months to have something to work with. After that, data should be collected daily. It is possible to analyze “on line” data during the trading day by hooking up to a quote service. However, in our use of daily data, we will be referring to end-of-day data, which is available after the markets close. The final piece of equipment you might want is a printer to obtain a copy of whatever appears on the terminal screen. ...
+> 
+> **GROUPING TOOLS AND INDICATORS**
+> 
+> The following list groups some of the chart and indicator options.
+> 
+> - _Basic Charts_: Bar, line, point and figure, and candlesticks
+> - _Chart Scales_: Arithmetic and semilogarithmic
+> - _Bar Chart_: Price, volume, and open interest (for futures)
+> - _Volume_: Bars, on balance, and Demand Index
+> - _Basic Tools_: Trendlines and channels, percentage retracements, moving averages, and oscillators
+> - _Moving Averages_: Reference envelopes, Bollinger Bands
+> - _Oscillators_: Commodity Channel Index, momentum, rate of change, MACD, Stochastic, Williams %R, RSI
+> - _Cycles_: Cycle Finder
+> - _Fibonacci Tools_: Fan lines, arcs, time zones and retracements
+> - _Wilder_: RSI, Commodity Selection Index, Directional Movement, Parabolic, Swing Index, ADX line
+> 
+> **USING THE TOOLS AND INDICATORS**
+> 
+> How does one cope with so much from which to choose? A suggestion is to first use the basic tools such as price, volume, trendlines, percentage retracements, moving averages, and oscillators. Notice the large number of oscillators available. Pick one or two that you are most comfortable with and go with them. Use such things as cycles and Fibonacci tools as secondary inputs unless you have a special interest in those areas. Cycles can help fine tune moving average and oscillator lengths, but require study and practice. ***For mechanical trading systems, Wilder’s Parabolic and DMI are especially noteworthy***.
+> 
+> ...
+> 
+> **PROS AND CONS OF SYSTEM TRADING**
+> 
+> Advantages of Mechanical Systems
+> 
+> 1. Human emotion is eliminated.
+> 1. Greater discipline is achieved.
+> 1. More consistency is possible.
+> 1. Trades are taken in the direction of the trend.
+> 1. Participation is virtually guaranteed in the direction of every important trend.
+> 1. Profits are allowed to run.
+> 1. Losses are minimized.
+> 
+> Disadvantages of Mechanical Systems
+> 
+> 1. Most mechanical systems are trend-following.
+> 1. Trend-following systems rely on major trends in order to be profitable.
+> 1. Trend-following systems are generally nonprofitable when markets are not trending.
+> 1. There are long periods of time when markets are not trending and, therefore, not suitable for a trending approach.
+> 
+> The major problem is the failure of the system to recognize when the market is not trending and its inability to turn itself off. The measure of a good system is not only its ability to make money in trending markets, but its ability to preserve capital during nontrending periods. It is this inability of the system to monitor itself that is its greatest weakness. This is where some overriding filtering device, such as Welles Wilder’s Directional Movement system or the ADX line could prove especially useful by allowing the trader to determine which markets are most suitable for a trending system.
+> 
+> Another drawback is that no allowance is generally made for anticipating market reversals. Trend-following systems ride with the trend until it turns. They don’t recognize when a market has reached a long term support or resistance level, when oscillator divergences are being given, or when an Elliott Wave fifth pattern is clearly visible. Most traders would get more defensive at that point, and begin taking some profits. The system, however, will stay with the position until well after the market has changed direction. Therefore, it’s up to the trader to determine how best to employ the system. That is to say, whether it should be followed blindly or whether it should be incorporated into a trading plan with other technical factors. That brings us to our next section on how a mechanical system can be used as just another technical input into the forecasting and trading process.
+> 
+> The system signals can be used simply as a mechanical confirmation along with other technical factors. Even if the system is not being traded mechanically, and other technical factors are being employed, the signals could be used as a disciplined way to keep the trader on the right side of the major trend. No short positions would be taken as long as the computer trend was up. No longs would be taken in a computer downtrend. (This would be a simple way for fundamentally oriented traders to use a technical device as a filter or trigger on their own trading ideas.) Trend direction can be a matter of judgment. The computer signals relieve the trader of some degree of uncertainty. They can prevent him or her from falling into the trap of “top and bottom picking.”
+> 
+> System signals can also be used as an excellent screening device to alert the trader to recent trend changes. The trader can simply glance at the trend signals and instantly has several trading candidates. The same information could be found by studying all of the charts. The computer just makes that task quicker, easier, and more authoritative. The ability of the computer to automate system signals and then alert the trader when signals are triggered is an enormous asset, especially when the universe of financial markets has grown so large.
+
+### Chapter 16. Money Management and Trading Tactics
+
+> 
+
 ## Japanese Candlestick Charting Techniques
 
 © 2001 by Steve Nison
