@@ -1578,7 +1578,58 @@ Sources:
 > In 1941, Dewey organized the Foundation for the Study of Cycles (900 W. Valley Rd., Suite 502, Wayne, PA 19087). It is the oldest organization engaged in cycles research and the recognized leader in the field. The Foundation publishes _Cycles_ magazine, which presents research in many different areas including economics and business. It also publishes a monthly report, _Cycle Projections_, which applies cyclical analysis to stocks, commodities, real estate and the economy.
 > 
 > In 1970, J.M. Hurst authored _The Profit Magic of Stock Transaction Timing_. Although it deals mainly with stock market cycles, this book represents one of the best explanations of cycle theory available in print, and is highly recommended reading. The following diagrams are derived from Hurst’s original work.
-
+> 
+> ...
+> 
+> Chapter 3 in Hurst’s book explains in great detail how the standard charting techniques—trendlines and channels, chart patterns, and moving averages—can be better understood and used to greater advantage when coordinated with cyclic principles.
+> 
+> ...
+> 
+> Hurst also addresses how moving averages can be made more useful if their lengths are synchronized with dominant cycle lengths. Students of traditional charting techniques should gain additional insight into how these popular chart pictures form and maybe even why they work by reading Hurst’s chapter, entitled “Verify Your Chart Patterns.”
+> 
+> There are many different cycles affecting the financial markets. The only ones of real value for forecasting purposes are the _dominant cycles_. Dominant cycles are those that consistently affect prices and that can be clearly identified. Most futures markets have at least five dominant cycles. In an earlier chapter on the use of long term charts, it was stressed that ***all technical analysis should begin with the long term picture, gradually working toward the shorter term***. That principle holds true in the study of cycles. The proper procedure is to begin the analysis with a study of long term dominant cycles, which can span several years; then work toward the intermediate, which can be several weeks to several months; finally, the very short term cycles, from several hours to several days, can be used for timing of entry and exit points and to help confirm the turning points of the longer cycles.
+> 
+> The general categories are: _long term cycles_ (2 or more years in length), the _seasonal cycle_ (1 year), the _primary_ or _intermediate cycle_ (9 to 26 weeks), and the _trading cycle_ (4 weeks). The trading cycle breaks down into two shorter _alpha_ and _beta_ cycles, which average 2 weeks each. (The labels Primary, Trading, Alpha, and Beta are used by Walt Bressert to describe the various cycle lengths.)
+> 
+> ![Cycles: Power of Oscillators/Cycle Combinations](/.attachments/cycles-power.of.oscillators.png)
+> 
+> _(Source: The Power of Oscillator/Cycle Combinations by Walt Bressert.)_
+> 
+> There are even longer range cycles at work. Perhaps the best known is the approximate 54 year Kondratieff cycle. This controversial long cycle of economic activity, first discovered by a Russian economist in the 1920s by the name of Nikolai D. Kondratieff, appears to exert a major influence on virtually all stock and commodity prices. In particular, a 54 year cycle has been identified in interest rates, copper, cotton, wheat, stocks, and wholesale commodity prices. Kondratieff tracked his “long wave” from 1789 using such factors as commodity prices, pig iron production, and wages of agricultural workers in England. ...
+> 
+> ![Cycles: Kondratieff's Long Wave](/.attachments/cycles-kondratieff.jpg)
+> 
+> _Kondratieff’s long wave. For more information, see The Long Wave Cycle by Nikolai Kondratieff, translated by Guy Daniels (New York: Richardson and Snyder, 1984). That translation is the first ever from the original Russian text. (Copyright ©1984 by The New York Times Company. Reprinted by permission [May 27, 1984, p. F11.])_
+> 
+> As a general rule, long term and seasonal cycles determine the major trend of a market. Obviously, if a two year cycle has bottomed, it can be expected to advance for at least a year, measured from its trough to its crest. Therefore, the long term cycle exerts major influence on market direction. Markets also have annual seasonal patterns, meaning that they tend to peak or trough at certain times of the year. Grain markets, for example, usually hit their low point around harvest time and rally from there. Seasonal moves usually last for several months.
+> 
+> ...
+> 
+> Whether or not the moon has anything to do with it, the average 28 day cycle does exist and explains many of the numbers used in the development of shorter term indicators and trading systems. First of all, the 28 day cycle is based on calendar days. Translated into actual trading days, the number becomes 20. We’ve already commented on how many popular moving averages, oscillators, and weekly rules are based on the number 20 and its harmonically related shorter cycles, 10 and 5. The 5, 10, and 20 day moving averages are widely used along with their derivatives, 4, 9, and 18. Many traders use 10 and 40 day moving averages, with the number 40 being the next harmonically related longer cycle at twice the length of 20.
+> 
+> ...
+> 
+> In order to study the various cycles affecting any given market, it is necessary to first isolate each dominant cycle. There are various ways of accomplishing this task. The simplest is by visual inspection. By studying daily bar charts, for example, it is possible to identify obvious tops and bottoms in a market. By taking the average time periods between those cyclic tops and bottoms, certain average lengths can be found.
+> 
+> ...
+> 
+> All markets are affected to some extent by an annual seasonal cycle. The seasonal cycle refers to the tendency for markets to move in a given direction at certain times of the year. The most obvious seasonals involve the grain markets where seasonal lows usually occur around harvest time when supply is most plentiful. In soybeans, for example, most seasonal tops occur between April and June with seasonal bottoms taking place between August and October.
+> 
+> ...
+> 
+> ... Treasury Bond prices usually hit important highs during January. Over the entire year, Treasury Bond prices are usually weaker during the first half of the year and stronger during the second half. ...
+> 
+> ...
+> 
+> Did you know that the strongest three month span for the stock market is November through January? February is then weaker, but is followed by a strong March and April. After a soft June, the market turns strong during July (the start of the traditional summer rally). The weakest month of the year is September. The strongest month is December (ending with the well known Santa Claus rally just after Christmas). That information, and a whole lot more about stock market cycles, can be found in Yale Hirsch’s annual _Stock Trader’s Almanac_ (The Hirsch Organization, 184 Central Avenue, Old Tappen, NJ 07675).
+> 
+> According to Hirsch: “as January goes, so goes the year.” The well known January Barometer holds that what the S&P 500 does during January will determine what kind of year the market as a whole will have. Another variation on that theme is the belief that the direction of the S&P 500 during the first 5 trading days of the year gives some hint of what’s ahead for the year. The January Barometer shouldn’t be confused with the January Effect, which is the tendency for smaller stocks to outperform larger stocks during January.
+> 
+> ...
+> 
+> Two of the most promising areas of overlap between cycles and traditional technical indicators are in the use of moving averages and oscillators. It is believed that the usefulness of both indicators can be enhanced if the time periods used are tied to each market’s dominant cycles. Let’s assume that a market has a dominant 20 day trading cycle. Normally, when constructing an oscillator, it’s best to use half the length of the cycle. In this case, the oscillator period would be 10 days. To trade a 40 day cycle, use a 20 day oscillator.
+> 
+> Moving averages can also be tied to cycles. You could use different moving averages to track different cycle lengths. To generate a moving average crossover system for a 40 day cycle, you could use a 40 day moving average in conjunction with a 20 day average (one-half of the 40 day cycle) or a 10 day average (one-quarter of the 40 day cycle). The main problem with this approach is determining what the dominant cycles are at a particular point in time.
 
 ## Japanese Candlestick Charting Techniques
 
