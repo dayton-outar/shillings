@@ -62,7 +62,7 @@ Brokers are the intermediaries needed to ensure investors abide by regulations, 
 
 #### Tracy Trader, The Swing Income Trader
 
-Tracy Trader is described as the Swing Income Trader because she seeks to generate a steady stream of income from dividend-paying stocks but also is interested in the capital gains from stocks that increase in value. She swings from stock to stock for every opportunity to earn income despite the fees charged for this practice. She is indeed a short-term investor that is entertained and committed to the stock market more than the long-term investor.
+Tracy Trader is described as the Swing Income Trader because she seeks to generate a steady stream of income from dividend-paying stocks but she is also interested in the capital gains from stocks that increase in value. She swings from stock to stock for every opportunity to earn income. She is indeed a short-term investor that is entertained and committed to the stock market more than the long-term investor.
 
 ![Buyer Persona for Tracy Trader](/.attachments/Buyer.Persona-Tracy.Trader-2.png)
 
