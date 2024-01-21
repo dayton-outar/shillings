@@ -1689,7 +1689,79 @@ Sources:
 
 ### Chapter 16. Money Management and Trading Tactics
 
+> Any successful trading program must take into account three important factors: price forecasting, timing, and money management.
 > 
+> 1. _Price forecasting_ indicates which way a market is expected to trend. It is the crucial first step in the trading decision. The forecasting process determines whether the trader is bullish or bearish. It provides the answer to the basic question of whether to enter the market from the long or short side. If the price forecast is wrong, nothing else that follows will work.
+> 
+> 1. _Trading tactics_, or timing, determines specific entry and exit points. Timing is especially crucial in futures trading. Because of the low margin requirements and the resulting high leverage, there isn’t much room for error. It’s quite possible to be correct on the direction of the market, but still lose money on a trade if the timing is off. Timing is almost entirely technical in nature. Therefore, even if the trader is fundamentally oriented, technical tools must be employed at this point to determine specific entry and exit points.
+> 
+> 1. _Money management_ covers the allocation of funds. It includes such areas as portfolio makeup, diversification, how much money to invest or risk in any one market, the use of stops, reward-to-risk ratios, what to do after periods of success or adversity, and whether to trade conservatively or aggressively.
+> 
+> The simplest way to summarize the three different elements is that price forecasting tells the trader _what_ to do (buy or sell), timing helps decide _when_ to do it, and money management determines _how much_ to commit to the trade. The subject of price forecasting has been covered in the previous chapters. We’ll deal with the other two aspects here. We’ll discuss money management first because that subject should be taken into consideration when deciding on the appropriate trading tactics.
+
+### Chapter 19. Putting It All Together - A Checklist
+
+> ... technical analysis is a blend of many approaches. Each approach adds something to the analyst’s knowledge of the market. Technical analysis is much like putting together a giant jigsaw puzzle. Each technical tool holds a piece of the puzzle. My approach to market analysis is to combine as many techniques as possible. Each works better in certain market situations. The key is knowing which tools to emphasize in the current situation. That comes with knowledge and experience.
+> 
+> All of these approaches overlap to some extent and complement one another. The day the user sees these interrelationships, and is able to view technical analysis as the sum of its parts, is the day that person deserves the title of technical analyst. The following checklist is provided to help the user touch all the bases, at least in the early going. Later on, the checklist becomes second nature. The checklist is not all-inclusive, but does have most of the more important factors to keep in mind. Sound market analysis seldom consists of doing the obvious. The technician is constantly seeking clues to future market movement. ***The final clue that leans the trader in one direction or the other is often some minor factor that has gone largely unnoticed by others. The more factors the analyst considers, the better the chances of finding that right clue.***
+> 
+> **TECHNICAL CHECKLIST**
+> 
+> 1. What is the direction of the overall market?
+> 1. What is the direction of the various market sectors?
+> 1. What are the _weekly_ and _monthly_ charts showing?
+> 1. Are the major, intermediate, and minor _trends_ up, down, or sideways?
+> 1. Where are the important _support_ and _resistance_ levels?
+> 1. Where are the important _trendlines_ or _channels_?
+> 1. Are _volume_ and _open interest_ confirming the price action?
+> 1. Where are the 33%, 50%, and 66% _retracements_?
+> 1. Are there any price gaps and what type are they?
+> 1. Are there any _major reversal patterns_ visible?
+> 1. Are there any _continuation patterns_ visible?
+> 1. What are the _price objectives_ from those patterns?
+> 1. Which way are the _moving averages_ pointing?
+> 1. Are the _oscillators_ overbought or oversold?
+> 1. Are any _divergences_ apparent on the oscillators?
+> 1. Are _contrary opinion_ numbers showing any extremes?
+> 1. What is the _Elliot Wave_ pattern showing?
+> 1. Are there any obvious _3 or 5 wave patterns_?
+> 1. What about _Fibonacci_ retracements or projections?
+> 1. Are there any _cycle_ tops or bottoms due?
+> 1. Is the market showing _right or left translation_?
+> 1. Which way is the _computer trend_ moving: up, down, or sideways?
+> 1. What are the _point and figure_ charts or _candlesticks_ showing?
+>
+> After you’ve arrived at a bullish or bearish conclusion, ask yourself the following questions.
+> 
+> 1. Which way will this market trend over the next several months?
+> 1. Am I going to buy or sell this market?
+> 1. How many units will I trade?
+> 1. How much am I prepared to risk if I’m wrong?
+> 1. What is my profit objective?
+> 1. Where will I enter the market?
+> 1. What type of order will I use?
+> 1. Where will I place my protective stop?
+> 
+> Going through the checklist won’t guarantee the right conclusions. It’s only meant to help you ask the right questions. Asking the right questions is the surest way of finding the right answers. The keys to successful trading are knowledge, discipline, and patience. Assuming that you have the knowledge, the best way to achieve discipline and patience is doing your homework and having a plan of action. The final step is putting that plan of action to work. Even that won’t guarantee success, but it will greatly increase the odds of winning in the financial markets.
+
+This author has a disclaimer in almost every chapter. So, you leave this book thinking nothing is sure to work.
+
+> **HOW TO COORDINATE TECHNICAL AND FUNDAMENTAL ANALYSIS**
+> 
+> Despite the fact that technicians and fundamentalists are often at odds with one another, there are ways they can work together for mutual benefit. Market analysis can be approached from either direction. While I believe that technical factors do lead the known fundamentals, I also believe that any important market move must be caused by underlying fundamental factors. Therefore, it simply makes sense for a technician to have some awareness of the fundamental condition of a market. If nothing else, the technician can inquire from his or her fundamental counterpart as to what would have to happen fundamentally to justify a significant market move identified on a price chart. In addition, seeing how the market reacts to fundamental news can be used as an excellent technical indication.
+> 
+> The fundamental analyst can use technical factors to confirm an analysis or as an alert that something important may be happening. The fundamentalist can consult a price chart or use a computer trend-following system as a filter to prevent him or her from assuming a position opposite an existing trend. Some unusual action on a price chart can act as an alert for the fundamental analyst and cause him or her to examine the fundamental situation a bit closer. During my years in the technical analysis department of a major brokerage firm, ***I often approached our fundamental department to discuss some market move that seemed imminent on the price charts. I often received responses like “that can never happen” or “no way.” Very often, that same person was scrambling a couple of weeks later to find fundamental reasons to explain a sudden and “unexpected” market move. There’s obviously room for much more coordination and cooperation in this area.***
+> 
+> ...
+> 
+> **TECHNICAL ANALYSIS BY ANY NAME**
+> 
+> After a century of use in this country (and 300 years in Japan), technical analysis is more popular than ever. Of course, it’s not always called technical analysis. In my book, _The Visual Investor_, I called it _visual analysis_. That was simply an attempt to get people beyond the intimidating title of technical analysis and to get them to examine this valuable approach more closely. Whatever you want to call it, technical analysis is practiced under many names. ***A lot of financial organizations employ analysts whose job it is to number-crunch market prices to find stocks or stock groups that are expensive (overbought) or cheap (oversold). They’re called quantitative analysts, but the numbers they crunch are often the same ones the technicians are crunching.*** The financial press has written about a “new” class of trader called “momentum” players. These traders move funds out of stocks and stock groups that are showing poor momentum and into those that are showing good momentum. They use a technique called relative strength. Of course, we recognize “momentum” and “relative strength” as technical terms.
+> 
+> Then there are the brokerage firms’ “fundamental” upgrades and downgrades. Have you noticed how often these “fundamental” changes take place the day after a significant “chart” breakout or breakdown? Economists, who certainly don’t consider themselves technical analysts, use charts all the time to measure the direction of inflation, interest rates, and all sorts of economic indicators. And they talk about the “trend” of those charts. Even fundamental tools like the price/earnings ratio have a technical side to them. ***Anytime you introduce price into the equation, you’re moving into the realm of technical analysis.*** Or when security analysts say the dividend yield of the stock market is too low, aren’t they saying prices are too high? Isn’t that the same thing as saying a market is overbought?
+> 
+> Finally, there are the academics who have reinvented technical analysis under the new name of _Behavioral Finance_. For years, the academics espoused the Efficient Market Hypothesis to prove that technical analysis simply didn’t work. No less an authority than the Federal Reserve Board has thrown some doubt on those ideas.
+
 
 ## Japanese Candlestick Charting Techniques
 
