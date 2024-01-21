@@ -51,10 +51,8 @@ Brokers are the intermediaries needed to ensure investors abide by regulations, 
 
 ### Investors
 
-**For** Investors
-
-**Who are dissatisfied with** having a disjointed experience using several sources
-
+**For** Investors \
+**Who are dissatisfied with** having a disjointed experience using several sources \
 **Our product provides**,
 - Fully digitized trading platform integrated with insights (financial analysis) and training <--
 - Ease of access to analysis of stock prices and company performance (technical and fundamental analysis) <--
@@ -66,10 +64,8 @@ Brokers are the intermediaries needed to ensure investors abide by regulations, 
 
 ![Buyer Persona for Tracy Trader](/.attachments/Buyer.Persona-Tracy.Trader-2.png)
 
-**For** Swing Income Traders
-
-**Who are dissatisfied with** SimplyWall.st and JTrader Pro
-
+**For** Swing Income Traders \
+**Who are dissatisfied with** SimplyWall.st and JTrader Pro \
 **Our product provides**,
 - IPO Checklist _that scores new IPO_
 - New Sentiment Interpreter _that determines if news is bullish, bearish or neutral_
@@ -84,10 +80,8 @@ Brokers are the intermediaries needed to ensure investors abide by regulations, 
 
 ![Buyer Persona for Chris Charts](/.attachments/Buyer.Persona-Chris.Charts.png)
 
-**For** Day Income Traders
-
-**Who are dissatisfied with** Jamaica Stock Exchange web site, Investing.com and JTrader Pro
-
+**For** Day Income Traders \
+**Who are dissatisfied with** Jamaica Stock Exchange web site, Investing.com and JTrader Pro \
 **Our product provides**,
 - Real-time Technicals _to be more confident on when to enter and exit the market_
 - Ability to trade stocks _on the same system on which technical analysis was performed_
@@ -98,10 +92,8 @@ Brokers are the intermediaries needed to ensure investors abide by regulations, 
 
 ![Buyer Persona for Ingrid Investor](/.attachments/Buyer.Persona-Ingrid.Investor.png)
 
-**For** Long-term Investors
-
-**Who are dissatisfied with** SimplyWall.st and their broker's newsletters
-
+**For** Long-term Investors \
+**Who are dissatisfied with** SimplyWall.st and their broker's newsletters \
 **Our product provides**,
 - Interactive Financial Reports _that's easier to navigate annual and quarterly reports_
 - Financial Shenanigans Notes _that lists discrepancies in financial reports_
@@ -114,10 +106,8 @@ Brokers are the intermediaries needed to ensure investors abide by regulations, 
 
 ![Buyer Persona for Knows Nothing](/.attachments/Buyer.Persona-Knows.Nothing.png)
 
-**For** Novices
-
-**Who are dissatisfied with** Jamaica Stock Exchange and Investopedia.com
-
+**For** Novices \
+**Who are dissatisfied with** Jamaica Stock Exchange and Investopedia.com \
 **Our product provides**,
 - Tour Guide _that helps through learning the stock market_
 - Archive of Financial Reports _to study reports and observe performance trends_
