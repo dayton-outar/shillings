@@ -54,13 +54,15 @@ Brokers are the intermediaries needed to ensure investors abide by regulations, 
 **For** Investors \
 **Who are dissatisfied with** having a disjointed experience using several sources \
 **Our product provides**,
-- Fully digitized trading platform integrated with insights (financial analysis) and training <--
-- Ease of access to analysis of stock prices and company performance (technical and fundamental analysis) <--
-- [Integrated Learning Experience](https://github.com/dayton-outar/shillings/issues/65) _where tour guides progressive exposure of information is used to train investors_.
-- Make use of visual media as much as possible. Make less use of written content. Less reading more visual appeal. <--
+- Easy On-boarding
+- Easily Accessibly Resources _relevant to the stock market_
+- [Integrated Learning Experience](https://github.com/dayton-outar/shillings/issues/65) _where tour guides and progressive exposure of information is used to train investors_
+- Visually Immersive Experience _where graphics are used as much as possible to explain concepts; less reading more visual cues_
 - [Integrated Social Experience](https://github.com/dayton-outar/shillings/issues/53) _where investors can learn from the real gains or losses of other investors_
 
 #### Tracy Trader, The Swing Income Trader
+
+Tracy Trader is described as the Swing Income Trader because she seeks to generate a steady stream of income from dividend-paying stocks but also is interested in the capital gains from stocks that increase in value. She swings from stock to stock for every opportunity to earn income despite the fees charged for this practice. She is indeed a short-term investor that is entertained and committed to the stock market more than the long-term investor.
 
 ![Buyer Persona for Tracy Trader](/.attachments/Buyer.Persona-Tracy.Trader-2.png)
 
@@ -78,6 +80,8 @@ Brokers are the intermediaries needed to ensure investors abide by regulations, 
 
 #### Chris Charts, The Day Income Trader
 
+Chris Charts is a short-term investor, who's looking for every opportunity to gain income from capital gains. Chris is more influenced by the trends of the market rather than any form of fundamentals about the companies to which the stocks are associated. Speed of analysis and making the right trading decision is his sole priority.
+
 ![Buyer Persona for Chris Charts](/.attachments/Buyer.Persona-Chris.Charts.png)
 
 **For** Day Income Traders \
@@ -89,6 +93,8 @@ Brokers are the intermediaries needed to ensure investors abide by regulations, 
 ![Value Proposition Canvas for Chris Charts](/.attachments/Shillings.Value.Proposition.Canvas-Chris.Charts.png)
 
 #### Ingrid Investor, The Long-term Investor
+
+Ingrid Investor is a long-term investor that cannot be bothered to check up on the daily ups and downs of the market. She is more focused on the long-term returns that her investment in a particular stock will yield. Some of Ingrid's peers prefer to have a mutual fund manage their funds until they "mature" for them when they retire. Ingrid is just a little bit more adventurous and open to learning the stock market.
 
 ![Buyer Persona for Ingrid Investor](/.attachments/Buyer.Persona-Ingrid.Investor.png)
 
@@ -103,6 +109,8 @@ Brokers are the intermediaries needed to ensure investors abide by regulations, 
 ![Value Proposition Canvas for Ingrid Investor](/.attachments/Shillings.Value.Proposition.Canvas-Ingrid.Investor.png)
 
 #### Knows Nothing, Novices
+
+Knows Nothing is a novice to the stock market but he is fascinated with the excitement from hearing persons that make gains from trading stocks. He wants to learn but there are so many terms, symbols, figures and combination of chart patterns that intimidate him. He took a look at Investopedia.com but doesn't even know where to start learning. The volume of information to cover is overwhelming. Knows Nothing needs a guide and a plan to get through the difficult learning curve.
 
 ![Buyer Persona for Knows Nothing](/.attachments/Buyer.Persona-Knows.Nothing.png)
 
