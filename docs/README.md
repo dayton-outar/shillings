@@ -24,17 +24,13 @@ Publicly listed companies and their investors have their stories surrounding the
    2. Deliver branded presentation
    3. Usher commitment from members of community
 
-
-:bulb: People learn from each other. How can the product be designed so that people can learn from each other easily?
- - Need an achievements and rewards system and live feed that shows percentage gains that person made as a social part of the system. This achievement feed item can be liked and commented by others (do we need a follow or friend request system)
-
 Notes left to take,
 
  - Technical analysis
 
  - Valuation
 
- - Complete all readme for analaysis, branding, marketing and experience
+ - Complete all readme for [analaysis](./ANALYSIS/), [branding](./BRANDING/), [marketing](./MARKETING/) and [experience](./EXPERIENCE/)
 
 ## The Problem
 
@@ -46,43 +42,88 @@ What is the 5-minute story of how the business makes the customer a hero?
 
 ## Value Proposition
 
-***Shillings*** caters to,
-
+***Shillings*** caters to 3 major players of the stock market,
 1. Investors
-
-   Value Proposition:
-    - Fully digitized trading platform integrated with insights (financial analysis) and training
-       - Ease of access to analysis of stock prices and company performance (technical and fundamental analysis)
-       - An integrated learning experience. Injecting definitions from Investopedia into tips.
-       - Make use of visual media as much as possible. Make less use of written content. Less reading more visual appeal.
-   
-   ![Buyer Persona for Tracy Trader](/.attachments/Buyer.Persona-Tracy.Trader-2.png)
-
-   ![Value Proposition Canvas for Tracy Trader](/.attachments/Shillings.Value.Proposition.Canvas-Tracy.Trader.png)
-
-   ![Buyer Persona for Chris Charts](/.attachments/Buyer.Persona-Chris.Charts.png)
-
-   ![Value Proposition Canvas for Chris Charts](/.attachments/Shillings.Value.Proposition.Canvas-Chris.Charts.png)
-
-   ![Buyer Persona for Ingrid Investor](/.attachments/Buyer.Persona-Ingrid.Investor.png)
-
-   ![Value Proposition Canvas for Ingrid Investor](/.attachments/Shillings.Value.Proposition.Canvas-Ingrid.Investor.png)
-
-   ![Buyer Persona for Knows Nothing](/.attachments/Buyer.Persona-Knows.Nothing.png)
-
-   ![Value Proposition Canvas for Knows Nothing](/.attachments/Shillings.Value.Proposition.Canvas-Knows.Nothing.png)
-
 2. Brokers
-   
-   Value Proposition:
-    - Ease of on-boarding new investors
-    - Ease of tracking and trading fund-in and fund-out request. Showing and allowing communication between broker and investor at each stage of trading.
-  
-3. Listed Companies
+3. Publicly Listed Companies
 
-   Value Proposition:
-    - Deliver reports with the similar experience as an annual report via their company profile. Shifting from PDF to visually interactive media experience.
-    - Engage investors to purchase their stocks
+Brokers are the intermediaries needed to ensure investors abide by regulations, while the stock exchange focuses on settling trades. They are not the drivers in this industry. If _Shillings_ becomes a broker, the main focus will be on the investors and the publicly listed companies.
+
+### Investors
+
+**For** Investors
+**Who are dissatisfied with** having a disjointed experience using several sources
+**Our product provides**,
+- Fully digitized trading platform integrated with insights (financial analysis) and training <--
+- Ease of access to analysis of stock prices and company performance (technical and fundamental analysis) <--
+- [Integrated Learning Experience](https://github.com/dayton-outar/shillings/issues/65) _where tour guides progressive exposure of information is used to train investors_.
+- Make use of visual media as much as possible. Make less use of written content. Less reading more visual appeal. <--
+- [Integrated Social Experience](https://github.com/dayton-outar/shillings/issues/53) _where investors can learn from the real gains or losses of other investors_
+
+#### Tracy Trader, The Swing Income Trader
+
+![Buyer Persona for Tracy Trader](/.attachments/Buyer.Persona-Tracy.Trader-2.png)
+
+**For** Swing Income Traders
+**Who are dissatisfied with** SimplyWall.st and JTrader Pro
+**Our product provides**,
+- IPO Checklist _that scores new IPO_
+- New Sentiment Interpreter _that determines if news is bullish, bearish or neutral_
+- Expert's Rating System _that determines soundness and reputation of expert's advice_
+- Fast Fund-in/Fund-out _to quickly place BUY or SELL order_
+- Shareholder Relationship Tree _to determine influential investors_. See [Expanded Company Profile](https://github.com/dayton-outar/shillings/issues/39).
+- Portfolio Statement _to know real-time the gains/loss of portfolio_
+
+![Value Proposition Canvas for Tracy Trader](/.attachments/Shillings.Value.Proposition.Canvas-Tracy.Trader.png)
+
+#### Chris Charts, The Day Income Trader
+
+![Buyer Persona for Chris Charts](/.attachments/Buyer.Persona-Chris.Charts.png)
+
+**For** Day Income Traders
+**Who are dissatisfied with** Jamaica Stock Exchange web site, Investing.com and JTrader Pro
+**Our product provides**,
+- Real-time Technicals _to be more confident on when to enter and exit the market_
+- Ability to trade stocks _on the same system on which technical analysis was performed_
+
+![Value Proposition Canvas for Chris Charts](/.attachments/Shillings.Value.Proposition.Canvas-Chris.Charts.png)
+
+#### Ingrid Investor, The Long-term Investor
+
+![Buyer Persona for Ingrid Investor](/.attachments/Buyer.Persona-Ingrid.Investor.png)
+
+**For** Long-term Investors
+**Who are dissatisfied with** SimplyWall.st and their broker's newsletters
+**Our product provides**,
+- Interactive Financial Reports _that's easier to navigate annual and quarterly reports_
+- Financial Shenanigans Notes _that lists discrepancies in financial reports_
+- Buffet's Performance Checklist _that scores a company's durable competitive advantage_
+- Intrinsic Valuation Deduction _that evaluates the company based on it's latest story, performance and projections_
+
+![Value Proposition Canvas for Ingrid Investor](/.attachments/Shillings.Value.Proposition.Canvas-Ingrid.Investor.png)
+
+#### Knows Nothing, Novices
+
+![Buyer Persona for Knows Nothing](/.attachments/Buyer.Persona-Knows.Nothing.png)
+
+**For** Novices
+**Who are dissatisfied with** Jamaica Stock Exchange and Investopedia.com
+**Our product provides**,
+- Tour Guide _that helps through learning the stock market_
+- Archive of Financial Reports _to study reports and observe performance trends_
+- Mock Trade Platform _to conduct trades without money_
+
+![Value Proposition Canvas for Knows Nothing](/.attachments/Shillings.Value.Proposition.Canvas-Knows.Nothing.png)
+
+### Brokers
+   
+- Ease of on-boarding new investors
+- Ease of tracking and trading fund-in and fund-out request. Showing and allowing communication between broker and investor at each stage of trading.
+  
+### Listed Companies
+
+- Deliver reports with the similar experience as an annual report via their company profile. Shifting from PDF to visually interactive media experience.
+- Engage investors to purchase their stocks
 
 Apart from providing analysis on companies, this project seeks to enable customers to purchase and sell stocks via a chosen stock broker online. This project adds value by offering the convenience to conduct business this without submitting anything physical or go into any office in person.
 
