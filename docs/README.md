@@ -56,7 +56,7 @@ Brokers are the intermediaries needed to ensure investors abide by regulations, 
 - Easy On-boarding
 - Easily Accessibly Resources _relevant to the stock market_
 - [Integrated Learning Experience](https://github.com/dayton-outar/shillings/issues/65) _where tour guides and progressive exposure of information is used to train investors_
-- Visually Immersive Experience _where graphics are used as much as possible to explain concepts; less reading more visual cues_
+- Visually Immersive Experience _where [graphics](https://github.com/dayton-outar/shillings/issues/51) are used as much as possible to explain concepts; less reading more visual cues_
 - [Integrated Social Experience](https://github.com/dayton-outar/shillings/issues/53) _where investors can learn from the real gains or losses of other investors_
 
 #### Tracy Trader, The Swing Income Trader
@@ -68,12 +68,12 @@ Tracy Trader is described as the Swing Income Trader because she seeks to genera
 **For** Swing Income Traders \
 **Who are dissatisfied with** SimplyWall.st and JTrader Pro \
 **Our product provides**,
-- IPO Checklist _that scores new IPO_
+- [IPO Checklist](https://github.com/dayton-outar/shillings/issues/63) _that scores new IPO_
 - New Sentiment Interpreter _that determines if news is bullish, bearish or neutral_
-- Expert's Rating System _that determines soundness and reputation of expert's advice_
+- [Expert's Rating System](https://github.com/dayton-outar/shillings/issues/66) _that determines soundness and reputation of expert's advice_
 - Fast Fund-in/Fund-out _to quickly place BUY or SELL order_
 - Shareholder Relationship Tree _to determine influential investors_. See [Expanded Company Profile](https://github.com/dayton-outar/shillings/issues/39).
-- Portfolio Statement _to know real-time the gains/loss of portfolio_
+- [Portfolio Statement](https://github.com/dayton-outar/shillings/issues/60) _to know real-time the gains/loss of portfolio_
 
 ![Value Proposition Canvas for Tracy Trader](/.attachments/Shillings.Value.Proposition.Canvas-Tracy.Trader.png)
 
@@ -100,9 +100,9 @@ Ingrid Investor is a long-term investor that cannot be bothered to check up on t
 **For** Long-term Investors \
 **Who are dissatisfied with** SimplyWall.st and their broker's newsletters \
 **Our product provides**,
-- Interactive Financial Reports _that's easier to navigate annual and quarterly reports_
-- Financial Shenanigans Notes _that lists discrepancies in financial reports_
-- Buffet's Performance Checklist _that scores a company's durable competitive advantage_
+- [Interactive Financial Reports](https://github.com/dayton-outar/shillings/issues/26) _that's easier to navigate annual and quarterly reports_
+- [Financial Shenanigans Notes](https://github.com/dayton-outar/shillings/issues/26) _that lists discrepancies in financial reports_
+- [Buffet's Performance Checklist](https://github.com/dayton-outar/shillings/issues/26) _that scores a company's durable competitive advantage_
 - Intrinsic Valuation Deduction _that evaluates the company based on it's latest story, performance and projections_
 
 ![Value Proposition Canvas for Ingrid Investor](/.attachments/Shillings.Value.Proposition.Canvas-Ingrid.Investor.png)
@@ -118,7 +118,7 @@ Knows Nothing is a novice to the stock market but he is fascinated with the exci
 **Our product provides**,
 - Tour Guide _that helps through learning the stock market_
 - Archive of Financial Reports _to study reports and observe performance trends_
-- Mock Trade Platform _to conduct trades without money_
+- [Mock Trade Platform](https://github.com/dayton-outar/shillings/issues/64) _to conduct trades without money_
 
 ![Value Proposition Canvas for Knows Nothing](/.attachments/Shillings.Value.Proposition.Canvas-Knows.Nothing.png)
 
