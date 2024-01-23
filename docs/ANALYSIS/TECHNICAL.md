@@ -1815,7 +1815,121 @@ Disinflation can occur for various reasons, such as a decrease in demand for goo
 
 ### Chapter 18. Stock Market Indicators
 
-
+> In the previous chapter, we described the top-down approach that is most commonly employed in stock market analysis. With that approach, you begin your analysis with a study of the health of the overall market. Then you work down to market sectors and industry groups. The final step is the study of individual stocks. Your goal is to pick the best stocks in the best groups in an environment when the stock market is technically healthy. The study of market sectors and individual stocks can be accomplished with the technical tools employed throughout this book—including chart patterns, volume analysis, trendlines, moving averages, oscillators, etc. Those same indicators can also be applied to the major market averages. But there’s another class of market indicators widely employed in stock market analysis whose purpose is to determine the health of the overall stock market by measuring market breadth. The data used in their construction are advancing versus declining issues, new highs versus new lows, and up volume versus down volume.
+> 
+> **SAMPLE DATA**
+> 
+> If you check the Stock Market Data Bank section of The Wall Street Journal (Section C, page 2) each day, you’ll find the following data for the previous trading day. The numbers shown are based on an actual day’s trading results.
+> 
+> | Diaries NYSE | Monday |
+> |:--- | ---:|
+> | Issues Traded | 3,432 |
+> | Advances | 1,327 |
+> | Declines | 1,559 |
+> | Unchanged | 546 |
+> | New highs | 78 |
+> | New lows | 43 |
+> | Adv vol (000) | 248,215 |
+> | Decl vol (000) | 279,557 |
+> | Total vol (000) | 553,914 |
+> | Closing tick | -135 |
+> | Closing Arms<br />(trin) | .96 |
+> 
+> The above figures are derived from New York Stock Exchange (NYSE) data. A similar breakdown is also shown for the NASDAQ and the American Stock Exchange. We’ll concentrate on the NYSE in this discussion. It just so happens that on that particular day the Dow Jones Industrial Average had gained 12.20 points. So the market was up as measured by the Dow. However, there were more declining stocks (1,559) than advancing stocks (1,327), suggesting that the broader market didn’t fare as well as the Dow. There was also more declining volume than advancing volume. Those two sets of figures suggest that market breadth was actually negative for that particular day—even though the Dow itself closed higher. The other figures present a more mixed picture. The number of stocks hitting new 52 week highs (78) was greater than those hitting new lows (43) suggesting a positive market environment. However, the closing tick (the number of stocks that closed on an uptick versus a downtick) was a negative, -135. That meant that 135 more stocks closed on a downtick than an uptick, a short term negative factor. The negative closing tick, however, is offset by a closing Arms (Trin) reading of .96 which is mildly positive. We’ll explain why that is later in the chapter. All of these internal market readings have one intended purpose—to give us a more accurate reading on the health of the overall market that isn’t always reflected in the movement of the Dow itself.
+> 
+> Another way to study the breadth of the market is to compare the performance of the stock averages [or indices percentage changes] themselves. ...
+> 
+> ...
+> 
+> Each day’s trading on the New York Stock Exchange produces a certain number of stocks that advanced, a number that declined, and a number that remained unchanged. These figures are reported each day in _The Wall Street Journal_ and _Investor’s Business Daily_, and are used to construct a daily advance-decline (AD) line. The most common way to calculate the AD line is to take the difference between the number of advancing issues and the number of declining issues. If there are more advances than declines, the AD number for that day is positive. If there are more declines than advances, the AD line for that day is negative. That positive or negative daily number is then added to the cumulative AD line. The AD line displays a trend of its own. The idea is to make sure the AD line and the market averages are trending in the same direction.
+> 
+> ![Sotkc Market Indicators: NYSE advance-decline](/.attachments/stock.market.indicators-NYSE.png)
+> 
+> _The NYSE advance-decline line versus the Dow Industrials. In a healthy market, both lines should be trending upward together as they are here._
+> 
+> What does the advance-decline line measure? The advance-decline line tells us whether or not the broader universe of 3500 NYSE stocks is advancing in line with the most widely followed stock averages, which include only the 30 Dow Industrials or the 500 stocks in the S&P 500. To paraphrase a Wall Street maxim: the advance-decline line tells us if the “troops” are keeping up with the “generals.” As long as the AD line is advancing with the Dow Industrials, for example, the breadth or health of the market is good. The danger appears when the AD line begins to diverge from the Dow. In other words, when you have a situation where the Dow Industrials are hitting new highs while the broader market (measured by the AD line) isn’t following, technicians begin to worry about “bad market breadth” or an AD divergence. Historically, the AD line peaks out well ahead of the market averages, which is why it’s watched so closely.
+> 
+> The daily AD line, which we have described herein, is better used for short to intermediate comparisons with the major stock averages. It is less useful for comparisons going back several years. A weekly advance-decline line measures the number of advancing versus declining stocks for the entire week. Those figures are published in _Barron’s_ each weekend. A weekly advance-decline line is considered more useful for trend comparisons spanning several years. While a negative divergence in the daily AD line may warn of short to intermediate problems in the market, it’s necessary to also show a similar divergence in the weekly AD line to confirm that a more serious problem is developing.
+> 
+> Since the number of stocks traded on the NYSE has grown over the years, some market analysts believe the method of subtracting the number of declining issues from the number of advancing issues gives greater weight to the more recent data. To combat that problem, many technicians prefer to use an advance/decline ratio which divides the number of advancing issues by the number of declining issues. Some also believe that there’s value in including the number of unchanged issues in the calculation. Whichever way the AD line is calculated, its use is always the same—that is, to measure the direction of the broader market and to ensure it’s moving in the same direction as the more narrowly constructed, but popular market averages. Advance decline lines can also be constructed for the American Stock Exchange and the Nasdaq Market. Market technicians like to construct overbought/oversold oscillators on the AD lines to help measure short to intermediate term market extremes in the breadth figures themselves. One of the better known examples is the McClellan Oscillator.
+> 
+> Developed by Sherman McClellan, this oscillator is constructed by taking the difference between two exponential moving averages of the daily NYSE advance-decline figures. The McClellan Oscillator is the difference between the 19 day (10% trend) and the 39 day (5% trend) exponential moving averages of the daily net advance decline figures. The oscillator fluctuates around a zero line with its upper and lower extremes ranging from +100 and -100. ***A McClellan Oscillator reading above +100 is a signal of an overbought stock market.*** A reading below -100 is considered an oversold stock market. Crossings above and below the zero line are also interpreted as short to intermediate term buying and selling signals respectively.
+> 
+> ![Stock Market Indicators: McLellan Oscillator](/.attachments/stock.market.indicators-mclellan.png)
+> 
+> _The McClellan oscillator shown as a histogram. Crossings above the zero line are positive signals. Readings above +100 are overbought, while readings below -100 are oversold. Notice the extreme oversold reading during October of 1997._
+> 
+> The Summation Index is simply a longer range version of the McClellan Oscillator. The McClellan Summation Index is a cumulative sum of each day’s positive or negative readings in the McClellan Oscillator. Whereas the McClellan Oscillator is used for short to intermediate trading purposes, the Summation Index provides a longer range view of market breadth and is used to spot major market turning points.
+> 
+> ![Stock Market Indicators: McLellan Summation Index](/.attachments/stock.market.indicators-mclellan.summation.index.png)
+> 
+> _The McClellan Summation Index is simply a longer range version of the McClellan Oscillator. The Summation Index is used for major trend analysis. Crossings below zero are negative. The February 1998 signal was positive._
+> 
+> ... When the number of new highs start to decline, or the number of new lows start to expand, a caution signal is given. A negative market signal is activated when the moving average of new lows crosses above the moving average of new highs. It can also be shown that whenever the new highs reach an extreme, the market has a topping tendency. Similarly, whenever new lows reach an extreme, the market is near a bottom. Another way to use the new highs versus new lows numbers is to plot the difference between the two lines.
+> 
+> ![Stock Market Indicators: New Highs vs New Lows](/.attachments/stock.market.indicators-new.highs.lows.png)
+> 
+> _A 10 day average of new highs versus a 10 day average of new lows. A healthy market should see more stocks hitting new highs than new lows. During October 1997, the two lines almost crossed before reasserting their bullish alignment._
+> 
+> The advantage of a New High-New Low index is that it can be directly compared to one of the major market averages. In that way, the high-low line can be used just like an advance-decline line.
+> 
+> ![Stock Market Indicators: New High-New Low Index](/.attachments/stock.market.indicators-new.highs.lows.index.png)
+> 
+> _The New High-New Low Index versus the NYSE Composite Index. This line plots the difference between the number of stocks hitting new highs and new lows. A rising line is positive. Notice the sharp drop during October of 1997._
+> 
+> The trend of the high-low line can be charted and it can be used to spot market divergences. A new high in the Dow, for example, that is not matched by a corresponding new high in the high-low line could be a sign of weakness in the broader market. Trendline and moving-average analysis can be applied to the line itself. But its major value is in either confirming or diverging from the major stock trends and giving early warning of potential trend changes in the overall market. Dr. Alexander Elder describes the New High-New Low index as “probably the best leading indicator of the stock market” _Trading for a Living_, (Wiley).
+> 
+> Elder suggests plotting the indicator as a histogram with a horizontal reference point at its zero line, making divergences easier to spot. He points out that crossings above and below the zero line also reflect bullish and bearish shifts in market psychology.
+> 
+> This is the third and final piece of data that is utilized to measure the breadth of the market. The New York Stock Exchange also provides the level of volume in both the advancing and declining issues. That data is also available the next day in the financial press. It is then possible to compare the upside volume versus the downside volume to measure which is dominant at any given time.
+> 
+> ![Stock Market Indicators: Upside vs. Downside Volumes](/.attachments/stock.market.indicators-upside.downside.volume.png)
+> 
+> _A 10 day average of stock market upside volume (dark line) versus downside volume. A strong market should have more upside than downside volume._
+> 
+> The upside volume and downside volume can be shown as two separate lines (just as we did with the new highs and new lows figures) or the difference can be shown as a single line. Either way, the interpretation is always the same. When the upside volume is dominant, the market is strong. When downside volume is greater, the market is weak. It’s possible to combine the number of advancing and declining issues with advancing and declining volume. That’s what Richard Arms did in the creation of the Arms Index.
+> 
+> The Arms Index, named after its creator Richard Arms, is a ratio of a ratio. The numerator is the ratio of the number of advancing issues divided by the number of declining issues. The denominator is the advancing volume divided by declining volume. The purpose of the Arms Index is to gauge whether there’s more volume in rising or falling stocks. A reading below 1.0 indicates more volume in rising stocks and is positive. A reading above 1.0 reflects more volume in declining issues and is negative. On an intraday basis, a very high Arms Index reading is positive, while a very low reading is negative. The Arms Index, therefore, is a contrary indicator that trends in the opposite direction of the market. It can be used for intraday trading by tracking its direction and for spotting signs of short term market extremes.
+> 
+> The Arms Index (TRIN) can be used in conjunction with the TICK indicator for intraday trading. TICK measures the difference between the number of stocks trading on an uptick versus the number trading on a downtick. The TICK is a minute-by-minute version of the daily advance-decline line and is used for the same purpose. When combining the two during the day, a rising TICK indicator and a falling Arms Index (TRIN) are positive, while a falling TICK indicator and a rising Arms Index (TRIN) are negative. The Arms Index, however, can also be used for longer range analysis.
+> 
+> ![Stock Market Indicators: Arms Index](/.attachments/stock.market.indicators-arms.index.png)
+> 
+> _The Arms Index (also called TRIN) trends in the opposite direction of the market. Exceptionally high spikes usually signal market bottoms. A 10-day moving average of the Arms Index is a popular way to view this contrary indicator._
+> 
+> While the Arms Index is quoted throughout the trading day and has some short term forecasting value, most traders use a 10 day moving average of its values. According to Arms himself, a 10 day average of the Arms Index above 1.20 is considered oversold, while a 10 day Arms value below .70 is overbought, although those numbers may shift depending on the overall trend of the market. Arms expresses a preference for Fibonacci numbers as well. He suggests using a 21 day Arms Index in addition to the 10 day version. He also utilizes 21 day and 55 day moving-average crossovers of the Arms Index to generate good intermediate term trades. ...
+> 
+> In calculating the 10 day Arms Index, each day’s closing value is determined using the four inputs and that final value is smoothed with a 10 day moving average. In the “Open” version of the Arms Index, each of the four components in the formula is averaged separately over a period of 10 days. The Open Arms Index is then calculated from those four different averages. Many analysts prefer the Open Arms version to the original version. Different moving average lengths, like 21 and 55 days, can also be applied to the Open Arms version.
+> 
+> ![Stock Market Indicators: 10 Day Open Arms](/.attachments/stock.market.indicators-open.arms.png)
+> 
+> _The 10 day Open Arms Index gives a much smoother look to this indicator, but still trends in the opposite direction of the market. A crossing of its 10-day moving average (darker line) often signals turning points._
+> 
+> ... Since technical analysts combine price and volume analysis, they have to look at both parts of the chart at the same time. On the Equivolume chart, each price bar is shown as a rectangle. The height of the rectangle measures the day’s trading range. The width of the rectangle is determined by that day’s volume. Heavier volume days produce a wider rectangle. Lighter volume days are reflected in a narrower rectangle.
+> 
+> ![Stock Market Indicators: Equivolume](/.attachments/stock.market.indicators-equivolume.png)
+> 
+> _Equivolume charts combine price and volume. The width of each rectangle (daily bar) is determined by the volume. Wider rectangles show heavier volume. The rectangles started to widen during Intel’s last sell-off—a negative sign._
+> 
+> As a rule, a bullish price breakout should always be accompanied by a burst of trading activity. ***On an Equivolume chart, therefore, a bullish price breakout should be accompanied by a noticeably wider rectangle.*** Equivolume charting combines price and volume analysis into one chart and makes for much easier comparisons between price and volume. In an uptrend, for example, up days should see wider rectangles while down days should see narrower rectangles. Equivolume charting can be applied to market averages as well as individual stocks and can be plotted for both daily and weekly charts.
+> 
+> ...
+> 
+> Breakouts in the Dow Industrials should, as a rule, be confirmed by similar breakouts in both the S&P 500 and the NYSE Composite Index if the breakout is to have staying power.
+> 
+> Most important divergences involve the Nasdaq and the Russell 2000. The Nasdaq Composite has the largest number of stocks (5000). However, since the Nasdaq is a capitalization-weighted index, it is usually dominated by the one hundred largest technology stocks like Intel and Microsoft. Because of that, the Nasdaq is more often a measure of the direction of the technology sector. The Russell 2000 is a truer measure of the smaller stock universe. Both indexes, however, should be trending upward along with the Dow and the S&P 500 if the trend of the market is truly healthy.
+> 
+> Relative strength (RS) analysis plays a useful role here. A ratio of the Nasdaq to the S&P 500 tells us whether the technology stocks are leading or lagging. It’s usually better for the market if they’re leading and the ratio line is rising.
+> 
+> ![Stock Market Indicators: NASDAQ/S&P 500](/.attachments/stock.market.indicators-nasdaq.s&p.png)
+> 
+> _The Nasdaq/S&P 500 ratio tells us whether technology stocks are leading or lagging the market. It’s usually better for the market when the ratio line is rising._
+> 
+> A comparison of the Russell 2000 and the S&P 500 tells us whether the “troops” are following the “generals.” When the small stocks are showing poor relative strength, or are lagging too far behind the large stocks, that’s often a warning that market breadth is weakening.
+> 
+> ![Stock Market Indicators: Russel/Dow](/.attachments/stock.market.indicators-russel.dow.png)
+> 
+> _An overlay comparison of the small cap Russell 2000 and the large cap Dow. It’s usually better when both lines are rising together._
 
 ### Chapter 19. Putting It All Together - A Checklist
 
@@ -2043,3 +2157,4 @@ Understanding the open and close prices assists traders in gauging market sentim
 
 1. [Moving Average Trading - How to use Moving Averages](https://youtu.be/NqTPzObfkO0?si=ttnDf6Mt2uhT_MFp) - [Tradeciety.com](https://www.youtube.com/@Tradeciety)
 1. [This Gap Trading Strategy Prints You Money (Gap Up, Gap Down, Gap Fill)](https://youtu.be/qkChxbuUqvU?si=Py_JYTB2RyPr7-fy) - [Wysetrade](https://www.youtube.com/@Wysetrade)
+1. [How To Use Market Profile [START NOW] | Trading Tutorials](https://youtu.be/bpravMgflLc?si=fys4YugwoEaNiXo5) - [Trade Brigade](https://www.youtube.com/@TradeBrigade)
