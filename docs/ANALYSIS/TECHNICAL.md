@@ -2141,7 +2141,7 @@ Understanding the open and close prices assists traders in gauging market sentim
 > 
 > ...
 > 
-> ![Cisco - Daily (Bearish Engulfing Pattern)](/.attachments/bearish.engulfing.pattern.png)
+> ![Cisco - Daily (Bearish Engulfing Pattern)](/.attachments/cisco-daily.bearish.engulfing.pattern.png)
 > 
 > ...
 
@@ -2152,6 +2152,46 @@ Understanding the open and close prices assists traders in gauging market sentim
 > _Dark-Cloud Cover_
 > 
 > Our next reversal pattern is the _dark-cloud cover_. It is a dual-candle pattern that is a top reversal after an uptrend or, at times, at the top of a congestion band. The first day of this two-candle patter is a strong white real body. The second day's price opens above the prior's session's high (that is, above the top of the upper shadow). However, by the end of the second day's session, the market closes deeply within the prior day's white body. The greater degree of penetration into the white body, the more likely this is a top. Some Japanese technicians require more than a 50-percent penetration of the black session's close into the white real body. If the black candle does not close below the halfway point of the white candlestick, it may be best to wait for more bearish confirmation following the dark-cloud cover. In some circumstances it can be viewed as a dark-cloud cover even if the open is over the prior session's close instead of the prior session's high.
+> 
+> ...
+> 
+> Some factors intensifying the importance of dark-cloud covers include:
+>
+> 1. The greater the penetration of the black real body’s close into the prior white real body, the greater the chance for a top. (If the black real body covers the prior day’s entire white body, it would be a bearish engulfing pattern rather than a dark-cloud cover.) Think of the dark-cloud cover as a partial solar eclipse blocking out part of the sun (that is, covers only part of the prior white body). The bearish engulfing pattern can be viewed as a total solar eclipse blocking out the entire sun (that is, covers the entire white body). A bearish engulfing pattern, consequently, can be a more meaningful top reversal. If a long white real body closes above the highs of the dark-cloud cover, or the bearish engulfing pattern it could presage another rally.
+> 
+> 2. During a prolonged ascent, if there is a strong white day that opens on its low (that is, a shaven bottom) and closes on its high (that is, a shaven head) and the next day reveals a long black real body day, opening on its high and closing on its low, then a shaven head and shaven bottom black day has occurred.
+> 
+> 3. If the second body (that is, the black body) of the dark-cloud cover opens above a major resistance level and then fails, it would prove the bulls were unable to take control of the market.
+> 
+> 4. If, on the opening of the second day, there is very heavy volume, then a buying blow off could have occurred. For example, heavy volume at a new opening high could mean that many new buyers have decided to jump aboard ship. Then the market sells off. It probably won't be too long before this multitude of new longs (and old longs who have ridden the uptrend) realize that the ship they jumped onto is the _Titanic_. For futures traders, very high opening interest can be another warning.
+> 
+> ...
+> 
+> ![Intel - Daily (Dark Cloud Cover)](/.attachments/intel-daily.dark.cloud.cover.png)
+> 
+> _Intel - Daily (Dark-Cloud Cover)_
+> 
+> A dark-cloud cover in chart above stopped a rally. The day after this pattern, Intel pushed up and failed near the high of this pattern near $71. The stock stalled again near $71 a week and then two weeks later. Observe how Intel poked its head above the resistance line on January 20, but the failure to close over the resistance keeps resistance intact.
+> 
+> ![Wolverine Tube - Daily (Dark-Cloud Cover)](/.attachments/wolverine.tube-daily.png)
+> 
+> _Wolverine Tube - Daily (Dark-Cloud Cover)_
+> 
+> In chart above we see a rally that began mid August. On August 22 the stock gapped higher and formed a hanging man session, but its potential bearish implications were not confirmed the next session since the next day’s close was over the hanging man’s real body. The stock had a final push with a gap higher opening on August 28 at $43.25. On that opening it looked fine from the bulls’ perspective. It closed down at $40.62 by the end of that session. This completed a dark-cloud cover since the black candle pulled well into the prior session’s white real body.
+> 
+> While this was a well-defined dark-cloud cover, from a risk—-reward perspective it may not have been a good place to sell. This is because the dark-cloud cover was finalized on the close of the second day of the pattern, and by then it was well off its highs. Using the concept of the dark-cloud cover as potential resistance, one could wait for a bounce to near the dark-cloud cover to sell (assuming this occurs). In early October a rally to the high of the dark-cloud cover showed signs of running out of steam with a small black real body and the same highs for four consecutive sessions at $43.25. The decline from early October ended with a hammer that confirmed a late September support area.
+> 
+> ![NASDAQ Composite - 60 Minutes (Dark-Cloud Cover)](/.attachments/nasda.composite-60.minute.dark.cloud.cover.png)
+> 
+> _NASDAQ Composite - 60 Minutes (Dark-Cloud Cover)_
+> 
+> Dual bullish engulfing patterns at 1 and 2 in chart above underscored the solidity of support in the 3275/3250 area. The rally from the second bullish engulfing pattern hesitated at the dark-cloud cover. Immediately after this pattern, a white real body marginally penetrated the dark-cloud cover’s resistance (shown at the horizontal line). While not a decisive breakout, it was a close above resistance and as such a positive signal.
+> 
+> ... This second black candle reflected an inability by the bulls to hold the new highs.
+
+#### PIERCING PATTERN
+
+
 
 ## Videos
 
