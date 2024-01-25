@@ -2244,7 +2244,7 @@ Understanding the open and close prices assists traders in gauging market sentim
 
 ### Chapter 6. Stars
 
-> One group of fascinating reversal patterns is those that include stars. A star is a small real body (white or black) that gaps away from the large real body preceding it. 
+> One group of fascinating reversal patterns is those that include _stars_. A star is a small real body (white or black) that gaps away from the large real body preceding it. 
 > 
 > ![Stars: Uptrend and a Downtrend](/.attachments/star-down.up.png)
 > 
