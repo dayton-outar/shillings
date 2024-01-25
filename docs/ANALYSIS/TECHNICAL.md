@@ -2283,7 +2283,7 @@ Understanding the open and close prices assists traders in gauging market sentim
 > 
 > The lowest low of the three lines that form this pattern should be support as shown by the dashed line.
 > 
-An ideal morning star would have a gap between the second and third real bodies. From my experience, a lack of a gap does not seem to weaken the power of this formation. The decisive factor is that the second candle should be a spinning top and the third candle pushes well into the black candle.
+> An ideal morning star would have a gap between the second and third real bodies. From my experience, a lack of a gap does not seem to weaken the power of this formation. The decisive factor is that the second candle should be a spinning top and the third candle pushes well into the black candle.
 > 
 > ![Wheat - Weekly Continuation (Morning Star)](/.attachments/star-wheat.weekly.png)
 > 
