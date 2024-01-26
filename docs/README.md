@@ -8,8 +8,7 @@ Publicly listed companies and their investors have their stories surrounding the
 
 1. Complete Market Research (January 2024)
    1. Make appointment to see IT Manager and Library
-   2. Visit "Stocks on the Rocks". Gather needs and frustration of brokers and listed companies.   
-   3. Determine [branding strategy](./BRANDING/)
+   2. Visit "Stocks on the Rocks". Gather needs and frustration of brokers and listed companies
 2. Complete Business Canvas (January 2024)
 3. Arrange focus group meeting for brainstorming and backlog discussion (January 2024)
    1. Fill up and prune backlog
