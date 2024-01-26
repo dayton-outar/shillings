@@ -2317,7 +2317,162 @@ Understanding the open and close prices assists traders in gauging market sentim
 
 #### THE EVENING STAR
 
-> The _evening star_ is the bearish counterpart 
+> The _evening star_ is the bearish counterpart of the morning star pattern. It is aptly named because the evening star (the nick-name for the planet Venus) appears just before darkness sets in. Since the evening star is a top reversal, it should be acted upon if it arises after an uptrend. Three lines compose the evening star.
+> 
+> ![Star: Evening Star](/.attachments/star-evening.star.png)
+> 
+> _Evening Star_
+> 
+> The first is a long white real body, the next is a star. The star is the first hint of a top. The third line corroborates a top and completes the three-line pattern of the evening star. The third line is a black real body that closes sharply into the first period’s white real body. I like to compare the evening star pattern to a traffic light. The traffic light goes from green (the bullish white real body) to yellow (the star’s warning signal) to red (the black real body confirming the prior trend has stopped).
+>
+> In principle, an evening star should have a gap between the first and second real bodies and then another gap between the second and third real bodies. But, as detailed earlier in the section on the morning star, this second gap is rarely seen and is not necessary for the success of this pattern. The main concern should be the extent of the intrusion of the third day’s black real body into the first day’s white real body.
+> 
+> Analyzing the evening star more closely shows it furnishes a reversal signal not available with an island top.
+> 
+> ![Star: Western Island Top](/.attachments/star-western.island.top.png)
+> 
+> _Western Island Top_
+> 
+> For an island top, the low of session 2 has to be above the highs of sessions 1 and 3. However, the ideal evening star only requires real body 2 to be above the high of real bodies 1 and 3 to be a reversal signal.
+> 
+> Some factors increasing the likelihood that an evening or morning star could be a reversal would include:
+> 
+> 1. If there is no overlap among the first, second, and third real bodies.
+> 
+> 2. If the third candle closes deeply into the first candle’s real body.
+> 
+> 3. If there is light volume on the first candle session and heavy volume on the third candle session. This would show a reduction of the force for the prior trend and an increase in the direction force of the new trend.
+> 
+> The highs of the evening star become resistance as displayed by the dashed line shown in the illustration.
+> 
+> ![Star: S & P 500 Index - Daily (Evening Star)](/.attachments/star-s&p.index-daily.png)
+> 
+> _S & P 500 Index - Daily (Evening Star)_
+> 
+> As shown in the chart above, a classic evening star was completed in early January. This evening star had the ideal prerequisite of the three real bodies not intersecting. Intersecting the star portion (that is, the second candle line of the evening star pattern) was a hanging man line whose bearish confirmation came the next day. The descent from the evening star culminated a week later near 1210 at area A. The rally from A hesitated a week later via a doji near the resistance area created by the evening star. This doji hinted the rally was exhausting itself. (Dojis are discussed in Chapter 8.)
+> 
+> The next time the market rallied to this resistance in the first week of February, it formed a bearish engulfing pattern at B. I mention this bearish engulfing pattern to bring out the importance of trend in helping to define a candle pattern. I have discussed how a bearish engulfing pattern is when a black real body engulfs a white real body. There was a black real body at A that wrapped around a prior white candle. Was this a bearish engulfing pattern? No, because it came after a price decline; whereas a bearish engulfing, as a top reversal, needs a rally to reverse. This is why I define B as a bearish engulfing pattern, but not A.
+> 
+> Another doji in late February echoed continued supply near the evening star’s resistance level. The long black candle after this doji formed another evening star pattern. This evening star had a doji as a second candle line instead of a spinning top. This, is a special type of evening star called an _evening doji star_, which is discussed later in this section. The second evening star is an example where the second and third candles overlapped. From my experience this works as well as the more classic pattern in which none of the real bodies touch.
+> 
+> A challenge with some of the candle patterns is that by the time the pattern is completed, the market may be well off its highs or lows. The evening star, because of the need to wait for its completion with a long black real body, may give a reversal signal well after the market has already turned.
+> 
+> 
+> ![Star: Roger Communications - Weekly (Evening Star)](/.attachments/star-roger.communications-weekly.png)
+> 
+> _Star: Roger Communications - Weekly (Evening Star)_
+> 
+> As shown in this chart above, the high of the move was near $34, with the evening star's completion on the close of the third session at $31. As such, if one sold based on the evening star at $31, the risk would be to the high of evening star toward $34, There is no problem with a $3 risk if the target is many times that risk. Only then would it be an attractive risk/reward trade.
+> 
+> If this $3 risk is too large, one can improve the risk/reward aspect of this trade by waiting for a bounce to near the resistance area at the top of the evening star (of course, there is no guarantee of a bounce). In this example, two sessions after the evening star we got a $2 rebound which took the stock very close to its pivotal resistance at $34. After this stock resumed its decline, it moved into the April-May period. The shrinking real bodies presaged that chances for a turnaround had increased.
+
+#### THE MORNING AND EVENING DOJI STAR
+
+> An evening star that has a doji instead of a small real body as the second candle is called an _evening doji star_, as shown below.
+> 
+> ![Star: Evening Doji Star](/.attachments/star-evening.doji.star.png)
+> 
+> _Evening Doji Star_
+> 
+> The evening doji star is a distinctive form of the regular evening star. We saw an example of this pattern in previous section.
+> 
+> ‘A morning star that has a doji as the star portion (ie., the middle candle of the three candle lines) is a _morning doji star_. This type of morning star can be a meaningful bottom.
+> 
+> ![Star: Morning Doji Star](/.attachments/star-morning.doji.star.png)
+> 
+> _Morning Doji Star_
+> 
+> If there is an evening doji star in which the bottom shadow of the doji session does not overlap with the shadows of the first or third candles (that is, the shadows do not touch), it is considered a top reversal signal known as an _abandoned baby top_. This pattern is very rare.
+> 
+> ![Star: Abandoned Baby Top](/.attachments/star-abandoned.baby.top.png)
+> 
+> _Abandoned Baby Top_
+> 
+> The same is true, only in reverse, for a bottom. Specifically, if there is a doji that has a gap before and after it (where the shadows do not touch), it should be a bottom. This pattern is referred to as an _abandoned baby bottom_. It is also extremely rare. To give an idea on the rarity of this pattern, consider that the abandoned baby is the same as a Western island top or bottom where the island session would be a doji.
+> 
+> ![Star: Abandoned Baby Bottom](/.attachments/star-abandoned.baby.bottom.png)
+> 
+> _Abandoned Baby Bottom_
+>  
+> ![Star: Proctor & Gamble - Daily (Morning Doji Star)](/.attachments/star-proctor.gamble-morning.doji.png)
+> 
+> _Proctor & Gamble - Daily (Morning Doji Star)_
+> 
+> Because the middle line of the morning star in the chart immediately above was a doji, this is an example of a morning doji star. Here we see how the third candle line slightly overlapped the second real body (i.e., doji line). The ascent from this morning doji star ran out of force with the series of spinning tops (a.k.a. small real bodies). As is the case with the traditional morning star, the lowest low of the morning doji star (in this case near $92) should act as a base on pullbacks. That is what happened in mid October as the morning doji star held its ground as support. The doji portion of the morning star had long upper and lower shadows. This further reflects that the market is losing its, prior directional bias (which in this example was down). This doji, called a _long-legged doji_, is discussed in Chapter 8.
+> 
+>  
+> ![Star: Drug Index - Daily (Evening Doji Star)](/.attachments/star-drug.index-daily.png)
+> 
+> _Drug Index - Daily (Evening Doji Star)_
+> 
+An evening doji star is shown in the chart above. Ideally, I would have liked to see the last black candle of this pattern close more into the white real body of the first session. However, the fact, that this occurred at a “century” mark of $400 (a “century mark" is a round $100 figure that can become support or resistance) and then the failure to push over the resistance area of this pattern a few days later (via a long upper shadow candle) helped substantiate this as an evening doji star. This $400 level remained an upside barrier over the next few weeks with the long black real body on November 30 providing the “death blow” in forming a bearish engulfing pattern.
+> 
+> 
+> ![Star: CVS - Daily (Abandoned Baby Top)](/.attachments/star-cvs.daily-baby.top.png)
+> 
+> _CVS - Daily (Abandoned Baby Top)_
+> 
+In the chart above an evening doji star pattern formed in late February. Because the market gapped before and then after the doji, this pattern was an abandoned baby top. Also troubling about this particular scenario was the third day's abandoned baby (gapped down). This showed the prior day's new high close above $56 could not be sustained. When a new high is made and the bulls can’t maintain the new highs, it often had bearish consequences. This is discussed in Chapter 11.
+> 
+> 
+> ![Star: Soybean Oil - Daily (Abandoned Baby Bottom)](/.attachments/star-soybean.oil.daily.png)
+> 
+> _Soybean Oil - Daily (Abandoned Baby Bottom)_
+> 
+The ideal abandoned baby bottom has a doji as the second real body. In the chart of "Soybean Oil - Daily" shown above, there was a diminutive real body as the second session instead of the requisite doji needed for the ideal abandoned baby. However, the real body was so small that it could be viewed as a doji and thus a variation of this pattern (this second session was also a hammer). The advance from this bottom reversal persisted until a series of longer upper shadows (at the arrows) alerted us that the bulls were not calling all the shots. This further buttressed the outlook that the market had hit a ceiling. A rebound commenced after the bullish engulfing pattern of April 6 and 7.
+> 
+> 
+> ![Star: Shooting Star](/.attachments/star-shooting.star.png)
+> 
+> _Shooting Star_
+> 
+> The _shooting star_ has a small real body at the lower end of its range with a long upper shadow. We can see how this line’s name is derived. It looks like a shooting star with its long tail blazing across the sky. The Japanese aptly say that the shooting star shows trouble overhead. Since it is one session, it is usually not a major reversal signal as is the bearish engulfing pattern or evening star. Nor do I view the shooting, star as pivotal resistance as I do with the two previously mentioned patterns.
+> 
+> As with all stars, the color of the real body is not important. The shooting star pictorially tells us that the market opened near its low, then strongly rallied and finally backed off to close near the opening. In other words, that session's rally could not be sustained.
+> 
+> Since the shooting star is a bearish reversal signal, it must come after a rally. An ideal shooting star has a real body that gaps away from the prior real body. Nonetheless, as will be seen in several chart examples, this gap is not always necessary. A lack of a rising gap is more of a reason to be negative on the shooting star. This is because, as addressed in Chapter 7, an ascending gap, called a “rising window” in Japan, is a positive signal. As such, I am more comfortable saying the trend could be turning less bullish if the shooting star has no gap. Ifa shooting star-shaped candle line comes after a downturn, it could be a bullish signal, Such a line is called an inverted hammer. The inverted hammer line is discussed later in this chapter,
+> 
+> **The Shooting Star**
+> 
+> ![Star: Mail Well - Daily (Shooting Star)](/.attachments/star-mail.well-daily.png)
+> 
+> _Mail Well - Daily (Shooting Star)_
+> 
+> If the chart shown above were formed as a bar chart instead of a candle chart, sessions A, B, and C would reflect a healthy environment because they each had higher highs, higher lows, and higher closes. But from a candle charting perspective, we get visual warnings with these sessions of trouble overhead. Specifically, the bearish upper shadows at A, B, and C strongly indicate a stock that is, as the Japanese say, “rising in agony.” Final confirmation of a top came at session C, the shooting star. You may have noticed that a gravestone doji looks like a shooting star. The gravestone doji is a specific version of a shooting star. The shooting star has a small real body but the gravestone doji—being a doji—has no real body. The gravestone doji is thus more bearish than a shooting star.
+> 
+> ![Star: Unibanco Uniao de Bancos Brasileros - Daily (Shooting Star)](/.attachments/star-unibanco-daily.png)
+> 
+> _Unibanco Uniao de Bancos Brasileros - Daily (Shooting Star)_
+> 
+In the chart shown above, the first shooting star—in what was to be a series of shooting stars—arose on March 10 at $34.50. A few weeks later, three consecutive shooting stars appeared at this same $34.50 level. This told us that try as they might, each time the bulls had been able to push the stock up to $34.50, they couldn’t sustain these intraday highs into the close. In other words, the shooting stars were visually showing us that the market was rejecting higher prices. When, as in this example, we get signal after signal at the same price level, it reinforces that resistance area. In this case the confluence of shooting stars dramatically increased the likelihood that this would be a reversal. Of course, if the bulls had enough force to close this, stock over the highs of the shooting stars, then we would reassess any bearish views.
+> 
+> ![Star: Corning - 30 Minutes (Shooting Star)](/.attachments/star-corning.30.minutes-shooting.star.png)
+> 
+> _Corning - 30 Minutes (Shooting Star)_
+> 
+> A shooting star early on August 22 in the chart shown above reinforced trouble near $304 since it was the third consecutive session that failed there. The 30-minute period following the shooting star gave more proof of a top since it produced a bearish engulfing pattern. Corning then settled into a box range defined by the support of the hammer at $294 from late on August 23 (which was successfully defended with another hammer early the next day). The rally from the second hammer at $294 hit a ceiling with the shooting star’s resistance near $304.
+> 
+> **The Inverted Hammer**
+> 
+> While not a star pattern, I want to discuss the inverted hammer in this section because of its resemblance to the shooting star.
+> 
+> ![Star: Inverted Hammer](/.attachments/star-inverted.hammer.png)
+> 
+> _Inverted Hammer_
+> 
+> The illustration show above demonstrates how an _inverted hammer_ has the same form as a shooting star with its long upper shadow and small real body at the lower end of the range. The only difference between the shooting star and inverted hammer is that the inverted hammer comes after a decline. As a result, while the shooting star is a top reversal line, the inverted hammer is a bottom reversal line. The color of the inverted hammer’s real body doesn’t matter. This is similar in concept to the hammer and hanging man concept (see Chapter 4) in which the same shape line is bullish or bearish depending on the preceding trend.
+> 
+> ![Star: Oil Service Index - Daily (Inverted Hammer)](/.attachments/star-oil.service-inverted.hammer.png)
+> 
+> _Oil Service Index - Daily (Inverted Hammer)_
+> 
+A bearish engulfing pattern in mid June in the chart shown above developed into resistance a few days later. The descent from this failure at resistance near $82 culminated with an inverted hammer. This line was confirmed by a higher opening the next day, and especially with that session's higher close. The rally from this inverted hammer continued into the week of July 12 when a shooting star implied that the bearish engulfing pattern’s resistance was still in force.
+
+
+> 
+> ![](/.attachments/)
+> 
+> __
 
 ## Videos
 
