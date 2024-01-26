@@ -2405,14 +2405,14 @@ Understanding the open and close prices assists traders in gauging market sentim
 > 
 > _Drug Index - Daily (Evening Doji Star)_
 > 
-An evening doji star is shown in the chart above. Ideally, I would have liked to see the last black candle of this pattern close more into the white real body of the first session. However, the fact, that this occurred at a “century” mark of $400 (a “century mark" is a round $100 figure that can become support or resistance) and then the failure to push over the resistance area of this pattern a few days later (via a long upper shadow candle) helped substantiate this as an evening doji star. This $400 level remained an upside barrier over the next few weeks with the long black real body on November 30 providing the “death blow” in forming a bearish engulfing pattern.
+> An evening doji star is shown in the chart above. Ideally, I would have liked to see the last black candle of this pattern close more into the white real body of the first session. However, the fact, that this occurred at a “century” mark of $400 (a “century mark" is a round $100 figure that can become support or resistance) and then the failure to push over the resistance area of this pattern a few days later (via a long upper shadow candle) helped substantiate this as an evening doji star. This $400 level remained an upside barrier over the next few weeks with the long black real body on November 30 providing the “death blow” in forming a bearish engulfing pattern.
 > 
 > 
 > ![Star: CVS - Daily (Abandoned Baby Top)](/.attachments/star-cvs.daily-baby.top.png)
 > 
 > _CVS - Daily (Abandoned Baby Top)_
 > 
-In the chart above an evening doji star pattern formed in late February. Because the market gapped before and then after the doji, this pattern was an abandoned baby top. Also troubling about this particular scenario was the third day's abandoned baby (gapped down). This showed the prior day's new high close above $56 could not be sustained. When a new high is made and the bulls can’t maintain the new highs, it often had bearish consequences. This is discussed in Chapter 11.
+> In the chart above an evening doji star pattern formed in late February. Because the market gapped before and then after the doji, this pattern was an abandoned baby top. Also troubling about this particular scenario was the third day's abandoned baby (gapped down). This showed the prior day's new high close above $56 could not be sustained. When a new high is made and the bulls can’t maintain the new highs, it often had bearish consequences. This is discussed in Chapter 11.
 > 
 > 
 > ![Star: Soybean Oil - Daily (Abandoned Baby Bottom)](/.attachments/star-soybean.oil.daily.png)
@@ -2444,7 +2444,7 @@ The ideal abandoned baby bottom has a doji as the second real body. In the chart
 > 
 > _Unibanco Uniao de Bancos Brasileros - Daily (Shooting Star)_
 > 
-In the chart shown above, the first shooting star—in what was to be a series of shooting stars—arose on March 10 at $34.50. A few weeks later, three consecutive shooting stars appeared at this same $34.50 level. This told us that try as they might, each time the bulls had been able to push the stock up to $34.50, they couldn’t sustain these intraday highs into the close. In other words, the shooting stars were visually showing us that the market was rejecting higher prices. When, as in this example, we get signal after signal at the same price level, it reinforces that resistance area. In this case the confluence of shooting stars dramatically increased the likelihood that this would be a reversal. Of course, if the bulls had enough force to close this, stock over the highs of the shooting stars, then we would reassess any bearish views.
+> In the chart shown above, the first shooting star—in what was to be a series of shooting stars—arose on March 10 at $34.50. A few weeks later, three consecutive shooting stars appeared at this same $34.50 level. This told us that try as they might, each time the bulls had been able to push the stock up to $34.50, they couldn’t sustain these intraday highs into the close. In other words, the shooting stars were visually showing us that the market was rejecting higher prices. When, as in this example, we get signal after signal at the same price level, it reinforces that resistance area. In this case the confluence of shooting stars dramatically increased the likelihood that this would be a reversal. Of course, if the bulls had enough force to close this, stock over the highs of the shooting stars, then we would reassess any bearish views.
 > 
 > ![Star: Corning - 30 Minutes (Shooting Star)](/.attachments/star-corning.30.minutes-shooting.star.png)
 > 
