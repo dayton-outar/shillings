@@ -2419,7 +2419,7 @@ Understanding the open and close prices assists traders in gauging market sentim
 > 
 > _Soybean Oil - Daily (Abandoned Baby Bottom)_
 > 
-The ideal abandoned baby bottom has a doji as the second real body. In the chart of "Soybean Oil - Daily" shown above, there was a diminutive real body as the second session instead of the requisite doji needed for the ideal abandoned baby. However, the real body was so small that it could be viewed as a doji and thus a variation of this pattern (this second session was also a hammer). The advance from this bottom reversal persisted until a series of longer upper shadows (at the arrows) alerted us that the bulls were not calling all the shots. This further buttressed the outlook that the market had hit a ceiling. A rebound commenced after the bullish engulfing pattern of April 6 and 7.
+> The ideal abandoned baby bottom has a doji as the second real body. In the chart of "Soybean Oil - Daily" shown above, there was a diminutive real body as the second session instead of the requisite doji needed for the ideal abandoned baby. However, the real body was so small that it could be viewed as a doji and thus a variation of this pattern (this second session was also a hammer). The advance from this bottom reversal persisted until a series of longer upper shadows (at the arrows) alerted us that the bulls were not calling all the shots. This further buttressed the outlook that the market had hit a ceiling. A rebound commenced after the bullish engulfing pattern of April 6 and 7.
 > 
 > 
 > ![Star: Shooting Star](/.attachments/star-shooting.star.png)
@@ -2466,7 +2466,7 @@ The ideal abandoned baby bottom has a doji as the second real body. In the chart
 > 
 > _Oil Service Index - Daily (Inverted Hammer)_
 > 
-A bearish engulfing pattern in mid June in the chart shown above developed into resistance a few days later. The descent from this failure at resistance near $82 culminated with an inverted hammer. This line was confirmed by a higher opening the next day, and especially with that session's higher close. The rally from this inverted hammer continued into the week of July 12 when a shooting star implied that the bearish engulfing pattern’s resistance was still in force.
+> A bearish engulfing pattern in mid June in the chart shown above developed into resistance a few days later. The descent from this failure at resistance near $82 culminated with an inverted hammer. This line was confirmed by a higher opening the next day, and especially with that session's higher close. The rally from this inverted hammer continued into the week of July 12 when a shooting star implied that the bearish engulfing pattern’s resistance was still in force.
 
 
 > 
