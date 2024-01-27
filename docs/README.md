@@ -32,11 +32,13 @@ Notes left to take,
 
 ## The Problem
 
-Jamaica's increased exposure to technology creates a need for persons to do most things online.
+***Some stock markets offer a disjointed[^1] and perplexing experience that discourages lively participation.***
 
-Online experience offered by Jamaica Stock Exchange is disjointed[^1]
+As those markets around the world become more exposed to technology, a greater tension is created between investors and the key players of the stock market. This tension will create a greater demand for tools to help the investors make better trading decisions at progressively faster pace.
 
-What is the 5-minute story of how the business makes the customer a hero?
+_Knows Nothing_ is interested in the stock market but he knows nothing. When he goes to the stock exchange's web site he is baffled by the symbols and numbers. He's so overwhelmed that he decides not to bother participate in the stock market. He meets _Tracy Trader_ after noticing her participating in stock trading at a site called ***Shillings***. He becomes curious again because of the visual appeal and the story-based approach that the site offers. He's fascinated by the various businesses and he learns one multiple at a time as they are given context and described in short phrases. He eventually gains confidence to open a trading account and test out his trades on the mock trading platform. _Knows Nothing_ is now excited to fund his trading account so that he can trade on the real trading platform on ***Shillings***. _Knows Nothing_ has begun his journey as an investor and stock trader.
+
+_Tracy Trader_ ...
 
 ## Value Proposition
 
@@ -133,6 +135,26 @@ Knows Nothing is a novice to the stock market but he is fascinated with the exci
 - Engage investors to purchase their stocks
 
 Apart from providing analysis on companies, this project seeks to enable customers to purchase and sell stocks via a chosen stock broker online. This project adds value by offering the convenience to conduct business this without submitting anything physical or go into any office in person.
+
+### Possible Solution
+
+Indeed, there are software platforms that integrate analysis tools with trading capabilities to provide investors and traders with a comprehensive solution. These platforms often combine real-time market data, technical analysis tools, and trade execution features. Here's how such software can address some challenges:
+
+1. **Integrated Analysis:** These platforms typically offer a range of analysis tools, including technical indicators, chart patterns, and fundamental data. This integration allows users to access relevant information for making informed investment decisions.
+
+2. **Progressive Exposure to Information:** Users can have progressive exposure to information through interactive charts, news feeds, and data visualization. This facilitates a better understanding of market trends and potential investment opportunities.
+
+3. **Trade Execution Features:** Software platforms often include features for seamless trade execution. Investors can place, monitor, and manage trades directly from the same interface where they conduct their analysis.
+
+4. **Risk Management Tools:** Many platforms provide risk management features, including stop-loss orders and risk alerts. These tools help users manage their exposure and mitigate potential losses.
+
+5. **Educational Resources:** Some platforms offer educational resources within the software, providing users with insights into market trends, investment strategies, and risk management practices.
+
+6. **User-Friendly Interface:** A user-friendly interface is essential for investors and traders to navigate the software efficiently. This can include customizable dashboards and easy-to-use tools.
+
+It's crucial for users to conduct due diligence and choose a platform that aligns with their specific needs, trading style, and preferences. Additionally, keeping abreast of updates and improvements to the software is essential for leveraging new features and maintaining a competitive edge.
+
+<image src="/.attachments/chatgpt-logo.png" alt="Chat GPT Logo" width="16" height="16" />
 
 ## Purpose
 
