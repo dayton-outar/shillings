@@ -124,7 +124,8 @@ Knows Nothing is a novice to the stock market but he is fascinated with the exci
 ### Brokers
    
 - Ease of on-boarding new investors
-- Ease of tracking and trading fund-in and fund-out request. Showing and allowing communication between broker and investor at each stage of trading.
+- Ease of tracking fund-in and fund-out request
+- Showing and allowing communication between broker and investor at each stage of trading
   
 ### Listed Companies
 
