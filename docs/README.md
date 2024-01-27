@@ -8,15 +8,14 @@ Publicly listed companies and their investors have their stories surrounding the
 
 1. Complete Market Research (January 2024)
    1. Make appointment to see IT Manager and Library
-   2. Visit "Stocks on the Rocks". Gather needs and frustration of brokers and listed companies
-2. Complete Business Canvas (January 2024)
-3. Arrange focus group meeting for brainstorming and backlog discussion (January 2024)
+2. Complete Business Canvas (February 2024)
+3. Arrange focus group meeting for brainstorming and backlog discussion (February 2024)
    1. Fill up and prune backlog
    2. Decide upon features for Sprint 1 - MVP #2
-4. Build Portal (Login) for focus group (February 2024)
-5. Complete Sprint 1 (February 2024)
+4. Build Portal (Login) for focus group (March 2024)
+5. Complete Sprint 1 (March 2024)
 6. Gather improvement ideas and backlog from focus group for second sprint, Sprint 2 (March 2024)
-7. Complete Sprint 2 (March 2024)
+7. Complete Sprint 2 (April 2024)
 8. Build Critical Mass from Influencers, Investment Clubs and Communities (April 2024)
    1. Arrange meeting with communities
    2. Deliver branded presentation
@@ -34,11 +33,25 @@ Notes left to take,
 
 ***Some stock markets offer a disjointed[^1] and perplexing experience that discourages lively participation.***
 
-As those markets around the world become more exposed to technology, a greater tension is created between investors and the key players of the stock market. This tension will create a greater demand for tools to help the investors make better trading decisions at progressively faster pace.
+As those markets around the world become more exposed to technology, a greater tension is created between investors and the key players of the stock market. This tension will create a greater demand for tools to help the investors make better trading decisions at progressively faster pace. Markets that experience this tension are _underserved_. This solution addresses _underserved markets_.
+
+According to _Underscore.VC_,
+
+> If you can’t deliver a 10x gain of adoption/pain of adoption, customers will typically default to inertia and will “do nothing” rather than bear the risk of working with you.
+
+To determine if this product will deliver 10 times the gains compared to alternative products, metrics must be defined and used. Metrics that include factors like time saved, cost reduction, increased efficiency and improved performance. Evaluate alternative products in light of these metrics and use as a comparative baseline. Here are some metrics to measure performance,
+
+- Speed: transactions per second, requests per minute
+- Accuracy: percentage of correct vs incorrect outputs
+- Innovation: number of new features or industry recognition
+
+The solution is projected to be a **discontinuous** innovation with a **defensible** technology and a **disruptive** business model. It's _discontinuous_ because it takes a different look at representing information from the stock market. It contains intellectual property that is _somewhat defensible_. It's aim is to deliver value and reduce cost to increase participation.
+
+### Stories We Want To Tell
 
 _Knows Nothing_ is interested in the stock market but he knows nothing. When he goes to the stock exchange's web site he is baffled by the symbols and numbers. He's so overwhelmed that he decides not to bother participate in the stock market. He meets _Tracy Trader_ after noticing her participating in stock trading at a site called ***Shillings***, he becomes curious again because of the visual appeal and the story-based approach that the site offers. He's fascinated by the various businesses and he learns one multiple at a time as they are given context and described in short phrases. He eventually gains confidence to open a trading account and test out his trades on the mock trading platform. _Knows Nothing_ is now excited to fund his trading account so that he can trade on the real trading platform on ***Shillings***. _Knows Nothing_ has begun his journey as an investor and stock trader.
 
-_Tracy Trader_ ...
+_Tracy Trader_ has enough financial literacy to understand financial statements and calculate multiples from them but when it comes to choose an IPO to purchase she lacks confidence in taking risks due to overwhelming number of multiples and company information to cover in a prospectus. She solves this problem by following a community of experts. Not all the time the experts get it right. As she would, purchase units of an IPO and hope to sell those units a few weeks later to make capital gains profit. It doesn't always work that way. When _Tracy_ found ***Shillings***, ...
 
 ## Value Proposition
 
