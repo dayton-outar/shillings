@@ -231,7 +231,7 @@ Step 1 may take 4 to 5 years.
 ![Marketing Strategy Canvas](/.attachments/strategy.canvas.png)
 
 
-![Minimum Viable Segment](/.attachments/minimum.viable.segment-3.png)
+![Minimum Viable Segment](/.attachments/minimum.viable.segment-4.png)
 
 Build better logo with [BrandCrowd](https://www.brandcrowd.com/).
 
