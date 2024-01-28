@@ -44,24 +44,26 @@ A few ideas for new name include,
 
 Here's a helpful tip. Upon sharing the need to rebrand to Owin Watson, he agreed that the product need to be rebranded, especially that the current name suggest little money. The name, 'shillings', in Jamaica expresses meagre funds in daily conversation in the past. The word is still used as of this writing in the same manner. So, should we make up a name that expresses opulence? (If a new name is made, that name will need public relations to make it take hold in the minds of people)
 
- ## The Avatar
+## The Avatar
 
-  Marty Neumeier in his book, _The Brand Gap_, encourages entrepreneurs to make use of avatars. Pillsbury has their avatar as the doughboy. Aflac has the duck. Kellog's has the tiger for their frosted flakes.
+Marty Neumeier in his book, _The Brand Gap_, encourages entrepreneurs to make use of avatars. Pillsbury has their avatar as the doughboy. Aflac has the duck. Kellog's has the tiger for their frosted flakes.
 
-  > Logos are dead! Long live icons and avatars! Why? Because logos as we know them—logo-types, monograms, abstract symbols, and other two-dimensional trademarks—are products of the printing press and mass communication. They evolved as a way to identify brands rather than to differentiate them. Today marketers realize that branding is not about stamping a trademark on anything that moves. It’s about managing relationships between the company and its constituents, conducting a conversation among many people over many channels. We still have the printing press at our beck and call, but we also have the Internet, TV, telemarketing, live events, and other media to work with. Icons and avatars respond to this new reality by jumping off the printed page and interacting with people wherever they are.
+> Logos are dead! Long live icons and avatars! Why? Because logos as we know them—logo-types, monograms, abstract symbols, and other two-dimensional trademarks—are products of the printing press and mass communication. They evolved as a way to identify brands rather than to differentiate them. Today marketers realize that branding is not about stamping a trademark on anything that moves. It’s about managing relationships between the company and its constituents, conducting a conversation among many people over many channels. We still have the printing press at our beck and call, but we also have the Internet, TV, telemarketing, live events, and other media to work with. Icons and avatars respond to this new reality by jumping off the printed page and interacting with people wherever they are.
 
-  An appropriate avatar can provide inspiration for logos and be used in bringing the immersive experience to the trading platform. Avatars work well in advertising.
+An appropriate avatar can provide inspiration for logos and be used in bringing the immersive experience to the trading platform. Avatars work well in advertising.
 
-  ## The Tagline
+In the event that we need to build logos, we can try [BrandCrowd](https://www.brandcrowd.com/).
 
-  Taglines are a brief and to the point statement that communicates the product's essence to the customer. It's perfect for advertisement. Since, initially this project will start with a _small viable market_, and publicize through the different target communicates, the tagline is not mandatory or critical at the moment.
+## The Tagline
 
-  As the project picks up traction, we can determine an appropriate tagline.
+Taglines are a brief and to the point statement that communicates the product's essence to the customer. It's perfect for advertisement. Since, initially this project will start with a _small viable market_, and publicize through the different target communicates, the tagline is not mandatory or critical at the moment.
 
-  ## The Experience
+As the project picks up traction, we can determine an appropriate tagline.
 
-  The brand is at the very core, the experience that we promise to provide to them.
+## The Experience
 
-  ## Videos
+The brand is at the very core, the experience that we promise to provide to them.
 
-  1. [How Brands Use Design & Marketing to Control Your Mind](https://youtu.be/p6aF5ma7BiM?si=5w_9Mrp8MqbgyJud)
+## Videos
+
+1. [How Brands Use Design & Marketing to Control Your Mind](https://youtu.be/p6aF5ma7BiM?si=5w_9Mrp8MqbgyJud)

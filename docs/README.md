@@ -222,25 +222,12 @@ Step 1 may take 4 to 5 years.
 
 ## Business Plan
 
-... [TODO: Complete Business Canvas]
-
-
 ![Shillings Business Canvas](/.attachments/shillings.business.canvas-2.png)
 
-
-![Marketing Strategy Canvas](/.attachments/strategy.canvas.png)
 
 
 ![Minimum Viable Segment](/.attachments/minimum.viable.segment-4.png)
 
-Build better logo with [BrandCrowd](https://www.brandcrowd.com/).
-
-Drive traffic to site with [Simple Traffic](https://www.simpletraffic.co/).
-
-### Topic Cluster Ideas
-
-- What is a Stock Market?
-- Shorting Stocks
 
 ## References
 
