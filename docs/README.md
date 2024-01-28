@@ -9,6 +9,7 @@ Publicly listed companies and their investors have their stories surrounding the
 1. Complete Market Research (January 2024)
    1. Make appointment to see IT Manager and Library
 2. Complete Business Canvas (February 2024)
+   1. Complete [marketing](./MARKETING/) strategy
 3. Arrange focus group meeting for brainstorming and backlog discussion (February 2024)
    1. Fill up and prune backlog
    2. Decide upon features for Sprint 1 - MVP #2
@@ -27,7 +28,7 @@ Notes left to take,
 
  - Valuation
 
- - Complete all readme for [analaysis](./ANALYSIS/), [branding](./BRANDING/), [marketing](./MARKETING/) and [experience](./EXPERIENCE/)
+ - Complete all readme for [analaysis](./ANALYSIS/), [branding](./BRANDING/) and [experience](./EXPERIENCE/)
 
 ## The Problem
 
