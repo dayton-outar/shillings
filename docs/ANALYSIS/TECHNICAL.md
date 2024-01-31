@@ -2242,7 +2242,7 @@ Understanding the open and close prices assists traders in gauging market sentim
 > 
 > With a piercing pattern that doesn’t push deeply into the prior black candle, I usually suggest waiting for confirmation with a higher close the session after the white candle. In the chart above (IBM), late in the morning of March 31, a white candle pushed into the black candle. Since it did not close above the middle black candle, it wasn’t a piercing pattern. It was a thrusting pattern. The higher close the session after this thrusting pattern helped reinforce that this could be a bottoming signal. Late in the session of March 31 another thrusting pattern was formed near $117. Normally with a thrusting pattern (as we saw earlier that day) one should wait for some bullish confirmation. But with this second thrusting pattern, because it confirmed a prior support area, one would need less bullish confirmation (i.e., less reason to wait for higher close the next session). As such, for active momentum traders, the close of the white candle of the second thrusting pattern could have been used as a buying opportunity. An exit signal was given with the bearish engulfing pattern early the next morning.
 
-### Chapter 6. Stars
+### Chapter 5. Stars
 
 > One group of fascinating reversal patterns is those that include _stars_. A star is a small real body (white or black) that gaps away from the large real body preceding it. 
 > 
@@ -2468,9 +2468,284 @@ Understanding the open and close prices assists traders in gauging market sentim
 > 
 > A bearish engulfing pattern in mid June in the chart shown above developed into resistance a few days later. The descent from this failure at resistance near $82 culminated with an inverted hammer. This line was confirmed by a higher opening the next day, and especially with that session's higher close. The rally from this inverted hammer continued into the week of July 12 when a shooting star implied that the bearish engulfing pattern’s resistance was still in force.
 
+### Chapter 6. More Reversal Patterns
+
+
+#### THE HARAMI PATTERN
+
+> ![More Reversal Patterns: Harami](/.attachments/more-harami.png)
+> 
+> _Harami_
+> 
+> Spinning tops (that is, small real bodies) are components in certain formations. The _harami_ is one of these formations (the star, examined in Chapter 5, is another). The _harami pattern_ is a small real body that is contained within what the Japanese call “an unusually long black or white real body.” “Harami” is an old Japanese word for pregnant. The Japanese nickname for the long candle is the “mother” candle and the small candle is the “baby” or “fetus.” The second candle of the harami can be white or black. If, for example, both the first and second candles of the harami are white, it would be expressed as “white-white harami.”
+> 
+> The Japanese will say that with a harami the market is “losing its breath.” The bearish harami displays a disparity about the market's health. Specifically after a bull move, the long white real body's vitality is followed by the small real body's, uncertainty. Additionally, the small real body opening and closing within the prior open-close range is another indication that the bulls’ upward drive has weakened. Thus, a trend reversal is possible, During a bear move, the selling force reflected by a ong black real body is followed by the second day’s vacillation. This could portend a trend reversal since the second day's small real body is an alert that the bears’ power has diminished.
+> 
+> The combination of candle lines in the harami pattern, with its first tall real body followed by a small real body, is the reverse of the engulfing pattern. In the engulfing pattern, a lengthy real body engulfs the preceding small real body.
+> 
+> Another difference between the harami and engulfing patterns is that for the two candles of the engulfing pattern, the color of the real bodies should be opposite. This is not necessary for the harami. You should find, however, that in most instances, the real bodies in the harami are oppositely colored.
+> 
+> **Harami Cross**
+> 
+> The regular harami has a tall real body followed by a small real body. Yet, there are no rules as to what is considered a “small” candle. This, like many other charting techniques, is subjective. As the general principle, the more diminutive the second real body, the more potent the pattern. This is usually true because the smaller the real body, the greater the ambivalence and the more likely a trend reversal. In the extremes, as the real body becomes smaller as the spread between the open and close narrows, a doji is formed. A doji preceded by a long black real body during a decline (or a tall white real body during a rally) is a distinctive type of harami referred to as a harami cross.
+> 
+> 
+> ![More Reversal Patterns: Harami Cross](/.attachments/more-harami.cross.png)
+> 
+> _Harami Cross_
+> 
+> The harami cross, because it contains a doji, is viewed as a more potent reversal signal than the regular harami pattern by the Japanese. The harami cross is sometimes referred to as the _petrifying pattern_. My best guess as to why it has that nickname is that the preceding trend has been frozen or petrified in preparation for a reverse move. A harami cross occurring after a very long white candle is a pattern a long trader ignores at his, or her own peril. Harami cross can also call bottoms, but they seem more effective at tops.
+> 
+> 
+> ![More Reversal Patterns: Chris-Craft Industries - Daily (Harami)](/.attachments/more-chris.craft-daily.png)
+> 
+> _Chris-Craft Industries - Daily (Harami)_
+> 
+> The chart shown above is an example of the ease with which we can meld candle charting and Western charting tools. A rising resistance line connects the highs of March 15 and April 12. As will be detailed in Part 2 of this book (where the focus is on Western charting tools), a rising resistance line can be an area of supply. When price intersected this line on May 13 we received visual confirmation that supply was overcoming demand with that ‘candle’s bearish upper shadow and then completing a harami. Observe also how the prior price peak on April 12 and 13 was also a harami. Hammers at 1 and 2 gave signs of stabilization.
+
+#### TWEEZERS TOPS AND BOTTOMS
+
+> Tweezers are two or more candle lines with matching highs or lows. They are called _tweezers tops_ and _tweezers bottoms_ because they are compared to the two prongs of a tweezers. In a rising market, a tweezers top is formed when the two or more consecutive highs match. In a falling market, a tweezers bottom is made when two or more successive lows are the same. The tweezers could be composed of real bodies, shadows, and/or doji. Ideally the tweezers should have a long first candle and a small real body as the next session. This shows that whatever force the market had on the first session (bullish force with a Jong white candle and bearish force with a long black candle), it was dissolving with the following small real body with the same high (for a tweezers top) or same low (for a tweezers bottom). If there is a bearish (for a top reversal) or a bullish (for a bottom reversal) candle signal that is also a tweezers top, it adds more importance to the pattern.
+> 
+> ![More Reversal Patterns: Tweezers Top and Harami Cross](/.attachments/more-tweezers.top.harami.cross.png)
+> 
+> _Tweezers Top and Harami Cross_
+> 
+> ![More Reversal Patterns: Tweezers Top and Hanging Man](/.attachments/more-tweezer.top.hanging.man.png)
+> 
+> _Tweezers Top and Hanging Man_
+> 
+> ![More Reversal Patterns: Tweezers Top and Shooting Star](/.attachments/more-tweezer.top.shooting.star.png)
+> 
+> _Tweezers Top and Shooting Star_
+> 
+> ![More Reversal Patterns: Tweezers Top and Darh-Cloud Cover](/.attachments/more-tweezers.top.dark.cloud.png)
+> 
+> _Tweezers Top and Darh-Cloud Cover_
+> 
+> ![More Reversal Patterns: Tweezers Bottom and Hammer](/.attachments/more-tweezer.bottom.hammer.png)
+> 
+> _Tweezers Bottom and Hammer_
+> 
+> ![More Reversal Patterns: Tweezers Bottom and Piercing Pattern](/.attachments/more-tweezer.bottom.piercing.pattern.png)
+> 
+> _Tweezers Bottom and Piercing Pattern_
+> 
+> 
+> ![More Reversal Patterns: Caterpillar - Daily (Tweezers Bottom)](/.attachments/more-caterpillar-daily.png)
+> 
+> _Caterpillar - Daily (Tweezers Bottom)_
+> 
+> The chart shown above shows the tweezers bottom. Note that the second real body of this tweezers was not within the first real body and as such was not a harami pattern. The long white candle after this tweezers on June 1 was immediately followed by a small real body with about the same high near $59.50. As such, the June 1 and June 2 combination can be viewed as the tweezers top. But in the context of the overall technical picture, the market was not overextended and, as such, not so vulnerable to a correction as should be the case if we had a tweezers top in an overbought environment. Even if one acted upon the June 1 and June 2 tweezers top (it was also a harami), once the market closed above the high of these two sessions on June 3, any potential bearish implication of the tweezers top was negated.
+> 
+> ![More Reversal Patterns: Commerce Bancorp - Daily (Tweezers Top)](/.attachments/more-commerce.bancorp-daily.png)
+> 
+> _Commerce Bancorp - Daily (Tweezers Top)_
+>
+> While the two candle lines on December 22 and 23 in the chart shown above did not form a dark-cloud cover (since the black candle wasn’t even near the middle of the long white candle), they did form a tweezers top. While I would view a dark-cloud cover as more ominous than a tweezers top (since the regular dark-cloud cover closes well into the white candle), this tweezers top could certainly be viewed as a cautionary signal. This was echoed the next week with the small real bodies and doji reflecting that the market had gone from a bullish bias to more neutral.
+
+#### BELT-HOLD LINES
+
+> The belt-hold is an individual candle line. The bullish belt-hold is
+a strong white candle that opens on the low of the session (or
+with a very small lower shadow) and closes at, or near, the ses-
+sion highs (see Exhibit 6.19). The bullish belt-hold line is also
+called a white opening shaven bottom. If itis at a low price area
+and a long bullish belt-hold appears, it forecasts a rally.
+
+The bearish belt-hold (see Exhibit 6.20) is a long black candle
+that opens on the high of the session (or within a few ticks of
+the high) and continues lower through the session. If prices are
+high, the appearance of a bearish belt-hold is a top reversal. The
+bearish belt-hold line is sometimes called a black opening
+shaven head.
+
+The longer the height of the belt-hold candle line, the more
+significant it becomes. The actual Japanese name for the belt-
+hold is a sumo wrestling term, yorikiri, which means “pushing
+your opponent out of the ring while holding onto his belt.”
+
+A close above a black bearish belt-hold line should mean a
+resumption of the uptrend. A close under the white bullish belt-
+hold line implies a renewal of selling pressure.
+An upside-gap two crows (what a mouthful!) is illustrated in
+Exhibit 6.23. It is very rare. The upside-gap refers to the gap
+between the real body of the small black real body and the real
+body preceding it. (The real body that precedes the first black
+candle is usually a long white one.) The two black candles are
+the “crows” in this pattern. They are analogous to black crows
+peering down ominously from a tree branch. Based on this por-
+tentous comparison, it is obviously a bearish pattern. An ideal
+upside-gap two crows has the second black real body opening,
+above the first black real body’s open. It then closes under the
+first black candle’s close.
+
+The rationale for the bearish aspect of this pattern is as fol-
+lows: The market is in an uptrend and gaps higher on the open.
+The new highs fail to hold and the market forms a black candle.
+But the bulls can take some succor, at least, because the close on
+this black candle session still holds above the prior day's close.
+The third session paints a more bearish portrait with another
+new high and another failure to hold these highs into the close.
+More negative, however, is that this session closes under the
+prior day’s close. If the market is so strong, why did the new
+highs fail to hold and why did the market close lower? Those
+are the questions that the bulls are probably nervously asking
+themselves. The answers might be that the market may not be
+so strong as they would like. If prices fail to regain high ground
+the next day (that is, the fourth session), then expect lower
+prices.
+The upside-gap two crows consists of two black candles. If
+there are three declining consecutive black candles, it is called
+three black crows pattern (see Exhibit 6.26). The three black crows
+presage lower prices if they appear at high price levels or after
+a mature advance. Three crows are also sometimes called three-
+winged crows. The Japanese have an expression, “Bad news
+has wings.” This is an appropriate saying for the three-winged
+crow pattern. The three crows are, as the name implies, three
+black candles. Likened to the image of a group of crows sitting
+ominously in a tall dead tree, the three crows have bearish
+implications. The three lines should close at, or near, their lows.
+Ideally, each of the openings should also be within the prior
+session's real body.
+
+Exhibit 6.27 illustrates three black crows started April 15. The
+descent from the three black crows continued virtually unhin-
+dered until the piercing pattern at P. The second and third black
+candles of the three black crows (April 16 and 17) opened under
+the prior real bodies. While the normal three black crows has an
+opening within the prior real body, and these openings were
+not in the black real bodies, they could be viewed as more bear-
+ish. This is because the second and third black candles opened
+under the prior day's close and failed to gain substantial
+ground throughout the remainder of the session.
+
+The three black crows would likely be useful for longer-term
+traders. This is because this pattern is completed on the third
+black candle. Obviously, by the time this occurs the market has
+already corrected substantially. For example, these three black
+crows started at $70.75. Since we needed the third black candle
+to finish the pattern, we got the signal when the stock was at
+$67.87.
+
+ 
+The opposite of the three black crows is three advancing white
+soldiers or, more commonly, three white soldiers (Exhibit 6.28).
+Like much of the candle terminology, this pattern has a military
+association. It is a group of three long white candles with con-
+secutively higher closes. If this pattern appears at a low price
+area or after a period of stable prices, then it isa sign of strength
+ahead
+
+The three white soldiers are a gradual and steady rise with
+each white line opening within or near the prior session's white
+real body. Each of the white candles should close at, or near, its
+highs. It is a healthy method for the market to rise (although if
+the white candles are very extended, one should be cautious
+about an overbought market).
+
+If the second and third or just the third candle shows signs of
+weakening, it is an advance block pattern (see Exhibit 6.29). This,
+‘means the rally is running into trouble and longs should pro-
+tect themselves. Be especially cautious about this pattern dur-
+ing a mature uptrend. Signs of weakening could be progres-
+sively smaller white real bodies or relatively long upper shad-
+ows.
+
+If the last two candles are long white ones that make a new
+high followed by a small white candle, it is called a stalled pat-
+tern (see Exhibit 6.30). It is also sometimes called a deliberation
+pattern, The bulls’ strength has been at least temporarily
+exhausted after this formation. This last small white candle can
+either gap away from the long white body (in which case it
+becomes a star) or it can be, as the Japanese express it, “riding,
+on the shoulder” of the long white real body (that is, be at the
+upper end of the prior long white real body). The small real
+body discloses a deterioration of the bulls’ power.
+
+Although the advance block and stalled patterns are not nor-
+mally top reversal patterns, they can sometimes precede a price
+There is a group of longer-term topping and bottoming pat-
+terns that includes the three mountains, the three rivers, the
+three Buddha tops, inverted three Buddha, dumpling tops, fry-
+pan bottoms, and tower tops and bottoms.
+
+Similar to the Western triple top, the Japanese have a three
+mountain top (see Exhibit 6.35). It is supposed to represent a
+major top. If the market backs off from a high three times or
+makes three attempts at a high, it is deemed a three mountain
+top. The high point of the final mountain ideally should be con-
+firmed with a bearish candle indicator (for example, a doji or
+dark-cloud cover). If the central mountain of a three mountain
+top is the highest mountain, it is a special type of three moun-
+tain called a three Buddha top (see Exhibit 6.36). The reason for
+this name is because, in Buddhist temples, there is a large cen-
+tral Buddha with smaller Buddhas (that is, saints) on both
+sides. the same pattern as the West's head and shoulders
+top.
+
+ 
+
+ 
+Although the three Buddha top is analogous to the Western
+head and shoulders pattern, the theory about the Japanese
+three Buddha pattern was used over a hundred years before the
+head and shoulders was known in America. (The earliest Ihave
+seen a reference to a head and shoulders pattern in the United
+States was by Richard Schabacker in the 1930s. For those who
+are familiar with the Edwards and Magee classic book, Technical
+Analysis of Stock Trends, much of the material in that book is
+based on Schabacker’s work. Schabacker was Edwards's
+father-in-law.)
+
+It is intriguing how market observers from both the West and
+the East have come up with this same pattern. Market psychol-
+ogy is the same around the world, or, as a Japanese proverb
+expresses, “The tone of a bird’s song is the same everywhere.”
+The three river bottom pattern (see Exhibit 6.37) is the opposite of
+the three mountain top. This occurs when the market tests a
+bottom level three times. The peak of the troughs should be
+exceeded to confirm a bottom. The equivalent of the Western
+inverted head and shoulders bottom is called, not surprisingly,
+an inverted three Buddha (see Exhibit 6.38).
+
+Area A in Exhibit 6.39 shows hesitation near $124, especially
+with the bearish engulfing pattern made in the last two weeks
+in November. The retreat from this bearish engulfing pattern
+found stabilization at a bullish engulfing pattern. The ascent
+from this bullish engulfing pattern stopped, not surprisingly at
+the aforementioned bearish engulfing pattern’s resistance near
+$124 at B. B was another bearish engulfing pattern. The next
+rally in mid May and the subsequent bearish engulfing pattern
+at C puta three mountain top in place.
+
+In Exhibit 6.39, the peaks of each mountain were almost the
+same. This is not necessary. It is still considered a three moun-
+tain top if the three price peaks are not exactly at the same
+highs. In Exhibit 6.40, price crested at A, B, and C, with B and
+C at slightly higher levels. This would still be considered a
+three mountain top. During the last two sessions at C, Intel was
+rising with two very small real bodies. This was a symptom of
+uneasiness. The price peak came at $76, a shooting star. The real
+turning signal, and the confirmation of the three Buddha top,
+came with the gap down after the late August shooting star.
+
+While a three mountain top has nearly the same highs, the
+three Buddha top has the middle portion as the highest high.
+Again we can think of the three Buddha top as comparable to
+the head and shoulders top. In Exhibit 6.41 we see a three
+Buddha, a.k.a head and shoulders top, with the price peaks at
+1, 2, and 3 defining the pattern. The rising line shown on the
+chart in Western terms would be called the neckline of the head
+and shoulders top. Classically, the neckline of the head and
+shoulders top once broken should become resistance. This is
+what unfolded with the break of the neckline on August 19 and
+then a little rebound on August 21 (and three sessions after
+that), stopping at the neckline’s new resistance as confirmed by
+the bearish upper shadows,
 
 > 
-> ![](/.attachments/)
+> ![More Reversal Patterns:](/.attachments/)
 > 
 > __
 
