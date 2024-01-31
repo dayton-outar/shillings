@@ -2037,6 +2037,12 @@ This author has a disclaimer in almost every chapter. So, you leave this book th
 > 
 > Fifth, the price action is the most direct and easily accessible method of seeing overall supply/demand relationships. There may be fundamental news not known to the general public, but you can expect it is already in the price. Those who have advance knowledge of some market-moving event will most likely buy or sell until current prices reflect their information.
 
+### Chapter 2. A Historical Background
+
+向老者询问，我们学到新知识。
+
+_Through inquiring of the old we learn the new_
+
 ### Chapter 3. Constructing the Candlestick Lines
 
 > ![Bar Chart vs. Candle Chart](/.attachments/bar.chart.vs.candle.chart.png)
@@ -2748,6 +2754,12 @@ the bearish upper shadows,
 > ![More Reversal Patterns:](/.attachments/)
 > 
 > __
+
+### Chapter 17. The Best of East and West
+
+天上掉下个无敌大馅饼
+
+_If heaven drops a fig, open your mouth_
 
 ## Videos
 
