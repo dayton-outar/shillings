@@ -39,3 +39,44 @@ Corporate actions are events initiated by a publicly traded company that can hav
 18. **Change in Capital Structure:** Alterations to the company's share capital, such as increasing or decreasing authorized share capital.
 
 These are just a few examples of corporate actions. Each action can have different implications for shareholders and the company's overall financial and operational landscape. It's important for investors to stay informed about corporate actions that could impact their investments.
+
+## Classifications
+
+Certainly! Corporate actions in the stock market can have varying effects on stock prices. Here are some common corporate actions and their typical classifications:
+
+1. **Stock Split:**
+   - **Classification:** Bullish
+   - **Explanation:** A stock split increases the number of outstanding shares, making each share more affordable. This is generally seen as a positive signal, indicating the company's confidence in future growth.
+
+2. **Dividend Declaration:**
+   - **Classification:** Neutral to Bullish
+   - **Explanation:** While dividend declaration is usually a positive sign indicating a company's profitability, it can sometimes be seen as neutral if the market was expecting a higher dividend.
+
+3. **Stock Buyback:**
+   - **Classification:** Bullish
+   - **Explanation:** Companies repurchasing their own shares can be seen as a positive signal. It indicates that the company believes its shares are undervalued and can boost shareholder value.
+
+4. **Merger/Acquisition:**
+   - **Classification:** Neutral to Bullish/Bearish (depends on the specifics)
+   - **Explanation:** The impact depends on whether the market views the merger or acquisition positively (potential synergies and growth) or negatively (integration challenges or overpayment).
+
+5. **Earnings Release:**
+   - **Classification:** Bullish/Bearish/Neutral (depends on actual results vs. expectations)
+   - **Explanation:** Positive earnings exceeding expectations are bullish, while negative earnings or missing expectations can be bearish.
+
+6. **Management Change:**
+   - **Classification:** Neutral to Bullish/Bearish (depends on market perception)
+   - **Explanation:** A change in top management can be viewed as positive if it's seen as bringing positive changes, or negative if it's due to performance issues or uncertainty.
+
+7. **Product Launch:**
+   - **Classification:** Bullish
+   - **Explanation:** Introducing a successful new product can boost investor confidence in a company's future revenue and profitability.
+
+Remember that market reactions can be subjective and depend on various factors, including the overall economic climate and investor sentiment.
+
+*Confidence Level: Moderate*
+
+Sources:
+- Investopedia. (https://www.investopedia.com/)
+- CNBC. (https://www.cnbc.com/)
+- The Motley Fool. (https://www.fool.com/)
