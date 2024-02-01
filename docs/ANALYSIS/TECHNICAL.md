@@ -2684,6 +2684,158 @@ If the second and third or just the third candle shows signs of weakening, it is
 > 
 > ...
 
+#### COUNTERATTACK LINES
+
+> Counterattack lines are formed when opposite colored candles have the same close. The best way to describe this pattern is by discussing the illustrations shown below.
+> 
+> ![More Reversal Patterns: Bullish Counterattack Line](/.attachments/more-bullish.counterattack.line.png)
+> 
+> _Bullish Counterattack Line_
+> 
+> ![More Reversal Patterns: Bearish Counterattack Line](/.attachments/more-bearish.counterattack.line.png)
+> 
+> _Bearish Counterattack Line_
+> 
+> The _bullish counterattack line_ pattern occurs during a decline. The first candle of this pattern is usually a long black candle. The next session opens sharply lower. At this point, the bears are feeling confident. The bulls then stage their counterattack as they push prices back up to unchanged from the prior close. The prior downtrend has then been bridled.
+> 
+> The bullish counterattack is comparable to the bullish piercing line. If you remember, the piercing line has the same two-candle configuration as that shown for the bullish counterattack pattern. The main difference is that the bullish counterattack line does not move into the prior session’s white real body. It just gets back to the prior session’s close. The piercing pattern’s second line pushes well into the black real body.
+> 
+> ![More Reversal Patterns: Bank One - Daily (Bearish Counterattack Lines)](/.attachments/more-bank.one-daily.png)
+> 
+> _Bank One - Daily (Bearish Counterattack Lines)_
+> 
+> In the chart shown above, on March 10, the stock surged one dollar higher on the opening than the prior day’s close. By session’s end the whole bullish hue of the stock had changed since the bears dragged down prices to the prior close of March 7. This bearish counterattack line of March 10 was the first of three black candles that completed the three black crows.
+> 
+> As mentioned in the section of three black crows, because we need to wait for three black candles for the completion of that signal, much of the move may be lost by the time the third candle of the three black crows unfolds. In this case, however, with the first black candle’s counterattack line, we would have received an early turning signal in one session that was further confirmed with the three black crows.
+> 
+> A bullish counterattack line is shown, in the chart below, at the January 12 lows. This helped confirm a support area in place since mid December between $25.50 and $27.
+> 
+> ![More Reversal Patterns: Applied Material - Daily (Bullish Counterattack Lines)](/.attachments/more-applied.material-daily.png)
+> 
+> _Applied Material - Daily (Bullish Counterattack Lines)_
+> 
+> This chart also highlights what I call a “cluster of candles.” By this I mean a convergence, or grouping, of candle signals that reinforce a specific resistance or support area. With this in mind, let’s look at how a cluster of candle signals, denoted by 1-4, reinforced resistance.
+> 
+> 1. A shooting star. The next day completed a bearish engulfing pattern.
+> 
+> 2. The black real body that intruded well into the prior white real body formed a dark-cloud cover.
+> 
+> 3. Another dark-cloud cover.
+> 
+> 4. A bearish engulfing pattern.
+> 
+> ...
+
+#### DUMPLING TOPS AND FRYPAN BOTTOMS
+
+> Dumpling tops and frypan bottoms. Someone must have been hungry when they thought of these names!
+> ![More Reversal Patterns: Dumpling Top](/.attachments/more-dumpling.top.png)
+> 
+> _Dumpling Top_
+>
+> The _dumpling top_ is a top reversal that usually has small real bodies as the market forms a convex pattern. Confirmation of the dumpling top is when the market gaps down. This pattern is the same as the Western rounded top. The only difference is that the dumpling top has the extra bearish kicker of a gap lower. (A gap down is called a “falling window” in candle terminology. See Chapter 7.)
+> 
+> ![More Reversal Patterns: Frypan Bottom](/.attachments/more-frypan.bottom.png)
+> 
+> _Frypan Bottom_
+> 
+> The _frypan bottom_ reflects a market that is bottoming and whose price action forms a concave design and then opens a gap to the upside (i.e., a rising window). It has the same appearance as a Western rounded bottom, but the Japanese frypan bottom must have a gap higher to confirm this pattern.
+> 
+> I like the concept behind these patterns. With the frypan bottom, the market goes from lower lows to the same lows and then higher lows. This pictorially proves that the bears are losing a foothold. Then, when you add a rising gap to this scenario, it gives even more proof that the bears have lost control of the market.
+> 
+> The Japanese will say that with a frypan bottom the market becomes “immune to bad news.” As such, if a market builds a frypan bottom—especially in spite of bearish news—it would be very impressive. As Bernard Baruch stated, “What is important are not the events themselves, but the human reaction to these events.”
+> 
+> The same is true with the dumpling top, but in reverse. That is, the market is ascending with higher highs and goes into a period where the highs are the same, and then goes to lower highs. As such, the pace of the rally is slackening. Then when you have a gap down to complete the dumpling top, it just puts another nail in the bulls’ coffin.
+> 
+> ![More Reversal Patterns: Micron - 60 Minutes (Dumpling Top)](/.attachments/more-60.minutes.png)
+> 
+> _Micron - 60 Minutes (Dumpling Top)_
+> 
+> The chart shown above illustrates the dumpling top where the stock is making a series of higher highs early on August 24. A few 60-minute sessions of long upper shadows and the dark-cloud cover at noon on that day gave a minor clue of some hesitation near $93.50. The final confirmation came with the lower highs made on the two sessions after the dark-cloud cover and then the gap down, which completed the dumpling top.
+> 
+> ![More Reversal Patterns: General Motors - Daily (Frypan Bottom)](/.attachments/more-general.motors-daily.png)
+> 
+> _General Motors - Daily (Frypan Bottom)_
+> 
+> The chart shown above, the July 7 long black candle reflected how hard this stock was hit. The only mitigating factor was that session’s lower shadow. But one session’s long lower shadow doesn’t change the trend from down to more positive. During the next few days, a series of long lower shadows echoed support near $13.50. The appearance of a white candle on July 10 was a successful defense of those lower shadows’ support area that also completed a bullish piercing pattern. With the next session's higher low, and the gap higher on July 13, this stock had built a frypan bottom.
+> 
+> In the chart shown below, a series of consecutive black candles during the week of July 19 kept the stock under pressure. Some diminutive real bodies and doji the next couple of weeks hinted that the stock was stabilizing. Final bullish proof of the breakout from this base came with a very small gap (shown at the arrow) made between August 5 and 6. As this chart illustrates, even if the gap is very small (i.e., a few cents) it is still considered a gap and thus validates this frypan bottom. The same would be true with the dumpling top. That is, even if there were a small gap to the downside, no matter how small, it would still confirm a dumpling top.
+> 
+> ![More Reversal Patterns: Tele Nort - Daily (Frypan Bottom)](/.attachments/more-tele.nort-daily.png)
+> 
+> _Tele Nort - Daily (Frypan Bottom)_
+> 
+> ...
+
+#### TOWER TOPS AND BOTTOMS
+
+> ![More Reversal Patterns: Tower Top](/.attachments/more-tower.top.png)
+> 
+> _Tower Top_
+> 
+> The _tower tops_ unfolds at high price levels. During a rally, there is a short-term lull after one or more white candles. Then on or more large black candles emerge. This creates a top with a white and black “tower” on either side of the small real bodies. That is, long candles on the way down and long candles on the way up.
+>
+> ![More Reversal Patterns: Tower Bottom](/.attachments/more-tower.bottom.png)
+> 
+> _Tower Bottom_
+> 
+> The _tower bottom_ occurs in a descending market in which one or more tall black candles keep the bearish momentum intact. Then some small real bodies lessen the bearish tone and finally a tall white candle finalizes the tower bottom.
+> 
+> The closest Western comparison to the tower top and bottom would be the spike, or V, reversal. In the spike reversal, the market is in a strong trend and then abruptly reverses to a new trend.
+> 
+> The tower top and bottom, like some other candlestick signals such as three black crows, may be most useful for longer-term traders since the tower is often finalized late in the move.
+> 
+> The tower bottom is analogous to the frypan bottom while the tower top is similar to the dumpling top. The main distinction between these two patterns is that long black and white candles are needed for the towers and there is no gap required. The dumpling top and frypan bottom require gaps.
+> 
+> ...
+> 
+> In the chart shown below, , a hammer in late December hinted of stabilization. The rally from the hammer continued with a tall white candle on December 29. However, as the stock got within shooting distance of a resistance area from early December near $35.75, a group of small real bodies arose. The December 30th candle made a harami pattern. The harami pattern and the spinning tops signaled caution. The trend turned more ominous with the emergence of the January 5 long black real body that completed the tower top.
+> 
+> ![More Reversal Patterns: Ducommun - Daily (Tower Top)](/.attachments/more-ducommun-daily.png)
+> 
+> _Ducommun - Daily (Tower Top)_
+> 
+> ...
+> 
+> An arrow in the chart shown below points to a long black real body that propelled the market to a new low for the move. A small white real body followed this bearish candle, forming a harami pattern. An extended white body followed six weeks of consolidation and thus completed a tower bottom.
+> 
+> ![More Reversal Patterns: Yen/Dollar - Daily (Tower Bottom))](/.attachments/more-yen-weekly-tower.bottom.png)
+> 
+> _Yen/Dollar - Daily (Tower Bottom)_
+
+### Chapter 7. Continuation Patterns
+
+> ...
+> 
+> As the Japanese express it, “There are times to buy, times to sell, and times to rest.“ Many of these continuation patterns imply a time of rest, a breather, before the market resumes its prior trend. The continuation formations reviewed in this chapter are windows (and patterns that include windows), the rising and falling three methods, separating lines, and three white soldiers.
+
+#### WINDOWS
+
+> The Japanese refer to what we call in the West a gap as a window. Whereas the Western expression is “filling in the gap,” the Japanese would say, “closing the window.” In this section I will explain the basic concepts of windows and then explore other patterns containing windows. Throughout my seminars and in this book I often use the terms “windows” and “gaps” inter-changeably.
+> 
+> ![Continuation Patterns: Rising Window](/.attachments/continuation-rising.window.png)
+> 
+> _Rising Window_
+> 
+There are two kinds of windows, one bullish and the other bearish. A _rising window_ is a bullish signal. There is a price vacuum between the prior session’s high (that is, the top of the upper shadow) and the current session’s low (e.g., the bottom of the lower shadow).
+> 
+> ![Continuation Patterns: Falling Window](/.attachments/continuation-falling.window.png)
+> 
+> _Falling Window_
+>
+> The _falling window_ is a bearish signal in which there is a gap between the prior session’s low and the current session’s high.
+> 
+> It is said by Japanese technicians to “go in the direction of the window.” This is because windows are continuation signals. Consequently, with the emergence of a rising window, one should look to buy on dips, and with a falling window to sell on bounces.
+> 
+> It is also said by the Japanese that “corrections stop at the window.” This means windows can become support and resistance areas. Thus, a rising window (as we'll see soon, this means the entire window) should also be a zone of support on pullbacks. If the pullback closes under the bottom of the window, the prior uptrend is voided. Note that in the illustration of the _rising window_, the market got under the bottom of the window, but since it didn’t close under this area, the rising windows support remains intact.
+> 
+> Likewise, a falling window implies still lower levels. Any price rebounds should run into resistance at this falling window (the entire window). If the bulls have enough force to close the market above the top of the falling window, the downtrend is done.
+
+
+> ![Continuation Patterns: ](/.attachments/)
+> 
+> __
+
 ### Chapter 17. The Best of East and West
 
 天上掉下个无敌大馅饼
