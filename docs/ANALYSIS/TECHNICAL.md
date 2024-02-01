@@ -2817,7 +2817,7 @@ If the second and third or just the third candle shows signs of weakening, it is
 > 
 > _Rising Window_
 > 
-There are two kinds of windows, one bullish and the other bearish. A _rising window_ is a bullish signal. There is a price vacuum between the prior session’s high (that is, the top of the upper shadow) and the current session’s low (e.g., the bottom of the lower shadow).
+> There are two kinds of windows, one bullish and the other bearish. A _rising window_ is a bullish signal. There is a price vacuum between the prior session’s high (that is, the top of the upper shadow) and the current session’s low (e.g., the bottom of the lower shadow).
 > 
 > ![Continuation Patterns: Falling Window](/.attachments/continuation-falling.window.png)
 > 
