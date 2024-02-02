@@ -2924,3 +2924,5 @@ _If heaven drops a fig, open your mouth_
 1. [Moving Average Trading - How to use Moving Averages](https://youtu.be/NqTPzObfkO0?si=ttnDf6Mt2uhT_MFp) - [Tradeciety.com](https://www.youtube.com/@Tradeciety)
 1. [This Gap Trading Strategy Prints You Money (Gap Up, Gap Down, Gap Fill)](https://youtu.be/qkChxbuUqvU?si=Py_JYTB2RyPr7-fy) - [Wysetrade](https://www.youtube.com/@Wysetrade)
 1. [How To Use Market Profile [START NOW] | Trading Tutorials](https://youtu.be/bpravMgflLc?si=fys4YugwoEaNiXo5) - [Trade Brigade](https://www.youtube.com/@TradeBrigade)
+1. [The ONLY Candlestick Pattern Guide You'll EVER NEED](https://youtu.be/tW13N4Hll88) - [TradingLab](https://www.youtube.com/@TradingLabOfficial)
+1. [How To Read Candlestick Charts FAST (Beginner's Guide)](https://youtu.be/AOz1YPOKvEs?si=kS_vLSuCSuWVExS8)

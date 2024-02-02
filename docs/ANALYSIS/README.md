@@ -136,8 +136,6 @@ From Appendix C of _Technical Analysis of the Financial Markets_ by John J. Murp
 
 ## Videos
 
-1. [The ONLY Candlestick Pattern Guide You'll EVER NEED](https://youtu.be/tW13N4Hll88) - [TradingLab](https://www.youtube.com/@TradingLabOfficial)
-2. [How To Read Candlestick Charts FAST (Beginner's Guide)](https://youtu.be/AOz1YPOKvEs?si=kS_vLSuCSuWVExS8)
-3. [How do I Analyse IPOs | Top 10 Analysis Parameters for IPOs](https://youtu.be/tbc8zLcbW5Q?si=1aDREQxh8BKvEfHu) - [CA Rachana Phadke Ranade](https://www.youtube.com/@CARachanaRanade)
-4. [How to Analyze an IPO: A complete Guide | Top 5 Tips to Analyze an IPO the Best Way](https://youtu.be/1iBlLTvIxX8?si=QXtU614CADHgc__O) - [Prateek Singh - LearnApp](https://www.youtube.com/@PrateekSinghLearnApp)
-5. [How I Pick Stocks](https://youtu.be/IPwDxoomxuA)
+1. [How do I Analyse IPOs | Top 10 Analysis Parameters for IPOs](https://youtu.be/tbc8zLcbW5Q?si=1aDREQxh8BKvEfHu) - [CA Rachana Phadke Ranade](https://www.youtube.com/@CARachanaRanade)
+1. [How to Analyze an IPO: A complete Guide | Top 5 Tips to Analyze an IPO the Best Way](https://youtu.be/1iBlLTvIxX8?si=QXtU614CADHgc__O) - [Prateek Singh - LearnApp](https://www.youtube.com/@PrateekSinghLearnApp)
+1. [How I Pick Stocks](https://youtu.be/IPwDxoomxuA)
