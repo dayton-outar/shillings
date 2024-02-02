@@ -2830,7 +2830,84 @@ If the second and third or just the third candle shows signs of weakening, it is
 > It is also said by the Japanese that “corrections stop at the window.” This means windows can become support and resistance areas. Thus, a rising window (as we'll see soon, this means the entire window) should also be a zone of support on pullbacks. If the pullback closes under the bottom of the window, the prior uptrend is voided. Note that in the illustration of the _rising window_, the market got under the bottom of the window, but since it didn’t close under this area, the rising windows support remains intact.
 > 
 > Likewise, a falling window implies still lower levels. Any price rebounds should run into resistance at this falling window (the entire window). If the bulls have enough force to close the market above the top of the falling window, the downtrend is done.
+> 
+> ...
+> 
+> One of the major factors for the remarkable appeal of candles is that they will often provide signals not available with bar charts. The chart below shows how we can use windows to get a resistance area not available with bar charts. A hammer emerged on October 8. This was a potentially bullish sign, but the day of the hammer was also a falling window. Therefore, one should wait for a close back over the top of the falling window to corroborate the potentially positive indications of the hammer.
+> 
+> ![Continuation Patterns: Oil Service Index - Daily (Windows)](/.attachments/continuation-oil.service-daily.png)
+> 
+> _Oil Service Index - Daily (Windows)_
+> 
+> Two days after the hammer, the bulls proved their mettle by closing above the top of the falling window, and did so with a bullish rising window. In doing this, the Oil Service Index built what in the West is called an island bottom. (This is when the market gaps down, and then within one or a few sessions, gaps up. The name “island bottom” is derived because one or few sessions are like an island surrounded by the water on either side [i.e., the gaps].) While the low of the island bottom is a natural support area (in this chart it is near 45.50), we can shift to our candle charting technique of windows to get an even earlier support area.
+> 
+> Using the concept that a rising window should be support, once the island bottom is completed on October 12 (with the rising window), our first support is not 45.50 (the low of the island bottom), but near 49.00 because of the rising window. This window’s support is where the index stabilized for the next few days before exploding with a long white real body. This is yet another example of how candle charting techniques will help get a jump on those who use only bar charting tools, since those using bar charts would use the bottom of the island bottom (at 45.50) as first support, rather than the candle’s rising window at 49.00. Of course, if the market had breached the window’s support area, we would look for next support toward 45.50 (the low of the island bottom and the hammer).
+> 
+> Traditional Japanese technical analysis posits that after three up or down windows, the chances are that the market is too overbought to continue ascending (in the case of three rising windows) or too oversold to keep the downtrend in force (with three falling windows). This probably has to do with the importance of the number three to the Japanese.
+> 
+> ...
 
+#### TASUKI
+
+> ![Continuation Patterns: Upward Gapping Tasuki](/.attachments/continuation-upward.gapping.tasuki.png)
+> 
+> _Upward Gapping Tasuki_
+> 
+> The tasuki are a specific combination of two candle lines that gap higher or lower. The _upward gapping tasuki_ is made of a rising window formed by a white candle and then a black candle. The black candle opens within the white real body and closes under the white candle’s real body. The close on the black candle day is the fight point. If the market closes under the bottom of the window, the bullish outlook of the upward gap tasuki is voided. The same concept is true in reverse for a _downward gapping tasuki_. The market opens a falling window with a black candle followed by a white candle. The two candies of the tasuki should be about the same size. Both types of tasuki are rare.
+> 
+> ![Continuation Patterns: Upward Gapping Tasuki](/.attachments/continuation-downward.gapping.tasuki.png)
+> 
+> _Downward Gapping Tasuki_
+> 
+> Based on my extra twelve years of experience since the first edition of this book, I have recommended at my seminars that there is little reason to waste brain cells on remembering the tasuki. The window is so overwhelmingly important that, in my opinion, it really doesn’t matter the color or combination of candle lines after the rising window. It is the window itself that is critical. All one needs to remember is that if there is a rising window (such as the upward tasuki), it is a bullish signal and the window should be support. A close under this support would turn the trend down. The same is true in reverse for the downward tasuki. That is, since the downward gapping tasuki has a falling window, the window should be resistance. A close over the top of the falling window would void the bearish implications of the downward gapping tasuki.
+> 
+> ...
+> 
+> **High-Price and Low-Price Gapping Plays**
+> 
+> ![Continuation Patterns: High-Price Gapping Play](/.attachments/continuation-high.price.play.png)
+> 
+> _High-Price Gapping Play_
+> 
+> It is normal after a sharp advance for the market to consolidate the gains. Sometimes this consolidation is by a series of small real bodies. A group of small real bodies after a strong white session tells us that the market is undecided. These small real bodies, while changing the trend from up to neutral, are in a sense healthy since, by treading water, the market is then relieving its overbought condition. If there is a rising window from these small real bodies, it is a bullish signal. This is the _high-price gapping play_ pattern. It is called this because prices hover near their recent highs and then gap to the upside.
+> 
+> 
+> ![Continuation Patterns: Low-Price Gapping Play](/.attachments/continuation-low.price.play.png)
+> 
+> _Low-Price Gapping Play_
+> 
+A _low-price gapping play_ is, not surprisingly, the bearish counterpart of the high-price gapping play. The low-price gapping play is a downside window from a low-price congestion band. This congestion band (a series of small real bodies) initially stabilized a steep decline. At first, this group of small candles gives the appearance that a base is forming. The break to the downside via a window dashes these bullish hopes.
+>
+> ![Continuation Patterns: Corning - Daily (High-Price Gapping Play)](/.attachments/continuation-corning-daily.png)
+> 
+> _Corning - Daily (High-Price Gapping Play)_
+> 
+> In that chart shown above, a hammer on July 31 proved to be the low of the move as the market ascended into the early part of August with a rising window. A long black real body during the week of August 7 made a dark-cloud cover, putting a temporary damper on the rally.
+> 
+> During the week of August 21, a series of small real bodies following a tall white candle showed us that the stock had reached a lull. The small rising window on August 28 proved that the bulls had taken full control as the market completed a high-price gapping play.
+> 
+> The bullish implications of this gapping play, or any high-price gapping play, would be voided if the market closed under the rising window that completes the gapping play. The reverse would be true for a low-price gapping play.
+> 
+> **Gapping Side-by-Side White Lines**
+> 
+> ![Continuation Patterns: Upgap Side-by-Side White Lines in an Uptrend](/.attachments/continuation-upgap.side.side.png)
+> 
+> _Upgap Side-by-Side White Lines in an Uptrend_
+> 
+> 
+> In a rally, an upward-gapping white candle followed the next session by another similar-sized white candle with about the same opening is a bullish continuation pattern. This two-candle pattern is referred to as _upgap side-by-side white lines_.
+> 
+> ![Continuation Patterns: Downgap Side-by-Side White Lines in a Downtrend](/.attachments/continuation-downgap.side.side.png)
+> 
+> _Downgap Side-by-Side White Lines in a Downtrend_
+> 
+> There are rarer side-by-side white lines that gap lower. These are called _downgap side-by-side white lines_. In spite of the dual white candles, it is still considered a bearish signal because of the falling window. These white lines are viewed as short covering. Once this short covering evaporates, prices should move lower. The reason the downgap side-by-side white line pattern is especially rare is because black candies, not white candles, are more natural in a declining price environment.
+> 
+> ...
+
+#### RISING AND FALLING THREE METHODS
+
+> 
 
 > ![Continuation Patterns: ](/.attachments/)
 > 
