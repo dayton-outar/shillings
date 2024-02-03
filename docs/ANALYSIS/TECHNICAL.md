@@ -3023,3 +3023,4 @@ _If heaven drops a fig, open your mouth_
 1. [The ONLY Candlestick Pattern Guide You'll EVER NEED](https://youtu.be/tW13N4Hll88) - [TradingLab](https://www.youtube.com/@TradingLabOfficial)
 1. [How To Read Candlestick Charts FAST (Beginner's Guide)](https://youtu.be/AOz1YPOKvEs?si=kS_vLSuCSuWVExS8)
 1. [The Ultimate Guide to Candlestick Patterns](https://www.youtube.com/playlist?list=PLCdjtsyRwkfd5SUdJLwsdQOMcqzOwLpJW) - [Soheil PKO](https://www.youtube.com/@SoheilPKO)
+1. [Market Profile: A SMB Trader Reveals How to Use This Tool to Make Effective Trades in $SPY](https://youtu.be/LfD8QpGjlQY?si=mtmisXu3PsP0Dw_p)

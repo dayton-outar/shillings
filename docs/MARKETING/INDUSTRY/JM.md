@@ -508,6 +508,7 @@ See below screenshot taking note of customer's experience during the fund-in pro
  - [eTrade](https://us.etrade.com/platforms)
  - [Trading 212](https://www.trading212.com/)
  - [Stockpile](https://www.stockpile.com/)
+ - [Go IPO](https://goipo.jncb.com/)
 
 ## Further Readings
 
@@ -524,6 +525,8 @@ See below screenshot taking note of customer's experience during the fund-in pro
 1. [Robinhood vs Charles Schwab 2023: Best Brokerage?](https://youtu.be/OlTiorM1fYQ)
 1. [Robinhood vs Charles Schwab | Which Brokerage Is Better For You?](https://youtu.be/RzmUCm835T4)
 1. [Charles Schwab Trading Platform Web Tutorial](https://youtu.be/CZsiRomcUeE)
+1. [GOIPO Demo | How To Invest Using GOIPO](https://youtu.be/vyJmKdo_uF8?si=v8Xjsku7--ADhv2k)
+1. [The SECRET FEATURES Of Investing.com I Guarantee Will Make You Millions In Forex Trading](https://youtu.be/QPRUjozJa4w?si=qoDodL13HWfXliFt)
 
 [^1]: [Importance of Domain Authority as the Key Site Metric for Growth](https://www.responsify.com/importance-of-domain-authority/) by Ginny Dwyer
 [^2]: [NATIONAL IDENTIFICATION SYSTEM (NIDS)](https://opm.gov.jm/portfolios/national-identification-system/)
