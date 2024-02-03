@@ -222,9 +222,34 @@ Notes left to take,
 
 ## The Market
 
+The research done on the [market](./MARKETING/MARKET/) and the [industry](./MARKETING/INDUSTRY/) confirms that technology and communities around the world are actively developing in harmony with each other to facilitate a pure digital experience to investors. Currently, some digital experience is not as efficient in some jurisdiction as it is in others. There's still heavy use of PDF documents as forms and manual approval systems used by staff members of brokerage firms (stock brokers). The brokers dependendency on their Government's infrastructure limits their ability to fully automate KYC responsibilities. The choice of funding stock trading accounts on trading platforms also requires manual approval though the brokers interact with software to do so. Even with some of the mentioned disharmony, there are still significant developments taking place by a number of fintech conglomerates. And, even though these conglomerates are closing gaps to provide a great digitized experience for investors, there is still room for improvement that startups can capitalize on.
+
 ![Minimum Viable Segment](/.attachments/minimum.viable.segment-4.png)
 
-- Unique Selling Propositions
+So, starting off with the [Jamaican market](./MARKETING/MARKET/JM.md) and the players in [that industry](./MARKETING/INDUSTRY/JM.md), the most common pain points are,
+1. Lack of real-time technical analysis
+2. Disjointed information on stocks and associated companies
+
+_Real-time technical analysis_ is vital to short-term investors because timely trades can preserve their gains and prevent losses. _Disjointed information_ can affect learning experience and exhaust even experienced investors. These pain points is all about the ease of gathering information to understand the companies and the stock market in a moment in time so that the best decision can be made.
+
+After examining the various communities and [tech solutions](./MARKETING/INDUSTRY/JM.md#competitors), the unique selling propositions that this product offers includes,
+1. Integrated learning environment
+2. Integrated social environment
+   1. Rating systems: Expert's, Company's, Brokers
+   2. Share ways to make gains
+   3. Share forecasts
+3. Visually immersive experience
+4. News sentiment interpreter (bullish, bearish, neutral)
+5. Interactive financial reports
+   1. Hyperactive links to auditor's notes
+   2. Shenanigan's notes
+   3. Expert's notes
+6. Buffet's performance checklist
+
+_Integrated learning environment_ 
+
+_Buffet's performance checklist_ is a scorecard of the company to which the stock is associated. It scores a company on its _durable competitive advantage_.
+
 - Strategy
 - Sales approach: Monetization
 - Advertising, promotion, public relations
