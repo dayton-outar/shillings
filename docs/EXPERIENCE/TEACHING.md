@@ -12,7 +12,7 @@ _Practival Insights in Brain Science to Help Students Learn_
 > 
 > But getting the information into long-term memory can be difficult. We’ll be exploring this vital topic in more detail in chapter 3. The key idea, however, is that retrieval practice is one of the best techniques for strengthening new information in long-term memory.10 Retrieval practice means drawing ideas you’re starting to learn from your own mind rather than simply looking at the answer. Good examples of retrieval practice include using flash cards or merely looking away from a page to see if you can retrieve the key idea or ideas on the page.
 
-## Chapter 2. Teacher Iclusively
+## Chapter 2. Teacher Inclusively
 
 > Nobel Prize–winning economist Friedrich Hayek, for example, observed that unlike his swift-learning colleagues, his innovative breakthroughs came from his slow, muddling struggle to grasp the material. Being forced to find his own way of expressing accepted ideas allowed him to see gaps and unjustified assumptions that others missed.
 
