@@ -226,11 +226,15 @@ The research done on the [market](./MARKETING/MARKET/) and the [industry](./MARK
 
 ![Minimum Viable Segment](/.attachments/minimum.viable.segment-4.png)
 
+### Pain Points
+
 So, starting off with the [Jamaican market](./MARKETING/MARKET/JM.md) and the players in [that industry](./MARKETING/INDUSTRY/JM.md), the most common pain points are,
 1. Lack of real-time technical analysis
 2. Disjointed information on stocks and associated companies
 
 _Real-time technical analysis_ is vital to short-term investors because timely trades can preserve their gains and prevent losses. _Disjointed information_ can affect learning experience and exhaust even experienced investors. These pain points is all about the ease of gathering information to understand the companies and the stock market in a moment in time so that the best decision can be made.
+
+### Unique Selling Propositions
 
 After examining the various communities and [tech solutions](./MARKETING/INDUSTRY/JM.md#competitors), the unique selling propositions that this product offers includes,
 1. Integrated learning environment
@@ -250,9 +254,14 @@ _Integrated learning environment_
 
 _Buffet's performance checklist_ is a scorecard of the company to which the stock is associated. It scores a company on its _durable competitive advantage_.
 
-- Strategy
-- Sales approach: Monetization
-- Advertising, promotion, public relations
+### Strategy
+
+
+### Sales Approach
+
+[Sales approaches involve techniques and methodologies to persuade customers to make a purchase. On the other hand, monetization encompasses various revenue models, such as subscription fees, advertising, licensing, or transaction fees, that contribute to the overall financial success of a business.]
+
+### Advertising, promotion, public relations
 
 ## Finance and Operations
 
