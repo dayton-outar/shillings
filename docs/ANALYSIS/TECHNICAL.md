@@ -2907,7 +2907,103 @@ A _low-price gapping play_ is, not surprisingly, the bearish counterpart of the 
 
 #### RISING AND FALLING THREE METHODS
 
+> ![Continuation Patterns: Rising Three Methods](/.attachments/continuation-rising.three.png)
 > 
+> _Rising Three Methods_
+> 
+> The three methods include the bullish rising three methods and a bearish falling three methods. (Note how the number three again makes an appearance.) These are both continuation patterns. That is, the trend before the bullish rising three methods should continue higher once the bullish three methods is completed. Likewise, a bear trend remains in effect after the bearish falling three methods.
+> 
+> The _rising three methods_ is composed of:
+> 
+> 1. A long white candle.
+> 
+> 2. The white candle is followed by a group of falling or lateral, small real body candles. The ideal number of small candles is three but two or more than three are also acceptable if they hold within the long white candle’s high-low range. Think of the small candles as forming a pattern similar to a three-day harami pattern since they hold within the first sessions range. (For this pattern, that would include holding within the shadows; for a true harami they would have to hold with the real body.) The small candles can be either color, but black is most ideal for this pattern.
+> 
+> 3. The final day should be a strong white real body session with a close above the first day’s close. The final candle line should ideally also open above the close of the previous session.
+> 
+> This pattern resembles the Western bull flag or pennant formation. Yet the concept behind the rising three methods is from the 1700s. The three methods pattern is considered a rest from trading and a rest from battle. In more modern terms, the market is, with the group of small candles, “taking a breather.”
+> 
+> ![Continuation Patterns: Falling Three Methods](/.attachments/continuation-falling.three.png)
+> 
+> _Falling Three Methods_
+> 
+> The _falling three methods_ pattern (see Exhibit 7.22) is the bearish counterpart of the rising three methods pattern. For this pattern, the market should be in a downtrend. A long black candle is followed by about three small rising candles whose real bodies hold within the first candle’s range (including shadows). The final session should open under the prior close and then close under the first black candle’s close. This pattern resembles a bear flag or bear pennant formation.
+> 
+> The ideal version of this pattern has the small real bodies as the opposite color of the first long real body. That is, for a bullish rising three methods, there should be small black real bodies; and for the bearish falling three methods, three small white real bodies. Nonetheless, from my experience, two and up to five small real bodies work fine. Also, the small real bodies can be any color.
+> 
+> ![Continuation Patterns: Intel - Daily (Rising Three Methods)](/.attachments/continuation-intel-daily.rising.three.png)
+> 
+> _Intel - Daily (Rising Three Methods)_
+> 
+> The ideal rising three methods has three small black real bodies within the entire trading range of a white real body. In the chart show above, we see a bullish belt-hold on August 13. This is followed by four small black real bodies and doji within the August 13 high-low range. The close on August 21 completes the rising three methods pattern.
+> 
+> The challenge we have with a rising three methods is from a risk/reward aspect. By the time the rising three methods is completed, a stock might be far from its most recent lows. In such a scenario, buying on the completion of the three methods may not offer an attractive trade. As such, one should think of the potential profit once the rising three methods is completed compared to its risk (the risk being the low of the white candle that started the rising three methods).
+> 
+> ...
+> 
+> ![Continuation Patterns: WorldCom - Weekly (Falling Three Methods)](/.attachments/continuation-worldcom-weekly.falling.three.png)
+> 
+> _WorldCom - Weekly (Falling Three Methods)_
+> 
+> In the chart shown above, WorldCom broke a multimonth support area near $38 in the first week of August. A minor rally in early August managed to put the stock back to the prior support area of $38. From there it failed. (In Chapter 11, I examine this technique of old support becoming new resistance.) The price activity in September formed a falling three methods pattern.
+> 
+
+#### SEPARATING LINES
+
+> We examined the counterattack line in Chapter 6. This is a white/black or black/white combination of candle lines with the same close as the previous close. Whereas the counterattack line has the same close, the separating lines shown below have the same open as the previous opposite color candle.
+> 
+> ![Continuation Patterns: Bullish and Bearish Separating Lines](/.attachments/continuation-bullish.bearish.separating.lines.png)
+> 
+> _Bullish and Bearish Separating Lines_
+> 
+> The separating line is a continuation pattern. It is easy to see why. During a market rise, a black real body (especially a relatively long one) would be a bull’s cause for concern. The bears might be gaining control. However, if the next session’s opening gaps high enough to open at the previous black session’s opening price, it impressively proves that the bears have lost control of the market—especially if that session closes as a white candle. This is the scenario that unfolds with the bullish separating line. The white line ideally should also be a bullish belt-hold (that is, open on the low of the session and close at, or near, the high of the session). The opposite would be true with a bearish separating line. This is viewed as a bearish continuation signal. Separating lines are rare.
+
+### Chapter 8. The Magic Doji
+
+> ![Continuation Patterns: Doji](/.attachments/doji-doji.png)
+> 
+> _Doji_
+> 
+> The doji is a distinct trend change signal, especially during rallies. The likelihood of a reversal with the emergence of a doji increases if:
+> 
+> 1. Subsequent candles confirm the doji's reversal potential.
+> 
+> 2. The market is overbought or oversold.
+> 
+> 3. The market doesn’t have many doji (the plural of doji is doji). If there are numerous doji on a particular chart, one should not view the emergence of a new doji as a meaningful development.
+> 
+> ![Continuation Patterns: Long-Legged Doji](/.attachments/doji-long.legged.png)
+> 
+> _Long-Legged Doji_
+> 
+> ![Continuation Patterns: Gravestone Doji](/.attachments/doji-gravestone.png)
+> 
+> _Gravestone Doji_
+> 
+> ![Continuation Patterns: Dragonfly Doji](/.attachments/doji-dragonfly.png)
+> 
+> _Dragonfly Doji_
+> 
+> ![Continuation Patterns: Doji after Tall White Candle](/.attachments/doji-tall.white.candle.png)
+> 
+> _Doji after Tall White Candle_
+> 
+> ![Continuation Patterns: Northern and Southern Doji](/.attachments/doji-northern.southern.png)
+> 
+> _Northern and Southern Doji_
+> 
+> The ideal doji session has the same opening and closing price, yet there is some flexibility to this rule. If the opening and closing prices are within a few ticks of each other (for example, a few cents in stocks or a few thirty-seconds in bonds, and so on), the line could still be viewed as a doji. How do you decide whether a near-doji day (that is, where the open and close are very close, but not exact) should be considered a doji? This is subjective and there are no rigid rules. Here are some techniques I have found useful for saying that a doji-like session would be reacted upon like a classic doji:
+> 
+> 1. Compare a near-doji day in relation to recent action. If there were a series of very small real bodies, the near-doji day would not be viewed as significant since so many other recent periods had small real bodies. If, however, a doji-like session emerges among tall candles, then we can say that such a session could have the same implications as a doji since this session is displaying there is something very different on that session from the preceding action.
+> 
+> 2. If the market is at an important market junction.
+>
+> 3. If the market is extremely overbought or oversold.
+>
+> 4. If there are other technical signals sending out an alert.
+>
+> Since a doji can be a significant warning, it is better to attend to a false warning than to ignore a real one.
+
 
 > ![Continuation Patterns: ](/.attachments/)
 > 
