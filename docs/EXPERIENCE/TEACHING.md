@@ -19,7 +19,7 @@ _Practival Insights in Brain Science to Help Students Learn_
 ## Chapter 5. How Human Brains Evolved
 
 > 
-> ![Teacher-Directed vs Student-Directed](/.attachments/teach)
+> ![Teacher-Directed vs Student-Directed](/.attachments/teacher-directed.vs.student-directed.jpg)
 > 
 > _Often, teacher-directed instruction and student-directed instruction are viewed as opposing methodologies. But in practice, teacher-directed instruction sets students up for successful student-directed learning. The more difficult (biologically secondary) the material, the more that students need coaching (teacher-directed approaches) to launch them toward independence (student-directed approaches). As students strengthen their neural links, they gain autonomy in their learning._
 > 
