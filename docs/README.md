@@ -261,7 +261,9 @@ _Buffet's performance checklist_ is a scorecard of the company to which the stoc
 
 [Sales approaches involve techniques and methodologies to persuade customers to make a purchase. On the other hand, monetization encompasses various revenue models, such as subscription fees, advertising, licensing, or transaction fees, that contribute to the overall financial success of a business.]
 
-### Advertising, promotion, public relations
+### Brand Awareness
+
+- Advertising, promotion, public relations
 
 ## Finance and Operations
 
