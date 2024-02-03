@@ -126,8 +126,6 @@ Knows Nothing is a novice to the stock market but he is fascinated with the exci
 - Deliver reports with the similar experience as an annual report via their company profile. Shifting from PDF to visually interactive media experience.
 - Engage investors to purchase their stocks
 
-Apart from providing analysis on companies, this project seeks to enable customers to purchase and sell stocks via a chosen stock broker online. This project adds value by offering the convenience to conduct business this without submitting anything physical or go into any office in person.
-
 ### Solutions Approach
 
 Indeed, there are software platforms that integrate analysis tools with trading capabilities to provide investors and traders with a comprehensive solution. These platforms often combine real-time market data, technical analysis tools, and trade execution features. Here's how such software can address some challenges:
@@ -145,6 +143,8 @@ Indeed, there are software platforms that integrate analysis tools with trading 
 <image src="/.attachments/chatgpt-logo.png" alt="Chat GPT Logo" width="16" height="16" />
 
 ## Purpose
+
+[Review and Revise]
 
 Why did I build Shillings?
 
