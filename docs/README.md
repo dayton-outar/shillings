@@ -1,30 +1,8 @@
-# Business Design Philosophy
+# Business Plan
 
 ***Shillings*** is the first story-based stock trading platform. Its goal is to reach the global stock trading market by bringing an immersive experience for tracking and trading securities.
 
 Publicly listed companies and their investors have their stories surrounding the drama of its development and performance. Companies attempt to tell these stories in the quarterly and annual reports. _Shillings_ brings a different perspective of how to interpret ticker symbols and numbers to increase the participation rate in the various stock exchanges around the world.
-
-## The Plan
-
-1. Complete Market Research (January 2024)
-   1. Make appointment to see IT Manager and Library
-2. Complete Business Canvas (February 2024)
-3. Arrange focus group meeting for brainstorming and backlog discussion (February 2024)
-   1. Fill up and prune backlog
-   2. Decide upon features for Sprint 1 - MVP #2
-4. Build Portal (Login) for focus group (March 2024)
-5. Complete Sprint 1 (March 2024)
-6. Gather improvement ideas and backlog from focus group for second sprint, Sprint 2 (March 2024)
-7. Complete Sprint 2 (April 2024)
-8. Review branding and marketing strategy
-9. Build Critical Mass from Influencers, Investment Clubs and Communities (April 2024)
-   1. Arrange meeting with communities
-   2. Deliver branded presentation
-   3. Usher commitment from members of community
-
-Notes left to take,
-
- - Complete all readme for [analaysis](./ANALYSIS/) and [experience](./EXPERIENCE/)
 
 ## The Problem
 
@@ -150,7 +128,7 @@ Knows Nothing is a novice to the stock market but he is fascinated with the exci
 
 Apart from providing analysis on companies, this project seeks to enable customers to purchase and sell stocks via a chosen stock broker online. This project adds value by offering the convenience to conduct business this without submitting anything physical or go into any office in person.
 
-### Possible Solution
+### Solutions Approach
 
 Indeed, there are software platforms that integrate analysis tools with trading capabilities to provide investors and traders with a comprehensive solution. These platforms often combine real-time market data, technical analysis tools, and trade execution features. Here's how such software can address some challenges:
 
@@ -220,14 +198,48 @@ These are the requirements for starting a stock brokerage. If those requirements
 
 Step 1 may take 4 to 5 years.
 
-## Business Plan
+## The Schedule
 
-![Shillings Business Canvas](/.attachments/shillings.business.canvas-2.png)
+1. Complete Market Research (January 2024)
+   1. Make appointment to see IT Manager and Library
+2. Complete Business Canvas (February 2024)
+3. Arrange focus group meeting for brainstorming and backlog discussion (February 2024)
+   1. Fill up and prune backlog
+   2. Decide upon features for Sprint 1 - MVP #2
+4. Build Portal (Login) for focus group (March 2024)
+5. Complete Sprint 1 (March 2024)
+6. Gather improvement ideas and backlog from focus group for second sprint, Sprint 2 (March 2024)
+7. Complete Sprint 2 (April 2024)
+8. Review branding and marketing strategy
+9. Build Critical Mass from Influencers, Investment Clubs and Communities (April 2024)
+   1. Arrange meeting with communities
+   2. Deliver branded presentation
+   3. Usher commitment from members of community
 
+Notes left to take,
 
+ - Complete all readme for [analaysis](./ANALYSIS/) and [experience](./EXPERIENCE/)
+
+## The Market
 
 ![Minimum Viable Segment](/.attachments/minimum.viable.segment-4.png)
 
+- Unique Selling Propositions
+- Strategy
+- Sales approach: Monetization
+- Advertising, promotion, public relations
+
+## Finance and Operations
+
+- Structure of business and key management personnel
+- Roles and responsibilities of team members
+
+![Shillings Business Canvas](/.attachments/shillings.business.canvas-2.png)
+
+- Financing strategy
+- Breakdown of how the funds will be used
+- Projected income statements, balance sheets and cash flow statements
+- Assumptions behind financial forecasts
 
 ## References
 
