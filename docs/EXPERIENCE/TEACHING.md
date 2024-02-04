@@ -10,7 +10,7 @@ _Practival Insights in Brain Science to Help Students Learn_
 > 
 > ...
 > 
-> But getting the information into long-term memory can be difficult. We’ll be exploring this vital topic in more detail in chapter 3. The key idea, however, is that retrieval practice is one of the best techniques for strengthening new information in long-term memory.10 Retrieval practice means drawing ideas you’re starting to learn from your own mind rather than simply looking at the answer. Good examples of retrieval practice include using flash cards or merely looking away from a page to see if you can retrieve the key idea or ideas on the page.
+> But getting the information into long-term memory can be difficult. We’ll be exploring this vital topic in more detail in chapter 3. The key idea, however, is that retrieval practice is one of the best techniques for strengthening new information in long-term memory. Retrieval practice means drawing ideas you’re starting to learn from your own mind rather than simply looking at the answer. Good examples of retrieval practice include using flash cards or merely looking away from a page to see if you can retrieve the key idea or ideas on the page.
 
 ## Chapter 2. Teacher Inclusively
 
@@ -63,7 +63,7 @@ _Practival Insights in Brain Science to Help Students Learn_
 > 
 > **And this is why instruction that includes multiple opportunities for practice to break up the lesson can be so valuable**. These active periods allow students to begin the sometimes arduous transfer of ideas from working memory into long-term memory, assisted by the helpful reinforcement of the hippocampus. Such active periods also allow students time to consolidate the information.
 
-## Chapter 3. Active Learning
+## Chapter 3. Active Learning. The Declarative Pathway
 
 > So what is active learning? Zoologist turned active learning expert Scott Freeman and his colleagues—authors of the meta-analysis cited above—surveyed university instructors to provide the following working definition: “Active learning engages students in the process of learning through activities and/or discussion in class, as opposed to passively listening to an expert. It emphasizes higher-order thinking and often involves group work.”
 > 
@@ -235,3 +235,5 @@ _Practival Insights in Brain Science to Help Students Learn_
 > This is a point, however, where we should clarify. A working memory with lesser capacity is not a drawback. It’s just a difference that means other approaches to teaching and learning are required. Coauthor Barb’s lesser-capacity working memory, for example, provides the fuel that underpins her creative success. Does she have to work harder sometimes to master new material? Yes. But she feels that her hiker brain allows her to see the world with fresh perspectives that her larger-capacity working memory colleagues can overlook.
 > 
 > Is it possible to provide too much guidance? Yes. Students suffer when we let them off the hook for learning. There is something of a delicate dance related to resiliency. If parents or teachers are overly helpful, students may learn that admitting defeat gets their work done for them, either by their parents around the kitchen table or by the teacher the next day, who says, “That’s okay. At least you tried.” This, again, is why direct instruction to scaffold students toward the answers without simply giving them the answers is so valuable.
+
+## Chapter 6. Active Learning. The Procedural Pathway
