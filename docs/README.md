@@ -68,12 +68,6 @@ Individuals eligible for a dealer's licence includes the following,
  
 3. has a net worth of at least ten million dollars or has acquired indemnity insurance for at least that amount.
 
-The law continues to state,
-
-> A company is eligible to apply for a dealer’s licence if it maintains capital of at least fifty million dollars.
-
-> A company is eligible to apply for an investment adviser’s licence if it maintains free assets of at least one million dollars.
-
 These are the requirements for starting a stock brokerage. If those requirements can be met, then that firm can use this as a way to position itself to members of the market that want a real-time digitized approach to the business of trading stocks.
 
 ## Monetization
