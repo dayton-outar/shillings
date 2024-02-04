@@ -127,6 +127,18 @@ Listed companies always want to communicate to their investors in the best way p
 
 [Some investors](./MARKETING/MARKET/JM.md#interviews) are willing to pay as low as US$1 to as high as US$35 per month for the features mentioned in the [value proposition](./MARKETING/VALUE.md).
 
+### Channel
+
+Refer to [strategy](#strategy).
+
+### Product Use Case
+
+Usage scenarios are outlined in [value proposition](./MARKETING/VALUE.md).
+
+### Customer Profile
+
+Also referred to as buyer persona in [value proposition](./MARKETING/VALUE.md).
+
 ### Unique Selling Propositions
 
 After examining the various communities and [tech solutions](./MARKETING/INDUSTRY/JM.md#competitors), the unique selling propositions that this product offers includes,
