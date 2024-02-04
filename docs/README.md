@@ -90,18 +90,17 @@ Step 1 may take 4 to 5 years.
 
 ## The Schedule
 
-1. Complete Market Research (January 2024)
+1. Complete Business Canvas (February 2024)
    1. Make appointment to see IT Manager and Library
-2. Complete Business Canvas (February 2024)
-3. Arrange focus group meeting for brainstorming and backlog discussion (February 2024)
+2. Build Portal (Login) and Fundamentals (March 2024)
+3. Arrange focus group meeting for brainstorming and backlog discussion (October 2024)
    1. Fill up and prune backlog
    2. Decide upon features for Sprint 1 - MVP #2
-4. Build Portal (Login) for focus group (March 2024)
-5. Complete Sprint 1 (March 2024)
-6. Gather improvement ideas and backlog from focus group for second sprint, Sprint 2 (March 2024)
-7. Complete Sprint 2 (April 2024)
-8. Review branding and marketing strategy
-9. Build Critical Mass from Influencers, Investment Clubs and Communities (April 2024)
+4. Complete Sprint 1 (March 2024)
+5. Gather improvement ideas and backlog from focus group for second sprint, Sprint 2 (March 2024)
+6. Complete Sprint 2 (April 2024)
+7. Review branding and marketing strategy
+8. Build Critical Mass from Influencers, Investment Clubs and Communities (April 2024)
    1. Arrange meeting with communities
    2. Deliver branded presentation
    3. Usher commitment from members of community
