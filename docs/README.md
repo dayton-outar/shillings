@@ -54,19 +54,19 @@ Value: How will it make our business and users' lives better?
 
 Another important business idea for consideration is to start a brokerage firm, where this product will be used to access the services of the broker. According to Jamaican laws (the Securities Act[^2]),
 
-> an individual is eligible to apply for a dealer’s licence or an investor adviser’s licence if—
-> 
-> (a) he satisfies one of the following requirements, that is to say—
-> 
->     (i) he holds a degree in economics, accounting or business related subjects; or
-> 
->     (ii) has a professional qualification in law or accounting; or
-> 
->     (iii) has successfully completed a programme of study in securities approved by the Commission; and
-> 
-> (b) has worked for at least two years in the securities industry; and
-> 
-> (c) has a net worth of at least ten million dollars or has acquired indemnity insurance for at least that amount.
+Individuals eligible for a dealer's licence includes the following,
+
+1. he satisfies one of the following requirements, that is to say—
+
+   > (i) he holds a degree in economics, accounting or business related subjects; or
+   > 
+   > (ii) has a professional qualification in law or accounting; or
+   > 
+   > (iii) has successfully completed a programme of study in securities approved by the Commission; and
+ 
+2. has worked for at least two years in the securities industry; and
+ 
+3. has a net worth of at least ten million dollars or has acquired indemnity insurance for at least that amount.
 
 The law continues to state,
 
@@ -128,6 +128,10 @@ _Real-time technical analysis_ is vital to short-term investors because timely t
 The greatest pain point for the brokers is the lack of capital to automate the KYC and fund-in/fund-out requests for investors.
 
 Listed companies always want to communicate to their investors in the best way possible.
+
+### Budget
+
+[Some investors](./MARKETING/MARKET/JM.md#interviews) are willing to pay as low as US$1 to as high as US$35 per month for the features mentioned in the [value proposition](./MARKETING/VALUE.md).
 
 ### Unique Selling Propositions
 
