@@ -32,116 +32,6 @@ _Chris Charts_ makes his trading decisions based on the market behaviour by anal
 
 _Ingrid Investor_ invests in the stock market as part of her pension plan. She is more interested in long-term investment in business that will grow in value and pay dividends for a long time. She is entertained by intrinsic evaluation, financial reports analysis and news about the leadership and performance of the companies associated with the stocks chosen in her portfolio. She doesn't have much time to delve into these _fundamentals_ but every now and then when she has the time she visits [SimplyWall.st](https://simplywall.st/), where she can view a comprehensive fundamental analysis of the companies associated with stocks in her portfolio. It would have been perfect there if the information wasn't so overwhelming. She can pick out a few metrics to put them in context but most metrics and information have no context. It seemed to expert for her until she found ***Shillings***. ***Shillings*** offered a graphical immersive story-telling approach that put context to every metric shared. It was from that point, that _Ingrid_ started to learn more and appreciate not only the increasing value of the companies but the stories of how well the business is performing.
 
-## Value Proposition
-
-***Shillings*** caters to 3 major players of the stock market,
-1. Investors
-2. Brokers
-3. Publicly Listed Companies
-
-Brokers are the intermediaries needed to ensure investors abide by regulations, while the stock exchange focuses on settling trades. They are not the drivers in this industry. If _Shillings_ becomes a broker, the main focus will be on the investors and the publicly listed companies.
-
-### Investors
-
-**For** Investors \
-**Who are dissatisfied with** having a disjointed experience using several sources \
-**Our product provides**,
-- Easy On-boarding
-- Easily Accessibly Resources _relevant to the stock market_
-- [Integrated Learning Experience](https://github.com/dayton-outar/shillings/issues/65) _where tour guides and progressive exposure of information is used to train investors_
-- Visually Immersive Experience _where [graphics](https://github.com/dayton-outar/shillings/issues/51) are used as much as possible to explain concepts; less reading more visual cues_
-- [Integrated Social Experience](https://github.com/dayton-outar/shillings/issues/53) _where investors can learn from the real gains or losses of other investors_
-
-#### Tracy Trader, The Swing Income Trader
-
-Tracy Trader is described as the Swing Income Trader because she seeks to generate a steady stream of income from dividend-paying stocks but she is also interested in the capital gains from stocks that increase in value. She swings from stock to stock for every opportunity to earn income. She is indeed a short-term investor that is entertained and committed to the stock market more than the long-term investor.
-
-![Buyer Persona for Tracy Trader](/.attachments/Buyer.Persona-Tracy.Trader-2.png)
-
-**For** Swing Income Traders \
-**Who are dissatisfied with** SimplyWall.st and JTrader Pro \
-**Our product provides**,
-- [IPO Checklist](https://github.com/dayton-outar/shillings/issues/63) _that scores new IPO_
-- New Sentiment Interpreter _that determines if news is bullish, bearish or neutral_
-- [Expert's Rating System](https://github.com/dayton-outar/shillings/issues/66) _that determines soundness and reputation of expert's advice_
-- Fast Fund-in/Fund-out _to quickly place BUY or SELL order_
-- Shareholder Relationship Tree _to determine influential investors_. See [Expanded Company Profile](https://github.com/dayton-outar/shillings/issues/39).
-- [Portfolio Statement](https://github.com/dayton-outar/shillings/issues/60) _to know real-time the gains/loss of portfolio_
-
-![Value Proposition Canvas for Tracy Trader](/.attachments/Shillings.Value.Proposition.Canvas-Tracy.Trader.png)
-
-#### Chris Charts, The Day Income Trader
-
-Chris Charts is a short-term investor, who's looking for every opportunity to gain income from capital gains. Chris is more influenced by the trends of the market rather than any form of fundamentals about the companies to which the stocks are associated. Speed of analysis and making the right trading decision is his sole priority.
-
-![Buyer Persona for Chris Charts](/.attachments/Buyer.Persona-Chris.Charts.png)
-
-**For** Day Income Traders \
-**Who are dissatisfied with** Jamaica Stock Exchange web site, Investing.com and JTrader Pro \
-**Our product provides**,
-- Real-time Technicals _to be more confident on when to enter and exit the market_
-- Ability to trade stocks _on the same system on which technical analysis was performed_
-
-![Value Proposition Canvas for Chris Charts](/.attachments/Shillings.Value.Proposition.Canvas-Chris.Charts.png)
-
-#### Ingrid Investor, The Long-term Investor
-
-Ingrid Investor is a long-term investor that cannot be bothered to check up on the daily ups and downs of the market. She is more focused on the long-term returns that her investment in a particular stock will yield. Some of Ingrid's peers prefer to have a mutual fund manage their funds until they "mature" for them when they retire. Ingrid is just a little bit more adventurous and open to learning the stock market.
-
-![Buyer Persona for Ingrid Investor](/.attachments/Buyer.Persona-Ingrid.Investor.png)
-
-**For** Long-term Investors \
-**Who are dissatisfied with** SimplyWall.st and their broker's newsletters \
-**Our product provides**,
-- [Interactive Financial Reports](https://github.com/dayton-outar/shillings/issues/26) _that's easier to navigate annual and quarterly reports_
-- [Financial Shenanigans Notes](https://github.com/dayton-outar/shillings/issues/26) _that lists discrepancies in financial reports_
-- [Buffet's Performance Checklist](https://github.com/dayton-outar/shillings/issues/26) _that scores a company's durable competitive advantage_
-- Intrinsic Valuation Deduction _that evaluates the company based on it's latest story, performance and projections_
-
-![Value Proposition Canvas for Ingrid Investor](/.attachments/Shillings.Value.Proposition.Canvas-Ingrid.Investor.png)
-
-#### Knows Nothing, Novices
-
-Knows Nothing is a novice to the stock market but he is fascinated with the excitement from hearing persons that make gains from trading stocks. He wants to learn but there are so many terms, symbols, figures and combination of chart patterns that intimidate him. He took a look at Investopedia.com but doesn't even know where to start learning. The volume of information to cover is overwhelming. Knows Nothing needs a guide and a plan to get through the difficult learning curve.
-
-![Buyer Persona for Knows Nothing](/.attachments/Buyer.Persona-Knows.Nothing.png)
-
-**For** Novices \
-**Who are dissatisfied with** Jamaica Stock Exchange and Investopedia.com \
-**Our product provides**,
-- Tour Guide _that helps through learning the stock market_
-- Archive of Financial Reports _to study reports and observe performance trends_
-- [Mock Trade Platform](https://github.com/dayton-outar/shillings/issues/64) _to conduct trades without money_
-
-![Value Proposition Canvas for Knows Nothing](/.attachments/Shillings.Value.Proposition.Canvas-Knows.Nothing.png)
-
-### Brokers
-   
-- Ease of on-boarding new investors
-- Ease of tracking fund-in and fund-out request
-- Showing and allowing communication between broker and investor at each stage of trading
-  
-### Listed Companies
-
-- Deliver reports with the similar experience as an annual report via their company profile. Shifting from PDF to visually interactive media experience.
-- Engage investors to purchase their stocks
-
-### Solutions Approach
-
-Indeed, there are software platforms that integrate analysis tools with trading capabilities to provide investors and traders with a comprehensive solution. These platforms often combine real-time market data, technical analysis tools, and trade execution features. Here's how such software can address some challenges:
-
-1. **Integrated Analysis:** These platforms typically offer a range of analysis tools, including technical indicators, chart patterns, and fundamental data. This integration allows users to access relevant information for making informed investment decisions.
-
-2. **Trade Execution Features:** Software platforms often include features for seamless trade execution. Investors can place, monitor, and manage trades directly from the same interface where they conduct their analysis.
-
-3. **Risk Management Tools:** Many platforms provide risk management features, including stop-loss orders and risk alerts. These tools help users manage their exposure and mitigate potential losses.
-
-4. **Educational Resources:** Some platforms offer educational resources within the software, providing users with insights into market trends, investment strategies, and risk management practices.
-
-5. **User-Friendly Interface:** A user-friendly interface is essential for investors and traders to navigate the software efficiently. This can include customizable dashboards and easy-to-use tools.
-
-<image src="/.attachments/chatgpt-logo.png" alt="Chat GPT Logo" width="16" height="16" />
-
 ## Purpose
 
 [Review and Revise]
@@ -222,17 +112,23 @@ Notes left to take,
 
 ## The Market
 
-The research done on the [market](./MARKETING/MARKET/) and the [industry](./MARKETING/INDUSTRY/) confirms that technology and communities around the world are actively developing in harmony with each other to facilitate a pure digital experience to investors. Currently, some digital experience is not as efficient in some jurisdiction as it is in others. There's still heavy use of PDF documents as forms and manual approval systems used by staff members of brokerage firms (stock brokers). The brokers dependendency on their Government's infrastructure limits their ability to fully automate KYC responsibilities. The choice of funding stock trading accounts on trading platforms also requires manual approval though the brokers interact with software to do so. Even with some of the mentioned disharmony, there are still significant developments taking place by a number of fintech conglomerates. And, even though these conglomerates are closing gaps to provide a great digitized experience for investors, there is still room for improvement that startups can capitalize on.
+The research done on the [market](./MARKETING/MARKET/) and the [industry](./MARKETING/INDUSTRY/) confirms that technology and communities around the world are actively developing in harmony with each other to deliver a pure digital experience to investors. Currently, some digital experience is not as efficient in some jurisdiction as it is in others. There's still heavy use of PDF documents as forms and manual approval systems used by staff members of brokerage firms (stock brokers). The brokers dependendency on their Government's infrastructure limits their ability to fully automate KYC responsibilities. The choice of funding stock trading accounts on trading platforms also requires manual approval though the brokers interact with software to do so. Even with some of the mentioned disharmony, there are still significant developments taking place by a number of fintech conglomerates. And, even though these conglomerates are closing gaps to provide a great digitized experience for investors, there is still room for improvement that startups can capitalize on.
 
 ![Minimum Viable Segment](/.attachments/minimum.viable.segment-4.png)
 
+Six (6) minimum viable segments were identified that [this product can bring value](./MARKETING/VALUE.md). They include 4 types of investor profiles, the brokers and the listed companies.
+
 ### Pain Points
 
-So, starting off with the [Jamaican market](./MARKETING/MARKET/JM.md) and the players in [that industry](./MARKETING/INDUSTRY/JM.md), the most common pain points are,
+So, starting off with the [Jamaican market](./MARKETING/MARKET/JM.md) and the players in [that industry](./MARKETING/INDUSTRY/JM.md), the most common pain points for investors are,
 1. Lack of real-time technical analysis
 2. Disjointed information on stocks and associated companies
 
 _Real-time technical analysis_ is vital to short-term investors because timely trades can preserve their gains and prevent losses. _Disjointed information_ can affect learning experience and exhaust even experienced investors. These pain points is all about the ease of gathering information to understand the companies and the stock market in a moment in time so that the best decision can be made.
+
+The greatest pain point for the brokers is the lack of capital to automate the KYC and fund-in/fund-out requests for investors.
+
+Listed companies always want to communicate to their investors in the best way possible.
 
 ### Unique Selling Propositions
 
@@ -250,20 +146,41 @@ After examining the various communities and [tech solutions](./MARKETING/INDUSTR
    3. Expert's notes
 6. Buffet's performance checklist
 
-_Integrated learning environment_ 
+_Integrated learning environment_ is built to engage and immerse the users into a progressive but contextual exposure of information. It's not taken for granted that terms, ticker symbols and numbers are understood by the user. Short snippets of information and _affordances_ are used to guide investors through the fundamental and technical material in a teacher-directed fashion.
+
+_Integrated social environment_ contains features to facilitate the natural urge for us to share and learn from others.
+
+_Visually immersive experience_ makes use of graphics to engage and explain information published by companies. This all depends on the graphical work published in the companies' annual reports.
+
+_New sentiment interpreter_ is an automated tool that interprets news articles as bullish, bearish or neutral for certain industries and companies.
+
+_Interactive financial reports_ makes use of the rich interactive experience that can be provided in a web page. PDF documents provided by companies that are difficult to navigate will be rerendered to provide this experience. An experience that includes expert's notes and comments, including identifying financial shenanigan's.
 
 _Buffet's performance checklist_ is a scorecard of the company to which the stock is associated. It scores a company on its _durable competitive advantage_.
 
 ### Strategy
 
+The strategy to bring awareness to the product involves practicing the philosophy of using the _smallest viable market_ to develop the product while in its infancy stage (beta phase). The members chosen for the _smallest viable market_ will include about 7 investors that are described in the 4 different buyer personas explained in the [value proposition](./MARKETING/VALUE.md#investors). These members are expected to be part of a wider social network of investors to which they will share their experience. It's pretty much a grassroots approach.
+
+As the word spreads, members will be brought on-board through a referral registration system, where the system provides a token to the prospect. For future reference, members can be rewarded and incentivized to expand membership. The initial membership will allow access but not trading, since trading will require KYC requirements of each new prospect.
+
+In addition to this approach, we will reach out to [communities and influencers in the industry](./MARKETING/INDUSTRY/JM.md#communities-and-thought-leaders) to deliver a branded presentation. A _branded presentation_ involves the use of logos, catchy name and slogans to conduct a live presentation of the product.
+
+Advertisements will not be necessary until there's significant traction and renown of the product. Advertisements will not be used to bring awareness but to state the claim that the product is the leader of its category in the market.
+
+SEO strategy will be considered after 2,000 members ar actively using the product or a decision is made to enter into the US market.
 
 ### Sales Approach
 
-[Sales approaches involve techniques and methodologies to persuade customers to make a purchase. On the other hand, monetization encompasses various revenue models, such as subscription fees, advertising, licensing, or transaction fees, that contribute to the overall financial success of a business.]
+If we do arrive at a freemium model, the referral model will be used to engage the sales. It is a far less aggressive approach.
+
+A business-to-business sales model maybe considered, where listed companies pay to organize their profiles and promote their stock to investors.
+
+Both sales and monetization is not fully decided.
 
 ### Brand Awareness
 
-- Advertising, promotion, public relations
+The [brand philosophy](./BRANDING/) that will be embraced is one that places ***Shillings*** as the first of its kind in a new category. ***Shillings*** so far is the first story-based trading platform that provides an immersive experience that engages young people from the age of 18 up to participate more in the stock market. Any avatar, logo, slogan and color theme that projects fortune and vibrance are brand statements that we plan to use. As it relates to the name, we can rebrand ***Shillings*** to use the Google model, where a new word is created but a word that has at most 2 syllables. If the word has to have "stocks" in it, then we can stretch the name to accommodate 3 syllables, at most.
 
 ## Finance and Operations
 
