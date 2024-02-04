@@ -167,6 +167,8 @@ _Interactive financial reports_ makes use of the rich interactive experience tha
 
 _Buffet's performance checklist_ is a scorecard of the company to which the stock is associated. It scores a company on its _durable competitive advantage_.
 
+The unique selling propositions will be delivered according to our [UX design philosophy](./EXPERIENCE/).
+
 ### Strategy
 
 The strategy to bring awareness to the product involves practicing the philosophy of using the _smallest viable market_ to develop the product while in its infancy stage (beta phase). The members chosen for the _smallest viable market_ will include about 7 investors that are described in the 4 different buyer personas explained in the [value proposition](./MARKETING/VALUE.md#investors). These members are expected to be part of a wider social network of investors to which they will share their experience. It's pretty much a grassroots approach.
