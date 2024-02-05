@@ -237,3 +237,5 @@ _Practival Insights in Brain Science to Help Students Learn_
 > Is it possible to provide too much guidance? Yes. Students suffer when we let them off the hook for learning. There is something of a delicate dance related to resiliency. If parents or teachers are overly helpful, students may learn that admitting defeat gets their work done for them, either by their parents around the kitchen table or by the teacher the next day, who says, “That’s okay. At least you tried.” This, again, is why direct instruction to scaffold students toward the answers without simply giving them the answers is so valuable.
 
 ## Chapter 6. Active Learning. The Procedural Pathway
+
+> There are two major routes in the neocortex that information travels into and out of to get to long-term memory. Each pathway makes up a separate learning system—the _declarative_ and the _procedural_.

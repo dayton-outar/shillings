@@ -3003,6 +3003,104 @@ A _low-price gapping play_ is, not surprisingly, the bearish counterpart of the 
 > 4. If there are other technical signals sending out an alert.
 >
 > Since a doji can be a significant warning, it is better to attend to a false warning than to ignore a real one.
+> 
+> ...
+> 
+> Doji are valued for their ability to call market tops. This is especially true after a long white candle in an uptrend. The reason for the doji’s potential negative implications in uptrends is because a doji represents indecision. Indecision, uncertainty, or vacillation by buyers will not maintain a rally. It takes the conviction of buyers to sustain a rally. If the market has had an extended rally, and/or is overbought, and then a doji surfaces (read “indecision”), it could mean the scaffolding of buyers’ support will give way.
+> 
+> A caveat, from my experience, is that as successful as doji are at calling tops, they tend to lose some reversal potential in downtrends. The reason may be that a doji reflects a balance between buying and selling forces. With ambivalent market participants, the market could fall, as the market saying goes, “fall of its own weight.” This is similar to the idea that strong volume is more important to confirm an upside breakout than volume confirmation for a downside breakout.
+> 
+> Thus, a doji in a rally could signal an exhausted market. But with a doji during a price descent, the market may continue its fall. Because of this, doji need more confirmation to signal a bottom than they do a top. For example, a doji that confirms support should be heeded although it comes during a decline.
+> 
+> To separate a doji during a rally from doji during declines, I call the former _Northern doji_ and the latter _Southern doji_. This section will focus on Northern doji. Southern doji (doji in a falling market) are addressed later in this chapter.
+> 
+> Keep in mind that doji not working so effectively at signaling bottoms as tops is based on my experiences. The Japanese say, “The market is like a person’s face; never are two alike.” Consequently, for your markets, doji may work well at calling bottoms. This brings out a pivotal point about candle charts in general. All of the candle lines or patterns may be effective in your markets, or only some. Seeing which work well comes with experience.
+
+#### THE NORTHERN DOJI
+
+> The Japanese say that with a doji after a tall white candle, or a doji in an overbought environment, that the market is “tired.” That is a wonderfully apt way to view doji. A doji may not mean an immediate price reversal. The doji shows us the market is vulnerable, and may be at a transition point.
+> 
+> I received a letter from an attendee at one of my on-site institutional seminars. The attendee wrote, “You're right about a little knowledge being dangerous. We are all running around shouting ‘doji, doji, doji!’” This comment is not surprising since doji are so easy to spot. Traders may get so excited about seeing a doji that they jump on it as a trading signal. But don’t make more of the doji than it is meant to show. A doji means the trend may be in the process of changing.
+> 
+> For example, in my advisory service, I provide short-term trend. When a doji arises, I don’t change the market's short-term trend from up to down, but from up to up/neutral. If this doji also confirms another technical signal, then I would change the trend from up to neutral or neutral /down. (This idea of one technical indicator confirming another is the focus of Part 2.) It is rare that with a doji itself I would change the short-term trend from up to down.
+> 
+> ...
+> 
+> ![Continuation Patterns: Microsoft - 3 Minutes (Doji after a Tall White Candle)](/.attachments/doji-microsoft-3.minutes-doji.png)
+> 
+> _Microsoft - 3 Minutes (Doji after a Tall White Candle)_
+> 
+> In the chart shown above, the stock retreated from a bearish engulfing pattern (at B). A few sessions later a lengthy white candle showed that the bulls have taken control since that line closed over the bearish engulfing pattern’s $58.50 resistance area. But the next session’s doji changed the outlook. The market went from one where the bulls were in charge to one where, as shown by the doji, the forces of supply and demand were in equilibrium.
+>
+> Observe how the stock stalled a couple of sessions after the doji neared $58.62. This brings out a useful technique I use frequently with a doji following a tall white candle. Specifically, I will take the highest high between the doji session and the tall white candle (that is, the highest upper shadow). That level should be resistance based on the close. In this example, the high of the doji session and the long white candle were both $58.62. At such, that becomes our resistance area.
+> 
+> ...
+
+#### THE LONG-LEGGED DOJI (RICKSHAW MAN), THE GRAVESTONE DOJI, AND THE DRAGONFLY DOJI
+
+> A candle line with long upper and lower shadows and a small real body is called a high-wave candle.’ If such a candle line is a doji instead of a small real body, then it is called a _long-legged doji_. It also has the nickname _rickshaw man_.
+> 
+> The doji portion of the long-legged doji shows the market is ata transition point. The long upper shadow shows the market had rallied during the session, but by session's end had backed off from these highs. The extended lower shadow visually depicts a market that had sold off during the session; by session’s end it had been able, by the close, to recoup some of its lost ground. In other words, the market rallies, sells off, rallies, etc. It is a confused market. These long shadows hint, as the Japanese say, “The market has lost its sense of direction.” As such, a long-legged doji is an indication of a market separating from its trend.
+> 
+> The _gravestone doji_ is another distinctive doji. It develops when the open, low, and close are at the low of the day. This line is an example of how visually intuitive candles are. Even if you never saw an explanation of the gravestone doji, just by looking at it, would you think it was a bullish or bearish signal? Of course, the answer is bearish. With its extended upper shadow and close at the low of the session, we can graphically see that at some time during the session the stock had rallied and by session’s end the bears dragged this stock down to the lows at the close. It can be viewed as the ultimate shooting star. The shooting star has a long upper shadow and small real body. If the shooting star’s real body becomes a doji, then we have a gravestone doji
+> 
+> The gravestone’s forte is in calling tops. The shape of the gravestone doji makes its name appropriate. As we have discussed, many of the Japanese technical terms are based on military analogies. In Japanese candlestick literature it is said that the gravestone doji represents the gravestone of the bulls that, have died defending their territory.
+> 
+> The _dragonfly doji_ is the bullish counterpart of the gravestone doji. The dragonfly has the open/close at the highs of the session. This means the market had touched much lower lows during the session, but had impressively managed to close at, or very close to, the highs. This is like the hammer, but the hammer has a small real body where the dragonfly doji has no real body since it is a doji.
+> 
+> ...
+> 
+> ![Continuation Patterns: 3Com - Daily (Dragonfly Doji)](/.attachments/doji-3com-daily.png)
+> 
+> _3Com - Daily (Dragonfly Doji)_
+> 
+> In the chart shown above, some long-legged doji in mid April signaled that the prior downtrend was losing momentum near $6.75. The rally in early May made a rising window. But there was a problem on the day of the rising window on May 9: It was another long-legged doji. This signified that the bulls were not, in complete control. The window’s support was broken the day after this long-legged doji. This confirmed the potential for another down draft. When the stock got near the aforementioned $6.75 support area from mid April on May 23, it successfully defended it with a hammer. The rally from this hammer made two windows at 1 and 2, The stock corrected from the bearish engulfing pattern at B. The decline from this bearish engulfing pattern found stabilization near $8.75 to $8.25 with a series of dragonfly doji. Since the third dragonfly didn’t have the open/close at the high, but near it, I view it as a variation of the dragonfly doji. These dragonfly doji confirmed support at the windows at 1 and 2. Final confirmation of the support came with the June 28 hammer.
+> 
+> The general concept with doji (and for all candle signals) is that one should look at what happened before the signal. For instance, a doji in a rally is a potential reversal. Therefore, there needs to be a rally to reverse. This means that doji have little forecasting implications if they are in a trading range environment since there is no trend to reverse. The Japanese aptly call a market that is locked within a range a “box.”
+
+#### THE TRI-STAR
+
+> ![Continuation Patterns: Tri-Star Top and Bottom](/.attachments/doji-tri.star.bottom.top.png)
+> 
+> _Tri-Star Top and Bottom_
+> 
+> The tri-star is a very rare reversal pattern. As shown above, the tri-star is formed by three doji lines at a new high for the move. For my candle-charting research, I followed a rule before revealing a pattern or signal: It had to be corroborated by at least two independent sources. This helped confirm the tried-and-true techniques and helped avoid the hundreds of possible patterns that anyone can think of. (This is why I warn traders to be careful about other sources of candle-charting information.)
+> 
+> This tri-star is an exception to my rule of corroboration. I got this from a single source. It came from a Japanese trader who used candle charts all his professional career. More important, he told me his father had found this particular pattern decades ago and successfully used it. My feeling is that a pattern with this much history deserved to be included.
+> 
+> The ideal tri-star top has three doji (remember that the plural of doji is also doji) with the middle doji higher than the first and second doji. (This is reminiscent of the Western head and shoulders top, where the head is higher than the left and right shoulders.) In the chart shown below, there are dual hammers during the week of January 3. This built a foundation for a rally that gave a hint that it was exhausting itself via the doji on January 10. After this doji, Honeywell settled into a mostly lateral range, but in doing so formed a tri-star top. Although this stock fell steeply after the tri-star top, it should be remembered that candle charts do not predict moves. As such, while this pattern greatly increased the chances for a top reversal, it did not forecast the extent of the potential decline.
+> 
+> ![Continuation Patterns: Honeywell - Daily (Tri-Star Top)](/.attachments/doji-honeywell-daily.png)
+> 
+> _Honeywell - Daily (Tri-Star Top)_
+
+### Chapter 9. Putting it all Together
+
+> Remember, the following interpretations are subjective. You may see different indicators from those I did, or some that I did not. As with any charting technique, different experiences will give different perspectives. There are no concrete rules, just general guidelines. For example, what if a hammer-like line had a lower shadow only one and one-half times the height of the real body instead of the more ideal version with a lower shadow twice—or even three times—the height of the real body? A purist might say this was not a hammer and ignore it. Others may cover shorts on such a line. Still others might wait for the next session to see what unfolds.
+> 
+> “To hear it told is not equal to experience” is a Japanese proverb. I can relay basic candle charting techniques, but it will be only through your experience with these tools, in your markets, that you will unravel the candles’ full potential.
+> 
+> ...
+
+### Chapter 10. A Cluster of Candles
+
+> This chapter explores how a group, or a cluster, of candle lines and/or patterns that converge at the same price area can magnify the importance of that area as support or resistance and increase the likelihood of a market turn.
+> 
+> ![Continuation Patterns: JDS Uniphase - Daily (Cluster of Candles)](/.attachments/cluster-jds.uniphase-daily.png)
+> 
+> _JDS Uniphase - Daily (Cluster of Candles)_
+> 
+> The chart above illustrates how a group of separate candle signals converged near $75 and, in doing so, underscored the solidity of the support at that area. Let’s look at each signal individually:
+> 
+> 1. The extremely long white candle on April 17 that wrapped around the prior black real body formed a bullish engulfing pattern. Since the white candle in this bullish engulfing pattern was so large, it meant that by the time the engulfing pattern was completed, the stock was nearly $25 off its lows. As such, while the bullish engulfing pattern gave us a reversal signal, the close of that pattern may not have presented an attractive area to buy based on the risk/reward aspect of such a trade.
+> 
+> 2. Remembering the concept that the low of the bullish engulfing pattern can become support, we turn our attention to the lows of this pattern near $73 as potential support. The downdraft that started during the week of April 17 stabilized near this expected support area with this long-legged doji.
+> 
+> 3. The May 22 hammer reinforced the aforementioned support area.
+> 
+> 4. The two sessions after the hammer at 3 completed a classic piercing pattern with the low of that pattern bouncing off the support area defined by the bullish engulfing pattern at 1.
+> 
+> 5. If further proof of a bottom was needed, it came at 5 with the small rising window in late May. Additionally, if one looks at the action from the week of May 15 through the week of May 29, the stock was building a rounding bottom. By adding the window (at 5) to this rounding bottom, we have a frypan bottom.
 
 
 > ![Continuation Patterns: ](/.attachments/)
