@@ -3101,7 +3101,22 @@ A _low-price gapping play_ is, not surprisingly, the bearish counterpart of the 
 > 4. The two sessions after the hammer at 3 completed a classic piercing pattern with the low of that pattern bouncing off the support area defined by the bullish engulfing pattern at 1.
 > 
 > 5. If further proof of a bottom was needed, it came at 5 with the small rising window in late May. Additionally, if one looks at the action from the week of May 15 through the week of May 29, the stock was building a rounding bottom. By adding the window (at 5) to this rounding bottom, we have a frypan bottom.
+> 
+> ![Continuation Patterns: Brown Forman - Daily (Cluster of Candles)](/.attachments/cluster-brown.forman-daily.png)
+> 
+> _Brown Forman - Daily (Cluster of Candles)_
+> 
+> The chart above displays how a confluence of candles can help pinpoint support or resistance.
+> 
+> - _A cluster of candles as support_: There was a hammer on December 11. In spite of this hammer’s potentially bullish implications, the falling window that opened on the day of the hammer kept the trend down. As the market descended from this hammer, it did so with a series of three long lower shadows. These long lower shadows offset some of the bearishness. The candle line at 1 was also a hammer, but unlike the first hammer, discussed above, during the next two days, December 16 and 17, this hammer successfully held as support. The two candles at 2 made a bullish engulfing pattern. Another hammer emerged at 3 in early February. This was the support area defined by 1 and 2. The dragonfly doji at 4 was further confirmation of support near $42.
 
+> - _A cluster of candles as resistance_: As the stock was ascending during A, it did so via a series of long upper shadows. Because of the higher highs, higher lows, and higher closes, the short-term trend remained up, but the long upper shadows were a warning signal that the bulls did not have a complete foothold on the stock. The last long upper shadow candle on January 6 was a shooting star. A few days later, at B, the stock formed a bearish engulfing pattern. At C the small black real body in the tall white real body formed a harami pattern. As such, the shooting star at A, the bearish engulfing pattern at B, and the harami at C gave us a convergence of candles that underscored the ceiling between $47.50 and $48.
+> 
+> Candle charts are a very efficient form of visual analysis. This is because one can use them to pick up very quick pictorial clues about the market's health, or lack thereof. Simply by looking at the shape of the individual candle lines we can rapidly see e the demand /supply situation.
+
+### Chapter 11. Candles with Trend Lines
+
+> 
 
 > ![Continuation Patterns: ](/.attachments/)
 > 
