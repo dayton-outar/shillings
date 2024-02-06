@@ -2960,7 +2960,7 @@ A _low-price gapping play_ is, not surprisingly, the bearish counterpart of the 
 
 ### Chapter 8. The Magic Doji
 
-> ![Continuation Patterns: Doji](/.attachments/doji-doji.png)
+> ![Doji: Doji](/.attachments/doji-doji.png)
 > 
 > _Doji_
 > 
@@ -2972,23 +2972,23 @@ A _low-price gapping play_ is, not surprisingly, the bearish counterpart of the 
 > 
 > 3. The market doesn’t have many doji (the plural of doji is doji). If there are numerous doji on a particular chart, one should not view the emergence of a new doji as a meaningful development.
 > 
-> ![Continuation Patterns: Long-Legged Doji](/.attachments/doji-long.legged.png)
+> ![Doji: Long-Legged Doji](/.attachments/doji-long.legged.png)
 > 
 > _Long-Legged Doji_
 > 
-> ![Continuation Patterns: Gravestone Doji](/.attachments/doji-gravestone.png)
+> ![Doji: Gravestone Doji](/.attachments/doji-gravestone.png)
 > 
 > _Gravestone Doji_
 > 
-> ![Continuation Patterns: Dragonfly Doji](/.attachments/doji-dragonfly.png)
+> ![Doji: Dragonfly Doji](/.attachments/doji-dragonfly.png)
 > 
 > _Dragonfly Doji_
 > 
-> ![Continuation Patterns: Doji after Tall White Candle](/.attachments/doji-tall.white.candle.png)
+> ![Doji: Doji after Tall White Candle](/.attachments/doji-tall.white.candle.png)
 > 
 > _Doji after Tall White Candle_
 > 
-> ![Continuation Patterns: Northern and Southern Doji](/.attachments/doji-northern.southern.png)
+> ![Doji: Northern and Southern Doji](/.attachments/doji-northern.southern.png)
 > 
 > _Northern and Southern Doji_
 > 
@@ -3026,7 +3026,7 @@ A _low-price gapping play_ is, not surprisingly, the bearish counterpart of the 
 > 
 > ...
 > 
-> ![Continuation Patterns: Microsoft - 3 Minutes (Doji after a Tall White Candle)](/.attachments/doji-microsoft-3.minutes-doji.png)
+> ![Doji: Microsoft - 3 Minutes (Doji after a Tall White Candle)](/.attachments/doji-microsoft-3.minutes-doji.png)
 > 
 > _Microsoft - 3 Minutes (Doji after a Tall White Candle)_
 > 
@@ -3050,7 +3050,7 @@ A _low-price gapping play_ is, not surprisingly, the bearish counterpart of the 
 > 
 > ...
 > 
-> ![Continuation Patterns: 3Com - Daily (Dragonfly Doji)](/.attachments/doji-3com-daily.png)
+> ![Doji: 3Com - Daily (Dragonfly Doji)](/.attachments/doji-3com-daily.png)
 > 
 > _3Com - Daily (Dragonfly Doji)_
 > 
@@ -3060,7 +3060,7 @@ A _low-price gapping play_ is, not surprisingly, the bearish counterpart of the 
 
 #### THE TRI-STAR
 
-> ![Continuation Patterns: Tri-Star Top and Bottom](/.attachments/doji-tri.star.bottom.top.png)
+> ![Doji: Tri-Star Top and Bottom](/.attachments/doji-tri.star.bottom.top.png)
 > 
 > _Tri-Star Top and Bottom_
 > 
@@ -3070,7 +3070,7 @@ A _low-price gapping play_ is, not surprisingly, the bearish counterpart of the 
 > 
 > The ideal tri-star top has three doji (remember that the plural of doji is also doji) with the middle doji higher than the first and second doji. (This is reminiscent of the Western head and shoulders top, where the head is higher than the left and right shoulders.) In the chart shown below, there are dual hammers during the week of January 3. This built a foundation for a rally that gave a hint that it was exhausting itself via the doji on January 10. After this doji, Honeywell settled into a mostly lateral range, but in doing so formed a tri-star top. Although this stock fell steeply after the tri-star top, it should be remembered that candle charts do not predict moves. As such, while this pattern greatly increased the chances for a top reversal, it did not forecast the extent of the potential decline.
 > 
-> ![Continuation Patterns: Honeywell - Daily (Tri-Star Top)](/.attachments/doji-honeywell-daily.png)
+> ![Doji: Honeywell - Daily (Tri-Star Top)](/.attachments/doji-honeywell-daily.png)
 > 
 > _Honeywell - Daily (Tri-Star Top)_
 
@@ -3086,7 +3086,7 @@ A _low-price gapping play_ is, not surprisingly, the bearish counterpart of the 
 
 > This chapter explores how a group, or a cluster, of candle lines and/or patterns that converge at the same price area can magnify the importance of that area as support or resistance and increase the likelihood of a market turn.
 > 
-> ![Continuation Patterns: JDS Uniphase - Daily (Cluster of Candles)](/.attachments/cluster-jds.uniphase-daily.png)
+> ![Doji: JDS Uniphase - Daily (Cluster of Candles)](/.attachments/cluster-jds.uniphase-daily.png)
 > 
 > _JDS Uniphase - Daily (Cluster of Candles)_
 > 
@@ -3102,7 +3102,7 @@ A _low-price gapping play_ is, not surprisingly, the bearish counterpart of the 
 > 
 > 5. If further proof of a bottom was needed, it came at 5 with the small rising window in late May. Additionally, if one looks at the action from the week of May 15 through the week of May 29, the stock was building a rounding bottom. By adding the window (at 5) to this rounding bottom, we have a frypan bottom.
 > 
-> ![Continuation Patterns: Brown Forman - Daily (Cluster of Candles)](/.attachments/cluster-brown.forman-daily.png)
+> ![Doji: Brown Forman - Daily (Cluster of Candles)](/.attachments/cluster-brown.forman-daily.png)
 > 
 > _Brown Forman - Daily (Cluster of Candles)_
 > 
@@ -3116,9 +3116,81 @@ A _low-price gapping play_ is, not surprisingly, the bearish counterpart of the 
 
 ### Chapter 11. Candles with Trend Lines
 
+> ![Trend Lines: Rising Support Line](/.attachments/lines-rising.support.line.png)
 > 
+> _Rising Support Line_
+> 
+> The illustration above shows a classic _rising support line_. It is obtained by connecting two, and preferably three, or more reaction lows. When drawing rising support lines on candle charts, I use the bottom of the lower shadows as my connecting points. This ascending line demonstrates that buyers are more aggressive than sellers since demand is stepping in at higher lows. There is a saying that there are more buyers than sellers. Since a trade requires both a buyer and seller, I prefer to think of it as not more buyers than sellers, but more aggressive buyers than sellers.
+> 
+> ![Trend Lines: Falling Support Line](/.attachments/lines-falling.support.line.png)
+> 
+> _Falling Support Line_
+> 
+> The illustration above shows a _falling support line_. The traditional support line is derived by connecting higher lows. The line in joins lower lows. The falling line’s usefulness comes into play because there will be many instances in which prices rebound from this descending line. This line gives us a potential support area when none may exist. A situation where there may be no evident support is when a market makes either a low for the move or an all-time low.
+> 
+> A regular rising support line, since it is ascending, is considered bullish. The falling support line, because the market is making lower lows, can be considered as a bearish support line. As such, bounces from this line are likely to be only marginal and temporary. Yet, it can be an area to consider buying, especially if there is a convergence of technical indicators at that line.
+> 
+> ...
+> 
+> ![Trend Lines: Cotton - Weekly (Falling Support Line)](/.attachments/lines-cotton-weekly.png)
+> 
+> _Cotton - Weekly (Falling Support Line)_
+> 
+> A descending falling support line in the chart above commenced with the two lows at A and B and then the bullish engulfing pattern at C. The last test of this line came in March at D followed by an inverted hammer. The day after this inverted hammer, a white candle formed a bullish engulfing pattern. Indeed, if the white candle of the bullish engulfing pattern had a higher close, it would have formed a morning star. Nonetheless, the convergence of the inverted hammer, the bullish engulfing pattern, and the falling support line shouted “Cover shorts!”
+> 
+> ![Trend Lines: Falling Resistance Line](/.attachments/lines-falling.resistance.line.png)
+> 
+> _Falling Resistance Line_
+> 
+> The illustration above displays a typical falling resistance line. It is derived by joining at least two reaction highs; three or more would give the line more clout. It shows that sellers are more aggressive than buyers as evidenced by the sellers’ willingness to sell at lower highs. This reflects a market that is trending lower. With a resistance line on the candle charts, we connect the tops of the upper shadows.
+> 
+> A regular resistance line is made with a series of lower highs. But what if the market is at an all-time high and there are no former highs from where we can peg a potential resistance area? In this instance I frequently use a _rising resistance line_. As shown in the illustration below, this is built by linking a series of higher highs (instead of the falling resistance line’s lower highs).
+> 
+> ![Trend Lines: Rising Resistance Lines](/.attachments/lines-rising.resistance.line.png)
+> 
+> _Rising Resistance Lines_
+> 
+In the chart shown below we join areas 1, 2, and 3 to obtain a classic resistance line. At the bottom of the decline that started from the harami at area 2, silver produced two high-wave candle lines. This was the first indication that the downward power of the market was dissipating. The rising window that opened between March 6 and 7 then turned the trend up. The window immediately became support as evidenced by the following few days’ action.
+> 
+> ![Trend Lines: Silver - Daily (Falling Resistance Line)](/.attachments/lines-silver-daily.png)
+> 
+> _Silver - Daily (Falling Resistance Line)_
+> 
+> Now that there were turning signals with the candle charts, we can shift to the Western technicals a la the resistance line to get a price target. This becomes the potential resistance area as shown by the market stalling there the week of March 13. This chart underscores why one needs Western technical tools, even if the main focus is on candles. The candles can give the earliest turning signals, while the Western tools can give a price objective and stop-out area.
+> 
+> ![Trend Lines: Crude Oil - Daily (Rising Resistance Line)](/.attachments/lines-crude-daily.png)
+> 
+> _Crude Oil - Daily (Rising Resistance Line)_
+> 
+> Looking at the chart above we see an upward sloping resistance line. The price activity from mid May reflects a market that is creating a series of higher highs. However, a convergence of technical factors on June 30, including a doji-like line (which also formed a harami cross) at the ascending resistance line, gave a signal for longs to take protective measures. Note the large falling window opened the day after the doji-like line between $31 and $30. The market fell until it found support in early July. The rally from this support area stalled at the top of the aforementioned window.
 
-> ![Continuation Patterns: ](/.attachments/)
+#### SPRINGS AND UPTHRUSTS
+
+> The concept of springs and upthrusts is based on work by Richard Wyckoff, a very successful trader and newsletter publisher of the early twentieth century.
+> 
+> ![Trend Lines: Spring](/.attachments/lines-spring.png)
+> 
+> _Spring_
+> 
+> The illustration above shows that a _spring_ develops when the market breaks under a horizontal support area and then springs back above that previously broken support. In other words, new lows could not hold. Once a spring is formed, we can get a stop-out area and a price target. As shown in the illustration, when a market gets back above a recently broken support area, one can consider buying. If the market is solid, it should not get back to the most recent lows. That would be a stop level (preferably on a close). The target for the spring is either its high before the spring was made or the top end of its trading range. This will be illustrated in some examples later in this section.
+> 
+> ![Trend Lines: Upthrust](/.attachments/lines-upthrust.png)
+> 
+> _Upthrust_
+> 
+The illustration above shows an upthrust. This is when there is penetration of a horizontal resistance area and then the bulls fail to sustain these new highs. This is another way of saying a false breakout. To use an upthrust for trading, when the market gets back under its former resistance area, one can consider selling. If the market is indeed weak, it should not return to the most recent highs. A downside target is its most recent low or the bottom of a recent trading range.
+> 
+> Although we will not focus on volume in this section, it will be more bullish for a spring if the break of support is on light volume and the subsequent rebound above the recently broken support is on heavier volume. Similarly, the likelihood of an upthrust successfully working should be increased if the break over the resistance is on low volume and the consequent return, move under the old resistance is on high volume.
+> 
+> Why do springs and upthrusts work so well? To answer this, refer to Napoleon's response when asked which troops he considered best. His terse response was, “Those [that] are victorious.” We can view the market as a battlefield between two sets of troops—the bulls and the bears. The territory they each claim is especially evident when there is a lateral trading range. The horizontal resistance line is the bears’ terrain to defend. The horizontal support line is the bulls’ domain to defend. If the bears can't defend the new lows on a break of support or the bulls maintain the new highs on a penetration of resistance, then they are not victorious.
+> 
+> ![Trend Lines: Juniper Networks - Daily (Upthrust)](/.attachments/lines-juniper-daily.png)
+> 
+> _Juniper Networks - Daily (Upthrust)_
+> 
+> Let's look at this idea in the context of the upthrust in the chart shown above, In late September there was a resistance zone shown by the two horizontal lines. The extended white candle of October 16 pushed the stock over this resistance. The bulls’ “scouting party” had, at least then, gotten a foothold as Juniper made a new high close over an evident resistance area. By the next day the whole texture of the market had changed as the black candle’s close proved that the bulls didn’t have enough mettle to hold the new highs. As such, an upthrust was created. The highs of this upthrust remained resistance for the next week before the market collapsed after the bearish engulfing pattern that was completed October 23.
+
+> ![Title: ](/.attachments/)
 > 
 > __
 
