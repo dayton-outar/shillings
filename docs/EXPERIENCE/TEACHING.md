@@ -314,6 +314,6 @@ I think this explains the reason persons who don't know how to read and write ar
 > 
 > ...
 
-## Chapter 7. Building Community THrough Habits
+## Chapter 7. Building Community Through Habits
 
 > 
