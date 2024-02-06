@@ -3178,7 +3178,7 @@ In the chart shown below we join areas 1, 2, and 3 to obtain a classic resistanc
 > 
 > _Upthrust_
 > 
-The illustration above shows an upthrust. This is when there is penetration of a horizontal resistance area and then the bulls fail to sustain these new highs. This is another way of saying a false breakout. To use an upthrust for trading, when the market gets back under its former resistance area, one can consider selling. If the market is indeed weak, it should not return to the most recent highs. A downside target is its most recent low or the bottom of a recent trading range.
+> The illustration above shows an upthrust. This is when there is penetration of a horizontal resistance area and then the bulls fail to sustain these new highs. This is another way of saying a false breakout. To use an upthrust for trading, when the market gets back under its former resistance area, one can consider selling. If the market is indeed weak, it should not return to the most recent highs. A downside target is its most recent low or the bottom of a recent trading range.
 > 
 > Although we will not focus on volume in this section, it will be more bullish for a spring if the break of support is on light volume and the subsequent rebound above the recently broken support is on heavier volume. Similarly, the likelihood of an upthrust successfully working should be increased if the break over the resistance is on low volume and the consequent return, move under the old resistance is on high volume.
 > 
