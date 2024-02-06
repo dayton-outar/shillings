@@ -239,3 +239,43 @@ _Practival Insights in Brain Science to Help Students Learn_
 ## Chapter 6. Active Learning. The Procedural Pathway
 
 > There are two major routes in the neocortex that information travels into and out of to get to long-term memory. Each pathway makes up a separate learning system—the _declarative_ and the _procedural_.
+> 
+> ...
+> 
+> The procedural system is the basis of habitual actions. This type of learning has often been thought of as very different from the type of material learned in school. In fact, beginning with the cognitive revolution in the 1960s, the importance of habit-related procedural learning basically fell out of fashion. It is only recently that the study of procedural learning has been making a comeback. A comeback, that is, except in education. This chapter is meant to help rectify that.
+> 
+> ...
+> 
+> Working memory doesn’t create procedural sets of links. But it can grab them once they’re created. Once working memory grabs the procedural links, you can become conscious of them, or at least the essential aspects of them, if not the tiny details (for example, you can consciously turn right on your bicycle, but you’re not thinking of the muscle detail of turning right on the bicycle). Becoming more consciously aware through working memory, it seems, moves you toward the declarative system. Perhaps this is why when you become consciously aware of the motion of your free throw in basketball, or of your golf swing, or the aim of an arrow you are shooting with a bow, it can throw off your aim. “Be one with the arrow” may be a simple call to stay with the procedural rather than the declarative system so your thoughts can flow more swiftly and smoothly.
+> 
+> ...
+> 
+> ... This, indeed, is why a novice knitter or crocheter is focused declaratively on learning to handle the yarn, while an expert knitter can chat happily away while knitting.
+> 
+> ...
+> 
+> Teaching through the procedural system means giving students plenty of practice. Practice takes time—that’s why procedural is slower than declarative learning. But as we’ll see, once something’s been learned through the procedural system, it can be processed and performed more rapidly and automatically than knowledge formed by the declarative system.
+> 
+> ...
+> 
+> In a related vein, “unlearning” knowledge built from personal observation and “common knowledge” is perhaps one of the most challenging aspects of learning in many different fields, including physics, psychology, law, and business. The difficulty may well be because the unlearning involves (mis)information that has been learned procedurally. The common approach recommended for unlearning is plenty of practice with the new ideas—and practice, of course, is a foundation of procedural learning.
+> 
+> You can think of the two memory systems as a sort of seesaw. Emphasizing one system de-emphasizes the other.8 But once each system learns the information, this knowledge becomes complementary: each way of knowing enhances your overall understanding of and ability to work with the material.
+> 
+> ...
+> 
+> When Terry was a college physics major learning electricity and magnetism, he memorized Maxwell’s equations, which were derived from many experiments with batteries and magnets. Did he understand electricity and magnetism? No, because it was not until he had to apply the equations to a problem, like designing a radio antenna, that he learned their consequences. By using procedural learning to solve many different problems in electricity and magnetism, Terry formed intuitions about what the equations really meant, how to use Maxwell’s equations, and how to solve new problems quickly.
+> 
+> ...
+> 
+> Since the information you’ve learned doesn’t need to go through your working memory (which is why you’re not conscious of this type of thinking), you can solve the cube more quickly.9 But it can also mean that even though you know how to solve the cube (which you do procedurally), you can’t easily explain it (which you would have to do declaratively).
+
+I think this explains the reason persons who don't know how to read and write are able to fix things. Like mechanics that develop intuition without reading and writing.
+
+> Let’s go back to your trip home in the car, which you accomplished mindlessly. Were you able to do that in the first few weeks after you moved into your home? No. You could get home, but you had to pay attention to what you were doing because you were using your conscious, declarative system. Only after you’d driven home many times did your procedural learning system master the information. Once it did, though, you could drive home without being consciously aware of it. But if the car in front of you suddenly comes to an unexpected stop, your procedural system will quickly stop your own car while simultaneously signaling working memory to shift its attention to your surroundings so you can consciously figure out what to do next.
+> 
+> Declarative learning gets students off the ground faster but with poorer overall performance. Learning declaratively and procedurally means that students can be fast and flexible with their knowledge. Explicit instruction, with its series of sequential, clear, step-by-step actions, increases learning in declarative memory. _Lack_ of explicit instruction can enhance learning through procedural memory. For example, a child can learn his native language procedurally without explicit, formal instruction.
+> 
+> ...
+> 
+> Interleaving is when students mix up their practice of a topic, rather than merely repeating virtually identical materials and questions all in one block of time. For example, if you were studying impressionism, blocked practice would mean you are exposed to, say, five paintings by Monet, then five each by Degas, Renoir, and Pissarro, a little like this: MMMMMDDDDDRRRRRPPPPP. But interleaved practice would mean you’d mix up the different artists as you were studying, so your studies might look more like MMDDRRPPMDRPMDRPMDRP.
