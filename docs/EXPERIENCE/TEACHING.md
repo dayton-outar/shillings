@@ -279,3 +279,41 @@ I think this explains the reason persons who don't know how to read and write ar
 > ...
 > 
 > Interleaving is when students mix up their practice of a topic, rather than merely repeating virtually identical materials and questions all in one block of time. For example, if you were studying impressionism, blocked practice would mean you are exposed to, say, five paintings by Monet, then five each by Degas, Renoir, and Pissarro, a little like this: MMMMMDDDDDRRRRRPPPPP. But interleaved practice would mean you’d mix up the different artists as you were studying, so your studies might look more like MMDDRRPPMDRPMDRPMDRP.
+> 
+> ...
+> 
+> If you’re teaching math, you may wish to interleave, for example, calculations involving area, perimeter, and volume randomly. In this way, students don’t get so used to doing one type of formula that it becomes the first and perhaps only formula that comes to mind when they must solve a problem.
+> 
+> ...
+> 
+> We’ve arrived at last at the other “desirable difficulties” approach to teaching and creating neural links in long-term memory: _spaced repetition_. Spaced repetition, like the closely related technique of retrieval practice, may assist not only with declarative but also with procedural learning.
+> 
+> When you first learn a concept, your brain is struggling to make the connections. It makes those connections any way it can. Often, the connections aren’t necessarily the best configuration of neurons to capture the essence of what you’re learning.
+> 
+> The best way to allow those connections to rearrange themselves and make simpler, better, deeper, stronger connections is to take a break. Then return repeatedly to the concept. Returning over time is the essence of spaced repetition, and underlies the brain’s ability to consolidate the information ... This revisiting may even allow links created by the procedural system and other links created by the declarative system to find ways to connect if they relate to the same concept.
+> 
+> How long should the spacing between repetitions be—minutes, hours, days, weeks, or months? Sadly, there are no easy answers—except that we know sleep and moments of mental relaxation, along with the simple passage of time, can help. If students wish to remember the material for an upcoming test a week away, they should review it every day in the preceding week. If you want students to retain the content because you’d like them to know it in a year, it’s a good idea to review once every three weeks.
+> 
+> ...
+> 
+> Excessive homework—three to four hours a night—has become a contentious issue, causing some schools to eliminate homework altogether. Sadly, this throws the baby out with the bathwater. Judicious amounts of homework allow students to reinforce their declarative understanding of the material and to develop their self-regulatory skills. Perhaps most important, however, homework can be one of the best approaches to enable students to develop their procedural understanding of the material, as it allows for both spaced repetition and interleaving.
+> 
+> When it comes to homework, less is more. It’s about the quality of your assignments, not necessarily the quantity. If students are required to spend too much time on homework, they are bound to grow bored and be resistant to completing it. Instead of assigning forty homework problems, try seven. To incorporate interleaving and spaced repetition, assign (for example) two problems from today’s lesson, three problems from the previous lesson, and two problems from the distant past.
+> 
+> Is there a sweet spot for the time students at different ages should spend on homework for specific subjects? Unfortunately, not that research has so far revealed. We may never have a precise answer to the “optimal homework” question for each individual. The truth is, it all goes back to the quality of the assignment and the students’ motivation. A reasonable guideline is that biologically secondary material like math, reading, and writing, with their need for dramatic neural rewiring, would probably benefit the most from homework practice. Short daily practice helps much more than longer sessions scheduled days apart.
+> 
+> ...
+> 
+> The parents’ attitude toward homework is critical. Students must be allowed to struggle and receive only judicious guidance and hints, rather than for parents to hover continually, control, and correct. In this sense, parents of limited educational backgrounds but positive attitudes toward learning and homework can be beneficial for students in developing their own metacognitive skills.
+> 
+> Students often want to zip through homework as quickly as possible. When a task takes longer, they typically don’t want to take the time to battle through it. They may say they tried and couldn’t do it. The teacher then helps them out—which is, of course, classic enabling behavior. Your best strategy as you supply homework practice for your students is to give frequent short assignments based on an interleaved approach.
+> 
+> ...
+> 
+> Some students may understand a concept through their procedural system—for example, involving a point of grammar or the simplification of fractions—but find it challenging to put their understanding into words.* Students with poor working memories, who often learn through their hiker-like procedural systems, can become frustrated and feel disenfranchised when a teacher might insist that declarative explanations are the only way to demonstrate knowledge. Repeatedly asking a student who, say, might have some aspect of autism spectrum disorder to put their understanding into words—that is, to explain by using their declarative system—can shut that student down when it comes to school and classroom learning. It may also be a surprising example of the expertise reversal effect. The student can truly understand the content but become demotivated by being forced to slowly limp through confusing verbal explanations of material they already grasp intuitively. Students are individuals, and sometimes good teaching means understanding that if a student knows how to get the right answer, and they’re enjoying the material, that’s enough.
+> 
+> ...
+
+## Chapter 7. Building Community THrough Habits
+
+> 
