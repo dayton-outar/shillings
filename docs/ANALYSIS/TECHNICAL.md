@@ -3339,15 +3339,117 @@ viewed as damaged. The close under the window’s support took place on June 8.
 
 > Candle charts, because they provide an x-ray into the demand/supply situation, are potent in calling early turning signals. Assuming one enters a trade with a candle signal (preferably with confirmation with other candle or Western signals), the challenge becomes knowing when to exit.
 >
-> My firm, [candlecharts.com](), utilizes different exit strategies, depending on the client’s trading style. One method we use is forecasting price objectives from classic Western patterns. There is another reason for incorporating measured targets. ***No matter how ideal a candle pattern or how many reversal signals converge at one area, it doesn’t predict the extent of the reversal. This is where we shift to Western technicals for price objectives.***
+> My firm, [candlecharts.com](https://candlecharts.com/), utilizes different exit strategies, depending on the client’s trading style. One method we use is forecasting price objectives from classic Western patterns. There is another reason for incorporating measured targets. ***No matter how ideal a candle pattern or how many reversal signals converge at one area, it doesn’t predict the extent of the reversal. This is where we shift to Western technicals for price objectives.***
 > 
 > The measuring techniques in this chapter will illustrate a few of these many patterns, including breakouts from a box range, swing targets, flags and pennants, and ascending and descending triangles.
 > 
 > Price targets are not synonymous with support or resistance. For example, if there is an upside objective of $42, this does not mean the rally will stop at $42 (of course, it may not even get to $42). In my opinion, one should not look at a price objective to initiate a new position, but to offset an outstanding position. In the example discussed above, I would use a rally to the $42 area to liquidate longs, but not to initiate a new short position. Of course, if there were a bearish candle signal or a convergence of other technical signals, hinting that $42 was an area of resistance, one could then be more aggressive about considering a sale.
 
-> ![Moves: ](/.attachments/)
+#### BREAKOUTS FROM BOXES
+
+> Most of the time, the markets are not in a trending mode but rather in a lateral range, what the Japanese call a _box range_. On such occasions, the market is in a relative state of harmony with neither the bulls nor the bears in charge. The Japanese word for tranquility and calm is “wa.” I like to think of markets that are bounded in a box range as being in a state of “wa.”
 > 
-> __
+> When a market is in a box, it is like a coiled spring ready to unwind when the surrounding pressure is released. We can use this potential pent-up energy. When a breakout from box range unfolds, the market has good potential continuing in the direction of the breakout.
+> 
+> As shown in the illustration below, a move outside the box implies a move at least equal to the vertical height of the box. Specifically, on a push above the top end of the box (bullish breakout), one takes the vertical measurement from the bottom end of the box (the support area) to the top end of the box range (the previous resistance). This distance is shown as A-B. We derive a target by adding this A-B range onto the prior resistance area. As an example, an upside breakout from a $50-$53 box range would give a $56 target.
+> 
+> ![Moves: Breakout from Boxes](/.attachments/moves-breakout.from.boxes.png)
+> 
+> _Breakout from Boxes_
+> 
+> The opposite would be a penetration of a box range’s support (shown as a bearish breakout in the illustration above). If we used the same $50-$53 box range, a bearish break of this support at $50 would provide a $47 target.
+> 
+> ...
+> 
+> ![Moves: S&P - Daily (Upside Breakout from a Box)](/.attachments/moves-s&p-daily.png)
+> 
+> _S&P - Daily (Upside Breakout from a Box)_
+> 
+> The S&P, as shown in the chart above, was in a trading range between the 1090 area (at B) and 1140 (at A). The bulls propelled this index above the 1140 resistance on June 24. Adding this A—B (50-point) span onto 1140 gave us a price projection of 1190. This target was exceeded marginally as the stock ascended along a rising resistance line (see Chapter 11). There are a couple of high-wave candles near 1200. (A high-wave candle has extended upper and lower shadows and a small real body. It is related to a long-legged doji, except that a long-legged doji has a doji instead of the small real body, as described in Chapter 8.) These high-wave candles gave a sense that the market was losing its sense of direction (which heretofore was up).
+> 
+> ...
+
+#### SWING TARGETS, FLAGS, AND PENNANTS
+
+> Swing targets, flags, and pennants are comprised of three segments:
+> 
+> 1. An initial cleanly defined brisk move.
+> 
+> 2. A correction of the move.
+> 
+> 3. A resumption of the move in the same direction as the initial move.
+> 
+> We will look at swing targets first and then flags and pennants.
+> 
+> ![Moves: Swing Target](/.attachments/moves-swing.target.png)
+> 
+> _Swing Target_
+> 
+> The theory behind the swing target in illustration above is that if the market advances, or declines, vigorously, and then there is a retracement of this move, the next leg of the move should be at least equal to the move of the previous channel.
+> 
+> This is shown in illustration where the height of the first leg is a rally from A to B. There is then a correction to C. Once the market ascends from C, we would “swing” the initial channel height of A to B onto the correction low at C. Hence, the name “swing target.”
+> 
+> Swing targets are very similar in concept to flags and pennants. The major difference is that corrections in a swing target are more substantial than flags or pennants. As shown in illustration below, flags are lateral, or small countertrend, moves after a clearly defined sharp advance or decline. This congestion band serves to relieve an overbought (in a rally) or oversold (in a decline) condition. If, after this short-term correction, the market resumes its prior trend, we then have a flag or pennant pattern.
+> 
+> ![Moves: Bull Flag and Pennant](/.attachments/moves-bull.flag.pennant.png)
+> 
+> _Bull Flag and Pennant_
+> 
+> The difference between flags and pennants is that in a flag, the “flag” portion is a horizontal box range. In a pennant pattern, the “flag” portion (i.e., the congestion band) looks like a pennant because it has lower highs and higher lows.
+> 
+> The measurements of the bull and bear flags and pennants have implications built on the same concept as that of the swing target. For the flag or pennant pattern, we use the vertical height of the initial advance or decline—nicknamed the “flagpole.”
+> 
+> ![Moves: Bear Flag and Pennant](/.attachments/moves-bear.flag.pennant.png)
+> 
+> _Bear Flag and Pennant_
+> 
+> In bull flag and pennant’s, price targets are derived by adding the height of the initial sharp advance (the flagpole) from A to B onto the bottom end of the congestion band (which is either a flag or pennant shape). The more traditional method is adding this flagpole’s height to the top of the flag or pennant. I prefer to err on exiting too early rather than missing the last few ticks. As such, my measurement starts from the bottom of the flag or pennant rather than the top.
+> 
+> The bear flag or pennant objective is forecasted by subtracting the flagpole (A—B) range from the top of the congestion band. (Again, this is my subjective conservative target—others will use the more classic measurement from the bottom of the congestion band.)
+> 
+> ![Moves: Cisco Systems - Daily (Swing Target)](/.attachments/moves-cisco-daily.png)
+> 
+> _Cisco Systems - Daily (Swing Target)_
+> 
+> In the chart above there is an almost vertical rally from 1 to 2 that took the stock from $22.50 to $27.50. The decline from 2 to A was almost exactly a Fibonacci 61.8% correction of this rally. (See Chapter 12 for discussions on retracements.) The stock started its advance from A.
+> 
+> Using the 1 to 2 rally and the correction to A, we can obtain a swing target by taking the $5 move from 1 to 2 and adding that to the correction low of A at $ 24.50. This gives a potential target to $29.50.
+> 
+> While measured moves do not only normally become resistance or support, in this example we see how a bearish engulfing pattern (at B) on February 1 and 2 emerged at this projected $29.50 price target.
+> 
+> ![Moves: Transocean Sedco Forex - Daily (Bull Flag)](/.attachments/moves-transocean-daily.png)
+> 
+> _Transocean Sedco Forex - Daily (Bull Flag)_
+> 
+> In the chart above we see that after the ascent from A to B, the stock took a breather for about a week. During this time the market moved into a box range between $36.50 and $37.75. A rising window opened on July 11 (after candle line C) and propelled the stock above the aforementioned lateral trading range.
+> 
+> From a candlestick perspective, this rising window did two things: First, it turns the trend north, and second, this window now becomes potential support. While this window gives us a positive bias, it does not provide an upside target. For this, we shift to the Western technicals. Looking at the rally from A to B and the correction to C, we have a bull flag pattern. Now we can get a target by adding the “flagpole” portion (A to B) to the bottom of the “flag” (at C). The A to B rally is about $ 5.50. Putting this onto the low at C gives an upside target toward $42. (As mentioned above, most books on Western technical analysis will add this $5.50 to the top of the flag portion [near $38], but I use the more conservative measurement of the bottom of the flag [$36.50] portion of a bull flag.)
+> 
+> As the stock approached our conservative $42 target, a shooting star arose overhead, making the target a resistance area. The black candle after the shooting star completed the third line needed for an evening star pattern. The descent from there found support in late July near $37.75. This was a support area defined by the rising window on July 14 with the inverted hammers. The rally that started the week of July 28 hesitated at the high of the aforementioned evening star pattern at around $42. As discussed with an evening star (and many other candle patterns), I normally look at resistance based on the close. Thus, when the stock pushed above the evening star’s resistance intraday, but failed to close above it, this resistance remained intact.
+> 
+> ...
+> 
+> There are many types of triangles in Western technicals: symmetrical triangles, wedges, and so on. As shown in illustration below, there are ascending and descending triangles.
+> 
+> ![Moves: Ascending and Descending Triangles](/.attachments/moves-ascending.descending.triangles.png)
+> 
+> _Ascending and Descending Triangles_
+> 
+> The _ascending triangle_ has a horizontal resistance area tested numerous times. Moves down from this resistance are at sequentially higher lows. This exemplifies that, although there is supply at the resistance line, demand is getting more aggressive as the market pulls back from this resistance area. If the bulls can then push the market over the horizontal resistance, we have an ascending triangle. The measurement is the height from the horizontal resistance area (A) to the widest part of the triangles (at B) added to the just-broken resistance area.
+> 
+> The _descending triangle_ is a pattern wherein a horizontal support area is successfully defended, but each rally from there meets with successively lower highs. These lower highs reflect how the bears are keeping the bulls well in check. With a penetration of support, we take the widest point of the descending triangle and add that measurement from the prior support line.
+> 
+> ![Moves: S&P Depository Receipts - 5 Minutes (Descending Triangles)](/.attachments/moves-s&p-5.minutes.png)
+> 
+> _S&P Depository Receipts - 5 Minutes (Descending Triangles)_
+> 
+> The chart above displays a classic descending triangle. The horizontal line at 137 shows it was a clearly defined multitested support. This was the bottom part of the descending triangle. The upper part of the descending triangle was a downward sloping resistance line.
+> 
+Once the bears had the wherewithal to pull the market under the 137 support area (at the arrow), we now use the ascending triangle projection. The highest point of the triangle is when it began at 138.25. The bottom end of the triangle is 137. This provides us with a target toward 135.75.
+> 
+One of the attractive aspects of the descending triangle is that we can use the prior support area as new resistance (the change of polarity). Consequently, once the bears pulled prices under 137 (at the arrow), we then know that 137—if the market is indeed weak—should become resistance.
+> 
+> Further corroboration of trouble with the move under 137 was the falling window the next session. Consequently, we have a convergence of factors for resistance near 137: the prior support and the falling window.
 
 ### Chapter 17. The Best of East and West
 
@@ -3363,4 +3465,5 @@ _If heaven drops a fig, open your mouth_
 1. [The ONLY Candlestick Pattern Guide You'll EVER NEED](https://youtu.be/tW13N4Hll88) - [TradingLab](https://www.youtube.com/@TradingLabOfficial)
 1. [How To Read Candlestick Charts FAST (Beginner's Guide)](https://youtu.be/AOz1YPOKvEs?si=kS_vLSuCSuWVExS8)
 1. [The Ultimate Guide to Candlestick Patterns](https://www.youtube.com/playlist?list=PLCdjtsyRwkfd5SUdJLwsdQOMcqzOwLpJW) - [Soheil PKO](https://www.youtube.com/@SoheilPKO)
+1. [The ULTIMATE Beginner's Guide to CHART PATTERNS](https://youtu.be/OiXEpjO7rOs?si=YTuRKgqfBfqpXelR) - [Fractal Flow - Pro Trading Strategies](https://www.youtube.com/@fractalflowpro)
 1. [Market Profile: A SMB Trader Reveals How to Use This Tool to Make Effective Trades in $SPY](https://youtu.be/LfD8QpGjlQY?si=mtmisXu3PsP0Dw_p)
