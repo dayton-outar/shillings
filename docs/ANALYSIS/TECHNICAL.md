@@ -3335,7 +3335,17 @@ viewed as damaged. The close under the window’s support took place on June 8.
 >
 > This concept of volume confirming the candle pattern can be used for any candle signals. For instance, this would mean that a bearish engulfing pattern should have a lighter volume on the first candle (the white) and a heavier volume on the second candle (the black) to increase the bearish engulfing pattern’s significance.
 
-> ![Title: ](/.attachments/)
+### Chapter 16. Measured Moves
+
+> Candle charts, because they provide an x-ray into the demand/supply situation, are potent in calling early turning signals. Assuming one enters a trade with a candle signal (preferably with confirmation with other candle or Western signals), the challenge becomes knowing when to exit.
+>
+> My firm, [candlecharts.com](), utilizes different exit strategies, depending on the client’s trading style. One method we use is forecasting price objectives from classic Western patterns. There is another reason for incorporating measured targets. ***No matter how ideal a candle pattern or how many reversal signals converge at one area, it doesn’t predict the extent of the reversal. This is where we shift to Western technicals for price objectives.***
+> 
+> The measuring techniques in this chapter will illustrate a few of these many patterns, including breakouts from a box range, swing targets, flags and pennants, and ascending and descending triangles.
+> 
+> Price targets are not synonymous with support or resistance. For example, if there is an upside objective of $42, this does not mean the rally will stop at $42 (of course, it may not even get to $42). In my opinion, one should not look at a price objective to initiate a new position, but to offset an outstanding position. In the example discussed above, I would use a rally to the $42 area to liquidate longs, but not to initiate a new short position. Of course, if there were a bearish candle signal or a convergence of other technical signals, hinting that $42 was an area of resistance, one could then be more aggressive about considering a sale.
+
+> ![Moves: ](/.attachments/)
 > 
 > __
 
