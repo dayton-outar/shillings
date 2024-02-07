@@ -3307,11 +3307,33 @@ viewed as damaged. The close under the window’s support took place on June 8.
 
 ### Chapter 15. Candles with Volume
 
+> One of the most important clues sent out by the market is volume. Volume is like water pressure in a hose. The greater the water pressure, the more powerful the water flow. Likewise, the stronger the volume, the more the force behind the move.
 > 
-
+> Volume should increase in the direction of the trend to improve the likelihood that the current trend should continue. If, however, volume declines as a trend progresses, there is less reason to believe the trend will continue. Volume can also be useful for confirming tops and bottoms.
+> 
+> While specific volume measurements, such as On Balance Volume and Open Interest, are not addressed in this chapter, whichever forms of volume analysis you now use will help enhance the effectiveness of candle charts.
+> 
+> I’m frequently asked at my seminars about combining volume with candle charts by changing the width of the candles according to their volume. That is, the higher the volume, the wider the real body. In my opinion, it is just as easy to read volume classically—on the bottom of a chart. The disadvantage to adjusting the thickness of the candle line with volume is that if there are many high-volume sessions, there will be fewer candle charts that can fit on the screen. Volume is so important that however you choose to display it is not important. What is important is that if it is available, you should use it.
+>
+> Because volume numbers are different from market to market, I don’t look at an absolute volume figure, but at relative volume. In other words, in one stock 50,000 shares could be an extraordinarily high-volume session—while, in another, 10 million shares might be light volume. As such, I look for relative volume spikes in a market.
+> 
 > ![Volumes: Corning - 60 Minutes (Volumes with Hammer)](/.attachments/volumes-corning-60.minutes.png)
 > 
 > _Corning - 60 Minutes (Volumes with Hammer)_
+> 
+> In the chart shown above, we can see how this stock had a volume spurt late on May 3. We see that compared with preceding sessions, this was an abnormal volume. As such, we should pay attention to it. This high-volume session was also a hammer. This is what we like to see—volume confirming price.
+> 
+> This chart brings out another aspect. A very long lower shadow hammer means that by the time the hammer is confirmed (we need to wait for a close to confirm the hammer), the market could be well off its lows. Buying at the close of such a hammer may not present an attractive risk/reward since the market may retrace back to the lows of the hammer before, potentially, resuming an upward course. A high-volume hammer, such as in this chart, decreases the chance for a correction to the hammer’s low. Therefore, one may be more aggressive about buying on the hammer’s close if it is a usually high-volume hammer than one would if the volume didn’t give the same forceful confirmation.
+> 
+> ![Volumes: Capital One Financial - Daily (Volume with a Harami and Piercing Pattern)](/.attachments/volumes-capital.one-daily.png)
+> 
+> _Capital One Financial - Daily (Volume with a Harami and Piercing Pattern)_
+> 
+> In the chart shown above, in early November a precipitous decline with a group of long black real bodies visually reinforced the bears’ momentum. A single session, on November 11, changed the technical picture. That session’s spinning top completed the second session of the harami pattern. However, of greater consequence was that spinning top’s strong volume. This showed that as heavy as the supply was (and we know there was heavy supply because of the high volume), the demand was strong enough to keep the bears in check—hence, the small real body.
+>
+> The market rallied from this harami. On the next sell-off later in November, the stock stabilized with a piercing pattern. With the piercing pattern, we would like to see lighter volume on the black candle and heavier volume on the white candle. This would serve to reinforce that the bears are losing force and the bulls are gaining a stronger foothold. This scenario of lighter volume black and heavier volume white is what unfolded in Capital One. This volume scenario also increases the odds that the piercing pattern will hold. In this example, the piercing pattern’s support was well defended with the December 15 hammer.
+>
+> This concept of volume confirming the candle pattern can be used for any candle signals. For instance, this would mean that a bearish engulfing pattern should have a lighter volume on the first candle (the white) and a heavier volume on the second candle (the black) to increase the bearish engulfing pattern’s significance.
 
 > ![Title: ](/.attachments/)
 > 
