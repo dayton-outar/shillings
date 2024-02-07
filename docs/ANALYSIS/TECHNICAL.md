@@ -3189,6 +3189,129 @@ In the chart shown below we join areas 1, 2, and 3 to obtain a classic resistanc
 > _Juniper Networks - Daily (Upthrust)_
 > 
 > Let's look at this idea in the context of the upthrust in the chart shown above, In late September there was a resistance zone shown by the two horizontal lines. The extended white candle of October 16 pushed the stock over this resistance. The bulls’ “scouting party” had, at least then, gotten a foothold as Juniper made a new high close over an evident resistance area. By the next day the whole texture of the market had changed as the black candle’s close proved that the bulls didn’t have enough mettle to hold the new highs. As such, an upthrust was created. The highs of this upthrust remained resistance for the next week before the market collapsed after the bearish engulfing pattern that was completed October 23.
+> 
+> ![Trend Lines: Hon Industries - Daily (Spring)](/.attachments/lines-hon.industries-daily.png)
+> 
+> _Hon Industries - Daily (Spring)_
+> 
+> ... The chart shown above is an example of a spring formed over a few sessions. A new low close on February 1 broke an evident support level at $20. The next day the bulls came back, as the Japanese would express it, “in a kamikaze attack,” and propelled the stock over this broken support area. In doing so, the stock made a spring. The target is the most recent high near $23.75 from late January. This January high was made via a doji following a tall white candle. Interestingly, the stock hesitated there again with a similar combination of tall white real body and doji lines on February 9 and 10.
+> 
+> One of the most powerful aspects of technical analysis is that it helps foster a risk and money management approach to the market. As such there should always be a price that says we are wrong about our forecast. In this example, if after the February 2 spring, the market had pulled under the February 1 low, it would void the target and would be a sign to reconsider long positions.
+
+#### THE CHANGE OF POLARITY PRINCIPLE
+
+> ![Trend Lines: Change of Polarity: Old Support = New Resistance](/.attachments/lines-support.to.resistance.png)
+> 
+> _Change of Polarity: Old Support = New Resistance_
+> 
+> The Japanese have a saying: “A red lacquer dish needs no decoration.” This concept of simple beauty is the essence of a technical principle I use frequently. It is as simple as it is powerful: Old support becomes new resistance and old resistance becomes support. This is what I call the “change of polarity” principle. The illustration above shows support converting to resistance. The illustration below shows prior resistance becoming new support.
+> 
+> ![Trend Lines: Change of Polarity: Old Resistance = New Support](/.attachments/lines-resistance.to.support.png)
+> 
+> _Change of Polarity: Old Resistance = New Support_
+> 
+The concept behind the change of polarity principle (although not traditionally called that) is an axiom discussed in many books on technical analysis. Yet, it is an underutilized gem. To see how universally well this rule works, let us briefly look at some examples across the various time horizons and markets.
+> 
+> ![Trend Lines: Silver - Daily (Change of Polarity)](/.attachments/lines-silver-daily.png)
+> 
+> _Silver - Daily (Change of Polarity)_
+> 
+In the chart shown above, a late December sell-off culminated near $5.35 (at A). On another test at or near this level, there are at least three groups who could consider buying.
+>
+> - Group 1: Those who were waiting for the market to stabilize after the prior sell-off and who now have a point at which the market found support—$5.35 (the lows at area A). A few days later, a successful test (at B) of this support probably pulled in new longs.
+> 
+> - Group 2: Traders who were previously long but were stopped out during the late December sell-off. On the rally from B to $5.60, in mid January, some of these old longs who were stopped out would say to themselves that they were right about silver being in a bull market. They just timed their original purchase incorrectly. Now is the time to buy. They want to be vindicated in their original view. They wait for a pullback to support at A or B to buy. They again go long at C.
+> 
+> - Group 3: Those who bought at points A and B. They also see the rally from B and may want to add to their position if they get a “good price.” At area C, they have their good price since the market is at support. Thus, more buyers come in at C. Then, for good measure, another pullback to D draws in more longs.
+> 
+> Then the problems start for the longs. In late February, prices puncture support areas A, B, C, and D. A hammer on February 28 is a reason for some optimism, but anyone who bought at this old support area is now in a losing trade.
+> 
+> What is the most important price in any market? The highs made for move? The lows? Yesterday’s close? No. _The most important price on any chart is the price at which you entered the market. People become strongly, keenly, and emotionally attached to the price at which they bought or sold._ These longs from $5.35 probably learn prayers in seven languages to get the market back to breakeven.
+> 
+> Consequently, rallies to anywhere near where the longs bought (around $5.35) will be gratefully used by them to exit their longs. Thus, the original buyers at areas A, B, C, and D may now become sellers. This is the main reason why old support becomes new resistance as shown by the resistance at E and F.
+> 
+> ![Trend Lines: Lee Enterprises - Daily (Change of Polarity)](/.attachments/lines-lee-daily.png)
+> 
+> _Lee Enterprises - Daily (Change of Polarity)_
+> 
+> A resistance line in the chart shown above was penetrated in early February. On the price dip on the week of February 16, we see a convergence of technical indicators as a hammer on February 20 confirmed a support level based on the change of polarity. Another price descent ended with another hammer at this same support area near $29.75. Although the hammer was confirming support, the hammer doesn’t provide a price target. This is where the Western technicals come into play. We see a resistance line formed from the highs in early to mid April. Using this line as a potential resistance area, we then have a target if we buy on the hammer near $31.50. This chart illustrated the usefulness and advantage of using Western techniques in combination with candles. The Western technicals can confirm a candle signal (as the hammer confirmed the change of polarity’s support) and we can also utilize the Western technicals to obtain a potential target (the falling resistance line).
+
+### Chapter 12. Candles with Retracement Levels
+
+> ![Retracements: Popular Retracements in an Uptrend](/.attachments/retrace-uptrend.png)
+> 
+> _Popular Retracements in an Uptrend_
+> 
+> ![Retracements: Popular Retracements in a Downtrend](/.attachments/retrace-downtrend.png)
+> 
+> _Popular Retracements in a Downtrend_
+> 
+> Markets usually do not trend straight up, nor do they fall vertically down. They often retrace, or correct, some of their advance, or decline, before resuming the prior trend. Some of the more popular retracement levels are the 50% level and the Fibonacci figures of 38% and 62%. Fibonacci was a thirteenth-century mathematician who derived a special sequence of numbers. These ratios include 61.8% (or its inverse of 1.618) and 38.2% (or its inverse of 2.618). This is why the 62% (61.8% rounded off) and the 38% (38.2% rounded off) corrections are so popular. The popular 50% correction is also a Fibonacci ratio. The 50% retracement is probably the most widely monitored level. This is because the 50% retracement is by users of Gann, Elliott Wave, or Dow theories.
+>
+> Let us look at instances where retracements melded with candle techniques to provide important turning signals.
+>
+> ![Retracements: Corning - 15 Minutes (Retracement)](/.attachments/retrace-corning-15.minutes.png)
+> 
+> _Corning - 15 Minutes (Retracement)_
+>
+> A bullish engulfing pattern at B held as support with the bullish long lower shadows on November 21. The rally from 1 to 2 pushed the stock $8 higher. As such, a 50% correction of this rally is $4 off the highs. This means expected support near $62.50 (50% of the $8 rally = $4; $4 added to $58.50 = $62.50). On the approach to this level on November 22, the stock formed a piercing pattern. As such we got a convergence via a candle pattern at a 50% retracement level. While retracement levels can become support or resistance, I would not suggest buying or selling at a retracement area unless it was confirmed by a candle pattern as it was here.
+> 
+> ![Retracements: Crude Oil - Daily (Retracement)](/.attachments/retrace-crude-daily.png)
+> 
+> _Crude Oil - Daily (Retracement)_
+>
+> We see a decline in the chart shown above from the price peak in January at 1 to a bullish engulfing pattern in mid March at 2. This low of the bullish engulfing pattern confirmed a hammer from late February. The rally from the bullish engulfing pattern stalled with a high-wave candle almost exactly at a 38.2% Fibonacci retracement from the decline from 1 (at $22.65) to 2 (at $22.57). Another reason for resistance in this area was that it was the November and December former support area. Since the support area was broken, it then becomes new resistance based on the change of polarity principle.
+
+### Chapter 13. Candles with Moving Averages
+
+> The moving average is one of the oldest and most popular tools used by technicians. Its strength is as a trend-following device that offers the trader the ability to catch major moves. Thus, it is utilized most effectively in trending markets.
+> 
+> ![Moving Averages: Eaton Vance - Daily (Moving Averages as Resistance)](/.attachments/moving.averages-eaton.vance-daily.png)
+> 
+> _Eaton Vance - Daily (Moving Averages as Resistance)_
+> 
+> In the chart shown above displays a short-term moving average that was resistance during the descent beginning in mid August. On August 30 and 31 the stock pushed over this resistance intraday, but failed to close above it—thus keeping the trend down. On September 7 and 8 there was a little whipsaw as the stock closed above this moving average and then failed. Generally, however, this moving average (which is a 5-day moving average) should be respected as resistance because of how well it worked. Starting September 20 the stock built a series of bullish long lower shadows with the last long lower shadow candle on September 24 as a hammer. While these candle lines gave a visual clue that the market was groping for a bottom, it took the September 25 close to get final bullish confirmation as this candle completed a bullish engulfing pattern and closed above this moving average. Note how this moving average held as support on the late September rally and as resistance during the early October decline.
+
+### Chapter 14. Candles with Oscillators
+
+> The three major uses of oscillators are:
+>
+> 1. _As a divergence indicator_. There are two kinds of divergence. A negative, or bearish, divergence occurs when prices are at a new high, but the oscillator is not. This implies the market is internally weak. A positive, or bullish, divergence is when prices are at a new low, but the oscillator does not hit a new low. The implication is that the selling pressure is losing steam.
+> 
+> 2. _As overbought/oversold indicators_. This means oscillators can notify the trader if the market has become overextended and, thus, vulnerable to a correction.
+> 
+> 3. _As confirmation of the force behind a trend’s move_. Oscillators can confirm the market’s momentum, measuring the velocity of a price move by comparing price changes. In theory, the velocity should increase as the trend is under way. A flattening of momentum could be an early warning that a price move may be decelerating.
+> 
+> There is a Japanese saying: “All clouds do not rain.” I view the oscillator as a rain cloud that has the potential for rain—but the only way to tell it’s raining is either seeing or feeling the raindrops. So it is with oscillators. An oscillator is like a storm cloud, but we need a final confirmation with candle signals. Thus, I view an overbought or oversold oscillator as only a warning, a clue, with final confirmation coming with a candle-stick pattern.
+> 
+> ...
+> 
+> ![Oscillators: Wal-Mart Stores - Daily (Moving Average Oscillator)](/.attachments/oscillators-walmart-daily.png)
+> 
+> _Wal-Mart Stores - Daily (Moving Average Oscillator)_
+> 
+> The chart shown above, when a stock becomes overextended and there is also a candlestick confirming a turn, it could be a good place to either exit longs or lighten up on long positions. With this in mind, let’s look at each overbought occurrence:
+>
+> 1. There were two hanging man lines at H in the first week of March. These appeared during an overbought market (based on the oscillator), but they were not confirmed by a close under their real bodies. Remember, for bearish confirmation of a hanging man, we need a close under the hanging man’s real body to confirm a hanging man’s potentially bearish implications. Additionally, the market formed a rising window on the first hanging man session. As such, the window became support. So, while the market was overextended, there was no bearish confirmation of a market rate turn at 1 based on the candle lines. The bearish engulfing pattern at B on March 18 and 19 was a turning signal not only because of the bearish engulfing pattern itself, but also because at the time of that pattern the stock had made a new high and the moving average oscillator had made a lower high. This formed bearish or negative divergence.
+> 
+> 2. An overbought reading with the oscillator, but no turning signals with the candles since the candle line during the overbought reading was a tall white real body. A few days after this white real body we can see a bearish engulfing pattern (at C) which became resistance for a few sessions.
+> 
+> 3. On April 7 Wal-Mart moved above the bearish engulfing pattern discussed above. As such, it could be viewed as a bullish breakout. At area 3 the oscillator was overbought, but there were no turning signals with the candles and we would not look to sell. A cautionary signal would come a few days later with a long-legged doji after a tall white candle.
+> 
+> 4. An overbought oscillator with a doji confirming a potential turn. While the stock hesitated at this doji, a small rising window opened between April 22 and 23 as support. Thus, we would need further bearish confirmation by a close under the window. The break of the window’s support occurred on April 28.
+> 
+> 5. A hanging man at the arrow on May 11 and an overextended oscillator gave us a turning signal. The bearish implications of the hanging man were confirmed by a lower close the next day.
+> 
+> 6. A doji confirming hesitation. Similar to 4, there was a rising window that needed to be closed before the trend could be
+viewed as damaged. The close under the window’s support took place on June 8.
+
+### Chapter 15. Candles with Volume
+
+> 
+
+> ![Volumes: Corning - 60 Minutes (Volumes with Hammer)](/.attachments/volumes-corning-60.minutes.png)
+> 
+> _Corning - 60 Minutes (Volumes with Hammer)_
 
 > ![Title: ](/.attachments/)
 > 

@@ -73,7 +73,7 @@ _Practival Insights in Brain Science to Help Students Learn_
 > 
 > ...
 > 
-> How long should your brain break be? Our brains take an eight-hour break at night when we fall asleep, when memories are consolidated on a global scale.* But much of the preparation is done during briefer breaks throughout the day. One study revealed that a fifteen-minute period of eyes-closed rest following learning enhanced the memory of what was just learned far more than when the participants simply went on to another task. But fifteen minutes of eyes-closed rest is not going to fly in today’s classrooms!
+> How long should your brain break be? Our brains take an eight-hour break at night when we fall asleep, when memories are consolidated on a global scale. But much of the preparation is done during briefer breaks throughout the day. One study revealed that a fifteen-minute period of eyes-closed rest following learning enhanced the memory of what was just learned far more than when the participants simply went on to another task. But fifteen minutes of eyes-closed rest is not going to fly in today’s classrooms!
 > 
 > ...
 > 
@@ -87,7 +87,7 @@ _Practival Insights in Brain Science to Help Students Learn_
 > 
 > ... But the seemingly successful cramming process creates two problems. First, if the new learning in the neocortex isn’t reinforced by the hippocampus over subsequent days, the neocortical information and the hippocampal indexing links both simply fade away, whether the learner is a race car or a hiker.
 > 
-> The second problem is perhaps even worse. It turns out that sleep, with its different-from-waking bath of neural chemicals and altered activity levels, serves as a sort of sealant for newly formed links in long-term memory.16 A night of cramming, with little or no sleep at the end, means that whatever information might have slipped into long-term memory in the neocortex doesn’t stick.
+> The second problem is perhaps even worse. It turns out that sleep, with its different-from-waking bath of neural chemicals and altered activity levels, serves as a sort of sealant for newly formed links in long-term memory. A night of cramming, with little or no sleep at the end, means that whatever information might have slipped into long-term memory in the neocortex doesn’t stick.
 > 
 > ...
 > 
