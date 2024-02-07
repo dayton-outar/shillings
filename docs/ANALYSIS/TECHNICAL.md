@@ -3445,9 +3445,9 @@ viewed as damaged. The close under the window’s support took place on June 8.
 > 
 > The chart above displays a classic descending triangle. The horizontal line at 137 shows it was a clearly defined multitested support. This was the bottom part of the descending triangle. The upper part of the descending triangle was a downward sloping resistance line.
 > 
-Once the bears had the wherewithal to pull the market under the 137 support area (at the arrow), we now use the ascending triangle projection. The highest point of the triangle is when it began at 138.25. The bottom end of the triangle is 137. This provides us with a target toward 135.75.
+> Once the bears had the wherewithal to pull the market under the 137 support area (at the arrow), we now use the ascending triangle projection. The highest point of the triangle is when it began at 138.25. The bottom end of the triangle is 137. This provides us with a target toward 135.75.
 > 
-One of the attractive aspects of the descending triangle is that we can use the prior support area as new resistance (the change of polarity). Consequently, once the bears pulled prices under 137 (at the arrow), we then know that 137—if the market is indeed weak—should become resistance.
+> One of the attractive aspects of the descending triangle is that we can use the prior support area as new resistance (the change of polarity). Consequently, once the bears pulled prices under 137 (at the arrow), we then know that 137—if the market is indeed weak—should become resistance.
 > 
 > Further corroboration of trouble with the move under 137 was the falling window the next session. Consequently, we have a convergence of factors for resistance near 137: the prior support and the falling window.
 
