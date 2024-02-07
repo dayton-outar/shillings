@@ -8,6 +8,19 @@
 | <p><strong>Switching Costs</strong><br /><small>Describes elements related to customers switching business to competitors</small></p> | <ul><li>What binds customers to a company and its offer?</li><li>What switching costs prevent customers from defecting to competitors?</li><li>Is it easy for customers to find and purchase similar offers?</li><li>How important is brand?</li></ul> | <ul><li>There is nothing that binds customer to a particular stock trading or analysis platform.</li><li>The value proposition of the app will have to maintain a way to get users hooked on using the app as a way to maintain loyalty.</li><li>Yes. It's easy to find and purchase similar offers.</li><li>It's competitive market. So brand is critical to customer equity</li></ul> |
 | <p><strong>Revenue Attractiveness</strong><br /><small>Identifies elements related to revenue attractiveness and pricing power</small></p> | <ul><li>What are customers really willing to pay for?</li><li>Where can the largest margins be achieved?</li><li>Can customers easily find and purchase cheaper products and services?</li></ul> | <ul><li>Customers are willing to pay for analysis and user experience to help make trading decisions.</li><li>_Still trying to figure this_</li><li>Yes. Some Global competitors are finding their way into our markets.</li></ul> |
 
+## Market Size
+
+Based on the email response provided on February 7, 2024 by the Trading Department of the Jamaica Stock Exchange, the Jamaican Stock Market included the following makeup of investors,
+
+| Type of Investor | Total Accounts |
+|:--- | ---:|
+| Individual | 225,991 |
+| Corporate | 5,499 |
+
+Credit to Sheneka Robinson for providing the information via email.
+
+It's possible that an individual may have several accounts, where most have single accounts. Same for corporate entities (as in companies).
+
 
 ## Critical Issues 
 
