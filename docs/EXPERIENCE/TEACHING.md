@@ -366,7 +366,99 @@ I think this explains the reason persons who don't know how to read and write ar
 
 ## Chapter 8. Linking Learners
 
+> **The Role of Stress in Learning**
+> 
+> We should dive now into one of the most important areas of teaching and life in general: stress. Stress comes in several varieties. _Chronic_ stress creates _distress_—the kind of stress you or your students have little control over, such as a bad boss, an ill family member, or a furtive classroom bully. This stress can have serious long-term consequences for your health, including the cardiovascular, immune, and reproductive systems.
+> 
+> On the other hand, _transient_ stress is the kind of stress experienced when you are studying for a test, reacting rapidly as a race-car driver, or taking the challenge of a demanding hike. Transient stress, which students have some control over, isn’t generally harmful to health—it is instead a eustress (good stress) that can improve cognition, working memory, and physical strength. The neural chemicals released by transient stress may explain why students are more efficient and focused when studying for a nerve-racking test rather than simply lounging around “studying” at their leisure. Transient stress also explains why the information you learned for a presentation in front of the entire school can stay with you for years.
+> 
+> ...
+> 
+> **Using Collaborative Learning to Build Social Skills and Buffer Stress Levels**
+> 
+> Developing habitual procedures, as we discussed in the previous chapter, is a natural way to build a positive classroom culture. But we teachers can go even deeper to encourage social skills by assigning occasional in-class assignments that simultaneously teach students effective collaborative learning strategies. Research indicates that the “social buffering” provided by _supportive_ group members can reduce a student’s skyrocketing stress hormone levels when they encounter new and difficult tasks. Supportive teammates, in other words, can keep stress hormones in the “happy middle” that allows for optimal learning.
+> 
+> We’ve emphasized the word supportive because when it comes to groups, obstructive group members can increase instead of reduce another student’s stress. Sometimes students can be obstructive even when they don’t mean to be. The challenge is that most students don’t walk into classrooms with the time management, conflict resolution, and communication skills required for high-performance group work. As thirteen-year-old Veronique Mintz explains in _The New York Times_:
+> 
+> "I go to a school that puts a big emphasis on collaborative learning; approximately 80 percent of our work is done in teacher-assigned groups of three to five students. This forces students who want to complete their assignments into the position of having to discipline peers who won’t behave and coax reluctant group members into contributing."
+> 
+> Yet well-done collaborative learning can provide opportunities to enhance students’ self-control, patience, social problem-solving skills, self-esteem, and emotional intelligence. Ultimately it can improve academic engagement. Many students feel less anxiety about participating in discussions with a smaller group than in front of the whole class, making collaborative learning groups an appealing instructional choice.
+> 
+> ...
+> 
+> Collaborative learning in groups allows for that practice—making it blend nicely with the “We do” stage of direct instruction. For example, using think-pair-share provides students with a partner to practice retrieving newly learned material. It also eases students into developing social skills and taking responsibility for their own learning. After students have demonstrated proficiency with key concepts and skills, more student-directed collaborative learning tasks involving problem-solving can be effective.
+> 
+> ...
+> 
+> - **Disagree civilly**. Criticize ideas, not people.
 
+The last bullet point reminds me of a quote credited to Eleanor Roosevelt, "Small minds discuss people, Average minds discuss events and Great minds discuss ideas"
+
+> **The Uncommon Sense Trade-offs of Group Work**
+> 
+> Teamwork is an integral part of a well-functioning society, but individual contributions can also be valuable. As Suparna Rajaram, a professor of psychology at Stony Brook University, observes: “Psychologists have found that people working in larger groups tend to generate fewer ideas than when they work in smaller groups, or when working alone, and become less receptive to ideas from outside.”
+> 
+> This is why we like the idea of _brainwriting_. In this process, participants first brainstorm individually, writing down their ideas without judging them. The group then comes together, shares all their ideas, and proceeds to a second stage of conventional brainstorming to augment the combined list.
+> 
+> In the end, research on millions of scientific papers and patents has shown that large teams are vitally important in developing areas of science and technology that have already been conceived. But it is individuals working alone, or at most in tiny teams of two or three, who are essential in innovative, creative advances. Every person added to a team reduces the potential that the work is a genuinely creative breakthrough. Good teaching develops students’ abilities in both group and individual work.
+
+## Chapter 9 Online Teaching with Personality and Flair
+
+> One major university system, which we’ll leave unnamed, spent $2 million to produce a series of eight online courses. The course had beautiful videography, followed all the proper pedagogical rules—and was dull as dirt. Few bothered to enroll, so the university eventually opted to shut it down.
+> 
+> On the other hand, our massive open online course “Learning How to Learn” was made by amateurs who dodged the sounds of lawnmowers and meowing cats and constructed the course in a basement for virtually no money at all. In fact, “Learning How to Learn” has garnered millions of students and rave reviews despite (or perhaps because of) its corny, not professionally edited videos, along with well-organized quizzes, discussion forums, and course materials.
+> 
+> The moral of the story is that you don’t need to be an experienced technology professional or have unlimited financial resources to use tools that transform your online teaching from good to great. The teaching approaches you’ve already become familiar with in this book also work well online: including retrieval practice, active learning, and direct instruction. No surprise here—after all, the brain is the same, whether learning online or in a conventional classroom.
+> 
+> But there are even more brain-related pointers that will put your online teaching on a sound pedagogical footing. You’ll find that if you design your online materials in ways that align with how the brain learns, you will sometimes be able to teach online students even better than you do your face-to-face students. Online learning provides for self-paced learning, which allows you to differentiate your instruction effectively. On top of all that, online teaching can improve your face-to-face teaching—we’ll show you how.
+> 
+> The online learning experience has been shown to be just as good as face-to-face—sometimes even better. (Surprisingly often, studies “proving” that online learning isn’t as good as face-to-face use laughably inadequate techniques for conveying the information online—precisely the approaches we will help you avoid.) Many teachers swear that flipped classes—a combination of online and face-to-face—are the best of all worlds.
+> 
+> ...
+> 
+> In contrast, _asynchronous_ teaching involves creating materials and posting them on your school’s learning management system (LMS) so that students can access them at their convenience. Documents, videos, quizzes, discussion forums—all can be uploaded to support learning. But how do you keep students from procrastinating? And how do you know which types of materials are most useful for learners?
+> 
+> ...
+> 
+> Before diving into the structure of creating an excellent online experience for students, it’s worthwhile to touch on something called _multimedia learning theory_. The basic idea is straightforward. A picture with an accompanying verbal explanation can help students grasp a concept much more quickly than either a picture or a verbal explanation alone. This is because working memory typically has both a hearing and a seeing component (these are the _multi_ parts of multimedia theory). Simultaneously using both visual and verbal explanations allows students to make better use of their limited working memory.
+> 
+> ![Octopus handling chain link](/.attachments/teacher-hear.and.see.jpg)
+> 
+> _Working memory has both a hearing and a seeing component (symbolized here by the different shades of the arms of the “attentional octopus” you met in previous chapters). If you teach so that students simultaneously hear and see what you are explaining, it’s much easier for students to engage with the ideas (sets of neural links)._
+> 
+> Educational psychologist Richard Mayer has spent decades studying best practices for teaching in a multimedia format.7 Many of his findings also relate to face-to-face teaching. Here’s a list of what we find to be the most important insights from Mayer’s work, along with some of our additions and thoughts:
+> 
+> - **Speak clearly and enthusiastically**. Remember that students have enough negativity and boredom in their lives, so they are looking to you for upbeat inspiration. When making a prerecorded video, try to speak relatively quickly—around 150 to 185 words per minute. (Students can always stop the video if they need to think about what you just said; if you speak too slowly, students will become bored and more easily distracted.) Synchronous sessions are prone to problematic audio, so you want to ask questions and introduce other excuses for pauses to make sure the students are staying with you. Enunciate clearly—this is especially helpful for non-native speakers of English.
+> 
+> - **Introduce complex material gradually and highlight important information**. Complicated images should appear part by part, and arrows or highlights should draw students’ attention to what you’re explaining. Drawing arrows or circles is easy to do if you have a pen and tablet hooked into your computer.
+> 
+> - **Get rid of extraneous on-screen material**. Do you really need that entire graphic of the complexities of photosynthesis? Or all that verbiage in the bullet points? Or that busy bookcase in the background?8 You can place very brief phrases on the screen to emphasize what you are saying in words. But don’t put a long paragraph of text on the screen and then read it aloud. Rather than reinforcing learning, this simultaneous reading/seeing of the same information interferes with it.
+> 
+> - **When you are in front of the camera, you need to be bold and bigger than life**. Use your hands and an expressive set of facial emotions. It can be useful to think of the camera as a device that automatically subtracts ten charisma points. So you need to be extra outgoing to compensate. Don’t worry if talking to the camera seems unnatural at first; just think of the camera and its light as a supportive friend. If need be, put a stuffed animal on top of the camera. (It might help to know that if you watched Barb’s first online videos, you would have thought she was looking down the barrel of a shotgun.)
+> 
+> **Getting Started: Organizing Yourself and Your Students**
+> 
+> Your course should grow from your syllabus or class overview, which contains your expectations and schedule. The online layout of your course may seem simple and obvious to you, but for students, it can be bewildering—a little like being dumped blindfolded out of a car in the middle of the night and told to find their way home. Students need to form a _cognitive map_ that allows them to begin navigating your course. What’s a cognitive map? It’s a veritable zoo of neurons interconnected in a way that allows students to understand what they are supposed to do. For example, students must learn to click on the lower left corner of the web page to get to quizzes. Or the upper right for discussion forums. Once they have spent a little time navigating around your course, the newly formed cognitive map will start to become second nature.
+> 
+> To help students develop their new, course-related cognitive map, create a screencast (more on that soon) that walks them through the main elements of your course even as it also introduces you and your subject. In your screencast, point to the different key elements on your learning management system—the discussion forums, quizzes, and videos—and describe how students can best contact you. Students (and parents) appreciate one handy document that serves as a resource for the term or the year. Providing monthly event calendars can be an added bonus and is especially useful to parents and students in getting oriented in time as well as space.
+> 
+> ...
+> 
+> **Getting Started**
+> 
+> ...
+> 
+> Upbeat and sparkly messages from you will solicit the best back from your students. Using emoticons helps prevent possible negative interpretations. Not to mention that emoticons along with Bitmojis can be fun! As students adjust to the shift in classroom environment, forgive their early technology failures, which will be inevitable.
+> 
+> ...
+> 
+> Video production experts like to say sound is 51 percent of the video, because without good sound, a video is worthless. Next time you are in a virtual meeting, listen to the difference—it’s very discernible—between a built-in laptop mic and a more professional microphone. Not paying attention to audio is a common mistake. People focus too much on how they look and not enough on how they sound.
+> 
+> ...
+> 
+> But there is an even more important aspect of audio quality—the tone and voice of the instructor. Some people have very mellifluous voices, while other voices can be gratingly difficult to listen to at any length. The irritating quality of these voices can arise because, among other factors, they can invoke memories of the angry shouts of your parents when you were getting into mischief, or the shrill shriek of someone in danger. Imagery even shows how these shrill voices can hijack the emotional circuitry of the amygdala, just as can other unpleasant sounds. Unfortunately, those with naturally higher-pitched voices can be particularly prone to screeches, since speaking nervously on camera can tighten the vocal cords still further, turning the high pitch into a grating one.
+> 
+> One often finds newscasters and politicians with high-pitched voices taking voice coaching. If you watch their videos over time, you can see how their pitch lowers and becomes more melodic. One good tip if you suspect you might have this problem is to start a sentence at a lower pitch than you normally would, to help keep the natural and gradual rise in your voice as you complete that sentence or paragraph from turning into a squeak.
 
 [^1]: “Stress may lead to stronger memories for negative events happening in the classroom, such as failed exams, embarrassing experiences or interpersonal conflicts (e.g., bullying) and these strong negative memories may induce long-lasting frustration and a negative attitude towards school and the individual’s abilities. . . . Stress may hinder the integration of new information into existing knowledge structures, which may prevent the updating of new facts or a deep multidisciplinary understanding of concepts which is often required in education.” Vogel and Schwabe, 2016.
 
