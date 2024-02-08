@@ -63,6 +63,8 @@ At step 3 in the illustration above, the broker has to review the information an
 
 API solutions provided by [Credit Info](https://creditinfo.com/) can be used to retrieve and validate identity documents from customer against Government systems on the internet through the browser. The GOJ is also making moves to make KYC easier by digitizing documents through NIDS[^2]. The finance sector will benefit from this initiative as it will simplify and speed up the process of on-boarding new customers. This initiative is something that is encouraged by the World Bank.[^3] So, we can expect that other countries that are aligned with the World Bank have similar ongoing projects.
 
+The archival information can be had for each year at a rate of J$5,500 per year (according to email received from Shanari McCarthy, Marketing Officer, on February 7, 2024). From 2020 back to 1968 is 52 years. Fifty two (52) years of stock prices, indices and dividend history will cost around J$330,000. Retrieving the annual reports dating back to that time maybe a challenge. But a relationship can be established from doing business first by getting the stock prices and dividends before demanding annual reports.
+
 ### Market Makers
 
 The specific market makers in Jamaica's stock market might have changed or evolved. In Jamaica's stock market context, market makers are entities that provide liquidity and facilitate trading by offering to buy and sell specific securities at quoted bid and ask prices. They play a crucial role in ensuring there is a continuous market for securities.

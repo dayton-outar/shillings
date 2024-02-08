@@ -125,7 +125,6 @@ From Appendix C of _Technical Analysis of the Financial Markets_ by John J. Murp
 ## TO DO
 
  1. Complete Valuation Notes in [Asset Evaluation](./VALUATION.md)
- 2. Take Notes from "Japanese Candelstick Chart" on [Technical Analysis](./TECHNICAL.md)
 
 ## References
 
