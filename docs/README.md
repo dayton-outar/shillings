@@ -85,23 +85,20 @@ Step 1 may take 4 to 5 years.
 ## The Schedule
 
 1. Complete Business Canvas (February 2024)
-   1. Make appointment to see IT Manager and Library
-2. Build Portal (Login) and Fundamentals (March 2024)
+   1. Complete readme for [Analaysis](./ANALYSIS/)
+   2. Complete readme for [UX Design Philosophy](./EXPERIENCE/)
+2. Build Portal (Login) and Fundamentals (April 2024)
 3. Arrange focus group meeting for brainstorming and backlog discussion (October 2024)
    1. Fill up and prune backlog
    2. Decide upon features for Sprint 1 - MVP #2
-4. Complete Sprint 1 (March 2024)
-5. Gather improvement ideas and backlog from focus group for second sprint, Sprint 2 (March 2024)
-6. Complete Sprint 2 (April 2024)
+4. Complete Sprint 1 (November 2024)
+5. Gather improvement ideas and backlog from focus group for second sprint, Sprint 2 (January 2025)
+6. Complete Sprint 2 (February 2025)
 7. Review branding and marketing strategy
-8. Build Critical Mass from Influencers, Investment Clubs and Communities (April 2024)
+8. Build Critical Mass from Influencers, Investment Clubs and Communities (April 2025)
    1. Arrange meeting with communities
    2. Deliver branded presentation
    3. Usher commitment from members of community
-
-Notes left to take,
-
- - Complete all readme for [analaysis](./ANALYSIS/) and [experience](./EXPERIENCE/)
 
 ## The Market
 
