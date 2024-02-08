@@ -316,4 +316,58 @@ I think this explains the reason persons who don't know how to read and write ar
 
 ## Chapter 7. Building Community Through Habits
 
+> ...
 > 
+> Even before the first day of school, you can begin establishing a welcoming and productive classroom climate. When students have an idea of what to expect, it reduces distress (the bad part of stress).[^1] It allows for eustress—the healthy anticipatory stress of an exciting new experience or accomplishment.[^2]
+> 
+> Plan to send a message to students and parents introducing yourself and letting students know what to anticipate on the first day. Your message should also contain intriguing descriptions of what is to come. (Think of it as the blurb for a much-anticipated thriller. This isn’t the time for a boring description or a set of objectives.) Your letter should ease students’ anxieties and give them a heads-up on any supplies needed.
+> 
+> ...
+> 
+> Students’ brains estimate, moment by moment, what kind of reward might be in the offing. (A reward is something a person perceives as positive, whether it’s an object, an action, or an internal feeling.) Most of the time, life just moves along for students as a predictable routine. So unless something like a chocolate bar or a roller coaster magically appears, students’ brains just sit around, doing usual brain stuff. But if an unexpected reward appears, dopamine squirts into many of the areas of the brain involved in learning. This dopamine not only makes students feel good but also allows connections between neurons to strengthen more easily. And remember that competitive, seesaw behavior between the declarative and procedural systems? It turns out that dopamine temporarily puts a halt to the competition and instead enables the two systems to work together.
+> 
+> In other words, dopamine from unexpected rewards helps students learn!
+> 
+> Dopamine reinforces actions that lead to desirable results. Here’s how it can play out. If fourth-grade students are sitting at their desks while their teacher is shuffling papers, there’s little expectation of a reward coming any time soon (the end of the school day may seem eons away). If the teacher asks all the students to line up according to their number, well, no big deal. The students begin to line up.
+> 
+> But if, as all the students begin to line up, the teacher provides positive reinforcement, saying, “Isn’t it great to get out of our seats and get our blood flowing? Let’s add a stretch to the sky or give yourself a hug,” with an infectiously upbeat, encouraging voice—this is unexpected. And the teacher’s cheerful voice, along with the ability to get out of their seats, is rewarding! The unexpected positive reward doesn’t just hit the brain’s pleasure centers. Dopamine also surges in many areas of the brain involved in learning. In addition, dopamine can make a dramatic improvement in working memory. Students learn that lining up feels good—_and they also more easily learn to line up_.
+> 
+> Let’s contrast this with Ms. Guided’s handling of her students when she is teaching them to line up. She expects them to be able to line up—after all, she sees it already in her mind, and it’s quite simple. But when students don’t line up the way she wants the first time (it’s confusing for kids, after all), she begins yelling at them. Suddenly, the kids’ expectations plunge from ho-hum to negative. Dopamine levels unexpectedly plunge, too, as dopamine neurons quit pumping it out. Kids’ abilities to learn decline right along with the decline in dopamine levels. Students’ brains react in an “unlearning” way—the sudden lowering of dopamine signals neurons to _disconnect_ rather than _connect_.
+> 
+> The result? Ms. Guided is even less satisfied with her seemingly difficult students, who don’t seem to be able to learn even something simple, like how to line up. But the students have learned something—that Ms. Guided is associated with negative feelings. Lining up also becomes affiliated with negative emotions, so kids drag their feet even more. Ms. Guided becomes even more upset. She wonders why she got such bad students again this year, while Ms. Duwell’s students always seem so much smarter and more well-behaved. (In an important sense, Ms. Duwell’s students _are_ smarter simply because of the environment she has created. Frequent dopamine boosts keep her students’ synapses snappily connecting with their new learning.)
+> 
+> ...
+> 
+> The critical point here is that rewards must be _unexpected_ if they are to promote the neural rewiring of learning. An _expected_ reward, such as time with a video game after finishing a homework assignment, may assist with _motivation_, but not with learning. Dopamine, it seems, is not released following an expected reward because there is no need for rewiring the synapses. After all, the brain is already correctly predicting the reward.15 An odd side effect of all of this is that being too positive all the time means your positive comments become expected—which means your positivity doesn’t work as well as you might like to enhance your students’ learning.
+> 
+> ... Practice helps with the development of schemas, and schemas make learning easier. As brain scientists Szu-Han Wang and Richard Morris point out, “Once built, relevant new information can be assimilated into schema very rapidly. We rapidly remember what interests us, but what interests us takes time to develop.”
+> 
+> Expected rewards do provide motivation—sometimes powerfully so, as with the rewarding break at the end of a Pomodoro session.17 Or sometimes less powerfully, as when the reward is in the distant future. The brain’s ability to discount the motivation of a reward that is delayed in time is called temporal discounting. ...
+> 
+> A challenge with an expected reward is that it is sometimes not what you think it is. Students’ need for social acceptance by their peers, for example, can be far more rewarding than understanding what’s being taught, pleasing their parents by getting a good grade, or receiving a trinket like a novelty pencil or sticker. If students want to feel accepted (and thus rewarded) by fellow students in social groups that disparage learning, they may deliberately choose to avoid their schoolwork.
+> 
+> Some students are naturally motivated to succeed in traditional schooling. Others may be discouraged in their learning because they find it to be more difficult or their real rewards come from their peers, not their studies. As the old saying goes, when you are trying to flush out a source of corruption, follow the money. Similarly, in teaching, if you are trying to understand why a student has no motivation for learning, it’s best to “follow the reward” and to deduce what that student is truly seeking. Few of us teachers have the chops to become professional counselors or therapists, but sometimes it can help us to realize that the subject matter we cherish is not necessarily the be-all and end-all for our students.
+> 
+> ...
+> 
+> ... Even great teachers can become frustrated when they realize that after all their teaching efforts, a student remains mainly oblivious to feedback. In these cases, small, unexpected rewards such as praise can backfire. They can stoke a student’s already inflated or misaligned self-image and make them even less likely to pay attention to much-needed learning and growth. ...
+> 
+> ...
+> 
+> **Proactive Measures to Prevent Student Resistance**
+> 
+> - Provide specific praise to individual students, groups, or the whole class as warranted. When you sprinkle in specific praiseworthy feedback, you build trust and rapport, and students are more open to learning from their mistakes.
+> 
+> - Reassure students, even when their responses are incorrect, to help establish trust and encourage students’ future participation.
+> 
+> - Teach students the benefits of failure (FAIL is the First Attempt in Learning) to normalize making errors and learning through mistakes. After all, we would be out of a job as teachers if students knew everything!
+> 
+> - Set students up for success by making sure they have the correct answer before calling on them in front of their peers. Circulating the room makes it easy to notice students’ responses prior to engaging the whole class.
+
+## Chapter 8. Linking Learners
+
+
+
+[^1]: “Stress may lead to stronger memories for negative events happening in the classroom, such as failed exams, embarrassing experiences or interpersonal conflicts (e.g., bullying) and these strong negative memories may induce long-lasting frustration and a negative attitude towards school and the individual’s abilities. . . . Stress may hinder the integration of new information into existing knowledge structures, which may prevent the updating of new facts or a deep multidisciplinary understanding of concepts which is often required in education.” Vogel and Schwabe, 2016.
+
+[^2]: Stress can be bad or beneficial for students: Rudland et al., 2020.
