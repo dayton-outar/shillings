@@ -318,7 +318,7 @@ I think this explains the reason persons who don't know how to read and write ar
 
 > ...
 > 
-> Even before the first day of school, you can begin establishing a welcoming and productive classroom climate. When students have an idea of what to expect, it reduces distress (the bad part of stress).[^1] It allows for eustress—the healthy anticipatory stress of an exciting new experience or accomplishment.[^2]
+> Even before the first day of school, you can begin establishing a welcoming and productive classroom climate. When students have an idea of what to expect, it reduces distress (the bad part of stress).[^2] It allows for eustress—the healthy anticipatory stress of an exciting new experience or accomplishment.[^3]
 > 
 > Plan to send a message to students and parents introducing yourself and letting students know what to anticipate on the first day. Your message should also contain intriguing descriptions of what is to come. (Think of it as the blurb for a much-anticipated thriller. This isn’t the time for a boring description or a set of objectives.) Your letter should ease students’ anxieties and give them a heads-up on any supplies needed.
 > 
@@ -386,7 +386,7 @@ I think this explains the reason persons who don't know how to read and write ar
 > 
 > ...
 > 
-> Collaborative learning in groups allows for that practice—making it blend nicely with the “We do” stage of direct instruction. For example, using think-pair-share provides students with a partner to practice retrieving newly learned material. It also eases students into developing social skills and taking responsibility for their own learning. After students have demonstrated proficiency with key concepts and skills, more student-directed collaborative learning tasks involving problem-solving can be effective.
+> Collaborative learning in groups allows for that practice—making it blend nicely with the “We do” stage of direct instruction. For example, using think-pair-share[^1] provides students with a partner to practice retrieving newly learned material. It also eases students into developing social skills and taking responsibility for their own learning. After students have demonstrated proficiency with key concepts and skills, more student-directed collaborative learning tasks involving problem-solving can be effective.
 > 
 > ...
 > 
@@ -459,7 +459,163 @@ The last bullet point reminds me of a quote credited to Eleanor Roosevelt, "Smal
 > But there is an even more important aspect of audio quality—the tone and voice of the instructor. Some people have very mellifluous voices, while other voices can be gratingly difficult to listen to at any length. The irritating quality of these voices can arise because, among other factors, they can invoke memories of the angry shouts of your parents when you were getting into mischief, or the shrill shriek of someone in danger. Imagery even shows how these shrill voices can hijack the emotional circuitry of the amygdala, just as can other unpleasant sounds. Unfortunately, those with naturally higher-pitched voices can be particularly prone to screeches, since speaking nervously on camera can tighten the vocal cords still further, turning the high pitch into a grating one.
 > 
 > One often finds newscasters and politicians with high-pitched voices taking voice coaching. If you watch their videos over time, you can see how their pitch lowers and becomes more melodic. One good tip if you suspect you might have this problem is to start a sentence at a lower pitch than you normally would, to help keep the natural and gradual rise in your voice as you complete that sentence or paragraph from turning into a squeak.
+> 
+> ...
+> 
+> **Pointers for Going On-Camera**
+> 
+> Ordinarily, teachers sit in front of their computer or laptop and stream or videotape their image using their webcam. It can be helpful to follow the usual lighting rules, as shown in the following illustration. Place a stronger light, called a _key light_, in front of you, but slightly off to one side. A second lamp—the _fill light_—should be placed a bit farther away on the other side of you—or alternatively, be a bit dimmer—than the key light. This second light gets rid of shadows. If you want to make yourself pop out from the background, use a third light, called a _back light_. If all you have is the key light, place it right in front of you. Avoid having bright windows behind you; it can leave your viewers feeling as if they’re looking at your silhouette in the sun. If you wear glasses, you may need to play with the light a little to find a sweet spot with low glare. Avoid ring lights, which can leave devilish-looking circular reflections if you wear glasses. Flat panel LEDs are great. Sometimes simply raising the height of your lights can eliminate or reduce glare on glasses.
+> 
+> ![Camera Lighting](/.attachments/teacher-on-camera.lighting.jpg)
+> 
+> _A typical home video recording setup. You can use from one light to four lights. (Four lights are preferable for green screen, which makes it easy to substitute in another background.)_
+> 
+> Be sure to watch your positioning on the screen. What generally happens is you’ll sit up tall to start with, but then as you tire, you begin to slump, so you droop down on the lower part of the screen. You think it’s fine, because your head appears centered in the middle of the frame, but the problem is that your hand motions can be cut off below the camera frame. Some people set their laptops on boxes—it’s easier to be energetic and to make good use of hand gestures when you’re standing. Try to be conscious, at least at first, of where your hands are on screen. You want them to be visible, particularly when you are emphasizing important points. Thanks to your procedural system, with time, holding your hands in a visible yet natural position will become a habit and you won’t need to think about it.
+> 
+> ...
+> 
+> ![Bad On-CameraExample](/.attachments/teacher-on-camera.bad.jpg)
+> 
+> _Barb models the common mistake of slumping down in her chair while centering her face in the frame (aka the prairie dog effect). This inadvertently cuts off her hands. She’s also overexposed—there is too much light hitting her face._
+> 
+> ![Good On-CameraExample](/.attachments/teacher-on-camera.good.jpg)
+> 
+> _Here, Terry’s head is perfectly positioned in the upper part of the frame (high up but without the Frankenstein effect of cutting off the top of the head). There is plenty of room in the lower part of the image frame for his hands._
+> 
+> Make sure any lights you use have the same type of bulb in them, so your camera doesn’t get confused. All this gives your image a full, real-tone look. It’s nice if your on-camera background tells a little about you. If you can, try to go beyond the usual bookcase in the background. But sometimes a bookcase is all you’ve got. If that’s so, go with it and display some of your favorite books. If the room is filled with hard walls and floors, try to add rugs and soft surfaces like blankets or cushions to minimize echoes.
+> 
+> ...
+> 
+> **Asynchronous Teaching**
+> 
+> Learning experts will sometimes say, “It’s interacting with one another that gets students engaged in the course.” Consequently, teachers work to liven up their asynchronous materials by using asynchronous supportive elements such as discussion forums, shared sticky notes, peer editing, and quizzes. These are indeed useful, and we’ll discuss them in this chapter. But the reality is, _students focus on videos_. And well-explained videos are one of the most powerful tools in all of teaching.
+> 
+> ...
+> 
+> You may think, Look at _Sal Khan of Khan Academy_—he never shows himself in his videos. This is true—but on the other hand, students generally go to his videos _voluntarily_. They’re already motivated to learn what he’s teaching, even if the motivation arises just because they can’t understand their teacher’s explanations. But your students are _not_ necessarily volunteering to take your class. Sharing your personality allows you to connect with and motivate your students—an essential first step in getting them to engage with the course materials.
+> 
+> ...
+> 
+> Basically, you want to break up the material into the smallest chunks possible but not so small that a student needs to watch multiple videos in a row to understand the concept. We recommend that if you’re constructing a set of online materials, whether as the mainstay or as a supplement for your class, these videos should each be about three to twelve minutes in length—that is, about the amount of time you would give an explicit piece of instruction. A shorter video “allows learners to engage with small pieces of new information and gives them control over the flow of new information.” Note that this doesn’t mean taking an hour-long video and snipping it into ten six-minute videos. It means taking a bit of care with each video so it has a very short introductory hook, a good explanation, and a wrap-up that places the idea in context. It’s amazing how often cutting a minute or two of material can fix the pacing.
+> 
+> ...
+> 
+> A challenge with lengthy videos, however, is that they can be a little like asking students to read encyclopedias. Even if you did lots of activities during, say, a synchronous session, once you transpose the session to video, it all just turns into a lengthy lecture. And we know how problematic extended lectures are for student learning! Even inserting interactive material like quiz questions into or after a long video does little to relieve the boredom.
+> 
+> Good visuals are an especially important part of video creation, and getting good visuals takes time. It may seem counterintuitive, but it’s worth noting that shorter videos demand extra planning and longer preparation time.
+> 
+> ...
+> 
+> ... If you find a way, for example, to add in a little something funny or unexpected every five to seven minutes, or at least once somewhere in each of your videos, students will start looking for that little unexpected dopamine boost of pleasure. This boost will allow them to power through the harder-to-grasp, sometimes boring stuff in between the bits of humor. Don’t worry if you don’t feel you have the comedic touch. Learning to add a bit of humor is like learning to ride a bike—you don’t have to be world class to get around.
+> 
+> A good source for laughter? Tiny snippets from movies, as well as memes and Bitmojis. ...
+> 
+> ...
+> 
+> **Assessment and Engagement**
+> 
+> ...
+> 
+> What we like about the online world of asynchronous quizzes is that these quizzes can be “just in time.” There is plenty of evidence that multiple-choice questions can do a good job of helping students learn. Many LMSs or tools like HapYak and Zaption allow you to embed quiz questions within a video, or immediately after a video. Frequent quiz questions can bring students’ attention back to the material and make a significant improvement in student performance. There is no hard-and-fast rule about when to add questions—some instructors tell entrancing stories in their videos, such that it doesn’t make sense to stop the flow with intrusive questions until the end. There are also tools like Edpuzzle or PlayPosit that can help you build a complete lesson around your video, and even track the data to see how well students are doing on your embedded questions.
+> 
+> ...
+> 
+> Discussion forums allow you to assess student knowledge of the material and give students practice retrieving the content in different contexts. Smaller discussion groups foster both familiarity and friendship. Questions that start with action verbs—like _find_, _explain_, _describe_, _identify_, and _compare_—make for an active and vibrant forum.
+> 
+> Make sure your questions don’t all elicit the same correct response. To ensure a variety of responses, ask students to find the three most important quotations from the assigned reading, and explain why they chose each. Then have them pair with another student to compare quotes and decide on one to share and defend with another group.
 
-[^1]: “Stress may lead to stronger memories for negative events happening in the classroom, such as failed exams, embarrassing experiences or interpersonal conflicts (e.g., bullying) and these strong negative memories may induce long-lasting frustration and a negative attitude towards school and the individual’s abilities. . . . Stress may hinder the integration of new information into existing knowledge structures, which may prevent the updating of new facts or a deep multidisciplinary understanding of concepts which is often required in education.” Vogel and Schwabe, 2016.
+## Chapter 10. Charting your Course to the Finish Lines
 
-[^2]: Stress can be bad or beneficial for students: Rudland et al., 2020.
+> ...
+> 
+> Master teachers begin with the final destination in mind. Students achieve more when they know where they are going and what it looks like when they get there. Master teachers rely on the standards and eligible content for the essential vocabulary, skills, formulas, concepts, and patterns that students need to advance in the subject.
+> 
+> ...
+> 
+> Instead of taking on the entire world, narrow your itinerary—_prioritize the most essential_ knowledge and skills.
+> 
+> ...
+> 
+> Objectives state what students will know, understand, and be able to do. They set your goal for teaching and the students’ goal for learning, and establish what success looks like.
+> 
+> ...
+> 
+> Many teachers post their lesson’s objective on the board and state it at the start of class. An issue we’ve found with this approach is that students don’t respond particularly well to objectives. They see difficult-to-parse sentences and tune out. The solution? Try turning your objective into a lesson-based focus question. For example: _How does Poe use imagery to establish the mood in “The Tell-Tale Heart”?_
+> 
+> ...
+> 
+> Teachers and students alike know their final destination, but what proof do they have that they’ve reached it? Enter formative and summative assessments. Formative assessments are markers along the path that indicate a student’s progress. These quick informal assessment checks happen during instruction. They allow a teacher to gauge each student’s distance toward meeting the objective. When you think formative assessments, think retrieval practice. This practice offers students feedback on where they are going, the progress they have made, and where they are going next. Like a GPS system, when students take wrong turns, master teachers help their students “recalculate” and get back on route.
+> 
+> ...
+> 
+> **The Hook**
+> 
+> Not every student will be excited to learn what you are teaching. You need to capture their interest and make the lesson relevant. Just as with a good framing question for the lesson plan, a good hook can spur those spurts of dopamine and make what you are teaching stick. Good hooks provide anticipation of an _unexpected_ surprise payoff—which means your hooks should vary.[^4] (This isn’t easy, but who said teaching’s easy!) The good thing is that you can reuse your hooks from class to class or year to year, fine-tuning and improving them. You can also mine the gold you see in other teachers’ classrooms. If a colleague has a great hook, why not put it into action in your own classroom?
+> 
+> Effective hooks tap into what students already know and connect to the critical content you are about to teach. To hook our students into a math-based physics lesson, connect it to space travel focused on time, distance, and the task of getting astronauts to Mars. When you present a challenging real-life problem to solve, the students will be more enthusiastic (especially those students who dream of becoming astronauts!).
+> 
+> You can also think of hooks as trailers designed to get us to watch the movie. To hook our students into our lesson on how Poe uses imagery to create mood, for example, we may actually show the trailer of a current scary movie and ask students what images and effects make the trailer so terrifying. It helps if you model becoming excited when you watch the clip, even if you’ve seen that clip a dozen times before. Brief, one- to two-minute multimedia clips are particularly effective with our twenty-first-century learners. Be sure to establish the purpose for viewing the clip before hitting the play button. Follow up with a clear connection to the upcoming lesson.
+> 
+> ...
+> 
+> **The Lesson Body: Learn It, Link It**
+> 
+> Students generally learn unfamiliar _hard stuff_ best through the declarative pathway. In the declarative path, working memory delivers new information to the neocortex with the help of the hippocampus.
+> 
+> When we explain to our students what they are learning and demonstrate step by step what to do, we target the declarative pathway. Students _learn it_ during the initial phase of direct instruction: “I do, we do.” They are conscious of the new learning and are primed to begin the process of making connections between neurons.
+> 
+> As you transition into the body of the lesson, ease your students into the new material. Start by tapping into and building upon your students’ prior knowledge. Students may have a schema already in place for the concept you are about to teach. New information can be assimilated and stored rapidly when it is tied together with preexisting knowledge and experiences. If prior knowledge is nonexistent, now is the time for you to create it. Students need this transition time to acclimate because they can quickly become overwhelmed. It’s like diving right into the deep end of an ice-cold pool. Most people find it less jarring to wade in gradually. Ahead are several strategies and tips to consider as you lead your students into learning.
+> 
+> ...
+> 
+> It seems like common sense that the more content teachers cover, the more students learn. But as an uncommon sense teacher, you know this isn’t necessarily true. Some teachers take a deep breath, start talking, and keep talking and talking until the bell rings. While there is no definitive time limit on teacher talk, a good rule of thumb for elementary students is to teach for five minutes and pause for one minute of retrieval practice. For upper middle and high school students, teach ten minutes and spend two minutes retrieving the information. These pauses in your instruction are essential for speeding up the consolidation of neural links in the neocortex.
+> 
+> ...
+> 
+> The learning cycle repeats itself until students have become proficient with the foundational content and skills. Ideally this would occur at the same time for everyone—but that rarely ever happens. We know our hiker-type students will need extra practice and different levels of coaching or support, while our race-car-type students will be ready to move on to more independent student-directed learning activities. As students reach proficiency, they become ready to _link it_—where they work to reinforce and extend their neural links.
+> 
+> Oftentimes, students need to switch neural paths to _link it_. To make learning stick, the information that students have learned through their declarative pathway needs to be reinforced with the backup information in the procedural system. Information comes in through the senses to the basal ganglia and heads straight to the neocortex. Sounds quick and easy, right? Not so fast. We have learned that taking the procedural route often requires steady, repeated practice, and can take time.
+> 
+> ...
+> 
+> Warning: Interleaving and spacing—the types of practice students need to link it—create desirable difficulties that students may resist. Students resist this type of practice because it is frustrating. It often leads to more errors during the learning process. Making sure students have a firm foundation during the _learn it_ stage of the lesson is key to reducing their anxiety when they _link it_.
+> 
+> ...
+> 
+> Instead of telling your students what they have learned (after all, you already know this), have _them_ tell _you_. Call on multiple students throughout the room. When they use new vocabulary, ask another student to tell you what it means and provide examples. When they tell you what they did, ask follow-up questions: What did you learn? How does it build upon your previous knowledge? How will you use this knowledge or skill? Have another student and then another add to each response to build comprehensive answers.
+> 
+> ...
+> 
+> At the end of a unit or project, look back and consider the learning _process_. One quick method to have students examine their path and performance is to have them complete a _glows_ and _grows_ T-chart. Glows and grows offers a balanced approach to feedback, where one side of the T-chart is labeled _Glows_ and the other side is labeled _Grows_. Glows provide students with an opportunity to comment on areas where they shined. They concentrate on the strides they’ve made in their learning, especially in skills they were previously lacking. On the other side of the T, students write about the bumps and roadblocks they encountered along their path and what they did to move forward. Growth requires development in learning—but sometimes there is still a discrepancy between the progress the student made and the distance yet to travel to master the objective. Using what they have written in the growth column, students can create new goals for themselves.
+> 
+> It’s particularly helpful to provide sentence starters or questions to get students going. For example, _If I could give myself a score between 1 and 5, I would rate myself . . . because . . ._
+> 
+> Glows
+> 
+> - Before this lesson, I never knew . . .
+> 
+> - Three new discoveries I made . . .
+> 
+> - I used to incorrectly think . . . but now I know . . .
+> 
+> Grows
+> 
+> - I had a difficult time . . .
+> 
+> - One strategy that helped me learn better . . .
+> 
+> - If I could do one thing differently . . .
+> 
+> Goals
+> 
+> - One skill I will practice . . .
+> 
+> - Learning about . . . makes me want to investigate . . .
+
+[^1]: ***Think-pair-share***. Students think for a minute or two, then pair up and share their thoughts. The quiet think time of think-pair-share may be particularly useful for hippocampal offloading, especially if students take a brief mental breather before they begin to focus on the task at hand.
+
+[^2]: “Stress may lead to stronger memories for negative events happening in the classroom, such as failed exams, embarrassing experiences or interpersonal conflicts (e.g., bullying) and these strong negative memories may induce long-lasting frustration and a negative attitude towards school and the individual’s abilities. . . . Stress may hinder the integration of new information into existing knowledge structures, which may prevent the updating of new facts or a deep multidisciplinary understanding of concepts which is often required in education.” Vogel and Schwabe, 2016.
+
+[^3]: Stress can be bad or beneficial for students: Rudland et al., 2020.
+
+[^4]: This concept is explained in the book, "Hooked" by Nir Eyal, [see notes from this book](./HOOKED.md).
