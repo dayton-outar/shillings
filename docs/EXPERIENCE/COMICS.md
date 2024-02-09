@@ -1,6 +1,6 @@
-# The DC Comics Guid to Creating Comics
+# The DC Comics Guide to Creating Comics
 
-© 2013 DC Comics,  Carl Potts
+© 2013 DC Comics, Carl Potts
 
 ## Chapter 1. COMICS and SEQUENTIAL VISUAL STORYTELLING
 

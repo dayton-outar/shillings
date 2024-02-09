@@ -2,6 +2,8 @@
 
 _Practival Insights in Brain Science to Help Students Learn_
 
+© 2021 by Barbara Oakley, Beth Rogowsky EdD, Terrence J. Sejnowski
+
 ## Chapter 1. Building Memory
 
 > _Long-term memory_ is what it sounds like—it holds the information we’re able to store and bring back to mind from weeks, months, or even years before. As we’ve seen, you can think of long-term memory as sets of neural links that students have developed when they’ve learned the material well. As we also mentioned previously, these neural links congregate in the neocortex—the thin sheet of neural tissue that rides over the ridges and deep grooves of the brain’s surface. If we reinforce the links of long-term learning through varied practice, our learning is generally in good shape. (By varied practice, we mean not just practicing with the same material. For example, you don’t want to just sit around testing yourself on lists of new foreign language vocabulary words. You also want to use those new words in a variety of different sentences and contexts.)
