@@ -22,6 +22,8 @@ To determine if this product will deliver 10 times the gains compared to alterna
 
 The solution is projected to be a **discontinuous** innovation with a **defensible** technology and a **disruptive** business model. It's _discontinuous_ because it takes a different look at representing information from the stock market. It contains intellectual property that is _somewhat defensible_. It's aim is to deliver value and reduce cost to increase participation.
 
+We definitely have to be cognizant that quality is important but branding and speed of delivery to market is more important. We need to avoid the trap of _faster, better and cheaper_.[^3] The aim is to deliver a unique perspective of consuming information to an _underserved_ market.
+
 ### Stories We Want To Tell
 
 _Knows Nothing_ is interested in the stock market but he knows nothing. When he goes to the stock exchange's web site he is baffled by the symbols and numbers. He's so overwhelmed that he decides not to bother to participate in the stock market. He meets _Tracy Trader_ after noticing her participating in stock trading at a site called ***Shillings***, he becomes curious again because of the visual appeal and the story-based approach that the site offers. He's fascinated by the various businesses and he learns one multiple at a time as they are given context and described in short phrases. He eventually gains confidence to open a trading account and test out his trades on the mock trading platform. _Knows Nothing_ is now excited to fund his trading account so that he can trade on the real trading platform on ***Shillings***. _Knows Nothing_ has begun his journey as an investor and stock trader.
@@ -228,3 +230,4 @@ The [brand philosophy](./BRANDING/) that will be embraced is one that places ***
 
 [^1]: [How to Value Companies Like a Value Investor - Chike Verwey | Learn Grow Invest Meeting - July 2020](https://youtu.be/JdgBlCKAa0M?si=K7wDavEWQvx02vWY&t=717)
 [^2]: [The Securities Act](https://laws.moj.gov.jm/legislation/subsids/S/The%20Securities%20Act.pdf)
+[^3]: [Value Props @ Faster, Better, Cheaper](https://www.youtube.com/watch?v=q8d9uuO1Cf4&t=3138s)
