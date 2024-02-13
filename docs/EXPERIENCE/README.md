@@ -30,9 +30,29 @@ our approach to user experience design is multifaceted and holistic.
 
 6. **Embracing Creativity and Innovation**: Guided by the insights from diverse disciplines such as comics creation, teaching methodologies, and content strategy, we foster a culture of creativity and innovation in our design process. By encouraging experimentation, exploration, and collaboration, we aim to push the boundaries of what's possible, constantly seeking new ways to delight and engage our users.
 
-In conclusion, our user experience design philosophy is grounded in empathy, informed by research, and driven by a passion for creating experiences that are not only functional but also delightful, meaningful, and memorable. By synthesizing principles from a wide range of sources and disciplines, we strive to craft experiences that resonate with users on a deep and personal level, ultimately enriching their lives and fulfilling their needs with a confidence level of 95%.
+### Story Maps
 
-Some ideas include using AI to generate cartoons or comic strip to "curate" announcement and news from listed companies. See some ideas below, ...
+Inspiration can be taken from the [StoryMaps.com](https://storymaps.com/) project.
+
+[StoryMaps.com](https://storymaps.com/), developed by Esri, a leader in mapping technology, embodies several user experience (UX) design principles to create engaging and intuitive storytelling experiences. Here are some key aspects of their UX design philosophy:
+
+1. **Engaging Visual Storytelling**: StoryMaps.com emphasizes visually compelling storytelling through maps, multimedia content (such as images, videos, and audio), and text. This approach captivates users and immerses them in the narrative, making the experience more memorable and impactful. _AI can be used, for example, to generate cartoons or comic strip to "curate" announcement and news from listed companies to make news articles more engaging_.
+
+2. **Intuitive Navigation**: The platform prioritizes ease of navigation, ensuring users can explore stories effortlessly. Clear navigation elements, such as menus, buttons, and interactive map features, guide users through the narrative smoothly, reducing cognitive load and frustration.
+
+3. **Responsive Design**: StoryMaps.com adopts a responsive design approach, optimizing the user experience across various devices and screen sizes. Whether accessed on desktops, tablets, or smartphones, the platform adapts seamlessly, ensuring consistent usability and accessibility.
+
+4. **Accessibility**: Accessibility is a fundamental aspect of the UX design philosophy behind StoryMaps.com. The platform adheres to web accessibility standards, such as providing alternative text for images, ensuring keyboard navigation, and offering options for screen reader compatibility. This commitment ensures that the storytelling experience is inclusive and accessible to all users.
+
+5. **Personalization**: StoryMaps.com allows for a degree of personalization, enabling users to create and customize their own stories. This empowerment fosters a sense of ownership and engagement, as users can tailor the experience to their preferences and goals.
+
+6. **Feedback and Iteration**: Continuous feedback collection and iteration are integral to the UX design process of StoryMaps.com. By soliciting user feedback, analyzing usage metrics, and iteratively refining the platform, Esri ensures that the user experience evolves to meet the changing needs and expectations of its audience.
+
+7. **Performance Optimization**: StoryMaps.com prioritizes performance optimization to deliver a seamless and responsive user experience. This involves optimizing page load times, minimizing latency in map rendering, and leveraging caching and content delivery networks (CDNs) to enhance speed and reliability.
+
+These principles collectively contribute to the overarching UX design philosophy of StoryMaps.com, facilitating immersive, accessible, and compelling storytelling experiences for users.
+
+In conclusion, our user experience design philosophy is grounded in empathy, informed by research, and driven by a passion for creating experiences that are not only functional but also delightful, meaningful, and memorable. By synthesizing principles from a wide range of sources and disciplines, we strive to craft experiences that resonate with users on a deep and personal level, ultimately enriching their lives and fulfilling their needs with a confidence level of 95%.
 
 ## References
 
