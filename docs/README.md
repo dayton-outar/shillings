@@ -86,9 +86,10 @@ Step 1 may take 4 to 5 years.
 
 ## The Schedule
 
-1. Complete Business Canvas (February 2024)
-   1. Complete [Analysis](./ANALYSIS/)
-   2. Complete [UX Design Philosophy](./EXPERIENCE/)
+1. Complete Business Plan (February 2024)
+   1. Complete [Analysis](./ANALYSIS/) README.md
+   2. Complete [Intrinsic Valuation](./ANALYSIS/VALUATION.md)
+   3. Complete [Finance and Operations](#finance-and-operations)
 2. Build Portal (Login) and Fundamentals (April 2024)
 3. Arrange focus group meeting for brainstorming and backlog discussion (October 2024)
    1. Fill up and prune backlog
