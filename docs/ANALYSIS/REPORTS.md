@@ -423,6 +423,10 @@ Issued share capital is the total amount of shares that have been given to share
 
 ## Warren Buffet's Interpretation of Financial Statements
 
+![Warren Buffet and the Interpretation of Financial Statements](/.attachments/warren.buffet.interpretation.jpg)
+
+© 2008 by David Clark and Mary Buffett
+
 ...
 
 ### Income Statements
@@ -463,6 +467,10 @@ Issued share capital is the total amount of shares that have been given to share
 
 
 ## Financial Reporting Shenanigans
+
+![Financial Shenanigans](/.attachments/financial.shenanigans.jpg)
+
+© 2018 by Howard M. Schilit, Jeremy Perler, Yoni Engelhart
 
 These are the classification of shenanigans that can be undertaken by companies when they report their stewardship of the company.
 
