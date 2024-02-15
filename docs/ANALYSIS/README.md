@@ -189,7 +189,7 @@ News can be crucial, especially to investors that lean more towards _Technical A
 
 ## Conclusion
 
-So, in a nutshell that is what analysis on stocks are about: analysing the asset, analysing people's perception of the stock and paying attention to environment in which the asset operates.
+So, in a nutshell that is what analysis on stocks are about: analysing the asset, analysing people's perception of the stock and paying attention to the environment in which the asset operates.
 
 ## References
 
