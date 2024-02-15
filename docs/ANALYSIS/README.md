@@ -73,7 +73,7 @@ Socrates argued that a democratic system could lead to decisions influenced by e
 
 So, let's bring the relevance of Socrates philosophy on democracy to Buffet's philosophy. Buffet's philosophy will only work if all investors were operating strictly off the performance of the company to which the stocks are associated.
 
-### Technical Analysis
+## Technical Analysis
 
 So, it is the democracy of stock exchanges that causes analyst to not only studying the _durable competitive advantage_ of a business but to use tools to _forecast_ the _[predictably irrational](./BEHAVIOUR.md#predictably-irrational)_ behaviour of investors. The study of _forecasting price movements_ (or _price action_) is known as _Technical Analysis_.
 
