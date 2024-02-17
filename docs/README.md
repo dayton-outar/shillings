@@ -36,7 +36,7 @@ _Ingrid Investor_ invests in the stock market as part of her pension plan. She i
 
 ## Purpose
 
-[Review and Revise]
+### Founder's Backstory
 
 Why did I build Shillings?
 
@@ -46,13 +46,13 @@ Why did I build Shillings?
 
 3. Basic company profile was not offered by the Jamaica Stock Exchange. Value investors need to know the story of each company. There's more to a Stock Exchange than the stock prices. The company's listed are usually the main contributors to an economy and offer goods and services within the local and global marketplace.
 
+### The Mission
+
 Shillings seeks to deliver structured information by making use of visualization tools. Information will be provided in a visually appealing way that engages novice investors to learn as they invest.
 
-Consumers are not satisfied with the manner in which information is presented by the Jamaica Stock Exchange and they want the most up-to-date information presented in a manner that makes it easier for their decision making (without having to do too much to organize the information).
+Consumers are not satisfied with the manner in which information is presented by the Jamaica Stock Exchange. They want the most up-to-date information presented in a manner that makes it easier for them to make investment decisions.
 
-Differentiation: How will it solve that problem or pain point better than the current solutions?
-
-Value: How will it make our business and users' lives better?
+### Brokerage Opportunity
 
 Another important business idea for consideration is to start a brokerage firm, where this product will be used to access the services of the broker. According to Jamaican laws (the Securities Act[^2]),
 
@@ -83,6 +83,8 @@ These are the requirements for starting a stock brokerage. If those requirements
 3. After critical mass of businesses subscribing, customers who want special services can be charged. (Need to figure those special services: access to historical archives of company reports and other related history of listed companies)
 
 Step 1 may take 4 to 5 years.
+
+If this project leads into the setting up of a brokerage, then there will be an opportunity to earn from each trade made on the platform by getting brokerage fee as currently done on [JTrader Pro](./MARKETING/INDUSTRY/JM.md#jtrader-pro).
 
 ## The Schedule
 
@@ -128,7 +130,7 @@ Listed companies always want to communicate to their investors in the best way p
 
 ### Channel
 
-Refer to [strategy](#strategy).
+As stated in the [marketing strategy](#strategy), the main channel will be outreach to the various communities, clubs and influencers that meet to discuss investment opportunities on the Jamaica Stock Exchange.
 
 ### Product Use Case
 
