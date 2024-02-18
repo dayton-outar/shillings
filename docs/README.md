@@ -170,7 +170,7 @@ _Buffet's performance checklist_ is a scorecard of the company to which the stoc
 
 The unique selling propositions will be delivered according to our [UX design philosophy](./EXPERIENCE/).
 
-### Strategy
+### Marketing Strategy
 
 The strategy to bring awareness to the product involves practicing the philosophy of using the _smallest viable market_ to develop the product while in its infancy stage (beta phase). The members chosen for the _smallest viable market_ will include about 7 investors that are described in the 4 different buyer personas explained in the [value proposition](./MARKETING/VALUE.md#investors). These members are expected to be part of a wider social network of investors to which they will share their experience. It's pretty much a grassroots approach.
 
@@ -224,9 +224,11 @@ We embrace a lean approach to operations, minimizing unnecessary expenses and ov
 
 Currently, the labour for _Research and Development_ is the highest cost in the initial stage. Since the founder is an engineer, he will use his time and skill to complete the following milestones,
 
-In addition, marketing research will be done by him. A group of seven (7) persons will be asked to volunteer their time to test the product after the completion of these milestones. Those seven (7) persons will be provided an equity stake based on the value of their labour, which will be outlined in the budget. The completion of this test phase can be referred to as _Beta V_.
+In addition, marketing research will be done by him.
 
-It is while, promoting the product after _Beta V_ that consideration will be given to borrowing funds to conduct marketing campaign in the various investment communities and clubs islandwide.
+A group of seven (7) persons will be asked to volunteer their time to test the product after the completion of these milestones. Those seven (7) persons will be provided an equity stake based on the value of their labour, which will be outlined in the budget. The completion of this test phase can be referred to as _Beta V_.
+
+It is while promoting the product, after _Beta V_, that consideration will be given to borrowing funds to conduct marketing campaigns in the various investment communities and clubs islandwide.
 
 ### Budget
 
