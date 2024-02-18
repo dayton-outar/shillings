@@ -48,9 +48,9 @@ Why did I build Shillings?
 
 ### The Mission
 
-Shillings seeks to deliver structured information by making use of visualization tools. Information will be provided in a visually appealing way that engages novice investors to learn as they invest.
+Shillings seeks to deliver structured information by representing that information in visually appealing way and providing the needed context to engage novice and experienced investors to learn as they invest.
 
-Consumers are not satisfied with the manner in which information is presented by the Jamaica Stock Exchange. They want the most up-to-date information presented in a manner that makes it easier for them to make investment decisions.
+Consumers are not satisfied with the manner in which information is presented by the Jamaica Stock Exchange. They want the most up-to-date information presented in a manner that is easy to understand.
 
 ### Brokerage Opportunity
 
