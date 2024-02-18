@@ -196,15 +196,74 @@ The [brand philosophy](./BRANDING/) that will be embraced is one that places ***
 
 ## Finance and Operations
 
-- Structure of business and key management personnel
-- Roles and responsibilities of team members
+The financial projections and overall operations of this business can be found within this section.
+
+### Corporate Structure
+
+- ? Inc. is the corporation established to manage the products and services offered by Shillings.
+
+### Key Management Personnel
+
+- Dayton Outar: CEO
+- ?: Cheif Financial Officer
+- ?: Director
 
 ![Shillings Business Canvas](/.attachments/shillings.business.canvas-2.png)
 
-- Financing strategy
-- Breakdown of how the funds will be used
-- Projected income statements, balance sheets and cash flow statements
-- Assumptions behind financial forecasts
+### Financing Strategy
+
+The _Shillings_ project will be conservative on the use of debt to finance it's initial _research and development_. It will initially be financed through a combination of strategies including the use of: 
+- personal savings and funds from founders
+- sweat equity, 
+- strategic partnerships and 
+- revenue generation.
+
+This approach reduces reliance on external financing and preserves equity. We plan to encourage team members to invest their time and skills in exchange for equity rather than immediate compensation. This aligns incentives and conserves cash for essential expenses.
+
+We embrace a lean approach to operations, minimizing unnecessary expenses and overhead costs. This includes negotiating favorable terms with suppliers, using cost-effective marketing channels, and optimizing resource allocation.
+
+Currently, the labour for _Research and Development_ is the highest cost in the initial stage. Since the founder is an engineer, he will use his time and skill to complete the following milestones,
+
+In addition, marketing research will be done by him. A group of seven (7) persons will be asked to volunteer their time to test the product after the completion of these milestones. Those seven (7) persons will be provided an equity stake based on the value of their labour, which will be outlined in the budget. The completion of this test phase can be referred to as _Beta V_.
+
+It is while, promoting the product after _Beta V_ that consideration will be given to borrowing funds to conduct marketing campaign in the various investment communities and clubs islandwide.
+
+### Budget
+
+- Breakdown of expenses 
+
+### Financial Projections
+
+Here are some key assumptions to consider:
+
+1. **Market Size and Growth**: Estimate the total addressable market (TAM) for the immersive stock trading platform in Jamaica, considering factors such as the number of active traders, trading volume, and market penetration potential. Project the growth rate of the market over the forecast period based on historical data and expected industry trends.
+
+2. **Customer Acquisition**: Estimate the cost of acquiring customers for the platform, including marketing and sales expenses. Determine the conversion rate of leads to customers based on user acquisition strategies such as advertising, partnerships, and referrals.
+
+3. **Revenue Model**: Define the revenue model for the platform, considering options such as subscription fees, transaction fees, premium features, and advertising revenue. Estimate the average revenue per user (ARPU) and project revenue growth over time based on user adoption and pricing strategies.
+
+4. **User Growth**: Forecast the number of active users on the platform, taking into account factors such as market demand, competitive landscape, and customer retention. Consider how user engagement, platform features, and customer support may impact user growth rates.
+
+5. **Market Share**: Estimate the company's market share within the Jamaican stock trading market and track changes over time. Consider competitive dynamics, barriers to entry, and differentiation strategies that may affect market share growth.
+
+6. **Operating Expenses**: Project operating expenses including technology development, infrastructure costs, employee salaries, marketing expenses, regulatory compliance, and administrative overhead. Consider scalability and efficiency improvements over time as the platform matures.
+
+7. **Technology Infrastructure**: Assess the technology infrastructure required to support the platform's functionality, performance, and security. Estimate costs related to software development, hosting, data storage, cybersecurity, and platform maintenance.
+
+8. **Regulatory Environment**: Consider regulatory factors that may impact the operation of the stock trading platform in Jamaica, such as licensing requirements, compliance costs, and changes in financial regulations. Stay informed about regulatory developments and adapt financial forecasts accordingly.
+
+9. **Economic Conditions**: Take into account macroeconomic factors that may influence stock market activity and investor behavior in Jamaica, such as GDP growth, inflation rates, interest rates, and geopolitical events. Monitor economic indicators and adjust financial forecasts as needed.
+
+10. **Risk Factors**: Identify and assess potential risks and uncertainties that could affect the financial performance of the company, such as technological challenges, market competition, regulatory changes, and external shocks. Develop contingency plans to mitigate risks and preserve financial stability.
+
+By incorporating these assumptions into financial forecasts, you can develop a comprehensive outlook for the tech company's immersive stock trading platform in Jamaica, enabling informed decision-making and strategic planning.
+
+#### Income Statement
+
+#### Balance Sheet
+
+#### Cashflow Statement
+
 
 ## References
 
