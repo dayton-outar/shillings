@@ -46,7 +46,41 @@ Why did I build Shillings?
 
 3. Basic company profile was not offered by the Jamaica Stock Exchange. Value investors need to know the story of each company. There's more to a Stock Exchange than the stock prices. The company's listed are usually the main contributors to an economy and offer goods and services within the local and global marketplace.
 
+### The Vision
+
+## Vision Statement
+
+_To be the complete playground for stock investor's worldwide_
+
+It's a bold vision that is focused on telling the stories of businesses worldwide. That vision starts here in Jamaica.
+
+Indeed! The United States of America has the most advanced systems for stock trading but I think Jamaica has enough sophistication and history to start with a _viable market_ that can springboard into a globally influential product.
+
+We can take inspiration from several products that are well-known globally that started in Jamaica. They include,
+
+1. **Reggae Music**: Originating from Jamaica, reggae music has become popular worldwide, with artists like Bob Marley achieving international acclaim.
+
+2. **Blue Mountain Coffee**: Grown in the Blue Mountains of Jamaica, this coffee is renowned for its high quality and distinct flavor profile, making it a sought-after commodity around the world.
+
+3. **Jerk Seasoning**: Jamaican jerk seasoning is a spice blend famous for its bold and flavorful taste. It's used to season meats like chicken, pork, and fish, and has gained popularity worldwide.
+
+4. **Rum**: Jamaica produces several notable rum brands, such as Appleton Estate and Wray & Nephew, which are enjoyed globally in cocktails and other drinks.
+
+5. **Ackee**: This fruit is a staple in Jamaican cuisine and is often cooked with saltfish to make the traditional dish "ackee and saltfish." It has gained recognition internationally for its unique taste and culinary versatility.
+
+6. **Dancehall Music**: Similar to reggae, dancehall music originated in Jamaica and has made waves globally, influencing various music genres and artists worldwide.
+
+7. **Athletes**: Jamaica is renowned for producing world-class athletes, particularly in track and field. Sprinters like Usain Bolt and Shelly-Ann Fraser-Pryce have dominated the international stage and brought global recognition to Jamaica's athletic prowess.
+
+8. **Ting**: Ting is a popular Jamaican grapefruit soda known for its refreshing taste. While primarily consumed in Jamaica, it has also gained a following in other countries, especially among fans of Caribbean cuisine.
+
+Even **Chocolate Milk**, is thought to have been inspired by a European who visited Jamaica.[^4]
+
 ### The Mission
+
+The mission is, 
+
+_To empower stock investors globally by providing an immersive platform that offers a story-based approach to understanding the development and performance of businesses, where they can learn and collaborate, ultimately enabling them to make informed decisions and achieve their financial goals with confidence._
 
 Shillings seeks to deliver structured information in a visually appealing way with succinct context to engage novice and experienced investors.
 
@@ -474,3 +508,4 @@ This cash flow statement projection provides insights into how cash is generated
 [^1]: [How to Value Companies Like a Value Investor - Chike Verwey | Learn Grow Invest Meeting - July 2020](https://youtu.be/JdgBlCKAa0M?si=K7wDavEWQvx02vWY&t=717)
 [^2]: [The Securities Act](https://laws.moj.gov.jm/legislation/subsids/S/The%20Securities%20Act.pdf)
 [^3]: [Value Props @ Faster, Better, Cheaper](https://www.youtube.com/watch?v=q8d9uuO1Cf4&t=3138s)
+[^4]: [Chocolate Milk Was Invented in Jamaica](https://www.smithsonianmag.com/smart-news/chocolate-milk-was-invented-jamaica-180949734/)

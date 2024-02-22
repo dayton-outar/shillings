@@ -1,7 +1,5 @@
 # Experience Design Philosophy
 
-User Experience Design Philosophy: Crafting Engaging and Immersive Experiences
-
 At the heart of our user experience design philosophy lies a commitment to creating engaging, immersive, and meaningful interactions. Drawing inspiration from a diverse array of sources, including seminal works like,
 
 1. [Information Architecture](./ARCHITECTURE.md) by Rosenfeld, Morville, and Arango, 
