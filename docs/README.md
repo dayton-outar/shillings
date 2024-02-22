@@ -80,7 +80,7 @@ Even **Chocolate Milk**, is thought to have been inspired by a European who visi
 
 The mission is, 
 
-_To empower stock investors globally by providing an immersive platform that offers a story-based approach to understanding the development and performance of businesses, where they can learn and collaborate, ultimately enabling them to make informed decisions and achieve their financial goals with confidence._
+_To empower stock investors globally by providing an immersive platform that offers a story-based approach to understanding the development and performance of businesses, where they can learn and collaborate, so that they can make informed decisions and achieve their financial goals with confidence._
 
 Shillings seeks to deliver structured information in a visually appealing way with succinct context to engage novice and experienced investors.
 

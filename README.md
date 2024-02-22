@@ -8,9 +8,7 @@ _To be the complete playground for stock investor's worldwide_
 
 ## Mission Statement
 
-How do we achieve such a bold vision?
-
-_Our mission is to empower stock investors globally by providing an immersive platform that offers a story-based approach to understanding the development and performance of businesses, where they can learn and collaborate, ultimately enabling them to make informed decisions and achieve their financial goals with confidence._
+_Our mission is to empower stock investors globally by providing an immersive platform that offers a story-based approach to understanding the development and performance of businesses, where they can learn and collaborate, so that they can make informed decisions and achieve their financial goals with confidence._
 
 ## Requirements
 
