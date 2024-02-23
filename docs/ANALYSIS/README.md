@@ -203,3 +203,4 @@ So, in a nutshell that is what analysis on stocks are about: analysing the asset
 1. [How do I Analyse IPOs | Top 10 Analysis Parameters for IPOs](https://youtu.be/tbc8zLcbW5Q?si=1aDREQxh8BKvEfHu) - [CA Rachana Phadke Ranade](https://www.youtube.com/@CARachanaRanade)
 1. [How to Analyze an IPO: A complete Guide | Top 5 Tips to Analyze an IPO the Best Way](https://youtu.be/1iBlLTvIxX8?si=QXtU614CADHgc__O) - [Prateek Singh - LearnApp](https://www.youtube.com/@PrateekSinghLearnApp)
 1. [How I Pick Stocks](https://youtu.be/IPwDxoomxuA)
+1. [INTERVIEW: Hedge Fund Manager Reveals Secrets You'll Never Hear On CNBC](https://youtu.be/M49iUDnxFlI?si=9FY7lUbzkK-CZd2g)

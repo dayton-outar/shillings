@@ -48,8 +48,6 @@ Why did I build Shillings?
 
 ### The Vision
 
-## Vision Statement
-
 _To be the complete playground for stock investor's worldwide_
 
 It's a bold vision that is focused on telling the stories of businesses worldwide. That vision starts here in Jamaica.
@@ -493,6 +491,7 @@ This cash flow statement projection provides insights into how cash is generated
 1. [A Framework for Understanding Market Problems](https://swkhan.medium.com/a-framework-for-understanding-problems-9a47f9f90c3c)
 1. [11 Ways to Validate a Business Idea](https://www.allbusiness.com/11-ways-to-validate-a-business-idea)
 1. [How to Build a Compelling Value Proposition (4 Simple Steps)](https://underscore.vc/startupsecrets/how-to-write-a-value-proposition/)
+1. [6 Tips on Being a Successful Entrepreneur | John Mullins | TED](https://youtu.be/eHJnEHyyN1Y?si=1SPsTUxo6tq-_V8R)
 
 ## Videos
 
