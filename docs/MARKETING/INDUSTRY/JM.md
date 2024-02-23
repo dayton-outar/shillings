@@ -476,11 +476,6 @@ My experience using JTrader Pro was as follows,
    
    ![BUY Order for NCBFG Units at $62](/.attachments/jtrader.order.62.ncbfg.png)
 
- - November 21, 2023 at ~11 AM. I cancelled the previous BUY order for asking price of $62 because the market started trending up.
- - November 21, 2023 at 11:32 AM. I placed a BUY order for 870 stock units at $69 per stock unit.
-
-   ![BUY Order for NCBFB Units at $69](/.attachments/jtrader.order.69.ncbfg.png)
-
    [See fee schedule for JSE](https://www.jamstockex.com/investors/fee-schedule/)
 
    The **GCT Fee** for the transaction above is 15% of the **Broker Fee**, **JSE Fee** and **JCSD Fee**. So, 
@@ -488,6 +483,11 @@ My experience using JTrader Pro was as follows,
    ```
    GCT Fee = (J$1,202.80 + J$210.49 + J$0) x 0.15 = J$211.9935
    ```
+
+ - November 21, 2023 at ~11 AM. I cancelled the previous BUY order for asking price of $62 because the market started trending up.
+ - November 21, 2023 at 11:32 AM. I placed a BUY order for 870 stock units at $69 per stock unit.
+
+   ![BUY Order for NCBFB Units at $69](/.attachments/jtrader.order.69.ncbfg.png)
 
  - November 21, 2023 at 12:40 PM. A match was made and the order was filled.
  - November 22, 2023 at 1:34 PM. I received a notification from my broker that the order was filled. I had not known this until later that day when I checked by email.
