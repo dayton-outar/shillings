@@ -35,3 +35,8 @@ It's important to note that these economic forces often interact with each other
 See economic insights for,
 
  - [Jamaica](./JM.md)
+
+## Videos
+
+1. [What's the difference between the IMF and the World Bank? | CNBC Explains](https://youtu.be/lN3qrFA4jXc?si=WGfpBzirN-lP6vtP)
+1. [How do tariffs work? | CNBC Explains](https://youtu.be/LKCMnCZyxiQ?si=SEta7ixJqGWAN12Z)

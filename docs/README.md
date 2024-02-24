@@ -120,7 +120,7 @@ If this project leads into the setting up of a brokerage, then there will be an 
 
 ## The Schedule
 
-1. Complete Business Plan (February 2024)
+1. Complete Business Plan (March 2024)
    1. Complete [Intrinsic Valuation](./ANALYSIS/VALUATION.md)
    1. Complete [Finance and Operations](#finance-and-operations)
 2. Build Portal (Login) and Fundamentals (April 2024)
@@ -159,6 +159,8 @@ Listed companies always want to communicate to their investors in the best way p
 ### Budget
 
 [Some investors](./MARKETING/MARKET/JM.md#interviews) are willing to pay as low as US$1 to as high as US$35 per month for the features mentioned in the [value proposition](./MARKETING/VALUE.md).
+
+I think a subscription fee of US$7 per month for premium features is sweet spot to position ourselves for the kind of customers that we want to attract.
 
 ### Channel
 

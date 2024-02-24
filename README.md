@@ -1,6 +1,6 @@
-# Shillings: The JSE Stock Tracker
+# Shillings
 
-Initially this application was built to crawl through a web site to identify all CSS styles and to optimize the CSS files to remove irrelevant styles for each page. It was a file optimization tool specifically for decreasing the payload of the CSS files. This application is now used to scrape data from pages that contain data with daily summary of stock trades. It uses a cluster of applications to achieve this objective.
+***Shillings*** is the first story-based stock trading platform.
 
 ## Vision Statement
 
@@ -19,6 +19,10 @@ _Our mission is to empower stock investors globally by providing an immersive pl
  - [.NET](https://dotnet.microsoft.com/)
  - [Node](https://nodejs.org/en/)
  - [Microsoft SQL Server 2019](https://www.microsoft.com/en-us/sql-server/sql-server-2019)
+
+## File Structure
+
+This project contains 3 applications and a database management system. Within the file structure are the business plan documentation that inspires the project and scripts used to deploy the applications and the database management system.
 
 ## Installation
 
