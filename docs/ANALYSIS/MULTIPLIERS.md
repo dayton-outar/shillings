@@ -122,7 +122,11 @@ The main metrics are as follows,
 
    $$\large \text{Earnings Per Stock Unit} = { \text{Net Income Attributable to Owners} \over \text{Weighted Average Number of Stock Units Outstanding} }$$
 
-   For some companies, the _Net Income_ has to be split between _Shareholders_ and those of _Non-controlling Interests_. When calculating _EPS_, the split that belongs to _Shareholders_ must be used to arrive at an accurate value. There's no set scale for the value of _EPS_.
+   For some companies, the _Net Income_ has to be split between _Shareholders_ and those of _Non-controlling Interests_. 
+   
+   > However, when the parent company/core company (Company A) does not own 100 per cent of its subsidiary, it will typically separate its net profit under a segment covering what is attributable to its shareholders and another termed non-controlling interest (NCI), which covers the other owners of the subsidiary (Company B).[^13]
+
+   When calculating _EPS_, the split that belongs to _Shareholders_ must be used to arrive at an accurate value. There's no set scale for the value of _EPS_.
 
  - Price-to-Earnings (P/E)
 
@@ -204,3 +208,5 @@ Measuring _market demand_ can prove useful. A formula for measuring deman was fo
 [^11]: Page 216, The Finance Book by Stuart Warner and Si Hussain.
 
 [^12]: The Site Book by Richard M. Fenker.
+
+[^13]: [The Jamaica Observer: $800-m payday](https://www.jamaicaobserver.com/2024/02/21/800-m-payday/)
