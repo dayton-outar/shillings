@@ -8,13 +8,13 @@ An _asset_ is any entity that delivers cashflow and/or appreciates in value over
 
 There are 4 main approaches to valuation,
 
-1. **Relative Valuation**: This method involves comparing the valuation metrics (such as price-to-earnings ratio, price-to-book ratio, or enterprise value-to-EBITDA ratio) of the company with those of similar companies or industry averages. Relative valuation is useful for assessing how a company's valuation multiples compare to its peers and can provide insights into whether a stock is undervalued or overvalued relative to its industry.
+1. **Contingency Claim Model**: Developed by Aswath Damodaran, the Contingency Claim Model is a framework for valuing companies based on the value of their equity and debt claims. It incorporates option pricing theory and considers the company's equity as a call option on the value of its assets. This model is particularly relevant for valuing companies with complex capital structures or those facing financial distress.
 
-2. **Discounted Cash Flow (DCF) Analysis**: DCF analysis involves estimating the present value of a company's future cash flows. It requires forecasting the company's future cash flows, determining an appropriate discount rate (usually the company's cost of capital or weighted average cost of capital), and discounting the future cash flows back to their present value. DCF analysis is considered one of the most fundamental and theoretically sound methods of valuation.
+2. **Relative Valuation**: This method involves comparing the valuation metrics (such as price-to-earnings ratio, price-to-book ratio, or enterprise value-to-EBITDA ratio) of the company with those of similar companies or industry averages. Relative valuation is useful for assessing how a company's valuation multiples compare to its peers and can provide insights into whether a stock is undervalued or overvalued relative to its industry.
 
 3. **Asset-based Valuation**: Asset-based valuation involves estimating the value of a company based on the value of its assets minus its liabilities. This method is particularly useful for companies with significant tangible assets, such as manufacturing or real estate companies. Asset-based valuation may include valuing assets at their book value, fair market value, or replacement cost.
 
-4. **Contingency Claim Model**: Developed by Aswath Damodaran, the Contingency Claim Model is a framework for valuing companies based on the value of their equity and debt claims. It incorporates option pricing theory and considers the company's equity as a call option on the value of its assets. This model is particularly relevant for valuing companies with complex capital structures or those facing financial distress.
+4. **Discounted Cash Flow (DCF) Analysis**: DCF analysis involves estimating the present value of a company's future cash flows. It requires forecasting the company's future cash flows, determining an appropriate discount rate (usually the company's cost of capital or weighted average cost of capital), and discounting the future cash flows back to their present value. DCF analysis is considered one of the most fundamental and theoretically sound methods of valuation.
 
 Each of these methods has its strengths and weaknesses, and the choice of method depends on factors such as the company's industry, stage of development, financial condition, and the availability of data. Often, multiple valuation methods are used in conjunction to triangulate a fair value estimate for a company.
 
@@ -37,6 +37,48 @@ The Contingency Claim Model, developed by Aswath Damodaran, is particularly appr
 In summary, the Contingency Claim Model is appropriate for evaluating businesses with complex capital structures, facing financial distress, or operating in volatile industries where traditional valuation methods may not adequately capture the value of equity. It provides a comprehensive framework for analyzing equity and debt claims and assessing the impact of uncertainty and leverage on the company's value.
 
 <image src="/.attachments/chatgpt-logo.png" alt="Chat GPT Logo" width="16" height="16" />
+
+Black-Scholes and option pricing theory can be had from John C. Hull's book, _Options, Futures and Other Derivatives_.
+
+## Relative Valuation Model
+
+Damodaran explains relative valuation in Chapters 17 to 20 in _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_.
+
+## Asset-based Valuation
+
+Damodaran does not go into much detail explaining _asset-based valuation_ only to state[^4],
+
+> There are some analysts who add a fourth approach to valuation to the three described in this chapter. They argue that you can value the individual assets owned by a firm and aggregate them to arrive at a firm value—asset-based valuation models. In fact, there are several variants on asset-based valuation models. The first is liquidation value, which is obtained by aggregating the estimated sale proceeds of the assets owned by a firm. The second is replacement cost, where you estimate what it would cost you to replace all of the assets that a firm has today. The third is the simplest: use accounting book value as the measure of the value of the assets, with adjustments to the book value made where necessary.
+> 
+> While analysts may use asset-based valuation approaches to estimate value, they are not alternatives to discounted cash flow, relative, or option pricing models since both replacement and liquidation values have to be obtained using one or another of these approaches. Ultimately, all valuation models attempt to value assets; the differences arise in how we identify the assets and how we attach value to each asset. In liquidation valuation, we look only at assets in place and estimate their value based on what similar assets are priced at in the market. In traditional discounted cash flow valuation, we consider all assets and include expected growth potential to arrive at value. The two approaches may, in fact, yield the same values if you have a firm that has no growth potential and the market assessments of value reflect expected cash flows.
+
+He gives an example[^5],
+
+> In asset-based valuation, we value the existing assets of a financial service firm, net out debt and other outstanding claims, and report the difference as the value of equity. For example, with a bank, this would require valuing the loan portfolio of the bank (which would comprise its assets) and subtracting outstanding debt to estimate the value of equity. For an insurance company, you would value the policies that the company has in force and subtract out the expected claims resulting from these policies and other debt outstanding to estimate the value of the equity in the firm.
+> 
+> How would you value the loan portfolio of a bank or the policies of an insurance company? One approach would be to estimate the price at which the loan portfolio can be sold to another financial service firm, but the better approach is to value it based on the expected cash flows. Consider, for instance, a bank with a $1 billion loan portfolio with a weighted average maturity of eight years, on which it earns interest income of $70 million. Furthermore, assume that the default risk on the loans is such that the fair market interest rate on the loans would be 6.50 percent; this fair market rate can be estimated by either getting the loan portfolio rated by a ratings agency or by measuring the potential for default risk in the portfolio. The value of the loans can be estimated as follows:
+> 
+> $\text{$Value of loans} = $70 million (\text{PV of annuity}, 8 years, 6.5\%) + $1,000 million \over 1.065^8 = $1,030 million$
+> 
+> This loan portfolio has a fair market value that exceeds its book value because the bank is charging an interest rate that exceeds the market rate. The reverse would be true if the bank charged an interest rate that is lower than the market rate. To value the equity in this book, you would subtract out the deposits, debt, and other claims on the bank.
+> 
+> This approach has merit if you are valuing a mature bank or insurance company with little or no growth potential, but it has two significant limitations. First, it does not assign any value to expected future growth and the excess returns that flow from that growth. A bank, for instance, that consistently is able to lend at rates higher than justified by default risk should be able to harvest value from future loans as well. Second, it is difficult to apply when a financial service firm enters multiple businesses. A firm like Citigroup that operates in multiple businesses would prove to be difficult to value because the assets in each business—insurance, commercial banking, investment banking, portfolio management—would need to be valued separately, with different income streams and different discount rates.
+
+### Liquidation Value
+
+> In some valuations, we can assume that the firm will cease operations at a point in time in the future and sell the assets it has accumulated to the highest bidders. The estimate that emerges is called a liquidation value. There are two ways in which the liquidation value can be estimated. One is to base it on the book value of the assets, adjusted for any inflation during the period. Thus, if the book value of assets 10 years from now is expected to be $2 billion, the average age of the assets at that point is five years and the expected inflation rate is 3 percent, the expected liquidation value can be estimated as:
+> 
+> The limitation of this approach is that it is based on accounting book value and does not reflect the earning power of the assets.
+> 
+> $\text{Expected liquidation value} = \text{Book value of assets}_{term year}(1 + \text{Inflation rate})^{average life of assets}$
+> $= $2 billion(1.03)^5 = $2.319 billion$
+>
+> The alternative approach is to estimate the value based on the earning power of the assets. To make this estimate, we would first have to estimate the expected cash flows from the assets and then discount these cash flows back to the present, using an appropriate discount rate. In the preceding example, for instance, if we assumed that the assets in question could be expected to generate $400 million in after-tax cash flows for 15 years (after the terminal year) and the cost of capital was 10 percent, our estimate of the expected liquidation value would be:
+> 
+> $\text{Expected liquidation value} = $400 million(PV of annuity, 15 years @ 10\%)$
+> $= $3.042 billion$
+>
+> When valuing equity, there is one additional step that needs to be taken. The estimated value of debt outstanding in the terminal year has to be subtracted from the liquidation value to arrive at the liquidation proceeds for equity investors.[^6]
 
 ## Discounted Cashflow Model
 
@@ -156,3 +198,6 @@ See below an example of the breakdown of the intrinsic value of GK stock on JSE 
 [^1]: Page 75. Chapter 5. _The Art of Currency Trading_ by Brent Donnelly.
 [^2]: [Simply Wall Street. Company Analysis Model](https://github.com/SimplyWallSt/Company-Analysis-Model/blob/master/MODEL.markdown)
 [^3]: Page 314. Chapter 9. _Corporate Finance: The Core, Global Edition_ by Jonathan Berk and Peter Demarzo.
+[^4]: Page 22. Chapter 2. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
+[^5]: Page 599. Chapter 21. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
+[^6]: Page 305. Chapter 12. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
