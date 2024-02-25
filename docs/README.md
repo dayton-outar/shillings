@@ -271,7 +271,7 @@ Here's a breakdown of the starting budget:
 | Category              | Annual Budget ($) |
 |-----------------------|-------------------|
 | Personnel Costs       | $240,000          |
-| <p>Technology Infrastructure</p><ul><li>Cloud services (e.g., Linode - [US$216 per month](https://www.linode.com/pricing/#kubernetes)) for hosting.</li><li>Software licenses and subscriptions (e.g., JSE API - [US$4,000](https://www.jamstockex.com/services/api-services/), Github Enterprise - [US$20 per user per month](https://github.com/pricing)).</li><li>Hardware costs (computers, servers, networking equipment)</li></ul> | $7,800           |
+| <p>Technology Infrastructure</p><ul><li>Cloud services<br />(e.g., Linode Kubernetes Hosting - [US$216 per month](https://www.linode.com/pricing/#kubernetes))</li><li>Software licenses and subscriptions<br />(e.g., JSE API - [US$4,000](https://www.jamstockex.com/services/api-services/), Github Enterprise - [US$20 per user per month](https://github.com/pricing)).</li><li>Hardware costs<br />(computers, servers, networking equipment)</li></ul> | $7,800           |
 | Marketing and Sales   | $120,000          |
 | Operational Costs     | $60,000           |
 | Miscellaneous Expenses| $24,000           |
