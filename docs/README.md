@@ -272,7 +272,7 @@ Here's a breakdown of the starting budget:
 |-----------------------|------------------:|
 | <p>Personnel Costs<p><ul><li>Tech Team<br />(Tech Lead - US$5,000, Scrum Master - US$4,000, Engineers - US$3,000 x 3)</li></ul>       | $216,000          |
 | <p>Technology Infrastructure</p><ul><li>Cloud services<br />(Linode Kubernetes Hosting - [US$216 per month](https://www.linode.com/pricing/#kubernetes))</li><li>Software licenses and subscriptions<br />(JSE API - [US$4,000](https://www.jamstockex.com/services/api-services/), Github - [US$20 per user per month](https://github.com/pricing) x 5)</li><li>Hardware costs<br />(computers, servers, networking equipment)</li></ul> | $7,800           |
-| <p>Marketing and Sales<p><ul><li>Brand development<br />(Logos, Avatar, Slogan, Color Themes)</li><li>Public relations<br />(group meetings, conference, branded accessories)</li><li>Sales and marketing tools<br />(CRM software, Google forms, SurveyMonkey, email marketing platforms)</li></ul>   | $--          |
+| <p>Marketing and Sales<p><ul><li>Brand development<br />(Logo, Name, Avatar, Slogan, Color Themes)</li><li>Public relations<br />(group meetings, conference, branded accessories)</li><li>Sales and marketing tools<br />(CRM software, Google forms, SurveyMonkey, email marketing platforms)</li></ul>   | $--          |
 | Operational Costs     | $--           |
 | Miscellaneous Expenses| $--           |
 | **Total**             | **$223,800**      |
