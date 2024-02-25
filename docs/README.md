@@ -271,20 +271,23 @@ Here's a breakdown of the starting budget:
 | Category              | Annual Budget ($) |
 |-----------------------|-------------------|
 | Personnel Costs       | $240,000          |
-| <p>Technology Infrastructure</p><ul><li>Cloud services<br />(e.g., Linode Kubernetes Hosting - [US$216 per month](https://www.linode.com/pricing/#kubernetes))</li><li>Software licenses and subscriptions<br />(e.g., JSE API - [US$4,000](https://www.jamstockex.com/services/api-services/), Github Enterprise - [US$20 per user per month](https://github.com/pricing)).</li><li>Hardware costs<br />(computers, servers, networking equipment)</li></ul> | $7,800           |
-| Marketing and Sales   | $120,000          |
+| <p>Technology Infrastructure</p><ul><li>Cloud services<br />(Linode Kubernetes Hosting - [US$216 per month](https://www.linode.com/pricing/#kubernetes))</li><li>Software licenses and subscriptions<br />(JSE API - [US$4,000](https://www.jamstockex.com/services/api-services/), Github - [US$20 per user per month](https://github.com/pricing) x 5)</li><li>Hardware costs<br />(computers, servers, networking equipment)</li></ul> | $7,800           |
+| <p>Marketing and Sales<p><ul><li>Digital marketing<br />(social media advertising, search engine optimization)</li><li>Sales and marketing tools<br />(CRM software, email marketing platforms)</li></ul>   | $120,000          |
 | Operational Costs     | $60,000           |
 | Miscellaneous Expenses| $24,000           |
 | **Total**             | **$504,000**      |
 
 1. **Personnel Costs:**
-   - Salaries for founders, developers, designers, and other employees.
+   - Salaries for founders, developers (including tech lead and scrum master), designers, and other employees.
+     - Enforce style guide
+     - Coding & code reviews (Engineers)
+     - Documentation
+     - Testing (UAT - _smallest viable market_, System - Engineers)
+     - Release management (Engineers)
+     - Project management and application architecture (Tech lead)
+     - Happiness manager (Scrum master)
    - Payroll taxes and benefits (health insurance, retirement plans, etc.).
    - Freelance or contractor fees if applicable.
-   
-3. **Marketing and Sales:**
-   - Digital marketing (social media advertising, search engine optimization).
-   - Sales and marketing tools (CRM software, email marketing platforms).
    
 4. **Operational Costs:**
    - Office rent or coworking space fees.
