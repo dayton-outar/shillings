@@ -266,20 +266,23 @@ It is while promoting the product, after _Beta V_, that consideration will be gi
 
 ### Budget
 
-Creating a budget for a tech startup involves considering various factors such as personnel costs, technology infrastructure, marketing expenses, and operational costs. Below is a simplified example of a budget for a tech startup:
+Here's a breakdown of the starting budget:
+
+| Category              | Annual Budget ($) |
+|-----------------------|-------------------|
+| Personnel Costs       | $240,000          |
+| <p>Technology Infrastructure</p><ul><li>Cloud services (e.g., Linode - [US$216 per month](https://www.linode.com/pricing/#kubernetes)) for hosting.</li><li>Software licenses and subscriptions (e.g., JSE API - [US$4,000](https://www.jamstockex.com/services/api-services/), Github Enterprise - [US$20 per user per month](https://github.com/pricing)).</li><li>Hardware costs (computers, servers, networking equipment)</li></ul> | $7,800           |
+| Marketing and Sales   | $120,000          |
+| Operational Costs     | $60,000           |
+| Miscellaneous Expenses| $24,000           |
+| **Total**             | **$504,000**      |
 
 1. **Personnel Costs:**
    - Salaries for founders, developers, designers, and other employees.
    - Payroll taxes and benefits (health insurance, retirement plans, etc.).
    - Freelance or contractor fees if applicable.
    
-2. **Technology Infrastructure:**
-   - Cloud services (e.g., AWS, Azure, Google Cloud) for hosting.
-   - Software licenses and subscriptions (e.g., development tools, project management software).
-   - Hardware costs (computers, servers, networking equipment).
-   
 3. **Marketing and Sales:**
-   - Website development and maintenance.
    - Digital marketing (social media advertising, search engine optimization).
    - Sales and marketing tools (CRM software, email marketing platforms).
    
@@ -293,23 +296,6 @@ Creating a budget for a tech startup involves considering various factors such a
    - Office supplies.
    - Training and professional development.
    - Contingency fund for unexpected expenses.
-
-It's important to adjust the budget based on the specific needs and circumstances of the startup. Additionally, it's wise to regularly review and update the budget as the business grows and evolves.
-
-Here's a breakdown of a sample budget for a tech startup:
-
-| Category              | Monthly Budget ($) | Annual Budget ($) |
-|-----------------------|--------------------|-------------------|
-| Personnel Costs       | $20,000            | $240,000          |
-| Technology Infrastructure | $5,000          | $60,000           |
-| Marketing and Sales   | $10,000            | $120,000          |
-| Operational Costs     | $5,000             | $60,000           |
-| Miscellaneous Expenses| $2,000             | $24,000           |
-| **Total**             | **$42,000**        | **$504,000**      |
-
-This budget is just a starting point and should be adjusted based on the specific needs and goals of the startup. It's also important to track actual expenses against the budget to ensure financial health and make necessary adjustments.
-
-Please note that the figures provided are for illustrative purposes only and may vary significantly based on the size, location, industry, and other factors affecting the startup. Confidence level: Medium. This is a simplified example and actual budgets can vary widely based on the specific circumstances of each startup.
 
 ### Financial Projections
 
