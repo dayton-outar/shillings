@@ -270,12 +270,12 @@ Here's a breakdown of the starting budget:
 
 | Category              | Annual Budget ($) |
 |-----------------------|-------------------|
-| <p>Personnel Costs<p><ul><li>Tech Team<br />(Tech Lead - US$5,000, Scrum Master - US$4,000, Engineers - US$3,000 x 3)</li></ul>       | $18,000          |
+| <p>Personnel Costs<p><ul><li>Tech Team<br />(Tech Lead - US$5,000, Scrum Master - US$4,000, Engineers - US$3,000 x 3)</li></ul>       | $216,000          |
 | <p>Technology Infrastructure</p><ul><li>Cloud services<br />(Linode Kubernetes Hosting - [US$216 per month](https://www.linode.com/pricing/#kubernetes))</li><li>Software licenses and subscriptions<br />(JSE API - [US$4,000](https://www.jamstockex.com/services/api-services/), Github - [US$20 per user per month](https://github.com/pricing) x 5)</li><li>Hardware costs<br />(computers, servers, networking equipment)</li></ul> | $7,800           |
-| <p>Marketing and Sales<p><ul><li>Public relations<br />(group meetings, conference, branded accessories)</li><li>Digital marketing<br />(social media advertising, search engine optimization)</li><li>Sales and marketing tools<br />(CRM software, email marketing platforms)</li></ul>   | $120,000          |
-| Operational Costs     | $60,000           |
-| Miscellaneous Expenses| $24,000           |
-| **Total**             | **$504,000**      |
+| <p>Marketing and Sales<p><ul><li>Public relations<br />(group meetings, conference, branded accessories)</li><li>Digital marketing<br />(social media advertising, search engine optimization)</li><li>Sales and marketing tools<br />(CRM software, email marketing platforms)</li></ul>   | $--          |
+| Operational Costs     | $--           |
+| Miscellaneous Expenses| $--           |
+| **Total**             | **$223,800**      |
 
 1. **Personnel Costs:**
    - Salaries for founders, developers (including tech lead and scrum master), designers, freelance or contractor and other employees.
