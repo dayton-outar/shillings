@@ -70,7 +70,7 @@ $$\text{Value of loans} = $70 million \text{(PV of annuity, 8 years, 6.5 percent
 > 
 > The limitation of this approach is that it is based on accounting book value and does not reflect the earning power of the assets.
 > 
-$$\text{Expected liquidation value} = \text{Book value of assets}_{term year}(1 + \text{Inflation rate})^\text{average life of assets} = $2 billion(1.03)^5 = $2.319 billion$$
+$$\text{Expected liquidation value} = \text{Book value of assets}_\text{term year}(1 + \text{Inflation rate})^\text{average life of assets} = $2 billion(1.03)^5 = $2.319 billion$$
 >
 > The alternative approach is to estimate the value based on the earning power of the assets. To make this estimate, we would first have to estimate the expected cash flows from the assets and then discount these cash flows back to the present, using an appropriate discount rate. In the preceding example, for instance, if we assumed that the assets in question could be expected to generate $400 million in after-tax cash flows for 15 years (after the terminal year) and the cost of capital was 10 percent, our estimate of the expected liquidation value would be:
 > 
