@@ -58,7 +58,7 @@ He gives an example[^5],
 > 
 > How would you value the loan portfolio of a bank or the policies of an insurance company? One approach would be to estimate the price at which the loan portfolio can be sold to another financial service firm, but the better approach is to value it based on the expected cash flows. Consider, for instance, a bank with a $1 billion loan portfolio with a weighted average maturity of eight years, on which it earns interest income of $70 million. Furthermore, assume that the default risk on the loans is such that the fair market interest rate on the loans would be 6.50 percent; this fair market rate can be estimated by either getting the loan portfolio rated by a ratings agency or by measuring the potential for default risk in the portfolio. The value of the loans can be estimated as follows:
 > 
-$$\text{Value of loans} = \text{70 million (PV of annuity, 8 years, 6.5 percent)} + {\text{1,000 million} \over 1.065^8} = \text{1,030 million}$$
+$$\text{Value of loans} = $70 million \text{(PV of annuity, 8 years, 6.5 percent)} + {$1,000 million \over 1.065^8} = $1,030 million$$
 > 
 > This loan portfolio has a fair market value that exceeds its book value because the bank is charging an interest rate that exceeds the market rate. The reverse would be true if the bank charged an interest rate that is lower than the market rate. To value the equity in this book, you would subtract out the deposits, debt, and other claims on the bank.
 > 
@@ -70,7 +70,7 @@ $$\text{Value of loans} = \text{70 million (PV of annuity, 8 years, 6.5 percent)
 > 
 > The limitation of this approach is that it is based on accounting book value and does not reflect the earning power of the assets.
 > 
-$$\text{Expected liquidation value} = \text{Book value of assets}_{term year}(1 + \text{Inflation rate})^{average life of assets} = \text{$2 billion}(1.03)^5 = \text{$2.319 billion}$$
+$$\text{Expected liquidation value} = \text{Book value of assets}_{term year}(1 + \text{Inflation rate})^{average life of assets} = $2 billion(1.03)^5 = $2.319 billion$$
 >
 > The alternative approach is to estimate the value based on the earning power of the assets. To make this estimate, we would first have to estimate the expected cash flows from the assets and then discount these cash flows back to the present, using an appropriate discount rate. In the preceding example, for instance, if we assumed that the assets in question could be expected to generate $400 million in after-tax cash flows for 15 years (after the terminal year) and the cost of capital was 10 percent, our estimate of the expected liquidation value would be:
 > 
