@@ -478,7 +478,7 @@ My experience using JTrader Pro was as follows,
 
    [See fee schedule for JSE](https://www.jamstockex.com/investors/fee-schedule/)
 
-   The **GCT Fee** for the transaction above is 15% of the **Broker Fee**, **JSE Fee** and **JCSD Fee**. So, 
+   The **GCT Fee** for the transaction above is 15% of the **Broker Fee** (2% of Share Value), **JSE Fee** (0.35 % of Share Value) and **JCSD Fee**. So, 
    
    ```
    GCT Fee = (J$1,202.80 + J$210.49 + J$0) x 0.15 = J$211.9935
