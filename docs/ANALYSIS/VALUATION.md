@@ -96,12 +96,6 @@ When determining current market prices, it's important to consider the reliabili
 
 <image src="/.attachments/chatgpt-logo.png" alt="Chat GPT Logo" width="16" height="16" />
 
-Damodaran makes reference to _Tobin's Q_ as a measure of value that involves _replacement cost_,
-
-> James Tobin presented an alternative to traditional financial measures of value by comparing the market value of an asset to its replacement cost. His measure, called Tobin’s Q, has several adherents in academia but still has not broken through into practical use, largely because of problems in getting the necessary information.[^7]
-
-
-
 ## Discounted Cashflow Model
 
 See below the model used by Damodaran to identify the type of Cashflow model to use to evaluate an asset,
@@ -178,7 +172,11 @@ See below an example of the breakdown of the intrinsic value of GK stock on JSE 
 
 ## Relative Valuation Model
 
-Damodaran explains relative valuation in Chapters 17 to 20 in _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_.
+> In discounted cash flow valuation, the objective is to find the value of assets, given their cash flow, growth, and risk characteristics. In relative valuation, the objective is to value assets based on how similar assets are currently priced in the market. ...
+> 
+> ...
+> 
+> There are two components to relative valuation. The first is that, to value assets on a relative basis, prices have to be standardized, usually by converting prices into multiples of earnings, book values, or sales. The second is to find similar firms, which is difficult to do since _no two firms are identical and firms in the same business can still differ on risk, growth potential, and cash flows_.[^8]
 
 ## Contingency Claim Model
 
@@ -249,3 +247,4 @@ Black-Scholes and option pricing theory can be had from John C. Hull's book, _Op
 [^5]: Page 599. Chapter 21. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^6]: Page 305. Chapter 12. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^7]: Page 537. Chapter 19. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
+[^8]: Chapter 17. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
