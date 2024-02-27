@@ -21,6 +21,10 @@ Credit to Sheneka Robinson for providing the information via email.
 
 It's possible that an individual may have several accounts, where most have single accounts. Same for corporate entities (as in companies).
 
+It's fair to assume that less than 10% of the accounts are associated with persons that have more than one broker. Also, that 10% is the number of investors that are actively trading every month or quarter; more frequent than usual.
+
+I arrive at the 10% based on knowing that 2 communities consist of 2,000 members each. And most of the members, if not all, prefer to have more than one broker. Each broker would have to open a new JCSD account.
+
 
 ## Critical Issues 
 
