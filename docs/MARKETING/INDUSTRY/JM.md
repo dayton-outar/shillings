@@ -507,6 +507,14 @@ See below screenshot taking note of customer's experience during the fund-in pro
 
 ![Stocks on d' Rocks members share experience of Fund In](/.attachments/Screenshot_20240111_125349_Telegram.jpg)
 
+See below screenshot of SELL order on JTrader Pro. Note how quickly it was filled,
+
+![JTrader SELL order for GK Units at $75](/.attachments/jtrader.order.gk.977.png)
+
+See below screenshot of BUY order of TransJamaican Highway stock units on JTrader Pro.
+
+![JTrader BUY order for TJH Units at $3.25 Limit Order](/.attachments/jtrader.order.tjh.21340.png)
+
 ##### Few Good Mentions
 
  - [Investing.com](https://www.investing.com/stock-screener/?sp=country::119|sector::a|industry::a|equityType::a|exchange::124%3Ceq_market_cap;1)
