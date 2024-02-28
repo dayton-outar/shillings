@@ -20,7 +20,7 @@ Each of these methods has its strengths and weaknesses, and the choice of method
 
 <image src="/.attachments/chatgpt-logo.png" alt="Chat GPT Logo" width="16" height="16" />
 
-## Asset-based Valuation
+## Asset-based Valuation Model
 
 _Asset-based valuation_ is a model of evalaution that is best used when a business is in distress. Some analyst may prefer the simpler and more straithforward approach than _Discounted Cash Flow (DCF) Analysis_. In _asset-intensive_ industries, like manufacturing, real estate, or natural resources, the value of assets on the balance sheet can be a more reliable indicator of value than future cash flows.
 
@@ -263,6 +263,8 @@ Take note that Damodaran is elaborating the importance of coparing apples to app
 > ...
 > 
 > _The differences in value between discounted cash flow valuation and relative valuation come from different views of market efficiency, or, put more precisely, market inefficiency. In discounted cash flow valuation, you assume that markets make mistakes, that they correct these mistakes over time, and that these mistakes can often occur across entire sectors or even the entire market. In relative valuation, you assume that while markets make mistakes on individual stocks, they are correct on average._[^8]
+
+### Earnings Multiples
 
 ## Contingency Claim Model
 
