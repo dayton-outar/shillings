@@ -266,11 +266,37 @@ Take note that Damodaran is elaborating the importance of coparing apples to app
 
 ### Earnings Multiples
 
+> When the PE ratios of firms are compared, it is difficult to ensure that the earnings per share are uniformly estimated across the firms for the following reasons:
+>
+> - Firms often grow by acquiring other firms, and they do not account for acquisitions the same way. While all companies now have to use purchase accounting and record goodwill as an asset, there is enough discretion in the process to make a material difference in reported earnings. These differences lead to different measures of earnings per share and different PE ratios.
+>
+> - Using diluted earnings per share in estimating PE ratios might bring the shares that are covered by management options into the multiple, but they treat options that are deep in-the-money or only slightly in-the-money as equivalent.
+> 
+> - Firm often have discretion in whether they expense or capitalize items, at least for reporting purposes. The expensing of a capital expense gives firms a way of shifting earnings from period to period, and penalizes those firms that are reinvesting more.
+> 
+> ...
+> 
+> **Discounted Cash Flow Model Perspective on PE Ratios** ... the PE ratio for a stable growth firm from the stable growth dividend discount model:
+
+$${P_0 \over EPS_0} = PE = {\text{Payout ratio \times (1 + g_n)}} \over {k_e - g_n}$$
+
+> If the PE ratio is stated in terms of expected earnings ($EPS_1$) in the next time period, this can be simplified to:
+
+$${P_0 \over EPS_1} = Forward PE =  \text{Payout ratio} \over {k_e - g_n}$$
+
+> The PE ratio is an increasing function of the payout ratio and the growth rate and a decreasing function of the riskiness of the firm. In fact, we can state the payout ratio as a function of the expected growth rate and return on equity:
+
+$$\text{Payout ratio} = {1 - \text{Expected growth rate}/\text{Return on Equity}} = {1 - g_n}/ROE_n$$
+
+> Substituting back into the equation,
+
+$${P_0 \over EPS_1} = Forward PE = {1 - g_n}/ROE_n \over {k_e - g_n}$$
+
 ## Contingency Claim Model
 
 The Contingency Claim Model, developed by Aswath Damodaran, is particularly appropriate for evaluating businesses with complex capital structures or those facing financial distress. Let's break down the key features of the model and discuss scenarios in which it is suitable:
 
-1. **Incorporates Option Pricing Theory**: The Contingency Claim Model is grounded in option pricing theory, which treats a company's equity as a call option on the value of its assets. This means that equity holders benefit when the value of the company's assets exceeds its liabilities, similar to how call option holders benefit when the underlying asset's price exceeds the strike price.
+1. **Incorporates Option Pricing Theory**: The Contingency Claim Model is grounded in _option pricing theory_, which treats a company's equity as a call option on the value of its assets. This means that equity holders benefit when the value of the company's assets exceeds its liabilities, similar to how call option holders benefit when the underlying asset's price exceeds the strike price.
 
 2. **Accounts for Financial Distress**: The model is especially useful for companies facing financial distress or uncertainty about their future viability. In such scenarios, the company's equity behaves like a call option with a high degree of uncertainty and volatility, as there is a possibility of the company defaulting on its obligations or undergoing bankruptcy proceedings.
 
@@ -285,6 +311,12 @@ In summary, the Contingency Claim Model is appropriate for evaluating businesses
 <image src="/.attachments/chatgpt-logo.png" alt="Chat GPT Logo" width="16" height="16" />
 
 Black-Scholes and option pricing theory can be had from John C. Hull's book, _Options, Futures and Other Derivatives_.
+
+### Options
+
+> A _call option_ gives the holder of the option the right to buy an asset by a certain date for a certain price. A _put option_ gives the holder the right to sell an asset by a certain date for a certain price. The date speciﬁed in the contract is known as the _expiration date_ or the _maturity date_. The price speciﬁed in the contract is known as the _exercise price_ or the _strike price_.
+> 
+> Options can be either American or European, a distinction that has nothing to do with geographical location. American options can be exercised at any time up to the expiration date, whereas European options can be exercised only on the expiration date itself. Most of the options that are traded on exchanges are American. However, European options are generally easier to analyze than American options, and some of the properties of an American option are frequently deduced from those of its European counterpart.[^9]
 
 
 ## Further Reading
@@ -336,3 +368,4 @@ Black-Scholes and option pricing theory can be had from John C. Hull's book, _Op
 [^6]: Page 305. Chapter 12. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^7]: Page 537. Chapter 19. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^8]: Chapter 17. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
+[^9]: Chapter 10. Mechanics of Options Markets. _Options, Futures, and Other Derivatives, Global Edition, 9th Edition_ by John C. Hull
