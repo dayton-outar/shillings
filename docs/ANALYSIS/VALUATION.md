@@ -278,11 +278,11 @@ Take note that Damodaran is elaborating the importance of coparing apples to app
 > 
 > **Discounted Cash Flow Model Perspective on PE Ratios** ... the PE ratio for a stable growth firm from the stable growth dividend discount model:
 
-$${P_0 \over EPS_0} = PE = {\text{Payout ratio \times (1 + g_n)}} \over {k_e - g_n}$$
+$${P_0 \over EPS_0} = PE = \frac{\text{Payout ratio} \times {(1 + g_n)}}{k_e - g_n}$$
 
 > If the PE ratio is stated in terms of expected earnings ($EPS_1$) in the next time period, this can be simplified to:
 
-$${P_0 \over EPS_1} = Forward PE =  \text{Payout ratio} \over {k_e - g_n}$$
+$${P_0 \over EPS_1} = Forward PE =  \frac{\text{Payout ratio}}{k_e - g_n}$$
 
 > The PE ratio is an increasing function of the payout ratio and the growth rate and a decreasing function of the riskiness of the firm. In fact, we can state the payout ratio as a function of the expected growth rate and return on equity:
 
@@ -290,7 +290,7 @@ $$\text{Payout ratio} = {1 - \text{Expected growth rate}/\text{Return on Equity}
 
 > Substituting back into the equation,
 
-$${P_0 \over EPS_1} = Forward PE = {1 - g_n}/ROE_n \over {k_e - g_n}$$
+$${P_0 \over EPS_1} = Forward PE = \frac{{1 - g_n}/ROE_n}{k_e - g_n}$$
 
 ## Contingency Claim Model
 
