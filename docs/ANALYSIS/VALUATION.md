@@ -310,6 +310,16 @@ It's important to note that EPS estimates are subjective and can vary among anal
 
 <image src="/.attachments/chatgpt-logo.png" alt="Chat GPT Logo" width="16" height="16" />
 
+> The price-earnings ratio for a high-growth firm can also be related to fundamentals. Using the two-stage dividend discount model, this relationship can be made explicit fairly simply. When a firm is expected to be in high growth for the next n years and stable growth thereafter, the dividend discount model can be written as follows:
+
+$$\huge{
+   P_0 = { { EPS_0 \times \text{Payout ratio} \times (1 + g) \times [ 1 - { { (1 + g)^n } \over { (1 + k_{e,hg})^n } } ] } \over { k_{e,hg} - g } } + { { EPS_0 \times \text{Payout ratio}_n \times (1 + g)^n \times (1 + g_n) } \over { (k_{e,st} - g_n)(1 + k_{e,hg})^n } }
+}$$
+
+> where,
+> $EPS_0$ = Earnings per share in year 0 (current year)
+> $g$     = Growth rate in the first $n$ years
+
 ## Contingency Claim Model
 
 The Contingency Claim Model, developed by Aswath Damodaran, is particularly appropriate for evaluating businesses with complex capital structures or those facing financial distress. Let's break down the key features of the model and discuss scenarios in which it is suitable:
