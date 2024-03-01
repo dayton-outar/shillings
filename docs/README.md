@@ -120,9 +120,7 @@ If this project leads into the setting up of a brokerage, then there will be an 
 
 ## The Schedule
 
-1. Complete Business Plan (March 2024)
-   1. Complete [Intrinsic Valuation](./ANALYSIS/VALUATION.md)
-   1. Complete [Finance and Operations](#finance-and-operations)
+1. Complete [Intrinsic Valuation](./ANALYSIS/VALUATION.md)
 2. Build Portal (Login) and Fundamentals (April 2024)
 3. Arrange focus group meeting for brainstorming and backlog discussion (October 2024)
    1. Fill up and prune backlog
@@ -131,7 +129,9 @@ If this project leads into the setting up of a brokerage, then there will be an 
 5. Gather improvement ideas and backlog from focus group for second sprint, Sprint 2 (January 2025)
 6. Complete Sprint 2 (February 2025)
 7. Review branding and marketing strategy
-8. Build Critical Mass from Influencers, Investment Clubs and Communities (April 2025)
+8. Complete Business Plan (March 2025)
+   1. Complete [Finance and Operations](#finance-and-operations)
+9. Build Critical Mass from Influencers, Investment Clubs and Communities (April 2025)
    1. Arrange meeting with communities
    2. Deliver branded presentation
    3. Usher commitment from members of community
