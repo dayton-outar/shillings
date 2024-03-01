@@ -312,7 +312,9 @@ It's important to note that EPS estimates are subjective and can vary among anal
 
 > The price-earnings ratio for a high-growth firm can also be related to fundamentals. Using the two-stage dividend discount model, this relationship can be made explicit fairly simply. When a firm is expected to be in high growth for the next n years and stable growth thereafter, the dividend discount model can be written as follows:
 
-$\huge{P_0 = { { EPS_0 \times \text{Payout ratio} \times (1 + g) \times [ 1 - { { (1 + g)^n } \over { (1 + k_{e,hg})^n } } ] } \over { k_{e,hg} - g } }}$ + $\huge{ { EPS_0 \times \text{Payout ratio}_n \times (1 + g)^n \times (1 + g_n) } \over { (k_{e,st} - g_n)(1 + k_{e,hg})^n } }$
+$\huge{P_0 = { { EPS_0 \times \text{Payout ratio} \times (1 + g) \times [ 1 - { { (1 + g)^n } \over { (1 + k_{e,hg})^n } } ] } \over { k_{e,hg} - g } }}$
+
+$\huge{ { EPS_0 \times \text{Payout ratio}_n \times (1 + g)^n \times (1 + g_n) } \over { (k_{e,st} - g_n)(1 + k_{e,hg})^n } }$
 
 > where,\
 > $EPS_0$ = Earnings per share in year 0 (current year)\
