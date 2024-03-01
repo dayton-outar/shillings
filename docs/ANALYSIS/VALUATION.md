@@ -314,7 +314,7 @@ It's important to note that EPS estimates are subjective and can vary among anal
 
 $\huge{P_0 = { { EPS_0 \times \text{Payout ratio} \times (1 + g) \times [ 1 - { { (1 + g)^n } \over { (1 + k_{e,hg})^n } } ] } \over { k_{e,hg} - g } }}$
 
-$\huge{ { EPS_0  \times (1 + g)^n \times (1 + g_n) } \over { (k_{e,st} - g_n)(1 + k_{e,hg})^n } }$
+$\huge{ { EPS_0 \times {\text{Payout ratio}}_n \times (1 + g)^n \times (1 + g_n) } \over { (k_{e,st} - g_n)(1 + k_{e,hg})^n } }$
 
 > where,\
 > $EPS_0$ = Earnings per share in year 0 (current year)\
