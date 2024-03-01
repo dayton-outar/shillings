@@ -316,8 +316,23 @@ $\Huge{P_0 = { { EPS_0 \times PR \times (1 + g) \times [ 1 - { { (1 + g)^n } \ov
 
 > where,\
 > $EPS_0$ = Earnings per share in year 0 (current year)\
-> $PR$    = Payout ratio
+> $PR$    = Payout ratio in first $n$ years\
 > $g$     = Growth rate in the first $n$ years
+> $k_{e,hg}$ = Cost of equity in high growth period
+> $k_{e,st}$ = Cost of equity in stable growth period
+> $PR_n$ = Payout ratio after $n$ years for the stable firm
+> $g_n$ = Growth rate after $n$ years, forever (stable growth rate)
+> 
+> ...
+> 
+> - The PE ratio increases as the payout ratio increases, for any given growth rate. An alternative way of stating the same proposition is that the PE ratio increases as the return on equity increases, for any given growth rate, and decreases as the return on equity decreases. ...
+> 
+> - The PE ratio becomes lower as riskiness increases. Put differently, the PE ratio will be higher for a firm where is growth is more predictable and stable than for an otherwise similar firm with unstable growth.
+> 
+> - The PE increases as the growth rate increases, assuming that the ROE > cost of equity.
+> 
+> This formula is general enough to be applied to any firm, even one that is not paying dividends right now. In fact, the ratio of FCFE to earnings can be substituted for the payout ratio for firms that pay significantly less in dividends than they can afford to.
+
 
 ## Contingency Claim Model
 
@@ -337,14 +352,15 @@ In summary, the Contingency Claim Model is appropriate for evaluating businesses
 
 <image src="/.attachments/chatgpt-logo.png" alt="Chat GPT Logo" width="16" height="16" />
 
-Black-Scholes and option pricing theory can be had from John C. Hull's book, _Options, Futures and Other Derivatives_.
-
 ### Options
 
 > A _call option_ gives the holder of the option the right to buy an asset by a certain date for a certain price. A _put option_ gives the holder the right to sell an asset by a certain date for a certain price. The date speciﬁed in the contract is known as the _expiration date_ or the _maturity date_. The price speciﬁed in the contract is known as the _exercise price_ or the _strike price_.
 > 
 > Options can be either American or European, a distinction that has nothing to do with geographical location. American options can be exercised at any time up to the expiration date, whereas European options can be exercised only on the expiration date itself. Most of the options that are traded on exchanges are American. However, European options are generally easier to analyze than American options, and some of the properties of an American option are frequently deduced from those of its European counterpart.[^9]
 
+### The Black–Scholes–Merton Model
+
+> In the early 1970s, Fischer Black, Myron Scholes, and Robert Merton achieved a major breakthrough in the pricing of European stock options.1 This was the development of what has become known as the Black–Scholes–Merton (or Black–Scholes) model. The model has had a huge inﬂuence on the way that traders price and hedge derivatives. In 1997, the importance of the model was recognized when Robert Merton and Myron Scholes were awarded the Nobel prize for economics. Sadly, Fischer Black died in 1995; otherwise he too would undoubtedly have been one of the recipients of this prize.[^10]
 
 ## Further Reading
 
@@ -396,3 +412,4 @@ Black-Scholes and option pricing theory can be had from John C. Hull's book, _Op
 [^7]: Page 537. Chapter 19. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^8]: Chapter 17. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^9]: Chapter 10. Mechanics of Options Markets. _Options, Futures, and Other Derivatives, Global Edition, 9th Edition_ by John C. Hull
+[^15]: Chapter 15. Black-Scholes-Merton Model. _Options, Futures, and Other Derivatives, Global Edition, 9th Edition_ by John C. Hull.
