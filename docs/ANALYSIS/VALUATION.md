@@ -389,7 +389,7 @@ $$\huge{\text{PEG ratio} = \text{PE ratio}/\text{Expected growth rate}}$$
 
 $$\huge{ \text{Relative PE} = \text{Current PE ratio}_{firm} \over \text{Current PE ratio}_{market} }$$
 
-Not surprisingly, the distribution of relative PE ratios mimics the distribution of the actual PE ratios, with one difference—the average relative PE ratio is 1.[^11]
+> Not surprisingly, the distribution of relative PE ratios mimics the distribution of the actual PE ratios, with one difference—the average relative PE ratio is 1.[^11]
 
 #### Relative PE Ratios and Market Growth
 
