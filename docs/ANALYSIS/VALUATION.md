@@ -456,7 +456,7 @@ Options are traded for several underlying assets, which includes,
 
 - Index (e.g. S&P 500, NASDAQ, Dow Jones)
 
-  Consider, for example, one _call contract_ on an index with a strike price of 980. If it is exercised when the value of the index is 992, the _writer_ of the contract pays the holder (992 - 980) 100 = $1,200.
+  Consider, for example, one _call contract_ on an index with a strike price of 980. If it is exercised when the value of the index is 992, the _writer_ of the contract pays the holder (992 - 980) x 100 = $1,200.
 
 - Futures
 
