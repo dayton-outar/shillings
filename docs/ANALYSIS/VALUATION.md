@@ -387,7 +387,7 @@ $$\huge{\text{PEG ratio} = \text{PE ratio}/\text{Expected growth rate}}$$
 > 
 > Relative price earnings ratios measure a firm’s PE ratio relative to the market average. It is obtained by dividing a firm’s current PE ratio by the average for the market:
 
-$\huge{ \text{Relative PE} = \text{Current PE ratio}_{firm} }$ + $\huge{ \text{Current PE ratio}_{market} }$
+$\huge{ \text{Relative PE} = \text{Current PE ratio}_{firm} / \text{Current PE ratio}_{market} }$
 
 > Not surprisingly, the distribution of relative PE ratios mimics the distribution of the actual PE ratios, with one difference—the average relative PE ratio is 1.[^11]
 
@@ -411,6 +411,14 @@ $$\huge{\text{EV/EBITDA} = (\text{Market value of equity} − \text{Market value
 > The enterprise value to EBITDA multiple can be difficult to estimate for firms with cross holdings. To see why, note that cross holdings can be categorized as either majority active, minority active, or minority passive holdings. When a holding is categorized as a minority holding, the operating income of a firm does not reflect the income from the holding. The numerator, on the other hand, includes the market value of equity, which should incorporate the value of the minority holdings. Consequently, the value to EBITDA multiple will be too high for these firms, leading a casual observer to conclude that they were overvalued. When a holding is categorized as a majority holding, a different problem arises. The EBITDA includes 100 percent of the EBITDA of the holding, but the numerator reflects only the portion of the holding that belongs to the firm. Thus the value to EBITDA multiple will be too low, leading it to be categorized as an undervalued stock.
 > 
 > The correction for cross holdings is tedious and difficult to do when the holdings are in private firms. With minority holdings, you can either subtract the estimated value of the holdings from the numerator or add the portion of the EBITDA of the subsidiary to the denominator. With consolidated holdings, you can subtract the proportional share of the value of the holding from the numerator and the entire EBITDA of the holding from the denominator.[^11]
+
+### Book Value Multiples
+
+> The market value of the equity in a firm reflects the market’s expectation of the firm’s earning power and cash flows. The book value of equity is the difference between the book value of assets and the book value of liabilities, a number that is largely determined by accounting conventions. In the United States, the book value of assets is the original price paid for the assets reduced by any allowable depreciation on the assets. Consequently, the book value of an asset generally decreases as it ages. The book value of liabilities similarly reflects the at-issue values of the liabilities. Since the book value of an asset reflects its original cost, it might deviate significantly from market value if the earning power of the asset has increased or declined significantly since its acquisition.
+> 
+> There are several reasons why investors find the price–book value ratio useful in investment analysis. The first is that the book value provides a relatively stable, intuitive measure of value that can be compared to the market price. For investors who instinctively mistrust discounted cash flow estimates of value, the book value is a much simpler benchmark for comparison. The second is that, given reasonably consistent accounting standards across firms, price–book value ratios can be compared across similar firms for signs of under- or overvaluation. Finally, even firms with negative earnings, which cannot be valued using price-earnings ratios, can be evaluated using price–book value ratios; there are far fewer firms with negative book value for equity than there are firms with negative earnings.
+> 
+> There are several disadvantages associated with measuring and using price–book value ratios. First, book values, like earnings, are affected by accounting decisions on depreciation and other variables. When accounting standards vary widely across firms, the price–book value ratios may not be comparable. A similar statement can be made about comparing price–book value ratios across countries with different accounting standards. Second, book value may not carry much meaning for service and technology firms that do not have significant tangible assets. Third, the book value of equity can become negative if a firm has a sustained string of negative earnings reports, leading to a negative price–book value ratio.[^12]
 
 ## Contingency Claim Model
 
@@ -492,3 +500,4 @@ In summary, the Contingency Claim Model is appropriate for evaluating businesses
 [^9]: Chapter 10. Mechanics of Options Markets. _Options, Futures, and Other Derivatives, Global Edition, 9th Edition_ by John C. Hull
 [^10]: Chapter 15. Black-Scholes-Merton Model. _Options, Futures, and Other Derivatives, Global Edition, 9th Edition_ by John C. Hull.
 [^11]: Chapter 18. Earnings Multiples. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
+[^12]: Chapter 19. Book Value Multiples. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
