@@ -276,7 +276,7 @@ Take note that Damodaran is elaborating the importance of coparing apples to app
 > 
 > ...
 > 
-> **Discounted Cash Flow Model Perspective on PE Ratios** ... the PE ratio for a stable growth firm from the stable growth dividend discount model:
+> **Discounted Cash Flow Model Perspective on PE Ratios** ... the PE ratio for a stable growth firm from the stable growth dividend discount model:[^11]
 
 $$\huge{{P_0 \over EPS_0} = PE = \frac{\text{Payout ratio} \times {(1 + g_n)}}{k_e - g_n}}$$
 
@@ -332,7 +332,85 @@ $\Huge{P_0 = { { EPS_0 \times PR \times (1 + g) \times [ 1 - { { (1 + g)^n } \ov
 > - The PE increases as the growth rate increases, assuming that the ROE > cost of equity.
 > 
 > This formula is general enough to be applied to any firm, even one that is not paying dividends right now. In fact, the ratio of FCFE to earnings can be substituted for the payout ratio for firms that pay significantly less in dividends than they can afford to.
+> 
+> ...
+> 
+> **Comparing a Market’s PE Ratio across Time** Analysts and market strategists often compare the PE ratio of a market to its historical average to make judgments about whether the market is under- or overvalued. Thus a market that is trading at a PE ratio that is much higher than its historical norms is often considered to be overvalued, whereas one that is trading at a ratio lower than its historical norms is considered undervalued.
+> 
+> ... As the fundamentals (interest rates, risk premiums, expected growth, and payout) change over time, the PE ratio will also change. Other things remaining equal, for instance, you would expect the following:
+> - An increase in interest rates should result in a higher cost of equity for the market and a lower PE ratio.
+> - A greater willingness to take risk on the part of investors will result in a lower risk premium for equity and a higher PE ratio across all stocks.
+> - An increase in expected growth in earnings across firms will result in a higher PE ratio for the market.
+> - An increase in the return on equity at firms will result in a higher payout ratio for any given growth rate [g = (1 – Payout ratio)ROE] and a higher PE ratio for all firms.
+> 
+> In other words, it is difficult to draw conclusions about PE ratios without looking at these fundamentals. A more appropriate comparison is therefore not between PE ratios across time, but between the actual PE ratio and the predicted PE ratio based on fundamentals existing at that time.
+> 
+> ...
+> 
+> **Comparing PE Ratios across Countries** Comparisons are often made between price-earnings ratios in different countries with the intention of finding undervalued and overvalued markets. Markets with lower PE ratios are viewed as undervalued and those with higher PE ratios are considered overvalued. Given the wide differences that exist between countries on fundamentals, it is misleading to draw these conclusions. For instance, you would expect to see the following, other things remaining equal:
+> - Countries with higher real interest rates should have lower PE ratios than countries with lower real interest rates.
+> - Countries with higher expected real growth should have higher PE ratios than countries with lower real growth.
+> - Countries that are viewed as riskier (and thus command higher risk premiums) should have lower PE ratios than safer countries.
+> - Countries where companies are more efficient in their investments (and earn a higher return on these investments) should trade at higher PE ratios.[^11]
 
+The growth rate for a given market can be had from the growth percentage in GNP - [Gross National Product](https://www.investopedia.com/terms/g/gnp.asp). GNP is calculated as follows,
+
+$$\huge{C + I + G + X + Z}$$ 
+
+That stands for $GNP$ = Consumption + Investment + Government + $X$ (net exports) + $Z$ (net income earned by domestic residents from overseas investments minus net income earned by foreign residents from domestic investments).
+
+**Comparing PE Ratios across Firms in a Sector** The most common approach to estimating the PE ratio for a firm is to choose a group of comparable firms, to calculate the average PE ratio for this group, and to subjectively adjust this average for differences between the firm being valued and the comparable firms. There are several problems with this approach. First, the definition of a comparable firm is essentially a subjective one. The use of other firms in the industry as the control group is often not the solution because firms within the same industry can have very different business mixes and risk and growth profiles. There is also plenty of potential for bias. One clear example of this is in takeovers, where a high PE ratio for the target firm is justified using the price-earnings ratios of a control group of other firms that have been taken over. This group is designed to give an upwardly biased estimate of the PE ratio and other multiples. Second, even when a legitimate group of comparable firms can be constructed, differences will continue to persist in fundamentals between the firm being valued and this group. It is very difficult to subjectively adjust for differences across firms. Thus, knowing that a firm has much higher growth potential than other firms in the comparable firm list would lead you to estimate a higher PE ratio for that firm, but how much higher is an open question.
+> 
+> The alternative to subjective adjustments is to control explicitly for the one or two variables that you believe account for the bulk of the differences in PE ratios across companies in the sector in a regression. The regression equation can then be used to estimate predicted PE ratios for each firm in the sector, and these predicted values can be compared to the actual PE ratios to make judgments on whether stocks are under- or overpriced.
+> 
+> ...
+> 
+> **Comparing PE Ratios across Firms in the Market** In the preceding section, comparable firms were narrowly defined to be other firms in the same business. This section considers ways in which we can expand the number of comparable firms by looking at an entire sector or even the market. There are two advantages in doing this. The first is that the estimates may become more precise as the number of comparable firms increase. The second is that it allows you to pinpoint when firms in a small subgroup are being under- or overvalued relative to the rest of the sector or the market. Since the differences across firms will increase when you loosen the definition of comparable firms, you have to adjust for these differences. The simplest way of doing this is with a multiple regression, with the PE ratio as the dependent variable, and proxies for risk, growth, and payout forming the independent variables.[^11]
+
+#### Normalizing Earnings for PE Ratios
+
+> The dependence of PE ratios on current earnings makes them particularly vulnerable to the year-to-year swings that often characterize reported earnings. In making comparisons, therefore, it may make much more sense to use normalized earnings. The process used to normalize earnings varies widely, but the most common approach is a simple averaging of earnings across time. For a cyclical firm, for instance, you would average the earnings per share across a cycle. In doing so, you should adjust for inflation. If you do decide to normalize earnings for the firm you are valuing, consistency demands that you normalize them for the comparable firms in the sample as well.[^11]
+
+#### THE PEG Ratio
+
+> The PEG ratio is defined to be the price-earnings ratio divided by the expected growth rate in earnings per share:
+
+$$\huge{\text{PEG ratio} = \text{PE ratio}/\text{Expected growth rate}}$$
+
+> For instance, a firm with a PE ratio of 20 and a growth rate of 10 percent is estimated to have a PEG ratio of 2. Consistency requires that the growth rate used in this estimate be the growth rate in earnings per share rather than operating income, because PEG ratio is an equity multiple.
+> 
+> Given the many definitions of the PE ratio, which one should you use to estimate the PEG ratio? The answer depends on the base on which the expected growth rate is computed. If the expected growth rate in earnings per share is based on earnings in the most recent year (current earnings), the PE ratio that should be used is the current PE ratio. If it is based on trailing earnings, the PE ratio used should be the trailing PE ratio. The forward PE ratio should never be used in this computation, since it may result in a double counting of growth.[^11]
+
+#### Variants of the PE Ratio
+
+> While the PE ratio and the PEG ratio may be the most widely used earnings multiples, there are other equity earnings multiples that are also used by analysts. The first is the relative PE ratio, the second is a multiple of price to earnings in a future year (say 5 or 10 years from now), and the third is a multiple of price to earnings prior to R&D expenses (used primarily for technology firms).
+> 
+> Relative price earnings ratios measure a firm’s PE ratio relative to the market average. It is obtained by dividing a firm’s current PE ratio by the average for the market:
+
+$$\huge{\text{Relative PE} = \text{Current PE ratio}_{firm}/\text{Current PE ratio|_{market}}$$
+
+Not surprisingly, the distribution of relative PE ratios mimics the distribution of the actual PE ratios, with one difference—the average relative PE ratio is 1.[^11]
+
+#### Relative PE Ratios and Market Growth
+
+> As the expected growth rate on the market increases, the divergence in PE ratios increases, resulting in a bigger range for relative PE ratios. This can be illustrated very simply, if you consider the relative PE for a company that grows at half the rate of the market. When the market growth rate is 4 percent, this firm will trade at a PE that is roughly 80 percent of the market PE. When the market growth rate increases to 10 percent, the firm will trade at a PE that is 60 percent of the market PE.
+> 
+> This has consequences for analysts who use relative PE ratios. Stocks of firms whose earnings grow at a rate much lower than the market growth rate will often look cheap on a relative PE basis when the market growth rate is high and expensive when the market growth rate is low.[^11]
+
+#### Enterprise Value to EBITDA Multiple
+
+> Unlike the earnings multiples discussed so far in this chapter, the enterprise value to EBITDA multiple is a firm value multiple. In the past two decades, this multiple has acquired a number of adherents among analysts for several reasons. First, there are far fewer firms with negative EBITDA than there are firms with negative earnings per share, and thus fewer firms are lost from the analysis. Second, differences in depreciation methods across different companies—some might use straight-line while others use accelerated depreciation—can cause differences in operating income or net income but will not affect EBITDA. Third, this multiple can be compared far more easily than other earnings multiples across firms with different financial leverage (the numerator is firm value and the denominator is a predebt earnings). For all of these reasons, this multiple is particularly useful for firms in sectors that require large investments in infrastructure with long gestation periods. Telecom companies or companies involved in airport or toll road construction would be good examples.
+> 
+> **Definition** The enterprise value to EBITDA multiple relates the total market value of the firm, net
+of cash, to the earnings before interest, taxes, depreciation, and amortization of the firm:
+
+$$\huge{\text{EV/EBITDA} = (\text{Market value of equity} − \text{Market value of debt} − Cash)/EBITDA}$$
+
+> Why is cash netted out of firm value for this calculation? Since the interest income from the cash is not counted as part of the EBITDA, not netting out the cash will result in an overstatement of the EV-to-EBITDA multiple.
+> 
+> The enterprise value to EBITDA multiple can be difficult to estimate for firms with cross holdings. To see why, note that cross holdings can be categorized as either majority active, minority active, or minority passive holdings. When a holding is categorized as a minority holding, the operating income of a firm does not reflect the income from the holding. The numerator, on the other hand, includes the market value of equity, which should incorporate the value of the minority holdings. Consequently, the value to EBITDA multiple will be too high for these firms, leading a casual observer to conclude that they were overvalued. When a holding is categorized as a majority holding, a different problem arises. The EBITDA includes 100 percent of the EBITDA of the holding, but the numerator reflects only the portion of the holding that belongs to the firm. Thus the value to EBITDA multiple will be too low, leading it to be categorized as an undervalued stock.
+> 
+> The correction for cross holdings is tedious and difficult to do when the holdings are in private firms. With minority holdings, you can either subtract the estimated value of the holdings from the numerator or add the portion of the EBITDA of the subsidiary to the denominator. With consolidated holdings, you can subtract the proportional share of the value of the holding from the numerator and the entire EBITDA of the holding from the denominator.[^11]
 
 ## Contingency Claim Model
 
@@ -412,4 +490,5 @@ In summary, the Contingency Claim Model is appropriate for evaluating businesses
 [^7]: Page 537. Chapter 19. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^8]: Chapter 17. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^9]: Chapter 10. Mechanics of Options Markets. _Options, Futures, and Other Derivatives, Global Edition, 9th Edition_ by John C. Hull
-[^15]: Chapter 15. Black-Scholes-Merton Model. _Options, Futures, and Other Derivatives, Global Edition, 9th Edition_ by John C. Hull.
+[^10]: Chapter 15. Black-Scholes-Merton Model. _Options, Futures, and Other Derivatives, Global Edition, 9th Edition_ by John C. Hull.
+[^11]: Chapter 18. Earnings Multiples. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
