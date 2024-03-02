@@ -387,7 +387,7 @@ $$\huge{\text{PEG ratio} = \text{PE ratio}/\text{Expected growth rate}}$$
 > 
 > Relative price earnings ratios measure a firm’s PE ratio relative to the market average. It is obtained by dividing a firm’s current PE ratio by the average for the market:
 
-$\huge{ \text{Relative PE} = \text{Current PE ratio}_{firm} / \text{Current PE ratio}_{market} }$
+$\huge{ \text{Relative PE} = \text{Current PE ratio}_{firm} \div \text{Current PE ratio}_{market} }$
 
 > Not surprisingly, the distribution of relative PE ratios mimics the distribution of the actual PE ratios, with one difference—the average relative PE ratio is 1.[^11]
 
@@ -502,7 +502,29 @@ Options are traded for several underlying assets, which includes,
 
 ### Properties of Stock Options
 
+> There are six factors aﬀecting the price of a stock option:
+> 1. The current stock price, $S_0$
+> 2. The strike price, $K$
+> 3. The time to expiration, $T$
+> 4. The volatility of the stock price, $σ$
+> 5. The risk-free interest rate, $r$
+> 6. The dividends that are expected to be paid.
 > 
+> **Table 11.1** Summary of the eﬀect on the price of a stock option of increasing one variable while keeping all others ﬁxed.
+>
+> | Variable | European call | European put | American call | American put |
+> |:--- |:---:|:---:|:---:|:---:|
+> | Current stock price | + | - | + | - |
+> | Strike price | - | + | - | + |
+> | Time to expiration | ? | ? | + | + |
+> | Volatility | + | + | + | + |
+> | Risk-free rate | + | - | + | - |
+> | Amount of future dividends | - | + | - | + |
+> 
+> ---
+> \+ indicates that an increase in the variable causes the option price to increase or stay the same; \
+> \- indicates that an increase in the variable causes the option price to decrease or stay the same; \
+> ? indicates that the relationship is uncertain
 
 ### The Black–Scholes–Merton Model
 
