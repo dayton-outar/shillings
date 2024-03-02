@@ -462,7 +462,47 @@ Options are traded for several underlying assets, which includes,
 
   When an exchange trades a particular futures contract, it often also trades American options on that contract. The life of a futures option normally ends a short period of time before the expiration of trading in the underlying futures contract. When a call option is exercised, the holder’s gain equals the excess of the futures price over the strike price. When a put option is exercised, the holder’s gain equals the excess of the strike price over the futures price.
 
+> **Dividends and Stock Splits**
+> 
+> The early over-the-counter options were dividend protected. If a company declared a cash dividend, the strike price for options on the company’s stock was reduced on the ex-dividend day by the amount of the dividend. Exchange-traded options are not usually adjusted for cash dividends. In other words, when a cash dividend occurs, there are no adjustments to the terms of the option contract. An exception is sometimes made for large cash dividends.
+> 
+> Exchange-traded options are adjusted for stock splits. A stock split occurs when the existing shares are ‘‘split’’ into more shares. For example, in a 3-for-1 stock split, three new shares are issued to replace each existing share. Because a stock split does not change the assets or the earning ability of a company, we should not expect it to have any eﬀect on the wealth of the company’s shareholders. All else being equal, the 3-for-1 stock split should cause the stock price to go down to one-third of its previous value. In general, an n-for-m stock split should cause the stock price to go down to m=n of its previous value. The terms of option contracts are adjusted to reﬂect expected changes in a stock price arising from a stock split. After an n-for-m stock split, the strike price is reduced to m=n of its previous value, and the number of shares covered by one contract is increased to n=m of its previous value. If the stock price declines in the way expected, the positions of both the writer and the purchaser of a contract remain unchanged.
+> 
+> ***Example 10.1***
+> 
+> Consider a call option to buy 100 shares of a company for $30 per share. Suppose the company makes a 2-for-1 stock split. The terms of the option contract are then changed so that it gives the holder the right to purchase 200 shares for $15 per share.
+> 
+> Stock options are adjusted for stock dividends. A stock dividend involves a company issuing more shares to its existing shareholders. For example, a 20% stock dividend means that investors receive one new share for each ﬁve already owned. A stock dividend, like a stock split, has no eﬀect on either the assets or the earning power of a company. The stock price can be expected to go down as a result of a stock dividend. The 20% stock dividend referred to is essentially the same as a 6-for-5 stock split. All else being equal, it should cause the stock price to decline to 5/6 of its previous value. The terms of an option are adjusted to reﬂect the expected price decline arising from a stock dividend in the same way as they are for that arising from a stock split.
+> 
+> ***Example 10.2***
+> 
+> Consider a put option to sell 100 shares of a company for $15 per share. Suppose the company declares a 25% stock dividend. This is equivalent to a 5-for-4 stock split. The terms of the option contract are changed so that it gives the holder the right to sell 125 shares for $12.
+> 
+> Adjustments are also made for rights issues. The basic procedure is to calculate the theoretical price of the rights and then to reduce the strike price by this amount.
+> 
+> **Position Limits and Exercise Limits**
+> 
+> The Chicago Board Options Exchange often speciﬁes a _position limit_ for option contracts. This deﬁnes the maximum number of option contracts that an investor can hold on one side of the market. For this purpose, long calls and short puts are considered to be on the same side of the market. Also considered to be on the same side are short calls and long puts. The _exercise limit_ usually equals the position limit. It deﬁnes the maximum number of contracts that can be exercised by any individual (or group of individuals acting together) in any period of ﬁve consecutive business days. Options on the largest and most frequently traded stocks have positions limits of 250,000 contracts. Smaller capitalization stocks have position limits of 200,000, 75,000, 50,000, or 25,000 contracts.
+>
+> Position limits and exercise limits are designed to prevent the market from being unduly inﬂuenced by the activities of an individual investor or group of investors. However, whether the limits are really necessary is a controversial issue.
+> 
+> ...
+> 
+> _Warrants_ are options issued by a ﬁnancial institution or nonﬁnancial corporation. For example, a ﬁnancial institution might issue put warrants on one million ounces of gold and then proceed to create a market for the warrants. To exercise the warrant, the holder would contact the ﬁnancial institution. A common use of warrants by a nonﬁnancial corporation is at the time of a bond issue. The corporation issues call warrants on its own stock and then attaches them to the bond issue to make it more attractive to investors.
+>
+> _Employee stock options_ are call options issued to employees by their company to motivate them to act in the best interests of the company’s shareholders. They are usually at the money at the time of issue. They are now a cost on the income statement of the company in most countries.
+> 
+> _Convertible bonds_, often referred to as _convertibles_, are bonds issued by a company that can be converted into equity at certain times using a predetermined exchange ratio. They are therefore bonds with an embedded call option on the company’s stock.
+>
+> One feature of warrants, employee stock options, and convertibles is that a predetermined number of options are issued. By contrast, the number of options on a particular stock that trade on the CBOE or another exchange is not predetermined. As people take positions in a particular option series, the number of options outstanding increases; as people close out positions, it declines. Warrants issued by a company on its own stock, employee stock options, and convertibles are diﬀerent from exchange-traded options in another important way. When these instruments are exercised, the company issues more shares of its own stock and sells them to the option holder for the strike price. The exercise of the instruments therefore leads to an increase in the number of shares of the company’s stock that are outstanding. By contrast, when an exchange-traded call option is exercised, the party with the short position buys in the market shares that have already been issued and sells them to the party with the long position for the strike price. The company whose stock underlies the option is not involved in any way.
+> 
+> ...
+> 
+> ... The over-the-counter market for options has become increasingly important since the early 1980s and is now larger than the exchange-traded market. ... the main participants in over-the-counter markets are ﬁnancial institutions, corporate treasurers, and fund managers.[^9]
 
+### Properties of Stock Options
+
+> 
 
 ### The Black–Scholes–Merton Model
 
