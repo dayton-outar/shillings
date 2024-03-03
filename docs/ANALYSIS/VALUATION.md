@@ -542,7 +542,9 @@ The Consumer Price Index (CPI) is used to calculate the inflation rate by compar
 
 4. **Calculate Inflation Rate**: The inflation rate is calculated by comparing the current CPI to a base period or year. The formula for calculating the inflation rate (annual inflation rate in this case) is as follows:
 
-   $$\huge{\text{Inflation Rate} = \left( \frac{\text{Current CPI} - \text{Base CPI}}{\text{Base CPI}} \right) \times 100\%}$$
+   $$\huge{
+      \text{Inflation Rate} = \left( \frac{\text{Current CPI} - \text{Base CPI}}{\text{Base CPI}} \right) \times 100\%
+   }$$
 
    - Current CPI: CPI value for the current period.
    - Base CPI: CPI value for the base period (often chosen as 100 or 1 for easier calculation).
@@ -557,7 +559,7 @@ By using the CPI to track changes in the cost of living over time, economists ca
 To calculate the inflation rate using the Consumer Price Index (CPI) for August 2021 compared to August 2020 in United States, use the following formula:
 
 $$\huge{
-\text{Inflation Rate} = \left( \frac{\text{CPI}_{\text{current}} - \text{CPI}_{\text{base}}}{\text{CPI}_{\text{base}}} \right) \times 100\%
+   \text{Inflation Rate} = \left( \frac{\text{CPI}_{\text{current}} - \text{CPI}_{\text{base}}}{\text{CPI}_{\text{base}}} \right) \times 100\%
 }$$
 
 Where:
