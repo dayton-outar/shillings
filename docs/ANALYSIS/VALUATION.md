@@ -387,7 +387,7 @@ $$\huge{\text{PEG ratio} = \text{PE ratio}/\text{Expected growth rate}}$$
 > 
 > Relative price earnings ratios measure a firm’s PE ratio relative to the market average. It is obtained by dividing a firm’s current PE ratio by the average for the market:
 
-$\huge{ \text{Relative PE} = {PE}_{firm}/{PE}_{market} }$
+$\huge{ \text{Relative PE} = PE_{firm}/PE_{market} }$
 
 where $PE$ here is Current PE ratio
 
