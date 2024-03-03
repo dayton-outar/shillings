@@ -375,7 +375,7 @@ That stands for $GNP$ = Consumption + Investment + Government + $X$ (net exports
 
 > The PEG ratio is defined to be the price-earnings ratio divided by the expected growth rate in earnings per share:
 
-$$\huge{\text{PEG ratio} = \text{PE ratio}/\text{Expected growth rate}}$$
+$\huge{\text{PEG ratio} = \text{PE ratio}/\text{Expected growth rate}}$
 
 > For instance, a firm with a PE ratio of 20 and a growth rate of 10 percent is estimated to have a PEG ratio of 2. Consistency requires that the growth rate used in this estimate be the growth rate in earnings per share rather than operating income, because PEG ratio is an equity multiple.
 > 
@@ -387,9 +387,7 @@ $$\huge{\text{PEG ratio} = \text{PE ratio}/\text{Expected growth rate}}$$
 > 
 > Relative price earnings ratios measure a firm’s PE ratio relative to the market average. It is obtained by dividing a firm’s current PE ratio by the average for the market:
 
-$\huge{ \text{Relative PE} = PE_{firm}/PE_{market} }$
-
-where $PE$ here is Current PE ratio
+$\huge{ \text{Relative PE} = {\text{Current PE ratio}}_{\text{firm}}/{\text{Current PE ratio}}_{\text{market}} }$
 
 > Not surprisingly, the distribution of relative PE ratios mimics the distribution of the actual PE ratios, with one difference—the average relative PE ratio is 1.[^11]
 
@@ -406,7 +404,7 @@ where $PE$ here is Current PE ratio
 > **Definition** The enterprise value to EBITDA multiple relates the total market value of the firm, net
 of cash, to the earnings before interest, taxes, depreciation, and amortization of the firm:
 
-$$\huge{\text{EV/EBITDA} = (\text{Market value of equity} − \text{Market value of debt} − Cash)/EBITDA}$$
+$\huge{\text{EV/EBITDA} = (\text{Market value of equity} − \text{Market value of debt} − Cash)/EBITDA}$
 
 > Why is cash netted out of firm value for this calculation? Since the interest income from the cash is not counted as part of the EBITDA, not netting out the cash will result in an overstatement of the EV-to-EBITDA multiple.
 > 
@@ -544,7 +542,7 @@ The Consumer Price Index (CPI) is used to calculate the inflation rate by compar
 
 4. **Calculate Inflation Rate**: The inflation rate is calculated by comparing the current CPI to a base period or year. The formula for calculating the inflation rate (annual inflation rate in this case) is as follows:
 
-   \[ \text{Inflation Rate} = \left( \frac{\text{Current CPI} - \text{Base CPI}}{\text{Base CPI}} \right) \times 100\% \]
+   $$\huge{\text{Inflation Rate} = \left( \frac{\text{Current CPI} - \text{Base CPI}}{\text{Base CPI}} \right) \times 100\%}$$
 
    - Current CPI: CPI value for the current period.
    - Base CPI: CPI value for the base period (often chosen as 100 or 1 for easier calculation).
