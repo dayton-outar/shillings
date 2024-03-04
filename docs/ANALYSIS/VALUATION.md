@@ -387,10 +387,7 @@ $\huge{\text{PEG ratio} = \text{PE ratio}/\text{Expected growth rate}}$
 > 
 > Relative price earnings ratios measure a firm’s PE ratio relative to the market average. It is obtained by dividing a firm’s current PE ratio by the average for the market:
 >
-> $\huge{ \text{Relative PE} = { \text{Current PE ratio}_{\text{firm}}/\text{Current PE ratio}_1  } }$
-> 
-> {\text{firm}}
-> {\text{market}}
+> $\huge{ \text{Relative PE} = { \text{Current PE ratio}_{\text{firm}}/\text{Current PE ratio}_{\text{market}}  } }$
 > 
 > Not surprisingly, the distribution of relative PE ratios mimics the distribution of the actual PE ratios, with one difference—the average relative PE ratio is 1.[^11]
 
@@ -605,7 +602,7 @@ The Consumer Price Index (CPI) is used to calculate the inflation rate by compar
 4. **Calculate Inflation Rate**: The inflation rate is calculated by comparing the current CPI to a base period or year. The formula for calculating the inflation rate (annual inflation rate in this case) is as follows:
 
    $$\huge{
-      \text{Inflation Rate} = \left( \frac{\text{Current CPI} - \text{Base CPI}}{\text{Base CPI}} \right) \times 100\%
+      \text{Inflation Rate} = \left( \frac{\text{Current CPI} - \text{Base CPI}}{\text{Base CPI}} \right) \times 100
    }$$
 
    - Current CPI: CPI value for the current period.
@@ -621,7 +618,7 @@ By using the CPI to track changes in the cost of living over time, economists ca
 To calculate the inflation rate using the Consumer Price Index (CPI) for August 2021 compared to August 2020 in United States, use the following formula:
 
 $$\huge{
-   \text{Inflation Rate} = \left( \frac{\text{CPI}_{\text{current}} - \text{CPI}_{\text{base}}}{\text{CPI}_{\text{base}}} \right) \times 100\%
+   \text{Inflation Rate} = \left( \frac{\text{CPI}_{\text{current}} - \text{CPI}_{\text{base}}}{\text{CPI}_{\text{base}}} \right) \times 100
 }$$
 
 Where:
@@ -635,19 +632,19 @@ Let's assume:
 Using these values in the formula:
 
 $$\huge{
-\text{Inflation Rate} = \left( \frac{271.678 - 257.797}{257.797} \right) \times 100\%
+\text{Inflation Rate} = \left( \frac{271.678 - 257.797}{257.797} \right) \times 100
 }$$
 
 $$\huge{
-\text{Inflation Rate} = \left( \frac{13.881}{257.797} \right) \times 100\%
+\text{Inflation Rate} = \left( \frac{13.881}{257.797} \right) \times 100
 }$$
 
 $$\huge{
-\text{Inflation Rate} \approx 0.0538 \times 100\%
+\text{Inflation Rate} \approx 0.0538 \times 100
 }$$
 
 $$\huge{
-\text{Inflation Rate} \approx 5.38\%
+\text{Inflation Rate} \approx 5.38 percent
 }$$
 
 So, the inflation rate in August 2021 compared to August 2020 in the United States was approximately 5.38%.
