@@ -414,6 +414,8 @@ of cash, to the earnings before interest, taxes, depreciation, and amortization 
 
 ### Book Value Multiples
 
+#### Price-to-Book
+
 > The market value of the equity in a firm reflects the market’s expectation of the firm’s earning power and cash flows. The book value of equity is the difference between the book value of assets and the book value of liabilities, a number that is largely determined by accounting conventions. In the United States, the book value of assets is the original price paid for the assets reduced by any allowable depreciation on the assets. Consequently, the book value of an asset generally decreases as it ages. The book value of liabilities similarly reflects the at-issue values of the liabilities. Since the book value of an asset reflects its original cost, it might deviate significantly from market value if the earning power of the asset has increased or declined significantly since its acquisition.
 > 
 > There are several reasons why investors find the price–book value ratio useful in investment analysis. The first is that the book value provides a relatively stable, intuitive measure of value that can be compared to the market price. For investors who instinctively mistrust discounted cash flow estimates of value, the book value is a much simpler benchmark for comparison. The second is that, given reasonably consistent accounting standards across firms, price–book value ratios can be compared across similar firms for signs of under- or overvaluation. Finally, even firms with negative earnings, which cannot be valued using price-earnings ratios, can be evaluated using price–book value ratios; there are far fewer firms with negative book value for equity than there are firms with negative earnings.
@@ -430,7 +432,34 @@ of cash, to the earnings before interest, taxes, depreciation, and amortization 
 > 
 > There are two other measurement issues that you have to confront in computing this multiple. The first relates to the book value of equity, which as an accounting measure gets updated infrequently—once every quarter for U.S. companies and once every year for European companies. While most analysts use the most current book value of equity, there are some who use the average over the previous year or the book value of equity at the end of the latest financial year. Consistency demands that you use the same measure of book equity for all firms in your sample. The second and more difficult problem concerns the value of options outstanding. Technically, you would need to compute the estimated market value of management options and conversion options (in bonds and preferred stock) and add them to the market value of equity before computing the price to book value ratio.1 If you have a small sample of comparable firms and options represent a large and variable porion of equity value, you should do this. With larger samples and less significant option issues, you can stay with the conventional measure of market value of equity.
 > 
-> Accounting standards can affect book values of equity and price-to-book ratios and skew comparisons made across firms. For instance, assume that you are comparing the price-to-book ratios of technology firms in two markets, and that one of them allows research expenses to be capitalized and the other does not. You should expect to see lower price-to-book value ratios in the former, since the book value of equity will be augmented by the value of the research asset.[^12]
+> Accounting standards can affect book values of equity and price-to-book ratios and skew comparisons made across firms. For instance, assume that you are comparing the price-to-book ratios of technology firms in two markets, and that one of them allows research expenses to be capitalized and the other does not. You should expect to see lower price-to-book value ratios in the former, since the book value of equity will be augmented by the value of the research asset.
+> 
+> ...
+> 
+> **Analysis**
+> 
+> The price–book value ratio can be related to the same fundamentals that determine value in discounted cash flow models. Since this is an equity multiple, we will use an equity discounted cash flow model—the dividend discount model—to explore the determinants. The value of equity in a stable growth dividend discount model can be written as:
+> 
+> $\huge{ P_0 = {DPS_1 \over { k_e - g_n} } }$
+> 
+> where,
+> $P_0$ = Value of equity per share today
+> $DPS_1$ = Expected dividends per share next year
+> $k_e$ = Cost of equity
+> $g_n$ = Growth rate in dividends (forever)
+> 
+> Substituting for $DPS_1 = EPS_1(\text{Payout ratio})$, the value of the equity can be written as:
+> 
+> $\huge{ P_0 = { { EPS_1 \times \text{ Payout ratio } } \over { k_e - g_n } } }$
+> 
+> Defining the return on equity $(ROE) = EPS_1/\text{Book value of equity}_0$, the value of equity can be written as:
+> 
+> 
+> 
+> 
+> 
+> 
+> [^12]
 
 ## Contingency Claim Model
 
