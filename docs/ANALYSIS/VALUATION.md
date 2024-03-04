@@ -534,6 +534,24 @@ Options are traded for several underlying assets, which includes,
 
 ## Inflation
 
+> the quantity theory of money implies that inflation occurs when the growth rate of money supply exceeds the growth rate in real GDP. This is the implication of the last equation that we derived: the inflation equation.
+> 
+> ...
+> 
+> It is possible that inflation increases all prices by the same percentage. For example, increasing all prices of the goods and services that a consumer buys by 5 percent and simultaneously increasing that worker’s nominal wage by 5 percent does not change any of the relative prices or the worker’s buying power. If inflation raised all prices, including all nominal wages, by the same percentage, then inflation would not matter.
+> 
+> However, all prices and all wages do not always move in sync, at least not in the short run. An increase in the inflation rate generates windfall losses for some and windfall gains for others. Imagine that you have negotiated a fixed 3-year nominal wage contract with your employer. If the inflation rate unexpectedly rises during this 3-year contract, you will be harmed by the unexpected inflation. In this example, though you and the other employees of the firm lose out, the shareholders of the firm benefit from the unexpected inflation, because the extra inflation lowers the real (inflation-adjusted) value of the wages that the firm pays its workers.
+>
+> Next consider a retiree receiving a fixed pension that is not indexed to inflation. In other words, the pension payments do not automatically rise with the overall level of prices. A rise in inflation makes the retiree worse off, because the buying power of the pension declines. Here, too, there is a winner on the other side of the relationship: the shareholders of the firm that is paying the pension. The real (inflation-adjusted) costs of the pension payments have gone down.
+> 
+> As yet another example, imagine that you have a mortgage at a fixed rate of interest. In other words, you borrowed money from a bank to buy your home and you are repaying that loan back at a fixed (predetermined) interest rate. If the inflation rate rises, your real interest rate falls, lowering the real cost of your mortgage. In this case, the consumer is the winner and the bank’s shareholders are the losers.
+> 
+> When contracts for wages, pensions, or mortgage payments are not indexed to inflation, an increase in inflation hurts some economic agents and helps others. In these three examples, inflation generates specific winners and losers but no clear overall impact on society. However, some consequences of inflation are more generally harmful—almost everyone is a loser. We now turn to those cases. We then discuss some cases where inflation is generally helpful.
+> 
+> ...
+> 
+> **Sometimes inflation can stimulate economic activity.** Assume that a worker’s nominal wage is above the competitive equilibrium level, and assume that the nominal wage is downwardly rigid (a case we highlighted in the labor supply and labor demand framework discussed in Chapter 23). The real wage is the nominal wage divided by an overall price index, like the consumer price index (CPI). A rise in the overall price index causes a fall in the real wage when the nominal wage is fixed. A fall in the real wage implies that labor has become less expensive to firms relative to the price of the firms’ outputs, which rise with inflation. A fall in the real wage therefore induces firms to hire more workers.[^13]
+
 The Consumer Price Index (CPI) is used to calculate the inflation rate by comparing changes in the CPI over time. Here's a step-by-step process of how the CPI is used to arrive at an inflation rate:
 
 1. **Collect CPI Data**: Statistical agencies, such as the Bureau of Labor Statistics (BLS) in the United States or the Statistical Institute of Jamaica (STATIN) in Jamaica, collect data on the prices of a basket of goods and services regularly purchased by urban consumers. This basket represents the typical spending patterns of households.
@@ -689,3 +707,4 @@ In summary, while both the PPI and CPI measure changes in prices over time, they
 [^10]: Chapter 15. Black-Scholes-Merton Model. _Options, Futures, and Other Derivatives, Global Edition, 9th Edition_ by John C. Hull.
 [^11]: Chapter 18. Earnings Multiples. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^12]: Chapter 19. Book Value Multiples. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
+[^13]: Chapter 25. The Monetary System. _Economics, Global Edition, Second Edition_ by Daron Acemoglu, David Laibson, John A. List
