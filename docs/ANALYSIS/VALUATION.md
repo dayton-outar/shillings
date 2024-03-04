@@ -386,11 +386,9 @@ $\huge{\text{PEG ratio} = \text{PE ratio}/\text{Expected growth rate}}$
 > While the PE ratio and the PEG ratio may be the most widely used earnings multiples, there are other equity earnings multiples that are also used by analysts. The first is the relative PE ratio, the second is a multiple of price to earnings in a future year (say 5 or 10 years from now), and the third is a multiple of price to earnings prior to R&D expenses (used primarily for technology firms).
 > 
 > Relative price earnings ratios measure a firm’s PE ratio relative to the market average. It is obtained by dividing a firm’s current PE ratio by the average for the market:
-
-$\text{Relative PE} = \text{PE}_{firm} \div \text{PE}_{market}$
-
-where $PE$ is Current PE ratio
-
+>
+> $\text{Relative PE} = \text{Current PE ratio}_{firm} \over \text{Current PE ratio}_{market}$
+> 
 > Not surprisingly, the distribution of relative PE ratios mimics the distribution of the actual PE ratios, with one difference—the average relative PE ratio is 1.[^11]
 
 #### Relative PE Ratios and Market Growth
