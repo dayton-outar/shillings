@@ -387,7 +387,7 @@ $\huge{\text{PEG ratio} = \text{PE ratio}/\text{Expected growth rate}}$
 > 
 > Relative price earnings ratios measure a firm’s PE ratio relative to the market average. It is obtained by dividing a firm’s current PE ratio by the average for the market:
 >
-> $\text{Relative PE} = \text{Current PE ratio}_{firm} \over \text{Current PE ratio}_{market}$
+> $\text{Relative PE} = { {\text{Current PE ratio}}_{\text{firm}} \over {\text{Current PE ratio}}_{\text{market}} }$
 > 
 > Not surprisingly, the distribution of relative PE ratios mimics the distribution of the actual PE ratios, with one difference—the average relative PE ratio is 1.[^11]
 
@@ -403,9 +403,9 @@ $\huge{\text{PEG ratio} = \text{PE ratio}/\text{Expected growth rate}}$
 > 
 > **Definition** The enterprise value to EBITDA multiple relates the total market value of the firm, net
 of cash, to the earnings before interest, taxes, depreciation, and amortization of the firm:
-
-$\huge{\text{EV/EBITDA} = (\text{Market value of equity} − \text{Market value of debt} − Cash)/EBITDA}$
-
+>
+> $\huge{\text{EV/EBITDA} = (\text{Market value of equity} − \text{Market value of debt} − Cash)/EBITDA}$
+>
 > Why is cash netted out of firm value for this calculation? Since the interest income from the cash is not counted as part of the EBITDA, not netting out the cash will result in an overstatement of the EV-to-EBITDA multiple.
 > 
 > The enterprise value to EBITDA multiple can be difficult to estimate for firms with cross holdings. To see why, note that cross holdings can be categorized as either majority active, minority active, or minority passive holdings. When a holding is categorized as a minority holding, the operating income of a firm does not reflect the income from the holding. The numerator, on the other hand, includes the market value of equity, which should incorporate the value of the minority holdings. Consequently, the value to EBITDA multiple will be too high for these firms, leading a casual observer to conclude that they were overvalued. When a holding is categorized as a majority holding, a different problem arises. The EBITDA includes 100 percent of the EBITDA of the holding, but the numerator reflects only the portion of the holding that belongs to the firm. Thus the value to EBITDA multiple will be too low, leading it to be categorized as an undervalued stock.
@@ -424,7 +424,7 @@ $\huge{\text{EV/EBITDA} = (\text{Market value of equity} − \text{Market value 
 > 
 > The price-to-book ratio is computed by dividing the market price per share by the current book value of equity per share.
 > 
-> $\huge{ \text{Price-to-book ration} = PBV = { \text{Price per share} \over \text{Book value of equity per share} } }$
+> $\huge{ \text{Price-to-book ratio} = PBV = { \text{Price per share} \over \text{Book value of equity per share} } }$
 > 
 > The safest way to measure this ratio when there are multiple classes of equity is to use the composite market value of all classes of common stock in the numerator and the composite book value of equity in the denominator—you would still ignore preferred stock for this computation.
 > 
