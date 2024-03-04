@@ -534,7 +534,7 @@ Options are traded for several underlying assets, which includes,
 
 ## Inflation
 
-> the quantity theory of money implies that inflation occurs when the growth rate of money supply exceeds the growth rate in real GDP. This is the implication of the last equation that we derived: the inflation equation.
+> ... the _quantity theory of money_ implies that inflation occurs when the growth rate of _money supply_ exceeds the growth rate in _real GDP_. This is the implication of the last equation that we derived: the inflation equation.
 > 
 > ...
 > 
