@@ -462,13 +462,19 @@ of cash, to the earnings before interest, taxes, depreciation, and amortization 
 > 
 > The PBV ratio is an increasing function of the return on equity, the payout ratio, and the growth rate, and a decreasing function of the riskiness of the firm.
 > 
-> $\huge{ g = (1 - \text{Payout ratio}) x ROE}$
+> $\huge{ g = (1 - \text{Payout ratio}) \times ROE}$
 > 
 > This formulation can be simplified even further by relating growth to the return on equity:
 > 
 > $\huge{ { P_0 / BV_0 } = { { ROE - g_n} \over { k_e - g_n } } }$
 > 
-> The price–book value ratio of a stable firm is determined by the differential between the return on equity and its cost of equity. If the return on equity exceeds the cost of equity, the price will exceed the book value of equity; if the return on equity is lower than the cost of equity, the price will be lower than the book value of equity.[^12]
+> The price–book value ratio of a stable firm is determined by the differential between the return on equity and its cost of equity. If the return on equity exceeds the cost of equity, the price will exceed the book value of equity; if the return on equity is lower than the cost of equity, the price will be lower than the book value of equity.
+> 
+> ...
+> 
+> **PBV Ratio for a High-Growth Firm**
+> 
+> [^12]
 
 ## Contingency Claim Model
 
