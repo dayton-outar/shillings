@@ -485,7 +485,7 @@ of cash, to the earnings before interest, taxes, depreciation, and amortization 
 > When the growth rate is assumed to be constant after the initial high-growth phase, the dividend discount model can be written as follows:
 > 
 $$\huge{ 
-P_0 = { { EPS_0 \times PR \times (1 + g) \times \left[ 1 - { { (1 + g)^n \over { 1 + k_{e,gh}^n } } } \right] } \over { k_{e,gh} - g } } + { { EPS_0 \times PR_n \times (1 + g)^n \times (1 + g_n) } \over { (k_{e,st} - g_n)(1 + k_{e,hg})^n } }
+P_0 = { { EPS_0 \times PR \times (1 + g) \times \left[ 1 - { { (1 + g)^n \over { 1 + k_{e,h}^n } } } \right] } \over { k_{e,h} - g } } + { { EPS_0 \times PR_n \times (1 + g)^n \times (1 + g_n) } \over { (k_{e,s} - g_n)(1 + k_{e,h})^n } }
 }$$
 > 
 > where, \
@@ -493,12 +493,12 @@ P_0 = { { EPS_0 \times PR \times (1 + g) \times \left[ 1 - { { (1 + g)^n \over {
 > $PR$ = Payout ratio in the first $n$ years \
 > $g_n$ = Growth rate after $n$ years forever (stable growth rate) \
 > $PR_n$ = Payout ratio after $n$ years for the stable firm \
-> $k_e$ = Cost of equity ($hg$: high-growth period; $st$: stable-growth period)
+> $k_e$ = Cost of equity ($h$: high-growth period; $s$: stable-growth period)
 > 
 > Rewriting $EPS_0$ in terms of the return on equity, $EPS_0$ = $BV_0 \times ROE$, and bringing $BV_0$ to the left-hand side of the equation, we get:
 > 
 $$\huge{
-   { P_0 \over BV_0 = { { ROE \times { { PR \times (1 + g) \times \left[ 1 - { { (1 + g)^n \over { 1 + k_{e,gh}^n } } } \right] } \over { k_{e,gh} - g } } } + { ROE \times { { PR_n \times (1 + g)^n \times (1 + g_n) } \over { (k_{e,st} - g_n)(1 + k_{e,hg})^n } } } } }
+   { P_0 \over BV_0 = { { ROE \times { { PR \times (1 + g) \times \left[ 1 - { { (1 + g)^n \over { 1 + k_{e,h}^n } } } \right] } \over { k_{e,h} - g } } } + { ROE \times { { PR_n \times (1 + g)^n \times (1 + g_n) } \over { (k_{e,s} - g_n)(1 + k_{e,h})^n } } } } }
 }$$
 > 
 > where $ROE$ is the return on equity and $k_e$ is the cost of equity.
@@ -508,9 +508,60 @@ $$\huge{
 > ... firms may not always pay out what they can afford to and recommended that the free cash flows to equity be substituted in for the dividends in those cases. You can, in fact, modify the equation to state the price-to-book ratio in terms of free cash flows to equity.
 > 
 $$\huge{
-   { P_0 \over BV_0 = { { ROE \times { { \left[ FCFE \over Earnings \right]_{hg} \times (1 + g) \times \left[ 1 - { { (1 + g)^n \over { 1 + k_{e,gh}^n } } } \right] } \over { k_{e,gh} - g } } } + { ROE \times { \left[ FCFE \over Earnings \right]_{hg} \times { PR_n \times (1 + g)^n \times (1 + g_n) } \over { (k_{e,st} - g_n)(1 + k_{e,hg})^n } } } } }
+   { P_0 \over BV_0 = { { ROE \times { { \left[ FCFE \over Earnings \right]_h \times (1 + g) \times \left[ 1 - { { (1 + g)^n \over { 1 + k_{e,h}^n } } } \right] } \over { k_{e,h} - g } } } + { ROE \times { \left[ FCFE \over Earnings \right]_n \times { PR_n \times (1 + g)^n \times (1 + g_n) } \over { (k_{e,s} - g_n)(1 + k_{e,h})^n } } } } }
 }$$
-> The only substitution that we have made is the replacement of the payout ratio by the FCFE as a percent of earnings.[^12]
+> The only substitution that we have made is the replacement of the payout ratio by the FCFE as a percent of earnings.
+> 
+> **PBV Ratios and Return on Equity**
+> 
+> The ratio of price to book value is strongly influenced by the return on equity. A lower return on equity affects the price–book value ratio directly through the formulation specified in the prior section and indirectly by lowering the expected growth or payout.
+> 
+> $\text{Expected growth rate} = \text{Retention ratio} \times \text{Return on equity}$
+> 
+> ...
+> 
+> **Determinants of Return on Equity** The difference between return on equity and the cost of equity is a measure of a firm’s capacity to earn excess returns in the business in which it operates. Corporate strategists have examined the determinants of the size and expected duration of these excess profits (and high ROE) using a variety of frameworks. One of the better known is the “five forces of competition” framework developed by Porter (1980). In his approach, competition arises not only from established producers producing the same product but also from suppliers of substitutes and from potential new entrants into the market. The illustration below summarizes the five forces of competition.
+> 
+> ![Five Forces of Competition](/.attachments/valuation-pbv.five.forces.of.competition.png)
+> 
+> _Five Forces of Competition and Return on Equity ***Source:*** Porter (1980)._
+> 
+> In Porter’s framework, a firm is able to maintain a high return on equity because there are significant barriers to entry by new firms or because the firm has significant advantages over its competition. The analysis of the return on equity of a firm can be made richer and much more informative by examining the competitive environment in which it operates. There may also be clues in this analysis to the future direction of the return on equity. Value investors have their own variant on this theme that they call the “moat.” A firm with strong and sustainable competitive advantages is considered to have a strong moat, which in turn makes it more valuable. In the framework developed in this chapter, the strength of the moat is measured by the level of the ROE and how long it can be maintained.
+> 
+> **PBV Ratios for a Market**
+> 
+> The price-to-book value ratio for an entire market is determined by the same variables that determine the price-to-book value ratio for an individual firm. Other things remaining equal, therefore, you would expect the price-to-book ratio for a market to go up as the equity return spread (ROE minus cost of equity) earned by firms in the market increases. Conversely, you would expect the price-to-book ratio for the market to decrease as the equity return spread earned by firms decreases.
+> 
+> ...
+> 
+> **Comparisons across Firms in a Sector**
+> 
+> Price–book value ratios vary across firms for a number of reasons—different expected growth, different payout ratios, different risk levels, and most importantly, different returns on equity. Comparisons of price–book value ratios across firms that do not take into account these differences are likely to be flawed.
+> 
+> The most common approach to estimating PBV ratios for a firm is to choose a group of comparable firms, to calculate the average PBV ratio for this group, and to base the PBV ratio estimate for a firm on this average. The adjustments made to reflect differences in fundamentals between the firm being valued and the comparable group are usually made subjectively. There are several problems with this approach. First, the definition of a comparable firm is essentially a subjective one. The use of other firms in the industry as the control group is often not a complete solution because firms within the same industry can have very different business mixes and risk and growth profiles. There is also plenty of potential for bias. Second, even when a legitimate group of comparable firms can be constructed, differences will continue to persist in fundamentals between the firm being valued and this group. Adjusting for differences subjectively does not provide a satisfactory solution to this problem, since these judgments are only as good as the analysts making them.
+> 
+> Given the relationship between price–book value ratios and returns on equity, it should not be surprising to see firms that have high returns on equity sell for well above book value and firms that have low returns on equity sell at or below book value. The firms that should draw attention from investors are those that provide mismatches of price–book value ratios and returns on equity—low PBV ratios and high ROE, or high PBV ratios and low ROE. There are two ways in which we can bring home these mismatches—a matrix approach and a sector regression.
+> 
+> **Matrix Approach** If the essence of misvaluation is finding firms that have price-to-book ratios that do not go with their equity return spreads, the mismatch can be brought home by plotting the price-to-book value ratios of firms against their excess returns, i.e., the difference between return and cost of equity. Illustration below presents such a plot.
+> 
+> ![Price-to-Book Ratios and Return on Equity](/.attachments/valuation-price.to.book.ratios.and.roe.png)
+> 
+> _Price-to-Book Ratios and Return on Equity_
+> 
+> If we assume that firms within a sector have similar costs of equity, we could replace the equity return spread with the raw return on equity. Though we often use current returns on equity in practice, the matrix is based on expected returns on equity in the future.
+> 
+> **Regression Approach** If the price-to-book ratio is largely a function of the return on equity, we could regress the former against the latter:
+> 
+> $PBV = a + b\text{ ROE}$
+> 
+> If the relationship is strong and linear, we could use this regression to obtain predicted price-to-book ratios for all of the firms in the sector, separating out those firms that are undervalued from those that are overvalued.
+> 
+> This regression can be enriched in two ways. The first is to allow for nonlinear relationships between price-to-book and return on equity; this can be done either by transforming the variables (natural logs, exponentials, etc.) or by running nonlinear regressions. The second is to expand the regression to include other independent variables such as risk and growth.
+> 
+> ...
+> 
+> **Comparing Firms across the Market**
+> [^12]
 
 ## Contingency Claim Model
 
