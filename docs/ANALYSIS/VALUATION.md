@@ -387,7 +387,7 @@ $\huge{\text{PEG ratio} = \text{PE ratio}/\text{Expected growth rate}}$
 > 
 > Relative price earnings ratios measure a firm’s PE ratio relative to the market average. It is obtained by dividing a firm’s current PE ratio by the average for the market:
 >
-> $\huge{ \text{Relative PE} = { { \text{Current PE ratio}_{\text{firm}} }/ { \text{Current PE ratio}_{\text{market}} }  } }$
+> $\huge{ \text{Relative PE} = { { \text{Current PE ratio}_{firm} }/ { \text{Current PE ratio}_{market} }  } }$
 > 
 > Not surprisingly, the distribution of relative PE ratios mimics the distribution of the actual PE ratios, with one difference—the average relative PE ratio is 1.[^11]
 
@@ -474,7 +474,36 @@ of cash, to the earnings before interest, taxes, depreciation, and amortization 
 > 
 > **PBV Ratio for a High-Growth Firm**
 > 
-> [^12]
+> The price–book value ratio for a high-growth firm can also be related to fundamentals. In the special case of the two-stage dividend discount model, this relationship can be made explicit fairly simply. The value of equity of a high-growth firm in the two-stage dividend discount model can be written as:
+> 
+> $\huge{ \text{Value of equity} = \text{Present value of expected dividends} + \text{Present value of terminal price} }$
+> 
+> When the growth rate is assumed to be constant after the initial high-growth phase, the dividend discount model can be written as follows:
+> 
+$$\huge{ 
+P_0 = { { EPS_0 \times \text{Payout ratio} \times (1 + g) \times \left[ 1 - { { (1 + g)^n \over { 1 + k_{e,gh}^n } } } \right] } \over { k_{e,gh} - g } } + { { EPS_0 \times \text{Payout ratio}_n \times (1 + g)^n \times (1 + g_n) } \over { (k_{e,st} - g_n)(1 + k_{e,hg})^n } }
+}$$
+> 
+> where, \
+> $g$ = Growth rate in the first $n$ years \
+> $Payout$ = Payout ratio in the first $n$ years \
+> $g_n$ = Growth rate after $n$ years forever (stable growth rate) \
+> $Payout_n$ = Payout ratio after $n$ years for the stable firm \
+> $k_e$ = Cost of equity ($hg$: high-growth period; $st$: stable-growth period)
+> 
+> Rewriting $EPS_0$ in terms of the return on equity, $EPS_0$ = $BV_0 \times ROE$, and bringing $BV_0$ to the left-hand side of the equation, we get:
+> 
+> 
+> 
+> where ROE is the return on equity and ke is the cost of equity.
+> 
+> ...
+> 
+> ... firms may not always pay out what they can afford to and recommended that the free cash flows to equity be substituted in for the dividends in those cases. You can, in fact, modify the equation to state the price-to-book ratio in terms of free cash flows to equity.
+> 
+> 
+> 
+> The only substitution that we have made is the replacement of the payout ratio by the FCFE as a percent of earnings.[^12]
 
 ## Contingency Claim Model
 
