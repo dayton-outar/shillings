@@ -528,6 +528,9 @@ $$\huge{
 > 
 > In Porter’s framework, a firm is able to maintain a high return on equity because there are significant barriers to entry by new firms or because the firm has significant advantages over its competition. The analysis of the return on equity of a firm can be made richer and much more informative by examining the competitive environment in which it operates. There may also be clues in this analysis to the future direction of the return on equity. Value investors have their own variant on this theme that they call the “moat.” A firm with strong and sustainable competitive advantages is considered to have a strong moat, which in turn makes it more valuable. In the framework developed in this chapter, the strength of the moat is measured by the level of the ROE and how long it can be maintained.
 > 
+
+#### Applications of Price-Book Value Ratios
+
 > **PBV Ratios for a Market**
 > 
 > The price-to-book value ratio for an entire market is determined by the same variables that determine the price-to-book value ratio for an individual firm. Other things remaining equal, therefore, you would expect the price-to-book ratio for a market to go up as the equity return spread (ROE minus cost of equity) earned by firms in the market increases. Conversely, you would expect the price-to-book ratio for the market to decrease as the equity return spread earned by firms decreases.
