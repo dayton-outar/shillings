@@ -606,8 +606,31 @@ $$\huge{
 > $\huge{ { \text{Enterprise value} \over \text{Invested capital} } = { { (ROC - g) } \over (\text{Cost of capital} - g) } }$
 >
 > The analysis can be extended to cover high-growth firms, with the value-to-book capital ratio determined by the return on capital, cost of capital, growth rate, and reinvestment—in the high growth and stable growth periods:
-
-at pg. 535
+> 
+> $\huge{ { \text{Enterprise value}_0 \over \text{Invested capital}_0 } = { { ROC_h \times { { (1 - RIR_h) \times (1 + g) \times \left[ 1 - { { (1 + g)^n \over { 1 + k_{c,h}^n } } } \right] } \over { k_{c,h} - g } } } + { ROC_h \times { (1 - RIR_s) \times { PR_n \times (1 + g)^n \times (1 + g_n) } \over { (k_{c,s} - g_n)(1 + k_{c,h})^n } } } } }$
+> 
+> where,\
+> $ROC$ = Return on capital ($h$: high-growth; $s$: stable period) \
+> $RIR$ = Reinvestment rate ($h$: high-growth; $s$: stable period) \
+> $k_c$ = Cost of capital ($h$: high-growth; $s$: stable period)
+> 
+> **Application**
+> 
+> The value-to-book ratios can be compared across firms just as the price-to-book value of equity ratio was in the preceding section. The key variable to control for in making this comparison is the return on capital. The value matrix developed for price-to-book ratios can be adapted for the value-to-book ratio in illustration below. Firms with high return on capital will tend to have high value-to-book value ratios, whereas firms with low return on capital will generally have lower value-to-book ratios.
+> 
+> ![Valuation Matrix: Value to Book and Excess Returns]()
+> 
+> _Valuation Matrix: Value to Book and Excess Returns_
+> 
+> This matrix also yields an interesting link to a widely used value enhancement measure—economic value added (EVA). One of the biggest sales pitches for EVA, which is computed as the product of the return spread (ROC minus cost of capital) and capital invested, is its high correlation with market value added (MVA) which is defined as the difference between market value and book value of capital. This is not surprising, since MVA is a variant on the value-to-book ratio and EVA is a variant on the return spread.
+>
+> Is the link between value-to-book and return on capital stronger or weaker than the link between price-to-book and return on equity?
+> 
+> ...
+> 
+> If the results from using value-to-book and price-to-book ratios parallel each other, why would you choose to use one multiple over the other? The case for using value-to-book ratios is stronger for firms that have high and/or shifting leverage.
+> 
+> Firms can use leverage to increase their returns on equity, but in the process they also increase the volatility in the measure: in good times they report very high returns on equity, and in bad times, very low or negative returns on equity. For such firms, the value-to-book ratio and the accompanying return on capital will yield more stable and reliable estimates of relative value. In addition, the value-to-book ratio can be computed even for firms that have negative book values of equity and is thus less likely to be biased.
 
 ### Revenue Multiples
 
