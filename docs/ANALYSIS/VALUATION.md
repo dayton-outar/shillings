@@ -498,7 +498,7 @@ P_0 = { { EPS_0 \times PR \times (1 + g) \times \left[ 1 - { { (1 + g)^n \over {
 > Rewriting $EPS_0$ in terms of the return on equity, $EPS_0$ = $BV_0 \times ROE$, and bringing $BV_0$ to the left-hand side of the equation, we get:
 > 
 $$\huge{
-   { P_0 \over BV_0 = { { ROE \times { { PR \times (1 + g) \times \left[ 1 - { { (1 + g)^n \over { 1 + k_{e,h}^n } } } \right] } \over { k_{e,h} - g } } } + { ROE \times { { PR_n \times (1 + g)^n \times (1 + g_n) } \over { (k_{e,s} - g_n)(1 + k_{e,h})^n } } } } }
+   { { P_0 \over BV_0 } = { { ROE \times { { PR \times (1 + g) \times \left[ 1 - { { (1 + g)^n \over { 1 + k_{e,h}^n } } } \right] } \over { k_{e,h} - g } } } + { ROE \times { { PR_n \times (1 + g)^n \times (1 + g_n) } \over { (k_{e,s} - g_n)(1 + k_{e,h})^n } } } } }
 }$$
 > 
 > where $ROE$ is the return on equity and $k_e$ is the cost of equity.
@@ -508,7 +508,7 @@ $$\huge{
 > ... firms may not always pay out what they can afford to and recommended that the free cash flows to equity be substituted in for the dividends in those cases. You can, in fact, modify the equation to state the price-to-book ratio in terms of free cash flows to equity.
 > 
 $$\huge{
-   { P_0 \over BV_0 = { { ROE \times { { { \left[ FCFE \over Earnings \right] } \times (1 + g) \times \left[ 1 - { { (1 + g)^n \over { 1 + k_{e,h}^n } } } \right] } \over { k_{e,h} - g } } } + { ROE \times { { \left[ FCFE \over Earnings \right] } \times { PR_n \times (1 + g)^n \times (1 + g_n) } \over { (k_{e,s} - g_n)(1 + k_{e,h})^n } } } } }
+   { { P_0 \over BV_0 } = { { ROE \times { { { \left[ FCFE \over Earnings \right] } \times (1 + g) \times \left[ 1 - { { (1 + g)^n \over { 1 + k_{e,h}^n } } } \right] } \over { k_{e,h} - g } } } + { ROE \times { { \left[ FCFE \over Earnings \right] } \times { PR_n \times (1 + g)^n \times (1 + g_n) } \over { (k_{e,s} - g_n)(1 + k_{e,h})^n } } } } }
 }$$
 > The only substitution that we have made is the replacement of the payout ratio by the FCFE as a percent of earnings.
 > 
