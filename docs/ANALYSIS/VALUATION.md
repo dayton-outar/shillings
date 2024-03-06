@@ -508,7 +508,7 @@ $$\huge{
 > ... firms may not always pay out what they can afford to and recommended that the free cash flows to equity be substituted in for the dividends in those cases. You can, in fact, modify the equation to state the price-to-book ratio in terms of free cash flows to equity.
 > 
 $$\huge{
-   { { P_0 \over BV_0 } = { { ROE \times { { { \left[ FCFE \over Earnings \right] } \times (1 + g) \times \left[ 1 - { { (1 + g)^n \over { 1 + k_{e,h}^n } } } \right] } \over { k_{e,h} - g } } } + { ROE \times { { \left[ FCFE \over Earnings \right] } \times { PR_n \times (1 + g)^n \times (1 + g_n) } \over { (k_{e,s} - g_n)(1 + k_{e,h})^n } } } } }
+   { { P_0 \over BV_0 } = { { ROE \times { { { [ FCFE \over Earnings ]_h } \times (1 + g) \times \left[ 1 - { { (1 + g)^n \over { 1 + k_{e,h}^n } } } \right] } \over { k_{e,h} - g } } } + { ROE \times { { \left[ FCFE \over Earnings \right] } \times { PR_n \times (1 + g)^n \times (1 + g_n) } \over { (k_{e,s} - g_n)(1 + k_{e,h})^n } } } } }
 }$$
 > The only substitution that we have made is the replacement of the payout ratio by the FCFE as a percent of earnings.
 > 
