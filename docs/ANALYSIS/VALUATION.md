@@ -512,7 +512,7 @@ $$\huge{
 }$$
 > 
 > where,\
-> $FE_h$ is $[ FCFE \over Earnings ]$ for high growth period
+> $FE_h$ is $[ FCFE \over Earnings ]$ for high growth period \
 > $FE_n$ is $[ FCFE \over Earnings ]$ for stable period
 > 
 > The only substitution that we have made is the replacement of the payout ratio by the FCFE as a percent of earnings.
