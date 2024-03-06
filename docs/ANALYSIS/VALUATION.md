@@ -616,7 +616,7 @@ $$\huge{
 > 
 > **Application**
 > 
-> The value-to-book ratios can be compared across firms just as the price-to-book value of equity ratio was in the preceding section. The key variable to control for in making this comparison is the return on capital. The value matrix developed for price-to-book ratios can be adapted for the value-to-book ratio in illustration below. Firms with high return on capital will tend to have high value-to-book value ratios, whereas firms with low return on capital will generally have lower value-to-book ratios.
+> The value-to-book ratios can be compared across firms just as the price-to-book value of equity ratio was in the preceding section. The key variable to control for in making this comparison is the return on capital. The value matrix developed for price-to-book ratios can be adapted for the value-to-book ratio shown in illustration below. Firms with high return on capital will tend to have high value-to-book value ratios, whereas firms with low return on capital will generally have lower value-to-book ratios.
 > 
 > ![Valuation Matrix: Value to Book and Excess Returns](/.attachments/valuation-value.matrix.png)
 > 
