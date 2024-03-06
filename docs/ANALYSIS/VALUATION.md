@@ -508,7 +508,7 @@ $$\huge{
 > ... firms may not always pay out what they can afford to and recommended that the free cash flows to equity be substituted in for the dividends in those cases. You can, in fact, modify the equation to state the price-to-book ratio in terms of free cash flows to equity.
 > 
 $$\huge{
-   { P_0 \over BV_0 = { { ROE \times { { \left[ FCFE \over Earnings \right]_h \times (1 + g) \times \left[ 1 - { { (1 + g)^n \over { 1 + k_{e,h}^n } } } \right] } \over { k_{e,h} - g } } } + { ROE \times { \left[ FCFE \over Earnings \right]_n \times { PR_n \times (1 + g)^n \times (1 + g_n) } \over { (k_{e,s} - g_n)(1 + k_{e,h})^n } } } } }
+   { P_0 \over BV_0 = { { ROE \times { { { \left[ FCFE \over Earnings \right] }_h \times (1 + g) \times \left[ 1 - { { (1 + g)^n \over { 1 + k_{e,h}^n } } } \right] } \over { k_{e,h} - g } } } + { ROE \times { { \left[ FCFE \over Earnings \right] }_n \times { PR_n \times (1 + g)^n \times (1 + g_n) } \over { (k_{e,s} - g_n)(1 + k_{e,h})^n } } } } }
 }$$
 > The only substitution that we have made is the replacement of the payout ratio by the FCFE as a percent of earnings.
 > 
@@ -559,12 +559,48 @@ $$\huge{
 > 
 > If the relationship is strong and linear, we could use this regression to obtain predicted price-to-book ratios for all of the firms in the sector, separating out those firms that are undervalued from those that are overvalued.
 > 
-> This regression can be enriched in two ways. The first is to allow for nonlinear relationships between price-to-book and return on equity; this can be done either by transforming the variables (natural logs, exponentials, etc.) or by running nonlinear regressions. The second is to expand the regression to include other independent variables such as risk and growth.
+> This regression can be enriched in two ways. The first is to allow for nonlinear relationships between price-to-book and return on equity; this can be done either by transforming the variables (natural logs, exponentials, etc.) or by running nonlinear regressions. The second is to expand the regression to include other independent variables such as risk and growth.[^12]
+
+#### Value-to-Book Ratios
+
+> Instead of relating the market value of equity to the book value of equity, the value-to-book ratio relates the firm value to the book value of capital of the firm. Consequently, it can be viewed as the firm value analogue to the price-to-book ratio.
 > 
-> ...
+> **Definition**
 > 
-> **Comparing Firms across the Market**
-> [^12]
+> The value-to-book ratio is obtained by dividing the market value of both debt and equity by the book value of capital invested in a firm:
+> 
+> $\huge{ \text{Value-to-book ratio} = { \text{Market value of equity} + \text{Market value of debt} } \over { \text{Book value of equity} + \text{Book value of debt} } }$
+> 
+> If the market value of debt is unavailable, the book value of debt can be used in the numerator as well. Needless to say, debt has to be consistently defined for both the numerator and denominator. For instance, if you choose to convert operating leases to debt for computing market value of debt, you have to add the present value of operating leases to the book value of debt as well.
+>
+> There are two common variants of this multiple that do not pass the consistency test. One uses the book value of assets, which will generally exceed the book value of capital by the magnitude of current liabilities, in the denominator. This will result in price-to-book ratios that are biased down for firms with substantial current liabilities. The other uses the enterprise value in the numerator, with cash netted from the market values of debt and equity. Since the book value of equity incorporates the cash holdings of the firm, this will also bias the multiple down. If you decide to use enterprise value in the numerator, you would need to net cash out of the denominator as well. Netting out cash from book capital creates a measure called invested capital:
+> 
+> $\huge{ \text{Invested capital} = \text{BV of equity} + \text{BV of debt} – Cash }$
+> 
+> 
+> In addition, the multiple may need to be adjusted for a firm’s cross holdings just as EV/EBITDA multiples were. ... The adjustment ... will require that you net out the portion of the market value and book value of equity that is attributable to subsidiaries.
+> 
+> **Analysis**
+> 
+> The value-to-book ratio is a firm value multiple. To analyze it, we go back to a free cash flow to the firm valuation model, and use it to value a stable growth firm:
+> 
+> $\huge{ \text{Enterprise value} = { FCFF_1 \over (\text{Cost of capital} - g) } }$
+> 
+> Substituting in $FCFF = EBIT_1(1 – t)(1 – \text{Reinvestment rate})$, we get:
+> 
+> $\huge{ \text{Enterprise value} = { {EBIT_1(1 - t)(1 - \text{Reinvestment rate})} \over (\text{Cost of capital} - g) } }$
+> 
+> Dividing both sides by the book value of capital, we get:
+> 
+> $\huge{ { \text{Enterprise value} \over \text{Invested capital} } = { { ROC(1 - \text{Reinvestment rate}) } \over (\text{Cost of capital} - g) } }$
+> 
+> The value-to-book ratio is fundamentally determined by its return on capital—firms with high returns on capital tend to have high value-to-book ratios. In fact, the determinants of value-to-book mirror the determinants of price-to-book equity, but we replace equity measures with firm value measures—the ROE with the ROC, the cost of equity with the cost of capital, and the payout ratio with (1 – Reinvestment rate). In fact, if we substitute in the fundamental equation for the reinvestment rate:
+> 
+> $\huge{ \text{Reinvestment rate} = g/ROC }$
+> 
+> $\huge{ { \text{Enterprise value} \over \text{Invested capital} } = { { (ROC - g) } \over (\text{Cost of capital} - g) } }$
+>
+> The analysis can be extended to cover high-growth firms, with the value-to-book capital ratio determined by the return on capital, cost of capital, growth rate, and reinvestment—in the high growth and stable growth periods:
 
 ## Contingency Claim Model
 
