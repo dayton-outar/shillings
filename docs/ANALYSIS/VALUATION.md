@@ -607,6 +607,16 @@ $$\huge{
 >
 > The analysis can be extended to cover high-growth firms, with the value-to-book capital ratio determined by the return on capital, cost of capital, growth rate, and reinvestment—in the high growth and stable growth periods:
 
+at pg. 535
+
+### Revenue Multiples
+
+> A revenue multiple measures the value of the equity or a business relative to the revenues that it generates. As with other multiples, other things remaining equal, firms that trade at low multiples of revenues are viewed as cheap relative to firms that trade at high multiples of revenues.
+> 
+> Revenue multiples have proved attractive to analysts for a number of reasons. First, unlike earnings and book value ratios, which can become negative for many firms and thus not meaningful, revenue multiples are available even for the most troubled firms and for very young firms. Thus, the potential for bias created by eliminating firms in the sample is far lower. Second, unlike earnings and book value, which are heavily influenced by accounting decisions on depreciation, inventory, research and development (R&D), acquisition accounting, and extraordinary charges, revenue is relatively difficult to manipulate. Third, revenue multiples are not as volatile as earnings multiples, and hence are less likely to be affected by year-to-year swings in a firm’s fortunes. For instance, the price-earnings ratio of a cyclical firm changes much more than its price-sales ratios, because earnings are much more sensitive to economic changes than revenues are.
+> 
+> The biggest disadvantage of focusing on revenues is that it can lull you into assigning high values to firms that are generating high revenue growth while losing significant amounts of money. Ultimately, a firm has to generate earnings and cash flows for it to have value. While it is tempting to use revenue multiples to value firms with negative earnings and book value, the failure to control for differences across firms in costs and profit margins can lead to misleading valuations.
+
 ## Contingency Claim Model
 
 The Contingency Claim Model, developed by Aswath Damodaran, is particularly appropriate for evaluating businesses with complex capital structures or those facing financial distress. Let's break down the key features of the model and discuss scenarios in which it is suitable:
