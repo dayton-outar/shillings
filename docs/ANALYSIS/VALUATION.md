@@ -717,7 +717,7 @@ $$\huge{
 > 
 > $\huge{ { \text{Enterprise value} \over \text{Sales} } = { { [EBIT(1 − t)/\text{Sales}](1 − \text{Reinvestment rate}) } \over { \text{Cost of capital} − g_n } } }$
 > 
-> $\huge{ \text{Enterprise value} = { { \text{After-tax operating margin}(1 − \text{Reinvestment rate}) } \over { \text{Cost of capital} − g_n } } }$
+> $\huge{ { \text{Enterprise value}_0 \over \text{Sales} } = { { \text{After-tax operating margin}(1 − \text{Reinvestment rate}) } \over { \text{Cost of capital} − g_n } } }$
 > 
 > Just as the price-to-sales ratio is determined by net profit margins, payout ratios, and costs of equity, the value-to-sales ratio is determined by after-tax operating margins, reinvestment rates, and the cost of capital. Firms with higher operating margins (ATOM), lower reinvestment rates (for any given growth rate), and lower costs of capital will trade at higher value-to-sales multiples.
 > 
