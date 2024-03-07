@@ -711,8 +711,27 @@ $$\huge{
 > 
 > **Value-to-Sales Ratios** To analyze the relationship between value and sales, consider the value of a stable-growth firm:
 > 
-> $\huge{ \text{Enterprise value} = { { EBIT(1− t)(1− Reinvestment rate) } \over { \text{Cost of capital} − g_n } } }$
+> $\huge{ \text{Enterprise value} = { { EBIT(1 − t)(1 − \text{Reinvestment rate}) } \over { \text{Cost of capital} − g_n } } }$
 > 
+> Dividing both sides by the revenue, you get:
+> 
+> $\huge{ { \text{Enterprise value} \over \text{Sales} } = { { [EBIT(1 − t)/\text{Sales}](1 − \text{Reinvestment rate}) } \over { \text{Cost of capital} − g_n } } }$
+> 
+> $\huge{ \text{Enterprise value} = { { \text{After-tax operating margin}(1 − \text{Reinvestment rate}) } \over { \text{Cost of capital} − g_n } } }$
+> 
+> Just as the price-to-sales ratio is determined by net profit margins, payout ratios, and costs of equity, the value-to-sales ratio is determined by after-tax operating margins, reinvestment rates, and the cost of capital. Firms with higher operating margins (ATOM), lower reinvestment rates (for any given growth rate), and lower costs of capital will trade at higher value-to-sales multiples.
+> 
+> This equation can be expanded to cover a firm in high growth by using a two-stage firm valuation model:
+> 
+> $\huge{ EV/Sales = ATOM { \left[ { { { (1 - RIR) \times (1 + g) \times \left[ 1 - { { (1 + g)^n \over { 1 + k_{c,h}^n } } } \right] } \over { k_{c,h} - g } } } + { { (1 - RIR_n) \times { PR_n \times (1 + g)^n \times (1 + g_n) } \over { (k_{c,s} - g_n)(1 + k_{c,h})^n } } } \right] } }$
+> 
+> where,\
+> $ATOM$ = After-tax operating margin = $EBIT(1 - t)/Sales$ \
+> $RIR$ = Reinvestment rate ($RIR_n$ is for stable growth period)\
+> $k_c$ = Cost of capital ($h$: high growth and $s$: stable growth periods)\
+> $g$ = Growth rate in operating income in high growth and stable growth periods
+> 
+> Note that the determinants of the EV-to-sales ratio remain the same as they were in the stable growth model—the growth rate, the reinvestment rate, the operating margin, and the cost of capital—but the number of estimates increases to reflect the existence of a high growth period.
 
 ## Contingency Claim Model
 
