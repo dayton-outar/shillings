@@ -670,6 +670,49 @@ $$\huge{
 > $k_e$ = Cost of equity \
 > $g_n$ = Growth rate in dividends (forever)
 > 
+> Substituting in for $DPS_1 = EPS_0(1 + g_n)(\text{Payout ratio})$, the value of the equity can be written as:
+> 
+> $\huge{ P_0 = { { EPS_0 \times \text{Payout ratio} \times (1 + g_n ) } \over {ke − gn} } }$
+> 
+> Defining the net profit margin = $EPS_0/\text{Sales per share}$, the value of equity can be written as:
+> 
+> $\huge{ P_0 = { { Sales_0 \times \text{Net margin} \times \text{Payout ratio} \times (1 + g_n) } \over { k_e − g_n} } }$
+> 
+> Rewriting in terms of the price-sales ratio,
+> 
+> $\huge{ { P_0 \over Sales_0 } = PS = { { \text{Net margin} \times \text{Payout ratio} \times (1 + g_n) } \over { k_e − g_n} } }$
+> 
+> The PS ratio is an increasing function of the profit margin, the payout ratio, and the growth rate, and a decreasing function of the riskiness of the firm.
+> 
+> The price-sales ratio for a high-growth firm can also be related to fundamentals. In the special case of the two-stage dividend discount model, this relationship can be made explicit fairly simply. With two stages of growth, a high-growth stage and a stable-growth phase, the dividend discount model can be written as follows:
+> 
+$\huge{ P_0 = { { EPS_0 \times PR \times (1 + g) \times \left[ 1 - { { (1 + g)^n \over { 1 + k_{e,h}^n } } } \right] } \over { k_{e,h} - g } } + { { EPS_0 \times PR_n \times (1 + g)^n \times (1 + g_n) } \over { (k_{e,s} - g_n)(1 + k_{e,h})^n } } }$
+> 
+> where, \
+> $g$ = Growth rate in the first $n$ years \
+> $PR$ = Payout ratio in the first $n$ years \
+> $g_n$ = Growth rate after $n$ years forever (stable growth rate) \
+> $PR_n$ = Payout ratio after $n$ years for the stable firm \
+> $k_e$ = Cost of equity ($h$: high-growth period; $s$: stable-growth period)
+> 
+> Rewriting $EPS_0$ in terms of the profit margin, $EPS_0 = Sales_0 \times \text{Profit margin}$, and bringing $Sales_0$ to the left-hand side of the equation, you get:
+> 
+> $\huge{ { Price \over Sales } = \text{Net margin} \times \left\{ { { PR \times (1 + g) \times \left[ 1 - { { (1 + g)^n \over { 1 + k_{e,h}^n } } } \right] } \over { k_{e,h} - g } } + { { PR_n \times (1 + g)^n \times (1 + g_n) } \over { (k_{e,s} - g_n)(1 + k_{e,h})^n } } \right\} }$
+> 
+> As with the price-to-book ratio, you can substitute in the free cash flows to equity for the dividends in making this estimate. Doing so will yield a more reasonable estimate of the price-to-sales ratio for firms that pay out dividends that are far lower than they can afford to pay out.
+> 
+> $\huge{ { Price \over Sales } = \text{Net margin} \times \left\{ { { FE \times (1 + g) \times \left[ 1 - { { (1 + g)^n \over { 1 + k_{e,h}^n } } } \right] } \over { k_{e,h} - g } } + { { FE_n \times (1 + g)^n \times (1 + g_n) } \over { (k_{e,s} - g_n)(1 + k_{e,h})^n } } \right\} }$
+> 
+> where $FE = FCFE/Earnings$
+> 
+> As with the price-to-book ratio, the firm can have a different net margin during the stable growth phase. That margin, though, will affect only the payout ratio during the stable phase.
+> 
+> ...
+> 
+> **Value-to-Sales Ratios** To analyze the relationship between value and sales, consider the value of a stable-growth firm:
+> 
+> $\huge{ \text{Enterprise value} = { EBIT(1− t)(1− Reinvestment rate) } \over { \text{Cost of capital} − g_n } }$
+> 
 
 ## Contingency Claim Model
 
