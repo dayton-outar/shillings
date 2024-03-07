@@ -686,7 +686,7 @@ $$\huge{
 > 
 > The price-sales ratio for a high-growth firm can also be related to fundamentals. In the special case of the two-stage dividend discount model, this relationship can be made explicit fairly simply. With two stages of growth, a high-growth stage and a stable-growth phase, the dividend discount model can be written as follows:
 > 
-$\huge{ P_0 = { { EPS_0 \times PR \times (1 + g) \times \left[ 1 - { { (1 + g)^n \over { 1 + k_{e,h}^n } } } \right] } \over { k_{e,h} - g } } + { { EPS_0 \times PR_n \times (1 + g)^n \times (1 + g_n) } \over { (k_{e,s} - g_n)(1 + k_{e,h})^n } } }$
+> $\huge{ P_0 = { { EPS_0 \times PR \times (1 + g) \times \left[ 1 - { { (1 + g)^n \over { 1 + k_{e,h}^n } } } \right] } \over { k_{e,h} - g } } + { { EPS_0 \times PR_n \times (1 + g)^n \times (1 + g_n) } \over { (k_{e,s} - g_n)(1 + k_{e,h})^n } } }$
 > 
 > where, \
 > $g$ = Growth rate in the first $n$ years \
@@ -697,11 +697,11 @@ $\huge{ P_0 = { { EPS_0 \times PR \times (1 + g) \times \left[ 1 - { { (1 + g)^n
 > 
 > Rewriting $EPS_0$ in terms of the profit margin, $EPS_0 = Sales_0 \times \text{Profit margin}$, and bringing $Sales_0$ to the left-hand side of the equation, you get:
 > 
-> $\huge{ { Price \over Sales } = \text{Net margin} \times \left\{ { { PR \times (1 + g) \times \left[ 1 - { { (1 + g)^n \over { 1 + k_{e,h}^n } } } \right] } \over { k_{e,h} - g } } + { { PR_n \times (1 + g)^n \times (1 + g_n) } \over { (k_{e,s} - g_n)(1 + k_{e,h})^n } } \right\} }$
+> $\huge{ { Price \over Sales } = \text{Net margin} \times \left[ { { PR \times (1 + g) \times \left[ 1 - { { (1 + g)^n \over { 1 + k_{e,h}^n } } } \right] } \over { k_{e,h} - g } } + { { PR_n \times (1 + g)^n \times (1 + g_n) } \over { (k_{e,s} - g_n)(1 + k_{e,h})^n } } \right] }$
 > 
 > As with the price-to-book ratio, you can substitute in the free cash flows to equity for the dividends in making this estimate. Doing so will yield a more reasonable estimate of the price-to-sales ratio for firms that pay out dividends that are far lower than they can afford to pay out.
 > 
-> $\huge{ { Price \over Sales } = \text{Net margin} \times \left\{ { { FE \times (1 + g) \times \left[ 1 - { { (1 + g)^n \over { 1 + k_{e,h}^n } } } \right] } \over { k_{e,h} - g } } + { { FE_n \times (1 + g)^n \times (1 + g_n) } \over { (k_{e,s} - g_n)(1 + k_{e,h})^n } } \right\} }$
+> $\huge{ { Price \over Sales } = \text{Net margin} \times \left[ { { FE \times (1 + g) \times \left[ 1 - { { (1 + g)^n \over { 1 + k_{e,h}^n } } } \right] } \over { k_{e,h} - g } } + { { FE_n \times (1 + g)^n \times (1 + g_n) } \over { (k_{e,s} - g_n)(1 + k_{e,h})^n } } \right] }$
 > 
 > where $FE = FCFE/Earnings$
 > 
@@ -711,7 +711,7 @@ $\huge{ P_0 = { { EPS_0 \times PR \times (1 + g) \times \left[ 1 - { { (1 + g)^n
 > 
 > **Value-to-Sales Ratios** To analyze the relationship between value and sales, consider the value of a stable-growth firm:
 > 
-> $\huge{ \text{Enterprise value} = { EBIT(1− t)(1− Reinvestment rate) } \over { \text{Cost of capital} − g_n } }$
+> $\huge{ \text{Enterprise value} = { { EBIT(1− t)(1− Reinvestment rate) } \over { \text{Cost of capital} − g_n } } }$
 > 
 
 ## Contingency Claim Model
