@@ -732,6 +732,178 @@ $$\huge{
 > $g$ = Growth rate in operating income in high growth and stable growth periods
 > 
 > Note that the determinants of the EV-to-sales ratio remain the same as they were in the stable growth model—the growth rate, the reinvestment rate, the operating margin, and the cost of capital—but the number of estimates increases to reflect the existence of a high growth period.
+> 
+> **Revenue Multiples and Profit Margins** The key determinant of revenue multiples is the profit margin—the net margin for price-to-sales ratios and operating margin for value-to-sales ratios. Firms involved in businesses that have high margins can expect to sell for high multiples of sales. However, a decline in profit margins has a twofold effect. First, the reduction in profit margins reduces the revenue multiple directly. Second, the lower profit margin can lead to lower growth and hence lead to even lower revenue multiples.
+> 
+> The profit margin can be linked to expected growth fairly easily if an additional term is defined—the ratio of sales to book value (BV), which is also called a turnover ratio. This turnover ratio can be defined in terms of book equity (Equity turnover = Sales/Book value of equity) or book capital (Capital turnover = Sales/Book value of capital). Using a relationship developed between growth rates and fundamentals, the expected growth rates in equity earnings can be written as a function of net profit margins and turnover ratios:
+> 
+> $\huge{ \text{Expected growth}_e = { \text{Retention ratio} \times \text{Return on equity} } = { \text{Retention ratio} \times (\text{Net profit}/\text{Sales}) \times (\text{Sales}/\text{BV of equity})  } = { \text{Retention ratio} \times \text{Net margin} \times \text{Sales}/\text{BV of equity} } }$
+> 
+> where $e$ is equity,
+> 
+> ...
+> 
+> **Multiples and Companion Variables**
+> 
+> By this point in the relative valuation discussion, the process of deconstructing multiples should no longer be a mystery. In fact, with each multiple, while we have highlighted multiple variables that affect its value, there is one variable that operates as a key driver. We call this variable the companion variable and the table below lists it out for each multiple:
+> 
+> | Multiples | Companion Variables |
+> |:--- |:--- |
+> | PE Ratio | Expected growth rate in EPS |
+> | PBV | Return on equity |
+> | PS | Net margin |
+> | EV/EBITDA | Reinvestment rate |
+> | EV/Invested capital | Return on invested capital |
+> | EV/Sales | After-tax operating margin |
+> 
+> These variables matter for two reasons. The first is that changes in the variables have big effects on the multiples that they relate to. The second is that when a stock looks cheap, because it has a low value on a multiple, the first item to check is the companion variable. Thus, if a stock trades at a low price-to-book ratio, you should check its return on equity; most low price-to-book stocks have low or negative returns on equity.
+> 
+> How do you find the companion variable for a multiple? One way is to run the market regression for the multiple against all of the independent variables that should determine it. The variable that has the most statistical significance (highest t statistic) is invariably the companion variable. The other, more intuitive, approach is to do the following. If working with an equity multiple, divide net income by the denominator of the multiple to get the companion variable. With price-to-book value of equity, for instance, using this approach would require dividing net income by the book value of equity, which would yield the return on equity. With enterprise value multiples, dividing the after-tax operating income by the denominator should yield the companion variable. With EV-to-sales, for instance, dividing the after-tax operating income by sales results in the after-tax operating margin.
+> 
+> **Marketing Strategy and Value** At the risk of oversimplifying pricing strategy, you can argue that every firm has to decide whether it wants to go with a low-price, high-volume strategy (volume leader) or with a high-price, lower-volume strategy (price leader). In terms of the variables that link growth to value, this choice will determine the profit margin and turnover ratio to use in valuation.
+> 
+> You could analyze the alternative pricing strategies that are available to a firm by examining the impact that each strategy will have on margins and turnover, and valuing the firm under each strategy. The strategy that yields the highest value for the firm is, in a sense, the optimal strategy.
+> 
+> Note that the effect of price changes on turnover ratios will depend in large part on how elastic or inelastic the demand for the firm’s products are. Increases in the price of a product will have a minimal effect on turnover ratios if demand is inelastic. In this case, the value of the firm will generally be higher with a price leader strategy. On the other hand, the turnover ratio could drop more than proportionately if the product price is increased and demand is elastic. In this case, firm value will increase with a volume leader strategy.
+> 
+> ...
+> 
+> **Value of a Brand Name** One of the critiques of traditional valuation is that it fails to consider the value of brand names and other intangibles. Hiroyumi Itami, in his 1987 book _Mobilizing Invisible Assets_, provides a summary of this criticism. He says:
+> 
+> _Analysts have tended to define assets too narrowly, identifying only those that can be measured, such as plant and equipment. Yet the intangible assets, such as a particular technology, accumulated consumer information, brand name, reputation, and corporate culture, are invaluable to the firm’s competitive power. In fact, these invisible assets are the only real source of competitive edge that can be sustained over time._
+> 
+> While this criticism is clearly overstated, the approaches used by analysts to value brand names are often ad hoc and may significantly overstate or understate their value. Firms with well-known brand names often sell for higher multiples than lesser-known firms. The standard practice of adding on a “brand name premium,” often set arbitrarily, to discounted cash flow value can lead to erroneous estimates. Instead, the value of a brand name can be estimated using the approach that relates profit margins to price-sales ratios.
+> 
+> One of the benefits of having a well-known and respected brand name is that firms can charge higher prices for the same products, leading to higher profit margins and hence to higher price-sales ratios and firm value. The larger the price premium that a firm can charge, the greater is the value of the brand name. In general, the value of a brand name can be written as:
+> 
+> $\huge{ \text{Value of brand name} = (V/S_b − V/S_g) \times \text{Sales} }$
+> 
+> where,\
+> $V/S_b$ = EV-sales ratio of the firm with the benefit of the brand name\
+> $V/S_g$ = EV-sales ratio of the same firm with the generic product
+> 
+> ...
+> 
+> **Using Revenue Multiples in Investment Analysis**
+> 
+> The key determinants of the revenue multiples of a firm are its expected margins (net and operating), risk, cash flow, and growth characteristics. To use revenue multiples in analysis and to make comparisons across firms, you would need to control for differences on these characteristics.
+> 
+> **Looking for Mismatches** While growth, risk, and cash flow characteristics affect revenue multiples, the key determinants of revenue multiples are profit margins—net profit margin for equity multiples and operating margins for firm value multiples. Thus it is not surprising to find firms with low profit margins and low revenue multiples, and firms with high profit margins and high revenue multiples. However, firms with high revenue ratios and low profit margins as well as firms with low revenue multiples and high profit margins should attract investors’ attention as potentially overvalued and undervalued securities respectively. This is presented in the matrix below. You can identify under- or overvalued firms in a sector or industry by plotting them on this matrix, and looking for potential mismatches between margins and revenue multiples.
+> 
+> ![Value-to-Sales vs. Margin](/.attachments/valuation-value.to.sales.margin.png)
+> 
+> _Value/Sales and Margins_
+> 
+> While intuitively appealing, there are at least three practical problems associated with this approach. The first is that data is more easily available on historical (current) profit margins than on expected profit margins. If a firm’s current margins are highly correlated with future margins (a firm that has earned high margins historically will continue to do so, and one that have earned low margins historically will also continue to do so), using current margins and current revenue multiples to identify under- or overvalued securities is reasonable. If the current margins of firms are not highly correlated with expected future margins, it is no longer appropriate to argue that firms are overvalued just because they have low current margins and trade at high price-to-sales ratios. The second problem with this approach is that it assumes that revenue multiples are linearly related to margins. In other words, as margins double, you would expect revenue multiples to double as well. The third problem is that it ignores differences on other fundamentals, especially risk. Thus a firm that looks undervalued because it has a high current margin and is trading at a low multiple of revenues may in fact be a fairly valued firm with very high risk.
+> 
+> ...
+> 
+> **Market Regressions** If you can control for differences across firms using a regression, you can extend this approach to look at much broader cross sections of firms. Here, the cross-sectional data is used to estimate the price-to-sales ratio as a function of fundamental variables—profit margin, dividend payout, beta, and growth rate in earnings.
+
+### Sector-specific Multiples
+
+> The value of a firm can be standardized using a number of sector-specific multiples. The value of steel companies can be compared based on market value per ton of steel produced, and the value of electricity generators can be computed on the basis of kilowatt hour (kwh) of power produced. In the past few years, analysts following new technology firms have become particularly inventive with multiples that range from value per subscriber for online service providers to value per web site visitor for Internet portals to value per member for social media companies.
+> 
+> **Why Analysts Use Sector-Specific Multiples**
+> 
+> The increase in the use of sector-specific multiples in the last few years has opened up a debate about whether they yield good estimates of relative value. There are several reasons why analysts use sector-specific multiples:
+> 
+> - They link firm value to operating details and output. For analysts who begin with these forecasts—predicted number of subscribers or number of social media site members, for instance—they provide a much more intuitive way of estimating value.
+> 
+> - Sector-specific multiples can often be computed with no reference to accounting statements or measures. Consequently, they can be estimated for firms where accounting statements are nonexistent, unreliable, or just not comparable. Thus, you could compute the value per kwh sold for Latin American power companies and not have to worry about accounting differences across these countries.
+> 
+> - Though this is usually not admitted to, sector-specific multiples are sometimes employed in desperation because none of the other multiples can be estimated or used. For instance, an impetus for the use of sector-specific multiples for dotcom companies in the late 1990s was that they often had negative earnings and little in terms of book value or revenues.
+> 
+> **Limitations**
+> 
+> Though it is understandable that analysts sometimes turn to sector-specific multiples, there are two significant problems associated with their use:
+> 
+> 1. They feed into the tunnel vision that plagues analysts who are sector focused, and thus they allow entire sectors to become overpriced. A service company trading at $50 a subscriber might look cheap next to another one trading at $125 a subscriber, but it is entirely possible that they are both overpriced or underpriced.
+> 
+> 2. As will be shown later in this section, the relationship of sector-specific multiples to fundamentals is complicated, and consequently it is very difficult to control for differences across firms when comparing them on these multiples.
+> 
+> **Definitions of Sector-Specific Multiples**
+> 
+> The essence of sector-specific multiples is that the way they are measured vary from sector to sector. In general, though, they share some general characteristics:
+> 
+> - The numerator is usually enterprise value—the market values of both debt and equity netted out against cash and marketable securities.
+> 
+> - The denominator is defined in terms of the operating units that generate revenues and profits for the firm.
+> 
+> For commodity companies such as oil refineries and gold-mining companies, where revenue is generated by selling units of the commodity, the market value can be standardized by dividing by the value of the reserves that these companies have of the commodity:
+> 
+> $\huge{ \text{Value per commodity unit} = { \text{Market value of equity} + \text{Market value of debt} − \text{Cash} \over \text{Number of units of the commodity in reserves} } }$
+> 
+> Oil companies can be compared on enterprise value per barrel of oil in reserves and gold-mining companies on the basis of enterprise value per ounce of gold in reserves.
+> 
+> For manufacturing firms that produce a homogeneous product (in terms of quality and units), the market value can be standardized by dividing by the number of units of the product that the firm produces or has the capacity to produce:
+> 
+> $\huge{ \text{Value per unit product} = { \text{Market value of equity} + \text{Market value of debt} − \text{Cash} \over \text{Number of units produced (or capacity)} } }$
+> 
+> For instance, steel companies can be compared based on their enterprise value per ton of steel produced or in capacity.
+> 
+> For subscription-based firms such as cable companies, online service providers, and information providers, revenues come from the number of subscribers to the base service provided. Here, the value of a firm can be stated in terms of the number of subscribers:
+> 
+> $\huge{ \text{Value per subscriber} = { \text{Market value of equity} + \text{Market value of debt} − \text{Cash} \over \text{Number of subscribers} } }$
+> 
+> In each of the cases we have discussed, you could make an argument for the use of a sector-specific multiple because the units (whether they be barrels of oil, kwh of electricity, or subscribers) generate similar revenues. Sector multiples become much more problematic when the units used to scale value are not homogeneous. Let us consider two examples.
+> 
+> For retailers such as Amazon that generate revenue from customers who shop at their web sites, the value of the firm can be stated in terms of the number of regular customers:
+> 
+> $\huge{ \text{Value per customer} = { \text{Market value of equity} + \text{Market value of debt} − \text{Cash} \over \text{Number of customers} } }$
+> 
+> The problem, here, is that amount spent can vary widely across customers, so it is not clear that a firm that looks cheap on this basis is undervalued.
+> 
+> For Internet portals that generate revenue from advertising revenues that are based on traffic to the sites, the revenues can be stated in terms of the number of visitors to the sites:
+> 
+> $\huge{ \text{Value per subscriber} = { \text{Market value of equity} + \text{Market value of debt} − \text{Cash} \over \text{Number of subscribers} } }$
+> 
+> Here, again, the link between visitors and advertising revenues is neither clearly established nor obvious. In 2010, it was the social media companies such as Facebook and Twitter that were attracting market attention, partly because of their huge membership rolls. For these companies, the enterprise value can be scaled to the number of members, but the relationship between the number of members and profitability is tenuous and untested.
+> 
+> **Determinants of Value**
+> 
+> What are the determinants of value for these sector-specific multiples? Not surprisingly, they are the same as the determinants of value for other multiples—cashflows, growth, and risk—though the relationship can be complex. The fundamentals that drive these multiples can be derived by going back to a discounted cash flow model stated in terms of these sector-specific variables.
+> 
+> Consider a service provider that has NX existing subscribers, and assume that each subscriber is expected to remain with the provider for the next $n$ years. In addition, assume that the firm will generate net cash flows per customer (revenues from each customer minus cost of serving the customer) of CFX per year for these $n$ years.[^14] The value of each existing customer to the firm can then be written as:
+> 
+> $$\huge{ \text{Value per customer} = VX = \sum_{t=1}^{t=n} { CFX \over (1 + r)^t } }$$
+> 
+> The discount rate used to compute the value per customer can range from close to the riskless rate, if the customer has signed a contract to remain a subscriber for the next $n$ years, to the cost of capital, if the estimate is just an expectation based on past experience.
+> 
+> Assume that the firm expects to continue to add new subscribers in future years and that the firm will face a cost (advertising and promotion) of $C_t$ for each new subscriber added in period $t$. If the new subscribers ($\Delta NX_t$) added in period $t$ will generate the a value $VX_t$ per subscriber, the value of this firm can be written as:
+> 
+> $$\huge{ \text{Value of firm} = { { NX \times VX } + \sum_{t=1}^{t=\infty } { { {\Delta NX_t} (VX_t - C_t) } \over (1 + k_c)^t } } }$$
+> 
+> Note that the first term in this valuation equation represents the value generated by existing subscribers, and that the second is the value of expected growth. The subscribers added generate value only if the cost of adding a new subscriber ($C_t$) is less than the present value of the net cash flows generated by that subscriber for the firm.
+> 
+> Dividing both sides of this equation by the number of existing subscribers ($NX$) yields the following:
+> 
+> $$\huge{ \text{Value per existing subscriber} = { \text{Value of firm} \over NX } = { { { VX } + \sum_{t=1}^{t=\infty } { { {\Delta NX_t} (VX_t - C_t) } \over (1 + k_c)^t } } \over NX} }$$
+> 
+> In the most general case, then, the value of a firm per subscriber will be a function not only of the expected value that will be generated by existing subscribers, but of the potential for value creation from future growth in the subscriber base. If you assume a competitive market, where the cost of adding new subscribers ($C_t$) converges on the value that is generated by that customer, the second term in the equation drops out and the value per subscriber becomes just the present value of cash flows that will be generated by each existing subscriber.
+> 
+> $\huge{ \text{Value per existing subscriber}_{C = VX} = VX}$
+> 
+> A similar analysis can be done to relate the value of an online retailer to the number of customers it has, though it is generally much more difficult to estimate the value that will be created by a customer. Unlike subscribers who pay a fixed fee, retail customers’ buying habits are more difficult to predict.
+> 
+> In either case, you can see the problems associated with comparing these multiples across firms. Implicitly, either you have to assume competitive markets and conclude that the firms with the lowest market value per subscriber are the most undervalued, or, alternatively, you have to assume that the value of growth is the same proportion of the value generated by existing customers for all of the firms in your analysis, leading to the same conclusion.
+> 
+> For social media companies, value can be related to the number of members but only if the link between revenue and the number of members is made explicit. For instance, Facebook’s advertising revenues can be directly tied to the number of members, and the value of the company can be stated on a per-member basis. Since social media companies may have to invest resources to add to their membership, it is the net value generated for each member that ultimately determines value.
+> 
+> ...
+> 
+> **Analysis Using Sector-Specific Multiples**
+> 
+> To analyze firms using sector-specific multiples, you have to control for the differences across firms on any or all of the fundamentals that you identified as affecting these multiples in the last part.
+> 
+> With value per subscriber, for instance, you have to control for differences in the value generated by each subscriber. In particular:
+> 
+> - Firms that are more efficient in delivering a service for a given subscription price (resulting in lower costs) should trade at a higher value per subscriber than comparable firms. This would also apply if a firm has significant economies of scale. In Illustration 20.13, the value per subscriber would be higher if each existing subscriber generated $120 in net cash flows for the firm each year instead of $100.
+> - Firms that can add new subscribers at a lower cost (through advertising and promotion) should trade at a higher value per subscriber than comparable firms.
+> - Firms with higher expected growth in the subscriber base (in percentage terms) should trade at a higher value per subscriber than comparable firms. You could make similar statements about value per customer.
+> 
+> You could make similar statements about value per customer.
+
 
 ## Contingency Claim Model
 
@@ -1019,3 +1191,4 @@ In summary, while both the PPI and CPI measure changes in prices over time, they
 [^11]: Chapter 18. Earnings Multiples. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^12]: Chapter 19. Book Value Multiples. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^13]: Chapter 25. The Monetary System. _Economics, Global Edition, Second Edition_ by Daron Acemoglu, David Laibson, John A. List
+[^14]: For purposes of simplicity, it has been assumed that the cash flow is the same in each year. This can be generalized to allow cash flows to grow over time.
