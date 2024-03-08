@@ -1011,7 +1011,17 @@ Options are traded for several underlying assets, which includes,
 > \- indicates that an increase in the variable causes the option price to decrease or stay the same; \
 > ? indicates that the relationship is uncertain
 
-### The Black–Scholes–Merton Model
+#### Option Pricing Theory and Models
+
+> **Binomial Model**
+> 
+> The binomial option pricing model is based on a simple formulation for the asset price process in which the asset, in any time period, can move to one of two possible prices. The general formulation of a stock price process that follows the binomial path is shown in illustration below. In this illustration, $S$ is the current stock price; the price moves up to $Su$ with probability $p$ and down to $Sd$ with probability $1 – p$ in any time period.
+> 
+> ![General Formulation for Binomial Price Path](/.attachments/valuation-binomial.price.path.png)
+> 
+> _General Formulation for Binomial Price Path_
+> 
+> [^15]
 
 > In the early 1970s, Fischer Black, Myron Scholes, and Robert Merton achieved a major breakthrough in the pricing of European stock options.1 This was the development of what has become known as the Black–Scholes–Merton (or Black–Scholes) model. The model has had a huge inﬂuence on the way that traders price and hedge derivatives. In 1997, the importance of the model was recognized when Robert Merton and Myron Scholes were awarded the Nobel prize for economics. Sadly, Fischer Black died in 1995; otherwise he too would undoubtedly have been one of the recipients of this prize.[^10]
 
@@ -1196,3 +1206,4 @@ In summary, while both the PPI and CPI measure changes in prices over time, they
 [^12]: Chapter 19. Book Value Multiples. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^13]: Chapter 25. The Monetary System. _Economics, Global Edition, Second Edition_ by Daron Acemoglu, David Laibson, John A. List
 [^14]: For purposes of simplicity, it has been assumed that the cash flow is the same in each year. This can be generalized to allow cash flows to grow over time.
+[^15]: Chapter 5. Option Pricing Theory and Models. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
