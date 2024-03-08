@@ -985,7 +985,7 @@ Options are traded for several underlying assets, which includes,
 > 
 > ... The over-the-counter market for options has become increasingly important since the early 1980s and is now larger than the exchange-traded market. ... the main participants in over-the-counter markets are ﬁnancial institutions, corporate treasurers, and fund managers.[^9]
 
-### Properties of Stock Options
+#### Properties of Stock Options
 
 > There are six factors aﬀecting the price of a stock option:
 > 1. The current stock price, $S_0$
@@ -1016,6 +1016,10 @@ Options are traded for several underlying assets, which includes,
 > In the early 1970s, Fischer Black, Myron Scholes, and Robert Merton achieved a major breakthrough in the pricing of European stock options.1 This was the development of what has become known as the Black–Scholes–Merton (or Black–Scholes) model. The model has had a huge inﬂuence on the way that traders price and hedge derivatives. In 1997, the importance of the model was recognized when Robert Merton and Myron Scholes were awarded the Nobel prize for economics. Sadly, Fischer Black died in 1995; otherwise he too would undoubtedly have been one of the recipients of this prize.[^10]
 
 ## Inflation
+
+![Inflation in Jamaica between January 2023 and January 2024](/.attachments/valuation-inflation.boj.2024.webp)
+
+_Inflation in Jamaica between January 2023 and January 2024_
 
 > ... the _quantity theory of money_ implies that inflation occurs when the growth rate of _money supply_ exceeds the growth rate in _real GDP_. This is the implication of the last equation that we derived: the inflation equation.
 > 
