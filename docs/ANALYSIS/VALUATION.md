@@ -1021,9 +1021,21 @@ Options are traded for several underlying assets, which includes,
 > 
 > _General Formulation for Binomial Price Path_
 > 
+> **Creating a Replicating Portfolio** The objective in creating a replicating portfolio is to use a combination of risk-free borrowing/lending and the underlying asset to create the same cash flows as the option being valued. The principles of arbitrage apply then, and the value of the option must be equal to the value of the replicating portfolio. In the case of the general formulation shown above, where stock prices can move either up to Su or down to Sd in any time period, the replicating portfolio for a call with strike price K will involve borrowing \$B and acquiring $\Delta$ of the underlying asset, where:
+> 
+> $\huge{ \Delta = \text{ Number of units of the underlying asset bought } = { {C_u - C_s } \over { Su -Sd } } }$ 
+> 
+> where,\
+> $C_u$ = Value of the call if the stock price is Su \
+> $C_d$ = Value of the call if the stock price is Sd
+> 
+> In a multiperiod binomial process, the valuation has to proceed iteratively (i.e., starting with the final time period and moving backward in time until the current point in time). The portfolios replicating the option are created at each step and valued, providing the values for the option in that time period. The final output from the binomial option pricing model is a statement of the value of the option in terms of the replicating portfolio, composed of Δ shares (option delta) of the underlying asset and risk-free borrowing/lending.
+> 
+> Value of the call = Current value of underlying asset × Option delta – Borrowing needed to replicate the option
+> 
 > [^15]
 
-> In the early 1970s, Fischer Black, Myron Scholes, and Robert Merton achieved a major breakthrough in the pricing of European stock options.1 This was the development of what has become known as the Black–Scholes–Merton (or Black–Scholes) model. The model has had a huge inﬂuence on the way that traders price and hedge derivatives. In 1997, the importance of the model was recognized when Robert Merton and Myron Scholes were awarded the Nobel prize for economics. Sadly, Fischer Black died in 1995; otherwise he too would undoubtedly have been one of the recipients of this prize.[^10]
+> In the early 1970s, Fischer Black, Myron Scholes, and Robert Merton achieved a major breakthrough in the pricing of European stock options. This was the development of what has become known as the Black–Scholes–Merton (or Black–Scholes) model. The model has had a huge inﬂuence on the way that traders price and hedge derivatives. In 1997, the importance of the model was recognized when Robert Merton and Myron Scholes were awarded the Nobel prize for economics. Sadly, Fischer Black died in 1995; otherwise he too would undoubtedly have been one of the recipients of this prize.[^10]
 
 ## Inflation
 
