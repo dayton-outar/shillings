@@ -1228,7 +1228,7 @@ In summary, the CPI for an item provides valuable insight into changes in the co
 > |:---|:--- | ---:|
 > | 01 | Food and Non-Alcoholic Beverages | 37.4|
 > | 02 | Alcoholic Beverages and Tobacco | 1.4 |
-> | 03 | Clothing and Foot w ear | 3.3 |
+> | 03 | Clothing and Footwear | 3.3 |
 > | 04 | Housing, Water, Electricity, Gas and Other Fuels| 12.8 |
 > | 05 | Furnishings, Household Equipment and Routine, Household Maintenance | 4.9 |
 > | 06 | Health | 3.3 |
