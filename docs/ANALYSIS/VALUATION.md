@@ -1033,9 +1033,52 @@ Options are traded for several underlying assets, which includes,
 > 
 > Value of the call = Current value of underlying asset × Option delta – Borrowing needed to replicate the option
 > 
-> [^15]
+> ...
+> 
+> **The Determinants of Value** The binomial model provides insight into the determinants of option value. The value of an option is not determined by the expected price of the asset but by its current price, which, of course, reflects expectations about the future. This is a direct consequence of arbitrage. If the option value deviates from the value of the replicating portfolio, investors can create an arbitrage position (i.e., one that requires no investment, involves no risk, and delivers positive returns). To illustrate, if the portfolio that replicates the call costs more than the call does in the market, an investor could buy the call, sell the replicating portfolio, and be guaranteed the difference as a profit. The cash flows on the two positions will offset each other, leading to no cash flows in subsequent periods. The call option value also increases as the time to expiration is extended, as the price movements (u and d) increase, and with increases in the interest rate.
+>
+> While the binomial model provides an intuitive feel for the determinants of option value, it requires a large number of inputs, in terms of expected future prices at each node. As time periods are made shorter in the binomial model, you can make one of two assumptions about asset prices.You can assume that price changes become smaller as periods get shorter; this leads to price changes becoming infinitesimally small as time periods approach zero, leading to a continuous price process. Alternatively, you can assume that price changes stay large even as the period gets shorter; this leads to a jump price process, where prices can jump in any period. This section considers the option pricing models that emerge with each of these assumptions.
+> 
+> **Black-Scholes Model**
+> 
+> When the price process is continuous (i.e., price changes become smaller as time periods get shorter), the binomial model for pricing options converges on the Black-Scholes model. The model, named after its cocreators, Fischer Black and Myron Scholes, allows us to estimate the value of any option using a small number of inputs, and has been shown to be robust in valuing many listed options.[^15]
 
 > In the early 1970s, Fischer Black, Myron Scholes, and Robert Merton achieved a major breakthrough in the pricing of European stock options. This was the development of what has become known as the Black–Scholes–Merton (or Black–Scholes) model. The model has had a huge inﬂuence on the way that traders price and hedge derivatives. In 1997, the importance of the model was recognized when Robert Merton and Myron Scholes were awarded the Nobel prize for economics. Sadly, Fischer Black died in 1995; otherwise he too would undoubtedly have been one of the recipients of this prize.[^10]
+
+> **The Model** While the derivation of the Black-Scholes model is far too complicated to present here, it is based on the idea of creating a portfolio of the underlying asset and the riskless asset with the same cash flows, and hence the same cost, as the option being valued. The value of a call option in the Black-Scholes model can be written as a function of the five variables:
+> 
+> $S$ = Current value of the underlying asset \
+> $K$ = Strike price of the option \
+> $t$ = Life to expiration of the option \
+> $r$ = Riskless interest rate corresponding to the life of the option \
+> $σ^2$ = Variance in the ln(value) of the underlying asset
+> 
+> The value of a call is then:
+> 
+> $\huge{ \text{Value of call} = S N(d_1) – K e^{–rt} N(d_2) }$
+> 
+> where, \
+> ${ d_1 = { { { ln \left( \frac{S}{K} \right) + \left( r + \frac{σ^2}{2} \right)t } } \over { σ\sqrt{t} } } }$ \
+> $d_2 = d_1 - { σ\sqrt{t} }$
+> 
+> Note that $e^{–rt}$ is the present value factor, and reflects the fact that the exercise price on the call option does not have to be paid until expiration, since the model values European options. $N(d_1)$ and $N(d_2)$ are probabilities, estimated by using a cumulative standardized normal distribution, and the values of d1 and d2 obtained for an option. The cumulative distribution is shown below.
+> 
+> ![Cumulative Normal Distribution](/.attachments/valuation-cumulative.normal.distribution.png)
+> 
+> _Cumulative Normal Distribution_
+> 
+> In approximate terms, $N(d_2)$ yields the likelihood that an option will generate positive cash flows for its owner at exercise (i.e., that $S > K$ in the case of a call option and that $K > S$ in the case of a put option). The portfolio that replicates the call option is created by buying $N(d_1)$ units of the underlying asset, and borrowing $Ke^{–rt} N(d_2)$. The portfolio will have the same cash flows as the call option, and thus the same value as the option. $N(d_1)$, which is the number of units of the underlying asset that are needed to create the replicating portfolio, is called the option delta.
+> 
+> **A NOTE ON ESTIMATING THE INPUTS TO THE BLACK-SCHOLES MODEL**
+> 
+> The Black-Scholes model requires inputs that are consistent on time measurement. There are two places where this affects estimates. The first relates to the fact that the model works in continuous time, rather than discrete time. That is why we use the continuous time version of present value ($exp^{–rt}$) rather than the discrete version, $(1 + r)^{–t}$. It also means that the inputs such as the riskless rate have to be modified to make them continuous time inputs. For instance, if the one-year Treasury bond rate is 6.2 percent, the risk-free rate that is used in the Black-Scholes model should be:
+> 
+> Continuous riskless rate = ln(1 + Discrete riskless rate)
+> = ln(1.062) = .06015 or 6.015%
+> 
+> The second relates to the period over which the inputs are estimated. For instance, the preceding rate is an annual rate. The variance that is entered into the model also has to be an annualized variance. The variance, estimated from ln(asset prices), can be annualized easily because variances are linear in time if the serial correlation is zero. Thus, if monthly or weekly prices are used to estimate variance, the variance is annualized by multiplying by 12 or 52, respectively.
+> 
+> **Model Limitations and Fixes** The Black-Scholes model was designed to value European options that can be exercised only at maturity and whose underlying assets do not pay dividends. In addition, options are valued based on the assumption that option exercise does not affect the value of the underlying asset. In practice, assets do pay dividends, options sometimes get exercised early, and exercising an option can affect the value of the underlying asset. Adjustments exist that, while not perfect, provide partial corrections to the Black-Scholes model.[^15]
 
 ## Inflation
 
