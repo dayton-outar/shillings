@@ -1131,7 +1131,7 @@ By using the CPI to track changes in the cost of living over time, economists ca
 To calculate the inflation rate using the Consumer Price Index (CPI) for August 2021 compared to August 2020 in United States, use the following formula:
 
 $$\huge{
-   \text{Inflation Rate} = \left( \frac{\text{CPI}_{\text{current}} - \text{CPI}_{\text{base}}}{\text{CPI}_{\text{base}}} \right) \times 100
+   \text{Inflation Rate} = \left( \frac{CPI_{current} - CPI_{base} }{CPI_{base}} \right) \times 100
 }$$
 
 Where:
@@ -1182,9 +1182,64 @@ The Consumer Price Index (CPI) for an item is interpreted as the percentage chan
 
 In summary, the CPI for an item provides valuable insight into changes in the cost of living and helps individuals, businesses, and policymakers understand inflation trends and make informed decisions.
 
-For more detailed information, you can refer to resources provided by statistical agencies such as the Statistical Institute of Jamaica (STATIN) or economic publications discussing CPI interpretation.
-
 <image src="/.attachments/chatgpt-logo.png" alt="Chat GPT Logo" width="16" height="16" />
+
+> The CPI serves as a gauge for assessing the performance of the economy and it is an important tool used by government in formulating and evaluating many economic policies. Additionally, private researchers, students and the public use the CPI for social and economic studies of the economy, school projects and general information.
+> 
+> The CPI is relevant to all persons who earn and spend money. When prices rise the purchasing power of money is reduced and consequently, people are able to buy less with the same amount of money. It is therefore used extensively in collective bargaining by labour unions and employers for the adjustment of wages and salaries. Rental agreements, insurance premiums, pensions, alimony and child support payments are all forms of contractual and price-setting arrangements, very often tied to movements in the CPI.
+> 
+> ...
+> 
+> The Consumer Price Index measures price movements of a given quantity of consumer goods and services. The goods and services included within the scope of the index can be figuratively thought of as a "basket".
+> 
+> The "basket" represents a mix of consumer products purchased by the typical household. No two households are exactly alike in their spending habits. Each household purchases a different combination of goods and services for consumption. Generally speaking, the CPI "basket" includes those goods and services which are important in terms of the size of expenditure made on them by consumer households.
+> 
+> The items in the "basket", in addition to being representative of households' spending habits, must also have their prices associated with specific quantities. Without the quantity/price relation, it is extremely difficult to measure pure price changes.
+> 
+> A pure price change is a change in the price of a good or service whose characteristics do not change over time.
+> 
+> ...
+> 
+> Once the “basket” is selected, the quantity of the items is kept constant. However, the total cost of this “fixed basket” will vary from one period of time to another, as the prices of the items change. Price changes resulting from such a “constant or fixed basket” are defined as “pure” price movements, which is what the CPI, in essence, measures. Thus, the CPI gives the percentage change in the cost of purchasing the contents of the basket.
+> 
+> ...
+> 
+> In organizing the CPI “basket”, the selected items of goods and services are grouped together according to various categories. They are first grouped by commodity type. Related commodity types are then grouped into sub-components which are then assigned to a major expenditure Division. All goods and services in the CPI basket are divided into twelve (12) major expenditure Division that are based on a consumption classification system developed by the United Nations.
+> 
+> The classification system is the Classification of Individual Consumption According to Purpose (COICOP), and the 12 broad expenditure divisions are:
+> 
+> 1. Food and Non-Alcoholic Beverages
+> 2. Alcoholic Beverages and Tobacco
+> 3. Clothing and Footwear
+> 4. Housing, Water, Electricity, Gas and Other Fuels
+> 5. Furnishings, Household Equipment and Routine Household Maintenance
+> 6. Health
+> 7. Transport
+> 8. Communication
+> 9. Recreation and Culture
+> 10. Education
+> 11. Restaurants and Accommodation Services
+> 12. Miscellaneous Goods and Services
+> 
+> 
+> _Table 1_. Weight Structure in the Revised CPI
+> 
+> |    | Divisions | Weights* as percentages |
+> |:---|:--- | ---:|
+> | 01 | Food and Non-Alcoholic Beverages | 37.4|
+> | 02 | Alcoholic Beverages and Tobacco | 1.4 |
+> | 03 | Clothing and Foot w ear | 3.3 |
+> | 04 | Housing, Water, Electricity, Gas and Other Fuels| 12.8 |
+> | 05 | Furnishings, Household Equipment and Routine, Household Maintenance | 4.9 |
+> | 06 | Health | 3.3 |
+> | 07 | Transport | 12.8 |
+> | 08 | Communication | 4.0 |
+> | 09 | Recreation & Culture | 3.4 |
+> | 10 | Education | 2.1 |
+> | 11 | Restaurants & Accommodation Services| 6.2 |
+> | 12 | Miscellaneous Goods & Services | 8.4 |
+> 
+> *The weights applied are based on the 2004/2005 Household Expenditure Survey[^19]
 
 ### Producer Price Index
 
@@ -1262,3 +1317,4 @@ In summary, while both the PPI and CPI measure changes in prices over time, they
 [^13]: Chapter 25. The Monetary System. _Economics, Global Edition, Second Edition_ by Daron Acemoglu, David Laibson, John A. List
 [^14]: For purposes of simplicity, it has been assumed that the cash flow is the same in each year. This can be generalized to allow cash flows to grow over time.
 [^15]: Chapter 5. Option Pricing Theory and Models. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
+[^19]: _Understanding the Consumer Price Index_ by Statistical Institute of Jamaica
