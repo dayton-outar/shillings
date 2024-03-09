@@ -1224,7 +1224,7 @@ In summary, the CPI for an item provides valuable insight into changes in the co
 > 
 > _Table 1_. Weight Structure in the Revised CPI
 > 
-> |    | Divisions | Weights* as percentages |
+> |    | Divisions | Weights (%) |
 > |:---|:--- | ---:|
 > | 01 | Food and Non-Alcoholic Beverages | 37.4|
 > | 02 | Alcoholic Beverages and Tobacco | 1.4 |
