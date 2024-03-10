@@ -1087,6 +1087,80 @@ Options are traded for several underlying assets, which includes,
 > [Here we] consider an option that is embedded in many projects, namely the option to wait and take the project in a later period. Why might a firm want to do this? If the present value of the cash flows on the project are volatile and can change over time, a project or technology that does not pass [the capital budget evaluation] now may become valuable in the future. Furthermore, a firm may gain by waiting on a project even after a project has a positive net present value, because the project may have a higher value taken at a future date. This option is most valuable in projects where a firm has the exclusive right to invest in a project and becomes less valuable as the barriers to entry decline.
 > 
 > There are at least three cases where the option to delay can make a difference when valuing a firm. The first is ***undeveloped land*** in the hands of real estate investor or company. The choice of when to develop rests in the hands of the owner, and presumably development will occur when real estate values increase enough to justify it. The second is a firm that owns a ***patent or patents***. Since a patent provides a firm with the exclusive rights to produce the patented product or service, it can and should be valued as an option. The third is a natural resource company that has ***undeveloped reserves*** that it can choose to develop at a time of its choosing—presumably when the price of the resource is high.
+> 
+> ... ***In an environment in which a project can be taken by only one firm because of legal restrictions or other barriers to entry to competitors, however, the changes in the project’s value over time give it the characteristics of a call option.***
+> 
+> **Payoff on the Option to Delay**
+> 
+> Assume that a project requires an initial up-front investment of $X$, and that the present value of expected cash inflows from investing in the project, computed today, is $V$. The net present value of this project is the difference between the two:
+> 
+> $\huge{ NPV = V - X }$
+> 
+> Now assume that the firm has exclusive rights to this project for the next $n$ years, and that the present value of the cash inflows may change over that time (but that the cost of the project stays fixed at $X$), because of changes in either the cash flows or the discount rate. Thus, the project may have a negative net present value right now, but it may still be a good project if the firm waits. Defining $V$ again as the present value of the cash flows, the firm’s decision rule on this project can be summarized as follows:
+> 
+> If $V > X$ Invest in the project: Project has positive net present value.
+> 
+> If $V < X$ Do not invest in the project: Project has negative net present value.
+> 
+> If the firm does not invest in the project over its life, it incurs no additional cash flows, though it will lose what it invested to get exclusive rights to the project. This relationship can be presented in a payoff diagram of cash flows on this project, as shown in illustration below, assuming that the firm holds out until the end of the period for which it has exclusive rights to the project.
+> 
+> ![The Option to Delay a Project](/.attachments/valuation-option-to-delay.png)
+> 
+> _The Option to Delay a Project_
+> 
+> Note that this payoff diagram is that of a call option—the underlying asset is the project, the strike price of the option is the investment needed to take the project, and the life of the option is the period for which the firm has rights to the project. The present value of the cash flows on this project and the expected variance in this present value represent the value and variance of the underlying asset.
+> 
+> ...
+> 
+> **Value of the Underlying Asset** In the case of product options, the underlying asset is the project to which the firm has exclusive rights. The current value of this asset is the present value of expected cash flows from initiating the project now, not including the up-front investment. This present value can be obtained from a standard investment analysis, discounting expected cash flows at a risk adjusted discount rate. There is likely to be a substantial amount of error in the cash flow estimates and the present value, especially if the project is in a new business or involves an untested technology. Rather than being viewed as a problem, this uncertainty should be viewed as the reason the project delay option has value. _If the expected cash flows on the project were known with certainty and were not expected to change, there would be no need to adopt an option pricing framework, since there would be no value to the option._
+> 
+> **Variance in the Value of the Asset** As noted in the prior section, there is likely to be considerable uncertainty associated with the cash flow estimates and the present value that measures the value of the project now. This is partly because the potential market for the product may be unknown, and partly because technological shifts can change the cost structure and profitability of the product. The variance in the present value of cash flows from the project can be estimated in one of three ways.
+> 
+> 1. If we have invested in similar projects in the past, the variance in the cash flows from those projects can be used as an estimate. This may be the way that a consumer product company like Gillette might estimate the variance associated with introducing a new blade for its razors.
+> 
+> 2. We can assign probabilities to various market scenarios, estimate cash flows and a present value under each scenario, and then calculate the variance across present values. Alternatively, the probability distributions can be estimated for each of the inputs into the project analysis—the size of the market, the market share, and the profit margin, for instance—and simulations used to estimate the variance in the present values that emerge. This approach tends to work best when there are only one or two sources of significant uncertainty about future cash flows.
+> 
+> 3. We can use the variance in the value of firms involved in the same business (as the project being considered) as an estimate of the variance in present value for the project. Thus, the average variance in the value of firms involved in the software business can be used as the variance in present value of a software project.
+> 
+> The value of the option is largely derived from the variance in cash flows; the higher the variance, the higher the value of the project delay option. Thus, the value of an option to invest in a project in a stable business will be less than the value of one in an environment where technology, competition, and markets are all changing rapidly.
+> 
+> **Exercise Price on Option** The option to delay a project is exercised when the firm owning the rights to the project decides to invest in it. The cost of making this initial investment is the exercise price of the option. The underlying assumption is that this cost remains constant (in present value dollars) and that any uncertainty associated with the investment is reflected in the present value of cash flows on the product. That is more an assumption of convenience than necessity, since it makes valuing the option a little easier.
+> 
+> **Expiration of the Option and the Riskless Rate** The project delay option expires when the rights to the project lapse. Investments made after the project rights expire are assumed to deliver a net present value of zero as competition drives returns down to the required rate. The riskless rate to use in pricing the option should be the rate that corresponds to the expiration of the option. While expiration dates can be estimated easily when firms have the explicit right to a project (through a license or a patent, for instance), they become far more difficult to obtain when the right is less clearly defined. If, for instance, a firm has a competitive advantage on a product or project, the option life can be defined as the expected period over which the advantage can be sustained.
+> 
+> **Cost of Delay** An American option generally will not be exercised prior to expiration. When you have the exclusive rights to a project, though, and the net present value turns positive, you would not expect the owner of the rights to wait until the rights expire to exercise the option (invest in the project). Note that there is a cost to delaying investing in a project, once the net present value turns positive. If you wait an additional period, you may gain if the variance pushes value higher but you also lose one period of protection against competition. You have to consider this cost when analyzing the option, and there are two ways of estimating it:
+> 
+> 1. Since the project rights expire after a fixed period, and excess profits (which are the source of positive present value) are assumed to disappear after that time as new competitors emerge, each year of delay translates into one less year of value-creating cash flows. If the cash flows are evenly distributed over time, and the life of the patent is n years, the cost of delay can be written as:
+> 
+>    $\huge{ \text{ Annual cost of delay } = \frac{1}{n} }$
+> 
+>    Thus, if the project rights are for 20 years, the annual cost of delay works out to $\frac{1}{20}$ or 5% in the first year. Note, though, that this cost of delay rises each year, to $\frac{1}{19}$ in year 2, $\frac{1}{18}$ in year 3, and so on, making the cost of delaying exercise larger over time.
+> 
+> 2. If the cash flows are uneven, the cost of delay can be more generally defined in terms of the cash flow that can be expected to occur over the next period as a percent of the present value today:
+> 
+>    $\huge{ \text{Cost of delay} = \text{Cash flow}_p \over \text{Present value}_n }$
+>    
+>    where $p$ is next period and $n$ is now
+> 
+> In either case, the likelihood that a firm will delay investing in a project is higher early in the exclusive rights period rather than later and will increase as the loss in cash flows from waiting a period increases.
+> 
+> ...
+> 
+> **Problems in Valuing the Option to Delay**
+> 
+> While it is quite clear that the option to delay is embedded in many projects, several problems are associated with the use of option pricing models to value these options. First, the underlying asset in this option, which is the project, is not traded, making it difficult to estimate its value and variance. The value can be estimated from the expected cash flows and the discount rate for the project, albeit with error. The variance is even more difficult to estimate, however, since we are attempting the estimate a variance in project value over time.
+> 
+> Second, the behavior of prices over time may not conform to the price path assumed by the option pricing models. In particular, the assumption that value follows a diffusion process, and that the variance in value remains unchanged over time, may be difficult to justify in the context of a project. For instance, a sudden technological change may dramatically change the value of a project, either positively or negatively.
+> 
+> Third, there may be no specific period for which the firm has rights to the project. Unlike the case of a patent, in which the firm has exclusive rights to produce the patented product for a specified period, the firm’s rights to a specific project often are less clearly defined, in terms of both exclusivity and time. For instance, a firm may have significant advantages over its competitors, which may, in turn, provide it with the virtually exclusive rights to a project for a period of time. An example would be a company with strong brand name recognition in retailing or consumer products. The rights are not legal restrictions, however, and will erode over time. In such cases, the expected life of the project itself is uncertain and only an estimate. In the valuation of the rights to the product in the previous section a life of five years for the option was used, but competitors could in fact enter sooner than anticipated. Alternatively, the barriers to entry may turn out to be greater than expected, and allow the firm to earn excess returns for longer than five years. Ironically, uncertainty about the expected life of the option can increase the variance in present value, and through it, the expected value of the rights to the project.
+> 
+> **Implications and Extensions of Delay Options**
+> 
+> Several interesting implications emerge from the analysis of the option to delay a project as an option. First, a project may have a negative net present value currently based on expected cash flows, but the rights to it may still be valuable because of the option characteristics. By the same token, the exclusive rights to a non-viable technology in a risky business can be worth a great deal.
+> 
+> Second, a project may have a positive net present value but still not be accepted right away. This can happen because the firm may gain by waiting and accepting the project in a future period, for the same reasons that investors do not always exercise an option that is in the money. A firm is more likely to wait if it has the rights to the project for a long time, protection against competition and the variance in project inflows is high. To illustrate, assume a firm has the patent rights to produce a new type of disk drive for computer systems and building a new plant will yield a positive net present value today. If the technology for manufacturing the disk drive is in flux, however, the firm may delay investing in the project in the hopes that the improved technology will increase the expected cash flows and consequently the value of the project. It has to weigh this benefit against the cost of delaying the project, which will be the cash flows that will be forsaken by not investing in it.
+> 
+> Third, factors that can make a project less attractive in a static analysis can actually make the rights to the project more valuable. As an example, consider the effect of uncertainty about the size of the potential market and the magnitude of excess returns. In a static analysis, increasing this uncertainty increases the riskiness of the project and may make it less attractive. When the project is viewed as an option, an increase in the uncertainty may actually make the option more valuable, not less. The chapter will consider two cases, product patents and natural resource reserves, where the project delay option allows value to be estimated more precisely.
 
 ## Inflation
 
