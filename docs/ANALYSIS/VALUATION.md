@@ -1061,7 +1061,7 @@ Options are traded for several underlying assets, which includes,
 > ${ d_1 = { { { ln \left( \frac{S}{K} \right) + \left( r + \frac{σ^2}{2} \right)t } } \over { σ\sqrt{t} } } }$ \
 > $d_2 = d_1 - { σ\sqrt{t} }$
 > 
-> Note that $e^{–rt}$ is the present value factor, and reflects the fact that the exercise price on the call option does not have to be paid until expiration, since the model values European options. $N(d_1)$ and $N(d_2)$ are probabilities, estimated by using a cumulative standardized normal distribution, and the values of d1 and d2 obtained for an option. The cumulative distribution is shown below.
+> Note that $e^{–rt}$ is the present value factor, and reflects the fact that the exercise price on the call option does not have to be paid until expiration, since the model values European options. $N(d_1)$ and $N(d_2)$ are probabilities, estimated by using a cumulative standardized normal distribution, and the values of $d_1$ and $d_2$ obtained for an option. The cumulative distribution is shown below.
 > 
 > ![Cumulative Normal Distribution](/.attachments/valuation-cumulative.normal.distribution.png)
 > 
@@ -1079,6 +1079,14 @@ Options are traded for several underlying assets, which includes,
 > The second relates to the period over which the inputs are estimated. For instance, the preceding rate is an annual rate. The variance that is entered into the model also has to be an annualized variance. The variance, estimated from ln(asset prices), can be annualized easily because variances are linear in time if the serial correlation is zero. Thus, if monthly or weekly prices are used to estimate variance, the variance is annualized by multiplying by 12 or 52, respectively.
 > 
 > **Model Limitations and Fixes** The Black-Scholes model was designed to value European options that can be exercised only at maturity and whose underlying assets do not pay dividends. In addition, options are valued based on the assumption that option exercise does not affect the value of the underlying asset. In practice, assets do pay dividends, options sometimes get exercised early, and exercising an option can affect the value of the underlying asset. Adjustments exist that, while not perfect, provide partial corrections to the Black-Scholes model.[^15]
+
+### Option to Delay
+
+> In traditional investment analysis, a project or new investment should be accepted only if the returns on the project exceed the hurdle rate; in the context of cash flows and discount rates, this translates into investing in projects with positive net present values (NPVs). The limitation of this view of the world, which analyzes projects on the basis of expected cash flows and discount rates, is that it fails to consider fully the options that are usually associated with many investments.
+> 
+> [Here we] consider an option that is embedded in many projects, namely the option to wait and take the project in a later period. Why might a firm want to do this? If the present value of the cash flows on the project are volatile and can change over time, a project or technology that does not pass muster now may become valuable in the future. Furthermore, a firm may gain by waiting on a project even after a project has a positive net present value, because the project may have a higher value taken at a future date. This option is most valuable in projects where a firm has the exclusive right to invest in a project and becomes less valuable as the barriers to entry decline.
+> 
+> There are at least three cases where the option to delay can make a difference when valuing a firm. The first is ***undeveloped land*** in the hands of real estate investor or company. The choice of when to develop rests in the hands of the owner, and presumably development will occur when real estate values increase enough to justify it. The second is a firm that owns a ***patent or patents***. Since a patent provides a firm with the exclusive rights to produce the patented product or service, it can and should be valued as an option. The third is a natural resource company that has ***undeveloped reserves*** that it can choose to develop at a time of its choosing—presumably when the price of the resource is high.
 
 ## Inflation
 
