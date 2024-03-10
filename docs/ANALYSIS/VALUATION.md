@@ -1508,4 +1508,5 @@ In summary, while both the PPI and CPI measure changes in prices over time, they
 [^14]: For purposes of simplicity, it has been assumed that the cash flow is the same in each year. This can be generalized to allow cash flows to grow over time.
 [^15]: Chapter 5. Option Pricing Theory and Models. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^16]: Chapter 28. Option to Delay and Valuation Implications. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
+[^17]: Chapter 29. The Options to Expand and to Abandon: Valuation Implications. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^19]: _Understanding the Consumer Price Index_ by Statistical Institute of Jamaica
