@@ -1379,6 +1379,63 @@ Options are traded for several underlying assets, which includes,
 > **Increasing Risk Can Increase Equity Value**
 > 
 > In traditional discounted cash flow valuation, higher risk almost always translates into lower value for equity investors. When equity takes on the characteristics of a call option, you should not expect this relationship to continue to hold. Risk can become your ally, when you are an equity investor in a troubled firm. In essence, you have little to lose and much to gain from swings in firm value.
+> 
+> ...
+> 
+> **Probability of Default and Default Spreads**
+> 
+> One of the more interesting pieces of output from the option pricing model is the risk-neutral probability of default that you can obtain for the firm. In the Black-Scholes model, you can estimate this value from N(d2), which is the risk-neutral probability that $S > K$, which in this model is the probability that the value of the assets will exceed the face value of the debt.
+> 
+> Risk-neutral probability of default = 1 − N(d2)
+> 
+> In addition, the interest rate from the debt allows us to estimate the appropriate default spread to charge on bonds.
+> 
+> You can see the potential in applying this model to bank loan portfolios to extract both the probability of default and to measure whether you are charging an interest rate that is high enough on the debt. In fact, there are commercial services that use fairly sophisticated option pricing models to estimate both values for firms.
+> 
+> **Estimating the Value of Equity as an Option**
+> 
+> The examples we have used thus far to illustrate the application of option pricing to value equity have included some simplifying assumptions. Among them are the following:
+>
+> - There are only two _claimholders_ in the firm—debt and equity.
+> - There is only one issue of debt outstanding, and it can be retired at face value.
+> - The debt has a zero coupon and no special features (convertibility, put clauses, etc.).
+> - The value of the assets of the firm and the variance in that value can be estimated. In liquidation, we assume that you will get the value of the assets as the liquidation proceeds.
+>
+> Each of these assumptions is made for a reason. First, restricting the claimholders to just debt and equity makes the problem more tractable; introducing other claimholders such as preferred stock makes it more difficult to arrive at a result, albeit not impossible. Second, by assuming only one zero coupon debt issue that can be retired at face value any time prior to maturity, we align the features of the debt more closely to the features of the strike price on a standard option. Third, if the debt is coupon debt, or more than one debt issue is outstanding, the equity investors can be forced to exercise (liquidate the firm) at these earlier coupon dates if they do not have the cash flows to meet their coupon obligations.
+> 
+> Finally, knowing the value of the firm assets in liquidation and the variance in that value makes the option pricing possible, but it also raises an interesting question about the usefulness of option pricing in equity valuation. If the bonds of the firm are publicly traded, the market value of the debt can be subtracted from the value of the firm to obtain the value of equity much more directly. The option pricing approach does have its advantages, however. Specifically, when the debt of a firm is not publicly traded, option pricing theory can provide an estimate of value for the equity in the firm. Even when the debt is publicly traded, the bonds may not be correctly valued, and the option pricing framework can be useful in evaluating the values of debt and equity. Finally, the value of the firm may be different from the liquidation value of the assets; the former also incorporate the expected value of growth potential.
+> 
+> **Inputs for Valuing Equity as an Option**
+> 
+> Since most firms do not fall into the neat framework just developed (such as having only one zero coupon bond outstanding), some compromises are needed in order to use this model in valuation.
+> 
+> **Value of the assets of the Firm** The liquidation value of the assets of the firm can be obtained in one of four ways. In the first, we cumulate the market values of outstanding debt and equity, assuming that all debt and equity are traded, to obtain firm value and we assume that this approximately liquidation value. The option pricing model then reallocates the firm value between debt and equity. This approach, while simple, is internally inconsistent. We start with one set of market values for debt and equity and, using the option pricing model, end up with entirely different values for each. We are also assuming that the going concern value of the firm is equal to what you would get if you liquidated its assets.
+> 
+> In the second, we estimate the value of the assets of the firm by discounting expected cash flows at the cost of capital. The one consideration that we need to keep in mind is that the value of the firm in an option pricing model should be the value obtained on liquidation. This may be less than the total firm value, which includes expected future growth potential, and it may also be reduced to reflect the cost of liquidation. If we estimate the firm value using a discounted cash flow model this would suggest that only existing investments should be considered while estimating firm value.[^20]
+> 
+> In the third approach, we estimate a multiple of revenues by looking at healthy mature firms (with little or no growth potential) in the same business and apply this multiple to the revenues of the firm you are valuing. Implicitly, we are assuming that a potential buyer, in the event of liquidation, will pay this value.
+> 
+> **Variance in Firm Value** We can obtain the variance in firm value directly if both stocks and bonds in the firm are traded. Defining ${\sigma}_e^2$ as the variance in the stock price and ${\sigma}_d^2$ as the variance in the bond price, $w_e$ as the market-value weight of equity, and $w_d$ as the market-value weight of debt, we can write the variance in firm value as:[^21]
+> 
+> $\huge{ { {\sigma}_{firm}^2 } = { {w_e^2} {\sigma_e^2} } + { {w_d^2} {\sigma_d^2}} + { 2 {w_e} {w_d} { {\rho}_{ed} } {\sigma_e} {\sigma}_d }}$
+> 
+> where ${\rho}_{ed}$ is the correlation between the stock and the bond prices. When the bonds of the firm are not traded, we can use the variance of similarly rated bonds as the estimate of ${\sigma}_d^2$ and the correlation between similarly rated bonds and the firm’s stock as the estimate of ${\rho}_{ed}$.
+> 
+> When companies get into financial trouble, this approach can yield misleading results as both its stock prices and its bond prices become more volatile. An alternative that often yields more reliable estimates is to use the average variance in firm value for other firms in the sector. Thus the value of equity in a deeply troubled steel company can be estimated using the average variance in firm value of all traded steel companies.
+> 
+> **Maturity of the Debt** Most firms have more than one debt issue on their books, and much of the debt comes with coupons. Since the option pricing model allows for only one input for the time to expiration, we have to convert these multiple bonds issues and coupon payments into one equivalent zero coupon bond.
+> 
+> - One solution, which takes into account both the coupon payments and the maturity of the bonds, is to estimate the duration of each debt issue and calculate a face-value-weighted average of the durations of the different issues. This value-weighted duration is then used as a measure of the time to expiration of the option.
+> - An approximation is to use the face-value-weighted maturity of the debt coming for the maturity of the zero coupon bond in the option pricing model.
+> 
+> **Face Value of Debt** When a distressed firm has multiple debt issues outstanding, you have three choices when it comes to what you use as the face value of debt:
+> 
+> 1. You could add up the principal due on all of the debt of the firm and consider it to be the face value of the hypothetical zero coupon bond that you assume that your firm has issued. The limitation of this approach is that it will understate what the firm will truly have to pay out over the life of the debt, since there will be coupon payments and interest payments during the period.
+> 
+> 2. At the other extreme, you could add the expected interest and coupon payments that will come due on the debt to the principal payments to come up with a cumulated face value of debt. Since the interest payments occur in the near years and the principal payments are due only when the debt comes due, you are mixing cash flows up at different points in time when you do this. This is, however, the simplest approach of dealing with intermediate interest payments coming due.
+> 
+> 3. You can consider only the principal due on the debt as the face value of the debt and the interest payments each year, specified as a percent of firm value, can take the place of the dividend yield in the option pricing model. In effect, each year that the firm remains in existence, you would expect to see the value of the firm decline by the expected payments on the debt.
+
 
 ## Inflation
 
@@ -1621,3 +1678,5 @@ In summary, while both the PPI and CPI measure changes in prices over time, they
 [^17]: Chapter 29. The Options to Expand and to Abandon: Valuation Implications. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^18]: Chapter 30. Valuing Equity in Distressed Firms. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^19]: _Understanding the Consumer Price Index_ by Statistical Institute of Jamaica
+[^20]: Technically, this can be done by putting the firm into stable growth and valuing it as a stable growth firm, where reinvestments are used to either preserve or augment existing assets.
+[^21]: This is an extension of the variance formula for a two-asset portfolio.
