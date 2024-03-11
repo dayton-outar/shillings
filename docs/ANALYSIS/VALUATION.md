@@ -1268,7 +1268,117 @@ Options are traded for several underlying assets, which includes,
 
 ### Option to Expand
 
-> Firms sometimes invest in projects because the investments allow them either to make further investments or to enter other markets in the future. In such cases, we can view the initial projects as yielding options allowing the firm to invest in other projects, and these options have value. Put another way, a firm may accept a negative net present value on the initial project because of the possibility of high positive net present values on future projects.[^17]
+> Firms sometimes invest in projects because the investments allow them either to make further investments or to enter other markets in the future. In such cases, we can view the initial projects as yielding options allowing the firm to invest in other projects, and these options have value. Put another way, a firm may accept a negative net present value on the initial project because of the possibility of high positive net present values on future projects.
+> 
+> ...
+> 
+> ![The Option to Expand a Project](/.attachments/valuation-option.to.expand.png) 
+> 
+> _The Option to Expand a Project_
+> 
+> **Inputs to Value the Option to Expand** To understand how to estimate the value of the option to expand, let us begin by recognizing that there are two linked projects. The first project generally has a negative net present value and is recognized as a poor investment, even by the firm investing in it. The second project is the potential to expand that comes with the first project. It is the second project that represents the underlying asset for the option. The inputs have to be defined accordingly:
+> 
+> - The present value of the cash flows that you would generate if you were to invest in the second project today (the expansion option) is the value of the underlying asset—$S$ in the option pricing model.
+> 
+> - If there is substantial uncertainty about the expansion potential, the present value is likely to be volatile and change over time as circumstances change. It is the variance in this present value that you would want to use to value the expansion option. Since projects are not traded, you have to either estimate this variance from simulations or use the variance in values of publicly traded firms in the business.
+> 
+> - The cost that you would incur up front, if you invest in the expansion today, is the equivalent of the strike price.
+> 
+> - The life of the option is fairly difficult to define, since there is usually no externally imposed exercise period. (This is in contrast to the patents valued in the preceding chapter, which have a legal life that can be used as the option life.) When valuing the option to expand, the life of the option will be an internal constraint imposed by the firm on itself. For instance, a firm that invests on a small scale in China might impose a constraint that it will either expand within five years or pull out of the market. Why might it do so? There may be considerable costs associated with maintaining the small presence or the firm may have scarce resources that have to be committed elsewhere.
+> 
+> - As with other real options, there may be a cost to waiting once the expansion option becomes viable. That cost may take the form of cash flows that will be lost on the expansion project if it is not taken or a cost imposed on the firm until it makes its final decision. For instance, the firm may have to pay a fee every year until it makes its final decision.
+> 
+> ...
+> 
+> **Problems in Valuing the Option to Expand**
+> 
+> The practical considerations associated with estimating the value of the option to expand are similar to those associated with valuing the option to delay. In most cases, firms with options to expand have no specific time horizon by which they have to make an expansion decision, making these open-ended options or, at best, options with arbitrary lives. Even in those cases where a life can be estimated for the option, neither the size nor the potential market for the product may be known, and estimating either can be problematic. To illustrate, consider the Ambev example discussed earlier. While we adopted a period of five years, at the end of which Ambev has to decide one way or another on its future expansion in United States, it is entirely possible that this time frame is not specified at the time the initial investment is made. Furthermore, we have assumed that both the cost and the present value of expansion are known at the time of the initial investment. In reality, the firm may not have good estimates for either input before opening the first store, since it does not have much information on the underlying market.
+> 
+> **Extensions and Implications of Expansion Options**
+> 
+> The option to expand can be used by firms to rationalize investing in projects that have negative net present values but provide significant opportunities to enter new markets or to sell new products. The option pricing approach adds rigor to this argument by estimating the value of these options, and it also provides insight into those occasions when they are most valuable. The option to expand is clearly more valuable for more volatile businesses with higher returns on projects (such as biotechnology or computer software), than it is for stable businesses with lower returns (such as automobile production). We will consider three cases where the expansion option may yield useful insights—strategic acquisitions, research and development expenses, and multistage projects.
+> 
+> ...
+> 
+> **Quantitative Estimation**
+> 
+> When real options are used to justify a decision, the justification has to be in more than qualitative terms. In other words, managers who argue for investing in a project with poor returns or paying a premium on an acquisition on the basis of the real options generated by this investment should be required to value these real options and show that the economic benefits exceed the costs. There will be two arguments made against this requirement. The first is that real options cannot be easily valued, since the inputs are difficult to obtain and often noisy. The second is that the inputs to option pricing models can be easily manipulated to back up whatever the conclusion might be. While both arguments have some basis, an estimate is better than no estimate at all, and the process of trying to estimate the value of a real option is, in fact, the first step to understanding what drives its value.
+> 
+> ...
+> 
+> **Valuing a Firm with the Option to Expand**
+> 
+> Is there an option to expand embedded in some firms that can lead to these firms to trade at a premium over their discounted cash flow values? At least in theory, there is a rationale for making this argument for a small, high-growth firm in a large and evolving market. The discounted cash flow valuation is based on expected cash flows and expected growth and these expectations should reflect the probability that the firm could be hugely successful (or a huge failure). What the expectations might fail to consider is that, in the event of success, the firm could invest more, add new products or expand into new markets and augment this success. This is the real option that is creating the additional value.
+> 
+> **Relationship to Discounted Cash Flow Valuation**
+> 
+> If the value of this option to expand is estimated, the value of a firm can be written as the sum of two components—a discounted cash flow value based on expected cash flows and a value associated with the option to expand:
+> 
+> Value of firm = Discounted cash flow value + Option to expand
+> 
+> The option pricing approach adds rigor to this argument by estimating the value of the option to expand, and it also provides insight into those occasions when it is most valuable. In general, the option to expand is clearly more valuable for more volatile businesses with higher returns on projects and greater barriers to competitive entry (such as new technology), than in stable businesses with lower returns (such as housing, utilities, or automobile production).
+> 
+> Again, though, you have to be careful not to double count the value of the option. If you use a higher growth rate than would be justified based on expectations because of the option to expand, you have already counted the value of the option in the discounted cash flow valuation. Adding an additional component to reflect the value of the option would be double counting.[^17]
+
+### Option to Abandon
+
+> When investing in new projects, firms worry about the risk that the investment will not pay off, and that actual cash flows will not measure up to expectations. Having the option to abandon a project that does not pay off can be valuable, especially on projects with a significant potential for losses.
+> 
+> **Payoff on the Option to Abandon**
+> 
+> The option pricing approach provides a general way of estimating and building in the value of abandonment. To illustrate, assume that V is the remaining value on a project if it continues to the end of its life, and L is the liquidation or abandonment value for the same project at the same point in time. If the project has a remaining life of n years, the value of continuing the project can be compared to the liquidation (abandonment) value. If the value from continuing is higher, the project should be continued; if the value of abandonment is higher, the holder of the abandonment option could consider abandoning the project. The payoffs can be written as:
+> 
+> Payoff from owning an abandonment option, \
+> = $0$ if $V > L$ \
+> = $L - V$ if $V \leq L$
+> 
+> ![The Option to Abandon a Project](/.attachments/valuation-option.to.abandon.png)
+> 
+> _The Option to Abandon a Project_
+> 
+> Unlike the prior two cases, the option to abandon takes on the characteristics of a put option.
+> 
+> ...
+> 
+> **Problems in Valuing the Option to Abandon**
+> 
+> ... More often, however, the firm has the option to abandon, and the salvage value from abandonment can only be estimated. Further, the abandonment value may change over the life of the project, making it difficult to apply traditional option pricing techniques. Finally, it is entirely possible that abandoning a project may not bring in a liquidation value but may create costs instead; a manufacturing firm may have to pay severance to its workers, for instance. In such cases, it would not make sense to abandon unless the cash flows on the project are even more negative.[^17]
+
+### Option to Liquidate
+
+> In most publicly traded firms, equity has two features. The first is that the equity investors run the firm and can choose to liquidate its assets and pay off other claim holders at any time. The second is that the liability of equity investors in some private firms and almost all publicly traded firms is restricted to their equity investments in these firms. This combination of the option to liquidate and limited liability allows equity to have the features of a call option. In firms with substantial liabilities and negative earnings, the option value of equity may be in excess of the discounted cash flow value.
+> 
+> **Payoff on Equity as an Option**
+> 
+> The equity in a firm is a residual claim, that is, equity holders lay claim to all cash flows left after other financial claimholders (debt, preferred stock, etc.) have been satisfied. If a firm is liquidated, the same principle applies; equity investors receive the cash that is left in the firm after all outstanding debt and other financial claims have been paid off. With limited liability, if the value of the firm is less than the value of the outstanding debt, equity investors cannot lose more than their investment in the firm. The payoff to equity investors on liquidation can therefore be written as:
+> 
+> Payoff to equity on liquidation, \
+> = $V - D$ if $V > D$ \
+> = $0$ if $V \leq D$
+> 
+> where, \
+> $V$ = Liquidation value of the firm \
+> $D$ = Face value of the outstanding debt and other nonequity claims
+> 
+> Equity can thus be viewed as a call option on the firm, where exercising the option requires that the firm be liquidated and the face value of the debt (which corresponds to the exercise price) be paid off. The firm is the underlying asset and the option expires when the debt comes due.
+> 
+> ![Payoff on Equity as Option on a Firm](/.attachments/valuation-option.payoff.firm.png)
+> 
+> _Payoff on Equity as Option on a Firm_
+> 
+> **IMPORTANCE OF LIMITED LIABILITY**
+> 
+> The argument that equity is a call option holds only if equity has limited liability—that is, the most that an equity investor can lose is what he or she has invested in a firm. This is clearly the case in publicly traded companies. In private companies, however, the owners often have unlimited liability. If these firms get into financial trouble and are unable to make their debt payments, the owner’s personal assets can be put at risk. You should not value equity as a call option in these cases.
+> 
+> **When Will Equity Be Worthless?**
+> 
+> In discounted cash flow valuation, we argue that equity is worthless if what you own (the value of the assets) is less than what you owe. The first implication of viewing equity as a call option is that equity will have value, even if the value of the assets falls well below the face value of the outstanding debt. While the firm will be viewed as troubled by investors, accountants, and analysts, its equity is not worthless. In fact, just as deep out-of-the-money [or in the red] traded options command value because of the possibility that the value of the underlying asset may increase above the strike price in the remaining lifetime of the option, equity commands value because of the time premium on the option (the time until the bonds mature and come due) and the possibility that the value of the assets may increase above the face value of the bonds before they come due.
+> 
+> ...
+> 
+> **Increasing Risk Can Increase Equity Value**
+> 
+> In traditional discounted cash flow valuation, higher risk almost always translates into lower value for equity investors. When equity takes on the characteristics of a call option, you should not expect this relationship to continue to hold. Risk can become your ally, when you are an equity investor in a troubled firm. In essence, you have little to lose and much to gain from swings in firm value.
 
 ## Inflation
 
@@ -1509,4 +1619,5 @@ In summary, while both the PPI and CPI measure changes in prices over time, they
 [^15]: Chapter 5. Option Pricing Theory and Models. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^16]: Chapter 28. Option to Delay and Valuation Implications. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^17]: Chapter 29. The Options to Expand and to Abandon: Valuation Implications. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
+[^18]: Chapter 30. Valuing Equity in Distressed Firms. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^19]: _Understanding the Consumer Price Index_ by Statistical Institute of Jamaica
