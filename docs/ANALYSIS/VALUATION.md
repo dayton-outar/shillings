@@ -1278,7 +1278,7 @@ Options are traded for several underlying assets, which includes,
 > 
 > **Inputs to Value the Option to Expand** To understand how to estimate the value of the option to expand, let us begin by recognizing that there are two linked projects. The first project generally has a negative net present value and is recognized as a poor investment, even by the firm investing in it. The second project is the potential to expand that comes with the first project. It is the second project that represents the underlying asset for the option. The inputs have to be defined accordingly:
 > 
-> - The present value of the cash flows that you would generate if you were to invest in the second project today (the expansion option) is the value of the underlying asset—$S$ in the option pricing model.
+> - The present value of the cash flows that you would generate if you were to invest in the second project today (the expansion option) is the value of the underlying asset— $S$ in the option pricing model.
 > 
 > - If there is substantial uncertainty about the expansion potential, the present value is likely to be volatile and change over time as circumstances change. It is the variance in this present value that you would want to use to value the expansion option. Since projects are not traded, you have to either estimate this variance from simulations or use the variance in values of publicly traded firms in the business.
 > 
