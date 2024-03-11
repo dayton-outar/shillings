@@ -1417,7 +1417,7 @@ Options are traded for several underlying assets, which includes,
 > 
 > **Variance in Firm Value** We can obtain the variance in firm value directly if both stocks and bonds in the firm are traded. Defining ${\sigma}_e^2$ as the variance in the stock price and ${\sigma}_d^2$ as the variance in the bond price, $w_e$ as the market-value weight of equity, and $w_d$ as the market-value weight of debt, we can write the variance in firm value as:[^21]
 > 
-> $\huge{ { {\sigma}_{firm}^2 } = { {w_e^2} {\sigma_e^2} } + { {w_d^2} {\sigma_d^2}} + { 2 {w_e} {w_d} { {\rho}_{ed} } {\sigma_e} {\sigma}_d }}$
+> $\huge{ { {\sigma}_{firm}^2 } = { {w_e^2} {\sigma_e^2} } + { {w_d^2} {\sigma_d^2}} + { 2 {w_e} {w_d} { {\rho}_{ed} } {\sigma_e} {\sigma}_d } }$
 > 
 > where ${\rho}_{ed}$ is the correlation between the stock and the bond prices. When the bonds of the firm are not traded, we can use the variance of similarly rated bonds as the estimate of ${\sigma}_d^2$ and the correlation between similarly rated bonds and the firm’s stock as the estimate of ${\rho}_{ed}$.
 > 
@@ -1659,14 +1659,14 @@ In summary, while both the PPI and CPI measure changes in prices over time, they
 6. [REIT Valuation](https://youtu.be/lz8T0owadXU) - [Chris Hughen](https://www.youtube.com/@ChrisHughen)
 
 
-[^1]: Page 75. Chapter 5. _The Art of Currency Trading_ by Brent Donnelly.
+[^1]: Page 75. Chapter 5. Understand Fundamental Analysis. _The Art of Currency Trading_ by Brent Donnelly.
 [^2]: [Simply Wall Street. Company Analysis Model](https://github.com/SimplyWallSt/Company-Analysis-Model/blob/master/MODEL.markdown)
-[^3]: Page 314. Chapter 9. _Corporate Finance: The Core, Global Edition_ by Jonathan Berk and Peter Demarzo.
-[^4]: Page 22. Chapter 2. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
-[^5]: Page 599. Chapter 21. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
-[^6]: Page 305. Chapter 12. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
-[^7]: Page 537. Chapter 19. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
-[^8]: Chapter 17. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
+[^3]: Page 314. Chapter 9. Valuing Stocks. _Corporate Finance: The Core, Global Edition_ by Jonathan Berk and Peter Demarzo.
+[^4]: Page 22. Chapter 2. Approaches to Valuation. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
+[^5]: Page 599. Chapter 21. Valuing Financial Service Firms. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
+[^6]: Page 305. Chapter 12. Closure in Valuation: Estimating Terminal Value. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
+[^7]: Page 537. Chapter 19. Book Value Multiples. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
+[^8]: Chapter 17. Fundamental Principles of Relative Valuation. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^9]: Chapter 10. Mechanics of Options Markets. _Options, Futures, and Other Derivatives, Global Edition, 9th Edition_ by John C. Hull
 [^10]: Chapter 15. Black-Scholes-Merton Model. _Options, Futures, and Other Derivatives, Global Edition, 9th Edition_ by John C. Hull.
 [^11]: Chapter 18. Earnings Multiples. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
