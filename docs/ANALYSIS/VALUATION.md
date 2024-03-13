@@ -110,7 +110,7 @@ When it comes to _cashflows_, an evaluation can be done by focusing either on _E
 > 
 > **Cost of Capital versus APV Approaches** In illustration above, we noted that a firm can finance its assets, using either equity or debt. What are the effects of using debt on value? On the plus side, the tax deductibility of interest expenses provides a tax subsidy or benefit to the firm, which increases with the tax rate faced by the firm on its income. On the minus side, debt does increase the likelihood that the firm will default on its commitments and be forced into bankruptcy. The net effect can be positive, neutral or negative. In the _cost of capital approach_, we capture the effects of debt in the discount rate:
 > 
-> ***Cost of capital = Cost of equity(Proportion of equity used to fund business) + Pretax cost of debt (1 − Tax rate) (Proportion of debt used to fund business)***
+> ***Cost of capital = Cost of equity (Proportion of equity used to fund business) + Pretax cost of debt (1 − Tax rate) (Proportion of debt used to fund business)***
 > 
 > The cash flows discounted are predebt cash flows and do not include any of the tax benefits of debt (since that would be double counting).
 > 
