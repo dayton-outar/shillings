@@ -98,7 +98,7 @@ When determining current market prices, it's important to consider the reliabili
 
 ## Discounted Cashflow Model
 
-As stated previously, _Discounted Cashflow_ involves estimating the present value of a company's _future cash flow_. To do this, the _growth rate_ and the _risk_ associated with the asset continuing to deliver certain cashflow must be assessed.
+As stated previously, _Discounted Cashflow_ involves estimating the present value of a company's _future cash flow_. To do this, the _growth rate_ and the _risk_ associated with the asset must be assessed.
 
 There are several approaches and combinations with which _cashflow_, _growth_ and _risk_ can be arrived at and used to evaluate an asset. The complexity of this approach is due to the nature of various kinds of assets that promise future cashflows.
 
