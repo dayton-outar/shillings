@@ -100,6 +100,13 @@ When determining current market prices, it's important to consider the reliabili
 
 As stated previously, _Discounted Cashflow_ involves estimating the present value of a company's _future cash flow_. To do this, the _growth rate_ and the _risk_ associated with the asset must be assessed.
 
+> $\huge{Value = \sum_{t=1}^{t=n}{CF_{t} \over (1 + r)^t}}$
+> 
+> where, \
+> $n$ = Life of the asset \
+> $CF_t$ = Cash flow in period $t$ \
+> $r$ = Discount rate reflecting the riskiness of the estimated cash flows[^22]
+
 There are several approaches and combinations with which _cashflow_, _growth_ and _risk_ can be arrived at and used to evaluate an asset. The complexity of this approach is due to the nature of various kinds of assets that promise future cashflows.
 
 When it comes to _cashflows_, an evaluation can be done by focusing either on _Equity Valuation Models_ or _Firm Valuation Models_. _Equity Valuation Models_ evaluates cashflows solely on equity, that is wealth that is had from the shareholders of the asset excluding debt. _Firm Valuation Models_ includes wealth (or financing) that includes debt. The _Firm Valuation Models_ can be broken down into 3 approaches: _Cost of Capital_, _Adjusted Present Value_ and _Excess Returns_. Damodaran explains the key differences between these approaches,
@@ -132,7 +139,7 @@ When it comes to _cashflows_, an evaluation can be done by focusing either on _E
 > 
 > ***Value of asset = Present value of excess return + Investment in the asset = $2 million /.1 + $100 million = $120 million***
 > 
-> Note that the answers in the two approaches are equivalent. Why, then, would we want to use an excess return model? By focusing on excess returns, this model brings home the point that it is not earnings per se that create value, but earnings in excess of a required return.
+> Note that the answers in the two approaches are equivalent. Why, then, would we want to use an excess return model? By focusing on excess returns, this model brings home the point that it is not earnings per se that create value, but earnings in excess of a required return.[^22]
 
 Both debt and equity has _risk_ associated with them and their are about 3 main approaches of how to interpret the risk of capital (or wealth), which constitutes both debt and equity. The 3 main approaches for assessing the risk of cashflow includes _Capital Asset Pricing Model_, _Arbitrage Pricing Model_ and _Multifactor Models_.
 
@@ -1648,3 +1655,4 @@ In summary, while both the PPI and CPI measure changes in prices over time, they
 [^19]: _Understanding the Consumer Price Index_ by Statistical Institute of Jamaica
 [^20]: Technically, this can be done by putting the firm into stable growth and valuing it as a stable growth firm, where reinvestments are used to either preserve or augment existing assets.
 [^21]: This is an extension of the variance formula for a two-asset portfolio.
+[^22]: Chapter 2. Approaches to Valuation. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.

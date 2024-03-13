@@ -15,23 +15,7 @@ Now, compare the above model by Damodaran with Simply Wall Street's model (or fl
 >
 > ![Simply Wall St Discounted Cash Flow Model Selection Process](/.attachments/simply.wall.st.intrinsic-value-flowchart.png)
 
-The value of any asset following the present value rule is, 
 
-$$\huge{Value = \sum_{t=1}^{t=n}{CF_{t} \over (1 + r)^t}}$$
-
-where,
-
-<blockquote>
-<p>n = Life of the asset</p>
-<p>CF<sub>t</sub> = Cash flow in period t</p>
-<p>r = Discount rate reflecting the riskiness of the estimated cash flows</p>
-</blockquote>
-
-Cash flow can be determined from 2 main sources for stocks: dividends and free cash flow. Some of the mathematical approaches to evaluation of a stock includes,
-
-1. Dividend-Discount Model
-2. Free Cash Flow to Equity Model
-3. Free Cash Flow to Firm Model
 
 If the company that issued stocks on a stock market pays dividends, a version of the Discounted Cash Flow Model referred to as the _Dividend-Discount Model_ can be applied to arrive at the net present value of the stock.
 
