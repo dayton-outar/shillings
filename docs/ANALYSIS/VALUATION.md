@@ -107,7 +107,7 @@ As stated previously, _Discounted Cashflow_ involves estimating the present valu
 > $CF_t$ = Cash flow in period $t$ \
 > $r$ = Discount rate reflecting the riskiness of the estimated cash flows[^22]
 
-There are several approaches and combinations with which _cashflow_, _growth_ and _risk_ can be arrived at and used to evaluate an asset. The complexity of this approach is due to the nature of various kinds of assets that promise future cashflows.
+There are several approaches and combinations with which _cashflow_, _growth_ and _risk_ can be deduced and used to evaluate an asset. The complexity of this approach is due to the various circumstances that assets promise future cashflows.
 
 When it comes to _cashflows_, an evaluation can be done by focusing either on _Equity Valuation Models_ or _Firm Valuation Models_. _Equity Valuation Models_ evaluates cashflows solely on equity, that is wealth that is had from the shareholders of the asset excluding debt. _Equity Valuation Models_ include the use of _Dividends_ or _Free Cashflows to Equity_ (FCFE). _Firm Valuation Models_ includes wealth (or financing) that includes debt. The _Firm Valuation Models_ can be broken down into 3 approaches: _Cost of Capital_, _Adjusted Present Value_ and _Excess Returns_. Damodaran explains the key differences between these approaches,
 
