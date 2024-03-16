@@ -215,6 +215,10 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > ...
 > 
+> ***The beta of a security is the expected % change in its return given a 1% change in the return of the market portfolio.***
+> 
+> ...
+> 
 > **Beta and the Cost of Capital**
 > 
 > ... we have emphasized that financial managers should evaluate an investment opportunity based on its cost of capital, which is the expected return available on alternative investments in the market with comparable risk and term. For risky investments, this cost of capital corresponds to the risk-free interest rate, plus an appropriate risk premium. ...
@@ -229,7 +233,16 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > For example, if the risk-free rate is 5% and the expected return of the market portfolio is 11%, the market risk premium is 6%. In the same way that the market interest rate reflects investors’ patience and determines the time value of money, the market risk premium reflects investors’ risk tolerance and determines the market price of risk in the economy.
 > 
-> **Adjusting for Beta.** The market risk premium is the reward investors expect to earn for holding a portfolio with a beta of 1—the market portfolio itself. Consider an investment opportunity with a beta of 2. This investment carries twice as much systematic risk as an investment in the market portfolio. That is, for each dollar we invest in the opportunity, we could invest twice that amount in the market portfolio and be exposed to exactly the same amount of systematic risk. Because it has twice as much systematic risk, investors will require twice the risk premium to invest in an opportunity with a beta of 2.[^23]
+> **Adjusting for Beta.** The market risk premium is the reward investors expect to earn for holding a portfolio with a beta of 1—the market portfolio itself. Consider an investment opportunity with a beta of 2. This investment carries twice as much systematic risk as an investment in the market portfolio. That is, for each dollar we invest in the opportunity, we could invest twice that amount in the market portfolio and be exposed to exactly the same amount of systematic risk. Because it has twice as much systematic risk, investors will require twice the risk premium to invest in an opportunity with a beta of 2.
+> 
+> To summarize, we can use the beta of the investment to determine the scale of the investment in the market portfolio that has equivalent systematic risk. Thus, to compensate investors for the time value of their money as well as the systematic risk they are bearing, the cost of capital $r_I$ for an investment with beta ${\beta}_I$ should satisfy the following formula:
+>
+> **Estimating the Cost of Capital of an Investment from Its Beta**
+> 
+> $\huge{ r_I = \text{Risk-Free Interest Rate} + {\beta}_I \times \text{Market Risk Premium} }$
+> 
+> $\huge{ = r_f + {\beta}_I \times (E[R_{Mkt}] - r_f) }$
+> [^23]
 
 #### Capital Asset Pricing Model
 
