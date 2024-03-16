@@ -288,9 +288,9 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > $\huge{ E(R_i) = R_f + {\beta}_i[E(R_m) – R_f] }$
 > 
 > where, \
-> $E(R_i)$ = Expected return on asset $i$
-> $R_f$ = Risk-free rate
-> $E(R_m)$ = Expected return on market portfolio
+> $E(R_i)$ = Expected return on asset $i$ \
+> $R_f$ = Risk-free rate \
+> $E(R_m)$ = Expected return on market portfolio \
 > ${\delta}_i$ = Beta of asset $i$
 > 
 > To use the capital asset pricing model, we need three inputs. ...each of these inputs is estimated as follows:
