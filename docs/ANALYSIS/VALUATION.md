@@ -225,7 +225,7 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > **The Market Risk Premium.** We can calibrate investors’ appetite for market risk from the market portfolio. The risk premium investors earn by holding market risk is the difference between the market portfolio’s expected return and the risk-free interest rate:
 > 
-> $$\huge{ \text{ Market Risk Premium } = $E[R_{Mkt}] - r_f$ }$$
+> $$\huge{ \text{ Market Risk Premium } = E[R_{Mkt}] - r_f }$$
 > 
 > For example, if the risk-free rate is 5% and the expected return of the market portfolio is 11%, the market risk premium is 6%. In the same way that the market interest rate reflects investors’ patience and determines the time value of money, the market risk premium reflects investors’ risk tolerance and determines the market price of risk in the economy.
 > 
