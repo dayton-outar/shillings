@@ -187,7 +187,7 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > $\huge{ Var(R) = E[(R - E[R])^2] = {\sum}_R p_R \times (R - E[R])^2 }$
 > 
-> $\huge{ SD(R) \sqrt{Var(R)} }$
+> $\huge{ SD(R) = \sqrt{Var(R)} }$
 > 
 > If the return is risk-free and never deviates from its mean, the variance is zero. Otherwise, the variance increases with the magnitude of the deviations from the mean. Therefore, the variance is a measure of how “spread out” the distribution of the return is. The variance of BFI’s return is
 > 
@@ -243,7 +243,8 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > $\huge{ = r_f + {\beta}_I \times (E[R_m] - r_f) }$
 > 
-> where $m$ is for market[^23]
+> where $m$ is for market \
+> and $r_f$ is the risk-free rate [^23]
 
 #### Capital Asset Pricing Model
 
