@@ -153,7 +153,7 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > ![Breakdown of Risk](/.attachments/valuation-breakdown.of.risk.png)
 > 
-> _Breakdown of Risk_
+> _Breakdown of Risk_[^24]
 
 > Different securities have different initial prices, pay different cash flows, and sell for different future amounts. To make them comparable, we express their performance in terms of their returns. The return indicates the percentage increase in the value of an investment per dollar initially invested in the security. When an investment is risky, there are different returns it may earn. Each possible return has some likelihood of occurring. We summarize this information with a **probability distribution**, which assigns a probability, $pR$, that each possible return, $R$, will occur.
 > 
@@ -257,6 +257,39 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > **Investor Portfolios in the CAPM** If every investor in the market holds the identical market portfolio, how exactly do investors reflect their risk aversion in their investments? In the capital asset pricing model, investors adjust for their risk preferences in their allocation decision, where they decide how much to invest in a riskless asset and how much in the market portfolio. Investors who are risk averse might choose to put much or even all of their wealth in the riskless asset. Investors who want to take more risk will invest the bulk or even all of their wealth in the market portfolio. Investors who invest all their wealth in the market portfolio and are desirous of taking on still more risk would do so by borrowing at the riskless rate and investing in the same market portfolio as everyone else.
 > 
 > These results are predicated on two additional assumptions. First, there exists a riskless asset, where the expected returns are known with certainty. Second, investors can lend and borrow at the riskless rate to arrive at their optimal allocations. While lending at the riskless rate can be accomplished fairly simply by buying Treasury bills or bonds, borrowing at the riskless rate might be more difficult for individuals to do. There are variations of the CAPM that allow these assumptions to be relaxed and still arrive at conclusions that are consistent with the model.
+> 
+> ...
+> 
+> To use the capital asset pricing model, we need three inputs. ...each of these inputs is estimated as follows:
+> 
+> - The riskless asset is defined to be an asset for which the investor knows the expected return with certainty for the time horizon of the analysis.
+> - The risk premium is the premium demanded by investors for investing in the market portfolio, which includes all risky assets in the market, instead of investing in a riskless asset.
+> - The beta, defined as the covariance of the asset divided by the market portfolio, measures the risk added by an investment to the market portfolio.
+> 
+> In summary, in the capital asset pricing model all the market risk is captured in one beta measured relative to a market portfolio, which at least in theory should include all traded assets in the marketplace held in proportion to their market value.[^24]
+
+### Arbitrage Pricing Model
+
+> _The restrictive assumptions on transaction costs and private information in the capital asset pricing model, and the model’s dependence on the market portfolio, have long been viewed with skepticism by both academics and practitioners_. Ross (1976) suggested an alternative model for measuring risk called the arbitrage pricing model (APM).
+> 
+> **Assumptions** If investors can invest risklessly and earn more than the riskless rate, they have found an arbitrage opportunity. The premise of the arbitrage pricing model is that investors take advantage of such arbitrage opportunities, and in the process eliminate them. If two portfolios have the same exposure to risk but offer different expected returns, investors will buy the portfolio that has the higher expected returns and sell the portfolio with the lower expected returns, and earn the difference as a riskless profit. To prevent this arbitrage from occurring, the two portfolios have to earn the same expected return.
+> 
+> Like the capital asset pricing model, the arbitrage pricing model begins by breaking risk down into firm-specific and market risk components. As in the capital asset pricing model, firm-specific risk covers information that affects primarily the firm. Market risk affects many or all firms and would include unanticipated changes in a number of economic variables, including gross national product, inflation, and interest rates. Incorporating both types of risk into a return model, we get:
+> 
+> $\huge{ R = E(R) + m + \varepsilon }$
+> 
+> where $R$ is the actual return, $E(R)$ is the expected return, $m$ is the marketwide component of unanticipated risk, and $\varepsilon$ is the firm-specific component. Thus, the actual return can be different from the expected return, because of either market risk or firm-specific actions.
+> 
+> **Sources of Marketwide Risk** While both the capital asset pricing model and the arbitrage pricing model make a distinction between firm-specific and marketwide risk, they measure market risk differently. The CAPM assumes that market risk is captured in the market portfolio, whereas the arbitrage pricing model allows for multiple sources of marketwide risk and measures the sensitivity of investments to changes in each source. In general, the market component of unanticipated returns can be decomposed into economic factors:
+> 
+> $\huge{ R = E(R) + m + \varepsilon }$
+> $\huge{ = R + ( {\beta}_1F_1 + {\beta}_2F_2 + \ldots + {\beta}_nF_n ) + \varepsilon }$
+> 
+> where, \
+> ${\beta}_j$ = Sensitivity of investment to unanticipated changes in market risk factor $j$ \
+> $F_j$ = Unanticipated changes in market risk factor $j$
+> 
+> Note that the measure of an investment’s sensitivity to any macroeconomic (or market) factor takes the form of a beta, called a factor beta. In fact, this beta has many of the same properties as the market beta in the CAPM.
 
 
 ## Relative Valuation Model
@@ -1771,3 +1804,4 @@ In summary, while both the PPI and CPI measure changes in prices over time, they
 [^21]: This is an extension of the variance formula for a two-asset portfolio.
 [^22]: Chapter 2. Approaches to Valuation. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^23]: Chapter 10. Capital Markets and the Pricing Risk. _Corporate Finance: The Core, Global Edition_ by Jonathan Berk and Peter Demarzo.
+[^24]: Chapter 4. The Basics of Risk. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
