@@ -173,7 +173,7 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > | 100 | 110 | 0.40 | 50% |
 > |  | 80 | -0.20 | 25% |
 > 
-> ![Probability Distribution of Returns for BFI](/.attachments/valuation-probability.distribution-bfi)
+> ![Probability Distribution of Returns for BFI](/.attachments/valuation-probability.distribution-bfi.png)
 > 
 > _Probability Distribution of Returns for BFI_
 > 
