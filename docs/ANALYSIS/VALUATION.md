@@ -299,7 +299,7 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > For instance, Chen, Roll, and Ross (1986) suggest that the following macro-economic variables are highly correlated with the factors that come out of factor analysis: industrial production, changes in default premium, shifts in the term structure, unanticipated inflation, and changes in the real rate of return. These variables can then be correlated with returns to come up with a model of expected returns, with firm-specific betas calculated relative to each variable.
 > 
-> $\huge{ E(R) = R_f + {\beta}_I[E(R_I) - R_f] + \ldots +  }$
+> $\huge{ E(R) = R_f + {\beta}_G[E(R_G) - R_f] + {\beta}_I[E(R_I) - R_f] + \ldots +  }$
 
 ## Relative Valuation Model
 
