@@ -179,7 +179,7 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > The expected return is the return we would earn on average if we could repeat the investment many times, drawing the return from the same distribution each time. In terms of the histogram, the expected return is the “balancing point” of the distribution, if we think of the probabilities as weights. The expected return for BFI is
 > 
-> $E[RBFI]$ = 25%(-0.20) + 50%(0.10) + 25%(0.40) = 10%
+> $E[R_{BFI}]$ = 25%(-0.20) + 50%(0.10) + 25%(0.40) = 10%
 > 
 > **Variance and Standard Deviation**
 > 
@@ -191,7 +191,7 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > If the return is risk-free and never deviates from its mean, the variance is zero. Otherwise, the variance increases with the magnitude of the deviations from the mean. Therefore, the variance is a measure of how “spread out” the distribution of the return is. The variance of BFI’s return is
 > 
-> $Var(RBFI)$ = 25% $\times (-0.20- 0.10)^2$ + 50% $\times (0.10-0.10)^2$ + 25% $\times (0.40 - 0.10)^2$ = 0.045
+> $Var(R_{BFI})$ = 25% $\times (-0.20- 0.10)^2$ + 50% $\times (0.10-0.10)^2$ + 25% $\times (0.40 - 0.10)^2$ = 0.045
 > 
 > The standard deviation of the return is the square root of the variance, so for BFI,
 > 
@@ -211,7 +211,25 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > $\huge{ R_{t + 1} = \text{Dividend Yield} + \text{Capital Gain Rate}  }$
 > 
-> ... the realized return, $R_{t + 1}$, is the total return we earn from dividends and capital gains, expressed as a percentage of the initial stock price.[^23]
+> ... the realized return, $R_{t + 1}$, is the total return we earn from dividends and capital gains, expressed as a percentage of the initial stock price.
+> 
+> ...
+> 
+> **Beta and the Cost of Capital**
+> 
+> ... we have emphasized that financial managers should evaluate an investment opportunity based on its cost of capital, which is the expected return available on alternative investments in the market with comparable risk and term. For risky investments, this cost of capital corresponds to the risk-free interest rate, plus an appropriate risk premium. ...
+> 
+> **Estimating the Risk Premium**
+> 
+> Before we can estimate the risk premium of an individual stock, we need a way to assess investors’ appetite for risk. The size of the risk premium investors will require to make a risky investment depends upon their risk aversion. Rather than attempt to measure this risk aversion directly, we can measure it indirectly by looking at the risk premium investors’ demand for investing in systematic, or market, risk.
+> 
+> **The Market Risk Premium.** We can calibrate investors’ appetite for market risk from the market portfolio. The risk premium investors earn by holding market risk is the difference between the market portfolio’s expected return and the risk-free interest rate:
+> 
+> $$\huge{ \text{ Market Risk Premium } = $E[R_{Mkt}] - r_f$ }$$
+> 
+> For example, if the risk-free rate is 5% and the expected return of the market portfolio is 11%, the market risk premium is 6%. In the same way that the market interest rate reflects investors’ patience and determines the time value of money, the market risk premium reflects investors’ risk tolerance and determines the market price of risk in the economy.
+> 
+> **Adjusting for Beta.** The market risk premium is the reward investors expect to earn for holding a portfolio with a beta of 1—the market portfolio itself. Consider an investment opportunity with a beta of 2. This investment carries twice as much systematic risk as an investment in the market portfolio. That is, for each dollar we invest in the opportunity, we could invest twice that amount in the market portfolio and be exposed to exactly the same amount of systematic risk. Because it has twice as much systematic risk, investors will require twice the risk premium to invest in an opportunity with a beta of 2.[^23]
 
 #### Capital Asset Pricing Model
 
