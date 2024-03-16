@@ -241,8 +241,9 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > $\huge{ r_I = \text{Risk-Free Interest Rate} + {\beta}_I \times \text{Market Risk Premium} }$
 > 
-> $\huge{ = r_f + {\beta}_I \times (E[R_{Mkt}] - r_f) }$
-> [^23]
+> $\huge{ = r_f + {\beta}_I \times (E[R_m] - r_f) }$
+> 
+> where $m$ is for market[^23]
 
 #### Capital Asset Pricing Model
 
