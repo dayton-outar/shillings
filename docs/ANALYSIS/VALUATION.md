@@ -155,6 +155,64 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > _Breakdown of Risk_
 
+> Different securities have different initial prices, pay different cash flows, and sell for different future amounts. To make them comparable, we express their performance in terms of their returns. The return indicates the percentage increase in the value of an investment per dollar initially invested in the security. When an investment is risky, there are different returns it may earn. Each possible return has some likelihood of occurring. We summarize this information with a **probability distribution**, which assigns a probability, $pR$, that each possible return, $R$, will occur.
+> 
+> ...
+> 
+> **Expected Return**
+> 
+> Given the probability distribution of returns, we can compute the expected return. We calculate the **expected** (or **mean**) **return** as a weighted average of the possible returns, where the weights correspond to the probabilities.
+> 
+> $\huge{ \text{Expected Return} = E[R] = {\sum}_r p_R \times R }$
+> 
+> ***Probability Distribution of Returns for BFI***
+> 
+> | Current Stock Price ($) | Stock Price in One Year ($) | Return, $R$ | Probability, $p_R$ |
+> | ---:| ---:|---:|---:|
+> |  | 140 | 0.40 | 25% |
+> | 100 | 110 | 0.40 | 50% |
+> |  | 80 | -0.20 | 25% |
+> 
+> ![Probability Distribution of Returns for BFI](/.attachments/valuation-probability.distribution-bfi)
+> 
+> _Probability Distribution of Returns for BFI_
+> 
+> The expected return is the return we would earn on average if we could repeat the investment many times, drawing the return from the same distribution each time. In terms of the histogram, the expected return is the “balancing point” of the distribution, if we think of the probabilities as weights. The expected return for BFI is
+> 
+> $E[RBFI]$ = 25%(-0.20) + 50%(0.10) + 25%(0.40) = 10%
+> 
+> **Variance and Standard Deviation**
+> 
+> Two common measures of the risk of a probability distribution are its _variance_ and _standard deviation_. The **variance** is the expected squared deviation from the mean, and the **standard deviation** is the square root of the variance.
+> 
+> $\huge{ Var(R) = E[(R - E[R])^2] = {\sum}_R p_R \times (R - E[R])^2 }$
+> 
+> $\huge{ SD(R) \sqrt{Var(R)} }$
+> 
+> If the return is risk-free and never deviates from its mean, the variance is zero. Otherwise, the variance increases with the magnitude of the deviations from the mean. Therefore, the variance is a measure of how “spread out” the distribution of the return is. The variance of BFI’s return is
+> 
+> $Var(RBFI)$ = 25% $\times (-0.20- 0.10)^2$ + 50% $\times (0.10-0.10)^2$ + 25% $\times (0.40 - 0.10)^2$ = 0.045
+> 
+> The standard deviation of the return is the square root of the variance, so for BFI,
+> 
+> $SD(R) = \sqrt{Var(R)} = \sqrt{0.045}$ = 21.2%
+> 
+> In finance, we refer to the standard deviation of a return as its **volatility**. While the variance and the standard deviation both measure the variability of the returns, the standard deviation is easier to interpret because it is in the same units as the returns themselves.
+> 
+> ...
+> 
+> If we could observe the probability distributions that investors anticipate for different securities, we could compute their expected returns and volatilities and explore the relationship between them. Of course, in most situations we do not know the explicit probability distribution, as we did for BFI. Without that information, how can we estimate and compare risk and return? A popular approach is to extrapolate from historical data, which is a sensible strategy if we are in a stable environment and believe that the distribution of future returns should mirror that of past returns.
+> 
+> ...
+> 
+> Of all the possible returns, the **realized return** is the return that actually occurs over a particular time period. How do we measure the realized return for a stock? Suppose you invest in a stock on date $t$ for price $P_t$. If the stock pays a dividend, $Div_{t + 1}$, on date $t + 1$, and you sell the stock at that time for price Pt +1, then the realized return from your investment in the stock from $t$ to $t + 1$ is
+> 
+> $\huge{ R_{t + 1} = { { { Div_{t + 1} + P_{t + 1} \over P_t } } - 1 } = { { Div_{i + 1} \over P_t } + { { P_{t + 1} - P_t } \over P_t } }  }$
+> 
+> $\huge{ R_{t + 1} = \text{Dividend Yield} + \text{Capital Gain Rate}  }$
+> 
+> ... the realized return, $R_{t + 1}$, is the total return we earn from dividends and capital gains, expressed as a percentage of the initial stock price.[^23]
+
 #### Capital Asset Pricing Model
 
 > **Assumptions** While diversification reduces the exposure of investors to firm-specific risk, most investors limit their diversification to holding only a few assets. Even large mutual funds rarely hold more than a few hundred stocks, and many of them hold as few as 10 to 20. There are two reasons why investors stop diversifying. One is that an investor or mutual fund manager can obtain most of the benefits of diversification from a relatively small portfolio, because the marginal benefits of diversification become smaller as the portfolio gets more diversified. Consequently, these benefits may not cover the marginal costs of diversification, which include transactions and monitoring costs. Another reason for limiting diversification is that many investors (and funds) believe they can find undervalued assets and thus choose not to hold those assets that they believe to be fairly valued or overvalued.
@@ -1679,3 +1737,4 @@ In summary, while both the PPI and CPI measure changes in prices over time, they
 [^20]: Technically, this can be done by putting the firm into stable growth and valuing it as a stable growth firm, where reinvestments are used to either preserve or augment existing assets.
 [^21]: This is an extension of the variance formula for a two-asset portfolio.
 [^22]: Chapter 2. Approaches to Valuation. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
+[^23]: Chapter 10. Capital Markets and the Pricing Risk. _Corporate Finance: The Core, Global Edition_ by Jonathan Berk and Peter Demarzo.
