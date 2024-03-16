@@ -277,7 +277,7 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > The covariance is a percentage value, and it is difficult to pass judgment on the relative risk of an investment by looking at this value. In other words, knowing that the covariance of Boeing with the market portfolio is 55 percent does not provide us a clue as to whether Boeing is riskier or safer than the average asset. We therefore standardize the risk measure by dividing the covariance of each asset with the market portfolio by the variance of the market portfolio. This yields a risk measure called the beta of the asset:
 > 
-> $\huge{ \text{Beta of asset i} = { \text{ Covariance of asset i with market portfolio } \over \text{ Variance of the market portfolio } } = { {\sigma}_i \over {\sigma}^2_m }$
+> $\huge{ \text{Beta of asset i} = { \text{ Covariance of asset i with market portfolio } \over \text{ Variance of the market portfolio } } = { {\sigma}_i \over {\sigma}^2_m } }$
 > 
 > where ${\sigma}_i$ is the covariance in returns between the individual asset and the market portfolio
 > 
@@ -338,7 +338,7 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > ${\beta}_G$ = Beta relative to changes in industrial production \
 > $E(R_G)$ = Expected return on a portfolio with a beta of one on the industrial production factor and zero on all other factors \
 > ${\beta}_I$ = Beta relative to changes in inflation \
-> $E(R_I)$ = Expected return on a portfolio with a beta of one on the inflation factor and zero on all other factors \
+> $E(R_I)$ = Expected return on a portfolio with a beta of one on the inflation factor and zero on all other factors
 > 
 > The costs of going from the arbitrage pricing model to a macroeconomic multi-factor model can be traced directly to the errors that can be made in identifying the factors. The economic factors in the model can change over time, as will the risk premium associated with each one. For instance, oil price changes were a significant economic factor driving expected returns in the 1970s but are not as significant in other time periods. Using the wrong factor or missing a significant factor in a multifactor model can lead to inferior estimates of expected return.
 
