@@ -153,7 +153,9 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > ![Breakdown of Risk](/.attachments/valuation-breakdown.of.risk.png)
 > 
-> _Breakdown of Risk_[^24]
+> _Breakdown of Risk_
+> 
+> ...[^24]
 
 > Different securities have different initial prices, pay different cash flows, and sell for different future amounts. To make them comparable, we express their performance in terms of their returns. The return indicates the percentage increase in the value of an investment per dollar initially invested in the security. When an investment is risky, there are different returns it may earn. Each possible return has some likelihood of occurring. We summarize this information with a **probability distribution**, which assigns a probability, $pR$, that each possible return, $R$, will occur.
 > 
@@ -246,6 +248,16 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > where $m$ is for market \
 > and $r_f$ is the risk-free rate [^23]
 
+> ***Alternative Models for Cost of Equity***
+> 
+> | Model | Pluses | Minuses |
+> |:--- |:--- |:--- |
+> | The CAPM | Simple to compute | Does not explain differences in returns across stocks well |
+> | APM | More nuanced breakdown of market risk | Factors are statistical and unnamed |
+> | Multifactor model | More intuitive than APM | Factors are unstable and change over time |
+> 
+> [^24]
+
 #### Capital Asset Pricing Model
 
 > **Assumptions** While diversification reduces the exposure of investors to firm-specific risk, most investors limit their diversification to holding only a few assets. Even large mutual funds rarely hold more than a few hundred stocks, and many of them hold as few as 10 to 20. There are two reasons why investors stop diversifying. One is that an investor or mutual fund manager can obtain most of the benefits of diversification from a relatively small portfolio, because the marginal benefits of diversification become smaller as the portfolio gets more diversified. Consequently, these benefits may not cover the marginal costs of diversification, which include transactions and monitoring costs. Another reason for limiting diversification is that many investors (and funds) believe they can find undervalued assets and thus choose not to hold those assets that they believe to be fairly valued or overvalued.
@@ -259,6 +271,27 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > These results are predicated on two additional assumptions. First, there exists a riskless asset, where the expected returns are known with certainty. Second, investors can lend and borrow at the riskless rate to arrive at their optimal allocations. While lending at the riskless rate can be accomplished fairly simply by buying Treasury bills or bonds, borrowing at the riskless rate might be more difficult for individuals to do. There are variations of the CAPM that allow these assumptions to be relaxed and still arrive at conclusions that are consistent with the model.
 > 
 > ...
+> 
+> > 
+> ...
+> 
+> The covariance is a percentage value, and it is difficult to pass judgment on the relative risk of an investment by looking at this value. In other words, knowing that the covariance of Boeing with the market portfolio is 55 percent does not provide us a clue as to whether Boeing is riskier or safer than the average asset. We therefore standardize the risk measure by dividing the covariance of each asset with the market portfolio by the variance of the market portfolio. This yields a risk measure called the beta of the asset:
+> 
+> $\huge{ \text{Beta of asset i} = { \text{ Covariance of asset i with market portfolio } \over \text{ Variance of the market portfolio } } = { {\sigma}_i \over {\sigma}^2_m }$
+> 
+> where ${\sigma}_i$ is the covariance in returns between the individual asset and the market portfolio
+> 
+> ...
+> 
+> **Getting Expected Returns** The fact that every investor holds some combination of the riskless asset and the market portfolio leads to the next conclusion, which is that the expected return on an asset is linearly related to the beta of the asset. In particular, the expected return on an asset can be written as a function of the risk-free rate and the beta of that asset:
+> 
+> $\huge{ E(R_i) = R_f + {\beta}_i[E(R_m) – R_f] }$
+> 
+> where, \
+> $E(R_i)$ = Expected return on asset $i$
+> $R_f$ = Risk-free rate
+> $E(R_m)$ = Expected return on market portfolio
+> ${\delta}_i$ = Beta of asset $i$
 > 
 > To use the capital asset pricing model, we need three inputs. ...each of these inputs is estimated as follows:
 > 
@@ -299,7 +332,15 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > For instance, Chen, Roll, and Ross (1986) suggest that the following macro-economic variables are highly correlated with the factors that come out of factor analysis: industrial production, changes in default premium, shifts in the term structure, unanticipated inflation, and changes in the real rate of return. These variables can then be correlated with returns to come up with a model of expected returns, with firm-specific betas calculated relative to each variable.
 > 
-> $\huge{ E(R) = R_f + {\beta}_G[E(R_G) - R_f] + {\beta}_I[E(R_I) - R_f] + \ldots + {\beta}_{\delta}[E(R_{\delta}) - R_f] }$
+> $\huge{ E(R) = R_f + {\beta}_G[E(R_G) - R_f] + {\beta}_I[E(R_I) - R_f] + \ldots + {\beta}_n[E(R_n) - R_f] }$
+> 
+> where, \
+> ${\beta}_G$ = Beta relative to changes in industrial production \
+> $E(R_G)$ = Expected return on a portfolio with a beta of one on the industrial production factor and zero on all other factors \
+> ${\beta}_I$ = Beta relative to changes in inflation \
+> $E(R_I)$ = Expected return on a portfolio with a beta of one on the inflation factor and zero on all other factors \
+> 
+> The costs of going from the arbitrage pricing model to a macroeconomic multi-factor model can be traced directly to the errors that can be made in identifying the factors. The economic factors in the model can change over time, as will the risk premium associated with each one. For instance, oil price changes were a significant economic factor driving expected returns in the 1970s but are not as significant in other time periods. Using the wrong factor or missing a significant factor in a multifactor model can lead to inferior estimates of expected return.
 
 ## Relative Valuation Model
 
