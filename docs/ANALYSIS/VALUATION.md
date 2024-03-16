@@ -268,7 +268,7 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > In summary, in the capital asset pricing model all the market risk is captured in one beta measured relative to a market portfolio, which at least in theory should include all traded assets in the marketplace held in proportion to their market value.[^24]
 
-### Arbitrage Pricing Model
+#### Arbitrage Pricing Model
 
 > _The restrictive assumptions on transaction costs and private information in the capital asset pricing model, and the model’s dependence on the market portfolio, have long been viewed with skepticism by both academics and practitioners_. Ross (1976) suggested an alternative model for measuring risk called the arbitrage pricing model (APM).
 > 
