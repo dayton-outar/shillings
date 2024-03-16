@@ -291,6 +291,15 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > Note that the measure of an investment’s sensitivity to any macroeconomic (or market) factor takes the form of a beta, called a factor beta. In fact, this beta has many of the same properties as the market beta in the CAPM.
 
+#### Multifactor Models
+
+> The arbitrage pricing model’s failure to identify the factors specifically in the model may be a statistical strength, but it is an intuitive weakness. The solution seems simple: Replace the unidentified statistical factors with specific economic factors, and the resultant model should have an economic basis while still retaining much of the strength of the arbitrage pricing model. That is precisely what multifactor models try to do.
+> 
+> **Deriving a Multifactor Model** Multifactor models generally are determined by historical data rather than by economic modeling. Once the number of factors has been identified in the arbitrage pricing model, their behavior over time can be extracted from the data. The behavior of the unnamed factors over time can then be compared to the behavior of macroeconomic variables over that same period, to see whether any of the variables is correlated, over time, with the identified factors.
+> 
+> For instance, Chen, Roll, and Ross (1986) suggest that the following macro-economic variables are highly correlated with the factors that come out of factor analysis: industrial production, changes in default premium, shifts in the term structure, unanticipated inflation, and changes in the real rate of return. These variables can then be correlated with returns to come up with a model of expected returns, with firm-specific betas calculated relative to each variable.
+> 
+> $\huge{ E(R) = R_f + ( {\beta}_{GNP}[E(R_{GNP}) - R_f] + {\beta}_I[E(R_I) - R_f] + \ldots + {\beta}_{\delta}[E(R_{\delta}) - R_f] )  }$
 
 ## Relative Valuation Model
 
