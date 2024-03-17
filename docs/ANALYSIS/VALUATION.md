@@ -341,6 +341,19 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > where $m$ is market and $i$ is the individual asset in the market
 > [^26]
 
+> **Estimating the Historical Beta for Private Firms** The historical approach to estimating betas works only for assets that have been traded and have market prices. Private companies do not have a market price history. Consequently, we cannot estimate a regression beta for these companies. Nevertheless, we still need estimates of cost of equity and capital for these companies.
+> 
+> You might argue that this is not an issue if you do not value private companies; but you will still be confronted with this issue even when valuing publicly traded firms. Consider, for instance, the following scenarios:
+> 
+> - If you have to value a private firm for an initial public offering, you will need to estimate discount rates for the valuation.
+> - Even after a firm has gone public, there will be a period of time lasting as long as two years when there will be insufficient data for a regression.
+> - If you are called upon to value the division of a publicly traded firm that is up for sale, you will not have past prices to draw on to run a regression.
+> - Finally, if the firm has gone through significant restructuring—divestitures or recapitalization—in the recent past, regression betas become meaningless because the company itself has changed its risk characteristics.
+> 
+> Thus regression betas are either unavailable or meaningless in a significant number of valuations.
+> 
+> Some analysts assume that discounted cash flow valuation is not feasible in these scenarios; instead they use multiples. Others make assumptions about discount rates based on rules of thumb. Neither approach is appealing.[^27]
+
 > **Getting Expected Returns** The fact that every investor holds some combination of the riskless asset and the market portfolio leads to the next conclusion, which is that the expected return on an asset is linearly related to the beta of the asset. In particular, the expected return on an asset can be written as a function of the risk-free rate and the beta of that asset:
 > 
 > $\huge{ E(R_i) = R_f + {\beta}_i[E(R_m) – R_f] }$
@@ -1915,3 +1928,4 @@ In summary, while both the PPI and CPI measure changes in prices over time, they
 [^24]: Chapter 4. The Basics of Risk. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^25]: Chapter 7. Riskless Rates and Risk Premiums. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^26]: Chapter 11. Optimal Portfolio Choice and the Capital Asset Pricing Model. _Corporate Finance: The Core, Global Edition_ by Jonathan Berk and Peter Demarzo.
+[^27]: Chapter 8. Estimating Risk Parameters and Costs of Financing. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
