@@ -352,7 +352,78 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > Thus regression betas are either unavailable or meaningless in a significant number of valuations.
 > 
-> Some analysts assume that discounted cash flow valuation is not feasible in these scenarios; instead they use multiples. Others make assumptions about discount rates based on rules of thumb. Neither approach is appealing.[^27]
+> Some analysts assume that discounted cash flow valuation is not feasible in these scenarios; instead they use multiples. Others make assumptions about discount rates based on rules of thumb. Neither approach is appealing. ...
+> 
+> **The Limitations of Regression Betas** Much of what has been presented in this section represents an indictment of regression betas. In the case of Boeing, the biggest problem was that the beta had high standard error. In fact, this is not a problem unique to Boeing. ...
+> 
+> With the Nokia regression, we seem to cure the standard error problem but at a very large cost. The low standard errors reflect the domination of the index by a stock and result in betas that may be precise but bear no resemblance to true risk.
+> 
+> Changing the market index, the return period, and the return interval offers no respite. If the index becomes a more representative index, the standard errors on betas will increase, reflecting the fact that more of the risk in the stock is firm-specific. If the beta changes as the return period or interval changes, it creates more uncertainty about the true beta of the company.
+> 
+> In short, regression betas will almost always be either too noisy or skewed by estimation choices to be useful measures of the equity risk in a company. The cost of equity is far too important an input into a discounted cash flow valuation to be left to statistical chance.
+> 
+> **Fundamental Betas** A second way to estimate betas is to look at the fundamentals of the business. The beta for a firm may be estimated from a regression, but it is determined by decisions the firm has made on what business to be in and how much operating leverage to use in the business, and by the degree to which the firm uses financial leverage. This section examines an alternative way of estimating betas, where we are less reliant on historical betas and more cognizant of their fundamental determinants.
+> 
+> **Determinants of Betas** The beta of a firm is determined by three variables: (1) the type of business or businesses the firm is in, (2) the degree of operating leverage of the firm, and (3) the firm’s financial leverage. Although we will use these determinants to find betas in the capital asset pricing model, the same analysis can be used to calculate the betas for the arbitrage pricing and the multifactor models as well.
+> 
+> ***Type of Business*** Since betas measure the risk of a firm relative to a market index, the more sensitive a business is to market conditions, the higher its beta. Thus, other things remaining equal, cyclical firms can be expected to have higher betas than noncyclical firms. Companies involved in housing and automobiles, two sectors of the economy that are very sensitive to economic conditions, should have higher betas than companies in food processing and tobacco, which are relatively insensitive to business cycles.
+> 
+> This view can be extended to a company’s products. The degree to which a product’s purchase is discretionary will affect the beta of the firm manufacturing the product. Firms whose products are much more discretionary to their customers—they can defer or delay buying these products—should have higher betas than firms whose products are viewed as necessary or less discretionary. Thus, the beta of Procter & Gamble, which sells diapers and daily household products, should be lower than the beta of Gucci, which manufactures luxury products.
+> 
+> ***Degree of Operating Leverage*** The degree of operating leverage is a function of the cost structure of a firm and is usually defined in terms of the relationship between fixed costs and total costs. A firm that has high fixed costs relative to total costs is said to have high operating leverage. A firm with high operating leverage will also have higher variability in operating income than would a firm producing a similar product with low operating leverage. Other things remaining equal, the higher variance in operating income will lead to a higher beta for the firm with high operating leverage.
+> 
+> Can firms change their operating leverage? While some of a firm’s cost structure is determined by the business it is in (an energy utility has to build expensive power plants, and airlines have to buy or lease expensive planes), firms in the United States have become increasingly inventive in lowering the fixed cost component in their total costs. For instance, firms have made cost structures more flexible by:
+> 
+> - Negotiating labor contracts that emphasize flexibility and allow the firm to make its labor costs more sensitive to its financial success.
+> - Entering into joint venture agreements, where the fixed costs are borne by someone else.
+> - Subcontracting manufacturing and outsourcing, which reduce the need for expensive plant and equipment.
+> 
+> While the arguments for such actions may be couched in terms of competitive advantage and flexibility, they do also reduce the operating leverage of the firm and its exposure to market risk.
+> 
+> While operating leverage affects betas, it is difficult to measure the operating leverage of a firm, at least from the outside, since fixed and variable costs are often aggregated in income statements. It is possible to get an approximate measure of the operating leverage of a firm by looking at changes in operating income as a function of changes in sales.
+> 
+> Degree of operating leverage = % change in operating profit /% change in sales
+> 
+> For firms with high operating leverage, operating income should change more than proportionately when sales change.
+> 
+> ***Degree of Financial Leverage*** Other things remaining equal, an increase in financial leverage will increase the beta of the equity in a firm. Intuitively, we would expect that the fixed interest payments on debt result in increasing income in good times and decreasing income in bad times. Higher leverage increases the variance in net income and makes equity investment in the firm riskier. If all the firm’s risk is borne by the stockholders (i.e., the beta of debt is zero),7 and debt has a tax benefit to the firm, then,
+> 
+> $\huge{ {\beta}_L = {\beta}_U[1 + (1 - t)(D/E)] }$
+> 
+> where \
+> ${\beta}_L$ = Levered beta for equity in the firm
+> 
+> Intuitively, we expect that as leverage increases (as measured by the debt-to-equity ratio), equity investors bear increasing amounts of market risk in the firm, leading to higher betas. The tax factor in the equation captures the tax benefits that accrue from interest payments.
+> 
+> The unlevered beta of a firm is determined by the nature of its products and services (cyclicality, discretionary nature) and its operating leverage. It is often also referred to as the asset beta, since it is determined by the assets owned by the firm. Thus, the levered beta, which is also the beta for an equity investment in a firm, is determined both by the riskiness of the business it operates in and by the amount of financial leverage risk it has taken on.
+> 
+> Since financial leverage multiplies the underlying business risk, it stands to reason that firms that have high business risk should be reluctant to take on financial leverage. It also stands to reason that firms that operate in stable businesses should be much more willing to take on financial leverage. Utilities, for instance, have historically had high debt ratios but have not had high betas, mostly because their underlying businesses have been stable and fairly predictable.
+> 
+> **Bottom-Up Betas** Breaking down betas into their business risk and financial leverage components provides us with an alternative way of estimating betas, in which we do not need past prices on an individual firm or asset to estimate its beta.
+> 
+To develop this alternative approach, we need to introduce an additional property of betas that proves invaluable. The beta of two assets put together is a weighted average of the individual asset betas, with the weights based on market value. Consequently, the beta for a firm is a weighted average of the betas of all the different businesses it is in. We can estimate the beta for a firm in five steps:
+> 
+> _Step 1:_ Identify the business or businesses the firm operates in.
+> 
+> _Step 2:_ Find other publicly traded firms in each business and obtain their regression betas, which we use to compute an average beta for the firms.
+> 
+> _Step 3:_ Estimate the average unlevered beta for the business by unlevering the average (or median) beta for the firms by their average (or median) debt-to-equity ratio. Alternatively, we could estimate the unlevered beta for each firm and then compute the average of the unlevered betas. The first approach is preferable because unlevering an erroneous regression beta is likely to compound the error.
+> 
+> $\huge{ \text{ Unlevered beta }_b = \text{Beta}_f/[1 + (1 -t)({D/E}_f)] }$
+> 
+> where $b$ is business and $f$ is comparable firms.
+> 
+> _Step 4:_ Estimate an unlevered beta for the firm being analyzed, taking a weighted average of the unlevered betas for the businesses it operates in, using the proportion of firm value derived from each business as the weights. If values are not available, use operating income or revenues as weights. This weighted average is called the bottom-up unlevered beta.
+> 
+> $\huge{ \text{ Unlevered beta }_f = {\sum}_j=1^j=k ( \text{Unlevered beta}_j \times \text{ Value weight }_j ) }$
+> 
+> where the firm is assumed to operating in $k$ different businesses.
+>
+> _Step 5:_ Finally, estimate the current market values of debt and equity at the firm and use this debt-to-equity ratio to estimate a levered beta.
+> 
+> The betas estimated using this processs are called bottom-up betas.
+> 
+> [^27]
 
 > **Getting Expected Returns** The fact that every investor holds some combination of the riskless asset and the market portfolio leads to the next conclusion, which is that the expected return on an asset is linearly related to the beta of the asset. In particular, the expected return on an asset can be written as a function of the risk-free rate and the beta of that asset:
 > 
@@ -412,6 +483,10 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > $E(R_I)$ = Expected return on a portfolio with a beta of one on the inflation factor and zero on all other factors
 > 
 > The costs of going from the arbitrage pricing model to a macroeconomic multi-factor model can be traced directly to the errors that can be made in identifying the factors. The economic factors in the model can change over time, as will the risk premium associated with each one. For instance, oil price changes were a significant economic factor driving expected returns in the 1970s but are not as significant in other time periods. Using the wrong factor or missing a significant factor in a multifactor model can lead to inferior estimates of expected return.
+
+### Growth
+
+> The value of a firm is the present value of expected future cash flows generated by the firm. The most critical input in valuation, especially for high-growth firms, is the growth rate to use to forecast future revenues and earnings.[^28]
 
 ## Relative Valuation Model
 
@@ -1903,12 +1978,9 @@ In summary, while both the PPI and CPI measure changes in prices over time, they
 
 
 [^1]: Page 75. Chapter 5. Understand Fundamental Analysis. _The Art of Currency Trading_ by Brent Donnelly.
-[^2]: [Simply Wall Street. Company Analysis Model](https://github.com/SimplyWallSt/Company-Analysis-Model/blob/master/MODEL.markdown)
-[^3]: Page 314. Chapter 9. Valuing Stocks. _Corporate Finance: The Core, Global Edition_ by Jonathan Berk and Peter Demarzo.
 [^4]: Page 22. Chapter 2. Approaches to Valuation. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^5]: Page 599. Chapter 21. Valuing Financial Service Firms. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^6]: Page 305. Chapter 12. Closure in Valuation: Estimating Terminal Value. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
-[^7]: Page 537. Chapter 19. Book Value Multiples. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^8]: Chapter 17. Fundamental Principles of Relative Valuation. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^9]: Chapter 10. Mechanics of Options Markets. _Options, Futures, and Other Derivatives, Global Edition, 9th Edition_ by John C. Hull
 [^10]: Chapter 15. Black-Scholes-Merton Model. _Options, Futures, and Other Derivatives, Global Edition, 9th Edition_ by John C. Hull.
@@ -1929,3 +2001,4 @@ In summary, while both the PPI and CPI measure changes in prices over time, they
 [^25]: Chapter 7. Riskless Rates and Risk Premiums. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^26]: Chapter 11. Optimal Portfolio Choice and the Capital Asset Pricing Model. _Corporate Finance: The Core, Global Edition_ by Jonathan Berk and Peter Demarzo.
 [^27]: Chapter 8. Estimating Risk Parameters and Costs of Financing. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
+[^28]: Chapter 11. Estimating Growth. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
