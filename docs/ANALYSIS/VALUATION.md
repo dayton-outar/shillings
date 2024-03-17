@@ -157,6 +157,47 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > ...[^24]
 
+> The only securities that have a chance of being risk free are government securities, not because governments are better run than corporations, but because they usually control the printing of currency. ... Even this assumption, straightforward though it might seem, does not always hold up, especially when governments refuse to honor claims made by previous regimes and when they borrow in currencies other than their own.
+> 
+> There is a second condition that riskless securities need to fulfill that is often forgotten. For an investment to have an actual return equal to its expected return, there can be no reinvestment risk. To illustrate this point, assume that you are trying to estimate the expected return over a five-year period and that you want a risk-free rate. A six-month Treasury bill rate, while default free, will not be risk free, because there is the reinvestment risk of not knowing what the Treasury bill rate will be in six months. Even a five-year Treasury bond is not risk free, since the coupons on the bond will be reinvested at rates that cannot be predicted today. The risk-free rate for a five-year time horizon has to be the expected return on a default-free (government) five-year zero coupon bond. This clearly has painful implications for anyone doing corporate finance or valuation, where expected returns often have to be estimated for periods ranging from 1 to 10 years. A purist’s view of risk-free rates would then require different risk-free rates for each period, and different expected returns.
+> 
+> As a practical compromise, however, it is worth noting that the present value effect of using year-specific risk-free rates tends to be small for most well-behaved term structures. In these cases, we could use a duration matching strategy, where the duration of the default-free security used as the risk-free asset is matched up to the duration of the cash flows in the analysis. If, however, there are very large differences, in either direction, between short-term and long-term rates, it does pay to stick with year-specific risk-free rates in computing expected returns.
+> 
+> ... firms will be valued more highly when the currency used is the one with low interest rates relative to [inflation](#inflation). ...
+> 
+> ...
+> 
+> If the government issues long-term bonds denominated in the local currency and these bonds are traded, you can use the interest rates on these bonds as a starting point for estimating the risk-free rate in that currency. In early 2011, for instance, the Indian government issued 10-year rupee-denominated bonds that were trading at a yield of 8 percent. This rate, though, is not a risk-free rate, because investors perceive default risk in the Indian government. To back out how much of the yield can be attributed to the default risk, we used the local currency sovereign rating of Ba2 assigned to India by Moody’s and estimated a default spread of 2.40 percent for that rating.
+> 
+> The resulting risk-free rate in rupees is:
+> 
+> Risk-free rate in rupees = Government bond rate – Default spread \
+> = 8.00% - 2.40% = 5.6%
+> 
+> It is true that this number assumes that the ratings agency is correct in its assessment of sovereign risk and that the default spread based on the rating is correct.
+> 
+> ...
+> 
+> **Risk-Free Rate Conversion** If the only reason for differences in risk-free rates in different currencies is expected inflation, you can convert the risk-free rate in a mature market currency (U.S. dollars, euros) into a risk-free rate in an emerging market currency, using differences in inflation across currencies.
+> 
+> $\huge{ r_l = { (1 + r_f) \times { { { 1 + \text{ Expected inflation }_l } \over { 1 + \text{ Expected inflation }_f } } - 1} } }$
+> 
+> where,\
+> $l$ is local currency \
+> $f$ is foreign currency
+> 
+> For example, assume that the risk-free rate in U.S. dollars is 4 percent and that the expected inflation rate in Indonesian rupiah is 11 percent (compared to the 2 percent inflation rate in U.S. dollars). The Indonesian risk-free rate can be written as follows:
+> 
+> $\huge{ \text{Cost of capital }_r = 1.04 \times \frac{1.11}{1.02} - 1 = 0.131764 }$ or 13.18%
+> 
+> To make this conversion, we still have to estimate the expected inflation in the local currency and the mature market currency.
+> 
+> What if none of these choices listed work? In other words, what if the government has no local currency bonds outstanding, there are no forward or futures contract on the currency, and/or expected inflation in the local currency is difficult to estimate? Faced with these problems, it is best to switch and do your valuation in a different currency. Thus, rather than value a Nigerian or Vietnamese company in the local currency, you would value it in euros or dollars. You will still have to estimate expected exchange rates in the future in order to convert local currency cash flows to foreign currency cash flows, but that may be a more manageable exercise.[^25]
+
+> **Equity Risk Premium**
+> 
+> The notion that risk matters, and that riskier investments should have a higher expected return than safer investments to be considered good investments, is intuitive. Thus, the expected return on any investment can be written as the sum of the risk-free rate and an extra return to compensate for the risk. The disagreement, in both theoretical and practical terms, remains on how to measure this risk, and how to convert the risk measure into an expected return that compensates for risk. This section looks at the estimation of an appropriate equity risk premium (ERP) to use in risk and return models, in general, and in the capital asset pricing model, in particular.[^25]
+
 > Different securities have different initial prices, pay different cash flows, and sell for different future amounts. To make them comparable, we express their performance in terms of their returns. The return indicates the percentage increase in the value of an investment per dollar initially invested in the security. When an investment is risky, there are different returns it may earn. Each possible return has some likelihood of occurring. We summarize this information with a **probability distribution**, which assigns a probability, $pR$, that each possible return, $R$, will occur.
 > 
 > ...
@@ -252,11 +293,21 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > | Model | Pluses | Minuses |
 > |:--- |:--- |:--- |
-> | The CAPM | Simple to compute | Does not explain differences in returns across stocks well |
+> | CAPM | Simple to compute | Does not explain differences in returns across stocks well |
 > | APM | More nuanced breakdown of market risk | Factors are statistical and unnamed |
 > | Multifactor model | More intuitive than APM | Factors are unstable and change over time |
 > 
 > [^24]
+
+> | Model | Assumptions | Measure of Market Risk |
+> |:--- |:--- |:--- |
+> | CAPM | There are no transaction costs or private information. Therefore, the diversified portfolio includes all traded investments, held in proportion to their market value. | Beta measured against this market portfolio |
+> | APM | Investments with the same exposure to market risk have to trade at the same price (no arbitrage). | Betas measured against multiple (unspecified) market risk factors |
+> | Multifactor model | There is the same no-arbitrage assumption as with the APM. | Betas measured against multiple specified macroeconomic factors |
+> 
+> Note that in the special case of a single-factor model, like the CAPM, each investment’s expected return will be determined by its beta relative to the risk premium for that factor.
+> 
+> Assuming that the risk-free rate is known, these models all require two inputs. The first is the beta or betas of the investment being analyzed, and the second is the appropriate risk premium(s) for the factor or factors in the model.[^25]
 
 #### Capital Asset Pricing Model
 
@@ -1855,3 +1906,4 @@ In summary, while both the PPI and CPI measure changes in prices over time, they
 [^22]: Chapter 2. Approaches to Valuation. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^23]: Chapter 10. Capital Markets and the Pricing Risk. _Corporate Finance: The Core, Global Edition_ by Jonathan Berk and Peter Demarzo.
 [^24]: Chapter 4. The Basics of Risk. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
+[^25]: Chapter 7. Riskless Rates and Risk Premiums. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
