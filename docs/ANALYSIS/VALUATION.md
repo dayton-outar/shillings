@@ -401,7 +401,7 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > **Bottom-Up Betas** Breaking down betas into their business risk and financial leverage components provides us with an alternative way of estimating betas, in which we do not need past prices on an individual firm or asset to estimate its beta.
 > 
-To develop this alternative approach, we need to introduce an additional property of betas that proves invaluable. The beta of two assets put together is a weighted average of the individual asset betas, with the weights based on market value. Consequently, the beta for a firm is a weighted average of the betas of all the different businesses it is in. We can estimate the beta for a firm in five steps:
+> To develop this alternative approach, we need to introduce an additional property of betas that proves invaluable. The beta of two assets put together is a weighted average of the individual asset betas, with the weights based on market value. Consequently, the beta for a firm is a weighted average of the betas of all the different businesses it is in. We can estimate the beta for a firm in five steps:
 > 
 > _Step 1:_ Identify the business or businesses the firm operates in.
 > 
@@ -415,7 +415,7 @@ To develop this alternative approach, we need to introduce an additional propert
 > 
 > _Step 4:_ Estimate an unlevered beta for the firm being analyzed, taking a weighted average of the unlevered betas for the businesses it operates in, using the proportion of firm value derived from each business as the weights. If values are not available, use operating income or revenues as weights. This weighted average is called the bottom-up unlevered beta.
 > 
-> $\huge{ \text{ Unlevered beta }_f = {\sum}_j=1^j=k ( \text{Unlevered beta}_j \times \text{ Value weight }_j ) }$
+> $\huge{ \text{ Unlevered beta }_f = {\sum}_{j=1}^{j=k} ( \text{Unlevered beta}_j \times \text{ Value weight }_j ) }$
 > 
 > where the firm is assumed to operating in $k$ different businesses.
 >
