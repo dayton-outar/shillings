@@ -332,8 +332,15 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > where ${\sigma}_i$ is the covariance in returns between the individual asset and the market portfolio
 > 
-> ...
+> ...[^24]
+
+> ${\beta}_i$ i is the beta of the security with respect to the market portfolio, defined as
 > 
+> $\huge{ {\beta}_i = { { SD(R_i) \times Corr(R_i, R_m) } \over SD(R_m) } = { { Cov(R_i, R_m) } \over { Var(R_m)} } }$
+> 
+> where $m$ is market and $i$ is the individual asset in the market
+> [^26]
+
 > **Getting Expected Returns** The fact that every investor holds some combination of the riskless asset and the market portfolio leads to the next conclusion, which is that the expected return on an asset is linearly related to the beta of the asset. In particular, the expected return on an asset can be written as a function of the risk-free rate and the beta of that asset:
 > 
 > $\huge{ E(R_i) = R_f + {\beta}_i[E(R_m) – R_f] }$
@@ -1907,3 +1914,4 @@ In summary, while both the PPI and CPI measure changes in prices over time, they
 [^23]: Chapter 10. Capital Markets and the Pricing Risk. _Corporate Finance: The Core, Global Edition_ by Jonathan Berk and Peter Demarzo.
 [^24]: Chapter 4. The Basics of Risk. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^25]: Chapter 7. Riskless Rates and Risk Premiums. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
+[^26]: Chapter 11. Optimal Portfolio Choice and the Capital Asset Pricing Model. _Corporate Finance: The Core, Global Edition_ by Jonathan Berk and Peter Demarzo.
