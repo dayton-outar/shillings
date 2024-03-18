@@ -673,7 +673,73 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > **Young Start-Up Firms** Many firms begin as ideas in the minds of entrepreneurs and develop into commercial ventures over time. During this transition from idea companies to commercial ventures, it is not unusual for these firms to lose money. This does not make them worthless. In fact, the boom in the market value of new economy companies in the late 1990s brought home the fact that good ideas can have substantial values, though the correction in 2000 also illustrated how volatile these values can be.
 > 
-> Valuing young start-up firms is perhaps the most difficult exercise in valuation and one that was, until very recently, the domain of venture capitalists and private equity investors, who often compensated for uncertainty by demanding very high returns on these investments. The challenge becomes much more daunting if a young start-up firm is publicly traded.
+> Valuing young start-up firms is perhaps the most difficult exercise in valuation and one that was, until very recently, the domain of venture capitalists and private equity investors, who often compensated for uncertainty by demanding very high returns on these investments. The challenge becomes much more daunting if a young start-up firm is publicly traded.[^29]
+
+> When valuing a firm, you draw on information from _three sources_. The first is ***the current financial statements*** for the firm. You use these to determine how profitable a firm’s investments are or have been, how much it reinvests back to generate future growth and for all of the inputs that are required in any valuation. The second is ***the past history of the firm, in terms of both earnings and market prices***. A firm’s earnings and revenue history over time let you make judgments on how cyclical a firm’s business has been and how much growth it has shown, while a firm’s price history can help you measure its risk. Finally, you can look at ***the firm’s competitors or peer group to get a measure of how much better or worse a firm is than its competition***, and also to estimate key inputs on risk, growth, and cash flows.
+> 
+> ...
+> 
+> There are some firms, especially in new sectors of the economy, where you might run into information problems. First, these firms usually have not been in existence for more than a year or two, leading to a very limited history. Second, their current financial statements reveal very little about the component of their assets—expected growth—that contributes the most to their value. Third, these firms often represent the first of their kind of business. In many cases, there are no competitors or a peer group against which they can be measured. When valuing these firms, therefore, you may find yourself constrained on all three counts when it comes to information. How have investors responded to this absence of information? Some have decided that these stocks cannot be valued and should not therefore be held in a portfolio. Others have argued that while these stocks cannot be valued with traditional models, the fault lies in the models. They have come up with new and inventive ways, based on the limited information available, of justifying the prices paid for them. ...
+> 
+> The value of a firm is based on its capacity to generate cash flows and the uncertainty associated with these cash flows. ...
+> 
+> ...
+> 
+> ... The problem with young firms is not that they lose money, have no history, or do not have substantial tangible assets. It is that they are far earlier in their life cycles than established firms, and often have to be valued before they have an established market for their products. In fact, in some cases, the firms being valued have an interesting idea that could be a commercial success but has not been tested yet. The problem, however, is not a conceptual problem but one of estimation. The value of a firm is still the present value of the expected cash flows from its assets, but those cash flows are likely to be much more difficult to estimate.
+> 
+> ...
+> 
+> ![Valuation Issues across the Life Cycle](/.attachments/valuation-issues.across.life.cycle.png)
+> 
+> _Valuation Issues across the Life Cycle_
+> 
+> - _Start-up._ This represents the initial stage after a business has been formed. The product is generally still untested and does not have an established market. The firm has little in terms of current operations, no operating history, and no comparable firms. The value of this firm rests entirely on its future growth potential. Valuation poses the most challenges at this firm, since there is little useful information to go on. The inputs have to be estimated and are likely to have considerable error associated with them. The estimates of future growth are often based on assessments of the competence of existing managers and their capacity to convert a promising idea into commercial success. This is often the reason why firms in this phase try to hire managers with a successful track record in converting ideas into dollars, because it gives them credibility in the eyes of potential investors.
+> 
+> - _Expansion._ Once a firm succeeds in attracting customers and establishing a presence in the market, its revenues increase rapidly, though it still might be reporting losses. The current operations of the firm provide useful clues on pricing, margins, and expected growth, but current margins cannot be projected into the future. The operating history of the firm is still limited, and shows large changes from period to period. Other firms generally are in operation, but usually are at the same stage of growth as the firm being valued. Most of the value for this firm also comes from its expected growth. Valuation becomes a little simpler at this stage, but the information is still limited and unreliable, and the inputs to the valuation model are likely to be shifting substantially over time.
+> 
+> - _High growth._ While the firm’s revenues are growing rapidly at this stage, earnings are likely to lag behind revenues. At this stage, both the current operations and operating history of the firm contain information that can be used in valuing the firm. The number of comparable firms is generally highest at this stage, and these firms are more diverse in where they are in the life cycle, ranging from small, high-growth competitors to larger, lower-growth competitors. The existing assets of this firm have significant value, but the larger proportion of value still comes from future growth. There is more information available at this stage, and the estimation of inputs becomes more straightforward.
+> 
+> - _Mature growth._ As revenue growth starts leveling off, firms generally find two phenomena occurring. The earnings and cash flows continue to increase rapidly, reflecting past investments, and the need to invest in new projects declines. At this stage in the process, the firm has current operations that are reflective of the future, an operating history that provides substantial information about the firm’s markets, and a large number of comparable firms at the same stage in the life cycle. Existing assets contribute as much or more to firm value than expected growth, and the inputs to the valuation are likely to be stable.
+> 
+> - _Decline._ The last stage in this life cycle is decline. Firms in this stage find both revenues and earnings starting to decline, as their businesses mature and new competitors overtake them. Existing investments are likely to continue to produce cash flows, albeit at a declining pace, and the firm has little need for new investments. Thus, the value of the firm depends entirely on existing assets. While the number of comparable firms tends to become smaller at this stage, they are all likely to be either in mature growth or in decline as well.
+> 
+> Valuation is clearly more of a challenge in the earlier stages in a life cycle, and estimates of value are much more likely to contain errors for start-up or high-growth firms. But the payoff to valuation is also likely to be highest with these firms for two reasons. The first is that the absence of information scares many analysts away, and analysts who persist and end up with a valuation, no matter how imprecise, are likely to be rewarded. The second is that these are the firms that are most likely to be coming to the market in the form of initial public offerings and new issues, and need estimates of value.
+> 
+> **Venture Capital Valuation**
+> 
+> Until very recently, young start-up firms raised additional equity primarily from venture capitalists. It is useful to begin by looking at how venture capitalists assess the value of these firms. While venture capitalists sometimes use discounted cash flow models to value firms, they are much more likely to value private businesses using what is called the venture capital method. Here, the earnings of the private firm are forecast in a future year, when the company can be expected to go public. These earnings, in conjunction with an earnings multiple that is estimated by looking at publicly traded firms in the same business, are used to assess the value of the firm at the time of the initial public offering; this is called the exit or terminal value.
+> 
+> For instance, assume that you are valuing InfoSoft, a small software firm, that is expected to have an initial public offering in three years, and that the net income in the third year for the firm is expected to be $4 million. If the price-earnings ratio of publicly traded software firms is 25, this would yield an estimated exit value of $100 million. This value is discounted back to the present at what venture capitalists call a target rate of return, which measures what venture capitalists believe is a justifiable return, given the risk that they are exposed to. This target rate of return is usually set at a much higher level than the conventional cost of equity for the firm.
+> 
+> $\huge{ \text{Discounted terminal value} = \text{Estimated exit value|/(1 + \text{Target return})^n }$
+> 
+> Using the InfoSoft example again, if the venture capitalist requires a target return of 30 percent on his or her investment, the discounted terminal value for InfoSoft would be:
+> 
+> Discounted terminal value for InfoSoft = $100 million/$1.30^3$ = $45.52 million
+> 
+> So, how do venture capitalists come up with target rates of return and why are they so high? It is possible that there are some venture capitalists who have developed sophisticated risk-return models that yield target returns, but for the most part, the target returns represent a mix of judgment, historical experience, and guesswork. As for why they are so high, it is a combination of three factors:
+> 
+> 1. Young and start-up firms are more exposed to macroeconomic risk than the rest of the market. In CAPM terms, they should command high betas.
+> 2. Venture capitalists are often sector-focused and not diversified. Consequently, they demand a premium for firm-specific risk that can be diversified away.
+> 3. Many young, start-up companies don’t make it, and the target rate of return incorporates the risk of failure.
+> 
+> In practice, target rates of return become more instruments of negotiation than conventional discount rates. Put differently, the interests of a venture capitalist are served by using a high target rate of return and demanding a much larger stake in the start up company. The interests of the owners of the company are advanced with a lower target rate of return. The final number used will depend upon the relative bargaining power of the two sides.
+>
+> The venture capital approach is also exposed to another problem. To the extent that exit multiples are based on how comparable firms are priced today, they can result in serious misevaluations if the market is wrong. For instance, venture capitalists who valued Internet firms in 2000 on the assumption that they would be able to sell these firms at 80 times revenues (which was what the market was pricing small, publicly traded Internet firms at that time) would have overestimated the value of these firms.
+> 
+> ...
+> 
+> **General Framework For Analysis**
+> 
+> To value firms with negative earnings, little or no historical data, and few comparables, the steps involved are essentially the same as in any valuation. This section will look at some of the issues that are likely to come up at each step when valuing young companies.
+> 
+> ***Step 1: Assess the Firm’s Current Standing: The Importance of Updated Information***
+> 
+> It is conventional, when valuing firms, to use data from the most recent financial year to obtain the current year’s inputs. For firms with negative earnings and high growth in revenues, the numbers tend to change dramatically from period to period. Consequently, it makes more sense to look at the most recent information that one can obtain, at least on revenues and earnings. Using the revenues and earnings from the trailing 12 months, for instance, will provide a much better estimate of value than using earnings from the last financial year. It is true that some items, such as operating leases and options outstanding, may not be updated as frequently. Even so, we would argue for using estimates for these inputs2 and valuing firms with more recent data.
+> 
+> ***Step 2: Estimate Revenue Growth***
+> 
+> 
 
 ### Cashflow
 
@@ -2206,3 +2272,4 @@ In summary, while both the PPI and CPI measure changes in prices over time, they
 [^27]: Chapter 8. Estimating Risk Parameters and Costs of Financing. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^28]: Chapter 11. Estimating Growth. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^29]: Chapter 22. Valuing Firms with Negative Earnings. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
+[^30]: Chapter 23. Valuing Young or Start-Up Firms. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
