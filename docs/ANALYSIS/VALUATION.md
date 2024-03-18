@@ -523,7 +523,7 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > - For cyclical firms, a recession will affect revenues and earnings. It is not surprising, therefore, that automobile companies report low or negative earnings during bad economic times.
 > 
-The common thread for all of these firms is that we expect earnings to recover sooner rather than later as the problem dissipates. Thus we would expect a cyclical firm’s earnings to bounce back once the economy revives and an airline’s profits to improve once oil prices level off.
+> The common thread for all of these firms is that we expect earnings to recover sooner rather than later as the problem dissipates. Thus we would expect a cyclical firm’s earnings to bounce back once the economy revives and an airline’s profits to improve once oil prices level off.
 > 
 > ***Long-Term Problems*** Negative earnings are sometimes reflections of deeper and much more long-term problems in a firm. Some of these are the results of poor strategic choices made in the past, some reflect operational inefficiencies, and some are purely financial, the result of a firm borrowing much more than it can support with its existing cash flows.
 > 
