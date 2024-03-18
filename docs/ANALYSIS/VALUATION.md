@@ -711,7 +711,7 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > For instance, assume that you are valuing InfoSoft, a small software firm, that is expected to have an initial public offering in three years, and that the net income in the third year for the firm is expected to be $4 million. If the price-earnings ratio of publicly traded software firms is 25, this would yield an estimated exit value of $100 million. This value is discounted back to the present at what venture capitalists call a target rate of return, which measures what venture capitalists believe is a justifiable return, given the risk that they are exposed to. This target rate of return is usually set at a much higher level than the conventional cost of equity for the firm.
 > 
-> $\huge{ \text{Discounted terminal value} = \text{Estimated exit value|/(1 + \text{Target return})^n }$
+> $\huge{ \text{Discounted terminal value} = \text{Estimated exit value}/(1 + \text{Target return})^n }$
 > 
 > Using the InfoSoft example again, if the venture capitalist requires a target return of 30 percent on his or her investment, the discounted terminal value for InfoSoft would be:
 > 
@@ -739,7 +739,7 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > ***Step 2: Estimate Revenue Growth***
 > 
-> 
+> [^30]
 
 ### Cashflow
 
