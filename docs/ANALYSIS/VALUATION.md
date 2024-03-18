@@ -715,7 +715,7 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > Using the InfoSoft example again, if the venture capitalist requires a target return of 30 percent on his or her investment, the discounted terminal value for InfoSoft would be:
 > 
-> Discounted terminal value for InfoSoft = $100 million/$1.30^3$ = $45.52 million
+> Discounted terminal value for InfoSoft = $100 million/1.30<sup>3</sup> = $45.52 million
 > 
 > So, how do venture capitalists come up with target rates of return and why are they so high? It is possible that there are some venture capitalists who have developed sophisticated risk-return models that yield target returns, but for the most part, the target returns represent a mix of judgment, historical experience, and guesswork. As for why they are so high, it is a combination of three factors:
 > 
