@@ -2411,6 +2411,7 @@ In summary, while both the PPI and CPI measure changes in prices over time, they
 4. [Free Cash Flow: Back to Basics](https://youtu.be/9GnwzjV9qS0) - [Aswath Damodaran](https://www.youtube.com/c/AswathDamodaranonValuation)
 5. [Valuing Financial Service Firms, Excess Return Model](https://youtu.be/hLIK_nQml88) - [Chris Hughen](https://www.youtube.com/@ChrisHughen)
 6. [REIT Valuation](https://youtu.be/lz8T0owadXU) - [Chris Hughen](https://www.youtube.com/@ChrisHughen)
+7. [Here Are The REAL RISKS To The US Economy](https://youtu.be/MrsiIt2pUUc?si=2JDAjtONY5AXXiYK) - [George Gammon](https://www.youtube.com/@GeorgeGammon)
 
 
 [^1]: Page 75. Chapter 5. Understand Fundamental Analysis. _The Art of Currency Trading_ by Brent Donnelly.
