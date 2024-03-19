@@ -57,3 +57,4 @@ See below an example of the breakdown of the intrinsic value of GK stock on JSE 
 [^2]: [Simply Wall Street. Company Analysis Model](https://github.com/SimplyWallSt/Company-Analysis-Model/blob/master/MODEL.markdown)
 [^3]: Page 314. Chapter 9. Valuing Stocks. _Corporate Finance: The Core, Global Edition_ by Jonathan Berk and Peter Demarzo.
 [^7]: Page 537. Chapter 19. Book Value Multiples. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
+[^18]: Chapter 30. Valuing Equity in Distressed Firms. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
