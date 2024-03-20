@@ -534,7 +534,7 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > **Who Do Analysts Follow?**
 > 
-The number of analysts tracking firms varies widely across firms. At one extreme are firms like Apple, GE, and Microsoft that are followed by dozens of analysts. At the other extreme, there are hundreds of firms that are not followed by any analysts.
+> The number of analysts tracking firms varies widely across firms. At one extreme are firms like Apple, GE, and Microsoft that are followed by dozens of analysts. At the other extreme, there are hundreds of firms that are not followed by any analysts.
 > 
 > Why are some firms more heavily followed than others? These seem to be some of the determinants:
 > 
