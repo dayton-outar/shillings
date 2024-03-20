@@ -490,6 +490,164 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > ...
 > 
+> There are three basic ways of estimating growth for any firm. One is to look at the growth in a firm’s past earnings—its ***historical growth rate***. While this can be a useful input when valuing stable firms, there are both dangers and limitations in using this growth rate for high-growth firms. The historical growth rate can often not be estimated, and even if it can, it cannot be relied on as an estimate of expected future growth.
+> 
+> The second is to trust the analysts who follow the firm to come up with the ***right estimate of growth*** for the firm, and to use that growth rate in valuation. Although many firms are widely followed by analysts, the quality of growth estimates, especially over longer periods, is poor. Relying on these growth estimates in a valuation can lead to erroneous and inconsistent estimates of value.
+> 
+> The third is to estimate the ***growth from a firm’s fundamentals***. A firm’s growth ultimately is determined by how much is reinvested into new assets and the quality of these investments, with investments widely defined to include acquisitions, building distribution channels, or even expanding marketing capabilities. By estimating these inputs, you are, in a sense, estimating a firm’s fundamental growth rate.
+> 
+> A firm can be valuable because it owns assets that generate cash flows now or because it is expected to acquire such assets in the future. The first group of assets is categorized as assets in place and the second as growth assets. ... Note that an accounting balance sheet can be very different from a financial balance sheet, since accounting for growth assets tends to be both conservative and inconsistent.
+> 
+> For high-growth firms, accounting balance sheets do a poor job of summarizing the values of the assets of the firm because they mostly ignore the largest component of value, which is future growth. The problems are exacerbated for firms that invest in R&D, because the book value will not include the most important asset at these firms—the research asset.
+> 
+> ...
+> 
+> **Estimating Historical Growth**
+> 
+> Given a firm’s earnings history, estimating historical growth rates may seem like a simple exercise but there are several measurement problems that may arise. In particular, you can get very different values for historical growth, depending on how the average is estimated and whether you allow for compounding in values over time. Estimating growth rates can also be complicated by the presence of negative earnings in the past or in the current period.
+> 
+> ...
+> 
+> **Usefulness of Historical Growth**
+> 
+> Is the growth rate in the past a good indicator of growth in the future? Not necessarily.
+> 
+> ...
+> 
+> **Higgledy-Piggledy Growth** Past growth rates are useful in forecasting future growth, but they have considerable noise associated with them. In a study of the relationship between past growth rates and future growth rates, Little (1960) coined the term “higgledy-piggledy growth” because he found little evidence that firms that grew fast in one period continued to grow fast in the next period. In the process of running a series of correlations between growth rates in consecutive periods of different length, he frequently found negative correlations between growth rates in the two periods, and the average correlation across the two periods was close to zero.
+> 
+> If past growth is not a reliable indicator of future growth at many firms, it becomes even less so at smaller firms. The growth rates at smaller firms tend to be more volatile than growth rates at other firms in the market.
+> 
+> While the correlations tend to be higher across the board for one-year growth rates than for three-year or five-year growth rates in earnings, they are also consistently lower for smaller firms than they are for the rest of the market. This would suggest that you should be more cautious about using past growth, especially in earnings, for forecasting future growth at these firms.
+> 
+> **Revenue Growth versus Earnings Growth** In general, revenue growth tends to be more persistent and predictable than earnings growth. This is because accounting choices have a far smaller effect on revenues than they do on earnings. ... Revenue growth is consistently more correlated over time than earnings growth. The implication is that historical growth in revenues is a far more useful number when it comes to forecasting than historical growth in earnings. 
+> 
+> **Effects of Firm Size** Since the growth rate is stated in percentage terms, the role of the size of the firm has to be weighed in the analysis. It is easier for a firm with $10 million in earnings to generate a 50 percent growth rate than it is for a firm with $500 million in earnings. Since it becomes harder for firms to sustain high growth rates as they become larger, past growth rates for firms that have grown dramatically in size may be difficult to sustain in the future. While this is a problem for all firms, it is a particular problem when analyzing small and growing firms.
+> 
+> While the fundamentals at these firms, in terms of management, products, and underlying markets, may not have changed, it will still be difficult to maintain historical growth rates as the firms double or triple in size.
+> 
+> The true test for a small firm lies in how well it handles growth. Some firms continue to deliver their products and services efficiently as they grow. In other words, they are able to scale up successfully. Other firms have had much more difficulty replicating their success as they become larger. In analyzing small firms, therefore, it is important that you look at plans to increase growth but it is even more critical that you examine the systems in place to handle this growth.
+> 
+> **Analyst Estimates of Growth**
+> 
+> Equity research analysts provide not only recommendations on the firms they follow but also estimates of earnings and earnings growth for the future. How useful are these estimates of expected growth from analysts and how, if at all, can they be used in valuing firms? ...
+> 
+> **Who Do Analysts Follow?**
+> 
+The number of analysts tracking firms varies widely across firms. At one extreme are firms like Apple, GE, and Microsoft that are followed by dozens of analysts. At the other extreme, there are hundreds of firms that are not followed by any analysts.
+> 
+> Why are some firms more heavily followed than others? These seem to be some of the determinants:
+> 
+> - _Market capitalization._ The larger the market capitalization of a firm, the more likely it is to be followed by analysts.
+> 
+> - _Institutional holding._ The greater the percent of a firm’s stock that is held by institutions, the more likely it is to be followed by analysts. The open question, though, is whether analysts follow institutions or whether institutions follow analysts. Given that institutional investors are the biggest clients of equity research analysts, the causality probably runs both ways.
+> 
+> - _Trading volume._ Analysts are more likely to follow liquid stocks. Here again, though, it is worth noting that the presence of analysts and buy (or sell) recommendations on a stock may play a role in increasing trading volume.
+> 
+> **Information in Analyst Forecasts**
+> 
+> There is a simple reason to believe that analyst forecasts of growth should be better than using historical growth rates. Analysts, in addition to using historical data, can avail themselves of five other types of information that may be useful in predicting future growth:
+> 
+> 1. _Firm-specific information that has been made public since the last earnings report._ Analysts can use information that has come out about the firm since the last earnings report, to make predictions about future growth. This information can sometimes lead to significant reevaluation of the firm’s expected cash flows.
+> 
+> 2. _Macroeconomic information that may impact future growth._ The expected growth rates of all firms are affected by economic news on GNP growth, interest rates, and inflation. Analysts can update their projections of future growth as new information comes out about the overall economy and about changes in fiscal and monetary policy. Information, for instance, that shows the economy growing at a faster rate than forecast will result in analysts increasing their estimates of expected growth for cyclical firms.
+> 
+> 3. _Information revealed by competitors on future prospects._ Analysts can also condition their growth estimates for a firm on information revealed by on pricing policy and future growth. For instance, a negative earnings report by one telecommunications firm can lead to a reassessment of earnings for other telecommunications firms.competitors on pricing policy and future growth. For instance, a negative earnings report by one telecommunications firm can lead to a reassessment of earnings for other telecommunications firms.
+> 
+> 4. _Private information about the firm._ Analysts sometimes have access to private information about the firms they follow that may be relevant in forecasting future growth. This avoids answering the delicate question of when private information becomes illegal inside information. There is no doubt, however, that good private information can lead to significantly better estimates of future growth. In an attempt to restrict this type of information leakage, the SEC issued new regulations preventing firms from selectively revealing information to a few analysts or investors. Outside the United States, however, firms routinely convey private information to analysts following them.
+> 
+> 5. _Public information other than earnings._ Models for forecasting earnings that depend entirely on past earnings data may ignore other publicly available information that is useful in forecasting future earnings. It has been shown, for instance, that other financial variables such as earnings retention, profit margins, and asset turnover are useful in predicting future growth. Analysts can incorporate information from these variables into their forecasts.
+> 
+> **Quality of Analyst Forecast**
+> 
+> ...
+> 
+> The general consensus from studies that have looked at short-term forecasts (one quarter ahead to four quarters ahead) of earnings is that analysts provide better forecasts of earnings than models that depend purely on historical data. The mean relative absolute error, which measures the absolute difference between the actual earnings and the forecast for the next quarter, in percentage terms, is smaller for analyst forecasts than it is for forecasts based on historical data. ...
+> 
+> ...
+> 
+> **How Do You Use Analyst Forecasts in Estimating Future Growth?**
+> 
+> The information in the growth rates estimated by other analysts can and should be incorporated into the estimation of expected future growth. There are four factors that determine the weight assigned to analyst forecasts in predicting future growth:
+> 
+> 1. _Amount of recent firm-specific information._ Analyst forecasts have an advantage over historical data–based models because they incorporate more recent information about the firm and its future prospects. This advantage is likely to be greater for firms where there have been significant changes in management or business conditions in the recent past, for example, a restructuring or a shift in government policy relating to the firm’s underlying business.
+> 
+> 2. _Number of analysts following the stock._ Generally speaking, the larger the number of analysts following a stock, the more informative is their consensus forecast, and the greater should be the weight assigned to it in analysis. The informational gain from having more analysts is diminished somewhat by the well-established fact that most analysts do not act independently, resulting in a high correlation across analysts’ revisions of expected earnings.
+> 
+> 3. _Extent of disagreement between analysts._ While consensus earnings growth rates are useful in valuation, the extent of disagreement between analysts measured by the standard deviation in growth predictions is also a useful measure of the reliability of the consensus forecasts. Givoly and Lakonsihok (1984) found that the dispersion of earnings is correlated with other measures of risk such as beta and is a good predictor of expected returns.
+> 
+> 4. _Quality of analysts following the stock._ This is the hardest of the variables to quantify. One measure of quality is the size of the forecast error made by analysts following a stock, relative to models that use only historical data—the smaller this relative error, the larger the weight that should be attached to analyst forecasts. Another measure is the effect on stock prices of analyst revisions—the more informative the forecasts, the greater the effect on stock prices. There are some who argue that the focus on consensus forecasts misses the point that some analysts are better than others in predicting earnings, and that their forecasts should be isolated from the rest and weighted more.
+> 
+> Analyst forecasts may be useful in coming up with a predicted growth rate for a firm, but there is a danger to blindly following consensus forecasts. Analysts often make significant errors in forecasting earnings, partly because they depend on the same data sources (which might have been erroneous or misleading) and partly because they sometimes overlook significant shifts in the fundamental characteristics of the firm. The secret to successful valuation often lies in discovering inconsistencies between analysts’ forecasts of growth and a firm’s fundamentals.
+> 
+> **Fundamental Determinants of Growth**
+> 
+> With both historical and analyst estimates, growth is an exogenous variable that affects value but is divorced from the operating details of the firm. The soundest way of incorporating growth into value is to make it endogenous i.e., tie in more closely to the actions that a business takes to create and sustain that growth.
+> 
+> 
+> **Growth in Earnings per Share** The simplest relationship determining growth is one based on the retention ratio (percentage of earnings retained in the firm) and the return on equity on its projects. Firms that have higher retention ratios and earn higher returns on equity should have much higher growth rates in earnings per share than firms that do not share these characteristics. To establish this, note that:
+> 
+> $$\huge{ g_t = (NI_t - NI_{t-1})/NI_{t-1} }$$
+> 
+> where \
+> $g_t$ = Growth rate in net income \
+> $NI_t$ = Net income in year $t$
+> 
+> Also note that the $ROE$ in period $t$ can be written as $NI$ in period $t$ divided by the Book value of equity in period $t – 1$. Given the definition of return on equity, the net income in year $t – 1$ can be written as:
+> 
+> $$\huge{ NI_{t - 1} = \text{Book value of equity}_{t-2} \times ROE_{t-1} }$$
+> 
+> where $ROE_{t-1}$ = Return on equity in year $t - 1$
+> 
+> The net income in year t can be written as:
+> 
+> $$\huge{ NI_t = (\text{Book value of equity}_{t–2} + \text{Retained earnings}_{t–1}) \times ROE_t }$$
+> 
+> Assuming that the return on equity is unchanged (i.e., $ROE_t = ROE_{t–1} = ROE$):
+> 
+> $\huge{ g_t = { \text{Retained earnings}_{t–1}/NI_{t–1} \times ROE } = { \text{ Retention ratio } \times ROE } = { b \times ROE} }$
+> 
+> where $b$ is the retention ratio. Note that the firm is not being allowed to raise equity by issuing new shares. Consequently, the growth rate in net income and the growth rate in earnings per share are the same in this formulation.
+> 
+> **Growth in Net Income** If we relax the assumption that the only source of equity is retained earnings, the growth in net income can be different from the growth in earnings per share. Intuitively, note that a firm can grow net income significantly by issuing new equity to fund new projects, while earnings per share stagnates. To derive the relationship between net income growth and fundamentals, we need a measure of investment that goes beyond retained earnings. One way to obtain such a measure is to estimate how much equity the firm reinvests back into its businesses in the form of net capital expenditures and investments in working capital.
+> 
+> $\huge{ \text{Equity reinvested in business} = \text{Capital expenditures} − \text{Depreciation} + \text{Change in working capital} − (\text{New debt issued} − \text{Debt repaid} ) }$
+> 
+> Dividing this number by the net income gives us a much broader measure of the equity reinvestment rate:
+> 
+> $\huge{ \text{Equity reinvestment rate} = \text{Equity reinvested}/\text{Net income} }$
+> 
+> Unlike the retention ratio, this number can be well in excess of 100 percent with the excess being funded with new equity. The expected growth in net income can then be written as:
+> 
+> $\huge{ \text{Expected growth in net income} = \text{Equity reinvestment rate} \times \text{Return on equity} }$
+> 
+> @ pg. 288
+> 
+> 
+> 
+> 
+> 
+> --> pg. 300
+> 
+> **Qualitative Aspects of Growth**
+> 
+> The emphasis on quantitative elements—return on capital and reinvestment rates for profitable firms, and margins, revenue growth, and sales-to-capital ratios for unprofitable firms—may strike some as skewed. After all, growth is determined by a number of subjective factors—the quality of management, the strength of a firm’s marketing, its capacity to form partnerships with other firms, and the management’s strategic vision, among many others. Where, you might ask, is there room in the growth equations that have been presented in this chapter for these factors?
+> 
+> The answer is that qualitative factors matter, but that they all ultimately have to show up in one or more of the quantitative inputs that determine growth. Consider the following:
+> 
+> - The quality of management plays a significant role in the returns on capital that you assume firms can earn on their new investments and in how long they can sustain these returns. Thus, the fact that a firm has a well-regarded management team may be one reason why you allow a firm’s return on capital to remain well above the cost of capital.
+> 
+> - The marketing strengths of a firm and its choice of marketing strategy are reflected in the operating margins and turnover ratios that you assume for firms. Thus, it takes faith in a Coca-Cola’s capacity to market its products effectively to assume a high turnover ratio and a high target margin. In fact, you can consider various marketing strategies, which trade off lower margins for higher turnover ratios, and consider the implications for value. The brand name of a firm’s products and the strength of its distribution system also affect these estimates.
+> 
+> - Defining reinvestment broadly to include acquisitions, research and development, and investments in marketing and distribution allows you to consider different ways in which firms can grow. For some firms, reinvestment and growth come from acquisitions, while for other firms it may take the form of more traditional investments in plant and equipment. The effectiveness of these reinvestment strategies is captured in the return on capital that you assume for the future, with more effective firms having higher returns on capital.
+> 
+> - The strength of the competition that firms face is in the background but it does determine how high excess returns (return on capital less cost of capital) will be, and how quickly they fade toward zero.
+> 
+> Thus, qualitative factors are quantified and the growth implications are considered. If you cannot, you should remain skeptical about whether these factors truly affect value.
+> 
+> Why is it necessary to impose this quantitative structure on growth estimate? One of the biggest dangers in valuing technology firms is that story telling can be used to justify growth rates that are neither reasonable nor sustainable. Thus, you might be told that Tesla Motors will grow 100% a year because the “green” movement is strong or that Coca-Cola will grow 20 percent a year because it has a great brand name. While there is truth in these stories, a consideration of how these qualitative views translate into the quantitative elements of growth is an essential step toward consistent valuations.
+> 
+> Can different investors consider the same qualitative factors and come to different conclusions about the implications for returns on capital, margins, and reinvestment rates, and consequently, about growth? Absolutely. In fact, you would expect differences in opinion about the future and different estimates of value. The payoff to knowing a firm and the sector it operates in better than other investors is that your estimates of growth and value will be better than theirs. Unfortunately, this does not guarantee that your investment returns will be better than theirs.
 > [^28]
 
 #### Growth Patterns
