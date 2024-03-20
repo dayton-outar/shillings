@@ -672,6 +672,13 @@ The number of analysts tracking firms varies widely across firms. At one extreme
 > 
 > [^31]
 
+> **Stable Growth Model**
+> 
+> In the liquidation value approach, you are assuming that your firm has a finite life and that it will be liquidated at the end of that life. Firms, however, can reinvest some of their cash flows back into new assets and extend their lives. If you assume that cash flows, beyond the terminal year, will grow at a constant rate forever, the terminal value can be estimated as follows:
+> 
+> @pg. 306 ---> pg. 318
+> [^32]
+
 #### Earnings
 
 > In the context of discounted cash flow valuation, cash flows to equity can be discounted at the cost of equity to arrive at a value of equity, or cash flows to the firm can be discounted at the cost of capital to arrive at the value for the firm. The cash flows to equity themselves can be defined in the strictest sense as dividends or in a more expansive sense as free cash flows to equity. These models can be further categorized on the basis of assumptions about growth into stable-growth, two-stage, three-stage and n-stage models. Finally, the measurement of earnings and cash flows may be modified to match the special characteristics of the firm/asset—current earnings for firms/assets that have normal earnings, or normalized earnings for firms/assets whose current earnings may be distorted either by temporary factors or cyclical effects.
@@ -2600,3 +2607,4 @@ In summary, while both the PPI and CPI measure changes in prices over time, they
 [^30]: Chapter 23. Valuing Young or Start-Up Firms. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^31]: Chapter 34. Overview and Conclusion. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^32]: Chapter 3. Understanding Financial Statements. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
+[^33]: Chapter 12. Closure in Valuation: Estimating Terminal Value. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
