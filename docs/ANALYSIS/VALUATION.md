@@ -611,7 +611,7 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > **Growth in Net Income** If we relax the assumption that the only source of equity is retained earnings, the growth in net income can be different from the growth in earnings per share. Intuitively, note that a firm can grow net income significantly by issuing new equity to fund new projects, while earnings per share stagnates. To derive the relationship between net income growth and fundamentals, we need a measure of investment that goes beyond retained earnings. One way to obtain such a measure is to estimate how much equity the firm reinvests back into its businesses in the form of net capital expenditures and investments in working capital.
 > 
-> $\huge{ \text{Equity reinvested in business} = \text{Capital expenditures} − \text{Depreciation} + \text{Change in working capital} − (\text{New debt issued} − \text{Debt repaid} ) }$
+> ${ \text{Equity reinvested in business} = \text{Capital expenditures} − \text{Depreciation} + \text{Change in working capital} − (\text{New debt issued} − \text{Debt repaid} ) }$
 > 
 > Dividing this number by the net income gives us a much broader measure of the equity reinvestment rate:
 > 
