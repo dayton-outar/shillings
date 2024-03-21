@@ -621,13 +621,69 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > $\huge{ \text{Expected growth in net income} = \text{Equity reinvestment rate} \times \text{Return on equity} }$
 > 
-> @ pg. 288
+> **Determinants of Return on Equity** Both earnings per share and net income growth are affected by the return on equity of a firm. The return on equity is affected by how much debt the firm chooses to use to fund its projects. In the broadest terms, increasing debt will lead to a higher return on equity if the after-tax return on capital exceeds the after-tax interest rate paid on debt. This is captured in the following formulation of return on equity:
+> 
+> $\huge{ ROE = { ROC + D/E[ROC − i(1 − t)] } }$
+> 
+> where, \
+> $ROC = EBIT(1 -t)/(\text{BV of debt} + \text{BV of equity} - \text{Cash})$ \
+> $D/E$ = BV of debt/BV of equity \
+> $i$ = Interest expense on debt/BV of debt \
+> $t$ = Tax rate on ordinary income
+> 
+> In keeping with the fact that return on equity is based on book value, all of the inputs are also stated in terms of book value. The derivation is simple and is provided in a footnote. Using this expanded version of ROE, the growth rate can be written as:
+> 
+> $\huge{ g = { b\{ ROC + D/E[ROC - i(1 - t)] \} } }$
+> 
+> The advantage of this formulation is that is allows use to model changes in leverage and evaluate the effects on growth.
+> 
+> ...
+> 
+> **The Effects of Changing Return on Equity** So far, this section has operated on the assumption that the overall return on equity remains unchanged over time. If we relax this assumption, we introduce a new component to growth—the effect of changing return on equity on existing investments over time. Consider, for instance, a firm that has a book value of equity of $100 million and a return on equity of 10 percent. If this firm improves its return on equity to 11 percent, it will post an earnings growth rate of 10 percent even if it does not reinvest any money. This additional growth can be written as a function of the change in the return on equity:
+> 
+> $\huge{ \text{Addition to expected growth rate} = (ROE_t − ROE_{t–1})/ROE_{t–1} }$
+> 
+> where $ROE_t$ is the return on equity in period $t$. This will be in addition to the fundamental growth rate computed as the product of the return on equity and the retention ratio.
+> 
+> While increasing return on equity will generate a spurt in the growth rate in the period of the improvement, a decline in the return on equity will create a more than proportional drop in the growth rate in the period of the decline.
+> 
+> It is worth differentiating at this point between returns on equity on new investments and returns on equity on existing investments. The additional growth that we are estimating here comes not from new investments but by changing the return on existing investments. For lack of a better term, you could consider it “efficiency-generated growth.”
+> 
+> ...
+> 
+> **Growth in Operating Income**
+> 
+> Just as equity income growth is determined by the equity reinvested back into the business and the return made on that equity investment, you can relate growth in operating income to total reinvestment made into the firm and the return earned on capital invested.
+> 
+> We will consider three separate scenarios, and examine how to estimate growth in each, in this section. The first is when a firm is earning a high return on capital that it expects to sustain over time. The second is when a firm is earning a positive return on capital that is expected to increase over time. The third is the most general scenario, where a firm expects operating margins to change over time, sometimes from negative values to positive levels.
+> 
+> **Stable Return on Capital Scenario** When a firm has a stable return on capital, its expected growth in operating income is a product of the reinvestment rate (i.e., the proportion of the after-tax operating income that is invested in net capital expenditures and noncash working capital), and the quality of these reinvestments, measured as the return on the capital invested.
+> 
+> $\huge{ \text{Expected growth}_E = \text{Reinvestment rate} \times \text{Return on capital} }$
+> 
+> where,\
+> $E$ = EBIT \
+> reinvestment rate = $(\text{Capital expenditure} - \text{Depreciation} + \Delta \text{Noncash WC})/[EBIT(1 - \text{Tax rate})]$ \
+> return on capital = $EBIT(1 -t)/(\text{Book value of Equity} + \text{Book value of debt} + \text{Cash and marketable securities})$
+> 
+> Both measures—the reinvestment rate and return on capital—should be forward looking, and the return on capital should represent the expected return on capital on future investments. In the rest of this section, we consider how best to estimate the reinvestment rate and the return on capital.
+> 
+> **Reinvestment Rate** The reinvestment rate measures how much a firm is plowing back to generate future growth. The reinvestment rate is often measured using the most recent financial statements for the firm. Although this is a good place to start, it is not necessarily the best estimate of the future reinvestment rate. A firm’s reinvestment rate can ebb and flow, especially in firms that invest in relatively few large projects or acquisitions. For these firms, looking at an average reinvestment rate over time may be a better measure of the future. In addition, as firms grow and mature, their reinvestment needs (and rates) tend to decrease. For firms that have expanded significantly over the last few years, the historical reinvestment rate is likely to be higher than the expected future reinvestment rate. For these firms, industry averages for reinvestment rates may provide a better indication of the future than using numbers from the past. Finally, it is important that we continue treating R&D expenses and operating lease expenses consistently. The R&D expenses, in particular, need to be categorized as part of capital expenditures for purposes of measuring the reinvestment rate.
+> 
+> **Return on Capital** The return on capital is often based on the firm’s return on capital on existing investments, where the book value of capital is assumed to measure the capital invested in these investments. Implicitly, we assume that the current accounting return on capital is a good measure of the true returns earned on existing investments, and that this return is a good proxy for returns that will be made on future investments. This assumption, of course, is open to question for the following reasons:
+> 
+> - The book value of capital might not be a good measure of the capital invested in existing investments, since it reflects the historical cost of these assets and accounting decisions on depreciation. When the book value understates the capital invested, the return on capital will be overstated; when book value overstates the capital invested, the return on capital will be understated. This problem is exacerbated if the book value of capital is not adjusted to reflect the value of the research asset or the capital value of operating leases.
+> 
+> - The operating income, like the book value of capital, is an accounting measure of the earnings made by a firm during a period.
+> 
+> - Even if the operating income and book value of capital are measured correctly, the return on capital on existing investments may not be equal to the marginal return on capital that the firm expects to make on new investments, especially as you go further into the future.
+> 
+> Given these concerns, we should consider not only a firm’s current return on capital, but any trends in this return as well as the industry average return on capital. If the current return on capital for a firm is significantly higher than the industry average, the forecasted return on capital should be set lower than the current return to reflect the erosion that is likely to occur as competition responds.
+> 
+> Finally, any firm that earns a return on capital greater than its cost of capital is earning an excess return. The excess returns are the result of a firm’s competitive advantages or barriers to entry into the industry. High excess returns locked in for very long periods imply that this firm has a permanent competitive advantage.
 > 
 > 
-> 
-> 
-> 
-> --> pg. 300
+> ...
 > 
 > **Qualitative Aspects of Growth**
 > 
