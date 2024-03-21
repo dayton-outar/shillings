@@ -6,6 +6,16 @@ An _asset_ is any entity that delivers cashflow and/or appreciates in value over
 
 ![Valuation Models](/.attachments/valuation-models.png)
 
+> **Cash-Flow-Generating Capacity** You can categorize assets into three groups based on their capacity to generate cash flows: assets that are either generating cash flows currently or are expected to do so in the near future, assets that are not generating cash flows currently but could in the future in the event of a contingency, and assets that will never generate cash flows.
+> 
+> 1. The first group includes most publicly traded companies, and these firms can be valued using discounted cash flow models. Note that a distinction is not drawn between negative and positive cash flows, and young start-up companies that generate negative cash flow can still be valued using discounted cash flow models.
+> 
+> 2. The second group includes assets such as drug patents, promising (but not viable) technology, undeveloped oil or mining reserves, and undeveloped land. These assets may generate no cash flows currently and could generate large cash flows in the future but only under certain conditions—if the FDA approves the drug patent, if the technology becomes commercially viable, if oil prices and commercial property values go up. While you could estimate expected values using discounted cash flow models by assigning probabilities to these events, you will understate the value of the assets if you do so. You should value these assets using option pricing models.
+> 
+> 3. Assets that are never expected to generate cash flows include your primary residence, a baseball card collection, or fine art. These assets can only be valued using relative valuation models.
+> 
+> [^31]
+
 There are 4 main approaches to valuation,
 
 1. **Asset-based Valuation**: Asset-based valuation involves estimating the value of a company based on the value of its assets minus its liabilities. This method is particularly useful for companies with significant tangible assets, such as manufacturing or real estate companies. Asset-based valuation may include valuing assets at their book value, fair market value, or replacement cost.
@@ -633,7 +643,7 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > In keeping with the fact that return on equity is based on book value, all of the inputs are also stated in terms of book value. The derivation is simple and is provided in a footnote. Using this expanded version of ROE, the growth rate can be written as:
 > 
-> $\huge{ g = { b\{ ROC + D/E[ROC - i(1 - t)] \} } }$
+> $\huge{ g = { b \times { ROC + D/E[ROC - i(1 - t)]} } }$
 > 
 > The advantage of this formulation is that is allows use to model changes in leverage and evaluate the effects on growth.
 > 
@@ -682,6 +692,49 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > Finally, any firm that earns a return on capital greater than its cost of capital is earning an excess return. The excess returns are the result of a firm’s competitive advantages or barriers to entry into the industry. High excess returns locked in for very long periods imply that this firm has a permanent competitive advantage.
 > 
+> ...
+> 
+> **Positive and Changing Return on Capital Scenario** The analysis in the preceding section is based on the assumption that the return on capital remains stable over time. If the return on capital changes over time, the expected growth rate for the firm will have a second component, which will increase the growth rate if the return on capital increases and decrease the growth rate if the return on capital decreases.
+> 
+> $\huge{ \text{Expected growth rate} = { ROC_t \times \text{Reinvestment rate} + (ROC_t − ROC_{t−1})/ROC_t } }$
+> 
+> For example, a firm that sees its return on capital improve from 10 to 11 percent while maintaining a reinvestment rate of 40 percent will have an expected growth rate of:
+> 
+> Expected growth rate = .11 × .40 + (.11 − .10)/.10 = 14.40%
+> 
+> In effect, the improvement in the return on capital increases the earnings on existing assets and this improvement translates into an additional growth of 10 percent for the firm.
+> 
+> **Marginal and Average Returns on Capital** So far, we have looked at the return on capital as the measure that determines return. In reality, however, there are two measures of returns on capital. One is the return earned by firm collectively on all of its investments, which we define as the average return on capital. The other is the return earned by a firm on just the new investments it makes in a year, which is the marginal return on capital.
+>
+> Changes in the marginal return on capital do not create a second-order effect, and the expected growth is a product of the marginal return on capital and the reinvestment rate. Changes in the average return on capital, however, will result in the additional impact on growth chronicled earlier.
+> 
+> **Candidates for Changing Average Return on Capital** What types of firms are likely to see their return on capital change over time? One category includes firms with poor returns on capital that improve their operating efficiency and margins, and consequently their return on capital. In these firms, the expected growth rate will be much higher than the product of the reinvestment rate and the return on capital. In fact, since the return on capital on these firms is usually low before the turnaround, small changes in the return on capital translate into big changes in the growth rate. Thus, an increase in the return on capital on existing assets from 1 percent to 2 percent doubles the earnings (resulting in a growth rate of 100 percent).
+> 
+> Another category includes firms that have very high returns on capital on their existing investments but are likely to see these returns slip as competition enters the business, not only on new investments but also on existing investments.
+> 
+> ...
+> 
+> **Negative Return on Capital Scenario** The third and most difficult scenario for estimating growth is when a firm is losing money and has a negative return on capital. Since the firm is losing money, the reinvestment rate is also likely to be negative. To estimate growth in these firms, we have to move up the income statement and first project growth in revenues. Next, we use the firm’s expected operating margin in future years to estimate the operating income in those years. If the expected margin in future years is positive, the expected operating income will also turn positive, allowing us to apply traditional valuation approaches in valuing these firms. We also estimate how much the firm has to reinvest to generate revenue growth growth, by linking revenues to the capital invested in the firm.
+> 
+> **Growth in Revenues** Many high-growth firms, while reporting losses, also show large increases in revenues from period to period. The first step in forecasting cash flows is forecasting revenues in future years, usually by forecasting a growth rate in revenues each period. In making these estimates, there are five points to keep in mind.
+> 
+> 1. The rate of growth in revenues will decrease as the firm’s revenues increase. Thus, a tenfold increase in revenues is entirely feasible for a firm with revenues of $2 million but unlikely for a firm with revenues of $2 billion.
+> 
+> 2. Compounded growth rates in revenues over time can seem low, but appearances are deceptive. A compounded annual growth rate in revenues of 20 percent over ten years will increase revenues about six fold but an increase of 40 percent over 10 years will result in an almost 30-fold increase in revenues over the period.
+> 
+> 3. While growth rates in revenues may be the mechanism that you use to forecast future revenues, you do have to keep track of the dollar revenues to ensure that they are reasonable, given the size of the overall market that the firm operates in. If the projected revenues for a firm 10 years out would give it a 90 or 100 percent share (or greater) of the overall market in a competitive marketplace, you clearly should reassess the revenue growth rate.
+> 
+> 4. Assumptions about revenue growth and operating margins have to be internally consistent. Firms can post higher growth rates in revenues by adopting more aggressive pricing strategies but the higher revenue growth will then be accompanied by lower margins.
+> 
+> 5. In coming up with an estimate of revenue growth, you have to make a number of subjective judgments about the nature of competition, the capacity of the firm that you are valuing to handle the revenue growth and the marketing capabilities of the firm.
+> 
+> ...
+> 
+> **Operating Margin Forecasts** Before considering how to estimate the operating margins, let us begin with an assessment of where many high-growth firms, early in the life cycle, stand when the valuation begins. They usually have low revenues and negative operating margins. If revenue growth converts low revenues into high revenues and operating margins stay negative, these firms not only will be worth nothing but are unlikely to survive. For firms to be valuable, the higher revenues eventually have to deliver positive earnings. In a valuation model, this translates into positive operating margins in the future. A key input in valuing a high-growth firm then is the operating margin you would expect it to have as it matures.
+> 
+> In estimating this margin, you should begin by looking at the business that the firm is in. While many new firms claim to be pioneers in their businesses and some believe that they have no competitors, it is more likely that they are the first to find a new way of delivering a product or service that was previously delivered through other channels. Thus, Amazon.com might have been one of the first online retailers, but retailing was already an established business with hundreds of players. In fact, one can consider online retailers as logical successors to catalog retailers such as L.L. Bean and Lillian Vernon. Similarly, Yahoo! might have been one of the first Internet portals, but it was following the lead of newspapers that have used content and features to attract readers and used their readership to attract advertising. Using the average operating margin of competitors in the business may strike some as conservative. After all, they would point out, Amazon can hold less inventory and does not have the burden of carrying the operating leases that a brick and mortar retailer does (on its stores) and should, therefore, be more efficient about generating its revenues. This may be true, but it is unlikely that the operating margins for online retailers can be persistently higher than their brick-and-mortar counterparts. If they were, you would expect to see a migration of traditional retailers to online retailing and increased competition among online retailers on price and products, driving the margin down.
+> 
+> While the margin for the business in which a firm operates provides a target value, there are still two other estimation issues that you need to confront. Given that the operating margins in the early stages of the life cycle are negative, you first have to consider how the margin will improve from current levels to the target values. Generally, the improvements in margins will be greatest in the earlier years (at least in percentage terms) and then taper off as the firm approaches maturity. The second issue is one that is linked to revenue growth. Firms may be able to post higher revenue growth with lower margins but the trade-off has to be considered. While firms generally want both higher revenue growth and higher margin, the margin and revenue growth assumptions have to be consistent.
 > 
 > ...
 > 
@@ -1130,6 +1183,8 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > [^30]
 
 ### Cashflow
+
+> The value of an asset comes from its capacity to generate cash flows. When valuing a firm, these cash flows should be after taxes, prior to debt payments, and after reinvestment needs. When valuing equity, the cash flows should be after debt payments. There are thus three basic steps to estimating these cash flows.[^34]
 
 #### Equity Valuation Models
 
@@ -2664,3 +2719,4 @@ In summary, while both the PPI and CPI measure changes in prices over time, they
 [^31]: Chapter 34. Overview and Conclusion. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^32]: Chapter 3. Understanding Financial Statements. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^33]: Chapter 12. Closure in Valuation: Estimating Terminal Value. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
+[^34]: Chapter 10. From Earnings to Cash Flows. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
