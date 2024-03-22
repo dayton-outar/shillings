@@ -902,7 +902,7 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > Simplifying, the terminal value can be stated as:
 > 
-> $\huge{ \text{Terminal value}_q = { { EBIT_{n+1}(1 -t) } \over \text{Cost of capital}_n }}$
+> $\huge{ \text{Terminal value}_q = { { { EBIT_{n+1} } (1 -t) } \over \text{Cost of capital}_n }}$
 > 
 > where $q$ is $ROC = WACC$
 > 
