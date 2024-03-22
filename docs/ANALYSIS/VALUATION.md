@@ -785,7 +785,7 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > In the liquidation value approach, you are assuming that your firm has a finite life and that it will be liquidated at the end of that life. Firms, however, can reinvest some of their cash flows back into new assets and extend their lives. If you assume that cash flows, beyond the terminal year, will grow at a constant rate forever, the terminal value can be estimated as follows:
 > 
-> $\huge{ \text{Terminal value}_t = \text{Cash flow}_{t+1}/(r - \text{Stable growth})  }$
+> $\huge{ \text{Terminal value}_t = { \text{Cash flow}_q/(r - \text{Stable growth}) } }$
 > 
 > The cash flow and the discount rate used will depend on whether you are valuing the firm or valuing equity. If you are valuing equity, the terminal value of equity can be written as:
 > 
@@ -839,7 +839,7 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > ***Debt Ratios and Costs of Debt*** High growth firms tend to use less debt than stable growth firms. As firms mature, their debt capacity increases. When valuing firms, this will change the debt ratio that we use to compute the cost of capital. When valuing equity, changing the debt ratio will change both the cost of equity and the expected cash flows. The question of whether the debt ratio for a firm should be moved toward a more sustainable level in stable growth cannot be answered without looking at the incumbent managers’ views on debt, and how much power stockholders have in these firms. If managers are willing to change their financing policy, and stockholders retain some power, it is reasonable to assume that the debt ratio will move to a higher level in stable growth; if not, it is safer to leave the debt ratio at existing levels.
 > 
-As earnings and cash flows increase, the perceived default risk in the firm will also change. A firm that is currently losing $10 million on revenues of $100 million may be rated B, but its rating should be much better if your forecasts of $10 billion in revenues and $1 billion in operating income come to fruition. In fact, internal consistency requires that you reestimate the rating and the cost of debt for a firm as you change its revenues and operating income. As a general rule, stable growth firms should have at least investment grade ratings (Baa or higher).
+> As earnings and cash flows increase, the perceived default risk in the firm will also change. A firm that is currently losing $10 million on revenues of $100 million may be rated B, but its rating should be much better if your forecasts of $10 billion in revenues and $1 billion in operating income come to fruition. In fact, internal consistency requires that you reestimate the rating and the cost of debt for a firm as you change its revenues and operating income. As a general rule, stable growth firms should have at least investment grade ratings (Baa or higher).
 > 
 > On the practical question of what debt ratio and cost of debt to use in stable growth, you should look at the financial leverage of larger and more mature firms in the industry. One solution is to use the industry average debt ratio and cost of debt as the debt ratio and cost of debt for the firm in stable growth.
 > 
