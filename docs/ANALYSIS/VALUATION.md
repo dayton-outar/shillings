@@ -1330,9 +1330,11 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 
 ##### Dividend Discount Model
 
-> 
+> [^35]
 
 ##### Free Cashflow to Equity Model
+
+> [^36]
 
 #### Firm Valuation Models
 
@@ -1341,6 +1343,8 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 ##### Adjusted Present Value
 
 ##### Excess Returns
+
+> [^37]
 
 ## Relative Valuation Model
 
@@ -2864,3 +2868,4 @@ In summary, while both the PPI and CPI measure changes in prices over time, they
 [^34]: Chapter 10. From Earnings to Cash Flows. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^35]: Chapter 13. Dividend Discount Model. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^36]: Chapter 14. Free Cash Flow to Equity Discount Models. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
+[^37]: Chapter 21. Valuing Financial Service Firms. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
