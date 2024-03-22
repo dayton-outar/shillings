@@ -900,11 +900,7 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > $\huge{ \text{Terminal value} = { EBIT_{n+1}(1 − t)(1 − \text{Reinvestment rate}) \over { \text{Cost of capital}_n − ( \text{Reinvestment rate} \times \text{Cost of capital} ) } } }$
 > 
-> Simplifying, the terminal value can be stated as:
-> 
-> $\huge{ \text{Terminal value}_q = { { { EBIT_{n+1} } (1 -t) } \over \text{Cost of capital}_n }}$
-> 
-> where $q$ is $ROC = WACC$
+> ...
 > 
 > Put simply, when there are no excess returns, your terminal value is unaffected by your assumptions about expected growth. You could establish the same proposition with equity income and cash flows, and show that a return on equity equal to the cost of equity in stable growth nullifies the positive effect of growth.
 > 
