@@ -787,13 +787,19 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > $\huge{ \text{Terminal value}_t = { \text{Cash flow}_q/(r - \text{Stable growth}) } }$
 > 
+> where $q$ is $t + 1$ 
+> 
 > The cash flow and the discount rate used will depend on whether you are valuing the firm or valuing equity. If you are valuing equity, the terminal value of equity can be written as:
 > 
-> $\huge{ \text{Terminal value of equity}_n = \text{Cash flow to equity}_{n+1}/(\text{Cost of equity}_{n+1} = g_n) }$
+> $\huge{ \text{Terminal value of equity}_n = \text{Cash flow to equity}_q/(\text{Cost of equity}_q = g_n) }$
+> 
+> where $q$ is $n + 1$
 > 
 > The cash flow to equity can be defined strictly as dividends (in the dividend discount model) or as free cash flow to equity. If valuing a firm, the terminal value can be written as:
 > 
-> $\huge{ \text{Terminal value}_n = \text{Free cash flow to firm}_{n+1}/(\text{Cost of capital}_{n+1} = g_n) }$
+> $\huge{ \text{Terminal value}_n = \text{Free cash flow to firm}_q/(\text{Cost of capital}_q = g_n) }$
+> 
+> where $q$ is $n + 1$
 > 
 > where the cost of capital and the growth rate in the model are sustainable forever.
 > 
@@ -878,7 +884,7 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > Again, algebraic manipulation yields the following measure of the reinvestment rate in stable growth:
 > 
-> Reinvestment rate in stable growth = Stable growth rate/$ROC_n$
+> ${ \text{Reinvestment rate in stable growth} = \text{Stable growth rate}/ROC_n }$
 > 
 > where $ROC_n$ is the return on capital that the firm can sustain in stable growth. This reinvestment rate can then be used to generate the free cash flow to the firm in the first year of stable growth.
 > 
