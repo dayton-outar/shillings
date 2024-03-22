@@ -785,8 +785,138 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > In the liquidation value approach, you are assuming that your firm has a finite life and that it will be liquidated at the end of that life. Firms, however, can reinvest some of their cash flows back into new assets and extend their lives. If you assume that cash flows, beyond the terminal year, will grow at a constant rate forever, the terminal value can be estimated as follows:
 > 
-> @pg. 306 ---> pg. 318
-> [^32]
+> $\huge{ \text{Terminal value}_t = \text{Cash flow}_{t+1}/(r - \text{Stable growth})  }$
+> 
+> The cash flow and the discount rate used will depend on whether you are valuing the firm or valuing equity. If you are valuing equity, the terminal value of equity can be written as:
+> 
+> $\huge{ \text{Terminal value of equity}_n = \text{Cash flow to equity}_{n+1}/(\text{Cost of equity}_{n+1} = g_n) }$
+> 
+> The cash flow to equity can be defined strictly as dividends (in the dividend discount model) or as free cash flow to equity. If valuing a firm, the terminal value can be written as:
+> 
+> $\huge{ \text{Terminal value}_n = \text{Free cash flow to firm}_{n+1}/(\text{Cost of capital}_{n+1} = g_n) }$
+> 
+> where the cost of capital and the growth rate in the model are sustainable forever.
+> 
+> ...
+> 
+> **Constraints on Stable Growth** Of all the inputs into a discounted cash flow valuation model, none creates as much angst as estimating the stable growth rate. Part of the reason for it is that small changes in the stable growth rate can change the terminal value significantly, and the effect gets larger as the growth rate approaches the discount rate used in the estimation.
+> 
+> The fact that a stable growth rate is constant forever, however, puts strong constraints on how high it can be. Since no firm can grow forever at a rate higher than the growth rate of the economy in which it operates, the constant growth rate cannot be greater than the overall growth rate of the economy. In making a judgment on what the limits on a stable growth rate are, we have to consider the following three questions:
+> 
+> 1. _Is the company constrained to operate as a domestic company, or does it operate (or have the capacity to operate) multinationally?_ If a firm is a purely domestic company, either because of internal constraints (such as those imposed by management) or external constraints (such as those imposed by a government), the growth rate in the domestic economy will be the limiting value. If the company is a multinational or has aspirations to be one, the growth rate in the global economy (or at least those parts of the globe that the firm operates in) will be the limiting value.
+> 
+> 2. _Is the valuation being done in nominal or real terms?_ If the valuation is a nominal valuation, the stable growth rate should also be a nominal growth rate (i.e., include an expected inflation component). If the valuation is a real valuation, the stable growth rate will be constrained to be lower. Using a U.S. company in 2011 as an example, the stable growth rate can be as high as 2.0 percent if the valuation is done in nominal U.S. dollars but only 1 percent if the valuation is done in real terms.
+> 
+> 3. _What currency is being used to estimate cash flows and discount rates in the valuation?_ The limits on stable growth will vary depending on what currency is used in the valuation. If a high-inflation currency is used to estimate cash flows and discount rates, the stable growth rate will be much higher, since the expected inflation rate is added on to real growth. If a low-inflation currency is used to estimate cash flows, the stable growth rate will be much lower. For instance, the stable growth rate that would be used to value Cemex, the Mexican cement company, will be much higher if the valuation is done in Mexican pesos than in U.S. dollars.
+> 
+> Although the stable growth rate cannot exceed the growth rate of the economy in which a firm operates, it can be lower. There is nothing that prevents us from assuming that mature firms will become a smaller part of the economy and it may, in fact, be the more reasonable assumption to make. Note that the growth rate of an economy reflects the contributions of both young, higher-growth firms and mature, stable-growth firms. If the former grow at a rate much higher than the growth rate of the economy, the latter have to grow at a rate that is lower.
+> 
+> Setting the stable growth rate to be less than or equal to the growth rate of the economy not only is the consistent thing to do but it also ensures that the growth rate will be less than the discount rate. This is because there is a link between the riskless rate that goes into the discount rate and the growth rate of the economy. Note that the riskless rate can be written as:
+> 
+> $\huge{ \text{Nominal riskless rate} = \text{Real riskless rate} + \text{Expected inflation rate} }$
+> 
+> In the long term, the real riskless rate will converge on the real growth rate of the economy, and the nominal riskless rate will approach the nominal growth rate of the economy. In fact, a simple rule of thumb on the stable growth rate is that it generally should not exceed the riskless rate used in the valuation.
+> 
+> **Key Assumptions about Stable Growth** In every discounted cash flow valuation, there are three critical assumptions you need to make on stable growth. The first relates to when the firm that you are valuing will become a stable growth firm, if it is not one already. The second relates to what the characteristics of the firm will be in stable growth, in terms of return on investments and costs of equity and capital. The final assumption relates to how the firm that you are valuing will make the transition from high growth to stable growth.
+> 
+> ***Length of the High Growth Period*** The question of how long a firm will be able to sustain high growth is perhaps one of the more difficult questions to answer in a valuation, but two points are worth making. One is that it is not a question of whether but when firms hit the stable growth wall. All firms ultimately become stable growth firms, in the best case, because high growth makes a firm larger, and the firm’s size will eventually become a barrier to further high growth. In the worst-case scenario, firms do not survive and will be liquidated. The second is that high growth in valuation, or at least high growth that creates value, comes from firms earning excess returns on their marginal investments. In other words, increased value comes from firms having a return on capital that is higher than the cost of capital (or a return on equity that exceeds the cost of equity). Thus, when you assume that a firm will experience high growth for the next 5 or 10 years, you are also implicitly assuming that it will earn excess returns (over and above the required return) during that period. In a competitive market, these excess returns will eventually draw in new competitors, and the excess returns will disappear.
+> 
+> You should look at three factors when considering how long a firm will be able to maintain high growth.
+> 
+> 1. _Size of the firm._ Smaller firms are much more likely to earn excess returns and maintain these excess returns than otherwise similar larger firms. This is because they have more room to grow and a larger potential market. Small firms in large markets should have the potential for high growth (at least in revenues) over long periods. When looking at the size of the firm, you should look not only at its current market share, but also at the potential growth in the total market for its products or services. A firm may have a large market share of its current market, but it may be able to grow in spite of this because the entire market is growing rapidly.
+> 
+> 2. _Existing growth rate and excess returns._ Momentum does matter, when it comes to projecting growth. Firms that have been reporting rapidly growing revenues are more likely to see revenues grow rapidly at least in the near future. Firms that are earning high returns on capital and high excess returns in the current period are likely to sustain these excess returns for the next few years.
+> 
+> 3. _Magnitude and sustainability of competitive advantages._ This is perhaps the most critical determinant of the length of the high growth period. If there are significant barriers to entry and sustainable competitive advantages, firms can maintain high growth for longer periods. If, on the other hand, there are no or minor barriers to entry, or if the firm’s existing competitive advantages are fading, you should be far more conservative about allowing for long growth periods. The quality of existing management also influences growth. Some top managers have the capacity to make the strategic choices that increase competitive advantages and create new ones.
+> 
+> **Characteristics of Stable Growth Firm** As firms move from high growth to stable growth, you need to give them the characteristics of stable growth firms. A firm in stable growth is different from that same firm in high growth on a number of dimensions. In general, you would expect stable growth firms to have average risk, use more debt, have lower (or no) excess returns, and reinvest less than high growth firms. In this section, we will consider how best to adjust each of these variables.
+> 
+> ***Equity Risk*** When looking at the cost of equity, high growth firms tend to be more exposed to market risk (and have higher betas) than stable growth firms. Part of the reason for this is that they tend to be niche players supplying discretionary products, and part of the reason is high operating leverage. Thus, young technology or social media firms will have high betas. As these firms mature, you would expect them to have less exposure to market risk and betas that are closer to 1—the average for the market. One option is to set the beta in stable growth to 1 for all firms, arguing that firms in stable growth should all be average risk. Another is to allow for small differences to persist even in stable growth, with firms in more volatile businesses having higher betas than firms in stable businesses. We would recommend that, as a rule of thumb, stable period betas not exceed 1.2.
+> 
+> But what about firms that have betas well below 1, such as commodity companies? If you are assuming that these firms will stay in their existing businesses, there is no harm in assuming that the beta remains at existing levels. However, if your estimates of growth in perpetuity will require them to branch out into other businesses, you should adjust the beta upward toward 1; invoking another rule of thumb, stable period betas should not be lower than 8.
+> 
+> ***Project Returns*** High growth firms tend to have high returns on capital (and equity) and earn excess returns. In stable growth, it becomes much more difficult to sustain excess returns. There are some who believe that the only assumption consistent with stable growth is to assume no excess returns; the return on capital is set equal to the cost of capital. While, in principle, excess returns in perpetuity may not seem reasonable, it is difficult in practice to assume that firms will suddenly lose the capacity to earn excess returns at a point in time (say 5 years or 10 years). To provide a simple example, consider Proctor and Gamble, a company that we estimated a high growth period of 5 years for in illustration 12.1. While the growth rate for P&G may drop to a stable level by year 6, the strong brand name and other competitive advantages are likely to persist for much longer (say 30 to 40 years). Rather than estimate cash flows for 30 to 40 years, we would stop estimating cash flows in year 5 but still allow the company to continue earning more than its cost of capital in perpetuity. Since entire industries often earn excess returns over long periods, assuming a firm’s returns on equity and capital will move toward industry averages will yield more reasonable estimates of value.
+> 
+> ***Debt Ratios and Costs of Debt*** High growth firms tend to use less debt than stable growth firms. As firms mature, their debt capacity increases. When valuing firms, this will change the debt ratio that we use to compute the cost of capital. When valuing equity, changing the debt ratio will change both the cost of equity and the expected cash flows. The question of whether the debt ratio for a firm should be moved toward a more sustainable level in stable growth cannot be answered without looking at the incumbent managers’ views on debt, and how much power stockholders have in these firms. If managers are willing to change their financing policy, and stockholders retain some power, it is reasonable to assume that the debt ratio will move to a higher level in stable growth; if not, it is safer to leave the debt ratio at existing levels.
+> 
+As earnings and cash flows increase, the perceived default risk in the firm will also change. A firm that is currently losing $10 million on revenues of $100 million may be rated B, but its rating should be much better if your forecasts of $10 billion in revenues and $1 billion in operating income come to fruition. In fact, internal consistency requires that you reestimate the rating and the cost of debt for a firm as you change its revenues and operating income. As a general rule, stable growth firms should have at least investment grade ratings (Baa or higher).
+> 
+> On the practical question of what debt ratio and cost of debt to use in stable growth, you should look at the financial leverage of larger and more mature firms in the industry. One solution is to use the industry average debt ratio and cost of debt as the debt ratio and cost of debt for the firm in stable growth.
+> 
+> 
+> ***Reinvestment and Retention Ratios*** Stable growth firms tend to reinvest less than high growth firms, and it is critical that we capture the effects of lower growth on reinvestment and that we ensure that the firm reinvests enough to sustain its stable growth rate in the terminal phase. The actual adjustment will vary depending on whether we are discounting dividends, free cash flows to equity, or free cash flows to the firm.
+> 
+> In the dividend discount model, note that the expected growth rate in earnings per share can be written as a function of the retention ratio and the return on equity.
+> 
+> Expected growth rate = Retention ratio × Return on equity
+> 
+> Algebraic manipulation can allow us to state the retention ratio as a function of the expected growth rate and return on equity:
+> 
+> Retention ratio = Expected growth rate/Return on equity
+> 
+> If we assume, for instance, a stable growth rate of 3 percent (based on the growth rate of the economy) for Procter & Gamble (P&G) and a return on equity of 12 percent (based on industry averages), we would be able to compute the retention ratio of the firm in stable growth:
+> 
+> Retention ratio = 3%/12% = 25%
+> 
+> Procter & Gamble will have to retain 25 percent of its earnings to generate its expected growth of 3 percent; it can pay out the remaining 75 percent.
+> 
+> In a free cash flow to equity model, where we are focusing on net income growth, the expected growth rate is a function of the equity reinvestment rate and the return on equity:
+> 
+> Expected growth rate = Equity reinvestment rate × Return on equity
+> 
+> The equity reinvestment rate can then be computed as follows:
+> 
+> Equity reinvestment rate = Expected growth rate/Return on equity
+> 
+> If, for instance, we assume that Coca-Cola will have a stable growth rate of 3 percent and have a return on equity in stable growth of 15 percent, we can estimate an equity reinvestment rate of 20%; the remaining 80% can be paid out as cash flows to equity investors:
+> 
+> Equity reinvestment rate = 3%/15% = 20%
+> 
+> Finally, looking at free cash flows to the firm, we estimated the expected growth in operating income as a function of the return on capital (ROC) in stable growth and the reinvestment rate:
+> 
+> Expected growth rate = Reinvestment rate × Return on capital
+> 
+> Again, algebraic manipulation yields the following measure of the reinvestment rate in stable growth:
+> 
+> Reinvestment rate in stable growth = Stable growth rate/$ROC_n$
+> 
+> where $ROC_n$ is the return on capital that the firm can sustain in stable growth. This reinvestment rate can then be used to generate the free cash flow to the firm in the first year of stable growth.
+> 
+> Linking the reinvestment rate and retention ratio to the stable growth rate also makes the valuation less sensitive to assumptions about the stable growth rate. Whereas increasing the stable growth rate, holding all else constant, can dramatically increase value, changing the reinvestment rate as the growth rate changes will create an offsetting effect. The gains from increasing the growth rate will be partially or completely offset by the loss in cash flows because of the higher reinvestment rate. Whether value increases or decreases as the stable growth increases will entirely depend on what you assume about excess returns. If the return on capital is higher than the cost of capital in the stable growth period, increasing the stable growth rate will increase value. _If the return on capital is equal to the stable growth rate, increasing the stable growth rate will have no effect on value._ This can be proved quite easily:
+> 
+> $\huge{ \text{Terminal value} = { EBIT_{n+1}(1 − t)(1 − \text{Reinvestment rate}) \over { \text{Cost of capital}_n − \text{Stable growth rate} } } }$
+> 
+> Substituting in the stable growth rate as a function of the reinvestment rate, from the equation, you get:
+> 
+> $\huge{ \text{Terminal value} = { EBIT_{n+1}(1 − t)(1 − \text{Reinvestment rate}) \over { \text{Cost of capital}_n − ( \text{Reinvestment rate} \times \text{Return on capital} ) } } }$
+> 
+> Setting the return on capital equal to the cost of capital, you arrive at:
+> 
+> $\huge{ \text{Terminal value} = { EBIT_{n+1}(1 − t)(1 − \text{Reinvestment rate}) \over { \text{Cost of capital}_n − ( \text{Reinvestment rate} \times \text{Cost of capital} ) } } }$
+> 
+> Simplifying, the terminal value can be stated as:
+> 
+> $\huge{ \text{Terminal value}_{ROC = WACC} = { { EBIT_{n+1}(1 -t) } \over \text{Cost of capital}_n }}$
+> 
+> Put simply, when there are no excess returns, your terminal value is unaffected by your assumptions about expected growth. You could establish the same proposition with equity income and cash flows, and show that a return on equity equal to the cost of equity in stable growth nullifies the positive effect of growth.
+> 
+> ***Transition to Stable Growth*** Once you have decided that a firm will be in stable growth at a point in time in the future, you have to consider how the firm will change as it approaches stable growth. There are three distinct scenarios. In the first, the firm will maintain its high growth rate for a period of time and then become a stable growth firm abruptly; this is a two-stage model. In the second, the firm will maintain its high growth rate for a period and then have a transition period when its characteristics change gradually toward stable growth levels; this is a three-stage model. In the third, the firm’s characteristics change each year from the initial period to the stable growth period; this can be considered an n-stage model.
+> 
+> Which of these three scenarios gets chosen depends on the firm being valued. Since the firm goes from high growth to stable growth in one year in the two-stage model, this model is more appropriate for firms with moderate growth rates, where the shift will not be too dramatic. For firms with very high growth rates in operating income, a transition phase allows for a gradual adjustment not just of growth rates but also of risk characteristics, returns on capital and reinvestment rates toward stable growth levels. For very young firms or for firms with negative operating margins, allowing for changes in each year (in an n-stage model) is prudent.
+> 
+> ...
+> 
+> **EXTRAORDINARY GROWTH PERIODS WITHOUT A HIGH GROWTH RATE OR A NEGATIVE GROWTH RATE**
+> 
+> Can you have extraordinary growth periods for firms that have expected growth rates that are less than or equal to the growth rate of the economy? The answer is yes, for some firms. This is because stable growth requires not just that the growth rate be less than the growth rate of the economy, but that the other inputs into the valuation are also appropriate for a stable growth firm. Consider, for instance, a firm whose operating income is growing at 2 percent a year but whose current return on capital is 20 percent and whose beta is 1.5. You would still need a transition period in which the return on capital declined to more sustainable levels (say 12 percent) and the beta moved toward 1.
+> 
+> By the same token, you can have an extraordinary growth period, where the growth rate is less than the stable growth rate and then moves up to the stable growth rate. For instance, you could have a firm that is expected to see its earnings decline 5 percent a year for the next five years (which would be the extraordinary growth period) and grow 2 percent thereafter.
+> 
+> ...
+> 
+> ...
+> 
+> The value of a firm is the present value of its expected cash flows over its life. Since firms have infinite lives, you apply closure to a valuation by estimating cash flows for a period and then estimating a value for the firm at the end of the period—a terminal value. Many analysts estimate the terminal value using a multiple of earnings or revenues in the final estimation year. If you assume that firms have infinite lives, an approach that is more consistent with discounted cash flow valuation is to assume that the cash flows of the firm will grow at a constant rate forever beyond a point in time. When the firm that you are valuing will approach this growth rate, which you label a stable growth rate, is a key part of any discounted cash flow valuation. Small firms that are growing fast and have significant competitive advantages should be able to grow at high rates for much longer periods than larger and more mature firms, without these competitive advantages. If you do not want to assume an infinite life for a firm, you can estimate a liquidation value based on what others will pay for the assets that the firm has accumulated during the high-growth phase.[^32]
 
 #### Earnings
 
@@ -1188,7 +1318,15 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 
 #### Equity Valuation Models
 
+> In the strictest sense, the only cash flow you receive when you buy shares in a publicly traded firm is a dividend. The simplest model for valuing equity is the dividend discount model (DDM)—the value of a stock is the present value of expected dividends on it. While many analysts have turned away from the dividend discount model and view it as outmoded, much of the intuition that drives discounted cash flow valuation stems from the dividend discount model. In fact, there are companies where the dividend discount model remains a useful tool for estimating value.[^35]
+
+> The dividend discount model is based on the premise that the only cash flows received by stockholders are dividends. Even if we use the modified version of the model and treat stock buybacks as dividends, we may misvalue firms that consistently fail to return what they can afford to their stockholders.
+> 
+> ... a more expansive definition of cash flows to equity [can involve] the cash flows left over after meeting all financial obligations, including debt payments, and after covering capital expenditure and working capital needs. ... reasons for differences between dividends and free cash flows to equity (FCFE) [are explored in this section][^36]
+
 ##### Dividend Discount Model
+
+> 
 
 ##### Free Cashflow to Equity Model
 
@@ -2720,3 +2858,5 @@ In summary, while both the PPI and CPI measure changes in prices over time, they
 [^32]: Chapter 3. Understanding Financial Statements. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^33]: Chapter 12. Closure in Valuation: Estimating Terminal Value. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^34]: Chapter 10. From Earnings to Cash Flows. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
+[^35]: Chapter 13. Dividend Discount Model. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
+[^36]: Chapter 14. Free Cash Flow to Equity Discount Models. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
