@@ -115,7 +115,7 @@ As stated previously, _Discounted Cashflow_ involves estimating the present valu
 > where, \
 > $n$ = Life of the asset \
 > $CF_t$ = Cash flow in period $t$ \
-> $r$ = Discount rate reflecting the riskiness of the estimated cash flows[^22]
+> $r$ = Discount rate reflecting the riskiness of the estimated cash flows[^4]
 
 There are several approaches and combinations with which _cashflow_, _growth_ and _risk_ can be deduced and used to evaluate an asset. The complexity of this approach is due to the various circumstances that assets promise future cashflows.
 
@@ -149,7 +149,7 @@ When it comes to _cashflows_, an evaluation can be done by focusing either on _E
 > 
 > ***Value of asset = Present value of excess return + Investment in the asset = $2 million /.1 + $100 million = $120 million***
 > 
-> Note that the answers in the two approaches are equivalent. Why, then, would we want to use an excess return model? By focusing on excess returns, this model brings home the point that it is not earnings per se that create value, but earnings in excess of a required return.[^22]
+> Note that the answers in the two approaches are equivalent. Why, then, would we want to use an excess return model? By focusing on excess returns, this model brings home the point that it is not earnings per se that create value, but earnings in excess of a required return.[^4]
 
 Both debt and equity has _risk_ associated with them and their are about 3 main approaches of how to interpret the risk of capital (or wealth), which constitutes both debt and equity. The 3 main approaches for assessing the risk of cashflow includes _Capital Asset Pricing Model_, _Arbitrage Pricing Model_ and _Multifactor Models_.
 
@@ -1344,7 +1344,7 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 
 ##### Excess Returns
 
-> [^37]
+> [^6]
 
 ## Relative Valuation Model
 
@@ -2828,18 +2828,19 @@ In summary, while both the PPI and CPI measure changes in prices over time, they
 ## Tutorial Videos
 
 1. [How to Calculate Beta using Covariance and Variance](https://youtu.be/nDcZJcxOwVI) - [Edspira](https://www.youtube.com/c/Edspira)
-2. [How to Calculate Beta In Excel - All 3 Methods (Regression, Slope & Covariance)](https://youtu.be/vr1lQeKX8Mc) - [hey i'm aaron](https://www.youtube.com/channel/UCqBYFpLfaytqGkzGTsHTlVQ)
-3. [How to calculate percentage price changes correctly with natural logs for stock prices](https://youtu.be/Ytk_WTmPhCs) - [Stachanov Holding B.V.](https://www.youtube.com/c/StachanovSolutionsServices)
-4. [Free Cash Flow: Back to Basics](https://youtu.be/9GnwzjV9qS0) - [Aswath Damodaran](https://www.youtube.com/c/AswathDamodaranonValuation)
-5. [Valuing Financial Service Firms, Excess Return Model](https://youtu.be/hLIK_nQml88) - [Chris Hughen](https://www.youtube.com/@ChrisHughen)
-6. [REIT Valuation](https://youtu.be/lz8T0owadXU) - [Chris Hughen](https://www.youtube.com/@ChrisHughen)
-7. [Here Are The REAL RISKS To The US Economy](https://youtu.be/MrsiIt2pUUc?si=2JDAjtONY5AXXiYK) - [George Gammon](https://www.youtube.com/@GeorgeGammon)
+1. [How to Calculate Beta In Excel - All 3 Methods (Regression, Slope & Covariance)](https://youtu.be/vr1lQeKX8Mc) - [hey i'm aaron](https://www.youtube.com/channel/UCqBYFpLfaytqGkzGTsHTlVQ)
+1. [How to calculate percentage price changes correctly with natural logs for stock prices](https://youtu.be/Ytk_WTmPhCs) - [Stachanov Holding B.V.](https://www.youtube.com/c/StachanovSolutionsServices)
+1. [Free Cash Flow: Back to Basics](https://youtu.be/9GnwzjV9qS0) - [Aswath Damodaran](https://www.youtube.com/c/AswathDamodaranonValuation)
+1. [Valuing Financial Service Firms, Excess Return Model](https://youtu.be/hLIK_nQml88) - [Chris Hughen](https://www.youtube.com/@ChrisHughen)
+1. [REIT Valuation](https://youtu.be/lz8T0owadXU) - [Chris Hughen](https://www.youtube.com/@ChrisHughen)
+1. [Aswath Damodaran: PRICELESS LECTURE About The Stock Market (Every Investor MUST WATCH)](https://youtu.be/zjXvbJUnCsM?si=Mze389kztEnuBROm)
+1. [Here Are The REAL RISKS To The US Economy](https://youtu.be/MrsiIt2pUUc?si=2JDAjtONY5AXXiYK) - [George Gammon](https://www.youtube.com/@GeorgeGammon)
 
 
 [^1]: Page 75. Chapter 5. Understand Fundamental Analysis. _The Art of Currency Trading_ by Brent Donnelly.
-[^4]: Page 22. Chapter 2. Approaches to Valuation. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
-[^5]: Page 599. Chapter 21. Valuing Financial Service Firms. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
-[^6]: Page 305. Chapter 12. Closure in Valuation: Estimating Terminal Value. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
+[^4]: Chapter 2. Approaches to Valuation. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
+[^5]: Chapter 21. Valuing Financial Service Firms. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
+[^6]: Chapter 12. Closure in Valuation: Estimating Terminal Value. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^8]: Chapter 17. Fundamental Principles of Relative Valuation. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^9]: Chapter 10. Mechanics of Options Markets. _Options, Futures, and Other Derivatives, Global Edition, 9th Edition_ by John C. Hull
 [^10]: Chapter 15. Black-Scholes-Merton Model. _Options, Futures, and Other Derivatives, Global Edition, 9th Edition_ by John C. Hull.
@@ -2853,7 +2854,6 @@ In summary, while both the PPI and CPI measure changes in prices over time, they
 [^19]: _Understanding the Consumer Price Index_ by Statistical Institute of Jamaica
 [^20]: Technically, this can be done by putting the firm into stable growth and valuing it as a stable growth firm, where reinvestments are used to either preserve or augment existing assets.
 [^21]: This is an extension of the variance formula for a two-asset portfolio.
-[^22]: Chapter 2. Approaches to Valuation. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^23]: Chapter 10. Capital Markets and the Pricing Risk. _Corporate Finance: The Core, Global Edition_ by Jonathan Berk and Peter Demarzo.
 [^24]: Chapter 4. The Basics of Risk. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^25]: Chapter 7. Riskless Rates and Risk Premiums. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
@@ -2868,4 +2868,3 @@ In summary, while both the PPI and CPI measure changes in prices over time, they
 [^34]: Chapter 10. From Earnings to Cash Flows. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^35]: Chapter 13. Dividend Discount Model. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^36]: Chapter 14. Free Cash Flow to Equity Discount Models. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
-[^37]: Chapter 21. Valuing Financial Service Firms. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
