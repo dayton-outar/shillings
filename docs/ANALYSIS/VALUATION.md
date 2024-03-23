@@ -1366,7 +1366,7 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 
 ## Relative Valuation Model
 
-![Relative Valuation Process](/.attachments/valuation-relative.valuation.process.png)
+![Relative Valuation Process](/.attachments/valuation-relative.valuation.process-2.png)
 
 _Relative Valuation Process_
 
