@@ -30,7 +30,7 @@ Each of these methods has its strengths and weaknesses, and the choice of method
 
 <image src="/.attachments/chatgpt-logo.png" alt="Chat GPT Logo" width="16" height="16" />
 
-![Selection Process of Valuation Models](/.attachments/valuation-selecting.main.valuation.models-2.png)
+![Selection Process of Valuation Models](/.attachments/valuation-selecting.main.valuation.models-3.png)
 
 _Selection Process of Valuation Models_
 
@@ -1365,6 +1365,10 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > [^6]
 
 ## Relative Valuation Model
+
+![Relative Valuation Process](/.attachments/valuation-relative.valuation.process.png)
+
+_Relative Valuation Process_
 
 > In relative valuation, the objective is to value assets based on how similar assets are currently priced in the market. ...
 > 
