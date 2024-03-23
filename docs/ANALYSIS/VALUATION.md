@@ -30,7 +30,7 @@ Each of these methods has its strengths and weaknesses, and the choice of method
 
 <image src="/.attachments/chatgpt-logo.png" alt="Chat GPT Logo" width="16" height="16" />
 
-![Selection Process of Valuation Models](/.attachments/valuation-selecting.main.valuation.models.png)
+![Selection Process of Valuation Models](/.attachments/valuation-selecting.main.valuation.models-2.png)
 
 _Selection Process of Valuation Models_
 
@@ -44,14 +44,17 @@ Damodaran does not go into much detail explaining _asset-based valuation_ only t
 > 
 > While analysts may use asset-based valuation approaches to estimate value, they are not alternatives to discounted cash flow, relative, or option pricing models since both replacement and liquidation values have to be obtained using one or another of these approaches. Ultimately, all valuation models attempt to value assets; the differences arise in how we identify the assets and how we attach value to each asset. In liquidation valuation, we look only at assets in place and estimate their value based on what similar assets are priced at in the market. In traditional discounted cash flow valuation, we consider all assets and include expected growth potential to arrive at value. The two approaches may, in fact, yield the same values if you have a firm that has no growth potential and the market assessments of value reflect expected cash flows.[^4]
 
+![Asset-based Valuation Process](/.attachments/valuation-asset-based.valuation.png)
+
+_Asset-based Valuation Process_
+
 > The approach you use to value a business will depend on how marketable its assets are, whether it generates cash flows, and how unique it is in terms of its operations.
 > 
 > ![Asset Marketability and Valuation Approaches](/.attachments/valuation-separable.marketable.assets.png)
 > 
 > _Asset Marketability and Valuation Approaches_
 > 
-> **Marketability of Assets** Liquidation valuation and replacement cost valuation are easiest to do for firms that have assets that are separable and marketable. For instance, you can estimate the liquidation value for a real estate company because its properties can be sold individually, and you can estimate the value of each property easily. The same can be said about a closed-end mutual fund. At the other extreme, consider a brand-name consumer product like Proctor and Gamble. Its assets are not only intangible but difficult to separate out. For instance, you can-
-not separate the razor business easily from the shaving cream business, and brand name value is inherent in both businesses.
+> **Marketability of Assets** Liquidation valuation and replacement cost valuation are easiest to do for firms that have assets that are separable and marketable. For instance, you can estimate the liquidation value for a real estate company because its properties can be sold individually, and you can estimate the value of each property easily. The same can be said about a closed-end mutual fund. At the other extreme, consider a brand-name consumer product like Proctor and Gamble. Its assets are not only intangible but difficult to separate out. For instance, you cannot separate the razor business easily from the shaving cream business, and brand name value is inherent in both businesses.
 > 
 > You can also use this same analysis to see why the liquidation or replacement cost value of a high-growth business may bear little resemblance to true value. Unlike assets in place, growth assets cannot be easily identified or sold.[^31]
 
