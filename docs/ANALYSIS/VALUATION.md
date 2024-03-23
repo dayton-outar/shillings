@@ -2864,7 +2864,6 @@ In summary, while both the PPI and CPI measure changes in prices over time, they
 [^30]: Chapter 23. Valuing Young or Start-Up Firms. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^31]: Chapter 34. Overview and Conclusion. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^32]: Chapter 3. Understanding Financial Statements. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
-[^33]: Chapter 12. Closure in Valuation: Estimating Terminal Value. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^34]: Chapter 10. From Earnings to Cash Flows. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^35]: Chapter 13. Dividend Discount Model. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^36]: Chapter 14. Free Cash Flow to Equity Discount Models. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
