@@ -2,6 +2,13 @@
 
 The web api offers the service of communicating information from the stock tracker's database.
 
+## To-Do
+
+Take a look at the following for authentication and authorization,
+
+- [Stytch](https://stytch.com/)
+- [Auth0](https://auth0.com/)
+
 ## Requirements
 
  * [.NET 6](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
