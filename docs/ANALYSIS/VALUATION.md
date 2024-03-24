@@ -1364,7 +1364,7 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > ***The rationale for the model lies in the present value rule—the value of any asset is the present value of expected future cash flows, discounted at a rate appropriate to the riskiness of the cash flows being discounted.***
 > 
-> There are two basic inputs to the model—expected dividends and the cost on equity. To obtain the expected dividends, we make assumptions about expected future growth rates in earnings and payout ratios. The required rate of return on a stock is determined by its riskiness, measured differently in different models—the market beta in the capital asset pricing model (CAPM) and the factor betas in the arbitrage and multifactor models. The model is flexible enough to allow for time-varying discount rates, where the time variation is because of expected changes in interest rates or risk across time
+> There are two basic inputs to the model—expected dividends and the cost on equity. To obtain the expected dividends, we make assumptions about expected future growth rates in earnings and payout ratios. The required rate of return on a stock is determined by its riskiness, measured differently in different models—the market beta in the capital asset pricing model (CAPM) and the factor betas in the arbitrage and multifactor models. The model is flexible enough to allow for time-varying discount rates, where the time variation is because of expected changes in interest rates or risk across time.
 > 
 > [^35]
 
