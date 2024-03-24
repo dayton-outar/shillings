@@ -44,7 +44,7 @@ Damodaran does not go into much detail explaining _asset-based valuation_ only t
 > 
 > While analysts may use asset-based valuation approaches to estimate value, they are not alternatives to discounted cash flow, relative, or option pricing models since both replacement and liquidation values have to be obtained using one or another of these approaches. Ultimately, all valuation models attempt to value assets; the differences arise in how we identify the assets and how we attach value to each asset. In liquidation valuation, we look only at assets in place and estimate their value based on what similar assets are priced at in the market. In traditional discounted cash flow valuation, we consider all assets and include expected growth potential to arrive at value. The two approaches may, in fact, yield the same values if you have a firm that has no growth potential and the market assessments of value reflect expected cash flows.[^4]
 
-![Asset-based Valuation Process](/.attachments/valuation-asset-based.valuation.png)
+![Asset-based Valuation Process](/.attachments/valuation-asset-based.valuation-2.png)
 
 _Asset-based Valuation Process_
 
@@ -1361,8 +1361,38 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 ##### Adjusted Present Value
 
 ##### Excess Returns
-
-> [^6]
+> Banks, insurance companies, and other financial service firms pose particular challenges for an analyst attempting to value them for two reasons. The first is that the nature of their businesses makes it difficult to define both debt and reinvestment, making the estimation of cash flows much more messy. The other is that they tend to be heavily regulated, and the effects of regulatory requirements on value have to be considered.
+> 
+> ...
+> 
+> Any firm that provides financial products and services to individuals or other firms can be categorized as a financial service firm. We would break down financial service businesses into four groups from the perspective of how they make their money. A bank makes money on the spread between the interest it pays to those from whom it raises funds and the interest it charges those who borrow from it, and from other services it offers its depositors and its lenders. Insurance companies make their income in two ways. One is through the premiums they receive from those who buy claims from them, and the other is income from the investment portfolios that they maintain to service these claims. An investment bank provides advice and supporting products for non–financial service firms who are desirous of raising capital or to consummate deals such as acquisitions or divestitures. Investment firms provide investment advice or manage portfolios for clients. Their income comes from advisory fees for the advice, and management and sales fees for investment portfolios.
+> 
+> ...
+> 
+> @pg. 582 --> 584
+>
+> ...
+> 
+> **Basic Model** Given the difficulty associated with defining total capital in a financial service firm, it makes far more sense to focus on just equity when using an excess return model to value a financial service firm. The value of equity in a firm can be written as the sum of the equity invested in a firm’s current investments and the expected excess returns to equity investors from these and future investments.
+> 
+> $\large{ \text{Value of equity} = \text{Equity capital invested currently} + \text{Present value of expected excess returns to equity investors} }$
+> 
+> The most interesting aspect of this model is its focus on excess returns. A firm that invests its equity and earns just the fair-market rate of return on these investments should see the market value of its equity converge on the equity capital currently invested in it. A firm that earns a below-market return on its equity investments will see its equity market value dip below the equity capital currently invested.
+> 
+> The other point that has to be emphasized is that this model considers expected future investments as well. Thus it is up to the analyst using the model to forecast not only where the financial service firm will direct its future investments but also the returns it will make on those investments.
+> 
+> **Inputs to Model** There are two inputs needed to value equity in the excess return model. The first is a measure of equity capital currently invested in the firm. The second and more difficult input is the expected excess returns to equity investors in future periods.
+> 
+> The equity capital invested currently in a firm is usually measured as the book value of equity in the firm. While the book value of equity is an accounting measure and is affected by accounting decisions, it should be a much more reliable measure of equity invested in a financial service firm than in a manufacturing firm for two reasons. The first is that the assets of a financial service firm are often financial assets that are marked up to market; the assets of manufacturing firms are real assets and deviations between book and market value are usually much larger. The second is that depreciation, which can be a big factor in determining book value for manufacturing firms, is often negligible at financial service firms. Notwithstanding this, the book value of equity can be affected by stock buybacks and extraordinary or one-time charges. The book value of equity for financial service firms that buy back stock or take extraordinary charges may understate the equity capital invested in the firm.
+> 
+> The excess returns, defined in equity terms, can be stated in terms of the return on equity and the cost of equity:
+> 
+> $\large{ \text{Excess equity return} = (\text{Return on equity} – \text{Cost of equity})(\text{Equity capital invested}) }$
+> 
+> Here again, we are assuming that the return on equity is a good measure of the economic return earned on equity investments. When analyzing a financial service firm, we can obtain the return on equity from the current period and past periods, but the return on equity that is required is the expected future return. This requires an analysis of the firm’s strengths and weaknesses as well as the competition faced by the firm and changes in regulatory capital requirements.
+> 
+> In making estimates of expected equity return spreads, we have to allow for the fact that the presence of large excess returns is likely to attract competition. These excess returns will fade over time and this should be reflected in the forecasts.
+> [^5]
 
 ## Relative Valuation Model
 
@@ -2120,6 +2150,10 @@ The Contingency Claim Model, developed by Aswath Damodaran, is particularly appr
 In summary, the Contingency Claim Model is appropriate for evaluating businesses with complex capital structures, facing financial distress, or operating in volatile industries where traditional valuation methods may not adequately capture the value of equity. It provides a comprehensive framework for analyzing equity and debt claims and assessing the impact of uncertainty and leverage on the company's value.
 
 <image src="/.attachments/chatgpt-logo.png" alt="Chat GPT Logo" width="16" height="16" />
+
+![Contingency Claim Valuation Selection Process](/.attachments/valuation-contingency.claim.valuation.png)
+
+_Contingency Claim Valuation Selection Process_
 
 ### Options
 
