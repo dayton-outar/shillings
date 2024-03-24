@@ -15,18 +15,6 @@ Now, compare the above model by Damodaran with Simply Wall Street's model (or fl
 >
 > ![Simply Wall St Discounted Cash Flow Model Selection Process](/.attachments/simply.wall.st.intrinsic-value-flowchart.png)
 
-
-
-If the company that issued stocks on a stock market pays dividends, a version of the Discounted Cash Flow Model referred to as the _Dividend-Discount Model_ can be applied to arrive at the net present value of the stock.
-
-The equation below applies to a single N-year investor, who will collect dividends for N years and then sell the stock, or to a series of investors who hold the stock for shorter periods and then resell it.[^3]
-
-$$\huge{P_0 = {Div_1 \over 1 + r_E} + {Div_2 \over (1 + r_E)^2} + {Div_3 \over (1 + r_E)^3} + \ldots + {Div_N \over (1 + r_E)^N} + { P_N \over (1 + r_E)^N } }$$
-
-For the special case in which the firm eventually pays dividends and is never acquired, it is possible to hold the shares forever.
-
-$$\huge{P_0 = {Div_1 \over 1 + r_E} + {Div_2 \over (1 + r_E)^2} + {Div_3 \over (1 + r_E)^3} + \ldots = \sum_{n=1}^\infty {Div_n \over (1 + r_E)^n} }$$
-
 The main ingredients needed to arrive at the value of a company includes,
 
 1. Financial Statements
@@ -55,6 +43,5 @@ See below an example of the breakdown of the intrinsic value of GK stock on JSE 
 ![Breakdown of fair value of GK stock on JSE](/.attachments/SimplyWall.St-Instrinsic.Value.GK.2022.png)
 
 [^2]: [Simply Wall Street. Company Analysis Model](https://github.com/SimplyWallSt/Company-Analysis-Model/blob/master/MODEL.markdown)
-[^3]: Page 314. Chapter 9. Valuing Stocks. _Corporate Finance: The Core, Global Edition_ by Jonathan Berk and Peter Demarzo.
-[^7]: Page 537. Chapter 19. Book Value Multiples. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
+
 [^18]: Chapter 30. Valuing Equity in Distressed Firms. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.

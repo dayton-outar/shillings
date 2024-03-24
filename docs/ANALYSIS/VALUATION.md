@@ -1348,7 +1348,41 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 
 ##### Dividend Discount Model
 
+> In the strictest sense, the only cash flow you receive when you buy shares in a publicly traded firm is a dividend. The simplest model for valuing equity is the dividend discount model (DDM)—the value of a stock is the present value of expected dividends on it. While many analysts have turned away from the dividend discount model and view it as outmoded, much of the intuition that drives discounted cash flow valuation stems from the dividend discount model. In fact, there are companies where the dividend discount model remains a useful tool for estimating value.
+> 
+> ...
+> 
+> **The General Model**
+> 
+> When an investor buys stock, he or she generally expects to get two types of cash flows—dividends during the period the stock is held and an expected price at the end of the holding period. Since this expected price is itself determined by future dividends, the value of a stock is the present value of dividends through infinity:
+> 
+> $$\huge{ \text{Value per share of stock} = { {\sum_{t=1}^{t=\infty}} { {E (DPS_t)} \over (1 + k_e)^t } } }$$
+> 
+> where, \
+> $DPS_t$ = Expected dividends per share \
+> $k_e$ = Cost of equity
+> 
+> ***The rationale for the model lies in the present value rule—the value of any asset is the present value of expected future cash flows, discounted at a rate appropriate to the riskiness of the cash flows being discounted.***
+> 
+> There are two basic inputs to the model—expected dividends and the cost on equity. To obtain the expected dividends, we make assumptions about expected future growth rates in earnings and payout ratios. The required rate of return on a stock is determined by its riskiness, measured differently in different models—the market beta in the capital asset pricing model (CAPM) and the factor betas in the arbitrage and multifactor models. The model is flexible enough to allow for time-varying discount rates, where the time variation is because of expected changes in interest rates or risk across time
+> 
 > [^35]
+
+
+> We can continue this process for any number of years by replacing the final stock price with the value that the next holder of the stock would be willing to pay. Doing so leads to the general **dividend-discount model** for the stock price, where the horizon $N$ is arbitrary:
+> 
+> $$\huge{P_0 = {Div_1 \over 1 + r_E} + {Div_2 \over (1 + r_E)^2} + {Div_3 \over (1 + r_E)^3} + \ldots + {Div_N \over (1 + r_E)^N} + { P_N \over (1 + r_E)^N } }$$
+> 
+> ... For the special case in which the firm eventually pays dividends and is never acquired, it is possible to hold the shares forever.
+> 
+> $$\huge{P_0 = {Div_1 \over 1 + r_E} + {Div_2 \over (1 + r_E)^2} + {Div_3 \over (1 + r_E)^3} + \ldots = \sum_{n=1}^\infty {Div_n \over (1 + r_E)^n} }$$
+> 
+> [where $r_E$ is Cost of equity]
+> ...
+> 
+> That is, _the price of the stock is equal to the present value of the expected future dividends it will pay_.[^3]
+
+> 
 
 ##### Free Cashflow to Equity Model
 
@@ -2933,6 +2967,7 @@ In summary, while both the PPI and CPI measure changes in prices over time, they
 
 
 [^1]: Page 75. Chapter 5. Understand Fundamental Analysis. _The Art of Currency Trading_ by Brent Donnelly.
+[^3]: Page 314. Chapter 9. Valuing Stocks. _Corporate Finance: The Core, Global Edition_ by Jonathan Berk and Peter Demarzo.
 [^4]: Chapter 2. Approaches to Valuation. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^5]: Chapter 21. Valuing Financial Service Firms. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^6]: Chapter 12. Closure in Valuation: Estimating Terminal Value. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
