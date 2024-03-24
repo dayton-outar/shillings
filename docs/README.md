@@ -80,7 +80,7 @@ The mission is,
 
 _To empower stock investors globally by providing an immersive platform that offers a story-based approach to understanding the development and performance of businesses._
 
-Shillings seeks to deliver structured information in a visually appealing way with succinct context to engage novice and experienced investors.
+Shillings seeks to deliver structured information in a visually appealing way with succinct context to engage novice and experienced investors. An ***immersive platform*** is a platform that has an integrated social and learning experience.
 
 Consumers are not satisfied with the manner in which information is presented by the Jamaica Stock Exchange. They want the most up-to-date information presented in a manner that is easy to understand.
 
