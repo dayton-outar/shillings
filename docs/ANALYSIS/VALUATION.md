@@ -1361,6 +1361,7 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 ##### Adjusted Present Value
 
 ##### Excess Returns
+
 > Banks, insurance companies, and other financial service firms pose particular challenges for an analyst attempting to value them for two reasons. The first is that the nature of their businesses makes it difficult to define both debt and reinvestment, making the estimation of cash flows much more messy. The other is that they tend to be heavily regulated, and the effects of regulatory requirements on value have to be considered.
 > 
 > ...
@@ -1369,8 +1370,46 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > ...
 > 
-> @pg. 582 --> 584
->
+> **Debt: Raw Material or Source of Capital**
+> 
+> When we talk about capital for non–financial service firms, we tend to talk about both debt and equity. A firm raises funds from both equity investors and bondholders (and banks) and uses these funds to make its investments. When we value the firm, we value the assets owned by the firm, rather than just the value of its equity.
+> 
+> With a financial service firm, debt takes on a different connotation. Rather than view debt as a source of capital, most financial service firms view it as a raw material. In other words, debt is to a bank is akin to steel for an automobile company, something to be molded into other financial products that can then be sold at a higher price and yield a profit. Consequently, capital at financial service firms is more narrowly defined as including only equity capital. This definition of capital is reinforced by the regulatory authorities who count only equity or equity-like financing in regulatory capital.
+> 
+> The definition of what comprises debt also is murkier with a financial service firm than it is with a non–financial service firm. For instance, should deposits made by customers into their checking accounts at a bank be treated as debt by that bank? Especially on interest-bearing deposits, there is little distinction between a deposit and debt issued by the bank. If we do categorize this as debt, the operating income for a bank should be measured prior to interest paid to depositors, which would be problematic since interest expenses are usually the biggest single expense item for a bank.
+> 
+> **The Regulatory Overlay**
+> 
+> Financial service firms are heavily regulated all over the world, though the extent of the regulation varies from country to country. In general, these regulations take three forms. First, banks and insurance companies are required to maintain capital ratios to ensure that they do not expand beyond their means and put their claimholders or depositors at risk. Second, financial service firms are often constrained in terms of where they can invest their funds. For instance, the Glass-Steagall Act in the United States restricted commercial banks from investment banking activities and from taking active equity positions in manufacturing firms for decades after the Great Depression. Third, entry of new firms into the business is often restricted by the regulatory authorities, as are mergers between existing firms.
+> 
+> _Why does this matter? From a valuation perspective, assumptions about growth are linked to assumptions about reinvestment. With financial service firms, these assumptions have to be scrutinized to ensure that they pass regulatory constraints. There might also be implications for how we measure risk at financial service firms. If regulatory restrictions are changing or are expected to change, it adds a layer of uncertainty to the future, which can have an effect on value._
+> 
+> **Reinvestment at Financial Services Firms**
+> 
+> ...
+> 
+> Consider net capital expenditures first. Unlike manufacturing firms that invest in plant, equipment, and other fixed assets, financial service firms invest in intangible assets such as brand name and human capital. Consequently, their investments for future growth often are categorized as operating expenses in accounting statements. Not surprisingly, the statement of cash flows to a bank show little or no capital expenditures and correspondingly low depreciation. With working capital, we run into a different problem. If we define working capital as the different between current assets and current liabilities, a large proportion of a bank’s balance sheet would fall into one or the other of these categories. Changes in this number can be both large and volatile and may have no relationship to reinvestment for future growth.
+> 
+> As a result of this difficulty in measuring reinvestment, we run into two practical problems in valuing these firms. The first is that we cannot estimate cash flows without estimating reinvestment. In other words, ***if we cannot identify net capital expenditures and changes in working capital, we cannot estimate cash flows, either***. The second is that estimating expected future growth becomes more difficult if the reinvestment rate cannot be measured.
+> 
+> **General Framework for Valuation**
+> 
+> Given the unique role of debt at financial service firms, the regulatory restrictions that they operate under, and the difficulty of identifying reinvestment at these firms, how can we value these firms? ... First, it makes far more sense to value equity directly at financial service firms, rather than the entire firm. Second, we either need a measure of cash flow that does not require us to estimate reinvestment needs or need to redefine reinvestment to make it more meaningful for a financial service firm.
+> 
+> **Equity versus Firm**
+> 
+> We noted the distinction between valuing a firm and valuing the equity in the firm. We value firms by discounting expected cash flows prior to debt payments at the weighted average cost of capital. We value equity by discounting cash flows to equity investors at the cost of equity.
+> 
+> Estimating cash flows prior to debt payments or a weighted average cost of capital is problematic when debt and debt payments cannot be easily identified, which, as we argued earlier, is the case with financial service firms. Equity can be valued directly, however, by discounting cash flows to equity at the cost of equity. Consequently, we would argue for the latter approach for financial service firms. We would extend this argument to multiples as well. Equity multiples such as price-to-earnings or price-to-book ratios are a much better fit for financial service firms than value multiples such as EV to EBITDA.
+> 
+> **Estimating Cash Flows**
+> 
+> To value the equity in a firm, we normally estimate the free cash flow to equity. ... we defined the free cash flow to equity thus:
+> 
+> $\large{ \text{Free cash flow to equity} = \text{Net income} − \text{Net capital expenditures} − \text{Change in noncash working capital} − (\text{Debt repaid} − \text{New debt issued}) }$
+> 
+> If we cannot estimate the net capital expenditures or noncash working capital, we clearly cannot estimate the free cash flow to equity. Since this is the case with financial service firms, we have two choices. ***The first is to use dividends as cash flows to equity, and assume that firms over time pay out their free cash flows to equity as dividends***. Since dividends are observable, we therefore do not have to confront the question of how much firms reinvest. ***The second is to adapt the free cash flow to equity measure to allow for the types of reinvestment that financial service firms***. For instance, given that banks operate under a regulatory capital ratio constraint, it can be argued that these firms have to reinvest in regulatory capital in order to be able to grow in the future.
+> 
 > ...
 > 
 > **Basic Model** Given the difficulty associated with defining total capital in a financial service firm, it makes far more sense to focus on just equity when using an excess return model to value a financial service firm. The value of equity in a firm can be written as the sum of the equity invested in a firm’s current investments and the expected excess returns to equity investors from these and future investments.
