@@ -1363,11 +1363,6 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > $k_e$ = Cost of equity
 > 
 > ***The rationale for the model lies in the present value rule—the value of any asset is the present value of expected future cash flows, discounted at a rate appropriate to the riskiness of the cash flows being discounted.***
-> 
-> There are two basic inputs to the model—expected dividends and the cost on equity. To obtain the expected dividends, we make assumptions about expected future growth rates in earnings and payout ratios. The required rate of return on a stock is determined by its riskiness, measured differently in different models—the market beta in the capital asset pricing model (CAPM) and the factor betas in the arbitrage and multifactor models. The model is flexible enough to allow for time-varying discount rates, where the time variation is because of expected changes in interest rates or risk across time.
-> 
-> [^35]
-
 
 > We can continue this process for any number of years by replacing the final stock price with the value that the next holder of the stock would be willing to pay. Doing so leads to the general **dividend-discount model** for the stock price, where the horizon $N$ is arbitrary:
 > 
@@ -1382,17 +1377,46 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > That is, _the price of the stock is equal to the present value of the expected future dividends it will pay_.[^3]
 
+> There are two basic inputs to the model—expected dividends and the cost on equity. To obtain the expected dividends, we make assumptions about expected future growth rates in earnings and payout ratios. The required rate of return on a stock is determined by its riskiness, measured differently in different models—the market beta in the capital asset pricing model (CAPM) and the factor betas in the arbitrage and multifactor models. The model is flexible enough to allow for time-varying discount rates, where the time variation is because of expected changes in interest rates or risk across time.
 > 
+> Since projections of dollar dividends cannot be made through infinity, several versions of the dividend discount model have been developed based on different assumptions about future growth. We will begin with the simplest—a model designed to value stock in a stable growth firm that pays out what it can afford to in dividends—and then look at how the model can be adapted to value companies in high growth that may be paying little or no dividends.
+> 
+> **The Gordon Growth Model**
+> 
+> The Gordon growth model can be used to value a firm that is in “steady state” with dividends growing at a rate that can be sustained forever.
+> 
+> **The Model** The Gordon growth model relates the value of a stock to its expected dividends in the next time period, the cost of equity, and the expected growth rate in dividends.
+> 
+> $\large{ \text{Value of stock} = \text{Expected dividends next period}/(\text{Cost of equity} - \text{Expected growth rate in perpetuity}) }$
+> 
+> **What Is a Stable Growth Rate?** While the Gordon growth model provides a simple approach to valuing equity, its use is limited to firms that are growing at a stable growth rate. There are two insights worth keeping in mind when estimating a stable growth rate. First, since the growth rate in the firm’s dividends is expected to last forever, the firm’s other measures of performance (including earnings) can also be expected to grow at the same rate. To see why, consider the consequences in the long term of a firm whose earnings grow 2 percent a year forever, while its dividends grow at 3 percent. Over time, the dividends will exceed earnings. If a firm’s earnings grow at a faster rate than dividends in the long term, the payout ratio, in the long term, will converge toward zero, which is also not a steady state. Thus, though the model’s requirement is for the expected growth rate in dividends, analysts should be able to substitute in the expected growth rate in earnings and get precisely the same result, if the firm is truly in steady state.
+> 
+> The second issue relates to what growth rate is reasonable as a stable growth rate. ..., this growth rate has to be less than or equal to the growth rate of the economy in which the firm operates. No firm, no matter how well run, can be assumed to grow forever at a rate that exceeds the growth rate of the economy (or as a proxy, the risk-free rate). In addition, the caveats made about stable growth apply:
+> 
+> - The return on equity ($ROE$) that we assume in perpetuity should reflect not what the company may have made last year nor what it is expected to make next year, but, rather, a longer-term estimate. The estimate of $ROE$ matters because the payout ratio in stable growth has to be consistent:
+> 
+>   $\large{ \text{Payout ratio} = g/ROE}$
+> 
+> - The cost of equity has to be consistent with the firm being mature; if a beta is being used, it should be close to 1.
+> 
+> @ pg. 325 --> 348
+> [^35] 
 
 ##### Free Cashflow to Equity Model
 
-> [^36]
+> @ pg. 351 --> 376 [^36]
 
 #### Firm Valuation Models
 
+> @ pg. 380 --> 383 [^37]
+
 ##### Cost of Capital
 
+> @ pg. 383 --> 398 [^37]
+
 ##### Adjusted Present Value
+
+> @ pg. 398 --> 419 [^37]
 
 ##### Excess Returns
 
