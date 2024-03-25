@@ -3021,3 +3021,4 @@ In summary, while both the PPI and CPI measure changes in prices over time, they
 [^34]: Chapter 10. From Earnings to Cash Flows. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^35]: Chapter 13. Dividend Discount Model. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^36]: Chapter 14. Free Cash Flow to Equity Discount Models. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
+[^37]: Chapter 15. Firm Valuation: Cost of Capital and Adjusted Present Value Approaches. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
