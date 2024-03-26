@@ -1604,6 +1604,22 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 
 ##### Free Cashflow to Equity Model
 
+> Given what firms are returning to their stockholders in the form of dividends or stock buybacks, how do we decide whether they are returning too much or too little? We propose a simple measure how much cash is available to be paid out to stockholders after meeting reinvestment needs and compare this amount to the amount actually returned to stockholders.
+> 
+> **Free Cash Flows to Equity**
+> 
+> To estimate how much cash a firm can afford to return to its stockholders, we begin with the net income—the accounting measure of the stockholders’ earnings during the period—and convert it to a cash flow by subtracting out a firm’s reinvestment needs. First, any capital expenditures, defined broadly to include acquisitions, are subtracted from the net income, since they represent cash outflows. Depreciation and amortization, on the other hand, are added back in because they are accounting but not cash expenses. The difference between capital expenditures and depreciation (net capital expenditures) is usually a function of the growth characteristics of the firm. High-growth firms tend to have high net capital expenditures relative to earnings, whereas low-growth firms may have low, and sometimes even negative, net capital expenditures.
+> 
+> Second, increases in working capital drain a firm’s cash flows, while decreases in working capital increase the cash flows available to equity investors. Firms that are growing fast, in industries with high working capital requirements (retailing, for instance), typically have large increases in working capital. Since we are interested in the cash flow effects, we consider only changes in noncash working capital in this analysis.
+> 
+> Finally, equity investors also have to consider the effect of changes in the levels of debt on their cash flows. Repaying the principal on existing debt represents a cash outflow, but the debt repayment may be fully or partially financed by the issue of new debt, which is a cash inflow. Again, netting the repayment of old debt against the new debt issues provides a measure of the cash flow effects of changes in debt.
+> 
+> Allowing for the cash flow effects of net capital expenditures, changes in working capital, and net changes in debt on equity investors, we can define the cash flows left over after these changes as the free cash flow to equity (FCFE):
+> 
+> $\large{ \text{Free cash flow to equity} = \text{Net income} − (\text{Capital expenditures} − \text{Depreciation}) − (\text{Change in noncash working capital}) + (\text{New debt issued} − \text{Debt repayments}) }$
+> 
+> This is the cash flow available to be paid out as dividends. Deconstructing this equation, the reinvestment by equity investors into the firm can be written as:
+> 
 > @ pg. 351 --> 376 [^36]
 
 #### Firm Valuation Models
