@@ -1569,8 +1569,8 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > $DPS_t$ = Dividends per share in year $t$ \
 > $g_a$ = Growth rate in high-growth phase (lasts $n1$ periods) \
 > $g_n$ = Growth rate in stable phase \
-> $\Gamma_a$ = Payout ratio in high-growth phase \
-> $\Gamma_n$ = Payout ratio in stable growth phase \
+> $\Pi_a$ = Payout ratio in high-growth phase \
+> $\Pi_n$ = Payout ratio in stable growth phase \
 > $k_e$ = Cost of equity in high growth ($g$), transition ($t$), and stable growth ($s$)
 > 
 > **Assumptions** This model removes many of the constraints imposed by other versions of the dividend discount model. In return, however, it requires a much larger number of inputs—year-specific payout ratios, growth rates, and betas. For firms where there is substantial noise in the estimation process, the errors in these inputs can overwhelm any benefits that accrue from the additional flexibility in the model.
