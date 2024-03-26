@@ -1399,8 +1399,208 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > - The cost of equity has to be consistent with the firm being mature; if a beta is being used, it should be close to 1.
 > 
-> @ pg. 325 --> 348
-> [^35] 
+> **Limitations of the Model** As most analysts discover quickly, the Gordon growth model is extremely sensitive to assumptions about the growth rate, as long as other inputs to the model (payout ratio, cost of equity) are kept constant. Consider a stock with an expected dividend per share next period of $2.50, a cost of equity of 15 percent, and an expected growth rate of 5 percent forever. The value of this stock is:
+> 
+> Value = 2.50/(.15 − .05) = $25
+> 
+> There are, of course, two common sense fixes to this problem. The first is to work with the constraint that a stable growth rate cannot exceed the risk-free rate; ... The second is to recognize that growth is not free; when the growth rate is increased, the payout ratio should be decreased. This creates a trade-off on growth, with the net effect of increasing growth being positive, neutral, or even negative.
+> 
+> **Firms Model Works Best For** In summary, the Gordon growth model is best suited for firms growing at a rate equal to or lower than the nominal growth in the economy with well-established dividend payout policies that they intend to continue into the future. The dividend payout and cost of equity of the firm have to be consistent with the assumption of stability, since stable firms generally pay substantial dividends and have betas close to 1. In particular, this model will underestimate the value of the stock in firms that consistently pay out less than they can afford to and accumulate cash in the process.
+> 
+> ...
+> 
+> **Two-Stage Dividend Discount Model**
+> 
+> The two-stage growth model allows for two stages of growth—an initial phase where the growth rate is not a stable growth rate and a subsequent steady state where the growth rate is stable and is expected to remain so for the long term. While, in most cases, the growth rate during the initial phase is higher than the stable growth rate, the model can be adapted to value companies that are expected to post low or even negative growth rates for a few years and then revert back to stable growth.
+> 
+> **The Model** The model is based on two stages of growth, an extraordinary growth phase that lasts n years, and a stable growth phase that lasts forever after that.
+> 
+> $\large{ \text{Value of the stock} = \text{PV of dividends during extraordinary phase} + \text{PV of terminal price} }$
+> 
+> $$\huge{ P_0 = { {\sum_{t=1}^{t=\infty}} { {E (DPS_t)} \over (1 + k_{e,g})^t } } + { P_n \over {1 + k_{e,g}}^n } }$$
+> 
+> $$\huge{ { \text{where } P_n  } = { DPS_{n+1} \over { k_{e,s} - g_n } } }$$ 
+> 
+>
+> where, \
+> $DPS_t$ = Expected dividends per share in year $t$ \
+> $k_e$ = Cost of equity ($g$: high growth period; $s$: stable growth period) \
+> $P_n$ = Price at the end of year $n$ \
+> $g$ = Extraordinary growth rate for the first $n$ years \
+> $g_n$ = Growth rate forever after year $n$
+> 
+> In the case where the extraordinary growth rate ($g$) and payout ratio are unchanged for the first $n$ years, this formula can be simplified as follows:
+> 
+> $$\huge{ P_0 = { { { { DPS_0 \times (1 + g) \times \left[ 1 - { { (1 + g)^n } \over { (1 + k_{e,g})^n } } \right] } \over { k_{e,s} - g_n } } + { DPS_{n+1} \over { (k_{e,s} - g_n)(1 + k_{e,g})^n } } } } }$$ 
+> 
+> where the inputs are as defined previously.
+> 
+> **Calculating the Terminal Price** The same constraint that applies to the growth rate for the Gordon growth model (i.e., that the growth rate in the firm is comparable to the nominal growth rate in the economy) applies for the terminal growth rate ($g_n$) in this model as well.
+> 
+> In addition, the payout ratio has to be consistent with the estimated growth rate. If the growth rate is expected to drop significantly after the initial growth phase, the payout ratio should be higher in the stable phase than in the growth phase. A stable firm can pay out more of its earnings in dividends than a growing firm. One way of estimating this new payout ratio is to use the fundamental growth model ...:
+> 
+> $\large{ \text{Expected growth} = \text{Retention ratio} \times \text{Return on equity} = (1 − \text{Payout ratio}) \times \text{Return on equity} }$
+> 
+> Algebraic manipulation yields the following stable period payout ratio:
+> 
+> $\large{ \text{Stable payout ratio} = 1 − \text{Stable growth rate}/\text{Stable period return on equity} }$
+> 
+> Thus a firm with a 5 percent growth rate and a return on equity of 15 percent will have a stable period payout ratio of 66.67 percent.
+> 
+> The other characteristics of the firm in the stable period should be consistent with the assumption of stability. For instance, it is reasonable to assume that a high growth firm has a beta of 2.0, but unreasonable to assume that this beta will remain unchanged when the firm becomes stable. In fact, the rule of thumb that we developed ...—that stable period betas be between 0.8 and 1.2—is worth repeating here. Similarly, the return on equity, which can be high during the initial growth phase, should come down to levels commensurate with a stable firm in the stable growth phase. What is a reasonable stable period return on equity? The industry average return on equity and the firm’s own stable period cost of equity provide useful information to make this judgment.
+> 
+> **Limitations of the Model** There are three problems with the two-stage dividend discount model; the first two would apply to any two-stage model, and the third is specific to the dividend discount model.
+> 
+> 1. The first practical problem is in defining the length of the extraordinary growth period. Since the growth rate is expected to decline to a stable level after this period, the value of an investment will increase as this period is made longer. While we did develop criteria that might be useful in making this judgment ..., it is difficult in practice to convert these qualitative considerations into a specific time period.
+> 
+> 2. The second problem with this model lies in the assumption that the growth rate is high during the initial period and is transformed overnight to a lower stable rate at the end of the period. While these sudden transformations in growth can happen, it is much more realistic to assume that the shift from high growth to stable growth happens gradually over time.
+> 
+> 3. The focus on dividends in this model can lead to skewed estimates of value for firms that are not paying out what they can afford to in dividends. In particular, we will underestimate the value of firms that accumulate cash and pay out too little in dividends.
+> 
+> **Firms Model Works Best For** Since the two-stage dividend discount model is based on two clearly delineated growth stages—high growth and stable growth—it is best suited for firms that are in high growth and expect to maintain that growth rate for a specific time period, after which the sources of the high growth are expected to disappear. One scenario, for instance, where this may apply is when a company has patent rights to a very profitable product for the next few years, and is expected to enjoy supernormal growth during this period. Once the patent expires, it is expected to settle back into stable growth. Another scenario where it may be reasonable to make this assumption about growth is when a firm is in an industry that is enjoying supernormal growth because there are significant barriers to entry (either legal or as a consequence of infrastructure requirements), which can be expected to keep new entrants out for several years.
+> 
+> The assumption that the growth rate drops precipitously from its level in the initial phase to a stable rate also implies that this model is more appropriate for firms with modest growth rates in the initial phase. For instance, it is more reasonable to assume that a firm growing at 7 percent in the high growth period will see its growth rate drop to 2 percent afterward than it is for a firm growing at 40 percent in the high-growth period.
+> 
+> Finally, the model works best for firms that maintain a policy of paying out residual cash flows (i.e., cash flows left over after debt payments and reinvestment needs have been met) as dividends.
+> 
+> ...
+> 
+> **Modifying the Model to Include Stock Buybacks** In recent years, firms in the United States have increasingly turned to stock buybacks as a way of returning cash to stockholders. Figure 13.3 presents the cumulative amounts paid out by firms in the form of dividends and stock buybacks from 1988 to 2010. The trend toward stock buybacks was very strong, especially in the 1990s. Even the banking crisis of 2008 created only a momentary blip in buybacks in 2009, before they returned in force in 2010.
+> 
+> What are the implications for the dividend discount model? Focusing strictly on dividends paid as the only cash returned to stockholders exposes us to the risk that we might be missing significant cash returned to stockholders in the form of stock buybacks. The simplest way to incorporate stock buybacks into a dividend discount model is to add them onto the dividends and compute an augmented payout ratio:
+> 
+> $\large{ \text{Augmented dividend payout ratio} = (\text{Dividends} + \text{Stock buybacks})/\text{Net income} }$
+> 
+> While this adjustment is straightforward, the resulting ratio for any one year can be skewed by the fact that stock buybacks, unlike dividends, are not smoothed out. In other words, a firm may buy back $3 billion in stock in one year, and not buy back stock for the next three years. Consequently, a much better estimate of the modified payout ratio can be obtained by looking at the average value over a four- or five-year period. In addition, firms may sometimes buy back stock as a way of increasing financial leverage. We could adjust for this by netting out new debt issued from the earlier calculation:
+> 
+> $\large{ \text{Augmented dividend payout} = (\text{Dividends} + \text{Stock buybacks} − \text{Long-term debt issues})/\text{Net income} }$
+> 
+> Adjusting the payout ratio to include stock buybacks will have ripple effects on estimated growth and the terminal value. In particular, the modified growth rate in earnings per share can be written as:
+> 
+> $\large{ \text{Augmented growth rate} = (1 − \text{Augmented payout ratio}) \times \text{Return on equity} }$
+> 
+> Even the return on equity can be affected by stock buybacks. Since the book value of equity is reduced by the market value of equity bought back, a firm that buys back stock can reduce its book equity (and increase its return on equity) dramatically. If we use this return on equity as a measure of the marginal return on equity (on new investments), we will overstate the value of a firm. Adding back stock buybacks in recent years to the book equity and reestimating the return on equity can sometimes yield a more reasonable estimate of the return on equity on investments.
+> 
+> **Valuing an Entire Market Using the Dividend Discount Model** All our examples of the dividend discount model so far have involved individual companies, but there is no reason why we cannot apply the same model to value a sector or even the entire market. The market price of the stock would be replaced by the cumulative market value of all of the stocks in the sector or market. The expected dividends would be the cumulated dividends of all these stocks, and could be expanded to include stock buybacks by all firms. The expected growth rate would be the growth rate in cumulated earnings of the index. There would be no need for a beta or betas, since you are looking at the entire market (which should have a beta of 1), and you could add the risk premium (or premiums) to the risk-free rate to estimate a cost of equity. You could use a two-stage model, where this growth rate is greater than the growth rate of the economy, but you should be cautious about setting the growth rate too high or the growth period too long, because it will be difficult for cumulated earnings growth of all firms in an economy to run ahead of the growth rate in the economy for extended periods.
+> 
+> Consider a simple example. Assume that you have an index trading at 700, and that the average dividend yield of stocks in the index is 5 percent. Earnings and dividends can be expected to grow at 4 percent a year forever, and the riskless rate is 5.4 percent. If you use a market risk premium of 4 percent, the value of the index can be estimated as follows:
+> 
+> Cost of equity = Riskless rate + Risk premium = 5.4% + 4% = 9.4%
+>
+> Expected dividends next year = (Dividend yield × Value of the index)(1 + Expected growth rate) = (.05 × 700)(1.04) = 36.4
+> 
+> Value of the index = Expected dividends next year/(Cost of equity − Expected growth rate) = 36.4/(.094 − .04) = 674
+> 
+> At its existing level of 700, the market is slightly overpriced.
+> 
+> **The Value of Growth**
+> 
+> Investors pay a premium when they acquire companies with high growth potential. This premium takes the form of higher price-earnings or price–book value ratios. While no one will contest the proposition that growth is valuable, it is possible to pay too much for growth. In fact, empirical studies that show low price-earnings ratio stocks earning return premiums over high price-earnings ratio stocks in the long term support the notion that investors overpay for growth. ...
+> 
+> **Estimating the Value of Growth** The value of the equity in any firm can be written in terms of three components:
+> 
+> ![Formula using 3 components of growth](/.attachments/valuation-valuing.three.components.png)
+> 
+> where, \
+> $DPS_t$ = Expected dividends per share in year $t$ \
+> $k_e$ = Cost of equity \
+> $g_n$ = Growth rate forever after year $n$
+> 
+> Value of extraordinary growth = Value of the firm with extraordinary growth in first $n$ years – Value of the firm as a stable growth firm
+> 
+> Value of stable growth = Value of the firm as a stable growth firm − Value of firm with no growth
+> 
+> Assets in place = Value of firm with no growth
+> 
+> In making these estimates, though, we have to remain consistent. For instance, to value assets in place, you would have to assume that the entire earnings could be paid out in dividends, while the payout ratio used to value stable growth should be a stable period payout ratio.
+> 
+> ...
+> 
+> **H Model for Valuing Growth**
+> 
+> The H model is a two-stage model for growth, but unlike the classic two-stage model, the growth rate in the initial growth phase is not constant but declines linearly over time to reach the stable growth rate in steady state. This model was presented in Fuller and Hsia (1984).
+> 
+> **The Model** The model is based on the assumption that the earnings growth rate starts at a high initial rate ($g_a$) and declines linearly over the extraordinary growth period (which is assumed to last 2H periods) to a stable growth rate ($g_n$). It also assumes that the dividend payout and cost of equity are constant over time, and are not affected by the shifting growth rates.
+> 
+> ![Expected Growth in the H Model](/.attachments/valuation-expected.growth.h-model.png)
+> 
+> _Expected Growth in the H Model_
+> 
+> The value of expected dividends in the H model can be written as follows:
+> 
+> $\huge{ P_0 = \text{Stable growth} + \text{Extraordinary growth} }$
+> 
+> where,
+> 
+> $\large{ \text{Stable growth} = { {DPS_0 \times (1 + g_n)} \over {k_e - g_n} } }$
+> 
+> $\large{ \text{Extraordinary growth} = { {DPS_0 \times H \times (g_a - g_n)} \over {k_e - g_n} } }$
+> 
+> $P_0$ = Value of the firm now per share \
+> $DPS_t$ = $DPS$ in year $t$ \
+> $k_e$ = Cost of equity \
+> $g_a$ = Growth rate initially
+> $g_n$ = Growth rate at end of 2H years, applies forever after that
+> 
+> **Limitations** This model avoids the problems associated with the growth rate dropping precipitously from the high growth to the stable growth phase, but it does so at a cost. First, the decline in the growth rate is expected to follow the strict structure laid out in the model—it drops in linear increments each year based on the initial growth rate, the stable growth rate, and the length of the extraordinary growth period. While small deviations from this assumption do not affect the value significantly, large deviations can cause problems. Second, the assumption that the payout ratio is constant through both phases of growth exposes the model to an inconsistency—as growth rates decline, the payout ratio usually increases.
+> 
+> **Firms Model Works Best For** The allowance for a gradual decrease in growth rates over time may make this a useful model for firms that are growing rapidly right now, but where the growth is expected to decline gradually over time as the firms get larger and the differential advantage they have over their competitors declines. The assumption that the payout ratio is constant, however, makes this an inappropriate model to use for any firm that has low or no dividends currently. Thus, the model, by requiring a combination of high growth and high payout, may be quite limited in its applicability.
+> 
+> ...
+> 
+> **Three-Stage Dividend Discount Model**
+> 
+> The three-stage dividend discount model combines the features of the two-stage model and the H model. It allows for an initial period of high growth, a transitional period where growth declines, and a final stable growth phase. It is the most general of the models because it does not impose any restrictions on the payout ratio.
+> 
+> **The Model** This model assumes an initial period of stable high growth, a second period of declining growth, and a third period of stable low growth that lasts forever.
+> 
+> ![Expected Growth in the Three-Stage Dividend Discount Model](/.attachments/valuation-3-stage.growth.png)
+> 
+> _Expected Growth in the Three-Stage Dividend Discount Model_
+> 
+> The value of the stock is then the present value of expected dividends during the high-growth and the transitional periods, and of the terminal price at the start of the final stable growth phase.
+> 
+> $\huge{ P_0 = \text{High-growth phase} + \text{Transition} + \text{Stable growth phase} }$
+> 
+> [inject rest of formulas here]
+> 
+> where, \
+> $EPS_t$ = Earnings per share in year $t$ \
+> $DPS_t$ = Dividends per share in year $t$ \
+> $g_a$ = Growth rate in high-growth phase (lasts $n1$ periods) \
+> $g_n$ = Growth rate in stable phase \
+> $\Gamma_a$ = Payout ratio in high-growth phase \
+> $\Gamma_n$ = Payout ratio in stable growth phase \
+> $k_e$ = Cost of equity in high growth ($g$), transition ($t$), and stable growth ($s$)
+> 
+> **Assumptions** This model removes many of the constraints imposed by other versions of the dividend discount model. In return, however, it requires a much larger number of inputs—year-specific payout ratios, growth rates, and betas. For firms where there is substantial noise in the estimation process, the errors in these inputs can overwhelm any benefits that accrue from the additional flexibility in the model.
+> 
+> **Firms Model Works Best For** This model’s flexibility makes it a useful model for any firm that in addition to changing growth over time is expected to change on other dimensions as well—in particular, payout policies and risk. It is best suited for firms that are growing at an extraordinary rate now and are expected to maintain this rate for an initial period, after which the differential advantage of the firm is expected to deplete leading to gradual declines in the growth rate to a stable growth rate. Practically speaking, this may be the more appropriate model to use for a firm whose earnings are growing at very high rates,4 are expected to continue growing at those rates for an initial period, but are expected to start declining gradually toward a stable rate as the firm become larger and loses its competitive advantages.
+> 
+> ...
+> 
+> **Issues in using the Dividend Discount Model**
+> 
+> The dividend discount model’s primary attraction is its simplicity and its intuitive logic. There are many analysts, however, who view its results with suspicion because of limitations that they perceive it to possess. The model, they claim, is not really useful in valuation except for a limited number of stable, high-dividend-paying stocks.
+> 
+> **Valuing Non-Dividend-Paying or Low-Dividend-Paying Stocks**
+> 
+> The conventional wisdom is that the dividend discount model cannot be used to value a stock that pays low or no dividends. It is wrong. If the dividend payout ratio is adjusted to reflect changes in the expected growth rate, a value can be obtained even for non-dividend-paying firms. Thus, a high-growth firm, paying no dividends currently, can still be valued based on dividends that it is expected to pay out when the growth rate declines. If the payout ratio is not adjusted to reflect changes in the growth rate, however, the dividend discount model will underestimate the value of non-dividend-paying or low-dividend-paying stocks.
+> 
+> **Is the Model Too Conservative in Estimating Value?**
+> 
+> A standard critique of the dividend discount model is that it provides too conservative an estimate of value. This criticism is predicated on the notion that the value is determined by more than the present value of expected dividends. For instance, it is argued that the dividend discount model does not reflect the value of “unutilized assets.” There is no reason, however, that these unutilized assets cannot be valued separately and added on to the value from the dividend discount model. Some of the assets that are supposedly ignored by the dividend discount model, such as the value of brand names, can be dealt with fairly simply within the context of the model.
+> 
+> A more legitimate criticism of the model is that it does not incorporate other ways of returning cash to stockholders (such as stock buybacks). If you use the augmented version of the dividend discount model, this criticism can also be countered.
+> 
+> **Contrarian Nature of the Model**
+> 
+> The dividend discount model is also considered by many to be a contrarian model. As the market rises, fewer and fewer stocks, they argue, will be found to be undervalued using the dividend discount model. This is not necessarily true. If the market increase is due to an improvement in economic fundamentals, such as higher expected growth in the economy and/or lower interest rates, there is no reason, a priori, to believe that the values from the dividend discount model will not increase by an equivalent amount. If the market increase is not due to fundamentals, the dividend discount model values will not follow suit, but that is more a sign of strength than weakness. The model is signaling that the market is overvalued relative to dividends and cash flows, and the cautious investor will pay heed.
+> 
+> 
+> **Tests of the Dividend Discount Model**
+> 
+> The ultimate test of a model lies in how well it works at identifying undervalued and overvalued stocks. The dividend discount model has been tested and the results indicate that it does, in the long term, provide for excess returns. It is unclear, however, whether this is because the model is good at finding undervalued stocks or because it proxies for well-known empirical irregularities in returns relating to price-earnings ratios and dividend yields.[^35] 
 
 ##### Free Cashflow to Equity Model
 
