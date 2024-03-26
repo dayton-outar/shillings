@@ -1362,7 +1362,7 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > $DPS_t$ = Expected dividends per share \
 > $k_e$ = Cost of equity
 > 
-> ***The rationale for the model lies in the present value rule—the value of any asset is the present value of expected future cash flows, discounted at a rate appropriate to the riskiness of the cash flows being discounted.***
+> ***The rationale for the model lies in the present value rule—the value of any asset is the present value of expected future cash flows, discounted at a rate appropriate to the riskiness of the cash flows being discounted.***[^35]
 
 > We can continue this process for any number of years by replacing the final stock price with the value that the next holder of the stock would be willing to pay. Doing so leads to the general **dividend-discount model** for the stock price, where the horizon $N$ is arbitrary:
 > 
