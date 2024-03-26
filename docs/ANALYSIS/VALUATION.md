@@ -1616,7 +1616,7 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > Allowing for the cash flow effects of net capital expenditures, changes in working capital, and net changes in debt on equity investors, we can define the cash flows left over after these changes as the free cash flow to equity (FCFE):
 > 
-> $\large{ \text{Free cash flow to equity} = \text{Net income} − (\text{Capital expenditures} − \text{Depreciation}) − (\text{Change in noncash working capital}) + (\text{New debt issued} − \text{Debt repayments}) }$
+> ${ \text{Free cash flow to equity} = \text{Net income} − (\text{Capital expenditures} − \text{Depreciation}) − (\text{Change in noncash working capital}) + (\text{New debt issued} − \text{Debt repayments}) }$
 > 
 > This is the cash flow available to be paid out as dividends. Deconstructing this equation, the reinvestment by equity investors into the firm can be written as:
 > 
