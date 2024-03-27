@@ -1842,10 +1842,59 @@ equity used in the dividend discount model should be the overall return on equit
 
 #### Firm Valuation Models
 
-> @ pg. 380 --> 383 [^37]
+> The free cash flow to the firm (FCFF) is the sum of the cash flows to all claim holders in the firm, including common stockholders, bondholders, and preferred stockholders. There are two ways of measuring the free cash flow to the firm.
+> 
+> One is to add up the cash flows to the claim holders, which would include cash flows to equity (defined either as free cash flow to equity or as dividends); cash flows to lenders (which would include principal payments, interest expenses, and new debt issues); and cash flows to preferred stockholders (usually preferred dividends):
+> 
+> ${ \text{FCFF} = \text{Free cash flow to equity} + \text{Interest expense}(1 − \text{Tax rate}) + \text{Principal repayments} − \text{New debt issues} + \text{Preferred dividends} }$
+> 
+> Note, however, that we are reversing the process that we used to get to free cash flow to equity, where we subtracted out payments to lenders and preferred stockholders to estimate the cash flow left for stockholders. A simpler way of getting to free cash flow to the firm is to estimate the cash flows prior to any of these claims. Thus we could begin with the earnings before interest and taxes, net out taxes and reinvestment needs, and arrive at an estimate of the free cash flow to the firm:
+> 
+> FCFF = EBIT(1 − Tax rate) + Depreciation − Capital expenditure − Δ Working capital
+> 
+> Since this cash flow is prior to debt payments, it is often referred to as an unlevered cash flow. Note that this free cash flow to the firm does not incorporate any of the tax benefits due to interest payments. This is by design, because the use of the after-tax cost of debt in the cost of capital already considers this benefit, and including it in the cash flows would double count it.
+> 
+> **FCFF and Other Cash Flow Measures**
+> 
+> The differences between FCFF and FCFE arise primarily from cash flows associated with debt—interest payments, principal repayments, and new debt issues—and other nonequity claims, such as preferred dividends. For firms at their desired debt level, which finance their capital expenditures and working capital needs with this mix of debt and equity and use new debt issues to finance principal repayments, the free cash flow to the firm will exceed the free cash flow to equity.
+> 
+> One metric that is widely used in valuation is the earnings before interest, taxes, depreciation, and amortization (EBITDA), a rough measure of cash flows form operations. The free cash flow to the firm is a related concept but it is more complete because it takes into account the potential tax liability from the earnings as well as capital expenditures and working capital requirements.
+> 
+> Some analysts also use after-tax operating income as a proxy for free cash flow to the firm, with alternative definitions of operating income. The first, earnings before interest and taxes (EBIT) or operating income, comes directly from a firm’s income statements. Adjustments to EBIT yield the net operating profit or loss after taxes (NOPLAT) or the net operating income (NOI). The net operating income is defined to be the income from operations prior to taxes and nonoperating expenses.
+> 
+> Each of these measures is used in valuation models, and each can be related to the free cash flow to the firm. Each, however, makes some assumptions about the relationship between depreciation and capital expenditures that are made explicit in the table below.
+> 
+> _Free Cash Flows to the Firm: Comparison to Other Measures_
+> 
+> | Cash Flow Used | Definition | Use in Valuation |
+> |:--- |:--- |:--- |
+> | FCFF | Free cash flow to firm | Discounting free cash flow to the firm at the cost of capital will yield the value of the operating assets of the firm. To this, you would add on the value of nonoperating assets to arrive at firm value. |
+> | FCFE | FCFF − Interest (1 − t) − Principal repaid + New debt issued − Preferred dividend | Discounting free cash flows to equity at the cost of equity will yield the value of equity in a business. |
+> | EBITDA | FCFF + EBIT(t) + Capital expenditures + Change in working capital | If you discount EBITDA at the cost of capital to value an asset, you are assuming that there are no taxes and that the firm will actively disinvest over time. It would be inconsistent to assume a growth rate or an infinite life for this firm. |
+> | EBIT(1 - t) <br />(NOPLAT is a slightly modified version of this estimate and it removes any nonoperating items that might affect the reported EBIT) | FCFF + Capital expenditures – Depreciation + Change in working capital | If you discount after-tax operating income at the cost of capital to value a firm, you are assuming no reinvestment. The depreciation is reinvested back into the firm to maintain existing assets. You can assume an infinite life but no growth. |
+> 
+> **Growth in FCFE versus Growth in FCFF**
+> 
+> Will equity cash flows and firm cash flows grow at the same rate? Consider the starting point for the two cash flows. _Equity cash flows are based on net income or earnings per share—measures of equity income. Firm cash flows are based on operating income (i.e., income prior to debt payments)._ As a general rule, you would expect growth in operating income to be lower than growth in net income, because financial leverage can augment the latter. To see why, [take note of the equations below],
+> 
+> Expected growth in net income = Equity reinvestment rate × Return on equity
+> 
+> Expected growth in operating income = Reinvestment rate × Return on capital
+> 
+> We also defined the return on equity in terms of the return on capital:
+> 
+> $$\large{ \text{Return on equity} = { \text{Return on capital} + { { \text{Debt} \over \text{Equity} } \times (\text{Return on capital} - \text{After-tax cost of debt}) } } }$$
+> 
+> When a firm borrows money and invests in projects that earn more than the after-tax cost of debt, the return on equity will be higher than the return on capital. This, in turn, will translate into a higher growth rate in equity income at least in the short term.
+> 
+> In stable growth, though, the growth rates in equity income and operating income have to converge. To see why, assume that you have a firm whose revenues and operating income are growing at 5 percent a year forever. If you assume that the same firm’s net income grows at 6 percent a year forever, the net income will catch up with operating income at some point in time in the future and exceed revenues at a later point in time. In stable growth, therefore, even if return on equity exceeds the return on capital, the expected growth will be the same in all measures of income.
+> [^37]
 
 ##### Cost of Capital
 
+> The value of the firm is obtained by discounting the free cash flow to the firm at the weighted average cost of capital. Embedded in this value are the tax benefits of debt (in the use of the after-tax cost of debt in the cost of capital) and expected additional risk associated with debt (in the form of higher costs of equity and debt at higher debt ratios). Just as with the dividend discount model and the FCFE model, the version of the model used will depend on assumptions made about future growth.
+> 
+> 
 > @ pg. 383 --> 398 [^37]
 
 ##### Adjusted Present Value
