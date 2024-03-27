@@ -1345,6 +1345,119 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > The dividend discount model is based on the premise that the only cash flows received by stockholders are dividends. Even if we use the modified version of the model and treat stock buybacks as dividends, we may misvalue firms that consistently fail to return what they can afford to their stockholders.
 > 
 > ... a more expansive definition of cash flows to equity [can involve] the cash flows left over after meeting all financial obligations, including debt payments, and after covering capital expenditure and working capital needs. ... reasons for differences between dividends and free cash flows to equity (FCFE) [are explored in this section][^36]
+> 
+> ...
+> 
+> Given what firms are returning to their stockholders in the form of dividends or stock buybacks, how do we decide whether they are returning too much or too little? We propose a simple measure how much cash is available to be paid out to stockholders after meeting reinvestment needs and compare this amount to the amount actually returned to stockholders.
+> 
+> **Free Cash Flows to Equity**
+> 
+> To estimate how much cash a firm can afford to return to its stockholders, we begin with the net income—the accounting measure of the stockholders’ earnings during the period—and convert it to a cash flow by subtracting out a firm’s reinvestment needs. First, any capital expenditures, defined broadly to include acquisitions, are subtracted from the net income, since they represent cash outflows. Depreciation and amortization, on the other hand, are added back in because they are accounting but not cash expenses. The difference between capital expenditures and depreciation (net capital expenditures) is usually a function of the growth characteristics of the firm. High-growth firms tend to have high net capital expenditures relative to earnings, whereas low-growth firms may have low, and sometimes even negative, net capital expenditures.
+> 
+> Second, increases in working capital drain a firm’s cash flows, while decreases in working capital increase the cash flows available to equity investors. Firms that are growing fast, in industries with high working capital requirements (retailing, for instance), typically have large increases in working capital. Since we are interested in the cash flow effects, we consider only changes in noncash working capital in this analysis.
+> 
+> Finally, equity investors also have to consider the effect of changes in the levels of debt on their cash flows. Repaying the principal on existing debt represents a cash outflow, but the debt repayment may be fully or partially financed by the issue of new debt, which is a cash inflow. Again, netting the repayment of old debt against the new debt issues provides a measure of the cash flow effects of changes in debt.
+> 
+> Allowing for the cash flow effects of net capital expenditures, changes in working capital, and net changes in debt on equity investors, we can define the cash flows left over after these changes as the free cash flow to equity (FCFE):
+> 
+> ${ \text{Free cash flow to equity} = \text{Net income} − (\text{Capital expenditures} − \text{Depreciation}) − (\text{Change in noncash working capital}) + (\text{New debt issued} − \text{Debt repayments}) }$
+> 
+> This is the cash flow available to be paid out as dividends. Deconstructing this equation, the reinvestment by equity investors into the firm can be written as:
+> 
+> Equity reinvestment = Capital expenditures − Depreciation + Change in noncash working capital − New debt issues + Debt repayments
+> 
+> Equity reinvestment rate = Equity reinvestment/Net income
+> 
+> This calculation can be simplified if we assume that the net capital expenditures and working capital changes are financed using a fixed mix of debt and equity. If δ is the proportion of the net capital expenditures and working capital changes that is raised from debt financing, the effect on cash flows to equity of these items can be represented as follows:
+> 
+> Equity cash flows associated with meeting capital expenditure needs = −(Capital expenditures − Depreciation)(1 − δ)
+> 
+> Equity cash flows associated with meeting working capital needs = −(Δ Working capital)(1 − δ)
+> 
+> Accordingly, the cash flow available for equity investors after meeting capital expenditure and working capital needs is:
+> 
+> Free cash flow to equity = Net income − (Capital expenditures − Depreciation) × (1 − δ) − (Δ Working capital)(1 − δ)
+> 
+> Note that the net debt payment item is eliminated, because debt repayments are financed with new debt issues to keep the debt ratio fixed. It is appropriate to assume that a specified proportion of net capital expenditures and working capital needs will be financed with debt if the target or optimal debt ratio of the firm is used to forecast the free cash flow to equity that will be available in future periods. Alternatively, in examining past periods, we can use the firm’s average debt ratio over the period to arrive at approximate free cash flows to equity.
+> 
+> **Comparing Dividends to Free Cash Flows to Equity**
+> 
+> The conventional measure of dividend policy—the dividend payout ratio—gives us the value of dividends as a proportion of earnings. The modified approach measures the total cash returned to stockholders as a proportion of the free cash flow to equity:
+> 
+> Dividend payout ratio = Dividends/Earnings
+> 
+> Cash to stockholders to FCFE ratio = (Dividends + Equity repurchases)/FCFE
+> 
+> The ratio of cash to stockholders to FCFE shows how much of the cash available to be paid out to stockholders is actually returned to them in the form of dividends and stock buybacks. If this ratio, over time, is equal or close to 1, the firm is paying out all that it can to its stockholders. If it is significantly less than 1, the firm is paying out less than it can afford to and is using the difference to increase its cash balance or to invest in marketable securities. If it is significantly over 1, the firm is paying out more than it can afford and is either drawing on an existing cash balance or issuing new securities (stocks or bonds).
+> 
+> We can observe the tendency of firms to pay out less to stockholders than they have available in free cash flows to equity by examining cash returned to stockholders paid as a percentage of free cash flow to equity. ...
+> 
+> When a firm is paying out less in dividends than it has available in free cash flows, it is generating surplus cash. For those firms, this cash surplus appears as an increase in the cash balance. Firms that pay dividends that exceed FCFE have to finance these dividend payments either out of existing cash balances or by making new stock issues.
+> 
+> The implications for valuation are simple. If we use the dividend discount model and do not allow for the buildup of cash that occurs when firms pay out less than they can afford, we will underestimate the value of equity in firms. If we use the model to value firms that pay out more dividends than they have available, we will overvalue the firms. The rest of this chapter is designed to correct for this limitation.
+> 
+> **Why Firms May Pay Out Less than Is Available**
+> 
+> Many firms pay out less to stockholders, in the form of dividends and stock buybacks, than they have available in free cash flows to equity. The reasons vary from firm to firm.
+> 
+> **Desire for Stability** Firms are generally reluctant to change dividends, and dividends are considered “sticky” because the variability in dividends is significantly lower than the variability in earnings or cash flows. The unwillingness to change dividends is accentuated when firms have to reduce dividends, and increases in dividends outnumber cuts in dividends by at least a five-to-one margin in most periods. As a consequence of this reluctance to cut dividends, firms will often refuse to increase dividends even when earnings and FCFE go up, because they are uncertain about their capacity to maintain these higher dividends. This leads to a lag between earnings increases and dividend increases. Similarly, firms frequently keep dividends unchanged in the face of declining earnings and FCFE. ...
+> 
+> The number of firms increasing dividends outnumbers those decreasing dividends seven to one. The number of firms, however, that do not change dividends outnumbers firms that do about four to one. Dividends are also less variable than either FCFE or earnings, but this reduced volatility is a result of keeping dividends significantly below the FCFE.
+> 
+> **Future Investment Needs** A firm might hold back on paying its entire FCFE as dividends if it expects substantial increases in capital expenditure needs in the future. Since issuing stocks is expensive (with floatation costs and issuance fees), it may choose to keep the excess cash to finance these future needs. Thus, to the degree that a firm is unsure about its future financing needs, it will retain some cash to take on unexpected investments or meet unanticipated needs.
+> 
+> **Tax Factors** If dividends are taxed at a higher tax rate than capital gains, a firm may choose to retain the excess cash and pay out much less in dividends than it has available. This is likely to be accentuated if the stockholders in the firm are in high tax brackets, as is the case with many family-controlled firms. If, however, investors in the firm like dividends or tax laws favor dividends, the firm may pay more out in dividends than it has available in FCFE, often borrowing or issuing new stock to do so.
+> 
+> **Signaling Prerogatives** Firms often use dividends as signals of future prospects, with increases in dividends being viewed as positive signals and decreases as negative signals. The empirical evidence is consistent with this signaling story, since stock prices generally go up on dividend increases and down on dividend decreases. The use of dividends as signals may lead to differences between dividends and FCFE.
+> 
+> **Managerial Self-interest** The managers of a firm may gain by retaining cash rather than paying it out as a dividend. The desire for empire building may make increasing the size of the firm an objective on its own. Or management may feel the need to build up a cash cushion to tide over periods when earnings may dip; in such periods, the cash cushion may reduce or obscure the earnings drop and may allow managers to remain in control.
+> 
+> ...
+> 
+> **FCFE Valuation versus Dividend Discount Model Valuation**
+> 
+> The discounted cash flow model that uses FCFE can be viewed as an alternative to the dividend discount model. Since the two approaches sometimes provide different estimates of value, it is worth examining when they provide similar estimates of value, when they provide different estimates of value, and what the difference tells us about the firm.
+> 
+> **When They Are Similar**
+> 
+> There are two conditions under which the value from using the FCFE in discounted cash flow valuation will be the same as the value obtained from using the dividend discount model. The first is the obvious one, where the dividends are equal to the FCFE. The second condition is more subtle, where the FCFE is greater than dividends, but the excess cash (FCFE minus dividends) is invested in projects with net present value of zero. (For instance, investing in financial assets that are fairly priced should yield a net present value of zero.)
+> 
+> **When They Are Different**
+> 
+> There are several cases where the two models will provide different estimates of value. First, when the FCFE is greater than the dividend and the excess cash either earns below-market interest rates or is invested in negative net present value projects, the value from the FCFE model will be greater than the value from the dividend discount model. There is reason to believe that this is not as unusual as it would seem at first glance. There are numerous case studies of firms that, having accumulated large cash balances, by paying out low dividends relative to FCFE, have chosen to use this cash to finance unwise takeovers (where the price paid is greater than the value received from the takeover). Second, the payment of smaller dividends than can be afforded to be paid out by a firm may lead to a lower debt ratio and a higher cost of capital, causing a loss in value.
+> 
+> In the cases where dividends are greater than FCFE, the firm will have to issue either new stock or new debt to pay these dividends leading to at least three negative consequences for value. One is the issuance cost on these security issues, which can be substantial for equity issues, creates an unnecessary expenditure that decreases value. Second, if the firm borrows the money to pay the dividends, the firm may become overlevered (relative to the optimal), exposing itself to distress/default and leading to a loss in value. Finally, paying too much in dividends can lead to capital rationing constraints where good projects are rejected, resulting in a loss of value.
+> 
+> There is a third possibility and it reflects different assumptions about rein-
+vestment and growth in the two models. If the same growth rate is used in the
+dividend discount and FCFE models, the FCFE model will give a higher value
+than the dividend discount model whenever FCFE is higher than dividends and a
+lower value when dividends exceed FCFE. In reality, the growth rate in FCFE
+should be different from the growth rate in dividends, because the free cash flow
+to equity is assumed to be paid out to stockholders. This will affect the reinvest-
+ment rate of the firm. In addition, the return on equity used in the FCFE model
+should reflect the return on equity on noncash investments, whereas the return on
+equity used in the dividend discount model should be the overall return on equity.
+> 
+> _Differences between DDM and FCFE Models_
+> 
+> | | Dividend Discount Model | FCFE Model |
+> |:--- |:--- |:-- |
+> | Implicit assumption | Only dividends are paid. Remaining portions of earnings are invested back into the firm, some in operating assets and some in cash and marketable securities. | The FCFE is paid out to stockholders. The remaining earnings are invested only in operating assets. |
+> | Expected growth | Measures growth in income from both operating and cash assets. In terms of fundamentals, it is the product of the retention ratio and the return on equity. | Measures growth only in income from operating assets. In terms of fundamentals, it is the product of the equity reinvestment rate and the noncash return on equity. |
+> | Dealing with cash and marketable securities | The income from cash and marketable securities is built into earnings and ultimately into dividends. Therefore, cash and marketable securities do not need to be added in. | <p>You have two choices:</p><ol><li>Build income from cash and marketable securities into projections of income, and estimate the value of equity.</li><li>Ignore income from cash and marketable securities, and add their value to equity value in model.</li></ol> |
+> 
+> In general, when firms pay out much less in dividends than they have available in FCFE, the expected growth rate and terminal value will be higher in the dividend discount model, but the year-to-year cash flows will be higher in the FCFE model. The net effect on value will vary from company to company.
+> 
+> **What Does It Mean When They Are Different?**
+> 
+> When the value using the FCFE model is different from the value using the dividend discount model, with consistent growth assumptions, there are two questions that need to be addressed: What does the difference between the two models tell us? Which of the two models is the appropriate one to use in evaluating the market price?
+> 
+> The less frequent scenario is that the dividend discount model yields a higher value than the FCFE model, largely because dividends exceed FCFE. In this case, it is best to go with the FCFE model because the dividends are not sustainable. The more common occurrence is for the value from the FCFE model to exceed the value from the dividend discount model. The difference between the value from the FCFE model and the value using the dividend discount model can be considered one component of the value of controlling a firm—it measures the value of controlling dividend policy. In a hostile takeover, the bidder can expect to control the firm and change the dividend policy (to reflect FCFE), thus capturing the higher FCFE value.
+> 
+> As for which of the two values is the more appropriate one for use in evaluating the market price, the answer lies in the openness of the market for corporate control. If there is a sizable probability that a firm can be taken over or its management changed, the market price will reflect that likelihood, and the appropriate benchmark to use is the value from the FCFE model. As changes in corporate control become more difficult because of a firm’s size and/or legal or market restrictions on takeovers, the value from the dividend discount model will provide the appropriate benchmark for comparison.
+> 
+> So, why are they different? The FCFE model does use a lower growth rate than the dividend discount model, but it allows for more cash to be returned to stockholders. In effect, we are incorporating the fact that Coca-Cola does not pay out its FCFE as dividends. The net effect, at least in this case, is an increase in value per share. For companies that pay out more dividends than they have available in FCFE, the value per share might drop with the FCFE model. In either case, we would argue that the FCFE estimate of value per share is a more realistic one than the dividend discount model estimate of value per share.[^36]
 
 ##### Dividend Discount Model
 
@@ -1600,27 +1713,132 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > **Tests of the Dividend Discount Model**
 > 
-> The ultimate test of a model lies in how well it works at identifying undervalued and overvalued stocks. The dividend discount model has been tested and the results indicate that it does, in the long term, provide for excess returns. It is unclear, however, whether this is because the model is good at finding undervalued stocks or because it proxies for well-known empirical irregularities in returns relating to price-earnings ratios and dividend yields.[^35] 
+> The ultimate test of a model lies in how well it works at identifying undervalued and overvalued stocks. The dividend discount model has been tested and the results indicate that it does, in the long term, provide for excess returns. It is unclear, however, whether this is because the model is good at finding undervalued stocks or because it proxies for well-known empirical irregularities in returns relating to price-earnings ratios and dividend yields.
+> 
+> ...[^35] 
 
 ##### Free Cashflow to Equity Model
 
-> Given what firms are returning to their stockholders in the form of dividends or stock buybacks, how do we decide whether they are returning too much or too little? We propose a simple measure how much cash is available to be paid out to stockholders after meeting reinvestment needs and compare this amount to the amount actually returned to stockholders.
+> The free cash flow to equity model does not represent a radical departure from the traditional dividend discount model. In fact, one way to describe a free cash flow to equity model is that it represents a model where we discount potential dividends rather than actual dividends. Consequently, the three versions of the FCFE valuation model presented in this section are simple variants on the dividend discount model, with one significant change—free cash flows to equity replace dividends in the models.
 > 
-> **Free Cash Flows to Equity**
+> **Underlying Principle**
 > 
-> To estimate how much cash a firm can afford to return to its stockholders, we begin with the net income—the accounting measure of the stockholders’ earnings during the period—and convert it to a cash flow by subtracting out a firm’s reinvestment needs. First, any capital expenditures, defined broadly to include acquisitions, are subtracted from the net income, since they represent cash outflows. Depreciation and amortization, on the other hand, are added back in because they are accounting but not cash expenses. The difference between capital expenditures and depreciation (net capital expenditures) is usually a function of the growth characteristics of the firm. High-growth firms tend to have high net capital expenditures relative to earnings, whereas low-growth firms may have low, and sometimes even negative, net capital expenditures.
+> When we replace the dividends with FCFE to value equity, we are doing more than substituting one cash flow for another. We are implicitly assuming that the FCFE will be paid out to stockholders. There are two consequences:
 > 
-> Second, increases in working capital drain a firm’s cash flows, while decreases in working capital increase the cash flows available to equity investors. Firms that are growing fast, in industries with high working capital requirements (retailing, for instance), typically have large increases in working capital. Since we are interested in the cash flow effects, we consider only changes in noncash working capital in this analysis.
+> 1. There will be no future cash buildup in the firm, since the cash that is available after debt payments and reinvestment needs is assumed to be paid out to stockholders each period.
 > 
-> Finally, equity investors also have to consider the effect of changes in the levels of debt on their cash flows. Repaying the principal on existing debt represents a cash outflow, but the debt repayment may be fully or partially financed by the issue of new debt, which is a cash inflow. Again, netting the repayment of old debt against the new debt issues provides a measure of the cash flow effects of changes in debt.
+> 2. The expected growth in FCFE will include growth in income from operating assets and not growth in income from increases in marketable securities. This follows directly from the last point.
 > 
-> Allowing for the cash flow effects of net capital expenditures, changes in working capital, and net changes in debt on equity investors, we can define the cash flows left over after these changes as the free cash flow to equity (FCFE):
+> How does discounting free cash flows to equity compare with the augmented dividend discount model, where stock buybacks are added back to dividends and discounted? You can consider stock buybacks to be the return of excess cash accumulated largely as a consequence of not paying out their FCFE as dividends. Thus, FCFE represents a smoothed-out measure of what companies can return to their stockholders over time in the form of dividends and stock buybacks.
 > 
-> ${ \text{Free cash flow to equity} = \text{Net income} − (\text{Capital expenditures} − \text{Depreciation}) − (\text{Change in noncash working capital}) + (\text{New debt issued} − \text{Debt repayments}) }$
+> **Estimating Growth in FCFE**
 > 
-> This is the cash flow available to be paid out as dividends. Deconstructing this equation, the reinvestment by equity investors into the firm can be written as:
+> Free cash flows to equity, like dividends, are cash flows to equity investors and you could use the same approach that you used to estimate the fundamental growth rate in dividends per share:
 > 
-> @ pg. 351 --> 376 [^36]
+> Expected growth rate = Retention ratio × Return on equity
+> 
+> The use of the retention ratio in this equation implies that whatever is not paid out as dividends is reinvested back into the firm. There is a strong argument to be made, though, that this is not consistent with the assumption that free cash flows to equity are paid out to stockholders, which underlies FCFE models. It is far more consistent to replace the retention ratio with the equity reinvestment rate, which measures the percent of net income that is invested back into the firm.
+> 
+> $\large{ \text{Equity reinvestment rate} = { { \text{Capital Expenditures} - \text{Depreciation} + \text{Change in noncash working capital} - \text{Net debt issues} } \over \text{Net income} } }$
+> 
+> When discounting FCFE, it is safest to separate the existing cash balance from the operating assets of the firm, to value the equity in the operating assets and then add on the existing cash balance. Consequently, the return on equity can also have to be modified to reflect the fact that the conventional measure of the return includes interest income from cash and marketable securities in the numerator and the book value of equity also includes the value of the cash and marketable securities. In the FCFE model, there is no excess cash left in the firm and the return on equity should measure the return on noncash investments. You could construct a modified version of the return on equity that measures this:
+> 
+> $\large{ Noncash ROE = { \text{Net income} − \text{After-tax income from cash and marketable securities} } \over { \text{Book value of equity} − \text{Cash and marketable securities} } }$
+> 
+> The product of the equity reinvestment rate and the modified ROE will yield the expected growth rate in FCFE:
+> 
+> Expected growth in FCFE = Equity reinvestment rate × Noncash ROE
+> 
+> **Constant Growth FCFE Model**
+> 
+> The constant growth FCFE model is designed to value firms that are growing at a stable growth rate and are hence in steady state.
+>
+> **The Model** The value of equity, under the constant growth model, is a function of the expected FCFE in the next period, the stable growth rate, and the required rate of return.
+> 
+> $$\huge{ \text{Value} = { FCFE_1 \over { k_e - g_n } } }$$
+> 
+> where \
+> Value = Value of stock today \
+> $FCFE_1$ = Expected $FCFE$ next year \
+> $k_e$ = Cost of equity of the firm \
+> $g_n$ = Growth rate in $FCFE$ for the firm forever
+> 
+> **Caveats** The model is very similar to the Gordon growth model in its underlying assumptions and works under some of the same constraints. The growth rate used in the model has to be reasonable, relative to the nominal growth rate in the economy in which the firm operates. As a general rule, a stable growth rate cannot exceed the growth rate of the economy in which the firm operates.
+> 
+> The assumption that a firm is in steady state also implies that it possesses other characteristics shared by stable firms. This would mean, for instance, that capital expenditures are not disproportionately large, relative to depreciation, and the firm is of average risk. (If the capital asset pricing model is used, the beta of the equity should be close to 1.) To estimate the reinvestment for a stable growth firm, you can use one of two approaches:
+> 
+> 1. You can use the typical reinvestment rates for firms in the industry to which the firm belongs. A simple way to do this is to use the average capital expenditure to depreciation ratio for the industry (or better still, just stable firms in the industry) to estimate a normalized capital expenditure for the firm. The danger of doing so is that the industry itself may not be steady state and the average will therefore be skewed (high or low).
+> 
+> 2. Alternatively, you can use the relationship between growth and fundamentals to estimate the required reinvestment. The expected growth in net income can be written as:
+> 
+>    Expected growth rate in net income = Equity reinvestment rate × Return on equity
+> 
+>    This allows us to estimate the equity reinvestment rate:
+> 
+>    Equity reinvestment rate = Expected growth rate/Return on equity
+> 
+>    To illustrate, a firm with a stable growth rate of 4 percent and a return on equity of 12 percent would need to reinvest about one-third of its net income back into net capital expenditures and working capital needs. Put differently, the free cash flows to equity should be two-thirds of net income.
+> 
+> **Best Suited for Firms** This model, like the stable growth dividend discount model, is best suited for firms growing at a rate comparable to or lower than the nominal growth in the economy. It is, however, a better model to use than the dividend discount model for stable firms that pay out dividends that are unsustainably high (because they exceed FCFE by a significant amount) or are significantly lower than the FCFE. Note, though, that if the firm is stable and pays out its FCFE as dividends the value obtained from this model will be the same as the one obtained from the Gordon growth model.
+> 
+> ...
+> 
+> **Two-Stage FCFE Model**
+> 
+> The two-stage FCFE model is designed to value a firm that is expected to grow much faster than a stable firm in the initial period and at a stable rate after that.
+> 
+> **The Model** The value of any stock is the present value of the FCFE per year for the extraordinary growth period plus the present value of the terminal price at the end of the period.
+> 
+> $$\large{ \text{Value} = { \text{PV of FCFE} + \text{PV of terminal price} } }$$
+> 
+> $$\huge{ = \sum_{t=1}^{t=n} { { FCFE_t \over { (1 + k_{e,g})^t } } + { P_n \over { (1 + k_{e,g})^n } } } }$$
+> 
+> where \
+> $FCFE_t$ = Free cash flow to equity in year $t$ \
+> $P_n$ = Price at the end of the extraordinary growth period \
+> $k_e$ = Cost of equity in high growth ($g$) and stable growth ($s$) periods
+> 
+> The terminal price is generally calculated using the infinite growth rate model:
+> 
+> $$\large{ P_n = { FCFE_{n+1}/{ (k_{e,s} − g_n)} } }$$
+> 
+> where $g_n$ = Growth rate after terminal year forever
+> 
+> **Calculating the Terminal Price** The same caveats that apply to the growth rate for the stable growth rate model, described in the previous section, apply here as well. In addition, the assumptions made to derive the free cash flow to equity after the terminal year have to be consistent with this assumption of stability. For instance, while capital spending may be much greater than depreciation in the initial high-growth phase, the difference should narrow as the firm enters its stable growth phase. We can use the two approaches described for the stable growth model—industry average capital expenditure requirements or the fundamental growth equation (equity reinvestment rate = g/ROE)—to make this estimate.
+> 
+> The beta and debt ratio may also need to be adjusted in stable growth to reflect the fact that stable growth firms tend to have average risk (betas closer to 1) and use more debt than high-growth firms.
+> 
+> **Firms Model Works Best For** This model makes the same assumptions about growth as the two-stage dividend discount model (i.e., that growth will be high and constant in the initial period and drop abruptly to stable growth after that). It is different because of its emphasis on FCFE rather than dividends. Consequently, it provides much better results than the dividend discount model when valuing firms which either have dividends which are unsustainable (because they are higher than FCFE) or which pay less in dividends than they can afford to (i.e., dividends are less than FCFE).
+> 
+> ...
+> 
+> **E Model—A Three-Stage FCFE Model** 
+> 
+> The E model is designed to value firms that are expected to go through three stages of growth—an initial phase of high growth rates, a transitional period in which the growth rate declines, and a steady-state period in which growth is stable.
+> 
+> **The Model** The E model calculates the present value of expected free cash flow to equity over all three stages of growth:
+> 
+> $$\huge{ P_0 = { \sum_{t=1}^{t=n1} { { FCFE_t \over { (1 + k_{e})^t } } } } + { \sum_{t=n1+1}^{t=n2} { { FCFE_t \over { (1 + k_{e})^t } } } } + { P_{n2} \over { (1 + k_{e})^{n2} } } }$$
+> 
+> where \
+> $P_0$ = Value of the stock today \
+> $FCFE_t$ = Free cash flow to equity in year $t$ \
+> $k_e$ = Cost of equity \
+> $P_{n2}$ = Terminal price at the end of transitional period = $FCFE_{n2+1}/(k_e - g_n)$ \
+> $n1$ = End of initial high growth period \
+> $n2$ = End of transition period
+> 
+> **Caveats in Using Model** Since the model assumes that the growth rate goes through three distinct phases—high growth, transitional growth, and stable growth—it is important that assumptions about other variables are consistent with these assumptions about growth.
+> 
+> ***Capital Spending versus Depreciation*** It is reasonable to assume that as the firm goes from high growth to stable growth, the relationship between capital spending and depreciation will change. In the high-growth phase, capital spending is likely to be much larger than depreciation. In the transitional phase, the difference is likely to narrow and the difference between capital spending and depreciation will be lower still in stable growth, reflecting the lower expected growth rate.
+> 
+> ![Three-Stage FCFE Model: Reinvestment Needs](/.attachments/valuation-3-stage.fcfe.png)
+> 
+> _Three-Stage FCFE Model: Reinvestment Needs_
+> 
+> ***Risk*** As the growth characteristics of a firm change, so do its risk characteristics. In the context of the CAPM, as the growth rate declines the beta of the firm can be expected to change. The tendency of betas to converge toward one in the long term has been confirmed by empirical observation of portfolios of firms with high betas. Over time, as these firms get larger and more diversified, the average betas of these portfolios move toward 1.
+> 
+> **Firms Model Works Best For** Since the model allows for three stages of growth and for a gradual decline from high to stable growth, it is the appropriate model to use to value firms with very high growth rates currently. The assumptions about growth are similar to the ones made by the three-stage dividend discount model, but the focus is on FCFE instead of dividends, making it more suited to value firms whose dividends are significantly higher or lower than the FCFE. [^36]
 
 #### Firm Valuation Models
 
