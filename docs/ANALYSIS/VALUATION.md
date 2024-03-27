@@ -1743,7 +1743,7 @@ equity used in the dividend discount model should be the overall return on equit
 > 
 > When discounting FCFE, it is safest to separate the existing cash balance from the operating assets of the firm, to value the equity in the operating assets and then add on the existing cash balance. Consequently, the return on equity can also have to be modified to reflect the fact that the conventional measure of the return includes interest income from cash and marketable securities in the numerator and the book value of equity also includes the value of the cash and marketable securities. In the FCFE model, there is no excess cash left in the firm and the return on equity should measure the return on noncash investments. You could construct a modified version of the return on equity that measures this:
 > 
-> $\large{ Noncash ROE = { \text{Net income} − \text{After-tax income from cash and marketable securities} } \over { \text{Book value of equity} − \text{Cash and marketable securities} } }$
+> $\large{ \text{Noncash ROE} = { { \text{Net income} − \text{After-tax income from cash and marketable securities} } \over { \text{Book value of equity} − \text{Cash and marketable securities} } } }$
 > 
 > The product of the equity reinvestment rate and the modified ROE will yield the expected growth rate in FCFE:
 > 
