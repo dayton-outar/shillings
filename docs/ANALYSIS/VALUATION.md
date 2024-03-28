@@ -2000,11 +2000,11 @@ equity used in the dividend discount model should be the overall return on equit
 > 
 > The inputs needed for this valuation are the expected cash flows, growth rates, and the unlevered cost of equity. To estimate the unlevered cost of equity, we can draw on our earlier analysis and compute the unlevered beta of the firm:
 > 
-> $$\huge{ \beta_unlevered = \beta_current /[1 + (1 − t)D/E] }$$
+> $$\huge{ \beta_{unlevered} = \beta_{current} /[1 + (1 − t)D/E] }$$
 > 
 > where, \
-> $\beta_unlevered$ = Unlevered beta of the firm \
-> $\beta_current$ = Current equity beta of the firm \
+> $\beta_{unlevered}$ = Unlevered beta of the firm \
+> $\beta_{current}$ = Current equity beta of the firm \
 > $t$ = Tax rate for the firm \
 > $D/E$ = Current debt/equity ratio
 > 
