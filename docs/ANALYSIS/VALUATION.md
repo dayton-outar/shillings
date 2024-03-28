@@ -30,6 +30,24 @@ Each of these methods has its strengths and weaknesses, and the choice of method
 
 <image src="/.attachments/chatgpt-logo.png" alt="Chat GPT Logo" width="16" height="16" />
 
+Valuation is done from data gathered for an asset from the following,
+
+1. Financial Statements
+   
+   3 main statements are required: Income-Expense, Balance Sheet and Cashflow Statement
+
+2. Stock Prices
+
+   Used to calculate the risk and return. Helps to deduce _Cost of capital_
+
+3. Stock Indices
+
+   Used to arrive at a &beta; for the risk value of stock or portfolio being evaluated
+
+4. Interest Rates of Jurisdiction
+
+    These rates are described as the risk-free rate; important to calculate _Cost of capital_
+
 ![Selection Process of Valuation Models](/.attachments/valuation-selecting.main.valuation.models-3.png)
 
 _Selection Process of Valuation Models_
@@ -1892,6 +1910,8 @@ equity used in the dividend discount model should be the overall return on equit
 
 ##### Cost of Capital
 
+$$\huge{Enterprise\text{ }Value\text{ }in\text{ }Year\text{ }T = V_T^L = { FCF_{T + 1} \over r_{wacc} - g } }$$
+
 > The value of the firm is obtained by discounting the free cash flow to the firm at the weighted average cost of capital. Embedded in this value are the tax benefits of debt (in the use of the after-tax cost of debt in the cost of capital) and expected additional risk associated with debt (in the form of higher costs of equity and debt at higher debt ratios). Just as with the dividend discount model and the FCFE model, the version of the model used will depend on assumptions made about future growth.
 > 
 > **Stable Growth Firm**
@@ -2209,6 +2229,10 @@ adding back the expected bankruptcy cost from the existing debt.
 > 
 > In making estimates of expected equity return spreads, we have to allow for the fact that the presence of large excess returns is likely to attract competition. These excess returns will fade over time and this should be reflected in the forecasts.
 > [^5]
+
+## Adjusted Funds from Operations
+
+> ... AFFO
 
 ## Relative Valuation Model
 
