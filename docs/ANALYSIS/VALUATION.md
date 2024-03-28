@@ -455,13 +455,13 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > _Step 3:_ Estimate the average unlevered beta for the business by unlevering the average (or median) beta for the firms by their average (or median) debt-to-equity ratio. Alternatively, we could estimate the unlevered beta for each firm and then compute the average of the unlevered betas. The first approach is preferable because unlevering an erroneous regression beta is likely to compound the error.
 > 
-> $\huge{ \text{ Unlevered beta }_b = \text{Beta}_f/[1 + (1 -t)({D/E}_f)] }$
+> $\huge{ \text{Unlevered beta}_b = \text{Beta}_f/[1 + (1 -t)({D/E}_f)] }$
 > 
 > where $b$ is business and $f$ is comparable firms.
 > 
 > _Step 4:_ Estimate an unlevered beta for the firm being analyzed, taking a weighted average of the unlevered betas for the businesses it operates in, using the proportion of firm value derived from each business as the weights. If values are not available, use operating income or revenues as weights. This weighted average is called the bottom-up unlevered beta.
 > 
-> $$\huge{ \text{ Unlevered beta }_f = {\sum}_{j=1}^{j=k} ( \text{Unlevered beta}_j \times \text{Value weight}_j ) }$$
+> $\huge{ \text{Unlevered beta}_f = \sum_{j=1}^{j=k} { ( \text{Unlevered beta}_j \times \text{Value weight}_j ) } }$
 > 
 > where the firm is assumed to operating in $k$ different businesses.
 >
