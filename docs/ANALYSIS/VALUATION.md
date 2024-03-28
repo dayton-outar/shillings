@@ -2012,7 +2012,130 @@ equity used in the dividend discount model should be the overall return on equit
 > 
 > **Expected Tax Benefit from Borrowing** The second step in this approach is the calculation of the expected tax benefit from a given level of debt. This tax benefit is a function of the tax rate and interest payments of the firm and is discounted at the cost of debt to reflect the riskiness of this cash flow. If the tax savings are viewed as a perpetuity,
 > 
-> [^37]
+> ${ \text{Value of tax benefits} = { (\text{Tax rate} \times \text{Cost of debt} \times \text{Debt})/\text{Cost of debt} } = { \text{Tax rate} \times \text{Debt} } = t_cD }$
+> 
+> The tax rate used here is the firm’s marginal tax rate, and it is assumed to stay constant over time. If you anticipate the tax rate changing over time, you can still compute the present value of tax benefits over time, but you cannot use the perpetual growth equation cited earlier. In addition, you would have to modify this equation if the current interest expenses do not reflect the current cost of debt.
+> 
+> **Estimating Expected Bankruptcy Costs and Net Effect** The third step is to evaluate the effect of the given level of debt on the default risk of the firm and on expected bankruptcy costs. In theory, at least, this requires the estimation of the probability of default with the additional debt and the direct and indirect cost of bankruptcy. If $\pi_a$ is the probability of default after the additional debt and $BC$ is the present value of the bankruptcy cost, the present value ($PV$) of expected bankruptcy cost can be estimated:
+> 
+> ${ \text{PV of expected bankruptcy cost} = { \text{Probability of bankruptcy} \times \text{PV of bankruptcy cost} } = \pi_aBC }$
+> 
+> This step of the adjusted present value approach poses the most significant estimation problems, since neither the probability of bankruptcy nor the bankruptcy cost can be estimated directly.
+> 
+> There are two basic ways in which the probability of bankruptcy can be estimated indirectly. One is to estimate a bond rating and use the empirical estimates of default probabilities for the rating. For instance, the table below, extracted from a study by Altman, summarizes the probability of default over 10 years by bond rating class in using the 1999 to 2008 time period.
+> 
+> _Ratings and Probability of Default_
+> 
+> | Rating | Probability of Default |
+> |:--- |:--- |
+> | AAA | 0.07% |
+> | AA | 0.51% |
+> | A+ | 0.60% |
+> | A | 0.66% |
+> | A– | 2.50% |
+> | BBB | 7.54% |
+> | BB+ | 10.00% |
+> | BB | 16.63% |
+> | B+ | 25.00% |
+> | B | 36.80% |
+> | B– | 45.00% |
+> | CCC | 59.01% |
+> | CC | 70.00% |
+> | C | 85.00% |
+> | D | 100.00% |
+> 
+> _Source:_ Altman (2009). This study estimated default rates over 10 years for only some of the ratings classes. The rest was extrapolated.
+> 
+> The other way is to use a statistical approach such as a probit to estimate the probability of default, based on the firm’s observable characteristics, at each level of debt.
+> 
+> The bankruptcy cost can be estimated, albeit with considerable error, from studies that have looked at the magnitude of this cost in actual bankruptcies. Research that has looked at the direct costs of bankruptcy concludes that they are small relative to firm value. The indirect costs of bankruptcy can be substantial, but the costs vary widely across firms. Shapiro (1989) and Titman (1984) speculate that the indirect costs could be as large as 25 to 30 percent of firm value but provide no direct evidence of the costs.
+> 
+> ...
+> 
+> **Cost of Capital versus APV Valuation**
+> 
+> In an APV valuation, the value of a levered firm is obtained by adding the net effect of debt to the unlevered firm value.
+> 
+> $$\large{ \text{Value of levered firm} = FCFF_o(1 + g)/(\rho_u − g) + t_cD − \pi_aBC }$$
+> 
+> In the cost of capital approach, the effects of leverage show up in the cost of capital, with the tax benefit incorporated in the after-tax cost of debt and the bankruptcy costs in both the levered beta and the pretax cost of debt. Will the two approaches yield the same value? Not necessarily. The first reason for differences is that the models consider bankruptcy costs very differently, with the adjusted present value approach providing more flexibility in allowing you to consider indirect bankruptcy costs. To the extent that these costs do not show up or show up inadequately in the pretax cost of debt, the APV approach will yield a more conservative estimate of value. The second reason is that the APV approach considers the tax benefit from a dollar debt value, usually based on existing debt. The cost of capital approach estimates the tax benefit from a debt ratio that may require the firm to borrow increasing amounts in the future. For instance, assuming a market debt-to-capital ratio of 30 percent in perpetuity for a growing firm will require it to borrow more in the future, and the tax benefit from expected future borrowings is incorporated into value today. Generally speaking, the cost-of-capital approach is a more practical choice when valuing ongoing firms that are not going through contortions on financial leverage; it is easier to work with a debt ratio than with dollar-debt levels. The APV approach is more useful for transactions that are funded disproportionately with debt and where debt repayment schedules are negotiated or known; this is why it has acquired a footing in leveraged-buyout circles. Finally, there is a subtle distinction in how the tax benefits from debt are incorporated in value in the two approaches. While the conventional APV approach uses the pre-tax cost of debt as the discount rate to estimate the value of the tax savings from debt, there are variations on the APV that discount the tax savings back at the cost of capital or the unlevered cost of equity that yield values that are closer to those obtained in the cost of capital approach.
+> 
+> **Effect of Leverage on Firm Value**
+> 
+> Both the cost of capital approach and the APV approach make the value of a firm a function of its leverage. It follows directly, then, that there is some mix of debt and equity at which firm value is maximized. ...
+> 
+> **Cost of Capital and Optimal Leverage**
+> 
+> In order to understand the relationship between the cost of capital and optimal capital structure, we rely on the relationship between firm value and the cost of capital. The earlier section noted that the value of the entire firm can be estimated by discounting the expected cash flows to the firm at the firm’s cost of capital.
+> 
+> The firm value can then be written as follows:
+> 
+> $$\huge{ \text{Value of firm} = { \sum_{t=1}^{t=\infty} { \text{CF to firm}_t \over {(1 + WACC)^t}} } }$$
+> 
+> and is a function of the firm’s cash flows and its cost of capital. If we assume that the cash flows to the firm are unaffected by the choice of financing mix, and the cost of capital is reduced as a consequence of changing the financing mix, the value of the firm will increase. If the objective in choosing the financing mix for the firm is the maximization of firm value, we can accomplish it, in this case, by minimizing the cost of capital. In the more general case where the cash flows to the firm are a function of the debt-equity mix, the optimal financing mix is the mix that maximizes firm value.
+> 
+> ...
+> 
+> **Steps in Cost of Capital Approach** We need three basic inputs to compute the cost of capital—the cost of equity, the after-tax cost of debt, and the weights on debt and equity. The costs of equity and debt change as the debt ratio changes, and the primary challenge of this approach is in estimating each of these inputs.
+> 
+> Let us begin with the cost of equity. We argued that the beta of equity will change as the debt ratio changes. In fact, we estimated the levered beta as a function of the market debt to equity ratio of a firm, the unlevered beta, and the firm’s marginal tax rate:
+> 
+> $$\huge{ \beta_{unlevered} = \beta_{current} /[1 + (1 − t)D/E] }$$
+> 
+> Thus, if we can estimate the unlevered beta for a firm, we can use it to estimate the levered beta of the firm at every debt ratio. This levered beta can then be used to compute the cost of equity at each debt ratio.
+> 
+> $$\large{ \text{Cost of equity} = { \text{Risk-free rate} + \beta_{levered} (\text{Risk premium}) } }$$
+>
+> The cost of debt for a firm is a function of the firm’s default risk. As firms borrow more, their default risk will increase and so will the cost of debt. If we use bond ratings as our measure of default risk, we can estimate the cost of debt in three steps. First, estimate a firm’s dollar debt and interest expenses at each debt ratio; as firms increase their debt ratio, both dollar debt and interest expenses will rise. Second, at each debt level, compute a financial ratio or ratios that measure default risk and use the ratio(s) to estimate a rating for the firm; again, as firms borrow more, this rating will decline. Third, a default spread, based on the estimated rating, is added to the risk-free rate to arrive at the pretax cost of debt. Applying the marginal tax rate to this pretax cost yields an after-tax cost of debt.
+> 
+> Once we estimate the costs of equity and debt at each debt level, we weight them based on the proportions used of each to estimate the cost of capital. While we have not explicitly allowed for a preferred stock component in this process, we can have preferred stock as a part of capital. However, we have to keep the preferred stock portion fixed, while changing the weights on debt and equity. The debt ratio at which the cost of capital is minimized is the optimal debt ratio.
+> 
+> In this approach, the effect on firm value of changing the capital structure is isolated by keeping the operating income fixed and varying only the cost of capital. In practical terms, this requires us to make two assumptions. First, the debt ratio is decreased by raising new equity and retiring debt; conversely, the debt ratio is increased by borrowing money and buying back stock. This process is called recapitalization. Second, the pretax operating income is assumed to be unaffected by the firm’s financing mix and, by extension, its bond rating. If the operating income changes with a firm’s default risk, the basic analysis will not change, but minimizing the cost of capital may not be the optimal course of action, since the value of the firm is determined by both the cash flows and the cost of capital. The value of the firm will have to be computed at each debt level and the optimal debt ratio will be the one that maximizes firm value.
+> 
+> ...
+> 
+> **Adjusted Present Value and Financial Leverage**
+> 
+> In the adjusted present value (APV) approach, we begin with the value of the firm without debt. As we add debt to the firm, we consider the net effect on value by considering both the benefits and the costs of borrowing. The value of the levered firm can then be estimated at different levels of the debt, and the debt level that maximizes firm value is the optimal debt ratio.
+> 
+> **Steps in the Adjusted Present Value Approach**
+> 
+> The unlevered firm value is not a function of expected leverage and can be esti-
+mated as described in the earlier section—by discounting the free cash flows to the
+firm at the unlevered cost of equity. In fact, if you do not want to estimate this
+value and are willing to assume that the current market value of the firm is correct,
+you could back out the unlevered firm value by subtracting out the tax benefits and
+adding back the expected bankruptcy cost from the existing debt.
+> 
+> Current firm value = Value of unlevered firm + Present value of tax benefits − Expected bankruptcy cost
+> 
+> Value of unlevered firm = Current firm value − Present value of tax benefits + Expected bankruptcy cost
+> 
+> The only components that change as a firm changes its leverage are the expected tax benefits and the expected bankruptcy costs. To obtain these values as you change leverage, you would go through the following five steps:
+> 
+> 1. _Estimate the dollar debt outstanding at each debt ratio._ This process mirrors what was done in the cost of capital approach. Keeping firm value fixed, consider how much debt the firm will have at 20 percent debt, 30 percent debt, and so on.
+> 
+> 2. _Estimate the tax benefits of debt by multiplying the dollar debt by the tax rate._ This essentially assumes that the debt is permanent and that the tax benefits will continue in perpetuity.
+> 
+> 3. _Estimate the rating, interest rate, and interest expense at each debt ratio._ This process again replicates what was done in the cost of capital approach.
+> 
+> 4. _Use the rating to estimate a probability of default._
+> 
+> 5. _Estimate the expected bankruptcy cost_ by multiplying the probability of bankruptcy by the bankruptcy cost, stated as a percent of unlevered firm value.
+> 
+> You compute the value of the levered firm at different levels of debt. The debt level that maximizes the value of the levered firm is the optimal debt ratio.
+> 
+> ...
+> 
+> **Benefits and Limitations of the Adjusted Present Value Approach**
+> 
+> The advantage of the APV approach is that it separates the effects of debt into different components and allows the analyst to use different discount rates for each component. In addition, we do not assume that the debt ratio stays unchanged forever, which is an implicit assumption in the cost of capital approach. Instead, we have the flexibility to keep the dollar value of debt fixed and to calculate the benefits and costs of the fixed dollar debt.
+> 
+> These advantages have to be weighed against the difficulty of estimating probabilities of default and the cost of bankruptcy. In fact, many analyses that use the adjusted present value approach ignore the expected bankruptcy costs, leading them to the conclusion that firm value increases as firms borrow money. Not surprisingly, this will yield the conclusion that the optimal debt ratio for a firm is 100 percent debt.
+> 
+> In general, with the same assumptions, the APV and the cost of capital conclusions give very similar answers. However, the APV approach is more practical when firms are evaluating a dollar amount of debt, while the cost of capital approach is easier when firms are analyzing debt proportions.[^37]
+
+> The authors argue that the WACC approach is more practical if the firm intends to hold its (market) leverage ratio relatively constant over time, but that the APV technique is the preferred method if the firm plans to reduce its leverage ratio according to a pre-determined schedule (as tends to be the case in highly leveraged transactions).[^38]
 
 ##### Excess Returns
 
@@ -3618,3 +3741,4 @@ In summary, while both the PPI and CPI measure changes in prices over time, they
 [^35]: Chapter 13. Dividend Discount Model. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^36]: Chapter 14. Free Cash Flow to Equity Discount Models. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^37]: Chapter 15. Firm Valuation: Cost of Capital and Adjusted Present Value Approaches. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
+[^38]: Abstract. _Two DCF Approaches for Valuing Companies Under Alternative Financing Strategies (and How to Choose Between Them)_ by Isik Inselbag, Howard Kaufold.
