@@ -1907,14 +1907,7 @@ equity used in the dividend discount model should be the overall return on equit
 > $WACC$ = Weighted average cost of capital \
 > $g_n$ = Growth rate in the FCFF forever
 > 
-> **The Caveats** There are two conditions that need to be met in using this model.
-First, the growth rate used in the model has to be less than or equal to the growth
-rate in the economy—nominal growth, if the cost of capital is in nominal terms, or
-real growth, if the cost of capital is a real cost of capital. Second, the characteristics
-of the firm have to be consistent with assumptions of stable growth. In particular,
-the reinvestment rate used to estimate free cash flows to the firm should be consis-
-tent with the stable growth rate. The best way of enforcing this consistency is to de-
-rive the reinvestment rate from the stable growth rate:
+> **The Caveats** There are two conditions that need to be met in using this model. First, the growth rate used in the model has to be less than or equal to the growth rate in the economy—nominal growth, if the cost of capital is in nominal terms, or real growth, if the cost of capital is a real cost of capital. Second, the characteristics of the firm have to be consistent with assumptions of stable growth. In particular, the reinvestment rate used to estimate free cash flows to the firm should be consistent with the stable growth rate. The best way of enforcing this consistency is to derive the reinvestment rate from the stable growth rate:
 > 
 > $\large{ \text{Reinvestment rate in stable growth} = { \text{Growth rate} \over \text{Return on capital} } }$
 > 
@@ -1958,7 +1951,7 @@ rive the reinvestment rate from the stable growth rate:
 > 
 > _The advantage of using the firm valuation approach is that cash flows relating to debt do not have to be considered explicitly since the FCFF is a predebt cash flow, while they have to be taken into account in estimating FCFE._ In cases where the leverage is expected to change significantly over time, this is a significant time saver, since estimating new debt issues and debt repayments when leverage is changing can become increasingly messy the further into the future you go. The firm valuation approach does, however, require information about debt ratios and interest rates to estimate the weighted average cost of capital.
 > 
-> The value for equity obtained from the firm valuation and equity valuation approaches will be the same if you make consistent assumptions about financial leverage. Getting them to converge in practice is much more difficult. Let us begin with the simplest case—a no-growth, perpetual firm. Assume that the firm has $166.67 million in earnings before interest and taxes and a tax rate of 40 percent. Assume that the firm has equity with a market value of $600 million, with a cost of equity of 13.87 percent, and debt of $400 million, with a pretax cost of debt of 7 percent. The firm’s cost of capital can be estimated as follows:
+> _The value for equity obtained from the firm valuation and equity valuation approaches will be the same if you make consistent assumptions about financial leverage._ Getting them to converge in practice is much more difficult. Let us begin with the simplest case—a no-growth, perpetual firm. Assume that the firm has $166.67 million in earnings before interest and taxes and a tax rate of 40 percent. Assume that the firm has equity with a market value of $600 million, with a cost of equity of 13.87 percent, and debt of $400 million, with a pretax cost of debt of 7 percent. The firm’s cost of capital can be estimated as follows:
 > 
 > Cost of capital = 13.87%(600/1,000) + 7%(1 − .4)(400/1,000) = 10%
 > 
