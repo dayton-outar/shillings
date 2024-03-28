@@ -1894,12 +1894,132 @@ equity used in the dividend discount model should be the overall return on equit
 
 > The value of the firm is obtained by discounting the free cash flow to the firm at the weighted average cost of capital. Embedded in this value are the tax benefits of debt (in the use of the after-tax cost of debt in the cost of capital) and expected additional risk associated with debt (in the form of higher costs of equity and debt at higher debt ratios). Just as with the dividend discount model and the FCFE model, the version of the model used will depend on assumptions made about future growth.
 > 
+> **Stable Growth Firm**
 > 
-> @ pg. 383 --> 398 [^37]
+> As with the dividend discount and FCFE models, a firm that is growing at a rate that it can sustain in perpetuity—a stable growth rate—can be valued using a stable growth model.
+> 
+> **The Model** A firm with free cash flows to the firm growing at a stable growth rate can be valued using the following equation:
+> 
+> $$\huge{ \text{Value of firm} = { FCFF_1 \over { (WACC - g_n) } } }$$
+> 
+> where, \
+> $FCFF$ = Expected FCFF next year \
+> $WACC$ = Weighted average cost of capital \
+> $g_n$ = Growth rate in the FCFF forever
+> 
+> **The Caveats** There are two conditions that need to be met in using this model.
+First, the growth rate used in the model has to be less than or equal to the growth
+rate in the economy—nominal growth, if the cost of capital is in nominal terms, or
+real growth, if the cost of capital is a real cost of capital. Second, the characteristics
+of the firm have to be consistent with assumptions of stable growth. In particular,
+the reinvestment rate used to estimate free cash flows to the firm should be consis-
+tent with the stable growth rate. The best way of enforcing this consistency is to de-
+rive the reinvestment rate from the stable growth rate:
+> 
+> ${ \text{Reinvestment rate in stable growth} = \text{Growth rate} \over \text{Return on capital} }$
+> 
+> If reinvestment is estimated from net capital expenditures and change in working capital, the net capital expenditures should be similar to those other firms in the industry (perhaps by setting the ratio of capital expenditures to depreciation at industry averages) and the change in working capital should generally not be negative. A negative change in working capital creates a cash inflow, and while this may, in fact, be viable for a firm in the short term, it is dangerous to assume it in perpetuity.2 Even if industry averages are used to compute the reinvestment, it is always prudent to estimate what return on capital is imputed in that reinvestment (obtained by dividing the growth rate in perpetuity by the reinvestment rate). The cost of capital should also be reflective of a stable growth firm. In particular, the beta should be close to 1—the rule of thumb presented in the earlier chapters that the beta should be between 0.8 and 1.2 still holds. While stable growth firms tend to use more debt, this is not a prerequisite for the model, since debt policy is subject to managerial discretion.
+> 
+> **Limitations** Like all stable growth models, this one is sensitive to assumptions about the expected growth rate. This is accentuated, however, by the fact that the discount rate used in valuation is the WACC, which is significantly lower than the cost of equity for most firms. So, if keeping the growth rate below the risk free rate was good practice with equity valuation models, it is even more so with firm valuation. Furthermore, the model is sensitive to assumptions made about capital expenditures relative to depreciation. ..., if the inputs for reinvestment are not a function of expected growth the free cash flow to the firm can be inflated (or deflated) by reducing (increasing) capital expenditures relative to depreciation.
+> 
+> ...
+> 
+> **General Version of the FCFF Model**
+> 
+> ...
+> 
+> **The Model** The value of the firm, in the most general case, can be written as the present value of expected free cash flows to the firm:
+> 
+> $$\huge{ \text{Value of firm} = { \sum_{t=1}^{t=\infty} { FCFF_t \over {(1 + WACC)^t}} } }$$
+> 
+> where, \
+> $FCFF_t$ = Free cash flow to firm in year $t$ \
+> $WACC$ = Weighted average cost of capital
+> 
+> If the firm reaches steady state after $n$ years and starts growing at a stable growth rate $g_n$ after that, the value of the firm can be written as:
+> 
+> $$\huge{ \text{Value of firm} = { { \sum_{t=1}^{t=\infty} { FCFF_t \over {(1 + WACC)^t}} } + { {[FCFF_{n+1}/(WACC_s - g_n)]} \over (1 + WACC_g)^n } } }$$
+> 
+> where $WACC$ = Cost of capital ($WACC_g$: high growth; $WACC_s$: stable growth)
+> 
+> **Firms Model Best Suited For** Firms that either have very high or very low leverage or are in the process of changing their leverage are best valued using the FCFF approach. The calculation of FCFE is much more difficult in these cases because of the volatility induced by debt payments (or new issues), and the value of equity, which can a small slice of the total value of the firm for highly levered firms, is more sensitive to assumptions about growth and risk. It is worth noting, though, that in theory the two approaches should yield the same value for the equity. Getting them to agree in practice is an entirely different challenge ...
+> 
+> **Problems** There are three problems that we see with the free cash flow to the firm model. The first is that the free cash flows to equity are a much more intuitive measure of cash flows than cash flows to the firm. When asked to estimate cash flows, most of us look at cash flows after debt payments (free cash flows to equity), because we tend to think like business owners and consider interest payments and the repayment of debt as cash outflows. Furthermore, the free cash flow to equity is a real cash flow that can be traced and analyzed in a firm. The free cash flow to the firm is the answer to a hypothetical question: What would this firm’s cash flow be if it had no debt (and associated payments)?
+> 
+> The second is that its focus on predebt cash flows can sometimes blind us to real problems with survival. To illustrate, assume that a firm has free cash flows to the firm of $100 million but that its large debt load makes its free cash flows to equity equal to –$50 million. This firm will have to raise $50 million in new equity to survive, and if it cannot, all cash flows beyond this point are put in jeopardy. Using free cash flows to equity would have alerted you to this problem, but free cash flows to the firm are unlikely to reflect this.
+> 
+> The final problem is that the use of a debt ratio in the cost of capital to incorporate the effect of leverage requires us to make implicit assumptions that might not be feasible or reasonable. For instance, assuming that the market value debt ratio is 30 percent will require a growing firm to issue large amounts of debt in future years to reach that ratio. In the process, the book-to-debt ratio might reach stratospheric proportions and trigger covenants or other negative consequences. In fact, we count the expected tax benefits from future debt issues implicitly in the value of equity today.
+> 
+> ...
+> 
+> **Will Equity Value Be the Same under Firm and Equity Valuation?**
+> 
+> This model, unlike the dividend discount model or the FCFE model, values the firm rather than equity. The value of equity, however, can be extracted from the value of the firm by subtracting the market value of outstanding debt. Since this model can be viewed as an alternative way of valuing equity, two questions arise: Why value the firm rather than equity? Will the values for equity obtained from the firm valuation approach be consistent with the values obtained from the equity valuation approaches described ...?
+> 
+> _The advantage of using the firm valuation approach is that cash flows relating to debt do not have to be considered explicitly since the FCFF is a predebt cash flow, while they have to be taken into account in estimating FCFE._ In cases where the leverage is expected to change significantly over time, this is a significant time saver, since estimating new debt issues and debt repayments when leverage is changing can become increasingly messy the further into the future you go. The firm valuation approach does, however, require information about debt ratios and interest rates to estimate the weighted average cost of capital.
+> 
+> The value for equity obtained from the firm valuation and equity valuation approaches will be the same if you make consistent assumptions about financial leverage. Getting them to converge in practice is much more difficult. Let us begin with the simplest case—a no-growth, perpetual firm. Assume that the firm has $166.67 million in earnings before interest and taxes and a tax rate of 40 percent. Assume that the firm has equity with a market value of $600 million, with a cost of equity of 13.87 percent, and debt of $400 million, with a pretax cost of debt of 7 percent. The firm’s cost of capital can be estimated as follows:
+> 
+> Cost of capital = 13.87%(600/1,000) + 7%(1 − .4)(400/1,000) = 10%
+> 
+> Value of the firm = Earnings before interest and taxes(1 − t)/Cost of capital = 166.67(1 − .4)/.10 = $1,000
+> 
+> Note that the firm has no reinvestment and no growth. We can value equity in this firm by subtracting the value of debt:
+> 
+> Value of equity = Value of firm − Value of debt = $1,000 − $400 = $600 million
+> 
+> Now let us value the equity directly by estimating the net income:
+> 
+> Net income = (EBIT − Pretax cost of debt × Debt)(1 − t) = (166.67 − .07 × 400)(1 − .4) = $83.202 million
+> 
+> The value of equity can be obtained by discounting this net income at the cost of equity:
+> 
+> Value of equity = Net income/Cost of equity = 83.202/.1387 = $600 million
+> 
+> Even this simple example works because of the following three assumptions made implicitly or explicitly during the valuation:
+> 
+> 1. The values for debt and equity used to compute the cost of capital were equal to the values obtained in the valuation. Notwithstanding the circularity in reasoning—you need the cost of capital to obtain the values in the first place—it indicates that a cost of capital based on market value weights will not yield the same value for equity as an equity valuation model, if the firm is not fairly priced in the first place.
+> 
+> 2. There are no extraordinary or nonoperating items that affect net income but not operating income. Thus, to get from operating to net income all we do is subtract interest expenses and taxes.
+> 
+> 3. The interest expenses are equal to the pretax cost of debt multiplied by the market value of debt. If a firm has old debt on its books, with interest expenses that are different from this value, the two approaches will diverge.
+> 
+> If there is expected growth, the potential for inconsistency multiplies. You have to ensure that you borrow enough money to fund new investments to keep your debt ratio at a level consistent with what you are assuming when you compute the cost of capital.
+> [^37]
 
 ##### Adjusted Present Value
 
-> @ pg. 398 --> 419 [^37]
+> The adjusted present value (APV) approach begins with the value of the firm without debt. As debt is added to the firm, the net effect on value is examined by considering both the benefits and the costs of borrowing. To do this, it is assumed that the primary benefit of borrowing is a tax benefit, and that the most significant cost of borrowing is the added risk of bankruptcy.
+> 
+> **Mechanics of APV Valuation**
+> 
+> We estimate the value of the firm in three steps:
+> 
+> 1. Estimate the value of the firm with no leverage.
+> 2. Consider the present value of the interest tax savings generated by borrowing a given amount of money.
+> 3. Evaluate the effect of borrowing the amount on the probability that the firm will go bankrupt, and the expected cost of bankruptcy.
+> 
+> **Value of Unlevered Firm** The first step in this approach is the estimation of the value of the unlevered firm. This can be accomplished by valuing the firm as if it had no debt (i.e., by discounting the expected free cash flow to the firm at the unlevered cost of equity). In the special case where cash flows grow at a constant rate in perpetuity,
+> 
+> $$\huge{ \text{Value of unlevered firm} = E(FCFF_1)/(\rho_u − g) }$$
+> 
+> where $FCFF_1$ is the expected after-tax operating cash flow to the firm, $\rho_u$ is the unlevered cost of equity, and $g$ is the expected growth rate. In the more general case, you can value the firm using any set of growth assumptions you believe are reasonable for the firm.
+> 
+> The inputs needed for this valuation are the expected cash flows, growth rates, and the unlevered cost of equity. To estimate the unlevered cost of equity, we can draw on our earlier analysis and compute the unlevered beta of the firm:
+> 
+> $$\huge{ \beta_unlevered = \beta_current /[1 + (1 − t)D/E] }$$
+> 
+> where, \
+> $\beta_unlevered$ = Unlevered beta of the firm \
+> $\beta_current$ = Current equity beta of the firm \
+> $t$ = Tax rate for the firm \
+> $D/E$ = Current debt/equity ratio
+> 
+> This unlevered beta can then be used to arrive at the unlevered cost of equity.
+> 
+> **Expected Tax Benefit from Borrowing** The second step in this approach is the calculation of the expected tax benefit from a given level of debt. This tax benefit is a function of the tax rate and interest payments of the firm and is discounted at the cost of debt to reflect the riskiness of this cash flow. If the tax savings are viewed as a perpetuity,
+> 
+> [^37]
 
 ##### Excess Returns
 
