@@ -1916,7 +1916,7 @@ the reinvestment rate used to estimate free cash flows to the firm should be con
 tent with the stable growth rate. The best way of enforcing this consistency is to de-
 rive the reinvestment rate from the stable growth rate:
 > 
-> ${ \text{Reinvestment rate in stable growth} = \text{Growth rate} \over \text{Return on capital} }$
+> $\large{ \text{Reinvestment rate in stable growth} = { \text{Growth rate} \over \text{Return on capital} } }$
 > 
 > If reinvestment is estimated from net capital expenditures and change in working capital, the net capital expenditures should be similar to those other firms in the industry (perhaps by setting the ratio of capital expenditures to depreciation at industry averages) and the change in working capital should generally not be negative. A negative change in working capital creates a cash inflow, and while this may, in fact, be viable for a firm in the short term, it is dangerous to assume it in perpetuity.2 Even if industry averages are used to compute the reinvestment, it is always prudent to estimate what return on capital is imputed in that reinvestment (obtained by dividing the growth rate in perpetuity by the reinvestment rate). The cost of capital should also be reflective of a stable growth firm. In particular, the beta should be close to 1—the rule of thumb presented in the earlier chapters that the beta should be between 0.8 and 1.2 still holds. While stable growth firms tend to use more debt, this is not a prerequisite for the model, since debt policy is subject to managerial discretion.
 > 
