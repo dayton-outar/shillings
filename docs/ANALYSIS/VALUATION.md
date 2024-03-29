@@ -2230,7 +2230,7 @@ adding back the expected bankruptcy cost from the existing debt.
 > In making estimates of expected equity return spreads, we have to allow for the fact that the presence of large excess returns is likely to attract competition. These excess returns will fade over time and this should be reflected in the forecasts.
 > [^5]
 
-## Adjusted Funds from Operations
+##### Adjusted Funds from Operations
 
 > Adjusted funds from operations (AFFO) refers to the financial performance measure primarily used in the analysis of real estate investment trusts (REITs). The AFFO of a REIT, though subject to varying methods of computation, is generally equal to the trust's funds from operations (FFO) with adjustments made for recurring capital expenditures used to maintain the quality of the REIT's underlying assets. The calculation takes in the adjustment to GAAP straight-lining of rent, leasing costs, and other material factors.
 > 
