@@ -2232,7 +2232,55 @@ adding back the expected bankruptcy cost from the existing debt.
 
 ## Adjusted Funds from Operations
 
-> ... AFFO
+> Adjusted funds from operations (AFFO) refers to the financial performance measure primarily used in the analysis of real estate investment trusts (REITs). The AFFO of a REIT, though subject to varying methods of computation, is generally equal to the trust's funds from operations (FFO) with adjustments made for recurring capital expenditures used to maintain the quality of the REIT's underlying assets. The calculation takes in the adjustment to GAAP straight-lining of rent, leasing costs, and other material factors.
+> 
+> **Understanding Adjusted Funds From Operations—AFFO**
+> 
+> Regardless of how industry professionals choose to compute adjusted funds from operations (AFFO), it is considered to be a more accurate measure of residual cash flow for shareholders than simple FFO. Though FFO is commonly used, it does not deduct for capital expenditures required to maintain the existing portfolio of properties, so it doesn't quite measure the true residual cash flow. Professional analysts prefer AFFO because it takes into consideration additional costs incurred by the REIT—and additional income sources too, like rent increases. Thus, It provides for a more accurate base number when estimating present values and a better predictor of the REIT's future ability to pay dividends. This is a non-GAAP measure.
+> 
+> **Calculating Adjusted Funds From Operations—AFFO**
+> 
+> Before calculating the AFFO, an analyst must first determine the REIT's funds from operations (FFO). The FFO measures cash flow from a specified list of activities. FFO reflects the impact from the REIT's leasing and acquisition activity, as well as interest costs. FFO takes into account the REIT's net income including amortization and depreciation, but it excludes the capital gains from property sales. The reason these gains are not included is that they are one-time events and generally do not have a long-term effect on the REIT's future earnings potential.
+> 
+> The formula for FFO is:
+> 
+> $\large{ \text{FFO} = \text{net income} + \text{amortization} + \text{depreciation} - \text{capital gains from property sales} }$
+> 
+> Once the FFO is determined, the AFFO can be calculated. Though there is no one official formula, calculations for AFFO typically would be something like:
+> 
+> $\large{ \text{AFFO} = \text{FFO} + \text{rent increases} - \text{capital expenditures} - \text{routine maintenance amounts} }$
+> 
+> [^39]
+
+> **Importance of FFO (Funds from Operations)**
+> 
+> FFO stands for funds from operations, which most analysts consider the REIT equivalent of earnings in industrial stocks. FFO is used by analysts and investors as a measure of the cash flow available to the REIT for distributions (dividends) to shareholders. Most investors are familiar with the use of earnings per share in this capacity. However, for REITs, earnings are not the best measure of cash flow, largely due to the element of depreciation. Recall that REITs own real estate assets that are subject to large depreciation allowances, also gains or losses from the sale of properties may be significant in any given year. These two items can be very important when determining net income based on GAAP accounting rules. The reader should be aware of the difference between REIT earnings per share (EPS) and funds from operations (FFO) per share. The distinction between the two can best be made with a simple example:
+> 
+> |     | REIT Income Statement | REIT FFO |
+> |:--- | ---:| ---:|
+> | Gross Income | $100 | $100 |
+> | - Operating Expenses | $40 | $40 |
+> | Net Operating income | $60 | $60 |
+> | - Depreciation | $40 | - |
+> | + Gains on sale of property | $20 | - |
+> | Net income | $40 | - |
+> | Cash flow | - | $60 |
+> | EPS | $4 | - |
+> | FFO per share | - | $6 |
+> 
+> Assuming that the REIT above has 10 shares of stock outstanding, its earnings per share (EPS) would be reported as $4.00 per share. However, its funds from operations (FFO) per share would be $6.00. _Generally accepted accounting principles_ (GAAP) provide for depreciation of assets over time as their useful life is expended. Depreciation is assumed to occur in a predictable fashion and the time periods and rates of depreciation for different types of assets are well established. Most people are familiar with the concept and logic of depreciation based on their experiences with automobiles and other durable goods. As these goods get older, their mechanical parts break down and function less efficiently, decreasing their value. Real estate values tend to rise and fall over time based more on market conditions than physical conditions, although physical conditions can and do play a role in value. The result is that GAAP earnings calculations that use historical cost depreciation do not provide an accurate or meaningful picture of REIT financial performance.
+> 
+> The National Association of Real Estate Investment Trusts (NAREIT) recognized this problem and has worked to develop and promulgate FFO as a more representative measure of REIT performance. In 1991, NAREIT adopted a definition of FFO that was refined slightly in 2002 as follows:
+> 
+> "_Funds from operations_ means net income (computed in accordance with generally accepted accounting principles), excluding gains (or losses) from sales of property, plus depreciation and amortization, and after adjustments for unconsolidated partnerships and joint ventures. Adjustments for unconsolidated partnerships and joint ventures will be calculated to reflect funds from operations on the same basis."
+> 
+> The definition was well accepted in the industry and FFO has become a standard measure of REIT performance. FFO provides analysts and investors with an “apples to apples” measure for comparing performance among REITs. NAREIT suggests that the adoption of the FFO measure has made it easier for investors to understand REIT operations. It claims that increased understanding has facilitated the growth in REITs as an ownership form, a claim that has some merit.
+> 
+> As REITs have grown, FFO and its reporting have emerged as an important issue. The definition adopted by NAREIT was, of necessity, rather broad. It left considerable room for interpretation. During the IPO boom in 1992 and 1993, REIT initial pricing was generally couched in terms of a _dividend yield_ supported (at least in theory) by a projected FFO. The value of management’s ownership position was a function of the initial price, so there was a strong incentive to project FFO at maximum levels. By mid-1993, the page of the prospectus dealing with the projected FFO had become known as the _magic page_. The implication was that FFO was being created to support overly aggressive initial pricing.
+> 
+> Many analysts and investors have gone beyond the FFO to look at adjusted funds from operations (AFFO), funds available for distribution (FAD), or cash available for distribution (CAD). AFFO, FAD, and CAD are largely interchangeable, with different analysts using the term they prefer. The major difference between FFO and these supplementals relates to the issue of capital improvements, particularly ongoing capital improvements. To understand the difference, consider a multifamily apartment building. There are several major expenditures, such as painting and replacement of carpets, that have to be made on a recurring basis. For example, carpeting may be replaced every five years, and painting redone every three years. Accounting policies vary from REIT to REIT on how to handle these expenses. The most conservative treatment is to classify them as expenses, counting them against the current year’s income. Others choose to classify them as capital improvements, capitalizing them on the balance sheet and amortizing them over time. In the latter case, the amount spent for capital expenditures will not affect FFO because amortization is added back to EPS when calculating FFO. Thus, although either treatment is valid, the variation causes difficulty in comparing income and expense figures across REITs. NAREIT has encouraged REITs to provide supplemental disclosure to FFO in several areas, including capital improvements, straight-line rents, and results of discontinued operations.
+> 
+> [^40]
 
 ## Relative Valuation Model
 
@@ -3766,3 +3814,5 @@ In summary, while both the PPI and CPI measure changes in prices over time, they
 [^36]: Chapter 14. Free Cash Flow to Equity Discount Models. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^37]: Chapter 15. Firm Valuation: Cost of Capital and Adjusted Present Value Approaches. _Investment Valution: Tools and Techniques for Determining the Value of Any Asset_ by Aswath Damodaran.
 [^38]: Abstract. _Two DCF Approaches for Valuing Companies Under Alternative Financing Strategies (and How to Choose Between Them)_ by Isik Inselbag, Howard Kaufold.
+[^39]: [Adjusted Funds From Operations (AFFO): Definition and Calculation](https://www.investopedia.com/terms/a/affo.asp) by Will Kenton. Investopedia.
+[^40]: Chapter 21. Real Estate Investment Trusts. _Real Estate Finance and Investments_ by William B. Brueggeman, Jeffrey D. Fisher.
