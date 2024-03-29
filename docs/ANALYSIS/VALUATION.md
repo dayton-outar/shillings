@@ -2700,8 +2700,11 @@ $$\huge{
 > 
 > $\huge{ \text{Invested capital} = \text{BV of equity} + \text{BV of debt} – Cash }$
 > 
+> ...
 > 
 > In addition, the multiple may need to be adjusted for a firm’s cross holdings just as EV/EBITDA multiples were. ... The adjustment ... will require that you net out the portion of the market value and book value of equity that is attributable to subsidiaries.
+> 
+> ...
 > 
 > **Analysis**
 > 
@@ -3145,7 +3148,7 @@ Options are traded for several underlying assets, which includes,
 > 
 > _General Formulation for Binomial Price Path_
 > 
-> **Creating a Replicating Portfolio** The objective in creating a replicating portfolio is to use a combination of risk-free borrowing/lending and the underlying asset to create the same cash flows as the option being valued. The principles of arbitrage apply then, and the value of the option must be equal to the value of the replicating portfolio. In the case of the general formulation shown above, where stock prices can move either up to Su or down to Sd in any time period, the replicating portfolio for a call with strike price K will involve borrowing \$B and acquiring $\Delta$ of the underlying asset, where:
+> **Creating a Replicating Portfolio** The objective in creating a replicating portfolio is to use a combination of risk-free borrowing/lending and the underlying asset to create the same cash flows as the option being valued. The principles of arbitrage apply then, and the value of the option must be equal to the value of the replicating portfolio. In the case of the general formulation shown above, where stock prices can move either up to Su or down to Sd in any time period, the replicating portfolio for a call with strike price K will involve borrowing B dollars and acquiring $\Delta$ of the underlying asset, where:
 > 
 > $\huge{ \Delta = \text{ Number of units of the underlying asset bought } = { {C_u - C_s } \over { Su -Sd } } }$ 
 > 
