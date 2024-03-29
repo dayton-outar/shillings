@@ -3544,7 +3544,7 @@ Options are traded for several underlying assets, which includes,
 > 
 > **Variance in Firm Value** We can obtain the variance in firm value directly if both stocks and bonds in the firm are traded. Defining ${\sigma}_e^2$ as the variance in the stock price and ${\sigma}_d^2$ as the variance in the bond price, $w_e$ as the market-value weight of equity, and $w_d$ as the market-value weight of debt, we can write the variance in firm value as:[^21]
 > 
-> $$\huge{ {\sigma}_f^2 = { w_e^2 \sigma_e^2 } + { w_d^2 \sigma_d^2 } + { 2 w_e w_d { \rho_{ed} \sigma_e \sigma_d } } }$$
+> $$\huge{ \sigma_f^2 = { w_e^2 \sigma_e^2 } + { w_d^2 \sigma_d^2 } + { 2 w_e w_d { \rho_{ed} \sigma_e \sigma_d } } }$$
 > 
 > $\sigma_f^2$ is variance in firm value
 > 
