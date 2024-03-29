@@ -645,15 +645,17 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > where $BV$ = Book value of equity and $ROE_{t-1}$ = Return on equity in year $t - 1$
 > 
-> The net income in year t can be written as:
+> The net income in year $t$ can be written as:
 > 
-> $$\huge{ NI_t = (\text{Book value of equity}_{t–2} + \text{Retained earnings}_{t–1}) \times ROE_t }$$
+> $$\huge{ NI_t = ( BV_{t–2} + RE_{t–1} ) \times ROE_t }$$
+> 
+> where $RE$ is Retained earnings
 > 
 > Assuming that the return on equity is unchanged (i.e., $ROE_t = ROE_{t–1} = ROE$):
 > 
-> $$\huge{ g_t = {\text{Retained earnings}_{t–1}/NI_{t–1} \times ROE } = { \text{ Retention ratio } \times ROE } = { b \times ROE} }$$
+> $$\huge{ g_t = { RE_{t–1}/NI_{t–1} \times ROE } = { RR \times ROE } = { b \times ROE} }$$
 > 
-> where $b$ is the retention ratio. Note that the firm is not being allowed to raise equity by issuing new shares. Consequently, the growth rate in net income and the growth rate in earnings per share are the same in this formulation.
+> where $RR = b$ and $b$ is the retention ratio. Note that the firm is not being allowed to raise equity by issuing new shares. Consequently, the growth rate in net income and the growth rate in earnings per share are the same in this formulation.
 > 
 > **Growth in Net Income** If we relax the assumption that the only source of equity is retained earnings, the growth in net income can be different from the growth in earnings per share. Intuitively, note that a firm can grow net income significantly by issuing new equity to fund new projects, while earnings per share stagnates. To derive the relationship between net income growth and fundamentals, we need a measure of investment that goes beyond retained earnings. One way to obtain such a measure is to estimate how much equity the firm reinvests back into its businesses in the form of net capital expenditures and investments in working capital.
 > 
