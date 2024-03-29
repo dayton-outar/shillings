@@ -649,7 +649,7 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > $$\huge{ NI_t = ( BV_{t–2} + RE_{t–1} ) \times ROE_t }$$
 > 
-> where $RE$ is Retained earnings
+> where $RE$ is Retained earnings.
 > 
 > Assuming that the return on equity is unchanged (i.e., $ROE_t = ROE_{t–1} = ROE$):
 > 
@@ -2692,7 +2692,7 @@ $$\huge{
 > 
 > The value-to-book ratio is obtained by dividing the market value of both debt and equity by the book value of capital invested in a firm:
 > 
-> $\huge{ \text{Value-to-book ratio} = { \text{Market value of equity} + \text{Market value of debt} } \over { \text{Book value of equity} + \text{Book value of debt} } }$
+> $\huge{ \text{Value-to-book ratio} = { { \text{Market value of equity} + \text{Market value of debt} } \over { \text{Book value of equity} + \text{Book value of debt} } } }$
 > 
 > If the market value of debt is unavailable, the book value of debt can be used in the numerator as well. Needless to say, debt has to be consistently defined for both the numerator and denominator. For instance, if you choose to convert operating leases to debt for computing market value of debt, you have to add the present value of operating leases to the book value of debt as well.
 >
@@ -2725,9 +2725,11 @@ $$\huge{
 >
 > The analysis can be extended to cover high-growth firms, with the value-to-book capital ratio determined by the return on capital, cost of capital, growth rate, and reinvestment—in the high growth and stable growth periods:
 > 
-> $\huge{ { \text{Enterprise value}_0 \over \text{Invested capital}_0 } = { { ROC_h \times { { (1 - RIR_h) \times (1 + g) \times \left[ 1 - { { (1 + g)^n \over { 1 + k_{c,h}^n } } } \right] } \over { k_{c,h} - g } } } + { ROC_h \times { (1 - RIR_s) \times { PR_n \times (1 + g)^n \times (1 + g_n) } \over { (k_{c,s} - g_n)(1 + k_{c,h})^n } } } } }$
+> $$\huge{ { V_0 \over IC_0 } = { { ROC_h \times { { (1 - RIR_h) \times (1 + g) \times \left[ 1 - { { (1 + g)^n \over { 1 + k_{c,h}^n } } } \right] } \over { k_{c,h} - g } } } + { ROC_h \times { (1 - RIR_s) \times { PR_n \times (1 + g)^n \times (1 + g_n) } \over { (k_{c,s} - g_n)(1 + k_{c,h})^n } } } } }$$
 > 
 > where,\
+> $V$ = Enterprise value \
+> $IC$ = Invested capital \
 > $ROC$ = Return on capital ($h$: high-growth; $s$: stable period) \
 > $RIR$ = Reinvestment rate ($h$: high-growth; $s$: stable period) \
 > $k_c$ = Cost of capital ($h$: high-growth; $s$: stable period)
