@@ -3544,9 +3544,11 @@ Options are traded for several underlying assets, which includes,
 > 
 > **Variance in Firm Value** We can obtain the variance in firm value directly if both stocks and bonds in the firm are traded. Defining ${\sigma}_e^2$ as the variance in the stock price and ${\sigma}_d^2$ as the variance in the bond price, $w_e$ as the market-value weight of equity, and $w_d$ as the market-value weight of debt, we can write the variance in firm value as:[^21]
 > 
-> $\huge{ { {\sigma}_{firm}^2 } = { {w_e^2} {\sigma_e^2} } + { {w_d^2} {\sigma_d^2}} + { 2 {w_e} {w_d} { {\rho}_{ed} } {\sigma_e} {\sigma}_d } }$
+> $\huge{ { {\sigma}_f^2 } = { {w_e^2} {\sigma_e^2} } + { {w_d^2} {\sigma_d^2}} + { 2 {w_e} {w_d} { {\rho}_{ed} } {\sigma_e} {\sigma}_d } }$
 > 
-> where ${\rho}_{ed}$ is the correlation between the stock and the bond prices. When the bonds of the firm are not traded, we can use the variance of similarly rated bonds as the estimate of ${\sigma}_d^2$ and the correlation between similarly rated bonds and the firm’s stock as the estimate of ${\rho}_{ed}$.
+> $\sigma_f^2$ is variance in firm value
+> 
+> where $\rho_{ed}$ is the correlation between the stock and the bond prices. When the bonds of the firm are not traded, we can use the variance of similarly rated bonds as the estimate of $\sigma_d^2$ and the correlation between similarly rated bonds and the firm’s stock as the estimate of $\rho_{ed}$.
 > 
 > When companies get into financial trouble, this approach can yield misleading results as both its stock prices and its bond prices become more volatile. An alternative that often yields more reliable estimates is to use the average variance in firm value for other firms in the sector. Thus the value of equity in a deeply troubled steel company can be estimated using the average variance in firm value of all traded steel companies.
 > 
