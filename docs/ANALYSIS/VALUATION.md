@@ -461,9 +461,12 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > _Step 4:_ Estimate an unlevered beta for the firm being analyzed, taking a weighted average of the unlevered betas for the businesses it operates in, using the proportion of firm value derived from each business as the weights. If values are not available, use operating income or revenues as weights. This weighted average is called the bottom-up unlevered beta.
 > 
-> $$\huge{ \text{Unlevered beta}_f = { {\sum}_{j=1}^{j=k} { ( \text{Unlevered beta}_j \times \text{Value weight}_j ) } } }$$
+> $$\huge{ U_f = { \sum_{j=1}^{j=k} { ( U_j \times W_j ) } } }$$
 > 
-> where the firm is assumed to operating in $k$ different businesses.
+> where the firm is assumed to operating in $k$ different businesses \
+> $U_f$ = Unlevered beta of firm \
+> $U$ = Unlevered beta \
+> $W$ = Value weight
 >
 > _Step 5:_ Finally, estimate the current market values of debt and equity at the firm and use this debt-to-equity ratio to estimate a levered beta.
 > 
