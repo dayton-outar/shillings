@@ -641,9 +641,9 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > Also note that the $ROE$ in period $t$ can be written as $NI$ in period $t$ divided by the Book value of equity in period $t – 1$. Given the definition of return on equity, the net income in year $t – 1$ can be written as:
 > 
-> $$\huge{ NI_{t - 1} = \text{Book value of equity}_{t-2} \times ROE_{t-1} }$$
+> $$\huge{ NI_{t-1} = BV_{t-2} \times ROE_{t-1} }$$
 > 
-> where $ROE_{t-1}$ = Return on equity in year $t - 1$
+> where $BV$ = Book value of equity and $ROE_{t-1}$ = Return on equity in year $t - 1$
 > 
 > The net income in year t can be written as:
 > 
@@ -651,7 +651,7 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 > 
 > Assuming that the return on equity is unchanged (i.e., $ROE_t = ROE_{t–1} = ROE$):
 > 
-> $\huge{ g_t = { \text{Retained earnings}_{t–1}/NI_{t–1} \times ROE } = { \text{ Retention ratio } \times ROE } = { b \times ROE} }$
+> $$\huge{ g_t = {\text{Retained earnings}_{t–1}/NI_{t–1} \times ROE } = { \text{ Retention ratio } \times ROE } = { b \times ROE} }$$
 > 
 > where $b$ is the retention ratio. Note that the firm is not being allowed to raise equity by issuing new shares. Consequently, the growth rate in net income and the growth rate in earnings per share are the same in this formulation.
 > 
