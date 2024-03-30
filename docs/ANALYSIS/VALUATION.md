@@ -144,7 +144,7 @@ When determining current market prices, it's important to consider the reliabili
 
 ## Discounted Cashflow Model
 
-![Discounted Cash Flow Selection Flow](/.attachments/valuation-discounted.cashflow.selection.flow.png)
+![Discounted Cash Flow Selection Flow](/.attachments/valuation-discounted.cashflow.selection.flow-2.png)
 
 _Discounted Cash Flow Selection Flow_
 
