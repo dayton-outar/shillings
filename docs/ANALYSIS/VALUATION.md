@@ -144,6 +144,10 @@ When determining current market prices, it's important to consider the reliabili
 
 ## Discounted Cashflow Model
 
+![Discounted Cash Flow Selection Flow](/.attachments/valuation-discounted.cashflow.selection.flow.png)
+
+_Discounted Cash Flow Selection Flow_
+
 As stated previously, _Discounted Cashflow_ involves estimating the present value of a company's _future cash flow_. To do this, the _growth rate_ and the _risk_ associated with the asset must be assessed.
 
 > $\huge{Value = { \sum_{t=1}^{t=n} { {CF_{t} } \over (1 + r)^t } } }$
