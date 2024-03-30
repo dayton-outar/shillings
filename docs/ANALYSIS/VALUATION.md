@@ -539,7 +539,7 @@ Both debt and equity has _risk_ associated with them and their are about 3 main 
 
 ### Growth
 
-![Growth Model Selection](/.attachments/valuation-growth.model.selection.png)
+![Growth Model Selection](/.attachments/valuation-growth.model.selection-2.png)
 
 _Growth Model Selection_
 
