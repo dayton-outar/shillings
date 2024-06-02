@@ -20,7 +20,16 @@ To determine if this product will deliver 10 times the gains compared to alterna
 - Accuracy: percentage of correct vs incorrect outputs
 - Innovation: number of new features or industry recognition
 
-The solution is projected to be a **discontinuous** innovation with a **defensible** technology and a **disruptive** business model. It's _discontinuous_ because it takes a different look at representing information from the stock market. It contains intellectual property that is _somewhat defensible_. It's aim is to deliver value and reduce cost to increase participation.
+The solution is projected to be a **discontinuous** innovation with a **defensible** technology and a **disruptive** business model. It's _discontinuous_ because it takes a different look at representing information from the stock market. It contains intellectual property that is _somewhat defensible_. It's aim is to deliver value and reduce cost to increase participation. It is _disruptive_ because it aims to significantly alter the current way of doing things in the stock market industry, specifically for the brokerage department. The questions it will ask of the stock brokerages in Jamaica are,
+
+- What needs to be improved in the delivery of stock brokerage services?
+- What manual processes can be automated and digitized?
+  - Turnaround time for signing up to trade stocks (Making use of NIDs to verify prospective customer/trader identity)
+  - Disclosure of identity information traded for value-added services based on progressive exposure of risk (public analysis for free; ability to do transaction requires government validity of identity)
+  - User-friendly and contextual delivery of visualization of analytical information
+  - Timely interpretation and analysis of annual financial reports and IPOs
+  - Ease of trade orders via electronic means
+  - Tracking of trade orders
 
 We definitely have to be cognizant that quality is important but branding and speed of delivery to market is more important. We need to avoid the trap of _faster, better and cheaper_.[^3] The aim is to deliver a unique perspective of consuming information to an _underserved_ market.
 
