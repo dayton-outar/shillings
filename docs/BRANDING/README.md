@@ -7,6 +7,7 @@ Without any knowledge and experience in branding, I decided to use the name, "sh
  - [Positioning: The Battle for your Mind](./POSITIONING.md)
  - [Alchemy: The Dark Art and Curious Science of Creating Magic in Brands, Business, and Life](#the-alchemy)
    - Signalling, Satisficing and Psycho-physics
+ - [Influence](#influence)
 
 The word "shillings" is not generic but rather a specific term related to currency. "Shillings" has been used as a form of currency in various countries, and the term is not limited to a single region. However, the specific value and usage of shillings can vary from one country to another. It's important to note that many countries have transitioned to other forms of currency and no longer use shillings. It's important to note that it is still used in Kenya and Kenya has a stock exchange called [Nairobi Securities Exchange](https://www.nse.co.ke/).
 
@@ -99,6 +100,33 @@ Rory Sutherland's "Alchemy" delves into several nuanced concepts, including sign
 Sutherland integrates these concepts to show how businesses can create compelling value propositions and marketing strategies that resonate with consumers on a deeper psychological level. By leveraging signaling, satisficing, and psychophysics, businesses can better understand and influence consumer behavior, leading to more effective and innovative approaches to branding, advertising, and product development.
 
 In essence, "Alchemy" suggests that by embracing these unconventional and often overlooked aspects of human behavior, marketers and business leaders can unlock new opportunities and create "magic" in their brands and strategies.
+
+## Influence
+
+Robert Cialdini's book "Influence: The Psychology of Persuasion" outlines seven key principles of influence that explain how and why people can be persuaded to change their behavior. Here is a summary of these critical points:
+
+1. **Reciprocity**:
+   - People feel obligated to return favors and concessions that others have given them. If someone does something for you, you're more likely to do something for them in return.
+
+2. **Commitment and Consistency**:
+   - Once people commit to something, they are more likely to follow through with it to remain consistent with their commitments. This principle leverages the human desire for consistency in thoughts, beliefs, and actions.
+
+3. **Social Proof**:
+   - People look to others to determine their own actions, especially when they are uncertain. The behavior and actions of others provide a model for how to act, often leading people to conform to what they see as the group's behavior.
+
+4. **Authority**:
+   - Individuals tend to obey authority figures and experts, often without questioning. This principle is based on the socialized respect for and deference to authority.
+
+5. **Liking**:
+   - People are more likely to be influenced by those they like. Factors that enhance likability include physical attractiveness, similarity, compliments, and cooperative efforts.
+
+6. **Scarcity**:
+   - Opportunities seem more valuable when they are less available. The perception of scarcity can drive people to desire something more and act quickly to obtain it before it becomes unavailable.
+
+7. **Unity**:
+   - The principle of Unity emphasizes the power of "we" and the importance of being part of a tribe. People are more likely to be influenced by those with whom they share a common identity, such as family, friends, or groups they strongly identify with. This sense of belonging and shared identity can significantly enhance persuasive efforts.
+
+Cialdini's book provides numerous examples and practical applications of these principles, illustrating how they can be used ethically and effectively in various situations, from marketing and sales to everyday social interactions.
 
 ## Videos
 
