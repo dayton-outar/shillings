@@ -1,8 +1,3 @@
-# Qarab
-
-An intelligent task and roster management system
-
-
 # Using Nuget
 
 To add a nuget feed to Visual Studio Nuget Browser. Do the following:
