@@ -88,10 +88,15 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 14. [How To Use Environment Variables in Vue.js](https://www.digitalocean.com/community/tutorials/vuejs-working-with-environment-variables)
 15. [Tracking Single Page Applications With Google Analytics](https://www.bounteous.com/insights/2018/03/30/single-page-applications-google-analytics)
 16. [Google Analytics with Single Page Application(SPA) in VueJs](https://morioh.com/p/49394ea827f5)
+17. [... how to set htmlWebpackPlugin.options.title in ... Vue 3 projects](https://stackoverflow.com/questions/62023604/where-to-find-or-how-to-set-htmlwebpackplugin-options-title-in-project-created-w)
+18. [Thoughts on Server-Sent Events, HTTP/2, and Envoy](https://medium.com/@kaitmore/server-sent-events-http-2-and-envoy-6927c70368bb)
+19. [Event Streaming Made Easy with Event-Stream and JavaScript Fetch](https://medium.com/@bs903944/event-streaming-made-easy-with-event-stream-and-javascript-fetch-8d07754a4bed)
+20. [How to Install Google Analytics 4 (Updated in 2022) with GTAG or GTM](https://youtu.be/6upqv3kaIIk) - [Analytics Mania - Google Tag Manager & Analytics](https://www.youtube.com/@AnalyticsMania)
+21. [JS Fiddle: Animating Points in Highcharts](https://jsfiddle.net/BlackLabel/bxa64930/)
 
 ## Tutorial Videos
 
-1. [Vuex Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9i371QO_Rtkl26MwtiJ30P2) - [The Net Ninja](https://www.youtube.com/c/TheNetNinja)
+1. [SvelteKit Tutorial](https://www.youtube.com/playlist?list=PLC3y8-rFHvwjifDNQYYWI6i06D7PjF0Ua)
 2. [Vue JS 2](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gQcYgjhBoeQH7wiAyZNrYa) - [The Net Ninja](https://www.youtube.com/c/TheNetNinja)
 3. [Vue.js Todo App](https://www.youtube.com/playlist?list=PLEhEHUEU3x5q-xB1On4CsLPts0-rZ9oos) - [Andre Madarang](https://www.youtube.com/c/drehimself)
 4. [GraphQL Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9iK6Qhn-QLcXCXPQUov1U7f) - [The Net Ninja](https://www.youtube.com/c/TheNetNinja)

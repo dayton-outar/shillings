@@ -8,7 +8,7 @@ const config = {
     user: process.env.MSSQLUSER,
     password: process.env.MSSQLPWD,
     server: process.env.O8DBHOST,
-    port: parseInt(process.env.MSSQLPORT, 10),
+    port: parseInt(process.env.MSSQLPORT, 10), // HACK: Commented when being used to access database remotely thru firewall
     database: 'stocks',
     options: {
         enableArithAbort: true

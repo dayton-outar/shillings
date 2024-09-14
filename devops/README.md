@@ -17,7 +17,7 @@ Here's a overview of the DevOps progression,
    ![Edit Name Servers on GoDaddy](/.attachments/godaddy-nameservers.png)
 
 8. Create domain on Linode   
-9. Install Ingress Controller into Kubernetes cluster on Linode
+9. Install Ingress Controller into Kubernetes cluster on Linode using Helm (`helm install ingress-nginx`)
 10. Generate private key and Certificate Signing Request (.csr) file from ingress controller
 11. Purchase SSL certificate from [GoDaddy](https://www.godaddy.com/) and use the content of the .csr file generated in prior step
 12. Create TLS secret from the provided SSL certificate files
@@ -164,6 +164,22 @@ To copy a file from pod to local machine,
 kubectl cp <pod-name>:<fully-qualified-file-name> /<path-to-your-file>/<file-name> -c <container-name>
 ```
 
+## Docker Commands on Shared CPU
+
+To run the scraper,
+
+```bash
+docker run --name root-scraper -itd -e O8DBHOST=db -e MSSQLPWD='[Password]' --network=root_default krisyslimited/reader:1.0
+```
+To run the api,
+
+```bash
+docker run -d --name root-api -p 5000:5000 -e ASPNETCORE_URLS=http://+:5000 -e HARPOON_DB_HST=db -e HARPOON_DB_PWD='[Password]' --network=root_default krisyslimited/harpoon:1.5
+```
+
+When changing UI, copy the files from `dist` folder to `/var/www/html` folder using scp.
+
+
 Do I need [Fluentd](https://docs.fluentd.org/)?
 
 ## Further Reading
@@ -192,6 +208,11 @@ Do I need [Fluentd](https://docs.fluentd.org/)?
 22. [Guides - Manage DNS Records](https://www.linode.com/docs/products/networking/dns-manager/guides/manage-dns-records/)
 23. [NGINX: Generate CSRs (Certificate Signing Requests)](https://ie.godaddy.com/help/nginx-generate-csrs-certificate-signing-requests-3601)
 24. [Kubernetes service - Loadbalancer with HTTPS](https://stackoverflow.com/questions/50950590/kubernetes-service-loadbalancer-with-https)
+25. [How To Set Up a Firewall with UFW on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-ubuntu-18-04)
+26. [How To Install and Use Docker Compose on Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-22-04)
+27. [How to copy files from one machine to another using ssh](https://unix.stackexchange.com/questions/106480/how-to-copy-files-from-one-machine-to-another-using-ssh)
+28. [How To Install Nginx on Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-22-04)
+29. [Nginx Redirect HTTP to HTTPS](https://linuxhint.com/nginx-redirect-http-https/)
 
 ## Tutorial Video
 
@@ -209,3 +230,4 @@ Do I need [Fluentd](https://docs.fluentd.org/)?
 12. [[ Kube 34 ] Monitor Kubernetes Logs using EFK stack - Elasticsearch, FluentBit & Kibana](https://youtu.be/8nWh1GLd7nY)
 13. [Kubernetes Secrets in 5 Minutes!](https://youtu.be/cQAEK9PBY8U)
 14. [Kubernetes Secret Management Explained](https://youtu.be/o36yTfGDmZ0)
+15. [How to Set Up SSL with NGINX](https://youtu.be/X3Pr5VATOyA) - [NGINX](https://www.youtube.com/@nginx_official)

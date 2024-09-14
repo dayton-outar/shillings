@@ -8,6 +8,7 @@ Networks used to facilitate payment of goods and services on this platform.
 2. [Mastering Ethereum](https://github.com/ethereumbook/ethereumbook)
 3. [List of Bank Response Codes | Credit Card Decline Codes](https://paymentcloudinc.com/blog/credit-card-decline-codes/)
 4. [Response Codes and Error Codes | Mastercard Merchant Presented QR | Mastercard Developers](https://developer.mastercard.com/mastercard-merchant-presented-qr/documentation/server-apis/response-error-codes/)
+5. [8 top digital wallet companies](https://www.techtarget.com/whatis/feature/Top-digital-wallet-companies) by [Amanda Hetler](https://www.techtarget.com/contributor/Amanda-Hetler)
 
 ## Tutorial Videos
 
