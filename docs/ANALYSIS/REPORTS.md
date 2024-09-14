@@ -333,6 +333,68 @@ Investopedia defines _goodwill_ as follows[^2],
 
 Bonds, leases and pensions are usually classified as long-term liabilities.
 
+### Stockholder's Rights
+
+> As part of the percentage ownership described earlier the ordinary shareholder or common stockholder usually has four basic rights in proportion to the number of shares owned:
+> 
+> 1. The right to receive dividends if and when these are declared by the Board of Directors. It is possible that the shareholders may not receive any dividends if the company performs poorly.
+> 
+> 2. The right to vote at meetings of the shareholders.
+> 
+> 3. The right to claim a portion of the company's undivided assets,
+> 
+> 4. The right to subscribe to additional stock or share offerings before they are made available to the general public. This is known as pre-emptive right.[^4]
+
+A shareholder's right to claim a portion of a company's undivided assets is closely related to their ownership stake in the company. Here's a breakdown of how this works:
+
+#### 1. **Nature of Shareholding:**
+   - **Ownership Stake:** Shareholders are partial owners of a company, with their ownership proportional to the number of shares they hold relative to the total outstanding shares.
+   - **Undivided Interest:** Shareholders do not own specific assets of the company. Instead, they hold an undivided interest in the company's assets as a whole. This means that shareholders own a proportional share of the total value of the company's assets, not specific pieces of property.
+
+#### 2. **Right to a Share of Assets:**
+   - **During Liquidation:** Shareholders have a right to claim a portion of the company's assets if the company is liquidated (i.e., wound up and its assets sold off). The proceeds from the sale of the assets are distributed among creditors, bondholders, and finally, shareholders.
+     - **Preferred Shareholders:** If there are preferred shareholders, they have a higher claim to the company's assets than common shareholders, meaning they are paid out first, up to the amount of their claim.
+     - **Common Shareholders:** After all debts and claims have been settled, common shareholders are entitled to the remaining assets, distributed according to their shareholding percentage.
+   
+   - **Proportional Distribution:** The distribution of assets to shareholders is proportional to their ownership stake. For example, if a shareholder owns 10% of the company's shares, they are entitled to 10% of the remaining assets after all obligations have been met.
+
+#### 3. **No Direct Claim to Specific Assets:**
+   - **Indivisibility:** Shareholders cannot claim specific assets of the company (e.g., buildings, patents, etc.). Their claim is against the company as a whole and is tied to the overall value of the company's assets.
+
+#### 4. **Regular Business Operations:**
+   - **Dividends:** In the ordinary course of business, shareholders can benefit from the company’s assets through dividends, which are paid out of the company’s profits. However, dividends do not affect the ownership of the company's assets; they are simply a distribution of profits.
+   - **Asset Sales:** If the company sells an asset, the proceeds become part of the company’s overall assets, which may eventually lead to dividends or increase the value of the company, thus indirectly benefiting shareholders.
+
+#### 5. **Voting Rights and Influence:**
+   - **Corporate Governance:** Shareholders have voting rights that allow them to influence significant decisions that could impact the company's assets, such as mergers, acquisitions, or the sale of major assets.
+
+In summary, a shareholder's right to claim a portion of a company's undivided assets primarily comes into play during the liquidation of the company, and this right is proportional to their ownership stake in the company.
+
+The ***pre-emptive right***, also known as the right of first refusal or subscription rights, is a shareholder's privilege to maintain their proportional ownership in a company by having the opportunity to purchase additional shares before the company offers them to the general public. Here's a detailed explanation:
+
+### 1. **Purpose of the Pre-emptive Right:**
+   - **Ownership Protection:** The main purpose of pre-emptive rights is to protect existing shareholders from dilution of their ownership percentage when a company issues new shares. Without this right, the issuance of new shares could reduce the percentage of ownership held by existing shareholders.
+   - **Control Maintenance:** This right is particularly important for shareholders who wish to maintain a certain level of control or influence over the company, as it allows them to keep their voting power proportional to their original stake.
+
+### 2. **How the Pre-emptive Right Works:**
+   - **Issuance of New Shares:** When a company decides to issue new shares to raise additional capital, it typically offers these shares to the public or specific investors. However, if pre-emptive rights are in place, existing shareholders are given the first opportunity to purchase these new shares.
+   - **Proportional Offering:** The number of shares offered to each shareholder under the pre-emptive right is typically proportional to their current ownership stake. For example, if a shareholder owns 5% of the company, they would be entitled to purchase 5% of the new shares being issued.
+   - **Subscription Period:** Shareholders usually have a limited period, known as the subscription period, during which they can decide whether to exercise their pre-emptive rights and purchase the additional shares.
+
+### 3. **Implications of Pre-emptive Rights:**
+   - **Preventing Dilution:** If a shareholder exercises their pre-emptive right, they can maintain their current ownership percentage. This means that their voting power and entitlement to dividends remain unchanged relative to the total number of shares.
+   - **Strategic Decision:** Shareholders can choose not to exercise their pre-emptive rights, which would result in a dilution of their ownership percentage. This might be acceptable if they are not concerned about maintaining their level of influence in the company.
+
+### 4. **Example Scenario:**
+   - Suppose a company with 1,000,000 shares outstanding decides to issue 100,000 new shares. An existing shareholder who owns 100,000 shares (or 10% of the company) would be offered the opportunity to purchase 10,000 of the new shares (10% of 100,000). By purchasing these shares, the shareholder can maintain their 10% ownership of the company even after the new shares are issued.
+
+### 5. **Legal and Corporate Considerations:**
+   - **Incorporation Documents:** The availability of pre-emptive rights depends on the company's incorporation documents (e.g., articles of incorporation or bylaws) or applicable laws in the jurisdiction where the company is incorporated.
+   - **Waiving Pre-emptive Rights:** In some cases, shareholders might waive their pre-emptive rights, either explicitly or through an agreement, which allows the company to issue new shares without offering them to existing shareholders first.
+
+In summary, the pre-emptive right allows shareholders to protect their ownership stake in a company by purchasing additional shares before they are offered to the general public, ensuring that their influence and proportional ownership are not diluted by new stock issuances.
+
+
 ### Stockholder's Equity
 
 > The articles of incorporation referenced earlier establish the maximum number of shares of stock a company can legally issue. We call these **authorized shares**. When the company receives cash or other consideration in exchange for authorized stock certificates, the shares become **issued shares**. We call shares that are issued and held by the stockholders **outstanding shares**. Often the articles of incorporation specify the process whereby the shareholders can authorize additional shares in the future.
@@ -866,3 +928,4 @@ These are the classification of shenanigans that can be undertaken by companies 
 [^1]: Excerpts from Chapter 15 - Capital and reserves, The Finance Book by Stuart Warner and Si Hussain
 [^2]: [Goodwill (Accounting): What It Is, How It Works, How To Calculate](https://www.investopedia.com/terms/g/goodwill.asp). Investopedia.
 [^3]: See [Efficiency Ratios](./MULTIPLIERS.md#efficiency)
+[^4]: A Guide to Jamaica Securities Market. Jamaica Stock Exchange.

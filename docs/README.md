@@ -97,6 +97,8 @@ Consumers are not satisfied with the manner in which information is presented by
 
 Another important business idea for consideration is to start a brokerage firm, where this product will be used to access the services of the broker. According to Jamaican laws (the Securities Act[^2]),
 
+> To be able to trade securities on the Trading Floor of the Exchange, a trading license is required. Only qualified and approved JSE broker-dealer firms may acquire and hold trading licenses. A company has to be approved as a member/dealer by the Board of the Jamaica Stock Exchange. Senior executives, shareholders and employees dealing with the public must pass a “ Fit and Proper” test and the firm has to meet certain basic financial requirements on an ongoing basis. Only approved representatives of stock broking firms are allowed to trade on the floor of the Jamaica Stock Exchange.[^5]
+
 Individuals eligible for a dealer's licence includes the following,
 
 1. he satisfies one of the following requirements, that is to say—
@@ -112,6 +114,14 @@ Individuals eligible for a dealer's licence includes the following,
 3. has a net worth of at least ten million dollars or has acquired indemnity insurance for at least that amount.
 
 These are the requirements for starting a stock brokerage. If those requirements can be met, then that firm can use this as a way to position itself to members of the market that want a real-time digitized approach to the business of trading stocks.
+
+The onboarding process to get prospective customers to trade stocks in the current framework of Jamaican brokerages appears to be tedious. The challenge with delivering a 10x tech disruption is to build the system so intuitive that stating all the steps to be onboarded is not necessary. All the affordances easily navigates the user to conduct their affairs without being stumped.
+
+Setting up a brokerage in Jamaica also involves the following important requirements,
+
+1. The JSE and the Financial Services Commission must register all employees of these firms who assist customers in making investment decisions and who trade on our market.
+
+2. These JSE member-dealer organizations must meet rigorous regulatory standards. Firms are obliged to monitor their own compliance with applicable rules and regulations for possible violations. Each year, JSE RMOD (JSE's compliance department) examines every member organization that does business with the public to determine whether these requirements are met.
 
 ## Monetization
 
@@ -510,3 +520,4 @@ This cash flow statement projection provides insights into how cash is generated
 [^2]: [The Securities Act](https://laws.moj.gov.jm/legislation/subsids/S/The%20Securities%20Act.pdf)
 [^3]: [Value Props @ Faster, Better, Cheaper](https://www.youtube.com/watch?v=q8d9uuO1Cf4&t=3138s)
 [^4]: [Chocolate Milk Was Invented in Jamaica](https://www.smithsonianmag.com/smart-news/chocolate-milk-was-invented-jamaica-180949734/)
+[^5]: A Guide to Jamaica Securities Market. Jamaica Stock Exchange.

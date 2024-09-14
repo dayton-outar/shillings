@@ -181,11 +181,67 @@ On the more conservative side of trading, there are those protégés of Buffet t
 
 Once the _dividend yeild_ is high and the business can be sustained for a long period of time, it is a pretty attractive prospect for investors.
 
+## Going Public
+
+There are different methods by which companies can go public, meaning they offer their shares to the public and get listed on a stock exchange. Let's break down each method:
+
+### 1. **Initial Public Offering (IPO):**
+   - **What It Is**: An Initial Public Offering (IPO) is the most common method for a company to go public. In an IPO, a company sells a portion of its shares to the public for the first time.
+   - **Process**: 
+     - The company works with investment banks to underwrite the offering. 
+     - A prospectus is issued, detailing the company’s financials, business model, risks, and the price range for the shares.
+     - Investors can subscribe to the IPO, and shares are allocated based on demand. 
+     - Once the shares are sold, the company’s stock begins trading on a public exchange.
+   - **Purpose**: The main goal of an IPO is to raise capital for the company to fund expansion, pay off debt, or invest in new projects. It also allows early investors and company insiders to sell their shares, potentially realizing significant profits.
+
+### 2. **Listing by Introduction:**
+   - **What It Is**: Listing by Introduction is a method where a company becomes publicly traded without raising new capital or issuing new shares.
+   - **Process**: 
+     - The company’s existing shares are listed on a stock exchange.
+     - There’s no public offering or issuance of new shares, meaning no money is raised in the process.
+     - This method is typically used when a company already has a broad shareholder base, or when a private company wants to go public without changing its capital structure.
+   - **Purpose**: It allows the company to gain the benefits of being publicly listed, such as increased visibility and liquidity for existing shareholders, without the complexities and costs associated with an IPO.
+
+### 3. **Offer by Tender:**
+   - **What It Is**: In an Offer by Tender, potential investors are invited to submit bids for the shares they wish to purchase.
+   - **Process**:
+     - The company sets a minimum price for the shares.
+     - Investors submit their bids, stating how many shares they want to buy and the price they are willing to pay.
+     - The company then allocates shares based on these bids, typically starting with the highest bids and working downwards until all the shares are sold.
+   - **Purpose**: This method can help the company achieve the best possible price for its shares by allowing the market to determine their value through competitive bidding.
+
+### 4. **Offer for Sale:**
+   - **What It Is**: In an Offer for Sale, existing shareholders sell their shares to the public, rather than the company issuing new shares.
+   - **Process**:
+     - A prospectus is issued to potential investors, detailing the number of shares available and the price.
+     - The shares are then sold to the public, and the proceeds go to the existing shareholders rather than the company itself.
+   - **Purpose**: This method is often used by private equity firms or other major shareholders who want to exit their investment in the company by selling their shares to the public.
+
+### 5. **Placement:**
+   - **What It Is**: In a Placement, the company sells its shares directly to a select group of investors, such as institutional investors, rather than offering them to the general public.
+   - **Process**:
+     - Shares are placed with large investors like mutual funds, pension funds, or wealthy individuals.
+     - The price is usually negotiated directly with these investors, often at a discount to the current market price to entice them to buy.
+   - **Purpose**: Placement is a quicker and often less expensive method of raising capital compared to a full public offering, as it involves fewer regulatory hurdles and lower marketing costs.
+
+### Summary:
+Each of these methods provides a different way for a company to go public or for existing shareholders to sell their shares. The choice of method depends on the company’s goals, the need for capital, the existing ownership structure, and market conditions. An IPO is the most well-known method, but Listing by Introduction, Offer by Tender, Offer for Sale, and Placement offer alternative routes with their own advantages and drawbacks.
+
 ## News
 
 _News_ can be crucial to investors but what they look for are [corporate actions](./ACTIONS.md) that will affect the stock in a _bullish_ or _bearish_ way. Will stock price go up based on a particular news? Or will go down? Or will is this news _neutral_ meaning it does not affect _price movement_?
 
 News can be crucial, especially to investors that lean more towards _Technical Analysis_.
+
+According to _A Guide to Jamaica Securities Market_ published by the Jamaica Stock Exchange,
+
+> The decision to buy or sell depends on the investor's overall opinion as to the future prospects of a company's shares. This opinion is formed and influenced by factors such as the company's growth prospects; the type of industry, individual and corporate taxes and capital market conditions.[^1]
+
+Observing the human and social behaviour of investors will reveal that the perception of the ongoing stories being told by a public company affects decision-making.
+
+The mentioned guide elaborates further on such stories as it states,
+
+> While a company's past performance is important, even more important are its future prospects. A company that has not been making money might turn around, perhaps under ***new management***, after increasing its efficiency or by ***developing an innovative new product***. Likewise, just because a company has made money in the past does not mean it will continue to do so. Perhaps the company's successful ***CEO is retiring***, the company is ***defending a big lawsuit***, ***workers are threatening to strike*** or ***competition has heightened***. Announcements along these lines could mean the company's future is uncertain or negative. A report that an individual or a company is trying to ***buy another business*** usually increases that business' stock prices. That's because the purchaser has to buy a majority of the stock to gain control of the company. To do so, the suitor must persuade stockholders to sell their stock by offering an attractive price for their shares.[^1]
 
 ## Conclusion
 
@@ -205,3 +261,5 @@ So, in a nutshell that is what analysis on stocks are about: analysing the asset
 1. [How I Pick Stocks](https://youtu.be/IPwDxoomxuA)
 1. [INTERVIEW: Hedge Fund Manager Reveals Secrets You'll Never Hear On CNBC](https://youtu.be/M49iUDnxFlI?si=9FY7lUbzkK-CZd2g)
 1. [My RECESSION PROOF Investment Plan For 2024](https://youtu.be/dy8qv-5rA7o?si=_BTW_JNJDOQKvSEu) - [George Gammon](https://www.youtube.com/@GeorgeGammon)
+
+[^1]: A Guide to Jamaica Securities Market. Jamaica Stock Exchange.

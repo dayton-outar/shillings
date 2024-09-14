@@ -122,6 +122,8 @@ Jamaica has a tax system that includes various taxes at the national and local l
 16. **Sugary Beverage Tax:** 
     - A tax on sugary beverages to promote public health.
 
+> Shares not traded on the Jamaica Stock Exchange will attract Stamp Duty and Transfer Tax. These charges are considerably higher than the customary brokerage fees.[^3]
+
 It's important to note that tax rates and regulations may change over time, so it's advisable to consult with the Jamaica Tax Administration (TAJ) or a qualified tax professional for the most up-to-date information and guidance on taxation in Jamaica. Additionally, specific exemptions and deductions may apply to certain taxpayers and transactions.
 
 ### Tax Rates
@@ -199,3 +201,4 @@ To get the most current information on the state of capital markets in Jamaica, 
 
 [^1]: [Bank of Jamaica](https://boj.org.jm/)
 [^2]: [OEC Profile of Jamaica, 2021](https://oec.world/en/profile/country/jam)
+[^3]: A Guide to Jamaica Securities Market. Jamaica Stock Exchange.

@@ -515,6 +515,10 @@ See below screenshot of BUY order of TransJamaican Highway stock units on JTrade
 
 ![JTrader BUY order for TJH Units at $3.25 Limit Order](/.attachments/jtrader.order.tjh.21340.png)
 
+> Besides the broker's commission, the other charges attached to the purchase and sale of shares are: the Jamaica Stock Exchange Cess of 0.19625 % on either side of the transaction. General Consumption Tax is charged on both the commission and the Jamaica Stock Exchange's Cess.[^4]
+
+A "cess" is a type of tax or levy imposed by a government or regulatory body. In the context of the Jamaica Stock Exchange, the cess is a small percentage fee charged on the purchase or sale of shares. This fee is used to fund the operations of the exchange or to contribute to other financial regulatory purposes. It's an additional cost that investors need to consider when trading shares.
+
 ##### Few Good Mentions
 
  - [Investing.com](https://www.investing.com/stock-screener/?sp=country::119|sector::a|industry::a|equityType::a|exchange::124%3Ceq_market_cap;1)
@@ -549,3 +553,4 @@ See below screenshot of BUY order of TransJamaican Highway stock units on JTrade
 [^1]: [Importance of Domain Authority as the Key Site Metric for Growth](https://www.responsify.com/importance-of-domain-authority/) by Ginny Dwyer
 [^2]: [NATIONAL IDENTIFICATION SYSTEM (NIDS)](https://opm.gov.jm/portfolios/national-identification-system/)
 [^3]: [BOJ to introduce e-KYC this year](https://www.jamaicaobserver.com/business/boj-to-introduce-e-kyc-this-year/)
+[^4]: A Guide to Jamaica Securities Market. Jamaica Stock Exchange.
