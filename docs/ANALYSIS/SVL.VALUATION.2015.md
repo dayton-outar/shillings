@@ -2,7 +2,7 @@
 
 Credit to 97083497, 03046872, 05031957, 620087213 & 620086948 enrolled in Advanced Corporate Finance (SBFI6020), Mona School of Business and Management
 
-Below are the data sources, inputs and calculation used to determine the intrinsic value for GraceKennedy.
+Below are the data sources, inputs and calculation used to determine the intrinsic value for Supreme Ventures Ltd.
 
 | Data Point | Source | Value |
 |:--- |:--- | ---:|
