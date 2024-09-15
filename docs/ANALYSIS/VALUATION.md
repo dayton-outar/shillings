@@ -3762,6 +3762,11 @@ In summary, while both the PPI and CPI measure changes in prices over time, they
 
 <image src="/.attachments/chatgpt-logo.png" alt="Chat GPT Logo" width="16" height="16" />
 
+## Examples
+
+1. [GraceKennedy Valuation, 2022](./GK.VALUATION.2022.md)
+2. [Supreme Ventures Valuation, 2015](./SVL.VALUATION.2015.md)
+
 ## Further Reading
 
 1. Corporate Finance: The Core, Global Edition by Jonathan Berk, Peter Demarzo
