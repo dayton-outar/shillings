@@ -13,4 +13,4 @@ Below are the data sources, inputs and calculation used to determine the intrins
 
 
 [^1]: Supreme Ventures started out mostly with equity but the leverage is not stable
-[^2]: _Growth, g_ = Retention Ration x Return on Equity
+[^2]: _Growth, g_ = Retention Ratio × Return on Equity
