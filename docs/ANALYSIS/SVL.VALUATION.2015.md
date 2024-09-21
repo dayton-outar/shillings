@@ -173,9 +173,13 @@ Assume the following data for a company:
 - Corporate tax rate ( ${ T }$ ): 30%.
 
 First, calculate the weights:
+
 $${
 V = E + D = 200 + 100 = 300 \text{ million}
 }$$
+
+...
+
 $${
 \frac{E}{V} = \frac{200}{300} = 0.67, \quad \frac{D}{V} = \frac{100}{300} = 0.33
 }$$
