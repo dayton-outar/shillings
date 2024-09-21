@@ -16,7 +16,7 @@ Below are the data sources, inputs and calculation used to determine the intrins
 | Data Point | Calculation/Source | Result |
 |:--- |:--- | ---:|
 | Risk-free Rate (Annual) | Estimating 5-Year Average of a 12.5% 6 month T-Bill | 15% |
-| Market Risk Premium | [Annualized Return](#annualized-return) of JSE Main Index (2010 - 2015) | 9.95%  |
+| Market Risk Premium | [Annualized Return](#annualized-return) of JSE Main Index Weekly Data (2010 - 2015) | 9.95%  |
 | Levered Beta (β) | SVL Stock Prices vs. JSE Main Index Regression Analysis (2010 - 2015) | 0.9114 |
 | Enterprise Risk Premium | Levered Beta (β) × ( Market Risk Premium - Risk-free Rate ) | -4.6% |
 | Cost of Equity | Risk-free Rate + Enterprise Risk Premium (or Cost of Equity) | 10.4% |
