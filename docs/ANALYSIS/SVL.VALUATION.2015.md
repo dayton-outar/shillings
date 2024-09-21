@@ -86,9 +86,9 @@ The term premium in this case is deduced to be **2.5%**, which compensates inves
 
 ### Annualized Return
 
-\[
-\text{Annualized Return} = \left( \frac{\text{Ending Value}}{\text{Beginning Value}} \right)^{\frac{1}{n}} - 1
-\]
+$$\huge{
+  \text{Annualized Return} = \left( \frac{\text{Ending Value}}{\text{Beginning Value}} \right)^{\frac{1}{n}} - 1
+}$$
 
 
 [^1]: Supreme Ventures started out mostly with equity but the leverage is not stable
