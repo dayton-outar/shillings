@@ -30,14 +30,15 @@ Since 5-year bonds usually yield more than 6-month bonds, let’s assume a basic
 #### Step 2: **Add the Spread**
 Simply add the spread to the 6-month T-Bill rate:
 
-\[
+$${
 \text{5-Year Yield} = \text{6-month T-Bill Rate} + \text{Spread}
-\]
+}$$
+
 Substitute the given values:
 
-\[
+$${
 \text{5-Year Yield} = 12.5\% + 2.5\% = 15\%
-\]
+}$$
 
 ### Deducing the Term Premium
 
@@ -46,9 +47,9 @@ To deduce the **term premium**, we need to break down its components. The term p
 #### 1. **Interest Rate Expectations (Expectations Hypothesis)**
 One component of long-term yields is the market’s expectation of future short-term rates. According to the **expectations hypothesis**, the yield on a long-term bond should reflect the average of the expected future short-term rates. If the future 6-month rates are expected to stay close to the current 6-month T-Bill rate, we can express the long-term yield as:
 
-\[
+$${
 \text{5-Year Yield (without premium)} = \frac{\text{(6-month rate + Expected future 6-month rates over the next 5 years)}}{5}
-\]
+}$$
 
 In this case, we’re given a 6-month T-Bill rate of 12.5%. If we assume that future rates will hover around this same level, the **average expected rate** over 5 years is still approximately **12.5%**.
 
@@ -71,15 +72,15 @@ Let’s assume, based on historical averages during periods of uncertainty, the 
 
 To derive the term premium, we use the following relationship:
 
-\[
+$${
 \text{Term Premium} = \text{5-Year Yield} - \text{Average Expected 6-Month Rates}
-\]
+}$$
 
 Given the 5-year yield estimate is **15%**, and the average expected 6-month rate is **12.5%** (based on the 6-month T-Bill rate), we can calculate the term premium as:
 
-\[
+$${
 \text{Term Premium} = 15\% - 12.5\% = 2.5\%
-\]
+}$$
 
 #### Conclusion:
 The term premium in this case is deduced to be **2.5%**, which compensates investors for the additional risks (such as inflation, interest rate volatility, and liquidity) associated with holding a 5-year bond instead of a 6-month T-Bill. This premium is added to the expected short-term rates to arrive at the 5-year yield of 15%.
