@@ -185,7 +185,7 @@ $${
 Now calculate WACC:
 
 $${
-\text{WACC} = \left( 0.67 \times 10\% \right) + \left( 0.33 \times 6\% \times (1 - 0.30) \right)
+\text{WACC} = \left( 0.67 \times 10 \right) + \left( 0.33 \times 6 \times (1 - 0.30) \right)
 }$$
 
 $${
