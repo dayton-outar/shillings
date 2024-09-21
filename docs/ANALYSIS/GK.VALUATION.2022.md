@@ -75,3 +75,35 @@ _JMSE:GK Total Equity Value_
 | Current discount | Discount to share price of J$98.48 <br />= (J$182.53 - J$98.48)/ J$182.53 | 46.0% |
 
 _JMSE:GK Discount to Share Price_
+
+## Appendix
+
+### Equity Risk Premium vs. Market Risk Premium
+
+The terms **Equity Risk Premium (ERP)** and **Market Risk Premium (MRP)** are closely related but can have slightly different meanings depending on the context. Here’s how they compare:
+
+### 1. **Equity Risk Premium (ERP)**
+The **Equity Risk Premium** refers specifically to the extra return that investors demand for holding **equities (stocks)** instead of a risk-free asset (such as government bonds). It represents the compensation for the higher risk associated with investing in stocks, as opposed to safer assets.
+
+\[
+\text{Equity Risk Premium} = \text{Expected Return on Stocks} - \text{Risk-Free Rate}
+\]
+
+### 2. **Market Risk Premium (MRP)**
+The **Market Risk Premium** is a broader term that can refer to the extra return required for investing in the **overall market portfolio**, which often includes equities but can also include other assets, depending on the market definition.
+
+In practice, the **Market Risk Premium** is usually used interchangeably with the Equity Risk Premium when discussing the returns expected from the stock market relative to the risk-free rate.
+
+\[
+\text{Market Risk Premium} = \text{Expected Market Return} - \text{Risk-Free Rate}
+\]
+
+### Key Differences (in Some Contexts):
+- **Equity Risk Premium** is typically specific to the **equity (stock) market**.
+- **Market Risk Premium** could refer to the premium for taking on the risk of investing in the **entire market** or a broader portfolio, which may include other assets like bonds, real estate, etc., but is often used to mean the equity market.
+
+### Common Usage:
+In most financial models, especially in the **Capital Asset Pricing Model (CAPM)**, the **Market Risk Premium** is commonly used to refer to the excess return of the stock market over the risk-free rate. So, in practical terms, the **Equity Risk Premium** and the **Market Risk Premium** are generally recognized as the same thing when discussing equities and their risk relative to risk-free assets.
+
+### Summary:
+In most cases, **Equity Risk Premium** and **Market Risk Premium** are used interchangeably to refer to the excess return expected from the stock market compared to a risk-free asset, although technically, the Market Risk Premium could be broader.

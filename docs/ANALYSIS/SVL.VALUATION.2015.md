@@ -16,7 +16,13 @@ Below are the data sources, inputs and calculation used to determine the intrins
 | Data Point | Calculation/Source | Result |
 |:--- |:--- | ---:|
 | Risk-free Rate (Annual) | Estimating 5-Year Average of a 12.5% 6 month T-Bill | 15% |
-| Market Risk Premium | Annualized Return of JSE Main Index (2010 - 2015) | 9.95%  |
+| Market Risk Premium | [Annualized Return](#annualized-return) of JSE Main Index (2010 - 2015) | 9.95%  |
+| Levered Beta (β) | SVL Stock Prices vs. JSE Main Index Regression Analysis (2010 - 2015) | 0.9114 |
+| Enterprise Risk Premium | Levered Beta (β) × ( Market Risk Premium - Risk-free Rate ) | -4.6% |
+| Cost of Equity | Risk-free Rate + Enterprise Risk Premium (or Cost of Equity) | 10.4% |
+
+
+## Appendix
 
 ### Deducing Risk-free Rate
 
@@ -82,7 +88,6 @@ $${
 \text{Term Premium} = 15\% - 12.5\% = 2.5\%
 }$$
 
-#### Conclusion:
 The term premium in this case is deduced to be **2.5%**, which compensates investors for the additional risks (such as inflation, interest rate volatility, and liquidity) associated with holding a 5-year bond instead of a 6-month T-Bill. This premium is added to the expected short-term rates to arrive at the 5-year yield of 15%.
 
 ### Annualized Return
@@ -91,6 +96,101 @@ $$\huge{
   \text{Annualized Return} = \left( \frac{\text{Ending Value}}{\text{Beginning Value}} \right)^{\frac{1}{n}} - 1
 }$$
 
+### Estimating Cost of Equity of an Investment from it's Beta
+
+$$\huge{ 
+  \text{Cost of Capital} = r_f + {\beta}_I \times (E[R_m] - r_f)
+}$$
+
+### Weighted Average Cost of Capital
+
+The **Weighted Average Cost of Capital (WACC)** represents a firm's overall cost of capital, which is the weighted average of the cost of equity and the cost of debt. It reflects the required return on a company’s capital and is used as a discount rate to evaluate investment projects. The formula for WACC is:
+
+$$\huge{
+\text{WACC} = \left( \frac{E}{V} \times r_e \right) + \left( \frac{D}{V} \times r_d \times (1 - T) \right)
+}$$
+
+Where:
+- ${ E }$ = Market value of the firm's equity
+- ${ D }$ = Market value of the firm's debt
+- ${ V }$ = Total value of the firm ( ${ V = E + D }$ )
+- ${ r_e }$ = Cost of equity (the return required by equity investors)
+- ${ r_d }$ = Cost of debt (the effective interest rate the firm pays on its debt)
+- ${ T }$ = Corporate tax rate (since interest payments on debt are tax-deductible)
+
+### Key Components:
+
+1. **Cost of Equity ( ${ r_e }$ ):**
+   The cost of equity is the return that equity investors expect to earn on their investment. It is often estimated using the **Capital Asset Pricing Model (CAPM)**:
+   
+   $$\large{
+   r_e = r_f + \beta_e \times (E[R_m] - r_f)
+   }$$
+   
+   Where:
+   - ${ r_f }$ = Risk-free rate (usually based on government bond yields),
+   - ${ \beta_e }$ = Levered beta of the company’s equity,
+   - ${ E[R_m] - r_f }$ = Market risk premium (expected return of the market minus the risk-free rate).
+
+2. **Cost of Debt ( ${ r_d }$ ):**
+   The cost of debt is the effective interest rate that the company pays on its borrowings. Since interest is tax-deductible, the after-tax cost of debt is:
+
+   $${
+   \text{After-tax Cost of Debt} = r_d \times (1 - T)
+   }$$
+
+   Where ${ T }$ is the corporate tax rate.
+
+3. **Weights ( ${ \frac{E}{V} }$ and ${ \frac{D}{V} }$ ):**
+   The weights represent the proportion of financing that comes from equity ( ${ \frac{E}{V} }$ ) and debt ( ${ \frac{D}{V} }$ ) in the firm’s capital structure. These weights are based on the market values of equity and debt, not the book values.
+
+### Steps to Calculate WACC:
+
+1. **Determine the Market Value of Equity ( ${ E }$ ):**
+   The market value of equity is the company’s share price multiplied by the number of outstanding shares.
+
+2. **Determine the Market Value of Debt ( ${ D }$ ):**
+   The market value of debt can be more complex to estimate but is often approximated by the book value of debt or by discounting the future interest payments.
+
+3. **Calculate the Cost of Equity ( ${ r_e }$ ):**
+   Using the CAPM formula or another model, estimate the cost of equity based on the risk-free rate, beta, and market risk premium.
+
+4. **Estimate the Cost of Debt ( ${ r_d }$ ):**
+   The cost of debt is generally the average yield to maturity on the company’s outstanding debt or the interest rate on recent borrowings.
+
+5. **Calculate the Weights ( ${ \frac{E}{V} }$ and ${ \frac{D}{V} }$ ):**
+   The weights are calculated by dividing the market value of equity and debt by the total firm value ${ V = E + D }$.
+
+6. **Apply the WACC Formula:**
+   Plug all values into the WACC formula to determine the company’s weighted average cost of capital.
+
+### Example Calculation:
+Assume the following data for a company:
+- Market value of equity ( ${ E }$ ): $200 million,
+- Market value of debt ( ${ D }$ ): $100 million,
+- Cost of equity ( ${ r_e }$ ): 10%,
+- Cost of debt ( ${ r_d }$ ): 6%,
+- Corporate tax rate ( ${ T }$ ): 30%.
+
+First, calculate the weights:
+$${
+V = E + D = 200 + 100 = 300 \text{ million}
+}$$
+$${
+\frac{E}{V} = \frac{200}{300} = 0.67, \quad \frac{D}{V} = \frac{100}{300} = 0.33
+}$$
+
+Now calculate WACC:
+$${
+\text{WACC} = \left( 0.67 \times 10\% \right) + \left( 0.33 \times 6\% \times (1 - 0.30) \right)
+}$$
+$${
+\text{WACC} = 6.7\% + 1.386\% = 8.086\%
+}$$
+
+Thus, the company’s WACC is **8.09%**.
+
+The **WACC** reflects the company’s blended cost of capital across its debt and equity, taking into account the tax benefits of debt. It is a critical input for valuing projects and investments, as it serves as the discount rate for future cash flows.
 
 [^1]: Supreme Ventures started out mostly with equity but the leverage is not stable
 [^2]: _Growth, g_ = Average Retention Ratio × Average Return on Equity
