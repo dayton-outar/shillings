@@ -10,21 +10,23 @@ Below are the data sources, inputs and calculation used to determine the intrins
 |:--- |:--- | ---:|
 | Valuation Model | | 2 Stage Free Cash Flow to Equity |
 | Levered Free Cash Flow | Extrapolated from most recent financials. | See below |
-| Discount Rate (Cost of Equity) | See below | 14.7% |
+| Discount Rate | [Cost of Equity](#cost-of-equity) | 14.7% |
 | Perpetual Growth Rate | 5-Year Average of JM Long-Term Govt Bond Rate | 7.5% |
 
 _JMSE: GK Discounted Cash Flow Data Sources_
+
+## Cost of Equity
 
 An important part of a discounted cash flow is the discount rate, below we explain how it has been calculated.
 
 | Data Point | Calculation/Source | Result |
 |:--- |:--- | ---:|
-| Risk-Free Rate | 5-Year Average of JM Long-Term Govt Bond Rate | 7.5% |
+| Risk-free Rate | 5-Year Average of JM Long-Term Govt Bond Rate | 7.5% |
 | Equity Risk Premium | S&P Global | 9.0% |
 | Consumer Retailing Unlevered Beta | Simply Wall St/ S&P Global | 0.55 |
 | Re-levered Beta | = 0.33 + [(0.66 × Unlevered beta) × (1 + (1 - tax rate) (Debt/Market Equity))]<br />= 0.33 + [(0.66 × 0.551) × (1 + (1 - 25.0%) (34.81%))] | 0.795 |
 | Levered Beta | Levered Beta limited to 0.8 to 2.0<br />(practical range for a stable firm) | 0.8 |
-| Discount Rate/Cost of Equity | = Cost of Equity = Risk Free Rate + (Levered Beta × Equity Risk Premium)<br />= 7.54% + (0.800 × 9.00%) | 14.74% |
+| Discount Rate/Cost of Equity | = Cost of Equity = Risk-free Rate + (Levered Beta × Equity Risk Premium)<br />= 7.54% + (0.800 × 9.00%) | 14.74% |
 
 _Calculation of Discount Rate/ Cost of Equity for JMSE:GK_
 
@@ -69,7 +71,7 @@ _JMSE:GK Total Equity Value_
 
 |     | Calculation | Result |
 |:--- |:--- | ---:|
-| Value per share (JMD) | From above. | JMD182.53 |
+| Value per share (JMD) | From above. | J$182.53 |
 | Current discount | Discount to share price of J$98.48 <br />= (J$182.53 - J$98.48)/ J$182.53 | 46.0% |
 
 _JMSE:GK Discount to Share Price_
