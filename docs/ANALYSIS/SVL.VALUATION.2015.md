@@ -178,18 +178,18 @@ $${
 V = E + D = 200 + 100 = 300 \text{ million}
 }$$
 
-...
-
 $${
 \frac{E}{V} = \frac{200}{300} = 0.67, \quad \frac{D}{V} = \frac{100}{300} = 0.33
 }$$
 
 Now calculate WACC:
+
 $${
 \text{WACC} = \left( 0.67 \times 10\% \right) + \left( 0.33 \times 6\% \times (1 - 0.30) \right)
 }$$
+
 $${
-\text{WACC} = 6.7\% + 1.386\% = 8.086\%
+\text{WACC} = 6.7 + 1.386 = 8.086
 }$$
 
 Thus, the company’s WACC is **8.09%**.
