@@ -118,7 +118,7 @@ Where:
 - ${ r_d }$ = Cost of debt (the effective interest rate the firm pays on its debt)
 - ${ T }$ = Corporate tax rate (since interest payments on debt are tax-deductible)
 
-### Key Components:
+#### Key Components:
 
 1. **Cost of Equity ( ${ r_e }$ ):**
    The cost of equity is the return that equity investors expect to earn on their investment. It is often estimated using the **Capital Asset Pricing Model (CAPM)**:
@@ -144,7 +144,7 @@ Where:
 3. **Weights ( ${ \frac{E}{V} }$ and ${ \frac{D}{V} }$ ):**
    The weights represent the proportion of financing that comes from equity ( ${ \frac{E}{V} }$ ) and debt ( ${ \frac{D}{V} }$ ) in the firm’s capital structure. These weights are based on the market values of equity and debt, not the book values.
 
-### Steps to Calculate WACC:
+#### Steps to Calculate WACC:
 
 1. **Determine the Market Value of Equity ( ${ E }$ ):**
    The market value of equity is the company’s share price multiplied by the number of outstanding shares.
@@ -164,7 +164,7 @@ Where:
 6. **Apply the WACC Formula:**
    Plug all values into the WACC formula to determine the company’s weighted average cost of capital.
 
-### Example Calculation:
+#### Example Calculation:
 Assume the following data for a company:
 - Market value of equity ( ${ E }$ ): $200 million,
 - Market value of debt ( ${ D }$ ): $100 million,
