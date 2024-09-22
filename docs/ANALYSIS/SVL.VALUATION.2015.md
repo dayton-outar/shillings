@@ -21,8 +21,20 @@ Below are the data sources, inputs and calculation used to determine the intrins
 | Enterprise Risk Premium | Levered Beta (β) × ( Market Risk Premium - Risk-free Rate ) | -4.6% |
 | Cost of Equity | Risk-free Rate + Enterprise Risk Premium (or Cost of Equity) | 10.4% |
 | Cost of Debt | | |
-| Corporate Tax Rate | | |
+| Corporate Tax Rate | Using rate effective in 2013. See [Corporate Tax Rate](#corporate-tax-rate) | 25% |
 
+### Breakdown of Cost of Capital
+
+| Year  | Long-term liabilities ('000) | Current portion of long-term liabilities ('000) | Total Debt ('000) | Cash ('000)  | Net Debt ('000) | Total Equity ('000) | Enterprise Value ('000) | Net Debt to Enterprise Value (D/(D+E)) | Equity to Enterprise Value (E/(D+E)) | Cost of Equity | Cost of Debt | Tax Rate | WACC  |
+|-------|-------------------------------|-----------------------------------------------|------------------|--------------|----------------|--------------------|------------------------|----------------------------------------|-------------------------------------|----------------|--------------|----------|-------|
+| 2015  |                               |                                               | $0               | $1,639,049   | -$1,639,049    | $12,289,608         | $10,650,559             | -15%                                   | 115%                               | 10.40%         | 3.86%        | 25.00%   | 11.55% |
+| 2014  | $77,000                       | $77,000                                       | $77,000          | $2,227,493   | -$2,150,493    | $5,037,157          | $2,886,664              | -74%                                   | 174%                               | 10.40%         | 7.48%        | 25.00%   | 13.96% |
+| 2013  | $216,555                      | $141,408                                      | $218,408         | $1,474,083   | -$1,255,675    | $7,331,569          | $6,075,894              | -21%                                   | 121%                               | 10.40%         | 7.93%        | 25.00%   | 11.32% |
+| 2012  | $189,444                      | $142,708                                      | $359,263         | $1,660,455   | -$1,301,192    | $7,516,177          | $6,214,985              | -21%                                   | 121%                               | 10.40%         | 9.85%        | 33.33%   | 11.20% |
+| 2011  | $192,761                      | $214,605                                      | $404,049         | $1,418,477   | -$1,014,428    | $7,911,765          | $6,897,337              | -15%                                   | 115%                               | 10.40%         | 14.28%       | 33.33%   | 10.52% |
+| 2010  |                               | $118,614                                      | $311,375         | $883,921     | -$572,546      | $5,801,961          | $5,229,415              | -11%                                   | 111%                               | 10.40%         | 14.21%       | 33.33%   | 10.50% |
+
+The WACC remained relatively stable, averaging around 11.5%, with variations depending on debt levels, cash holdings, tax rates, and cost of debt.
 
 ## Appendix
 
@@ -103,6 +115,17 @@ $$\huge{
 $$\huge{ 
   \text{Cost of Capital} = r_f + {\beta}_I \times (E[R_m] - r_f)
 }$$
+
+### Corporate Tax Rate
+
+Between 2010 and 2015, Jamaica's corporate tax rate was as follows:
+
+- **2010 to 2013**: The standard corporate income tax rate was **33.33%**.
+- **2013 onwards**: The government implemented a dual-rate system:
+  - **25%** for most companies.
+  - **30%** for regulated companies such as financial institutions (e.g., banks and insurance companies).
+
+This tax reform aimed to simplify the system and stimulate business growth.
 
 ### Weighted Average Cost of Capital
 
