@@ -20,9 +20,20 @@ Below are the data sources, inputs and calculation used to determine the intrins
 | Levered Beta (β) | SVL Stock Prices vs. JSE Main Index Regression Analysis (2010 - 2015) | 0.9114 |
 | Enterprise Risk Premium | Levered Beta (β) × ( Market Risk Premium - Risk-free Rate ) | -4.6% |
 | Cost of Equity | Risk-free Rate + Enterprise Risk Premium (or Cost of Equity) | 10.4% |
-| Cost of Debt | | |
+| Cost of Debt | Varies based on the year. See [Breakdown of Cost of Debt](#breakdown-of-cost-of-debt) | [--](#breakdown-of-cost-of-debt) |
 | Corporate Tax Rate | Using rate effective in 2013. See [Corporate Tax Rate](#corporate-tax-rate) | 25% |
 | Weighed Average Cost of Capital | Average of Cost of Capital (2010 - 2015). See [Breakdown of Cost of Capital](#breakdown-of-cost-of-capital) | 11.5% |
+
+### Breakdown of Cost of Debt
+
+|                                                           | 2010             | 2011             | 2012             | 2013             | 2014             | 2015             |
+|:----------------------------------------------------------|-----------------:|-----------------:|-----------------:|-----------------:|-----------------:|-----------------:|
+| Long-term liabilities ('000)                              | $192,761         | $189,444         | $216,555         | $77,000          |                  |                  |
+| Current portion of Long-term liabilities ('000)           | $118,614         | $214,605         | $142,708         | $141,408         | $77,000          |                  |
+| ***Total Debt ('000)***                                   | ***$311,375***   | ***$404,049***   | ***$359,263***   | ***$218,408***   | ***$77,000***    | ***$0***         |
+| ***Interest Expense***                                    | ***$41,608***    | ***$44,449***    | ***$39,791***    | ***$28,486***    | ***$16,344***    | ***$2,973***     |
+| **[Cost of Debt](#cost-of-debt)**                         | **14.21%**       | **14.28%**       | **9.85%**        | **7.93%**        | **7.48%**        | **3.86%**        |
+
 
 ### Breakdown of Cost of Capital
 
@@ -123,6 +134,35 @@ $$\huge{
 $$\huge{ 
   \text{Cost of Capital} = r_f + {\beta}_I \times (E[R_m] - r_f)
 }$$
+
+### Cost of Debt
+
+The cost of debt can be calculated using total debt and interest expense. This method provides a straightforward way to estimate the effective interest rate that a company pays on its outstanding debt. The formula is:
+
+$$\huge{
+   \text{Cost of Debt} = \frac{\text{Interest Expense}}{\text{Total Debt}}
+}$$
+
+### Steps to Calculate:
+
+1. **Determine Interest Expense:** 
+   - This is typically found on the company's income statement and represents the total interest payments made during a specific period.
+
+2. **Determine Total Debt:**
+   - This includes all interest-bearing liabilities, which can be found on the balance sheet. It typically comprises both long-term and short-term debt.
+
+3. **Apply the Formula:**
+   - Plug the values into the formula to calculate the cost of debt as a percentage.
+
+### Example:
+
+- If a company has an interest expense of $100,000 and total debt of $1,000,000, the cost of debt would be:
+$${
+\text{Cost of Debt} = \frac{100,000}{1,000,000} = 0.10 \text{ or } 10\%
+}$$
+
+### Note:
+- This calculation gives the nominal cost of debt. To find the after-tax cost of debt, you can multiply the cost of debt by (1 - tax rate), as interest expenses are tax-deductible.
 
 ### Corporate Tax Rate
 
