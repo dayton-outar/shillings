@@ -7,7 +7,7 @@ Below are the data sources, inputs and calculation used to determine the intrins
 | Data Point | Source | Value |
 |:--- |:--- | ---:|
 | Valuation Model | | Free Cash Flow to Firm[^1] |
-| Levered Free Cash Flow? | Extrapolated from most recent financials. | See below |
+| Levered Free Cash Flow? | Extrapolated from 2010 - 2015 financials. | See below |
 | Discount Rate | [Cost of Capital](#cost-of-capital) | -- |
 | Projected Firm Growth | 5-Year Average of Firm's ROE and Retention Ratio[^2] | 3.3% |
 

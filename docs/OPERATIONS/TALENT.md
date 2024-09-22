@@ -24,15 +24,78 @@ The **7 C’s of Communication** are:
 6. **Courtesy**: Communicate respectfully.
 7. **Correctness**: Ensure proper grammar and accuracy.
 
-### Customer Service:
-- Avoid **complacency** and actively seek customer feedback.
-- **CRM (Customer Relationship Management)** and **CEM (Customer Experience Management)** balance transactional and emotional interactions with customers.
-- The **customer isn’t always right**, but resolving their problem is key.
-- Build **brand loyalty** by focusing on the 3 P’s: **Product**, **Procedures**, and **People**.
-  
-These principles aim to foster trust, effective communication, and customer satisfaction.
+### Netflix's Culture
+
+Patty McCord’s book *"Powerful: Building a Culture of Freedom and Responsibility"* outlines key insights drawn from her experience as Chief Talent Officer at Netflix, where she helped shape the company’s highly successful corporate culture. The most significant points made in the book include:
+
+#### 1. **People Over Process**
+McCord argues that many companies place too much emphasis on formal processes, rules, and policies at the expense of trusting their employees. She advocates for hiring smart, creative people and giving them the freedom to do their jobs without micromanagement.
+
+#### 2. **Radical Honesty**
+McCord promotes a culture of radical honesty, where employees and managers give direct, candid feedback. She believes regular, honest communication leads to better outcomes and that sugarcoating feedback does a disservice to employees.
+
+#### 3. **The End of the Traditional Performance Review**
+McCord criticizes the traditional annual performance review process, calling it ineffective. She encourages regular, informal conversations about performance, which can help employees grow and improve continuously rather than waiting for an annual evaluation.
+
+#### 4. **Embrace Change**
+The book emphasizes that companies and employees must be adaptable in a fast-paced world. McCord suggests that companies should be willing to make bold changes, whether it involves restructuring teams, changing strategies, or letting go of employees whose skills no longer match company needs.
+
+#### 5. **Company Culture is a Living Process**
+McCord rejects the idea of rigid corporate values and instead believes that culture should evolve as the company grows. She views culture as a living process, reflecting the company’s current objectives and the people working toward them.
+
+#### 6. **Focus on High Performance, Not Retention**
+Rather than focusing on employee retention for its own sake, McCord advocates building teams of high-performing individuals who are well-suited for the company’s current needs. Sometimes this means letting go of employees whose skills no longer align with company goals, but doing so humanely and with transparency.
+
+#### 7. **Let Employees Own Their Career Growth**
+McCord advises against coddling employees or managing their career development too closely. Instead, she suggests companies give employees the tools and feedback they need to grow while letting them take responsibility for their own career progression.
+
+#### 8. **Hire Adults, Not Kids**
+She challenges the conventional view of managing employees, treating them as adults who can handle the truth about performance and decisions. She encourages trust and transparency from leadership, believing that employees should be treated with respect, as mature professionals.
+
+In *"Powerful"*, McCord outlines a vision of a modern corporate culture that prioritizes trust, accountability, and high performance over rigid processes and policies.
+
+### Google's Culture
+
+Laszlo Bock’s book *"Work Rules!: Insights from Inside Google That Will Transform How You Live and Lead"* provides a deep dive into the management and HR practices that shaped Google’s success. As the former Senior Vice President of People Operations at Google, Bock shares key insights about creating an empowering and innovative workplace. Here are the most significant points from the book:
+
+#### 1. **Trust in People**
+Bock emphasizes that trusting employees is key to building a successful organization. He argues that when companies trust their people to make decisions and take responsibility, they will rise to the occasion. This is exemplified by Google's policy of offering employees significant freedom, such as the famous "20% time" initiative where employees can work on passion projects.
+
+#### 2. **Data-Driven HR Decisions**
+At Google, data is used extensively to inform decisions, including those related to hiring, compensation, and promotions. Bock advocates for making HR decisions based on data and analytics rather than relying on intuition or tradition. He shares examples of how Google collects and uses data to identify what works best in managing and motivating employees.
+
+#### 3. **Hiring is Everything**
+Bock believes hiring the right people is one of the most important tasks in any company. Google is known for its rigorous hiring process, which focuses on finding smart, adaptable people with a high capacity for learning rather than specific skills or experience. Bock stresses that companies should focus on hiring people who will thrive in their environment, even if it means taking longer to fill roles.
+
+#### 4. **Nurture a Learning Culture**
+Bock encourages companies to create a culture of continuous learning and development. Google invests heavily in helping its employees grow through training, mentoring, and opportunities for personal development. Bock argues that when employees are given room to grow, they become more engaged, productive, and loyal.
+
+#### 5. **Give Employees a Voice**
+One of Google’s core principles is giving employees a voice in decision-making. Bock believes that involving employees in decisions—through open forums, feedback channels, and transparency—leads to better outcomes. He also advocates for empowering employees to challenge the status quo and offer new ideas.
+
+#### 6. **Be Transparent**
+Bock emphasizes the importance of transparency within an organization. At Google, information is widely shared with employees, from financial results to strategic plans. This transparency fosters trust and empowers employees to make informed decisions aligned with the company’s goals.
+
+#### 7. **Focus on Employee Well-Being**
+Google is famous for offering perks like free food, wellness programs, and flexible workspaces. While these perks get attention, Bock explains that the real focus is on improving employee well-being. When employees feel valued and cared for, they are more engaged and productive. Bock encourages companies to consider the whole person—physical, mental, and emotional—when designing their workplace environment.
+
+#### 8. **Don’t Be Afraid to Break Traditional Rules**
+Bock argues that many traditional management practices are outdated and counterproductive. He encourages companies to break away from conventional norms, such as hierarchical decision-making and rigid performance evaluations. Instead, he advocates for a more flexible, innovative approach to managing people, where autonomy and experimentation are key.
+
+#### 9. **Performance Management Should Focus on Development**
+Bock critiques traditional performance management systems, arguing that they often fail to help employees improve. Instead, Google’s approach is to focus on regular feedback, coaching, and mentoring. Performance reviews should aim to help employees grow, rather than just evaluating past performance.
+
+#### 10. **Pay Unfairly**
+One of the more controversial points in the book is Bock’s argument that companies should not strive for "fair" pay. Instead, he believes in paying top performers significantly more than average performers because their contributions are exponentially greater. This approach, though unconventional, aligns with Google’s data-driven compensation practices, rewarding those who have the greatest impact.
+
+#### 11. **Mission-Driven Culture**
+Finally, Bock emphasizes the importance of having a strong mission and purpose. Google’s mission—"to organize the world’s information and make it universally accessible and useful"—drives everything the company does. Bock argues that when employees connect with a higher purpose, they are more motivated and engaged.
+
+In *"Work Rules!"*, Laszlo Bock provides a detailed look at how to create an innovative, people-centered organization by challenging traditional management practices and fostering a culture of trust, transparency, and continuous improvement. His insights offer practical advice for building a workplace that attracts and retains top talent while driving long-term success.
 
 ## Continuous Feedback
+
+Ideas on how to get feedback for key attitudes and meeting objectives.
 
 ### Performance Criteria for Non-Managers
 

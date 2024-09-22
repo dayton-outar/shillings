@@ -9,7 +9,7 @@ Below are the data sources, inputs and calculation used to determine the intrins
 | Data Point | Source | Value |
 |:--- |:--- | ---:|
 | Valuation Model | | 2 Stage Free Cash Flow to Equity |
-| Levered Free Cash Flow | Extrapolated from most recent financials. | See below |
+| Levered Free Cash Flow | Extrapolated from 2022 financials. | See below |
 | Discount Rate | [Cost of Equity](#cost-of-equity) | 14.7% |
 | Perpetual Growth Rate | 5-Year Average of JM Long-Term Govt Bond Rate | 7.5% |
 
