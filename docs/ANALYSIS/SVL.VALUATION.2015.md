@@ -6,9 +6,8 @@ Below are the data sources, inputs and calculation used to determine the intrins
 
 | Data Point | Source | Value |
 |:--- |:--- | ---:|
-| Valuation Model | | Free Cash Flow to Firm[^1] |
-| Levered Free Cash Flow? | Extrapolated from 2010 - 2015 financials. | See below |
-| Discount Rate | [Cost of Capital](#cost-of-capital) | -- |
+| Valuation Model | | [Free Cash Flow to Firm](#free-cash-flow-to-firm)[^1] |
+| Discount Rate | [Cost of Capital](#cost-of-capital) | 11.5% |
 | Projected Firm Growth | 5-Year Average of Firm's ROE and Retention Ratio[^2] | 3.3% |
 
 ## Cost of Capital
@@ -33,27 +32,6 @@ Below are the data sources, inputs and calculation used to determine the intrins
 | ***Total Debt ('000)***                                   | ***$311,375***   | ***$404,049***   | ***$359,263***   | ***$218,408***   | ***$77,000***    | ***$0***         |
 | ***Interest Expense***                                    | ***$41,608***    | ***$44,449***    | ***$39,791***    | ***$28,486***    | ***$16,344***    | ***$2,973***     |
 | **[Cost of Debt](#cost-of-debt)**                         | **14.21%**       | **14.28%**       | **9.85%**        | **7.93%**        | **7.48%**        | **3.86%**        |
-
-
-### Breakdown of Cost of Capital
-
-|                                                           | 2010             | 2011             | 2012             | 2013             | 2014             | 2015             |
-|:----------------------------------------------------------|-----------------:|-----------------:|-----------------:|-----------------:|-----------------:|-----------------:|
-| Long-term liabilities ('000)                              | $192,761         | $189,444         | $216,555         | $77,000          |                  |                  |
-| Current portion of Long-term liabilities ('000)           | $118,614         | $214,605         | $142,708         | $141,408         | $77,000          |                  |
-| *Total Debt ('000)*                                       | *$311,375*       | *$404,049*       | *$359,263*       | *$218,408*       | *$77,000*        | *$0*             |
-| Cash ('000)                                               | $883,921         | $1,418,477       | $1,660,455       | $1,474,083       | $2,227,493       | $1,639,049       |
-| ***Net Debt ('000)***                                     | ***-$572,546***  | ***-$1,014,428***| ***-$1,301,192***| ***-$1,255,675***| ***-$2,150,493***| ***-$1,639,049***|
-| *Total Equity ('000)*                                     | *$5,801,961*     | *$7,911,765*     | *$7,516,177*     | *$7,331,569*     | *$5,037,157*     | *$12,289,608*    |
-| ***Enterprise Value ('000)***                             | ***$5,229,415*** | ***$6,897,337*** | ***$6,214,985*** | ***$6,075,894*** | ***$2,886,664*** | ***$10,650,559***|
-| Net Debt to Enterprise Value (D/(D+E))                    | -11%             | -15%             | -21%             | -21%             | -74%             | -15%             |
-| Equity to Enterprise Value (E/(D+E))                      | 111%             | 115%             | 121%             | 121%             | 174%             | 115%             |
-| Cost of Equity                                            | 10.40%           | 10.40%           | 10.40%           | 10.40%           | 10.40%           | 10.40%           |
-| Cost of Debt                                              | 14.21%           | 14.28%           | 9.85%            | 7.93%            | 7.48%            | 3.86%            |
-| Tax Rate                                                  | 33.33%           | 33.33%           | 33.33%           | 25.00%           | 25.00%           | 25.00%           |
-| **WACC**                                                  | **10.50%**       | **10.52%**       | **11.20%**       | **11.32%**       | **13.96%**       | **11.55%**       |
-
-The WACC remained relatively stable, averaging around 11.5%, with variations depending on debt levels, cash holdings, tax rates, and cost of debt.
 
 ### Breakdown of Enterprise Value
 
@@ -89,6 +67,30 @@ If the market capitalization is $12,289,608,000 and the share capital is $1,967,
    }$$
 
 The significant difference between the market price per share ($4.66) and the book value per share ($0.75) indicates that investors are valuing the company based on its growth potential, assets, and future earnings, rather than just the capital contributed by shareholders.
+
+### Breakdown of Cost of Capital
+
+|                                                           | 2010             | 2011             | 2012             | 2013             | 2014             | 2015             |
+|:----------------------------------------------------------|-----------------:|-----------------:|-----------------:|-----------------:|-----------------:|-----------------:|
+| Long-term liabilities ('000)                              | $192,761         | $189,444         | $216,555         | $77,000          |                  |                  |
+| Current portion of Long-term liabilities ('000)           | $118,614         | $214,605         | $142,708         | $141,408         | $77,000          |                  |
+| *Total Debt ('000)*                                       | *$311,375*       | *$404,049*       | *$359,263*       | *$218,408*       | *$77,000*        | *$0*             |
+| Cash ('000)                                               | $883,921         | $1,418,477       | $1,660,455       | $1,474,083       | $2,227,493       | $1,639,049       |
+| ***Net Debt ('000)***                                     | ***-$572,546***  | ***-$1,014,428***| ***-$1,301,192***| ***-$1,255,675***| ***-$2,150,493***| ***-$1,639,049***|
+| *Total Equity ('000)*                                     | *$5,801,961*     | *$7,911,765*     | *$7,516,177*     | *$7,331,569*     | *$5,037,157*     | *$12,289,608*    |
+| ***Enterprise Value ('000)***                             | ***$5,229,415*** | ***$6,897,337*** | ***$6,214,985*** | ***$6,075,894*** | ***$2,886,664*** | ***$10,650,559***|
+| Net Debt to Enterprise Value (D/(D+E))                    | -11%             | -15%             | -21%             | -21%             | -74%             | -15%             |
+| Equity to Enterprise Value (E/(D+E))                      | 111%             | 115%             | 121%             | 121%             | 174%             | 115%             |
+| Cost of Equity                                            | 10.40%           | 10.40%           | 10.40%           | 10.40%           | 10.40%           | 10.40%           |
+| Cost of Debt                                              | 14.21%           | 14.28%           | 9.85%            | 7.93%            | 7.48%            | 3.86%            |
+| Tax Rate                                                  | 33.33%           | 33.33%           | 33.33%           | 25.00%           | 25.00%           | 25.00%           |
+| **WACC**                                                  | **10.50%**       | **10.52%**       | **11.20%**       | **11.32%**       | **13.96%**       | **11.55%**       |
+
+The WACC remained relatively stable, averaging around 11.5%, with variations depending on debt levels, cash holdings, tax rates, and cost of debt.
+
+## Free Cash Flow to Firm
+
+
 
 ## Appendix
 
