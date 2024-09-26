@@ -6,7 +6,8 @@ Managing talent involves communicating values in order to foster a culture.
 
 [TODO: Revise and refine]
 
-### Supervisory Development:
+### Traditional Supervisory
+
 - **Management by Walking Around**: Be visible and engaged.
 - **Management by Walking the Talk**: Lead by example.
 - Supervisors should be **firm, fair, and friendly**.
@@ -14,7 +15,8 @@ Managing talent involves communicating values in order to foster a culture.
 - Use a **friendly and respectful approach** for sensitive matters and give **continuous feedback** to build trust.
 - **Body language** and **proximity** matter—stand side by side, avoid defensiveness.
 
-### Communication:
+### Communication
+
 The **7 C’s of Communication** are:
 1. **Candid**: Be honest.
 2. **Clarity**: Ensure messages are clear.
@@ -23,6 +25,72 @@ The **7 C’s of Communication** are:
 5. **Concreteness**: Provide specific information.
 6. **Courtesy**: Communicate respectfully.
 7. **Correctness**: Ensure proper grammar and accuracy.
+
+### Collaborative Nirvana
+
+> To reach collaborative nirvana, you first need to learn and embrace what I call the “three pillars” of social skills. These three principles aren’t just about greasing the wheels of relationships; they’re the foundation on which all healthy interaction and collaboration are based:
+> 
+> ***Pillar 1: Humility***
+>
+> You are not the center of the universe (nor is your code!). You’re neither omniscient nor infallible. You’re open to self-improvement.
+> 
+> ***Pillar 2: Respect***
+> 
+> You genuinely care about others you work with. You treat them kindly and appreciate their abilities and accomplishments.
+> 
+> ***Pillar 3: Trust***
+> 
+> You genuinely care about others you work with. You treat them kindly and appreciate their abilities and accomplishments.
+> 
+> ...
+> 
+> In a professional software engineering environment, criticism is almost never personal—it’s usually just part of the process of making a better project. The trick is to make sure you (and those around you) understand the difference between a constructive criticism of someone’s creative output and a flat-out assault against someone’s character. The latter is useless—it’s petty and nearly impossible to act on. The former can (and should!) be helpful and give guidance on how to improve. And, most important, it’s imbued with respect: the person giving the constructive criticism genuinely cares about the other person and wants them to improve themselves or their work. Learn to respect your peers and give constructive criticism politely. If you truly respect someone, you’ll be motivated to choose tactful, helpful phrasing—a skill acquired with much practice.
+> 
+> ...
+> 
+> Over in Google X—the division that works on “moonshots” like self-driving cars and internet access delivered by balloons—failure is deliberately built into its incentive system. People come up with outlandish ideas and coworkers are actively encouraged to shoot them down as fast as possible. Individuals are rewarded (and even compete) to see how many ideas they can disprove or invalidate in a fixed period of time. Only when a concept truly cannot be debunked at a whiteboard by all peers does it proceed to early prototype.
+> 
+> ...
+> 
+> ... “Googleyness”—a set of attributes and behaviors that we look for that represent strong leadership and exemplify “humility, respect, and trust”:
+> 
+> _Thrives in ambiguity_
+> 
+> Can deal with conflicting messages or directions, build consensus, and make progress against a problem, even when the environment is constantly shifting.
+> 
+> _Values feedback_
+> 
+> Has humility to both receive and give feedback gracefully and understands how valuable feedback is for personal (and team) development.
+> 
+> _Challenges status quo_ 
+> 
+> Is able to set ambitious goals and pursue them even when there might be resistance or inertia from others.
+> 
+> _Puts the user first_ 
+> 
+> Has empathy and respect for users of Google’s products and pursues actions that are in their best interests.
+> 
+> _Cares about the team_ 
+> 
+> Has empathy and respect for coworkers and actively works to help them without being asked, improving team cohesion.
+> 
+> _Does the right thing_ 
+> 
+> Has a strong sense of ethics about everything they do; willing to make difficult or inconvenient decisions to protect the integrity of the team and product.
+> [^1]
+
+### Blameless Post-Mortem Culture
+
+> The key to learning from your mistakes is to document your failures by performing a root-cause analysis and writing up a “postmortem,” as it’s called at Google (and many other companies). Take extra care to make sure the postmortem document isn’t just a useless list of apologies or excuses or finger-pointing—that’s not its purpose. A proper postmortem should always contain an explanation of what was learned and what is going to change as a result of the learning experience. Then, make sure that the post‐mortem is readily accessible and that the team really follows through on the proposed changes. Properly documenting failures also makes it easier for other people (present and future) to know what happened and avoid repeating history. Don’t erase your tracks—light them up like a runway for those who follow you!
+> 
+> A good postmortem should include the following:
+> - A brief summary of the event
+> - A timeline of the event, from discovery through investigation to resolution
+> - The primary cause of the event
+> - Impact and damage assessment
+> - A set of action items (with owners) to fix the problem immediately
+> - A set of action items to prevent the event from happening again
+> - Lessons learned
 
 ### Netflix's Culture
 
@@ -115,3 +183,5 @@ Ideas on how to get feedback for key attitudes and meeting objectives.
 | **12. Departmental Objectives** | - Does not understand or appreciate departmental goals. <br> - Individualistic. | - Little appreciation or understanding of goals. <br> - Occasionally a team player. | - Appreciates and understands departmental objectives. <br> - Demonstrates team work. | - Major contributor to the department achieving its objectives. | - Motivates and trains others in the department. <br> - Considered a leader in the department. |
 
 This table is a performance scoring guide that evaluates employees across different competencies, ranging from organizational ability and customer relations to job attitude and initiative. Each area is rated from unsatisfactory (1) to consistently exceeding requirements (5).
+
+[^1]: Chapter 2. _How to Work Well on Teams_. Software Engineering at Google. Curated by Titus Winters, Tom Manshreck & Hyrum Wright
