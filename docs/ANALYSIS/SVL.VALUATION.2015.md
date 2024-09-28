@@ -142,6 +142,11 @@ Figures quoted in '000
 | --                                                        |               -- |               -- |               -- |               -- |               -- |               -- |               -- |
 | **Free Cash Flow to Firm (FCFF)**                         |                  | **$477,939**     | **$627,532**     | **$1,013,909**   | **$863,963**     | **$485,193**     | **$1,939,161**   |
 
+## Terminal Value
+
+$$\huge{
+   V^O = { { FCFF_2016 \over {WACC - g} } = { {( FCFF_2015 ) ( 1 + g) } \over { WACC - g } }  = { { 1,939,161 \times 1.033 } \over { x - 0.033 } } =  y }
+}$$
 
 ## Appendix
 
