@@ -454,7 +454,7 @@ The **Present Value (PV)** formula calculates the current value of a future sum 
    - $C$ = Cash flow per period
    - $r$ = Discount rate
 
-### Explanation:
+#### Explanation
 - The **discount rate** represents the rate of return or interest rate used to discount future cash flows back to the present value. 
 - **Number of periods (n)** can represent years, months, or other time intervals, depending on how often the cash flows occur.
 
