@@ -10,6 +10,16 @@ Below are the data sources, inputs and calculation used to determine the intrins
 | Discount Rate | [Cost of Capital](#cost-of-capital) | 11.5% |
 | Projected Firm Growth | 5-Year Average of Firm's ROE and Retention Ratio[^2] | 3.3% |
 
+### Firm Growth, 2010 - 2015
+
+|                                                           | 2010             | 2011             | 2012             | 2013             | 2014             | 2015             | Average |
+|:----------------------------------------------------------|-----------------:|-----------------:|-----------------:|-----------------:|-----------------:|-----------------:|--------:|
+| Net Income                                                | $421,267         | $606,326         | $1,073,089       | $482,569         | $929,917         | $1,183,750       |         |
+| Shareholder's Equity                                      | $3,324,028       | $3,326,772       | $3,793,292       | $3,642,919       | $4,045,385       | $3,594,037       |         |
+| **Return on Equity (ROE)**                                | 12.7%            | 18.2%            | 28.3%            | 13.2%            | 23.0%            | 32.9%            | 21.4%   |
+| Dividends                                                 | $369,216         | $580,249         | $738,432         | $448,334         | $659,313         | $1,081,274       |         |
+| **Retention Ratio (RR)**                                  | 12.4%            | 4.3%             | 31.2%            | 7.1%             | 29.1%            | 8.7%             | 15.4%   |
+
 ## Cost of Capital
 
 | Data Point | Calculation/Source | Result |
@@ -90,6 +100,47 @@ The WACC remained relatively stable, averaging around 11.5%, with variations dep
 
 ## Free Cash Flow to Firm
 
+Figures quoted in '000
+
+|                                                           | 2009             | 2010             | 2011             | 2012             | 2013             | 2014             | 2015             |
+|:----------------------------------------------------------|-----------------:|-----------------:|-----------------:|-----------------:|-----------------:|-----------------:|-----------------:|
+| ***Net Income***                                          |                  | ***$421,267***   | ***$606,326***   | ***$1,073,089*** | ***$482,569***   | ***$929,917***   | ***$1,183,750*** |
+| --                                                        |               -- |               -- |               -- |               -- |               -- |               -- |               -- |
+| Profit Before Taxation                                    |                  | $705,588         | $1,063,561       | $1,453,766       | $711,092         | $1,215,741       | $1,614,830       |
+| Taxation                                                  |                  | ($284,321)       | ($443,294)       | ($376,880)       | ($228,523)       | ($285,824)       | ($431,080)       |
+| Profit                                                    |                  | $421,267         | $620,267         | $1,076,886       | $482,569         | $929,917         | $1,183,750       |
+| *Effective Tax Rate*                                      |                  | *~40%*           | *~42%*           | *~26%*           | *~32%*           | *~24%*           | *~27%*           |
+| Interest (Finance cost)                                   |                  | $41,608          | $48,600          | $39,791          | $28,486          | $16,344          | $2,973           |
+| ***Interest × (1 - Effective Tax Rate)***                 |                  | ***$24,842***    | ***$28,343***    | ***$29,475***    | ***$19,331***    | ***$12,501***    | ***$2,179***     |
+| --                                                        |               -- |               -- |               -- |               -- |               -- |               -- |               -- |
+| Depreciation of property and equipment                    |                  | $185,590         | $196,731         | $187,322*        | $200,928         | $204,181         | $177,913         |
+| Depreciation of investment properties                     |                  |                  |                  |                  |                  |                  | $9,102           |
+| Amortisation of intangible assets                         |                  | $12,586          | $26,401          | $29,573          | $27,953          | $17,023          | $10,658          |
+| Amortisation of other assets                              |                  | $6,023           | $5,019           | $656             | $6,393           | $6,855           | $4,381           |
+| Impairment of available-for-sale investment               |                  |                  |                  | $2,124           | $9,048           | $348             |                  |
+| Impairment of investment properties                       |                  |                  |                  |                  |                  |                  | $102,729         |
+| Impairment losses recognised on trade receivables         |                  | $11,880          | $5,971           | $78,946          | $58,032          |                  |                  |
+| Impairment losses on other receivables                    |                  |                  |                  | $26,000          |                  |                  |                  |
+| Impairment of other assets                                |                  |                  |                  |                  |                  |                  | $15,988          |
+| Intangible assets (such as Goodwill) written off          |                  |                  | $14,963          |                  |                  |                  | $3,627           |
+| Bad debts recognised                                      |                  |                  |                  |                  |                  | $48,068          | $97,331          |
+| Transfer from property and equipment to profit or loss    |                  |                  |                  | $197             |                  |                  |                  |
+| Write-off of income tax receivable                        |                  |                  | $10,379          |                  |                  |                  |                  |
+| Write-off of inventory                                    |                  | $3,470           |                  |                  |                  |                  |                  |
+| Loss on disposal and write-off of property and equipment  |                  | $7,397 + ($27)   | ($859)           | $28,286          | $16,399          | $29,926          | $57,782          |
+| Other gains and losses                                    |                  | $15,056          |                  |                  |                  |                  |                  |
+| ***Depreciation/Amortization (Non-cash Charges)***        |                  | ***$241,975***   | ***$258,605***   | ***$353,104***   | ***$318,753***   | ***$306,401***   | ***$479,511***   |
+| --                                                        |               -- |               -- |               -- |               -- |               -- |               -- |               -- |
+| Current Assets                                            | $1,559,235       | $1,581,371       | $1,994,494       | $2,336,975       | $2,068,083       | $2,993,692       | $2,553,772       |
+| Current Liabilities                                       | $1,144,693       | $1,122,577       | $1,403,740       | $1,609,123       | $1,590,616       | $1,847,178       | $1,804,876       |
+| Net Working Capital (NWC)                                 | $414,542         | $458,794         | $590,754         | $727,852         | $477,467         | 1,146,514        | $748,896         |
+| ***Change in Networking Capital (NWC)***                  |                  | ***$44,252***    | ***$131,960***   | ***$137,098***   | ***($250,385)*** | ***$669,047***   | ***($397,618)*** |
+| --                                                        |               -- |               -- |               -- |               -- |               -- |               -- |               -- |
+| Acquisition of property and equipment                     | $140,184         | $166,142         | $139,883         | $309,011         | $222,134         | $94,783          | $124,250         |
+| Proceeds on disposal of property and equipment            | $6,485           | $249             | $6,101           | $4,350           | $15,059          | $204             | $353             |
+| ***Fixed Assets (CAPEX)***                                |               -- | ***$165,893***   | ***$133,782***   | ***$304,661***   | ***$207,075***   | ***$94,579***    | ***$123,897***   |
+| --                                                        |               -- |               -- |               -- |               -- |               -- |               -- |               -- |
+| **Free Cash Flow to Firm (FCFF)**                         |                  | **$477,939**     | **$627,532**     | **$1,013,909**   | **$863,963**     | **$485,193**     | **$1,939,161**   |
 
 
 ## Appendix
@@ -306,6 +357,53 @@ $${
 Thus, the company’s WACC is **8.09%**.
 
 The **WACC** reflects the company’s blended cost of capital across its debt and equity, taking into account the tax benefits of debt. It is a critical input for valuing projects and investments, as it serves as the discount rate for future cash flows.
+
+### Free Cash Flow
+
+When incorporating **interest expenses** into the Free Cash Flow (FCF) formula, it depends on whether you're calculating **Free Cash Flow to the Firm (FCFF)** or **Free Cash Flow to Equity (FCFE)**. Here's how interest affects both:
+
+1. **Free Cash Flow to the Firm (FCFF)** (Unlevered Free Cash Flow)
+FCFF represents the cash flow available to **all investors** (both equity and debt holders). In this case, **interest expenses** are added back after adjusting for taxes, because FCFF shows cash flow before debt payments.
+
+$${
+\text{FCFF} = \text{Net Income} + \text{Non-Cash Charges} + \text{Interest Expense} \times (1 - \text{Tax Rate}) - \text{Change in Working Capital} - \text{Capital Expenditures (CapEx)}
+}$$
+
+Where:
+- **Interest Expense**: The cost of servicing debt (found on the income statement).
+- **(1 - Tax Rate)**: Represents the tax shield on interest, as interest payments are tax-deductible.
+
+2. **Free Cash Flow to Equity (FCFE)** (Levered Free Cash Flow)
+FCFE represents the cash flow available **only to equity shareholders**. In this case, interest payments are **not added back**, because they are cash outflows paid to debt holders.
+
+$${
+\text{FCFE} = \text{Net Income} + \text{Non-Cash Charges} - \text{Change in Working Capital} - \text{Capital Expenditures (CapEx)} + \text{Net Borrowing}
+}$$
+
+Where:
+- **Net Borrowing**: Represents the additional debt raised (or repaid), which impacts cash flow to equity holders.
+
+#### Expanded **FCFF** Formula (with Interest)
+
+$${
+\text{FCFF} = \left( \text{Net Income} + \text{Depreciation/Amortization} \right) + \left( \text{Interest Expense} \times (1 - \text{Tax Rate}) \right) - \text{Change in Working Capital} - \text{CapEx}
+}$$
+
+***Note Well*** $\text{Depreciation/Amortization}$ is also referred to as ${\text{Non-cash Charges}}$
+
+#### Expanded **FCFE** Formula (without adding back Interest)
+
+$${
+\text{FCFE} = \left( \text{Net Income} + \text{Depreciation/Amortization} \right) - \text{Change in Working Capital} - \text{CapEx} + \text{Net Borrowing}
+}$$
+
+
+#### Explanation
+
+- In **FCFF**, **interest expense** is added back (adjusted for tax savings) because it represents cash flow before payments to debt holders.
+- In **FCFE**, interest is **not added back** because the cash flow to equity holders occurs after debt obligations are met.
+
+**Which formula to use** depends on whether you are evaluating cash flows from the perspective of the entire firm (FCFF) or only equity shareholders (FCFE).
 
 [^1]: Supreme Ventures started out mostly with equity but the leverage is not stable
 [^2]: _Growth, g_ = Average Retention Ratio × Average Return on Equity
