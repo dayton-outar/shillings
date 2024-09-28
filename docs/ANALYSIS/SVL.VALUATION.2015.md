@@ -145,7 +145,7 @@ Figures quoted in '000
 ## Terminal Value
 
 $$\huge{
-   V^O = { { FCFF_2016 \over {WACC - g} } = { {( FCFF_2015 ) ( 1 + g) } \over { WACC - g } }  = { { 1,939,161 \times 1.033 } \over { x - 0.033 } } =  y }
+   V^O = { { FCFF_{2016} \over {WACC - g} } = { {( FCFF_{2015} ) ( 1 + g) } \over { WACC - g } }  = { { 1,939,161 \times 1.033 } \over { x - 0.033 } } =  y }
 }$$
 
 ## Appendix
