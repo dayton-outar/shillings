@@ -144,11 +144,23 @@ Figures quoted in '000
 
 ## Terminal Value
 
+Terminal value for 2016 is,
+
 $$\huge{
    V^O = { { FCFF_{2016} \over {WACC - g} } = { {( FCFF_{2015} ) ( 1 + g) } \over { WACC - g } }  = { { 1,939,161 \times 1.033 } \over { 0.115 - 0.033 } } =  24,428,698.94 }
 }$$
 
 where $V^O$ is the value of the firm's non-operating asset
+
+
+
+## Stock Value
+
+$$\huge{
+  \text{Equity Value per Share} = { \text{Enterprise Value} \over \text{Shares Outstanding} } = { x \over 2,637,254,926 } = y
+}$$
+
+where $\text{Shares Outstanding}$ is Weighted average number of ordinary stock units in issue at 2,637,254,926. ... y should be around J$15.10
 
 ## Appendix
 
