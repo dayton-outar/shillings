@@ -412,6 +412,54 @@ $${
 
 **Which formula to use** depends on whether you are evaluating cash flows from the perspective of the entire firm (FCFF) or only equity shareholders (FCFE).
 
+### Present Value
+
+The **Present Value (PV)** formula calculates the current value of a future sum of money or stream of cash flows given a specific discount rate. The formula is based on the principle that a sum of money today is worth more than the same sum in the future due to its earning potential.
+
+1. **Present Value of a Single Future Amount**:
+   For a single future cash flow, the formula is:
+
+   $$\large{
+      PV = \frac{FV}{(1 + r)^n}
+   }$$
+
+   Where:
+   - $PV$ = Present Value
+   - $FV$ = Future Value (the amount of money to be received in the future)
+   - $r$ = Discount rate (the interest rate or rate of return per period)
+   - $n$ = Number of periods (years, months, etc.)
+
+2. **Present Value of an Annuity (Multiple Cash Flows)**:
+   If you have a stream of equal cash flows (an annuity), the formula is:
+
+   $$\large{
+      PV = C \times \left[ \frac{1 - (1 + r)^{-n}}{r} \right]
+   }$$
+
+   Where:
+   - $PV$ = Present Value
+   - $C$ = Cash flow per period (payment)
+   - $r$ = Discount rate per period
+   - $n$ = Number of periods
+
+3. **Present Value of a Perpetuity**:
+   If the cash flow goes on indefinitely (a perpetuity), the formula is:
+
+   $$\large{
+      PV = \frac{C}{r}
+   }$$
+
+   Where:
+   - $PV$ = Present Value
+   - $C$ = Cash flow per period
+   - $r$ = Discount rate
+
+### Explanation:
+- The **discount rate** represents the rate of return or interest rate used to discount future cash flows back to the present value. 
+- **Number of periods (n)** can represent years, months, or other time intervals, depending on how often the cash flows occur.
+
+These formulas help determine what future cash flows are worth today, given the time value of money.
+
 [^1]: Supreme Ventures started out mostly with equity but the leverage is not stable
 [^2]: _Growth, g_ = Average Retention Ratio × Average Return on Equity
 [^3]: The longest available bond in January 2010 was the 6 month T-Bill at a rate of 12.5%
