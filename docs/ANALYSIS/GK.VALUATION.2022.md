@@ -67,7 +67,7 @@ _JMSE:GK DCF 2nd Stage: Terminal Value_
 
 $$\huge{
   \text{Total Equity Value} = { \text{Present value of next 10 years cash flows} + \text{Terminal Value} } = 86,003 + 94,784 = 180,786.99
-}
+}$$
 
 _JMSE:GK Total Equity Value_
 
