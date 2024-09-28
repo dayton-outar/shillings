@@ -363,25 +363,25 @@ The **WACC** reflects the company’s blended cost of capital across its debt an
 When incorporating **interest expenses** into the Free Cash Flow (FCF) formula, it depends on whether you're calculating **Free Cash Flow to the Firm (FCFF)** or **Free Cash Flow to Equity (FCFE)**. Here's how interest affects both:
 
 1. **Free Cash Flow to the Firm (FCFF)** (Unlevered Free Cash Flow)
-FCFF represents the cash flow available to **all investors** (both equity and debt holders). In this case, **interest expenses** are added back after adjusting for taxes, because FCFF shows cash flow before debt payments.
+   FCFF represents the cash flow available to **all investors** (both equity and debt holders). In this case, **interest expenses** are added back after adjusting for taxes, because FCFF shows cash flow before debt payments.
 
-$${
-\text{FCFF} = \text{Net Income} + \text{Non-Cash Charges} + \text{Interest Expense} \times (1 - \text{Tax Rate}) - \text{Change in Working Capital} - \text{Capital Expenditures (CapEx)}
-}$$
+   $${
+   \text{FCFF} = \text{Net Income} + \text{Non-Cash Charges} + \text{Interest Expense} \times (1 - \text{Tax Rate}) - \text{Change in Working Capital} - \text{Capital Expenditures (CapEx)}
+   }$$
 
-Where:
-- **Interest Expense**: The cost of servicing debt (found on the income statement).
-- **(1 - Tax Rate)**: Represents the tax shield on interest, as interest payments are tax-deductible.
+   Where:
+   - **Interest Expense**: The cost of servicing debt (found on the income statement).
+   - **(1 - Tax Rate)**: Represents the tax shield on interest, as interest payments are tax-deductible.
 
 2. **Free Cash Flow to Equity (FCFE)** (Levered Free Cash Flow)
-FCFE represents the cash flow available **only to equity shareholders**. In this case, interest payments are **not added back**, because they are cash outflows paid to debt holders.
+   FCFE represents the cash flow available **only to equity shareholders**. In this case, interest payments are **not added back**, because they are cash outflows paid to debt holders.
 
-$${
-\text{FCFE} = \text{Net Income} + \text{Non-Cash Charges} - \text{Change in Working Capital} - \text{Capital Expenditures (CapEx)} + \text{Net Borrowing}
-}$$
+   $${
+   \text{FCFE} = \text{Net Income} + \text{Non-Cash Charges} - \text{Change in Working Capital} - \text{Capital Expenditures (CapEx)} + \text{Net Borrowing}
+   }$$
 
-Where:
-- **Net Borrowing**: Represents the additional debt raised (or repaid), which impacts cash flow to equity holders.
+   Where:
+   - **Net Borrowing**: Represents the additional debt raised (or repaid), which impacts cash flow to equity holders.
 
 #### Expanded **FCFF** Formula (with Interest)
 
