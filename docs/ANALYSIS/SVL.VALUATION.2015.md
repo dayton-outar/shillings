@@ -148,6 +148,8 @@ $$\huge{
    V^O = { { FCFF_{2016} \over {WACC - g} } = { {( FCFF_{2015} ) ( 1 + g) } \over { WACC - g } }  = { { 1,939,161 \times 1.033 } \over { 0.115 - 0.033 } } =  24,428,698.94 }
 }$$
 
+where $V^O$ is the value of the firm's non-operating asset
+
 ## Appendix
 
 ### Deducing Risk-free Rate
