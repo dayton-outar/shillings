@@ -30,7 +30,9 @@ An important part of a discounted cash flow is the discount rate, below we expla
 
 _Calculation of Discount Rate/ Cost of Equity for JMSE:GK_
 
-**Discounted Cash Flow Calculation for JMSE:GK using 2 Stage Free Cash Flow to Equity**
+## Free Cash Flow to Equity
+
+***Discounted Cash Flow Calculation for JMSE:GK using 2 Stage Free Cash Flow to Equity***
 
 The calculations below outline how an intrinsic value for GraceKennedy is arrived at by discounting future cash flows to their present value using the 2 stage method. We use analyst's estimates of cash flows going forward 10 years for the 1st stage, the 2nd stage assumes the company grows at a stable rate into perpetuity.
 
@@ -52,6 +54,7 @@ Present value of next 10 years cash flows ... J$86,003
 
 _JMSE:GK DCF 1st Stage: Next 10 years cash flow forecast_
 
+## Terminal Value
 
 |     | Calculation | Result |
 |:--- |:--- | ---:|
@@ -60,19 +63,31 @@ _JMSE:GK DCF 1st Stage: Next 10 years cash flow forecast_
 
 _JMSE:GK DCF 2nd Stage: Terminal Value_
 
+## Equity Value
 
-|     | Calculation | Result |
-|:--- |:--- | ---:|
-| Total Equity Value | = Present value of next 10 years cash flows + Terminal Value <br /> = J$86,003 + J$94,784 | J$180,786.99 |
-| Equity Value per Share (JMD) | = Total value / Shares outstanding <br />= J$180,787/990 | J$182.53 |
+$$\huge{
+  \text{Total Equity Value} = { \text{Present value of next 10 years cash flows} + \text{Terminal Value} } = 86,003 + 94,784 = 180,786.99
+}
 
 _JMSE:GK Total Equity Value_
 
+## Stock Value
 
-|     | Calculation | Result |
-|:--- |:--- | ---:|
-| Value per share (JMD) | From above. | J$182.53 |
-| Current discount | Discount to share price of J$98.48 <br />= (J$182.53 - J$98.48)/ J$182.53 | 46.0% |
+$$\huge{
+  \text{Equity Value per Share} = { \text{Total Value} \over \text{Shares Outstanding} } = { 180,787 \over 990 } = 182.53
+}$$
+
+where $\text{Shares Outstanding}$ is Weighted average number of stock units outstanding (‘000) at 990,756.
+
+## Discount to Stock Price
+
+Discount to share price of J$98.48 is,
+
+$$\huge{
+  \text{Discount} = { (182.53 - 98.48) \over 182.53 } = 46.0
+}$$
+
+46.0%
 
 _JMSE:GK Discount to Share Price_
 
