@@ -160,7 +160,7 @@ $$\huge{
   \text{Equity Value per Share} = { \text{Enterprise Value} \over \text{Shares Outstanding} } = { x \over 2,637,254,926 } = y
 }$$
 
-where $\text{Shares Outstanding}$ is Weighted average number of ordinary stock units in issue at 2,637,254,926. ... y should be around J$15.10
+where $\text{Shares Outstanding}$ is Weighted average number of ordinary stock units in issue at 2,637,254,926. ... y should be around ~J$14 - J$15
 
 ## Appendix
 
