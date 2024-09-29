@@ -144,7 +144,7 @@ Figures quoted in '000
 | --                                                        |               -- |               -- |               -- |               -- |               -- |               -- |               -- |
 | **Free Cash Flow to Firm (FCFF)**                         |                  | **$477,939**     | **$627,532**     | **$1,013,909**   | **$863,963**     | **$485,193**     | **$1,939,161**   |
 
-Terminal value for 2016 is,
+Terminal value for 2015 is,
 
 $$\huge{
    V^O = { { FCFF_{2016} \over {WACC - g} } = { {( FCFF_{2015} ) ( 1 + g) } \over { WACC - g } }  = { { 1,939,161 \times 1.033 } \over { 0.115 - 0.033 } } =  24,428,698.94 }
@@ -152,23 +152,50 @@ $$\huge{
 
 where $V^O$ is the value of the firm's operating asset.
 
-So, in 2016, the company's operating asset is valued at J$24,428,698.94. To value the entire enterprize, other assets valued at market price can be added. However, this valuation need to take into consideration the future cash flows. So, the following presumptions about the free cash flow is made.
+So, in 2015, the company's operating asset is valued at J$24,428,698.94. To value the entire enterprize, other assets valued at market price can be added. However, this valuation need to take into consideration the future cash flows. So, the following assumptions about the free cash flow is made.
 
-|      | Levered FCF ('000') | Source       | Present Value Discounted (@ 14.74%) |
-|:---- | -------------------:|:------------ | ---:|
-| 2016 | $1,427,823          | Est @ 8.21%  | J$11,212.98 |
-| 2017 | 13,896.49           | Est @ 8.01%  | J$10,555.41 |
-| 2018 | 14,990.12           | Est @ 7.87%  | J$9,923.4 |
-| 2019 | 16,154.99           | Est @ 7.77%  | J$9,320.67 |
-| 2020 | 17,399.19           | Est @7.7%    | J$8,748.93 |
+|           | Levered FCF ('000') | Source                | Present Value Discounted (@ 11.5%) |
+|:----      | -------------------:|:--------------------- | -----------------------------------:|
+| 2016      | $1,427,823          | Est. from 2015 @ -26% | J$1,280,558                         |
+| 2017      | $2,672,135          | Est @ 87%             | J$2,396,534                         |
+| 2018      | $2,442,779          | Est @ -8.6%           | J$2,723,699                         |
+| 2019      | $2,880,942          | Est @ 18%             | J$3,212,250                         |
+| 2020      | ***$3,375,684***    | Est @ 17%             | J$3,763,888                         |
+| **Total** |                     |                       | **J$13,376,929**                     |
+
+Present value of next 5 years cash flows ... J$13,376,929
+
+## Terminal Value
+
+$$\huge{
+   V^O_{2020} = { { FCFF_{2020} \over { \text{WACC} - g} }  = { { 3,375,684 \times 1.033 } \over { 0.115 - 0.033 } } =  42,525,385 }
+}$$
+
+So, the terminal value of Supreme Ventures in 2020 is projected to be J$42,525,385.
+
+$$\huge{
+  PV = { \text{Terminal Value} \over { 1 + r }^{5} } = { 42,525,385 \over { 1 + 0.115 }^{5} } = 24,675,952
+}$$
+
+The enterprise value (or equity value) in stable stage of Supreme Ventures is J$24,675,952.
+
+## Equity Value
+
+Add the two stages (growth stage and stable stage) together to get total equity value.
+
+$$\large{
+  \text{Total Equity Value} = { \text{Present value of next 5 years cash flows } + \text{ Terminal Value} } = 13,376,929 + 24,675,952 = 38,052,881
+}$$
 
 ## Stock Value
 
+Note that the figures calculated were in '000. So, J$38,052,881 should be J$38,052,881,000.
+
 $$\huge{
-  \text{Equity Value per Share} = { \text{Enterprise Value} \over \text{Shares Outstanding} } = { x \over 2,637,254,926 } = y
+  \text{Equity Value per Share} = { \text{Enterprise Value} \over \text{Shares Outstanding} } = { 38,052,881,000 \over 2,637,254,926 } = 14.43
 }$$
 
-where $\text{Shares Outstanding}$ is Weighted average number of ordinary stock units in issue at 2,637,254,926. ... y should be around ~J$14 - J$15
+where $\text{Shares Outstanding}$ is Weighted average number of ordinary stock units in issue at 2,637,254,926. So, Supreme Ventures stock value should be J$14.43
 
 ## Appendix
 

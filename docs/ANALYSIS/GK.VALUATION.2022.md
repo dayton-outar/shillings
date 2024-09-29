@@ -37,18 +37,19 @@ _Calculation of Discount Rate/ Cost of Equity for JMSE:GK_
 The calculations below outline how an intrinsic value for GraceKennedy is arrived at by discounting future cash flows to their present value using the 2 stage method. We use analyst's estimates of cash flows going forward 10 years for the 1st stage, the 2nd stage assumes the company grows at a stable rate into perpetuity.
 
 
-|      | Levered FCF ('000) | Source                 | [Discounted FCF](#discounting-free-cash-flow) (@ 14.74%) |
-|:---- | ------------------:|:---------------------- | --------------------------------------------------------:|
-| 2022 | 12,865.78          | Est. from 2021 @ 8.21% | J$11,212.98                                              |
-| 2023 | 13,896.49          | Est. from 2022 @ 8.01% | J$10,555.41                                              |
-| 2024 | 14,990.12          | @ 7.87%                | J$9,923.4                                                |
-| 2025 | 16,154.99          | @ 7.77%                | J$9,320.67                                               |
-| 2026 | 17,399.19          | @ 7.7%                 | J$8,748.93                                               |
-| 2027 | 18,730.78          | @ 7.65%                | J$8,208.55                                               |
-| 2028 | 20,157.91          | @ 7.62%                | J$7,699.13                                               |
-| 2029 | 21,688.99          | @7.6%                  | J$7,219.73                                               |
-| 2030 | 23,332.76          | @ 7.58%                | J$6,769.13                                               |
-| 2031 | 25,098.39          | @ 7.57%                | J$6,345.96                                               |
+|           | Levered FCF ('000) | Source                 | [Discounted FCF](#discounting-free-cash-flow) (@ 14.74%) |
+|:----      | ------------------:|:---------------------- | --------------------------------------------------------:|
+| 2022      | 12,865.78          | Est. from 2021 @ 8.21% | J$11,212.98                                              |
+| 2023      | 13,896.49          | Est. from 2022 @ 8.01% | J$10,555.41                                              |
+| 2024      | 14,990.12          | @ 7.87%                | J$9,923.4                                                |
+| 2025      | 16,154.99          | @ 7.77%                | J$9,320.67                                               |
+| 2026      | 17,399.19          | @ 7.7%                 | J$8,748.93                                               |
+| 2027      | 18,730.78          | @ 7.65%                | J$8,208.55                                               |
+| 2028      | 20,157.91          | @ 7.62%                | J$7,699.13                                               |
+| 2029      | 21,688.99          | @7.6%                  | J$7,219.73                                               |
+| 2030      | 23,332.76          | @ 7.58%                | J$6,769.13                                               |
+| 2031      | ***25,098.39***    | @ 7.57%                | J$6,345.96                                               |
+| **Total** |                    |                        | **J$86,003**                                             |
 
 Present value of next 10 years cash flows ... J$86,003
 
@@ -57,18 +58,22 @@ _JMSE:GK DCF 1st Stage: Next 10 years cash flow forecast_
 ## Terminal Value
 
 $$\huge{
-   V^O = { { FCFF_{2031} \over { \text{Discount Rate} - g} }  = { { 25,098.391 \times 1.0754 } \over { 0.1474 - 0.0754 } } =  374,872.36 }
+   V^O_{2031} = { { { FCFF_{2031} \times (1 + g) } \over { \text{Discount Rate} - g} }  = { { 25,098.391 \times 1.0754 } \over { 0.1474 - 0.0754 } } =  374,872.36 }
 }$$
 
-So, the terminal value of GraceKennedy in 2031 is projected to be J$374,872.36.
+So, the terminal value of GraceKennedy in 2032 is projected to be J$374,872.36.
 
 $$\huge{
   PV = { \text{Terminal Value} \over { 1 + r }^{10} } = { 374,872 \over { 1 + 0.1474 }^{10} } = 94,783.99
 }$$
 
+The present value of the projected 10 years terminal value is J$94,783.99
+
 _JMSE:GK DCF 2nd Stage: Terminal Value_
 
 ## Equity Value
+
+Add the two stages (growth stage and stable stage) together to get total equity value.
 
 $$\large{
   \text{Total Equity Value} = { \text{Present value of next 10 years cash flows } + \text{ Terminal Value} } = 86,003 + 94,784 = 180,786.99
