@@ -156,7 +156,7 @@ $$\large{
 
 Similarly, each future year's cash flow is discounted to the present year (2021 in this case) using this formula.
 
-### General Process of Discounting FCF:
+### General Process of Discounting FCF
 1. **Project Future FCF**: Estimate the FCF for each future period.
 2. **Select a Discount Rate**: Typically based on the company's weighted average cost of capital (WACC) or required rate of return.
 3. **Apply the Discounting Formula**: Each year's FCF is discounted back to the present using the formula mentioned above.
@@ -170,7 +170,7 @@ The **Terminal Value (TV)** represents the value of the company **at the end of 
 
 In essence, at that particular point in time (end of the forecast period), the company is valued at the **terminal value**, which reflects the remaining value of all future cash flows after the forecast period. This value is then **discounted back to the present** to form part of the overall company's present value in a DCF analysis.
 
-### Key Points:
+### Key Points
 - The terminal value is meant to simplify the valuation beyond the forecast period, as it’s impractical to predict cash flows forever.
 - It provides a **snapshot** of the company’s value at the end of the forecast, assuming it will continue operations and generate cash flow into the future.
 - The **present value of the terminal value** is combined with the present value of the forecasted cash flows to arrive at the company's total value today.
