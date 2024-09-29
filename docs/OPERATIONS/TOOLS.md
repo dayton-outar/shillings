@@ -83,7 +83,7 @@ The idea is to ensure all risks are mitigated beforehand, so DevOps professional
 
 ### Solution
 
-[Agile Continuous Integration Process Flow](/.attachments/agile-ci-system.png)
+![Agile Continuous Integration Process Flow](/.attachments/agile-ci-system.png)
 
 There are major points in the current system that can be automated to increase the efficiency of delivery of changes. These include building, deploying, testing, and releasing changes.
 
@@ -124,7 +124,7 @@ Some top toolsets used for Continuous Integration include:
 - **Testing**: Junit, Selenium, Cucumber  
 - **Bug Report**: TFS, Sentry, Excel for manual testing
 
-[Continuous Integration Server Process Flow](/.attachments/ci-server-flow.png)
+![Continuous Integration Server Process Flow](/.attachments/ci-server-flow.png)
 
 ### Conclusion  
 The Continuous Integration pipeline automates manual processes, ensuring the shortest time-to-market. It enhances efficiency through automation and quality via responsive feedback, reducing wait times and increasing value-added time.
