@@ -118,7 +118,7 @@ The terms **Equity Risk Premium (ERP)** and **Market Risk Premium (MRP)** are cl
     \text{Market Risk Premium} = \text{Expected Market Return} - \text{Risk-Free Rate}
   }$$
 
-#### Key Differences (in Some Contexts):
+#### Key Differences (in Some Contexts)
 
 - **Equity Risk Premium** is typically specific to the **equity (stock) market**.
 - **Market Risk Premium** could refer to the premium for taking on the risk of investing in the **entire market** or a broader portfolio, which may include other assets like bonds, real estate, etc., but is often used to mean the equity market.
