@@ -14,7 +14,7 @@ At the heart of a tech company’s operations is product development. Whether it
 
 Implementing methodologies like Agile or DevOps allows tech companies to develop and deliver products more rapidly. Iterative development, constant feedback loops, and continuous integration (CI) enable the creation of scalable and user-centered solutions. Close collaboration between development, design, and product management teams ensures that the company’s offerings meet user needs while maintaining technical feasibility.
 
-#### 3. Talent Management and Culture
+#### 3. [Talent Management and Culture](./TALENT.md)
 
 In the tech industry, human capital is one of the most critical assets. Managing operations involves recruiting, training, and retaining top talent, especially in fields like software engineering, data science, cybersecurity, and product management. Building an inclusive and motivating company culture encourages employees to contribute to the company's success while fostering creativity and innovation.
 
@@ -26,7 +26,7 @@ Customer support is integral to running smooth operations in a tech company. In 
 
 Additionally, focusing on user experience (UX) during product development ensures that the company's offerings are intuitive and user-friendly. The smoother the UX, the fewer issues users encounter, which in turn reduces the load on customer support operations.
 
-#### 5. Leveraging Technology for Operational Efficiency
+#### 5. [Leveraging Technology for Operational Efficiency](./TOOLS.md)
 
 Technology itself plays a pivotal role in streamlining operations. From cloud-based infrastructure to automated workflows, tech companies must leverage cutting-edge tools to improve efficiency. Automation in areas such as customer relationship management (CRM), project management, and marketing can significantly reduce the manual effort required, freeing up resources for more value-added activities.
 
