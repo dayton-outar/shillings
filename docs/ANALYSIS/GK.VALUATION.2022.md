@@ -163,3 +163,16 @@ Similarly, each future year's cash flow is discounted to the present year (2021 
 4. **Summing the Present Values**: The sum of these discounted values gives the total present value of future FCFs.
 
 This method is commonly used in discounted cash flow (DCF) analysis to determine the present value of future financial benefits.
+
+### Terminal Value
+
+The **Terminal Value (TV)** represents the value of the company **at the end of the forecasted cash flow period**. It captures the assumption that the company will continue to generate cash flows **beyond the forecasted years**, either indefinitely or for a long-term horizon. 
+
+In essence, at that particular point in time (end of the forecast period), the company is valued at the **terminal value**, which reflects the remaining value of all future cash flows after the forecast period. This value is then **discounted back to the present** to form part of the overall company's present value in a DCF analysis.
+
+### Key Points:
+- The terminal value is meant to simplify the valuation beyond the forecast period, as it’s impractical to predict cash flows forever.
+- It provides a **snapshot** of the company’s value at the end of the forecast, assuming it will continue operations and generate cash flow into the future.
+- The **present value of the terminal value** is combined with the present value of the forecasted cash flows to arrive at the company's total value today.
+
+So, it's a way to say: "At the end of our forecast, the company should be worth this much based on its future cash-generating potential."
