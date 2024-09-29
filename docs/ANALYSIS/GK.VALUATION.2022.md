@@ -24,9 +24,9 @@ An important part of a discounted cash flow is the discount rate, below we expla
 | Risk-free Rate | 5-Year Average of JM Long-Term Govt Bond Rate | 7.5% |
 | Equity Risk Premium | S&P Global | 9.0% |
 | Consumer Retailing Unlevered Beta | Simply Wall St/ S&P Global | 0.55 |
-| Re-levered Beta | ${ = 0.33 + [(0.66 × Unlevered beta) × (1 + (1 - tax rate) (Debt/Market Equity))] }$ <br />= 0.33 + [(0.66 × 0.551) × (1 + (1 - 25.0%) (34.81%))] | 0.795 |
+| Re-levered Beta | ${ = 0.33 + [(0.66 \times \text{ Unlevered beta}) \times (1 + (1 - \text{ tax rate}) (\text{Debt-to-Equity}))] }$ <br />= 0.33 + [(0.66 × 0.551) × (1 + (1 - 25.0%) (34.81%))] | 0.795 |
 | Levered Beta | Levered Beta limited to 0.8 to 2.0<br />(practical range for a stable firm) | 0.8 |
-| Discount Rate/Cost of Equity | = Cost of Equity = Risk-free Rate + (Levered Beta × Equity Risk Premium)<br />= 7.54% + (0.800 × 9.00%) | 14.74% |
+| Discount Rate/Cost of Equity | ${ = \text{Cost of Equity} = \text{Risk-free Rate} + (\text{Levered Beta} \times \text{Equity Risk Premium}) }$ <br />= 7.54% + (0.800 × 9.00%) | 14.74% |
 
 _Calculation of Discount Rate/ Cost of Equity for JMSE:GK_
 
