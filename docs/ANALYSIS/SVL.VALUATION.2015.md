@@ -142,17 +142,23 @@ Figures quoted in '000
 | --                                                        |               -- |               -- |               -- |               -- |               -- |               -- |               -- |
 | **Free Cash Flow to Firm (FCFF)**                         |                  | **$477,939**     | **$627,532**     | **$1,013,909**   | **$863,963**     | **$485,193**     | **$1,939,161**   |
 
-## Terminal Value
-
 Terminal value for 2016 is,
 
 $$\huge{
    V^O = { { FCFF_{2016} \over {WACC - g} } = { {( FCFF_{2015} ) ( 1 + g) } \over { WACC - g } }  = { { 1,939,161 \times 1.033 } \over { 0.115 - 0.033 } } =  24,428,698.94 }
 }$$
 
-where $V^O$ is the value of the firm's non-operating asset
+where $V^O$ is the value of the firm's operating asset.
 
+So, in 2016, the company's operating asset is valued at J$24,428,698.94. To value the entire enterprize, other assets valued at market price can be added. However, this valuation need to take into consideration the future cash flows. So, the following presumptions about the free cash flow is made.
 
+|      | Levered FCF ('000') | Source       | Present Value Discounted (@ 14.74%) |
+|:---- | -------------------:|:------------ | ---:|
+| 2016 | $1,427,823          | Est @ 8.21%  | J$11,212.98 |
+| 2017 | 13,896.49           | Est @ 8.01%  | J$10,555.41 |
+| 2018 | 14,990.12           | Est @ 7.87%  | J$9,923.4 |
+| 2019 | 16,154.99           | Est @ 7.77%  | J$9,320.67 |
+| 2020 | 17,399.19           | Est @7.7%    | J$8,748.93 |
 
 ## Stock Value
 
