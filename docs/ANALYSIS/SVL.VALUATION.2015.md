@@ -59,21 +59,23 @@ To understand how the enterprise value based on market capitalization can be muc
 
 3. **Enterprise Value (EV)**: This is a measure of a company's total value, often considered as the theoretical takeover price. It is calculated using the formula:
    $${
-   \text{EV} = \text{Market Capitalization} + \text{Debt} - \text{Cash}
+      \text{EV} = \text{Market Capitalization} + \text{Debt} - \text{Cash}
    }$$
    In this case, if the enterprise value is equal to the market capitalization of $12,289,608,000, it suggests that the company has minimal debt and cash, or that these factors balance out.
 
 #### Example Calculation
 If the market capitalization is $12,289,608,000 and the share capital is $1,967,183,000, the market price per share can be calculated as follows:
 
-1. **Calculate Market Price per Share**:
-   $${
-   \text{Market Price per Share} = \frac{\text{Market Capitalization}}{\text{Number of Shares}} = \frac{12,289,608,000}{2,637,254,926} \approx 4.66
+1. **Calculate Market Price per Share**
+
+   $$\huge{
+      \text{Market Price per Share} = \frac{\text{Market Capitalization}}{\text{Number of Shares}} = \frac{12,289,608,000}{2,637,254,926} \approx 4.66
    }$$
 
-2. **Book Value per Share**:
-   $${
-   \text{Book Value per Share} = \frac{\text{Share Capital}}{\text{Number of Shares}} = \frac{1,967,183,000}{2,637,254,926} \approx 0.75
+2. **Book Value per Share**
+
+   $$\huge{
+      \text{Book Value per Share} = \frac{\text{Share Capital}}{\text{Number of Shares}} = \frac{1,967,183,000}{2,637,254,926} \approx 0.75
    }$$
 
 The significant difference between the market price per share ($4.66) and the book value per share ($0.75) indicates that investors are valuing the company based on its growth potential, assets, and future earnings, rather than just the capital contributed by shareholders.
