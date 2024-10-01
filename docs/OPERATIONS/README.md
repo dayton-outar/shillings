@@ -2,7 +2,7 @@
 
 Running operations in a tech company is a complex and multi-faceted endeavor that requires a harmonious blend of technical expertise, strategic planning, and efficient management. Operational success in the tech industry hinges on delivering innovative products and services while maintaining streamlined processes to maximize efficiency and profitability. Key elements involved in running operations in a tech company include leadership, product development, talent management, customer support, and the role of technology in driving operational efficiency.
 
-#### 1. Leadership and Vision
+#### 1. [Leadership and Vision](./LEADERSHIP.md)
 
 Effective leadership is the cornerstone of successful operations in any company, but in tech, the stakes are often higher due to rapid changes in market dynamics and technological innovation. Leaders must possess not only a clear strategic vision but also the ability to adapt to emerging trends. Tech companies often face decisions about which technologies to adopt, whether to invest in research and development (R&D), or how to allocate resources between different projects.
 
