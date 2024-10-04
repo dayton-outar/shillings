@@ -329,12 +329,31 @@ of truth.
 > Consider now the signals presented in the table below. What metrics might you create to measure each of those? Some of these signals might be measurable by analyzing tool and code logs. Others are measurable only by directly asking engineers. Still others might not be perfectly measurable—how do we truly measure code quality, for example?
 > 
 > Ultimately, when evaluating the impact of readability on productivity, we ended up with a combination of metrics from three sources. First, we had a survey that was specifically about the readability process. This survey was given to people after they completed the process; this allowed us to get their immediate feedback about the process. This hopefully avoids recall bias,[^5] but it does introduce both recency bias[^6] and sampling bias.[^7] Second, we used a large-scale quarterly survey to track items that were not specifically about readability; instead, they were purely about metrics that we expected readability should affect. Finally, we used fine-grained logs metrics from our developer tools to determine how much time the logs claimed it took engineers to complete specific tasks.[^8] See below a complete list of metrics with their corresponding signals and goals.
-
-| QUANTS | Goal | Signal | Metric |
-|:-------|:-------|:-------|:-------|
-| **Qu**ality of the code | Engineers write higher-quality code as a result of the readability process.| Engineers who have been granted readability judge their code to be of higher quality than engineers who have not been granted readability. | Quarterly Survey: Proportion of engineers who report being satisfied with the quality of their own code |
-|  |  | The readability process has a positive impact on code quality. | Readability Survey: Proportion of engineers reporting that readability reviews have no impact or negative impact on code quality |
-|  |  |  | Readability Survey: Proportion of engineers reporting that participating in the readability process has improved code quality for their team |
+> 
+> | QUANTS | Goal | Signal | Metric |
+> |:-------|:-------|:-------|:-------|
+> | **Qu**ality of the code | Engineers write higher-quality code as a result of the readability process.| Engineers who have been granted readability judge their code to be of higher quality than engineers who have not been granted readability. | Quarterly Survey: Proportion of engineers who report being satisfied with the quality of their own code |
+> |  |  | The readability process has a positive impact on code quality. | Readability Survey: Proportion of engineers reporting that readability reviews have no impact or negative impact on code quality |
+> |  |  |  | Readability Survey: Proportion of engineers reporting that participating in the readability process has improved code quality for their team |
+> |  | Engineers write more consistent code as a result of the readability process. | Engineers are given consistent feedback and direction in code reviews by readability reviewers as a part of the readability process. | Readability Survey: Proportion of engineers reporting inconsistency in readability reviewers’ comments and readability criteria. |
+> |  |  Engineers contribute to a culture of code health as a result of the readability process. | Engineers who have been granted readability regularly comment on style and/or readability issues in code reviews. | Readability Survey: Proportion of engineers reporting that they regularly comment on style and/or readability issues in code reviews |
+> | Intellectual | Engineers learn about the Google codebase and best coding practices as a result of the readability process. | Engineers report learning from the readability process. | Readability Survey: Proportion of engineers reporting that they learned about four relevant topics |
+> |  |  |  | Readability Survey: Proportion of engineers reporting that learning or gaining expertise was a strength of the readability process |
+> |  | Engineers receive mentoring during the readability process. | Engineers report positive interactions with experienced Google engineers who serve as reviewers during the readability process. | Readability Survey: Proportion of engineers reporting that working with readability reviewers was a strength of the readability process |
+> | Tempo/velocity | Engineers are more productive as a result of the readability process. | Engineers who have been granted readability judge themselves to be more productive than engineers who have not been granted readability. | Quarterly Survey: Proportion of engineers reporting that they’re highly productive |
+> |  |  | Engineers report that completing the readability process positively affects their engineering velocity. | Readability Survey: Proportion of engineers reporting that not having readability reduces team engineering velocity |
+> |  |  | Changelists (CLs) written by engineers who have been granted readability are faster to review than CLs written by engineers who have not been granted readability. | Logs data: Median review time for CLs from authors with readability and without readability |
+> |  |  | CLs written by engineers who have been granted readability are easier to shepherd through code review than CLs written by engineers who have not been granted readability. | Logs data: Median shepherding time for CLs from authors with readability and without readability |
+> |  |  | CLs written by engineers who have been granted readability are faster to get through code review than CLs written by engineers who have not been granted readability. | Logs data: Median time to submit for CLs from authors with readability and without readability |
+> |  |  | The readability process does not have a negative impact on engineering velocity. | Readability Survey: Proportion of engineers reporting that the readability process negatively impacts their velocity |
+> |  |  |  | Readability Survey: Proportion of engineers reporting that readability reviewers responded promptly |
+> |  |  |  | Readability Survey: Proportion of engineers reporting that timeliness of reviews was a strength of the readability process |
+> | Satisfaction | Engineers see the benefit of the readability process and have positive feelings about participating in it. | Engineers view the readability process as being an overall positive experience. | Readability Survey: Proportion of engineers reporting that their experience with the readability process was positive overall |
+> |  |  | Engineers view the readability process as being worthwhile | Readability Survey: Proportion of engineers reporting that the readability process is worthwhile |
+> |  |  |  | Readability Survey: Proportion of engineers reporting that the quality of readability reviews is a strength of the process |
+> |  |  |  | Readability Survey: Proportion of engineers reporting that thoroughness is a strength of the process |
+> |  |  | Engineers do not view the readability process as frustrating. | Readability Survey: Proportion of engineers reporting that the readability process is uncertain, unclear, slow, or frustrating |
+> |  |  |  | Quarterly Survey: Proportion of engineers reporting that they’re satisfied with their own engineering velocity |
 
 ### Taking Action and Tracking Results
 
