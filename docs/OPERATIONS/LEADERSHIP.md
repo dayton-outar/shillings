@@ -266,7 +266,83 @@
 
 ### The Cycle of Success
 
+> When a team tackles a difficult problem, there’s a standard pattern that emerges, a particular cycle. It looks like this:
 > 
+> _Analysis_
+> 
+> First, you receive the problem and start to wrestle with it. You identify the blinders, find all the trade-offs, and build consensus about how to manage them.
+> 
+> _Struggle_
+> 
+> You start moving on the work, whether or not your team thinks it’s ready. You prepare for failures, retries, and iteration. At this point, your job is mostly about herding cats. Encourage your leaders and experts on the ground to form opinions and then listen carefully and devise an overall strategy, even if you have to “fake it” at first.
+> 
+> _Traction_
+> 
+> Eventually your team begins to figure things out. You’re making smarter decisions, and real progress is made. Morale improves. You’re iterating on trade-offs, and the organization is beginning to drive itself around the problem. Nice job!
+> 
+> _Reward_
+> 
+> Something unexpected happens. Your manager takes you aside and congratulates you on your success. You discover your reward isn’t just a pat on the back, but a _whole new problem_ to tackle. That’s right: the reward for success is more work … and more responsibility! Often, it’s a problem that is similar or adjacent to the first one, but equally difficult.
+> 
+> So now you’re in a pickle. You’ve been given a new problem, but (usually) not more people. Somehow you need to solve _both_ problems now, which likely means that the original problem still needs to be managed with _half_ as many people in _half_ the time. You need the other half of your people to tackle the new work! We refer to this final step as the _compression stage_: you’re taking everything you’ve been doing and compressing it down to half the size.
+> 
+> So really, the cycle of success is more of a spiral. Over months and years, your organization is scaling by tackling new problems and then figuring out how to compress them so that it can take on new, parallel struggles. If you’re lucky, you’re allowed to hire more people as you go. More often than not, though, your hiring doesn’t keep pace with the scaling. Larry Page, one of Google’s founders, would probably refer to this spiral as “uncomfortably exciting.”
+> 
+> The spiral of success is a conundrum—it’s something that’s difficult to manage, and yet it’s the main paradigm for scaling a team of teams. The act of compressing a problem isn’t just about figuring out how to maximize your team’s efficiency, but also about learning to scale your _own_ time and attention to match the new breadth of responsibility.
+
+## Protecting Your Energy
+
+> We’ve talked about protecting your time and attention—but your personal energy is the other piece of the equation. All of this scaling is simply exhausting. In an environment like this, how do you stay charged and optimistic?
+> 
+> Part of the answer is that over time, as you grow older, your overall stamina builds up. Early in your career, working eight hours a day in an office can feel like a shock; you come home tired and dazed. But just like training for a marathon, your brain and body build up larger reserves of stamina over time.
+> 
+> The other key part of the answer is that leaders gradually learn to _manage_ their energy more intelligently. It’s something they learn to pay constant attention to. Typically, this means being aware of how much energy you have at any given moment, and making deliberate choices to “recharge” yourself at specific moments, in specific ways. Here are some great examples of mindful energy management:
+> 
+> _Take real vacations_
+> 
+> A weekend is not a vacation. It takes at least three days to “forget” about your work; it takes at least a week to actually feel refreshed. But if you check your work email or chats, you _ruin_ the recharge. A flood of worry comes back into your mind, and all of the benefit of psychological distancing dissipates. The vacation recharges only if you are truly disciplined about disconnecting. And, of course, this is possible only if you’ve built a self-driving organization.
+> 
+> _Make it trivial to disconnect_
+> 
+> When you disconnect, leave your work laptop at the office. If you have work communications on your phone, remove them. For example, if your company uses G Suite (Gmail, Google Calendar, etc.), a great trick is to install these apps in a “work profile” on your phone. This causes a second set of work-badged apps to appear on your phone. For example, you’ll now have two Gmail apps: one for personal email, one for work email. On an Android phone, you can then press a single button to disable the entire work profile at once. All the work apps gray out, as if they were uninstalled, and you can’t “accidentally” check work messages until you re-enable the work profile.
+> 
+> _Take real weekends, too_
+> 
+> A weekend isn’t as effective as a vacation, but it still has some rejuvenating power. Again, this recharge works only if you disconnect from work communications. Try truly signing out on Friday night, spend the weekend doing things you love, and then sign in again on Monday morning when you’re back in the office.
+> 
+> _Take breaks during the day_
+> 
+> Your brain operates in natural 90-minute cycles. Use the opportunity to get up and walk around the office, or spend 10 minutes walking outside. Tiny breaks like this are only tiny recharges, but they can make a tremendous difference in your stress levels and how you feel over the next two hours of work.
+> 
+> _Give yourself permission to take a mental health day_
+> 
+> Sometimes, for no reason, you just have a bad day. You might have slept well, eaten well, exercised—and yet you are still in a terrible mood anyway. If you’re a leader, this is an awful thing. Your bad mood sets the tone for everyone around you, and it can lead to terrible decisions (emails you shouldn’t have sent, overly harsh judgements, etc.). If you find yourself in this situation, just turn around and go home, declaring a sick day. Better to get nothing done that day than to do active damage.
+> 
+> In the end, managing your energy is just as important as managing your time. If you learn to master these things, you’ll be ready to tackle the broader cycle of scaling responsibility and building a self-sufficient team.
+
+## Supervisory Development Programme
+
+Some key points about traditional supervision can also be useful in leading a team. I have kept note of these points that I have learnt from the Supervisory Development Programme at GraceKennedy.
+
+### Traditional Supervisory
+
+- **Management by Walking Around**: Be visible and engaged.
+- **Management by Walking the Talk**: Lead by example.
+- Supervisors should be **firm, fair, and friendly**.
+- The **Johari Window**: Find a balance in what to share with staff—too little leads to assumptions, too much can reduce respect.
+- Use a **friendly and respectful approach** for sensitive matters and give **continuous feedback** to build trust.
+- **Body language** and **proximity** matter—stand side by side, avoid defensiveness.
+
+### Communication
+
+The **7 C’s of Communication** are:
+1. **Candid**: Be honest.
+2. **Clarity**: Ensure messages are clear.
+3. **Completeness**: Cover all relevant information (5 W's: What, Who, Where, When, Why).
+4. **Conciseness**: Be brief and to the point.
+5. **Concreteness**: Provide specific information.
+6. **Courtesy**: Communicate respectfully.
+7. **Correctness**: Ensure proper grammar and accuracy.
 
 
 [^1]: Chapter 5, _How to Lead a Team_. Software Engineering at Google. Curated by Titus Winters, Tom Manshreck & Hyrum Wright

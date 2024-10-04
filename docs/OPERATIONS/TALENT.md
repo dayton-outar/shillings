@@ -6,26 +6,6 @@ Managing talent involves communicating values in order to foster a culture.
 
 [TODO: Revise and refine]
 
-### Traditional Supervisory
-
-- **Management by Walking Around**: Be visible and engaged.
-- **Management by Walking the Talk**: Lead by example.
-- Supervisors should be **firm, fair, and friendly**.
-- The **Johari Window**: Find a balance in what to share with staff—too little leads to assumptions, too much can reduce respect.
-- Use a **friendly and respectful approach** for sensitive matters and give **continuous feedback** to build trust.
-- **Body language** and **proximity** matter—stand side by side, avoid defensiveness.
-
-### Communication
-
-The **7 C’s of Communication** are:
-1. **Candid**: Be honest.
-2. **Clarity**: Ensure messages are clear.
-3. **Completeness**: Cover all relevant information (5 W's: What, Who, Where, When, Why).
-4. **Conciseness**: Be brief and to the point.
-5. **Concreteness**: Provide specific information.
-6. **Courtesy**: Communicate respectfully.
-7. **Correctness**: Ensure proper grammar and accuracy.
-
 ### Collaborative Nirvana
 
 > To reach collaborative nirvana, you first need to learn and embrace what I call the “three pillars” of social skills. These three principles aren’t just about greasing the wheels of relationships; they’re the foundation on which all healthy interaction and collaboration are based:
