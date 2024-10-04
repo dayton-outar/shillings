@@ -332,7 +332,9 @@ of truth.
 
 | QUANTS | Goal | Signal | Metric |
 |:-------|:-------|:-------|:-------|
-| **Qu**ality of the code | | | |
+| **Qu**ality of the code | Engineers write higher-quality code as a result of the readability process.| Engineers who have been granted readability judge their code to be of higher quality than engineers who have not been granted readability. | Quarterly Survey: Proportion of engineers who report being satisfied with the quality of their own code |
+|  |  | The readability process has a positive impact on code quality. | Readability Survey: Proportion of engineers reporting that readability reviews have no impact or negative impact on code quality |
+|  |  |  | Readability Survey: Proportion of engineers reporting that participating in the readability process has improved code quality for their team |
 
 ### Taking Action and Tracking Results
 
