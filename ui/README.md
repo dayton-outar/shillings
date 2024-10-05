@@ -106,3 +106,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 8. [Vue 3 Animations & Transitions](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ghm7-iTfS9n468Kp7l9Ipu) - [The Net Ninja](https://www.youtube.com/c/TheNetNinja)
 9. [Animating Vue Router Transitions in Vue 3](https://youtu.be/L77Uq93XXzk)
 10. [Vue.js Tutorial: Add Analytics to Your App with Google Analytics](https://youtu.be/Umj51NqKF8Y)
+11. [Learn How To Use Svelte 5 Snippets](https://youtu.be/OlWWIbRz438?si=v82TalSEO_JRlQ3M)
+12. [5 Things I Wish I Knew When I Started Using SvelteKit](https://youtu.be/eJpPNg-v0Fo?si=WPTW6V9fEtL739m-)
