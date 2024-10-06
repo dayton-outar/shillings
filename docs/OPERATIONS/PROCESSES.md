@@ -12,7 +12,7 @@ In the tech industry, the implementation of structured processes is vital for fo
 
 **Monitoring and Feedback** mechanisms are vital for understanding how software performs in real-world scenarios. Collecting data on software usage and performance allows teams to make informed decisions about future development. By monitoring application behavior and gathering user feedback, organizations can quickly identify areas for improvement and address issues before they escalate. This continuous feedback loop enhances the overall user experience and supports ongoing product refinement.
 
-**Documentation and Knowledge Sharing** are essential for preserving institutional knowledge and ensuring that teams can work efficiently. Comprehensive documentation of processes, code, and system architecture helps new team members onboard quickly and ensures that best practices are maintained over time. When knowledge is shared across the organization, it fosters a culture of collaboration and reduces the risk of knowledge silos, which can hinder innovation.
+**[Documentation and Knowledge Sharing](#documentation-and-knowledge-sharing)** are essential for preserving institutional knowledge and ensuring that teams can work efficiently. Comprehensive documentation of processes, code, and system architecture helps new team members onboard quickly and ensures that best practices are maintained over time. When knowledge is shared across the organization, it fosters a culture of collaboration and reduces the risk of knowledge silos, which can hinder innovation.
 
 **Incident Management** processes are critical for responding to and learning from failures. A well-defined incident management framework ensures that teams can address issues swiftly, minimizing downtime and service disruptions. Furthermore, by analyzing incidents and their root causes, organizations can implement preventive measures, leading to more resilient systems.
 
@@ -24,9 +24,60 @@ In conclusion, the importance of structured processes in the tech industry canno
 
 ## Code Review
 
+> Code reviews can happen at many stages of software development. At Google, code reviews take place before a change can be committed to the codebase; this stage is also known as a _precommit review_. The primary end goal of a code review is to get another engineer to consent to the change, which we denote by tagging the change as “looks good to me” (LGTM). We use this LGTM as a necessary permissions “bit” (combined with other bits noted below) to allow the change to be committed.
+> 
+> A typical code review at Google goes through the following steps:
+> 
+> 1. A user writes a change to the codebase in their workspace. This _author_ then creates a snapshot of the change: a patch and corresponding description that are uploaded to the code review tool. This change produces a _diff_ against the code‐base, which is used to evaluate what code has changed.
+> 2. The author can use this initial patch to apply automated review comments or do self-review. When the author is satisfied with the diff of the change, they mail the change to one or more reviewers. This process notifies those reviewers, asking them to view and comment on the snapshot.
+> 3. _Reviewers _open the change in the code review tool and post comments on the diff. Some comments request explicit resolution. Some are merely informational.
+> 4. The author modifies the change and uploads new snapshots based on the feed‐back and then replies back to the reviewers. Steps 3 and 4 may be repeated multiple times. 
+> 5. After the reviewers are happy with the latest state of the change, they agree to the change and accept it by marking it as “looks good to me” (LGTM). Only one LGTM is required by default, although convention might request that all reviewers agree to the change.
+> 6. After a change is marked LGTM, the author is allowed to commit the change to the codebase, provided they _resolve all comments_ and that the change is _approved_.[^5]
+
+### How Code Review Works at Google
+
+> There are three aspects of review that require “approval” for any given change at Google:
+> 
+> - A correctness and comprehension check from another engineer that the code is appropriate and does what the author claims it does. This is often a team member, though it does not need to be. This is reflected in the LGTM permissions “bit,” which will be set after a peer reviewer agrees that the code “looks good” to them.
+> 
+> - Approval from one of the code owners that the code is appropriate for this particular part of the codebase (and can be checked into a particular directory). This approval might be implicit if the author is such an owner. Google’s codebase is a tree structure with hierarchical owners of particular directories. Owners act as gatekeepers for their particular directories. A change might be proposed by any engineer and LGTM’ed by any other engineer, but an owner of the directory in question must also _approve_ this addition to their part of the codebase. Such an owner might be a tech lead or other engineer deemed expert in that particular area of the codebase. It’s generally up to each team to decide how broadly or narrowly to assign ownership privileges.
+> 
+> - Approval from someone with language “readability” that the code conforms to the language’s style and best practices, checking whether the code is written in the manner we expect. This approval, again, might be implicit if the author has such readability. These engineers are pulled from a company-wide pool of engineers who have been granted readability in that programming language.
+> 
+> Although this level of control sounds onerous—and, admittedly, it sometimes is—most reviews have one person assuming all three roles, which speeds up the process quite a bit. Importantly, the author can also assume the latter two roles, needing only an LGTM from another engineer to check code into their own codebase, provided they already have readability in that language (which owners often do).
+> 
+> These requirements allow the code review process to be quite flexible. A tech lead who is an owner of a project and has that code’s language readability can submit a code change with only an LGTM from another engineer. An intern without such authority can submit the same change to the same codebase, provided they get approval from an owner with language readability. The three aforementioned permission “bits” can be combined in any combination. An author can even request more than one LGTM from separate people by explicitly tagging the change as wanting an LGTM from all reviewers.
+> 
+> In practice, most code reviews that require more than one approval usually go through a two-step process: gaining an LGTM from a peer engineer, and then seeking approval from appropriate code owner/readability reviewer(s). This allows the two roles to focus on different aspects of the code review and saves review time. The primary reviewer can focus on code correctness and the general validity of the code change; the code owner can focus on whether this change is appropriate for their part of the codebase without having to focus on the details of each line of code. An approver is often looking for something different than a peer reviewer, in other words. After all, someone is trying to check in code to their project/directory. They are more concerned with questions such as: “Will this code be easy or difficult to maintain?” “Does it add to my technical debt?” “Do we have the expertise to maintain it within our team?”
+> 
+> If all three of these types of reviews can be handled by one reviewer, why not just have those types of reviewers handle all code reviews? The short answer is scale. Separating the three roles adds flexibility to the code review process. If you are working with a peer on a new function within a utility library, you can get someone on your team to review the code for code correctness and comprehension. After several rounds (perhaps over several days), your code satisfies your peer reviewer and you get an LGTM. Now, you need only get an _owner_ of the library (and owners often have appropriate readability) to approve the change.[^5]
+
+### Code Review Benefits
+
+> Across the industry, code review itself is not controversial, although it is far from a universal practice. Many (maybe even most) other companies and open source projects have some form of code review, and most view the process as important as a sanity check on the introduction of new code into a codebase. Software engineers understand some of the more obvious benefits of code review, even if they might not personally think it applies in all cases. But at Google, this process is generally more thorough and wide spread than at most other companies.
+> 
+> Google’s culture, like that of a lot of software companies, is based on giving engineers wide latitude in how they do their jobs. There is a recognition that strict processes tend not to work well for a dynamic company needing to respond quickly to new technologies, and that bureaucratic rules tend not to work well with creative professionals. Code review, however, is a mandate, one of the few blanket processes in which all software engineers at Google must participate. Google requires code review for almost4 every code change to the codebase, no matter how small. This mandate does have a cost and effect on engineering velocity given that it does slow down the introduction of new code into a codebase and can impact time-to-production for any given code change. (Both of these are common complaints by software engineers of strict code review processes.) Why, then, do we require this process? Why do we believe that this is a long-term benefit?
+> 
+> A well-designed code review process and a culture of taking code review seriously provides the following benefits:
+> 
+> - Checks code correctness
+> - Ensures the code change is comprehensible to other engineers
+> - Enforces consistency across the codebase
+> - Psychologically promotes team ownership
+> - Enables knowledge sharing
+> - Provides a historical record of the code review itself
+> 
+> Many of these benefits are critical to a software organization over time, and many of them are beneficial to not only the author but also the reviewers. The following sections go into more specifics for each of these items.
+> 
+> **Code Correctness**
+> 
+> 
+> [^5]
+
 ## Testing and Quality Assurance
 
-## Knowledge Sharing and Documentation
+## Documentation and Knowledge Sharing
 
 ### Challenges to Learning
 
@@ -909,3 +960,4 @@ be looking for when reading through the code.
 [^2]: Chapter 3, _Knowledge Sharing_. Software Engineering at Google. Curated by Titus Winters, Tom Manshreck & Hyrum Wright
 [^3]: Chapter 10, _Documentation_. Software Engineering at Google. Curated by Titus Winters, Tom Manshreck & Hyrum Wright
 [^4]: A changelist is a list of files that make up a change in a version control system. A changelist is synonymous with a changeset. It's like a _pull request_ on Github.
+[^5]: Chapter 9, _Code Review_. Software Engineering at Google. Curated by Titus Winters, Tom Manshreck & Hyrum Wright
