@@ -30,7 +30,7 @@ In conclusion, the importance of structured processes in the tech industry canno
 > 
 > 1. A user writes a change to the codebase in their workspace. This _author_ then creates a snapshot of the change: a patch and corresponding description that are uploaded to the code review tool. This change produces a _diff_ against the code‐base, which is used to evaluate what code has changed.
 > 2. The author can use this initial patch to apply automated review comments or do self-review. When the author is satisfied with the diff of the change, they mail the change to one or more reviewers. This process notifies those reviewers, asking them to view and comment on the snapshot.
-> 3. _Reviewers _open the change in the code review tool and post comments on the diff. Some comments request explicit resolution. Some are merely informational.
+> 3. _Reviewers_ open the change in the code review tool and post comments on the diff. Some comments request explicit resolution. Some are merely informational.
 > 4. The author modifies the change and uploads new snapshots based on the feed‐back and then replies back to the reviewers. Steps 3 and 4 may be repeated multiple times. 
 > 5. After the reviewers are happy with the latest state of the change, they agree to the change and accept it by marking it as “looks good to me” (LGTM). Only one LGTM is required by default, although convention might request that all reviewers agree to the change.
 > 6. After a change is marked LGTM, the author is allowed to commit the change to the codebase, provided they _resolve all comments_ and that the change is _approved_.[^5]
