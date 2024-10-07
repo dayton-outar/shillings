@@ -6,7 +6,7 @@ In the tech industry, the implementation of structured processes is vital for fo
 
 **[Code Reviews](#code-review)** are another critical process that contributes to software quality and team collaboration. The practice of reviewing code before it is merged into the main branch fosters an environment of knowledge sharing and accountability. Code reviews help identify potential issues early, reduce the likelihood of bugs, and ensure that best practices are adhered to. This collaborative effort not only improves the quality of the codebase but also serves as a learning opportunity for team members, leading to a more skilled and cohesive development team.
 
-**Testing and Quality Assurance** processes are fundamental to maintaining software reliability. Automated testing strategies—such as unit tests, integration tests, and end-to-end tests—ensure that code changes do not introduce new defects. In an industry where software failure can result in significant financial losses and damage to reputation, robust testing processes are essential for delivering stable and trustworthy applications. Continuous integration and automated testing further enhance the efficiency of the development cycle, enabling teams to catch issues early and maintain a deployable state throughout the development process.
+**[Testing and Quality Assurance](#testing-and-quality-assurance)** processes are fundamental to maintaining software reliability. Automated testing strategies—such as unit tests, integration tests, and end-to-end tests—ensure that code changes do not introduce new defects. In an industry where software failure can result in significant financial losses and damage to reputation, robust testing processes are essential for delivering stable and trustworthy applications. Continuous integration and automated testing further enhance the efficiency of the development cycle, enabling teams to catch issues early and maintain a deployable state throughout the development process.
 
 **Release Management** plays a crucial role in coordinating the deployment of new features and updates. A structured release management process ensures that software is released in a controlled manner, minimizing disruptions to users. By establishing clear procedures for versioning, planning, and deployment, organizations can mitigate risks associated with releasing new software. This process is particularly important for maintaining the trust of users and ensuring that they have access to the latest improvements without compromising system stability.
 
@@ -21,6 +21,42 @@ In the tech industry, the implementation of structured processes is vital for fo
 **[Deprecation](#deprecation)** processes are crucial for managing the lifecycle of software components. Clearly communicating the deprecation of features or APIs allows users to transition smoothly to newer alternatives. By providing timelines, migration paths, and support, organizations can minimize disruption while encouraging the adoption of updated technologies. A well-managed deprecation process demonstrates a commitment to user experience and supports the long-term health of the software ecosystem.
 
 In conclusion, the importance of structured processes in the tech industry cannot be overstated. From development methodologies to incident management and deprecation strategies, these processes create a foundation for effective software engineering. They foster collaboration, enhance code quality, ensure reliability, and ultimately lead to the successful delivery of high-quality software products. As technology continues to evolve, organizations that prioritize and refine these processes will be better equipped to meet the demands of the market and deliver exceptional user experiences.
+
+## Development Methodologies
+
+Here are some widely recognized software development methodologies:
+
+1. **Waterfall**  
+   A traditional, linear development approach where each phase (requirements, design, implementation, verification, maintenance) must be completed before the next begins. It’s best suited for projects with clearly defined requirements.
+
+2. **Agile**  
+   A flexible and iterative approach that emphasizes collaboration, customer feedback, and small, rapid releases. Scrum and Kanban are popular frameworks within Agile.
+
+3. **Scrum**  
+   A subset of Agile, Scrum divides work into small, time-boxed iterations called sprints (typically 2-4 weeks). It includes roles like Product Owner and Scrum Master, and uses daily stand-ups to ensure progress.
+
+4. **Kanban**  
+   Also part of Agile, Kanban focuses on visualizing work, limiting work in progress, and optimizing flow. It uses boards (physical or digital) to track progress.
+
+5. **Extreme Programming (XP)**  
+   Another Agile methodology, XP emphasizes technical excellence and continuous improvement. It includes practices like pair programming, test-driven development (TDD), and continuous integration.
+
+6. **Lean Software Development**  
+   Originating from Lean manufacturing, this methodology focuses on minimizing waste, improving efficiency, and delivering value quickly. It emphasizes continuous learning, fast delivery, and efficient use of resources.
+
+7. **DevOps**  
+   A collaborative approach that integrates development and operations teams. It emphasizes automation, continuous integration/continuous delivery (CI/CD), and improving software quality by addressing production challenges early.
+
+8. **Spiral Model**  
+   Combines iterative development with the Waterfall model (basically Microsoft Solution Framework model). Each iteration (or spiral) consists of four phases: planning, risk analysis, engineering, and evaluation. It's ideal for complex, high-risk projects.
+
+9. **V-Model (Verification and Validation Model)**  
+   This is a variant of the Waterfall model where each development stage has a corresponding testing phase. It emphasizes validation at every step of the process.
+
+10. **Rapid Application Development (RAD)**  
+    Focuses on quick prototyping and iterative delivery with minimal planning. RAD is most effective for small to medium-sized projects where requirements can evolve during development.
+
+Each of these methodologies offers unique benefits and trade-offs depending on the project's complexity, team dynamics, and customer needs.
 
 ## Code Review
 
@@ -228,6 +264,111 @@ require benchmark tests.
 > We also encourage reviewers of automatic changes to avoid expanding their scope. When reviewing a new feature or a change written by a teammate, it is often reasonable to ask the author to address related concerns within the same change, so long as the request still follows the earlier advice to keep the change small. This does not apply to automatically generated changes because the human running the tool might have hundreds of changes in flight, and even a small percentage of changes with review comments or unrelated questions limits the scale at which the human can effectively operate the tool.[^5]
 
 ## Testing and Quality Assurance
+
+> The act of writing tests also improves the design of your systems. As the first clients of your code, a test can tell you much about your design choices. Is your system too tightly coupled to a database? Does the API support the required use cases? Does your system handle all of the edge cases? Writing automated tests forces you to confront these issues early on in the development cycle. Doing so generally leads to more modular software that enables greater flexibility later on.
+> 
+> Much ink has been spilled about the subject of testing software, and for good reason: for such an important practice, doing it well still seems to be a mysterious craft to many. ...
+> 
+> To better understand how to get the most out of testing, let’s start from the beginning. When we talk about automated testing, what are we really talking about?
+> 
+> The simplest test is defined by:
+> 
+> - A single behavior you are testing, usually a method or API that you are calling
+> - A specific input, some value that you pass to the API
+> - An observable output or behavior
+> - A controlled environment such as a single isolated process
+> 
+> When you execute a test like this, passing the input to the system and verifying the output, you will learn whether the system behaves as you expect. Taken in aggregate, hundreds or thousands of simple tests (usually called a _test suite_) can tell you how well your entire product conforms to its intended design and, more important, when it doesn’t.
+> 
+> Creating and maintaining a healthy test suite takes real effort. As a codebase grows, so too will the test suite. It will begin to face challenges like instability and slowness. A failure to address these problems will cripple a test suite. Keep in mind that tests derive their value from the trust engineers place in them. If testing becomes a productivity sink, constantly inducing toil and uncertainty, engineers will lose trust and begin to find workarounds. A bad test suite can be worse than no test suite at all.
+> 
+> In addition to empowering companies to build great products quickly, testing is becoming critical to ensuring the safety of important products and services in our lives. Software is more involved in our lives than ever before, and defects can cause more than a little annoyance: they can cost massive amounts of money, loss of property, or, worst of all, loss of life.
+> 
+> ...
+> 
+> **Write, Run, React**
+> 
+> In its purest form, automating testing consists of three activities: writing tests, running tests, and reacting to test failures. An automated test is a small bit of code, usually a single function or method, that calls into an isolated part of a larger system that you want to test. The test code sets up an expected environment, calls into the system, usually with a known input, and verifies the result. Some of the tests are very small, exercising a single code path; others are much larger and can involve entire systems, like a mobile operating system or web browser.
+> 
+> Unlike the QA processes of yore, in which rooms of dedicated software testers pored over new versions of a system, exercising every possible behavior, the engineers who build systems today play an active and integral role in writing and running automated tests for their own code. Even in companies where QA is a prominent organization, developer-written tests are commonplace. At the speed and scale that today’s systems are being developed, the only way to keep up is by sharing the development of tests around the entire engineering staff.
+> 
+> Of course, writing tests is different from writing _good tests_. It can be quite difficult to train tens of thousands of engineers to write good tests.
+> 
+> Products and services under active development will inevitably experience test failures. What really makes a testing process effective is how it addresses test failures. Allowing failing tests to pile up quickly defeats any value they were providing, so it is imperative not to let that happen. Teams that prioritize fixing a broken test within minutes of a failure are able to keep confidence high and failure isolation fast, and therefore derive more value out of their tests.
+> 
+> In summary, a healthy automated testing culture encourages everyone to share the work of writing tests. Such a culture also ensures that tests are run regularly. Last, and perhaps most important, it places an emphasis on fixing broken tests quickly so as to maintain high confidence in the process.
+> 
+> **Benefits of Testing Code**
+> 
+> To developers coming from organizations that don’t have a strong testing culture, the idea of writing tests as a means of improving productivity and velocity might seem antithetical. After all, the act of writing tests can take just as long (if not longer!) than implementing a feature would take in the first place. On the contrary, at Google, we’ve found that investing in software tests provides several key benefits to developer productivity:
+> 
+> _Less debugging_
+> 
+> As you would expect, tested code has fewer defects when it is submitted. Critically, it also has fewer defects throughout its existence; most of them will be caught before the code is submitted. A piece of code at Google is expected to be modified dozens of times in its lifetime. It will be changed by other teams and even automated code maintenance systems. A test written once continues to pay dividends and prevent costly defects and annoying debugging sessions through the lifetime of the project. Changes to a project, or the dependencies of a project, that break a test can be quickly detected by test infrastructure and rolled back before the problem is ever released to production.
+> 
+> _Increased confidence in changes_
+> 
+> All software changes. Teams with good tests can review and accept changes to their project with confidence because all important behaviors of their project are continuously verified. Such projects encourage refactoring. Changes that refactor code while preserving existing behavior should (ideally) require no changes to existing tests.
+> 
+> _Improved documentation_
+> 
+> Software documentation is notoriously unreliable. From outdated requirements to missing edge cases, it is common for documentation to have a tenuous relationship to the code. Clear, focused tests that exercise one behavior at a time function as executable documentation. If you want to know what the code does in a particular case, look at the test for that case. Even better, when requirements change and new code breaks an existing test, we get a clear signal that the “documentation” is now out of date. Note that tests work best as documentation only if care is taken to keep them clear and concise.
+> 
+> _Simpler reviews_
+> 
+> All code at Google is reviewed by at least one other engineer before it can be submitted. A code reviewer spends less effort verifying code works as expected if the code review includes thorough tests that demonstrate code correctness, edge cases, and error conditions. Instead of the tedious effort needed to mentally walk each case through the code, the reviewer can verify that each case has a passing test.
+> 
+> _Thoughtful design_
+> 
+> Writing tests for new code is a practical means of exercising the API design of the code itself. If new code is difficult to test, it is often because the code being tested has too many responsibilities or difficult-to-manage dependencies. Well-designed code should be modular, avoiding tight coupling and focusing on specific responsibilities. Fixing design issues early often means less rework later.
+> 
+> _Fast, high-quality releases_
+> 
+> With a healthy automated test suite, teams can release new versions of their application with confidence. Many projects at Google release a new version to production every day—even large projects with hundreds of engineers and thousands of code changes submitted every day. This would not be possible without automated testing.[^7]
+
+### Designing a Test Suite
+
+> The hourglass involves many end-to-end tests and many unit tests but few integration tests. It isn’t quite as bad as the ice cream cone, but it still results in many end-to-end test failures that could have been caught quicker and more easily with a suite of medium-scope tests. The hourglass pattern occurs when tight coupling makes it difficult to instantiate individual dependencies in isolation.
+> 
+> ![Test Suite Antipatterns](/.attachments/test-suite-antipatterns.png)
+> 
+> _Test Suite Antipatterns_
+> 
+> Our recommended mix of tests is determined by our two primary goals: engineering productivity and product confidence. Favoring unit tests gives us high confidence quickly, and early in the development process. Larger tests act as sanity checks as the product develops; they should not be viewed as a primary method for catching bugs.
+> 
+> When considering your own mix, you might want a different balance. If you emphasize integration testing, you might discover that your test suites take longer to run but catch more issues between components. When you emphasize unit tests, your test suites can complete very quickly, and you will catch many common logic bugs. But, unit tests cannot verify the interactions between components, like a contract between two systems developed by different teams. A good test suite contains a blend of different test sizes and scopes that are appropriate to the local architectural and organizational realities.[^7]
+
+### Testing at Scale
+
+> As a codebase grows, you will inevitably need to make changes to existing code. When poorly written, automated tests can make it more difficult to make those changes. Brittle tests—those that over-specify expected outcomes or rely on extensive and complicated boilerplate—can actually resist change. These poorly written tests can fail even when unrelated changes are made.
+> 
+> If you have ever made a five-line change to a feature only to find dozens of unrelated, broken tests, you have felt the friction of brittle tests. Over time, this friction can make a team reticent to perform necessary refactoring to keep a codebase healthy. The subsequent chapters will cover strategies that you can use to improve the robustness and quality of your tests.
+> 
+> Some of the worst offenders of brittle tests come from the misuse of mock objects. Google’s codebase has suffered so badly from an abuse of mocking frameworks that it has led some engineers to declare “no more mocks!” Although that is a strong statement, understanding the limitations of mock objects can help you avoid misusing them.
+> 
+> ...
+> 
+> The secret to living with a large test suite is to treat it with respect. Incentivize engineers to care about their tests; reward them as much for having rock-solid tests as you would for having a great feature launch. Set appropriate performance goals and refactor slow or marginal tests. Basically, treat your tests like production code. When simple changes begin taking nontrivial time, spend effort making your tests less brittle.[^7]
+
+### Limits of Automated Testing
+
+> Automated testing is not suitable for all testing tasks. For example, testing the quality of search results often involves human judgment. We conduct targeted, internal studies using Search Quality Raters who execute real queries and record their impressions. Similarly, it is difficult to capture the nuances of audio and video quality in an automated test, so we often use human judgment to evaluate the performance of telephony or video-calling systems.
+> 
+> In addition to qualitative judgements, there are certain creative assessments at which humans excel. For example, searching for complex security vulnerabilities is something that humans do better than automated systems. After a human has discovered and understood a flaw, it can be added to an automated security testing system like Google’s [Cloud Security Scanner](https://cloud.google.com/security/products/security-command-center) where it can be run continuously and at scale.
+> 
+> A more generalized term for this technique is Exploratory Testing. Exploratory Testing is a fundamentally creative endeavor in which someone treats the application under test as a puzzle to be broken, maybe by executing an unexpected set of steps or by inserting unexpected data. When conducting an exploratory test, the specific problems to be found are unknown at the start. They are gradually uncovered by probing commonly overlooked code paths or unusual responses from the application. As with the detection of security vulnerabilities, as soon as an exploratory test discovers an issue, an automated test should be added to prevent future regressions.
+> 
+> Using automated testing to cover well-understood behaviors enables the expensive and qualitative efforts of human testers to focus on the parts of your products for which they can provide the most value—and avoid boring them to tears in the process.[^7]
+
+### Tests and Code Sharing: DAMP, Not DRY
+
+> Instead of being completely DRY, test code should often strive to be DAMP—that is, to promote “Descriptive And Meaningful Phrases.” A little bit of duplication is OK in tests so long as that duplication makes the test simpler and clearer.[^8]
+
+### Test Doubles
+
+> A test double is an object or function that can stand in for a real implementation in a test, similar to how a stunt double can stand in for an actor in a movie. The use of test doubles is often referred to as mocking, ..., that term is also used to refer to more specific aspects of test doubles.
+> 
+> Perhaps the most obvious type of test double is a simpler implementation of an object that behaves similarly to the real implementation, such as an in-memory database. Other types of test doubles can make it possible to validate specific details of your system, such as by making it easy to trigger a rare error condition, or ensuring a heavyweight function is called without actually executing the function’s implementation.[^9]
 
 ## Documentation and Knowledge Sharing
 
@@ -1250,3 +1391,7 @@ be looking for when reading through the code.
 [^4]: A changelist is a list of files that make up a change in a version control system. A changelist is synonymous with a changeset. It's like a _pull request_ on Github.
 [^5]: Chapter 9, _Code Review_. Software Engineering at Google. Curated by Titus Winters, Tom Manshreck & Hyrum Wright
 [^6]: Chapter 15, _Deprecation_. Software Engineering at Google. Curated by Titus Winters, Tom Manshreck & Hyrum Wright
+[^7]: Chapter 11, _Testing Overview_. Software Engineering at Google. Curated by Titus Winters, Tom Manshreck & Hyrum Wright
+[^8]: Chapter 12, _Unit Testing_. Software Engineering at Google. Curated by Titus Winters, Tom Manshreck & Hyrum Wright
+[^9]: Chapter 13, _Test Doubles_. Software Engineering at Google. Curated by Titus Winters, Tom Manshreck & Hyrum Wright
+[^10]: Chapter 14, _Larger Testing_. Software Engineering at Google. Curated by Titus Winters, Tom Manshreck & Hyrum Wright
