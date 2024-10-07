@@ -258,7 +258,7 @@ The financial projections and overall operations of this business can be found w
 ### Key Management Personnel
 
 - Dayton Outar: CEO
-- ?: Cheif Financial Officer
+- ?: Chief Financial Officer
 - ?: Director
 
 ![Shillings Business Canvas](/.attachments/shillings.business.canvas-2.png)
