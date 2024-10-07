@@ -1385,6 +1385,10 @@ be looking for when reading through the code.
 > 
 > On a macro level, we use visibility whitelists in our build system to ensure that new dependencies are not introduced to the deprecated system. Automated tooling periodically examines these whitelists and prunes them as dependent systems are migrated away from the obsolete system.[^6]
 
+## Videos
+
+1. [how Google writes gorgeous C++](https://youtu.be/6lU11IHfJgo?si=yQinRW_Zfs4LSgPF)
+
 [^1]: Chapter 8, _Style Guides and Rules_. Software Engineering at Google. Curated by Titus Winters, Tom Manshreck & Hyrum Wright
 [^2]: Chapter 3, _Knowledge Sharing_. Software Engineering at Google. Curated by Titus Winters, Tom Manshreck & Hyrum Wright
 [^3]: Chapter 10, _Documentation_. Software Engineering at Google. Curated by Titus Winters, Tom Manshreck & Hyrum Wright
