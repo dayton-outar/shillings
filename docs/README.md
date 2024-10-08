@@ -456,7 +456,28 @@ Here’s a simple income statement based on your budget and income projections f
 
 ### Key Points:
 - The expenses remain consistent across Year 2 and Year 3, while revenue grows as premium subscriptions increase.
-- Despite revenue increases, the company is still running at a loss in both years. 
+- Despite revenue increases, the company is still running at a loss in both years.
+
+The **OpenAI API usage** was estimated at **$500 per month** based on the assumption that the company would be making moderate to frequent use of the API to deliver LLM services to users on the website. Here's how it was calculated:
+
+1. **API Call Volume**: The company might anticipate regular API calls for delivering LLM services to its users. This could depend on:
+   - Number of users using the service (e.g., 30 users in Year 1, 50 in Year 2, 100 in Year 3).
+   - Frequency and complexity of interactions (e.g., chat, content generation, or other features leveraging LLM).
+
+2. **OpenAI Pricing Structure**: The OpenAI API charges based on the **number of tokens processed** (input + output). The exact cost depends on the specific model used (e.g., GPT-4 or GPT-3.5). For reference:
+   - GPT-4 8k context: $0.03/1k tokens (prompt), $0.06/1k tokens (completion).
+   - GPT-3.5: $0.0015/1k tokens (prompt), $0.002/1k tokens (completion).
+
+3. **Usage Estimate**:
+   - For moderate usage, assuming each user generates **10,000 tokens per month** (roughly 10-20 medium-length interactions per user):
+   - **50 users** in Year 2 × **10,000 tokens** = 500,000 tokens per month.
+   - At $0.03 per 1,000 tokens, the cost is **$15/month** for prompts.
+   - At $0.06 per 1,000 tokens, the cost is **$30/month** for completions.
+   - This gives **$45/month** per 50 users for moderate interaction.
+   
+4. **Additional Scaling**: To account for unpredictable scaling or more intensive use of the LLM (e.g., larger responses, more frequent queries), I scaled the estimate to **$500/month**.
+
+This number can be fine-tuned depending on actual usage, but it's a placeholder for budgeting. You might want to revisit it once usage patterns are better understood.
 
 This shows a projected income statement with negative net income as the company scales, reflecting the typical situation for early-stage tech startups.
 
