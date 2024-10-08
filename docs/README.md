@@ -296,6 +296,72 @@ Here's a breakdown of the starting budget:
 | Miscellaneous Expenses| $--           |
 | **Total**             | **$223,800**      |
 
+Here's a rough budget breakdown for your tech company based on the details provided:
+
+### 1. **Tech Stack and Infrastructure**
+- **GitHub (Repo and CI)**
+  - **GitHub Teams**: Starts at $4 per user/month (assume 5 team members).
+  - **Budget**: $20/month = $240/year.
+  
+- **Linode (Kubernetes Hosting)**
+  - **Linode Kubernetes Engine (LKE)**: Costs can range from $60/month to $300/month depending on usage and scaling needs. For moderate usage:
+  - **Budget**: $200/month = $2,400/year.
+
+- **Domain and SSL**
+  - **Domain name**: Typically $10-$15/year.
+  - **SSL certificate**: Free with Let's Encrypt or $100/year for premium.
+  - **Budget**: $15/year for domain + $0/year for SSL = $15/year.
+
+### 2. **Salaries and Allowances**
+- **Tech Team (5 members)**
+  - Assume the team consists of 1 backend (C#), 1 frontend (SvelteKit), 1 DevOps, 1 UI/UX, and 1 QA.
+  - **Work-from-home allowance**: Assume $150/month for device rent and utilities.
+  - **Budget**: $150 × 5 = $750/month = $9,000/year.
+
+### 3. **Salaries**
+- **C# Backend Developer**: $50,000/year.
+- **SvelteKit Frontend Developer**: $45,000/year.
+- **DevOps Engineer**: $55,000/year.
+- **UI/UX Designer**: $40,000/year.
+- **QA Engineer**: $40,000/year.
+  - **Budget**: $230,000/year for tech team salaries.
+
+### 4. **Marketing (Communities and Clubs)**
+- **Community management and club sponsorships**: $500/month (budgeting for engagement, sponsorships, events).
+  - **Budget**: $500 × 12 = $6,000/year.
+
+### 5. **Other Costs**
+- **Software Licenses**: Assume using IDEs, design tools (e.g., Figma, Adobe), which could be around $500 per user/year.
+  - **Budget**: $500 × 5 = $2,500/year.
+
+### Total Budget Breakdown (Annually)
+- **GitHub**: $240
+- **Linode**: $2,400
+- **Domain and SSL**: $15
+- **Work-from-home Allowance**: $9,000
+- **Salaries**: $230,000
+- **Marketing (Communities & Clubs)**: $6,000
+- **Software Licenses**: $2,500
+
+### Total Annual Budget: **$250,155**
+
+This budget focuses on keeping operational costs reasonable while maintaining quality. Salaries and allowances are set at moderate market rates, and marketing is grassroots, avoiding expensive SEO campaigns. Adjust based on team size, geographical location, and project scale.
+
+| Item                             | Monthly Cost (USD) | Annual Cost (USD) |
+|----------------------------------|-------------------|-------------------|
+| GitHub (Repo and CI)             | $20.00            | $240              |
+| Linode (Kubernetes Hosting)      | $200.00           | $2,400            |
+| Domain and SSL                   | $0.00             | $15               |
+| Work-from-home Allowance         | $750.00           | $9,000            |
+| Tech Team Salaries               | $19,166.67        | $230,000          |
+| Marketing (Communities & Clubs)  | $500.00           | $6,000            |
+| Software Licenses                | $208.33           | $2,500            |
+| OpenAI API Usage                 | $500.00           | $6,000            |
+
+### **Total Annual Cost**: $256,155
+
+This includes the cost for using the OpenAI API to deliver services to users. The OpenAI API usage is estimated at $500/month but can be adjusted based on actual usage.
+
 **Digital marketing** (social media advertising, search engine optimization) will be the focus after we have gained 1,000 active users through personal communication and public relations as stated in the [marketing strategy](#marketing-strategy).
 
 1. **Personnel Costs:**
@@ -348,43 +414,51 @@ By incorporating these assumptions into financial forecasts, you can develop a c
 
 #### Income Projections
 
-Sure, here's an example of an income statement projection for a hypothetical tech stock trading company operating in Jamaica. This projection assumes a three-year period and includes estimates for revenue, expenses, and net income:
+Here’s the pivoted table with the years as columns:
 
-```
-Tech Stock Trading Company Income Statement Projection (Year 1 to Year 3)
--------------------------------------------------------------------------------
-                                     Year 1         Year 2         Year 3
--------------------------------------------------------------------------------
-Revenue:
-   Subscription Fees               $500,000       $1,200,000      $2,500,000
-   Transaction Fees                 $300,000        $800,000       $1,500,000
-   Advertising Revenue               $50,000        $150,000        $300,000
-                                    --------       ---------       ---------
-Total Revenue                      $850,000       $2,150,000      $4,300,000
+|                        | Year 1    | Year 2    | Year 3    |
+|------------------------|------|------|------|
+| **Total Users**         | 30   | 50   | 100  |
+| **Free Users**          | 30   | 30   | 60   |
+| **Premium Users**       | 0    | 20   | 40   |
+| **Premium Revenue (USD)**| $0    | $1,680| $3,360|
 
-Expenses:
-   Technology Development          $300,000        $500,000        $700,000
-   Marketing and Sales             $150,000        $300,000        $500,000
-   Employee Salaries               $200,000        $400,000        $600,000
-   Infrastructure Costs            $100,000        $200,000        $300,000
-   Regulatory Compliance            $50,000         $75,000        $100,000
-   Administrative Overhead          $50,000         $75,000        $100,000
-                                    --------       ---------       ---------
-Total Expenses                     $850,000       $1,550,000      $2,300,000
+Here’s a simple income statement based on your budget and income projections for Year 2 and Year 3:
 
-Net Income (Loss)                       $0          $600,000      $2,000,000
--------------------------------------------------------------------------------
-```
+### **Assumptions:**
+- **Revenue** from premium users: Based on the projected $7/month per premium user.
+- **Expenses**: Based on the budget provided, adjusted where necessary for Year 2 and Year 3 (e.g., no revenue in Year 1, so Year 2 might carry similar expenses).
+  
+---
 
-Explanation of Assumptions:
+### **Income Statement: Year 2 vs Year 3**
 
-1. **Revenue**: Revenue is generated from subscription fees, transaction fees charged on trades executed on the platform, and advertising revenue. The figures increase over the three-year period as the customer base grows and the platform gains traction in the market.
+| **Income Statement**           | **Year 2 (USD)** | **Year 3 (USD)** |
+|--------------------------------|------------------|------------------|
+| **Revenue**                    |                  |                  |
+| Premium Subscription Revenue   | $1,680           | $3,360           |
+| **Total Revenue**              | **$1,680**       | **$3,360**       |
+|                                |                  |                  |
+| **Expenses**                   |                  |                  |
+| GitHub (Repo and CI)           | $240             | $240             |
+| Linode (Kubernetes Hosting)    | $2,400           | $2,400           |
+| Domain and SSL                 | $15              | $15              |
+| Work-from-home Allowance       | $9,000           | $9,000           |
+| Tech Team Salaries             | $230,000         | $230,000         |
+| Marketing (Communities & Clubs)| $6,000           | $6,000           |
+| Software Licenses              | $2,500           | $2,500           |
+| OpenAI API Usage               | $6,000           | $6,000           |
+| **Total Expenses**             | **$256,155**     | **$256,155**     |
+|                                |                  |                  |
+| **Net Income**                 | **($254,475)**   | **($252,795)**   |
 
-2. **Expenses**: Expenses include costs related to technology development, marketing and sales efforts to acquire customers, employee salaries, infrastructure maintenance, regulatory compliance, and administrative overhead. Some expenses may increase over time due to business growth and expansion.
+---
 
-3. **Net Income (Loss)**: Net income is calculated by subtracting total expenses from total revenue. In Year 1, the company may operate at breakeven or incur a loss as it invests in technology development and customer acquisition. However, net income improves in subsequent years as revenue grows and expenses are managed more efficiently.
+### Key Points:
+- The expenses remain consistent across Year 2 and Year 3, while revenue grows as premium subscriptions increase.
+- Despite revenue increases, the company is still running at a loss in both years. 
 
-It's important to note that these projections are based on assumptions and estimates, and actual results may vary.
+This shows a projected income statement with negative net income as the company scales, reflecting the typical situation for early-stage tech startups.
 
 ## References
 
