@@ -253,7 +253,7 @@ The financial projections and overall operations of this business can be found w
 
 ### Corporate Structure
 
-- ? Inc. is the corporation established to manage the products and services offered by Shillings.
+- ? Inc. is the corporation established to manage the stock brokerage firm that owns Shillings.
 
 ### Key Management Personnel
 
