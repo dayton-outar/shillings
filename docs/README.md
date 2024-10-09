@@ -433,24 +433,24 @@ Here’s a simple income statement based on your budget and income projections f
 
 ### **Income Statement: Year 2 vs Year 3**
 
-| **Income Statement**           | **Year 2 (USD)** | **Year 3 (USD)** |
-|--------------------------------|------------------|------------------|
-| **Revenue**                    |                  |                  |
-| Premium Subscription Revenue   | $1,680           | $3,360           |
-| **Total Revenue**              | **$1,680**       | **$3,360**       |
-|                                |                  |                  |
-| **Expenses**                   |                  |                  |
-| GitHub (Repo and CI)           | $240             | $240             |
-| Linode (Kubernetes Hosting)    | $2,400           | $2,400           |
-| Domain and SSL                 | $15              | $15              |
-| Work-from-home Allowance       | $9,000           | $9,000           |
-| Tech Team Salaries             | $230,000         | $230,000         |
-| Marketing (Communities & Clubs)| $6,000           | $6,000           |
-| Software Licenses              | $2,500           | $2,500           |
-| OpenAI API Usage               | $6,000           | $6,000           |
-| **Total Expenses**             | **$256,155**     | **$256,155**     |
-|                                |                  |                  |
-| **Net Income**                 | **($254,475)**   | **($252,795)**   |
+| **Income Statement**            | **Year 2 (USD)** | **Year 3 (USD)** |
+|---------------------------------|------------------|------------------|
+| **Revenue**                     |                  |                  |
+| Premium Subscription Revenue    | $1,680           | $3,360           |
+| **Total Revenue**               | **$1,680**       | **$3,360**       |
+|                                 |                  |                  |
+| **Expenses**                    |                  |                  |
+| GitHub (Repo and CI)            | $240             | $240             |
+| Linode (Kubernetes Hosting)     | $2,400           | $2,400           |
+| Domain and SSL                  | $15              | $15              |
+| Work-from-home Allowance        | $9,000           | $9,000           |
+| Tech Team Salaries              | $230,000         | $230,000         |
+| Marketing (Communities & Clubs) | $6,000           | $6,000           |
+| Software Licenses               | $2,500           | $2,500           |
+| OpenAI API Usage (adjusted)     | $54              | $135             |
+| **Total Expenses**              | **$250,209**     | **$250,290**     |
+|                                 |                  |                  |
+| **Net Income**                  | **($248,529)**   | **($246,930)**   |
 
 ---
 
@@ -477,9 +477,47 @@ The **OpenAI API usage** was estimated at **$500 per month** based on the assump
    
 4. **Additional Scaling**: To account for unpredictable scaling or more intensive use of the LLM (e.g., larger responses, more frequent queries), I scaled the estimate to **$500/month**.
 
-This number can be fine-tuned depending on actual usage, but it's a placeholder for budgeting. You might want to revisit it once usage patterns are better understood.
+If only a **system user** is making the queries to the OpenAI API (for example, storing information in a database for later retrieval by regular and premium users), the API usage will be significantly lower. The following steps can be used to estimate the new monthly cost:
 
-This shows a projected income statement with negative net income as the company scales, reflecting the typical situation for early-stage tech startups.
+### Key Factors
+- **System User**: Only a single system user makes the queries (not all users).
+- **Frequency of Queries**: The system user might perform queries when necessary, for example, to generate content, summaries, or responses that can be stored and used by multiple users.
+- **Usage Volume**: This reduces the frequency and volume of API calls, as multiple users benefit from a single query made by the system.
+
+### Recalculation Assumptions:
+1. **Query Frequency**: Let’s assume the system makes **50 API queries** per month.
+2. **Tokens per Query**: Each query might use **2,000 tokens** (input + output).
+3. **OpenAI Pricing** (for **GPT-4 8k** context):
+   - **$0.03/1,000 tokens** for input (prompt).
+   - **$0.06/1,000 tokens** for output (completion).
+
+### Calculation:
+- **Total tokens per query**: 2,000 tokens/query.
+- **Cost per query**:
+  - **Prompt tokens**: 1,000 tokens × $0.03 = $0.03.
+  - **Completion tokens**: 1,000 tokens × $0.06 = $0.06.
+  - **Total cost per query** = $0.09.
+
+- **Total monthly cost**:
+  - 50 queries/month × $0.09/query = **$4.50/month**.
+
+### Adjustments for Larger Queries:
+If some queries are more complex and use **5,000 tokens** (for example), the monthly cost might increase:
+- **Cost per query**:
+  - 2,500 prompt tokens × $0.03 = $0.075.
+  - 2,500 completion tokens × $0.06 = $0.15.
+  - **Total cost per query** = $0.225.
+- **Total monthly cost** for 50 queries:
+  - 50 queries × $0.225 = **$11.25/month**.
+
+---
+
+### Summary of OpenAI API Cost
+
+- For **2,000 tokens/query**: **$4.50/month**.
+- For **5,000 tokens/query**: **$11.25/month**.
+
+With this new calculation, the OpenAI API cost is much lower, ranging from **$4.50 to $11.25 per month**, depending on query complexity and token usage.
 
 ## References
 
