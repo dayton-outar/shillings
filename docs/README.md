@@ -376,13 +376,10 @@ This includes the cost for using the OpenAI API to deliver services to users. Th
    - Payroll taxes and benefits (health insurance, retirement plans, etc.).
    
 4. **Operational Costs:**
-   - Office rent or coworking space fees.
-   - Utilities (electricity, internet).
+   - Work-from-home allowance
    - Legal and accounting fees.
-   - Travel and transportation expenses.
    
 5. **Miscellaneous Expenses:**
-   - Office supplies.
    - Training and professional development.
    - Contingency fund for unexpected expenses.
 
