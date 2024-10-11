@@ -290,16 +290,17 @@ In the second phase of this project, financing a tech team will be considered. T
 Here's a breakdown of the starting budget:
 
 | Item                             | Monthly Cost (USD) | Annual Cost (USD) |
-|----------------------------------|-------------------|-------------------|
+|----------------------------------|------------------:|------------------:|
 | GitHub (Repo and CI)             | $20.00            | $240              |
 | Linode (Kubernetes Hosting)      | $200.00           | $2,400            |
-| Domain and SSL                   | $0.00             | $15               |
+| Domain                           | $0.00             | $15               |
+| SSL Certificates (GoDaddy)       | $150              | $23,250           |
 | Work-from-home Allowance         | $750.00           | $9,000            |
 | Tech Team Salaries <ul><li>Tech Team<br />(Tech Lead - US$5,000, Scrum Master - US$4,000, Engineers - US$3,000 x 3)</li></ul> | $18,000        | $216,000          |
 | Marketing (Communities & Clubs)  | $500.00           | $6,000            |
 | Software Licenses                | $208.33           | $2,500            |
 | OpenAI API Usage                 | $500.00           | $6,000            |
-| **Total Annual Cost**            |                   | **$256,155**      |
+| **Total Annual Cost**            |                   | **$242,155**      |
 
 **Digital marketing** (social media advertising, search engine optimization) will be the focus after we have gained 1,000 active users through personal communication and public relations as stated in the [marketing strategy](#marketing-strategy).
 
