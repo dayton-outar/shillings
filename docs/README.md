@@ -298,9 +298,9 @@ Here's a breakdown of the starting budget:
 | Domain                           |                   | $15               |
 | SSL Certificates (GoDaddy)       |                   | $150              |
 | Marketing (Communities & Clubs)  | $500.00           | $6,000            |
-| Software Licenses                |                   | $7,225            |
-| OpenAI API Usage                 | $500.00           | $6,000            |
-| **Total Annual Cost**            |                   | **$22,030**       |
+| Software Licenses                |                   | $7,525            |
+| OpenAI API Usage                 | $11.25            | $135              |
+| **Total Annual Cost**            |                   | **$16,465**       |
 
 #### Phase 2
 
@@ -311,11 +311,11 @@ Here's a breakdown of the starting budget:
 | Domain                           |                   | $15               |
 | SSL Certificates (GoDaddy)       |                   | $150              |
 | Marketing (Communities & Clubs)  | $500.00           | $6,000            |
-| Software Licenses <ul><li>JSE API - [US$4,000](https://www.jamstockex.com/services/api-services/)</li></ul>               |                   | $4,000            |
-| OpenAI API Usage                 | $500.00           | $6,000            |
+| Software Licenses                |                   | $4,000            |
+| OpenAI API Usage                 | $11.25            | $135              |
 | Work-from-home Allowance         | $750.00           | $9,000            |
 | Tech Team Salaries               | $18,000           | $216,000          |
-| **Total Annual Cost**            |                   | **$243,805**      |
+| **Total Annual Cost**            |                   | **$237,940**      |
 
 Here's a rough budget breakdown:
 
@@ -354,6 +354,10 @@ Here's a rough budget breakdown:
 5. **Software Licenses**: 
    - JSE API - [US$4,000](https://www.jamstockex.com/services/api-services/) Annual Subscription
    - JSE Archives - US$3,225 only in Phase 1
+   - [Tailwind One-time All-access](https://tailwindui.com/all-access) - US$299
+   - OpenAI API Cost
+     - For **2,000 tokens/query** for one user (the application): **$4.50/month**.
+     - For **5,000 tokens/query** for one user (the application): **$11.25/month**.
 
 **Digital marketing** (social media advertising, search engine optimization) will be the focus after we have gained 1,000 active users through personal communication and public relations as stated in the [marketing strategy](#marketing-strategy).
 
@@ -363,20 +367,18 @@ _Shillings_ is projected to ...
 
 #### Income Projections
 
-Here’s the pivoted table with the years as columns:
+Here’s the projections for the number of users for the first 3 years,
 
 |                        | Year 1    | Year 2    | Year 3    |
 |------------------------|------|------|------|
 | **Total Users**         | 30   | 50   | 100  |
 | **Free Users**          | 30   | 30   | 60   |
 | **Premium Users**       | 0    | 20   | 40   |
-| **Premium Revenue (USD)**| $0    | $1,680| $3,360|
+| **Revenue**             | $0    | $1,680| $3,360|
+
+_N.B. $7/month per Premium User_
 
 Here’s a simple income statement based on your budget and income projections for Year 2 and Year 3:
-
-### **Assumptions:**
-- **Revenue** from premium users: Based on the projected $7/month per premium user.
-- **Expenses**: Based on the budget provided, adjusted where necessary for Year 2 and Year 3 (e.g., no revenue in Year 1, so Year 2 might carry similar expenses).
   
 ---
 
@@ -407,66 +409,7 @@ Here’s a simple income statement based on your budget and income projections f
 - The expenses remain consistent across Year 2 and Year 3, while revenue grows as premium subscriptions increase.
 - Despite revenue increases, the company is still running at a loss in both years.
 
-The **OpenAI API usage** was estimated at **$500 per month** based on the assumption that the company would be making moderate to frequent use of the API to deliver LLM services to users on the website. Here's how it was calculated:
-
-1. **API Call Volume**: The company might anticipate regular API calls for delivering LLM services to its users. This could depend on:
-   - Number of users using the service (e.g., 30 users in Year 1, 50 in Year 2, 100 in Year 3).
-   - Frequency and complexity of interactions (e.g., chat, content generation, or other features leveraging LLM).
-
-2. **OpenAI Pricing Structure**: The OpenAI API charges based on the **number of tokens processed** (input + output). The exact cost depends on the specific model used (e.g., GPT-4 or GPT-3.5). For reference:
-   - GPT-4 8k context: $0.03/1k tokens (prompt), $0.06/1k tokens (completion).
-   - GPT-3.5: $0.0015/1k tokens (prompt), $0.002/1k tokens (completion).
-
-3. **Usage Estimate**:
-   - For moderate usage, assuming each user generates **10,000 tokens per month** (roughly 10-20 medium-length interactions per user):
-   - **50 users** in Year 2 × **10,000 tokens** = 500,000 tokens per month.
-   - At $0.03 per 1,000 tokens, the cost is **$15/month** for prompts.
-   - At $0.06 per 1,000 tokens, the cost is **$30/month** for completions.
-   - This gives **$45/month** per 50 users for moderate interaction.
-   
-4. **Additional Scaling**: To account for unpredictable scaling or more intensive use of the LLM (e.g., larger responses, more frequent queries), I scaled the estimate to **$500/month**.
-
-If only a **system user** is making the queries to the OpenAI API (for example, storing information in a database for later retrieval by regular and premium users), the API usage will be significantly lower. The following steps can be used to estimate the new monthly cost:
-
-### Key Factors
-- **System User**: Only a single system user makes the queries (not all users).
-- **Frequency of Queries**: The system user might perform queries when necessary, for example, to generate content, summaries, or responses that can be stored and used by multiple users.
-- **Usage Volume**: This reduces the frequency and volume of API calls, as multiple users benefit from a single query made by the system.
-
-### Recalculation Assumptions:
-1. **Query Frequency**: Let’s assume the system makes **50 API queries** per month.
-2. **Tokens per Query**: Each query might use **2,000 tokens** (input + output).
-3. **OpenAI Pricing** (for **GPT-4 8k** context):
-   - **$0.03/1,000 tokens** for input (prompt).
-   - **$0.06/1,000 tokens** for output (completion).
-
-### Calculation:
-- **Total tokens per query**: 2,000 tokens/query.
-- **Cost per query**:
-  - **Prompt tokens**: 1,000 tokens × $0.03 = $0.03.
-  - **Completion tokens**: 1,000 tokens × $0.06 = $0.06.
-  - **Total cost per query** = $0.09.
-
-- **Total monthly cost**:
-  - 50 queries/month × $0.09/query = **$4.50/month**.
-
-### Adjustments for Larger Queries:
-If some queries are more complex and use **5,000 tokens** (for example), the monthly cost might increase:
-- **Cost per query**:
-  - 2,500 prompt tokens × $0.03 = $0.075.
-  - 2,500 completion tokens × $0.06 = $0.15.
-  - **Total cost per query** = $0.225.
-- **Total monthly cost** for 50 queries:
-  - 50 queries × $0.225 = **$11.25/month**.
-
 ---
-
-### Summary of OpenAI API Cost
-
-- For **2,000 tokens/query**: **$4.50/month**.
-- For **5,000 tokens/query**: **$11.25/month**.
-
-With this new calculation, the OpenAI API cost is much lower, ranging from **$4.50 to $11.25 per month**, depending on query complexity and token usage.
 
 ## References
 
