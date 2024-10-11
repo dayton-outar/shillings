@@ -369,20 +369,29 @@ _Shillings_ is projected to ...
 
 Here’s the projections for the number of users for the first 3 years,
 
-|                        | Year 1    | Year 2    | Year 3    |
-|------------------------|------|------|------|
-| **Total Users**         | 30   | 50   | 100  |
-| **Free Users**          | 30   | 30   | 60   |
-| **Premium Users**       | 0    | 20   | 40   |
-| **Revenue**             | $0    | $1,680| $3,360|
+|                        | Year 1      | Year 2       | Year 3     |
+|------------------------|------------:|-------------:|-----------:|
+| *Total Users*          | 1,000       | 2,000        | 3,500      |
+| *Free Users*           | 800         | 1,600        | 2,800      |
+| ***Premium Users***    | ***200***   | ***400***    | ***700***  |
+| **Revenue**            | **$16,800** | **$336,000** | **$3,360** |
 
 _N.B. $7/month per Premium User_
 
-Here’s a simple income statement based on your budget and income projections for Year 2 and Year 3:
+**Assumptions**:
+ - 80% of the users are likely to sign up for free services
+ - 20% will want premium services
+ - **Market Size and Growth**: Estimate the total addressable market (TAM) for the immersive stock trading platform in Jamaica, considering factors such as the number of active traders, trading volume, and market penetration potential. Project the growth rate of the market over the forecast period based on historical data and expected industry trends
+ - **Revenue Model**: Define the revenue model for the platform, considering options such as subscription fees, transaction fees, premium features, and advertising revenue. Estimate the average revenue per user (ARPU) and project revenue growth over time based on user adoption and pricing strategies.
+ - **Customer Acquisition**: Estimate the cost of acquiring customers for the platform, including marketing and sales expenses. Determine the conversion rate of leads to customers based on user acquisition strategies such as advertising, partnerships, and referrals.
+ - **User Growth**: Forecast the number of active users on the platform, taking into account factors such as market demand, competitive landscape, and customer retention. Consider how user engagement, platform features, and customer support may impact user growth rates.
+ - **Market Share**: Estimate the company's market share within the Jamaican stock trading market and track changes over time. Consider competitive dynamics, barriers to entry, and differentiation strategies that may affect market share growth.
   
 ---
 
 ### **Income Statement: Year 2 vs Year 3**
+
+Here’s a simple income statement based on your budget and income projections for Year 2 and Year 3:
 
 | **Income Statement**            | **Year 2 (USD)** | **Year 3 (USD)** |
 |---------------------------------|------------------|------------------|
