@@ -253,15 +253,9 @@ The financial projections and overall operations of this business can be found w
 
 ### Corporate Structure
 
-- ? Inc. is the corporation established to manage the stock brokerage firm that owns Shillings.
+- A business corporation should be established to manage the stock brokerage firm that owns Shillings.
 
-### Key Management Personnel
-
-- Dayton Outar: CEO
-- ?: Chief Financial Officer
-- ?: Director
-
-![Shillings Business Canvas](/.attachments/shillings.business.canvas-2.png)
+![Shillings Business Canvas](/.attachments/shillings.business.canvas-3.png)
 
 ### Financing Strategy
 
