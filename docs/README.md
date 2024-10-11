@@ -253,15 +253,9 @@ The financial projections and overall operations of this business can be found w
 
 ### Corporate Structure
 
-- ? Inc. is the corporation established to manage the products and services offered by Shillings.
+- A business corporation should be established to manage the stock brokerage firm that owns Shillings.
 
-### Key Management Personnel
-
-- Dayton Outar: CEO
-- ?: Cheif Financial Officer
-- ?: Director
-
-![Shillings Business Canvas](/.attachments/shillings.business.canvas-2.png)
+![Shillings Business Canvas](/.attachments/shillings.business.canvas-3.png)
 
 ### Financing Strategy
 
@@ -273,222 +267,145 @@ The _Shillings_ project will be conservative on the use of debt to finance it's 
 
 This approach reduces reliance on external financing and preserves equity. We plan to encourage team members to invest their time and skills in exchange for equity rather than immediate compensation. This aligns incentives and conserves cash for essential expenses.
 
+### Operational Strategy
+
 We embrace a lean approach to operations, minimizing unnecessary expenses and overhead costs. This includes negotiating favorable terms with suppliers, using cost-effective marketing channels, and optimizing resource allocation.
 
-Currently, the labour for _Research and Development_ is the highest cost in the initial stage. Since the founder is an engineer, he will use his time and skill to complete the following milestones,
-
-In addition, marketing research will be done by him.
+Currently, the labour for _Research and Development_ is the highest cost in the initial stage. Since the founder is an engineer, he will use his time and skill to complete the foundational milestones (an initial _epic_). In addition, marketing research will be done by him.
 
 A group of seven (7) persons will be asked to volunteer their time to test the product after the completion of these milestones. Those seven (7) persons will be provided an equity stake based on the value of their labour, which will be outlined in the budget. The completion of this test phase can be referred to as _Beta V_.
 
 It is while promoting the product, after _Beta V_, that consideration will be given to borrowing funds to conduct marketing campaigns in the various investment communities and clubs islandwide.
 
+In the second phase of this project, financing a tech team will be considered. The idea is to employ a tech team using [the Hollywood approach](./BRANDING/THE.BRAND.GAP.md#hooray-for-hollywood), where best talent is contracted for each _epic_ (a chosen list of features from the backlog). This means that embarking on a new _epic_ can be costly and should be carefully planned. This removes the need to employ tech team permanently. This will be done until the company can afford to hire employees permanently.
+
 ### Budget
 
 Here's a breakdown of the starting budget:
 
-| Category              | Annual Budget ($) |
-|-----------------------|------------------:|
-| <p>Personnel Costs<p><ul><li>Tech Team<br />(Tech Lead - US$5,000, Scrum Master - US$4,000, Engineers - US$3,000 x 3)</li></ul>       | $216,000          |
-| <p>Technology Infrastructure</p><ul><li>Cloud services<br />(Linode Kubernetes Hosting - [US$216 per month](https://www.linode.com/pricing/#kubernetes))</li><li>Software licenses and subscriptions<br />(JSE API - [US$4,000](https://www.jamstockex.com/services/api-services/), Github - [US$20 per user per month](https://github.com/pricing) x 5)</li><li>Hardware costs<br />(computers, servers, networking equipment)</li></ul> | $7,800           |
-| <p>Marketing and Sales<p><ul><li>Brand development<br />(Logo, Name, Avatar, Slogan, Color Themes)</li><li>Public relations<br />(group meetings, conference, branded accessories)</li><li>Sales and marketing tools<br />(CRM software, Google forms, SurveyMonkey, email marketing platforms)</li></ul>   | $--          |
-| Operational Costs     | $--           |
-| Miscellaneous Expenses| $--           |
-| **Total**             | **$223,800**      |
+#### Phase 1
+
+| Item                             | Monthly Cost (USD) | Annual Cost (USD) |
+|----------------------------------|------------------:|------------------:|
+| GitHub (Repo and CI)             | $20.00            | $240              |
+| Linode (Kubernetes Hosting)      | $200.00           | $2,400            |
+| Domain                           |                   | $15               |
+| SSL Certificates (GoDaddy)       |                   | $150              |
+| Marketing (Communities & Clubs)  | $500.00           | $6,000            |
+| Software Licenses                |                   | $7,525            |
+| OpenAI API Usage                 | $11.25            | $135              |
+| **Total Annual Cost**            |                   | **$16,465**       |
+
+#### Phase 2
+
+| Item                             | Monthly Cost (USD) | Annual Cost (USD) |
+|----------------------------------|------------------:|------------------:|
+| GitHub (Repo and CI)             | $20.00            | $240              |
+| Linode (Kubernetes Hosting)      | $200.00           | $2,400            |
+| Domain                           |                   | $15               |
+| SSL Certificates (GoDaddy)       |                   | $150              |
+| Marketing (Communities & Clubs)  | $500.00           | $6,000            |
+| Software Licenses                |                   | $4,000            |
+| OpenAI API Usage                 | $11.25            | $135              |
+| Work-from-home Allowance         | $750.00           | $9,000            |
+| Tech Team Salaries               | $18,000           | $216,000          |
+| **Total Annual Cost**            |                   | **$237,940**      |
+
+Here's a rough budget breakdown:
+
+1. **Tech Stack and Infrastructure**
+   - **GitHub (Repo and CI)**
+     - **GitHub Teams**: Starts at $4 per user/month (assume 5 team members).
+     - **Budget**: $20/month = $240/year.
+  
+   - **Linode (Kubernetes Hosting)**
+     - **Linode Kubernetes Engine (LKE)**: Costs can range from $60/month to $300/month depending on usage and scaling needs. For moderate usage:
+     - **Budget**: $200/month = $2,400/year.
+
+   - **Domain and SSL**
+     - **Domain name**: Typically $10-$15/year.
+     - **SSL certificate**: Free with Let's Encrypt or $75 to $100 per year per certificate for premium. At least 2 certificates needed (one for backend and one for frontend).
+     - **Budget**: $15/year for domain + $0/year for SSL = $15/year.
+
+2. **Salaries and Allowances**
+   - **Tech Team (5 members)**
+     - Assume the team consists of 1 Tech Lead (US$5,000), Scrum Master (US$4,000) and 3 Engineers (US$3,000)
+     - **Work-from-home allowance**: Assume $150/month for device rent and utilities.
+     - **Budget**: $150 × 5 = $750/month = $9,000/year.
+
+   Expected operations from team:
+    - Coding & code reviews (Engineers)
+    - Documentation
+    - Testing (UAT - _smallest viable market_, System - Engineers)
+    - Release management (Engineers)
+    - Project management and application architecture (Tech lead)
+    - Happiness manager (Scrum master)
+
+3. **Marketing (Communities and Clubs)**
+   - **Community management and club sponsorships**: $500/month (budgeting for engagement, sponsorships, events).
+     - **Budget**: $500 × 12 = $6,000/year.
+
+5. **Software Licenses**: 
+   - JSE API - [US$4,000](https://www.jamstockex.com/services/api-services/) Annual Subscription
+   - JSE Archives - US$3,225 only in Phase 1
+   - [Tailwind One-time All-access](https://tailwindui.com/all-access) - US$299
+   - OpenAI API Cost
+     - For **2,000 tokens/query** for one user (the application): **$4.50/month**.
+     - For **5,000 tokens/query** for one user (the application): **$11.25/month**.
 
 **Digital marketing** (social media advertising, search engine optimization) will be the focus after we have gained 1,000 active users through personal communication and public relations as stated in the [marketing strategy](#marketing-strategy).
 
-1. **Personnel Costs:**
-   - Salaries for founders, developers (including tech lead and scrum master), designers, freelance or contractor and other employees.
-     - Enforce style guide
-     - Coding & code reviews (Engineers)
-     - Documentation
-     - Testing (UAT - _smallest viable market_, System - Engineers)
-     - Release management (Engineers)
-     - Project management and application architecture (Tech lead)
-     - Happiness manager (Scrum master)
-   - Payroll taxes and benefits (health insurance, retirement plans, etc.).
-   
-4. **Operational Costs:**
-   - Office rent or coworking space fees.
-   - Utilities (electricity, internet).
-   - Legal and accounting fees.
-   - Travel and transportation expenses.
-   
-5. **Miscellaneous Expenses:**
-   - Office supplies.
-   - Training and professional development.
-   - Contingency fund for unexpected expenses.
-
 ### Financial Projections
 
-Here are some key assumptions to consider:
+_Shillings_ is projected to ...
 
-1. **Market Size and Growth**: Estimate the total addressable market (TAM) for the immersive stock trading platform in Jamaica, considering factors such as the number of active traders, trading volume, and market penetration potential. Project the growth rate of the market over the forecast period based on historical data and expected industry trends.
+#### Income Projections
 
-2. **Customer Acquisition**: Estimate the cost of acquiring customers for the platform, including marketing and sales expenses. Determine the conversion rate of leads to customers based on user acquisition strategies such as advertising, partnerships, and referrals.
+Here’s the projections for the number of users for the first 3 years,
 
-3. **Revenue Model**: Define the revenue model for the platform, considering options such as subscription fees, transaction fees, premium features, and advertising revenue. Estimate the average revenue per user (ARPU) and project revenue growth over time based on user adoption and pricing strategies.
+|                        | Year 1      | Year 2       | Year 3      |
+|------------------------|------------:|-------------:|------------:|
+| *Total Users*          | 1,000       | 2,000        | 3,500       |
+| *Free Users*           | 800         | 1,600        | 2,800       |
+| ***Premium Users***    | ***200***   | ***400***    | ***700***   |
+| **Revenue**            | **$16,800** | **$33,600**  | **$58,800** |
 
-4. **User Growth**: Forecast the number of active users on the platform, taking into account factors such as market demand, competitive landscape, and customer retention. Consider how user engagement, platform features, and customer support may impact user growth rates.
+_N.B. $7/month per Premium User_
 
-5. **Market Share**: Estimate the company's market share within the Jamaican stock trading market and track changes over time. Consider competitive dynamics, barriers to entry, and differentiation strategies that may affect market share growth.
+**Assumptions**:
+ - 80% of the users are likely to sign up for free services
+ - 20% will want premium services
+ - [~226,000](./MARKETING/MARKET/JM.md#market-size) individual JCSD (Jamaica Central Securities Depository) accounts exist, as of Q1, 2024
+ - 2% of the market is expected with targetted community marketing
+ - Revenues will come from subscription fee of $7 per month and, eventually, transaction fees from trading
+ - Modest projections made for subscription fees only for 3 years
+ - Growth rate expected at 100% from first to second year; decreasing to 75% in third year 
+  
+---
 
-6. **Operating Expenses**: Project operating expenses including technology development, infrastructure costs, employee salaries, marketing expenses, regulatory compliance, and administrative overhead. Consider scalability and efficiency improvements over time as the platform matures.
+### **Income Statement: Year 2 vs Year 3**
 
-7. **Technology Infrastructure**: Assess the technology infrastructure required to support the platform's functionality, performance, and security. Estimate costs related to software development, hosting, data storage, cybersecurity, and platform maintenance.
+Here’s a simple income statement based on your budget and income projections for Year 2 and Year 3:
 
-8. **Regulatory Environment**: Consider regulatory factors that may impact the operation of the stock trading platform in Jamaica, such as licensing requirements, compliance costs, and changes in financial regulations. Stay informed about regulatory developments and adapt financial forecasts accordingly.
+| **Income Statement**            | **Year 1**       | **Year 2**       | **Year 3**    |
+|---------------------------------|-----------------:|-----------------:|--------------:|
+| **Revenue**                     |                  |                  |               |
+| Premium Subscription Revenue    | $16,800          | $33,600          | $58,800       |
+| **Total Revenue**               | **$16,800**      | **$33,600**      | **$58,800**   |
+|                                 |                  |                  |               |
+| **Expenses**                    |                  |                  |               |
+| Operational expenses            | $16,465          | $237,940         | $16,465       |
+| **Total Expenses**              | **$16,465**      | **$237,940**     | **$16,465**   |
+|                                 |                  |                  |               |
+| **Net Income**                  | **$335**         | **($204,340)**   | **$42,335**   |
 
-9. **Economic Conditions**: Take into account macroeconomic factors that may influence stock market activity and investor behavior in Jamaica, such as GDP growth, inflation rates, interest rates, and geopolitical events. Monitor economic indicators and adjust financial forecasts as needed.
+---
 
-10. **Risk Factors**: Identify and assess potential risks and uncertainties that could affect the financial performance of the company, such as technological challenges, market competition, regulatory changes, and external shocks. Develop contingency plans to mitigate risks and preserve financial stability.
+### Key Points:
+- The company will run at a loss in the second year because a tech team will be contracted for that year to do an _epic_ of features
+- The _epic_ of features should pay off in the third year when no tech team is contracted
 
-By incorporating these assumptions into financial forecasts, you can develop a comprehensive outlook for the tech company's immersive stock trading platform in Jamaica, enabling informed decision-making and strategic planning.
-
-#### Income Statement
-
-Sure, here's an example of an income statement projection for a hypothetical tech stock trading company operating in Jamaica. This projection assumes a three-year period and includes estimates for revenue, expenses, and net income:
-
-```
-Tech Stock Trading Company Income Statement Projection (Year 1 to Year 3)
--------------------------------------------------------------------------------
-                                     Year 1         Year 2         Year 3
--------------------------------------------------------------------------------
-Revenue:
-   Subscription Fees               $500,000       $1,200,000      $2,500,000
-   Transaction Fees                 $300,000        $800,000       $1,500,000
-   Advertising Revenue               $50,000        $150,000        $300,000
-                                    --------       ---------       ---------
-Total Revenue                      $850,000       $2,150,000      $4,300,000
-
-Expenses:
-   Technology Development          $300,000        $500,000        $700,000
-   Marketing and Sales             $150,000        $300,000        $500,000
-   Employee Salaries               $200,000        $400,000        $600,000
-   Infrastructure Costs            $100,000        $200,000        $300,000
-   Regulatory Compliance            $50,000         $75,000        $100,000
-   Administrative Overhead          $50,000         $75,000        $100,000
-                                    --------       ---------       ---------
-Total Expenses                     $850,000       $1,550,000      $2,300,000
-
-Net Income (Loss)                       $0          $600,000      $2,000,000
--------------------------------------------------------------------------------
-```
-
-Explanation of Assumptions:
-
-1. **Revenue**: Revenue is generated from subscription fees, transaction fees charged on trades executed on the platform, and advertising revenue. The figures increase over the three-year period as the customer base grows and the platform gains traction in the market.
-
-2. **Expenses**: Expenses include costs related to technology development, marketing and sales efforts to acquire customers, employee salaries, infrastructure maintenance, regulatory compliance, and administrative overhead. Some expenses may increase over time due to business growth and expansion.
-
-3. **Net Income (Loss)**: Net income is calculated by subtracting total expenses from total revenue. In Year 1, the company may operate at breakeven or incur a loss as it invests in technology development and customer acquisition. However, net income improves in subsequent years as revenue grows and expenses are managed more efficiently.
-
-It's important to note that these projections are based on assumptions and estimates, and actual results may vary. Regular monitoring and adjustment of financial forecasts are essential to reflect changes in market conditions, business performance, and other factors affecting the company's financial position.
-
-#### Balance Sheet
-
-Certainly, here's an example of a balance sheet projection for the same hypothetical tech stock trading company in Jamaica, covering a three-year period:
-
-```
-Tech Stock Trading Company Balance Sheet Projection (Year 1 to Year 3)
--------------------------------------------------------------------------------
-                                      Year 1         Year 2         Year 3
--------------------------------------------------------------------------------
-Assets:
-   Cash and Cash Equivalents       $1,000,000      $2,500,000      $4,000,000
-   Accounts Receivable                $50,000        $150,000        $300,000
-   Technology Assets                $1,200,000      $2,500,000      $3,500,000
-   Investments                           $0            $200,000        $500,000
-                                     ---------       ---------       ---------
-Total Assets                       $2,250,000      $5,350,000      $8,300,000
-
-Liabilities:
-   Accounts Payable                   $50,000        $100,000        $150,000
-   Short-Term Debt                    $100,000         $50,000           $0
-   Long-Term Debt                          $0          $200,000        $500,000
-                                     ---------       ---------       ---------
-Total Liabilities                    $150,000        $350,000        $650,000
-
-Equity:
-   Common Stock                     $1,000,000      $2,000,000      $3,000,000
-   Retained Earnings                $1,100,000      $3,000,000      $4,650,000
-                                     ---------       ---------       ---------
-Total Equity                       $2,100,000      $5,000,000      $7,650,000
--------------------------------------------------------------------------------
-Total Liabilities and Equity       $2,250,000      $5,350,000      $8,300,000
--------------------------------------------------------------------------------
-```
-
-Explanation of Assumptions:
-
-1. **Assets**: The balance sheet includes various assets such as cash and cash equivalents, accounts receivable (representing revenue yet to be collected), technology assets (e.g., software and hardware infrastructure), and investments. These assets increase over time as the company generates revenue, invests in technology development, and accumulates cash reserves.
-
-2. **Liabilities**: Liabilities include accounts payable (e.g., unpaid bills), short-term debt (e.g., loans due within one year), and long-term debt (e.g., loans with longer repayment periods). The company may take on debt to finance operations, with some debt being repaid or refinanced over time.
-
-3. **Equity**: Equity consists of common stock (representing ownership stakes held by investors) and retained earnings (accumulated profits reinvested in the business). Equity increases as the company raises capital through the issuance of stock and retains earnings generated from operations.
-
-4. **Total Assets and Total Liabilities and Equity**: The balance sheet balances by ensuring that total assets equal total liabilities and equity, reflecting the fundamental accounting equation (Assets = Liabilities + Equity).
-
-This balance sheet projection provides a snapshot of the company's financial position at the end of each year, showing how assets are financed through a combination of liabilities and equity. Regular review and adjustment of the balance sheet are necessary to reflect changes in the company's operations, financing activities, and overall financial health.
-
-
-#### Cashflow Statement
-
-Here's an example of a cash flow statement projection for the hypothetical tech stock trading company in Jamaica, covering a three-year period:
-
-```
-Tech Stock Trading Company Cash Flow Statement Projection (Year 1 to Year 3)
--------------------------------------------------------------------------------
-                                    Year 1          Year 2          Year 3
--------------------------------------------------------------------------------
-Operating Activities:
-   Net Income (Loss)                    $0           $600,000       $2,000,000
-   Depreciation and Amortization     $200,000         $400,000        $600,000
-   Changes in Working Capital:
-      Increase (Decrease) in
-      Accounts Receivable             ($50,000)       ($100,000)      ($150,000)
-      Increase (Decrease) in
-      Accounts Payable                  $50,000          $50,000         $50,000
-                                    ---------       ---------       ---------
-Net Cash Provided by Operating
-Activities                          $200,000        $950,000       $2,500,000
-
-Investing Activities:
-   Purchase of Technology Assets     ($800,000)     ($1,300,000)     ($1,000,000)
-   Purchase of Investments                $0           ($200,000)      ($300,000)
-                                    ---------       ---------       ---------
-Net Cash Used in Investing
-Activities                          ($800,000)     ($1,500,000)     ($1,300,000)
-
-Financing Activities:
-   Proceeds from Short-Term Debt      $100,000           $50,000            $0
-   Proceeds from Long-Term Debt             $0           $200,000       $500,000
-   Proceeds from Common Stock       $1,000,000        $1,000,000      $1,000,000
-                                    ---------       ---------       ---------
-Net Cash Provided by Financing
-Activities                         $1,100,000       $1,250,000      $1,500,000
-
-Net Increase (Decrease) in Cash       $500,000         $700,000       $1,700,000
-Cash at Beginning of Year           $1,000,000       $1,500,000      $2,200,000
-                                    ---------       ---------       ---------
-Cash at End of Year                 $1,500,000       $2,200,000      $3,900,000
--------------------------------------------------------------------------------
-```
-
-Explanation of Assumptions:
-
-1. **Operating Activities**: Operating cash flow is derived from the company's net income, adjusted for non-cash expenses such as depreciation and changes in working capital. Positive cash flow from operating activities indicates the company's ability to generate cash from its core business operations.
-
-2. **Investing Activities**: Investing cash flow includes cash flows related to the acquisition and sale of assets, such as technology assets and investments. Negative cash flow from investing activities reflects cash outflows for capital expenditures.
-
-3. **Financing Activities**: Financing cash flow comprises cash flows related to the company's financing activities, such as proceeds from debt issuance and equity financing (e.g., common stock). Positive cash flow from financing activities indicates cash inflows from external sources to fund the company's operations and growth initiatives.
-
-4. **Net Increase (Decrease) in Cash**: The net increase (or decrease) in cash represents the change in the company's cash balance during the period. A positive net increase in cash indicates that the company's cash reserves are growing, while a negative net increase may indicate cash outflows exceeding inflows.
-
-5. **Cash at Beginning and End of Year**: The cash balance at the beginning of the year is carried forward from the previous year, while the cash balance at the end of the year is calculated based on the net increase (or decrease) in cash during the period.
-
-This cash flow statement projection provides insights into how cash is generated and used by the company over the forecast period, helping stakeholders assess the company's liquidity, financing needs, and overall financial health.
+---
 
 ## References
 
