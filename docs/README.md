@@ -330,7 +330,7 @@ Here's a rough budget breakdown:
 
    - **Domain and SSL**
      - **Domain name**: Typically $10-$15/year.
-     - **SSL certificate**: Free with Let's Encrypt or $100/year per certificate for premium. At least 2 certificates needed (one for backend and one for frontend).
+     - **SSL certificate**: Free with Let's Encrypt or $75 to $100 per year per certificate for premium. At least 2 certificates needed (one for backend and one for frontend).
      - **Budget**: $15/year for domain + $0/year for SSL = $15/year.
 
 2. **Salaries and Allowances**
