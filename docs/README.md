@@ -369,12 +369,12 @@ _Shillings_ is projected to ...
 
 Here’s the projections for the number of users for the first 3 years,
 
-|                        | Year 1      | Year 2       | Year 3     |
-|------------------------|------------:|-------------:|-----------:|
-| *Total Users*          | 1,000       | 2,000        | 3,500      |
-| *Free Users*           | 800         | 1,600        | 2,800      |
-| ***Premium Users***    | ***200***   | ***400***    | ***700***  |
-| **Revenue**            | **$16,800** | **$336,000** | **$3,360** |
+|                        | Year 1      | Year 2       | Year 3      |
+|------------------------|------------:|-------------:|------------:|
+| *Total Users*          | 1,000       | 2,000        | 3,500       |
+| *Free Users*           | 800         | 1,600        | 2,800       |
+| ***Premium Users***    | ***200***   | ***400***    | ***700***   |
+| **Revenue**            | **$16,800** | **$33,600**  | **$58,800** |
 
 _N.B. $7/month per Premium User_
 
@@ -393,30 +393,23 @@ _N.B. $7/month per Premium User_
 
 Here’s a simple income statement based on your budget and income projections for Year 2 and Year 3:
 
-| **Income Statement**            | **Year 2 (USD)** | **Year 3 (USD)** |
-|---------------------------------|------------------|------------------|
-| **Revenue**                     |                  |                  |
-| Premium Subscription Revenue    | $1,680           | $3,360           |
-| **Total Revenue**               | **$1,680**       | **$3,360**       |
-|                                 |                  |                  |
-| **Expenses**                    |                  |                  |
-| GitHub (Repo and CI)            | $240             | $240             |
-| Linode (Kubernetes Hosting)     | $2,400           | $2,400           |
-| Domain and SSL                  | $15              | $15              |
-| Work-from-home Allowance        | $9,000           | $9,000           |
-| Tech Team Salaries              | $230,000         | $230,000         |
-| Marketing (Communities & Clubs) | $6,000           | $6,000           |
-| Software Licenses               | $2,500           | $2,500           |
-| OpenAI API Usage (adjusted)     | $54              | $135             |
-| **Total Expenses**              | **$250,209**     | **$250,290**     |
-|                                 |                  |                  |
-| **Net Income**                  | **($248,529)**   | **($246,930)**   |
+| **Income Statement**            | **Year 1**       | **Year 2**       | **Year 3**    |
+|---------------------------------|-----------------:|-----------------:|--------------:|
+| **Revenue**                     |                  |                  |               |
+| Premium Subscription Revenue    | $16,800          | $33,600          | $58,800       |
+| **Total Revenue**               | **$16,800**      | **$33,600**      | **$58,800**   |
+|                                 |                  |                  |               |
+| **Expenses**                    |                  |                  |               |
+| Operational expenses            | $16,465          | $237,940         | $16,465       |
+| **Total Expenses**              | **$16,465**      | **$237,940**     | **$16,465**   |
+|                                 |                  |                  |               |
+| **Net Income**                  | **$335**         | **($204,340)**   | **$42,335**   |
 
 ---
 
 ### Key Points:
-- The expenses remain consistent across Year 2 and Year 3, while revenue grows as premium subscriptions increase.
-- Despite revenue increases, the company is still running at a loss in both years.
+- The company will run at a loss in the second year because a tech team will be contracted for that year to do an _epic_ of features
+- The _epic_ of features should pay off in the third year when no tech team is contracted
 
 ---
 
