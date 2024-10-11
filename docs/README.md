@@ -273,32 +273,39 @@ The _Shillings_ project will be conservative on the use of debt to finance it's 
 
 This approach reduces reliance on external financing and preserves equity. We plan to encourage team members to invest their time and skills in exchange for equity rather than immediate compensation. This aligns incentives and conserves cash for essential expenses.
 
+### Operational Strategy
+
 We embrace a lean approach to operations, minimizing unnecessary expenses and overhead costs. This includes negotiating favorable terms with suppliers, using cost-effective marketing channels, and optimizing resource allocation.
 
-Currently, the labour for _Research and Development_ is the highest cost in the initial stage. Since the founder is an engineer, he will use his time and skill to complete the following milestones,
-
-In addition, marketing research will be done by him.
+Currently, the labour for _Research and Development_ is the highest cost in the initial stage. Since the founder is an engineer, he will use his time and skill to complete the foundational milestones (an initial _epic_). In addition, marketing research will be done by him.
 
 A group of seven (7) persons will be asked to volunteer their time to test the product after the completion of these milestones. Those seven (7) persons will be provided an equity stake based on the value of their labour, which will be outlined in the budget. The completion of this test phase can be referred to as _Beta V_.
 
 It is while promoting the product, after _Beta V_, that consideration will be given to borrowing funds to conduct marketing campaigns in the various investment communities and clubs islandwide.
 
+In the second phase of this project, financing a tech team will be considered. The idea is to employ a tech team using [the Hollywood approach](./BRANDING/THE.BRAND.GAP.md#hooray-for-hollywood), where best talent is contracted for each _epic_ (a chosen list of features from the backlog). This means that embarking on a new _epic_ can be costly and should be carefully planned. This removes the need to employ tech team permanently. This will be done until the company can afford to hire employees permanently.
+
 ### Budget
 
 Here's a breakdown of the starting budget:
 
-| Category              | Annual Budget ($) |
-|-----------------------|------------------:|
-| <p>Personnel Costs<p><ul><li>Tech Team<br />(Tech Lead - US$5,000, Scrum Master - US$4,000, Engineers - US$3,000 x 3)</li></ul>       | $216,000          |
-| <p>Technology Infrastructure</p><ul><li>Cloud services<br />(Linode Kubernetes Hosting - [US$216 per month](https://www.linode.com/pricing/#kubernetes))</li><li>Software licenses and subscriptions<br />(JSE API - [US$4,000](https://www.jamstockex.com/services/api-services/), Github - [US$20 per user per month](https://github.com/pricing) x 5)</li><li>Hardware costs<br />(computers, servers, networking equipment)</li></ul> | $7,800           |
-| <p>Marketing and Sales<p><ul><li>Brand development<br />(Logo, Name, Avatar, Slogan, Color Themes)</li><li>Public relations<br />(group meetings, conference, branded accessories)</li><li>Sales and marketing tools<br />(CRM software, Google forms, SurveyMonkey, email marketing platforms)</li></ul>   | $--          |
-| Operational Costs     | $--           |
-| Miscellaneous Expenses| $--           |
-| **Total**             | **$223,800**      |
+| Item                             | Monthly Cost (USD) | Annual Cost (USD) |
+|----------------------------------|-------------------|-------------------|
+| GitHub (Repo and CI)             | $20.00            | $240              |
+| Linode (Kubernetes Hosting)      | $200.00           | $2,400            |
+| Domain and SSL                   | $0.00             | $15               |
+| Work-from-home Allowance         | $750.00           | $9,000            |
+| Tech Team Salaries <ul><li>Tech Team<br />(Tech Lead - US$5,000, Scrum Master - US$4,000, Engineers - US$3,000 x 3)</li></ul> | $18,000        | $216,000          |
+| Marketing (Communities & Clubs)  | $500.00           | $6,000            |
+| Software Licenses                | $208.33           | $2,500            |
+| OpenAI API Usage                 | $500.00           | $6,000            |
+| **Total Annual Cost**            |                   | **$256,155**      |
+
+**Digital marketing** (social media advertising, search engine optimization) will be the focus after we have gained 1,000 active users through personal communication and public relations as stated in the [marketing strategy](#marketing-strategy).
 
 Here's a rough budget breakdown for your tech company based on the details provided:
 
-### 1. **Tech Stack and Infrastructure**
+1. **Tech Stack and Infrastructure**
 - **GitHub (Repo and CI)**
   - **GitHub Teams**: Starts at $4 per user/month (assume 5 team members).
   - **Budget**: $20/month = $240/year.
@@ -312,102 +319,32 @@ Here's a rough budget breakdown for your tech company based on the details provi
   - **SSL certificate**: Free with Let's Encrypt or $100/year for premium.
   - **Budget**: $15/year for domain + $0/year for SSL = $15/year.
 
-### 2. **Salaries and Allowances**
+2. **Salaries and Allowances**
 - **Tech Team (5 members)**
   - Assume the team consists of 1 backend (C#), 1 frontend (SvelteKit), 1 DevOps, 1 UI/UX, and 1 QA.
   - **Work-from-home allowance**: Assume $150/month for device rent and utilities.
   - **Budget**: $150 × 5 = $750/month = $9,000/year.
 
-### 3. **Salaries**
-- **C# Backend Developer**: $50,000/year.
-- **SvelteKit Frontend Developer**: $45,000/year.
-- **DevOps Engineer**: $55,000/year.
-- **UI/UX Designer**: $40,000/year.
-- **QA Engineer**: $40,000/year.
-  - **Budget**: $230,000/year for tech team salaries.
-
-### 4. **Marketing (Communities and Clubs)**
-- **Community management and club sponsorships**: $500/month (budgeting for engagement, sponsorships, events).
-  - **Budget**: $500 × 12 = $6,000/year.
-
-### 5. **Other Costs**
-- **Software Licenses**: Assume using IDEs, design tools (e.g., Figma, Adobe), which could be around $500 per user/year.
-  - **Budget**: $500 × 5 = $2,500/year.
-
-### Total Budget Breakdown (Annually)
-- **GitHub**: $240
-- **Linode**: $2,400
-- **Domain and SSL**: $15
-- **Work-from-home Allowance**: $9,000
-- **Salaries**: $230,000
-- **Marketing (Communities & Clubs)**: $6,000
-- **Software Licenses**: $2,500
-
-### Total Annual Budget: **$250,155**
-
-This budget focuses on keeping operational costs reasonable while maintaining quality. Salaries and allowances are set at moderate market rates, and marketing is grassroots, avoiding expensive SEO campaigns. Adjust based on team size, geographical location, and project scale.
-
-| Item                             | Monthly Cost (USD) | Annual Cost (USD) |
-|----------------------------------|-------------------|-------------------|
-| GitHub (Repo and CI)             | $20.00            | $240              |
-| Linode (Kubernetes Hosting)      | $200.00           | $2,400            |
-| Domain and SSL                   | $0.00             | $15               |
-| Work-from-home Allowance         | $750.00           | $9,000            |
-| Tech Team Salaries               | $19,166.67        | $230,000          |
-| Marketing (Communities & Clubs)  | $500.00           | $6,000            |
-| Software Licenses                | $208.33           | $2,500            |
-| OpenAI API Usage                 | $500.00           | $6,000            |
-
-### **Total Annual Cost**: $256,155
-
-This includes the cost for using the OpenAI API to deliver services to users. The OpenAI API usage is estimated at $500/month but can be adjusted based on actual usage.
-
-**Digital marketing** (social media advertising, search engine optimization) will be the focus after we have gained 1,000 active users through personal communication and public relations as stated in the [marketing strategy](#marketing-strategy).
-
-1. **Personnel Costs:**
-   - Salaries for founders, developers (including tech lead and scrum master), designers, freelance or contractor and other employees.
-     - Enforce style guide
+3. **Salaries**
+  Expected operations from team:
      - Coding & code reviews (Engineers)
      - Documentation
      - Testing (UAT - _smallest viable market_, System - Engineers)
      - Release management (Engineers)
      - Project management and application architecture (Tech lead)
      - Happiness manager (Scrum master)
-   - Payroll taxes and benefits (health insurance, retirement plans, etc.).
-   
-4. **Operational Costs:**
-   - Work-from-home allowance
-   - Legal and accounting fees.
-   
-5. **Miscellaneous Expenses:**
-   - Training and professional development.
-   - Contingency fund for unexpected expenses.
+
+4. **Marketing (Communities and Clubs)**
+- **Community management and club sponsorships**: $500/month (budgeting for engagement, sponsorships, events).
+  - **Budget**: $500 × 12 = $6,000/year.
+
+5. **Other Costs**
+- **Software Licenses**: Assume using IDEs, design tools (e.g., Figma, Adobe), which could be around $500 per user/year.
+  - **Budget**: $500 × 5 = $2,500/year.
 
 ### Financial Projections
 
-Here are some key assumptions to consider:
-
-1. **Market Size and Growth**: Estimate the total addressable market (TAM) for the immersive stock trading platform in Jamaica, considering factors such as the number of active traders, trading volume, and market penetration potential. Project the growth rate of the market over the forecast period based on historical data and expected industry trends.
-
-2. **Customer Acquisition**: Estimate the cost of acquiring customers for the platform, including marketing and sales expenses. Determine the conversion rate of leads to customers based on user acquisition strategies such as advertising, partnerships, and referrals.
-
-3. **Revenue Model**: Define the revenue model for the platform, considering options such as subscription fees, transaction fees, premium features, and advertising revenue. Estimate the average revenue per user (ARPU) and project revenue growth over time based on user adoption and pricing strategies.
-
-4. **User Growth**: Forecast the number of active users on the platform, taking into account factors such as market demand, competitive landscape, and customer retention. Consider how user engagement, platform features, and customer support may impact user growth rates.
-
-5. **Market Share**: Estimate the company's market share within the Jamaican stock trading market and track changes over time. Consider competitive dynamics, barriers to entry, and differentiation strategies that may affect market share growth.
-
-6. **Operating Expenses**: Project operating expenses including technology development, infrastructure costs, employee salaries, marketing expenses, regulatory compliance, and administrative overhead. Consider scalability and efficiency improvements over time as the platform matures.
-
-7. **Technology Infrastructure**: Assess the technology infrastructure required to support the platform's functionality, performance, and security. Estimate costs related to software development, hosting, data storage, cybersecurity, and platform maintenance.
-
-8. **Regulatory Environment**: Consider regulatory factors that may impact the operation of the stock trading platform in Jamaica, such as licensing requirements, compliance costs, and changes in financial regulations. Stay informed about regulatory developments and adapt financial forecasts accordingly.
-
-9. **Economic Conditions**: Take into account macroeconomic factors that may influence stock market activity and investor behavior in Jamaica, such as GDP growth, inflation rates, interest rates, and geopolitical events. Monitor economic indicators and adjust financial forecasts as needed.
-
-10. **Risk Factors**: Identify and assess potential risks and uncertainties that could affect the financial performance of the company, such as technological challenges, market competition, regulatory changes, and external shocks. Develop contingency plans to mitigate risks and preserve financial stability.
-
-By incorporating these assumptions into financial forecasts, you can develop a comprehensive outlook for the tech company's immersive stock trading platform in Jamaica, enabling informed decision-making and strategic planning.
+_Shillings_ is projected to ...
 
 #### Income Projections
 
