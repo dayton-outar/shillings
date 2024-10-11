@@ -289,59 +289,73 @@ In the second phase of this project, financing a tech team will be considered. T
 
 Here's a breakdown of the starting budget:
 
+#### Phase 1
+
 | Item                             | Monthly Cost (USD) | Annual Cost (USD) |
 |----------------------------------|------------------:|------------------:|
 | GitHub (Repo and CI)             | $20.00            | $240              |
 | Linode (Kubernetes Hosting)      | $200.00           | $2,400            |
 | Domain                           | $0.00             | $15               |
-| SSL Certificates (GoDaddy)       | $150              | $23,250           |
-| Work-from-home Allowance         | $750.00           | $9,000            |
-| Tech Team Salaries <ul><li>Tech Team<br />(Tech Lead - US$5,000, Scrum Master - US$4,000, Engineers - US$3,000 x 3)</li></ul> | $18,000        | $216,000          |
+| SSL Certificates (GoDaddy)       | $0.00             | $150              |
 | Marketing (Communities & Clubs)  | $500.00           | $6,000            |
-| Software Licenses                | $208.33           | $2,500            |
+| Software Licenses                |                   | $7,225            |
 | OpenAI API Usage                 | $500.00           | $6,000            |
-| **Total Annual Cost**            |                   | **$242,155**      |
+| **Total Annual Cost**            |                   | **$22,030**       |
 
-**Digital marketing** (social media advertising, search engine optimization) will be the focus after we have gained 1,000 active users through personal communication and public relations as stated in the [marketing strategy](#marketing-strategy).
+#### Phase 2
 
-Here's a rough budget breakdown for your tech company based on the details provided:
+| Item                             | Monthly Cost (USD) | Annual Cost (USD) |
+|----------------------------------|------------------:|------------------:|
+| GitHub (Repo and CI)             | $20.00            | $240              |
+| Linode (Kubernetes Hosting)      | $200.00           | $2,400            |
+| Domain                           | $0.00             | $15               |
+| SSL Certificates (GoDaddy)       | $0.00             | $150              |
+| Marketing (Communities & Clubs)  | $500.00           | $6,000            |
+| Software Licenses <ul><li>JSE API - [US$4,000](https://www.jamstockex.com/services/api-services/)</li></ul>               |                   | $4,000            |
+| OpenAI API Usage                 | $500.00           | $6,000            |
+| Work-from-home Allowance         | $750.00           | $9,000            |
+| Tech Team Salaries               | $18,000           | $216,000          |
+| **Total Annual Cost**            |                   | **$243,805**      |
+
+Here's a rough budget breakdown:
 
 1. **Tech Stack and Infrastructure**
-- **GitHub (Repo and CI)**
-  - **GitHub Teams**: Starts at $4 per user/month (assume 5 team members).
-  - **Budget**: $20/month = $240/year.
+   - **GitHub (Repo and CI)**
+    - **GitHub Teams**: Starts at $4 per user/month (assume 5 team members).
+    - **Budget**: $20/month = $240/year.
   
-- **Linode (Kubernetes Hosting)**
-  - **Linode Kubernetes Engine (LKE)**: Costs can range from $60/month to $300/month depending on usage and scaling needs. For moderate usage:
-  - **Budget**: $200/month = $2,400/year.
+   - **Linode (Kubernetes Hosting)**
+    - **Linode Kubernetes Engine (LKE)**: Costs can range from $60/month to $300/month depending on usage and scaling needs. For moderate usage:
+    - **Budget**: $200/month = $2,400/year.
 
-- **Domain and SSL**
-  - **Domain name**: Typically $10-$15/year.
-  - **SSL certificate**: Free with Let's Encrypt or $100/year for premium.
-  - **Budget**: $15/year for domain + $0/year for SSL = $15/year.
+   - **Domain and SSL**
+    - **Domain name**: Typically $10-$15/year.
+    - **SSL certificate**: Free with Let's Encrypt or $100/year per certificate for premium. At least 2 certificates needed (one for backend and one for frontend).
+    - **Budget**: $15/year for domain + $0/year for SSL = $15/year.
 
 2. **Salaries and Allowances**
-- **Tech Team (5 members)**
-  - Assume the team consists of 1 backend (C#), 1 frontend (SvelteKit), 1 DevOps, 1 UI/UX, and 1 QA.
-  - **Work-from-home allowance**: Assume $150/month for device rent and utilities.
-  - **Budget**: $150 × 5 = $750/month = $9,000/year.
+   - **Tech Team (5 members)**
+    - Assume the team consists of 1 Tech Lead (US$5,000), Scrum Master (US$4,000) and 3 Engineers (US$3,000)
+    - **Work-from-home allowance**: Assume $150/month for device rent and utilities.
+    - **Budget**: $150 × 5 = $750/month = $9,000/year.
 
-3. **Salaries**
-  Expected operations from team:
-     - Coding & code reviews (Engineers)
-     - Documentation
-     - Testing (UAT - _smallest viable market_, System - Engineers)
-     - Release management (Engineers)
-     - Project management and application architecture (Tech lead)
-     - Happiness manager (Scrum master)
+   Expected operations from team:
+    - Coding & code reviews (Engineers)
+    - Documentation
+    - Testing (UAT - _smallest viable market_, System - Engineers)
+    - Release management (Engineers)
+    - Project management and application architecture (Tech lead)
+    - Happiness manager (Scrum master)
 
-4. **Marketing (Communities and Clubs)**
-- **Community management and club sponsorships**: $500/month (budgeting for engagement, sponsorships, events).
-  - **Budget**: $500 × 12 = $6,000/year.
+3. **Marketing (Communities and Clubs)**
+   - **Community management and club sponsorships**: $500/month (budgeting for engagement, sponsorships, events).
+    - **Budget**: $500 × 12 = $6,000/year.
 
-5. **Other Costs**
-- **Software Licenses**: Assume using IDEs, design tools (e.g., Figma, Adobe), which could be around $500 per user/year.
-  - **Budget**: $500 × 5 = $2,500/year.
+5. **Software Licenses**: 
+   - JSE API - [US$4,000](https://www.jamstockex.com/services/api-services/) Annual Subscription
+   - JSE Archives - US$3,225 only in Phase 1
+
+**Digital marketing** (social media advertising, search engine optimization) will be the focus after we have gained 1,000 active users through personal communication and public relations as stated in the [marketing strategy](#marketing-strategy).
 
 ### Financial Projections
 
