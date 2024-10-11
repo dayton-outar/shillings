@@ -295,8 +295,8 @@ Here's a breakdown of the starting budget:
 |----------------------------------|------------------:|------------------:|
 | GitHub (Repo and CI)             | $20.00            | $240              |
 | Linode (Kubernetes Hosting)      | $200.00           | $2,400            |
-| Domain                           | $0.00             | $15               |
-| SSL Certificates (GoDaddy)       | $0.00             | $150              |
+| Domain                           |                   | $15               |
+| SSL Certificates (GoDaddy)       |                   | $150              |
 | Marketing (Communities & Clubs)  | $500.00           | $6,000            |
 | Software Licenses                |                   | $7,225            |
 | OpenAI API Usage                 | $500.00           | $6,000            |
@@ -308,8 +308,8 @@ Here's a breakdown of the starting budget:
 |----------------------------------|------------------:|------------------:|
 | GitHub (Repo and CI)             | $20.00            | $240              |
 | Linode (Kubernetes Hosting)      | $200.00           | $2,400            |
-| Domain                           | $0.00             | $15               |
-| SSL Certificates (GoDaddy)       | $0.00             | $150              |
+| Domain                           |                   | $15               |
+| SSL Certificates (GoDaddy)       |                   | $150              |
 | Marketing (Communities & Clubs)  | $500.00           | $6,000            |
 | Software Licenses <ul><li>JSE API - [US$4,000](https://www.jamstockex.com/services/api-services/)</li></ul>               |                   | $4,000            |
 | OpenAI API Usage                 | $500.00           | $6,000            |
