@@ -321,23 +321,23 @@ Here's a rough budget breakdown:
 
 1. **Tech Stack and Infrastructure**
    - **GitHub (Repo and CI)**
-    - **GitHub Teams**: Starts at $4 per user/month (assume 5 team members).
-    - **Budget**: $20/month = $240/year.
+     - **GitHub Teams**: Starts at $4 per user/month (assume 5 team members).
+     - **Budget**: $20/month = $240/year.
   
    - **Linode (Kubernetes Hosting)**
-    - **Linode Kubernetes Engine (LKE)**: Costs can range from $60/month to $300/month depending on usage and scaling needs. For moderate usage:
-    - **Budget**: $200/month = $2,400/year.
+     - **Linode Kubernetes Engine (LKE)**: Costs can range from $60/month to $300/month depending on usage and scaling needs. For moderate usage:
+     - **Budget**: $200/month = $2,400/year.
 
    - **Domain and SSL**
-    - **Domain name**: Typically $10-$15/year.
-    - **SSL certificate**: Free with Let's Encrypt or $100/year per certificate for premium. At least 2 certificates needed (one for backend and one for frontend).
-    - **Budget**: $15/year for domain + $0/year for SSL = $15/year.
+     - **Domain name**: Typically $10-$15/year.
+     - **SSL certificate**: Free with Let's Encrypt or $100/year per certificate for premium. At least 2 certificates needed (one for backend and one for frontend).
+     - **Budget**: $15/year for domain + $0/year for SSL = $15/year.
 
 2. **Salaries and Allowances**
    - **Tech Team (5 members)**
-    - Assume the team consists of 1 Tech Lead (US$5,000), Scrum Master (US$4,000) and 3 Engineers (US$3,000)
-    - **Work-from-home allowance**: Assume $150/month for device rent and utilities.
-    - **Budget**: $150 × 5 = $750/month = $9,000/year.
+     - Assume the team consists of 1 Tech Lead (US$5,000), Scrum Master (US$4,000) and 3 Engineers (US$3,000)
+     - **Work-from-home allowance**: Assume $150/month for device rent and utilities.
+     - **Budget**: $150 × 5 = $750/month = $9,000/year.
 
    Expected operations from team:
     - Coding & code reviews (Engineers)
@@ -349,7 +349,7 @@ Here's a rough budget breakdown:
 
 3. **Marketing (Communities and Clubs)**
    - **Community management and club sponsorships**: $500/month (budgeting for engagement, sponsorships, events).
-    - **Budget**: $500 × 12 = $6,000/year.
+     - **Budget**: $500 × 12 = $6,000/year.
 
 5. **Software Licenses**: 
    - JSE API - [US$4,000](https://www.jamstockex.com/services/api-services/) Annual Subscription
