@@ -381,11 +381,11 @@ _N.B. $7/month per Premium User_
 **Assumptions**:
  - 80% of the users are likely to sign up for free services
  - 20% will want premium services
- - **Market Size and Growth**: Estimate the total addressable market (TAM) for the immersive stock trading platform in Jamaica, considering factors such as the number of active traders, trading volume, and market penetration potential. Project the growth rate of the market over the forecast period based on historical data and expected industry trends
- - **Revenue Model**: Define the revenue model for the platform, considering options such as subscription fees, transaction fees, premium features, and advertising revenue. Estimate the average revenue per user (ARPU) and project revenue growth over time based on user adoption and pricing strategies.
- - **Customer Acquisition**: Estimate the cost of acquiring customers for the platform, including marketing and sales expenses. Determine the conversion rate of leads to customers based on user acquisition strategies such as advertising, partnerships, and referrals.
- - **User Growth**: Forecast the number of active users on the platform, taking into account factors such as market demand, competitive landscape, and customer retention. Consider how user engagement, platform features, and customer support may impact user growth rates.
- - **Market Share**: Estimate the company's market share within the Jamaican stock trading market and track changes over time. Consider competitive dynamics, barriers to entry, and differentiation strategies that may affect market share growth.
+ - [~226,000](./MARKETING/MARKET/JM.md#market-size) individual JCSD (Jamaica Central Securities Depository) accounts exist, as of Q1, 2024
+ - 2% of the market is expected with targetted community marketing
+ - Revenues will come from subscription fee of $7 per month and, eventually, transaction fees from trading
+ - Modest projections made for subscription fees only for 3 years
+ - Growth rate expected at 100% from first to second year; decreasing to 75% in third year 
   
 ---
 
