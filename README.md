@@ -71,7 +71,7 @@ After the docker virtual environment is up and running, ***the database will be 
 
 ## Usage
 
-...
+The issues list in this repo speaks to the intention of this app in finer details. With that said, the most useful and practical feature is the portfolio statement report that is displayed on the Dashboard, which is the landing page. Once the database is up-to-date with the latest stock information, it shows the current standing of gain/loss of the investors portfolio.
 
 ## Contributions
 
