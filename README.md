@@ -13,12 +13,13 @@ _To empower stock investors globally by providing an immersive platform that off
 ## Requirements
 
  - [Kubernetes](https://kubernetes.io/)
-   - [Helm](https://helm.sh/)
    - [Docker](https://www.docker.com/)
  - [VueJS](https://vuejs.org/)
  - [.NET](https://dotnet.microsoft.com/)
  - [Node](https://nodejs.org/en/)
  - [Microsoft SQL Server 2019](https://www.microsoft.com/en-us/sql-server/sql-server-2019)
+
+There was intention to create a [Helm](https://helm.sh/) chart to deploy this distributed application on a Kubernetes platform. For now, the _docker-compose.yml_ file in the root can be used.
 
 ## File Structure
 
