@@ -1,6 +1,6 @@
 # Shillings
 
-***Shillings*** is the first story-based stock trading platform.
+***Shillings*** started as an intention to be the first story-based stock trading platform.
 
 ## Vision Statement
 
