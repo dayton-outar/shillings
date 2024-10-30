@@ -10,7 +10,7 @@ ENV SHILLINGS_DOMAIN https://shillings.info
 ENV HARPOON_DOMAIN https://api.shillings.info
 ENV HARPOON_DB_PWD Password77
 
-COPY ./Harpoon/bin/Debug/net6.0/publish ./
+COPY ./Harpoon/bin/Debug/net6.0 ./
 
 EXPOSE 5000
 
