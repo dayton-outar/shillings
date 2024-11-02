@@ -20,3 +20,6 @@ RUN chmod +x /app/restore-db.sh
 EXPOSE 1433
 
 # This container will run without explicit command, so we need to run restore-db.sh script within container
+
+# Set entrypoint to run SQL Server and then execute restore-db.sh script
+# ENTRYPOINT [ "/bin/bash", "-c", "/opt/mssql/bin/sqlservr & sleep 15 && /app/restore-db.sh" ]

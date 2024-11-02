@@ -18,9 +18,9 @@ services:
       - db
     environment:
       - ASPNETCORE_URLS=http://+:5000
-      - SHILLINGS_DOMAIN=http://localhost:8080
+      - SHILLINGS_DOMAIN=http://localhost:8181
       - HARPOON_DOMAIN=http://localhost:5000
-      - HARPOON_DB_HOST=db
+      - HARPOON_DB_HST=db
       - HARPOON_DB_PWD=Password44
   svc:
     build: service
@@ -29,7 +29,8 @@ services:
       - db:db
     depends_on:
       - db
-    environment: 
+    environment:
+      - NODE_ENV=development
       - O8DBHOST=db
       - MSSQLPORT=1433
       - MSSQLUSER=SA
@@ -45,6 +46,11 @@ services:
       timeout: 3s
     ports:
       - 1433:1433
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_PID=Developer
+      - MSSQL_SA_PASSWORD=Password44
+      - SA_PASSWORD=Password44
     volumes:
       - msdata:/var/opt/mssql
 volumes:
