@@ -63,7 +63,7 @@ To install this distributed application perform the following command at the roo
 docker compose up -d
 ```
 
-After the docker virtual environment is up and running, ***the database will be empty***. To fill the database consider restoring the backup file, [stocks.bak](./db/bkup/stocks.bak). The [scripts](./db/scripts/) folder contains bash scripts that can be used to perform the restore.
+After the docker virtual environment is up and running, ***the database will be empty***. To fill the database consider restoring the backup file, [stocks.bak](./db/bkup/stocks.bak). The [scripts](./db/scripts/) folder contains bash scripts that can be used to perform the restore (Use _restore-db.sh_).
 
 ***N.B. Some troubleshooting maybe necessary to get the application function-ready.***
 
