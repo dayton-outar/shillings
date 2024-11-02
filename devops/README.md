@@ -96,7 +96,7 @@ docker build -t krisys/sex:latest db/.
 When running this container, 
 
 ```bash
-docker run -d --name shillings-db -p 1411:1433 -e ACCEPT_EULA Y -e MSSQL_SA_PASSWORD Password44
+docker run -d --name shillings-db -p 1411:1433 -e ACCEPT_EULA Y -e SA_PASSWORD Password44
 ```
 
 Using docker-compose in root folder

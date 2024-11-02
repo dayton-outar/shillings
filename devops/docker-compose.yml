@@ -29,6 +29,6 @@ services:
       - 1433:1433
     environment:
       - ACCEPT_EULA=Y
-      - MSSQL_SA_PASSWORD=''
+      - SA_PASSWORD=''
     volumes:
       - /root/data:/var/opt/mssql
