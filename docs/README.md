@@ -407,6 +407,8 @@ Here’s a simple income statement based on your budget and income projections f
 
 ---
 
+Take note of some added ideas found [here](./IDEAS.md).
+
 ## References
 
 1. [Outline of industry](https://en.wikipedia.org/wiki/Outline_of_industry)
