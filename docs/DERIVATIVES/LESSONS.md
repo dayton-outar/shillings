@@ -1,8 +1,8 @@
 # Chapter 37: Lessons Trading Derivatives
 
-## Lessons for All
-
 Derivatives are powerful tools, but they require discipline. Every organization using them should establish clear risk limits at the highest level, then break them down to specific individuals. Daily reports must show potential gains and losses from market moves and be regularly validated against actual results.
+
+## Lessons for All
 
 - **Define Risk Limits**
 
