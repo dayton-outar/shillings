@@ -104,11 +104,7 @@ Nonforfeiture Options
 Settlement Options  
 Additional Life Insurance Benefits  
 
-**Chapter 13: Buying Life Insurance**  
-Determining the Cost of Life Insurance  
-Rate of Return on Saving Component  
-Taxation of Life Insurance  
-Shopping for Life Insurance  
+[Chapter 13: Buying Life Insurance](./BUYING.md)
 
 **Appendix: Calculation of Life Insurance Premiums**
 
