@@ -56,19 +56,9 @@
 7.10 Other currency swaps  
 7.11 Credit risk  
 7.12 Credit default swaps  
-7.13 Other types of swaps  
+7.13 Other types of swaps   
 
-**Chapter 8. Securitization and the financial crisis of 2007–8**  
-8.1 Securitization  
-8.2 The U.S. housing market  
-8.3 What went wrong?  
-8.4 The aftermath  
-
-**Chapter 9. XVAs**  
-9.1 CVA and DVA  
-9.2 FVA and MVA  
-9.3 KVA  
-9.4 Calculation issues  
+[Chapter 9. XVAs](./XVA.md) ⏳
 
 **Chapter 10. Mechanics of options markets**  
 10.1 Types of options  
@@ -231,16 +221,7 @@
 23.6 Using GARCH(1,1) to forecast future volatility  
 23.7 Correlations  
 
-**Chapter 24. Credit risk**  
-24.1 Credit ratings  
-24.2 Historical default probabilities  
-24.3 Recovery rates  
-24.4 Estimating default probabilities from bond yield spreads  
-24.5 Comparison of default probability estimates  
-24.6 Using equity prices to estimate default probabilities  
-24.7 Credit risk in derivatives transactions  
-24.8 Default correlation  
-24.9 Credit VaR  
+[Chapter 24. Credit Risk](./CREDIT.md) ⏳
 
 **Chapter 25. Credit derivatives**  
 25.1 Credit default swaps  
