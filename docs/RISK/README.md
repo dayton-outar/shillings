@@ -55,11 +55,7 @@ Reinsurance
 Investments  
 Other Insurance Company Functions  
 
-**Chapter 7: Financial Operations of Insurers**  
-Property and Casualty Insurers  
-Life Insurance Companies  
-Rate Making In Property and Casualty Insurance  
-Rate Making in Life Insurance  
+[Chapter 7: Financial Operations of Insurers](./OPERATIONS.md) ⏳ 🤔
 
 **Chapter 8: Government Regulation of Insurance**  
 Reasons for Insurance Regulation  
@@ -104,7 +100,7 @@ Nonforfeiture Options
 Settlement Options  
 Additional Life Insurance Benefits  
 
-[Chapter 13: Buying Life Insurance](./BUYING.md)
+[Chapter 13: Buying Life Insurance](./BUYING.md) ⏳ 🤔
 
 **Appendix: Calculation of Life Insurance Premiums**
 
@@ -214,6 +210,8 @@ Watercraft Insurance
 Government Property Insurance Programs  
 Title Insurance  
 Personal Umbrella Policy
+
+[Chapter 27: Crime Insurance and Surety Bonds](./CRIME.md) ⏳
 
 ## Reference
 

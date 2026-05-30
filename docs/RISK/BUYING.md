@@ -4,31 +4,31 @@ When you buy life insurance, comparing just the first-year premium doesn’t tel
 
 ## Determining the Cost of Life Insurance
 
-The true cost of life insurance is what you pay in premiums minus what you eventually get back (cash value and dividends), considering the time value of money. Four key factors matter: annual premiums, cash values, dividends, and interest you could have earned elsewhere.
+The real cost is what you pay in premiums minus what you get back (cash value and dividends), while also considering that money could have earned interest elsewhere. Four things matter: annual premiums, cash values, dividends, and the time value of money.
 
 ### Traditional Net Cost Method
 
-This older method simply adds up premiums over a period (like 20 years), subtracts expected dividends and the cash value at the end, then divides by the number of years.
+This old method adds up all premiums over a period (such as 20 years), subtracts total dividends and the cash value at the end, then divides by the number of years.
 
-**Example results often looked too good** — sometimes even showing “negative cost,” which suggested insurance was free. That’s unrealistic and misleading.
+It often produced negative costs, making it look like insurance was free. That’s misleading and unrealistic.
 
-**Main problem**: It ignores the time value of money. Money you pay today could have earned interest if invested elsewhere.
+**Big flaw**: It completely ignores the time value of money — the interest you could have earned if you invested the premiums elsewhere.
 
 ### Interest-Adjusted Cost Method
 
-This better approach accounts for interest by growing premiums and dividends at a reasonable rate (usually 5%).
+This improved method factors in interest (usually at 5%) on premiums and dividends to give a more realistic picture.
 
-There are two main versions:
+Two main indexes exist:
 
 **Surrender Cost Index**  
-Useful if you might cash out the policy after 10 or 20 years. It shows the cost assuming you surrender (cancel) the policy and take the cash value.
+Shows the cost if you cancel the policy after 10 or 20 years and take the cash value.
 
 **Net Payment Cost Index**  
-Useful if you plan to keep the policy until you die. It ignores cash value and focuses on death benefit protection.
+Shows the cost if you keep the policy until death (cash value is ignored).
 
-**Placeholder for Exhibit 13.2: Surrender Cost Index table**
+**Placeholder for Exhibit 13.2: Surrender Cost Index**
 
-**Placeholder for Exhibit 13.3: Net Payment Cost Index table**
+**Placeholder for Exhibit 13.3: Net Payment Cost Index**
 
 ### Using Interest-Adjusted Cost Data
 
