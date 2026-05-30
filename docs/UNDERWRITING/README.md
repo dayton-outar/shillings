@@ -2,9 +2,9 @@
 
 **Part I: The Deterministic Life Contingencies Model**
 
-Chapter 1: Introduction and motivation  
+[Chapter 1: Risk and Insurance](./RISK.md) 
 Chapter 2: The basic deterministic model  
-Chapter 3: The life table
+[Chapter 3: The Life Table](./LIFE.md) ⏳
 Chapter 4: Life annuities
 Chapter 5: Life insurance
 Chapter 6: Insurance and annuity reserves  
