@@ -28,17 +28,17 @@ If the counterparty defaults:
 
 The formula is:
 
-$${CVA = \sum_{i=1}^N q_i v_i}$$
+$\large{ CVA = \sum_{i=1}^N q_i v_i }$
 
 where $q_i$ is the default probability in interval $i$, and $v_i$ is the present value of expected loss in that interval.
 
 **DVA** is the opposite: it's the present value of the expected *gain* to the bank if *it* defaults. The formula looks similar:
 
-$${DVA = \sum_{i=1}^N q_i^* v_i^*}$$
+$\large{ DVA = \sum_{i=1}^N q_i^* v_i^* }$
 
 The adjusted value of the portfolio to the bank is:
 
-$${f_{nd} - CVA + DVA}$$
+$\large{ f_{nd} - CVA + DVA }$
 
 where $f_{nd}$ is the no-default value.
 
