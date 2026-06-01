@@ -1,12 +1,10 @@
 # Options, Futures and Derivatives
 
-[Chapter 1 & 2: Markets](./MARKETS.md)
+[Chapter 1: Markets](./MARKETS.md)
 
-[Chapter 3. Hedging strategies using futures](./HEDGE.md)⏳
+[Chapter 2: Hedging strategies using futures](./HEDGE.md)⏳
 
-**Appendix: Capital asset pricing model**
-
-**Chapter 4. Interest rates**  
+**Chapter 3: Interest rates**  
 4.1 Types of rates  
 4.2 Reference rates  
 4.3 The risk-free rate  
@@ -20,7 +18,7 @@
 4.11 Convexity  
 4.12 Theories of the term structure of interest rates  
 
-**Chapter 5. Determination of forward and futures prices**  
+**Chapter 4: Determination of forward and futures prices**  
 5.1 Investment assets vs. consumption assets  
 5.2 Short selling  
 5.3 Assumptions and notation  
@@ -36,14 +34,14 @@
 5.13 Delivery options  
 5.14 Futures prices and expected future spot prices  
 
-**Chapter 6. Interest rate futures**  
+**Chapter 5: Interest rate futures**  
 6.1 Day count and quotation conventions  
 6.2 Treasury bond futures  
 6.3 Eurodollar and SOFR futures  
 6.4 Duration-based hedging strategies using futures  
 6.5 Hedging portfolios of assets and liabilities  
 
-**Chapter 7. Swaps**  
+**Chapter 6: Swaps**  
 7.1 Mechanics of interest rate swaps  
 7.2 Determining risk-free rates  
 7.3 Reasons for trading interest rate swaps  
@@ -58,9 +56,9 @@
 7.12 Credit default swaps  
 7.13 Other types of swaps   
 
-[Chapter 9. XVAs](./XVA.md) ⏳
+[Chapter 7: XVAs](./XVA.md) ⏳
 
-**Chapter 10. Mechanics of options markets**  
+**Chapter 8: Mechanics of options markets**  
 10.1 Types of options  
 10.2 Option positions  
 10.3 Underlying assets  
@@ -74,7 +72,7 @@
 10.11 Warrants, employee stock options, and convertibles  
 10.12 Over-the-counter options markets  
 
-**Chapter 11. Properties of stock options**  
+**Chapter 9: Properties of stock options**  
 11.1 Factors affecting option prices  
 11.2 Assumptions and notation  
 11.3 Upper and lower bounds for option prices  
@@ -83,14 +81,14 @@
 11.6 Puts on a non-dividend-paying stock  
 11.7 Effect of dividends  
 
-**Chapter 12. Trading strategies involving options**  
+**Chapter 10: Trading strategies involving options**  
 12.1 Principal-protected notes  
 12.2 Trading an option and the underlying asset  
 12.3 Spreads  
 12.4 Combinations  
 12.5 Other payoffs  
 
-**Chapter 13. Binomial trees**  
+**Chapter 11: Binomial trees**  
 13.1 A one-step binomial model and a no-arbitrage argument  
 13.2 Risk-neutral valuation  
 13.3 Two-step binomial trees  
@@ -101,11 +99,9 @@
 13.8 The binomial tree formulas  
 13.9 Increasing the number of steps  
 13.10 Using DerivaGem  
-13.11 Options on other assets  
+13.11 Options on other assets 
 
-**Appendix: Derivation of the Black–Scholes–Merton option-pricing formula from a binomial tree**
-
-**Chapter 14. Wiener processes and Itô’s lemma**  
+**Chapter 12: Wiener processes and Itô’s lemma**  
 14.1 The Markov property  
 14.2 Continuous-time stochastic processes  
 14.3 The process for a stock price  
@@ -115,9 +111,7 @@
 14.7 The lognormal property  
 14.8 Fractional Brownian motion  
 
-**Appendix: A nonrigorous derivation of Itô’s lemma**
-
-**Chapter 15. The Black–Scholes–Merton model**  
+**Chapter 13: The Black–Scholes–Merton model**  
 15.1 Lognormal property of stock prices  
 15.2 The distribution of the rate of return  
 15.3 The expected return  
@@ -131,16 +125,14 @@
 15.11 Implied volatilities  
 15.12 Dividends  
 
-**Appendix: Proof of the Black–Scholes–Merton formula using risk-neutral valuation**
-
-**Chapter 16. Employee stock options**  
+**Chapter 14: Employee stock options**  
 16.1 Contractual arrangements  
 16.2 Do options align the interests of shareholders and managers?  
 16.3 Accounting issues  
 16.4 Valuation  
 16.5 The backdating scandal  
 
-**Chapter 17. Options on stock indices and currencies**  
+**Chapter 15: Options on stock indices and currencies**  
 17.1 Options on stock indices  
 17.2 Currency options  
 17.3 Options on stocks paying known dividend yields  
@@ -148,7 +140,7 @@
 17.5 Valuation of European currency options  
 17.6 American options  
 
-**Chapter 18. Futures options and Black’s model**  
+**Chapter 16: Futures options and Black’s model**  
 18.1 Nature of futures options  
 18.2 Reasons for the popularity of futures options  
 18.3 European spot and futures options  
@@ -161,7 +153,7 @@
 18.10 American futures options vs. American spot options  
 18.11 Futures-style options  
 
-**Chapter 19. The Greek letters**  
+**Chapter 17. The Greek letters**  
 19.1 Illustration  
 19.2 Naked and covered positions  
 19.3 Greek letter calculation  
@@ -175,11 +167,9 @@
 19.11 Scenario analysis  
 19.12 Extension of formulas  
 19.13 Portfolio insurance  
-19.14 Application of machine learning to hedging  
+19.14 Application of machine learning to hedging
 
-**Appendix: Taylor series expansions and Greek letters**
-
-**Chapter 20. Volatility smiles and volatility surfaces**  
+**Chapter 18: Volatility smiles and volatility surfaces**  
 20.1 Implied volatilities of calls and puts  
 20.2 Volatility smile for foreign currency options  
 20.3 Volatility smile for equity options  
@@ -189,9 +179,7 @@
 20.7 The role of the model  
 20.8 When a single large jump is anticipated  
 
-**Appendix: Determining implied risk-neutral distributions from volatility smiles**
-
-**Chapter 21. Basic numerical procedures**  
+**Chapter 19: Basic numerical procedures**  
 21.1 Binomial trees  
 21.2 Using the binomial tree for options on indices, currencies, and futures contracts  
 21.3 Binomial model for a dividend-paying stock  
@@ -201,7 +189,7 @@
 21.7 Variance reduction procedures  
 21.8 Finite difference methods  
 
-**Chapter 22. Value at risk and expected shortfall**  
+**Chapter 20: Value at risk and expected shortfall**  
 22.1 The VaR and ES measures  
 22.2 Historical simulation  
 22.3 Model-building approach  
@@ -212,7 +200,7 @@
 22.8 Back testing  
 22.9 Principal components analysis  
 
-**Chapter 23. Estimating volatilities and correlations**  
+**Chapter 21: Estimating volatilities and correlations**  
 23.1 Estimating volatility  
 23.2 The exponentially weighted moving average model  
 23.3 The GARCH(1,1) model  
@@ -221,9 +209,9 @@
 23.6 Using GARCH(1,1) to forecast future volatility  
 23.7 Correlations  
 
-[Chapter 24. Credit Risk](./CREDIT.md) ⏳
+[Chapter 22: Credit Risk](./CREDIT.md) ⏳
 
-**Chapter 25. Credit derivatives**  
+**Chapter 23: Credit derivatives**  
 25.1 Credit default swaps  
 25.2 Valuation of credit default swaps  
 25.3 Credit indices  
@@ -236,7 +224,7 @@
 25.10 Valuation of a synthetic CDO  
 25.11 Alternatives to the standard market model  
 
-**Chapter 26. Exotic options**  
+**Chapter 24: Exotic options**  
 26.1 Packages  
 26.2 Perpetual American call and put options  
 26.3 Nonstandard American options  
@@ -255,7 +243,7 @@
 26.16 Volatility and variance swaps  
 26.17 Static options replication  
 
-**Chapter 27. More on models and numerical procedures**  
+**Chapter 25: More on models and numerical procedures**  
 27.1 Alternatives to Black–Scholes–Merton  
 27.2 Stochastic volatility models  
 27.3 The IVF model  
@@ -265,7 +253,7 @@
 27.7 Options on two correlated assets  
 27.8 Monte Carlo simulation and American options  
 
-**Chapter 28. Martingales and measures**  
+**Chapter 26: Martingales and measures**  
 28.1 The market price of risk  
 28.2 Several state variables  
 28.3 Martingales  
@@ -275,27 +263,25 @@
 28.7 Option to exchange one asset for another  
 28.8 Change of numeraire  
 
-**Chapter 29. Interest rate derivatives: The standard market models**  
+**Chapter 27: Interest rate derivatives: The standard market models**  
 29.1 Bond options  
 29.2 Interest rate caps and floors  
 29.3 European swap options  
 29.4 Hedging interest rate derivatives  
 
-**Chapter 30. Convexity, timing, and quanto adjustments**  
+**Chapter 28: Convexity, timing, and quanto adjustments**  
 30.1 Convexity adjustments  
 30.2 Timing adjustments  
 30.3 Quantos  
 
-**Appendix: Proof of the convexity adjustment formula**
-
-**Chapter 31. Equilibrium models of the short rate**  
+**Chapter 29: Equilibrium models of the short rate**  
 31.1 Background  
 31.2 One-factor models  
 31.3 Real-world vs. risk-neutral processes  
 31.4 Estimating parameters  
 31.5 More sophisticated models  
 
-**Chapter 32. No-arbitrage models of the short rate**  
+**Chapter 30: No-arbitrage models of the short rate**  
 32.1 Extensions of equilibrium models  
 32.2 Options on bonds  
 32.3 Volatility structures  
@@ -304,12 +290,12 @@
 32.6 Calibration  
 32.7 Hedging using a one-factor model  
 
-**Chapter 33. Modeling forward rates**  
+**Chapter 31: Modeling forward rates**  
 33.1 The Heath, Jarrow, and Morton model  
 33.2 The BGM model  
 33.3 Agency mortgage-backed securities  
 
-**Chapter 34. Swaps revisited**  
+**Chapter 32: Swaps revisited**  
 34.1 Variations on the vanilla deal  
 34.2 Compounding swaps  
 34.3 Currency and nonstandard swaps  
@@ -317,7 +303,7 @@
 34.5 Swaps with embedded options  
 34.6 Other swaps  
 
-**Chapter 35. Energy and commodity derivatives**  
+**Chapter 33: Energy and commodity derivatives**  
 35.1 Agricultural commodities  
 35.2 Metals  
 35.3 Energy products  
@@ -327,14 +313,14 @@
 35.7 Pricing weather and insurance derivatives  
 35.8 How an energy producer can hedge risks  
 
-**Chapter 36. Real options**  
+**Chapter 34: Real options**  
 36.1 Capital investment appraisal  
 36.2 Extension of the risk-neutral valuation framework  
 36.3 Estimating the market price of risk  
 36.4 Application to the valuation of a business  
 36.5 Evaluating options in an investment opportunity  
 
-[Chapter 37. Derivatives mishaps and what we can learn from them](./LESSONS.md)
+[Chapter 35: Derivatives mishaps and what we can learn from them](./LESSONS.md)
 
 ## Reference
 

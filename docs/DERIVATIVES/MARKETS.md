@@ -1,4 +1,4 @@
-# Chapter 2: Futures Markets and Central Counterparties
+# Chapter 2: Markets
 
 Futures and forward contracts are both agreements to buy or sell an asset at a future time for a certain price. Futures contracts trade on exchanges with standardized terms, while forwards are customized over-the-counter agreements.
 

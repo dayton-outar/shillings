@@ -1,4 +1,4 @@
-# Chapter 3: Hedging Strategies Using Futures
+# Chapter 2: Hedging Strategies Using Futures
 
 Many participants in futures markets are hedgers who aim to reduce a specific risk they face, such as fluctuations in oil prices, foreign exchange rates, or stock market levels. A perfect hedge completely eliminates risk, but these are rare. Most hedging involves constructing positions that perform as close to perfectly as possible.
 

@@ -1,4 +1,4 @@
-# Chapter 24: Credit Risk
+# Chapter 22: Credit Risk
 
 Most derivatives we've discussed so far deal with market risk — what happens when prices move against you. But financial institutions face another major risk: **credit risk**. This is the danger that borrowers or trading partners will default and not pay what they owe. Banks and other institutions spend a lot of time and money measuring and managing this risk. Regulators also require banks to hold extra capital as a buffer against potential credit losses.
 
