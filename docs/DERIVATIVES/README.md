@@ -54,7 +54,13 @@
 7.10 Other currency swaps  
 7.11 Credit risk  
 7.12 Credit default swaps  
-7.13 Other types of swaps   
+7.13 Other types of swaps     
+34.1 Variations on the vanilla deal  
+34.2 Compounding swaps  
+34.3 Currency and nonstandard swaps  
+34.4 Equity swaps  
+34.5 Swaps with embedded options  
+34.6 Other swaps 
 
 [Chapter 7: XVAs](./XVA.md) ⏳
 
@@ -209,22 +215,7 @@
 23.6 Using GARCH(1,1) to forecast future volatility  
 23.7 Correlations  
 
-[Chapter 22: Credit Risk](./CREDIT.md) ⏳
-
-**Chapter 23: Credit derivatives**  
-25.1 Credit default swaps  
-25.2 Valuation of credit default swaps  
-25.3 Credit indices  
-25.4 The use of fixed coupons  
-25.5 CDS forwards and options  
-25.6 Basket credit default swaps  
-25.7 Total return swaps  
-25.8 Collateralized debt obligations  
-25.9 Role of correlation in a basket CDS and CDO  
-25.10 Valuation of a synthetic CDO  
-25.11 Alternatives to the standard market model  
-
-**Chapter 24: Exotic options**  
+**Chapter 22: Exotic options**  
 26.1 Packages  
 26.2 Perpetual American call and put options  
 26.3 Nonstandard American options  
@@ -243,7 +234,7 @@
 26.16 Volatility and variance swaps  
 26.17 Static options replication  
 
-**Chapter 25: More on models and numerical procedures**  
+**Chapter 23: More on models and numerical procedures**  
 27.1 Alternatives to Black–Scholes–Merton  
 27.2 Stochastic volatility models  
 27.3 The IVF model  
@@ -253,7 +244,7 @@
 27.7 Options on two correlated assets  
 27.8 Monte Carlo simulation and American options  
 
-**Chapter 26: Martingales and measures**  
+**Chapter 24: Martingales and measures**  
 28.1 The market price of risk  
 28.2 Several state variables  
 28.3 Martingales  
@@ -263,25 +254,25 @@
 28.7 Option to exchange one asset for another  
 28.8 Change of numeraire  
 
-**Chapter 27: Interest rate derivatives: The standard market models**  
+**Chapter 25: Interest rate derivatives: The standard market models**  
 29.1 Bond options  
 29.2 Interest rate caps and floors  
 29.3 European swap options  
 29.4 Hedging interest rate derivatives  
 
-**Chapter 28: Convexity, timing, and quanto adjustments**  
+**Chapter 26: Convexity, timing, and quanto adjustments**  
 30.1 Convexity adjustments  
 30.2 Timing adjustments  
 30.3 Quantos  
 
-**Chapter 29: Equilibrium models of the short rate**  
+**Chapter 27: Equilibrium models of the short rate**  
 31.1 Background  
 31.2 One-factor models  
 31.3 Real-world vs. risk-neutral processes  
 31.4 Estimating parameters  
 31.5 More sophisticated models  
 
-**Chapter 30: No-arbitrage models of the short rate**  
+**Chapter 28: No-arbitrage models of the short rate**  
 32.1 Extensions of equilibrium models  
 32.2 Options on bonds  
 32.3 Volatility structures  
@@ -290,20 +281,12 @@
 32.6 Calibration  
 32.7 Hedging using a one-factor model  
 
-**Chapter 31: Modeling forward rates**  
+**Chapter 29: Modeling forward rates**  
 33.1 The Heath, Jarrow, and Morton model  
 33.2 The BGM model  
-33.3 Agency mortgage-backed securities  
+33.3 Agency mortgage-backed securities   
 
-**Chapter 32: Swaps revisited**  
-34.1 Variations on the vanilla deal  
-34.2 Compounding swaps  
-34.3 Currency and nonstandard swaps  
-34.4 Equity swaps  
-34.5 Swaps with embedded options  
-34.6 Other swaps  
-
-**Chapter 33: Energy and commodity derivatives**  
+**Chapter 30: Energy and commodity derivatives**  
 35.1 Agricultural commodities  
 35.2 Metals  
 35.3 Energy products  
@@ -313,14 +296,14 @@
 35.7 Pricing weather and insurance derivatives  
 35.8 How an energy producer can hedge risks  
 
-**Chapter 34: Real options**  
+**Chapter 31: Real options**  
 36.1 Capital investment appraisal  
 36.2 Extension of the risk-neutral valuation framework  
 36.3 Estimating the market price of risk  
 36.4 Application to the valuation of a business  
 36.5 Evaluating options in an investment opportunity  
 
-[Chapter 35: Derivatives mishaps and what we can learn from them](./LESSONS.md)
+[Chapter 32: Derivatives mishaps and what we can learn from them](./LESSONS.md)
 
 ## Reference
 
