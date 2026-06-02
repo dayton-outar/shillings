@@ -4,11 +4,11 @@
 
 [Chapter 1: Risk and Insurance](./RISK.md) 
 
-[Chapter 2: The Deterministic Model](./DETERMINISTIC.md)  ⏳
+[Chapter 2: The Deterministic Model](./DETERMINISTIC.md) ⏳ 🤔
 
 [Chapter 3: The Life Table](./LIFE.md) ⏳
 
-Chapter 4: Life annuities
+[Chapter 4: Life Annuities](./ANNUITIES.md) ⏳ 🤔
 
 Chapter 5: Life insurance
 
