@@ -405,9 +405,16 @@ Here’s a simple income statement based on your budget and income projections f
 - The company will run at a loss in the second year because a tech team will be contracted for that year to do an _epic_ of features
 - The _epic_ of features should pay off in the third year when no tech team is contracted
 
----
+## Table of Contents
 
-Take note of some added ideas found [here](./IDEAS.md).
+- [Analysis and Valuation](./ANALYSIS/README.md)
+- [Branding Strategy](./BRANDING/README.md)
+- [Derivatives and Hedging](./DERIVATIVES/README.md)
+- [User Experience](./EXPERIENCE/README.md)
+- [Finance Plan](./FINANCE/README.md)
+- [Investing Knowledge](./INVESTING/README.md)
+- [Marketing Strategy](./MARKETING/README.md)
+- [Operations Plan](./OPERATIONS/README.md)
 
 ## References
 
