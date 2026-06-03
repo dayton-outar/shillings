@@ -192,8 +192,6 @@ There are three broad ways people try to make money from assets:
 
 The difference is not only the asset. It is the behavior. The same stock can be used for long-term investing, short-term trading, or reckless gambling.
 
-[Image placeholder: Full investment process map showing assets, data, research, risk management, charts, monitoring, and decision-making. Source: `Investing.for.Programmers-2025-1.pdf`, Fig. 1.1.]
-
 ## Quantitative Research
 
 Quantitative research uses numbers to compare assets. It looks at measurable information such as revenue, margins, price history, valuation ratios, volume, and returns.
@@ -209,11 +207,15 @@ Useful quantitative evidence includes:
 
 Standardized financial reporting makes quantitative comparison easier. It does not make it perfect. Numbers still need context.
 
-[Image placeholder: Line chart showing NVIDIA's price rise from 2016 to 2025. Source: `Investing.for.Programmers-2025-1.pdf`, Fig. 1.2.]
+![Line chart showing NVIDIA's price rise from 2016 to 2025](/.attachments/1.2-nvidia-2016-2025.png)
 
-[Image placeholder: Candlestick chart showing daily NVIDIA price movement in July 2025. Source: `Investing.for.Programmers-2025-1.pdf`, Fig. 1.3.]
+_Line chart showing NVIDIA's price rise from 2016 to 2025_
 
 Charts can help reveal patterns, but they do not guarantee what happens next. Sharp past growth is rare and should not be treated as normal.
+
+![Candlestick chart showing daily NVIDIA price movement in July 2025](/.attachments/1.3-candlestick.png)
+
+_Candlestick chart showing daily NVIDIA price movement in July 2025_
 
 ## Qualitative Research
 
@@ -294,7 +296,9 @@ Many investors combine styles. A common structure is a core and satellite portfo
 
 Every investment involves risk. Hedging is one way to reduce risk by taking an offsetting position. It works like insurance: it may reduce the damage from a bad event, but it usually has a cost.
 
-[Image placeholder: Annual returns comparison for stocks, bonds, and cryptocurrency from 2018 to 2024. Source: `Investing.for.Programmers-2025-1.pdf`, Fig. 1.4.]
+![Annual returns comparison for stocks, bonds, and cryptocurrency from 2018 to 2024](/.attachments/1.4-annual.returns.stock.bonds.crypto-2018-2024.png)
+
+_Annual returns comparison for stocks, bonds, and cryptocurrency from 2018 to 2024_
 
 Past performance does not guarantee future results. A top-performing asset in one period can become a poor performer later. Start-ups and crypto can produce dramatic gains, but they can also lose value quickly.
 

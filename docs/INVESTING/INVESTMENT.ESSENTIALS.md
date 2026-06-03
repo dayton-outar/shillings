@@ -18,8 +18,6 @@ Accounting standards exist because investors need companies to report numbers in
 
 Context matters. A number that looks good in one industry may be weak in another. A number that looks bad may be reasonable if it supports a deliberate strategy.
 
-[Image placeholder: Simplified relationship between the income statement, balance sheet, and cash flow statement. Source: `Investing.for.Programmers-2025-2.pdf`, Fig. 2.1.]
-
 ## Income Statement
 
 An income statement shows performance over a period, usually a quarter or year.
@@ -40,21 +38,27 @@ The time value of money also matters. A dollar today is worth more than a dollar
 
 > Example: A consulting firm earns revenue by selling services. Its service costs are mostly salaries, and its research spending includes training, certifications, and new skill development.
 
-[Image placeholder: Consulting company revenue-to-expenses model with R&D, services, and other expenses. Source: `Investing.for.Programmers-2025-2.pdf`, Fig. 2.2.]
+![Sankey diagram showing flow of revenue to expenses](/.attachments/2.2-sankey.revenue.expenses-10.png)
+
+_Sankey diagram showing flow of revenue to expenses_
 
 If research expenses increase sharply, the reason matters.
 
 - Bullish view: the company may be preparing for new projects or new services.
 - Bearish view: the company may need outside capital because its business is under pressure.
 
-[Image placeholder: Consulting company model where R&D rises and extra expenses are funded with outside capital. Source: `Investing.for.Programmers-2025-2.pdf`, Fig. 2.3.]
+![Sankey diagram showing R&D rises and extra expenses are funded with outside capital](/.attachments/2.3-sankey.revenue.expenses-25.png)
+
+_Sankey diagram showing R&D rises and extra expenses are funded with outside capital_
 
 If research and service costs fall while revenue stays stable, that can also tell two stories.
 
 - Bullish view: the company may have become more efficient.
 - Bearish view: the company may be cutting growth investment.
 
-[Image placeholder: Consulting company model where research and service spending fall and surplus rises. Source: `Investing.for.Programmers-2025-2.pdf`, Fig. 2.4.]
+![Sankey diagram showing research and service spending fall and surplus rises](/.attachments/2.3-sankey.revenue.expenses-5.60.15.png)
+
+_Sankey diagram showing research and service spending fall and surplus rises_
 
 The lesson is simple: accounting numbers create questions. They do not answer everything by themselves.
 
