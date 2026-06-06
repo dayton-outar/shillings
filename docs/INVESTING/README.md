@@ -48,7 +48,7 @@ Reading: [The Analytical Investor](./THE.ANALYTICAL.INVESTOR.md)
 
 **Caution:** A single number can mislead when detached from accounting policy, industry norms, timing, or business model.
 
-Reading: [Investment Essentials](./INVESTMENT.ESSENTIALS.md)
+Reading: [Investment Essentials](./INVESTMENT.ESSENTIALS.md) ↤
 
 ### 4. From Data to Trustworthy Evidence
 
