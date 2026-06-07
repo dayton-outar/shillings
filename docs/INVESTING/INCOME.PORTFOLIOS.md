@@ -14,7 +14,9 @@ Young companies usually reinvest most of their money into growth. They hire peop
 
 Mature companies often grow more slowly. If they already dominate profitable markets, reinvesting every dollar may no longer produce strong growth. These companies may return part of their profit to shareholders as dividends.
 
-[Image placeholder: BCG Growth-Share Matrix showing stars, question marks, cash cows, and dogs. Source: `Investing.for.Programmers-2025-5.pdf`, Fig. 5.1.]
+![BCG Growth-Share Matrix showing stars, question marks, cash cows, and dogs](/.attachments/5.1-bcg.growth.share.matrix.png)
+
+_BCG Growth-Share Matrix showing stars, question marks, cash cows, and dogs_
 
 Dividend investors often look for "cash cows": businesses with stable profits, limited reinvestment needs, and enough durability to keep paying shareholders.
 
@@ -24,7 +26,9 @@ An economic moat is a durable advantage that protects a business from competitio
 
 Stable industries, such as utilities, often pay dividends because their infrastructure is hard to copy. A water company or electricity provider may not grow explosively, but pipelines, power lines, regulation, and local scale can make competition difficult.
 
-[Image placeholder: Examples of economic moats such as proprietary information, brand loyalty, innovation, scale, network effects, locked-up supply, intellectual property, and regional oligopolies. Source: `Investing.for.Programmers-2025-5.pdf`, Fig. 5.2.]
+![Economic moats](/.attachments/5.2-economic.moats.png)
+
+_Economic moats_
 
 Examples of moats:
 
@@ -113,7 +117,9 @@ REITs still carry risks:
 
 A bond is a loan from an investor to a borrower. The borrower may be a government, city, agency, or company. The investor receives interest payments and expects the original amount to be returned at maturity.
 
-[Image placeholder: Plain vanilla bond showing a city raising money from an investor and repaying interest plus principal. Source: `Investing.for.Programmers-2025-5.pdf`, Fig. 5.3.]
+![Plain vanilla bond showing a city raising money from an investor and repaying interest plus principal](/.attachments/5.3-plain.vanilla.bond.png)
+
+_Plain vanilla bond showing a city raising money from an investor and repaying interest plus principal_
 
 A basic bond has several important terms:
 
@@ -156,7 +162,9 @@ When interest rates rise, newly issued bonds often offer higher yields. Older bo
 
 When interest rates fall, older bonds with higher yields can become more attractive, so their market prices may rise.
 
-[Image placeholder: Return or yield behavior of US Treasury bonds. Source: `Investing.for.Programmers-2025-5.pdf`, Fig. 5.4.]
+![Return or yield behavior of US Treasury bonds](/.attachments/5.4-us.treasury.bonds.png)
+
+_Return or yield behavior of US Treasury bonds_
 
 Bond investors should understand:
 
@@ -200,8 +208,6 @@ Cryptocurrency remains risky. The market is less regulated than traditional fina
 ## Ledgers And Exchanges
 
 Cryptocurrency ownership depends on keys used to sign transactions on a public blockchain. The coins are not sitting inside a personal device. The blockchain records ownership, and the key proves control.
-
-[Image placeholder: Exchange account versus ledger control of transaction-signing keys. Source: `Investing.for.Programmers-2025-5.pdf`, Fig. 5.5.]
 
 An exchange may feel similar to a brokerage account. It lets users buy, sell, and hold crypto through an account interface. But when assets are held on an exchange, the exchange may control the keys. This is why crypto investors often say: "Not your keys, not your coins."
 

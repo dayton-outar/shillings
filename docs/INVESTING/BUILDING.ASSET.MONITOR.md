@@ -10,8 +10,6 @@ The goal is not to build a fancy dashboard. The goal is to maintain portfolio tr
 
 A useful asset monitor gathers holdings from different sources, normalizes them into a shared structure, enriches them with market data, and exports the result into a reviewable report.
 
-[Image placeholder: Data flow from asset data to worksheets in a portfolio spreadsheet. Source: `Investing.for.Programmers-2025-6.pdf`, Fig. 6.1.]
-
 A practical monitoring flow has five stages:
 
 - Extract: collect holdings from brokers, exchanges, wallets, banks, and manual records.
@@ -21,8 +19,6 @@ A practical monitoring flow has five stages:
 - Report: export the results into a view the investor can inspect and compare over time.
 
 Not every asset can be collected automatically. Some assets may have no convenient digital feed. Real estate, private investments, collectibles, cash held outside an account, and some bond positions may need manual tracking.
-
-[Image placeholder: Online and offline asset sources flowing into a shared asset dataset. Source: `Investing.for.Programmers-2025-6.pdf`, Fig. 6.2.]
 
 ## Offline Assets
 
@@ -57,8 +53,6 @@ A stock worksheet should show:
 - Source or broker.
 - Live or refreshed value, if available.
 
-[Image placeholder: Stock worksheet with tickers, portfolios, shares, value, yield, gains, and live data. Source: `Investing.for.Programmers-2025-6.pdf`, Fig. 6.3.]
-
 An overview worksheet should summarize all assets across categories.
 
 It should answer:
@@ -69,7 +63,9 @@ It should answer:
 - Which portfolios or goals hold the most value?
 - Is the investor overexposed to one category?
 
-[Image placeholder: Overview worksheet grouping assets by value and passive income. Source: `Investing.for.Programmers-2025-6.pdf`, Fig. 6.4.]
+![Overview worksheet grouping assets by value and passive income](/.attachments/6.4-worksheet.assets.png)
+
+_Overview worksheet grouping assets by value and passive income_
 
 The overview should make concentration obvious. A portfolio that looks large may still be fragile if most value sits in one risky asset type.
 
@@ -208,8 +204,6 @@ Useful ETF fields include:
 - Portfolio group.
 - Average purchase price.
 
-[Image placeholder: ETF worksheet showing value, yield, amount held, and initial value without projected gains. Source: `Investing.for.Programmers-2025-6.pdf`, Fig. 6.5.]
-
 Some stock metrics do not translate cleanly to ETFs. A price-to-earnings ratio for an ETF may represent a weighted average across many holdings, not one company. A target price may be unavailable or unreliable because the fund contains many assets.
 
 At the abstract level, the monitor can still treat ETF income as yield. The investor should remember that the details behind the yield may differ from dividends, coupon payments, or staking rewards.
@@ -232,8 +226,6 @@ Important bond fields include:
 - Credit rating.
 - Current market value, if monitored.
 - Portfolio group.
-
-[Image placeholder: Bond worksheet showing par value, annual yield, number of bonds held, and expected income. Source: `Investing.for.Programmers-2025-6.pdf`, Fig. 6.6.]
 
 For cautious bond investors, a simple monitor may focus on par value, coupon income, maturity, and issuer risk. More advanced monitoring can add market price, yield-to-maturity, duration, credit-rating changes, and default-risk signals.
 
@@ -258,8 +250,6 @@ Useful crypto fields include:
 - Lockup period.
 - Source of price data.
 - Portfolio group.
-
-[Image placeholder: Crypto worksheet showing total value, staking yield, amount owned, and live data. Source: `Investing.for.Programmers-2025-6.pdf`, Fig. 6.7.]
 
 Crypto price data can be less consistent across sources. Some reporting tools may not support many tokens. A monitor should define a fallback rule for missing or failed price updates.
 

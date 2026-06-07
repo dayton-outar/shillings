@@ -94,8 +94,6 @@ A profitable-looking business can still become insolvent if cash is trapped in i
 
 Companies should be compared with similar companies. A supermarket, a software company, a utility, and a bank do not make money in the same way.
 
-[Image placeholder: Sector classification hierarchy showing sectors, industry groups, industries, and subindustries. Source: `Investing.for.Programmers-2025-2.pdf`, Fig. 2.5.]
-
 Industry classification helps investors understand:
 
 - How a company makes money.
@@ -135,9 +133,13 @@ Economic cycles affect sectors differently. During a downturn, people may delay 
 
 This sample from the 2008-2010 crisis shows why business type matters. Ford fell much more severely than Walmart because cars are easier to delay than groceries.
 
-[Image placeholder: Bar chart comparing high, low, and average values for Microsoft, Coca-Cola, Walmart, and Ford during the 2008-2010 period. Source: `Investing.for.Programmers-2025-2.pdf`, Fig. 2.6.]
+![Comparing high, low, and average values for Microsoft, Coca-Cola, Walmart, and Ford during the 2008-2010 period](/.attachments/2.6-msft.ko.wmt.png)
 
-[Image placeholder: Sector-index chart showing the 2008 crisis effect on technology, consumer staples, and consumer discretionary sectors. Source: `Investing.for.Programmers-2025-2.pdf`, Fig. 2.7.]
+_Comparing high, low, and average values for Microsoft, Coca-Cola, Walmart, and Ford during the 2008-2010 period_
+
+![Sector-index chart showing the 2008 crisis effect on technology, consumer staples, and consumer discretionary sectors](/.attachments/2.7-stock.prices-2007-2010.png)
+
+_Sector-index chart showing the 2008 crisis effect on technology, consumer staples, and consumer discretionary sectors_
 
 The economic cycle has four broad stages:
 

@@ -20,7 +20,9 @@ A stop-loss order is an instruction to sell a position if it falls to a chosen p
 >
 > An investor buys a stock at $8. The price rises to $25. Instead of selling immediately, the investor raises the stop-loss to $22. If the stock keeps rising, the investor stays invested. If it falls below $22, the position is sold and most of the gain is protected.
 
-[Image placeholder: Stop-loss order adjusted upward after a share-price rise and triggered after a later fall. Source: `Investing.for.Programmers-2025-7.pdf`, Fig. 7.1.]
+![Stop-loss order adjusted upward after a share-price rise and triggered after a later fall](/.attachments/7.1-stop.loss.png)
+
+_Stop-loss order adjusted upward after a share-price rise and triggered after a later fall_
 
 Stop-losses are useful, but they have tradeoffs:
 
@@ -77,11 +79,15 @@ Before investing, ask:
 - Which risks come from markets, politics, regulation, or society?
 - What action will I take if the risk becomes real?
 
-[Image placeholder: High-level risk model for an AI startup, including funding, management, demand, regulation, politics, energy prices, and disruption. Source: `Investing.for.Programmers-2025-7.pdf`, Fig. 7.2.]
+![High-level risk model for an AI startup](/.attachments/7.2-risk.model.ai.startup.png)
+
+_High-level risk model for an AI startup_
 
 A risk matrix classifies threats by likelihood and harm severity.
 
-[Image placeholder: Risk matrix mapping likelihood against harm severity. Source: `Investing.for.Programmers-2025-7.pdf`, Fig. 7.3.]
+![Risk matrix mapping likelihood against harm severity](/.attachments/7.3-risk.matrix.severity.png)
+
+_Risk matrix mapping likelihood against harm severity_
 
 | Likelihood | Minor | Marginal | Critical | Catastrophic |
 | --- | --- | --- | --- | --- |
@@ -119,7 +125,9 @@ VaR can be estimated with:
 - Variance-based methods: assume returns follow a statistical distribution.
 - Monte Carlo simulation: simulate many possible outcomes from historical patterns.
 
-[Image placeholder: Monte Carlo simulation showing a one-day loss threshold for Apple shares. Source: `Investing.for.Programmers-2025-7.pdf`, Fig. 7.4.]
+![Monte Carlo simulation showing a one-day loss threshold for Apple shares](/.attachments/7.4-monte.carlo.png)
+
+_Monte Carlo simulation showing a one-day loss threshold for Apple shares_
 
 VaR is useful under normal market conditions. It can fail during black swan events, which are rare, extreme, and hard to predict.
 
@@ -305,7 +313,9 @@ Diversification can reduce extreme loss, but it can also reduce exceptional upsi
 
 Pair trading is a strategy where the investor goes long one asset and short another related asset. The goal is to profit from relative performance rather than overall market direction.
 
-[Image placeholder: Pair-trading scenarios showing long exposure to one company and short exposure to another. Source: `Investing.for.Programmers-2025-7.pdf`, Fig. 7.5.]
+![Pair-trading scenarios showing long exposure to one company and short exposure to another](/.attachments/7.5-long.position.short.position.png)
+
+_Pair-trading scenarios showing long exposure to one company and short exposure to another_
 
 > Example:
 >
@@ -379,10 +389,6 @@ Investors should ask:
 
 Economic indicators can help estimate broad market risk, though they do not predict the future perfectly.
 
-[Image placeholder: 10-year Treasury yield minus 2-year Treasury yield as a recession-risk indicator. Source: `Investing.for.Programmers-2025-7.pdf`, Fig. 7.6.]
-
-[Image placeholder: Unemployment rate over time with recession periods shown. Source: `Investing.for.Programmers-2025-7.pdf`, Fig. 7.7.]
-
 Indicators can conflict. Some experts may expect crisis while others expect growth. The investor should treat indicators as signals, not certainties.
 
 ## Assessing Nonfinancial Risk
@@ -420,9 +426,9 @@ A higher Sharpe ratio means more return per unit of risk.
 
 The risk-free rate is a baseline return from an asset treated as having very low default risk, such as short-term government debt. It is not the average stock-market return.
 
-[Image placeholder: Annual market returns from 1950 onward. Source: `Investing.for.Programmers-2025-7.pdf`, Fig. 7.8.]
+![Efficient frontier showing simulated portfolios and the highest-Sharpe portfolio](/.attachments/7.9-sharpe.ratio.png)
 
-[Image placeholder: Efficient frontier showing simulated portfolios and the highest-Sharpe portfolio. Source: `Investing.for.Programmers-2025-7.pdf`, Fig. 7.9.]
+_Efficient frontier showing simulated portfolios and the highest-Sharpe portfolio_
 
 ### Markowitz Portfolio Calculation
 

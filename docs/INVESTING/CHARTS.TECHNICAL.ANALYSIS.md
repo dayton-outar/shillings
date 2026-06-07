@@ -10,15 +10,21 @@ The best use of charts is not blind prediction. The best use is context.
 
 A simple price chart usually places time on the horizontal axis and asset value on the vertical axis.
 
-[Image placeholder: Price chart without context, showing a sharp decline after a stable period. Source: `Investing.for.Programmers-2025-10.pdf`, Fig. 10.1.]
+![Price chart without context, showing a sharp decline after a stable period](/.attachments/10.1-chart.without.context.png)
+
+_Price chart without context_
 
 Without labels, time frame, asset name, and event context, a chart can only support basic observations. With context, the same chart becomes a story.
 
-[Image placeholder: S&P 500 price development after a major tariff-policy announcement on April 2, 2025. Source: `Investing.for.Programmers-2025-10.pdf`, Fig. 10.2.]
+![S&P 500 price development after a major tariff-policy announcement on April 2, 2025](/.attachments/10.2-gspc.png)
+
+_S&P 500 price development after a major tariff-policy announcement on April 2, 2025_
 
 A short-term decline can feel dramatic. Whether it is truly dramatic depends on the asset type and the time horizon.
 
-[Image placeholder: GameStop price movement during a highly volatile trading period. Source: `Investing.for.Programmers-2025-10.pdf`, Fig. 10.3.]
+![GameStop price movement during a highly volatile trading period](/.attachments/10.3-gamestop.png)
+
+_GameStop price movement during a highly volatile trading period_
 
 ### Major Drawdowns
 
@@ -32,27 +38,39 @@ A short-term decline can feel dramatic. Whether it is truly dramatic depends on 
 
 Short time frames can exaggerate fear. Long time frames can show whether a decline is part of a larger trend.
 
-[Image placeholder: Long-term S&P 500 chart showing major crises over multiple decades. Source: `Investing.for.Programmers-2025-10.pdf`, Fig. 10.4.]
+![Long-term S&P 500 chart showing major crises over multiple decades](/.attachments/10.4-s&p.png)
+
+_Long-term S&P 500 chart showing major crises_
 
 Single stocks can move much more sharply than broad indices.
 
-[Image placeholder: NVIDIA share price growth over five years. Source: `Investing.for.Programmers-2025-10.pdf`, Fig. 10.5.]
+![NVIDIA share price growth over five years](/.attachments/10.5-nvidia-5.years.png)
+
+_NVIDIA share price growth over five years_
 
 Share-price growth should be compared with business performance. If revenue and earnings support the move, the chart may reflect real business expansion.
 
-[Image placeholder: NVIDIA annual revenue, including future estimates. Source: `Investing.for.Programmers-2025-10.pdf`, Fig. 10.6.]
+![NVIDIA annual revenue, including future estimates](/.attachments/10.6-nvidia.2026-2027.png)
+
+_NVIDIA annual revenue, including future estimates_
 
 Not every stock rewards capital appreciation. Some stocks may provide income while the share price stagnates or falls.
 
-[Image placeholder: Pfizer share price over five years, showing limited capital appreciation. Source: `Investing.for.Programmers-2025-10.pdf`, Fig. 10.7.]
+![Pfizer share price over five years, showing limited capital appreciation](/.attachments/10.7-pfizer.png)
 
-[Image placeholder: Pfizer annual revenue showing pandemic-era earnings followed by normalization. Source: `Investing.for.Programmers-2025-10.pdf`, Fig. 10.8.]
+_Pfizer share price over five years_
+
+![Pfizer annual revenue showing pandemic-era earnings followed by normalization](/.attachments/10.8-pfizer-covid.png)
+
+_Pfizer annual revenue showing pandemic-era earnings followed by normalization_
 
 ## Reading Charts
 
 Every chart tells a story, but the story can be misleading if the investor ignores context.
 
-[Image placeholder: Four charts showing NVIDIA, Bitcoin, 10-year US yield, and US dollar to euro exchange-rate movement. Source: `Investing.for.Programmers-2025-10.pdf`, Fig. 10.9.]
+![Four charts showing NVIDIA, Bitcoin, 10-year US yield, and US dollar to euro exchange-rate movement](/.attachments/10.9-four.charts.nvidia.bonds.usd.png)
+
+_Four charts showing NVIDIA, Bitcoin, 10-year US yield, and US dollar to euro exchange-rate movement_
 
 Useful chart-reading questions:
 
@@ -79,15 +97,21 @@ Chart patterns are templates traders use to interpret price behavior.
 
 A double top is a reversal pattern. A bearish double top starts with an uptrend, forms two peaks, then breaks downward.
 
-[Image placeholder: Bearish double top pattern with resistance, neckline, and breakout point. Source: `Investing.for.Programmers-2025-10.pdf`, Fig. 10.10.]
+![Anatomy of Bearish double top pattern with resistance, neckline, and breakout point](/.attachments/10.10-bearish.double.top.png)
+
+_Anatomy of Bearish double top pattern with resistance, neckline, and breakout point_
 
 Patterns usually have bullish and bearish versions.
 
-[Image placeholder: Bullish and bearish double top reference patterns. Source: `Investing.for.Programmers-2025-10.pdf`, Fig. 10.11.]
+![Bullish and bearish double top reference patterns](/.attachments/10.11-bearish.bullish.double.top.png)
+
+_Bullish and bearish double top reference patterns_
 
 A continuation pattern pauses a trend before the original direction resumes.
 
-[Image placeholder: Bullish and bearish flag patterns as continuation examples. Source: `Investing.for.Programmers-2025-10.pdf`, Fig. 10.12.]
+![Bullish and bearish flag patterns](/.attachments/10.12-bearish.bullish.flag.pattern.png)
+
+_Bullish and bearish flag patterns_
 
 Important pattern concepts:
 
@@ -105,7 +129,9 @@ The shorter the holding period, the more chart patterns may matter. Long-term in
 
 Advanced chart views often combine price history with indicators.
 
-[Image placeholder: Example stock chart with visual indicators and price movement over time. Source: `Investing.for.Programmers-2025-10.pdf`, Fig. 10.13.]
+![Example stock chart with visual indicators and price movement over time](/.attachments/10.13-nuscale.finviz.png)
+
+_Example stock chart with visual indicators and price movement over time_
 
 Technical traders may look for:
 
@@ -132,19 +158,27 @@ Line charts are not the only useful visual format.
 
 Treemaps show many assets at once, often using size and color to indicate scale and price movement.
 
-[Image placeholder: Market treemap showing price movement across many securities. Source: `Investing.for.Programmers-2025-10.pdf`, Fig. 10.14.]
+![Market treemap showing price movement across many securities](/.attachments/10.14-treemap.finviz.png)
+
+_Market treemap showing price movement across many securities_
 
 Bar charts show differences across categories.
 
-[Image placeholder: Bar chart showing one-day sector performance. Source: `Investing.for.Programmers-2025-10.pdf`, Fig. 10.15.]
+![Bar chart showing one-day sector performance](/.attachments/10.15-bar.chart.growth.by.sector.png)
+
+_Bar chart showing one-day sector performance_
 
 Histograms show the distribution of returns or other numeric values.
 
-[Image placeholder: Histogram of Apple returns over time. Source: `Investing.for.Programmers-2025-10.pdf`, Fig. 10.16.]
+![Histogram of Apple returns over time](/.attachments/10.16-monte.carlo.apple.png)
+
+_Histogram of Apple returns over time_
 
 Scatterplots help compare assets across two dimensions, such as risk and return.
 
-[Image placeholder: Scatterplot grouping stocks by volatility and returns. Source: `Investing.for.Programmers-2025-10.pdf`, Fig. 10.17.]
+![Scatterplot grouping stocks by volatility and returns](/.attachments/10.17-scatterplot.png)
+
+_Scatterplot grouping stocks by volatility and returns_
 
 Each chart type answers a different question:
 
@@ -164,11 +198,15 @@ Neither view is complete by itself. A strong process can use both.
 
 Candlestick charts show open, high, low, and close prices for a time period.
 
-[Image placeholder: Candlestick chart showing three trading days of NVIDIA. Source: `Investing.for.Programmers-2025-10.pdf`, Fig. 10.18.]
+![Candlestick chart showing three trading days of NVIDIA](/.attachments/10.18-candlestick.nvidia.png)
+
+_Candlestick chart showing three trading days of NVIDIA_
 
 A bullish candle closes above its opening price. A bearish candle closes below its opening price.
 
-[Image placeholder: Anatomy of bullish and bearish candlesticks, including body, wick, high, low, open, and close. Source: `Investing.for.Programmers-2025-10.pdf`, Fig. 10.19.]
+![Anatomy of bullish and bearish candlesticks, including body, wick, high, low, open, and close](/.attachments/10.19-candlestick.anatomy.png)
+
+_Anatomy of bullish and bearish candlesticks, including body, wick, high, low, open, and close_
 
 Candlestick parts:
 
@@ -183,7 +221,9 @@ Candlestick parts:
 
 Candlestick patterns help describe market behavior across one or more periods.
 
-[Image placeholder: Common candlestick patterns, including spinning top, shooting star, hammer, doji, bullish engulfing, bearish engulfing, evening star, morning star, three soldiers, and three crows. Source: `Investing.for.Programmers-2025-10.pdf`, Fig. 10.20.]
+![Common candlestick patterns](/.attachments/10.20-various.candlestick.patterns.png)
+
+_Common candlestick patterns_
 
 Common patterns:
 
@@ -233,7 +273,9 @@ Moving average ribbons show several moving averages with different windows on th
 
 Narrow ribbons can indicate consolidation. Wide ribbons can indicate stronger trend movement.
 
-[Image placeholder: Moving average ribbon showing several moving averages around NVIDIA price movement. Source: `Investing.for.Programmers-2025-10.pdf`, Fig. 10.21.]
+![Moving average ribbon showing several moving averages around NVIDIA price movement](/.attachments/10.21-moving.averages.png)
+
+_Moving average ribbon showing several moving averages around NVIDIA price movement_
 
 Moving-average signals can help identify trend direction, but they should be tested before being used for trading rules.
 
@@ -261,7 +303,9 @@ $\large{\text{Lower band} = \text{SMA}_{20} - 2\sigma}$
 
 Where $\large{\sigma}$ is the standard deviation of prices over the window.
 
-[Image placeholder: Bollinger Bands for NVIDIA, showing price, middle band, upper band, and lower band. Source: `Investing.for.Programmers-2025-10.pdf`, Fig. 10.22.]
+![Bollinger Bands for NVIDIA, showing price, middle band, upper band, and lower band](/.attachments/10.22-bollinger.band.png)
+
+_Bollinger Bands for NVIDIA_
 
 Bands expand when volatility rises and contract when volatility falls.
 
@@ -292,7 +336,9 @@ Histogram:
 
 $\large{\text{Histogram} = \text{MACD} - \text{Signal line}}$
 
-[Image placeholder: MACD chart for NVIDIA closing prices with MACD line, signal line, and histogram. Source: `Investing.for.Programmers-2025-10.pdf`, Fig. 10.23.]
+![MACD chart for NVIDIA closing prices with MACD line, signal line, and histogram](/.attachments/10.23-macd.indicators.png)
+
+_MACD chart for NVIDIA closing prices with MACD line_
 
 Common MACD interpretations:
 
@@ -316,7 +362,9 @@ Its main elements are:
 - Leading span B: the other side of the cloud.
 - Lagging span: current price shifted backward to compare with past prices.
 
-[Image placeholder: Ichimoku Cloud for NVIDIA closing prices showing bullish and bearish cloud regions. Source: `Investing.for.Programmers-2025-10.pdf`, Fig. 10.24.]
+![Ichimoku Cloud for NVIDIA closing prices showing bullish and bearish cloud regions](/.attachments/10.24-ichimoku.png)
+
+_Ichimoku Cloud for NVIDIA closing prices_
 
 Common interpretations:
 
@@ -331,8 +379,6 @@ Common interpretations:
 
 Interactive chart views help investors explore data without rewriting analysis each time.
 
-[Image placeholder: Interactive chart view comparing returns of Apple and Tesla. Source: `Investing.for.Programmers-2025-10.pdf`, Fig. 10.25.]
-
 Useful controls include:
 
 - Asset selector.
@@ -342,8 +388,6 @@ Useful controls include:
 - Comparison mode.
 - Return normalization.
 - Export or save view.
-
-[Image placeholder: Interactive chart view displaying Bollinger Bands. Source: `Investing.for.Programmers-2025-10.pdf`, Fig. 10.26.]
 
 An investment platform should make charts readable without implying certainty. Indicators can highlight possible signals, but the user should still see uncertainty, assumptions, and data freshness.
 

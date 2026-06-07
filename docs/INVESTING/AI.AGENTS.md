@@ -119,7 +119,9 @@ Common triggers include:
 - User question: investigate a specific asset or risk.
 - Alert: market movement, earnings release, credit-rating change, news event, or thesis trigger.
 
-[Image placeholder: Reference workflow for an AI agent, including trigger, orchestrator, retrieval, generation, review, connected sources, and output. Source: `Investing.for.Programmers-2025-9.pdf`, Fig. 9.1.]
+![Workflow for an AI agent, including trigger, orchestrator, retrieval, generation, review, connected sources, and output](/.attachments/9.1-reference.workflow.ai-agent.png)
+
+_Workflow for an AI agent_
 
 A useful workflow has several stages:
 

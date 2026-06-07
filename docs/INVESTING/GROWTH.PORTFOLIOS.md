@@ -166,13 +166,13 @@ Negative earnings are common in young growth companies, but they still matter. A
 
 The LiDAR candidates followed a similar pattern: early excitement, sharp price increases, then major declines.
 
-[Image placeholder: Price development of Luminar Technologies (LAZR). Source: `Investing.for.Programmers-2025-4.pdf`, Fig. 4.1.]
+![Price development of Luminar Technologies (LAZR)](/.attachments/4.1-price.lazr.png)
 
-[Image placeholder: Price development of Innoviz Technologies (INVZ). Source: `Investing.for.Programmers-2025-4.pdf`, Fig. 4.2.]
+_Price development of Luminar Technologies (LAZR)_
 
-[Image placeholder: Price development of Ouster (OUST). Source: `Investing.for.Programmers-2025-4.pdf`, Fig. 4.3.]
+![Price development of Ouster (OUST)](/.attachments/4.3-price.oust.png)
 
-[Image placeholder: Price development of Aeva Technologies (AEVA). Source: `Investing.for.Programmers-2025-4.pdf`, Fig. 4.4.]
+_Price development of Ouster (OUST)_
 
 The decline may have been caused by several forces:
 
@@ -181,8 +181,6 @@ The decline may have been caused by several forces:
 - Higher interest rates made funding more expensive.
 - Capital-intensive companies became less attractive.
 - Investors questioned how quickly autonomous driving would arrive.
-
-[Image placeholder: Federal funds effective rate showing rising interest rates. Source: `Investing.for.Programmers-2025-4.pdf`, Fig. 4.5.]
 
 ### Down From The All-Time High
 
@@ -407,9 +405,9 @@ Automated research assistants can help organize information, but their answers m
 
 Search trends and social trends can show whether public attention is increasing or fading. Attention is not the same as business success, but it can reveal changes worth investigating.
 
-[Image placeholder: Search trend for LiDAR over time. Source: `Investing.for.Programmers-2025-4.pdf`, Fig. 4.6.]
+![Search trends for Ouster, Luminar, AEVA Technologies, and Innoviz](/.attachments/4.7-google.trends.ouster.luminar.png)
 
-[Image placeholder: Search trends for Ouster, Luminar, AEVA Technologies, and Innoviz. Source: `Investing.for.Programmers-2025-4.pdf`, Fig. 4.7.]
+_Search trends for Ouster, Luminar, AEVA Technologies, and Innoviz_
 
 ### Trends In Search For LiDAR Companies
 

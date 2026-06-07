@@ -44,10 +44,6 @@ A screener lets investors filter companies by criteria such as:
 
 > Example: An investor who understands software businesses may search for large non-domestic technology companies, then study the few companies that pass the filter.
 
-[Image placeholder: Stock screener filtered for non-US technology mega-cap companies. Source: `Investing.for.Programmers-2025-3.pdf`, Fig. 3.1.]
-
-[Image placeholder: Fundamental data page for a selected company after drilling down from a screener. Source: `Investing.for.Programmers-2025-3.pdf`, Fig. 3.2.]
-
 Screeners are landing zones. They are useful for preselection, but not for final decisions. A company that passes a filter still needs deeper research.
 
 ## Types of Financial Platforms
@@ -122,11 +118,7 @@ Price alone is not enough for comparison. A $1,000 share is not automatically mo
 
 To compare price movement across assets, normalize each asset to the same starting point, such as 100%.
 
-[Image placeholder: Normalized price development for Apple, Coca-Cola, and NuScale in 2023. Source: `Investing.for.Programmers-2025-3.pdf`, Fig. 3.3.]
-
 One year can tell a misleading story. A stock that looks weak in one period may surge in another.
-
-[Image placeholder: Normalized price development for Apple, Coca-Cola, and NuScale over a later one-year period in 2024. Source: `Investing.for.Programmers-2025-3.pdf`, Fig. 3.4.]
 
 ## Returns
 
@@ -144,7 +136,9 @@ Simple returns are easy to understand. Log returns are often useful for statisti
 
 A histogram can show how returns are distributed and whether a stock has many extreme days.
 
-[Image placeholder: Histogram of returns for Apple, Coca-Cola, and NuScale. Source: `Investing.for.Programmers-2025-3.pdf`, Fig. 3.5.]
+![Histogram of returns for Apple, Coca-Cola, and NuScale](/.attachments/3.5-histogram.returns.aapl.ko.smr.png)
+
+_Histogram of returns for Apple, Coca-Cola, and NuScale_
 
 | Company | Mean | Standard deviation | Variance |
 | --- | ---: | ---: | ---: |
@@ -175,8 +169,6 @@ Common risks include:
 - Paid features hidden behind subscriptions.
 - Different naming conventions for exchanges or assets.
 
-[Image placeholder: Example of a data-source limitation where sustainability data was missing in an earlier version of a data access tool. Source: `Investing.for.Programmers-2025-3.pdf`, Fig. 3.6.]
-
 A platform should not depend on a single fragile source for important decisions.
 
 ## Data Providers
@@ -187,7 +179,9 @@ The cleanest model is that data providers gather:
 - Technical data from exchanges.
 - Nonfinancial data from news, filings, company websites, transcripts, and other public sources.
 
-[Image placeholder: Simplified data-provider flow where users receive data from a provider that gathers fundamentals from regulators and technical data from exchanges. Source: `Investing.for.Programmers-2025-3.pdf`, Fig. 3.7.]
+![Simplified data-provider flow](/.attachments/3.7-financial.data.providers.png)
+
+_Simplified data-provider flow_
 
 Accounting statements may arrive quarterly. Price data may stream continuously while markets are open. The platform should treat these data types differently.
 
@@ -201,12 +195,6 @@ Accounting statements may arrive quarterly. Price data may stream continuously w
 | Multi-asset provider | May cover stocks, currencies, fixed income, and digital assets | The product needs more than public equity data | Broad coverage can still vary in depth and quality |
 
 Pricing and access rules change. The durable lesson is to evaluate quota, coverage, licensing, reliability, speed, and support before depending on a provider.
-
-[Image placeholder: Stock screener home page showing many tickers and filter controls. Source: `Investing.for.Programmers-2025-3.pdf`, Fig. 3.8.]
-
-[Image placeholder: Data export and access-token screen for a paid stock screener service. Source: `Investing.for.Programmers-2025-3.pdf`, Fig. 3.9.]
-
-[Image placeholder: Example tracked portfolio containing climate-change-related assets. Source: `Investing.for.Programmers-2025-3.pdf`, Fig. 3.10.]
 
 ## Exchange Coverage
 
@@ -260,7 +248,9 @@ The platform should normalize provider output before using it in analytics.
 
 News and sentiment data can add context to price and fundamentals.
 
-[Image placeholder: News sentiment results for a nuclear energy company. Source: `Investing.for.Programmers-2025-3.pdf`, Fig. 3.11.]
+![News sentiment results for a nuclear energy company from Alpha Vantage](/.attachments/3.11-sentiment.analysis.png)
+
+_News sentiment results for a nuclear energy company from [Alpha Vantage: Market News & Sentiment](https://www.alphavantage.co/documentation/)_
 
 Sentiment data is useful for:
 

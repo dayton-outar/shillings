@@ -212,7 +212,7 @@ Common venture fund features:
 - Fund managers often receive a share of profits.
 - Returns depend on successful exits.
 
-[Image placeholder: Simplified venture-capital money flow showing investor capital, management fee, startup investment, exit proceeds, and carried interest. Source: `Investing.for.Programmers-2025-12.pdf`, Fig. 12.1.]
+![Simplified venture-capital money flow showing investor capital, management fee, startup investment, exit proceeds, and carried interest](/.attachments/12.1-simplified.money.flow.png)
 
 Private investors may face high minimum investment sizes. A venture fund can provide diversification across startups, but it still carries illiquidity, fees, and high failure risk.
 
@@ -222,7 +222,9 @@ Angel investors are individuals who invest in startups, often earlier than ventu
 
 Because one investor may not provide enough capital alone, angels may form syndicates. A syndicate pools investors into one investment vehicle led by a lead investor.
 
-[Image placeholder: Lead investor forming a special-purpose vehicle that represents multiple limited partners on a startup cap table. Source: `Investing.for.Programmers-2025-12.pdf`, Fig. 12.2.]
+![Lead investor forming a special-purpose vehicle that represents multiple limited partners on a startup cap table](/.attachments/12.2-lead.investors.job.png)
+
+_Lead investor forming a special-purpose vehicle_
 
 In a syndicate:
 

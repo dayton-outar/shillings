@@ -73,7 +73,9 @@ The more specific the feature, the narrower the model scope should be. Weather d
 
 Many data providers collect analyst forecasts and publish average estimates, high estimates, and low estimates.
 
-[Image placeholder: One-year price forecasts for NVIDIA split into high, low, and mean estimates. Source: `Investing.for.Programmers-2025-8.pdf`, Fig. 8.1.]
+![One-year price forecasts for NVIDIA split into high, low, and mean estimates](/.attachments/8.1-nvidia.forecast.png)
+
+_One-year price forecasts for NVIDIA split into high, low, and mean estimates_
 
 Forecasts can be useful, but they are not guarantees. A better forecast process should ask:
 
@@ -101,7 +103,9 @@ A simple clustering workflow:
 
 An elbow curve helps estimate a useful number of clusters. The investor looks for the point where adding more clusters gives less additional value.
 
-[Image placeholder: Elbow curve indicating a useful number of clusters. Source: `Investing.for.Programmers-2025-8.pdf`, Fig. 8.2.]
+![Elbow curve indicating a useful number of clusters](/.attachments/8.2-elbow.curve.png)
+
+_Elbow curve indicating a useful number of clusters_
 
 The resulting scatterplot can reveal:
 
@@ -111,7 +115,7 @@ The resulting scatterplot can reveal:
 - Turnaround candidates.
 - Outliers worth deeper research.
 
-[Image placeholder: Cluster plot of stocks by returns and volatility. Source: `Investing.for.Programmers-2025-8.pdf`, Fig. 8.3.]
+![Cluster plot of stocks by returns and volatility](/.attachments/8.3-plot.clusters.png)
 
 Clustering does not tell the investor what to buy. It tells the investor where to look.
 
@@ -119,7 +123,9 @@ Clustering does not tell the investor what to buy. It tells the investor where t
 
 Supervised learning requires an analytical dataset. Each row represents an asset or time period. Each column represents a feature. One column represents the outcome.
 
-[Image placeholder: Labeled dataset with tickers, labels, and feature candidates such as earnings, price, volatility, sentiment, inflation, interest rates, and stability scores. Source: `Investing.for.Programmers-2025-8.pdf`, Fig. 8.4.]
+![Labeled dataset with tickers, labels, and feature candidates such as earnings, price, volatility, sentiment, inflation, interest rates, and stability scores](/.attachments/8.4-labeled.dataset.png)
+
+_Labeled dataset with tickers_
 
 A supervised learning workflow:
 
@@ -141,7 +147,9 @@ Stock price prediction is tempting because the reward looks obvious. If a model 
 
 In practice, prediction is hard.
 
-[Image placeholder: Actual stock prices compared with model-forecasted prices, showing that predictions are sometimes accurate and sometimes meaningfully wrong. Source: `Investing.for.Programmers-2025-8.pdf`, Fig. 8.5.]
+![Actual stock prices compared with model-forecasted prices, showing that predictions are sometimes accurate and sometimes meaningfully wrong](/.attachments/8.5-actual.forecasted.prices.png)
+
+_Actual stock prices compared with model-forecasted prices_
 
 Prediction errors can come from:
 
@@ -201,7 +209,9 @@ Market bubbles:
 
 Volatility makes modeling difficult. An asset can end a period near where it started while moving wildly in between.
 
-[Image placeholder: Price development of Cosmos (ATOM) between 2021 and 2023, showing large movement despite ending near the starting range. Source: `Investing.for.Programmers-2025-8.pdf`, Fig. 8.6.]
+![Price development of Cosmos (ATOM) between 2021 and 2023, showing large movement despite ending near the starting range](/.attachments/8.6-price.development.atom-2021-2023.png)
+
+_Price development of Cosmos (ATOM) between 2021 and 2023_
 
 Two common modeling problems are:
 
@@ -223,7 +233,9 @@ Maintaining models is also work. A serious model process needs:
 - Retraining.
 - Documentation.
 
-[Image placeholder: Machine learning operations cycle from data preparation through model validation, packaging, deployment, monitoring, and new data integration. Source: `Investing.for.Programmers-2025-8.pdf`, Fig. 8.7.]
+![Machine learning operations cycle from data preparation through model validation, packaging, deployment, monitoring, and new data integration](/.attachments/8.7-mldevops.cycle.png)
+
+_Machine learning operations cycle from data preparation through model validation, packaging, deployment, monitoring, and new data integration_
 
 Creating a model is one task. Keeping it trustworthy over time is another.
 
@@ -479,7 +491,9 @@ The more personal the context, the more useful the answer can become. But person
 
 Generative AI can help search for companies that resemble a successful business pattern.
 
-[Image placeholder: Simplified Netflix business model where profitability depends on subscription revenue exceeding production and licensing costs. Source: `Investing.for.Programmers-2025-8.pdf`, Fig. 8.8.]
+![Simplified Netflix business model where profitability depends on subscription revenue exceeding production and licensing costs](/.attachments/8.8-netflix.business.model.png)
+
+_Simplified Netflix business model_
 
 Instead of asking for "good stocks," define the business pattern.
 

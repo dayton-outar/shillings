@@ -18,7 +18,9 @@ Investment analysis often uses three broad data flows:
 - Technical data: prices, volume, volatility, and market behavior.
 - Nonfinancial data: media, sentiment, movement, demographics, weather, regulation, leadership, disasters, and other external signals.
 
-[Image placeholder: Fundamental, technical, and nonfinancial data flows with different update frequencies. Source: `Investing.for.Programmers-2025-11.pdf`, Fig. 11.1.]
+![Fundamental, technical, and nonfinancial data flows with different update frequencies](/.attachments/11.1-data.flow.insights.png)
+
+_Fundamental, technical, and nonfinancial data flows with different update frequencies_
 
 Nonfinancial data can be valuable because it may reveal information not fully captured in financial statements or price charts.
 
@@ -124,7 +126,9 @@ Catalysts can create opportunity or risk. They are especially important for trad
 
 Companies move through phases: introduction, growth, maturity, saturation, decline, and sometimes rebirth.
 
-[Image placeholder: Company lifecycle showing a possible merger or acquisition window during decline and potential rebirth. Source: `Investing.for.Programmers-2025-11.pdf`, Fig. 11.2.]
+![Company lifecycle showing a possible merger or acquisition window during decline and potential rebirth](/.attachments/11.2-companies.evolve.png)
+
+_Company lifecycle showing a possible merger or acquisition window during decline and potential rebirth_
 
 Mergers and acquisitions can change a company's path.
 
@@ -155,7 +159,9 @@ Mergers can look attractive on paper and still fail in practice.
 
 Distressed-company investing looks for companies that are deeply undervalued because the market fears failure.
 
-[Image placeholder: Distressed-company workflow showing bankruptcy, possible reopening, or closure. Source: `Investing.for.Programmers-2025-11.pdf`, Fig. 11.3.]
+![Distressed-company workflow showing bankruptcy, possible reopening, or closure](/.attachments/11.3-workflow.distressed.company.png)
+
+_Distressed-company workflow showing bankruptcy, possible reopening, or closure_
 
 Potential opportunity:
 
@@ -354,7 +360,7 @@ An investment decision is not the same as execution. A good idea can still suffe
 
 An exchange is a marketplace where buyers and sellers trade assets. A broker is an intermediary that gives investors access to one or more exchanges.
 
-[Image placeholder: Exchange model showing direct buyers and sellers, and broker model showing brokerage between buyers and sellers. Source: `Investing.for.Programmers-2025-11.pdf`, Fig. 11.4.]
+![Exchange model showing direct buyers and sellers, and broker model showing brokerage between buyers and sellers](/.attachments/11.4-exchange.buyers.sellers.png)
 
 Brokers differ by:
 
