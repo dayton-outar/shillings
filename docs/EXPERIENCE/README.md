@@ -8,6 +8,7 @@ At the heart of our user experience design philosophy lies a commitment to creat
 4. [Seductive Interaction Design](./SEDUCTIVE.md) by Stephen P. Anderson, and 
 5. [Don't Make Me Think](./THINK.md) by Steve Krug, 
 6. [Laws of UX](./laws/)
+7. [Web Performance in Action](./performance/)
 
 as well as supplementary teachings from 
 
