@@ -1,6 +1,6 @@
 # Chapter 4: Hick's Law
 
-The time it takes to make a decision increases as the number and complexity of available choices increases.
+_The time it takes to make a decision increases as the number and complexity of available choices increases._
 
 ## Overview
 
@@ -21,13 +21,14 @@ They found that increasing the number of available choices increases decision ti
 The relationship is represented by this formula:
 
 $$
-\large{RT = a + b\log_2(n)}
+\huge{RT = a + b\log_2(n)}
 $$
 
 In the formula, $\large{RT}$ is response time, $\large{n}$ is the number of stimuli, and $\large{a}$ and $\large{b}$ are measurable constants that depend on the task.
 
-> [!figure]
-> Figure 4-1 placeholder: diagram representing Hick's law.
+![Diagram representing Hick's law.](/.attachments/4-1-laws-diagram.hick's.law.png)
+
+_**Figure 4-1.** Diagram representing Hick's law._
 
 Designers do not need to master the math to apply the principle. The main lesson is straightforward: the more options an interface presents, the more time users need to process those options and decide which one matches their goal.
 
@@ -49,15 +50,17 @@ Hick's law appears in both physical and digital interfaces. A common physical ex
 
 As TVs gained more features, remotes gained more buttons. Eventually, many remotes became so complex that they required repeated use, muscle memory, or significant mental effort. Some people responded by taping over every button except the essentials, creating "grandparent-friendly remotes."
 
-> [!figure]
-> Figure 4-2 placeholder: modified TV remotes that simplify the interface.
+![Modified TV remotes that simplify the interface.](/.attachments/4-2-laws-modified.remote.png)
+
+_**Figure 4-2.** Modified TV remotes that simplify the interface._
 
 Figure 4-2 shows remotes simplified by hiding nonessential controls.
 
 Modern smart TV remotes often take the opposite approach from the start. They reduce the hardware controls to a small set of essential actions and move the remaining complexity into the TV interface, where it can be organized and progressively disclosed.
 
-> [!figure]
-> Figure 4-3 placeholder: smart TV remote with only essential controls.
+![Smart TV remote with only essential controls.](/.attachments/4-3-laws-smart.remote.png)
+
+_**Figure 4-3.** Smart TV remote with only essential controls._
 
 Figure 4-3 shows a simplified smart TV remote that reduces visible choices.
 
@@ -65,15 +68,17 @@ Digital interfaces face the same problem. A better experience often comes from s
 
 Google Search is a clear example. The initial screen focuses on the search task. Filters such as All, Images, Videos, and News appear after the search begins, when they become relevant.
 
-> [!figure]
-> Figure 4-4 placeholder: Google Search showing a simple initial search state and filters after search begins.
+![Google Search showing a simple initial search state and filters after search begins.](/.attachments/4-4-laws-google.simplifies.png)
+
+_**Figure 4-4.** Google Search showing a simple initial search state and filters after search begins._
 
 Figure 4-4 shows how Google reduces initial decision effort and then reveals filtering options when they are useful.
 
 Onboarding is another place where Hick's law matters. A new user can easily feel overwhelmed by a product's full set of possibilities. Notion handles this by giving beginners a clear checklist of steps.
 
-> [!figure]
-> Figure 4-5 placeholder: Notion progressive onboarding checklist.
+![Notion progressive onboarding checklist.](/.attachments/4-5-laws-notion.progressive.onboarding.png)
+
+_**Figure 4-5.** Notion progressive onboarding checklist._
 
 Figure 4-5 shows how progressive onboarding helps users learn by doing. The experience gives people a manageable next step instead of presenting every possibility at once.
 
@@ -81,8 +86,9 @@ Streaming services also show Hick's law in action. Netflix found that customers 
 
 To reduce that friction, Netflix introduced sections such as "Trending Now" and "Popular on Netflix." These groups give extra weight to certain options through social proof.
 
-> [!figure]
-> Figure 4-6 placeholder: Netflix sections such as Trending Now and Popular on Netflix.
+![Netflix sections such as Trending Now and Popular on Netflix.](/.attachments/4-6-laws-netflix.png)
+
+_**Figure 4-6.** Netflix sections such as Trending Now and Popular on Netflix._
 
 Figure 4-6 shows how social proof can help users decide by making certain choices feel more relevant.
 
@@ -94,8 +100,9 @@ Too many items can increase cognitive load, especially when the choices are uncl
 
 Card sorting is a research method for understanding how users expect information to be organized. Participants sort topics into groups that make sense to them.
 
-> [!figure]
-> Figure 4-7 placeholder: card sorting exercise.
+![Card sorting exercise.](/.attachments/4-7-laws-card.sorting.png)
+
+_**Figure 4-7.** Card sorting exercise._
 
 Figure 4-7 shows a card sorting activity.
 
@@ -129,8 +136,9 @@ In that case, the interface may look less complex, but it actually requires more
 
 Icon-only interfaces are a common example.
 
-> [!figure]
-> Figure 4-8 placeholder: Facebook iOS app bar showing icon-based navigation.
+![Facebook iOS app bar showing icon-based navigation.](/.attachments/4-8-laws-facebook.app.bar.png)
+
+_**Figure 4-8.** Facebook iOS app bar showing icon-based navigation._
 
 Figure 4-8 shows an app bar that relies on icons to represent actions or destinations.
 
@@ -142,8 +150,9 @@ Without enough context, icons can increase cognitive load because users must int
 
 Text labels reduce that abstraction. Studies show that adding labels to icons improves discovery and recognition, especially for important elements such as navigation.
 
-> [!figure]
-> Figure 4-9 placeholder: X web app navigation with text labels accompanying icons.
+![X web app navigation with text labels accompanying icons.](/.attachments/4-9-laws-text.labels.png)
+
+_**Figure 4-9.** X web app navigation with text labels accompanying icons._
 
 Figure 4-9 shows navigation where text labels clarify icon meaning. The labels add context, reduce ambiguity, and help users understand available options faster.
 
