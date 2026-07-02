@@ -1,6 +1,6 @@
 # Chapter 2: Fitts's Law
 
-The time it takes to reach a target depends on how far away the target is and how large it is.
+_The time it takes to reach a target depends on how far away the target is and how large it is._
 
 ## Overview
 
@@ -16,16 +16,17 @@ This simple principle has wide implications for interface design.
 
 Fitts's law began with the work of American psychologist Paul Fitts in 1954. Fitts predicted that the time required to move quickly to a target area depends on the ratio between the distance to the target and the width of the target.
 
-> [!figure]
-> Figure 2-1 placeholder: diagram depicting Fitts's law.
+![Diagram depicting Fitts's law.](/.attachments/2-1-laws-fitt's.diagram.png)
+
+_**Figure 2-1.** Diagram depicting Fitts's law._
 
 Figure 2-1 shows the relationship between target distance and target width. Today, Fitts's law is one of the most influential mathematical models of human movement. It is widely used in ergonomics and human-computer interaction to model pointing, whether that pointing is physical or virtual.
 
 Fitts also proposed an index of difficulty for target selection. In this model, the distance to the center of the target, `D`, acts like signal, and the tolerance or width of the target, `W`, acts like noise.
 
-$$
+$
 \large{ID = \log_2\left(\frac{2D}{W}\right)}
-$$
+$
 
 The formula captures the basic design lesson: increasing target size or reducing movement distance makes the interaction easier.
 
@@ -51,7 +52,7 @@ Fitts's law began as a model for physical movement, but it also applies to digit
 
 Touch target size is especially important. If a target is too small, people need more time and precision to select it. Different organizations recommend different minimum sizes, but each recommendation reflects the same concern: small targets are harder to use.
 
-Table 2-1. Minimum touch target size recommendations
+**Table 2-1.** Minimum touch target size recommendations
 
 | Company/Org | Size |
 | --- | --- |
@@ -71,29 +72,33 @@ Position is the third major factor. Controls placed in hard-to-reach areas are h
 
 Research by Steven Hoober suggests people often prefer to view and touch the center of a smartphone screen, where touch accuracy is highest. Mobile attention also tends to concentrate near the center rather than following the desktop-style pattern of scanning from upper left to lower right.
 
-> [!figure]
-> Figure 2-2 placeholder: smartphone touch accuracy illustration based on Steven Hoober's research.
+![Smartphone touch accuracy illustration based on Steven Hoober's research.](/.attachments/2-2-laws-smartphone.touch.accuracy.png)
+
+_**Figure 2-2.** Smartphone touch accuracy illustration based on Steven Hoober's research._
 
 Figure 2-2 shows how touch accuracy varies across a smartphone screen.
 
 A common example of Fitts's law is the relationship between form labels and inputs. When a text label is properly associated with its input, selecting the label performs the same action as selecting the input.
 
-> [!figure]
-> Figure 2-3 placeholder: touch target area on a text label and form input.
+![Touch target area on a text label and form input.](/.attachments/2-3-laws-touch.target.area.png)
+
+_**Figure 2-3.** Touch target area on a text label and form input._
 
 Figure 2-3 shows how the selectable area expands when the label and input work together. This reduces the precision required from both desktop and mobile users.
 
 Form submission buttons are another example. They are usually placed close to the final input in a form.
 
-> [!figure]
-> Figure 2-4 placeholder: form submission button placed close to the last form input.
+![Form submission button placed close to the last form input.](/.attachments/2-4-laws-form.submission.png)
+
+_**Figure 2-4.** Form submission button placed close to the last form input._
 
 Figure 2-4 shows how proximity makes the relationship between the final input and the submit action clear. It also minimizes the distance the user must travel to complete the form.
 
 Spacing between actions is just as important as size and position. LinkedIn's iOS connection request confirmation screen places "accept" and "deny" close together on the right side of a dialog.
 
-> [!figure]
-> Figure 2-5 placeholder: LinkedIn dialog showing actions placed close together.
+![LinkedIn dialog showing actions placed close together.](/.attachments/2-5-laws-ample.space.png)
+
+_**Figure 2-5.** LinkedIn dialog showing actions placed close together._
 
 Figure 2-5 shows how tight spacing increases the chance of accidental selection. When actions with opposite outcomes are too close, users must slow down and aim more carefully.
 
@@ -101,15 +106,17 @@ Vehicle interfaces add another layer of risk because the driver may need to keep
 
 Apple CarPlay follows Fitts's law by giving interactive elements generous spacing.
 
-> [!figure]
-> Figure 2-6 placeholder: Apple CarPlay interface with sufficient spacing between items.
+![Apple CarPlay interface with sufficient spacing between items.](/.attachments/2-6-laws-sufficient.space.png)
+
+_**Figure 2-6.** Apple CarPlay interface with sufficient spacing between items._
 
 Figure 2-6 shows how spacing helps reduce the chance of selecting the wrong action.
 
 Apple's Reachability feature is another example of target placement. With larger iPhones, items at the top of the screen can be difficult to reach one-handed. Reachability brings the top half of the screen down so those controls are easier to access.
 
-> [!figure]
-> Figure 2-7 placeholder: iPhone Reachability feature bringing the top of the screen closer.
+![iPhone Reachability feature bringing the top of the screen closer.](/.attachments/2-7-laws-reachability.png)
+
+_**Figure 2-7.** iPhone Reachability feature bringing the top of the screen closer._
 
 Figure 2-7 shows how Reachability reduces the distance between the user's thumb and hard-to-reach interface elements.
 
@@ -117,8 +124,9 @@ Fitts's law also explains infinite targets. At the edge of a screen, the pointer
 
 Desktop operating systems use this pattern. In macOS, the Dock sits at the bottom edge of the screen, and the application menu sits along the top edge.
 
-> [!figure]
-> Figure 2-8 placeholder: macOS Dock and application menu as infinite targets.
+![macOS Dock and application menu as infinite targets.](/.attachments/2-8-laws-infinite.targets.png)
+
+_**Figure 2-8.** macOS Dock and application menu as infinite targets._
 
 Figure 2-8 shows how screen edges can make targets easier to reach without sacrificing accuracy.
 
@@ -126,8 +134,9 @@ Fitts's law is not limited to mouse and touch input. Spatial computing introduce
 
 Apple's visionOS uses eye input and hand gestures together. It improves target acquisition by placing primary content near the center of the user's field of view, keeping interactive content at a consistent depth, and reducing the need for neck, body, and eye-depth adjustment. Apple also recommends rounded interactive elements because sharp edges can draw the eye toward the boundary and reduce precision.
 
-> [!figure]
-> Figure 2-9 placeholder: Apple visionOS guidance for centered content, consistent depth, and rounded interactive elements.
+![Apple visionOS guidance for centered content, consistent depth, and rounded interactive elements.](/.attachments/2-9-laws-vision.os.png)
+
+_**Figure 2-9.** Apple visionOS guidance for centered content, consistent depth, and rounded interactive elements._
 
 Figure 2-9 shows how Fitts's law applies beyond flat screens and into spatial interfaces.
 
