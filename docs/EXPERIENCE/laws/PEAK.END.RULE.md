@@ -1,6 +1,6 @@
 # Chapter 6: Peak-End Rule
 
-People judge an experience mostly by how they felt at its emotional peak and at its end, not by the total average of every moment.
+_People judge an experience mostly by how they felt at its emotional peak and at its end, not by the total average of every moment._
 
 ## Overview
 
@@ -44,8 +44,9 @@ Spotify Wrapped is a strong example of designing for a positive peak and ending 
 
 Wrapped shows favorite artists, most-played songs, listening statistics, interactive quizzes, personalized insights, global rankings, and other shareable moments.
 
-> [!figure]
-> Figure 6-1 placeholder: Spotify Wrapped 2022.
+![Spotify Wrapped 2022.](/.attachments/6-1-laws-spotify.png)
+
+_**Figure 6-1.** Spotify Wrapped 2022._
 
 Figure 6-1 shows Spotify Wrapped creating a personalized, memorable experience. The feature helps users reflect on themselves through music, learn more about the artists and podcasts they enjoyed, and participate in a larger musical community through sharing.
 
@@ -55,22 +56,25 @@ Uber recognized that waiting was unavoidable in its Express POOL model, so it wo
 
 Idleness aversion means people feel better when they have something to pay attention to while waiting. Operational transparency means the system explains what is happening. The goal gradient effect means people feel more motivated when they can see progress toward a goal.
 
-> [!figure]
-> Figure 6-2 placeholder: Uber app wait-time experience.
+![Uber app wait-time experience.](/.attachments/6-2-laws-uber.png)
+
+_**Figure 6-2.** Uber app wait-time experience._
 
 Figure 6-2 shows Uber using animation, estimated arrival times, process explanations, and visible progress to reduce the pain of waiting. By improving the perceived wait, Uber reduced post-request cancellations and avoided a negative emotional peak.
 
 Duolingo also designs around emotional peaks. The product makes language learning feel playful through levels, streaks, celebrations, and feedback that reinforce progress.
 
-> [!figure]
-> Figure 6-3 placeholder: Duolingo gamified learning features.
+![Duolingo gamified learning features.](/.attachments/6-3-laws-duolingo.png)
+
+_**Figure 6-3.** Duolingo gamified learning features._
 
 Figure 6-3 shows Duolingo celebrating milestones. These moments represent accumulated effort and make progress feel visible.
 
 Duolingo also uses Legendary Level challenges. When users complete a timed challenge successfully, they unlock a new interface theme.
 
-> [!figure]
-> Figure 6-4 placeholder: Duolingo Legendary Level unlock screen.
+![Duolingo Legendary Level unlock screen.](/.attachments/6-4-laws-legendary.png)
+
+_**Figure 6-4.** Duolingo Legendary Level unlock screen._
 
 Figure 6-4 shows how a reward moment can turn achievement into a stronger positive memory.
 
@@ -80,8 +84,9 @@ Journey mapping is a useful way to identify emotional peaks throughout an experi
 
 A journey map creates a shared artifact that helps designers and stakeholders align around a common understanding of the experience. It also helps reveal challenges, opportunities, and emotional moments that might otherwise be missed.
 
-> [!figure]
-> Figure 6-5 placeholder: example journey map.
+![Example journey map.](/.attachments/6-5-laws-journey.map.png)
+
+_**Figure 6-5.** Example journey map._
 
 Figure 6-5 shows a journey map as a design artifact.
 
@@ -117,15 +122,17 @@ Designers should reduce negative peaks whenever possible. One effective approach
 
 Account creation is a common risk area, especially when password rules are rigid or unclear. Mailchimp reduces this friction with real-time validation that makes password requirements visible and easier to follow.
 
-> [!figure]
-> Figure 6-6 placeholder: Mailchimp real-time password validation.
+![Mailchimp real-time password validation.](/.attachments/6-6-laws-real.time.password.validation.png)
+
+_**Figure 6-6.** Mailchimp real-time password validation._
 
 Figure 6-6 shows password validation that helps users avoid a frustrating error state.
 
 Setbacks can also become opportunities when the right fallback is in place. A 404 page can frustrate users because it means the page they wanted cannot be found. But some companies use 404 pages to create a lighter moment and reinforce brand personality.
 
-> [!figure]
-> Figure 6-7 placeholder: 404 pages using humor and brand personality.
+![404 pages using humor and brand personality.](/.attachments/6-7-laws-404.pages.png)
+
+_**Figure 6-7.** 404 pages using humor and brand personality._
 
 Figure 6-7 shows 404 pages that use humor and brand voice. Humor must be used carefully, though. If the context is serious or the user's frustration is high, a joke can make the experience worse.
 
