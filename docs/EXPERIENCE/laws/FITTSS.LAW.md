@@ -24,7 +24,9 @@ Figure 2-1 shows the relationship between target distance and target width. Toda
 
 Fitts also proposed an index of difficulty for target selection. In this model, the distance to the center of the target, `D`, acts like signal, and the tolerance or width of the target, `W`, acts like noise.
 
-$\large{ ID = \log_2\left(\frac{2D}{W}\right) }$
+$$\huge{ 
+  ID = \log_2\left(\frac{2D}{W}\right)
+}$$
 
 The formula captures the basic design lesson: increasing target size or reducing movement distance makes the interaction easier.
 
