@@ -34,8 +34,9 @@ One of the hardest parts of design is reducing the gap between the team's mental
 
 Form controls look familiar because they borrow from physical controls. Toggles, radio buttons, buttons, and similar interface elements are modeled after real-world switches, knobs, and panels. People understand what they can do with these elements because their appearance suggests the possible action.
 
-> [!figure]
-> Figure 1-1 placeholder: comparison between physical control panel elements and typical form elements.
+![Comparison between physical control panel elements and typical form elements.](/.attachments/1-1.comparison.panel.typical.form.png)
+
+_**Fig 1-1.** Comparison between physical control panel elements and typical form elements._
 
 Figure 1-1 compares control panel elements with common form controls. The similarity helps people understand the affordance of each control: what action is possible and how they can interact with it.
 
@@ -45,29 +46,33 @@ Snapchat's 2018 redesign is a well-known example. The company changed the app's 
 
 Large redesigns can work better when users are given time and control. Google has often introduced redesigned products by letting people opt in first. When YouTube launched a new desktop interface in 2017, users could preview the Material Design version, try it, give feedback, and switch back to the older version if they preferred it.
 
-> [!figure]
-> Figure 1-2 placeholder: before-and-after comparison of YouTube's 2017 redesign.
+![Before-and-After comparison of YouTube's 2017 redesign.](/.attachments/1-2.youtube.2017.png)
+
+_**Figure 1-2.** Before-and-After comparison of YouTube's 2017 redesign._
 
 Figure 1-2 shows the YouTube redesign. The important lesson is not simply the visual change, but the rollout strategy. By letting people move at their own pace, Google reduced the shock of the mental model mismatch.
 
 Ecommerce sites also rely heavily on shared mental models. People expect to browse products, select items, add them to a cart, review the cart, and check out. These patterns are familiar because they are repeated across many shopping experiences.
 
-> [!figure]
-> Figure 1-3 placeholder: Etsy interface showing familiar ecommerce patterns.
+![Etsy interface showing familiar ecommerce patterns.](/.attachments/1-3-etsy.png)
+
+_**Figure 1-3.** Etsy interface showing familiar ecommerce patterns._
 
 Figure 1-3 shows how Etsy uses common ecommerce conventions to keep customers focused on finding and buying products instead of learning a new interaction model. The experience feels easier because it matches what shoppers already know.
 
 Mental models are not limited to digital interfaces. Automotive controls often use the same principle. In the 2023 Mercedes-Benz EQS SUV, the seat controls are shaped and arranged to match the seat itself.
 
-> [!figure]
-> Figure 1-4 placeholder: seat controls in the 2023 Mercedes-Benz EQS SUV.
+![Seat controls in the 2023 Mercedes-Benz EQS SUV.](/.attachments/1-4.seats.controls.mercedes.png)
+
+_**Figure 1-4.** Seat controls in the 2023 Mercedes-Benz EQS SUV._
 
 Figure 1-4 shows how the controls map directly to the object being controlled. A user can infer which part of the seat will move because the control resembles the seat's shape.
 
 Familiar patterns also help people adopt new technology. Apple's Vision Pro uses recognizable interface components such as sidebars, tabs, search fields, and movable windows. Even in a spatial computing environment, these familiar elements help users understand what they can do.
 
-> [!figure]
-> Figure 1-5 placeholder: Apple Vision Pro interface using common components and interaction patterns.
+![Apple Vision Pro interface using common components and interaction patterns.](/.attachments/1-5.apple.vision.png)
+
+_**Figure 1-5.** Apple Vision Pro interface using common components and interaction patterns._
 
 Figure 1-5 shows how Vision Pro blends new interaction possibilities with familiar interface structures. Windows can be moved, resized, and closed, while their visual treatment helps them sit naturally inside the user's physical surroundings.
 
@@ -77,8 +82,9 @@ Design becomes harder when a team talks about "the user" without a shared unders
 
 User personas help solve this by turning research into a focused representation of a specific audience segment. A persona is fictional, but it should be based on patterns found in real user data. It gives the team a shared reference point for the user's traits, needs, motivations, behaviors, and frustrations.
 
-> [!figure]
-> Figure 1-6 placeholder: user persona example.
+![User persona example](/.attachments/1-6.personas.png)
+
+_**Figure 1-6.** User persona example._
 
 Figure 1-6 shows an example of a persona. Personas are useful because they support empathy, reduce self-referential decision-making, and help teams prioritize features around real user needs.
 
