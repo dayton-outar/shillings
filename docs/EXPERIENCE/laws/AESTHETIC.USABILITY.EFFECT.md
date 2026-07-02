@@ -1,6 +1,6 @@
 # Chapter 7: Aesthetic-Usability Effect
 
-People often perceive aesthetically pleasing designs as more usable.
+_People often perceive aesthetically pleasing designs as more usable._
 
 ## Overview
 
@@ -16,15 +16,17 @@ The aesthetic-usability effect traces back to a 1995 study by Masaaki Kurosu and
 
 Kurosu and Kashimura investigated the relationship between inherent usability and what they called apparent usability. They tested 26 ATM interface layout patterns with 252 participants. Each participant rated each design for both functionality and aesthetics.
 
-> [!figure]
-> Figure 7-1 placeholder: sample ATM layout patterns from Kurosu and Kashimura's study.
+![Sample ATM layout patterns from Kurosu and Kashimura's study.](/.attachments/7-1-laws-sample.layout.patterns.png)
+
+_**Figure 7-1.** Sample ATM layout patterns from Kurosu and Kashimura's study._
 
 Figure 7-1 shows sample layout patterns from the study.
 
 Participants used a 10-point rating scale to evaluate usability and visual attractiveness. The results showed that perceived usability was strongly influenced by perceived attractiveness.
 
-> [!figure]
-> Figure 7-2 placeholder: correlation of usability with beauty.
+![Correlation of usability with beauty.](/.attachments/7-2-laws-correlation.png)
+
+_**Figure 7-2.** Correlation of usability with beauty._
 
 Figure 7-2 shows the correlation between usability and beauty. The study suggested that apparent usability was less connected to inherent ease of use than to apparent beauty.
 
@@ -56,8 +58,9 @@ Rams's "less but better" approach emphasized that form should follow function. T
 
 The Braun SK4 record player is one example. It was nicknamed "Snow White's Coffin" because of its white metal casing and transparent lid.
 
-> [!figure]
-> Figure 7-3 placeholder: Braun SK4 record player designed by Hans Gugelot and Dieter Rams.
+![Braun SK4 record player designed by Hans Gugelot and Dieter Rams.](/.attachments/7-3-laws-braun.record.player.png)
+
+_**Figure 7-3.** Braun SK4 record player designed by Hans Gugelot and Dieter Rams._
 
 Figure 7-3 shows the Braun SK4. Its powder-coated sheet metal, elmwood side panels, and plexiglass cover stood apart from the ornamented all-wood products common at the time. The transparent cover also solved a functional problem by avoiding the rattling that occurred with metal covers at higher volumes.
 
@@ -65,15 +68,17 @@ The SK4 marked a shift in design history. Electronic devices no longer needed to
 
 Apple continues much of Braun's legacy: functional minimalism balanced with refined aesthetics. Products such as the iPod, iPhone, and iMac echo Braun's clean industrial design while emphasizing ease of use.
 
-> [!figure]
-> Figure 7-4 placeholder: comparison of Apple products and Braun products.
+![Comparison of Apple products and Braun products.](/.attachments/7-4-laws-minimal.designs.png)
+
+_**Figure 7-4.** Comparison of Apple products and Braun products._
 
 Figure 7-4 shows visual similarities between Apple products and Braun products, including the iPod, iPhone, iMac, Braun T3 pocket radio, Braun ET44 calculator, and Braun LE1 loudspeaker.
 
 Apple's attention to aesthetics extends into interface design. The brand is known for interfaces that feel elegant and easy to use.
 
-> [!figure]
-> Figure 7-5 placeholder: examples of Apple interface designs.
+![Examples of Apple interface designs.](/.attachments/7-5-laws-various.apple.designs.png)
+
+_**Figure 7-5.** Examples of Apple interface designs._
 
 Figure 7-5 shows Apple interface examples. Apple's reputation for polished design has become a competitive advantage and helped reinforce the idea that good design is essential to successful products.
 
@@ -127,8 +132,9 @@ The aesthetic-usability effect has a significant caveat. Because people often be
 
 Psychologists Andreas Sonderegger and Jürgen Sauer studied this effect in usability testing. They used a computer simulation of a mobile phone and asked 60 adolescents to complete common tasks. The two simulations were functionally identical but visually different: one was attractive and the other was intentionally unattractive.
 
-> [!figure]
-> Figure 7-6 placeholder: two mobile phone prototypes used in Sonderegger and Sauer's experiment.
+![Two mobile phone prototypes used in Sonderegger and Sauer's experiment.](/.attachments/7-6-laws-two.prototypes.png)
+
+_**Figure 7-6.** Two mobile phone prototypes used in Sonderegger and Sauer's experiment._
 
 Figure 7-6 shows the two prototypes used in the experiment.
 
