@@ -1,6 +1,6 @@
 # Chapter 3: Miller's Law
 
-_The average person can hold only about ${7 \pm 2}$ items in working memory._
+_The average person can hold only about_ ${7 \pm 2}$ _items in working memory._
 
 ## Overview
 
