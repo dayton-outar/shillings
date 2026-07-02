@@ -1,6 +1,6 @@
 # Chapter 1: Jakob's Law
 
-Users spend most of their time in products other than yours, so they expect your product to work like the ones they already know.
+_Users spend most of their time in products other than yours, so they expect your product to work like the ones they already know._
 
 ## Overview
 
