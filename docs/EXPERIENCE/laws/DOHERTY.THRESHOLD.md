@@ -1,6 +1,6 @@
 # Chapter 10: Doherty Threshold
 
-Productivity rises when a computer and user interact quickly enough that neither has to wait on the other, ideally under $\large{400\text{ ms}}$.
+_Productivity rises when a computer and user interact quickly enough that neither has to wait on the other, ideally under_ ${400\text{ ms}}$.
 
 ## Overview
 
@@ -12,22 +12,23 @@ Many factors affect performance, but page weight is one of the most important. P
 
 According to the HTTP Archive, the average desktop page in 2023 weighed more than 2 MB, or 2286 KB. The average mobile page was just over 2 MB, or 2007 KB. In 2010-2011, those averages were much smaller: 634 KB on desktop and 260 KB on mobile.
 
-> [!figure]
-> Figure 10-1 placeholder: average page weight increasing over time.
+![Average page weight increasing over time.](/.attachments/10-1-laws-average.page.weight.png)
+
+_**Figure 10-1.** Average page weight increasing over time._
 
 Figure 10-1 shows the growth in average page weight.
 
 More weight usually means more waiting. Waiting is painful when users are trying to complete a task, and long waits can lead to frustration or abandonment.
 
-Response timing also affects productivity. A response around $\large{100\text{ ms}}$ feels instant. A delay between $\large{100\text{ ms}}$ and $\large{300\text{ ms}}$ becomes perceptible, and users begin to feel less in control.
+Response timing also affects productivity. A response around ${100\text{ ms}}$ feels instant. A delay between ${100\text{ ms}}$ and ${300\text{ ms}}$ becomes perceptible, and users begin to feel less in control.
 
-Once delay passes $\large{1000\text{ ms}}$, or $\large{1\text{ second}}$, people start thinking about other things. Their attention wanders, task-relevant information begins to fade, cognitive load increases, and performance drops.
+Once delay passes ${1000\text{ ms}}$, or ${1\text{ second}}$, people start thinking about other things. Their attention wanders, task-relevant information begins to fade, cognitive load increases, and performance drops.
 
 ## Origins
 
 In the early days of desktop computing, a two-second response time was considered acceptable. The assumption was that this gave users time to think about their next action.
 
-In 1982, IBM employees Walter J. Doherty and Ahrvind J. Thadani challenged that standard in a study titled "The Economic Value of Rapid Response Time." They argued that productivity increases more than proportionally as response time decreases when the threshold is under $\large{400\text{ ms}}$.
+In 1982, IBM employees Walter J. Doherty and Ahrvind J. Thadani challenged that standard in a study titled "The Economic Value of Rapid Response Time." They argued that productivity increases more than proportionally as response time decreases when the threshold is under ${400\text{ ms}}$.
 
 Their claim was that when computers and users interact at a pace where neither waits on the other, productivity rises, work costs fall, employee satisfaction improves, and work quality tends to increase.
 
@@ -47,14 +48,15 @@ Design can support flow by providing clear feedback, reducing unnecessary fricti
 
 ## Examples
 
-Sometimes processing takes longer than the Doherty threshold allows. When a task requires more than $\large{400\text{ ms}}$, the system can still provide timely feedback while the work continues in the background.
+Sometimes processing takes longer than the Doherty threshold allows. When a task requires more than ${400\text{ ms}}$, the system can still provide timely feedback while the work continues in the background.
 
 This creates the perception that the product is faster than it really is.
 
 Skeleton screens are one common pattern. Platforms such as Instagram show placeholder blocks where content will appear. These blocks are gradually replaced by real text and images as they load.
 
-> [!figure]
-> Figure 10-2 placeholder: Instagram skeleton screen while content loads.
+![Instagram skeleton screen while content loads.](/.attachments/10-2-laws-instagram.skeleton.png)
+
+_**Figure 10-2.** Instagram skeleton screen while content loads._
 
 Figure 10-2 shows how a skeleton screen reduces the perception of waiting. It also reserves space for content, preventing the page from jumping around as items load.
 
@@ -62,8 +64,9 @@ The "blur up" technique is another perceived-performance pattern. It is especial
 
 The system first loads a tiny version of the image and scales it into the space where the final image will appear. A Gaussian blur hides pixelation and noise. When the high-resolution image finishes loading in the background, it replaces the blurred version.
 
-> [!figure]
-> Figure 10-3 placeholder: Unsplash using the blur up technique for faster perceived image loading.
+![Unsplash using the blur up technique for faster perceived image loading.](/.attachments/10-3-laws-unsplash.png)
+
+_**Figure 10-3.** Unsplash using the blur up technique for faster perceived image loading._
 
 Figure 10-3 shows how blur up prioritizes perceived speed while reserving layout space for the final image.
 
@@ -77,17 +80,19 @@ Progress bars work because they:
 
 Gmail uses an animated logo with a progress bar while the app loads.
 
-> [!figure]
-> Figure 10-4 placeholder: Gmail loading animation and progress bar.
+![Gmail loading animation and progress bar.](/.attachments/10-4-laws-gmail.workspace.png)
+
+_**Figure 10-4.** Gmail loading animation and progress bar._
 
 Figure 10-4 shows how animation can reduce uncertainty and make wait time feel shorter.
 
-$\large{10\text{ seconds}}$ is commonly treated as the limit for keeping a user's attention focused on a task. When a wait exceeds that limit, users usually want to do something else while they wait.
+${10\text{ seconds}}$ is commonly treated as the limit for keeping a user's attention focused on a task. When a wait exceeds that limit, users usually want to do something else while they wait.
 
-For waits longer than $\large{10\text{ seconds}}$, progress bars should be paired with an estimated time remaining and a description of the current task. This helps users understand how long they may need to wait and whether they can safely shift attention elsewhere.
+For waits longer than ${10\text{ seconds}}$, progress bars should be paired with an estimated time remaining and a description of the current task. This helps users understand how long they may need to wait and whether they can safely shift attention elsewhere.
 
-> [!figure]
-> Figure 10-5 placeholder: Apple update screen with estimated time to completion and progress bar.
+![Apple update screen with estimated time to completion and progress bar.](/.attachments/10-5-laws-apple.estimated.time.to.completion.png)
+
+_**Figure 10-5.** Apple update screen with estimated time to completion and progress bar._
 
 Figure 10-5 shows Apple providing progress and estimated completion time during an update.
 
@@ -95,8 +100,9 @@ Optimistic UI is another technique for improving perceived performance. It gives
 
 Instagram uses this pattern by displaying comments before they are actually posted. If the post fails, the app shows an error afterward.
 
-> [!figure]
-> Figure 10-6 placeholder: Instagram optimistically displaying a comment before it is fully posted.
+![Instagram optimistically displaying a comment before it is fully posted.](/.attachments/10-6-laws-instagram.optimistical.display.png)
+
+_**Figure 10-6.** Instagram optimistically displaying a comment before it is fully posted._
 
 Figure 10-6 shows how optimistic UI improves perceived responsiveness while background processing continues.
 
@@ -112,8 +118,9 @@ Friction can be useful when users need to make a careful decision. A confirmatio
 
 Google's Privacy Checkup is another example. The process scans an account for potential privacy vulnerabilities, but Google also uses the waiting time to explain what is being checked. The added time can make the scan feel more thorough and trustworthy.
 
-> [!figure]
-> Figure 10-7 placeholder: Google Privacy Checkup scan with educational waiting state.
+![Google Privacy Checkup scan with educational waiting state.](/.attachments/10-7-laws-google.privacy.checkup.png)
+
+_**Figure 10-7.** Google Privacy Checkup scan with educational waiting state._
 
 Figure 10-7 shows how a deliberate delay can educate users and build trust when the task feels important.
 

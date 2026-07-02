@@ -1,6 +1,6 @@
 # Chapter 8: Von Restorff Effect
 
-When several similar objects are present, the one that differs from the rest is most likely to be remembered.
+_When several similar objects are present, the one that differs from the rest is most likely to be remembered._
 
 ## Overview
 
@@ -46,36 +46,41 @@ Buttons and links are common examples. Their visual difference communicates that
 
 Consider a confirmation modal with two versions. In one version, the actions are visually similar. In the other, the destructive action receives stronger emphasis.
 
-> [!figure]
-> Figure 8-1 placeholder: confirmation modal showing how contrast can emphasize an important destructive action.
+![Confirmation modal showing how contrast can emphasize an important destructive action.](/.attachments/8-1-laws-contrast.draws.attention.png)
+
+_**Figure 8-1.** Confirmation modal showing how contrast can emphasize an important destructive action._
 
 Figure 8-1 shows how contrast can help users avoid accidentally selecting the wrong option. The emphasized destructive action is easier to identify, and the warning icon adds another cue that the decision is important.
 
 The floating action button, or FAB, is another example. Introduced by Google's Material Design, the FAB represents the primary or most common action on a screen.
 
-> [!figure]
-> Figure 8-2 placeholder: examples of floating action buttons from Material Design.
+![Examples of floating action buttons from Material Design.](/.attachments/8-2-laws-floating.action.buttons.png)
+
+_**Figure 8-2.** Examples of floating action buttons from Material Design._
 
 Figure 8-2 shows floating action buttons. Their size, shape, position, and consistent behavior make them visually distinct and recognizable. This is also an example of Jakob's law because the pattern becomes familiar across products.
 
 Pricing tables often use the von Restorff effect by emphasizing one subscription plan over the others. Designers may use color, size, labels, position, or shape to make a recommended plan stand out.
 
-> [!figure]
-> Figure 8-3 placeholder: pricing table emphasizing Notion's Plus plan.
+![Pricing table emphasizing Notion's Plus plan.](/.attachments/8-3-laws-von.restorff.effect.png)
+
+_**Figure 8-3.** Pricing table emphasizing Notion's Plus plan._
 
 Figure 8-3 shows Notion emphasizing one pricing option through a darker button, a "Most popular" label, a slightly larger card, and a central position.
 
 Notifications also rely on contrast. They are designed to tell users that something requires attention or action.
 
-> [!figure]
-> Figure 8-4 placeholder: iOS notifications using contrast to draw attention.
+![iOS notifications using contrast to draw attention.](/.attachments/8-4-laws-von.restorff.effect.notifications.png)
+
+_**Figure 8-4.** iOS notifications using contrast to draw attention._
 
 Figure 8-4 shows notifications using visual emphasis to call attention to new information.
 
 The same principle applies beyond individual elements. News websites often emphasize featured content within dense layouts filled with headlines, images, and ads.
 
-> [!figure]
-> Figure 8-5 placeholder: news websites using scale to emphasize featured headlines.
+![News websites using scale to emphasize featured headlines.](/.attachments/8-5-laws-news.websites.png)
+
+_**Figure 8-5.** News websites using scale to emphasize featured headlines._
 
 Figure 8-5 shows news sites using scale to make featured content stand out from surrounding columns and headlines.
 

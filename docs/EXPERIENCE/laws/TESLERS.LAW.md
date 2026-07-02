@@ -1,6 +1,6 @@
 # Chapter 9: Tesler's Law
 
-Every system has a certain amount of complexity that cannot be removed, only moved.
+_Every system has a certain amount of complexity that cannot be removed, only moved._
 
 ## Overview
 
@@ -44,36 +44,41 @@ Email is a simple way to understand Tesler's law. To send an email, two pieces o
 
 The message cannot be sent if either is missing. That is necessary complexity. Modern email clients reduce the user's burden by pre-populating the sender and suggesting recipients as the user types, based on prior emails or contacts.
 
-> [!figure]
-> Figure 9-1 placeholder: modern email client populating the from line and suggesting recipients.
+![Modern email client populating the from line and suggesting recipients.](/.attachments/9-1-laws-gmail.png)
+
+_**Figure 9-1.** Modern email client populating the from line and suggesting recipients._
 
 Figure 9-1 shows how the complexity does not vanish. It is shifted into the email client, which handles known information and suggests likely input.
 
 Gmail's Smart Compose takes this further by using artificial intelligence to suggest words and phrases as the user writes.
 
-> [!figure]
-> Figure 9-2 placeholder: Gmail Smart Compose suggesting text.
+![Gmail Smart Compose suggesting text.](/.attachments/9-2-laws-gmail.smart.compose.png)
+
+_**Figure 9-2.** Gmail Smart Compose suggesting text._
 
 Figure 9-2 shows Smart Compose reducing typing effort by predicting likely sentence completions. Gmail also includes Smart Reply, which scans email context and suggests quick responses.
 
 Checkout flows are another common example. Online purchases often require billing and shipping details. Many stores simplify the process by allowing the shipping address to inherit information from the billing address.
 
-> [!figure]
-> Figure 9-3 placeholder: ecommerce checkout inheriting shipping address from billing details.
+![eCommerce checkout inheriting shipping address from billing details.](/.attachments/9-3-laws-shipping.address.png)
+
+_**Figure 9-3.** eCommerce checkout inheriting shipping address from billing details._
 
 Figure 9-3 shows a checkout feature that prevents users from entering duplicate information. The customer experience becomes simpler because the design and development team absorbed the complexity of implementing the shortcut.
 
 Payment services such as Apple Pay simplify checkout even further. Once users set up an account, they can select Apple Pay during checkout and verify the purchase without entering additional payment details.
 
-> [!figure]
-> Figure 9-4 placeholder: Apple Pay checkout flow.
+![Apple Pay checkout flow.](/.attachments/9-4-laws-apple.pay.png)
+
+_**Figure 9-4.** Apple Pay checkout flow._
 
 Figure 9-4 shows how Apple Pay shifts payment complexity away from the customer and into the service.
 
 Retail also offers examples of complexity being abstracted away. Amazon Go stores provide a checkout-free shopping experience. Customers check in with the app, take what they need, and leave. Later, they receive a receipt and their Amazon account is charged.
 
-> [!figure]
-> Figure 9-5 placeholder: first Amazon Go store in Seattle.
+![First Amazon Go store in Seattle.](/.attachments/9-5-laws-amazon.go.store.png)
+
+_**Figure 9-5.** First Amazon Go store in Seattle._
 
 Figure 9-5 shows the first Amazon Go store in Seattle.
 
@@ -85,8 +90,9 @@ This is different from the command-based model that has dominated graphical inte
 
 Mixpanel's Spark feature is an example. It lets users conduct data analysis by asking questions in natural language.
 
-> [!figure]
-> Figure 9-6 placeholder: Mixpanel Spark natural language analytics feature.
+![Mixpanel Spark natural language analytics feature.](/.attachments/9-5-laws-amazon.go.store.png)
+
+_**Figure 9-6.** Mixpanel Spark natural language analytics feature._
 
 Figure 9-6 shows how natural language input can lower the knowledge barrier for complex software. Users who know the outcome they want but not the steps required can still access powerful features.
 
@@ -112,8 +118,9 @@ Progressive disclosure is useful because it lets designers defer less important 
 
 Stripe's website provides a good example. Hovering over an item in the primary navigation reveals a menu of related links in that category.
 
-> [!figure]
-> Figure 9-7 placeholder: progressive disclosure menu on Stripe.com.
+![Progressive disclosure menu on Stripe.com.](/.attachments/9-7-laws-progressive.disclosure.png)
+
+_**Figure 9-7.** Progressive disclosure menu on Stripe.com._
 
 Figure 9-7 shows how Stripe keeps the default interface simple while still making deeper content easy to access.
 
