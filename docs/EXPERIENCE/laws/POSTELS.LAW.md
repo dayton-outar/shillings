@@ -1,6 +1,6 @@
 # Chapter 5: Postel's Law
 
-Be conservative in what you do, and be liberal in what you accept from others.
+_Be conservative in what you do, and be liberal in what you accept from others._
 
 ## Overview
 
@@ -42,8 +42,9 @@ Systems should also handle input that differs from what the computer expects. Th
 
 Apple's Face ID is one example. It lets users authenticate without entering a username or password every time they unlock a device, approve a purchase, or sign in to an app.
 
-> [!figure]
-> Figure 5-1 placeholder: Apple Face ID authentication.
+![Apple Face ID authentication.](/.attachments/5-1-laws-face.id.png)
+
+_**Figure 5-1.** Apple Face ID authentication._
 
 Figure 5-1 shows Face ID as a flexible input method that reduces user effort while still producing secure system-readable authentication.
 
@@ -51,8 +52,9 @@ Responsive web design is another major example. As more devices gained web acces
 
 Ethan Marcotte introduced responsive web design in 2010 as an approach based on fluid grids, flexible images, and media queries. Instead of designing separate desktop and mobile sites, responsive design lets content adapt fluidly to its viewing context.
 
-> [!figure]
-> Figure 5-2 placeholder: responsive web design adapting to different device sizes.
+![Responsive web design adapting to different device sizes.](/.attachments/5-2-laws-responsive.web.design.png)
+
+_**Figure 5-2.** Responsive web design adapting to different device sizes._
 
 Figure 5-2 shows responsive web design embracing the fluid nature of the web. This approach accepts a wide range of devices and produces output that adapts reliably, from smartwatches and phones to laptops, desktops, gaming consoles, and TVs.
 
@@ -64,8 +66,9 @@ This differs from graceful degradation, which starts with an advanced experience
 
 A simple search box shows the idea well. The base experience allows anyone to type a query. If voice recognition is supported, the component can add voice input without removing the core text-input behavior.
 
-> [!figure]
-> Figure 5-3 placeholder: progressively enhanced search component with default search box and optional voice input.
+![Progressively enhanced search component with default search box and optional voice input.](/.attachments/5-3-laws-progressive.enhanced.search.png)
+
+_**Figure 5-3.** Progressively enhanced search component with default search box and optional voice input._
 
 Figure 5-3 shows a search component that works by default and then adds voice support where available.
 
@@ -73,8 +76,9 @@ Postel's law also applies to design processes. Design systems are collections of
 
 An effective design system must be liberal in what it accepts. Contributions may come from design, content, code, strategy, critique, and many different teams. But the output should be conservative: clear guidelines, purposeful components, coherent patterns, and practical principles.
 
-> [!figure]
-> Figure 5-4 placeholder: design systems from IBM, Salesforce, and Shopify.
+![Design systems from IBM, Salesforce, and Shopify.](/.attachments/5-4-laws-design.systems.png)
+
+_**Figure 5-4.** Design systems from IBM, Salesforce, and Shopify._
 
 Figure 5-4 shows how design systems help organizations scale design in a manageable and consistent way.
 
@@ -118,8 +122,9 @@ Internationalization is one example. The same text string can become much longer
 
 Text direction can also vary. Some languages read left to right, others right to left, and some can be vertical. Resilient designs account for changing text length and orientation.
 
-> [!figure]
-> Figure 5-5 placeholder: text expansion from English to Italian.
+![Text expansion from English to Italian.](/.attachments/5-5-laws-text.expansion.png)
+
+_**Figure 5-5.** Text expansion from English to Italian._
 
 Figure 5-5 shows how translated text can expand and affect layout.
 
@@ -127,8 +132,9 @@ User-controlled font size is another example. People can adjust default font siz
 
 Amazon's website header navigation responds well to minimum font size customization. As font size increases, lower-priority quick links are removed while the most important controls remain available.
 
-> [!figure]
-> Figure 5-6 placeholder: Amazon.com adapting to minimum font size customization.
+![Amazon.com adapting to minimum font size customization.](/.attachments/5-6-laws-amazon.adapting.png)
+
+_**Figure 5-6.** Amazon.com adapting to minimum font size customization._
 
 Figure 5-6 shows an interface adapting to user-controlled font size instead of failing under it.
 
