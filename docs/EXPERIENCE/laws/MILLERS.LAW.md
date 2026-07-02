@@ -1,6 +1,6 @@
 # Chapter 3: Miller's Law
 
-The average person can hold only about ${7 \pm 2}$ items in working memory.
+_The average person can hold only about ${7 \pm 2}$ items in working memory._
 
 ## Overview
 
@@ -32,8 +32,9 @@ Human working memory behaves in a similar way. When too much information arrives
 
 Working memory acts like a temporary buffer for information related to the current task.
 
-> [!figure]
-> Figure 3-1 placeholder: working memory buffer illustration.
+![Working memory buffer illustration.](/.attachments/3-1-laws-memory.buffer.png)
+
+_**Figure 3-1.** Working memory buffer illustration._
 
 Figure 3-1 illustrates working memory as a limited buffer. If a task requires more space than the buffer can provide, information starts to fall out of working memory so new information can fit.
 
@@ -53,43 +54,49 @@ Chunking helps users scan a page, identify the information that matches their go
 
 Phone numbers are one of the simplest examples of chunking. Without formatting, a phone number is just a long string of digits. With chunking, the same number becomes easier to read, process, and remember.
 
-> [!figure]
-> Figure 3-2 placeholder: US phone number with and without chunking applied.
+![US phone number with and without chunking applied.](/.attachments/3-2-laws-chunking.png)
+
+_**Figure 3-2.** US phone number with and without chunking applied._
 
 Figure 3-2 shows how grouping digits makes a phone number easier to handle.
 
 A more complex example is the "wall of text": a dense block of content with little hierarchy, little formatting, and overly long line lengths.
 
-> [!figure]
-> Figure 3-3 placeholder: wall of text example.
+![Wall of text example.](/.attachments/3-3-laws-wall.of.text-wiki.png)
+
+_**Figure 3-3.** Wall of text example._
 
 Figure 3-3 shows content that is difficult to scan and process. Because the structure is unclear, users need more effort to understand it.
 
 The same content becomes easier to consume when it has hierarchy, formatting, and appropriate line lengths.
 
-> [!figure]
-> Figure 3-4 placeholder: wall of text improved with hierarchy, formatting, and appropriate line lengths.
+![Wall of text improved with hierarchy, formatting, and appropriate line lengths.](/.attachments/3-4-laws-wall.of.text.png)
+
+_**Figure 3-4.** Wall of text improved with hierarchy, formatting, and appropriate line lengths._
 
 Figure 3-4 shows the improved version. Headings and subheadings create hierarchy, whitespace separates sections, shorter line lengths improve readability, links are underlined, and important words are highlighted.
 
 Chunking also works at the page level. It can group dense information into modules, separate related content with rules or spacing, and create a clear hierarchy.
 
-> [!figure]
-> Figure 3-5 placeholder: chunking applied to dense information.
+![Chunking applied to dense information.](/.attachments/3-5-laws-chunking.applied.png)
+
+_**Figure 3-5.** Chunking applied to dense information._
 
 Figure 3-5 shows how chunking helps users scan information-dense content, such as news or financial headlines, and decide what deserves their attention.
 
 Ecommerce sites use chunking constantly. On Nike.com, product information is visually grouped through proximity: image, title, price, product type, and available colors all sit together. Filters in the sidebar are also grouped by relationship.
 
-> [!figure]
-> Figure 3-6 placeholder: chunking used to group products and filters on an ecommerce website.
+![Chunking used to group products and filters on an ecommerce website.](/.attachments/3-6-laws-chunking.ecommerce.png)
+
+_**Figure 3-6.** Chunking used to group products and filters on an ecommerce website._
 
 Figure 3-6 shows how proximity can create a clear group even without a shared background or border.
 
 Chunking can also organize related actions or functions. Toolbars in editing applications often group similar controls so users can understand which actions belong together.
 
-> [!figure]
-> Figure 3-7 placeholder: Google Docs toolbar using chunking to group related functions.
+![Google Docs toolbar using chunking to group related functions.](/.attachments/3-7-laws-google.docs.grouped.functions.png)
+
+_**Figure 3-7.** Google Docs toolbar using chunking to group related functions._
 
 Figure 3-7 shows how Google Docs separates toolbar functions into recognizable groups.
 
@@ -103,8 +110,9 @@ That argument misses an important distinction: visible navigation does not need 
 
 As long as the menu is designed clearly, limiting the number of links to seven does not automatically improve usability.
 
-> [!figure]
-> Figure 3-8 placeholder: Nike.com navigation menu with more than seven items.
+![Nike.com navigation menu with more than seven items.](/.attachments/3-8-laws-nike.png)
+
+_**Figure 3-8.** Nike.com navigation menu with more than seven items._
 
 Figure 3-8 shows Nike.com's primary navigation. The menu contains more than seven links, but it remains understandable because the links are categorized clearly and separated with whitespace and vertical dividers.
 
