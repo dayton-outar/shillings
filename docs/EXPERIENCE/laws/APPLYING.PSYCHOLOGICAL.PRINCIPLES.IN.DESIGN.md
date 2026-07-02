@@ -14,8 +14,9 @@ The easiest way to internalize the principles is to make them visible in the tea
 
 One practical example is printing Laws of UX posters and placing them where the team can see them regularly. The posters serve as reminders of the psychological principles that can guide decisions during the design process. They also remind teams how people perceive and process information.
 
-> [!figure]
-> Figure 11-1 placeholder: Laws of UX posters helping teams build awareness.
+![Figure](/.attachments/11-1-laws-show.tell.png)
+
+_**Figure 11-1.** Laws of UX posters helping teams build awareness._
 
 Figure 11-1 shows Laws of UX posters used in team spaces. Making the principles visible helps create shared knowledge and a shared vocabulary. Over time, team members become more capable of naming the principles and explaining how they apply to the work.
 
@@ -120,8 +121,9 @@ For "clarity over abundance of choice," possible rules might include:
 
 These are examples, not universal rules. Each team should define rules that fit its product, users, and organization.
 
-> [!figure]
-> Figure 11-2 placeholder: example design principle, observation, and rules.
+![Figure](/.attachments/11-2-laws-example.design.png)
+
+_**Figure 11-2.** example design principle, observation, and rules._
 
 Figure 11-2 shows a framework made of a goal, a psychological observation, and design rules. The design principle defines the goal. The law explains the human behavior behind it. The rules guide day-to-day decisions.
 
@@ -134,8 +136,9 @@ Rules connected to this principle might include:
 - Use common design patterns to reinforce familiarity with the interface.
 - Avoid distracting users with flashy UI or quirky animations.
 
-> [!figure]
-> Figure 11-3 placeholder: another example design principle, observation, and rules.
+![Figure](/.attachments/11-3-laws-principles.png)
+
+_**Figure 11-3.** another example design principle, observation, and rules._
 
 Figure 11-3 shows the same framework applied to familiarity. The team starts with a design goal, grounds it in a psychological law, and turns it into rules designers can apply.
 
