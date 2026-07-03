@@ -19,8 +19,9 @@ The fold comes from print media. Newspapers place the lead story at the top of t
 
 On the web, the fold is not fixed. It changes with screen resolution, device orientation, and browser window size.
 
-> [!figure]
-> Figure 4.1 placeholder: above-the-fold and below-the-fold device diagram from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 4.1.** above-the-fold and below-the-fold device diagram from the source PDF._
 >
 > Above-the-fold content starts at the top of the page and ends at the bottom of the visible screen. Everything outside the browser's initial view is below the fold.
 
@@ -39,15 +40,17 @@ Some render blocking is useful, but too much delays content. External CSS loaded
 
 To see this, open the Coyle Appliance Repair site from chapter 1, load it while recording in Chrome's Timeline profiler, switch to the `Event Log`, and filter to painting events. The Time to First Paint appears there.
 
-> [!figure]
-> Figure 4.2 placeholder: Chrome Timeline first paint screenshot from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 4.2.** Chrome Timeline first paint screenshot from the source PDF._
 >
 > Chrome's Timeline profiler shows the document's first painting event, with a first paint time around `860 ms`.
 
 Inlining the site's CSS inside `<style>` tags in `index.html` improves first paint time.
 
-> [!figure]
-> Figure 4.3 placeholder: improved first paint screenshot from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 4.3.** improved first paint screenshot from the source PDF._
 >
 > Chrome's Timeline profiler shows improved first paint after the site's CSS is inlined into the HTML.
 
@@ -64,8 +67,9 @@ Critical CSS separates above-the-fold styles from the rest of the page styles. A
 
 Inlining CSS into a `<style>` tag removes the wait for an external stylesheet request.
 
-> [!figure]
-> Figure 4.4 placeholder: inline above-the-fold style example from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 4.4.** inline above-the-fold style example from the source PDF._
 >
 > CSS for above-the-fold content is inlined into the HTML so it can be parsed and applied as soon as the HTML arrives.
 
@@ -87,8 +91,9 @@ The drawback is duplication. If all CSS is inlined, repeat page views lose the c
 
 Below-the-fold CSS is still loaded with a `<link>` element, but not as a normal blocking stylesheet. Instead, use the `preload` resource hint and a small JavaScript assist.
 
-> [!figure]
-> Figure 4.5 placeholder: preload CSS loading example from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 4.5.** preload CSS loading example from the source PDF._
 >
 > A `preload` resource hint loads external CSS without blocking rendering, then an `onload` handler changes `rel` to `stylesheet` once the file is ready.
 
@@ -129,8 +134,9 @@ The site runs at:
 http://localhost:8080
 ```
 
-> [!figure]
-> Figure 4.6 placeholder: recipe website screenshot from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 4.6.** recipe website screenshot from the source PDF._
 >
 > The recipe website in Chrome at the tablet breakpoint, roughly 750 pixels wide.
 
@@ -170,8 +176,9 @@ Above-the-fold content is whatever is visible when the page first loads. The har
 
 The chapter recommends checking common device resolutions at `http://mydevice.io/devices` and sorting by CSS height.
 
-> [!figure]
-> Figure 4.7 placeholder: mydevice.io resolution chart from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 4.7.** mydevice.io resolution chart from the source PDF._
 >
 > Common device resolutions sorted by CSS height.
 
@@ -181,8 +188,9 @@ To visualize fold positions, the chapter uses the VisualFold bookmarklet at `htt
 480, 667, 768, 800, 900, 1024, 1280
 ```
 
-> [!figure]
-> Figure 4.8 placeholder: VisualFold bookmarklet screenshot from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 4.8.** VisualFold bookmarklet screenshot from the source PDF._
 >
 > VisualFold draws horizontal guidelines at entered pixel positions so you can see how content falls across viewport sizes.
 
@@ -192,15 +200,17 @@ For the recipe site, `1280px` is a reasonable fold threshold. It covers the reci
 
 At the mobile breakpoint, identify all components above the `1280px` guideline.
 
-> [!figure]
-> Figure 4.9 placeholder: mobile breakpoint critical component labels from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 4.9.** mobile breakpoint critical component labels from the source PDF._
 >
 > The mobile breakpoint labeled with critical components such as header, content hubs, recipe title, recipe image, recipe attributes, social buttons, recipe description, ingredient list, banner ad, and recipe steps.
 
 At the large breakpoint, new above-the-fold components appear in the two-column layout.
 
-> [!figure]
-> Figure 4.10 placeholder: large breakpoint critical component labels from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 4.10.** large breakpoint critical component labels from the source PDF._
 >
 > The large breakpoint labels additional critical components such as main column, right column, content list, collection list, and right-column ad.
 
@@ -249,8 +259,9 @@ Start with the header:
 5. Save and rebuild `main.less`.
 6. Copy `css/critical.min.css` into `<style>` tags in the `<head>` of `index.html`.
 
-> [!figure]
-> Figure 4.11 placeholder: partially styled header screenshot from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 4.11.** partially styled header screenshot from the source PDF._
 >
 > After inlining only the `header` selector CSS, the header is partially styled but missing child styles.
 
@@ -268,8 +279,9 @@ The header contains child elements with their own styles. Move those related sel
 
 After moving these selectors into `critical_small.less`, rebuild and re-inline `critical.min.css`.
 
-> [!figure]
-> Figure 4.12 placeholder: fully styled header screenshot from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 4.12.** fully styled header screenshot from the source PDF._
 >
 > The header appears fully styled after all header-related critical CSS is inlined into `index.html`.
 
@@ -316,8 +328,9 @@ Test in a browser without native `preload` support, such as Safari, and confirm 
 
 Chrome testing across throttling profiles shows a clear Time to First Paint improvement after implementing critical CSS.
 
-> [!figure]
-> Figure 4.13 placeholder: Time to First Paint benchmark chart from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 4.13.** Time to First Paint benchmark chart from the source PDF._
 >
 > Time to First Paint in Chrome before and after critical CSS across GPRS, 2G, 3G, 4G, and DSL profiles. Lower is better.
 
@@ -325,8 +338,9 @@ The benefit is largest on slow, high-latency connections and smaller on faster c
 
 On mobile devices accessing the recipe website from a shared host, the improvement was more modest, around 20%.
 
-> [!figure]
-> Figure 4.14 placeholder: Mobile Safari Time to First Paint benchmark chart from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 4.14.** Mobile Safari Time to First Paint benchmark chart from the source PDF._
 >
 > Time to First Paint in Mobile Safari on an iPhone 6S over cable and LTE before and after prioritizing critical CSS.
 
@@ -361,8 +375,9 @@ On multipage sites, critical CSS should be modular. Different templates have dif
 
 Some critical styles are global, such as headers, navigation, and headline styles. Those can be bucketed separately and inlined across all templates.
 
-> [!figure]
-> Figure 4.15 placeholder: modular critical CSS diagram from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 4.15.** modular critical CSS diagram from the source PDF._
 >
 > Template A and Template B inline their own critical CSS, while both also inline globally common critical styles.
 

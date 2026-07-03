@@ -28,15 +28,17 @@ gulp is a Node-based streaming build system. It automates file-processing tasks 
 
 Without automation, compiling LESS might look like this:
 
-> [!figure]
-> Figure 12.1 placeholder: unautomated LESS workflow.
+![Figure](/.attachments/)
+
+_**Figure 12.1.** unautomated LESS workflow._
 >
 > Make changes to a LESS file, save changes, recompile CSS in the terminal, then reload the page.
 
 That works, but it becomes tedious quickly. With a build system, the workflow becomes:
 
-> [!figure]
-> Figure 12.2 placeholder: automated LESS workflow.
+![Figure](/.attachments/)
+
+_**Figure 12.2.** automated LESS workflow._
 >
 > Make changes and save. The build system recompiles CSS and reloads the page automatically.
 
@@ -48,15 +50,17 @@ gulp calls itself a streaming build system. A stream is a point in the build pro
 
 #### How Streams Work
 
-> [!figure]
-> Figure 12.3 placeholder: one gulp stream compiling LESS to CSS.
+![Figure](/.attachments/)
+
+_**Figure 12.3.** one gulp stream compiling LESS to CSS._
 >
 > A LESS file is piped into a stream, transformed into CSS, and written as a CSS file.
 
 Streams can be chained.
 
-> [!figure]
-> Figure 12.4 placeholder: chained streams compiling and minifying CSS.
+![Figure](/.attachments/)
+
+_**Figure 12.4.** chained streams compiling and minifying CSS._
 >
 > A LESS file becomes CSS in one stream, then minified CSS in another stream.
 
@@ -64,8 +68,9 @@ Streams can be chained.
 
 A task wraps one or more streams. It usually starts with source files from disk, pipes data through transforms, and writes output somewhere else.
 
-> [!figure]
-> Figure 12.5 placeholder: outline of a `buildCSS` task.
+![Figure](/.attachments/)
+
+_**Figure 12.5.** outline of a `buildCSS` task._
 >
 > `src/less/main.less` is read, piped through a stream, and written to `dist/css/styles.css`.
 
@@ -79,8 +84,9 @@ Before writing a `gulpfile`, set up the project folder structure and install gul
 
 gulp reads from a source folder and writes optimized output to a distribution folder.
 
-> [!figure]
-> Figure 12.6 placeholder: source and distribution folder flow.
+![Figure](/.attachments/)
+
+_**Figure 12.6.** source and distribution folder flow._
 >
 > gulp processes input files from `src` and writes built output to `dist`.
 
@@ -321,8 +327,9 @@ var gulp = require("gulp"),
 
 #### Exploring The General Structure Of A Task
 
-> [!figure]
-> Figure 12.7 placeholder: general structure of gulp tasks.
+![Figure](/.attachments/)
+
+_**Figure 12.7.** general structure of gulp tasks._
 >
 > Read source files from disk, run an optimization task, then write output to disk.
 
@@ -538,8 +545,9 @@ gulp
 
 Install a LiveReload browser extension and enable it for the page.
 
-> [!figure]
-> Figure 12.8 placeholder: LiveReload extension icon in Chrome.
+![Figure](/.attachments/)
+
+_**Figure 12.8.** LiveReload extension icon in Chrome._
 >
 > Clicking the browser extension icon enables the LiveReload listener so the page can reload when gulp signals changes.
 

@@ -14,8 +14,9 @@ Earlier chapters focused on optimizing page ingredients such as CSS, images, fon
 
 Server compression runs content through a compression algorithm before transferring it to the browser. The browser advertises supported algorithms in the `Accept-Encoding` request header. If the server sends compressed content, it identifies the algorithm with the `Content-Encoding` response header.
 
-> [!figure]
-> Figure 10.1 placeholder: browser requests compressed content and server replies with compressed `index.html`.
+![Figure](/.attachments/)
+
+_**Figure 10.1.** browser requests compressed content and server replies with compressed `index.html`._
 >
 > The browser sends `Accept-Encoding: gzip, deflate`; the server responds with `Content-Encoding: gzip`.
 
@@ -57,8 +58,9 @@ node http.js
 
 In the source test, setting `level` to `0` makes `http://localhost:8080/index.html` about 393 KB. Setting it to `9` reduces it to about 299 KB. Moving from `0` to `1` already drops the page to about 307 KB.
 
-> [!figure]
-> Figure 10.2 placeholder: compression level effects on jQuery load time and TTFB.
+![Figure](/.attachments/)
+
+_**Figure 10.2.** compression level effects on jQuery load time and TTFB._
 >
 > The biggest gain happens when compression is enabled. Higher levels gradually increase TTFB and hit diminishing returns around levels 5 or 6.
 
@@ -80,8 +82,9 @@ app.use(compression({
 }));
 ```
 
-> [!figure]
-> Figure 10.3 placeholder: compression ratios for PNG, JPEG, and SVG across gzip levels.
+![Figure](/.attachments/)
+
+_**Figure 10.3.** compression ratios for PNG, JPEG, and SVG across gzip levels._
 >
 > PNG and JPEG show little to no benefit because they are already compressed. SVG compresses well because it is text-based XML.
 
@@ -101,8 +104,9 @@ http://mng.bz/85Y1
 
 Brotli-capable browsers include `br` in the `Accept-Encoding` request header, but Brotli is used only over HTTPS.
 
-> [!figure]
-> Figure 10.4 placeholder: Chrome request header showing Brotli support with the `br` token.
+![Figure](/.attachments/)
+
+_**Figure 10.4.** Chrome request header showing Brotli support with the `br` token._
 >
 > A server can choose Brotli when the browser advertises `br` in `Accept-Encoding`.
 
@@ -163,8 +167,9 @@ https://localhost:8443
 
 Your browser may show a warning because the local certificate is not signed by a recognized authority. That is acceptable for this local test, but production servers need valid certificates.
 
-> [!figure]
-> Figure 10.5 placeholder: Chrome Network panel showing Brotli-encoded files.
+![Figure](/.attachments/)
+
+_**Figure 10.5.** Chrome Network panel showing Brotli-encoded files._
 >
 > Brotli-compressed responses show `br` in the `Content-Encoding` column.
 
@@ -185,13 +190,15 @@ app.use(shrinkRay({
 }));
 ```
 
-> [!figure]
-> Figure 10.6 placeholder: jQuery file size with gzip versus Brotli across compression levels.
+![Figure](/.attachments/)
+
+_**Figure 10.6.** jQuery file size with gzip versus Brotli across compression levels._
 >
 > Brotli gives roughly 3% to 10% smaller output in the source test. gzip's smallest jQuery result is about 29.4 KB, while Brotli reaches about 26.5 KB.
 
-> [!figure]
-> Figure 10.7 placeholder: TTFB for gzip versus Brotli when compressing jQuery.
+![Figure](/.attachments/)
+
+_**Figure 10.7.** TTFB for gzip versus Brotli when compressing jQuery._
 >
 > Brotli and gzip are roughly similar until Brotli quality settings 10 and 11, where Brotli becomes slower. The source test favors Brotli quality 9.
 
@@ -217,13 +224,15 @@ First visits matter, but many users are repeat visitors or navigate to additiona
 
 When a browser downloads an asset, it follows the server's cache policy to decide whether it can reuse that asset later. If the server does not define a policy, browser defaults apply.
 
-> [!figure]
-> Figure 10.8 placeholder: basic caching process.
+![Figure](/.attachments/)
+
+_**Figure 10.8.** basic caching process._
 >
 > The browser requests `index.html`; the server checks whether it changed. If not, the server can return `304 Not Modified`; if it changed, it returns `200 OK` with a new copy.
 
-> [!figure]
-> Figure 10.9 placeholder: first uncached visit versus subsequent cached visit.
+![Figure](/.attachments/)
+
+_**Figure 10.9.** first uncached visit versus subsequent cached visit._
 >
 > In the source example, the cached visit transfers nearly 98% less data and loads much faster.
 
@@ -249,15 +258,17 @@ app.use(express.static(__dirname, {
 
 After restarting the server and visiting `http://localhost:8080`, navigate to the page again without pressing Reload. The browser can use cached assets directly.
 
-> [!figure]
-> Figure 10.10 placeholder: jQuery retrieved from the local browser cache.
+![Figure](/.attachments/)
+
+_**Figure 10.10.** jQuery retrieved from the local browser cache._
 >
 > When `max-age` has not expired and the user navigates normally, the browser can avoid a server request.
 
 If the user reloads or `max-age` expires, the browser revalidates with the server. If the asset has not changed, the server returns `304 Not Modified`. If it has changed, the server returns a fresh copy.
 
-> [!figure]
-> Figure 10.11 placeholder: `max-age` and revalidation flow.
+![Figure](/.attachments/)
+
+_**Figure 10.11.** `max-age` and revalidation flow._
 >
 > Fresh cached assets are used locally. Expired assets are revalidated, then either refreshed or reused after a `304`.
 
@@ -277,8 +288,9 @@ These directives reduce or remove caching performance benefits, so use them only
 
 A CDN is a proxy service in front of your site that can cache and distribute content from servers closer to users.
 
-> [!figure]
-> Figure 10.12 placeholder: CDN distributing content to geographically dispersed users.
+![Figure](/.attachments/)
+
+_**Figure 10.12.** CDN distributing content to geographically dispersed users._
 >
 > User requests can be fulfilled by CDN servers closer to them rather than by the origin server alone.
 
@@ -360,8 +372,9 @@ To test in Chrome:
 3. After loading finishes, clear Disable Cache.
 4. Navigate to the page again by focusing the address bar and pressing Enter, rather than using Reload.
 
-> [!figure]
-> Figure 10.13 placeholder: Weekly Timber cache policy effects in Chrome Network panel.
+![Figure](/.attachments/)
+
+_**Figure 10.13.** Weekly Timber cache policy effects in Chrome Network panel._
 >
 > HTML is revalidated and returns `304` if unchanged. Other assets are served from the browser cache without a server round trip.
 
@@ -401,8 +414,9 @@ CDNs can improve delivery by serving common assets from geographically distribut
 
 ### Using CDN-Hosted Assets
 
-> [!figure]
-> Figure 10.14 placeholder: CDN origin and edge servers.
+![Figure](/.attachments/)
+
+_**Figure 10.14.** CDN origin and edge servers._
 >
 > Assets are hosted on an origin server and distributed to edge servers closer to users.
 
@@ -418,8 +432,9 @@ Replace it with the CDN-hosted jQuery 2.2.3:
 <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
 ```
 
-> [!figure]
-> Figure 10.15 placeholder: jQuery load times and TTFB across CDNs versus shared hosting.
+![Figure](/.attachments/)
+
+_**Figure 10.15.** jQuery load times and TTFB across CDNs versus shared hosting._
 >
 > In the source test, several CDNs outperform the low-cost shared host in both TTFB and total load time.
 
@@ -456,8 +471,9 @@ Listing 10.6 defines a reusable fallback loader:
 </script>
 ```
 
-> [!figure]
-> Figure 10.16 placeholder: CDN asset failure and local fallback in Chrome Network panel.
+![Figure](/.attachments/)
+
+_**Figure 10.16.** CDN asset failure and local fallback in Chrome Network panel._
 >
 > When the CDN request fails, the local fallback script is loaded.
 
@@ -473,15 +489,17 @@ fallback(window.Modernizr, "js/modernizr.min.js");
 
 Subresource Integrity, or SRI, lets the browser verify that an external asset matches an expected checksum before using it.
 
-> [!figure]
-> Figure 10.17 placeholder: Subresource Integrity verification process.
+![Figure](/.attachments/)
+
+_**Figure 10.17.** Subresource Integrity verification process._
 >
 > The browser requests a CDN asset, verifies its checksum, and discards it if the checksum does not match.
 
 The `integrity` attribute identifies the hash algorithm and the expected checksum.
 
-> [!figure]
-> Figure 10.18 placeholder: `integrity` attribute format.
+![Figure](/.attachments/)
+
+_**Figure 10.18.** `integrity` attribute format._
 >
 > The value starts with the hashing algorithm, such as `sha256`, followed by the checksum value.
 
@@ -532,8 +550,9 @@ Link: <https://code.jquery.com>; rel=preconnect
 
 Using an HTTP header is discovered earlier, but is more work to configure.
 
-> [!figure]
-> Figure 10.19 placeholder: jQuery load-time effects of `preconnect`.
+![Figure](/.attachments/)
+
+_**Figure 10.19.** jQuery load-time effects of `preconnect`._
 >
 > The source test compares no `preconnect`, HTML `preconnect`, and HTTP-header `preconnect` for HTTP and HTTPS.
 
@@ -559,8 +578,9 @@ HTTP header:
 Link: <https://code.jquery.com/jquery-2.2.3.min.js>; rel=prefetch
 ```
 
-> [!figure]
-> Figure 10.20 placeholder: page load times with and without prefetching jQuery.
+![Figure](/.attachments/)
+
+_**Figure 10.20.** page load times with and without prefetching jQuery._
 >
 > In the source test, prefetching jQuery cuts the Weekly Timber home page load time by nearly 20%.
 
@@ -583,8 +603,9 @@ Link: <https://code.jquery.com/jquery-2.2.3.min.js>; rel=preload; as=script
 
 The optional `as` attribute describes the resource type, such as `script`, `style`, `font`, or `image`.
 
-> [!figure]
-> Figure 10.21 placeholder: Chrome Network panel showing jQuery loaded with `preload`.
+![Figure](/.attachments/)
+
+_**Figure 10.21.** Chrome Network panel showing jQuery loaded with `preload`._
 >
 > The first jQuery request comes from the preload hint; the later script reference is satisfied from cache with a 0-byte transfer.
 

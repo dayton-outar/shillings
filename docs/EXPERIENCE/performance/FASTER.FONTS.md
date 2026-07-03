@@ -32,8 +32,9 @@ http://localhost:8080
 
 The site uses Open Sans. The `css/open-sans` folder contains several font weights, but the page only uses three of them.
 
-> [!figure]
-> Figure 7.1 placeholder: Legendary Tones content page annotated with font weights.
+![Figure](/.attachments/)
+
+_**Figure 7.1.** Legendary Tones content page annotated with font weights._
 >
 > The page uses light, regular, and bold variants in different areas of the layout.
 
@@ -118,8 +119,9 @@ Then use it as the first font in the page stack:
 font-family: "Open Sans Regular", Helvetica, Arial, sans-serif;
 ```
 
-> [!figure]
-> Figure 7.2 placeholder: browser processing an `@font-face` cascade.
+![Figure](/.attachments/)
+
+_**Figure 7.2.** browser processing an `@font-face` cascade._
 >
 > The browser tries local matches first, then walks through the remote sources until it finds a supported format.
 
@@ -169,8 +171,9 @@ Listing 7.3 enables compression for TTF and EOT in Apache:
 </IfModule>
 ```
 
-> [!figure]
-> Figure 7.3 placeholder: Open Sans Regular before and after compression.
+![Figure](/.attachments/)
+
+_**Figure 7.3.** Open Sans Regular before and after compression._
 >
 > Server compression reduces the uncompressed font formats by roughly 45%, with the measured Open Sans Regular file dropping from about 212.26 KB to 113.76 KB.
 
@@ -182,8 +185,9 @@ Even after choosing only three variants, the fonts still add meaningful weight. 
 
 Subsetting reduces a font to only the characters a page needs. Google Fonts exposes this idea by allowing language-specific subsets.
 
-> [!figure]
-> Figure 7.4 placeholder: Google Fonts subsetting by language.
+![Figure](/.attachments/)
+
+_**Figure 7.4.** Google Fonts subsetting by language._
 >
 > Font services can offer predefined language subsets so users download fewer glyphs.
 
@@ -191,8 +195,9 @@ Subsetting reduces a font to only the characters a page needs. Google Fonts expo
 
 Unicode gives every character a code point. For example, Basic Latin runs from `U+0000` to `U+007F`, and lowercase `p` is `U+0070`.
 
-> [!figure]
-> Figure 7.5 placeholder: Unicode table.
+![Figure](/.attachments/)
+
+_**Figure 7.5.** Unicode table._
 >
 > The Basic Latin table maps common English characters, punctuation, and digits to Unicode code points.
 
@@ -228,8 +233,9 @@ pyftsubset OpenSans-Regular.ttf --unicodes=U+0000-007F \
     --output-file=OpenSans-Regular-BasicLatin.ttf --name-IDs='*'
 ```
 
-> [!figure]
-> Figure 7.6 placeholder: `pyftsubset` command anatomy.
+![Figure](/.attachments/)
+
+_**Figure 7.6.** `pyftsubset` command anatomy._
 >
 > The command names the input font, the Unicode range, the output filename, and `--name-IDs='*'` to preserve name table entries for converter compatibility.
 
@@ -248,8 +254,9 @@ Repeat the same process for `OpenSans-Bold.ttf` and `OpenSans-Light.ttf`, then u
 > [!note]
 > Subset according to real content. A site that uses words like `cafe` with an accented `e` needs characters outside Basic Latin.
 
-> [!figure]
-> Figure 7.7 placeholder: load times before and after font subsetting.
+![Figure](/.attachments/)
+
+_**Figure 7.7.** load times before and after font subsetting._
 >
 > Subsetting improves measured page-load time by well over 200% across TTF with gzip, WOFF, and WOFF2 trials.
 
@@ -312,8 +319,9 @@ unicode-range: U+0000-007F, U+0100, U+02??;
 
 Basic Latin still loads on the Russian page because punctuation and numbers are shared by many languages.
 
-> [!figure]
-> Figure 7.8 placeholder: Basic Latin subsets loading on the Russian page.
+![Figure](/.attachments/)
+
+_**Figure 7.8.** Basic Latin subsets loading on the Russian page._
 >
 > The Russian version still needs Basic Latin characters for shared symbols, so those subsets are correctly downloaded.
 
@@ -336,8 +344,9 @@ Listing 7.5 adds an Open Sans Regular Cyrillic subset:
 
 Add equivalent declarations for the Cyrillic subsets of Open Sans Light and Open Sans Bold.
 
-> [!figure]
-> Figure 7.9 placeholder: Russian and English font downloads.
+![Figure](/.attachments/)
+
+_**Figure 7.9.** Russian and English font downloads._
 >
 > The Russian page downloads both Basic Latin and Cyrillic subsets. The English page skips the Cyrillic subsets because its content does not need them.
 
@@ -347,8 +356,9 @@ This technique is especially useful when languages use substantially different c
 
 Some browsers ignore `unicode-range` and download every font subset in the stylesheet.
 
-> [!figure]
-> Figure 7.10 placeholder: Safari loading Cyrillic subsets on the English page.
+![Figure](/.attachments/)
+
+_**Figure 7.10.** Safari loading Cyrillic subsets on the English page._
 >
 > Without `unicode-range` support, the browser downloads all font subsets declared in the CSS.
 
@@ -386,8 +396,9 @@ Listing 7.6 defers language-specific font subsets with JavaScript:
 
 Because this script runs early in the document, it adds the needed stylesheet with minimal delay. The `<noscript>` fallback ensures users without JavaScript still receive the needed font subset, though it cannot discriminate as precisely.
 
-> [!figure]
-> Figure 7.11 placeholder: Safari network output with the fallback script.
+![Figure](/.attachments/)
+
+_**Figure 7.11.** Safari network output with the fallback script._
 >
 > With the fallback script enabled, the English page downloads only the base fonts, while the Russian page downloads `ru.css` and the Cyrillic subsets.
 
@@ -401,15 +412,17 @@ Fonts affect not only page weight, but also when text becomes readable. Browsers
 
 Flash of Invisible Text, or FOIT, happens when text is invisible until a web font has loaded. It becomes more visible on slow or high-latency connections.
 
-> [!figure]
-> Figure 7.12 placeholder: fonts still loading and fonts loaded.
+![Figure](/.attachments/)
+
+_**Figure 7.12.** fonts still loading and fonts loaded._
 >
 > Text is initially invisible while fonts load, then appears with the embedded font once loading completes.
 
 Browsers hide text to avoid Flash of Unstyled Text, or FOUT. With FOUT, fallback text appears first and is restyled when the custom font finishes loading.
 
-> [!figure]
-> Figure 7.13 placeholder: unstyled text and styled text.
+![Figure](/.attachments/)
+
+_**Figure 7.13.** unstyled text and styled text._
 >
 > When font downloads take too long, fallback text appears first, then swaps to the custom font.
 
@@ -433,8 +446,9 @@ git checkout -f font-display-complete
 
 Use Chrome Developer Tools with the `Regular 3G` throttling profile to make FOIT visible. The Network panel can capture page-load screenshots.
 
-> [!figure]
-> Figure 7.14 placeholder: Capture Screenshots toggle in Chrome Developer Tools.
+![Figure](/.attachments/)
+
+_**Figure 7.14.** Capture Screenshots toggle in Chrome Developer Tools._
 >
 > Captured screenshots help pinpoint when text becomes visible during page load.
 

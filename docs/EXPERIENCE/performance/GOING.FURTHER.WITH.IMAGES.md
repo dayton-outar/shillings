@@ -16,8 +16,9 @@ Image sprites combine multiple images into one image file. They are usually used
 > [!note]
 > Image sprites reduce HTTP requests and are useful on `HTTP/1`, but they are usually an `HTTP/2` antipattern. Chapter 11 covers the protocol tradeoffs.
 
-> [!figure]
-> Figure 6.1 placeholder: social media image sprite from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 6.1.** social media image sprite from the source PDF._
 >
 > An image sprite made from several social media icons.
 
@@ -73,15 +74,17 @@ svg-sprite --css --css-render-less --css-dest=less \
            --css-layout=diagonal img/icon-images/*.svg
 ```
 
-> [!figure]
-> Figure 6.2 placeholder: `svg-sprite` command anatomy diagram from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 6.2.** `svg-sprite` command anatomy diagram from the source PDF._
 >
 > The command runs in CSS mode, generates LESS mixins, sets the LESS output directory, sets the sprite path, chooses diagonal layout, and reads SVGs from `img/icon-images`.
 
 The generated sprite is written to `img/icons.svg`, and the generated LESS file is written to `less/sprite.less`.
 
-> [!figure]
-> Figure 6.3 placeholder: generated SVG sprite from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 6.3.** generated SVG sprite from the source PDF._
 >
 > The generated image sprite annotated with the source icon filenames.
 
@@ -127,8 +130,9 @@ Repeat for each icon. When complete, the page uses one sprite request instead of
 
 Sprites are best for global visual elements. Do not sprite content-specific images that appear only on a single page or in a narrow context, because that forces users to download imagery they may never need.
 
-> [!figure]
-> Figure 6.4 placeholder: sprite candidate annotation from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 6.4.** sprite candidate annotation from the source PDF._
 >
 > Iconography is a good sprite candidate; recipe images and ads are not.
 
@@ -146,8 +150,9 @@ git checkout -f png-fallback
 
 Go to `http://grumpicon.com` and upload `img/icons.svg`. Grumpicon downloads a ZIP containing a `png/icons.png` file. Copy `icons.png` into the recipe site's `img` folder.
 
-> [!figure]
-> Figure 6.5 placeholder: Grumpicon upload screenshot from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 6.5.** Grumpicon upload screenshot from the source PDF._
 >
 > SVG files can be converted to PNG by uploading or dragging them onto Grumpicon.
 
@@ -183,8 +188,9 @@ Open:
 http://localhost:8080
 ```
 
-> [!figure]
-> Figure 6.6 placeholder: recipe website screenshot from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 6.6.** recipe website screenshot from the source PDF._
 >
 > The client recipe website in the tablet breakpoint.
 
@@ -234,15 +240,17 @@ Run it:
 node reduce.js
 ```
 
-> [!figure]
-> Figure 6.7 placeholder: JPEG optimization comparison from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 6.7.** JPEG optimization comparison from the source PDF._
 >
 > `chicken-tacos-2x.jpg` drops from 181.9 KB to 79.41 KB with virtually imperceptible visual differences.
 
 Copy optimized files from `optimg` into `img`, or update image references to point at `optimg`. The chapter reports a 59% image-size reduction and about a 50% reduction in page-load time.
 
-> [!figure]
-> Figure 6.8 placeholder: recipe website JPEG optimization load-time chart from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 6.8.** recipe website JPEG optimization load-time chart from the source PDF._
 >
 > Load times improve for both high-DPI and standard-DPI screens after image optimization.
 
@@ -283,8 +291,9 @@ node reduce.js
 
 The optimized PNGs appear in `optimg`.
 
-> [!figure]
-> Figure 6.9 placeholder: PNG optimization file-size chart from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 6.9.** PNG optimization file-size chart from the source PDF._
 >
 > `logo.png` and `logo-2x.png` shrink by roughly 33% to 37% after optimization.
 
@@ -318,8 +327,9 @@ Example output:
 39.998 KiB - 28.4% = 28.656 KiB
 ```
 
-> [!figure]
-> Figure 6.10 placeholder: default `svgo` optimization comparison from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 6.10.** default `svgo` optimization comparison from the source PDF._
 >
 > The Weekly Timber logo before and after default `svgo` optimization.
 
@@ -341,15 +351,17 @@ Example output:
 39.998 KiB - 53.9% = 18.42 KiB
 ```
 
-> [!figure]
-> Figure 6.11 placeholder: reduced precision SVG comparison from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 6.11.** reduced precision SVG comparison from the source PDF._
 >
 > The Weekly Timber logo before and after reducing decimal precision with `svgo` to `1`.
 
 Overoptimization can damage visual fidelity, especially with Bézier curves.
 
-> [!figure]
-> Figure 6.12 placeholder: overoptimized SVG comparison from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 6.12.** overoptimized SVG comparison from the source PDF._
 >
 > Stripping all precision creates a smaller file but visibly damages the logo curves.
 
@@ -394,15 +406,17 @@ Run:
 node reduce-webp.js
 ```
 
-> [!figure]
-> Figure 6.13 placeholder: JPEG versus WebP comparison from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 6.13.** JPEG versus WebP comparison from the source PDF._
 >
 > An optimized JPEG at 79.41 KB compared with a WebP image at 67.67 KB.
 
 After converting all JPEG references in `index.html` to WebP, Chrome's `Good 3G` profile shows faster load times.
 
-> [!figure]
-> Figure 6.14 placeholder: JPEG versus WebP load-time chart from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 6.14.** JPEG versus WebP load-time chart from the source PDF._
 >
 > WebP improves load time compared with both unoptimized and optimized JPEGs on standard- and high-DPI screens.
 
@@ -425,8 +439,9 @@ imagemin(["img/*.png"], "optimg", {
 
 Listing 6.5 encodes PNG images into lossless WebP.
 
-> [!figure]
-> Figure 6.15 placeholder: PNG versus lossless WebP file-size chart from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 6.15.** PNG versus lossless WebP file-size chart from the source PDF._
 >
 > Lossless WebP reduces the logo images further compared with optimized PNGs.
 
@@ -436,8 +451,9 @@ The chapter reports additional reductions of about 40% for `logo.png` and 33% fo
 
 WebP support is not universal. Browsers such as Safari or Firefox in the chapter's timeframe fail to display WebP images.
 
-> [!figure]
-> Figure 6.16 placeholder: Safari WebP failure screenshot from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 6.16.** Safari WebP failure screenshot from the source PDF._
 >
 > Safari failing to display a WebP image.
 
@@ -478,8 +494,9 @@ To skip to the completed fallback implementation:
 git checkout -f webp-picture-fallback
 ```
 
-> [!figure]
-> Figure 6.17 placeholder: browser network comparison from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 6.17.** browser network comparison from the source PDF._
 >
 > Chrome loads WebP images, while Firefox falls back to JPEG and PNG images.
 
@@ -506,8 +523,9 @@ git checkout -f lazyload
 
 Lazy load images that are below, or likely below, the fold. The logo and hero image should load normally because they are above the fold. Recipe collection thumbnails are good lazy loading candidates.
 
-> [!figure]
-> Figure 6.18 placeholder: lazy loading image audit from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 6.18.** lazy loading image audit from the source PDF._
 >
 > The logo and hero image should not be lazy loaded; collection thumbnail images should be.
 
@@ -565,8 +583,9 @@ Create `js/lazyloader.js`.
 
 Listing 6.8 begins the lazy loader. The `lazyClass` identifies images to load, `images` stores the collection, `processing` prevents excessive work, `throttle` limits scan frequency, and `buffer` starts loading images just before they enter the viewport.
 
-> [!figure]
-> Figure 6.19 placeholder: lazy loading buffer diagram from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 6.19.** lazy loading buffer diagram from the source PDF._
 >
 > The `buffer` property extends the scan area beyond the viewport so images can begin loading before they are visible.
 
@@ -630,8 +649,9 @@ inViewport: function(img){
 
 Listing 6.11 defines `inViewport`. It calculates the viewport's lower boundary plus the buffer and checks whether the image top is above that line.
 
-> [!figure]
-> Figure 6.20 placeholder: viewport position calculation diagram from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 6.20.** viewport position calculation diagram from the source PDF._
 >
 > The viewport height plus buffer exceeds the image top boundary, so `inViewport` returns `true`.
 
@@ -701,8 +721,9 @@ Load the script after `scripts.min.js`:
 
 Open the Network tab, reload the page, and scroll. New image requests appear as images lazy load.
 
-> [!figure]
-> Figure 6.21 placeholder: lazy-loaded network waterfall from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 6.21.** lazy-loaded network waterfall from the source PDF._
 >
 > The network waterfall shows initial image downloads and later lazy-loaded image downloads.
 
@@ -710,8 +731,9 @@ Open the Network tab, reload the page, and scroll. New image requests appear as 
 
 Without JavaScript, lazy-loaded images remain placeholders.
 
-> [!figure]
-> Figure 6.22 placeholder: lazy loading failure without JavaScript from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 6.22.** lazy loading failure without JavaScript from the source PDF._
 >
 > Images never load because JavaScript never runs.
 
@@ -733,8 +755,9 @@ Add a `<noscript>` fallback immediately after each lazy-loaded `<picture>`:
 
 This displays the real image when JavaScript is disabled, but both placeholder and fallback can appear.
 
-> [!figure]
-> Figure 6.23 placeholder: `<noscript>` double-image screenshot from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 6.23.** `<noscript>` double-image screenshot from the source PDF._
 >
 > Both the lazy placeholder and the `<noscript>` image are visible when JavaScript is disabled.
 

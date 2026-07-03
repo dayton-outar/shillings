@@ -16,8 +16,9 @@ Slow websites also measurably affect engagement. In e-commerce contexts, nearly 
 
 Performance can also affect search visibility. Google stated as early as 2010 that page speed is a ranking factor, even though relevance remains the primary factor. The chapter uses Legendary Tones, a guitar-focused blog with about 20,000 unique monthly visitors, as an example. Its Google Analytics data showed that rankings stayed stable until crawl times moved past about a second, at which point rankings slipped.
 
-> [!figure]
-> Figure 1.1 placeholder: chart from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 1.1.** chart from the source PDF._
 >
 > The average rankings of all pages on the Legendary Tones website according to page download time by Google. Lower ranking values are better.
 
@@ -27,8 +28,9 @@ For content-driven sites, organic search is often the main source of traffic. Re
 
 Web optimization begins with the browser-server conversation. A user asks for a page, waits for the server to respond, and then downloads the page into the browser.
 
-> [!figure]
-> Figure 1.2 placeholder: request/response diagram from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 1.2.** request/response diagram from the source PDF._
 >
 > A user requests `example.com`, waits while the server prepares a response, and then downloads the web page into the browser.
 
@@ -136,8 +138,9 @@ Optimization starts with measurement. For a first pass, look at:
 
 In Chrome's `Network` tab, enable recording and select `Disable cache`. Disabling the cache simulates a first visit, where the user has none of the site's assets cached locally.
 
-> [!figure]
-> Figure 1.7 placeholder: Chrome Network panel screenshot from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 1.7.** Chrome Network panel screenshot from the source PDF._
 >
 > The Record button must be enabled, and `Disable cache` should be selected before generating a waterfall chart.
 
@@ -149,8 +152,9 @@ http://localhost:8080
 
 Chrome generates a waterfall chart showing each asset request, when it begins, and when it finishes.
 
-> [!figure]
-> Figure 1.8 placeholder: waterfall chart screenshot from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 1.8.** waterfall chart screenshot from the source PDF._
 >
 > The chart shows requests for `index.html`, CSS, JavaScript, and images. Bar position shows request timing, and bar length shows how long each asset takes to request and download.
 
@@ -180,8 +184,9 @@ Reducing request count can help too, especially on `HTTP/1`, but this site alrea
 
 Minification removes whitespace and unnecessary characters from text assets without changing how they work. CSS, JavaScript, and HTML often include indentation, line breaks, and comments for developer readability. Browsers do not need that formatting.
 
-> [!figure]
-> Figure 1.9 placeholder: CSS minification example from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 1.9.** CSS minification example from the source PDF._
 >
 > A CSS rule is reduced from 98 bytes to 77 bytes, a 21% reduction.
 
@@ -259,8 +264,9 @@ htmlminify -o index.html index.src.html
 
 The minified HTML drops from 4.57 KB to 3.71 KB, a 19% reduction.
 
-> [!figure]
-> Figure 1.10 placeholder: load-time comparison chart from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 1.10.** load-time comparison chart from the source PDF._
 >
 > Load times on the `Regular 3G` profile before and after minification. Improvements range from 31% to 41%, depending on device.
 
@@ -268,8 +274,9 @@ The minified HTML drops from 4.57 KB to 3.71 KB, a 19% reduction.
 
 Server compression works like file compression for web responses. The browser sends an `Accept-Encoding` header listing the compression formats it supports. If the server supports one of those formats, it responds with compressed content and a `Content-Encoding` header.
 
-> [!figure]
-> Figure 1.11 placeholder: server compression process diagram from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 1.11.** server compression process diagram from the source PDF._
 >
 > A browser requests compressed content with `Accept-Encoding: gzip, deflate`; the server returns compressed content with `Content-Encoding: gzip`.
 
@@ -308,8 +315,9 @@ Restart the server and reload the page. Table 1.2 compares text assets before an
 | `behaviors.min.js` | 1.9 KB | 1.1 KB | 42.1% |
 | Total | 106.5 KB | 36 KB | 66.2% |
 
-> [!figure]
-> Figure 1.12 placeholder: load-time comparison chart from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 1.12.** load-time comparison chart from the source PDF._
 >
 > Load times on the `Regular 3G` profile before and after applying compression. Improvements range from 18% to 32%, depending on device.
 
@@ -331,15 +339,17 @@ Avoid compressing formats that are already compressed during encoding, such as `
 
 Modern image optimization can remove unnecessary image data while preserving visual quality. The goal is to compare the optimized image against the source and keep the result only if quality remains acceptable.
 
-> [!figure]
-> Figure 1.13 placeholder: image optimization comparison from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 1.13.** image optimization comparison from the source PDF._
 >
 > A PNG image is reduced from 30.87 KB to 11.69 KB with no noticeable visual difference.
 
 The chapter uses TinyPNG (`http://tinypng.com`) for simplicity. Despite the name, TinyPNG can optimize both PNG and JPEG files.
 
-> [!figure]
-> Figure 1.14 placeholder: TinyPNG screenshot from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 1.14.** TinyPNG screenshot from the source PDF._
 >
 > TinyPNG compresses the client website images and reports a 61% total size reduction.
 
@@ -358,8 +368,9 @@ Table 1.3 shows the image savings.
 | `states.png` | 4.9 KB | 1.8 KB | -63% |
 | `states@2x.png` | 9.6 KB | 3.5 KB | -63% |
 
-> [!figure]
-> Figure 1.15 placeholder: load-time comparison chart from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 1.15.** load-time comparison chart from the source PDF._
 >
 > Load times on the `Regular 3G` profile before and after image optimization. Improvements range from 23% to 53%, depending on device.
 
@@ -376,8 +387,9 @@ After minification, server compression, and image optimization, the transferred 
 | Desktop (high DPI) | 536 KB | 121 KB | 77.4% |
 | Desktop | 383 KB | 89.5 KB | 76.6% |
 
-> [!figure]
-> Figure 1.16 placeholder: load-time comparison chart from the source PDF.
+![Figure](/.attachments/)
+
+_**Figure 1.16.** load-time comparison chart from the source PDF._
 >
 > Load times on the `Regular 3G` profile before and after all optimizations. Load times improve by roughly 70% for all tested visitors and device types.
 

@@ -76,7 +76,8 @@ docs/EXPERIENCE/performance/
 - Format placeholders as:
 
 ```markdown
-> [!figure]
+![Figure](/.attachments/)
+
 > Figure X.X placeholder: image/diagram from the source PDF.
 ```
 
@@ -84,7 +85,8 @@ docs/EXPERIENCE/performance/
 - If a figure number is missing, use the nearest visible caption or page reference:
 
 ```markdown
-> [!figure]
+![Figure](/.attachments/)
+
 > Figure placeholder, source page N: image/diagram from the source PDF.
 ```
 

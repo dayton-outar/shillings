@@ -24,22 +24,25 @@ node http.js
 
 Browsers parse HTML from top to bottom. When the parser finds a blocking script, it pauses to download and execute that script before continuing.
 
-> [!figure]
-> Figure 8.1 placeholder: browser discovering script tags in document order.
+![Figure](/.attachments/)
+
+_**Figure 8.1.** browser discovering script tags in document order._
 >
 > A script in the `<head>` is discovered early and blocks rendering sooner. A script near the end of `<body>` is discovered later.
 
 On the example site, placing `jquery.min.js` and `behaviors.js` in the `<head>` produces an average Time to First Paint of roughly 830 ms on Chrome's `Regular 3G` throttling profile.
 
-> [!figure]
-> Figure 8.2 placeholder: Chrome Time to First Paint with scripts in the document `<head>`.
+![Figure](/.attachments/)
+
+_**Figure 8.2.** Chrome Time to First Paint with scripts in the document `<head>`._
 >
 > The first paint event appears around 830 ms in the source test.
 
 Moving the same scripts to the end of `index.html`, just before `</body>`, lowers the measured Time to First Paint to about 500 ms in the source test.
 
-> [!figure]
-> Figure 8.3 placeholder: Chrome Time to First Paint with scripts at the end of the document.
+![Figure](/.attachments/)
+
+_**Figure 8.3.** Chrome Time to First Paint with scripts at the end of the document._
 >
 > Moving scripts lower in the document reduces render blocking in this example.
 
@@ -49,8 +52,9 @@ This is a broadly compatible optimization. Script size, script count, and HTML l
 
 Modern browsers support the `async` attribute on external scripts. An async script downloads without blocking rendering and executes as soon as it finishes downloading.
 
-> [!figure]
-> Figure 8.4 placeholder: script loading with and without `async`.
+![Figure](/.attachments/)
+
+_**Figure 8.4.** script loading with and without `async`._
 >
 > Without `async`, scripts wait for ordered execution. With `async`, a script executes as soon as it finishes downloading.
 
@@ -65,15 +69,17 @@ Add `async` to external scripts:
 
 This can improve Time to First Paint, but it can also break dependent scripts.
 
-> [!figure]
-> Figure 8.5 placeholder: console error caused by async script ordering.
+![Figure](/.attachments/)
+
+_**Figure 8.5.** console error caused by async script ordering._
 >
 > `behaviors.js` fails when it executes before its dependency, `jquery.min.js`, is available.
 
 When scripts depend on one another, `async` can create a race condition. In this example, `behaviors.js` is smaller than `jquery.min.js`, so it finishes first and runs before jQuery exists.
 
-> [!figure]
-> Figure 8.6 placeholder: race condition between `jquery.min.js` and `behaviors.js`.
+![Figure](/.attachments/)
+
+_**Figure 8.6.** race condition between `jquery.min.js` and `behaviors.js`._
 >
 > The dependent script downloads and executes first, then fails because its dependency has not run.
 
@@ -95,8 +101,9 @@ Then replace both script tags with one async bundle:
 <script src="js/scripts.js" async></script>
 ```
 
-> [!figure]
-> Figure 8.7 placeholder: Chrome Time to First Paint with bundled scripts loaded using `async`.
+![Figure](/.attachments/)
+
+_**Figure 8.7.** Chrome Time to First Paint with bundled scripts loaded using `async`._
 >
 > The source test reports an average Time to First Paint of roughly 300 ms.
 
@@ -163,8 +170,9 @@ The chapter compares three jQuery-compatible libraries:
 
 The main advantage is payload reduction. All source file-size comparisons assume minification and server compression.
 
-> [!figure]
-> Figure 8.8 placeholder: file size comparison of jQuery, Zepto, Shoestring, and Sprint.
+![Figure](/.attachments/)
+
+_**Figure 8.8.** file size comparison of jQuery, Zepto, Shoestring, and Sprint._
 >
 > jQuery is not enormous, but each alternative is significantly smaller.
 
@@ -186,18 +194,21 @@ https://github.com/webopt/ch8-benchmark
 
 The benchmark samples element selection, class toggling, and attribute toggling.
 
-> [!figure]
-> Figure 8.9 placeholder: performance of selecting an element by class.
+![Figure](/.attachments/)
+
+_**Figure 8.9.** performance of selecting an element by class._
 >
 > Sprint is fastest in the class-selection benchmark, while jQuery outperforms Zepto and Shoestring.
 
-> [!figure]
-> Figure 8.10 placeholder: performance of toggling a class on an element.
+![Figure](/.attachments/)
+
+_**Figure 8.10.** performance of toggling a class on an element._
 >
 > Sprint remains fastest. Shoestring beats jQuery, and jQuery beats Zepto.
 
-> [!figure]
-> Figure 8.11 placeholder: performance of toggling an attribute on an element.
+![Figure](/.attachments/)
+
+_**Figure 8.11.** performance of toggling an attribute on an element._
 >
 > Sprint leads again, followed by Shoestring, jQuery, and Zepto.
 
@@ -542,8 +553,9 @@ Listing 8.19 conditionally loads the Fetch API polyfill:
 
 Because the call to `fetch` happens only when the user opens and submits the scheduling modal, the polyfill has time to load before it is needed.
 
-> [!figure]
-> Figure 8.12 placeholder: Fetch API polyfill load timing.
+![Figure](/.attachments/)
+
+_**Figure 8.12.** Fetch API polyfill load timing._
 >
 > The page begins loading, `behaviors.js` loads, the Fetch polyfill loads if needed, and only later does the user trigger the scheduling modal.
 
@@ -597,8 +609,9 @@ Demo:
 http://jlwagner.net/webopt/ch08-animation
 ```
 
-> [!figure]
-> Figure 8.13 placeholder: normalized performance of animation techniques in Chrome Timeline.
+![Figure](/.attachments/)
+
+_**Figure 8.13.** normalized performance of animation techniques in Chrome Timeline._
 >
 > `requestAnimationFrame` uses less rendering and painting time than the timer-based animation and CSS transition in the source test.
 
@@ -644,8 +657,9 @@ The source example invokes it like this:
 animate(".modal", 500, "top", -150, 10, "%");
 ```
 
-> [!figure]
-> Figure 8.14 placeholder: labeled `animate` function arguments.
+![Figure](/.attachments/)
+
+_**Figure 8.14.** labeled `animate` function arguments._
 >
 > The arguments identify the DOM selector, duration, CSS property, starting value, ending value, and unit.
 
