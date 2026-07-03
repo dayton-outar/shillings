@@ -1,15 +1,5 @@
 # Using Assessment Tools
 
-This chapter covers:
-
-- Using Google PageSpeed Insights
-- Using network request inspectors to view asset timing information
-- Using rendering profilers to diagnose poor performance
-- Benchmarking JavaScript code
-- Emulating devices and internet connections
-
-After learning the basics of web performance and optimizing a small client site, the next step is learning how to find performance problems systematically. This chapter starts with Google PageSpeed Insights, then moves into the browser tools available in Chrome and other desktop browsers.
-
 ## Evaluating With Google PageSpeed Insights
 
 Google cares about web performance. Since 2010, it has treated performance as one factor in organic search ranking. If a content-driven site depends heavily on search traffic, performance deserves attention. Google PageSpeed Insights provides a starting point for that work.
@@ -73,11 +63,6 @@ If Google Analytics is already installed, log in and follow the reports. If not,
 
 In Google Analytics, open the `Behavior` section in the left menu and choose `Speed Suggestions`.
 
-> [!figure]
-> Figure 2.4 placeholder: Google Analytics navigation screenshot from the source PDF.
->
-> PageSpeed Insights reporting is available in Google Analytics under `Behavior > Speed Suggestions`.
-
 The dashboard includes a line graph of average page load times for the selected reporting period and a table with these columns:
 
 - `Page`: the page URL
@@ -135,22 +120,12 @@ Before a request is made, Chrome may show steps such as queueing, DNS lookup, co
 
 Safari requires a little setup if the `Develop` menu is not visible.
 
-> [!figure]
-> Figure 2.8 placeholder: Safari menu screenshot from the source PDF.
->
-> Safari Developer Tools are available only when the `Develop` menu is visible.
-
 To enable Safari Developer Tools:
 
 1. Open `Safari > Preferences`.
 2. Go to the `Advanced` tab.
 3. Select `Show Develop menu in menu bar`.
 4. Open Developer Tools with `Cmd-Alt-I`.
-
-> [!figure]
-> Figure 2.9 placeholder: Safari Preferences screenshot from the source PDF.
->
-> The `Advanced` preference pane contains the option to show the `Develop` menu.
 
 In Safari, open the `Network` tab and visit:
 
@@ -160,21 +135,11 @@ http://jlwagner.net/webopt/ch01-exercise-post-optimization
 
 Safari's network view does not show the same waterfall graph as Chrome, but it does show timing columns such as `Latency`, `Start Time`, and `Duration`.
 
-> [!figure]
-> Figure 2.10 placeholder: Safari Network tab screenshot from the source PDF.
->
-> Safari's Network tab shows timing information in columns rather than Chrome's waterfall style.
-
 Safari's `Latency` value is not the same as `TTFB`. `TTFB` begins when the request is made and ends when the response starts arriving. Safari's latency includes earlier work such as DNS lookup and connection setup.
 
 ### Viewing HTTP Request And Response Headers
 
 Browser developer tools can inspect HTTP headers sent with requests and responses. Headers include response codes, content types, host information, cookies, cache directives, compression information, and more.
-
-> [!figure]
-> Figure 2.11 placeholder: HTTP request/response header diagram from the source PDF.
->
-> HTTP headers are sent by the browser in the request and by the server in the response.
 
 A simplified request and response might look like this:
 
@@ -191,24 +156,9 @@ Content-Type: text/html
 
 In Chrome's `Network` tab, click an asset row to open a details pane. The `Headers` tab shows request and response headers.
 
-> [!figure]
-> Figure 2.12 placeholder: Chrome headers screenshot from the source PDF.
->
-> Clicking an asset name in Chrome's Network tab opens request and response header information.
-
 One performance-related header is `Content-Encoding`. It tells you whether the server compressed the resource and which algorithm it used.
 
-> [!figure]
-> Figure 2.13 placeholder: `Content-Encoding` response header screenshot from the source PDF.
->
-> The `Content-Encoding` response header indicates that an asset is compressed, using `gzip` in the example.
-
 Firefox exposes headers through a similar flow. Microsoft Edge also uses the Network tab, but requires clicking a small toggle button to reveal the details pane.
-
-> [!figure]
-> Figure 2.14 placeholder: Microsoft Edge headers toggle screenshot from the source PDF.
->
-> Viewing HTTP headers in Microsoft Edge requires clicking a toggle button at the far-right side of the Network tab.
 
 Safari also uses a small toggle in a similar relative position. The end result is the same: inspect headers when troubleshooting compression, caching, cookies, and other request/response behavior.
 
@@ -258,28 +208,13 @@ Timeline events are grouped by color:
 - Purple: rendering, including CSS application and re-rendering caused by DOM or style changes
 - Green: painting, including compositing and rasterization
 
-> [!figure]
-> Figure 2.17 placeholder: Timeline activity summary screenshot from the source PDF.
->
-> The Timeline summary breaks CPU time into loading, scripting, rendering, painting, and other activity.
-
 Chrome may initially select a time range automatically. You can adjust the selected range with the mouse wheel or by dragging the edges in the activity overview. The flame chart and summary update to match the selected range.
 
 Make sure the page being profiled is visible. Browsers reduce work for hidden tabs, so rendering and painting data can be misleading if the profiled tab is in the background.
 
 The flame chart shows a hierarchical call stack of recorded page activity.
 
-> [!figure]
-> Figure 2.18 placeholder: Timeline flame chart screenshot from the source PDF.
->
-> An isolated call stack where HTML parsing leads to `DOMContentLoaded`, scripting, and rendering events.
-
 Clicking a layer in the flame chart updates the lower summary panel with details for that event.
-
-> [!figure]
-> Figure 2.19 placeholder: Timeline scripting event detail screenshot from the source PDF.
->
-> A selected scripting event shows event type, timing, origin, and an activity breakdown.
 
 ### Identifying Problem Events: Thy Enemy Is Jank
 
@@ -289,7 +224,6 @@ Jank happens when too much CPU work occurs in a single frame. A frame is the bro
 
 The target frame rate for typical displays is 60 frames per second (`FPS`). Since one second has 1000 milliseconds, a 60 FPS target gives about `16.66 ms` per frame. Because the browser has overhead too, Google recommends a tighter `10 ms` budget per frame.
 
-> [!note]
 > Jake Archibald's `Jank Invaders` game can help train your eye to notice jank: `http://jakearchibald.github.io/jank-invaders`.
 
 To reproduce and inspect jank, clone the chapter 2 exercise:
@@ -309,11 +243,6 @@ http://localhost:8080
 
 Record a Timeline session and click the `Schedule Appointment` button to launch the scheduling modal. Stop recording after the modal slides into view.
 
-> [!figure]
-> Figure 2.20 placeholder: Timeline recording screenshot from the source PDF.
->
-> The modal opening creates janky frames, marked in red in the activity overview and flame chart.
-
 Red frames indicate low frame rate. Selecting one shows a warning in the summary area.
 
 > [!figure]
@@ -322,11 +251,6 @@ Red frames indicate low frame rate. Selecting one shows a warning in the summary
 > A janky frame summary shows a warning, low frames per second, and processing time.
 
 The example frame averages only about `3 FPS`. To investigate, open the `Event Log` tab and filter the frame events.
-
-> [!figure]
-> Figure 2.22 placeholder: Timeline event log screenshot from the source PDF.
->
-> The event log can be filtered by text, duration, and event type.
 
 Many `Timer Fired` events suggest activity caused by `setTimeout` or `setInterval`. In this exercise, the likely source is jQuery's `animate` function, which animates the appointment modal.
 
@@ -340,7 +264,6 @@ $(".modal").animate({
 
 This timer-based animation can be replaced with CSS transitions, which are native to the browser and often better for simple linear animations.
 
-> [!note]
 > To skip to the finished CSS-transition version, run `git checkout -f css-transition`. Back up local work first because this overwrites changes.
 
 In `styles.css`, find the desktop modal rule near line 557. Change:
@@ -409,16 +332,6 @@ $(".modal").removeClass("open");
 
 Retest the modal, then record another Timeline session.
 
-> [!figure]
-> Figure 2.23 placeholder: post-fix Timeline screenshot from the source PDF.
->
-> After CSS transitions are implemented, janky frames still exist but are reduced, improving the overall interaction.
-
-> [!figure]
-> Figure 2.24 placeholder: CPU usage comparison from the source PDF.
->
-> CPU usage summary for the jQuery animation compared with the CSS transition.
-
 The CSS transition reduces jitter and saves CPU time. CSS transitions are not always enough for complex animation requirements, but they are a strong fit for simple linear transitions.
 
 ### Marking Points In The Timeline With JavaScript
@@ -439,11 +352,6 @@ console.timeStamp("Modal open.");
 
 While recording, this places a marker on the timeline when the modal opens.
 
-> [!figure]
-> Figure 2.25 placeholder: Timeline marker screenshot from the source PDF.
->
-> A marker is added to the timeline, with the related call stack selected and the timestamp event shown in the event log.
-
 Markers help narrow the search area when inspecting large recordings.
 
 ### Rendering Profilers In Other Browsers
@@ -453,11 +361,6 @@ Other browsers include similar rendering profilers. Usually, reload the page or 
 Firefox's profiler is under `Performance`, not `Timeline`. It shows frame rate, minimum/maximum/average frame rate, a flame chart, and a waterfall view.
 
 Microsoft Edge's profiler is also under `Performance`. It includes a timeline overview, frame-rate graph, CPU utilization frames, event types, waterfall graph, and activity summary.
-
-> [!figure]
-> Figure 2.26 placeholder: Microsoft Edge performance profiler screenshot from the source PDF.
->
-> An annotated overview of Microsoft Edge's performance profiler.
 
 Chrome, Firefox, Edge, and Safari all support `console.timeStamp()` for marking timeline activity.
 
@@ -476,11 +379,6 @@ console.time("jQuery"); jQuery("#schedule"); console.timeEnd("jQuery");
 ```js
 console.time("querySelector"); document.querySelector("#schedule"); console.timeEnd("querySelector");
 ```
-
-> [!figure]
-> Figure 2.27 placeholder: Chrome Console benchmark screenshot from the source PDF.
->
-> Benchmark results compare jQuery DOM selection with native `document.querySelector()`.
 
 In the example, `document.querySelector()` is faster than jQuery's selector engine, which is expected because native methods often outperform user-defined abstractions.
 
@@ -533,17 +431,7 @@ To debug Android with Chrome:
 7. Accept the authorization prompt on the Android device.
 8. Click `Inspect` under the device entry.
 
-> [!figure]
-> Figure 2.29 placeholder: Chrome remote devices screenshot from the source PDF.
->
-> Chrome's device list shows an open web page on a connected Android phone.
-
 The desktop Developer Tools window opens for the page running on the Android device. The device screen is mirrored beside the tools.
-
-> [!figure]
-> Figure 2.30 placeholder: Android remote debugging screenshot from the source PDF.
->
-> Developer Tools profiling rendering activity on an Android phone, with the device screen mirrored on the host machine.
 
 Once connected, the same tools used for desktop profiling can be used against the Android device. Useful tests include load-time measurement on a real mobile connection and Timeline profiling on real mobile hardware.
 
@@ -572,17 +460,7 @@ Chrome is the only browser among the four covered here that includes this specif
 
 Open the throttling menu and choose `Add`.
 
-> [!figure]
-> Figure 2.31 placeholder: Chrome throttling profiles screenshot from the source PDF.
->
-> Chrome's throttling menu includes built-in profiles and an option to add custom profiles.
-
 Chrome opens the `Network Throttling Profiles` settings screen. Click `Add Custom Profile`.
-
-> [!figure]
-> Figure 2.32 placeholder: Chrome custom throttling profile screenshot from the source PDF.
->
-> Adding a new throttling profile requires a profile name, download speed, upload speed, and latency.
 
 The profile fields are:
 
@@ -591,10 +469,5 @@ The profile fields are:
 - `Latency`: the connection latency in milliseconds
 
 After the profile is saved, it appears in the throttling menu.
-
-> [!figure]
-> Figure 2.33 placeholder: Chrome custom profile menu screenshot from the source PDF.
->
-> The new custom network throttling profile is available in the list.
 
 Select the custom profile and watch the `Network` tab while pages load to see how it affects load time and request timing.

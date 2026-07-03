@@ -1,12 +1,5 @@
 # Understanding Web Performance
 
-This chapter covers:
-
-- Why web performance matters
-- How web browsers talk to web servers
-- How poor performance can harm the user experience
-- How to use basic web optimization techniques
-
 Web performance is mostly about how quickly a website loads and becomes useful. Faster sites improve the user experience across connection types, make users more likely to stay, and help a site meet its goals, whether those goals are reading, conversion, revenue, or engagement. Slow sites test patience, and many users leave before the page has a chance to make its case.
 
 For sites tied directly to revenue, performance has a visible business cost. E-commerce sites, ad-supported sites, and content portals all depend on people reaching and using the page. This chapter introduces the core ideas behind web performance, then applies basic optimization techniques to a small client website.
@@ -50,11 +43,6 @@ Host: example.com
 
 The request contains a method, or verb, such as `GET`; a resource, such as `/index.html`; and a protocol version, such as `HTTP/1.1`. If the resource exists, the server may respond with `200 OK` and send the contents of `index.html`.
 
-> [!figure]
-> Figure 1.3 placeholder: HTTP request anatomy diagram from the source PDF.
->
-> The anatomy of an HTTP request to `example.com`.
-
 Every request creates latency: time for the request to reach the server, time for the server to gather and send a response, and time for the browser to download that response. One request is usually trivial. Real pages, however, often require many requests, and latency compounds as request volume grows.
 
 With `HTTP/1`, browsers can run into head-of-line blocking. Browsers limit the number of simultaneous requests to a host, often around six. If some requests finish while one slow request is still running, later requests wait until the first batch clears. That waiting increases page load time.
@@ -64,11 +52,6 @@ With `HTTP/1`, browsers can run into head-of-line blocking. Browsers limit the n
 ### How Web Pages Load
 
 A minimal page like `example.com` might be just one HTML file. Most real websites are not that simple. They include images, CSS, JavaScript, fonts, and other assets.
-
-> [!figure]
-> Figure 1.4 placeholder: web page asset loading diagram from the source PDF.
->
-> Steps to get `index.html` from a web server and then request related assets such as CSS, JavaScript, and images.
 
 After the browser downloads `index.html`, it discovers references such as:
 
@@ -129,11 +112,6 @@ The site should now be available at:
 http://localhost:8080
 ```
 
-> [!figure]
-> Figure 1.5 placeholder: browser screenshot from the source PDF.
->
-> The client website running in a web browser from the local machine.
-
 If another service is already using port `8080`, edit `http.js` and change the port number. Stop the server with `Ctrl-C`.
 
 ### Simulating A Network Connection
@@ -147,14 +125,6 @@ Open Chrome Developer Tools:
 - Menu path: `View > Developer > Developer Tools`
 
 Open the `Network` tab and use the throttling menu near the top of the panel. Select the `Regular 3G` profile to simulate a slower mobile network.
-
-> [!figure]
-> Figure 1.6 placeholder: Chrome Developer Tools screenshot from the source PDF.
->
-> The Network tab and throttling menu in Chrome Developer Tools.
-
-> [!note]
-> After testing, switch throttling back to `No throttling`. While Developer Tools is open, the selected throttling profile affects browsing.
 
 ## Auditing The Client's Website
 
