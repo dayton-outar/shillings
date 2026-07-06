@@ -16,9 +16,9 @@ It evaluates two broad timing concerns:
 - How quickly above-the-fold content loads
 - How quickly the entire page loads
 
-![Figure](/.attachments/)
+![Figure](/.attachments/2-1-performance-google.pagespeed.png)
 
-_**Figure 2.1.** above-the-fold versus below-the-fold diagram from the source PDF._
+_**Figure 2.1.** Above-the-fold versus below-the-fold diagram from the source PDF._
 >
 > Google PageSpeed Insights checks both the content visible immediately when the page loads and the full page load.
 
@@ -28,7 +28,7 @@ PageSpeed Insights scores each user-agent profile from `0` to `100`. It also col
 - Yellow: issues worth fixing when time allows
 - Red: issues that should be fixed
 
-![Figure](/.attachments/)
+![Figure](/.attachments/2-2-performance-google.pagespeed.insights.png)
 
 _**Figure 2.2.** Google PageSpeed Insights report screenshot from the source PDF._
 >
@@ -43,9 +43,9 @@ http://jlwagner.net/webopt/ch01-exercise-post-optimization
 
 After clicking `Analyze`, the report takes about a minute to generate. It shows separate `Mobile` and `Desktop` tabs and a score for each.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/2-3-performance-page.speed.insights.png)
 
-_**Figure 2.3.** before-and-after PageSpeed Insights screenshot from the source PDF._
+_**Figure 2.3.** Before-and-after PageSpeed Insights screenshot from the source PDF._
 >
 > PageSpeed Insights results for the chapter 1 client website before and after optimization.
 
@@ -61,7 +61,6 @@ Google Analytics can expose PageSpeed Insights data across many pages, which giv
 
 If Google Analytics is already installed, log in and follow the reports. If not, sign in at `www.google.com/analytics`, create the property, and paste the provided JavaScript tracking code into the site HTML. Analytics needs a day or two to gather data.
 
-> [!note]
 > Adding Google Analytics has legal implications because it involves accepting terms and collecting visitor data. If you do not own the site, get the site owner's consent.
 
 In Google Analytics, open the `Behavior` section in the left menu and choose `Speed Suggestions`.
@@ -74,7 +73,7 @@ The dashboard includes a line graph of average page load times for the selected 
 - `PageSpeed Suggestions`: the number of PageSpeed Insights recommendations for that URL
 - `PageSpeed Score`: the score from PageSpeed Insights, from `1` to `100`
 
-![Figure](/.attachments/)
+![Figure](/.attachments/2-5-performance-statistics.google.analytics.png)
 
 _**Figure 2.5.** Google Analytics performance table screenshot from the source PDF._
 >
@@ -98,9 +97,9 @@ The chapter 1 audit used Chrome's network tools to generate a waterfall chart an
 
 Every browser-server exchange contains latency. One important metric is Time to First Byte, or `TTFB`: the time from the user's request to the arrival of the first byte of the response. `TTFB` differs from total load time, which measures the time for the full asset to download.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/2-6-performance-browser.request.png)
 
-_**Figure 2.6.** browser request process diagram from the source PDF._
+_**Figure 2.6.** Browser request process diagram from the source PDF._
 >
 > A browser request incurs latency while the request travels to the server, the user waits for a response, and the page downloads. Time to First Byte measures the delay before the response begins arriving.
 
@@ -113,7 +112,7 @@ In Chrome:
 3. Click an asset row.
 4. Inspect the timing details.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/2-7-performance-timing.information.png)
 
 _**Figure 2.7.** Chrome request timing screenshot from the source PDF._
 >
@@ -121,7 +120,6 @@ _**Figure 2.7.** Chrome request timing screenshot from the source PDF._
 
 Before a request is made, Chrome may show steps such as queueing, DNS lookup, connection setup, and the SSL handshake.
 
-> [!note]
 > Browsers cache DNS lookups to avoid repeated lookup latency. In Chrome, the DNS cache can be inspected at `chrome://net-internals#dns`.
 
 Safari requires a little setup if the `Develop` menu is not visible.
@@ -176,9 +174,9 @@ Load time is only one part of performance. Pages also need to render smoothly af
 
 When a user visits a page, the browser interprets HTML and CSS and renders pixels to the screen.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/2-15-performance-page.rendering.png)
 
-_**Figure 2.15.** page-rendering process diagram from the source PDF._
+_**Figure 2.15.** Page-rendering process diagram from the source PDF._
 >
 > The page-rendering process: parse HTML into the DOM, parse CSS into the CSSOM, lay out elements, and paint the page.
 
@@ -195,7 +193,7 @@ Most rendering happens during the initial load, but user interaction can trigger
 
 Chrome's Timeline tool records page activity across loading, scripting, rendering, and painting. It can look dense at first, but it is useful for identifying performance bottlenecks.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/2-16-performance-timeline.png)
 
 _**Figure 2.16.** Chrome Timeline interface screenshot from the source PDF._
 >
@@ -253,9 +251,9 @@ Record a Timeline session and click the `Schedule Appointment` button to launch 
 
 Red frames indicate low frame rate. Selecting one shows a warning in the summary area.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/2-21-performance-janky.frame.png)
 
-_**Figure 2.21.** janky frame summary screenshot from the source PDF._
+_**Figure 2.21.** Janky frame summary screenshot from the source PDF._
 >
 > A janky frame summary shows a warning, low frames per second, and processing time.
 
@@ -410,7 +408,7 @@ To try it:
 3. Press `Ctrl-Shift-M`, or `Cmd-Shift-M` on macOS.
 4. Alternatively, click the mobile device icon beside the `Elements` tab.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/2-28-performance-device.simulation.png)
 
 _**Figure 2.28.** Chrome Device Mode screenshot from the source PDF._
 >

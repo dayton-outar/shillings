@@ -1,8 +1,8 @@
 # Web Performance in Action
 
-[Chapter 1: Understanding web performance](UNDERSTANDING.WEB.PERFORMANCE.md)
+[Chapter 1: Understanding Web Performance](UNDERSTANDING.WEB.PERFORMANCE.md)
 
-[Chapter 2: Using assessment tools](USING.ASSESSMENT.TOOLS.md)
+[Chapter 2: Using Assessment Tools](USING.ASSESSMENT.TOOLS.md)
 
 [Chapter 3: Optimizing CSS](OPTIMIZING.CSS.md)
 
