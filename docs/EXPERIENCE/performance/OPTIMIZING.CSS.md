@@ -1,13 +1,5 @@
 # Optimizing CSS
 
-This chapter covers:
-
-- Reducing CSS size with shorthand properties, shallow selectors, and the DRY principle
-- Segmenting CSS by page template
-- Understanding why mobile-first responsive design matters
-- Knowing what makes a page mobile-friendly and why that matters to Google search rankings
-- Improving CSS performance by avoiding bad practices, using faster selectors, using flexbox, and using CSS transitions
-
 After learning how to assess performance with browser developer tools, CSS is a natural first target for optimization. CSS affects both download time and rendering time, so efficient CSS can make a site lighter, faster, and easier for the browser to draw.
 
 ## Don't Talk Much And Stay DRY
@@ -18,9 +10,9 @@ CSS optimization starts with discipline. Write less CSS where you can, avoid nee
 
 Shorthand CSS uses less verbose properties and values. The savings from one rule may be small, but repeated across a large stylesheet, they add up.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/3-1-performance-shorthand.css.png)
 
-_**Figure 3.1.** shorthand CSS comparison from the source PDF._
+_**Figure 3.1.** Shorthand CSS comparison from the source PDF._
 >
 > A set of longhand font properties is replaced with a single shorthand `font` property, shrinking the rule by about 35%.
 
@@ -46,13 +38,7 @@ div.pageWrapper{
 }
 ```
 
-The `margin` shorthand can replace the four directional margin properties:
-
-![Figure](/.attachments/)
-
-_**Figure 3.2.** margin shorthand diagram from the source PDF._
->
-> The `margin` shorthand accepts one to four values for top, right, bottom, and left.
+The `margin` shorthand can replace the four directional margin properties.
 
 Use shorthand values like this:
 
@@ -129,7 +115,7 @@ git checkout -f shorthand
 
 Selector shallowness means using only as much specificity as needed. Deep selectors are longer, harder to maintain, and can cost more during rendering. Shallow selectors are shorter and usually clearer.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/3-3-performance-css.selector.png)
 
 _**Figure 3.3.** selector specificity comparison from the source PDF._
 >
@@ -228,7 +214,7 @@ CSS often repeats identical properties across selectors. Repeated background col
 
 The DRY principle reduces redundancy wherever practical.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/3-4-performance-dry.png)
 
 _**Figure 3.4.** DRY principle example from the source PDF._
 >
@@ -272,7 +258,7 @@ Example output:
   - text-transform: uppercase
 ```
 
-Listing 3.3 shows a portion of `csscss` output.
+Listing 3.3 above shows a portion of `csscss` output.
 
 Combine the repeated selectors:
 
@@ -295,7 +281,7 @@ Combine the repeated selectors:
 }
 ```
 
-Listing 3.4 combines the CSS rule from `csscss` output.
+Listing 3.4 above combines the CSS rule from `csscss` output.
 
 Then remove the duplicated declarations from the original selectors, rerun `csscss`, and repeat.
 
@@ -310,7 +296,7 @@ Some output is less straightforward, especially across responsive breakpoints:
   - top: auto
 ```
 
-Listing 3.5 shows problematic `csscss` output. Responsive CSS can contain different repeated values in different breakpoints, so combine only what is common across all relevant contexts.
+Listing 3.5 above shows problematic `csscss` output. Responsive CSS can contain different repeated values in different breakpoints, so combine only what is common across all relevant contexts.
 
 After DRY cleanup, the stylesheet can shrink another 10%, to 7.42 KB. Across the chapter so far, the client CSS has dropped from 18.5 KB to 7.42 KB, roughly a 60% reduction.
 
@@ -318,7 +304,7 @@ After DRY cleanup, the stylesheet can shrink another 10%, to 7.42 KB. Across the
 
 CSS segmentation splits styles by page template. A single combined CSS file can help with caching if users navigate broadly, but it can also make first-time visitors download CSS for pages they never view.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/3-5-performance-navigation.flow.png)
 
 _**Figure 3.5.** segmented CSS navigation flow from the source PDF._
 >
@@ -326,29 +312,11 @@ _**Figure 3.5.** segmented CSS navigation flow from the source PDF._
 
 A data-driven segmentation strategy uses analytics. In Google Analytics, open the `Behavior` section and choose `Behavior Flow`.
 
-![Figure](/.attachments/)
-
-_**Figure 3.6.** Google Analytics Behavior menu screenshot from the source PDF._
->
-> The `Behavior Flow` option appears in the `Behavior` submenu.
-
-![Figure](/.attachments/)
-
-_**Figure 3.7.** Google Analytics visitor flow chart from the source PDF._
->
-> The visitor flow chart shows entry pages and subsequent navigation paths.
-
 If most users land on the main page and few visit subpages, move subpage-specific CSS into separate files loaded only on those pages. If most templates are similar and styles are generalized, one stylesheet may still be best.
 
 ### Customize Framework Downloads
 
 CSS frameworks can save development time, but unused framework code costs users bandwidth and parsing work. Frameworks such as Bootstrap and Foundation allow customized downloads.
-
-![Figure](/.attachments/)
-
-_**Figure 3.8.** Bootstrap customization screen from the source PDF._
->
-> Bootstrap lets developers choose which framework features to include in a custom download.
 
 Remove framework pieces you do not need, such as print CSS or table styles. After a project is built, prune anything still unused.
 
@@ -360,7 +328,7 @@ Responsive web design uses one set of markup and changes presentation with CSS m
 
 Mobile-first and desktop-first are the two main responsive design approaches.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/3-9-performance-mobile.first.png)
 
 _**Figure 3.9.** responsive design flow diagram from the source PDF._
 >
@@ -370,7 +338,7 @@ Both approaches start with foundational CSS outside media queries. In mobile-fir
 
 Mobile-first is more user-focused because it starts from the least complex presentation and adds complexity as devices get more capable.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/3-10-performance-internet.traffic.png)
 
 _**Figure 3.10.** mobile versus desktop traffic chart from the source PDF._
 >
@@ -380,7 +348,7 @@ Mobile devices often have less CPU and memory than desktops. They should not hav
 
 Most projects target three broad device classes: phones, tablets, and desktops. In mobile-first CSS, phone styles are the foundation, then tablet and desktop styles are added through breakpoints.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/3-11-performance-layout.complexity.png)
 
 _**Figure 3.11.** mobile-first breakpoint diagram from the source PDF._
 >
@@ -446,23 +414,11 @@ Google looks for two major signs of a good mobile experience:
 
 The viewport meta tag lets browsers size content to the device screen.
 
-![Figure](/.attachments/)
-
-_**Figure 3.12.** viewport comparison screenshot from the source PDF._
->
-> A responsive site without the `<meta>` viewport tag forces users to zoom out; the same site with the tag displays correctly.
-
 The page should also adapt to the viewport without horizontal scrolling. Google also checks other details, including legible type sizes and tap target spacing.
 
 ### Verifying A Site's Mobile-Friendliness
 
 Google's Mobile-Friendly Test is available at `https://www.google.com/webmasters/tools/mobile-friendly/`.
-
-![Figure](/.attachments/)
-
-_**Figure 3.13.** Google Mobile-Friendly Test result screenshot from the source PDF._
->
-> The Mobile-Friendly Test reports whether a page passes and lists issues when it fails.
 
 If a site fails, start by adding the viewport meta tag and making the site responsive across device sizes.
 
@@ -478,9 +434,9 @@ Avoid `@import` in regular CSS. Unlike `<link>`, an `@import` inside a styleshee
 
 Parallel requests happen at roughly the same time. Serialized requests happen one after another. `@import` serializes stylesheet requests when used inside an external CSS file.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/3-14-performance-two.style.sheets.png)
 
-_**Figure 3.14.** serialized stylesheet request diagram from the source PDF._
+_**Figure 3.14.** Serialized stylesheet request diagram from the source PDF._
 >
 > `styles.css` downloads first; only after it is parsed does the browser discover `@import url("fonts.css")` and request `fonts.css`.
 
@@ -496,9 +452,9 @@ Bundle same-type files where possible. When bundling is impractical, use HTML `<
 
 The `<link>` tag is the best native method for loading CSS. The browser discovers stylesheet links while scanning HTML and can request them in parallel.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/3-15-performance-two.requests.style.sheets.png)
 
-_**Figure 3.15.** parallel stylesheet request diagram from the source PDF._
+_**Figure 3.15.** Parallel stylesheet request diagram from the source PDF._
 >
 > Two stylesheet requests made with `<link>` tags can begin at the same time after the HTML is scanned.
 
@@ -512,7 +468,7 @@ Load CSS as early as possible by placing stylesheet `<link>` tags in the documen
 
 A Flash of Unstyled Content happens when users briefly see a page before CSS applies.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/3-16-performance-rendering.timeline.png)
 
 _**Figure 3.16.** Flash of Unstyled Content rendering timeline from the source PDF._
 >
@@ -524,9 +480,9 @@ Browsers read HTML from top to bottom. If CSS is linked late, the browser can re
 
 CSS in `<head>` also speeds initial rendering. If CSS loads late, the browser may have to re-render and repaint the whole DOM.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/3-17-performance-rendering.performance.png)
 
-_**Figure 3.17.** rendering performance chart from the source PDF._
+_**Figure 3.17.** Rendering performance chart from the source PDF._
 >
 > Rendering and painting times are lower when CSS is included in `<head>` rather than at the end of the HTML document.
 
@@ -540,9 +496,9 @@ Simpler selectors save bytes and can help rendering. The chapter uses a benchmar
 
 The selector benchmark uses several HTML files with identical structure and appearance but different selector types.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/3-18-performance-structure.html.png)
 
-_**Figure 3.18.** selector benchmark document structure from the source PDF._
+_**Figure 3.18.** Selector benchmark document structure from the source PDF._
 >
 > The test document contains a `div.contentContainer`, repeated sections, lists, and about 21,000 total elements.
 
@@ -571,7 +527,7 @@ Table 3.1 lists selector types used in the test.
 
 Painting time was roughly 200 ms on average across tests, only about 1%-2% of total time. Rendering dominated.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/3-19-performance-css.selectors.png)
 
 _**Figure 3.19.** CSS selector performance chart from the source PDF._
 >
@@ -645,9 +601,9 @@ For a flexbox primer, see `https://css-tricks.com/snippets/css/a-guide-to-flexbo
 
 The benchmark combines rendering and painting times. Painting accounts for only about 60 ms, so rendering is the meaningful difference.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/3-20-performance-benchmarks.box.flexbox.png)
 
-_**Figure 3.20.** box model versus flexbox benchmark chart from the source PDF._
+_**Figure 3.20.** Box model versus flexbox benchmark chart from the source PDF._
 >
 > Flexbox performs better than box-model layout in the Chrome benchmark. Lower is better.
 
@@ -667,7 +623,7 @@ CSS transitions are useful for simple, linear animations. Their advantages inclu
 
 Open `http://jlwagner.net/webopt/ch03-transition` and hover over the blue box.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/3-21-performance-before.after.transition.png)
 
 _**Figure 3.21.** CSS transition before-and-after image from the source PDF._
 >
