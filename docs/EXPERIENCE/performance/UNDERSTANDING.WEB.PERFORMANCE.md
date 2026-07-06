@@ -18,7 +18,7 @@ Performance can also affect search visibility. Google stated as early as 2010 th
 
 ![Figure](/.attachments/1-1-performance-average.rankings.png)
 
-_**Figure 1.1.** chart from the source PDF._
+_**Figure 1.1.** Chart from the source PDF._
 >
 > The average rankings of all pages on the Legendary Tones website according to page download time by Google. Lower ranking values are better.
 
@@ -30,7 +30,7 @@ Web optimization begins with the browser-server conversation. A user asks for a 
 
 ![Figure](/.attachments/1-2-performance-user.request.png)
 
-_**Figure 1.2.** request/response diagram from the source PDF._
+_**Figure 1.2.** Request/response diagram from the source PDF._
 >
 > A user requests `example.com`, waits while the server prepares a response, and then downloads the web page into the browser.
 
@@ -153,7 +153,7 @@ Chrome generates a waterfall chart showing each asset request, when it begins, a
 
 ![Figure](/.attachments/1-8-performance-waterfall.chart.png)
 
-_**Figure 1.8.** waterfall chart screenshot from the source PDF._
+_**Figure 1.8.** Waterfall chart screenshot from the source PDF._
 >
 > The chart shows requests for `index.html`, CSS, JavaScript, and images. Bar position shows request timing, and bar length shows how long each asset takes to request and download.
 
@@ -265,7 +265,7 @@ The minified HTML drops from 4.57 KB to 3.71 KB, a 19% reduction.
 
 ![Figure](/.attachments/1-10-performance-load.times.png)
 
-_**Figure 1.10.** load-time comparison chart from the source PDF._
+_**Figure 1.10.** Load-time comparison chart from the source PDF._
 >
 > Load times on the `Regular 3G` profile before and after minification. Improvements range from 31% to 41%, depending on device.
 
@@ -275,7 +275,7 @@ Server compression works like file compression for web responses. The browser se
 
 ![Figure](/.attachments/1-11-performance-server.compression.png)
 
-_**Figure 1.11.** server compression process diagram from the source PDF._
+_**Figure 1.11.** Server compression process diagram from the source PDF._
 >
 > A browser requests compressed content with `Accept-Encoding: gzip, deflate`; the server returns compressed content with `Content-Encoding: gzip`.
 
@@ -316,7 +316,7 @@ Restart the server and reload the page. Table 1.2 compares text assets before an
 
 ![Figure](/.attachments/1-12-performance-load.times.after.compression.png)
 
-_**Figure 1.12.** load-time comparison chart from the source PDF._
+_**Figure 1.12.** Load-time comparison chart from the source PDF._
 >
 > Load times on the `Regular 3G` profile before and after applying compression. Improvements range from 18% to 32%, depending on device.
 
@@ -340,7 +340,7 @@ Modern image optimization can remove unnecessary image data while preserving vis
 
 ![Figure](/.attachments/1-13-performance-image.optimization.png)
 
-_**Figure 1.13.** image optimization comparison from the source PDF._
+_**Figure 1.13.** Image optimization comparison from the source PDF._
 >
 > A PNG image is reduced from 30.87 KB to 11.69 KB with no noticeable visual difference.
 
@@ -369,7 +369,7 @@ Table 1.3 shows the image savings.
 
 ![Figure](/.attachments/1-15-performance-load.times.regular.3g.png)
 
-_**Figure 1.15.** load-time comparison chart from the source PDF._
+_**Figure 1.15.** Load-time comparison chart from the source PDF._
 >
 > Load times on the `Regular 3G` profile before and after image optimization. Improvements range from 23% to 53%, depending on device.
 
@@ -388,7 +388,7 @@ After minification, server compression, and image optimization, the transferred 
 
 ![Figure](/.attachments/1-16-performance-load.times.throttling.png)
 
-_**Figure 1.16.** load-time comparison chart from the source PDF._
+_**Figure 1.16.** Load-time comparison chart from the source PDF._
 >
 > Load times on the `Regular 3G` profile before and after all optimizations. Load times improve by roughly 70% for all tested visitors and device types.
 
