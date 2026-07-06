@@ -1098,7 +1098,7 @@ Hmm. I think shame and pride are basically the same thing.
 > 
 > Most marketers aren’t very focused. They publish a bit here and there. These are just small hills that never rise high enough to be visible.
 > 
-> ![Small hills of scattered, unrelated content](/.attachments/small.hills.and%20mountains.jpg)
+> ![Small hills of scattered, unrelated content](/.attachments/small.hills.and.mountains.jpg)
 > 
 > A content _hub_ is a set of content (usually web pages) organized around a specific topic (usually a central page). It could be a category on a blog or a section of pages on a website. So content hubs are relevant to both web design and ongoing content marketing.
 
