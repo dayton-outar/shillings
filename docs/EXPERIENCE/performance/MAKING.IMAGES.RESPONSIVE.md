@@ -1,12 +1,5 @@
 # Making Images Responsive
 
-This chapter covers:
-
-- Using CSS media queries to deliver appropriate background images for a user's device
-- Delivering responsive images in HTML with `srcset` and the `<picture>` element
-- Using Picturefill to polyfill `srcset` and `<picture>` in older browsers
-- Using SVG images in CSS and HTML
-
 Images are often the largest part of a page's payload. As devices with high-DPI screens become common, sites need higher-resolution imagery for capable displays while still avoiding oversized downloads for less capable devices. Responsive image delivery balances visual quality and performance.
 
 ## Why Think About Image Delivery?
