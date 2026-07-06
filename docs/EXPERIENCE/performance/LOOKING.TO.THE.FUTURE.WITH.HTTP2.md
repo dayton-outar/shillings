@@ -1,14 +1,5 @@
 # Looking To The Future With HTTP/2
 
-This chapter covers:
-
-- Learning the history of HTTP/1 and its problems
-- Exploring the evolution of HTTP/2
-- Understanding request multiplexing and header compression in HTTP/2
-- Exploring how optimization practices differ between HTTP/1 and HTTP/2
-- Speeding crucial asset delivery with Server Push
-- Optimizing for HTTP/1 and HTTP/2 clients on the same server
-
 HTTP/1 served the web for decades, but modern websites place stress on its design. HTTP/2 addresses long-standing protocol limits with request multiplexing, header compression, secure transport expectations, and Server Push.
 
 ## Understanding Why We Need HTTP/2
@@ -19,21 +10,15 @@ HTTP/2 exists because HTTP/1 is a legacy protocol being asked to deliver complex
 
 HTTP began in 1991 as HTTP/0.9, a simple protocol built around `GET` requests for linked documents. HTTP/1.0 and HTTP/1.1 added capabilities such as `POST`, and HTTP/1 became the web's long-running workhorse.
 
-![Figure](/.attachments/)
-
-_**Figure 11.1.** 1996 and 2016 versions of the Los Angeles Times website._
->
-> The web evolved from simple documents to complex pages with many assets.
-
 HTTP/1 has three major problems for modern performance: head-of-line blocking, uncompressed headers, and no required secure transport.
 
 #### Head-Of-Line Blocking
 
 HTTP/1 usually handles only a small number of concurrent requests per domain, commonly six. New requests wait until earlier requests in the batch complete.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/11-2-performance-blocking.problem.png)
 
-_**Figure 11.2.** head-of-line blocking across nine requests._
+_**Figure 11.2.** Head-of-line blocking across nine requests._
 >
 > The first six requests download together, while the remaining requests wait for the slowest request in the first batch.
 
@@ -45,7 +30,7 @@ Persistent connections help by reusing one connection across batches. HTTP pipel
 
 HTTP headers travel with every request and response. A cookie-heavy site can send lots of repeated header data.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/11-3-performance-cookie.adding.up.png)
 
 _**Figure 11.3.** 128-byte session cookie repeated across 60 requests._
 >
@@ -69,9 +54,9 @@ HTTP/2 uses one connection with many bidirectional streams. Its communication mo
 - Messages: request or response units inside streams.
 - Frames: typed pieces inside messages, such as `HEADERS`, `DATA`, and `PUSH_PROMISE`.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/11-4-performance-http2.anatomy.png)
 
-_**Figure 11.4.** anatomy of an HTTP/2 request._
+_**Figure 11.4.** Anatomy of an HTTP/2 request._
 >
 > One connection contains multiple streams. Streams contain messages, and messages are delimited by frames.
 
@@ -81,7 +66,7 @@ Requests are much cheaper in HTTP/2, which changes the value of request-reductio
 
 HTTP/2 uses HPACK to compress and deduplicate headers. Repeated values such as `Cookie` and `User-Agent` can be indexed instead of resent in full.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/11-5-performance-hpack.compression.png)
 
 _**Figure 11.5.** HPACK header compression._
 >
@@ -179,17 +164,11 @@ https://localhost:8443/index.html
 
 The bundled certificate is unsigned, so your browser may show an SSL warning. That is fine for local testing, but production servers need valid signed certificates.
 
-![Figure](/.attachments/)
-
-_**Figure 11.6.** Chrome Network panel showing assets transferred over HTTP/2._
->
-> In Chrome's Network panel, the Protocol column shows HTTP/2 assets as `h2`; HTTP/1 assets show `http/1.1`.
-
 ### Observing The Benefits
 
 HTTP/2 requests begin more in parallel than HTTP/1 requests.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/11-7-performance-http1.vs.http2.png)
 
 _**Figure 11.7.** HTTP/1 versus HTTP/2 asset downloads._
 >
@@ -217,7 +196,7 @@ https://h1.jeremywagner.me
 https://h2.jeremywagner.me
 ```
 
-![Figure](/.attachments/)
+![Figure](/.attachments/11-8-performance-http1.http2.comparison.png)
 
 _**Figure 11.8.** Weekly Timber page load times over HTTP/1 versus HTTP/2._
 >
@@ -225,9 +204,9 @@ _**Figure 11.8.** Weekly Timber page load times over HTTP/1 versus HTTP/2._
 
 To inspect header compression, Chrome's old `chrome://net-internals#timeline` view can compare bytes sent.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/11-9-performance-bytes.comparison.png)
 
-_**Figure 11.9.** bytes sent during HTTP/2 versus HTTP/1 sessions._
+_**Figure 11.9.** Bytes sent during HTTP/2 versus HTTP/1 sessions._
 >
 > HTTP/2 sends fewer request bytes because HPACK compresses and deduplicates headers.
 
@@ -244,9 +223,9 @@ HTTP/2 requests are cheaper, and combining files can reduce cache effectiveness.
 
 Concatenation combines files to reduce HTTP requests. In HTTP/1, this often improves first-load performance. In HTTP/2, it can hurt cache efficiency when a small part changes.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/11-10-performance-concatenation.caching.efficiency.png)
 
-_**Figure 11.10.** one icon changes inside an image sprite._
+_**Figure 11.10.** One icon changes inside an image sprite._
 >
 > If one icon changes, the whole sprite must be invalidated and downloaded again.
 
@@ -266,12 +245,6 @@ Image sprites reduce HTTP/1 request counts but create the same cache-invalidatio
 
 Asset inlining embeds CSS, JavaScript, SVG, or binary data into HTML or CSS. Data URIs encode binary assets as base64 strings.
 
-![Figure](/.attachments/)
-
-_**Figure 11.11.** anatomy of a data URI._
->
-> A data URI includes the `data:` scheme, content type, encoding name, and encoded data.
-
 Example shape:
 
 ```html
@@ -290,9 +263,9 @@ Server Push lets an HTTP/2 server send assets the browser has not explicitly req
 
 When a user requests `index.html`, the server can respond with the HTML plus related assets such as `styles.min.css`.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/11-12-performance-server.push.png)
 
-_**Figure 11.12.** anatomy of a Server Push event._
+_**Figure 11.12.** Anatomy of a Server Push event._
 >
 > The server responds to an HTML request with a `PUSH_PROMISE` frame containing the pushed CSS response.
 
@@ -358,12 +331,6 @@ if((filename.indexOf(pubDir) === 0) &&
 }
 ```
 
-![Figure](/.attachments/)
-
-_**Figure 11.13.** Chrome Network panel identifying a pushed asset._
->
-> Chrome marks pushed assets with `Push` in the Initiator column.
-
 Command-line inspection:
 
 ```text
@@ -383,12 +350,6 @@ https://serverpush.jeremywagner.me
 ```text
 https://h2.jeremywagner.me
 ```
-
-![Figure](/.attachments/)
-
-_**Figure 11.14.** Time to First Paint with and without Server Push._
->
-> Pushing the CSS improves Time to First Paint by about 19% in the source test.
 
 Guidelines:
 
@@ -410,7 +371,7 @@ Some users may still use browsers that cannot speak HTTP/2. This section demonst
 
 HTTP/2 servers can downgrade to HTTP/1 when the browser does not support HTTP/2.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/11-15-performance-http2.negotiation.png)
 
 _**Figure 11.15.** HTTP/2 negotiation and downgrade flow._
 >
@@ -421,26 +382,6 @@ This makes it possible to serve granular assets to HTTP/2 clients and concatenat
 ### Segmenting Your Users
 
 Use browser support data plus analytics before deciding whether two optimization paths are worth the effort.
-
-![Figure](/.attachments/)
-
-_**Figure 11.16.** Can I Use showing HTTP/2 support by browser._
->
-> Can I Use shows full, partial, and missing HTTP/2 support across browser versions.
-
-Can I Use can import Google Analytics data.
-
-![Figure](/.attachments/)
-
-_**Figure 11.17.** Can I Use Google Analytics import controls._
->
-> Site analytics can be imported to see feature support for your actual audience.
-
-![Figure](/.attachments/)
-
-_**Figure 11.18.** Can I Use support formula after analytics import._
->
-> Support, partial support, and total support are calculated against imported site visitor data.
 
 In the source example, roughly 18% of Weekly Timber visitors use browsers that do not support HTTP/2, making dual optimization reasonable.
 
@@ -498,12 +439,6 @@ else{
 }
 ```
 
-![Figure](/.attachments/)
-
-_**Figure 11.19.** `<html>` tag modified with `http1` class._
->
-> When the connection downgrades to HTTP/1, the server adds `class="http1"` to the root element.
-
 The example stylesheet uses the `http1` class to serve an image sprite to HTTP/1 browsers. HTTP/2 browsers keep separate SVG requests.
 
 #### Replacing Multiple Scripts With Concatenated Ones For HTTP/1 Users
@@ -558,12 +493,6 @@ jsdom.env(data.toString(), function(error, window){
     response.end(newDocument);
 });
 ```
-
-![Figure](/.attachments/)
-
-_**Figure 11.20.** scripts delivered in concatenated fashion for HTTP/1 browsers._
->
-> HTTP/1 clients receive the CDN jQuery file plus one concatenated local script.
 
 #### Considerations
 

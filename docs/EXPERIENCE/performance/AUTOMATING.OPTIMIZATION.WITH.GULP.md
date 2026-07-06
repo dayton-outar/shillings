@@ -1,14 +1,5 @@
 # Automating Optimization With gulp
 
-This chapter covers:
-
-- Understanding how gulp works and why you should use it
-- Structuring your project for use with gulp
-- Installing gulp plugins
-- Understanding how gulp tasks work
-- Writing tasks for your project
-- Testing a gulp-based build system on a client's website
-
 Optimization work can be repetitive: minify CSS, uglify JavaScript, optimize images, compile preprocessors, and repeat. gulp is a Node-based build system that automates those tasks so optimization becomes part of the workflow instead of a separate chore.
 
 Project:
@@ -28,17 +19,17 @@ gulp is a Node-based streaming build system. It automates file-processing tasks 
 
 Without automation, compiling LESS might look like this:
 
-![Figure](/.attachments/)
+![Figure](/.attachments/12-1-performance-less.css.png)
 
-_**Figure 12.1.** unautomated LESS workflow._
+_**Figure 12.1.** Unautomated LESS workflow._
 >
 > Make changes to a LESS file, save changes, recompile CSS in the terminal, then reload the page.
 
 That works, but it becomes tedious quickly. With a build system, the workflow becomes:
 
-![Figure](/.attachments/)
+![Figure](/.attachments/12-2-performance-automated.workflow.less.css.png)
 
-_**Figure 12.2.** automated LESS workflow._
+_**Figure 12.2.** Automated LESS workflow._
 >
 > Make changes and save. The build system recompiles CSS and reloads the page automatically.
 
@@ -50,29 +41,17 @@ gulp calls itself a streaming build system. A stream is a point in the build pro
 
 #### How Streams Work
 
-![Figure](/.attachments/)
-
-_**Figure 12.3.** one gulp stream compiling LESS to CSS._
->
-> A LESS file is piped into a stream, transformed into CSS, and written as a CSS file.
-
 Streams can be chained.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/12-4-performance-multiple.streams.png)
 
-_**Figure 12.4.** chained streams compiling and minifying CSS._
+_**Figure 12.4.** Chained streams compiling and minifying CSS._
 >
 > A LESS file becomes CSS in one stream, then minified CSS in another stream.
 
 #### How Tasks Work
 
 A task wraps one or more streams. It usually starts with source files from disk, pipes data through transforms, and writes output somewhere else.
-
-![Figure](/.attachments/)
-
-_**Figure 12.5.** outline of a `buildCSS` task._
->
-> `src/less/main.less` is read, piped through a stream, and written to `dist/css/styles.css`.
 
 Each task should usually focus on one concern, such as minifying HTML, compiling CSS, optimizing images, or processing JavaScript.
 
@@ -83,12 +62,6 @@ Before writing a `gulpfile`, set up the project folder structure and install gul
 ### Structuring Your Project's Folders
 
 gulp reads from a source folder and writes optimized output to a distribution folder.
-
-![Figure](/.attachments/)
-
-_**Figure 12.6.** source and distribution folder flow._
->
-> gulp processes input files from `src` and writes built output to `dist`.
 
 Create a new project folder, then clone the Weekly Timber source into `src`:
 
@@ -325,14 +298,6 @@ var gulp = require("gulp"),
     webp = require("imagemin-webp");
 ```
 
-#### Exploring The General Structure Of A Task
-
-![Figure](/.attachments/)
-
-_**Figure 12.7.** general structure of gulp tasks._
->
-> Read source files from disk, run an optimization task, then write output to disk.
-
 #### Minifying HTML
 
 Listing 12.2 defines the HTML minification task:
@@ -544,12 +509,6 @@ gulp
 ```
 
 Install a LiveReload browser extension and enable it for the page.
-
-![Figure](/.attachments/)
-
-_**Figure 12.8.** LiveReload extension icon in Chrome._
->
-> Clicking the browser extension icon enables the LiveReload listener so the page can reload when gulp signals changes.
 
 Chrome Web Store:
 

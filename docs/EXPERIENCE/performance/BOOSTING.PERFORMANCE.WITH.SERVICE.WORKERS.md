@@ -13,9 +13,9 @@ Mobile connections are not always stable. Users move through weak cellular netwo
 
 Service workers are a kind of worker: scripts that run in a separate scope and on a separate thread from ordinary page JavaScript. They do not have direct access to the page's `window` object, though they can communicate indirectly with the page through APIs such as `postMessage`.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/9-1-performance-service.worker.png)
 
-_**Figure 9.1.** service worker operating on its own thread in Chrome Timeline._
+_**Figure 9.1.** Service worker operating on its own thread in Chrome Timeline._
 >
 > The service worker runs on a separate `ServiceWorker` thread rather than the page's main JavaScript thread.
 
@@ -23,9 +23,9 @@ Different workers solve different problems. Web workers can move CPU-heavy work 
 
 The most important event in this chapter is `fetch`. A service worker can listen for `fetch` events, inspect requests, and decide whether to respond from CacheStorage, fetch from the network, or store a response for later.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/9-2-performance-service.worker.communicating.png)
 
-_**Figure 9.2.** service worker acting as a proxy between user and web server._
+_**Figure 9.2.** Service worker acting as a proxy between user and web server._
 >
 > The user requests assets, the service worker intercepts the request, and the service worker can retrieve from CacheStorage, pass through to the server, or store assets in the cache.
 
@@ -48,18 +48,11 @@ The local site runs at:
 http://localhost:8080
 ```
 
-> [!note]
 > Service workers require HTTPS in production because they can intercept requests and run in the background. For development convenience, browsers allow service workers on `localhost` without HTTPS.
 
 ### Installing The Service Worker
 
 Service worker installation starts with feature detection. If the browser supports service workers, register one. If it does not, do nothing and let the site continue normally.
-
-![Figure](/.attachments/)
-
-_**Figure 9.3.** service worker installation flow._
->
-> The page checks whether the browser supports service workers. If yes, it registers the service worker. If no, the browser continues as usual.
 
 The example references `sw-install.js` from the footer of each page.
 
@@ -75,18 +68,11 @@ if("serviceWorker" in navigator){
 
 The `in` operator checks whether `navigator.serviceWorker` exists. If it does, `register` installs the service worker.
 
-> [!note]
 > Service worker scope is based on where the service worker file lives. A worker at `/sw.js` can cover the whole site. A worker inside `/js/` would normally cover only that directory and its subdirectories. You can expand scope with the `Service-Worker-Allowed` HTTP response header.
 
 ### Writing The Service Worker's Install Event
 
 When a service worker is first installed, the `install` event fires. The example uses this moment to cache global site assets such as CSS, JavaScript, and shared images.
-
-![Figure](/.attachments/)
-
-_**Figure 9.4.** service worker install event caching global assets._
->
-> The service worker installs, the `install` event fires, and global assets are added to CacheStorage.
 
 Listing 9.2 caches assets during the service worker's `install` event:
 
@@ -121,7 +107,7 @@ The `cacheVersion` string names the cache. The `cachedAssets` array lists the as
 
 After reloading, verify the service worker in Chrome Developer Tools under the Application tab.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/9-5-performance-chrome.developer.tools.png)
 
 _**Figure 9.5.** Chrome Application tab showing active service workers._
 >
@@ -131,15 +117,9 @@ _**Figure 9.5.** Chrome Application tab showing active service workers._
 
 In Chrome Developer Tools, expand Cache Storage in the Application tab and open the `v1` cache. The assets from `cachedAssets` should be present.
 
-![Figure](/.attachments/)
-
-_**Figure 9.6.** `v1` CacheStorage cache with global assets._
->
-> The cache contains the global CSS, JavaScript, and image assets listed in the service worker.
-
 To simulate offline behavior, use the Offline checkbox in the Network panel.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/9-7-performance-simulate.offline.png)
 
 _**Figure 9.7.** Offline checkbox in Chrome's Network panel._
 >
@@ -151,9 +131,9 @@ At this point, reloading offline still fails because the HTML document itself ha
 
 The service worker's `fetch` event can decide whether a request should be served from the service worker cache or fetched from the network and cached for later.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/9-8-performance-service.worker.fetch.png)
 
-_**Figure 9.8.** service worker `fetch` event behavior._
+_**Figure 9.8.** Service worker `fetch` event behavior._
 >
 > The user requests an asset. If it is in CacheStorage, the service worker serves it. If not, it fetches the asset from the network and caches it.
 
@@ -189,28 +169,15 @@ The regular expressions allow requests from trusted hosts and deny service worke
 
 Force a reload with `Ctrl-Shift-R` or `Cmd-Shift-R` after changing the service worker.
 
-> [!note]
 > If a service worker refuses to update during development, check the response caching policy for the worker file. The example uses `Cache-Control: no-cache`, which makes the browser revalidate the stored copy with the server.
 
 Chrome's Network panel marks intercepted responses in the Size column.
-
-![Figure](/.attachments/)
-
-_**Figure 9.9.** network requests marked `(from ServiceWorker)`._
->
-> Requests served by the service worker appear with `(from ServiceWorker)` in Chrome's Network panel.
 
 After the `fetch` event is in place, turn on Offline mode and reload. The cached site can now render without a network connection.
 
 ### Measuring The Performance Benefits
 
 Serving assets through the service worker cache can be faster than using the browser cache. In the source measurement, service worker caching improves Time to First Paint by about 50% compared with the browser cache on Chrome's `Regular 3G` throttling profile.
-
-![Figure](/.attachments/)
-
-_**Figure 9.10.** Time to First Paint across uncached, browser cache, and service worker cache scenarios._
->
-> The service worker cache produces the lowest Time to First Paint in the source test.
 
 The browser cache still matters. It remains the fallback for browsers that do not support service workers, and a service worker can allow selected requests to use the browser's default caching behavior.
 
@@ -222,12 +189,6 @@ The chapter adopts a two-part strategy:
 
 - For HTML, fetch from the network first and cache the response for offline use later.
 - For non-HTML assets such as images, CSS, and JavaScript, serve from the service worker cache first and fetch from the network only when the asset is missing.
-
-![Figure](/.attachments/)
-
-_**Figure 9.11.** two-pronged service worker request strategy._
->
-> HTML requests prefer the network and fall back to cache. Non-HTML requests prefer the cache and fall back to the network.
 
 Listing 9.4 adds a regular expression to detect HTML requests:
 
@@ -265,7 +226,6 @@ This makes HTML updates visible immediately while still preserving offline fallb
 
 You do not need to intercept every request. A request is intercepted only when the service worker passes a response to `event.respondWith`. If it does not, the browser handles the request normally.
 
-> [!note]
 > CDN-hosted assets can usually be cached with CacheStorage if the CDN sends `Access-Control-Allow-Origin: *`. If caching a CDN asset fails, check for that header.
 
 ## Updating Your Service Worker
@@ -287,12 +247,6 @@ Add a query string to distinguish the updated asset:
 ```
 
 The filename is the same, but the URL is different, so the browser and service worker cache treat it as a separate asset.
-
-![Figure](/.attachments/)
-
-_**Figure 9.12.** orphaned cache entry after updating a stylesheet URL._
->
-> `global.css?v=1` appears in the cache, but the old `global.css` entry remains unless you remove it.
 
 Leaving old entries behind can bloat the user's storage over time. Updating the cache name and cleaning old caches keeps CacheStorage lean.
 
@@ -342,12 +296,6 @@ self.addEventListener("activate", function(event){
 ```
 
 The worker gets all cache keys, deletes any cache name not present in `cacheWhitelist`, and then calls `clients.claim()` so the worker can control pages immediately.
-
-![Figure](/.attachments/)
-
-_**Figure 9.13.** new `v2` cache in Chrome Developer Tools._
->
-> After activation cleanup, only the new `v2` cache remains, including the updated `global.css?v=1` entry.
 
 Update every reference to the versioned asset across the site. If an old page still references `/css/global.css`, visiting it can add the old URL back to the cache.
 

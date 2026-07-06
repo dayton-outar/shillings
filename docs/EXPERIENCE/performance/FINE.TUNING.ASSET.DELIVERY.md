@@ -1,22 +1,14 @@
 # Fine-Tuning Asset Delivery
 
-This chapter covers:
-
-- Understanding compression basics, poor compression configuration, and Brotli
-- Using caching to improve repeat-visit performance
-- Exploring the benefits of CDN-hosted assets
-- Verifying CDN resources with Subresource Integrity
-- Using resource hints to preload, prefetch, preconnect, and prerender
-
 Earlier chapters focused on optimizing page ingredients such as CSS, images, fonts, and JavaScript. This chapter focuses on delivery: compression, caching, CDNs, integrity checks, and browser hints that help assets arrive sooner or more safely.
 
 ## Compressing Assets
 
 Server compression runs content through a compression algorithm before transferring it to the browser. The browser advertises supported algorithms in the `Accept-Encoding` request header. If the server sends compressed content, it identifies the algorithm with the `Content-Encoding` response header.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/10-1-performance-compressed.asset.png)
 
-_**Figure 10.1.** browser requests compressed content and server replies with compressed `index.html`._
+_**Figure 10.1.** Browser requests compressed content and server replies with compressed `index.html`._
 >
 > The browser sends `Accept-Encoding: gzip, deflate`; the server responds with `Content-Encoding: gzip`.
 
@@ -58,9 +50,9 @@ node http.js
 
 In the source test, setting `level` to `0` makes `http://localhost:8080/index.html` about 393 KB. Setting it to `9` reduces it to about 299 KB. Moving from `0` to `1` already drops the page to about 307 KB.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/10-2-performance-effects.compression.png)
 
-_**Figure 10.2.** compression level effects on jQuery load time and TTFB._
+_**Figure 10.2.** Compression level effects on jQuery load time and TTFB._
 >
 > The biggest gain happens when compression is enabled. Higher levels gradually increase TTFB and hit diminishing returns around levels 5 or 6.
 
@@ -82,9 +74,9 @@ app.use(compression({
 }));
 ```
 
-![Figure](/.attachments/)
+![Figure](/.attachments/10-3-performance-compression.ratios.png)
 
-_**Figure 10.3.** compression ratios for PNG, JPEG, and SVG across gzip levels._
+_**Figure 10.3.** Compression ratios for PNG, JPEG, and SVG across gzip levels._
 >
 > PNG and JPEG show little to no benefit because they are already compressed. SVG compresses well because it is text-based XML.
 
@@ -103,12 +95,6 @@ http://mng.bz/85Y1
 #### Checking For Brotli Support
 
 Brotli-capable browsers include `br` in the `Accept-Encoding` request header, but Brotli is used only over HTTPS.
-
-![Figure](/.attachments/)
-
-_**Figure 10.4.** Chrome request header showing Brotli support with the `br` token._
->
-> A server can choose Brotli when the browser advertises `br` in `Accept-Encoding`.
 
 To skip to the Brotli branch:
 
@@ -167,12 +153,6 @@ https://localhost:8443
 
 Your browser may show a warning because the local certificate is not signed by a recognized authority. That is acceptable for this local test, but production servers need valid certificates.
 
-![Figure](/.attachments/)
-
-_**Figure 10.5.** Chrome Network panel showing Brotli-encoded files._
->
-> Brotli-compressed responses show `br` in the `Content-Encoding` column.
-
 #### Comparing Brotli Performance To gzip
 
 Brotli uses a `quality` value from `0` to `11`, similar to gzip's `level` from `0` to `9`.
@@ -190,13 +170,13 @@ app.use(shrinkRay({
 }));
 ```
 
-![Figure](/.attachments/)
+![Figure](/.attachments/10-6-performance-brotli.compression.png)
 
 _**Figure 10.6.** jQuery file size with gzip versus Brotli across compression levels._
 >
 > Brotli gives roughly 3% to 10% smaller output in the source test. gzip's smallest jQuery result is about 29.4 KB, while Brotli reaches about 26.5 KB.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/10-7-performance-brotli.jQuery.png)
 
 _**Figure 10.7.** TTFB for gzip versus Brotli when compressing jQuery._
 >
@@ -224,17 +204,11 @@ First visits matter, but many users are repeat visitors or navigate to additiona
 
 When a browser downloads an asset, it follows the server's cache policy to decide whether it can reuse that asset later. If the server does not define a policy, browser defaults apply.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/10-8-performance-caching.process.png)
 
-_**Figure 10.8.** basic caching process._
+_**Figure 10.8.** Basic caching process._
 >
 > The browser requests `index.html`; the server checks whether it changed. If not, the server can return `304 Not Modified`; if it changed, it returns `200 OK` with a new copy.
-
-![Figure](/.attachments/)
-
-_**Figure 10.9.** first uncached visit versus subsequent cached visit._
->
-> In the source example, the cached visit transfers nearly 98% less data and loads much faster.
 
 An unprimed cache is a first visit, where everything must be downloaded. A primed cache is a repeat visit, where assets already exist locally.
 
@@ -258,15 +232,9 @@ app.use(express.static(__dirname, {
 
 After restarting the server and visiting `http://localhost:8080`, navigate to the page again without pressing Reload. The browser can use cached assets directly.
 
-![Figure](/.attachments/)
-
-_**Figure 10.10.** jQuery retrieved from the local browser cache._
->
-> When `max-age` has not expired and the user navigates normally, the browser can avoid a server request.
-
 If the user reloads or `max-age` expires, the browser revalidates with the server. If the asset has not changed, the server returns `304 Not Modified`. If it has changed, the server returns a fresh copy.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/10-11-performance-cache.control.png)
 
 _**Figure 10.11.** `max-age` and revalidation flow._
 >
@@ -288,7 +256,7 @@ These directives reduce or remove caching performance benefits, so use them only
 
 A CDN is a proxy service in front of your site that can cache and distribute content from servers closer to users.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/10-12-performance-cdn.png)
 
 _**Figure 10.12.** CDN distributing content to geographically dispersed users._
 >
@@ -372,12 +340,6 @@ To test in Chrome:
 3. After loading finishes, clear Disable Cache.
 4. Navigate to the page again by focusing the address bar and pressing Enter, rather than using Reload.
 
-![Figure](/.attachments/)
-
-_**Figure 10.13.** Weekly Timber cache policy effects in Chrome Network panel._
->
-> HTML is revalidated and returns `304` if unchanged. Other assets are served from the browser cache without a server round trip.
-
 ### Invalidating Cached Assets
 
 Caching creates a release problem: users may keep old CSS, JavaScript, images, or HTML after you deploy fixes. Your strategy should let you force updated URLs into the page.
@@ -414,7 +376,7 @@ CDNs can improve delivery by serving common assets from geographically distribut
 
 ### Using CDN-Hosted Assets
 
-![Figure](/.attachments/)
+![Figure](/.attachments/10-14-performance-cdn.origin.servers.png)
 
 _**Figure 10.14.** CDN origin and edge servers._
 >
@@ -432,7 +394,7 @@ Replace it with the CDN-hosted jQuery 2.2.3:
 <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
 ```
 
-![Figure](/.attachments/)
+![Figure](/.attachments/10-15-performance-load.times.cdn.shared.host.png)
 
 _**Figure 10.15.** jQuery load times and TTFB across CDNs versus shared hosting._
 >
@@ -471,12 +433,6 @@ Listing 10.6 defines a reusable fallback loader:
 </script>
 ```
 
-![Figure](/.attachments/)
-
-_**Figure 10.16.** CDN asset failure and local fallback in Chrome Network panel._
->
-> When the CDN request fails, the local fallback script is loaded.
-
 The fallback works because script tags execute in order. The fallback check runs only after the CDN script has either loaded or failed.
 
 For another library, test its global object:
@@ -489,19 +445,13 @@ fallback(window.Modernizr, "js/modernizr.min.js");
 
 Subresource Integrity, or SRI, lets the browser verify that an external asset matches an expected checksum before using it.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/10-17-performance-checksum.png)
 
 _**Figure 10.17.** Subresource Integrity verification process._
 >
 > The browser requests a CDN asset, verifies its checksum, and discards it if the checksum does not match.
 
 The `integrity` attribute identifies the hash algorithm and the expected checksum.
-
-![Figure](/.attachments/)
-
-_**Figure 10.18.** `integrity` attribute format._
->
-> The value starts with the hashing algorithm, such as `sha256`, followed by the checksum value.
 
 Example:
 
@@ -550,12 +500,6 @@ Link: <https://code.jquery.com>; rel=preconnect
 
 Using an HTTP header is discovered earlier, but is more work to configure.
 
-![Figure](/.attachments/)
-
-_**Figure 10.19.** jQuery load-time effects of `preconnect`._
->
-> The source test compares no `preconnect`, HTML `preconnect`, and HTTP-header `preconnect` for HTTP and HTTPS.
-
 `dns-prefetch` is similar but only resolves the host's IP address instead of opening a full connection:
 
 ```html
@@ -578,12 +522,6 @@ HTTP header:
 Link: <https://code.jquery.com/jquery-2.2.3.min.js>; rel=prefetch
 ```
 
-![Figure](/.attachments/)
-
-_**Figure 10.20.** page load times with and without prefetching jQuery._
->
-> In the source test, prefetching jQuery cuts the Weekly Timber home page load time by nearly 20%.
-
 When testing `prefetch` in Chrome, clear the cache, re-enable caching, and test with an unprimed cache. If Disable Cache is selected, the prefetched asset may appear to download twice.
 
 `preload` is similar to `prefetch`, but it more strongly requires the browser to fetch the resource. It has narrower support in the source context.
@@ -602,12 +540,6 @@ Link: <https://code.jquery.com/jquery-2.2.3.min.js>; rel=preload; as=script
 ```
 
 The optional `as` attribute describes the resource type, such as `script`, `style`, `font`, or `image`.
-
-![Figure](/.attachments/)
-
-_**Figure 10.21.** Chrome Network panel showing jQuery loaded with `preload`._
->
-> The first jQuery request comes from the preload hint; the later script reference is satisfied from cache with a 0-byte transfer.
 
 If broad support matters most, choose `prefetch`. If support is acceptable and the resource should be requested more assertively, choose `preload`.
 

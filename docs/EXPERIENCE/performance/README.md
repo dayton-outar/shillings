@@ -16,10 +16,10 @@
 
 [Chapter 8: Keeping JavaScript Lean and Fast](KEEPING.JAVASCRIPT.LEAN.AND.FAST.md)
 
-[Chapter 9: Boosting performance with service workers](BOOSTING.PERFORMANCE.WITH.SERVICE.WORKERS.md)
+[Chapter 9: Boosting Performance with Service Workers](BOOSTING.PERFORMANCE.WITH.SERVICE.WORKERS.md)
 
-[Chapter 10: Fine-tuning asset delivery](FINE.TUNING.ASSET.DELIVERY.md)
+[Chapter 10: Fine-tuning Asset Delivery](FINE.TUNING.ASSET.DELIVERY.md)
 
-[Chapter 11: Looking to the future with HTTP/2](LOOKING.TO.THE.FUTURE.WITH.HTTP2.md)
+[Chapter 11: Looking to the Future with HTTP/2](LOOKING.TO.THE.FUTURE.WITH.HTTP2.md)
 
-[Chapter 12: Automating optimization with gulp](AUTOMATING.OPTIMIZATION.WITH.GULP.md)
+[Chapter 12: Automating Optimization with Gulp](AUTOMATING.OPTIMIZATION.WITH.GULP.md)
