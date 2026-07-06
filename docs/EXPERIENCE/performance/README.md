@@ -10,7 +10,7 @@
 
 [Chapter 5: Making Images Responsive](MAKING.IMAGES.RESPONSIVE.md)
 
-[Chapter 6: Going further with images](GOING.FURTHER.WITH.IMAGES.md)
+[Chapter 6: Going Further with Images](GOING.FURTHER.WITH.IMAGES.md)
 
 [Chapter 7: Faster fonts](FASTER.FONTS.md)
 
