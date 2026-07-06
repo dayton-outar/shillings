@@ -1,14 +1,5 @@
 # Faster Fonts
 
-This chapter covers:
-
-- Limiting the number of fonts through careful selection
-- Rolling your own `@font-face` cascade
-- Understanding the benefits of server compression for older font formats
-- Limiting font size by subsetting
-- Using `unicode-range` to serve font subsets
-- Managing font loading through JavaScript APIs
-
 Fonts can make an interface feel polished, but they also add network requests and bytes. This chapter focuses on making fonts cheaper to deliver: choose only the variants you need, provide efficient formats, compress older formats, subset glyphs, and control how text appears while fonts are loading.
 
 ## Using Fonts Wisely
@@ -31,12 +22,6 @@ http://localhost:8080
 ### Selecting Fonts And Font Variants
 
 The site uses Open Sans. The `css/open-sans` folder contains several font weights, but the page only uses three of them.
-
-![Figure](/.attachments/)
-
-_**Figure 7.1.** Legendary Tones content page annotated with font weights._
->
-> The page uses light, regular, and bold variants in different areas of the layout.
 
 | Font weight value | Font variant filename | Use on page? |
 | ---: | --- | --- |
@@ -119,7 +104,7 @@ Then use it as the first font in the page stack:
 font-family: "Open Sans Regular", Helvetica, Arial, sans-serif;
 ```
 
-![Figure](/.attachments/)
+![Figure](/.attachments/7-2-performance-font.face.cascade.png)
 
 _**Figure 7.2.** browser processing an `@font-face` cascade._
 >
@@ -171,12 +156,6 @@ Listing 7.3 enables compression for TTF and EOT in Apache:
 </IfModule>
 ```
 
-![Figure](/.attachments/)
-
-_**Figure 7.3.** Open Sans Regular before and after compression._
->
-> Server compression reduces the uncompressed font formats by roughly 45%, with the measured Open Sans Regular file dropping from about 212.26 KB to 113.76 KB.
-
 Compression has a tradeoff: the server must spend time compressing the response. For large files this can increase time to first byte, so test the real effect before assuming compression is always a net win.
 
 ## Subsetting Fonts
@@ -185,17 +164,11 @@ Even after choosing only three variants, the fonts still add meaningful weight. 
 
 Subsetting reduces a font to only the characters a page needs. Google Fonts exposes this idea by allowing language-specific subsets.
 
-![Figure](/.attachments/)
-
-_**Figure 7.4.** Google Fonts subsetting by language._
->
-> Font services can offer predefined language subsets so users download fewer glyphs.
-
 ### Manually Subsetting Fonts
 
 Unicode gives every character a code point. For example, Basic Latin runs from `U+0000` to `U+007F`, and lowercase `p` is `U+0070`.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/7-5-performance-unicode.characters.png)
 
 _**Figure 7.5.** Unicode table._
 >
@@ -233,12 +206,6 @@ pyftsubset OpenSans-Regular.ttf --unicodes=U+0000-007F \
     --output-file=OpenSans-Regular-BasicLatin.ttf --name-IDs='*'
 ```
 
-![Figure](/.attachments/)
-
-_**Figure 7.6.** `pyftsubset` command anatomy._
->
-> The command names the input font, the Unicode range, the output filename, and `--name-IDs='*'` to preserve name table entries for converter compatibility.
-
 The resulting `OpenSans-Regular-BasicLatin.ttf` is about 17.68 KB, down from about 212.26 KB. That is roughly a 90% reduction before converting to the more efficient web formats.
 
 Convert the subsetted font:
@@ -251,14 +218,7 @@ cat OpenSans-Regular-BasicLatin.ttf | ttf2woff2 >> OpenSans-Regular-BasicLatin.w
 
 Repeat the same process for `OpenSans-Bold.ttf` and `OpenSans-Light.ttf`, then update `@font-face` sources in `styles.css` to reference the subsetted files.
 
-> [!note]
 > Subset according to real content. A site that uses words like `cafe` with an accented `e` needs characters outside Basic Latin.
-
-![Figure](/.attachments/)
-
-_**Figure 7.7.** load times before and after font subsetting._
->
-> Subsetting improves measured page-load time by well over 200% across TTF with gzip, WOFF, and WOFF2 trials.
 
 ### Delivering Font Subsets With `unicode-range`
 
@@ -319,7 +279,7 @@ unicode-range: U+0000-007F, U+0100, U+02??;
 
 Basic Latin still loads on the Russian page because punctuation and numbers are shared by many languages.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/7-8-performance-basic.latin.font.subsets.png)
 
 _**Figure 7.8.** Basic Latin subsets loading on the Russian page._
 >
@@ -344,23 +304,11 @@ Listing 7.5 adds an Open Sans Regular Cyrillic subset:
 
 Add equivalent declarations for the Cyrillic subsets of Open Sans Light and Open Sans Bold.
 
-![Figure](/.attachments/)
-
-_**Figure 7.9.** Russian and English font downloads._
->
-> The Russian page downloads both Basic Latin and Cyrillic subsets. The English page skips the Cyrillic subsets because its content does not need them.
-
 This technique is especially useful when languages use substantially different character sets. Greek, Russian, and many Asian languages benefit more than western languages that can often share a broader Latin subset.
 
 #### Fallbacks For Older Browsers
 
 Some browsers ignore `unicode-range` and download every font subset in the stylesheet.
-
-![Figure](/.attachments/)
-
-_**Figure 7.10.** Safari loading Cyrillic subsets on the English page._
->
-> Without `unicode-range` support, the browser downloads all font subsets declared in the CSS.
 
 One fallback is to put language-specific `@font-face` declarations in separate stylesheets. The page stores the intended stylesheet URL in `data-href`, then JavaScript checks the `<html lang>` value and activates the correct link only when needed.
 
@@ -396,12 +344,6 @@ Listing 7.6 defers language-specific font subsets with JavaScript:
 
 Because this script runs early in the document, it adds the needed stylesheet with minimal delay. The `<noscript>` fallback ensures users without JavaScript still receive the needed font subset, though it cannot discriminate as precisely.
 
-![Figure](/.attachments/)
-
-_**Figure 7.11.** Safari network output with the fallback script._
->
-> With the fallback script enabled, the English page downloads only the base fonts, while the Russian page downloads `ru.css` and the Cyrillic subsets.
-
 This is less elegant than native `unicode-range`, but it shows the general idea: when CSS support is not enough, you can selectively serve subsets with JavaScript or a server-side language.
 
 ## Optimizing The Loading Of Fonts
@@ -412,19 +354,7 @@ Fonts affect not only page weight, but also when text becomes readable. Browsers
 
 Flash of Invisible Text, or FOIT, happens when text is invisible until a web font has loaded. It becomes more visible on slow or high-latency connections.
 
-![Figure](/.attachments/)
-
-_**Figure 7.12.** fonts still loading and fonts loaded._
->
-> Text is initially invisible while fonts load, then appears with the embedded font once loading completes.
-
 Browsers hide text to avoid Flash of Unstyled Text, or FOUT. With FOUT, fallback text appears first and is restyled when the custom font finishes loading.
-
-![Figure](/.attachments/)
-
-_**Figure 7.13.** unstyled text and styled text._
->
-> When font downloads take too long, fallback text appears first, then swaps to the custom font.
 
 If the font request stalls, FOIT can leave users waiting seconds for readable content. In some browsers, text can remain hidden until the page is refreshed. The practical response is to embrace controlled FOUT so content is readable as soon as possible.
 
@@ -445,12 +375,6 @@ git checkout -f font-display-complete
 ```
 
 Use Chrome Developer Tools with the `Regular 3G` throttling profile to make FOIT visible. The Network panel can capture page-load screenshots.
-
-![Figure](/.attachments/)
-
-_**Figure 7.14.** Capture Screenshots toggle in Chrome Developer Tools._
->
-> Captured screenshots help pinpoint when text becomes visible during page load.
 
 `font-display` is placed inside `@font-face` and accepts:
 

@@ -1,12 +1,5 @@
 # Keeping JavaScript Lean And Fast
 
-This chapter covers:
-
-- Affecting the loading behavior of the `<script>` tag
-- Replacing jQuery with smaller, faster API-compatible alternatives
-- Using native JavaScript methods to replace jQuery functionality
-- Animating with `requestAnimationFrame`
-
 JavaScript libraries and frameworks can save time, but the fastest path for users is often a smaller one. This chapter focuses on practical ways to reduce JavaScript cost: load scripts without blocking rendering, replace large dependencies when possible, use browser-native APIs, and animate efficiently.
 
 ## Affecting Script-Loading Behavior
@@ -24,7 +17,7 @@ node http.js
 
 Browsers parse HTML from top to bottom. When the parser finds a blocking script, it pauses to download and execute that script before continuing.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/8-1-performance-browsers.read.html.png)
 
 _**Figure 8.1.** browser discovering script tags in document order._
 >
@@ -32,19 +25,7 @@ _**Figure 8.1.** browser discovering script tags in document order._
 
 On the example site, placing `jquery.min.js` and `behaviors.js` in the `<head>` produces an average Time to First Paint of roughly 830 ms on Chrome's `Regular 3G` throttling profile.
 
-![Figure](/.attachments/)
-
-_**Figure 8.2.** Chrome Time to First Paint with scripts in the document `<head>`._
->
-> The first paint event appears around 830 ms in the source test.
-
 Moving the same scripts to the end of `index.html`, just before `</body>`, lowers the measured Time to First Paint to about 500 ms in the source test.
-
-![Figure](/.attachments/)
-
-_**Figure 8.3.** Chrome Time to First Paint with scripts at the end of the document._
->
-> Moving scripts lower in the document reduces render blocking in this example.
 
 This is a broadly compatible optimization. Script size, script count, and HTML length all affect the exact results, but late script placement is usually an easy win.
 
@@ -52,9 +33,9 @@ This is a broadly compatible optimization. Script size, script count, and HTML l
 
 Modern browsers support the `async` attribute on external scripts. An async script downloads without blocking rendering and executes as soon as it finishes downloading.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/8-4-performance-loading.scripts.png)
 
-_**Figure 8.4.** script loading with and without `async`._
+_**Figure 8.4.** Script loading with and without `async`._
 >
 > Without `async`, scripts wait for ordered execution. With `async`, a script executes as soon as it finishes downloading.
 
@@ -69,15 +50,9 @@ Add `async` to external scripts:
 
 This can improve Time to First Paint, but it can also break dependent scripts.
 
-![Figure](/.attachments/)
-
-_**Figure 8.5.** console error caused by async script ordering._
->
-> `behaviors.js` fails when it executes before its dependency, `jquery.min.js`, is available.
-
 When scripts depend on one another, `async` can create a race condition. In this example, `behaviors.js` is smaller than `jquery.min.js`, so it finishes first and runs before jQuery exists.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/8-6-performance-race.condition.png)
 
 _**Figure 8.6.** race condition between `jquery.min.js` and `behaviors.js`._
 >
@@ -100,12 +75,6 @@ Then replace both script tags with one async bundle:
 ```html
 <script src="js/scripts.js" async></script>
 ```
-
-![Figure](/.attachments/)
-
-_**Figure 8.7.** Chrome Time to First Paint with bundled scripts loaded using `async`._
->
-> The source test reports an average Time to First Paint of roughly 300 ms.
 
 With scripts bundled and loaded asynchronously, the example beats bottom-of-document script placement by about 200 ms. The DOM also becomes available much earlier in the source test.
 
@@ -147,7 +116,6 @@ require(["jquery"], function($){
 
 The configuration tells Alameda where jQuery lives. The module definition then declares jQuery as a dependency, and the dependent code runs only after jQuery is available.
 
-> [!note]
 > Alameda targets modern browsers and depends on features such as JavaScript promises. If you need wider support, RequireJS shares the same API and can be used instead. RequireJS is available at `http://requirejs.org`.
 
 ## Using Leaner jQuery-Compatible Alternatives
@@ -170,12 +138,6 @@ The chapter compares three jQuery-compatible libraries:
 
 The main advantage is payload reduction. All source file-size comparisons assume minification and server compression.
 
-![Figure](/.attachments/)
-
-_**Figure 8.8.** file size comparison of jQuery, Zepto, Shoestring, and Sprint._
->
-> jQuery is not enormous, but each alternative is significantly smaller.
-
 ### Comparing Performance
 
 The chapter uses Benchmark.js to compare common tasks.
@@ -193,24 +155,6 @@ https://github.com/webopt/ch8-benchmark
 ```
 
 The benchmark samples element selection, class toggling, and attribute toggling.
-
-![Figure](/.attachments/)
-
-_**Figure 8.9.** performance of selecting an element by class._
->
-> Sprint is fastest in the class-selection benchmark, while jQuery outperforms Zepto and Shoestring.
-
-![Figure](/.attachments/)
-
-_**Figure 8.10.** performance of toggling a class on an element._
->
-> Sprint remains fastest. Shoestring beats jQuery, and jQuery beats Zepto.
-
-![Figure](/.attachments/)
-
-_**Figure 8.11.** performance of toggling an attribute on an element._
->
-> Sprint leads again, followed by Shoestring, jQuery, and Zepto.
 
 These tests cover only a few methods, so results vary by task. Sprint is attractive for raw speed and size, but its API is less compatible with jQuery. Zepto is larger, but easier to retrofit.
 
@@ -553,7 +497,7 @@ Listing 8.19 conditionally loads the Fetch API polyfill:
 
 Because the call to `fetch` happens only when the user opens and submits the scheduling modal, the polyfill has time to load before it is needed.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/8-12-performance-loading.fetch.api.png)
 
 _**Figure 8.12.** Fetch API polyfill load timing._
 >

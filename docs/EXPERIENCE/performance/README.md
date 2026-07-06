@@ -12,9 +12,9 @@
 
 [Chapter 6: Going Further with Images](GOING.FURTHER.WITH.IMAGES.md)
 
-[Chapter 7: Faster fonts](FASTER.FONTS.md)
+[Chapter 7: Faster Fonts](FASTER.FONTS.md)
 
-[Chapter 8: Keeping JavaScript lean and fast](KEEPING.JAVASCRIPT.LEAN.AND.FAST.md)
+[Chapter 8: Keeping JavaScript Lean and Fast](KEEPING.JAVASCRIPT.LEAN.AND.FAST.md)
 
 [Chapter 9: Boosting performance with service workers](BOOSTING.PERFORMANCE.WITH.SERVICE.WORKERS.md)
 

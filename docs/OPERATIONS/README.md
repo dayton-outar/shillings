@@ -20,7 +20,7 @@ In the tech industry, human capital is one of the most critical assets. Managing
 
 A well-designed onboarding process helps new hires integrate quickly into the company’s workflows, while ongoing training ensures that employees are equipped with the latest technical skills. Furthermore, offering growth opportunities and fostering a collaborative environment enhances productivity and job satisfaction, reducing turnover and building loyalty.
 
-#### 4. Customer Support and User Experience
+#### 4. [Customer Support and User Experience](../EXPERIENCE/)
 
 Customer support is integral to running smooth operations in a tech company. In an era where customer expectations are high, ensuring prompt and effective responses to user issues is crucial. A strong customer support team, combined with automated systems for handling common issues, helps maintain customer satisfaction while freeing up human resources for more complex problems.
 

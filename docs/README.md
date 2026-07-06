@@ -412,6 +412,7 @@ Here’s a simple income statement based on your budget and income projections f
 - [Investing Knowledge](./INVESTING/README.md)
 - [Marketing Strategy](./MARKETING/README.md)
 - [Operations Plan](./OPERATIONS/README.md)
+- [User Experience](./EXPERIENCE/)
 
 ## References
 
