@@ -1,12 +1,5 @@
 # Understanding Critical CSS
 
-This chapter covers:
-
-- Understanding critical CSS and the problem it solves
-- Understanding how critical CSS works
-- Using critical CSS in projects
-- Knowing the benefits of critical CSS before and after implementation
-
 Critical CSS is an advanced CSS optimization technique that improves perceived page speed by prioritizing the styles needed for above-the-fold content. The goal is simple: let the browser paint the visible part of the page sooner.
 
 ## What Does Critical CSS Solve?
@@ -19,9 +12,9 @@ The fold comes from print media. Newspapers place the lead story at the top of t
 
 On the web, the fold is not fixed. It changes with screen resolution, device orientation, and browser window size.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/4-1-performance-above.below.fold.png)
 
-_**Figure 4.1.** above-the-fold and below-the-fold device diagram from the source PDF._
+_**Figure 4.1.** Above-the-fold and below-the-fold device diagram from the source PDF._
 >
 > Above-the-fold content starts at the top of the page and ends at the bottom of the visible screen. Everything outside the browser's initial view is below the fold.
 
@@ -40,23 +33,10 @@ Some render blocking is useful, but too much delays content. External CSS loaded
 
 To see this, open the Coyle Appliance Repair site from chapter 1, load it while recording in Chrome's Timeline profiler, switch to the `Event Log`, and filter to painting events. The Time to First Paint appears there.
 
-![Figure](/.attachments/)
-
-_**Figure 4.2.** Chrome Timeline first paint screenshot from the source PDF._
->
-> Chrome's Timeline profiler shows the document's first painting event, with a first paint time around `860 ms`.
-
 Inlining the site's CSS inside `<style>` tags in `index.html` improves first paint time.
-
-![Figure](/.attachments/)
-
-_**Figure 4.3.** improved first paint screenshot from the source PDF._
->
-> Chrome's Timeline profiler shows improved first paint after the site's CSS is inlined into the HTML.
 
 Inlining all CSS can be reasonable for a single-page website, but it is incomplete for larger sites. It sacrifices caching and duplicates CSS across page loads.
 
-> [!note]
 > Inlining is suitable for `HTTP/1` clients and servers, but should generally be avoided on `HTTP/2` servers when server push can provide similar benefits while preserving cacheability. Chapter 11 covers `HTTP/2` server push.
 
 ## How Does Critical CSS Work?
@@ -67,9 +47,9 @@ Critical CSS separates above-the-fold styles from the rest of the page styles. A
 
 Inlining CSS into a `<style>` tag removes the wait for an external stylesheet request.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/4-4-performance-above.the.fold.content.png)
 
-_**Figure 4.4.** inline above-the-fold style example from the source PDF._
+_**Figure 4.4.** Inline above-the-fold style example from the source PDF._
 >
 > CSS for above-the-fold content is inlined into the HTML so it can be parsed and applied as soon as the HTML arrives.
 
@@ -91,9 +71,9 @@ The drawback is duplication. If all CSS is inlined, repeat page views lose the c
 
 Below-the-fold CSS is still loaded with a `<link>` element, but not as a normal blocking stylesheet. Instead, use the `preload` resource hint and a small JavaScript assist.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/4-5-performance-preload.resource.png)
 
-_**Figure 4.5.** preload CSS loading example from the source PDF._
+_**Figure 4.5.** Preload CSS loading example from the source PDF._
 >
 > A `preload` resource hint loads external CSS without blocking rendering, then an `onload` handler changes `rel` to `stylesheet` once the file is ready.
 
@@ -134,12 +114,6 @@ The site runs at:
 http://localhost:8080
 ```
 
-![Figure](/.attachments/)
-
-_**Figure 4.6.** recipe website screenshot from the source PDF._
->
-> The recipe website in Chrome at the tablet breakpoint, roughly 750 pixels wide.
-
 Use Chrome's Timeline tool with the `Regular 3G` throttling profile to capture Time to First Paint before and after the work. The expected improvement is roughly 30%-40%.
 
 **Project structure**
@@ -176,7 +150,7 @@ Above-the-fold content is whatever is visible when the page first loads. The har
 
 The chapter recommends checking common device resolutions at `http://mydevice.io/devices` and sorting by CSS height.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/4-7-performance-common.device.resolutions.png)
 
 _**Figure 4.7.** mydevice.io resolution chart from the source PDF._
 >
@@ -188,7 +162,7 @@ To visualize fold positions, the chapter uses the VisualFold bookmarklet at `htt
 480, 667, 768, 800, 900, 1024, 1280
 ```
 
-![Figure](/.attachments/)
+![Figure](/.attachments/4-8-performance-visualfold.bookmarklet.png)
 
 _**Figure 4.8.** VisualFold bookmarklet screenshot from the source PDF._
 >
@@ -200,17 +174,17 @@ For the recipe site, `1280px` is a reasonable fold threshold. It covers the reci
 
 At the mobile breakpoint, identify all components above the `1280px` guideline.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/4-9-performance-mobile.breakpoint.png)
 
-_**Figure 4.9.** mobile breakpoint critical component labels from the source PDF._
+_**Figure 4.9.** Mobile breakpoint critical component labels from the source PDF._
 >
 > The mobile breakpoint labeled with critical components such as header, content hubs, recipe title, recipe image, recipe attributes, social buttons, recipe description, ingredient list, banner ad, and recipe steps.
 
 At the large breakpoint, new above-the-fold components appear in the two-column layout.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/4-10-performance-large.breakpoint.png)
 
-_**Figure 4.10.** large breakpoint critical component labels from the source PDF._
+_**Figure 4.10.** Large breakpoint critical component labels from the source PDF._
 >
 > The large breakpoint labels additional critical components such as main column, right column, content list, collection list, and right-column ad.
 
@@ -259,12 +233,6 @@ Start with the header:
 5. Save and rebuild `main.less`.
 6. Copy `css/critical.min.css` into `<style>` tags in the `<head>` of `index.html`.
 
-![Figure](/.attachments/)
-
-_**Figure 4.11.** partially styled header screenshot from the source PDF._
->
-> After inlining only the `header` selector CSS, the header is partially styled but missing child styles.
-
 The header contains child elements with their own styles. Move those related selectors too:
 
 - `#logo`
@@ -278,12 +246,6 @@ The header contains child elements with their own styles. Move those related sel
 - `.navItem`
 
 After moving these selectors into `critical_small.less`, rebuild and re-inline `critical.min.css`.
-
-![Figure](/.attachments/)
-
-_**Figure 4.12.** fully styled header screenshot from the source PDF._
->
-> The header appears fully styled after all header-related critical CSS is inlined into `index.html`.
 
 Repeat this process across `global_medium.less` and `global_large.less`, moving header-related styles into the appropriate critical files. Then repeat for every component in Table 4.1. Each time, rebuild and re-inline `critical.min.css`.
 
@@ -328,7 +290,7 @@ Test in a browser without native `preload` support, such as Safari, and confirm 
 
 Chrome testing across throttling profiles shows a clear Time to First Paint improvement after implementing critical CSS.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/4-13-performance-time.to.first.paint.png)
 
 _**Figure 4.13.** Time to First Paint benchmark chart from the source PDF._
 >
@@ -337,12 +299,6 @@ _**Figure 4.13.** Time to First Paint benchmark chart from the source PDF._
 The benefit is largest on slow, high-latency connections and smaller on faster connections. That pattern is typical for front-end optimizations.
 
 On mobile devices accessing the recipe website from a shared host, the improvement was more modest, around 20%.
-
-![Figure](/.attachments/)
-
-_**Figure 4.14.** Mobile Safari Time to First Paint benchmark chart from the source PDF._
->
-> Time to First Paint in Mobile Safari on an iPhone 6S over cable and LTE before and after prioritizing critical CSS.
 
 A useful benchmark is `0.1 seconds`, the threshold where an interface feels instantaneous. Critical CSS helps users feel that the page is responding sooner, which can increase the chance they stay.
 
@@ -375,9 +331,9 @@ On multipage sites, critical CSS should be modular. Different templates have dif
 
 Some critical styles are global, such as headers, navigation, and headline styles. Those can be bucketed separately and inlined across all templates.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/4-15-performance-modularized.approach.png)
 
-_**Figure 4.15.** modular critical CSS diagram from the source PDF._
+_**Figure 4.15.** Modular critical CSS diagram from the source PDF._
 >
 > Template A and Template B inline their own critical CSS, while both also inline globally common critical styles.
 

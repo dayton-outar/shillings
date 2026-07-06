@@ -6,7 +6,7 @@
 
 [Chapter 3: Optimizing CSS](OPTIMIZING.CSS.md)
 
-[Chapter 4: Understanding critical CSS](UNDERSTANDING.CRITICAL.CSS.md)
+[Chapter 4: Understanding Critical CSS](UNDERSTANDING.CRITICAL.CSS.md)
 
 [Chapter 5: Making images responsive](MAKING.IMAGES.RESPONSIVE.md)
 

@@ -350,7 +350,7 @@ Most projects target three broad device classes: phones, tablets, and desktops. 
 
 ![Figure](/.attachments/3-11-performance-layout.complexity.png)
 
-_**Figure 3.11.** mobile-first breakpoint diagram from the source PDF._
+_**Figure 3.11.** Mobile-first breakpoint diagram from the source PDF._
 >
 > Layout complexity increases with screen resolution, using breakpoints such as `37.5em` and `62.5em`.
 
