@@ -8,7 +8,7 @@
 
 [Chapter 4: Understanding Critical CSS](UNDERSTANDING.CRITICAL.CSS.md)
 
-[Chapter 5: Making images responsive](MAKING.IMAGES.RESPONSIVE.md)
+[Chapter 5: Making Images Responsive](MAKING.IMAGES.RESPONSIVE.md)
 
 [Chapter 6: Going further with images](GOING.FURTHER.WITH.IMAGES.md)
 

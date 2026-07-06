@@ -15,17 +15,17 @@ Responsive image delivery means serving image sizes and formats appropriate to t
 
 A single oversized image can look acceptable everywhere, but it forces smaller devices to download extra bytes and scale the image down. A better approach is to maintain multiple image sizes and serve the closest match for the current device.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/5-1-performance-scaling.image.png)
 
-_**Figure 5.1.** image scaling comparison from the source PDF._
+_**Figure 5.1.** Image scaling comparison from the source PDF._
 >
 > A 170 KB image with a width of 1440 pixels must be scaled down for a high-DPI phone, while a 41 KB image with a width of 750 pixels fits the phone without scaling.
 
 Chrome Timeline measurements show that avoiding scaling improves rendering and painting time, even for a single image.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/5-2-performance-rendering.painting.times.png)
 
-_**Figure 5.2.** rendering and painting benchmark chart from the source PDF._
+_**Figure 5.2.** Rendering and painting benchmark chart from the source PDF._
 >
 > Rendering and painting times are lower when the image is already sized for its container.
 
@@ -44,9 +44,9 @@ Most web images fall into two broad types:
 
 Raster images, also called bitmap images, are made of pixels on a two-dimensional grid. Common raster formats include `JPEG`, `PNG`, and `GIF`.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/5-3-performance-raster.image.png)
 
-_**Figure 5.3.** enlarged raster favicon from the source PDF._
+_**Figure 5.3.** Enlarged raster favicon from the source PDF._
 >
 > A 16 x 16 YouTube favicon enlarged to 512 x 512 shows the underlying pixel grid.
 
@@ -56,15 +56,9 @@ Raster images appear in HTML through `<img>` and in CSS through properties such 
 
 Lossy images discard some source data to reduce file size. JPEG is the most common lossy web format and is well suited to photographs.
 
-![Figure](/.attachments/)
-
-_**Figure 5.4.** Flickr JPEG usage screenshot from the source PDF._
->
-> Flickr uses JPEG images for photographic content.
-
 Lossy compression can create visible artifacts if pushed too far. It can also create generational loss if an already-compressed file is repeatedly recompressed. Used carefully from an uncompressed source, JPEG quality loss is often acceptable because the file-size savings are large.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/5-5-performance-same.image.compressed.uncompressed.png)
 
 _**Figure 5.5.** TIFF versus JPEG comparison from the source PDF._
 >
@@ -74,12 +68,6 @@ _**Figure 5.5.** TIFF versus JPEG comparison from the source PDF._
 
 Lossless images compress without discarding source data. PNG and GIF are common examples.
 
-![Figure](/.attachments/)
-
-_**Figure 5.6.** Facebook logo PNG screenshot from the source PDF._
->
-> The Facebook logo uses PNG, a lossless format suited to quality-sensitive graphics.
-
 Lossless formats commonly fall into two groups:
 
 - 8-bit images: `GIF` and 8-bit `PNG`, supporting 256 colors and 1-bit transparency
@@ -87,9 +75,9 @@ Lossless formats commonly fall into two groups:
 
 8-bit PNG often compresses better than GIF but does not support animation. Full-color PNG is more broadly supported than WebP and works well when transparency or lossless quality is required, though photos usually compress better as JPEG.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/5-7-performance-lossless.image.compression.png)
 
-_**Figure 5.7.** lossless compression comparison from the source PDF._
+_**Figure 5.7.** Lossless compression comparison from the source PDF._
 >
 > Lossless image compression formats vary in file size and color range; 8-bit output is limited to 256 colors.
 
@@ -99,9 +87,9 @@ Simple images with few colors usually fit 8-bit lossless formats. Images that ne
 
 Scalable Vector Graphics, or `SVG`, use vector artwork rather than pixels. They are composed of mathematical shapes and can scale without losing quality.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/5-8-performance-vector.image.png)
 
-_**Figure 5.8.** scalable vector illustration from the source PDF._
+_**Figure 5.8.** Scalable vector illustration from the source PDF._
 >
 > A vector image remains sharp when scaled to different sizes.
 
@@ -125,28 +113,7 @@ Table 5.1 summarizes common image formats and their best uses.
 
 ## Image Delivery In CSS
 
-Responsive image delivery in CSS usually uses media queries. The chapter uses the Legendary Tones site, a guitar-focused site with a masthead background image that looks poor on larger screens because it defaults to a small mobile image.
-
-Download and run the site:
-
-```sh
-git clone https://github.com/webopt/ch5-responsive-images.git
-cd ch5-responsive-images
-npm install
-node http.js
-```
-
-Open:
-
-```text
-http://localhost:8080
-```
-
-![Figure](/.attachments/)
-
-_**Figure 5.9.** Legendary Tones website screenshot from the source PDF._
->
-> The Legendary Tones website running in the browser.
+Responsive image delivery in CSS usually uses media queries.
 
 ### Targeting Displays In CSS By Using Media Queries
 
@@ -205,12 +172,6 @@ Listing 5.2 shows a media query breakpoint. Add the larger background image at t
 }
 ```
 
-![Figure](/.attachments/)
-
-_**Figure 5.10.** masthead before-and-after comparison from the source PDF._
->
-> At the 480-pixel breakpoint, the masthead background looks sharper after adding the larger background image.
-
 Repeat that process for the remaining breakpoints in Table 5.2. To skip to the completed state:
 
 ```sh
@@ -220,18 +181,6 @@ git checkout responsive-images -f
 ### Targeting High DPI Displays With Media Queries
 
 High-DPI screens, such as Retina and 4K/5K displays, need higher-resolution images to appear sharp.
-
-![Figure](/.attachments/)
-
-_**Figure 5.11.** standard versus high-DPI pixel comparison from the source PDF._
->
-> High-DPI displays pack more pixels into the same visual area than standard-DPI displays.
-
-![Figure](/.attachments/)
-
-_**Figure 5.12.** high-DPI image quality comparison from the source PDF._
->
-> A background image intended for standard displays appears soft on a high-DPI display, while the proper high-resolution image appears sharper.
 
 A basic high-DPI media query:
 
@@ -305,7 +254,7 @@ img{
 
 Listing 5.3 shows the universal `max-width` rule. It allows images to render at natural size until they exceed the width of their container, then constrains them.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/5-13-performance-max.width.png)
 
 _**Figure 5.13.** image max-width comparison from the source PDF._
 >
@@ -330,12 +279,6 @@ Switch to the `srcset` branch:
 ```sh
 git checkout srcset -f
 ```
-
-![Figure](/.attachments/)
-
-_**Figure 5.14.** Legendary Tones feature image screenshot from the source PDF._
->
-> A new feature image appears on the Legendary Tones website.
 
 The available article image widths are:
 
@@ -379,21 +322,15 @@ For the Legendary Tones image:
      sizes="(min-width: 704px) 50vw, (min-width: 480px) 75vw, 100vw">
 ```
 
-![Figure](/.attachments/)
-
-_**Figure 5.15.** `sizes` breakpoint behavior screenshot from the source PDF._
->
-> At 704px, the image occupies 50% of the viewport; at 480px, it occupies 75%; below 480px, it occupies the full viewport.
-
 Keep `sizes` media queries aligned with your CSS breakpoints unless a tested design reason says otherwise.
 
 ### Using The `<picture>` Element
 
 Use `<picture>` when you need art direction: different crops, focal points, or image treatments at different screen widths.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/5-16-performance-art.direction.png)
 
-_**Figure 5.16.** art direction image set from the source PDF._
+_**Figure 5.16.** Art direction image set from the source PDF._
 >
 > The same subject receives different cropping at different screen widths so the focal point remains visible.
 
@@ -403,9 +340,9 @@ Switch to the `<picture>` branch:
 git checkout picture -f
 ```
 
-![Figure](/.attachments/)
+![Figure](/.attachments/5-17-performance-image.behaviours.png)
 
-_**Figure 5.17.** article image layout comparison from the source PDF._
+_**Figure 5.17.** Article image layout comparison from the source PDF._
 >
 > On small screens, the image is centered between paragraphs; on large screens, it floats right and text wraps around it.
 
@@ -434,9 +371,9 @@ Listing 5.5 adds new image treatments for different devices with `<picture>`.
 
 The first `<source>` applies at `704px` and wider. The second applies below that. The `<img>` remains required and acts as a fallback.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/5-18-performance-picture.behaviour.png)
 
-_**Figure 5.18.** post-`<picture>` behavior comparison from the source PDF._
+_**Figure 5.18.** Post-`<picture>` behavior comparison from the source PDF._
 >
 > Small screens receive a different image treatment after the `<picture>` changes.
 
@@ -509,12 +446,6 @@ Remove the direct Picturefill script and add this before `</body>`:
 ```
 
 If either feature check fails, the code creates a `<script>` element for Picturefill and injects it into the DOM. If both pass, Picturefill is skipped.
-
-![Figure](/.attachments/)
-
-_**Figure 5.19.** conditional Picturefill network comparison from the source PDF._
->
-> Safari without support loads Picturefill; Chrome with native support skips it.
 
 ### Using SVG In HTML
 
