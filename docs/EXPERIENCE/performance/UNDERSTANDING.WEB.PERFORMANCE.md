@@ -16,7 +16,7 @@ Slow websites also measurably affect engagement. In e-commerce contexts, nearly 
 
 Performance can also affect search visibility. Google stated as early as 2010 that page speed is a ranking factor, even though relevance remains the primary factor. The chapter uses Legendary Tones, a guitar-focused blog with about 20,000 unique monthly visitors, as an example. Its Google Analytics data showed that rankings stayed stable until crawl times moved past about a second, at which point rankings slipped.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/1-1-performance-average.rankings.png)
 
 _**Figure 1.1.** chart from the source PDF._
 >
@@ -28,7 +28,7 @@ For content-driven sites, organic search is often the main source of traffic. Re
 
 Web optimization begins with the browser-server conversation. A user asks for a page, waits for the server to respond, and then downloads the page into the browser.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/1-2-performance-user.request.png)
 
 _**Figure 1.2.** request/response diagram from the source PDF._
 >
@@ -99,7 +99,6 @@ npm install express
 
 This installs Express, which is used here only to serve static files locally.
 
-> [!note]
 > On macOS or other UNIX-like systems, permission errors from `npm` may require rerunning the command with `sudo`. On Windows, opening the command line as an administrator can help with similar permission issues.
 
 Start the local server:
@@ -138,7 +137,7 @@ Optimization starts with measurement. For a first pass, look at:
 
 In Chrome's `Network` tab, enable recording and select `Disable cache`. Disabling the cache simulates a first visit, where the user has none of the site's assets cached locally.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/1-7-performance-record.button.png)
 
 _**Figure 1.7.** Chrome Network panel screenshot from the source PDF._
 >
@@ -152,7 +151,7 @@ http://localhost:8080
 
 Chrome generates a waterfall chart showing each asset request, when it begins, and when it finishes.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/1-8-performance-waterfall.chart.png)
 
 _**Figure 1.8.** waterfall chart screenshot from the source PDF._
 >
@@ -184,7 +183,7 @@ Reducing request count can help too, especially on `HTTP/1`, but this site alrea
 
 Minification removes whitespace and unnecessary characters from text assets without changing how they work. CSS, JavaScript, and HTML often include indentation, line breaks, and comments for developer readability. Browsers do not need that formatting.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/1-9-performance-minification.png)
 
 _**Figure 1.9.** CSS minification example from the source PDF._
 >
@@ -264,7 +263,7 @@ htmlminify -o index.html index.src.html
 
 The minified HTML drops from 4.57 KB to 3.71 KB, a 19% reduction.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/1-10-performance-load.times.png)
 
 _**Figure 1.10.** load-time comparison chart from the source PDF._
 >
@@ -274,7 +273,7 @@ _**Figure 1.10.** load-time comparison chart from the source PDF._
 
 Server compression works like file compression for web responses. The browser sends an `Accept-Encoding` header listing the compression formats it supports. If the server supports one of those formats, it responds with compressed content and a `Content-Encoding` header.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/1-11-performance-server.compression.png)
 
 _**Figure 1.11.** server compression process diagram from the source PDF._
 >
@@ -315,7 +314,7 @@ Restart the server and reload the page. Table 1.2 compares text assets before an
 | `behaviors.min.js` | 1.9 KB | 1.1 KB | 42.1% |
 | Total | 106.5 KB | 36 KB | 66.2% |
 
-![Figure](/.attachments/)
+![Figure](/.attachments/1-12-performance-load.times.after.compression.png)
 
 _**Figure 1.12.** load-time comparison chart from the source PDF._
 >
@@ -339,7 +338,7 @@ Avoid compressing formats that are already compressed during encoding, such as `
 
 Modern image optimization can remove unnecessary image data while preserving visual quality. The goal is to compare the optimized image against the source and keep the result only if quality remains acceptable.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/1-13-performance-image.optimization.png)
 
 _**Figure 1.13.** image optimization comparison from the source PDF._
 >
@@ -347,7 +346,7 @@ _**Figure 1.13.** image optimization comparison from the source PDF._
 
 The chapter uses TinyPNG (`http://tinypng.com`) for simplicity. Despite the name, TinyPNG can optimize both PNG and JPEG files.
 
-![Figure](/.attachments/)
+![Figure](/.attachments/1-14-performance-tinypng.compressing.png)
 
 _**Figure 1.14.** TinyPNG screenshot from the source PDF._
 >
@@ -368,7 +367,7 @@ Table 1.3 shows the image savings.
 | `states.png` | 4.9 KB | 1.8 KB | -63% |
 | `states@2x.png` | 9.6 KB | 3.5 KB | -63% |
 
-![Figure](/.attachments/)
+![Figure](/.attachments/1-15-performance-load.times.regular.3g.png)
 
 _**Figure 1.15.** load-time comparison chart from the source PDF._
 >
@@ -387,7 +386,7 @@ After minification, server compression, and image optimization, the transferred 
 | Desktop (high DPI) | 536 KB | 121 KB | 77.4% |
 | Desktop | 383 KB | 89.5 KB | 76.6% |
 
-![Figure](/.attachments/)
+![Figure](/.attachments/1-16-performance-load.times.throttling.png)
 
 _**Figure 1.16.** load-time comparison chart from the source PDF._
 >
