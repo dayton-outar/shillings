@@ -91,3 +91,4 @@ I expect that certain code sharing etiquette will be observed. Contributors are 
 1. [Simply Wall St](https://simplywall.st/)
 2. [Google Finance](https://www.google.com/finance/)
 3. [Yahoo Finance](https://finance.yahoo.com/)
+4. [GK Capital Management | Investment & Advisory](https://gkintelligence.gk-capital.com/)
